@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ébauche d’une table sur la propriété conductrice de la chaleur de plusieurs Substances</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1792-Entwurf_zu_einer-2</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Ébauche d’une table sur la propriété conductrice de la chaleur de plusieurs Substances</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">Juli 1793</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Observations sur la physique, sur l’histoire naturelle et sur les arts</title>
+                        <biblScope unit="volume">43</biblScope>
+                        <biblScope unit="issue"/>
+                        <biblScope unit="pages">304–308</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fe">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="304" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">ÉBAUCHE D&#x2019;UNE TABLE</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">Sur la propriété conductrice de la chaleur de plu&#x017F;ieurs<lb break="yes"/>Sub&#x017F;tances;<lb break="yes" />Par</hi>
+                    <hi rendition="#g">
+                        <hi rendition="#k">
+                            <persName key="humboldt_av"/>Humboldt:</hi>
+                    </hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">Traduite de l&#x2019;Allemand.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#k">
+                            <hi rendition="#in">L</hi>es</hi>
+                    </hi> phénomènes que pré&#x017F;ente le calorique lor&#x017F;qu&#x2019;il pa&#x017F;&#x017F;e d&#x2019;une<lb break="yes"/>&#x017F;ub&#x017F;tance à une autre, ou lor&#x017F;qu&#x2019;il s&#x2019;y trouve accumulé, ou qu&#x2019;il s&#x2019;en<lb break="yes"/>dégage, &#x017F;ont trop frappans, pour ne pas avoir fixé de tout tems l&#x2019;attention<lb break="yes"/>des phy&#x017F;iciens. Les écrits <persName key="aristoteles" >d&#x2019;Ari&#x017F;tote</persName> font &#x017F;oup&#x00E7;onner que plus d&#x2019;un &#x017F;avant<lb break="yes"/>grec s&#x2019;occupoit de cette matière; mais le génie &#x017F;ingulier de ces anciens<lb break="yes" />philo&#x017F;ophes, de vouloir tout expliquer, &amp; de &#x017F;e contenter d&#x2019;hypothè&#x017F;es<lb break="yes"/>qui choquent le bon &#x017F;ens, a &#x017F;ingulièrement entravé l&#x2019;e&#x017F;prit d&#x2019;ob&#x017F;ervation,<lb break="yes"/>ou pour le moins, contribué à lui donner une direction fautive. Malgré<lb break="yes"/>ces ob&#x017F;tacles, il faut admirer la per&#x017F;picacité avec laquelle on ob&#x017F;ervoit<lb break="yes"/>alors plu&#x017F;ieurs objets i&#x017F;olés, dont plu&#x017F;ieurs ont échappé à la recherche<lb break="yes"/>des phy&#x017F;iciens modernes, ou dont on n&#x2019;a fait mention que très-tard. Je me<lb break="yes"/>contenterai d&#x2019;indiquer à ce &#x017F;ujet quelques pa&#x017F;&#x017F;ages qui &#x017F;e trouvent répandus<lb break="yes"/>dans les ouvrages <persName key="aristoteles">d&#x2019;Ari&#x017F;tote</persName>, entr&#x2019;autres, <hi rendition="#i">Problém. &#x017F;ect. <hi rendition="#k" >x,</hi>
+                    </hi> où il e&#x017F;t<lb break="yes"/>que&#x017F;tion du calorique comme cau&#x017F;e de l&#x2019;éla&#x017F;ticité des vapeurs; <hi rendition="#i" >&#x017F;ect. <hi rendition="#g">
+                            <hi rendition="#k">xxiii,</hi>
+                        </hi>
+                    </hi>
+                    <lb break="yes"/>&#x017F;ur le point d&#x2019;ébullition des liqueurs &#x017F;alines; <hi rendition="#i">&#x017F;ect. <hi rendition="#g">
+                            <hi rendition="#k">xxiv,</hi>
+                        </hi>
+                    </hi> &#x017F;ur la manière<lb break="yes"/>de &#x017F;e pré&#x017F;erver de la chaleur par le moyen de l&#x2019;huile; &#x017F;ur la chaleur des<lb break="yes" />&#x017F;ources; &#x017F;ur la que&#x017F;tion pourquoi l&#x2019;eau chaude ne br&#x00FB;le point le bois;<lb break="yes"/>pourquoi le fond d&#x2019;un vai&#x017F;&#x017F;eau rempli d&#x2019;eau e&#x017F;t plus chaud avant que<lb break="yes"/>l&#x2019;eau entre en ébullition, &amp; qu&#x2019;il l&#x2019;e&#x017F;t moins quand l&#x2019;ébullition a<lb break="yes"/>lieu, &amp;c. &amp;c.</p>
+                <lb break="yes"/>
+                <p>Cependant, quelqu&#x2019;attention que l&#x2019;on ait portée anciennement, ou<lb break="yes"/>dans les tems po&#x017F;térieurs, à l&#x2019;échauffement ou au refroidi&#x017F;&#x017F;ement des<lb break="yes"/>corps, il falloit renoncer à des ré&#x017F;ultats exacts avant l&#x2019;invention du<lb break="yes" />thermomètre. M&#x00EA;me dans le tems que l&#x2019;on s&#x2019;occupoit à <placeName key="florenz"/>Florence &amp; à<lb break="yes"/>
+                    <placeName key="padua">Padoue</placeName> de per&#x017F;ectionner cet in&#x017F;trument, &amp; que &#x017F;on u&#x017F;age étoit connu en<lb break="yes"/>
+                    <placeName key="frankreich">France</placeName>, en <placeName key="deutschland" >Allemagne</placeName> &amp; en <placeName key="england" >Angleterre</placeName>, l&#x2019;idée de l&#x2019;effet que produit une<lb break="yes"/>certaine quantité de calorique &#x017F;ur la température de différentes &#x017F;ub&#x017F;tances,<lb break="yes"/>ou la doctrine de la chaleur &#x017F;pécifique des &#x017F;ub&#x017F;tances hétérogènes, re&#x017F;toit<lb break="yes"/>
+                    <fw type="catch" place="bottom">toujours</fw>
+                    <lb break="yes"/>
+                    <pb n="305" facs="#f0002"/> toujours très-confu&#x017F;e. Cette découverte, une des plus remarquables &amp;<lb break="yes"/>des plus fertiles dont la Phy&#x017F;ique moderne peut &#x017F;e vanter, étoit ré&#x017F;ervée<lb break="yes"/>à la &#x017F;agacité de MM. <hi rendition="#i">
+                        <persName key="wilke_jc">Wilke</persName>, <persName key="deluc_ja">de Luc</persName>
+                    </hi> &amp; <hi rendition="#i">
+                        <persName key="black_j">Black</persName>.</hi> Elle donna lieu à une<lb break="yes"/>foule d&#x2019;ob&#x017F;ervations nouvelles, &amp; répandit un plus grand jour &#x017F;ur les<lb break="yes"/>phénomènes de la nature les plus importans, &amp; devint à la &#x017F;uite une des<lb break="yes"/>ba&#x017F;es de la nouvelle théorie &#x017F;ur la propriété des corps conducteurs de la<lb break="yes"/>chaleur.</p>
+                <lb break="yes"/>
+                <p>Mais les ob&#x017F;ervations &#x017F;ur le&#x017F;quelles e&#x017F;t fondée cette nouvelle théorie,<lb break="yes"/>appartiennent à une époque antérieure. Ce fut en 1752, que M. <hi rendition="#i">
+                        <persName key="richmann_gw">Richmann</persName>
+                    </hi>
+                    <lb break="yes"/>à <placeName key="stpetersburg">Péter&#x017F;bourg</placeName> publia &#x017F;es expériences &#x017F;ur la propriété que po&#x017F;sèdent plu-<lb break="no"/>&#x017F;ieurs métaux de &#x017F;ervir comme conducteurs de la chaleur. Pour cet effet<lb break="yes"/>il &#x017F;u&#x017F;pendit dans l&#x2019;air à des fils des boules de plomb, d&#x2019;étain, de fer, &amp;c.<lb break="yes"/>au milieu de&#x017F;quelles il avoit adapté des thermomètres; M. <persName key="richmann_gw">Richmann</persName>
+                    <lb break="yes"/>commen&#x00E7;oit par échauffer ces boules, &amp; remarquoit alors les différens<lb break="yes"/>intervalles dans le&#x017F;quelles elles refroidi&#x017F;&#x017F;oient <note place="foot" n="(1)">
+                        <hi rendition="#i">Commentar. Acad. Petropolitan. ann. 1752, pag.</hi> 241.</note>.</p>
+                <lb break="yes"/>
+                <p>M. <hi rendition="#i">de <persName key="buffon_gllcd">Buffon</persName>
+                    </hi> fit également conno&#x00EE;tre des ob&#x017F;ervations, par le&#x017F;quelles<lb break="yes"/>il prouvoit, que des &#x017F;ub&#x017F;tances liquides &amp; éla&#x017F;tiques étoient de meilleurs<lb break="yes"/>conducteurs que les &#x017F;olides; mais cette a&#x017F;&#x017F;ertion de <persName key="buffon_gllcd">Buffon</persName> a été depuis<lb break="yes"/>réfutée par plu&#x017F;ieurs expériences &amp; des calculs fort exacts.</p>
+                <lb break="yes"/>
+                <p>MM. <hi rendition="#i">
+                        <persName key="franklin_b">Franklin</persName>
+                    </hi> &amp; <hi rendition="#i">
+                        <persName key="achard_fc">Achard</persName>
+                    </hi> fai&#x017F;oient conno&#x00EE;tre le rapport remarquable<lb break="yes" />qui exi&#x017F;te entre la matière électrique &amp; le calorique; ces deux &#x017F;avans<lb break="yes"/>ont prouvé, que l&#x2019;un &amp; l&#x2019;autre &#x017F;ont conduìts &amp; i&#x017F;olés par la m&#x00EA;me matière,<lb break="yes"/>&amp; que les ré&#x017F;ines &amp; le verre n&#x2019;étoient que des mauvais conducteurs, tandis<lb break="yes"/>que les métaux rempli&#x017F;&#x017F;oient cet objet beaucoup mieux que ces deux<lb break="yes"/>matières.</p>
+                <lb break="yes"/>
+                <p>M. <hi rendition="#i">
+                        <persName key="ingenhousz_j">Ingen-Hou&#x017F;z</persName>
+                    </hi> répéta les expériences de feu M. <persName key="richmann_gw" >Richmann</persName>, mais<lb break="yes"/>d&#x2019;après une méthode très-différente. Ce &#x017F;avant plongea alternativement<lb break="yes"/>des fils de métal, dont l&#x2019;extr&#x00EA;mité inférieure étoit couverte de cire, dans<lb break="yes"/>de l&#x2019;huile chaude &amp; de l&#x2019;eau froide, mais il eut le malheur de tirer des<lb break="yes"/>con&#x017F;équences fau&#x017F;&#x017F;es d&#x2019;une expérience par elle-m&#x00EA;me très-ingénieu&#x017F;e <note place="foot" n="(2)">
+                        <choice>
+                            <sic>Rozich</sic>
+                            <corr type="editorial">
+                                <persName key="pilatrederozier_jf">Rozier</persName>
+                            </corr>
+                        </choice>. Journal de Phy&#x017F;ique, Janvier 1789.</note>.</p>
+                <lb break="yes"/>
+                <p>M. <hi rendition="#i">
+                        <persName key="thompson_b">Thomp&#x017F;on</persName>
+                    </hi>
+                    <note place="foot" n="(3)">Philo&#x017F;ophical Tran&#x017F;action, 1786, p. II.</note> fai&#x017F;oit des e&#x017F;&#x017F;ais &#x017F;ur la propriété du vuide comme<lb break="yes"/>conducteur de la chaleur, du mercure &amp; de l&#x2019;atmo&#x017F;phère dans différens<lb break="yes"/>degrés d&#x2019;humidité; cependant les expériences de ce &#x017F;avant ne s&#x2019;accordent<lb break="yes"/>pas en entier avec celles de M. <persName key="pictet_ma">Pictet</persName>
+                    <note place="foot" n="(4)">
+                        <persName key="pictet_ma">Pictet</persName>, E&#x017F;&#x017F;ais &#x017F;ur le Feu.</note>.</p>
+                <lb break="yes"/>
+                <p>Mais tous les &#x017F;avans dont je viens de citer les noms dans cet apper&#x00E7;u<lb break="yes"/>rapide, n&#x2019;ont con&#x017F;idéré que la force conductrice des &#x017F;ub&#x017F;tances i&#x017F;olées,<lb break="yes" />&#x017F;ans avoir eu égard aux rapports qui exi&#x017F;tent entre la chaleur &#x017F;pécifique,<lb break="yes"/>le poids &#x017F;pécifique &amp; la force conductrice de la chaleur. Le premier<lb break="yes"/>
+                    <lb break="yes"/>
+                    <pb n="306" facs="#f0003"/> &#x017F;avant qui ait déterminé ces rapports avec préci&#x017F;ion, c&#x2019;e&#x017F;t M. <persName key="mayer_jts" >Mayer</persName>, dans<lb break="yes"/>un ouvrage allemand, <hi rendition="#i">&#x017F;ur les loix &amp; les modifications du Calorique</hi>,<lb break="yes"/>ouvrage, qui par les vues profondes qu&#x2019;il contient, mérite la plus grande<lb break="yes"/>attention des phy&#x017F;iciens. Les expériences que M. <persName key="mayer_jts" >Mayer</persName> a entrepri&#x017F;es à ce<lb break="yes"/>&#x017F;ujet, lui ont fait voir, que deux corps compo&#x017F;és de &#x017F;ub&#x017F;tances hétéro-<lb break="no"/>gènes, mais pour le re&#x017F;te de m&#x00EA;me figure &amp; grandeur, &amp; tenus dans la<lb break="yes"/>m&#x00EA;me température, ne perdoient pas leur chaleur à une m&#x00EA;me époque,<lb break="yes"/>parce que des &#x017F;ub&#x017F;tancees hétérogènes po&#x017F;sèdent plus ou moins de pro-<lb break="no"/>priétés à retenir ou à perdre leur chaleur. M. <persName key="mayer_jts">Mayer</persName> prouve de plus,<lb break="yes"/>que la force conductrice de deux corps d&#x2019;un m&#x00EA;me volume, e&#x017F;t en rai&#x017F;on<lb break="yes"/>inver&#x017F;e du tems dans lequel ils éprouvent une altération uniforme dans<lb break="yes" />la m&#x00EA;me température; mais que leurs forces conductrices &#x017F;e trouvent<lb break="yes"/>parfaitement analogues avec les logarithmes de l&#x2019;expo&#x017F;ant de leur refroi-<lb break="no"/>di&#x017F;&#x017F;ement. Sur cette &#x017F;uppo&#x017F;ition e&#x017F;t fondée la force conductrice m&#x00EA;me,<lb break="yes"/>d&#x2019;après laquelle (en <choice>
+                        <sic>dé&#x017F;igant</sic>
+                        <corr type="editorial">dé&#x017F;ignant</corr>
+                    </choice> le poids &#x017F;pécifique par = <hi rendition="#i">p</hi> &amp; la chaleur<lb break="yes"/>&#x017F;pécifique = <hi rendition="#i">c</hi>) pour les &#x017F;olides &amp; les fluides, il convient de mettre =<lb break="yes"/>
+                    <formula notation="TeX">\frac{1}{pc}</formula>.</p>
+                <lb break="yes"/>
+                <p>Cette formule e&#x017F;t plus conforme à l&#x2019;expérience, qu&#x2019;on le pouvoit<lb break="yes"/>atendre des données &#x017F;ur la chaleur &#x017F;pécifique toujours très-incertaines.<lb break="yes"/>Des exemples, rapportés par M. <persName key="mayer_jts">Mayer</persName> (<hi rendition="#i" >voyez</hi> l&#x2019;ouvrage cité page 253)<lb break="yes"/>&amp; mes expériences multipliées m&#x2019;en ont donné la certitude.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell role="label"/>
+                        <cell role="label">
+                            <hi rendition="#i">Poids</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">&#x017F;pécifique.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i"> Chaleur<lb break="yes"/>&#x017F;pécifique.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i">Chaleur<lb break="yes"/>relative.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i"> Force<lb break="yes"/>conductrice.</hi>
+                        </cell>
+                        <cell role="label"/>
+                    </row>
+                    <row>
+                        <cell>Vuide de <persName key="torricelli_e" >Toricelli</persName>....................</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>0,1760</cell>
+                        <cell>&#x017F;elon <persName key="thompson_b">Thomp-<lb break="no" />&#x017F;on</persName>.</cell>
+                    </row>
+                    <row>
+                        <cell>Air atmo&#x017F;phérique.<lb break="yes"/>Conden&#x017F;é = 1..</cell>
+                        <cell>0,0012.............</cell>
+                        <cell/>
+                        <cell/>
+                        <cell>0,2550</cell>
+                        <cell>le m&#x00EA;me.</cell>
+                    </row>
+                    <row>
+                        <cell>Air atmo&#x017F;phérique.<lb break="yes"/>Conden&#x017F;é = <formula notation="TeX">\frac{1}{24}</formula>.....................</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>0,2490</cell>
+                        <cell>le m&#x00EA;me.</cell>
+                    </row>
+                    <row>
+                        <cell>Cendres de bois..</cell>
+                        <cell>1,5560</cell>
+                        <cell>1,4144</cell>
+                        <cell>1,4144</cell>
+                        <cell>0,7072</cell>
+                        <cell> &#x017F;elon mon<lb break="yes"/>calcul.</cell>
+                    </row>
+                    <row>
+                        <cell>Acide vitriolique.</cell>
+                        <cell>1,7000</cell>
+                        <cell>1,2886</cell>
+                        <cell>1,2886</cell>
+                        <cell>0,7764</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Rouille de fer...</cell>
+                        <cell>4,5000</cell>
+                        <cell>1,1250</cell>
+                        <cell>1,1250</cell>
+                        <cell>0,8889</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Cuivre.......</cell>
+                        <cell>8,5760</cell>
+                        <cell>0,9861</cell>
+                        <cell>0,9861</cell>
+                        <cell>0,8970</cell>
+                        <cell>&#x017F;elon <persName key="richmann_gw">Rich-<lb break="no" />mann</persName>.</cell>
+                    </row>
+                    <row>
+                        <cell>Fer.........</cell>
+                        <cell>7,8076</cell>
+                        <cell>0,9907</cell>
+                        <cell>0,9907</cell>
+                        <cell>0,9430</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Cuivre jaune....</cell>
+                        <cell>8,3960</cell>
+                        <cell>0,9403</cell>
+                        <cell>0,9403</cell>
+                        <cell>0,9430</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Lait de vache...</cell>
+                        <cell>1,0300</cell>
+                        <cell>1,0289</cell>
+                        <cell>1,0289</cell>
+                        <cell>0,9727</cell>
+                        <cell>mon calcul.</cell>
+                    </row>
+                    <row>
+                        <cell>Vinaigre......</cell>
+                        <cell>1,0110</cell>
+                        <cell>1,0413</cell>
+                        <cell>1,0413</cell>
+                        <cell>0,9900</cell>
+                        <cell>&#x017F;elon <persName key="mayer_jts">Mayer</persName>.</cell>
+                    </row>
+                    <row>
+                        <cell>Eau.........</cell>
+                        <cell>1,0000</cell>
+                        <cell>1,0000</cell>
+                        <cell>1,0000</cell>
+                        <cell>1,0000</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="307" facs="#f0004"/>
+                <table>
+                    <row>
+                        <cell role="label"/>
+                        <cell role="label">
+                            <hi rendition="#i">Poids<lb break="yes"/>&#x017F;pécifique.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i">Chaleur<lb break="yes"/>&#x017F;pécifique.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i">Chaleur<lb break="yes"/>relative.</hi>
+                        </cell>
+                        <cell role="label">
+                            <hi rendition="#i">Force<lb break="yes"/>conductrice.</hi>
+                        </cell>
+                        <cell role="label"/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Or..........</cell>
+                        <cell>19,0400</cell>
+                        <cell>0,9520</cell>
+                        <cell>0,9520</cell>
+                        <cell>1,0504</cell>
+                        <cell>mon calcul.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Air humide.......................</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>1,0543</cell>
+                        <cell>
+                            <persName key="thompson_b">Thomp&#x017F;on</persName>.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Acide nitreux...</cell>
+                        <cell>1,5800</cell>
+                        <cell>0,9100</cell>
+                        <cell>0,9100</cell>
+                        <cell>1,0989</cell>
+                        <cell>&#x017F;elon mon<lb break="yes"/>calcul.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Argent.......</cell>
+                        <cell>10,0010</cell>
+                        <cell>0,8020</cell>
+                        <cell>0,8020</cell>
+                        <cell>1,2195</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Acide muriatique.</cell>
+                        <cell>1,1500</cell>
+                        <cell>0,7820</cell>
+                        <cell>0,7820</cell>
+                        <cell>1,2787</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pierre calcaire...</cell>
+                        <cell>2,8570</cell>
+                        <cell>0,7313</cell>
+                        <cell>0,7313</cell>
+                        <cell>1,3674</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Huile d&#x2019;olive....</cell>
+                        <cell>0,9130</cell>
+                        <cell>0,7100</cell>
+                        <cell>0,6482</cell>
+                        <cell>1,5472</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Etain........</cell>
+                        <cell>7,2910</cell>
+                        <cell>0,0680</cell>
+                        <cell>0,4957</cell>
+                        <cell>1,5410</cell>
+                        <cell>
+                            <persName key="richmann_gw">Richmann</persName>.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zinc.........</cell>
+                        <cell>6,8620</cell>
+                        <cell>0,0943</cell>
+                        <cell>0,5470</cell>
+                        <cell>1,5455</cell>
+                        <cell>&#x017F;elon mon exp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Chaux de plomb..</cell>
+                        <cell>8,9400</cell>
+                        <cell>0,0680</cell>
+                        <cell>0,6079</cell>
+                        <cell>1,6474</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Antimoine.....</cell>
+                        <cell>6,8600</cell>
+                        <cell>0,0860</cell>
+                        <cell>0,5899</cell>
+                        <cell>1,6952</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>E&#x017F;prit-de-vin...</cell>
+                        <cell>0,8150</cell>
+                        <cell>0,6021</cell>
+                        <cell>0,4907</cell>
+                        <cell>2,0379</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Huile de lin....</cell>
+                        <cell>0,9280</cell>
+                        <cell>0,5230</cell>
+                        <cell>0,4899</cell>
+                        <cell>2,0412</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Charbon de terre.</cell>
+                        <cell>1,5000</cell>
+                        <cell>0,2777</cell>
+                        <cell>0,4166</cell>
+                        <cell>2,4003</cell>
+                        <cell>&#x017F;elon mon exp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mercure......</cell>
+                        <cell>13,5800</cell>
+                        <cell>0,0330</cell>
+                        <cell>0,4656</cell>
+                        <cell>1,9700</cell>
+                        <cell>&#x017F;elon <persName key="mayer_jts">Mayer</persName>.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Plomb.......</cell>
+                        <cell>11,4459</cell>
+                        <cell>0,0352</cell>
+                        <cell>0,4029</cell>
+                        <cell>0,3138</cell>
+                        <cell>
+                            <persName key="richmann_gw">Richmann</persName>.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bi&#x017F;muth......</cell>
+                        <cell>9,8610</cell>
+                        <cell>0,0430</cell>
+                        <cell>0,4240</cell>
+                        <cell>2,3584</cell>
+                        <cell>&#x017F;elon mon exp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>E&#x017F;&#x017F;ence de térébent.</cell>
+                        <cell>0,7920</cell>
+                        <cell>0,4720</cell>
+                        <cell>0,3738</cell>
+                        <cell> 2,6752</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Soufre........</cell>
+                        <cell>1,8000</cell>
+                        <cell>0,1830</cell>
+                        <cell>0,3294</cell>
+                        <cell>3,0358</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Glace pour les degr.<lb break="yes"/>au-de&#x017F;&#x017F;ous de zéro.</cell>
+                        <cell>0,9160</cell>
+                        <cell> 0,9160</cell>
+                        <cell>0,8244</cell>
+                        <cell>1,2130</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">
+                            <hi rendition="#k">
+                                <hi rendition="#i">Récapitulation.</hi>
+                            </hi>
+                        </hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Sub&#x017F;tances ré&#x017F;ineu&#x017F;es, &#x2014; fuit, &#x2014; poils, &#x2014; plumes, &#x2014; laine, &#x2014;<lb break="yes"/>coton, &#x2014; air atmo&#x017F;phérique, &#x2014; cendres de bois, &#x2014; bois, &#x2014; acide<lb break="yes"/>vitriolique, &#x2014; rouille de fer. &#x2014; cuivre, &#x2014; fer, &#x2014; cuivre jaune, &#x2014;<lb break="yes"/>lait de vache, &#x2014; vinaigre, &#x2014; eau, &#x2014; or, &#x2014; air humide, &#x2014; acide<lb break="yes"/>nitreux, &#x2014; argent, &#x2014; acide muriatique, &#x2014; pierre calcaire, &#x2014; huile<lb break="yes" />d&#x2019;olive, <choice>
+                            <sic>&#x2014;,</sic>
+                            <corr type="editorial">&#x2014;</corr>
+                        </choice> étain, &#x2014; zinc, &#x2014; chaux de plomb, &#x2014; antimoine, &#x2014;<lb break="yes"/>e&#x017F;prit-de-vin, &#x2014; huile de lin, &#x2014; charbon de terre, &#x2014; mercure, &#x2014;<lb break="yes"/>plomb, &#x2014; bi&#x017F;muth, &#x2014; e&#x017F;&#x017F;ence de térébenthine, &#x2014; &#x017F;oufre.</p>
+                    <lb break="yes"/>
+                    <p>Mon travail &#x017F;ur la matière la plus convenable pour la con&#x017F;truction des<lb break="yes"/>chaudières de&#x017F;tinées à la fabrication du &#x017F;el, m&#x2019;avoit engagé à ébaucher la<lb break="yes"/>Table précédente, &#x017F;ur la propriété conductrice de la chaleur; comme<lb break="yes"/>
+                        <lb break="yes"/>
+                        <pb n="308" facs="#f0005"/> ce travail pourroit &#x017F;ervir à quelques phy&#x017F;iciens, &amp; &#x00EA;tre accueilli favora-<lb break="no" />blement par d&#x2019;autres, je me &#x017F;uis déterminé à le publier. Les avantages<lb break="yes"/>que les logarithmes &amp; les Tables de &#x017F;inus offrent aux a&#x017F;tronomes, les<lb break="yes" />phy&#x017F;iciens peuvent les retirer des Tables, dans le&#x017F;quelles ils trouveront<lb break="yes"/>les poids &#x017F;pécifiques des corps, leur capacité, leur chaleur relative, &amp;<lb break="yes"/>tout ce qui peut &#x00EA;tre expliqué par le calcul.</p>
+                    <lb break="yes"/>
+                    <p>On verra, que j&#x2019;ai di&#x017F;tingué &#x017F;oigneu&#x017F;ement les rapports fondés immé-<lb break="no"/>diatement &#x017F;ur des expériences, avec celles dont les ré&#x017F;ultats ont été<lb break="yes"/>trouvés par le calcul; mais il e&#x017F;t néce&#x017F;&#x017F;aire d&#x2019;avertir les Lecteurs, de ne<lb break="yes"/>point con&#x017F;idérer mes calculs &#x017F;euls, mais bien les deux ré&#x017F;ultats unis,<lb break="yes" />comme nombres approximatifs, parce que les différentes températures<lb break="yes"/>produi&#x017F;ent &#x017F;ouvent une variation dans la force conductrice, &amp; que les<lb break="yes"/>erreurs que le poids &#x017F;pécifique &amp; la capacité peuvent pré&#x017F;enter, dé-<lb break="no"/>pendent &#x017F;ouvent, comme le prouve l&#x2019;expérience de M. <persName key="ingenhousz_j">Ingen-Hou&#x017F;z</persName>,<lb break="yes"/>d&#x2019;ob&#x017F;tacles difficiles à vaincre, &amp; qui naturellement doivent influer &#x017F;ur les<lb break="yes"/>expériences m&#x00EA;mes. Le zinc e&#x017F;t peut-&#x00EA;tre meilleur conducteur pour la<lb break="yes"/>chaleur que l&#x2019;huile d&#x2019;olive &amp; l&#x2019;étain; &amp; l&#x2019;alcool e&#x017F;t peut-&#x00EA;tre préférable<lb break="yes"/>à l&#x2019;huile de lin, quoique dans la Table j&#x2019;aie donné la préférence à ce<lb break="yes"/>dernier: par-tout où les quantités énoncées ne &#x017F;ont que de très-peu de<lb break="yes"/>différence, on ne &#x017F;auroit &#x00EA;tre a&#x017F;&#x017F;ez &#x017F;ur &#x017F;es gardes, quelque bien établi que<lb break="yes"/>mon calcul pui&#x017F;&#x017F;e paro&#x00EE;tre.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

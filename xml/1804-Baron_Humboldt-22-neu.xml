@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="753" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">Travels in</hi>
+                    <hi rendition="#g">
+                        <hi rendition="#k">
+                            <placeName key="suedamerika">South America</placeName>,</hi>
+                    </hi>
+                    <hi rendition="#i">by Messrs</hi>
+                    <hi rendition="#g">
+                        <hi rendition="#k">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <persName key="bonpland_ajag">
+                        <hi rendition="#g">
+                            <hi rendition="#k">Bonpland.</hi>
+                        </hi>
+                    </persName>
+                </head>
+                <lb break="yes"/>
+                <cb/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#in">H</hi>AVING</hi> landed at Honda, our<lb break="yes" />travellers proceeded on mules,<lb break="yes"/>the only way of travelling in <placeName key="suedamerika">South<lb break="yes"/>America</placeName>, and by frightful roads<lb break="yes"/>through forests of oaks, <hi rendition="#i" >melastoma</hi>
+                    <lb break="yes"/>and <hi rendition="#i">cinchona,</hi> to Santo Fe de Bagoa,<lb break="yes"/>the capital of the kingdom of New<lb break="yes"/>Grenada, situated in a beautiful plain,<lb break="yes"/>1,360 toises above the level of the<lb break="yes"/>sea, and, in consequence of a perpe-<lb break="no"/>tual spring temperature, abounding<lb break="yes"/>in the wheat of Europe, and the<lb break="yes"/>sesamum of <placeName key="asien">Asia</placeName>. The superb col-<lb break="no"/>lections in natural history by the<lb break="yes" />celebrated <persName key="mutis_jc">Mutis</persName>; the grand and<lb break="yes"/>sublime cataract of Tequendama, 98<lb break="yes"/>toises, or 588 feet in height; the<lb break="yes"/>mines of Mariquitta, St Ana, and Zi-<lb break="no"/>paguira; the natural bridge of Ico-<lb break="no"/>nonzo, two detached rocks which by<lb break="yes"/>means of an earthquake have been<lb break="yes"/>disposed in such a manner as to sup-<lb break="no"/>port a third; occupied the attention<lb break="yes"/>of our travellers at Santa Fe till<lb break="yes"/>September 1801.</p>
+                <lb break="yes"/>
+                <p>Though the rainy season had now<lb break="yes"/>rendered the roads almost impassible,<lb break="yes"/>they set out for Quito; they re-<lb break="no" />descended by Fusagasuga, in the<lb break="yes"/>valley of Magdalena, and passed the<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName> of Quindiu, where the snowy<lb break="yes"/>pyramid of Tolina rises amidst forests<lb break="yes"/>of <hi rendition="#i">styrax passiflora</hi> in trees, <hi rendition="#i" >bambusa,</hi>
+                    <lb break="yes"/>and wax palms. For thirteen days<lb break="yes"/>they were obliged to drag themselves<lb break="yes"/>through horrid mud, and to sleep,<lb break="yes"/>as on the Orenoko, under the bare<lb break="yes"/>
+                    <cb/> heavens, in woods where they saw<lb break="yes"/>no vestiges of man. When they ar-<lb break="no"/>rived bare-footed, and drenched with<lb break="yes" />continual rain, in the valley of the<lb break="yes"/>river Cauca, they stopped at Ca-<lb break="no"/>thago and Buga, and proceeded a-<lb break="no"/>long the province of Choco, the<lb break="yes"/>country of platina, which is found<lb break="yes"/>between rolled fragments of basaltes,<lb break="yes"/>filled with olivin and augite, green<lb break="yes"/>rock (the <hi rendition="#i" >grunstein</hi> of <persName key="werner_ag">Werner</persName>,) and<lb break="yes"/>fossil wood.</p>
+                <lb break="yes"/>
+                <p>They ascended by Caloto and Qui-<lb break="no"/>lichao, where gold is washed, to Po-<lb break="no"/>payan, visited by <persName key="bouguer_p" >Bouguer</persName> when he<lb break="yes"/>returned to France, and situated at<lb break="yes"/>the bottom of the snowy volcanoes<lb break="yes"/>of Purace and Sotara, one of the<lb break="yes"/>most picturesque situations and in<lb break="yes"/>the most delightful climate of the uni-<lb break="no" />verse, where <persName key="reaumur_rafd">Reaumur&#x2019;s</persName> thermometer<lb break="yes"/>stands constantly between 17 and 19<lb break="yes"/>degrees. When they had reached,<lb break="yes"/>with much difficulty, the crater of<lb break="yes"/>the volcano of Purace, filled with<lb break="yes"/>boiling water, which from the midst<lb break="yes"/>of the snow throws up, with a hor-<lb break="no"/>rid roaring, vapours of sulphurated<lb break="yes"/>hydrogen, our travellers passed from<lb break="yes"/>Popayan by the steep cordilleras of<lb break="yes"/>
+                    <placeName key="almager">Almaguer</placeName> a Parto, avoiding the<lb break="yes"/>contagious air of the valley of Patia.</p>
+                <lb break="yes"/>
+                <p>From Pasto, a town situated at<lb break="yes"/>the bottom of a burning volcano,<lb break="yes"/>they traversed by Guachucal the<lb break="yes" />high plateau of the province of Pas-<lb break="no"/>tos, separated from the Pacific Ocean<lb break="yes"/>
+                    <fw type="catch" place="bottom">by</fw>
+                    <lb break="yes"/>
+                    <pb n="754" facs="#f0002"/>
+                    <cb/> by the <placeName key="anden">Andes</placeName> of the volcano of Chili<lb break="yes"/>and Cumbal, and celebrated for its<lb break="yes"/>great fertility in wheat and the <hi rendition="#i">ery-<lb break="no"/>troxylon Peruvianum,</hi> called cocoa.&#x2014;<lb break="yes"/>At length, after a journey of four<lb break="yes"/>months on mules, they arrived at<lb break="yes" />the towns of Ibarra, and Quito.&#x2014;<lb break="yes"/>This long passage through the cor-<lb break="no"/>dillera of the high <placeName key="anden" >Andes</placeName>, at a sea-<lb break="no"/>son which rendered the roads impas-<lb break="no"/>sable, and during which they were<lb break="yes" />exposed to rains which continued<lb break="yes"/>seven or eight hours a-day, encum-<lb break="no"/>bered with a great number of instru-<lb break="no" />ments and voluminous collections,<lb break="yes"/>would have been almost impossible,<lb break="yes"/>without the generous and kind as-<lb break="no" />sistance of M. <persName key="mendiunetta">Mendiunetta</persName>, vice-<lb break="no"/>roy of Santa Fe, and the baron <persName key="carondelet_flhd" >de<lb break="yes"/>Carondelet</persName>, president of Quito, who,<lb break="yes"/>being equally zealous for the pro-<lb break="no"/>gress of Science, caused the roads<lb break="yes"/>and the most dangerous bridges to<lb break="yes"/>be repaired on a route of 450 leagues<lb break="yes"/>in length.</p>
+                <lb break="yes"/>
+                <p>Messrs <persName key="humboldt_av">Humboldt</persName> and <persName key="bonpland_ajag">Bonpland</persName>
+                    <lb break="yes"/>arrived on the 6th of January 1802,<lb break="yes"/>at Quito, a capital celebrated in the<lb break="yes"/>annals of astronomy by the labours<lb break="yes"/>of <persName key="lacondamine_cmd">La Condamine</persName>, <persName key="bouguer_p">Bouguer</persName>, <persName key="godin_l" >Godin</persName>,<lb break="yes"/>and Don <persName key="juanysantacilia_j" >Jorge-Juan</persName> and <persName key="ulloa_ad">Ulloa</persName>;<lb break="yes"/>justly celebrated also by the great<lb break="yes"/>amiableness of its inhabitants, and<lb break="yes"/>their happy disposition for the arts.<lb break="yes"/>Our travellers continued their geolo-<lb break="no"/>gical and botanical researches for<lb break="yes"/>eight or nine months in the king-<lb break="no"/>dom of Quito; a country rendered<lb break="yes"/>perhaps the most interesting in the<lb break="yes"/>world, by the colossal height of its<lb break="yes"/>snowy summits; the activity of its<lb break="yes"/>volcanoes, which in turns throw up<lb break="yes"/>flames, rocks, mud, and hydro-sul-<lb break="no"/>phurous water; the frequency of its<lb break="yes"/>earthquakes, one of which, on the<lb break="yes"/>7th of February 1797, swallowed<lb break="yes"/>up in a few seconds nearly 40,000<lb break="yes"/>inhabitants; its vegetation; the re-<lb break="no"/>mains of Peruvian architecture; and<lb break="yes"/>above all, the manners of its antient<lb break="yes" />inhabitants.</p>
+                <lb break="yes"/>
+                <p>After two fruitless attempts, they<lb break="yes"/>
+                    <cb/> succeeded in twice ascending to the<lb break="yes"/>crater of the volcano of Pinchinca,<lb break="yes"/>where they made experiments on the<lb break="yes" />analyses of the air; its electric<lb break="yes"/>charge magnetism, hygroscopy, elec-<lb break="no"/>tricity, and the temperature of boil-<lb break="no"/>ing water. <persName key="lacondamine_cmd">La Condamine</persName> saw the<lb break="yes"/>same crater, which he very properly<lb break="yes"/>compares to the chaos of the poets;<lb break="yes" />but he was there without instruments,<lb break="yes"/>and could remain only some minutes.</p>
+                <lb break="yes"/>
+                <p>In his time this immense mouth,<lb break="yes"/>hollowed out in basaltic porphyry,<lb break="yes"/>was cooled and filled with snow:<lb break="yes" />our travellers found it again on fire;<lb break="yes"/>and this intelligence was distressing<lb break="yes"/>to the town of Quito, which is dis-<lb break="no"/>tant only about four or five thousand<lb break="yes"/>toises. Here M. <persName key="humboldt_av">Humboldt</persName> was in<lb break="yes" />danger of losing his life. Being a-<lb break="no"/>lone with an Indian, who was as lit-<lb break="no"/>tle acquainted with the crater as him-<lb break="no" />self, and walking over a fissure con-<lb break="no"/>cealed by a thin stratum of eongeal-<lb break="no"/>ed snow, he had almost fallen into<lb break="yes" />it.</p>
+                <lb break="yes"/>
+                <p>Our travellers, during their stay<lb break="yes"/>in the kingdom of Quito, made seve-<lb break="no"/>ral excursions to the snowy moun-<lb break="no"/>tains of <placeName key="antisana">Antisana</placeName>, Cotopaxi, Tun-<lb break="no" />guragua, and Chimborazo, which is<lb break="yes"/>the highest summit of our earth, and<lb break="yes"/>which the French academicians mea-<lb break="no" />sured only by approximation. They<lb break="yes"/>examined in particular the geognos-<lb break="no"/>tic part of the cordillera of the<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName>, respecting which nothing<lb break="yes"/>has yet been published in Europe;<lb break="yes"/>mineralogy, as we may say, being<lb break="yes"/>newer than the voyage of <persName key="lacondamine_cmd">La Con-<lb break="no"/>damine</persName>, whose universal genius and<lb break="yes"/>incredible activity embraced every<lb break="yes"/>thing else that could be interesting<lb break="yes"/>to the sciences. The trigonometrical<lb break="yes"/>and barometrical measurements of<lb break="yes"/>M. <persName key="humboldt_av">Humboldt</persName> have proved that<lb break="yes"/>some of these volcanoes, and especial-<lb break="no" />ly that of Tuaguragua, have become<lb break="yes"/>considerably lower since 1753; a re-<lb break="no"/>sult which accords with what the<lb break="yes" />inhabitants of Pellileo and the plains<lb break="yes"/>of Tapia have observed.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">M. Hum-</fw>
+                <lb break="yes"/>
+                <pb n="755" facs="#f0003"/>
+                <cb/>
+                <p>M. <persName key="humboldt_av">Humboldt</persName> found that all these<lb break="yes"/>large masses were the work of crys-<lb break="no"/>tallization. &#x201C;Every thing I have<lb break="yes"/>seen,&#x201D; says he in a letter to <persName key="lametherie_jcd">Delame-<lb break="no"/>therie</persName>, &#x201C;in these regions, where the<lb break="yes"/>highest elevations of the globe are<lb break="yes"/>situated, have confirmed me more<lb break="yes"/>and more in the grand idea that you<lb break="yes"/>threw out in your Theory of the<lb break="yes"/>Earth, the most complete work we<lb break="yes"/>have on that subject, in regard to<lb break="yes"/>the formation of mountains. All the<lb break="yes"/>masses of which they consist have<lb break="yes"/>united according to their affinities<lb break="yes"/>by the laws of attraction, and have<lb break="yes"/>formed these elevations, more or less<lb break="yes" />considerable in different parts on the<lb break="yes"/>surface of the earth, by the laws of<lb break="yes"/>general crystallization. There can<lb break="yes" />remain no doubt in this respect to<lb break="yes"/>the traveller who considers without<lb break="yes"/>prejudice these large masses. You<lb break="yes" />will see in our relations that there<lb break="yes"/>is not one of the objects you treat of<lb break="yes"/>which we have not endeavoured to<lb break="yes" />improve by our labours.&#x201D;</p>
+                <lb break="yes"/>
+                <p>In all these excursions, begun in<lb break="yes"/>January 1802, our travellers were<lb break="yes"/>accompanied by M <persName key="montufarylarrea_c" >Charles Montu-<lb break="no"/>far</persName>, son of the <persName key="montufarylarrea_jpd">Marquis de Selvale-<lb break="no"/>gre</persName>, of Quito, an individual zealous<lb break="yes"/>for the progress of the sciences, and<lb break="yes"/>who caused to be reconstructed, at<lb break="yes" />his own expense, the pyramids of<lb break="yes"/>Sarouguler, the boundaries of the ce-<lb break="no"/>lebrated base of the French and Spa-<lb break="no"/>nish academicians. This interesting<lb break="yes"/>young man, having accompanied M.<lb break="yes"/>
+                    <persName key="humboldt_av">Humboldt</persName> during the rest of his ex-<lb break="no"/>pedition to Peru and the kingdom of<lb break="yes"/>Mexico, proceeded with him to Eu-<lb break="no"/>rope. The efforts of these three tra-<lb break="no"/>vellers were so much favoured by<lb break="yes" />circumstances, that they reached the<lb break="yes"/>greatest heights to which man had<lb break="yes"/>ever attained in these mountains. On<lb break="yes"/>the volcano of <placeName key="antisana">Antisana</placeName> they carried<lb break="yes"/>instruments 2200, and on Chimbora-<lb break="no"/>zo, June 23, 1802, 3300 feet higher<lb break="yes"/>than <persName key="lacondamine_cmd" >Condamine</persName> and <persName key="bouguer_p">Bouguer</persName> did on<lb break="yes"/>Corazon. They ascended to the<lb break="yes"/>height of 3036 toises above the level<lb break="yes"/>
+                    <cb/> of the Pacific Ocean, where the<lb break="yes"/>blood issued from their eyes, lips,<lb break="yes"/>and gums, and where they experien-<lb break="no" />ced a cold not indicated by the ther-<lb break="no"/>mometer, but which arose from the<lb break="yes"/>little caloric disengaged during the<lb break="yes" />inspiration of air so much rarefied.<lb break="yes"/>A fissure eighty toises in depth and<lb break="yes"/>of great breadth prevented them from<lb break="yes" />reaching the top of Chimborazo when<lb break="yes"/>they were distant from it only about<lb break="yes"/>224 toises.</p>
+                <lb break="yes"/>
+                <p>During his residence at Quito,<lb break="yes"/>M. <persName key="humboldt_av" >Humboldt</persName> received a letter from<lb break="yes"/>the French National Institute, in-<lb break="no"/>forming him that Captain <persName key="baudin_tn">Baudin</persName>
+                    <lb break="yes"/>had set out for New Holland, pur-<lb break="no"/>suing an easterly course by the Cape<lb break="yes"/>of Good Hope. He found it neces-<lb break="no"/>sary, therefore, to give up all idea of<lb break="yes"/>joining him, though our travellers<lb break="yes"/>had entertained this hope for thirteen<lb break="yes"/>months, by which means they lost<lb break="yes" />the advantage of an easy passage<lb break="yes"/>from the Havannah to Mexico and<lb break="yes"/>the Philippines. It had made them<lb break="yes"/>travel by sea and by land more than a<lb break="yes"/>thousand leagues to the south, expo-<lb break="no"/>sed to every extreme of temperature,<lb break="yes" />from summits covered with perpetual<lb break="yes"/>snow to the bottom of those pro-<lb break="no"/>found ravines where the thermometer<lb break="yes" />stands night and day between 25°<lb break="yes"/>and 31° of <persName key="reaumur_rafd">Reaumur</persName>. But, accus-<lb break="no"/>tomed to disappointments of every<lb break="yes"/>kind, they readily consoled themselves<lb break="yes"/>on account of their fate. They were<lb break="yes"/>once more sensible that man must<lb break="yes"/>depend only on what can be produ-<lb break="no"/>ced by his own energy; and <persName key="baudin_tn">Baudin&#x2019;s</persName>
+                    <lb break="yes"/>voyage, or rather the false intelli-<lb break="no"/>gence of the direction he had taken,<lb break="yes"/>made them traverse immense coun-<lb break="no"/>tries towards which no naturalist<lb break="yes"/>perhaps would otherwise have turned<lb break="yes"/>his researches. M. <persName key="humboldt_av">Humboldt</persName> being<lb break="yes"/>then resolved to pursue his own ex-<lb break="no"/>pedition, proceeded from Quito to-<lb break="no"/>wards the <placeName key="amazonas">river Amazon</placeName> and Lima,<lb break="yes"/>with a view of making the important<lb break="yes" />observation of the transit of Mercury<lb break="yes"/>over the sun&#x2019;s disk.</p>
+                <lb break="yes"/>
+                <pb n="756" facs="#f0004"/>
+                <cb/>
+                <p>Our travellers first visited the ruins<lb break="yes"/>of Lactacunga, Hambato, and Rio-<lb break="no"/>bamba, a district convulsed by the<lb break="yes" />dreadful earthquake of the year 1797.<lb break="yes"/>They passed through the snows of<lb break="yes"/>
+                    <placeName key="assuay">Assonay</placeName> to Cuenca, and thence with<lb break="yes"/>great difficulty, on account of the<lb break="yes"/>carriage of their instruments and<lb break="yes"/>packages of plants, by the Paramo<lb break="yes"/>of Saraguro to Loxa. It was here,<lb break="yes"/>in the forests of Gonzamana and<lb break="yes"/>Malacates, that they studied the va-<lb break="no"/>luable tree which first made known<lb break="yes"/>to man the febrifuge qualities of<lb break="yes"/>cinchona. The extent of the terri-<lb break="no"/>tory which their travels embraced,<lb break="yes"/>gave them an advantage never before<lb break="yes"/>enjoyed by any botanist, namely,<lb break="yes"/>that of comparing the different kinds<lb break="yes"/>of cinchona of Santa Fe, Popayan,<lb break="yes"/>Cuenca, Loxa, and Jaen, with the<lb break="yes"/>
+                    <hi rendition="#i">cuspa</hi> and <hi rendition="#i">cuspare</hi> of Cumana and<lb break="yes"/>Rio Carony, the latter of which,<lb break="yes"/>named improperly <hi rendition="#i">Cortex angustur&#x00E6;,</hi>
+                    <lb break="yes"/>appears to belong to a new genus of<lb break="yes"/>the <hi rendition="#i">pentandria monogynia,</hi> with alter-<lb break="no"/>nate leaves.</p>
+                <lb break="yes"/>
+                <p>From Loxa they entered Peru by<lb break="yes"/>
+                    <placeName key="ayabaca">Ayavaca</placeName> and Gouncabamba, traver-<lb break="no"/>sing the high summit of the <placeName key="anden" >Andes</placeName>,<lb break="yes"/>to proceed to the <placeName key="amazonas">river Amazon</placeName>.<lb break="yes"/>They had to pass thirty-five times in<lb break="yes"/>the course of two days the river<lb break="yes"/>Chamaya, sometimes on a raft, and<lb break="yes"/>sometimes by fording. They saw<lb break="yes"/>the superb remains of the causeway<lb break="yes"/>of Ynga, which may be compared to<lb break="yes"/>the most beautiful causeways in<lb break="yes"/>France and Spain, and which pro-<lb break="no"/>ceeds on the porphyritic ridge of the<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName>, from Cusco to <placeName key="assuay" >Assonay</placeName>, and<lb break="yes"/>is furnished with <hi rendition="#i">Cambo</hi> (inns) and<lb break="yes"/>public fountains. They then em-<lb break="no"/>barked on a raft of <hi rendition="#i">ochroma,</hi> at the<lb break="yes"/>small Indian village of Chamaya, and<lb break="yes" />descended by the river of the same<lb break="yes"/>name, to that of <placeName key="amazonas">the Amazons</placeName>, de-<lb break="no"/>termining, by the culmination of se-<lb break="no"/>veral stars, and by the difference of<lb break="yes"/>time, the astronomical position of<lb break="yes"/>that confluence.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="lacondamine_cmd">La Condamine</persName>, when he returned<lb break="yes"/>
+                    <cb/> from Quito to Para and to France,<lb break="yes"/>embarked on the <placeName key="amazonas">river Amazon</placeName> only<lb break="yes" />below Quebrada de Chucunga; he<lb break="yes"/>therefore observed the longitude only<lb break="yes"/>at the mouth of the Rio Nape. M.<lb break="yes"/>
+                    <persName key="humboldt_av">Humboldt</persName> endeavoured to supply<lb break="yes"/>this deficiency in the beautiful chart<lb break="yes"/>of the French astronomer, navigating<lb break="yes"/>the <placeName key="amazonas" >river Amazon</placeName> as far as the cata-<lb break="no"/>racts of Rentema, and forming at<lb break="yes"/>Tomependa, the capital of the pro-<lb break="no"/>vince of Jaen de Bracamorros, a de-<lb break="no"/>tailed plan of that unknown part of<lb break="yes"/>the Upper Maranon, both from his<lb break="yes"/>own observations and the information<lb break="yes"/>obtained from Indian travellers. M.<lb break="yes"/>
+                    <persName key="bonpland_ajag">Bonpland</persName>, in the mean time, made an<lb break="yes"/>interesting excursion to the forests<lb break="yes"/>around the town of Jaen, where he<lb break="yes"/>discovered new species of cinchona;<lb break="yes"/>and after greatly suffering from the<lb break="yes"/>scorching heat of these solitary dis-<lb break="no"/>tricts, and admiring a vegetation rich<lb break="yes"/>in new species of <hi rendition="#i">Jucquinia, Godoya,<lb break="yes"/>Porteria, <persName key="bougainville_lad" >Bougainvillea</persName>, Colletia,</hi> and<lb break="yes"/>
+                    <hi rendition="#i">Pisonia,</hi> our three travellers crossed<lb break="yes" />for the fifth time the cordillera of<lb break="yes"/>the <placeName key="anden">Andes</placeName> by Montan, in order to<lb break="yes"/>return to Peru.</p>
+                <lb break="yes"/>
+                <p>They fixed the point where <persName key="borda_jcd">Borda&#x2019;s</persName>
+                    <lb break="yes"/>compass indicated the zero of the<lb break="yes"/>magnetic inclination, though at seven<lb break="yes"/>degrees of south latitude. They ex-<lb break="no"/>amined the mines of Hualguayoc,<lb break="yes"/>where native silver is found in large<lb break="yes"/>masses at the height of 2000 toises<lb break="yes"/>above the level of the sea, in mines,<lb break="yes" />some metalliferous veins of which con-<lb break="no"/>tain petrified shells, and which, with<lb break="yes"/>those of Huontajayo, are at present<lb break="yes"/>the richest of Peru. From Caxamar-<lb break="no"/>ca, celebrated by its thermal waters,<lb break="yes"/>and by the ruins of the palace of<lb break="yes"/>
+                    <persName key="atahualpa">Atahualpa</persName>, they descended to Trux-<lb break="no"/>illo, in the neighbourhood of which<lb break="yes"/>are found vestiges of the immense<lb break="yes"/>Peruvian city of Mansische, orna-<lb break="no"/>mented with pyramids, in one of<lb break="yes"/>which was discovered, in the eigh-<lb break="no"/>teenth century, hammered gold to<lb break="yes"/>the value of more than 150,000l.<lb break="yes"/>sterling.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">On</fw>
+                <lb break="yes"/>
+                <pb n="757" facs="#f0005"/>
+                <cb/>
+                <p>On this western declivity of the<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName> our travellers enjoyed, for the<lb break="yes"/>first time, the striking view of the<lb break="yes"/>Pacific Ocean; and from that long<lb break="yes"/>and narrow valley, the inhabitants of<lb break="yes"/>which are unacquainted with rain or<lb break="yes" />thunder, and where, under a happy<lb break="yes"/>climate, the most absolute power,<lb break="yes"/>and that most dangerous to man,<lb break="yes" />theocracy itself, seems to imitate the<lb break="yes"/>beneficence of nature.</p>
+                <lb break="yes"/>
+                <p>From Truxillo they followed the<lb break="yes"/>dry coasts of the South Sea, former-<lb break="no"/>ly watered and rendered fertile by<lb break="yes" />the canals of the Yuga; nothing of<lb break="yes"/>which remains but melancholy ruins,<lb break="yes"/>When they arrived, by Santa and<lb break="yes" />Guarmey, at Lima, they remained<lb break="yes"/>some months in that interesting capi-<lb break="no"/>
+                    <cb/> tal of Peru, the inhabitants of which<lb break="yes"/>are distinguished by the vivacity of<lb break="yes"/>their genius and the liberality of<lb break="yes"/>their sentiments. M. <persName key="humboldt_av" >Humboldt</persName> had<lb break="yes"/>the happiness of observing, in a pret-<lb break="no"/>ty complete manner, at the port of<lb break="yes" />Callao at Lima, the end of the tran-<lb break="no"/>sit of Mercury; a circumstance the<lb break="yes"/>more fortunate, as the thick fog<lb break="yes" />which prevails at that season often<lb break="yes"/>prevents the sun&#x2019;s disk from being<lb break="yes"/>seen for twenty days. He was asto-<lb break="no" />nished to find in Peru, at so immense<lb break="yes"/>a distance from Europe, the newest<lb break="yes"/>literary productions in chemistry,<lb break="yes" />mathematics, and physiology; and he<lb break="yes"/>admired the great intellectual activi-<lb break="no"/>ty of a people whom the Europeans<lb break="yes"/>accuse of indolence and luxury.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

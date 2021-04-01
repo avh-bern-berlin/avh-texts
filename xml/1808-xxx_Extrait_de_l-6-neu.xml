@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="237" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">Vaccine Inoculation in Mexico.</hi>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">T</hi>
+                    <hi rendition="#k">he</hi> important discovery of Dr. Jenner, which enables us<lb break="yes"/>to subdue one of the most dreadful diseases to which mankind<lb break="yes"/>is liable, has, in common with other valuable discoveries<lb break="yes"/>encountered its full share of opposition and prejudice; and it<lb break="yes"/>is a singular fact, that in the very country in which the bene-<lb break="no"/>fits of the vaccine inoculation were first exhibited, the small-<lb break="maybe"/>pox in particular districts still rages, and even in the metro-<lb break="no"/>polis is sweeping away no inconsiderable portion of its inhabi-<lb break="no"/>tants. Is it not astonishing that any scientific man could be<lb break="yes"/>guilty of aiding the fatal havock of a devouring scourge, by<lb break="yes"/>persisting in inoculating for the small-pox, in spite of the<lb break="yes"/>strongest evidence of facts? and yet it is done daily and pub-<lb break="no"/>licly; but in the name of common feeling and common sense,<lb break="yes"/>if any one can reconcile his mind to the exposure of his child<lb break="yes"/>to the peril of the small-pox, let him take the utmost care that<lb break="yes"/>the contagion be confined within the limit of his own circle:<lb break="yes"/>in other countries there has been less of this unaccountable<lb break="yes"/>prejudice; and we extract with pleasure, from <persName key="humboldt_av">Humboldt</persName>&#x2019;s<lb break="yes" />Travels, the following account of the introduction of vacci-<lb break="no" />nation into Mexico.</p>
+                <lb break="yes"/>
+                <p>The small-pox, introduced since 1520, appears only to<lb break="yes"/>exercise its ravages every seventeen or eighteen years. In<lb break="yes"/>the equinoctial regions, it has, like the black vomiting, and<lb break="yes" />several other diseases its fixed periods, to which it is very<lb break="yes" />regularly subjected. We might say, that in these countries<lb break="yes"/>the disposition for certain <hi rendition="#i">miasmata</hi> is only renewed in the<lb break="yes"/>natives at long intervals; for though the vessels from Europe<lb break="yes"/>frequently introduce the germ of the small-pox, it never<lb break="yes"/>becomes epidemical but after very marked intervals; a singu-<lb break="no"/>lar circumstance, which renders the disease so much the more<lb break="yes"/>dangerous for adults. The small-pox committed terrible<lb break="yes"/>ravages, in 1763, and especially in 1779, in which year it<lb break="yes"/>carried off in the capital of Mexico alone, more than nine<lb break="yes"/>thousand persons. Every evening, tumbrels passed through<lb break="yes"/>the streets to receive the corpses, as at Philadelphia during<lb break="yes"/>the yellow fever. A great part of the Mexican youth was<lb break="yes"/>cut down that year.</p>
+                <lb break="yes"/>
+                <pb n="238" facs="#f0002"/>
+                <p>The <hi rendition="#i">epidemic</hi> of 1797 was less destructive, chiefly owing to<lb break="yes"/>the zeal with which inoculation was propagated in the environs<lb break="yes"/>of Mexico, and in the bishopric of Mechoachan. In the<lb break="yes"/>capital of this bishopric, the city of Valladolid, of 6800 indi-<lb break="no"/>viduals inoculated, only 170, or two and a half per cent. died;<lb break="yes"/>and we must also observe, that several of those who perished<lb break="yes"/>were inoculated at a time when they were probably already in-<lb break="no"/>fected in the natural manner. Fifteen in the hundred died, of<lb break="yes"/>individuals of all ages, who without being inoculated, were<lb break="yes"/>victims of the natural small-pox. Several individuals, par-<lb break="no"/>ticularly among the clergy, displayed at that period a very<lb break="yes"/>praise-worthy patriotism, in arresting the progress of the<lb break="yes"/>disease by inoculation. I shall merely mention the names of<lb break="yes"/>two enlightened men, M. de Reano, intendant of Guanaxuato,<lb break="yes"/>and Don Manuel Abad, penitentiary canon of the cathedral<lb break="yes"/>of Valladolid, whose generous and disinterested views were<lb break="yes"/>constantly directed towards the public good. There were<lb break="yes"/>then inoculated in the kingdom between fifty and 60,000<lb break="yes"/>individuals. But in the month of January, 1804, the vac-<lb break="no"/>cine inoculation was even introduced at Mexico through the<lb break="yes"/>activity of a respectable citizen, Don <persName key="murphy_t">Thomas Murphy</persName>, who<lb break="yes"/>brought several times the <hi rendition="#i">virus</hi> from <placeName key="nordamerika">North America</placeName>. This<lb break="yes"/>introduction found few obstacles; the cow-pox appeared<lb break="yes"/>under the aspect of a very trivial malady, and the small-pox<lb break="yes"/>inoculation had already accustomed the Indians to the idea<lb break="yes"/>that it might be useful to submit to a temporary evil for the<lb break="yes"/>sake of evading a greater evil. If the vaccine inoculation,<lb break="yes"/>or even the ordinary inoculation, had been known in the new<lb break="yes"/>world in the sixteenth century, several millions of Indians<lb break="yes"/>would not have perished victims to the small-pox, and par-<lb break="no"/>ticularly to the absurd treatment by which the disease was<lb break="yes"/>rendered so fatal. To this disease the fearful diminution of<lb break="yes"/>the numbers of Indians in California is to be ascribed. The<lb break="yes"/>ships of war commissioned to carry the vaccine matter into<lb break="yes"/>
+                    <placeName key="amerika">America</placeName> and <placeName key="asien" >Asia</placeName>, arrived at Vera Cruz shortly after my<lb break="yes" />arrival. Don Antonio Valmis, physician-general of this<lb break="yes" />expedition, visited Porto Rico, Cuba, Mexico, and the Phi-<lb break="no" />lippine Islands; and his stay at Mexico, where, nevertheless,<lb break="yes" />the cow-pox was known before his arrival, contributed singu-<lb break="no" />larly to facilitate the propagation of this salutary preservative.<lb break="yes"/>In the principal cities of the kingdom, vaccine committees<lb break="yes"/>were formed <hi rendition="#i">(juntas centrales),</hi> composed of the most<lb break="yes"/>enlightened individuals, who, by vaccinating monthly, pre-<lb break="no"/>serve the <hi rendition="#i" >miasma</hi> from being lost. It is so much the less liable<lb break="yes"/>
+                    <pb n="239" facs="#f0003"/> to be lost, as it exists in the country. M. Valmis discovered<lb break="yes"/>it in the environs of Valladolid, and in the village of <placeName key="atlisco">Atlisco</placeName>,<lb break="yes"/>near la Puebla, in the udders of the Mexican cows. The com-<lb break="no"/>mission having fulfilled the beneficent views of the king of<lb break="yes"/>Spain, we may indulge a hope, that through the influence of<lb break="yes"/>the clergy, and especially of the religious missionaries, vaccin-<lb break="no"/>ation will be gradually introduced into the very interior of the<lb break="yes"/>country. The voyage of M. Valmis will thus remain for ever<lb break="yes"/>memorable in the annals of history. The Indians saw for the<lb break="yes"/>first time those vessels, which were formerly freighted only<lb break="yes"/>with instruments of carnage and destruction, bearing about<lb break="yes"/>the germ of relief and consolation to distressed and suffering<lb break="yes"/>humanity. The arrival of the armed frigates, in which<lb break="yes"/>M. Valmis made the circuit of the <placeName key="atlantik">Atlantic</placeName>, and Pacific<lb break="yes" />oceans, gave rise on several coasts to one of the most simple,<lb break="yes" />and therefore most affecting ceremonies. The bishops, mili-<lb break="no" />tary governors, and persons of greatest distinction, repaired<lb break="yes" />to the shore, where they took in their arms the children, who<lb break="yes" />were to carry the cow-pox to the indigenous Americans, and<lb break="yes"/>the Malays of the Philippine Islands; and, followed with pub-<lb break="no"/>lic acclamations, they laid at the foot of the altar those preci-<lb break="no"/>ous preservative deposits, returning thanks to the Supreme<lb break="yes"/>Being for having been the witnesses of so happy an event.<lb break="yes"/>We must have some knowledge of the ravages occasioned<lb break="yes"/>by the small-pox in the Torrid Zone, and especially among<lb break="yes"/>a race of men whose physical constitution seems adverse to<lb break="yes"/>cutaneous eruptions, in order to feel all the importance of<lb break="yes"/>M. Jenner&#x2019;s discovery. It is a much greater blessing for<lb break="yes"/>the equinoctial part of <placeName key="amerika">the new continent</placeName>, than for the tempe-<lb break="no"/>rate climate of the old.</p>
+                <lb break="yes"/>
+                <p>It may be useful to relate here a fact of some importance,<lb break="yes"/>for those who take an interest in the progress of vaccination.<lb break="yes"/>It was unknown at Lima till the month of November, 1802.<lb break="yes"/>At that period the small-pox prevailed on the coast of the<lb break="yes"/>South Sea. A merchant vessel, Santo Domingo de la Cal-<lb break="no"/>zada, put into Lima on the passage from Spain to Manilla:<lb break="yes"/>an individual had had the good sense to send by this vessel<lb break="yes"/>vaccine matter to the Philippine Islands: they availed<lb break="yes"/>themselves of this opportunity at Lima; and M. Unanue,<lb break="yes"/>professor of anatomy, and author of an excellent physiologi-<lb break="no"/>cal treatise on the climate of Peru, vaccinated several indivi-<lb break="no"/>duals by means of the matter brought by the merchant ves-<lb break="no"/>sel: no pustule appeared; and the <hi rendition="#i">virus</hi> appeared either<lb break="yes"/>altered or too weak; however, M. Unanue having observed<lb break="yes"/>
+                    <pb n="240" facs="#f0004"/> that all the vaccinated individuals had a very mild small-pox,<lb break="yes"/>employed this variolous matter, to render, if possible, by the<lb break="yes"/>ordinary inoculation, the disease less fatal: he thus perceived,<lb break="yes"/>in an indirect way, the effects of a vaccination supposed to<lb break="yes"/>have failed. It was accidently discovered in the course of<lb break="yes"/>the same <hi rendition="#i" >epidemic</hi> in 1802, that the beneficent effect of vacci-<lb break="no" />nation had been long known to the country people among the<lb break="yes" />Peruvian <placeName key="anden">Andes</placeName>: a negro slave had been inoculated for the<lb break="yes"/>small-pox in the house of the <persName key="valleumbroso_md">Marquis de Valleumbroso</persName>, who<lb break="yes" />shewed no symptom of the disease: they were going to repeat<lb break="yes" />the inoculation, when the young man told them, that he<lb break="yes"/>was certain of never having the small-pox, because, in milk-<lb break="no"/>ing cows in the Cordillera of the <placeName key="anden">Andes</placeName>, he had had a sort of<lb break="yes"/>cutaneous eruption, caused, as the Indian herdsmen said, by<lb break="yes"/>the contact of certain tubercles, sometimes found on the ud-<lb break="no"/>ders of cows: those who have had this eruption, said the<lb break="yes"/>negro, never take the small-pox. The Africans, and especi-<lb break="no"/>ally the Indians, display great sagacity in observing the<lb break="yes"/>character, habits, and diseases of the animals with which they<lb break="yes"/>live: we need not therefore be astonished, that, on the intro-<lb break="no"/>duction of horned cattle into <placeName key="amerika" >America</placeName>, the lower people<lb break="yes"/>remarked, that the pustules on the udders of cows, communi-<lb break="no"/>cated to the herdsmen a species of benignant small-pox, and<lb break="yes"/>that those once infected, are secure from the general conta-<lb break="no"/>gion during the epochs when the disease is epidemical.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

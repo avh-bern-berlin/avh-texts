@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="2.2.0" when="2019-11-30" who="#wernicke_nd">Text constitution. Validation. <note type="remarkRevision">Letzte zwei Absätze getilgt, da offenbar nicht zum Text zugehörig. Erneute Validierung.</note>
+                </change>
+                <change n="1.1.0" when="2019-06-03" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="#f0001"/>
+            <p>&#x201C;Athen&#x00E6;um&#x201D; meddeler folgende<lb break="yes"/>Brev, dat. Berlin den 4de Marts, fra Alexander<lb break="yes"/>v. Humboldt til den beromte Sir Roderich Murchi-<lb break="no"/>&#x017F;on angaaende Leopol v. Buchs Dod; Originalen<lb break="yes"/>er, &#x017F;om det &#x017F;ynes, &#x017F;kreven paa Fran&#x017F;k: &#x201C;At det<lb break="yes"/>&#x017F;kulde blive til&#x017F;kikket mig, en 83aarig Olding, at<lb break="yes"/>melde Dem, dyrebare Sir Roderich, en &#x017F;aa &#x017F;orge-<lb break="no"/>lig Begivenhed, Dem, for hvem Leopold v. Buth<lb break="yes"/>noerede et &#x017F;aa omt Ven&#x017F;kab, &#x017F;aavel&#x017F;om de Mange,<lb break="yes"/>der i England beundrede hans Geni, hans moegtige<lb break="yes"/>Aandsfrembringel&#x017F;er og hans &#x00E6;dle Charakteer! Han<lb break="yes"/>berovedes os imorges ved en Nervefeber. Endnu<lb break="yes"/>den 26de f. M. var han, trods Sneen og Af&#x017F;tan-<lb break="no" />den imellem vore Boliger, hjemme hos mig og pas-<lb break="no"/>fiarede om Geologien. Samme Aften gik han i<lb break="yes"/>Sel&#x017F;kab; om Sondagen og Mandagen klagede han<lb break="yes"/>over Feber og troede, at den hidrorte fra en &#x017F;tor<lb break="yes"/>Fro&#x017F;iknude, hvoraf han havde lidt i nogle Aar.<lb break="yes"/>Inflammationen nodvendiggjorde Brugen af Igler;<lb break="yes"/>men Smerten og Feberen tog til. Han laa maal-<lb break="no"/>los i 38 Timer. Han dode omgiven af &#x017F;ine Ven-<lb break="no"/>ner, af hvilke Stor&#x017F;tedelen ikke vid&#x017F;te noget om<lb break="yes"/>hans farlige Sygdom for den 2den Marts om Af-<lb break="no"/>tenen. Han og jeg vare knyttede &#x017F;ammen red et<lb break="yes"/>62aarigt Ven&#x017F;kab &#x2014; et Ven&#x017F;kab, &#x017F;om ikke nogen-<lb break="no"/>&#x017F;inde blev afbrudt. Jeg l&#x00E6;rte ham at kjende 1791<lb break="yes"/>i Werners Huus i Freiberg, da jeg kom ind i<lb break="yes"/>Bjergakademiet. Vi vare med hinanden i Italien,<lb break="yes"/>i Schweitz, i Frankrig &#x2014; fire Maaneder i Salz-<lb break="no" />burg. Hr. v. Buch var iffe alene en af &#x017F;in tids be-<lb break="no"/>romte M&#x00E6;nd, han var en Mand med en oedel Sj&#x00E6;l.<lb break="yes"/>Hans Aand lod overalt et Lys&#x017F;por tilbage. Atlid<lb break="yes"/>i Beroring med Naturen kunde han tegne &#x017F;ig det<lb break="yes"/>til Fortjene&#x017F;te, at have udvidet Geologiens Gr&#x00E6;nd-<lb break="no"/>&#x017F;er. Tabet af ham er meget ned&#x017F;laarende for mig<lb break="yes"/>&#x2014; uden ham foler jeg mig een&#x017F;om. Jeg raadforte<lb break="yes"/>mig med ham, &#x017F;om med en Me&#x017F;ter, og hans Kj&#x00E6;r-<lb break="no"/>lighed (&#x017F;aavel&#x017F;om Gay Lus&#x017F;ac&#x2019;s og Arago&#x2019;s, der<lb break="yes"/>og&#x017F;aa vare hans Vrenner) &#x017F;tyrkede mig i mine Ar-<lb break="no"/>beider. Han var fire Aar yngre end jeg, og Intet<lb break="yes"/>lod@mig ane denne Alykke. Det er kun faa Timer<lb break="yes"/>&#x017F;iden Slaget ramte mig, og jeg er ikke i&#x017F;tand til<lb break="yes"/>at &#x017F;krive mere. Skj&#x00E6;nk mig Deres Medlidenhed<lb break="yes"/>og@modtag Bevidnel&#x017F;en af min d@be Hoiagtel&#x017F;e og<lb break="yes"/>Hengivenhed.</p>
+            <closer>
+                <salute>
+                    <hi rendition="#et">Al. Humboldt.&#x201D;</hi>
+                </salute>
+            </closer>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="231" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">Experiments on the Eudiometrical Means, and on the Pro-<lb break="no"/>portion of the Constituent Principles of the Atmosphere.<lb break="yes"/>By Messrs.</hi>
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <persName key="gaylussac_jl">
+                        <hi rendition="#k">Gay-Lussac.</hi>
+                    </persName>
+                    <lb break="yes"/>From the <hi rendition="#k">Journal de Physique.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">I</hi>F philosophers and chemists are at present agreed re-<lb break="no"/>specting the nature of the constituent principles of the<lb break="yes"/>atmosphere, they are not yet so with regard to their<lb break="yes"/>absolute quantity. Since <persName key="scheele_01" >Scheele</persName> and <persName key="lavoisier_ald">Lavoisier</persName>, who<lb break="yes"/>had found twenty-seven hundredths of oxygene in the air,<lb break="yes"/>numerous experiments, for which we are indebted to<lb break="yes"/>
+                    <fw type="catch" place="bottom">Messrs.</fw>
+                    <lb break="yes"/>
+                    <pb n="232" facs="#f0002"/> Messrs. <persName key="cavendish_h" >Cavendish</persName>, <persName key="marti_01">Marti</persName>, <persName key="berthollet_cl">Berthollet</persName>, <persName key="fourcroy_afd" >Fourcroy</persName>, and<lb break="yes"/>Dery, have greatly modified this proportion, by fixing<lb break="yes"/>it at between twenty and twenty-three hundredths. Ne-<lb break="no"/>vertheless it must be admitted that these proportions are<lb break="yes"/>still far remote from that degree of accuracy which the<lb break="yes"/>present state of Science allows of; or, if these limits are<lb break="yes"/>well established, it must be concluded that the atmosphere<lb break="yes"/>experiences considerable oscillations in its composition.<lb break="yes"/>Although with respect to most chemical phenomena, it is<lb break="yes"/>not necessary that we should have an accurate knowledge<lb break="yes"/>of the absolute quantity of its principles, this knowledge<lb break="yes"/>is not less interesting in itself, than important with re-<lb break="no"/>gard to the history of our globe. If all the facts of geo-<lb break="no"/>logy tend to prove that the earth is no more what it has<lb break="yes"/>formerly been; that the highest mountains have been<lb break="yes"/>covered with water, and that the Arctic regions have<lb break="yes"/>nourished animals which at present are to be found only<lb break="yes"/>between the tropics, these very changes prove of what<lb break="yes"/>great utility it would be to future ages actually to ascer-<lb break="no"/>tain the physical state of the globe at the present day;<lb break="yes"/>and even though the grand catastrophes which it has al-<lb break="no"/>ready experienced should never more be reiterated, it is<lb break="yes"/>possible that it may undergo gradual modifications which<lb break="yes"/>man would not be able of himself to appreciate, unless<lb break="yes"/>he found incontestible documents in the annals of science.<lb break="yes"/>It would therefore be of the highest importance to fix in<lb break="yes"/>an authentic manner the grand phenomena of nature,<lb break="yes"/>which are to be supposed subject to variation; such as<lb break="yes"/>the intensity of the magnetic forces, the elevation of the<lb break="yes"/>barometer at the level of the sea, that of the sea itself,<lb break="yes"/>the medium temperature of every climate, and the pro-<lb break="no"/>portion of the constituent principles of the atmosphere.<lb break="yes"/>We have directed our attention to the latter question, and<lb break="yes"/>although we have not yet solved it in a manner entirely<lb break="yes"/>
+                    <fw type="catch" place="bottom">satis-</fw>
+                    <lb break="yes"/>
+                    <pb n="233" facs="#f0003"/> satisfactory to ourselves, we venture to give an account<lb break="yes"/>of the commencement of the investigation which we have<lb break="yes"/>undertaken upon this subject, and the researches to which<lb break="yes"/>it has led us.</p>
+                <lb break="yes"/>
+                <p>But the eudiometrical means which must serve to de-<lb break="no"/>termine the proportions of the constituent principles of<lb break="yes"/>the air are not all susceptible of equal precision, and some<lb break="yes"/>distinguished chemists give the preference to a means<lb break="yes"/>which is rejected by others. It therefore was indispensa-<lb break="no"/>bly necessary that we should put to the trial the known<lb break="yes"/>eudiometrical methods, in order that we might be ena-<lb break="no"/>bled properly to appreciate their value; for we are well<lb break="yes"/>convinced that accuracy in experiments depends less upon<lb break="yes"/>the faithful observation of the divisions of an instrument,<lb break="yes"/>than upon the accuracy of the method itself. Although<lb break="yes"/>the nitrous gas appears indeed at first to be the most un-<lb break="no"/>certain eudiometric means that can be chosen, we have<lb break="yes"/>convinced ourselves that by combining its action with<lb break="yes"/>that of the sulphate of iron, or of the oxygenated muria-<lb break="no"/>tic acid and of potash, it is capable of indicating with<lb break="yes"/>great precision the quantity of oxygene contained in the<lb break="yes"/>air. All the eudiometrical means would give the same<lb break="yes"/>results, if we were equally acquainted with them all, and<lb break="yes"/>it is only because it is very difficult to make all the cor-<lb break="no"/>rections they allow of, that we naturally give the prefer-<lb break="no"/>ence to such as present less occasion for them, although<lb break="yes"/>they are not always the most simple in their use. We<lb break="yes"/>shall therefore first give an account of the eudiometrical<lb break="yes"/>researches with which we have occupied ourselves, and<lb break="yes"/>then apply them to the analysis of the atmospheric air<lb break="yes"/>and of that obtained from water under different circum-<lb break="no"/>stances, or placed in contact with it. We find it neces-<lb break="no"/>sary again to repeat that we shall not treat the question<lb break="yes"/>which we have proposed to ourselves in so extensive a<lb break="yes"/>
+                    <pb n="234" facs="#f0004"/> manner as it merits. Compelled to break off our re-<lb break="no"/>searches before we were able to bring them to their ter-<lb break="no"/>mination, our purpose is only to give an account of their<lb break="yes"/>principal results. During nearly two months since the<lb break="yes"/>time that we commenced them in one of the laboratories<lb break="yes"/>of the Polytechnic-school at Paris, we pursued them, in<lb break="yes"/>spite of the coldness of the weather, which is very dis-<lb break="no"/>agreeable in researches of this kind, with so much the<lb break="yes"/>greater assiduity, as M. <persName key="humboldt_av" >Humboldt</persName> found a peculiar in-<lb break="no"/>terest in them. In the year 6, he had presented to the<lb break="yes"/>Institute two memoirs on the analysis of the air, which<lb break="yes"/>contain a great number of experiments, which he now<lb break="yes"/>considers (it is he himself that avows it) not only as very<lb break="yes"/>inaccurate, but also as very justly controverted by Mr.<lb break="yes"/>
+                    <persName key="davy_h">Davy</persName>, and by a chemist with whose particular friendship<lb break="yes"/>we are both honoured, namely, M. <persName key="berthollet_cl">Berthollet</persName>. Zealous<lb break="yes"/>for the advancement of science, M. <persName key="humboldt_av">Humboldt</persName>, when he<lb break="yes"/>commenced his researches, wished to substitute in the<lb break="yes"/>place of those investigations of his early youth, others<lb break="yes"/>founded upon more solid foundations, and as he desired<lb break="yes"/>to have me for his associate in them; I ought to consider<lb break="yes"/>myself the more highly honoured by his proposition from<lb break="yes"/>our having been, since his return from the tropics, linked<lb break="yes"/>together in the closest bonds of friendship.</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Observations on several of the Eudiometric Means.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>It is not our intention in this memoir to record all the<lb break="yes" />researches which we have undertaken upon different eu-<lb break="no" />diometric means: most of them are still in too imperfect<lb break="yes"/>a state; but having occupied ourselves more particularly<lb break="yes"/>with the alkaline sulphurets, and especially with hydro-<lb break="no"/>gene gas, we shall here exhibit the result of our obser-<lb break="no"/>vations on these two eudiometrical means.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">Although</fw>
+                    <lb break="yes"/>
+                    <pb n="235" facs="#f0005"/>
+                    <p>Although the alkaline sulphurets have in general a suf-<lb break="no" />ficiently-constant action for the analysis of the air, which<lb break="yes"/>has caused them to be justly preferred to the other eudio-<lb break="no"/>metrical means, they nevertheless present some sources of<lb break="yes"/>error, which it is indispensibly necessary we should be<lb break="yes"/>well acquainted with, in order to justify us in placing an<lb break="yes"/>entire confidence in their results. It has long been be-<lb break="no"/>lieved that they have no action upon the azote; and al-<lb break="no"/>though M. <persName key="marti_01">Marti</persName> announced, as early as in the year 1790,<lb break="yes"/>that they absorb this gas, no farther attention has since<lb break="yes"/>been paid to this property. It is true M. <persName key="marti_01">Marti</persName> at the<lb break="yes"/>same time announced, that by saturating them with azote<lb break="yes"/>we might employ them to advantage for the analysis of<lb break="yes"/>the air, and constantly obtain for the oxygene a propor-<lb break="no"/>tion comprehended between 0.21 and 0.23. On the other<lb break="yes"/>hand, this chemist not having indicated the details of his<lb break="yes"/>experiment with sufficient precision, M. <persName key="berthollet_cl">Berthollet</persName>, who<lb break="yes"/>repeated it after him under different circumstances, an-<lb break="no"/>nounced in his Chemical Statics, that he had not found<lb break="yes"/>the alkaline sulphurets to possess the property of absorb-<lb break="no"/>ing azote, whereby he gave new sanction to their em-<lb break="no"/>ployment for the analysis of the air. When we began to<lb break="yes"/>employ this means we placed great confidence in it, and<lb break="yes"/>had nothing to object to it but the great length of time<lb break="yes"/>which it requires, and which had long rendered it a de-<lb break="no"/>sirable object that, notwithstanding its accuracy, some<lb break="yes"/>other might be substituted in its place that were not at-<lb break="no"/>tended with the same inconveniences; but we soon dis-<lb break="no"/>covered that it did not always act in an uniform manner,<lb break="yes"/>and herein we were favoured by accident.</p>
+                    <lb break="yes"/>
+                    <p>Having placed 100 parts of atmospheric air in contact<lb break="yes"/>with a solution of sulphuret of potash, made with hot<lb break="yes"/>water, in three vessels of unequal capacities, we observed<lb break="yes"/>at the end of eight days that the air had lost twenty-three<lb break="yes"/>parts of its volume in one of the vessels, and 23,6 26,0<lb break="yes"/>
+                        <fw type="catch" place="bottom">in</fw>
+                        <lb break="yes"/>
+                        <pb n="236" facs="#f0006"/> in the two others. This great inequality gave us at first<lb break="yes"/>much surprise; but having remarked that the absorption<lb break="yes"/>had been most considerable in the largest flask, we sus-<lb break="no"/>pected that azote had been absorbed, and, in order the<lb break="yes"/>better to confirm our suspicion, we repeated the same<lb break="yes"/>experiment, employing two vessels more unequal in ca-<lb break="no"/>pacity, but otherwise placed in the same circumstances.<lb break="yes"/>At the end of ten days we found that in the small flask<lb break="yes"/>the absorption had been only 22,5 parts, whilst in the<lb break="yes"/>large one it was 30,6. But the most decisive experi-<lb break="no"/>ment which we made on this subject, was the placing of<lb break="yes"/>a solution of sulphuret of potash, which had been heated<lb break="yes"/>to ebullition, in contact with azote in unequal vessels,<lb break="yes"/>when it was discovered that the absorption was propor-<lb break="no"/>tionate to their capacities. It would therefore be possi-<lb break="no"/>ble to cause a determinate quantity of atmospheric air to<lb break="yes"/>be absorbed by a solution of alkaline sulphuret, and to<lb break="yes"/>make it be considered as pure oxygene, if it were sup-<lb break="no"/>posed that the whole diminution of volume were owing<lb break="yes"/>to the oxygene gas. But if, instead of employing a<lb break="yes"/>solution of sulphuret made with hot water, we em-<lb break="no"/>ploy one made with cold, as M. <persName key="berthollet_cl" >Berthollet</persName> has always<lb break="yes"/>done, the solution of the azote takes place no longer, at<lb break="yes"/>least not in a perceptible manner, and the results of the<lb break="yes"/>analysis of the air made by this means become then much<lb break="yes"/>more susceptible of comparison. This variable action of<lb break="yes"/>the alkaline sulphurets, dissolved at different tempera-<lb break="no"/>tures, requires to be farther elucidated, which we are<lb break="yes"/>about to do by citing phenomena of an analogous but<lb break="yes"/>more comprehensible nature.</p>
+                    <lb break="yes"/>
+                    <p>As water always holds in solution a certain quantity of<lb break="yes"/>air in which the proportion of oxygene is more consider-<lb break="no"/>able than it is in the atmospheric air, it happens that<lb break="yes"/>when we heat it, or dissolve a salt in it, a part of its air is<lb break="yes" />disengaged from it whilst another is retained, which may<lb break="yes"/>
+                        <fw type="catch" place="bottom">be</fw>
+                        <lb break="yes"/>
+                        <pb n="237" facs="#f0007"/> be separated from it by a more intense heat. If, there-<lb break="no"/>fore, we place this water, which has been deprived of its<lb break="yes"/>air by the last-mentioned means in contact with atmos-<lb break="no"/>pheric air, it will absorb, in returning to its original<lb break="yes"/>temperature, a quantity equal to that which it has lost;<lb break="yes"/>and if we were not aware of this absorption, but judged<lb break="yes"/>upon appearances, we should suppose that the water<lb break="yes"/>alone, or charged with salt, had made the analysis of the<lb break="yes"/>air. Thus M. Hetter has very recently announced that<lb break="yes"/>a solution of muriate of soda absorbed all the oxygene of<lb break="yes"/>the air, though on repeating his experiment with a<lb break="yes"/>highly-charged solution of the same salt, but made with<lb break="yes"/>cold water, we did not find the slightest difference be-<lb break="no"/>tween the ordinary atmospheric air and that which had<lb break="yes"/>been in contact with the solation of muriate of soda for<lb break="yes"/>a month and a half.</p>
+                    <lb break="yes"/>
+                    <p>The very same thing happens with a sulphuret as with<lb break="yes"/>a salt. At the moment of its solution in water, a portion<lb break="yes"/>of air is expelled, and an equilibrium of saturation is<lb break="yes"/>established between the water, the sulphuret, and the air<lb break="yes"/>which it holds in solution, so that if the circumstances<lb break="yes"/>are not changed, there is now no reason why it should<lb break="yes"/>absorb a fresh quantity of air; but if we heat the solu-<lb break="no"/>tion, there is disengaged from it a part of the gas which<lb break="yes"/>it contained, and, in returning to its original tempera-<lb break="no"/>ture, it is necessary that it absorb what it had lost, in or-<lb break="no"/>der that its equilibrium may be re-established <note place="foot" n="*">The absorption of which we mean to speak in this place is inde-<lb break="no"/>pendent of that of oxygene by the sulphuret, which is thereby con-<lb break="no"/>verted into sulphate. But as the sulphuret absorbs the oxygene<lb break="yes" />which the water holds in solution, it will very probably happen that<lb break="yes"/>the water will be able to absorb a larger quantity of azote; so that if<lb break="yes"/>we employed a solution made with cold water, and very recently pre-<lb break="no"/>pared, there would be a still greater diminution of volume than that<lb break="yes" />which is owing to the absorption of the oxygene. We say <hi rendition="#i">very proba-<lb break="no"/>bly</hi>; for we have not yet made the experiment.</note>. We<lb break="yes"/>
+                        <fw type="catch" place="bottom">think,</fw>
+                        <lb break="yes"/>
+                        <pb n="238" facs="#f0008"/> think, therefore, that the difference between the results<lb break="yes"/>of Messrs. <persName key="marti_01" >Marti</persName> and <persName key="berthollet_cl" >Berthollet</persName> may be explained by the<lb break="yes" />difference of the circumstances under which they ope-<lb break="no" />rated; but it appears to us, that M. <persName key="marti_01" >Marti</persName> believed<lb break="yes"/>that it was the nature of the sulphuret to absorb azote,<lb break="yes"/>whereas it does not absorb it all, but rather prevents the<lb break="yes"/>water with which it has been boiled from absorbing as<lb break="yes"/>much as it would do without it.</p>
+                    <lb break="yes"/>
+                    <p>Thus if we take care to dissolve the sulphurets in cold<lb break="yes" />water, and leave them for some time in contact with azote<lb break="yes" />or with air, we may employ them with advantage for the<lb break="yes" />analysis of the atmosphere. We shall however observe,<lb break="yes"/>that as they are attended with the inconvenience of re-<lb break="no"/>quiring a great length of time before their action is com-<lb break="no"/>pleted, we are obliged to have recourse to the correc-<lb break="no"/>tions of the thermometer and barometer, which often are<lb break="yes"/>very uncertain. The best way of remedying this incon-<lb break="no"/>venience is undoubtedly to follow the method of Messrs.<lb break="yes"/>
+                        <persName key="berthollet_cl">Berthollet</persName> and <persName key="marti_01">Marti</persName>, which consists in placing, for com-<lb break="no"/>parison, upon water a determinate quantity of air, in<lb break="yes"/>order to judge, from its variations of volume, of that of<lb break="yes"/>the air which we analyze; but this method has not ap-<lb break="no"/>peared to us to be attended in practice with all the ad-<lb break="no"/>vantage which it seems to promise.</p>
+                    <lb break="yes"/>
+                    <p>We must still remark with regard to all the eudiome-<lb break="no"/>trical means, where the absorbing substance is solid or<lb break="yes"/>liquid, that if we commit an error, either in observing<lb break="yes"/>the divisions of the instrument, or in the appreciation of<lb break="yes"/>the uncertainties of the method, this error necessarily<lb break="yes"/>falls altogether upon the quantity of oxygene; and since<lb break="yes"/>with all possible exactness we cannot answer for its<lb break="yes"/>amounting to much less than a hundredth part, it would<lb break="yes"/>follow that the proportion of oxygene contained in the<lb break="yes"/>air cannot be determined within this quantity. In fact,<lb break="yes"/>we find that chemists who have employed such means<lb break="yes"/>
+                        <fw type="catch" place="bottom">have</fw>
+                        <lb break="yes"/>
+                        <pb n="239" facs="#f0009"/> have found very considerable variations in the quantity of<lb break="yes"/>oxygene of the air; and M. <persName key="marti_01">Marti</persName> himself, who appears to<lb break="yes" />have made a great number of experiments with the alcaline<lb break="yes" />sulphurets, and who was acquainted with the precautions<lb break="yes" />which they require, fixes it between 0,21 and 0,23. We<lb break="yes" />shall see hereafter that the eudiometrical means, in which<lb break="yes" />the substance which combines with the oxygene is gase-<lb break="no"/>ous, admit of a much greater precision.</p>
+                    <lb break="yes"/>
+                    <p>As we had proposed to ourselves from the commence-<lb break="no"/>ment of our investigation, to ascertain whether the eudi-<lb break="no"/>ometer of <persName key="volta_agv">Volta</persName> was fit to be employed for the analysis<lb break="yes"/>of the air, we principally directed our attention to it.<lb break="yes"/>This instrument has been accused of being fallacious, of<lb break="yes"/>indicating too small quantities of oxygene in the air;<lb break="yes"/>but it appeared to us that supposing it required correc-<lb break="no"/>tions, we might by appreciating them, as well as the<lb break="yes"/>law of their variations, render it very exact and conve-<lb break="no"/>nient. With this view we proposed to ourselves the fol-<lb break="no"/>lowing questions:</p>
+                    <lb break="yes"/>
+                    <p>1. When a mixture of hydrogene gas and oxygene gas<lb break="yes"/>is inflamed in <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer, can the absorption of<lb break="yes"/>one of the gases be complete?</p>
+                    <lb break="yes"/>
+                    <p>2. Is the product of their combination of a constant<lb break="yes" />nature?</p>
+                    <lb break="yes"/>
+                    <p>3. What is the exact proportion of the two gases for<lb break="yes"/>forming water?</p>
+                    <lb break="yes"/>
+                    <p>4. What are the limits of error that <persName key="volta_agv" >Volta&#x2019;s</persName> eudiometer<lb break="yes"/>admits?</p>
+                    <lb break="yes"/>
+                    <p>We must examine these four questions in succession,<lb break="yes"/>but first of all we think it incumbent upon us to give an<lb break="yes"/>account of the manner in which we prepared the gases<lb break="yes"/>which we employed in our experiments.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#k">to be continued in our next</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb n="303" facs="#f0010"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Experiments on the Eudiometrical Means, and on the Pro-<lb break="no"/>portion of the Constituent Principles of the Atmosphere.<lb break="yes"/>By Messrs.</hi>
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <persName key="gaylussac_jl">
+                        <hi rendition="#k">Gay-Lussac.</hi>
+                    </persName>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(Continued from Page 239.)</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">T</hi>HE oxygene gas we obtained from the super-oxy-<lb break="no"/>genated muriate of mercury. To obtain it we employed<lb break="yes"/>a glass retort, to which had been soldered, by the flame<lb break="yes"/>of a lamp, the curved tube through which the gas was to<lb break="yes"/>pass; and, in order that we might have it as exempt from<lb break="yes"/>azote as possible, we filled the retort about one-fourth<lb break="yes"/>with water. This water being entirely reduced to va-<lb break="no"/>pour before the decomposition of the salt, soon expelled<lb break="yes"/>all the air out of the retort; but, in order to prevent the<lb break="yes"/>absorption which would have taken place before the dis-<lb break="no"/>engagement of the oxygene gas, we plunged the ex-<lb break="no"/>
+                    <fw type="catch" place="bottom">tremity</fw>
+                    <lb break="yes"/>
+                    <pb n="304" facs="#f0011"/> tremity of the tube in a saucer filled with mercury, which<lb break="yes"/>we removed as soon as the gas began to be disengaged.<lb break="yes"/>In order that the oxygene may not, passing through the<lb break="yes"/>water, expel azote from it, we convey it directly into<lb break="yes"/>the upper part of the recipient which is to receive it, by<lb break="yes"/>means of a tube bent at a right angle, which at the one<lb break="yes"/>end ascends to the upper part of the recipient, and at the<lb break="yes"/>other is adapted to the first tube by means of a cork<lb break="yes"/>stopper, common to both. This process, which is very<lb break="yes"/>simple in its application, is particularly advantageous for<lb break="yes"/>the gases which are soluble in water, such as the carbonic<lb break="yes"/>acid gas, the azote oxyd gas, &#x0026;c. We obtained our hy-<lb break="no"/>drogene gas by decomposing water by means of zinc and<lb break="yes"/>muriatic or sulphuric acid diluted with about six parts of<lb break="yes"/>water: we took care to fill exactly with acid the vessel<lb break="yes"/>from which the gas was to be disengaged, and not to<lb break="yes"/>make it pass through the water; but notwithstanding all<lb break="yes"/>these precautions, our oxygene left with the sulphuret<lb break="yes"/>four thousandth parts of azote, and the hydrogene, ana-<lb break="no"/>lysed by other means, shewed six thousandths. After<lb break="yes"/>these elucidations let us proceed to the questions which<lb break="yes"/>we have proposed to ourselves to resolve, beginning with<lb break="yes"/>this:</p>
+                <lb break="yes"/>
+                <p>When we inflame a mixture of oxygene and hydrogene<lb break="yes"/>gas in the eudiometer of <persName key="volta_agv">Volta</persName>, can the absorption of one<lb break="yes"/>of the gases be complete?</p>
+                <lb break="yes"/>
+                <p>In order to ascertain whether all the oxygene or all the<lb break="yes" />hydrogene could be entirely destroyed, we thought that<lb break="yes"/>if two gases were perfectly pure, or if we knew their de-<lb break="no"/>gree of purity, and that their absorption must be com-<lb break="no"/>plete, we should be able to find the same proportion for<lb break="yes"/>the principles of water, whether the hydrogene or the<lb break="yes"/>oxygene were predominant. In fact, by detonating<lb break="yes"/>mixtures of 300 parts hydrogene and 100 oxygene, and<lb break="yes"/>
+                    <fw type="catch" place="bottom">of</fw>
+                    <lb break="yes"/>
+                    <pb n="305" facs="#f0012"/> of 200 of the first and 200 of the second, in which the<lb break="yes"/>hydrogene and oxygene alternately predominate, and<lb break="yes"/>making the corrections due to the impurity of the gases,<lb break="yes"/>we obtained very nearly the same proportion. Although<lb break="yes"/>the absorption of the two gases might be complete, it<lb break="yes"/>were however possible that the proportions obtained, in<lb break="yes"/>making them alternately predominate, might not be iden-<lb break="no"/>tical, and this would be the case if, according to the pre-<lb break="no"/>dominance of either of the gases, there were formed an<lb break="yes"/>oxygenated or hydrogenated water; but since the propor-<lb break="no"/>tions have become identical, it must necessarily be con-<lb break="no"/>cluded, that the hydrogene and the oxygene were entirely<lb break="yes"/>absorbed. But though the absorption of the two gases<lb break="yes"/>may be complete under certain circumstances, it must<lb break="yes"/>not be supposed that it is so with any quantities; there are<lb break="yes"/>not only such proportions of hydrogene and oxygene, or<lb break="yes"/>of their mixture with azote, or even with any other gas,<lb break="yes"/>that it is impossible to inflame them by means of the<lb break="yes"/>electric spark; but there are also others with which the<lb break="yes"/>inflammation having been commenced, stops before the<lb break="yes"/>combustion is completed. We proceed to cite ex-<lb break="no" />periments to this effect, which appear to us to be con-<lb break="no" />clusive.</p>
+                <lb break="yes"/>
+                <p>We mixed 100 parts of hydrogene with 200, 300&#x2014;900<lb break="yes"/>of oxygene, and inflamed them by the electric spark:<lb break="yes"/>with these different proportions the absorption constantly<lb break="yes"/>amounted to 146 parts; but with 1000 of oxygene it was<lb break="yes"/>at once reduced to 55; with 1,200 and 1,400 it was re-<lb break="no"/>duced to 24 and 14, and with 1,600 it was reduced to 0;<lb break="yes"/>that is to say, no inflammation took place. These dif-<lb break="no"/>ferent results are exhibited in the following table.</p>
+                <lb break="yes"/>
+                <fw type="sig" place="bottom">
+                    <hi rendition="#k">Vol.</hi> VIII.&#x2014;<hi rendition="#k">Second Series.</hi> R r 100</fw>
+                <lb break="yes"/>
+                <pb n="306" facs="#f0013"/>
+                <table>
+                    <row>
+                        <cell>Hydrogene.</cell>
+                        <cell>Oxygene.</cell>
+                        <cell>Absorption.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>200 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>146</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>300 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>146</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>600 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>146</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>900 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>146</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>950 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>68</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>1000 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>55</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>1200 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>24</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>1400 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>14</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>1600 &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>0 <note place="foot" n="*">The absorptions 68, 55, 24, and 14, are possibly not exact within<lb break="yes"/>two or three hundredths, for our instruments being too small for the<lb break="yes" />corresponding proportions, we were obliged to measure them seve-<lb break="no"/>ral times; but this is of no moment with respect to the phenomenon<lb break="yes"/>in general.</note>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                </table>
+                <p>What is striking in these different experiments is to see,<lb break="yes"/>1, a constant absorption, with very different proportions,<lb break="yes"/>change suddenly into a decreasing absorption; 2, the<lb break="yes"/>combustion of hydrogene gas which had commenced,<lb break="yes"/>stop before it was completed; 3, that there are such pro-<lb break="no"/>portions of hydrogene and oxygene as cannot be in-<lb break="no"/>flamed. These different phenomena will be in some<lb break="yes"/>measure explained in the sequel; but in the mean time<lb break="yes"/>we shall remark, that there are even very extended pro-<lb break="no"/>portions with which the combustion of the hydrogene gas<lb break="yes"/>may be complete.</p>
+                <lb break="yes"/>
+                <p>The above-mentioned phenomena are not peculiar to<lb break="yes"/>the hydrogene and oxygene gases mixed together, under<lb break="yes"/>the circumstances of which we have been speaking: they<lb break="yes"/>also take place when we inflame 100 parts of oxygene<lb break="yes"/>with 200, 300&#x2014;1000, &#x0026;c. of hydrogene; only it then<lb break="yes"/>happens, that the term when the absorption ceases to be<lb break="yes"/>constant is more remote; and to comprehend the reason<lb break="yes"/>
+                    <fw type="catch" place="bottom">of</fw>
+                    <lb break="yes"/>
+                    <pb n="307" facs="#f0014"/> of this it is sufficient to observe, that in this case there<lb break="yes"/>disappear about 300 parts by the inflammation, whereas<lb break="yes"/>there disappeared only half the quantity in the preceding<lb break="yes"/>experiments.</p>
+                <lb break="yes"/>
+                <p>Azote gas and carbonic acid gas present also ana-<lb break="no"/>logous results. If, for example, we inflame a mixture of<lb break="yes"/>900 parts of azote, 100 of hydrogene, and 100 of ox-<lb break="no"/>ygene, the absorption, which ought to be 146 parts, if<lb break="yes"/>the combustion were complete, was in one experiment,<lb break="yes"/>which is that which we take as example, only 50 parts,<lb break="yes"/>though in others we have seen it a little above or below<lb break="yes"/>this quantity. With inferior proportions of azote, we<lb break="yes"/>have constantly had the same absorption of 146. Al-<lb break="no"/>though the azote appears here to comport itself like the<lb break="yes"/>oxygene, since with 100 of hydrogene and 1000 of ox-<lb break="no"/>ygene, we had nearly the same result as with 100 of hy-<lb break="no"/>drogene, 100 of oxygene, and 900 of azote, we shall not<lb break="yes"/>draw from hence any inference, because we have not suffi-<lb break="no"/>ciently multiplied and varied our experiments. Neverthe-<lb break="no"/>less, those which we have made tend to prove, that when<lb break="yes"/>determinate proportions of oxygene gas and hydrogene<lb break="yes"/>gas are mixed with different gases, the absorption may<lb break="yes"/>be constant as far as to a certain point, beyond which it<lb break="yes"/>diminishes very rapidly.</p>
+                <lb break="yes"/>
+                <p>The absorption of the oxygene and of the hydrogene<lb break="yes"/>being complete in determinate proportions, and not so<lb break="yes"/>in others, it will always be possible, when a gaseous mix-<lb break="no"/>ture is given, which alone would not be able to inflame,<lb break="yes"/>to reduce it to another with which the absorption of one<lb break="yes"/>of the gases would be complete, by adding to it oxygene<lb break="yes"/>or hydrogene, or even both together.</p>
+                <lb break="yes"/>
+                <p>The combustion of the 100 parts of hydrogene in the<lb break="yes"/>preceding experiment not having been complete, we<lb break="yes"/>analyzed the residue. 100 parts, placed in contact with<lb break="yes"/>
+                    <fw type="catch" place="bottom">phos-</fw>
+                    <lb break="yes"/>
+                    <pb n="308" facs="#f0015"/> phosphorus, diminished by 7 in the space of four hours,<lb break="yes"/>an evident proof that the residue contained oxygene. In<lb break="yes"/>order to ascertain whether it had retained hydrogene, we<lb break="yes"/>inflamed, in <persName key="volta_agv" >Volta&#x2019;s</persName> eudiometer, a mixture of 200 parts<lb break="yes" />of the preceding residue, 200 of oxygene gas, and 200 of<lb break="yes" />hydrogene gas; in all 600 parts. After the inflammation<lb break="yes"/>312 parts had disappeared; and as, according to experi-<lb break="no"/>ments of which we shall give an account hereafter, 100<lb break="yes"/>of pure oxygene require for their saturation 200 of hy-<lb break="no"/>drogene gas, the absorption which, with the hydrogene<lb break="yes"/>gas which we have employed, ought only to have been<lb break="yes"/>292 parts, amounted to 312, the residuum must necessa-<lb break="no"/>rily have furnished a sufficient quantity of it to carry the<lb break="yes"/>absorption from 292 to 312; that is to say, it must have<lb break="yes"/>contained 13,3 parts. Now calculation shews that it<lb break="yes"/>ought to have contained 12; it is therefore clearly<lb break="yes"/>proved, that though inflammation took place, the com-<lb break="no"/>bustion was not complete; and that all the hydrogene<lb break="yes"/>did not enter into combination, since we have found that<lb break="yes"/>which had not been absorbed in the residuum. We must<lb break="yes"/>observe, that in all cases in which the absorption was not<lb break="yes"/>complete the inflammation was languid.</p>
+                <lb break="yes"/>
+                <p>From comparing, in the inflammation of hydrogene<lb break="yes"/>and oxygene gas, the effects of electricity with those of<lb break="yes"/>a high temperature, we have been led to believe that the<lb break="yes"/>inflammation produced by the electric shock might very<lb break="yes"/>likely be owing to the heat produced by the instantane-<lb break="no"/>ous compression which the electric spark occasions in its<lb break="yes"/>passage. In fact we know, from our own experience,<lb break="yes"/>that the inflammation of a mixture of hydrogene and ox-<lb break="no"/>ygene gas depends solely upon the temperature when this<lb break="yes"/>inflammation is produced by heat. For if we cause this<lb break="yes"/>mixture to pass very slowly through a tube heated very<lb break="yes"/>gradually, from its extremity to its central part, without<lb break="yes"/>
+                    <fw type="catch" place="bottom">opposing</fw>
+                    <lb break="yes"/>
+                    <pb n="309" facs="#f0016"/> opposing the free dilation of the gases, the inflammation<lb break="yes"/>will take place as soon as the temperature shall be raised<lb break="yes"/>to a sufficient degree. This being admitted as fact, that<lb break="yes"/>the inflammation of the oxygene and the hydrogene gas<lb break="yes"/>takes place only at a certain temperature, let us see what<lb break="yes"/>passes in their inflammation by the electric spark. When<lb break="yes"/>this passes through a mixture of oxygene and hydrogene,<lb break="yes"/>it displaces it by its rapid passage, which does not per-<lb break="no"/>mit the gaseous particles to communicate to each other<lb break="yes"/>the motion as quickly as they have received it; hence<lb break="yes"/>results a very strong instantaneous compression, which<lb break="yes"/>produces an elevation of temperature superior to that<lb break="yes"/>which is requisite for the combination of the gases, and<lb break="yes"/>the inflammation being thus commenced, must be propa-<lb break="no"/>gated very rapidly.</p>
+                <lb break="yes"/>
+                <p>According to this mode of accounting for the effects of<lb break="yes" />electricity, we thought that when a weak spark produces<lb break="yes"/>only an imperfect combustion in a mixture of hydrogene<lb break="yes"/>and oxygene gas, a stronger one would produce a more<lb break="yes"/>complete combustion; but whether it was that we did<lb break="yes"/>not employ a sufficient brisk electricity, or that we did<lb break="yes"/>not multiply our experiments sufficiently, we obtained no<lb break="yes"/>sensible differences in employing the spark of an elec-<lb break="no"/>trophorus, three decimeters in diameter, or the shock of<lb break="yes"/>a highly-charged Leyden flask; but the construction of<lb break="yes"/>our eudiometer did not permit us to draw very brisk<lb break="yes"/>sparks, on which account we shall reserve our opinion<lb break="yes"/>respecting the influence of the force of the electricity in<lb break="yes"/>the inflammation of the hydrogene and oxygene, till we<lb break="yes"/>shall have made farther researches upon the subject.</p>
+                <lb break="yes"/>
+                <p>In the above-described experiment on the inflamma-<lb break="no"/>tion of a mixture of 900 parts of azote, 100 of oxygene,<lb break="yes"/>and 100 of hydrogene, the absorption was not so con-<lb break="no"/>siderable as it ought to have been, and we have proved<lb break="yes"/>
+                    <fw type="catch" place="bottom">that</fw>
+                    <lb break="yes"/>
+                    <pb n="310" facs="#f0017"/> that the residuum ought to contain what had escaped<lb break="yes"/>combustion; that is to say, it ought to be composed of<lb break="yes"/>six parts of hydrogene, eight of oxygene, and eighty-six<lb break="yes"/>of azote in the hundred. Therefore, since the combus-<lb break="no"/>tion was interrupted when these proportions took place,<lb break="yes"/>it may be concluded that another electric spark would<lb break="yes"/>no more be able to inflame this mixture. Consequently,<lb break="yes"/>in the atmosphere, which contains much less than six<lb break="yes"/>hundredths of hydrogene, the electric spark will not be<lb break="yes"/>able to inflame it, or if it does it at the place of its pas-<lb break="no"/>sage, by reason of its great force, the inflammation will<lb break="yes"/>not be able to propagate itself, but will be in a manner<lb break="yes"/>confined to the places which it traverses. Hence, finally,<lb break="yes"/>the inflammation of hydrogene gas, by lightning, and <hi rendition="#i">à<lb break="yes"/>fortiori</hi> by weaker charges of electricity, will not serve<lb break="yes"/>to explain the igneous meteoric phenomena; or if these<lb break="yes"/>phenomena are actually results of the inflammation<lb break="yes"/>of hydrogene gas, we must conclude that there are more<lb break="yes"/>than six hundredths of it in the air at the moment when<lb break="yes"/>they are produced.; which is contrary to all probability,<lb break="yes"/>especially when we recollect that air, collected at a very<lb break="yes"/>great elevation, presented no appreciable quantity of<lb break="yes"/>hydrogene above that contained in atmospheric air col-<lb break="no"/>lected at the surface of the earth.</p>
+                <lb break="yes"/>
+                <p>But if every time that we cause an electric spark to<lb break="yes"/>pass into a mixture of hydrogene and oxygene, or of<lb break="yes"/>azote, hydrogene, and oxygene, which is not capable of<lb break="yes"/>inflaming, there is actually produced a local and instan-<lb break="no"/>taneous heat by the compression which the spark occa-<lb break="no"/>sions in its passage, it is possible that by directing a suc-<lb break="no"/>cession of sparks into one of the mixtures of which we<lb break="yes"/>have been speaking, a slight local inflammation might be<lb break="yes"/>produced each time upon the passage of the spark, and<lb break="yes"/>that thus it might be practicable to destroy a determin-<lb break="no"/>
+                    <fw type="catch" place="bottom">able</fw>
+                    <lb break="yes"/>
+                    <pb n="311" facs="#f0018"/> able quantity of hydrogene inveloped in a large propor-<lb break="no"/>tion of azote and oxygene, or of oxygene only. What<lb break="yes"/>seems to confirm this supposition is, that it is well known<lb break="yes"/>that ether and ammoniac, which are decomposed by heat<lb break="yes"/>when they are made to pass in vapours through a red-hot<lb break="yes"/>tube, are likewise decomposed by repeated electric<lb break="yes"/>shocks. It would also be interesting to know, whether it<lb break="yes"/>be possible to inflame by the electric spark a proper mix-<lb break="no"/>ture of oxygene and hydrogene, after having dilated it<lb break="yes"/>by means of the pneumatic machine. If its inflamma-<lb break="no"/>tion by the electric spark really depends upon the heat<lb break="yes"/>which this produces by compression, it would be na-<lb break="no"/>tural to suppose, that when these gases are dilated, the<lb break="yes"/>compression by the spark being less considerable, the<lb break="yes"/>heat which is produced by it must also be much slighter,<lb break="yes"/>and that there may be a degree of dilatation of the gases<lb break="yes"/>at which the inflammation cannot take place. We have<lb break="yes"/>not yet had time to try these different experiments; but<lb break="yes"/>we do not abandon our design to attempt them, which we<lb break="yes"/>hope we shall be able to do shortly.</p>
+                <lb break="yes"/>
+                <p>To recapitulate: there exist certain proportions of hy-<lb break="no"/>drogene and of oxygene, or of these two gases with<lb break="yes"/>azote, in which combustion can be complete. There<lb break="yes"/>exist also others, in which it stops spontaneously before<lb break="yes"/>being completed; and, finally there are proportions in<lb break="yes"/>which it cannot take place at all. The hydrogene gas<lb break="yes"/>which escapes the combustion is found again entire in the<lb break="yes"/>residue. When we cannot produce by the electric spark<lb break="yes"/>a complete inflammation of the hydrogene gas, or even<lb break="yes"/>when we cannot commence it, nothing more is necessary<lb break="yes"/>than to augment the proportions of the oxygene or of<lb break="yes"/>the hydrogene. The igneous meteoric phenomena can-<lb break="no"/>not be the result of the inflammation of the hydrogene<lb break="yes"/>gas, because in the regions where the principal of them<lb break="yes"/>
+                    <fw type="catch" place="bottom">are</fw>
+                    <lb break="yes"/>
+                    <pb n="312" facs="#f0019"/> are supposed to take place, such as the sudden and abun-<lb break="no"/>dant torrents of rain which sometimes succeed a clap of<lb break="yes"/>thunder, it would be necessary that there should then be<lb break="yes"/>more than six hundredths of hydrogene in the atmos-<lb break="no"/>phere, without which the inflammation could not take<lb break="yes"/>place; besides which, only the quantity exceeding this<lb break="yes"/>proportion could pass into inflammation.</p>
+                <lb break="yes"/>
+                <p>We may account for the cases in which the combus-<lb break="no"/>tion was not complete according to the laws of the affini-<lb break="no"/>ties, by saying, that when one of the gases becomes very<lb break="yes"/>predominant it may defend the other by its affinity, and<lb break="yes"/>guard it in part from combustion. Although this affinity<lb break="yes"/>may be very weak, we conceive, with M. <persName key="berthollet_cl">Berthollet</persName>, how<lb break="yes"/>the quantity of gas may compensate for it; and if there<lb break="yes"/>be in the different gases peculiar properties of stopping<lb break="yes"/>the combustion sooner or later, this may be explained by<lb break="yes"/>their different nature. But when we consider the case in<lb break="yes"/>which the hydrogene is mixed with oxygene only, and<lb break="yes"/>suppose the phenomena of its combustion with different<lb break="yes"/>proportions of oxygene to depend upon affinity, how<lb break="yes"/>explain the sudden transition from a constant absorption<lb break="yes"/>to a decreasing absorption, when it is agreed that if the<lb break="yes"/>hydrogene can be prevented from the combination by the<lb break="yes"/>oxygene, the effect of the latter must follow a regular<lb break="yes"/>law? How conceive that these two gases, after having<lb break="yes"/>been placed in circumstances favourable to their combi-<lb break="no"/>nation, can by their affinity maintain themselves in their<lb break="yes"/>elastic state, when they might form a much more dense<lb break="yes"/>combination, namely, water? How conceive, finally,<lb break="yes"/>that an affinity which produces a very great condensa-<lb break="no"/>tion and saturation, can be inferior to an affinity which<lb break="yes"/>produces no change in the dimensions of the two gases,<lb break="yes"/>no saturation? Hydrogene and oxygene, in whatever<lb break="yes"/>state they may be, have the same degree of affinity, as<lb break="yes"/>
+                    <fw type="catch" place="bottom">this</fw>
+                    <lb break="yes"/>
+                    <pb n="313" facs="#f0020"/> this affinity is measured by their capacity of saturation;<lb break="yes"/>only the state in which they are may be more or less fa-<lb break="no"/>vourable to their combination. Now, to say that hydro-<lb break="no"/>gene and oxygene have a greater affinity in the state of<lb break="yes"/>gas than in the liquid state, is to say that their molecules<lb break="yes"/>attract each other more when they are very remote than<lb break="yes"/>when they are very near to one another. These objec-<lb break="no"/>tions against an explanation founded solely upon the af-<lb break="no"/>finities, having appeared to us to be of some weight, we<lb break="yes"/>have endeavoured to present one which, in our opinion,<lb break="yes"/>did not involve the same difficulties.</p>
+                <lb break="yes"/>
+                <p>All combustible bodies require in general a certain ele-<lb break="no"/>vation of temperature, in order to combine with oxygene.<lb break="yes"/>Carbon, for example, is not converted into carbonic acid<lb break="yes"/>until it is red-hot; and this same substance, which at a<lb break="yes"/>high temperature can continue to burn when it is ex-<lb break="no"/>posed to a current of aqueous vapour, is extinguished as<lb break="yes"/>soon as it is immersed in water. This principle, that<lb break="yes"/>bodies in general require a certain elevation of tempera-<lb break="no"/>ture in order to burn, being once admitted, let us sup-<lb break="no"/>pose that we have a body which burns in a given volume<lb break="yes"/>of atmospheric air, and that the temperature necessary<lb break="yes"/>for the combustion is maintained solely by the heat due<lb break="yes"/>to the absorption of the oxygene: let us also suppose,<lb break="yes"/>that at the commencement of the combustion the heat<lb break="yes"/>due to the fixation of the oxygene contained in a cubic<lb break="yes"/>centimeter of air is =1, and that the heat lost during the<lb break="yes"/>fixation, whether in radiating heat, or by the absorption<lb break="yes"/>which is made of it by the azotic gas or other bodies, is<lb break="yes"/>= &#x00BD;, not taking here into consideration the law according<lb break="yes"/>to which it decreases. According to these premises, it<lb break="yes"/>is very evident that in the first moments of the combus-<lb break="no"/>tion the temperature of the body must rise; but, in pro-<lb break="no"/>
+                    <fw type="catch" place="bottom">portion</fw>
+                    <lb break="yes"/>
+                    <pb n="314" facs="#f0021"/> portion as the quantity of oxygene shall diminish, and<lb break="yes"/>that of the azote proportionally increase, the heat com-<lb break="no"/>municated will also diminish. A period will therefore<lb break="yes"/>arrive, at which the heat lost will be equal to the heat<lb break="yes"/>communicated, and below which, the temperature being<lb break="yes"/>too low, the combustion must cease. What evidently<lb break="yes"/>proves that the combustion stops only because the tem-<lb break="no"/>perature is too low, is that if we artificially maintain<lb break="yes"/>the temperature sufficiently high, the body will continue<lb break="yes"/>to burn.</p>
+                <lb break="yes"/>
+                <p>Now this explanation will still hold good, when, in-<lb break="no"/>stead of azote, sulphurous gas, hydrogene gas, carbonic<lb break="yes"/>acid, or any other gas, is mixed with the oxygene;<lb break="yes"/>only the combustion may cease sooner or later than with<lb break="yes"/>azote gas. For it is very evident, that if the sulphurous<lb break="yes"/>gas, or carbonic acid gas, had a capacity for caloric,<lb break="yes"/>much greater than that of azote, supposing them to be<lb break="yes"/>mixed with oxygene in the same proportions as the latter,<lb break="yes"/>the loss of heat would be much greater, and consequently<lb break="yes"/>the cessation of the combustion must take place sooner.<lb break="yes"/>But if the gases had equal capacities for caloric, they<lb break="yes"/>must all of them stop the combustion at the same period,<lb break="yes"/>as we have seen has nearly been done by oxygene and<lb break="yes"/>azote with hydrogene, and this would perhaps afford a<lb break="yes"/>solution of the important question, whether the gases have<lb break="yes"/>equal or different capacities.</p>
+                <lb break="yes"/>
+                <p>Thus a combustible body, sulphur for example, would<lb break="yes"/>cease to burn in a determinate volume of air, not because<lb break="yes"/>the affinity which the azote or the gases produced have<lb break="yes"/>for oxygene were more powerful than that of the com-<lb break="no"/>bustible body; but because the heat absorbed by these<lb break="yes"/>gases, which tend to place themselves in an equilibrium<lb break="yes"/>of temperature with the burning body, would be greater<lb break="yes"/>than the heat proceeding from the fixation of the ox-<lb break="no"/>
+                    <fw type="catch" place="bottom">ygene;</fw>
+                    <lb break="yes"/>
+                    <pb n="315" facs="#f0022"/> ygene; whence it would result, that the temperature<lb break="yes"/>would soon be reduced below that necessary for the com-<lb break="no"/>bustion. In fact, we know that sulphur can continue to<lb break="yes"/>burn in air in which it had been extinguished if, we raise<lb break="yes"/>the temperature to a sufficient degree.</p>
+                <lb break="yes"/>
+                <p>What takes place in the instantaneous combustion of<lb break="yes"/>the hydrogene in <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer, is perfectly ana-<lb break="no"/>logous to what passes in its successive combustion in a<lb break="yes"/>given volume of air, or in that of any other body. If<lb break="yes"/>we place a lamp, the flame of which is supplied by hy-<lb break="no"/>drogene gas, under a bell-glass filled with oxygene gas,<lb break="yes"/>the flame will become small, bright and slightly coloured.<lb break="yes"/>If we replace the oxygene by atmospheric air, the flame<lb break="yes"/>will be more voluminous, less bright, and more coloured.<lb break="yes"/>In proportion, especially as the relative quantity of ox-<lb break="no"/>ygene diminishes, the flame will increase in size, be-<lb break="no"/>cause the hydrogene will be obliged to go farther to come<lb break="yes"/>at the oxygene, and the flame will soon be extinguished,<lb break="yes"/>although the air still contain some hundredth parts of<lb break="yes"/>oxygene. The phenomena which take place in <persName key="volta_agv">Volta&#x2019;s</persName>
+                    <lb break="yes"/>eudiometer are of the same nature. When the propor-<lb break="no"/>tions of oxygene and hydrogene do not deviate much<lb break="yes"/>from those which constitute water, the flame is still very<lb break="yes"/>bright, notwithstanding its dilatation; but if we mix,<lb break="yes"/>for example, 1000 oxygene with 100 of hydrogene, the<lb break="yes"/>flame is then weak, of a blueish-green colour, and the<lb break="yes"/>combustion of the hydrogene is far from being complete,<lb break="yes"/>for we still find nearly two-thirds of it in the residue.<lb break="yes"/>What farther proves that the combustions&#x2019; not having<lb break="yes"/>been complete was owing to the temperature not having<lb break="yes"/>been sufficiently elevated, is that if the residue is<lb break="yes"/>made to pass, as was done by us, through a red-hot<lb break="yes"/>tube of porcellain, the whole of the hydrogene will be<lb break="yes"/>absorbed.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">W</fw>
+                <lb break="yes"/>
+                <pb n="316" facs="#f0023"/>
+                <p>We must observe, that in the combination of the hy-<lb break="no"/>drogene and oxygene gases, a very singular phenomenon<lb break="yes"/>takes place, which has long since engaged the attention<lb break="yes"/>of M. <persName key="monge_g" >Monge</persName>.</p>
+                <lb break="yes"/>
+                <p>&#x201C;How does it come to pass,&#x201D; says this distinguished<lb break="yes" />philosopher, &#x201C;that by elevating the temperature of the<lb break="yes" />two gases, or, in other words, by increasing the proportion<lb break="yes"/>of the solvent, we diminish the adhesion which it had<lb break="yes"/>with its bases?&#x201D; Far from conceiving that the present<lb break="yes"/>state of our knowledge is competent to give a satisfactory<lb break="yes"/>solution of this question, we wish to recommend it anew<lb break="yes"/>to the attention of philosophers. In fact, according to the<lb break="yes"/>idea which we are able to form to ourselves of the force<lb break="yes"/>which produces the combinations, and of those which are<lb break="yes"/>opposed to it, the elastic state indicates that the force of<lb break="yes"/>cohesion is destroyed, and that two bodies in this state are<lb break="yes"/>in the condition most favourable to combination; so that<lb break="yes"/>now that the attractive force of their molecules has been<lb break="yes"/>changed into a repulsive force, every cause which shall<lb break="yes"/>favour the latter will be in opposition to the former. It<lb break="yes"/>happens, however, that by raising the temperature of the<lb break="yes"/>two gases, that is to say, by augmenting their repulsive<lb break="yes"/>force, their attractive force is increased. It cannot be<lb break="yes"/>believed, that the heat does nothing more than separate<lb break="yes"/>their molecules to greater distances from each other; for,<lb break="yes"/>in this case, why should a mixture of hydrogene and ox-<lb break="no"/>ygene gas not inflame under the receiver of an air-pump,<lb break="yes"/>where it may be indefinitely dilated? Neither is it to be<lb break="yes"/>supposed that the heat acting instantaneously can pro-<lb break="no"/>duce a compression which favours the combination of the<lb break="yes"/>two gases by bringing their molecules into closer contact;<lb break="yes"/>for it is easy to convince ourselves that a mixture of<lb break="yes"/>oxygene gas and hydrogene gas, heated very gradually<lb break="yes"/>
+                    <fw type="catch" place="bottom">without</fw>
+                    <lb break="yes"/>
+                    <pb n="317" facs="#f0024"/> without opposing its dilatation, will nevertheless inflame<lb break="yes"/>when the temperature shall be sufficiently elevated.</p>
+                <lb break="yes"/>
+                <p>Having now proved, that under determined circum-<lb break="no"/>stances the combustion of hydrogene and oxygene may<lb break="yes"/>be complete, we shall proceed to examine whether its<lb break="yes"/>products are constant.</p>
+                <lb break="yes"/>
+                <p>According to all the experiments which have been<lb break="yes"/>made on the composition of water, the result has been<lb break="yes"/>considered to be uniform. There has, however, some-<lb break="no"/>times been obtained a small quantity of nitric acid; but<lb break="yes"/>it has been ascertained that this acid is not a constant<lb break="yes"/>product of the combustion of the hydrogene, but, on the<lb break="yes"/>contrary, merely accidental. <persName key="cavendish_h">Cavendish</persName> was the first who<lb break="yes" />discovered this formation of nitric acid, and Messrs.<lb break="yes" />Foureroy, <persName key="seguin_01">Seguin</persName>, and <persName key="vauquelin_ln">Vauquelin</persName>, have taught us how<lb break="yes" />we may avoid it, and obtain water without any acidity.<lb break="yes"/>It has not, indeed, been demonstrated, that oxygenated<lb break="yes"/>or hydrogenated waters have not been formed, because,<lb break="yes"/>in all the exact experiments that have been made, the<lb break="yes"/>combustion of the hydrogene gas has always been ef-<lb break="no"/>fected in the same manner, and at most it would be<lb break="yes"/>proved that those which have been obtained are constant<lb break="yes"/>under the same circumstances. If we compare the com-<lb break="no"/>bustion of hydrogene gas with that of nitrous gas, the<lb break="yes"/>products of which are so variable, we shall be still more<lb break="yes"/>justified in concluding, that since oxygene has always<lb break="yes"/>predominated in the experiments which have been made,<lb break="yes"/>an oxygenated water may have been formed; whereas,<lb break="yes"/>if hydrogene had been predominant, a hydrogenated wa-<lb break="no"/>ter would have been the result. Let it then be admitted,<lb break="yes"/>that an oxygenated water may be formed; if, for ex-<lb break="no"/>ample, we obtain it in all circumstances, and it be con-<lb break="no"/>stant, this will be of no consequence with regard to the<lb break="yes"/>
+                    <fw type="catch" place="bottom">proportion</fw>
+                    <lb break="yes"/>
+                    <pb n="318" facs="#f0025"/> proportion of its principles, which must serve for the<lb break="yes"/>analysis of the air; but if it be so only because the ox-<lb break="no"/>ygene predominated, it is manifest that we shall no<lb break="yes"/>longer obtain the same proportions when we alternately<lb break="yes"/>cause both gases to predominate.</p>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#k">to be continued in our next</hi>
+                    </hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+            <pb n="365" facs="#f0026"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Experiments on the Eudiometrical Means, and on the Pro-<lb break="no"/>portion of the Constituent Principles of the Atmosphere.<lb break="yes"/>By Messrs.</hi>
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <persName key="gaylussac_jl">
+                        <hi rendition="#k">Gay-Lussac.</hi>
+                    </persName>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(Continued from Page 318.)</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">N</hi>OW as we have made a great number of experi-<lb break="no"/>ments which prove, that when we employ them alter-<lb break="no" />nately in excess we constantly, obtain the same propor-<lb break="no"/>tions, it follows, that the combustion of hydrogene gas is<lb break="yes"/>of an uniform nature. The <persName key="galvani_la">Galvanic</persName> phenomena of the<lb break="yes"/>decomposition of water seem however to prove that wa-<lb break="no"/>ter is capable of oxygenating or hydrogenating itself;<lb break="yes"/>and it is upon this supposition that Messrs. <persName key="laplace_ps">Laplace</persName> and<lb break="yes"/>
+                    <persName key="berthollet_cl">Berthollet</persName> have accounted for the singular experiment of<lb break="yes"/>the decomposition of water by two metallic wires im-<lb break="no"/>mersed at one end in this liquid, and communicating by<lb break="yes"/>the other with the two poles of a <persName key="galvani_la">Galvanic</persName> pile. But<lb break="yes"/>without wishing to controvert this explanation, which<lb break="yes"/>appears to us the most satisfactory that has hitherto been<lb break="yes"/>offered, we shall observe that the complete absorption of<lb break="yes"/>the hydrogene at one of the wires, and of the oxygene<lb break="yes"/>at the other, proves that the water does not become<lb break="yes"/>oxygenated or hydrogenated, because, in order to be-<lb break="no"/>
+                    <fw type="catch" place="bottom">come</fw>
+                    <lb break="yes"/>
+                    <pb n="366" facs="#f0027"/> come so, it would be necessary that it should absorb one<lb break="yes"/>of the gases in a proportion greater than that required<lb break="yes"/>for the composition of water. If therefore it absorbs<lb break="yes"/>oxygene and hydrogene in exact proportions for forming<lb break="yes"/>water, it must be concluded that the properties of one<lb break="yes"/>of the gases are neutralized by those of the other. Ac-<lb break="no"/>cordingly, in the circumstances of which we are treat-<lb break="no"/>ing, the water might become instantaneously oxygenated<lb break="yes"/>at one of the wires, and hydrogenated at the other; but<lb break="yes"/>the two gases, being deprived of elasticity, and in exact<lb break="yes"/>proportions, must soon enter again into combination.</p>
+                <lb break="yes"/>
+                <p>If it is well demonstrated that, under given circum-<lb break="no"/>stances, hydrogene or oxygene may be completely ab-<lb break="no"/>sorbed, and, if it is equally so, that the product of their<lb break="yes"/>combination is constant, nothing more remains to be<lb break="yes"/>done, in order to solve the third question, which we have<lb break="yes"/>proposed to ourselves, than to determine the propor-<lb break="no"/>tions of oxygene and hydrogene which constitute water.</p>
+                <lb break="yes"/>
+                <p>To 100 parts of oxygene gas we added 300 parts of<lb break="yes"/>hydrogene gas; and after having inflamed them by the<lb break="yes"/>electric spark, we obtained in twelve experiments the<lb break="yes"/>following residues:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>100,8</cell>
+                        <cell>101,0</cell>
+                        <cell>102,0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>101,4</cell>
+                        <cell>101,7</cell>
+                        <cell>102,0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>100,5</cell>
+                        <cell>102,0</cell>
+                        <cell>101,0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>101,0</cell>
+                        <cell>101,5</cell>
+                        <cell>101,5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">The mean term of which is &#x2012; &#x2012;</cell>
+                        <cell>101,3</cell>
+                    </row>
+                    <lb break="yes"/>
+                </table>
+                <p>Thus 100 parts of oxygene, supposed to be very pure,<lb break="yes"/>required 98,7 of hydrogene: but on placing our oxy-<lb break="no"/>gene gas in contact with sulphuret, we found that it had<lb break="yes"/>all been absorbed within about 0,004; hence it follows,<lb break="yes"/>that 99,6 of oxygene absorbed 199,1 of hydrogene, or<lb break="yes"/>that 100 absorbed 199,89, or, to use round numbers,<lb break="yes"/>
+                    <fw type="catch" place="bottom">that</fw>
+                    <lb break="yes"/>
+                    <pb n="367" facs="#f0028"/> that 100 of oxygene requires 200 of hydrogene for their<lb break="yes"/>saturation.</p>
+                <lb break="yes"/>
+                <p>In the preceding experiments it was the oxygene that<lb break="yes"/>disappeared. Let us now reverse the experiment, by in-<lb break="no"/>flaming a mixture of 200 parts of each gas; the residue<lb break="yes"/>of the different inflammations will be the following:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>101,5</cell>
+                        <cell>102,0</cell>
+                        <cell>101,5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>101,3</cell>
+                        <cell>102,0</cell>
+                        <cell>102,3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>102,2</cell>
+                        <cell>101,0</cell>
+                        <cell>102,0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>102,0</cell>
+                        <cell>101,0</cell>
+                        <cell>102,0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mean term &#x2012; &#x2012;</cell>
+                        <cell>101,7</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mean absorption</cell>
+                        <cell>298,8</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                </table>
+                <p>200 parts of hydrogene, supposed to be pure, required<lb break="yes"/>therefore 98,3 of oxygene; whereas, according to the<lb break="yes"/>proportion which we have just established, they ought to<lb break="yes"/>have had 100. But if we admit this same proportion to<lb break="yes"/>be exact in the 298,3 of absorption, there would be only<lb break="yes"/>198,8 of hydrogene, which would indicate 0,006 of azote<lb break="yes"/>in this gas.</p>
+                <lb break="yes"/>
+                <p>Supposing even the hydrogene to be perfectly pure,<lb break="yes"/>the two proportions obtained by causing the oxygene or<lb break="yes"/>the hydrogene to predominate, agree sufficiently with<lb break="yes"/>each other to confirm all that has been said in the course<lb break="yes"/>of this memoir: to render them identical, nothing more<lb break="yes"/>is necessary than to suppose 0,006 of azote in the hy-<lb break="no"/>drogene, in which, in fact, we can demonstrate its<lb break="yes"/>presence.</p>
+                <lb break="yes"/>
+                <p>We have just seen, from the preceding experiments,<lb break="yes"/>that 200 parts of hydrogene, without making any cor-<lb break="no"/>rection, absorbed 98,3 of oxygene. Let us then take the<lb break="yes"/>residues 101,0 and 101,5, proceeding from the combus-<lb break="no"/>tion of 100 of oxygene and of 300 of hydrogene, and de-<lb break="no"/>tonate them with 200 of oxygene gas. In these two<lb break="yes"/>
+                    <fw type="catch" place="bottom">residues</fw>
+                    <lb break="yes"/>
+                    <pb n="368" facs="#f0029"/> residues there must be 0,008 of azote belonging to the<lb break="yes"/>200 parts of oxygene gas; and if the remainder 201,7<lb break="yes"/>was pure hydrogene it ought to absorb 99,1 of oxygene,<lb break="yes"/>and consequently there ought to have disappeared by the<lb break="yes"/>inflammation 300,8 parts, but there disappeared only<lb break="yes"/>295,0: it follows, therefore, that the residuum 201,7<lb break="yes"/>was not pure hydrogene; and that, according to the pro-<lb break="no"/>portion of 100 of oxygene to 200 of hydrogene, it con-<lb break="no"/>tained 5,0 of azote, proceeding from 600 of hydrogene;<lb break="yes"/>that is to say, that this last-mentioned gas contained<lb break="yes"/>0,008 of azote.</p>
+                <lb break="yes"/>
+                <p>We therefore think it proved, that 100 parts, in vo-<lb break="no"/>lume, of oxygene gas require very nearly 200 parts of<lb break="yes"/>hydrogene gas for their saturation. According to the<lb break="yes"/>experiment of Messrs. <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="vauquelin_ln">Vauquelin</persName>, and <persName key="seguin_01" >Se-<lb break="no"/>guin</persName>, 100 parts of the former would require 205 of the<lb break="yes"/>latter; but we shall observe, that, whichever of the two<lb break="yes"/>proportions we adopt, the error cannot amount to more<lb break="yes"/>than 0,0035 upon the absolute quantity of the oxygene<lb break="yes"/>of the air, and when the question respects relative quan-<lb break="no"/>tities, the error will be still much smaller.</p>
+                <lb break="yes"/>
+                <p>We have ascertained, that the proportion does not vary<lb break="yes"/>in consequence of changes of the temperature. It is evi-<lb break="no"/>dent that it must be so, since, as the heat equally dilates<lb break="yes"/>both gases, and causes them to dissolve equal quantities<lb break="yes"/>of water, the real weights of hydrogene and oxygene<lb break="yes"/>contained in equal volumes remain always in the same<lb break="yes"/>proportion. It would therefore be more accurate to say,<lb break="yes"/>supposing our proportion by the volumes to be well esta-<lb break="no"/>blished, that 100 parts of oxygene require 200 of hy-<lb break="no"/>drogene, than to indicate the proportions of water by the<lb break="yes"/>weight. If the oxygene and hydrogene employed for the<lb break="yes"/>composition of the water had been perfectly dry, or if a<lb break="yes"/>correction had been made according to the quantity of<lb break="yes"/>
+                    <fw type="catch" place="bottom">moisture</fw>
+                    <lb break="yes"/>
+                    <pb n="369" facs="#f0030"/> moisture which they might contain, it would be a mat-<lb break="no"/>ter of indifference whether the proportions of its princi-<lb break="no"/>ples were enunciated according to their volumes or their<lb break="yes"/>weights; but since hydrogene combines with oxygene in<lb break="yes"/>double the volume of the latter, and as they both dissolve<lb break="yes"/>the same proportion of water, it is evident that they do<lb break="yes"/>not carry into the combination quantities of water which<lb break="yes"/>are in the same reciprocal proportions as the quantities,<lb break="yes"/>by weight, of oxygene and of hydrogene, and that con-<lb break="no"/>sequently the proportion of the principles of the water<lb break="yes"/>must thereby be altered. Thus the proportion, accord-<lb break="no"/>ing to the volumes, has the property of remaining con-<lb break="no"/>stant, notwithstanding the changes with regard to tem-<lb break="no"/>perature and moisture, whilst that, according to the<lb break="yes"/>weights, varies under the same circumstances. And let<lb break="yes"/>it not be imagined that this consideration is of little im-<lb break="no"/>portance: for it would be very easy to prove that it has<lb break="yes"/>very considerable influence upon the proportion of the<lb break="yes"/>principles of water. According to the experiment of<lb break="yes"/>Messrs. <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="vauquelin_ln">Vauquelin</persName>, and <persName key="seguin_01">Seguin</persName>, the most ac-<lb break="no"/>curate that has hitherto been made upon this subject, wa-<lb break="no"/>ter contains by weight 85,662 of oxygene and 14,338 of<lb break="yes"/>hydrogene. But the experiment having been made at a<lb break="yes"/>temperature of about 14°, and the correction due to the<lb break="yes"/>water held in solution by the gases not having been<lb break="yes"/>made, it follows, that if we adopt their specific weight<lb break="yes"/>of the oxygene and hydrogene gases, as well as the pro-<lb break="no"/>portion of their volumes in their combination, and more-<lb break="no"/>over admit with <persName key="saussure_hbd" >Saussure</persName>, that a cubic foot of air, at the<lb break="yes" />temperature of 14°, contains very nearly 10 grains of<lb break="yes"/>water in solution, the proportion by weight between the<lb break="yes"/>oxygene and hydrogene, instead of being 85,662 to<lb break="yes"/>14,338, would be 87,41 to 12,59; a very remarkable<lb break="yes"/>difference, and which especially must be of great in-<lb break="no"/>
+                    <fw type="catch" place="bottom">fluence</fw>
+                    <lb break="yes"/>
+                    <pb n="370" facs="#f0031"/> fluence in analyses where the real weight of the hydro-<lb break="no"/>gene is to be determined. The same consideration ap-<lb break="no"/>plies also to the specific weight of the gases, and princi-<lb break="no"/>pally to that of the hydrogene, of which about a sixth<lb break="yes"/>part is due to the water which it holds in solution when<lb break="yes"/>the temperature, as here supposed, is 14° <persName key="reaumur_rafd">Reaumur</persName>. We<lb break="yes"/>do not therefore doubt, that if we had hydrogene gas<lb break="yes"/>perfectly dry, and deprived of the azote gas, which ap-<lb break="no"/>pears very often to accompany it, we should find its spe-<lb break="no"/>cific lightness to be at least 15 times greater than that of<lb break="yes"/>the atmospheric air.</p>
+                <lb break="yes"/>
+                <p>It still remains for us to answer the last question which<lb break="yes"/>we have proposed to ourselves, and to shew what are the<lb break="yes"/>limits of the error in <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer; and next,<lb break="yes"/>what are the smallest quantities of oxygene or of hydro-<lb break="no"/>gene that can be estimated by his method.</p>
+                <lb break="yes"/>
+                <p>The effects obtained with this instrument, being in-<lb break="no"/>stantaneous, are independent of the thermometer and<lb break="yes"/>barometer. In this point of view, it has the very de-<lb break="no"/>cided advantage over phosphorus and the alkaline sul-<lb break="no"/>phurets, of giving results very capable of comparison;<lb break="yes"/>but this is not the only one; it has also that of the eu-<lb break="no"/>diometrical means which give multiples of the quantity<lb break="yes"/>to be estimated. As in this instrument each hundredth<lb break="yes"/>of oxygene is represented by a three times greater ab-<lb break="no"/>sorption, the error that can be committed amounts only<lb break="yes"/>to a third upon this gas; and now, especially as we have<lb break="yes"/>instruments which divide the measure into three hundred<lb break="yes"/>parts, it is evident, that if we err even by one division,<lb break="yes"/>the accuracy, as to the quantity of oxygene, may be<lb break="yes"/>carried to near a thousandth part of the quantity of air<lb break="yes"/>analyzed.</p>
+                <lb break="yes"/>
+                <p>If therefore the results of the combustion of hydrogene<lb break="yes"/>gas admit so well of comparison, and the errors to which<lb break="yes"/>
+                    <fw type="catch" place="bottom">they</fw>
+                    <lb break="yes"/>
+                    <pb n="371" facs="#f0032"/> they are liable are restricted within such narrow bounds,<lb break="yes"/>it is evident that we may not only find the slight diffe-<lb break="no"/>rences which exist between two portions of atmospheric<lb break="yes"/>air, but also determine less than three thousandth parts of<lb break="yes"/>oxygene which shall be lost in azote or hydrogene gas:<lb break="yes"/>but in this case, in order that the inflammation take place,<lb break="yes"/>it would be necessary to add a given quantity of oxygene,<lb break="yes"/>the absorption of which with hydrogene gas had been de-<lb break="no"/>termined by previous experiments, and then the excess<lb break="yes"/>of the first absorption above the second would be attri-<lb break="no"/>buted for a third to the oxygene gas contained in the air<lb break="yes"/>which is analyzed.</p>
+                <lb break="yes"/>
+                <p>On the other hand, in order to determine whether one<lb break="yes"/>portion of hydrogene be more pure than another portion,<lb break="yes"/>or whether there exist very small quantities of it in a gas<lb break="yes"/>or in the atmospheric air, it would be necessary, in the<lb break="yes"/>first case, to mix 100 parts of hydrogene gas with 100 of<lb break="yes"/>oxygene: the quantities of real hydrogene would be in<lb break="yes"/>the direct ratio of the absorptions. But if the proportion<lb break="yes"/>of hydrogene were very small, for example one two<lb break="yes"/>hundredth, it would be necessary, in order to effect its<lb break="yes"/>combustion, to add 100 parts of this gas to 200 of the air<lb break="yes"/>to be analyzed, and to detonate the mixture with a suffi-<lb break="no"/>cient proportion of oxygene. By this means, and with<lb break="yes"/>the practice which we have now acquired, we have been<lb break="yes"/>able to find again three thousandth parts of hydrogene gas<lb break="yes"/>which we had mixed with atmospheric air.</p>
+                <lb break="yes"/>
+                <p>It might be objected against <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer, that<lb break="yes"/>the hydrogene not being always the same, we might incur<lb break="yes"/>errors difficult to be appreciated. We shall first observe<lb break="yes"/>that it is indifferent whether or not it contain azote; but<lb break="yes"/>if it contained oxygene, its quantity confounding itself<lb break="yes"/>with that which we wish to appreciate, would alter the<lb break="yes"/>results. In order to avoid this inconvenience, we may<lb break="yes"/>
+                    <fw type="catch" place="bottom">first</fw>
+                    <lb break="yes"/>
+                    <pb n="372" facs="#f0033"/> first of all detonate separately 500 parts of hydrogene with<lb break="yes"/>100 of oxygene; by this means its oxygene will be<lb break="yes"/>destroyed, and we may then employ it for the analysis of<lb break="yes"/>the air. With this precaution we may employ a gas pre-<lb break="no"/>pared as inaccurately as possible. It is sufficient if it have<lb break="yes"/>been extracted from the water by means of zinc and sul-<lb break="no"/>phuric acid or muriatic acid; for it is well known that if<lb break="yes"/>we employ another metal, such as iron, the gas is no<lb break="yes"/>longer of the same nature.</p>
+                <lb break="yes"/>
+                <p>After all the experiments which we have recorded, we<lb break="yes"/>might have been justified in concluding that the eudio-<lb break="no"/>meter of <persName key="volta_agv">Volta</persName> must indicate the whole of the oxygene<lb break="yes"/>contained in the atmospheric air; but we wished to de-<lb break="no"/>termine this point by direct experiment. We analyzed<lb break="yes"/>an air composed of 20 parts of very pure oxygene and 80<lb break="yes"/>of azote, obtained from the decomposition of ammoniac by<lb break="yes"/>oxygenated muriatic acid, all possible precautions being<lb break="yes"/>taken to prevent its becoming mixed with atmospheric air.<lb break="yes"/>200 parts of this air, inflamed with 200 of hydrogene gas,<lb break="yes"/>gave five absorptions, the greatest of which differed from<lb break="yes"/>the smallest only by 5,1000 and the mean term of which<lb break="yes"/>was 124,9. These 124,9 parts indicate 41,6 of oxygene,<lb break="yes"/>of which the half 20,8 corresponds to 100 of our factitious<lb break="yes"/>air. We find therefore 0,008 of oxygene more than we<lb break="yes"/>had employed, which might seem to indicate that the<lb break="yes"/>proportion of 100 of oxygene to 200 of hydrogene is ra-<lb break="no"/>ther too great; but we must observe that our hydrogene,<lb break="yes"/>though carefully prepared, still emitted light with phos-<lb break="no"/>phorus, and that in order to explain our result, it is suffi-<lb break="no"/>cient to suppose that the azote contained a hundredth part<lb break="yes"/>of oxygene, which is sufficiently probable if we consider<lb break="yes"/>that the oxygenated muriatic acid is very speedily decom-<lb break="no"/>posed by the action of light.</p>
+                <lb break="yes"/>
+                <p>It appears from what has been said, that the results af-<lb break="no"/>forded by <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer admit very well of compa-<lb break="no"/>
+                    <fw type="catch" place="bottom">rison,</fw>
+                    <lb break="yes"/>
+                    <pb n="373" facs="#f0034"/> rison, and that the limits of their differences may be re-<lb break="no"/>duced very nearly to a thousandth part of the air ana-<lb break="no"/>lyzed. It appears also that by its means we may estimate<lb break="yes"/>very minute differences between two airs or very small<lb break="yes"/>quantities of hydrogene mixed with the atmospheric air.<lb break="yes"/>Independently of the property which this instrument pos-<lb break="no"/>sesses of indicating the whole quantity of oxygene con-<lb break="no"/>tained in an air, it is the only one with which we can as-<lb break="no"/>certain the proportion of hydrogene in a gaseous mixture,<lb break="yes"/>and in this point of view it still merited to have its mode<lb break="yes"/>of acting attended to and studied.</p>
+                <lb break="yes"/>
+                <p>Thus the illustrious <persName key="volta_agv">Volta</persName>, to whom Natural Philoso-<lb break="no"/>phy is indebted for so many beautiful discoveries, has also<lb break="yes"/>the merit of having furnished Chemistry with the most<lb break="yes"/>accurate and valuable instrument for analyses.</p>
+                <lb break="yes"/>
+                <div n="3">
+                    <head>
+                        <hi rendition="#i">Analysis of the Atmospheric Air by <persName key="volta_agv">Volta&#x2019;s</persName> Eudiometer.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>As we have now proved that <persName key="volta_agv" >Volta&#x2019;s</persName> eudiometer gives<lb break="yes"/>results very capable of comparison, that it can indicate<lb break="yes"/>the whole quantity of oxygene contained in the air, and<lb break="yes"/>that it has over the other eudiometrical means in which<lb break="yes"/>the absorbing substance is solid or liquid, the advantage<lb break="yes"/>of giving multiples of the quantity of oxygene to be esti-<lb break="no"/>mated; we shall proceed to apply it to the analysis of the<lb break="yes"/>air. If the proportion of 100 of oxygene and 200 of hy-<lb break="no"/>drogene which we have established be strictly correct, we<lb break="yes"/>shall obtain the proportion of the oxygene to the azote<lb break="yes"/>likewise correct; but supposing even that the quantity of<lb break="yes"/>hydrogene were too large or too small by 5 parts, the er-<lb break="no"/>ror would not amount to more than three thousandth parts<lb break="yes"/>of the air analyzed, and we should have the advantage of<lb break="yes"/>obtaining a greater precision than by any of the other<lb break="yes"/>known eudiometrical means.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">The</fw>
+                    <lb break="yes"/>
+                    <pb n="374" facs="#f0035"/>
+                    <p>The atmospheric air which we have analyzed was col-<lb break="no"/>lected over the middle of the Seine in cold, temperate and<lb break="yes"/>rainy weather, and during the prevalence of different<lb break="yes"/>winds. In order to obtain a greater parity between the<lb break="yes"/>circumstances, and better to appreciate the differences in<lb break="yes"/>the nature of the air, if there were any, we analyzed on<lb break="yes"/>the same day the different portions of air which we had<lb break="yes"/>collected in different weathers, and which we had pre-<lb break="no"/>served in glass vessels well closed and inverted over the<lb break="yes"/>water. For brevity&#x2019;s sake, we have comprized in the ta-<lb break="no"/>ble annexed to this memoir, the absorptions produced by<lb break="yes"/>the inflammation of 200 parts of air and 200 of hydrogene<lb break="yes"/>gas, and have at the same time indicated the corre-<lb break="no"/>spondent quantities of oxygene.</p>
+                    <lb break="yes"/>
+                    <p>It will there appear that our experiments prove, in the<lb break="yes"/>first place, that there are no variations exceeding a thou-<lb break="no"/>sandth part in the quantity of the oxygene of the air,<lb break="yes"/>though that which we analyzed, having been collected<lb break="yes"/>during the prevalence of different winds, came from re-<lb break="no"/>gions very remote from each otber; and in the second<lb break="yes"/>place, that the proportion of the volume of the oxygene<lb break="yes"/>to the other gases which exist in the air, is as 21 to 79.<lb break="yes"/>The first result, that the air does not vary in its composi-<lb break="no"/>tion, is rigorously exact, because it is independent of the<lb break="yes" />proportion of the hydrogene and oxygene gas which con-<lb break="no" />stitutes water; but the second result, that the air contains<lb break="yes"/>21 hundredths of oxygene, can also deviate but very lit-<lb break="no"/>tle from the real truth; for if we suppose that the quan-<lb break="no"/>tity of hydrogene required for saturating 100 parts of ox-<lb break="no"/>ygene were larger or smaller by 5 parts than that which<lb break="yes"/>we have assigned (and which we have reason to believe is<lb break="yes"/>correct within a much less difference), the error with re-<lb break="no"/>spect to the proportion of oxygene which we have found<lb break="yes"/>in the air, would not amount, as we have already ob-<lb break="no"/>
+                        <fw type="catch" place="bottom">served,</fw>
+                        <lb break="yes"/>
+                        <pb n="375" facs="#f0036"/> served, to more than three thousandth parts of the air<lb break="yes"/>analyzed.</p>
+                    <lb break="yes"/>
+                    <p>But as many meteoric phenomena may be attributed to<lb break="yes" />inflammation of hydrogene gas, it has been endeavoured<lb break="yes"/>to explain them by admitting the existence of this gas in<lb break="yes"/>the atmosphere. We therefore thought it a very interest-<lb break="no"/>ing enquiry, to investigate whether the air actually con-<lb break="no"/>tains hydrogene gas; and in order the more easily to dis-<lb break="no"/>cover it, we made a gaseous mixture, in which we were<lb break="yes"/>sure that there was none of it, and we made a compara-<lb break="no"/>tive analysis of the two airs. We made a mixture of 20<lb break="yes"/>parts of oxygene and 80 parts of azote, obtained from<lb break="yes"/>ammoniac by means of the oxygenated muriatic acid, and<lb break="yes"/>we detonated 300 parts of each of the two airs with 100<lb break="yes"/>of hydrogne; but the result of six experiments made<lb break="yes"/>with the atmospheric air was exactly the same as that of<lb break="yes"/>six others made with the factitious air. And as we have<lb break="yes"/>shewn that we could appreciate less than three thousandth<lb break="yes"/>parts of hydrogene, it must be concluded that the atmos-<lb break="no"/>phere does not contain this gas, or if it contains it, its<lb break="yes"/>quantity does not amount to three thousandth parts. It<lb break="yes"/>cannot however be doubted that there exists a little hy-<lb break="no"/>drogene in the air; some is daily evolved from marshes,<lb break="yes"/>but its quantity may be so small (a thousandth for exam-<lb break="no"/>ple) as to elude all our means. The proportion of car-<lb break="no"/>bonic acid existing in it ought to be much more conside-<lb break="no"/>rable, if we reflect upon the abundance of the sources<lb break="yes"/>which furnish it, and yet, if it did not form insoluble<lb break="yes"/>combinations with lime and barytes, it would perhaps<lb break="yes"/>still remain to be ascertained by the determination of its<lb break="yes"/>volume whether any of it existed in the air. The car-<lb break="no"/>bonic acid, it is true, cannot accumulate in the air, be-<lb break="no"/>cause vegetation decomposes it; but is it proved that<lb break="yes"/>there do not exist causes which return the hydrogene<lb break="yes"/>
+                        <fw type="catch" place="bottom">to</fw>
+                        <lb break="yes"/>
+                        <pb n="376" facs="#f0037"/> to the earth, and thereby prevent it from accumulating in<lb break="yes"/>the air?</p>
+                    <lb break="yes"/>
+                    <p>To draw a conclusion from the preceding experiments,<lb break="yes"/>we shall say: 1, that the atmosphere does not vary generally<lb break="yes"/>in its composition; 2, that the quantity of oxygene which it<lb break="yes" />contains is 21 hundredths; 3, finally, that it does not<lb break="yes" />contain any hydrogene which we are able to appreciate.</p>
+                    <lb break="yes"/>
+                    <p>This identity of composition in which the principles of<lb break="yes"/>the atmosphere are constantly maintained, and this ab-<lb break="no"/>sence of hydrogene which our experiments prove, must<lb break="yes"/>give confidence to the Geometrician with respect to the<lb break="yes"/>theory of refractions. The refractive power of the diffe-<lb break="no"/>rent gases being different, and that of hydrogene being<lb break="yes"/>stronger than that of oxygene and of azote, the theory<lb break="yes"/>of refractions, which is founded only upon the vari-<lb break="no"/>ations of the barometer and thermometer, would be very<lb break="yes"/>imperfect if the atmosphere changed in its constituent<lb break="yes"/>principles; but fortunately it is easy to prove that these<lb break="yes"/>changes do not take place in a sensible degree, and<lb break="yes"/>that the hydrogene gas, the refractive power of which is<lb break="yes"/>very great, does not exceed 0,003, at least as far as the<lb break="yes"/>greatest heights to which men have ever ascended. The<lb break="yes"/>Geometrician will therefore have nothing else to consider<lb break="yes"/>in the Theory of Refractions than the barometer, the<lb break="yes"/>thermometer, and the hygrometer.</p>
+                    <lb break="yes"/>
+                    <p>In fact, a little reflexion will be sufficient to convince us<lb break="yes" />that the atmosphere cannot vary very considerably in the<lb break="yes" />space of some years, and still loss of some days, at least<lb break="yes" />if we do not speak of some very particular local variations.<lb break="yes"/>For if it varied thus in so short a space of time, by what<lb break="yes"/>miracle should it do so, and return suddenly to its original<lb break="yes"/>state? How conceive a cause sufficiently powerful to<lb break="yes"/>change from one day to another the proportion of oxy-<lb break="no"/>gene by a thousandth part only, unless we should admit<lb break="yes"/>the existence of a magnetic or electric power, or any<lb break="yes"/>
+                        <fw type="catch" place="bottom">other</fw>
+                        <lb break="yes"/>
+                        <pb n="377" facs="#f0038"/> other equally imaginary, which could change, by un-<lb break="no"/>known modifications, the oxygene into azote, and <hi rendition="#i">vice<lb break="yes"/>vers&#x00E2;?</hi> It is possible that the atmosphere varies very<lb break="yes"/>slowly both in the proportion of its principles and in<lb break="yes"/>its weight; but these variations, for being so insensible,<lb break="yes"/>ought not the less to engage the attention of philo-<lb break="no"/>sophers.</p>
+                    <lb break="yes"/>
+                    <p>If it is now well proved that in general the atmosphere<lb break="yes"/>does not vary in its composition, we must seek for the<lb break="yes"/>cause of the differences which some have imagined they<lb break="yes"/>had discovered in it, in the local circumstances under<lb break="yes"/>which it was analyzed. Volcanoes upon high mountains,<lb break="yes"/>particular fermentations, water issuing from a marsh or a<lb break="yes"/>lake, might perhaps in some degree impair the purity of<lb break="yes"/>the air in contact with them, either by depriving it of<lb break="yes"/>oxygene, or by exhaling into it non-respirable elastic<lb break="yes"/>fluids; but how trifling must not this diminution of the<lb break="yes"/>proportion of the oxygene be in so large a mass of conti-<lb break="no"/>nually agitated air, when we consider that in places where<lb break="yes"/>a great number of individuals is collected, or in those<lb break="yes"/>where there seems to exist a focus of infection, the air<lb break="yes"/>nevertheless experiences but very slight variations. We<lb break="yes"/>have analyzed two portions of air, one of which was col-<lb break="no"/>lected in the pit of the Theatre Fran&#x00E7;ais, immediately be-<lb break="no"/>fore the curtain was raised for performing the after-piece,<lb break="yes"/>three hours and a half after a great number of spectators<lb break="yes"/>had assembled, and the other of which was collected three<lb break="yes"/>minutes after the entertainment had ended in the most<lb break="yes"/>elevated part of the house. These two portions scarcely<lb break="yes"/>rendered lime water turbid; the atmospheric air indi-<lb break="no"/>cating 0,210 of oxygene, the air of the pit indicated<lb break="yes"/>only 0,202 and that of the highest part of the house<lb break="yes"/>0,204.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">Ana-</fw>
+                    <lb break="yes"/>
+                    <pb n="378" facs="#f0039"/>
+                    <table>
+                        <row>
+                            <cell>Analysis of the at-<lb break="no"/>mospheric air.</cell>
+                            <cell>Of the air of the pit.</cell>
+                            <cell>Of the air of the highest<lb break="yes"/>part of the building.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>200 atmosph. air.</cell>
+                            <cell>200 atmosph. air.</cell>
+                            <cell>200 atmosph. air.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>200 hydrogene.</cell>
+                            <cell>200 hydr.</cell>
+                            <cell>200 hydr.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126 air absorbed.</cell>
+                            <cell>121,5 abs.</cell>
+                            <cell>122,5 abs.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>21 oxygene.</cell>
+                            <cell>20,2 oxyg.</cell>
+                            <cell>20,4 oxyg.</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                    <p>M. <persName key="seguin_01">Seguin</persName> has also analyzed the air of hospital wards<lb break="yes"/>which he had kept closely shut up for the space of twelve<lb break="yes"/>hours, and found it to be almost as pure as the atmo-<lb break="no"/>spheric air, although it had an insupportably infectious<lb break="yes"/>smell.</p>
+                    <lb break="yes"/>
+                    <p>If therefore, even under circumstances the most favour-<lb break="no"/>able to the absorption of the oxygene, the air does not<lb break="yes"/>lose one hundredth part of it, we cannot thereby account<lb break="yes"/>for the sense of anxiety which we feel in close and<lb break="yes"/>crowded apartments, or the maladies which are peculiar<lb break="yes"/>to the vicinity of lakes and marshes, or to certain coun-<lb break="no"/>tries. Under some circumstances they will be produced<lb break="yes"/>by emanations which elude all our eudiometrical means,<lb break="yes"/>and which act in a peculiar manner upon the human body.<lb break="yes"/>Thus a bubble of sulphurated hydrogene gas, of oxyge-<lb break="no"/>nated muriatic acid, a putrid exhalation, even a flower,<lb break="yes"/>may fill an immense space with this odour, and astonish<lb break="yes"/>our imagination by their extreme subtility, even when<lb break="yes"/>we are ready to sink under their action. The pestilential<lb break="yes"/>miasmata may be equally subtile without being the less<lb break="yes"/>deleterious, and equally elude all our means of analysis.<lb break="yes"/>Fortunately, if we cannot seize these atomic substances<lb break="yes"/>and determine their nature, we may at least, after the<lb break="yes"/>labours of M. <persName key="guytondemorveau_lbb">Guyton</persName>, which have been productive of<lb break="yes"/>such great benefit to mankind, destroy their action. But<lb break="yes"/>under other circumstances the maladies may arise from<lb break="yes"/>
+                        <fw type="catch" place="bottom">the</fw>
+                        <lb break="yes"/>
+                        <pb n="379" facs="#f0040"/> the humidity of the air, from its temperature, from its<lb break="yes"/>electric state, or in general from the state of the atmo-<lb break="no"/>sphere with respect to the peculiar state of the individual<lb break="yes"/>affected; and in these cases, which may be very frequent,<lb break="yes"/>the malady may make great ravages without its being<lb break="yes"/>possible to arrest its progress: it would therefore be illu-<lb break="no"/>sory to attribute all to a single cause, when the state of<lb break="yes"/>human health depends upon the concurrence of all the<lb break="yes"/>circumstances under which men are placed.</p>
+                    <lb break="yes"/>
+                    <p>But let us now recapitulate the principal facts con-<lb break="no"/>tained in this first part of our Memoir, and call to mind<lb break="yes"/>some of the explanations which we have offered, hoping<lb break="yes"/>we may be permitted to consider them as expressing the<lb break="yes"/>real state of the facts.</p>
+                    <lb break="yes"/>
+                    <p>The solution of an alkaline sulphuret, when made cold,<lb break="yes"/>does not absorb the azote, and it may be employed with<lb break="yes"/>advantage for the analysis of the air: when made hot, it<lb break="yes"/>absorbs it, and indicates a greater diminution of volume<lb break="yes"/>in the air than that which proceeds from the absorption<lb break="yes"/>of the oxygene. It is to the water only, and not to the<lb break="yes"/>sulphuret, that we are to attribute this property.</p>
+                    <lb break="yes"/>
+                    <p>There are certain proportions of oxygene and hydro-<lb break="no"/>gene in which the combustion produced by the electric<lb break="yes"/>spark may be complete; there are others in which the<lb break="yes"/>combustion ceases before being completed; and finally<lb break="yes"/>there are others in which it cannot take place at all.<lb break="yes"/>These last phenomena seem to depend upon the circum-<lb break="no"/>stance that the temperature necessary for the combustion<lb break="yes"/>is not sufficiently elevated, and not upon the mutual affi-<lb break="no"/>nity of the gases: for in all cases in which the <choice>
+                            <sic>combus-<lb break="no"/>sion</sic>
+                            <corr type="editorial">combus-<lb break="no"/>tion</corr>
+                        </choice> is not complete, we need only raise the temperature<lb break="yes" />artificially in order that it may become so. When the<lb break="yes" />hydrogene and oxygene are not entirely absorbed, we<lb break="yes"/>
+                        <fw type="catch" place="bottom">find</fw>
+                        <lb break="yes"/>
+                        <pb n="380" facs="#f0041"/> find them again in the residues, and prove that they have<lb break="yes"/>not formed new combinations.</p>
+                    <lb break="yes"/>
+                    <p>When we cannot inflame a gaseous mixture which con-<lb break="no"/>tains oxygene and hydrogene, it will be sufficient to aug-<lb break="no"/>ment the proportion of these two gases. The meteoric<lb break="yes"/>phenomena cannot be results of the inflammation of hy-<lb break="no"/>drogene gas, since even in an air consisting merely of<lb break="yes"/>pure oxygene, it would require more than 6 hundredths<lb break="yes"/>of hydrogene for combustion to take place, and even then<lb break="yes"/>it would be only partial. Electricity seems to act in the<lb break="yes"/>inflammation of oxygene and hydrogene gas by the heat<lb break="yes"/>arising from the compression which it produces in its<lb break="yes"/>passage through their mixture. These two gases, by<lb break="yes"/>their combination, form water, which is constant in its<lb break="yes"/>nature. If the <persName key="galvani_la" >galvanic</persName> phenomena seem to prove that<lb break="yes"/>water is susceptible of oxygenation or hydrogenation, they<lb break="yes"/>may be equally well accounted for without the aid of such<lb break="yes"/>an hypothesis.</p>
+                    <lb break="yes"/>
+                    <p>One hundred parts by volume of oxygene require for<lb break="yes"/>their saturation 200 of hydrogene. This proportion is<lb break="yes"/>independent of the changes of temperature and moisture,<lb break="yes"/>whereas that determined by weight varies under the same<lb break="yes"/>circumstances, because the two gases do not carry into the<lb break="yes"/>combination quantities of water which are in the same<lb break="yes"/>proportion as their quantities by weight; whence it results<lb break="yes"/>that the proportions of the water which have been esta-<lb break="no"/>blished must be modified. The Eudiometer of <persName key="volta_agv">Volta</persName> is<lb break="yes"/>capable of indicating the whole quantity of oxygene con-<lb break="no"/>tained in a given volume of air within about a thousandth<lb break="yes"/>part of that volume, and its results admit very well of<lb break="yes"/>comparison. In the present state of our knowledge, it is<lb break="yes"/>the most exact of our eudiometrical means; it is not only<lb break="yes"/>capable of indicating very small quantities of oxygene or<lb break="yes"/>of hydrogene, and determining the purity of the last-<lb break="maybe"/>
+                        <fw type="catch" place="bottom">mentioned</fw>
+                        <lb break="yes"/>
+                        <pb n="381" facs="#f0042"/> mentioned gas, but it has likewise the advantage of giving<lb break="yes"/>multiples of the quantity to be estimated. It has there-<lb break="no"/>fore in all these respects a very decided superiority over<lb break="yes"/>the other eudiometrical means. The atmosphere contains<lb break="yes"/>only 0,21 in volume of oxygene, and it does not vary in<lb break="yes"/>its composition. It contains no hydrogene, or if it con-<lb break="no"/>tains any, its quantity cannot amount to 3,003.</p>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#k">to be concluded in our next</hi>
+                        </hi>
+                    </p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb n="449" facs="#f0043"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Experiments on the Eudiometrical Means, and on the Pro-<lb break="no"/>portion of the Constituent Principles of the Atmosphere.<lb break="yes"/>By Messrs.</hi>
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <persName key="gaylussac_jl">
+                        <hi rendition="#k">Gay-Lussac.</hi>
+                    </persName>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(Concluded from Page 381.)</hi>
+                </p>
+                <lb break="yes"/>
+                <div n="4">
+                    <head>
+                        <hi rendition="#i">Of the Nature of the Air extracted from Water, and of the<lb break="yes"/>Action of Water upon the Gases, both pure and mixed.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">W</hi>E have hitherto examined the eudiometrical means<lb break="yes"/>which lead to the exact analysis of the atmospheric air.<lb break="yes"/>We should undoubtedly have confined ourselves to the<lb break="yes"/>enunciation of the principal facts to which the first part<lb break="yes"/>of our investigation has conducted us, had we not re-<lb break="no"/>marked in the course of these experiments, and particu-<lb break="no"/>larly of those upon the sulphurets, that water and other<lb break="yes"/>liquids exert an action upon the air which may frequently<lb break="yes"/>become a cause of error, the more important as it has<lb break="yes"/>hitherto been little attended to. We therefore appre-<lb break="no"/>hended, that we should leave our labours in a still more<lb break="yes"/>imperfect state than we have already done, if we had<lb break="yes"/>not directed our inquiries to this action of water upon the<lb break="yes"/>gases, both pure and mixed, which are subjected to it.<lb break="yes"/>The experiments which we have made with a view to<lb break="yes"/>this object, shall form the conclusion of our memoir.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">It</fw>
+                    <lb break="yes"/>
+                    <pb n="450" facs="#f0044"/>
+                    <p>It is generally known that water can hold air in solu-<lb break="no"/>tion. <persName key="boyle_r">Boyle</persName>, Huggens, and <persName key="mairan_01">Mairan</persName>, have discussed this<lb break="yes" />fact; but they did not possess the means of discovering<lb break="yes" />that this dissolved air differs chemically from the atmo-<lb break="no" />spheric air. The celebrated <persName key="priestley_j" >Priestley</persName> was the first who<lb break="yes"/>observed that the air extracted from water contains more<lb break="yes"/>oxygene than common air. M. <persName key="hassenfratz_jh">Hassenfratz</persName> afterwards<lb break="yes"/>asserted that rain-water evolved an air which contained<lb break="yes"/>nearly forty-hundredths of oxygene; and Messrs. <persName key="ingenhousz_j">Ingen-<lb break="no"/>houtz</persName> and <persName key="vanbreda_01">Breda</persName>, in their experiments upon nitrous gas,<lb break="yes"/>were led to similar results.</p>
+                    <lb break="yes"/>
+                    <p>But if it is already known that the air contained in wa-<lb break="no"/>ter is more pure than atmospheric air, it has also been<lb break="yes" />maintained that water absorbs the oxygene gas more<lb break="yes" />abundantly and more readily than the azote. M. <persName key="fourcroy_afd">Four-<lb break="no"/>croy</persName> even mentions the curious fact, which however he<lb break="yes"/>himself does not conceive to be sufficiently authenticated,<lb break="yes"/>that water charged with oxygene gas absorbs hydrogene<lb break="yes"/>gas, upon which common water has hardly any action.<lb break="yes"/>We shall see hereafter, that that which it exercises upon<lb break="yes"/>any gas is modified by the nature of the air which it al-<lb break="no"/>ready holds in solution.</p>
+                    <lb break="yes"/>
+                    <p>Mr. <persName key="henry_01">Henry</persName>, in a memoir lately published in England,<lb break="yes"/>has examined the absorption of different gases by water<lb break="yes"/>deprived of air. He effected these absorptions under a pres-<lb break="no"/>sure equal to that of two or three atmospheres; but he has<lb break="yes"/>not treated of the mixture of different gases, nor of the<lb break="yes"/>affinity which water has for this mixture: he confines<lb break="yes"/>himself to the examination of the quantity absorbed, ac-<lb break="no"/>cording to the difference of temperature and of barome-<lb break="no"/>tric pressure, without directing his inquiries to the ac-<lb break="no"/>tion of water already saturated with other gases.</p>
+                    <lb break="yes"/>
+                    <p>We conceived that we ought not to neglect a subject<lb break="yes"/>so intimately connected with eudiometrical inquiries, and<lb break="yes"/>to which chemists have hitherto paid so little attention.<lb break="yes"/>
+                        <fw type="catch" place="bottom">We</fw>
+                        <lb break="yes"/>
+                        <pb n="451" facs="#f0045"/> We have examined the degree of affinity by which the<lb break="yes"/>oxygene dissolved in water is retained in it, according to<lb break="yes"/>the temperature and the salts which it may contain. We<lb break="yes"/>placed in contact with water equal quantities of gases,<lb break="yes"/>both pure and mixed, and we observed the changes which<lb break="yes"/>these mixtures undergo in their chemical composition.<lb break="yes"/>Finally, we have begun to examine a problem of great<lb break="yes"/>importance to meteorology, namely, whether rain water<lb break="yes"/>holds hydrogene in solution.</p>
+                    <lb break="yes"/>
+                    <p>All these inquiries, which we intend to prosecute<lb break="yes"/>during the course of this year, and particularly upon the<lb break="yes"/>mountains which we purpose to visit, are not as yet in a<lb break="yes"/>very advanced state; we shall therefore content ourselves<lb break="yes"/>for the present with offering some leading facts, which,<lb break="yes"/>we trust, will not be deemed altogether destitute of in-<lb break="no"/>terest by philosophers.</p>
+                    <lb break="yes"/>
+                    <p>After mixing the whole mass of air which water yields<lb break="yes"/>by boiling, without separating the portions first disen-<lb break="no"/>gaged from those evolved at the end of the operation,<lb break="yes"/>we found by <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer that distilled water,<lb break="yes"/>which has re-absorbed atmospheric air, gives an air which<lb break="yes"/>contains in the hundred parts 32,8 of oxygene; the wa-<lb break="no"/>ter of the Seine, one which contains 31,9 oxygene; and<lb break="yes"/>rain-water an air containing 31,0 of the same principle.</p>
+                    <lb break="yes"/>
+                    <p>From these experiments it follows, that we may ex-<lb break="no"/>tract from these three waters air nearly equally rich in<lb break="yes"/>oxygene, and purer by ten-hundredths than the atmo-<lb break="no"/>spheric air. This quantity of oxygene is more variable<lb break="yes"/>in the waters of wells, which in the bowels of the earth<lb break="yes"/>are in contact with substances that exercise an affinity<lb break="yes"/>upon oxygene. Water of the Seine, collected at another<lb break="yes"/>period, yielded an air containing only 29,1 of oxygene,<lb break="yes"/>an air somewhat less pure than that of the rain water.</p>
+                    <lb break="yes"/>
+                    <p>If distilled water which has again absorbed air, rain<lb break="yes"/>water, and river water, yield airs all of which are much<lb break="yes"/>
+                        <fw type="catch" place="bottom">purer</fw>
+                        <lb break="yes"/>
+                        <pb n="452" facs="#f0046"/> purer than the atmospheric air, it will be still more inte-<lb break="no"/>resting to examine the nature of the gaseous mixtures<lb break="yes"/>which water yields when heated gradually. It is in these<lb break="yes"/>experiments that the great affinity of oxygene for this li-<lb break="no"/>quid displays itself in its strongest light. We gradually<lb break="yes"/>heated water of the Seine to ebullition, and collected<lb break="yes"/>the air which is disengaged by successive and unequal<lb break="yes"/>portions. We took 200 parts of these portions, and ha-<lb break="no"/>ving detonated them with 200 parts of hydrogene gas,<lb break="yes"/>they gave us the following results.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Portions of air, according<lb break="yes"/>to the order of their<lb break="yes"/>evolution.</cell>
+                            <cell>Absorption.</cell>
+                            <cell>Oxygene gas contained<lb break="yes"/>in 100 parts of the<lb break="yes"/>air evolved.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>First &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>142,0 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>23,7</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Second &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>164,5 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>27,4</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Third &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>185,0 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>30,2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Fourth &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>195,0 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>32,5</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                    <p>These experiments, several times repeated, prove that<lb break="yes"/>water abandons at first an air, the purity of which is only<lb break="yes"/>a little superior to that of atmospheric air; after which<lb break="yes"/>the purity of this air, or the disengagement of oxygene,<lb break="yes" />progressively increases, and the last gaseous portions<lb break="yes" />which the heat separates contain the most oxygene. On<lb break="yes" />repeating this experiment upon snow-water, the first<lb break="yes" />portions of air had 24,0; the last 34,8 of oxygene. Pos-<lb break="no" />sibly if the mass of water were heated still more slowly,<lb break="yes" />and the small portion of air which is first evolved care-<lb break="no" />fully separated, we should have at the beginning of the<lb break="yes" />operation an air still less pure than that which we obtained.</p>
+                    <lb break="yes"/>
+                    <p>Water therefore does not exercise an uniform action<lb break="yes"/>upon oxygene and upon azote, and elevation of tempera-<lb break="no"/>ture diminishes its action upon the first less than upon<lb break="yes"/>the last. It is even probable that the portion of air which<lb break="yes"/>is disengaged towards the end of the operation would be<lb break="yes"/>of greater purity than that of 32 or 34 <hi rendition="#i">per cent.</hi> of oxy-<lb break="no"/>
+                        <fw type="catch" place="bottom">gene,</fw>
+                        <lb break="yes"/>
+                        <pb n="453" facs="#f0047"/> gene, if the water contained in the vessel which receives<lb break="yes"/>the gaseous mixture did not begin to be heated, and to<lb break="yes"/>evolve its air, which then is only at 23 <hi rendition="#i">per cent.</hi> of oxy-<lb break="no"/>gene. This disengagement takes place especially when<lb break="yes"/>the aqueous vapour begins to pass, and it is this dimi-<lb break="no"/>nution of the purity of the air expelled last and the ine-<lb break="no"/>quality of volume of the four separate portions, which<lb break="yes"/>explain how the whole mass of air extracted at once<lb break="yes"/>contains to the amount of 31 hundredths of oxygene.</p>
+                    <lb break="yes"/>
+                    <p>This unequal action of water upon the oxygene and the<lb break="yes"/>azote manifests itself also in the solution of salts. We<lb break="yes"/>have observed that the pure water of the Seine gave by<lb break="yes"/>ebullition nearly one half more of air than the same water<lb break="yes"/>charged with muriate of soda. The cause of this dimi-<lb break="no"/>nution consists in the very considerable quantity of air<lb break="yes"/>which already disengaged from the water, still cold,<lb break="yes"/>whilst the solution of the salt is taking place. This air,<lb break="yes"/>accurately analyzed, shewed only 0,225 of oxygene,<lb break="yes"/>whilst the air obtained by boiling the water charged with<lb break="yes"/>muriate of soda, contained 0,305. Hence it appears that<lb break="yes"/>the water, in dissolving the salt, abandons a part of the<lb break="yes"/>air which it holds in solution, but that this part con-<lb break="no"/>tains oxygene in a less proportion than that which it re-<lb break="no"/>tains.</p>
+                    <lb break="yes"/>
+                    <p>The condensation which water experiences in passing<lb break="yes"/>from the liquid to the solid state presents to us a third<lb break="yes"/>class of phenomena analogous to those which we have just<lb break="yes"/>described. Melted ice yields only about half the quantity<lb break="yes"/>of air which we obtain from common water, and it is to<lb break="yes"/>be observed that it does not begin to evolve its air until<lb break="yes"/>its temperature has been raised as high as above the six-<lb break="no"/>tieth degree of the centigrade thermometer. The air ob-<lb break="no"/>tained, divided into two unequal portions, shewed in<lb break="yes"/>
+                        <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer 27,5 and 33,5 of oxygene. Then the<lb break="yes"/>purest air was again evolved the last.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">The</fw>
+                    <lb break="yes"/>
+                    <pb n="454" facs="#f0048"/>
+                    <p>The small quantity and the great purity of the air<lb break="yes"/>evolved from melted ice, proves that water, as it passes<lb break="yes"/>into the solid state, abandons a large portion of its air,<lb break="yes"/>and that this part, separated during the congelation, is<lb break="yes"/>air of much less purity than that which it retains. Thus<lb break="yes"/>three phenomena, which at the first view appear diffe-<lb break="no"/>rent, water at a temperature from 35° to 40° centigram,<lb break="yes"/>water dissolving salts cold, and pure water congealing<lb break="yes"/>into ice, present results entirely similar to each other in<lb break="yes"/>their action upon oxygene and azote. A moderate tem-<lb break="no"/>perature acts like the solution of a salt, and this like the<lb break="yes"/>transition from the liquid into the solid state. The water<lb break="yes"/>in these three cases evolves an air of less purity than that<lb break="yes"/>which it holds in solution.</p>
+                    <lb break="yes"/>
+                    <p>It is a very remarkable phenomenon that the congela-<lb break="no"/>tion of water into the state of snow expels less air from<lb break="yes"/>it than the formation of ice. We melted some newly<lb break="yes"/>fallen snow, and heating it gradually, we obtained a vo-<lb break="no"/>lume of air nearly twice as great as that which melted ice<lb break="yes"/>yields. The air extracted from the snow-water was al-<lb break="no"/>most in equal abundance with that evolved from the wa-<lb break="no"/>ter of the Seine; for the latter gave by ebullition 1940<lb break="yes"/>measures of air, while the same volume of snow-water<lb break="yes"/>yielded 1892. These 1892 parts collected into 5 por-<lb break="no"/>tions, according to the periods at which they were ex-<lb break="no"/>pelled by the heat, shewed successively in <persName key="volta_agv">Volta&#x2019;s</persName> eudi-<lb break="no" />ometer.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>The first &#x2012; &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>24,0 of oxygene.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Second &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>26,8.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Third &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>29,6.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Fourth &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>32,0.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Fifth &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>34,8.</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                    <p>This last portion of air is the purest we have yet ex-<lb break="no"/>tracted from any water.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">The</fw>
+                    <lb break="yes"/>
+                    <pb n="455" facs="#f0049"/>
+                    <p>The volumes of each portion being known, calculation<lb break="yes"/>gives us for the purity of the air considered collectively<lb break="yes"/>28,7 of oxygene. The water of the Seine yielded on the<lb break="yes"/>same day an air which was less pure by <formula notation="TeX">\frac{4}{1000}</formula>. Other-<lb break="no"/>wise the two waters, that of melted snow and that of the<lb break="yes"/>river, give a volume of air equal to nearly <formula notation="TeX">\frac{1}{23}</formula> of their<lb break="yes"/>own.</p>
+                    <lb break="yes"/>
+                    <p>These experiments upon snow-water and upon melted<lb break="yes"/>ice, which we design hereafter to vary in many ways,<lb break="yes"/>present considerations of great importance to the study of<lb break="yes" />meteorology. Snow is nothing else than an aggregate of<lb break="yes" />small crystals of ice which are formed in the higher<lb break="yes" />regions of the atmosphere, and yet these small crystals<lb break="yes" />melted give a volume of air nearly twice as great as that<lb break="yes" />which the ice formed upon our rivers yields. Hence it is to<lb break="yes" />be concluded that when the water dissolved in the air con-<lb break="no" />geals into snow, it does not expel that large portion of air<lb break="yes"/>which it disengages in its congelation upon the surface of<lb break="yes"/>the earth, unless we might be allowed to suppose that<lb break="yes"/>snow retains between its small crystals a certain quantity<lb break="yes"/>of air which it absorbs as it melts; for it appears<lb break="yes"/>that it is principally at the moment of its congela-<lb break="no"/>tion that water abandons the greater part of its air.</p>
+                    <lb break="yes"/>
+                    <p>The beautiful vegetation which surrounds the Gla-<lb break="no"/>ciers, the rapid developement of plants when the snow<lb break="yes"/>melts in the spring, and several phenomena which are<lb break="yes"/>supposed to have been observed in agriculture and in<lb break="yes"/>bleaching, have led to the notion that the waters of ice,<lb break="yes"/>snow and rain, produced peculiar effects by a large quan-<lb break="no"/>tity of dissolved oxygene which was evolved from them.<lb break="yes"/>The experiments which we have hitherto made do not<lb break="yes"/>seem favourable to these conjectures. There undoubt-<lb break="no"/>edly exist wells, the waters of which contain air inferior<lb break="yes"/>in purity to the atmospheric air, and we do not doubt<lb break="yes"/>that these waters, charged besides with salts and car-<lb break="no"/>
+                        <fw type="catch" place="bottom">bonic</fw>
+                        <lb break="yes"/>
+                        <pb n="456" facs="#f0050"/> bonic acid, must have an influence upon vegetation and<lb break="yes"/>bleaching very different from that of snow-water. But<lb break="yes"/>the differences produced by distilled water exposed to the<lb break="yes"/>air, rain-water, snow-water and the water of the Seine,<lb break="yes"/>are not easily to be accounted for by the oxygene dis-<lb break="no"/>solved in them, if we recollect that all these airs contain<lb break="yes"/>water of nearly equal purity, and that they contain it in<lb break="yes"/>almost equal quantity. The phenomena of vegetation,<lb break="yes"/>like those of meteorology, are so complicated; they de-<lb break="no"/>pend upon the concurrence of so many causes at once,<lb break="yes"/>that we must be very careful not to attribute to one what<lb break="yes"/>is the effect of many.</p>
+                    <lb break="yes"/>
+                    <p>The experiments which we have recorded on the force<lb break="yes"/>with which the last particles of oxygene dissolved are re-<lb break="no"/>tained by water, throw an additional light upon the state<lb break="yes"/>in which air exists in liquids. The specific gravity of<lb break="yes"/>distilled water and of that charged with air, being appa-<lb break="no"/>rently the same, <persName key="mairan_01">Mairan</persName> has concluded with reason that<lb break="yes"/>this air cannot be lodged in the fluids in an elastic state.<lb break="yes"/>The chemical phenomena confirm this opinion. If water<lb break="yes"/>deprived of its air by distillation, or by the air-pump,<lb break="yes"/>could be considered as a sponge the pores of which are<lb break="yes"/>empty, how should these pores not fill themselves on the<lb break="yes"/>first contact with atmospheric air? But this solution of air<lb break="yes"/>in water can be considered only as the effect of a chemical<lb break="yes"/>affinity; for how but by this affinity could the absorption<lb break="yes"/>of the gases by the water deprived of air be so slow, and<lb break="yes"/>above all, how else should the water dissolve one gas in<lb break="yes"/>preference to another? How should water charged with<lb break="yes"/>one species of air abandon a part of it, as we shall<lb break="yes"/>see hereafter that it does, to receive another of a different<lb break="yes"/>nature?</p>
+                    <lb break="yes"/>
+                    <p>After having examined the air which may be extracted<lb break="yes"/>from water under different circumstances, we shall con-<lb break="no"/>clude our Memoir with the experiments which we have<lb break="yes"/>
+                        <fw type="catch" place="bottom">made</fw>
+                        <lb break="yes"/>
+                        <pb n="457" facs="#f0051"/> made in placing gases, both pure and mixed, in contact<lb break="yes"/>with water. The gases which we employed were exactly<lb break="yes"/>of the same volume, and the quantity of filtrated water of<lb break="yes"/>the Seine was nearly equal. After a space of from 6 to<lb break="yes"/>8 days, we not only measured the quantity of the volumes<lb break="yes"/>absorbed, but we also analyzed the residues. This ana-<lb break="no"/>lysis was the more necessary as one might often be<lb break="yes"/>tempted to conclude from a very small change in the vo-<lb break="no"/>lume of the gas placed in contact with the water, that<lb break="yes"/>the latter has no sensible action upon it, whilst the na-<lb break="no"/>ture of the residue indicates that this action has been<lb break="yes"/>very strong, but disguised by the quantity of air evolved<lb break="yes"/>from the water in lieu of that which has been ab-<lb break="no"/>sorbed.</p>
+                    <lb break="yes"/>
+                    <p>Of all the gases, the oxygene is that which the water<lb break="yes"/>of the Seine absorbs in the most considerable quantity.<lb break="yes"/>If we place in contact with this water, already charged<lb break="yes"/>with air, 100 parts of oxygene gas, 100 of azote, and 100<lb break="yes"/>of hydrogene, the oxygene gas will have diminished by<lb break="yes"/>40 parts when the two others have lost only 5 and 3 parts.<lb break="yes"/>But the real absorption of the oxygene gas is still much<lb break="yes"/>more considerable than its apparent diminution indicates.<lb break="yes"/>The 60 parts of residue, instead of being pure oxygene,<lb break="yes"/>contained 37 parts of azote and only 24 of oxygene; so<lb break="yes"/>that the 100 parts of oxygene employed, had lost upon<lb break="yes"/>the Seine water 77 parts, which had expelled 37 parts of<lb break="yes"/>azote. Thus a river water which had been exposed for<lb break="yes"/>a long time to the atmosphere, and which might be con-<lb break="no"/>sidered as saturated with air, absorbs a large quantity of<lb break="yes"/>oxygene when it is presented to it. It takes it, without<lb break="yes"/>abandoning a portion of azote equal in volume to the oxy-<lb break="no"/>gene absorbed.</p>
+                    <lb break="yes"/>
+                    <p>The action of water upon the volume of hydrogene<lb break="yes"/>gas appears to amount almost to nothing. The inequa-<lb break="no"/>
+                        <fw type="catch" place="bottom">lity</fw>
+                        <lb break="yes"/>
+                        <pb n="458" facs="#f0052"/> lity of the results which we obtained prevent our saying<lb break="yes"/>any thing concerning the slight changes which it may<lb break="yes"/>undergo during their contact.</p>
+                    <lb break="yes"/>
+                    <p>The volume of pure azote gas diminishes upon the<lb break="yes"/>water by between 2 and 3 hundredth parts; but the re-<lb break="no"/>sidue is no longer pure azote: we discovered in it<lb break="yes"/>11 parts of oxygene which had been displaced from<lb break="yes"/>the water by 14 parts of azote. The azote therefore dis-<lb break="no"/>lodges ozygene from the water, as oxygene dislodges<lb break="yes"/>azote. The action is analogous, but the quantities ab-<lb break="no"/>sorbed and dislodged are different.</p>
+                    <lb break="yes"/>
+                    <p>The contact of the river-water with a mixture of hy-<lb break="no"/>drogene and oxygene gases was examined under vari-<lb break="no"/>ous circumstances. Sometimes we mixed the two gases<lb break="yes"/>in equal quantities, sometimes we caused one or the other<lb break="yes"/>to predominate. The diminution of the volume of the<lb break="yes"/>gases is greater when the oxygene predominates; that<lb break="yes"/>is to say, when we expose to the water a mixture of 200<lb break="yes"/>parts of oxygene with 100 of hydrogene. In all these ex-<lb break="no"/>periments azote is again dislodged from the water. In<lb break="yes"/>analyzing the residuum of a mixture of equal parts of ox-<lb break="no"/>ygene and of hydrogene, we found in 100 parts 20 parts<lb break="yes"/>azote, 50 hydrogene, and 30 oxygene. The greater the<lb break="yes"/>absorption of oxygene was, the more azote we found to<lb break="yes"/>be dislodged. Having mixed 400 parts of oxygene with<lb break="yes"/>200 of hydrogene, this volume was reduced upon Seine<lb break="yes"/>water, in the space of ten days, from 600 parts to 562.<lb break="yes"/>If this residue had undergone no chemical change in its<lb break="yes"/>proportions, if no other gas had been dislodged, it<lb break="yes"/>ought to have contained 375 parts of oxygene and 187<lb break="yes"/>of hydrogene; but our analysis shewed it to contain 246<lb break="yes"/>azote, 142 hydrogene, and 174 oxygene.</p>
+                    <lb break="yes"/>
+                    <p>These experiments prove that hydrogene, which, when<lb break="yes"/>placed alone in contact with water, is not sensibly ab-<lb break="no"/>
+                        <fw type="catch" place="bottom">sorbed</fw>
+                        <lb break="yes"/>
+                        <pb n="459" facs="#f0053"/> sorbed by it, is dissolved in it, and that in a very consi-<lb break="no"/>derable proportion, when it is mixed with oxygene. On<lb break="yes"/>this subject a question of great importance to Natural<lb break="yes"/>Philosophy presents itself; namely, whether this hydro-<lb break="no"/>gene absorbed by the water exists in it in the state of hy-<lb break="no"/>drogene, or whether it combines in it with oxygene and<lb break="yes"/>so forms water. We have endeavoured to solve this<lb break="yes"/>question by leaving a mixture of hydrogene and oxygene<lb break="yes"/>in contact with water recently deprived of all its air by<lb break="yes"/>ebullition. After the space of 12 days, we distilled this<lb break="yes"/>water, and on analyzing the air disengaged from it, we<lb break="yes"/>found the hydrogene to exist in it in such abundance<lb break="yes"/>that we could inflame it in <persName key="volta_agv">Volta&#x2019;s</persName> eudiometer without<lb break="yes"/>adding to it any other gas. This experiment proves be-<lb break="no"/>yond a doubt that the hydrogene absorbed is found again<lb break="yes"/>in the water. But did this water give up again the same<lb break="yes"/>quantity which it had absorbed? Would not this hydro-<lb break="no"/>gene dissolved in the water unite with the oxygene if it<lb break="yes"/>had been lodged in it for several months? We design to<lb break="yes"/>make a long series of experiments upon this subject. If<lb break="yes"/>the hydrogene and oxygene contained in the water could<lb break="yes"/>combine in it, we should be able more readily to conceive<lb break="yes"/>how the hydrogene gas which rises from the surface of<lb break="yes"/>the earth is not to be discovered either in the air which<lb break="yes"/>surrounds us, or in the high regions of the atmosphere<lb break="yes"/>into which we have ascended. We must recollect upon<lb break="yes"/>this subject that having carefully examined rain-water,<lb break="yes"/>in order to discover hydrogene in it, we have ascertained<lb break="yes"/>that the air disengaged from this water did not contain<lb break="yes"/>a quantity of it amounting to <formula notation="TeX">\frac{3}{1000}</formula>. We shall repeat<lb break="yes" />these experiments upon rain that has fallen in diffe-<lb break="no"/>rent seasons, and particularly during storms.</p>
+                    <lb break="yes"/>
+                    <p>River water placed in contact with mixtures of gases<lb break="yes"/>has in general acted less upon the mixtures of oxygene<lb break="yes"/>
+                        <fw type="catch" place="bottom">and</fw>
+                        <lb break="yes"/>
+                        <pb n="460" facs="#f0054"/> and azote than those of oxygene and of hydrogene.<lb break="yes"/>This result will appear the less surprizing if we take<lb break="yes"/>a general view of what takes place in these phenomena.</p>
+                    <lb break="yes"/>
+                    <p>We find that water has a continual tendency to place<lb break="yes"/>itself in a state of equilibrium with the gases presented<lb break="yes"/>to it. If we present oxygene to it, it abandons azote.<lb break="yes"/>If we place it in contact with azote, it abandons oxy-<lb break="no"/>gene. If we present to it a mixture of oxygene and<lb break="yes"/>hydrogene, it absorbs a part of these two gases, and re-<lb break="no"/>places them with azote. It every where tends to modify<lb break="yes"/>the proportions of the air which it holds in solution ac-<lb break="no"/>cording to the nature of the gases which are presented to<lb break="yes"/>it. Now the water of the Seine being charged with a<lb break="yes"/>mixture of azote and of oxygene, it seems natural that it<lb break="yes"/>should excite more action upon a mixture of hydrogene<lb break="yes"/>and oxygene than upon that of azote and oxygene,<lb break="yes"/>which is analogous to the air which it holds in solution.<lb break="yes"/>In order to obtain an accurate idea of these phenomena,<lb break="yes"/>we shall make experiments upon water recently deprived<lb break="yes"/>of air, by charging it with different gases both pure<lb break="yes"/>and mixed, and examining the action of this water<lb break="yes"/>after a long space of time; for frequently it is not<lb break="yes"/>till after a long repose that nature is enabled to overcome<lb break="yes"/>the obstacles which oppose themselves to the action of the<lb break="yes"/>affinities.</p>
+                    <lb break="yes"/>
+                    <p>Here we shall conclude the account of the inquiries into<lb break="yes" />which we have been engaged for several months past.<lb break="yes"/>The more extensive the field is which we purpose to ex-<lb break="no"/>plore, the more strongly we feel the imperfection of the<lb break="yes"/>work which we now present to the public; but this sen-<lb break="no"/>timent, so far from discouraging us, will only render us<lb break="yes"/>the more assiduous in interrogating nature, in order that<lb break="yes"/>we may carry these researches to a higher degree of per-<lb break="no"/>fection.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">TABLE</fw>
+                    <lb break="yes"/>
+                    <pb n="461" facs="#f0055"/>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#g">TABLE</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">Representing the Analysis of the Air.</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell cols="2">Days<lb break="yes"/>when the<lb break="yes"/>Air was<lb break="yes"/>collected.</cell>
+                            <cell>Temperature<lb break="yes"/>expressed in<lb break="yes"/>Degrees of the<lb break="yes"/>centigrade<lb break="yes" />Thermometer.</cell>
+                            <cell>State of the Atmosphere.</cell>
+                            <cell>Absorption<lb break="yes"/>proceeding from<lb break="yes"/>the Inflamma-<lb break="no"/>tion of 200 of<lb break="yes"/>Air and 200 of<lb break="yes"/>Hydrogene.</cell>
+                            <cell>Quantity<lb break="yes"/>of oxygene<lb break="yes"/>contained<lb break="yes"/>in 100<lb break="yes"/>Parts of<lb break="yes" />Air.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="10" rendition="#rightBraced">
+                                <hi rendition="#b">Brumaire</hi>
+                            </cell>
+                            <cell rows="2">26</cell>
+                            <cell rows="2">....... 7°.3</cell>
+                            <cell rows="2" rendition="#rightBraced">Sky overcast; wind E. ..........</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">27</cell>
+                            <cell rows="2">........ 4,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Sky overcast; wind E. S. E. ......</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">28</cell>
+                            <cell rows="2">........ 4,7</cell>
+                            <cell rows="2" rendition="#rightBraced">Light rains; very high wind S. W.</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">29</cell>
+                            <cell rows="2">....... 10,0</cell>
+                            <cell rows="2" rendition="#rightBraced">Light rain; wind S. ...........</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,5</cell>
+                            <cell>.. 21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">30</cell>
+                            <cell rows="2">....... 12,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Sky overcast; wind S. W. ........</cell>
+                            <cell>.... 126,8</cell>
+                            <cell>.. 21,2</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="18" rendition="#rightBraced">
+                                <hi rendition="#b">Frimaire</hi>
+                            </cell>
+                            <cell rows="2">1</cell>
+                            <cell rows="2">........ 6,7</cell>
+                            <cell rows="2" rendition="#rightBraced">Sky cloudy, slight rain; wind S. W.</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">2</cell>
+                            <cell rows="2">........ 1,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Cloudy sky; wind W. ..........</cell>
+                            <cell>.... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">3</cell>
+                            <cell rows="2">........ 8,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Rain; wind S. ................</cell>
+                            <cell>.... 126,3</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,5</cell>
+                            <cell>.. 21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">4</cell>
+                            <cell rows="2">....... 10,6</cell>
+                            <cell rows="2" rendition="#rightBraced">Sky overcast; wind S. W. ........</cell>
+                            <cell>.... 126,2</cell>
+                            <cell>.. 21,0</cell>
+                            <cell>126,5</cell>
+                            <cell>.. 21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">5</cell>
+                            <cell rows="2">........ 3,3</cell>
+                            <cell rows="2" rendition="#rightBraced">Cloudy sky; wind E. ..........</cell>
+                            <cell>.... 126,5</cell>
+                            <cell>.. 21,1</cell>
+                            <cell>126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>6</cell>
+                            <cell>...... &#x2014;1,6</cell>
+                            <cell>White frost; wind N. ..........</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>7</cell>
+                            <cell>...... &#x2014;1,3</cell>
+                            <cell>Snow; wind N. ................</cell>
+                            <cell>...... 12,65</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>10</cell>
+                            <cell>...... &#x2014;4,1</cell>
+                            <cell>Fog; wind N. N. E. ............</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>12</cell>
+                            <cell>...... &#x2014;2,8</cell>
+                            <cell>Cloudy sky, mists; wind E. ....</cell>
+                            <cell>...... 136,5</cell>
+                            <cell>.. 20,9</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>14</cell>
+                            <cell>........ 4,2</cell>
+                            <cell>Rain; wind S. ................</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>16</cell>
+                            <cell>........ 3,1</cell>
+                            <cell>Thick fog ....................</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>22</cell>
+                            <cell>........ 9,6</cell>
+                            <cell>Rain; wind S. S. W. ............</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>28</cell>
+                            <cell>...... &#x2014;2,2</cell>
+                            <cell>Sky overcast; wind N. E. ........</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell cols="2">Nivose 2</cell>
+                            <cell>........ 1,0</cell>
+                            <cell>Hoar frost, thick fog; wind S. E. ..</cell>
+                            <cell>...... 126,0</cell>
+                            <cell>.. 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

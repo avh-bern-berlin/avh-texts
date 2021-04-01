@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="105" facs="#f0001"/>
+            <lb break="yes"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">
+                        <hi rendition="#g">
+                            <hi rendition="#k">Extrait</hi>
+                        </hi> d&#x2019;une lettre de M.</hi> Alexandre<lb break="yes"/>
+                    <hi rendition="#i">
+                        <hi rendition="#k">
+                            <persName key="humboldt_av">Humboldt</persName>,</hi> au C. <persName key="delambre_jbj">
+                            <hi rendition="#k">Delambre.</hi>
+                        </persName>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>A la <placeName key="barcelona">nouvelle Barcelone</placeName>, dans <placeName key="suedamerika">l&#x2019;Amérique méridionale</placeName>, le 24<lb break="yes"/>
+                    <hi rendition="#et">novembre 1800.</hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#k">Mon</hi>
+                    </hi> garde-temps de <persName key="berthoud_l">L. Berthoud</persName> continue à<lb break="yes"/>&#x00EA;tre très exact dans sa marche. Je le contr&#x00F4;le tous<lb break="yes"/>les 5 à 6 jours, par des hauteurs correspondantes<lb break="yes"/>qui sont s&#x00FB;res à la seconde.</p>
+                <lb break="yes"/>
+                <p>On croit, d&#x2019;après la carte du P. <persName key="caulin_a" >Caulin</persName>, la meil-<lb break="no"/>leure qu&#x2019;il y ait (quoique tous les noms y soient<lb break="yes"/>faux), que les possessions espagnoles de la Guiane<lb break="yes"/>vont jusqu&#x2019;à l&#x2019;équateur; mais j&#x2019;ai trouvé, par de<lb break="yes"/>très bonnes observations que j&#x2019;ai faites dans les ro-<lb break="no"/>chers de Culimacari, par <hi rendition="#i">&#x03B1;</hi>. de La Croix et Canopus,<lb break="yes"/>que Santo-Carlos-del-Rio-Negro, l&#x2019;établissement le<lb break="yes"/>plus méridional, est encore à 1° 53&#x2032; de latitude<lb break="yes"/>bor. et que la ligne passe dans le gouvernement du<lb break="yes"/>grand Para, près de Saint-Gabriel-de-las-Cachuellas,<lb break="yes"/>où il y a une cataracte, mais moins considérable<lb break="yes"/>que les deux fameuses des <placeName key="atures">Atures</placeName> et de Maypares.<lb break="yes"/>
+                    <pb n="106" facs="#f0002"/>
+                    <persName key="lacondamine_cmd">La Condamine</persName> trouva au contraire les latitudes<lb break="yes"/>méridionales à <placeName key="amazonas" >l&#x2019;Amazone</placeName>, plus grandes qu&#x2019;on ne<lb break="yes" />le croyoit en Europe.</p>
+                <lb break="yes"/>
+                <p>Inclinaison magnétique (de la boussole de<lb break="yes"/>
+                    <persName key="borda_jcd">Borda</persName>), à Cumana avant le tremblement de terre<lb break="yes"/>du 4 novembre 1799 ......... 0°,4420&#xff1d;39°46&#x2032;48&#x2033;<lb break="yes"/>après le tremblement de terre, 0,4335&#xff1d;39° 0 54<lb break="yes"/>&#x2014; Oscillations, 229 en 10 minutes.</p>
+                <lb break="yes"/>
+                <p>Des expériences ont prouvé que c&#x2019;est cette partie<lb break="yes"/>du globe, et non l&#x2019;aiguille, qui a changé de charge<lb break="yes" />magnétique.</p>
+                <lb break="yes"/>
+                <p>A Calabozo, au milieu du Llana, latit. 8° 56&#x2032;<lb break="yes"/>56&#x2033; B. Longit. de Paris, 4<hi rendition="#sup">h</hi> 40&#x2032; 18&#x2033;. Inclinai-<lb break="no"/>son, 0,3930 = 35° 22&#x2032; 12&#x2033;. Oscillations, 222.</p>
+                <lb break="yes"/>
+                <p>A <placeName key="atures">Atures</placeName>, une des cataractes de l&#x2019;Orinoco, lat.<lb break="yes"/>5° 39&#x2032; 0&#x2033;; longit. 4° 42&#x2032; 19&#x2033;; inclinaison, 0,3885<lb break="yes"/>= 34° 57&#x2032; 54&#x2033;. Oscillations, 221.</p>
+                <lb break="yes"/>
+                <p>A <placeName key="sanfernandodeatabapo">San-Fernando-de-Atabapo</placeName>, mission à la bouche<lb break="yes"/>de la Guaviare, latit. 4° 9&#x2032; 50&#x2033;; inclinaison, 0,3030<lb break="yes"/>= 27° 16&#x2032; 12&#x2033;. Oscill. 219.</p>
+                <lb break="yes"/>
+                <p>A San-Carlos-del-Rio-Negro, lat. 1° 53&#x2032; B.; in-<lb break="no"/>clin. 0,2320 = 20° 52&#x2032; 48&#x2033; Oscill. 216.</p>
+                <lb break="yes"/>
+                <p>On a eu soin, dans ces observations, de tourner<lb break="yes"/>la boussole à l&#x2019;est et à l&#x2019;ouest, pour trouver les in-<lb break="no"/>clinaisons moyennes, et corriger l&#x2019;erreur qui peut<lb break="yes"/>résulter, quand l&#x2019;axe magnétique de l&#x2019;aiguille ne<lb break="yes"/>passe pas exactement par ses deux pointes, selon<lb break="yes"/>les règles données par MM. <persName key="cavendish_h">Cavendish</persName> et <persName key="dalrymple_a">Dal-<lb break="no"/>rymple</persName>.</p>
+                <lb break="yes"/>
+                <p>Je tiens, après tant d&#x2019;observations, 54 endroits<lb break="yes"/>
+                    <pb n="107" facs="#f0003"/> ou points de <placeName key="suedamerika" >l&#x2019;Amérique méridionale</placeName>, dans lesquels<lb break="yes" />j&#x2019;ai observé les latitudes et les longitudes; les pre-<lb break="no" />mières, déduites, pour la plupart, de la hauteur<lb break="yes"/>méridienne de deux astres au moins; les dernieres,<lb break="yes"/>ou par des distances de la lune au soleil et aux<lb break="yes"/>astres, ou par les garde-temps et angles horaires. Je<lb break="yes"/>suis à former une carte pour les pays que j&#x2019;ai par-<lb break="no"/>courus; et comme mes observations remplissent le<lb break="yes"/>vide qu&#x2019;il y a dans les cartes, entre le pays de Quito<lb break="yes"/>et la Cayenne, au nord de <placeName key="amazonas" >l&#x2019;Amazone</placeName>, je me<lb break="yes"/>flatte qu&#x2019;elles intéresseront les géographes.</p>
+                <lb break="yes"/>
+                <p>Mon garde-temps ne me donne avec exactitude<lb break="yes"/>que des différénces de méridiens avec les endroits<lb break="yes"/>de mon départ, avec Caraccas, Cumana et San-<lb break="maybe"/>Thomé-de-nueva-Guayana (lat. 8° 8&#x2032; 24&#x2033;; longit.<lb break="yes"/>21&#x2033; de temps à l&#x2019;ouest de Cumana). J&#x2019;ai donc le<lb break="yes"/>plus grand intér&#x00EA;t pour ma carte, de bien fixer ces<lb break="yes"/>trois endroits par rapport à Paris, et cela par des<lb break="yes"/>observations purement astronomiques.</p>
+                <lb break="yes"/>
+                <p>C&#x2019;est un grand besoin des navigateurs en m&#x00EA;me<lb break="yes"/>temps de trouver, lors de leur arrivée sur cette<lb break="yes"/>c&#x00F4;te, les ports bien déterminés en longitude, pour<lb break="yes"/>conno&#x00EE;tre l&#x2019;état de leurs chronomètres. Excepté la<lb break="yes"/>Martinique et la Guadeloupe, Portorico où M. <persName key="churrucayelorza_cdd">de<lb break="yes"/>Churruca</persName> a observé, Cayenne et le Quito, il y a<lb break="yes"/>peu d&#x2019;endroits sur la longitude desquels on puisse<lb break="yes"/>compter, surtout dans <placeName key="spanischeskolonialreich">l&#x2019;Amérique espagnole</placeName>.</p>
+                <lb break="yes"/>
+                <p>Carthagène est, d&#x2019;après la <hi rendition="#i">Connoissance des temps,</hi>
+                    <lb break="yes"/>à 5<hi rendition="#sup">h</hi> 12&#x2032; 12&#x2033;; mais les trois émersions de satellites<lb break="yes"/>observées par <persName key="herrera_md">Herrera</persName>, donnent toutes 69° 24&#x2032; 10&#x2033;,<lb break="yes"/>depuis Cadix, ou depuis Paris, 5<hi rendition="#sup">h</hi> 13&#x2032; 1&#x2033;.</p>
+                <lb break="yes"/>
+                <pb n="108" facs="#f0004"/>
+                <p>J&#x2019;ai observé avec la lunette de <persName key="dolland_p" >Dollond</persName>, gros-<lb break="no"/>sissant 95 fois,</p>
+                <lb break="yes"/>
+                <list>
+                    <item>A Cumana (latitude 10° 27&#x2032; 37&#x2033;.</item>
+                    <lb break="yes"/>
+                    <item>Immers. II satellite, 16 brum. an 8. 11<hi rendition="#sup">h</hi> 41&#x2032; 18&#x2033; <hi rendition="#k">t. v.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>II satellite, 25 fruct...... 16 31 0 <hi rendition="#k">t. v.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>I satellite, 25 sept. 1800.. 17 10 21 <hi rendition="#k">t. m.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>Emer. du IV satellite, 26 sept....... 17 28 0 <hi rendition="#k">t. m.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>III satellite, 27 sept ..... 16 25 55 <hi rendition="#k">t. m.</hi>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Je me défie donc de la longitude de Cumana,<lb break="yes"/>que me donna mon chronomètre, après ma traver-<lb break="no"/>sée, depuis les Canaries. Je trouvai 4<hi rendition="#sup">h</hi> 26&#x2032; 4&#x2033;, et<lb break="yes" />les observations de M. <persName key="fidalgo_jfd">Fidalgo</persName> (qui observa des<lb break="yes"/>émersions à la Trinité, mais non à Cumana) don-<lb break="no"/>nent plus encore, 4<hi rendition="#sup">h</hi> 26&#x2032; 16&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="fidalgo_jfd">Fidalgo</persName> a trouvé le Castille-San-Andres-de-Puer-<lb break="no"/>ta-Espana-de-la-Trinité, 55° 16&#x2032; 32&#x2033; à l&#x2019;occident de<lb break="yes"/>Cadix, et Cumana à 2° 41&#x2032; 25&#x2033; à l&#x2019;occident de<lb break="yes"/>Puerta-Espana. Mais la carte de l&#x2019;&#x00EE;le de la Trinité,<lb break="yes"/>publiée à Londres sur les belles observations de<lb break="yes"/>M. <persName key="churrucayelorza_cdd">de Churruca</persName> donne Puerta-Espana</p>
+                <lb break="yes"/>
+                <list>
+                    <item>61° 22&#x2032; &#x2033; à l&#x2019;occident de Londres.</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#u">2 20 15</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>ou 63 42 15 à l&#x2019;occident de Paris</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#u">8 37 30</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>ou 55 4 45 à l&#x2019;occident de Cadix.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Je crois qu&#x2019;on a eu sous les yeux, en réduisant<lb break="yes"/>la carte, le calcul du C. <persName key="lalande_jjlfd">Lalande</persName>, de l&#x2019;occultation<lb break="yes"/>
+                    <placeName key="aldebaran">d&#x2019;Aldébaran</placeName>, observée le 21 octobre 1793, à Por-<lb break="no"/>torico. Car la capitale de Portorico est, par les<lb break="yes"/>
+                    <pb n="109" facs="#f0005"/> chronomètres, de 4° 34&#x2032; à l&#x2019;occident de Puerta-<lb break="maybe"/>Espana; ce qui me donne, pour Puerta-Espana<lb break="yes"/>(en calculant la longitude par celle de Portorico),<lb break="yes"/>63° 48&#x2032; 15&#x2033;, et Cumana 66° 29&#x2032; 40&#x2033; à l&#x2019;occ.<lb break="yes"/>de Paris, ou....... 4<hi rendition="#sup">h</hi> 25&#x2032; 58&#x2033; 40&#x2032;&#x2033;</p>
+                <lb break="yes"/>
+                <p>Les cinq éclipses de satellites que je vous en-<lb break="no"/>voie, doivent jeter du jour là-dessus, et je pense<lb break="yes"/>que la longitude de Cumana ne sera pas beaucoup<lb break="yes"/>au-delà de 4<hi rendition="#sup">h</hi> 25&#x2032; 20&#x2033;.</p>
+                <lb break="yes"/>
+                <p>Malheureusement l&#x2019;éclipse de &#x2609; que j&#x2019;ai ample-<lb break="no" />ment observée le 6 brumaire, à Cumana (en faisant<lb break="yes"/>passer les cornes par les fils horizontal et vertical),<lb break="yes"/>n&#x2019;étoit pas visible en Europe. J&#x2019;en ai observé la fin<lb break="yes"/>à 2<hi rendition="#sup">h</hi> 14&#x2032; 22&#x2033; T. M.</p>
+                <lb break="yes"/>
+                <p>Le tems certain à la seconde, par des hauteurs<lb break="yes" />correspondantes.</p>
+                <lb break="yes"/>
+                <p>Du m&#x00EA;me jour, à Caraccas (Plaza de la San-<lb break="maybe"/>Trinidad), lat. 10° 31&#x2032; 4&#x2033;, j&#x2019;ai observé</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Immers. du I satell. 16 frim. an 8, à 16<hi rendition="#sup">h</hi> 11&#x2032; 57&#x2033; <hi rendition="#k">t. v.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>III satell. 16 frim...... 17 11 36 <hi rendition="#k">t. v.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>Emers. du I satell. 27 nivose... 11 14 8 <hi rendition="#k">t. m.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>II satell. 8 pluviose... 7 58 9 <hi rendition="#k">t. m.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>IV satell. 28 nivose.... 8 13 3 <hi rendition="#k">t. m.</hi>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Valle del Tuy al Pic de la Cocursa (latitude,<lb break="yes"/>10° 17&#x2032; 23&#x2033;).</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Emers. du I satell. 20 pluviose... 11<hi rendition="#sup">h</hi> 26&#x2032; 57&#x2033; <hi rendition="#k">t. m.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>III satell. 21 pluviose.. 7 58 50 <hi rendition="#k">t. m.</hi>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Mais ces dernières sept éclipses ont été observées<lb break="yes"/>avec une lunette de <persName key="caroche_ns">Caroché</persName>, très-belle, mais ne<lb break="yes"/>grossissant que 58 &#x017F;ois seulement; n&#x2019;ayant pu tra&#x00EE;ner<lb break="yes"/>
+                    <pb n="110" facs="#f0006"/> la grande lunette de <persName key="dolland_p" >Dollond</persName>, avec moi, au Rio-<lb break="maybe"/>Negro.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Déclin. magnét.</cell>
+                        <cell>à Cumana,</cell>
+                        <cell>5 brum.</cell>
+                        <cell>4° 13&#x2032; 45&#x2033;</cell>
+                        <cell>est.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>à Caraccas,</cell>
+                        <cell/>
+                        <cell>4 38 45</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>à Calabozo,</cell>
+                        <cell/>
+                        <cell>4 54</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Le port de la Guayra est très-exactement de 29&#x2033;<lb break="yes"/>en temps à l&#x2019;occident de Caraccas, et j&#x2019;espère que<lb break="yes"/>donnant des immersions et des émersions, le mé-<lb break="no"/>ridien de Caraccas sera assez bien fixé.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai décrit plus de 1200 plantes avec le C. <persName key="bonpland_ajag" >Bon-<lb break="no"/>pland</persName>.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="573" facs="#f0001" />
+            <cb/>
+            <p>&#x00AB;Une population m&#x00EA;lée de deux millions<lb/>neuf cent trente-sept mille blancs, etc.&#x00BB;</p>
+            <lb/>
+            <p>L&#x2019;illustre et savant M. de Humboldt a donné<lb/>ainsi le calcul des populations américaines es-<lb/>pagnoles.</p>
+            <lb/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Lettre de M.</hi> Alex. de Humboldt <hi rendition="#i">à M.</hi> Ch. Co-<lb/>querel, <hi rendition="#i">pasteur à Amsterdam.</hi>
+                </head>
+                <lb/>
+                <p>&#x00AB;Vous désirez conno&#x00EE;tre, Monsieur, le rap-<lb/>port entre le nombre des habitants de l&#x2019;Amé-<lb/>rique qui appartiennent aux différentes com-<lb/>munautés chrétiennes. Je crois posséder des<lb/>matériaux assez précis sur les rapports des<lb/>catholiques romains et des protestants; mais<lb/>je n&#x2019;entrerai pas aujourd&#x2019;hui dans le détail des<lb/>divisions de l&#x2019;Église protestante ou évangéli-<lb/>que. Voici les résultats auxquels je crois pou-<lb/>voir m&#x2019;arr&#x00EA;ter provisoirement, d&#x2019;après les re-<lb/>cherches laborieuses que j&#x2019;ai faites, dans ces<lb/>dernières années, sur la population du nou-<lb/>veau continent. Quelques évaluations par-<lb/>tielles, par exemple, le nombre des catholi-<lb/>ques dans la Louisiane, dans le Maryland et<lb/>dans le Bas-Canada anglois, sont peut-&#x00EA;tre<lb/>un peu incertaines; mais ces incertitudes af-<lb/>fectent des quantités qui ont une foible in-<lb/>fluence sur le résultat définitif. Je pense que<lb/>le nombre des protestants, dans toute l&#x2019;Amé-<lb/>rique continentale et insulaire, depuis l&#x2019;ex-<lb/>trémité méridionale du Chili jusqu&#x2019;au Gro&#x00EB;n-<lb/>land, est à celui des catholiques romains<lb/>comme 1 est à 2. Il existe, sur la c&#x00F4;te occi-<lb/>dentale de l&#x2019;Amérique du Nord, quelques<lb/>milliers d&#x2019;individus qui suivent le culte grec.<lb/>J&#x2019;ignore le nombre des Juifs répandus sur la<lb/>surface des États-Unis et dans plusieurs des<lb/>iles Antilles. Leur nombre est peu considérable.<lb/>
+                    <cb/> Les Indiens indépendants qui n&#x2019;appartiennent<lb/>à aucune communauté chrétienne sont à la<lb/>population chrétienne comme 1 est à 42. Les<lb/>éléments numériques sur lesquels se fonde le<lb/>tableau suivant se trouvent exposés en détail<lb/>dans le volume III de mon <hi rendition="#i">Voyage aux Ré-<lb/>gions équinoxiales</hi>, livre IX, chapitre <hi rendition="#k">xxvi</hi>,<lb/>qui va paroitre incessamment.</p>
+                <lb/>
+                <p>
+                    <hi rendition="#i">Population totale de l&#x2019;Amérique</hi>, 34,284,000</p>
+                <lb/>
+                <list>
+                    <item>I. Catholiques romains ............ 22,177,000<lb/>
+                        <list>
+                            <item>
+                                <hi rendition="#i">a. Amérique espagnole conti-<lb/>nentale</hi> ........... 15,985,000</item>
+                            <lb/>
+                            <item>Blancs ...... 2,937,000</item>
+                            <lb/>
+                            <item>Indiens ..... 7,530,000</item>
+                            <lb/>
+                            <item>Races mixtes et<lb/>nègres ..... <hi rendition="#u">5,518,000</hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#et">
+                                    <hi rendition="#u">15,985,000</hi>
+                                </hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">b. Amérique portugaise</hi> .... 4,000,000</item>
+                            <lb/>
+                            <item>Blancs....... 920,000</item>
+                            <lb/>
+                            <item>Nègres ...... 1,960,600</item>
+                            <lb/>
+                            <item>Races mixtes et<lb/>Indiens ..... <hi rendition="#u">1,120,000</hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#et">
+                                    <hi rendition="#u">4,000,000</hi>
+                                </hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">c. États-Unis</hi>, Bas-Canada et<lb/>Guyane fran&#x00E7;oise ...... 538,000</item>
+                            <lb/>
+                            <item>Ha&#x00EF;ti, Porto-Rico, et Antil-<lb/>les fran&#x00E7;oises ........ <hi rendition="#u">1,639,000</hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#et">
+                                    <hi rendition="#u">22,177,000</hi>
+                                </hi>
+                            </item>
+                        </list>
+                    </item>
+                    <lb/>
+                    <item>II. Protestants .........,........ 11,287,000<lb/>
+                        <list>
+                            <item>
+                                <hi rendition="#i">a.</hi> États-Unis ........... 9,990,000</item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">b.</hi> Canada anglois, Nouvelle-<lb/>Écosse, Labrador ..... 260,000</item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">c.</hi> Guyane angloise et hollan-<lb/>doise............. 220,000</item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">d.</hi> Antilles angloises ...... 734,500</item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#i">e.</hi> Antilles hollandoises, da-<lb/>noises, etc ......... <hi rendition="#u">82,500</hi>
+                            </item>
+                            <lb/>
+                            <item>
+                                <hi rendition="#et">
+                                    <hi rendition="#u">11,287,000</hi>
+                                </hi>
+                            </item>
+                        </list>
+                    </item>
+                    <lb/>
+                    <item>III. Indiens indépendants, non chrétlens.. <hi rendition="#u">820,000</hi>
+                    </item>
+                    <lb/>
+                    <item>
+                        <hi rendition="#et">
+                            <hi rendition="#u">34,284,000</hi>
+                        </hi>
+                    </item>
+                </list>
+                <lb/>
+                <p>&#x00BB;Dans l&#x2019;état actuel des choses <note place="foot" n="1">En admettant 34,284,000 pour la population en-<lb/>tière de l&#x2019;Amérique, on trouve d&#x2019;après mes calculs,<lb/>au nord de l&#x2019;isthme de Panama, 19,650,000; dans l&#x2019;A-<lb/>mérique insulaire, 2,473,000@ au sud de l&#x2019;isthme de<lb/>Panama, 12,161,000. L&#x2019;Amérique espagnole senle a<lb/>16,785,000 habitants sur 371,380 lieues carrées de 20<lb/>au degré. Toute l&#x2019;Amérique a 1,186,930 de ces lieues:<lb/>l&#x2019;Europe en renferme 304,700.<lb/>(<hi rendition="#i">Note de M. de Humboldt.</hi>)</note>, la popu-<lb/>lation protestante augmente beaucoup plus ra-<lb/>pidement dans le Nouveau-Monde que la<lb/>
+                    <pb n="574" facs="#f0002" />
+                    <cb/> population catholique. Ils est probable que,<lb/>malgré l&#x2019;état de prospérité à laquelle l&#x2019;indé-<lb/>pendance et des institutions libres vont élever<lb/>l&#x2019;Amérique espagnole, le Brésil et l&#x2019;ile d&#x2019;Haiti,<lb/>le rapport de 1 à 2 se trouvera, en moins d&#x2019;un<lb/>demi-siècle, considérablement modifié en fa-<lb/>veur des communautés protestantes. Je crois<lb/>qu&#x2019;en Europe on peut compter (sur une popu-<lb/>lation de 198 millions) à peu près 103 millions<lb/>de catholiques romains, 52 millions de pro-<lb/>testants, 38 millions qui suivent le rite grec, et<lb/>5 millions de mahométants. Le rapport numé-<lb/>rique des protestants aux membres des Églises<lb/>catholiques romaine et grecque, est, par con-<lb/>séquent, approximativement comme 1 est à<lb/>2 <formula notation="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mi>7</mi><mi>10</mi></mfrac></math></formula>. Le rapport des protestants aux catholiques<lb/>romains seuls est le m&#x00EA;me en Europe qu&#x2019;en<lb/>Amérique. Comme les différences de race et<lb/>d&#x2019;origine, l&#x2019;individualité du langage et l&#x2019;état<lb/>de liberté domestique influent puissamment<lb/>sur les dispositions des hommes pour tel ou tel<lb/>culte, je vous communique en m&#x00EA;me temps,<lb/>monsieur, quelques résultats de mes recher-<lb/>ches les plus récentes sur ces divers objets.</p>
+                <lb/>
+                <p>&#x00BB;La population de l&#x2019;Amérique offre actuel-<lb/>lement:</p>
+                <lb/>
+                <list>
+                    <item>Blancs ........ 13,162,000 &#x2012; 38 pour 100.</item>
+                    <lb/>
+                    <item>Indiens ....... 8,610,000 &#x2012; 25 &#x2012; &#x2012;</item>
+                    <lb/>
+                    <item>Nègres ........ 6,223,000 &#x2012; 18 &#x2012; &#x2012;</item>
+                    <lb/>
+                    <item>Races mixtes .... <hi rendition="#u">6,289,000</hi> &#x2012; 19 &#x2012; &#x2012;</item>
+                    <lb/>
+                    <item>
+                        <hi rendition="#et">
+                            <hi rendition="#u">34,284,000</hi>
+                        </hi>
+                    </item>
+                </list>
+                <lb/>
+                <p>&#x00BB;La population noire de 6,223,000 (sans mé-<lb/>lange avec les blancs et les Indiens), se com-<lb/>pose de 1,144,000 <hi rendition="#i">noirs libres</hi>, et 5,079,000 <hi rendition="#i">noirs<lb/>esclaves;</hi> de ces derniers, il y en a 1,152,000<lb/>dans l&#x2019;Archipel des Antilles; 1,620,000 dans<lb/>les États-Unis, et 1,800,000 au Brésil. Le ta-<lb/>bleau suivant fait conno&#x00EE;tre approximative-<lb/>ment la prépondérance des langues réparties<lb/>en Amérique.</p>
+                <lb/>
+                <list>
+                    <item>Langue angloise, parlée par .. 11,297,500 individus.</item>
+                    <lb/>
+                    <item>&#x2012; espagnole ........ 10,174,000 &#x2012;</item>
+                    <lb/>
+                    <item>&#x2012; indienne ........ 7,800,000 &#x2012;</item>
+                    <lb/>
+                    <item>&#x2012; portugaise ........ 3,740,000 &#x2012;</item>
+                    <lb/>
+                    <item>&#x2012; fran&#x00E7;oise ......... 1,058,000 &#x2012;</item>
+                    <lb/>
+                    <item>&#x2012; hollandoise, danoise,<lb/>suédoise et russe.. <hi rendition="#u">214,500</hi> &#x2012;</item>
+                    <lb/>
+                    <item>
+                        <hi rendition="#et">
+                            <hi rendition="#u">34,284,000</hi>
+                        </hi>
+                    </item>
+                </list>
+                <lb/>
+                <cb/>
+                <p>&#x00AB;D&#x2019;où résulte pour les</p>
+                <lb/>
+                <list>
+                    <item>Langues de l&#x2019;Eu-<lb/>rope latine ... 14,930,000@ _ _ @Total pour les langnes<lb/>européennes 26,442,000</item>
+                    <lb/>
+                    <item>Langues du rameau<lb/>germanique ... 11,512,000@</item>
+                    <lb/>
+                    <item>Pour les langues indiennes ... 7,842,000</item>
+                </list>
+                <lb/>
+                <p>&#x00BB;On n&#x2019;a pas fait mention séparément de<lb/>l&#x2019;allemand, du g&#x00E2;le (irlandois) ou du basque,<lb/>parce que les individus qui conservent la con-<lb/>noissance de ces trois langues mères savent en<lb/>mème temps l&#x2019;anglois ou le castillan. Le nom-<lb/>bre d&#x2019;individus qui parlent usuellement les<lb/>langues indiennes est dans ce moment, au<lb/>nombre d&#x2019;individus qui se servent des langues<lb/>d&#x2019;Europe, comme 1 est à 3 @. Par l&#x2019;accroissement<lb/>plus rapide de la population aux États-Unis,<lb/>les langues du rameau germanique vont ga-<lb/>gner insensiblement, dans le rapport numé-<lb/>rique total, sur les langues de l&#x2019;Europe,<lb/>latine; mais ces dernières se répandront en<lb/>m&#x00EA;me temps, par l&#x2019;effet de la civilisation<lb/>croissante des peuples des races espagnole et<lb/>portugaise, dans les villages indiens, dont à<lb/>peine un vingtième de la population entend<lb/>quelques mots de castillan ou de portugais. Je<lb/>crois qu&#x2019;il existe encore plus de sept millions<lb/>et demi d&#x2019;indigènes, en Amérique, qui ont<lb/>conservé l&#x2019;usage de leurs propres langues, et<lb/>qui ignorent presque entièrement les idiomes<lb/>européens. Telle est aussi l&#x2019;opinion de M. l&#x2019;ar-<lb/>chev&#x00EA;que de Mexico et de plusieurs ecelésiasti-<lb/>ques très respectables, qui ont longtemps ha-<lb/>bité le Haut-Pérou, et que j&#x2019;ai pu consulter à<lb/>ce sujet. Le petit nombre d&#x2019;Indiens (un mil-<lb/>lion peut-&#x00EA;tre) qui ont entièrement oublié les<lb/>langues indigènes, habitent les grandes villes<lb/>et les villages très populeux qui entourent ces<lb/>villes. Parmi les individus qui parlent fran&#x00E7;ois<lb/>dans le nouveau continent, on treuve plus de<lb/>700,000 nègres de race africaine, circonstance<lb/>qui, malgré les efforts très louables du gou-<lb/>vernement ha&#x00EF;tien pour l&#x2019;instruction popu-<lb/>laire, ne contribue pas à maintenir la pureté<lb/>du langage. On peut admettre qu&#x2019;en général,<lb/>dans l&#x2019;Amérique continentale et insulaire, il y<lb/>a, sur 6,223,000 noirs, plus d&#x2019;un tiers (au moins<lb/>2,360,000) qui parlent anglois, plus d&#x2019;un quart<lb/>qui parlent portugais, et un huitième qui par-<lb/>lent fran&#x00E7;ais.</p>
+                <lb/>
+                <pb n="575" facs="#f0003" />
+                <cb/>
+                <p>&#x00BB;Ces tableaux de la population américaine<lb/>considérée sous les rapports de la différence<lb/>des cultes, des langues et des idiomes, se<lb/>composent d&#x2019;éléments très variables; ils re-<lb/>présentent approximativement l&#x2019;état de la so-<lb/>ciété américaine vers la fin de l&#x2019;année qui vient<lb/>de s&#x2019;écouler. Il ne s&#x2019;agit ici que des grandes<lb/>masses; les évaluations partielles pourront ga-<lb/>gner peu à peu une précision plus rigoureuse;<lb/>il en est ainsi de tous les éléments numériques<lb/>des sciences.&#x00BB;</p>
+                <lb/>
+                <closer>
+                    <salute>
+                        <hi rendition="#et">
+                            <hi rendition="#k">Alexandre de Humboldt.</hi>
+                        </hi>
+                    </salute>
+                </closer>
+            </div>
+            <lb/>
+        </body>
+        <back/>
+    </text>
+</TEI>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="5" facs="#f0001"/>
+            <div n="1" xml:lang="spa">
+                <head>
+                    <hi rendition="#i">Noticia de la configuracion del suelo de<lb break="yes" />Espan&#x0303;a, y de su clima, por M. A. de</hi>
+                    <persName key="humboldt_av">Humboldt</persName>.</head>
+                <lb break="yes"/>
+                <p>Ningun pais de Europa presenta una configuracion tan singu-<lb break="no"/>lar como la de Espan&#x0303;a, y solo á ella puede atribuirse la aridez de<lb break="yes"/>su suelo en lo interior de las Castillas, la fuerza de la evapora-<lb break="no"/>cion, la falta de arroyos, y el diferente temple que se observa<lb break="yes"/>entre Madrid y Nápoles, estando ambas ciudades en un mismo<lb break="yes"/>grado de latitud. No es posible dar una noticia ex&#x00E2;cta del estado<lb break="yes"/>
+                    <pb n="6" facs="#f0002"/> meteorológico de Espan&#x0303;a, siendo tan pocas las observaciones he-<lb break="no"/>chas hasta el dia sobre su temperatura media y las alturas baro-<lb break="no"/>métricas. Y no porque no se hayan dedicado á estas investigacio-<lb break="no"/>nes muchos espan&#x0303;oles ilustrados, sino que trabajando aisladamen-<lb break="no"/>te y sin comunicarse con otros sabios de su pais ni con los extran-<lb break="no"/>geros, ha venido á quedar oculto desgraciadamente su trabajo, y<lb break="yes"/>sin ver la luz pública. Por donde nos es preciso en este punto con-<lb break="no"/>tentarnos con la analogía que ofrecen los paises comarcanos. Y es<lb break="yes"/>cosa para admirar que nos sea mas fácil la descripcion física de la<lb break="yes"/>Nueva Espan&#x0303;a que la de la antigua, puesto que en esta parte co-<lb break="no"/>nocemos mejor las colonias que la metrópoli.</p>
+                <lb break="yes"/>
+                <p>El interior de Espan&#x0303;a es una llanura mas elevada que las<lb break="yes" />que ocupan grandes terrenos en la Europa. La Suiza, el Tirol y<lb break="yes" />la Escocia, comprehenden grupos de montan&#x0303;as inmediatas unas á<lb break="yes"/>otras, divididas á manera de sulcos, por valles estrechos y profun-<lb break="no"/>dos. Los cantones de <hi rendition="#i">Berna,</hi> de <hi rendition="#i">Fribourg</hi> y de <hi rendition="#i">Zurich,</hi> llanuras<lb break="yes"/>siempre cubiertas de piedra arenisca, y cuya elevacion sobre el<lb break="yes"/>nivel del Océano solo es de 240 á 280 toesas, son parte del<lb break="yes"/>gran valle que se prolonga de SSE. á NE. entre los <hi rendition="#i">altos alpes</hi>
+                    <lb break="yes"/>y el <hi rendition="#i">Jura,</hi> segun se ve en los mapas geológicos que acaba de pu-<lb break="no"/>blicar <hi rendition="#i">M. Ebel.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Dignas son tambien de memoria aunque poco dilatadas las lla-<lb break="no"/>nuras de Francia y de Alemania. La mas elevada entre las de la<lb break="yes"/>1.<hi rendition="#sup">a</hi> nacion, es la de <hi rendition="#i">Auvergne,</hi> donde están el <hi rendition="#i">Monte de Oro,</hi> el <hi rendition="#i" >Can-<lb break="no"/>tal</hi> y el <hi rendition="#i">Puy de D&#x00F4;me,</hi> cuya altura sobre el mar es de 270 toe-<lb break="no" />sas, segun los cálculos barométricos de M. <persName key="buch_lv">
+                        <hi rendition="#i">Buch,</hi>
+                    </persName> célebre minera-<lb break="no"/>logista. La de Lorena que se extiende entre los <hi rendition="#i">Vosges</hi> y la cordille-<lb break="no"/>ra que se une á los <hi rendition="#i">Ardennes</hi> por <hi rendition="#i">Epinal</hi> y <choice>
+                        <sic>
+                            <hi rendition="#i">Sant-mihel</hi>
+                        </sic>
+                        <corr type="editorial">
+                            <hi rendition="#i">Sant-michel</hi>
+                        </corr>
+                    </choice>, no pasa de<lb break="yes"/>130 á 140 toesas. El centro de las llanuras de Francia, que son<lb break="yes"/>los departamentos de <hi rendition="#i">Loir</hi> y <hi rendition="#i">Cher,</hi> solo llega á 80 ó 90 toesas.</p>
+                <lb break="yes"/>
+                <p>En Alemania la llanura mas alta es la de Babiera, suelo de<lb break="yes"/>un lago antiguo, la qual se extiende desde las montan&#x0303;as de grani-<lb break="no"/>to del alto Palatinado <hi rendition="#i">Fichtel-Gebürge,</hi> hasta la raíz de los <hi rendition="#i">
+                        <placeName key="alpen">Alpes</placeName>
+                        <lb break="yes"/>del Tirol</hi>; pero solo se eleva sobre el Océano como la de <hi rendition="#i">Au-<lb break="no"/>vergne</hi> de 250 á 260 toesas.</p>
+                <lb break="yes"/>
+                <pb n="7" facs="#f0003"/>
+                <p>Todas estas llanuras que acabamos de decir, son inferiores en<lb break="yes" />altura y extension á las de las dos Castillas, cuya elevacion media<lb break="yes"/>puede fixarse en 300 toesas. Segun una nota de nuestro célebre as-<lb break="no"/>trónomo <hi rendition="#i">D. Felipe Bauza,</hi> empleado en el depósito hidrográfico<lb break="yes"/>de Madrid, la altura barométrica de esta capital es de 26 pul-<lb break="no"/>gadas, 2 líneas <formula notation="TeX">\frac{2}{5}</formula>; por consiguiente tiene 2 pulgadas 6<formula notation="TeX">\frac{1}{14}</formula> ménos<lb break="yes"/>que la altura media del mercurio al nivel del Océano. Esta es la<lb break="yes" />diferencia de la presion atmosférica que experimentan los cuerpos<lb break="yes"/>al ayre libre en Madrid, Cádiz y Burdeos, baxando el barómetro<lb break="yes"/>en Madrid hasta las 25 pulgadas, 6 líneas y acaso mas. <hi rendition="#i">El Dia-<lb break="no"/>rio de los nuevos descubrimientos de todas las ciencias físicas,</hi> (to-<lb break="no"/>mo 3°. páginas 56, 200 y 407) contiene una série de observa-<lb break="no"/>ciones meterológicas muy importantes, pero que por desgracia no<lb break="yes"/>alcanzan á un an&#x0303;o entero. De él está tomado el estado siguiente de<lb break="yes"/>las variaciones observadas en la presion del ayre en los nueve me-<lb break="no" />ses primeros del an&#x0303;o 1793.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>MESES.</cell>
+                        <cell cols="2">MAXIMUM.</cell>
+                        <cell cols="2">MINIMUM.</cell>
+                        <cell cols="2">ALTURA<lb break="yes"/>barométrica<lb break="yes" />media.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>pul.</cell>
+                        <cell>lín.</cell>
+                        <cell>pul.</cell>
+                        <cell>lín.</cell>
+                        <cell>pul.</cell>
+                        <cell>lín.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Enero.........</cell>
+                        <cell>26</cell>
+                        <cell>5 8</cell>
+                        <cell>25</cell>
+                        <cell>9 8</cell>
+                        <cell>26</cell>
+                        <cell>2 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Febrero......</cell>
+                        <cell>26</cell>
+                        <cell>5 3</cell>
+                        <cell>25</cell>
+                        <cell>6 2</cell>
+                        <cell>26</cell>
+                        <cell>1 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Marzo........</cell>
+                        <cell>26</cell>
+                        <cell>4 7</cell>
+                        <cell>25</cell>
+                        <cell>6 0</cell>
+                        <cell>25</cell>
+                        <cell>11 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Abril..........</cell>
+                        <cell>26</cell>
+                        <cell>2 4</cell>
+                        <cell>25</cell>
+                        <cell>6 9</cell>
+                        <cell>25</cell>
+                        <cell>11 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mayo .........</cell>
+                        <cell>26</cell>
+                        <cell>4 6</cell>
+                        <cell>25</cell>
+                        <cell>10 5</cell>
+                        <cell>26</cell>
+                        <cell>0 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Junio..........</cell>
+                        <cell>26</cell>
+                        <cell>4 0</cell>
+                        <cell>25</cell>
+                        <cell>11 8</cell>
+                        <cell>26</cell>
+                        <cell>1 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Julio ..........</cell>
+                        <cell>26</cell>
+                        <cell>4 3</cell>
+                        <cell>26</cell>
+                        <cell>0 7</cell>
+                        <cell>26</cell>
+                        <cell>2 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Agosto........</cell>
+                        <cell>26</cell>
+                        <cell>3 2</cell>
+                        <cell>25</cell>
+                        <cell>11 5</cell>
+                        <cell>26</cell>
+                        <cell>1 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Setiembre....</cell>
+                        <cell>26</cell>
+                        <cell>4 3</cell>
+                        <cell>25</cell>
+                        <cell>11 0</cell>
+                        <cell>26</cell>
+                        <cell>1 7</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="8" facs="#f0004"/>
+                <p>La altura barométrica media de Madrid, observada por el<lb break="yes"/>citado <hi rendition="#i">Bauza,</hi> sen&#x0303;ala á esta capital segun la fórmula de <choice>
+                        <sic>
+                            <hi rendition="#i">M. La-<lb break="no"/>plaze</hi>
+                        </sic>
+                        <corr type="editorial">
+                            <hi rendition="#i">M. La-<lb break="no"/>place</hi>
+                        </corr>
+                    </choice>, y el nuevo coeficiente de <hi rendition="#i">M. Ramond,</hi> una elevacion de 603<lb break="yes"/>metros <formula notation="TeX" >\frac{3}{5}</formula>, 6 309 toesas <formula notation="TeX" >\frac{3}{5}</formula> sobre el nivel del Océano: suponiendo<lb break="yes" />con <hi rendition="#i">
+                        <persName key="shuckburghevelyn_g">Schuckbourgh</persName>,</hi>
+                    <persName key="fleuriaudebellevue_lb">
+                        <hi rendition="#i">Flenrieu</hi> y <hi rendition="#i">Bellevue,</hi>
+                    </persName> que el barómetro en las<lb break="yes"/>costas esté á 338. 24 líneas. De todo esto se sigue, que <hi rendition="#i">Madrid</hi>
+                    <lb break="yes"/>se halla en la misma altura que la ciudad de <choice>
+                        <sic>
+                            <hi rendition="#i">Inspruck</hi>
+                        </sic>
+                        <corr type="editorial">
+                            <hi rendition="#i">Insbruck</hi>
+                        </corr>
+                    </choice>, situada en<lb break="yes"/>una de las gargantas mas elevadas del Tirol, quince veces mas<lb break="yes"/>elevada que <hi rendition="#i" >París,</hi> tres veces mas que el monte <hi rendition="#i">Valeriano,</hi> y un<lb break="yes"/>tercio mas que <hi rendition="#i">Ginebra</hi>
+                    <note place="foot" n="(*)">
+                        <lb break="yes"/>
+                        <cb/> El nivel del <hi rendition="#i">Sena</hi> en el puente real,<lb break="yes"/>segun el número 13 de la antigua escala,<lb break="yes" />estaba elevado 19 toesas y 5 pies sobre la<lb break="yes"/>superficie del Océano. La galería de la<lb break="yes"/>iglesia del Monte Valeriano está 74 toesas<lb break="yes"/>sobre la corriente ordinaria del Sena (<persName key="cotte_l">
+                            <hi rendition="#i">Cotte,</hi>
+                        </persName>
+                        <lb break="yes"/>
+                        <cb/>
+                        <hi rendition="#i">journal des mines, Abril</hi> 1808, <hi rendition="#i" >núm.</hi> 313).<lb break="yes"/>Ginebra está á 188 toesas sobre el nivel del<lb break="yes"/>mar.</note>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Lalande,</hi> que fue el primero que publicó la altura de Madrid,<lb break="yes"/>siguiendo las observaciones que le comunicó nuestro inmortal geó-<lb break="no"/>metra <hi rendition="#i">D. Jorge Juan</hi> (<hi rendition="#i">memorias de la Academia de las ciencias de<lb break="yes" />París del an&#x0303;o</hi> 1776, <hi rendition="#i">pág.</hi> 148) asegura que aquella villa, en<lb break="yes"/>el punto de la calle <hi rendition="#i">de los Preciados,</hi> junto al <hi rendition="#i">postigo de S. Mar-<lb break="no"/>tin,</hi> es mas alta que París 294 toesas, es decir, 314 sobre el<lb break="yes"/>nivel del Océano. Segun las medidas que <hi rendition="#i">M. Talacker,</hi> mineralo-<lb break="no"/>gista, tomó en las cercanías de <hi rendition="#i">Madrid, el real sitio de S. Ildefon-<lb break="no"/>so</hi> tiene 593 toesas de la misma elevacion; la qual es mayor que<lb break="yes"/>la del borde actual del <hi rendition="#i">cráter del Vesuvio.</hi> De manera que entre<lb break="yes"/>todos los monarcas de Europa, solo el de Espan&#x0303;a puede gloriarse<lb break="yes"/>de tener un palacio en la region de las nubes, cuyo grueso en ve-<lb break="no"/>rano se halla ya á 550 ó 600 toesas de elevacion.</p>
+                <lb break="yes"/>
+                <p>Esta altura del nivel de Castilla, influye tanto en su tempe-<lb break="no" />ramento, que á pesar de hallarse á los 40 grados de latitud, que<lb break="yes"/>es el mismo paralelo en que están <hi rendition="#i" >Taranto,</hi> una parte de <hi rendition="#i">Calabria,<lb break="yes" />Tesalia,</hi> y el <hi rendition="#i">Ásia menor,</hi> no pueden criarse en ella naranjos al<lb break="yes"/>ayre libre.</p>
+                <lb break="yes"/>
+                <p>La temperatura media <note place="foot" n="(**)" xml:id="fn1-1" next="#fn1-2">
+                        <lb break="yes"/>
+                        <cb/> El método que adoptan los físicos<lb break="yes"/>para encontrar la temperatura media del<lb break="yes"/>an&#x0303;o, es sumar el resultado de todas las</note> de Madrid, parece ser de 12° de<lb break="yes"/>Reaumur, quando la de Petersburgo es de 3<formula notation="TeX">\frac{1}{2}</formula>, la de Berlin de 6<formula notation="TeX">\frac{1}{2}</formula>,<lb break="yes"/>
+                    <pb n="9" facs="#f0005"/> la de París de 9<formula notation="TeX" >\frac{3}{4}</formula>, la de Marsella de 11<formula notation="TeX" >\frac{4}{5}</formula>, la de Tolon de 13,<lb break="yes"/>la de Nápoles de 14, la de los paises situados baxo el <placeName key="aequator">equa-<lb break="no"/>dor</placeName>, y en el nivel del Océano, de 21 y 22 de dicho termómetro.<lb break="yes"/>Génova está 4 grados mas al norte que Madrid; y sin embar-<lb break="no"/>go su temperatura es casi dos grados mas elevada que la de nues-<lb break="no"/>tra capital. Tanto influyen la localidad, la elevacion del sitio,<lb break="yes"/>la prox&#x00EE;midad del mar, las cordilleras que cortan los vientos frios<lb break="yes"/>de norte, y otras infinitas circunstancias, cuya reunion hace va-<lb break="no"/>riar la temperatura de los lugares.</p>
+                <lb break="yes"/>
+                <p>Si la temperatura media del centro de Espan&#x0303;a es de 12 gra-<lb break="no" />dos de Reaumur, la de sus costas desde los 41° de latitud hasta<lb break="yes" />los 36° es de 14 á 16 grados. Así es que en ellas en parages<lb break="yes" />defendidos de los vientos frios se crian el <hi rendition="#i">plátano,</hi> la <hi rendition="#i">eliconia</hi> y<lb break="yes"/>la <hi rendition="#i" >can&#x0303;a dulce.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>El corte geológico que va en la lámina N°. II°. del <placeName key="atlas" >Atlas</placeName>.<lb break="yes"/>trabajado segun los mismos principios que el mapa físico del nú-<lb break="no"/>mero I°., presenta á los ojos del observador la construccion extraor-<lb break="no"/>dinaria de Espan&#x0303;a, cuyas costas parecen en parte haber sido tra-<lb break="no"/>gadas por las olas, mientras que las llanuras interiores resistie-<lb break="no"/>ron á los embates del Océano. Quede para los sabios modernos<lb break="yes"/>averiguar la verdad de las tradiciones de los pueblos de <hi rendition="#i">Samotra-<lb break="no" />cia,</hi> acerca de la catástrofe que padeció el Mediterráneo.</p>
+                <lb break="yes"/>
+                <p>Baxo la misma escala se ha grabado el perfil comparativo de<lb break="yes"/>la Espan&#x0303;a antigua y moderna, que va en el número III°., el qual<lb break="yes"/>presenta en estos dos paises unas llanuras centrales de clima di-<lb break="no"/>ferente de el de las costas. Los dos tienen su capital en medio<lb break="yes"/>de una llanura interior, mas la de la metrópoli es, como diga-<lb break="no"/>mos, una miniatura en comparacion de la de México. La diferen-<lb break="no"/>cia de altura que hay entre las rocas mas altas del antiguo y<lb break="yes"/>nuevo mundo, no pasa de 900 toesas. El <hi rendition="#i">Chimborazo</hi> solo tiene<lb break="yes"/>una quarta parte de elevacion mas que el <hi rendition="#i">monte blanco,</hi> mientras<lb break="yes"/>que las altas llanuras de Castilla son quatro veces mas baxas que<lb break="yes"/>
+                    <note place="foot" n="(**)" xml:id="fn1-2" prev="#fn1-1">
+                        <cb/> observaciones termométricas, y dividir es-<lb break="no"/>ta suma por el número de las mismas. En<lb break="yes"/>la zona templada el calor medio de un lu-<lb break="no"/>
+                        <cb/> gar se diferencia sensiblemente del medio<lb break="yes"/>tomado entre el maximum y el minimum<lb break="yes"/>del termómetro.</note>
+                    <lb break="yes"/>
+                    <pb n="10" facs="#f0006"/> el nivel de México. La temperatura media de esta última ciudad<lb break="yes"/>es de 8° mas baxa que la de <hi rendition="#i" >Veracruz</hi> y de <hi rendition="#i">
+                        <placeName key="acapulco">Acapulco</placeName>
+                    </hi>; al mis-<lb break="no"/>mo tiempo que la de Madrid solo en 2 6 3 grados es inferior<lb break="yes"/>á la de las costas de Valencia. Sin embargo las capitales de am-<lb break="no"/>bas Espan&#x0303;as convienen en tener un clima algo menos frio que el<lb break="yes"/>que corresponde á su altura, y esto por razon del calor que ad-<lb break="no"/>quiere el ambiente en llanuras dilatadas. El temple mediano de<lb break="yes"/>México, que es de 13° <formula notation="TeX">\frac{1}{2}</formula>, es inferior al de Cádiz, é igual al de<lb break="yes"/>Madrid, con la única diferencia de un grado y medio. El ba-<lb break="no"/>rómetro se mantiene en México á las 21 pulgadas y 7 líneas, ma-<lb break="no"/>nifestándose allí la presion del ayre por una columna de mercurio<lb break="yes"/>5 pulgadas mas corta que en Madrid.</p>
+                <lb break="yes"/>
+                <p>Volviendo á nuestra Espan&#x0303;a, es muy digno de observarse<lb break="yes" />que mientras sus llanuras producen las palmas que los botánicos<lb break="yes" />llaman <hi rendition="#i">phoenix dactilifera y chamaerops humilis,</hi> las cimas de<lb break="yes"/>sus montes están siempre cubiertas de nieve. Segun una nota ms.<lb break="yes"/>comunicada por el citado <choice>
+                        <sic>
+                            <hi rendition="#i">Bauzá</hi>
+                        </sic>
+                        <corr type="editorial">
+                            <hi rendition="#i">Bauza</hi>
+                        </corr>
+                    </choice>, sabemos que <hi rendition="#i">
+                        <persName key="clementeroxas_01">D. Clemente Ro-<lb break="no" />xas</persName>
+                    </hi> hizo una nivelacion geodésica con grande ex&#x00E2;ctitud, de la<lb break="yes"/>qual resulta que el <hi rendition="#i">Pico de Veleta</hi> en la <hi rendition="#i">Sierra Nevada</hi> tiene 1781<lb break="yes"/>toesas de elevacion sobre el nivel del mar, y el llamado <hi rendition="#i">Mula-<lb break="no"/>hacen</hi> 2824 con 47; altura á que no alcanza ninguno de los<lb break="yes"/>montes Pirineos: de los quales el mayor en la parte de Espan&#x0303;a,<lb break="yes"/>que es el <hi rendition="#i">Monte perdido,</hi> solo llega á las 1763 toesas, y en la de<lb break="yes" />Francia el pico mas alto no pasa de 1722. Mas es, que el<lb break="yes"/>
+                    <hi rendition="#i">Mulahacen</hi> solo tiene 76 toesas menos que el de <hi rendition="#i">Tenerife.</hi> Sin<lb break="yes"/>embargo esta cima, si se hallase en la misma latitud que la<lb break="yes"/>ciudad de México, no estaría cubierta siempre de nieves; por-<lb break="no"/>que las nieves continuas comienzan baxo el <placeName key="aequator">Equador</placeName> á 1460 toe-<lb break="no"/>sas de elevacion, en los 20° de latitud á 2350, en el 45° á 1300,<lb break="yes"/>en el 62° á 900 <note place="foot" n="(*)">Véase el ensayo de <hi rendition="#i">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> sobre las refracciones en la <hi rendition="#i">Zona-Torrida,</hi> pag. 35.</note>. Tan rebaxada es la curva que corre del<lb break="yes"/>
+                    <placeName key="aequator">Equador</placeName> al polo.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

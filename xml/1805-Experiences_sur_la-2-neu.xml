@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="145" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">Sur les commotions électriques produites<lb break="yes"/>par la torpille.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>M. Von <persName key="humboldt_av">Humboldt</persName> vient d&#x2019;exécuter<lb break="yes"/>avec la torpille (<hi rendition="#i">Roja torpedo,</hi> L.) une<lb break="yes"/>suite d&#x2019;expériences, sur lesquelles il rend<lb break="yes"/>le compte suivant:</p>
+                <lb break="yes"/>
+                <p>1°. Quoique la force de la torpille ne<lb break="yes"/>soit pas à comparer à celle du <hi rendition="#i">gymnotus,</hi>
+                    <lb break="yes"/>elle n&#x2019;en est pas moins en état de causer<lb break="yes" />des sensations douloureuses. Une per-<lb break="no"/>sonne très-accoutumée aux commotions<lb break="yes"/>électriques ne soutient qu&#x2019;avec peine une<lb break="yes"/>torpille de quatre décimètres de long,<lb break="yes" />et jouissant de toute sa vigueur. L&#x2019;animal<lb break="yes"/>porte son coup sous l&#x2019;eau, et ce n&#x2019;est<lb break="yes"/>que lorsqu&#x2019;il devient plus faible que ce<lb break="yes"/>fluide emp&#x00EA;che son action. M. <persName key="gaylussac_jl">Gay Lussac</persName>
+                    <lb break="yes"/>a observé que dans ce cas on ne com-<lb break="no"/>mence à sentir la commotion, que lors-<lb break="no"/>qu&#x2019;on élève la torpille au&#x2012;dessus de la<lb break="yes"/>surface de <choice>
+                        <sic>l&#x2019;eau,</sic>
+                        <corr type="editorial">l&#x2019;eau.</corr>
+                    </choice> Il en est de ce poisson,<lb break="yes"/>comme des grenouilles, sur lesquelles on<lb break="yes"/>fait des expériences <persName key="galvani_la" >galvaniques</persName>. Les con-<lb break="no"/>ditions sous lesquelles la contraction se<lb break="yes"/>fait, sont différentes selon le degré d&#x2019;in-<lb break="no"/>citabilité des organes.</p>
+                <lb break="yes"/>
+                <pb n="146" facs="#f0002"/>
+                <p>2°. J&#x2019;ai observé dans <placeName key="suedamerika">l&#x2019;Amérique mé-<lb break="no"/>ridionale</placeName> que le <hi rendition="#i" >gymnotus</hi> donne les com-<lb break="no"/>motions les plus effrayantes, sans faire<lb break="yes"/>aucun mouvement extérieur des yeux,<lb break="yes" />de la t&#x00EA;te, ou des pennes. Il n&#x2019;en fait pas<lb break="yes"/>plus qu&#x2019;une personne qui passe d&#x2019;une idée,<lb break="yes"/>d&#x2019;une sensation à une autre; il n&#x2019;en est<lb break="yes"/>pas de m&#x00EA;me de la torpille. Nous avons<lb break="yes"/>observé qu&#x2019;elle remue convulsivement les<lb break="yes"/>pennes pectorales chaque fois qu&#x2019;elle<lb break="yes"/>lance son coup; ce coup se fait sentir<lb break="yes"/>plus ou moins fort, selon que le contact<lb break="yes"/>se passe dans une surface plus ou moins<lb break="yes"/>grande.</p>
+                <lb break="yes"/>
+                <p>3°. On ne peut pas décharger à volonté<lb break="yes"/>les organes d&#x2019;une torpille ou d&#x2019;un <hi rendition="#i">gym-<lb break="no"/>notus,</hi> comme l&#x2019;on décharge une bou-<lb break="no"/>teille de Leyde, ou une pile. On ne sent<lb break="yes"/>pas toujours de commotion, lorsqu&#x2019;on tou-<lb break="no"/>che un poisson électrique. Il faut l&#x2019;irriter<lb break="yes"/>pour qu&#x2019;il porte son coup; cette action<lb break="yes" />dépend de la volonté de l&#x2019;animal, qui<lb break="yes"/>peut-&#x00EA;tre ne tient pas toujours chargés<lb break="yes"/>ses organes électriques; il les recharge<lb break="yes"/>avec une célérité admirable, car il est<lb break="yes"/>en état de donner une longue suite de<lb break="yes" />commotions.</p>
+                <lb break="yes"/>
+                <p>4°. Le coup se fait sentir (l&#x2019;animal étant<lb break="yes"/>disposé à le porter), soit que l&#x2019;on touche<lb break="yes"/>d&#x2019;un seul doigt une seule surface des organes<lb break="yes"/>électriques, ou que l&#x2019;on applique les deux<lb break="yes"/>mains aux deux surfaces, à la supérieure<lb break="yes"/>et à l&#x2019;inférieure, à-la-fois. Aussi, dans<lb break="yes"/>
+                    <pb n="147" facs="#f0003"/> les deux cas, il est indifférent que la<lb break="yes"/>personne, qui applique son doigt ou ses<lb break="yes"/>deux mains, soit isolée ou qu&#x2019;elle ne le<lb break="yes"/>soit pas.</p>
+                <lb break="yes"/>
+                <p>5°. Lorsqu&#x2019;une personne isolée touche<lb break="yes"/>la torpille d&#x2019;un seul doigt, il est indis-<lb break="no"/>pensable que le contact soit immédiat.<lb break="yes"/>Aucune commotion ne se fait sentir lors-<lb break="no"/>qu&#x2019;un corps conducteur, par exemple,<lb break="yes"/>un métal, est interposé entre le doigt<lb break="yes"/>et l&#x2019;organe du poisson. C&#x2019;est pour cela<lb break="yes"/>que l&#x2019;on touche impunément l&#x2019;animal par<lb break="yes"/>le moyen d&#x2019;une clef, ou de tout autre<lb break="yes"/>instrument métallique.</p>
+                <lb break="yes"/>
+                <p>6°. M. <persName key="gaylussac_jl">Gay-Lussac</persName> ayant observé cette<lb break="yes"/>condition importante, nous avons placé<lb break="yes"/>la torpille sur un plateau métallique, avec<lb break="yes"/>lequel la surface intérieure des organes<lb break="yes"/>était en contact. La main qui soutient ce<lb break="yes"/>plateau ne sent jamais de commotion,<lb break="yes" />lorsqu&#x2019;une autre personne isolée irrite<lb break="yes"/>l&#x2019;animal et que le mouvement convulsif<lb break="yes"/>des pennes pectorales annonce les dé-<lb break="no"/>charges les plus fortes de son fluide élec-<lb break="no" />trique.</p>
+                <lb break="yes"/>
+                <p>7°. Si au contraire une personne sou-<lb break="no"/>tient, de la main gauche, la torpille<lb break="yes"/>placée sur un plateau métallique, comme<lb break="yes"/>dans l&#x2019;expérience précédente (6°), et si<lb break="yes" />cette m&#x00EA;me personne touche la surface<lb break="yes"/>supérieure de l&#x2019;organe électrique de la<lb break="yes"/>main droite, alors une forte commotion<lb break="yes"/>se fait sentir dans les deux bras à-la-fois.</p>
+                <lb break="yes"/>
+                <pb n="148" facs="#f0004"/>
+                <p>8°. Ce sentiment est le m&#x00EA;me, lorsque<lb break="yes"/>le poisson est placé entre deux plateaux<lb break="yes"/>métalliques, dont les bords ne se touchent<lb break="yes"/>pas, et lorsqu&#x2019;on appuie des deux mains<lb break="yes"/>à-la-fois sur ces plateaux.</p>
+                <lb break="yes"/>
+                <p>9°. Au contraire, aucune commotion<lb break="yes"/>dans les bras ne se fait sentir, si dans<lb break="yes"/>le cas précédent (8°.) il existe quel-<lb break="no"/>que communication immédiate entre les<lb break="yes"/>bords des deux plateaux métalliques. La<lb break="yes"/>cha&#x00EE;ne entre les deux surfaces de l&#x2019;organe<lb break="yes"/>est alors formée par les plateaux et la<lb break="yes"/>nouvelle communication que l&#x2019;on établit<lb break="yes"/>par le contact des deux mains avec les<lb break="yes"/>plateaux est sans effet.</p>
+                <lb break="yes"/>
+                <p>10°. L&#x2019;électromètre le plus sensible n&#x2019;in-<lb break="no"/>dique aucune tension électrique dans les<lb break="yes"/>organes de la torpille; il n&#x2019;en est aucu-<lb break="no"/>nement affecté, de quelque manière que<lb break="yes"/>l&#x2019;on l&#x2019;emploie, soit en l&#x2019;approchant des<lb break="yes"/>organes, soit en isolant le poisson, le<lb break="yes" />couvrant d&#x2019;un plateau métallique et en<lb break="yes"/>faisant communiquer ce plateau par un<lb break="yes"/>fil conducteur avec le condensateur de<lb break="yes"/>
+                    <persName key="volta_agv">Volta</persName>. Rien n&#x2019;indique ici, comme dans<lb break="yes"/>le <hi rendition="#i">gymnotus,</hi> que l&#x2019;animal modifie la ten-<lb break="no"/>sion électrique des corps qui l&#x2019;entourent.</p>
+                <lb break="yes"/>
+                <p>11°. Les poissons électriques agissant<lb break="yes"/>en état de santé avec la m&#x00EA;me force sous<lb break="yes"/>l&#x2019;eau que dans l&#x2019;air, nous avons examiné<lb break="yes"/>la propriété conductrice de ce fluide. Plu-<lb break="no"/>sieurs personnes faisant la cha&#x00EE;ne entre<lb break="yes" />la surface supérieure et la surface infé-<lb break="no"/>
+                    <pb n="149" facs="#f0005"/> rieure des organes de la torpille, la com-<lb break="no"/>motion ne s&#x2019;est fait sentir que lorsque ces<lb break="yes"/>personnes se sont mouillé les mains. Une<lb break="yes"/>goutte d&#x2019;eau n&#x2019;intercepte pas l&#x2019;action, lors-<lb break="no"/>que deux personnes, qui de leurs mains<lb break="yes"/>droites soutiennent la torpille, au lieu<lb break="yes"/>de se donner la main gauche, enfoncent<lb break="yes"/>chacune un stilet métallique dans une<lb break="yes"/>goutte d&#x2019;eau placée sur un corps iso-<lb break="no"/>lant.</p>
+                <lb break="yes"/>
+                <p>12°. En substituant en ce cas la flamme<lb break="yes"/>à la goutte d&#x2019;eau, la communication est<lb break="yes"/>interceptée, et ne se rétablit que lorsque<lb break="yes"/>les deux stilets se touchent immédiate-<lb break="no"/>ment dans l&#x2019;intérieur de la flamme.</p>
+                <lb break="yes"/>
+                <p>13°. Il faut encore observer que sous<lb break="yes"/>l&#x2019;eau comme dans l&#x2019;air, la commotion ne<lb break="yes"/>se fait sentir que lorsqu&#x2019;on touche im-<lb break="no"/>médiatement le corps des poissons élec-<lb break="no"/>triques. Ils ne lancent pas leurs coups à<lb break="yes"/>travers la couche d&#x2019;eau la plus mince,<lb break="yes" />fait d&#x2019;autant plus remarquable que l&#x2019;on<lb break="yes"/>sait que dans les expériences <persName key="galvani_la">galvani-<lb break="no" />ques</persName>, où la grenouille est plongée dans<lb break="yes" />l&#x2019;eau, il suffit d&#x2019;approcher la pincette<lb break="yes" />d&#x2019;argent des muscles, et que la contrac-<lb break="no"/>tion se fait lorsque la couche d&#x2019;eau in-<lb break="no"/>terposée a un ou deux millimètres d&#x2019;é-<lb break="no"/>paisseur.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-13" who="#wernicke_nd">Format. Validation.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="21" facs="#f0001" />
+            <div n="1">
+                <head>
+                    <hi rendition="#i">AMERICAN STATISTICS.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>M. de Humboldt @, a<lb break="yes"/>Cl@gyman at Amsterdam, a statement respecting the<lb break="yes"/>population of America, and the numerical amount of<lb break="yes"/>the Catholic@, compared with that of the Protestants.<lb break="yes"/>The total population of America he makes 34,284,000.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell cols="3">1. Roman Catholics, ... ... ... </cell>
+                        <cell>22,177,900</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">Thus divided:</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Spanish America, ... ... </cell>
+                        <cell>15,985,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Whites, ... ... </cell>
+                        <cell>2,937,000</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Indians, ... ... </cell>
+                        <cell>7,530,000</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mixed race and Ne-<lb break="no"/>groes ... ... </cell>
+                        <cell rendition="#leftBraced">
+                            <hi rendition="#u">5,518,000</hi>
+                        </cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#u">15,985,000</hi>
+                        </cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Portuguese America, ... ... </cell>
+                        <cell>4,000,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Whites, ... ... </cell>
+                        <cell>920,000</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Negroes ... ... </cell>
+                        <cell>1,9@0,000</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mixed race &#x0026; Indians, </cell>
+                        <cell>
+                            <hi rendition="#u">1,120,900</hi>
+                        </cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>4,000,000 </cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">United States, Canada,<lb break="yes"/>and Guayana, ... ... </cell>
+                        <cell rendition="#leftBraced">536,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Hayti, Porto Rice, and the An-<lb break="no"/>tilles, ... ... ... </cell>
+                        <cell rendition="#leftBraced">
+                            <hi rendition="#u">1,656,000</hi>
+                        </cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell/>
+                        <cell>22,177,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">2. Protestants, ... ... .. ... </cell>
+                        <cell>11,287,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">In the United States, ... </cell>
+                        <cell>9,990,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Canada, Nova Scotia &#x0026; Labrador, </cell>
+                        <cell>260,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Guyana, English and Dutch, </cell>
+                        <cell>220,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">The Antilles, English, ... </cell>
+                        <cell>734,500</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">The Antilles, Dutch and Danish, </cell>
+                        <cell>
+                            <hi rendition="#u">8@,500</hi>
+                        </cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell/>
+                        <cell>11,287,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">3. @, not Christians, ... ... </cell>
+                        <cell>
+                            <hi rendition="#u">8@0,000</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">Total population, ... ... </cell>
+                        <cell>
+                            <hi rendition="#u">34,284,000</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>M. de Humboldt makes again the following ingenious<lb break="yes"/>calculation as the result of his @:&#x2014;</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Whites, ... </cell>
+                        <cell>13,16@,000</cell>
+                        <cell> equal to 38 in 100</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Indians, ... </cell>
+                        <cell>8,610,000</cell>
+                        <cell> ...... 25</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Negoes, ... </cell>
+                        <cell>6,223,000</cell>
+                        <cell> ...... 18</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mixed race, ... </cell>
+                        <cell>
+                            <hi rendition="#u">6,289,000</hi>
+                        </cell>
+                        <cell> ...... 19</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>34,284,000</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>The black population is composed of 1,440,000 free<lb break="yes"/>blacks, and of 5,079,000 slaves. The different @<lb break="yes"/>spoken are @ follows:&#x2014;</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>The English language by ... </cell>
+                        <cell>11,297,500 individu@.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Spanish, ... ... ... </cell>
+                        <cell>10,174,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Indian, ... ... ... </cell>
+                        <cell>7,800,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Portuguese, ... ... </cell>
+                        <cell>3,740,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>French, ... ... ... </cell>
+                        <cell>1,0@8,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dutch, Danish, Swedish<lb break="yes"/>and R@, ...@ </cell>
+                        <cell rendition="#leftBraced">
+                            <hi rendition="#u">214,500</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>34,284,000</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>This statement is given as the fruit of investigations<lb break="yes"/>made to the end of last year.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI>

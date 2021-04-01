@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Nachrichten von des k. preussisch. Oberbergraths Fried. Alexand. v. Humboldt Bemühungen zur Erleichterung des menschlichen Aufenthaltes in bösen Grubenwettern</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1798-Nachrichten_von_des-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Nachrichten von des k. preussisch. Oberbergraths Fried. Alexand. v. Humboldt Bemühungen zur Erleichterung des menschlichen Aufenthaltes in bösen Grubenwettern</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Freiberg</pubPlace>
+                        <date type="publication">1798</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Jahrbücher der Berg- und Hüttenkunde</title>
+                        <biblScope unit="volume">2</biblScope>
+                        <biblScope unit="pages">193–233</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.3.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.2.0" when="2018-10-03" who="#wernicke_nd">Markup. <note type="remarkRevision">Fehlende persName und placeName ergänzt.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="193" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Nachrichten</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">von des k. preußi&#x017F;ch. Oberbergraths Fried. Alexand.<lb break="yes"/>v. <persName key="humboldt_av"/>Humboldt Bemühungen zur Erleichterung des<lb break="yes"/>men&#x017F;chlichen Aufenthaltes in bö&#x017F;en Grubenwet-<lb break="no"/>tern.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <hi rendition="#in">H</hi>err von <persName key="humboldt_av" />Humboldt,</hi> de&#x017F;&#x017F;en per&#x017F;önliche Freund&#x017F;chaft bey dem<lb break="yes"/>nähern Umgange mit ihm täglich an Werthe für mich ge-<lb break="no"/>winnt, hat mir &#x017F;eine überaus wichtigen Hand&#x017F;chriften über die<lb break="yes"/>Grubenwetter, und die Mittel, Lichter in &#x017F;elben brennend zu<lb break="yes"/>erhalten, und &#x017F;ie für die Men&#x017F;chen athembar zu machen, anver-<lb break="no"/>traut. Mit &#x017F;einer Erlaubniß habe ich aus die&#x017F;en höch&#x017F;t intere&#x017F;-<lb break="no"/>&#x017F;anten Papieren den gegenwärtigen Auszug gefaßt. Ich habe<lb break="yes"/>mich hiebey vorzüglich auf die von ihm erfundenen Ma&#x017F;chinen,<lb break="yes"/>und ihren ver&#x017F;chiedenen Bau be&#x017F;chränkt: die chemi&#x017F;chen Ver-<lb break="no" />hältni&#x017F;&#x017F;e wird <hi rendition="#i">Herr von <persName key="humboldt_av"/>Humboldt,</hi> welcher &#x017F;ich noch immer mit<lb break="yes"/>Analy&#x017F;en der Grubenwetter be&#x017F;chäftlgt, nach wenigen Monaten<lb break="yes"/>in einer Schrift: <hi rendition="#i">
+                        <bibl>Ueber die Grubenwetter und die Mittel, ihren<lb break="yes"/>Nachtheil zu vermindern: ein Beytrag zur Phy&#x017F;ik, und prakti&#x017F;chen<lb break="yes"/>Bergbaukunde, mit 4. Kupfertaf.</bibl>
+                    </hi> näher entwickeln. Uebrigens<lb break="yes"/>war Herr <hi rendition="#i">v. <persName key="humboldt_av"/>Humboldt</hi> gütig genug, die&#x017F;en Auszug vor dem<lb break="yes"/>Abdrucke &#x017F;elb&#x017F;t zu über&#x017F;ehen, und &#x017F;o bin ich denn im Stande,<lb break="yes"/>von den wohlthätigen Er&#x017F;indungen die&#x017F;es unermüdet thätigen<lb break="yes" />Mannes be&#x017F;timmtere Nachrichten mitzutheilen, als noch bisher<lb break="yes"/>in das Publikum gekommen &#x017F;ind.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#et">
+                        <hi rendition="#i">
+                            <placeName key="salzburg">Salzburg</placeName> am <date>27. November 1797.</date>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Un-</fw>
+                <lb break="yes"/>
+                <pb n="194" facs="#f0002"/>
+                <p>Unter den Schwierigkeiten, welche der Berg-<lb break="no"/>mann bey &#x017F;einen unterirdi&#x017F;chen Arbeiten zu über-<lb break="no"/>winden hat, &#x017F;ind wohl die <hi rendition="#i">bö&#x017F;en Wetter</hi> eine der<lb break="yes" />größten. Sie er&#x017F;chweren ihm das Athmen, und<lb break="yes"/>das Brennen &#x017F;einer Lichter. Alle Reiche der Na-<lb break="no"/>tur biethen Stoffe dazu dar, die ihn umgebende<lb break="yes"/>Luft irre&#x017F;pirabel zu machen. Die Menge in enge<lb break="yes"/>Räume einge&#x017F;chlo&#x017F;&#x017F;ener Men&#x017F;chen, ihre gro&#x017F;&#x017F;e An-<lb break="no"/>&#x017F;trengung zur Arbeit, ihr heftiges und ge&#x017F;chwin-<lb break="no"/>des Athmen, der Dampf des Geleuchtes, die Ent-<lb break="no"/>bindung &#x017F;chädlicher Gasarten aus ver&#x017F;chiedenen<lb break="yes"/>Foßilien, die Fäulniß der Gezimmer, die luftver-<lb break="no"/>derbenden <choice>
+                        <sic>Pflanzeu</sic>
+                        <corr type="editorial">Pflanzen</corr>
+                    </choice>, verbinden &#x017F;ich zum Nachthei-<lb break="no"/>le des von &#x017F;einen Feinden umgebenen, und größ-<lb break="no"/>tentheils mit ihnen völlig unbekannten, wehrlo&#x017F;en<lb break="yes"/>Grubenarbeiters.</p>
+                <lb break="yes"/>
+                <p>Die Grubenwetter &#x017F;ind bis itzt in Ab&#x017F;icht<lb break="yes"/>auf ihre Be&#x017F;tandtheile noch &#x017F;ehr wenig bekannt.<lb break="yes"/>Ihre Eintheilung in fri&#x017F;che, oder matte, in kalte,<lb break="yes"/>oder warme, in bö&#x017F;e, oder gute, in Schwaden,<lb break="yes"/>oder &#x017F;chlagende Wetter erklärt wenig, oder<lb break="yes"/>nichts.</p>
+                <lb break="yes"/>
+                <p>Die Lehren von den einfachen Gasarten der<lb break="yes"/>Laboratorien, die gewöhnlichen Kenntni&#x017F;&#x017F;e von<lb break="yes"/>Stickluft, brennbarer Luft, u. &#x017F;. f. reichen durch-<lb break="no"/>aus nicht hin, um die Natur der Grubenwetter<lb break="yes"/>zu erklären; denn die&#x017F;e Gasarten kommen in den<lb break="yes"/>unterirdi&#x017F;chen Luftregionen gewöhnlich in ganz<lb break="yes"/>eigenen Verbindungen und Umhüllungen miteinan-<lb break="no" />ander vor. Von der Bekannt&#x017F;chaft mit die&#x017F;en<lb break="yes" />Verbindungen hängt die Ausführbarkeit wichtiger<lb break="yes" />prakti&#x017F;cher Vorrichtungen ab.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Sauer-</fw>
+                <lb break="yes"/>
+                <pb n="195" facs="#f0003"/>
+                <p>Sauer&#x017F;toff, Stick&#x017F;toff, Wa&#x017F;&#x017F;er&#x017F;toff, und Kohl-<lb break="no"/>&#x017F;toff &#x017F;ind die häufig&#x017F;ten Be&#x017F;tandtheile der Gruben-<lb break="no"/>wetter, ihre Mi&#x017F;chungen aber äußer&#x017F;t ver&#x017F;chie-<lb break="no"/>den. Man würde &#x017F;ich irren, wenn man den<lb break="yes"/>Grund die&#x017F;er Modifikationen in dem ver&#x017F;chiedenen<lb break="yes"/>quantitativen Verhältni&#x017F;&#x017F;e des Gemenges &#x017F;uchen woll-<lb break="no"/>te. Indeß &#x017F;ind Stick&#x017F;toff- Kohlen&#x017F;toff- und Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toff-Gas die vorzüglich&#x017F;ten Be&#x017F;tandtheile der Gru-<lb break="no"/>benwetter: Ar&#x017F;enik hat &#x017F;ich <hi rendition="#i">gewiß,</hi> Ei&#x017F;en und<lb break="yes"/>Zink, nach <hi rendition="#i">
+                        <persName key="humboldt_av"/>Humboldt</hi> und <hi rendition="#i">
+                        <persName key="leonhardi_01" ref="http://d-nb.info/gnd/" >Leonhardi</persName>, wahr-<lb break="no"/>&#x017F;cheinlich</hi>, in Wa&#x017F;&#x017F;er&#x017F;toff-Gas aufgelö&#x017F;t gefunden.</p>
+                <lb break="yes"/>
+                <p>Die Wetter &#x017F;tehen in der Grube oft nur auf<lb break="yes"/>einem Theile der Stollen&#x017F;ohle: Wetter von glei-<lb break="no"/>cher Schwere und Ela&#x017F;tizität umgeben &#x017F;ie, ohne<lb break="yes"/>&#x017F;ich mit ihnen in ein Niveau zu &#x017F;etzen; &#x017F;ie &#x017F;ind<lb break="yes" />bald un&#x017F;ichtbar, bald &#x017F;ichtbar, von einem milchig-<lb break="no" />ten An&#x017F;ehen, und deutlichen Umri&#x017F;&#x017F;en. Kohlen-<lb break="no"/>&#x017F;aures Gas zeigt &#x017F;ich in &#x017F;eltenen Fällen wie ein<lb break="yes"/>blaues Wölkchen, oder wie ein grauer Nebel.<lb break="yes"/>Es &#x017F;chlägt bisweilen auf &#x017F;tehenden Gruben-Wä&#x017F;-<lb break="no"/>&#x017F;ern eine blauliche Haut nieder. Brennbare Luft<lb break="yes"/>mit unbekannten Stoffen verbunden, hängt &#x017F;ich in<lb break="yes"/>
+                    <placeName key="england"/>England in der Ge&#x017F;talt eines Spinnengewebes oder<lb break="yes"/>weißlicher Kugeln an das Grubenholz an.</p>
+                <lb break="yes"/>
+                <p>Matte Wetter be&#x017F;tehen theils aus atmosphäri-<lb break="no"/>&#x017F;cher Luft, welcher ein Theil Sauer&#x017F;toffs entzo-<lb break="no"/>gen i&#x017F;t, theils aus einem Gemi&#x017F;che, in dem zwar<lb break="yes"/>Sauer&#x017F;toff genug vorhanden i&#x017F;t, in welchem der-<lb break="no"/>&#x017F;elbe aber von der Kohlen&#x017F;äure &#x017F;o umhüllt wird,<lb break="yes"/>daß er weder von dem venö&#x017F;en Blute (beym<lb break="yes"/>Athmen), noch an Tochten (beym brennenden<lb break="yes"/>Lichte), abge&#x017F;chieden werden kann. <hi rendition="#i">Herr von</hi>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">
+                        <hi rendition="#i">Hum-</hi>
+                    </fw>
+                    <lb break="yes"/>
+                    <pb n="196" facs="#f0004"/>
+                    <hi rendition="#i">
+                        <persName key="humboldt_av"/>Humboldt</hi> vermuthet nach &#x017F;einen analyti&#x017F;chen Ver-<lb break="no"/>&#x017F;uchen, daß es eine über&#x017F;aure Kohlen&#x017F;äure gebe,<lb break="yes"/>(gas acide <choice>
+                        <sic>carhonique</sic>
+                        <corr type="editorial">carbonique</corr>
+                    </choice> &#x017F;uroxygené), welche die<lb break="yes"/>Kohle des Tochtes nicht zer&#x017F;etzen kann, da der<lb break="yes"/>Sauer&#x017F;toff in ihr &#x017F;chon an Kohlen&#x017F;toff gebunden<lb break="yes"/>i&#x017F;t. Die Menge des Sauer&#x017F;toffs in einem Luftge-<lb break="no"/>menge ent&#x017F;cheidet nicht für &#x017F;eine Athembarkeit,<lb break="yes"/>und lichterhaltende Eigen&#x017F;chaft.</p>
+                <lb break="yes"/>
+                <p>Bö&#x017F;e Wetter, Schwaden &#x017F;ind entweder größ-<lb break="no"/>tentheils kohlen&#x017F;aures Gas, oder Kohlen&#x017F;äure mit<lb break="yes"/>Stick- und Wa&#x017F;&#x017F;er&#x017F;toffgas gemengt. Je nach dem<lb break="yes" />&#x017F;tärkern, oder geringern Gehalte an Kohlen&#x017F;toff,<lb break="yes" />und mehr- oder minderer Beymengung von Le-<lb break="no"/>bensluft gehen die Lichter in &#x017F;elben früher, oder<lb break="yes"/>&#x017F;päter aus. Der Schwaden liegt entweder nach<lb break="yes"/>dem Verhältni&#x017F;&#x017F;e &#x017F;eines Gewichtes zu jenem der<lb break="yes"/>athmosphäri&#x017F;chen Luft, wie ein wei&#x017F;slicher, oder<lb break="yes"/>blaulicher Nebel auf der Sohle der Grubenbaue,<lb break="yes"/>oder mit etwas Wa&#x017F;&#x017F;er&#x017F;toff-Gas gemengt, erhebt<lb break="yes"/>er &#x017F;ich an die Fir&#x017F;te. Der Ruß, welchen die<lb break="yes"/>Schwaden manchmal auf trockenen Strecken ab&#x017F;e-<lb break="no"/>tzen, &#x017F;cheint von einer Zer&#x017F;etzung der luft&#x017F;auren<lb break="yes"/>Wetter, und einem Freywerden ihres Kohlen&#x017F;toffes<lb break="yes"/>herzurühren.</p>
+                <lb break="yes"/>
+                <p>Die kohlen&#x017F;aure Luft ent&#x017F;teht keinesweges in<lb break="yes"/>den Gruben bloß aus dem Athmen der Men-<lb break="no"/>&#x017F;chen, oder dem Brennen der Lichter. Sie bildet<lb break="yes"/>&#x017F;ich (außer aus faulendem Holze) auch durch die<lb break="yes"/>bloße Berührung des atmosphäri&#x017F;chen Sauer&#x017F;toffs<lb break="yes"/>mit kohlen&#x017F;toffhältigen Foßilien, als Hornblende,<lb break="yes"/>
+                    <placeName key="lydien"/>Lydi&#x017F;chem Steine, Alaun&#x017F;chiefer, Steinkohlen und<lb break="yes"/>manchem Thon&#x017F;chiefer. Die&#x017F;e Verbindung geht,<lb break="yes"/>
+                    <fw type="catch" place="bottom">(wie</fw>
+                    <lb break="yes"/>
+                    <pb n="197" facs="#f0005"/> (wie <hi rendition="#i">
+                        <persName key="lametherie_jcd" ref="http://d-nb.info/gnd/">la Metherie</persName>, Herr v. <persName key="humboldt_av"/>Humboldt</hi>, und <hi rendition="#i">Herr<lb break="yes"/>
+                        <persName key="lampadius_01" ref="http://d-nb.info/gnd/" >Lampadius</persName>
+                    </hi> gezeigt <choice>
+                        <sic>haben</sic>
+                        <corr type="editorial">haben)</corr>
+                    </choice>, bey &#x017F;ehr niedriger<lb break="yes"/>Temperatur vor.</p>
+                <lb break="yes"/>
+                <p>Seltner &#x017F;ind bö&#x017F;e Wetter, in welchen Lich-<lb break="no"/>ter brennen, obwohl &#x017F;ie für <choice>
+                        <sic>Men&#x017F;cheu</sic>
+                        <corr type="editorial">Men&#x017F;chen</corr>
+                    </choice> irre&#x017F;pira-<lb break="no"/>bel &#x017F;ind. Sie &#x017F;cheinen <hi rendition="#i">
+                        <persName key="priestley_j">Prie&#x017F;tley&#x2019;s</persName>
+                    </hi> dephlogi&#x017F;ti&#x017F;irte Sal-<lb break="no"/>peter-Luft zu &#x017F;eyn.</p>
+                <lb break="yes"/>
+                <p>Brennbare, &#x017F;chlagende Wetter be&#x017F;tehen größ-<lb break="no" />tentheils aus Hydrogen, und hangen in kleinen<lb break="yes"/>Wölkchen, in graulichen Ballen, wie We&#x017F;penne-<lb break="no"/>&#x017F;ter, oder wie Spinnengewebe an den Fir&#x017F;ten,<lb break="yes"/>oder &#x017F;ie &#x017F;inken, wenn das Hydrogen mit Kohlen&#x017F;toff<lb break="yes"/>gemengt i&#x017F;t, auf die Sohle nieder. I&#x017F;t das Hy-<lb break="no"/>drogen mit Luft&#x017F;äure verbunden, &#x017F;o entzünden &#x017F;ie<lb break="yes" />&#x017F;ich gemeiniglich ganz &#x017F;till, bisweilen mit einem<lb break="yes" />äußern violetten Scheine, oder auch wohl mit<lb break="yes"/>einer &#x017F;chönen blauen Farbe; i&#x017F;t da&#x017F;&#x017F;elbe rein mit<lb break="yes"/>Lebensluft in Berührung getretten, &#x017F;o ent&#x017F;teht bey<lb break="yes"/>der Entzündung ein Knall; entbinden &#x017F;ich die<lb break="yes"/>Wetter aus metalli&#x017F;chen Körpern, &#x017F;o i&#x017F;t die Flam-<lb break="no"/>me oft &#x017F;ehr lebhaft, glänzend und grünlich-weiß<lb break="yes"/>mit rothen Funken.</p>
+                <lb break="yes"/>
+                <p>Das Hydrogen entbindet &#x017F;ich in den Gruben<lb break="yes"/>durch Verdün&#x017F;tung aus den unterirdi&#x017F;chen Pflan-<lb break="no"/>zen, aus fe&#x017F;tem fri&#x017F;chem Grubenholze, und durch<lb break="yes"/>eine Wa&#x017F;&#x017F;erzer&#x017F;etzung mittel&#x017F;t brennbarer Foßilien,<lb break="yes"/>&#x017F;chweflichter, oder ar&#x017F;enikali&#x017F;cher Erze. Da es<lb break="yes"/>nur &#x017F;ehr &#x017F;elten rein vorkömmt, &#x017F;o &#x017F;ind auch die<lb break="yes"/>&#x017F;chlagenden Wetter minder häufig; die Mi&#x017F;chung<lb break="yes"/>der brennbaren Luft, mit Kohlen&#x017F;äure und Stick-<lb break="no"/>luft, hemmt ihre Entzündung, und hält &#x017F;ie, ihrer<lb break="yes"/>
+                    <fw type="catch" place="bottom">Leich-</fw>
+                    <lb break="yes"/>
+                    <pb n="198" facs="#f0006"/> Leichtigkeit ungeachtet, in den Gruben fe&#x017F;t. Die<lb break="yes"/>&#x017F;eltenen Selb&#x017F;tentzündungen &#x017F;chlagender <hi rendition="#g">Wetter</hi>
+                    <lb break="yes"/>&#x017F;cheinen von phosphori&#x017F;chem Gas (Hydrogene<lb break="yes"/>phosphori&#x017F;é) in Berührung mit Oxygen zu ent-<lb break="no"/>&#x017F;tehen.</p>
+                <lb break="yes"/>
+                <p>Es giebt außerdem noch einige bisher noch<lb break="yes"/>&#x017F;o gut, als gänzlich unbekannte Wetterarten, z.<lb break="yes"/>B. Wetter, welche &#x017F;ich mitten auf gangbaren<lb break="yes"/>Stollenflügeln, auf 2 &#x2014; 3 Lachter, von den be-<lb break="no"/>nachbarten guten Wettern ganz &#x017F;charf abge&#x017F;chnit-<lb break="no"/>ten, durch einen &#x017F;üßlich &#x017F;techenden Geruch, und<lb break="yes"/>Wärme zu erkennen geben, in welchen das Holz<lb break="yes"/>ganz trocken bleibt, nach der Länge der Fibern<lb break="yes"/>leicht &#x017F;paltet, aufgeri&#x017F;&#x017F;en, und mit einem &#x017F;taubi-<lb break="no"/>gen grauen &#x017F;pinnengewebe-ähnlichen Schimmel<lb break="yes"/>behangen i&#x017F;t; Wetter, welche den Arbeitern ein<lb break="yes"/>heftiges Zittern verur&#x017F;achen; Wetter, welche im<lb break="yes"/>Abbrennen den Geruch des thieri&#x017F;chen <hi rendition="#i">Dippel-<lb break="no"/>&#x017F;chen</hi> Oels geben, z. B. in der <hi rendition="#i">
+                        <placeName key="gailenreuthhoehle">Gailenreuther<lb break="yes" />Höhle</placeName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Es i&#x017F;t bis itzt wenig für die Auffindung<lb break="yes"/>zweckmäßiger Mittel, verderbte Grubenwetter re-<lb break="no"/>&#x017F;pirabel, und licht-erhaltend zu machen, ge&#x017F;che-<lb break="no"/>hen: die Phy&#x017F;iker haben &#x017F;ich anhaltend mit der<lb break="yes"/>Region der Wolken, aber beynahe gar nicht mit<lb break="yes"/>der unterirdi&#x017F;chen Luftregion be&#x017F;chäftigt. Am we-<lb break="no"/>nig&#x017F;ten dachte man hiebey an die Mittel, welche<lb break="yes"/>man etwa aus der Chemie &#x017F;chöpfen könnte. Al-<lb break="no"/>les, was man den guten und bö&#x017F;en Wettern ent-<lb break="no"/>gegen &#x017F;tellte, be&#x017F;tand theils</p>
+                <lb break="yes"/>
+                <pb n="199" facs="#f0007"/>
+                <list>
+                    <item>1: in &#x017F;ogenannten Wetterwech&#x017F;eln,<lb break="yes"/>
+                        <list>
+                            <item>a) mittel&#x017F;t ordentlicher Wetter&#x017F;tollen,</item>
+                            <lb break="yes"/>
+                            <item>b) durch Tragwerke, Schacht&#x017F;cheider,<lb break="yes" />Lichtlöcher u. &#x017F;. f.</item>
+                        </list>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>theils</p>
+                <lb break="yes"/>
+                <list>
+                    <item>2: in Wetterma&#x017F;chinen, als:<lb break="yes"/>
+                        <list>
+                            <item>a) Windfängen, Wetterhüten, und ähn-<lb break="no"/>lichen Auf&#x017F;ätzen auf den Oeffnungen<lb break="yes"/>der <choice>
+                                    <sic>Sehächte</sic>
+                                    <corr type="editorial">Schächte</corr>
+                                </choice>;</item>
+                            <lb break="yes"/>
+                            <item>b) Schmiedeblasbalgen, Windladen, Wet-<lb break="no"/>terrädern, Wettertrommeln etc. etc.</item>
+                            <lb break="yes"/>
+                            <item>c) Wetter&#x017F;äugern, Wetterblä&#x017F;ern, Venti-<lb break="no"/>latoren;</item>
+                            <lb break="yes"/>
+                            <item>d) dem <placeName key="harz">Harzer</placeName> Wetter&#x017F;atze;</item>
+                        </list>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>theils</p>
+                <lb break="yes"/>
+                <list>
+                    <item>3: in Feuerbenützung,<lb break="yes"/>
+                        <list>
+                            <item>a) durch Wetteröfen, insbe&#x017F;ondere durch<lb break="yes"/>die &#x017F;ogenannte Feuer-Wetterma&#x017F;chine;</item>
+                            <lb break="yes"/>
+                            <item>b) durch das Bu&#x017F;chen mit Zweigen;</item>
+                            <lb break="yes"/>
+                            <item>c) durch das Ausbrennen der brennbaren<lb break="yes" />Wetter;</item>
+                        </list>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">theils</fw>
+                <lb break="yes"/>
+                <pb n="200" facs="#f0008"/>
+                <p>theils</p>
+                <lb break="yes"/>
+                <list>
+                    <item>4: in Benützung des Wa&#x017F;&#x017F;ers<lb break="yes"/>
+                        <list>
+                            <item>a) durch Wa&#x017F;&#x017F;ertrommeln,</item>
+                            <lb break="yes"/>
+                            <item>b) durch Aerolipilen.</item>
+                        </list>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Aber man hat dabey immer als richtig ange-<lb break="no"/>nommen, daß der Wetterwech&#x017F;el einzig und al-<lb break="no"/>lein vom Drucke der äußern Atmosphäre abhan-<lb break="no"/>ge, da &#x017F;ich doch die Temperatur der Grubenluft<lb break="yes"/>nicht &#x017F;elten &#x017F;o wenig nach der äußern Atmosphä-<lb break="no"/>re richtet, daß vielmehr Kälte und Wärme in der<lb break="yes"/>Grube &#x017F;elb&#x017F;t ent&#x017F;tehen, ohne Aenderung der Tem-<lb break="no"/>peratur in der äußern Luft.</p>
+                <lb break="yes"/>
+                <p>Die Herren <hi rendition="#i">
+                        <persName key="cadetdevaux_a" ref="http://d-nb.info/gnd/">Cadet-Devaux</persName>
+                    </hi>, <hi rendition="#i">
+                        <persName key="laborie_01" ref="http://d-nb.info/gnd/" >Laborie</persName>
+                    </hi>, und<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="parmentier_01" ref="http://d-nb.info/gnd/" >Parmentier</persName>
+                    </hi> haben ganz neuerlich einen <choice>
+                        <sic>pyropnev-<lb break="no"/>mati&#x017F;chen</sic>
+                        <corr type="editorial">pyropneu-<lb break="no"/>mati&#x017F;chen</corr>
+                    </choice> Apparat in Vor&#x017F;chlag gebracht, wel-<lb break="no"/>cher aus einem bedeckten Reverberir-Ofen be-<lb break="no"/>&#x017F;teht, worauf 5 &#x2014; 6 Fuß Röhren, wie ein<lb break="yes"/>Schorn&#x017F;tein, aufge&#x017F;etzt &#x017F;ind. Aus dem A&#x017F;chen-<lb break="no"/>herde geht eine andere Röhrentour in den<lb break="yes"/>Schacht, oder Brunnen, welcher mit bö&#x017F;en Wet-<lb break="no"/>tern angefüllt i&#x017F;t, und zwar bis in 3 oder 4 Fuß<lb break="yes"/>Höhe über das Tief&#x017F;te. Die&#x017F;e Tour be&#x017F;teht aus<lb break="yes"/>kupfernen zu&#x017F;ammenge&#x017F;chraubten Rohr&#x017F;tücken, die<lb break="yes"/>man nach und nach bis in die gehörige Tiefe des<lb break="yes"/>Schachtes hereinla&#x017F;&#x017F;en kann, ohne daß man &#x017F;elb&#x017F;t<lb break="yes"/>nöthig hätte, mitzufahren.</p>
+                <lb break="yes"/>
+                <p>Zündet man nun in dem Ofen mit trockenen<lb break="yes"/>Holz&#x017F;pännen ein lebhaftes Feuer an, &#x017F;o wird es<lb break="yes"/>
+                    <fw type="catch" place="bottom">den</fw>
+                    <lb break="yes"/>
+                    <pb n="201" facs="#f0009"/> den Schwaden mit gro&#x017F;&#x017F;er Ge&#x017F;chwindigkeit aus<lb break="yes"/>dem Schachte weg&#x017F;augen, und das wetternöthige<lb break="yes"/>Abteufen vielleicht nach Verfluß 1&#x222B;2 Stunde fahr-<lb break="no"/>bar geworden &#x017F;eyn.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> meynt, man &#x017F;ollte den<lb break="yes"/>Gebrauch der Wetteröfen durchgehends umkehren,<lb break="yes"/>d. i. &#x017F;ie als Wetterzieher benützen, weil bey dem<lb break="yes"/>bisherigen Gebrauche der&#x017F;elben an den entfernte-<lb break="no"/>&#x017F;ten wetternöthigen Punkten das Mei&#x017F;te zurück-<lb break="no"/>bleibe, und die &#x017F;o vielmal eintretende Um&#x017F;etzung<lb break="yes"/>des natürlichen Wetterzugs die ganze Vorrichtung<lb break="yes"/>unbrauchbar mache. Er &#x017F;chlägt hiezu kleine<lb break="yes"/>Windöfen vor. Man &#x017F;ollte nämlich auf der Sohle<lb break="yes"/>eine Wetterlotte, oder noch be&#x017F;&#x017F;er wohl ver&#x017F;pün-<lb break="no"/>detes Tragwerk bis an das wetternöthige Ort<lb break="yes"/>ziehen, da&#x017F;&#x017F;elbe in &#x017F;o kurzer Entfernung, als<lb break="yes"/>möglich, vom Ort&#x017F;to&#x017F;&#x017F;e zurück verblenden, und<lb break="yes"/>vor die Blende ein blechernes Oefgen mit einer ei-<lb break="no"/>&#x017F;ernen Röhre &#x017F;etzen, welche aus dem&#x017F;elben die<lb break="yes"/>Blende hindurch bis in den zwi&#x017F;chen dem Ort-<lb break="no"/>&#x017F;to&#x017F;&#x017F;e und der Blende einge&#x017F;chlo&#x017F;&#x017F;enen Raum ge-<lb break="no"/>führt würde. Der Ofen würde nun die ihn um-<lb break="no"/>gebende Luft, be&#x017F;onders jene in dem Ver&#x017F;chlage,<lb break="yes"/>durch die&#x017F;e Röhre zu Unterhaltung des Feuers an<lb break="yes"/>&#x017F;ich ziehen; die kältere, dichtere Luft unter dem<lb break="yes"/>Tragwerke &#x017F;trebte dann jenen luftdünnen Raum<lb break="yes"/>auszufüllen; &#x017F;ie &#x017F;trömte nach dem Ort&#x017F;to&#x017F;&#x017F;e zu,<lb break="yes"/>und es ent&#x017F;tünde ein be&#x017F;tändiger Wetterwech&#x017F;el.<lb break="yes"/>Um das Feuer zum Brennen zu bringen, könnte<lb break="yes"/>man &#x017F;ich eines kleinen Handbla&#x017F;ebalges bedienen,<lb break="yes"/>und den Rauch durch eine be&#x017F;ondere Röhrentour,<lb break="yes"/>oder durch einen Ver&#x017F;chlag in der Fir&#x017F;te bis zum<lb break="yes"/>näch&#x017F;ten Schachte bringen.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Hat</fw>
+                <lb break="yes"/>
+                <pb n="202" facs="#f0010"/>
+                <p>Hat der Ofen die matten Wetter einmal an-<lb break="no"/>ge&#x017F;ogen, und i&#x017F;t der Ver&#x017F;chlag einmal mit fri-<lb break="no"/>&#x017F;chem Wetter gefüllt, &#x017F;o kann man das Feuer bis<lb break="yes"/>zur näch&#x017F;ten Schicht verlö&#x017F;chen la&#x017F;&#x017F;en. Da der<lb break="yes"/>Häuer von der gro&#x017F;&#x017F;en hinter ihm &#x017F;tehenden Wet-<lb break="no"/>terma&#x017F;&#x017F;e getrennt i&#x017F;t, &#x017F;o kann er &#x017F;ich länger mit<lb break="yes"/>der fri&#x017F;chen Luft erhalten, als wenn die&#x017F;e durch<lb break="yes"/>eine freye Wetterlotte, wie gewöhnlich, in die<lb break="yes"/>ganze offene Strecke &#x017F;trömt.</p>
+                <lb break="yes"/>
+                <p>Weil die weißen Schwämme, und By&#x017F;&#x017F;usar-<lb break="no"/>ten, welche &#x017F;ich an der Zimmerung anlegen, un-<lb break="no"/>unterbrochen Wa&#x017F;&#x017F;er zer&#x017F;etzen, und Hydrogen<lb break="yes"/>mit Kohlen&#x017F;toffe von ihnen ausgeht, &#x017F;o &#x017F;ollte man<lb break="yes"/>&#x017F;ie mit aller An&#x017F;trengung vertilgen, und abkehren.</p>
+                <lb break="yes"/>
+                <p>Die bisherigen Ver&#x017F;uche, die bö&#x017F;en Wetter<lb break="yes"/>durch ätzende Alkalien <choice>
+                        <sic>uud</sic>
+                        <corr type="editorial">und</corr>
+                    </choice> Kälkwa&#x017F;&#x017F;er, welche<lb break="yes"/>die Luft&#x017F;äure &#x017F;chnell ab&#x017F;orbiren &#x017F;ollten, zu verbe&#x017F;-<lb break="no" />&#x017F;ern, wollten <hi rendition="#i">Hrn. v. <persName key="humboldt_av" />Humboldt</hi> niemals glücken,<lb break="yes"/>weil die Kohl&#x017F;äure von Hydrogen umhüllt i&#x017F;t.<lb break="yes"/>Er bemühte &#x017F;ich, die&#x017F;e Wetter mit Lebensluft,<lb break="yes"/>welche er in Bouteillen mit &#x017F;ich führte, zu be&#x017F;-<lb break="no"/>&#x017F;ern. In &#x017F;einem Schreiben an Herrn <hi rendition="#i">
+                        <persName key="lampadius_01" ref="http://d-nb.info/gnd/" >Lampadius</persName>
+                    </hi>
+                    <lb break="yes"/>in <hi rendition="#i">
+                        <bibl>
+                            <persName key="crell_lfv">Crell&#x2019;s</persName> Annalen</bibl>
+                    </hi> hat er einen gefahrvollen Ver-<lb break="no"/>&#x017F;uch der Art be&#x017F;chrieben. Außer den Schwierig-<lb break="no"/>keiten einer hinlänglich &#x017F;chließenden Verblendung,<lb break="yes"/>des be&#x017F;tändigen Nach&#x017F;chlagens der Blende beym<lb break="yes"/>Fortrücken des Baues, der Gefahr ihres Zer&#x017F;chie&#x017F;-<lb break="no"/>&#x017F;ens, der Schädlichkeit fortdauernden Einathmens<lb break="yes"/>reiner Lebensluft, würde &#x017F;chon der Preis die&#x017F;er<lb break="yes"/>Luft ihren Gebrauch im Gro&#x017F;&#x017F;en unmöglich ma-<lb break="no"/>chen. Die Ko&#x017F;ten der Einathmung reiner Lebens-<lb break="no"/>luft würden, den Kubikfuß zu 7 Gr. berechnet,<lb break="yes"/>
+                    <fw type="catch" place="bottom">in</fw>
+                    <lb break="yes"/>
+                    <pb n="203" facs="#f0011"/> in jeder Stunde 2 Rthlr. 16 Gr., und bey atmos-<lb break="no"/>phäri&#x017F;cher Luft, welche nur <formula notation="TeX" >\frac{27}{100}</formula> Lebensluft ent-<lb break="no"/>hält, noch 21 Gr. 10 Pf. <choice>
+                        <sic>hetragen</sic>
+                        <corr type="editorial">betragen</corr>
+                    </choice>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <choice>
+                            <sic>Hnmboldt</sic>
+                            <corr type="editorial">
+                                <persName key="humboldt_av"/>Humboldt</corr>
+                        </choice>
+                    </hi> gerieth daher auf den Ge-<lb break="no"/>danken, an&#x017F;tatt die Wetter für Re&#x017F;piration, und<lb break="yes"/>Lichterhaltung zugleich zu verbe&#x017F;&#x017F;ern, für die<lb break="yes"/>letzte eine nie verlö&#x017F;chende Lampe, für die er&#x017F;te<lb break="yes"/>eine Re&#x017F;pirations-Ma&#x017F;chine zu erfinden. Ueber<lb break="yes"/>den Erfolg &#x017F;einer Bemühungen &#x017F;ind bereits in<lb break="yes"/>
+                    <bibl>
+                        <hi rendition="#i">
+                            <persName key="crell_lfv">Crell&#x2019;s</persName> chemi&#x017F;chen Annalen</hi> 1795. 2<hi rendition="#i">ten B. Seite<lb break="yes" />99.</hi> 1796. 2.<hi rendition="#i"> B. St.</hi> 8. S. 99 &#x2014; 110. <hi rendition="#i">u. St. </hi>9<lb break="yes"/>
+                        <hi rendition="#i">S.</hi> 195 &#x2014; 210</bibl>, <bibl>
+                        <hi rendition="#i">im <choice>
+                                <sic>Intelligenzhlatte</sic>
+                                <corr type="editorial">Intelligenzblatte</corr>
+                            </choice> der Jen.<lb break="yes"/>allg. Litt. Zeit. </hi>1797<hi rendition="#i">. n.</hi> 29<hi rendition="#i">. S.</hi> 246 &#x2014; 48</bibl>,<bibl>
+                        <hi rendition="#i"> in<lb break="yes"/>dem Reichs-Anzeiger</hi> 1797<hi rendition="#i">. n. </hi>58<hi rendition="#i">. S.</hi> 614, 615</bibl>,<bibl>
+                        <hi rendition="#i">
+                            <lb break="yes"/>in der deut&#x017F;chen Nationalzeit. </hi>1797<hi rendition="#i">. n. </hi>12<hi rendition="#i">. S.</hi>
+                        <lb break="yes"/>269</bibl>, und in mehreren <bibl>
+                        <hi rendition="#i">Pari&#x017F;er</hi> Blättern</bibl> einige<lb break="yes" />Nachrichten mitgetheilt worden.</p>
+                <lb break="yes"/>
+                <p>Die&#x017F;e Blätter werden über den Gang &#x017F;einer<lb break="yes"/>Ideen, und über die Stuffenfolge &#x017F;einer Erfahrun-<lb break="no"/>gen nähere Auf&#x017F;chlü&#x017F;&#x017F;e geben, als bisher in das<lb break="yes" />Publikum gekommen &#x017F;ind.</p>
+                <lb break="yes"/>
+                <p>Um in verdorbenen Wettern thermometri&#x017F;che<lb break="yes"/>Beobachtungen machen zu können, nahm <hi rendition="#i">Hr. v.<lb break="yes"/>
+                        <persName key="humboldt_av"/>Humboldt</hi> das Grubenlicht in die eine, und eine<lb break="yes"/>Bouteille Lebensluft, umgekehrt mit dem Hal&#x017F;e,<lb break="yes"/>einen Zoll über dem Lichte, in die andere Hand.</p>
+                <lb break="yes"/>
+                <p>In der Folge füllte er eine gewöhnliche Bou-<lb break="no"/>teille, nur mit einem etwas weitem Hal&#x017F;e, mit<lb break="yes"/>Lebensluft, und &#x017F;etzte ihr, &#x017F;tatt eines gewöhnli-<lb break="no"/>
+                    <fw type="catch" place="bottom">chen</fw>
+                    <lb break="yes"/>
+                    <pb n="204" facs="#f0012"/> chen Kork&#x017F;töp&#x017F;els, einen Pfropf auf, in welchen<lb break="yes"/>ein kleiner Trichter, und neben die&#x017F;em ein dün-<lb break="no"/>nes gekrümmtes Rohr eingepaßt war. Durch den<lb break="yes"/>Trichter konnte man Wa&#x017F;&#x017F;er eintröpfeln; dadurch<lb break="yes"/>mußte die Lebensluft entweichen, und durch das<lb break="yes"/>gekrümmte Rohr nach der Lampe hin&#x017F;trömen. Er<lb break="yes"/>band endlich mittel&#x017F;t eines glä&#x017F;ernen Rohrs, un-<lb break="no"/>mittelbar an den Docht eine Bla&#x017F;e, halb mit de-<lb break="no"/>phlogi&#x017F;ti&#x017F;irter Luft angefüllt; den Docht ließ er,<lb break="yes"/>wie bey einer argand&#x017F;chen Lampe, in einen Glas-<lb break="no"/>zylinder &#x017F;tecken, und &#x017F;chloß in der Folge die<lb break="yes"/>Bla&#x017F;e in ein zur Seite angebrachtes Gefäß ein, in<lb break="yes"/>welchem er ver&#x017F;chiedene Vorrichtungen zu einem<lb break="yes"/>zweckmäßigen und gleichförmigen Austreiben der<lb break="yes" />Luft getroffen hatte. Aber alle die&#x017F;e Einrichtun-<lb break="no"/>gen waren für den Bergbau im Gro&#x017F;&#x017F;en nicht an-<lb break="no"/>wendbar, oder ihr Gebrauch war wenig&#x017F;tens nur<lb break="yes"/>auf einzelne Fälle einge&#x017F;chränkt.</p>
+                <lb break="yes"/>
+                <p>Um das Verlö&#x017F;chen der Lichter zu hindern,<lb break="yes"/>mußte Sauer&#x017F;toff herbeyge&#x017F;chafft werden, und<lb break="yes"/>dieß durch eine einfache, wohlfeile Vorrichtung<lb break="yes"/>ge&#x017F;chehen, welche man auch dem gemeinen Berg-<lb break="no"/>manne in die Hände geben, und in engen kripp-<lb break="no"/>lichen Grubenbauen gebrauchen könnte.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> verfiel nun auf eine Lam-<lb break="no"/>pe, welche außer dem gewöhnlichen Brennma-<lb break="no"/>teriale, auch das Sauer&#x017F;toff-Gas enthielt, und<lb break="yes"/>von jeder &#x017F;ie umgebenden Luft&#x017F;chicht unabhängig<lb break="yes"/>war, weil &#x017F;ie &#x017F;ich &#x017F;elb&#x017F;t nährte.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Bey</fw>
+                <lb break="yes"/>
+                <pb n="205" facs="#f0013"/>
+                <p>Bey der Verfertigung die&#x017F;er Lampe waren<lb break="yes"/>drey Schwierigkeiten zu heben.</p>
+                <lb break="yes"/>
+                <p>1) mußte &#x017F;ie, um ein geringeres Volumen<lb break="yes"/>einzunehmen, &#x017F;o wenig Luft, als möglich, kon-<lb break="no"/>&#x017F;umiren,</p>
+                <lb break="yes"/>
+                <p>2) mußte der Zufluß der Luft gleichförmig,<lb break="yes"/>und nach Willkür augenblicklich zu ver&#x017F;tärken,<lb break="yes"/>oder zu hemmen &#x017F;eyn; und</p>
+                <lb break="yes"/>
+                <p>3) mußte der Luftvorrath mit der Lampe<lb break="yes"/>in &#x017F;olcher Verbindung &#x017F;tehen, daß die kohlen&#x017F;au-<lb break="no"/>re, und inflammable Luft, welche &#x017F;ich um die<lb break="yes"/>Flamme bildet, den&#x017F;elben nicht verunreinigte. &#x2014;</p>
+                <lb break="yes"/>
+                <p>Der <hi rendition="#i">Lichterhälter</hi> ent&#x017F;pricht allen die&#x017F;en For-<lb break="no"/>derungen. Die vorzüglich&#x017F;ten Theile die&#x017F;er Ma-<lb break="no"/>&#x017F;chine &#x017F;ind:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>1) ein <hi rendition="#i">Wa&#x017F;&#x017F;erbehälter,</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>2) ein <hi rendition="#i">Luftbehälter,</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>3) die <hi rendition="#i">Lampe.</hi>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Das Ganze be&#x017F;teht in einem cylindri&#x017F;chen ble-<lb break="no"/>chenen Ge&#x017F;ä&#x017F;&#x017F;e, welches durch einen, oder meh-<lb break="no"/>rere Böden ungefähr in der Mitte &#x017F;einer Höhe in<lb break="yes"/>2 Hälften ge&#x017F;chieden i&#x017F;t; die obere Abtheilung,<lb break="yes"/>der <hi rendition="#i">Wa&#x017F;&#x017F;erbehälter,</hi> i&#x017F;t mit Wa&#x017F;&#x017F;er gefüllt; die un-<lb break="no"/>tere, der Luftbehälter, enthält die Luft, welche die<lb break="yes"/>Flamme nähren &#x017F;oll. Beyde Cylinder hängen mit-<lb break="no"/>tel&#x017F;t einer Oeffnung in dem &#x017F;ie trennenden Boden<lb break="yes"/>
+                    <fw type="catch" place="bottom">zu&#x017F;am-</fw>
+                    <lb break="yes"/>
+                    <pb n="206" facs="#f0014"/> zu&#x017F;ammen, welche durch einen Hahn ver&#x017F;chlo&#x017F;&#x017F;en,<lb break="yes"/>oder mehr, oder weniger geöffnet wird. Von<lb break="yes"/>der obern Fläche der untern Abtheilung &#x017F;teigt ein<lb break="yes"/>Rohr in die Höhe, welches unmittelbar in die<lb break="yes"/>auf den Cylinder aufge&#x017F;etzte <hi rendition="#i" >Lampe</hi> führt. Die&#x017F;e<lb break="yes"/>Lampe i&#x017F;t nach dem <hi rendition="#i">Argandi</hi>&#x017F;chen Princip einge-<lb break="no" />richtet. In der Mitte der&#x017F;elben erhebt &#x017F;ich ein et-<lb break="no"/>wa 2 &#x2033; dicker, hohler, meßingener Stift, de&#x017F;&#x017F;en<lb break="yes"/>obere Mündung kaum 1&#x222B;8 &#x2033; im Durchme&#x017F;&#x017F;er hat.<lb break="yes"/>Die&#x017F;es Luftröhrchen kommunizirt entweder unmit-<lb break="no"/>telbar, oder durch das obengedachte Zuleitungs-<lb break="no"/>rohr mit dem Luftbehälter, von welchem es zur<lb break="yes"/>Reinigung jedesmal ab- und wieder ange&#x017F;chroben<lb break="yes"/>werden kann. Auf das Luftröhrchen der Lampe<lb break="yes" />wird ein hohler, ge&#x017F;trickter Docht gezogen, und<lb break="yes"/>um da&#x017F;&#x017F;elbe Oel gego&#x017F;&#x017F;en, oder Talg einge&#x017F;chmol-<lb break="no"/>zen, welchem ein mit Meßingloth angelötheter<lb break="yes"/>blecherner Lampenring zum Gefä&#x017F;&#x017F;e dient.</p>
+                <lb break="yes"/>
+                <p>Wird <choice>
+                        <sic>uun</sic>
+                        <corr type="editorial">nun</corr>
+                    </choice> der Docht angezündet, und der<lb break="yes"/>Hahn, durch welchen beyde Abtheilungen des<lb break="yes"/>Cylinders miteinander in Verbindung &#x017F;tehen, der<lb break="yes"/>
+                    <hi rendition="#i">Wa&#x017F;&#x017F;erhahn,</hi> geöffnet, &#x017F;o läuft ein dünner Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;trom aus der obern Abtheilung in die untere.<lb break="yes"/>Die dadurch in letzterm komprimirte Luft will<lb break="yes"/>entweichen, und findet keinen andern Ausgang,<lb break="yes"/>als den durch das <choice>
+                        <sic>Communications</sic>
+                        <corr type="editorial">Communications-</corr>
+                    </choice> und Luftrohr<lb break="yes"/>in die Lampe. Sie &#x017F;trömt al&#x017F;o mitten durch die<lb break="yes"/>Flamme, welche in dem&#x017F;elben Augenblicke hel-<lb break="no"/>ler, länger, und pyramidal zuge&#x017F;pitzt wird.</p>
+                <lb break="yes"/>
+                <p>So viel vor der Hand über das Ganze, und<lb break="yes"/>nun auch etwas über die Theile des Lichterhäl-<lb break="no"/>ters. Der &#x017F;chwierig&#x017F;te unter die&#x017F;en i&#x017F;t die <hi rendition="#i">Lampe.</hi>
+                </p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">
+                    <hi rendition="#i">Hr.</hi>
+                </fw>
+                <lb break="yes"/>
+                <pb n="207" facs="#f0015"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> ließ anfangs die Luft von<lb break="yes"/>der Seite in die Flamme bla&#x017F;en; aber da die<lb break="yes"/>Flamme &#x017F;ich nun &#x017F;eitwärts neigte, &#x017F;o entwich<lb break="yes"/>viele Luft unnütz. Er benahm &#x017F;ich daher nach<lb break="yes"/>dem argandi&#x017F;chen Prinzip, und entdeckte nach<lb break="yes"/>vielen mühe&#x017F;amen und ko&#x017F;tbaren Ver&#x017F;uchen vierer-<lb break="no"/>ley Arten von Lampen:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>1) eine <hi rendition="#i">einfache,</hi> für mittelmäßig &#x017F;chlechte<lb break="yes"/>Wetter;</item>
+                    <lb break="yes"/>
+                    <item>2) eine <hi rendition="#i">Armlampe</hi> für &#x017F;chlechtere;</item>
+                    <lb break="yes"/>
+                    <item>3) <hi rendition="#i">Ringlampen</hi> für die allerbösartig&#x017F;ten;</item>
+                    <lb break="yes"/>
+                    <item>4) eine <hi rendition="#i">Nußlampe</hi> für abwech&#x017F;elnde Befah-<lb break="no"/>rung aus guten in bö&#x017F;e Wetter.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Bey der <hi rendition="#i">er&#x017F;ten</hi> tritt der Luft&#x017F;trom in ein<lb break="yes"/>einziges Luftrohr, durch eine einzige Spitze mit<lb break="yes"/>einer einfachen, mehr, oder minder vergrö&#x017F;&#x017F;erten<lb break="yes"/>Oeffnung in die Flamme.</p>
+                <lb break="yes"/>
+                <p>Bey der <hi rendition="#i">zweyten</hi> ließ er die Flamme anfangs<lb break="yes" />durch einen Stift mit mehreren, gewöhnlich 5&#x2014;6<lb break="yes"/>kleinen Löchern, wie bey einer Gießkanne in<lb break="yes"/>die Flamme gehen; in der Folge ver&#x017F;ah er das<lb break="yes"/>gewöhnliche einfache Luftrohr noch mit 4 an die<lb break="yes"/>Seite ge&#x017F;etzten Röhren; endlich blieb er dabey<lb break="yes"/>&#x017F;tehen, an das Luftrohr 3 gekrümmte meßingene<lb break="yes"/>Zuleitungsröhren anzu&#x017F;etzen, &#x017F;o wie etwa ein Pi-<lb break="no"/>&#x017F;till zwi&#x017F;chen 3 darauf angewach&#x017F;enen krummen<lb break="yes"/>Staubfäden &#x017F;itzen möchte.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Die</fw>
+                <lb break="yes"/>
+                <pb n="208" facs="#f0016"/>
+                <p>Die <hi rendition="#i">dritte</hi> Art von Lampen, welche alle<lb break="yes" />vorherigen an Wirkung weit übertrifft, be&#x017F;tand<lb break="yes"/>anfangs außer dem: Luftrohre aus einem, &#x017F;ehr<lb break="yes"/>engen blechenen Ringe, welcher hohl war, nur<lb break="yes"/>1&#x222B;2 &#x2033; voneinander ab&#x017F;tehende Wände, und eine<lb break="yes"/>im ober&#x017F;ten Drittel der Höhe, oder in zwey bis<lb break="yes"/>3 Reihen untereinander durchlöcherte innere Flä-<lb break="no"/>che hatte. Die Luft &#x017F;trömte aus dem Luftrohre<lb break="yes"/>durch einen hohlen blechenen Boden in die&#x017F;en<lb break="yes"/>hohlen Seitenring, und aus &#x017F;elbem durch die vie-<lb break="no"/>len kleinen Löcher in die Flamme, welche &#x017F;omit<lb break="yes"/>von dem Luft&#x017F;trome ganz umhüllt wurde.</p>
+                <lb break="yes"/>
+                <p>Aber die kleinen Löcher des Ringes ver&#x017F;topf-<lb break="no"/>ten &#x017F;ich bald beym Eingießen des Oels, und die-<lb break="no"/>&#x017F;es ward in dem engen, von der Flamme erhitz-<lb break="no"/>ten Ringe wohl gar zum Sieden gebracht.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt,</hi> der immer fortfuhr, &#x017F;eine<lb break="yes"/>In&#x017F;trumente in den Gruben zu <placeName key="goldkronach">Goldcronach</placeName>, und<lb break="yes"/>
+                    <placeName key="berneck">Berneck</placeName> &#x017F;elb&#x017F;t zu prüfen, behielt al&#x017F;o den durch-<lb break="no"/>löcherten Ring bey, verband aber mit dem&#x017F;elben<lb break="yes"/>auch den gewöhnlichen einfachen, und ungleich<lb break="yes"/>weiteren äußern Ring, und führte dem er&#x017F;tern<lb break="yes"/>die Luft nicht durch das gewöhnliche Luftrohr,<lb break="yes"/>und &#x017F;einen Boden, &#x017F;ondern durch eigene Zulei-<lb break="no"/>tungsröhre zu, welche mit dem Stifte zugleich<lb break="yes"/>aus einem kleinen Luftbehälter, auf dem &#x017F;ie auf-<lb break="no"/>ge&#x017F;etzt waren, genährt wurden.</p>
+                <lb break="yes"/>
+                <p>Endlich gebrauchte er nur einen einzigen,<lb break="yes"/>durchlöcherten, frey&#x017F;tehenden, etwas weiten<lb break="yes"/>Ring, in welchem die Luft durch 2 auf den<lb break="yes"/>Stift aufge&#x017F;etzte Arme geführt ward, und &#x017F;onach<lb break="yes"/>in die <choice>
+                        <sic>g<hi rendition="#i">e</hi>rade</sic>
+                        <corr type="editorial">gerade</corr>
+                    </choice> gegenüber &#x017F;tehende Flamme aus-<lb break="no" />&#x017F;trömte.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Die</fw>
+                <lb break="yes"/>
+                <pb n="209" facs="#f0017"/>
+                <p>Die&#x017F;e Vorrichtung gründet &#x017F;ich demnach auf<lb break="yes"/>einem Princip, welches vom <hi rendition="#i">Argandi</hi>&#x017F;chen &#x017F;ehr<lb break="yes"/>ver&#x017F;chieden i&#x017F;t. Bey die&#x017F;em &#x017F;trömt Luft bloß<lb break="yes"/>
+                    <hi rendition="#i">durch</hi> die Flamme; bey dem <hi rendition="#i">Hrn. v. <persName key="humboldt_av"/>Humboldt</hi>
+                    <lb break="yes"/>bildet die Luft <choice>
+                        <sic>zugleieh</sic>
+                        <corr type="editorial">zugleich</corr>
+                    </choice> einen Mantel, eine Hülle<lb break="yes"/>
+                    <hi rendition="#i">um</hi> die Flamme.</p>
+                <lb break="yes"/>
+                <p>Die <hi rendition="#i">Nußlampe</hi>: i&#x017F;t mit einem gekrümmten<lb break="yes"/>Rohre auf das Luftgefäß aufge&#x017F;chraubt, und der<lb break="yes"/>Stift endigt &#x017F;ich am Grunde, wie bey einem Ta-<lb break="no"/>backsrohre, in eine Nuß, in welcher &#x017F;ich der<lb break="yes"/>Oeldampf &#x017F;ammelt. Da man bey dem wech&#x017F;el-<lb break="no"/>wei&#x017F;en Fahren in guten und bö&#x017F;en Wettern die<lb break="yes"/>Lampe in jenen bloß bey der äußern Luft eine<lb break="yes" />Zeit lang brennen läßt, &#x017F;o ent&#x017F;teht Oeldampf,<lb break="yes" />welcher &#x017F;ich ohne die&#x017F;e Nuß durch den Lampen-<lb break="no" />&#x017F;tift nieder&#x017F;enken, in den Luftbehälter fallen, <choice>
+                        <sic>nnd</sic>
+                        <corr type="editorial">und</corr>
+                    </choice>
+                    <lb break="yes"/>den Luftvorrath bisweilen verunreinigen wurde.</p>
+                <lb break="yes"/>
+                <p>Das <hi rendition="#i">Luftrohr</hi> kann durchaus von gleicher<lb break="yes" />Stärke, ungefähr 3&#x222B;4 Linie weit &#x017F;eyn; man<lb break="yes" />braucht es al&#x017F;o nicht einmal trichterförmig mit ei-<lb break="no"/>nem etwas weitern Schlunge vorzurichten, da die<lb break="yes"/>Luft auch ohne die&#x017F;en ge&#x017F;chwind genug eintritt.</p>
+                <lb break="yes"/>
+                <p>Die Stärke, oder die Helligkeit der Flamme<lb break="yes"/>wird von dreyerley Um&#x017F;tänden modifizirt:</p>
+                <lb break="yes"/>
+                <p>1) von der Weite der Oeffnung, durch<lb break="yes"/>welche das Waffer aus der obern Abtheilung des<lb break="yes"/>Gefä&#x017F;&#x017F;es in die untere einfällt, d. h. von der Di-<lb break="no"/>cke des Wa&#x017F;&#x017F;er&#x017F;trahls, (welche lediglich von der<lb break="yes" />Weite abhängt, zu der der Hahn geöffnet wird;);</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">2) von</fw>
+                <lb break="yes"/>
+                <pb n="210" facs="#f0018"/>
+                <p>2) von der Güte der Luft;</p>
+                <lb break="yes"/>
+                <p>3) von der Weite und Anlage des Luftrohrs<lb break="yes"/>in der Lampe, d. h. von der Menge und Art der<lb break="yes"/>in die Flamme wirkenden Luft.</p>
+                <lb break="yes"/>
+                <p>Da man von der Stellung des Hahns vollkom-<lb break="no"/>men Mei&#x017F;ter i&#x017F;t, &#x2014; da die&#x017F;e zugleich ganz nach<lb break="yes"/>der Güte der Luft gerichtet, und jede Lampe<lb break="yes"/>mit mehrern wech&#x017F;elwei&#x017F;e abzu&#x017F;chraubenden Luft-<lb break="no"/>röhren ver&#x017F;ehen werden kann, &#x017F;o hat man alle 3<lb break="yes" />Bedingungen in &#x017F;einer Gewalt.</p>
+                <lb break="yes"/>
+                <p>Wenn man in der Grube von matten Wet-<lb break="no"/>tern in fri&#x017F;che fährt, &#x017F;o wird, &#x017F;obald man in letz-<lb break="no"/>tere kömmt, der Hahn ver&#x017F;chlo&#x017F;&#x017F;en; nun brennt<lb break="yes"/>die Lampe für &#x017F;ich fort, nährt &#x017F;ich, da ihr keine<lb break="yes"/>Luft aus dem Gefä&#x017F;&#x017F;e zu&#x017F;trömt, noch von der<lb break="yes"/>äußern &#x017F;ie umgebenden Luft, und keine Luft,<lb break="yes"/>die in dem Luftbehälter aufgehoben i&#x017F;t, wird ver-<lb break="no" />&#x017F;chwendet.</p>
+                <lb break="yes"/>
+                <p>Außer der Lampe verdienen noch der <hi rendition="#i">Luft-<lb break="no" />hahn</hi>, und der <hi rendition="#i">Wa&#x017F;&#x017F;erhahn</hi> be&#x017F;ondere Aufmerk-<lb break="no"/>&#x017F;amkeit.</p>
+                <lb break="yes"/>
+                <p>Der <hi rendition="#i">Lufthahn</hi> befindet &#x017F;ich am Boden des<lb break="yes"/>ganzen Apparats, welcher zugleich der Boden des<lb break="yes" />Luftbehälters i&#x017F;t. Er i&#x017F;t &#x017F;ehr einfach, und wird,<lb break="yes"/>nach ver&#x017F;chlo&#x017F;&#x017F;enem Wa&#x017F;&#x017F;erhahne, geöffnet, um<lb break="yes"/>die fri&#x017F;che Luft in den Luftbehälter eintretten zu<lb break="yes"/>la&#x017F;&#x017F;en, &#x017F;odann augenblicklich ver&#x017F;chlo&#x017F;&#x017F;en. Will<lb break="yes"/>man die Lampe mit der Lebensluft füllen, &#x017F;o<lb break="yes"/>wird der Lufthahn mit einem, über den Hals<lb break="yes"/>der mit Lebensluft gefüllten Bouteille, pa&#x017F;&#x017F;enden<lb break="yes"/>
+                    <fw type="catch" place="bottom">Trich-</fw>
+                    <lb break="yes"/>
+                    <pb n="211" facs="#f0019"/> Trichter ver&#x017F;ehen, und das Ganze bis an den<lb break="yes"/>Boden des Wa&#x017F;&#x017F;erbehälters unter Wa&#x017F;&#x017F;er ge&#x017F;etzt.<lb break="yes"/>So füllt &#x017F;ich der Luftraum aus der Bouteille mit<lb break="yes"/>der Lebensluft, ohne daß etwas davon verlohren<lb break="yes"/>geht.</p>
+                <lb break="yes"/>
+                <p>In den gewohnlichen Fällen ernährt aber at-<lb break="no"/>mosphäri&#x017F;che Luft, in der Grube &#x017F;elb&#x017F;t ge&#x017F;chöpft,<lb break="yes" />vollkommen die Flamme.</p>
+                <lb break="yes"/>
+                <p>Der <hi rendition="#i">Wa&#x017F;&#x017F;erhahn</hi> i&#x017F;t zwi&#x017F;chen dem Wa&#x017F;&#x017F;erbe-<lb break="no"/>hälter und Luftbehälter angebracht, und öffnet,<lb break="yes"/>oder ver&#x017F;chließt die Oeffnung, wodurch die&#x017F;e bey-<lb break="no"/>den Abtheilungen des Lichterhalters kommuniziren.<lb break="yes"/>Von der Grö&#x017F;&#x017F;e &#x017F;einer Oeffnung hängt die Stärke<lb break="yes"/>des Wa&#x017F;&#x017F;er&#x017F;troms, &#x017F;omit auch jene des Luft&#x017F;troms,<lb break="yes"/>die grö&#x017F;&#x017F;ere Helligkeit der Flamme, und die län-<lb break="no"/>gere Dauer des Luftsvorraths ab. Damit man<lb break="yes"/>nun die Stellung des Hahns genau über&#x017F;ehen kön-<lb break="no"/>ne, i&#x017F;t außen an der Lampe ein Quadrant befe-<lb break="no"/>&#x017F;tigt, welcher mittel&#x017F;t eines durch den Kopf des<lb break="yes"/>Hahns durchge&#x017F;teckten Stifts, der &#x017F;ich als ein<lb break="yes"/>Zeiger hin- und her bewegt, jede Veränderung<lb break="yes"/>in der Stellung bis auf 1&#x222B;4 &#x2034; bemerklich macht.<lb break="yes"/>Der Quadrant wird mit einigen Schräubchen auf<lb break="yes"/>einen Blech&#x017F;treifen befe&#x017F;tigt, damit er von dem<lb break="yes"/>cylindri&#x017F;chen Gefä&#x017F;&#x017F;e ab&#x017F;tehe. Zu noch genauerer<lb break="yes"/>Beobachtung kann er mit einem Zifferblatte <choice>
+                        <sic>ver,</sic>
+                        <corr type="editorial">ver-</corr>
+                    </choice>
+                    <lb break="no"/>&#x017F;ehen werden. Damit die dem Hahne gegebene<lb break="yes" />Stellung nicht unwillkürlich verrückt werden<lb break="yes"/>könne, muß der&#x017F;elbe zum Vor- und Rück&#x017F;chrau-<lb break="no"/>ben eine Schraube, und in die&#x017F;er &#x017F;charfe Gewin-<lb break="no"/>de haben. Auch kann man, um die Stärke des<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;troms noch mehr in &#x017F;einer Gewalt zu ha-<lb break="no"/>ben, an&#x017F;tatt einer einzigen weiten Oeffnung, den<lb break="yes"/>
+                    <fw type="catch" place="bottom">Hahn</fw>
+                    <lb break="yes"/>
+                    <pb n="212" facs="#f0020"/> Hahn 2- oder 3mal nebeneinander, oder übers<lb break="yes"/>Kreuz mit dünneren Löchern durchbohren la&#x017F;&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>Weil nach der ver&#x017F;chiedenen Höhe des über der<lb break="yes" />Kommunikations-Oeffnung &#x017F;tehenden Wa&#x017F;&#x017F;ers, der<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;trom, &#x017F;elb&#x017F;t bey unveränderter Stellung<lb break="yes"/>des Hahns, dennoch ungleich i&#x017F;t, und die Vor-<lb break="no"/>richtung einer Selb&#x017F;t&#x017F;tellung für die&#x017F;en Apparat zu<lb break="yes"/>komplicirt &#x017F;eyn dürfte, &#x017F;o ertheilt <hi rendition="#i">Hr. v. <persName key="humboldt_av" />Hum-<lb break="no"/>boldt</hi> den Rath, den Hahn im Anfange weniger,<lb break="yes"/>und nach Verlaufe der er&#x017F;ten 1&#x222B;4 oder 1&#x222B;2 Stun-<lb break="no"/>de, &#x017F;o wie &#x017F;ich der Wa&#x017F;&#x017F;er&#x017F;tand <choice>
+                        <sic>erneidriget</sic>
+                        <corr type="editorial">erniedriget</corr>
+                    </choice> hat,<lb break="yes"/>immer mehr und mehr zu öffnen.</p>
+                <lb break="yes"/>
+                <p>Der Zeiger am Hahne dient zu einem Eudio-<lb break="no"/>meter eigener Art, nämlich zu einem Maaße der<lb break="yes"/>lichtverlö&#x017F;chenden Kraft einer Gasart.</p>
+                <lb break="yes"/>
+                <p>Uebrigens i&#x017F;t für die nothwendige Menge<lb break="yes"/>des Luftvorrathes, und die hienach &#x017F;ich richtende<lb break="yes"/>Grö&#x017F;&#x017F;e des ganzen Apparats, nach ver&#x017F;chiedenen<lb break="yes"/>Graden des Wa&#x017F;&#x017F;erausflu&#x017F;&#x017F;es, und für 1 Stunde<lb break="yes" />Dauer folgende Tabelle berechnet worden.</p>
+                <lb break="yes"/>
+                <pb n="213" facs="#f0021"/>
+                <table>
+                    <row>
+                        <cell role="label">Weite<lb break="yes"/>der<lb break="yes"/>Hahnsöff-<lb break="no"/>nung.</cell>
+                        <cell role="label">Stärke des Wa&#x017F;-<lb break="no" />&#x017F;erausflu&#x017F;&#x017F;es à<lb break="yes"/>Min. bey einem<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;tande<lb break="yes"/>= 0</cell>
+                        <cell role="label">Quantität<lb break="yes"/>der Luft<lb break="yes"/>für eine<lb break="yes"/>Stunde<lb break="yes"/>Dauer.</cell>
+                        <cell role="label" cols="2">Ungefähre Grö&#x017F;&#x017F;e<lb break="yes" />des Luftbehälters<lb break="yes"/>im Lichter-<lb break="no" />halter.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell role="label" rows="2">Linien.</cell>
+                        <cell role="label" rows="2">Kubikzolle.</cell>
+                        <cell role="label" rows="2">Kubikzolle.</cell>
+                        <cell role="label">lang u. breit.</cell>
+                        <cell role="label">hoh.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell role="label">Zoll.</cell>
+                        <cell role="label">Zoll.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <formula notation="TeX">\frac{2}{3}</formula>
+                        </cell>
+                        <cell>3</cell>
+                        <cell>180</cell>
+                        <cell>5 oder<lb break="yes"/>4 <formula notation="TeX">\frac{1}{4}</formula>
+                        </cell>
+                        <cell>7<lb break="yes"/>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>4</cell>
+                        <cell>240</cell>
+                        <cell>5</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>5, 3</cell>
+                        <cell>318</cell>
+                        <cell>5 <formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <formula notation="TeX">\frac{3}{4}</formula>
+                        </cell>
+                        <cell>6</cell>
+                        <cell>360</cell>
+                        <cell>6</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>7</cell>
+                        <cell>420</cell>
+                        <cell>6 <formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>8</cell>
+                        <cell>480</cell>
+                        <cell>7</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>9</cell>
+                        <cell>540</cell>
+                        <cell>7 <formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>10</cell>
+                        <cell>600</cell>
+                        <cell>8</cell>
+                        <cell>10</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Eine auf dem Wa&#x017F;&#x017F;er&#x017F;piegel &#x017F;chwimmende<lb break="yes" />Scheibe mit einem vertikalen Stifte, welcher als<lb break="yes"/>Zeiger mit einer Scale ver&#x017F;ehen, oder in Minuten<lb break="yes"/>abgetheilt &#x017F;eyn kann, zeigt die Höhe des Wa&#x017F;&#x017F;er-<lb break="no" />&#x017F;tandes in dem Wa&#x017F;&#x017F;erbehälter an, und kann,<lb break="yes"/>wenn man dem Hahne be&#x017F;timmt einerley Wa&#x017F;&#x017F;er-<lb break="no"/>fluß giebt, zugleich eine <hi rendition="#i">Wa&#x017F;&#x017F;eruhr</hi> vor&#x017F;tellen.</p>
+                <lb break="yes"/>
+                <p>Das Wa&#x017F;&#x017F;er muß durch eine feine Leinwand<lb break="yes"/>in das Wa&#x017F;&#x017F;ergefäß gego&#x017F;&#x017F;en werden, damit keine<lb break="yes"/>Unreinigkeit die Oeffnung des Hahns ver&#x017F;topfe.<lb break="yes"/>
+                    <fw type="catch" place="bottom">Die</fw>
+                    <lb break="yes"/>
+                    <pb n="214" facs="#f0022"/> Die kann noch außerdem mit einem feinen Siebe<lb break="yes"/>überzogen werden.</p>
+                <lb break="yes"/>
+                <p>Vor einem Orte, wo immerwährende Wä&#x017F;-<lb break="no"/>&#x017F;er auf der Fir&#x017F;te hergeleitet werden können,<lb break="yes"/>könnte man den Wa&#x017F;&#x017F;erbehälter ganz wegla&#x017F;&#x017F;en;<lb break="yes"/>und an&#x017F;tatt de&#x017F;&#x017F;en auf dem Luftgefäße, welches<lb break="yes" />dann um vieles grö&#x017F;&#x017F;er &#x017F;eyn könnte, einen Trich-<lb break="no"/>ter auf&#x017F;etzen, und vermittel&#x017F;t eines Hahns mit<lb break="yes"/>dem Luftbehälter kommuniziren la&#x017F;&#x017F;en. Lichter-<lb break="no"/>halter zum Umherfahren in der Grube können<lb break="yes"/>an einen Tragering befe&#x017F;tigt, und das Luftrohr<lb break="yes"/>von ungefähr 1&#x222B;2 &#x2033; Weite mitten durch das Wa&#x017F;-<lb break="no"/>&#x017F;er in die Lampe geführt werden.</p>
+                <lb break="yes"/>
+                <p>Damit der Wa&#x017F;&#x017F;erbehälter nur halb &#x017F;o groß,<lb break="yes" />als der Luftbehälter &#x017F;eyn dürfe, und einerley<lb break="yes" />Wa&#x017F;&#x017F;er zweymal gebraucht werden möge, kann<lb break="yes"/>man auch dem Luftka&#x017F;ten für &#x017F;ich eine Abtheilung<lb break="yes" />geben, &#x017F;o, daß de&#x017F;&#x017F;en unterer Raum etwas klei-<lb break="no"/>ner, als der Wa&#x017F;&#x017F;erbehälter werde. Die&#x017F;en Raum<lb break="yes"/>befe&#x017F;tige man, mittel&#x017F;t Schrauben, an die obere<lb break="yes"/>grö&#x017F;&#x017F;ere Hälfte des Luftkaftens. Oeffnet man nun<lb break="yes"/>den Wa&#x017F;&#x017F;erhahn, und den Hahn der Schraube,<lb break="yes"/>womit die untere Hälfte des Luftbehälters an die<lb break="yes"/>obere befe&#x017F;tigt i&#x017F;t, &#x017F;o läuft das Wa&#x017F;&#x017F;er in den un-<lb break="no"/>ter&#x017F;ten Raum, und da die&#x017F;er kleiner, als der<lb break="yes"/>Wa&#x017F;&#x017F;erbehälter i&#x017F;t, &#x017F;o wird er &#x017F;chon mit Wa&#x017F;&#x017F;er<lb break="yes"/>angefüllt, bevor die&#x017F;es noch aus dem Wa&#x017F;&#x017F;erbe-<lb break="no"/>hälter ganz abgelaufen i&#x017F;t<choice>
+                        <sic>,</sic>
+                        <corr>.</corr>
+                    </choice> Nun ver&#x017F;chließe man<lb break="yes"/>den Hahn der Kommunikations&#x017F;chraube zwi&#x017F;chen<lb break="yes"/>den beyden Hälften des Luftka&#x017F;tens, &#x017F;o wird der<lb break="yes"/>Re&#x017F;t des Wa&#x017F;&#x017F;ers aus dem Wa&#x017F;&#x017F;erbehälter auf dem<lb break="yes"/>Boden der obern Hälfte des Luftka&#x017F;tens &#x017F;tehen<lb break="yes"/>bleiben. Itzt &#x017F;chraube man die untere Hälfte des<lb break="yes"/>
+                    <fw type="catch" place="bottom">Luft-</fw>
+                    <lb break="yes"/>
+                    <pb n="215" facs="#f0023"/> Luftka&#x017F;tens ganz ab, gieße das Wa&#x017F;&#x017F;er zurück in<lb break="yes"/>den Wa&#x017F;&#x017F;erbehälter, und &#x017F;chraube nun jene wie-<lb break="no"/>der an.</p>
+                <lb break="yes"/>
+                <p>Bey Lichterhaltern, welche vor einem wet-<lb break="no"/>ternöthigen Orte &#x017F;till &#x017F;tehen, &#x017F;itzt die Lampe nicht<lb break="yes"/>in der Mitte, &#x017F;ondern &#x017F;eitwärts am Rande der<lb break="yes" />Ma&#x017F;chine auf; die Mitte des Apparats nimmt der<lb break="yes" />vertikale Stift ein, welcher die Höhe des Wa&#x017F;-<lb break="no" />&#x017F;er&#x017F;tandes anzeigt. Man kann den Wa&#x017F;&#x017F;erbehälter<lb break="yes"/>auf 490 Kubikzolle, &#x017F;omit bey 7 Zolle Weite,<lb break="yes"/>10 Zolle hoh, den abgetheilten Luftbehälter auf<lb break="yes" />486 Kubikzolle, &#x017F;omit bey 7 Zolle Weite, 9<lb break="yes"/>3&#x222B;4 Zolle hoh, und den Raum zwi&#x017F;chen beyden<lb break="yes"/>Behältern 1 Zoll hoh verfertigen la&#x017F;&#x017F;en. Eine<lb break="yes"/>&#x017F;olche Lampe wird bey einer Ausflußöffnung<lb break="yes"/>von 8 Kubikzoll à Minute eine Stunde lang bren-<lb break="no"/>nen.</p>
+                <lb break="yes"/>
+                <p>Man kann auch den Lichterhalter auf 4 bis<lb break="yes"/>8 Stunden Dauer vorrichten, das Wa&#x017F;&#x017F;er nach<lb break="yes"/>und nach zugießen, und dann das ganze In&#x017F;tru-<lb break="no"/>ment, wie ein gro&#x017F;&#x017F;es Luftfaß, von Holz machen.</p>
+                <lb break="yes"/>
+                <p>Für den Flötzbergbau kann der Lufterhalter,<lb break="yes"/>an&#x017F;tatt 18&#x2032; &#x2014; 20&#x2032; Höhe, etwa 8&#x2032; &#x2014; 9&#x2032; hoh<lb break="yes"/>vorgerichtet werden; nur giebt man dann den<lb break="yes" />beyden Behältern um &#x017F;o viel mehr Länge, als man<lb break="yes"/>ihnen Höhe genommen hat, und überdieß muß<lb break="yes"/>der Luftbehälter länger, <choice>
+                        <sic>&#x00E2;ls</sic>
+                        <corr type="editorial">als</corr>
+                    </choice> der Wa&#x017F;&#x017F;erbehälter<lb break="yes"/>&#x017F;eyn, damit die Lampe unmittelbar auf &#x017F;elben<lb break="yes"/>aufge&#x017F;etzt werden möge. Der Stift mit dem<lb break="yes"/>Maß&#x017F;tabe für den Wa&#x017F;&#x017F;er&#x017F;tand kann an dem ent-<lb break="no" />gegenge&#x017F;etzten Ende des Wa&#x017F;&#x017F;erbehälters ange-<lb break="no"/>bracht, und das Ganze auf kleine Räder ge&#x017F;etzt<lb break="yes"/>werden.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Der</fw>
+                <lb break="yes"/>
+                <pb n="216" facs="#f0024"/>
+                <p>Der Lichterhalter darf eben nicht mit Lebens-<lb break="no"/>luft, nicht einmal mit einem Gemenge von at-<lb break="no"/>mosphäri&#x017F;cher und Lebensluft, &#x017F;elb&#x017F;t nicht &#x017F;chlechter-<lb break="no"/>dings mit reiner Tagesluft, &#x017F;ondern nur mit jener<lb break="yes"/>Grubenluft gefüllt werden, in welcher zu näch&#x017F;t<lb break="yes"/>den matten Wettern das gewöhnliche Grubenge-<lb break="no"/>leuchte brennt.</p>
+                <lb break="yes"/>
+                <p>Uebrigens i&#x017F;t der ganze Apparat &#x017F;o wenig<lb break="yes" />zerbrechlich, daß er an&#x017F;to&#x017F;&#x017F;en <choice>
+                        <sic>nnd</sic>
+                        <corr type="editorial">und</corr>
+                    </choice> fallen kann,<lb break="yes"/>ohne &#x017F;eine <choice>
+                        <sic>Brauchhrkeit</sic>
+                        <corr type="editorial">Brauchbarkeit</corr>
+                    </choice> zu verlieren; denn ein<lb break="yes"/>Theil &#x017F;tützt den andern. Jedes In&#x017F;trument &#x017F;ieht<lb break="yes"/>überhaupt in der Be&#x017F;chreibung zu&#x017F;ammenge&#x017F;etzter<lb break="yes"/>aus, als wenn man es in der Wirklichkeit vor<lb break="yes"/>&#x017F;ich hat.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> hat auch zur Mitführung<lb break="yes"/>reiner Luft abge&#x017F;önderte Gefäße, <hi rendition="#i">Luftmagazine,</hi>
+                    <lb break="yes"/>angegeben, welche oben beyder&#x017F;eits mit Hähnen<lb break="yes"/>ver&#x017F;ehen &#x017F;ind. Zwey Schläuche, wovon einer<lb break="yes"/>wa&#x017F;&#x017F;erdicht; der andere luftdicht &#x017F;eyn muß, wer-<lb break="no"/>den jeder an &#x017F;einen beyden Enden mit Schrauben<lb break="yes"/>ver&#x017F;ehen. Nun &#x017F;etzt man den ganzen Apparat<lb break="yes"/>auf das obige Luftmagazin, verbindet den wa&#x017F;&#x017F;er-<lb break="no"/>dichten Schlauch mittel&#x017F;t der 2 Schrauben mit ei-<lb break="no"/>nem Hahne am untern Boden des Luftbehälters,<lb break="yes"/>und mit dem einen Hahne des Luftmagazins,<lb break="yes"/>und anderer Seits den luftdichten Schlauch mit<lb break="yes"/>dem andern Hahne des Luftmagazins, und mit ei-<lb break="no"/>ner Oeffnung unter dem obern Boden des Luftbe-<lb break="no"/>hälters. Man öffnet dann alle Hähne, und es<lb break="yes"/>wird das Wa&#x017F;&#x017F;er durch den wa&#x017F;&#x017F;erdichten Schlauch<lb break="yes"/>in das Luftmagazin, dagegen die Luft durch den<lb break="yes"/>luftdichten Schlauch in den Luftbehälter dringen.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">I&#x017F;t</fw>
+                <lb break="yes"/>
+                <pb n="217" facs="#f0025"/>
+                <p>I&#x017F;t das Wa&#x017F;&#x017F;er ganz in das Luftmagazin ein-<lb break="no" />gelaufen, &#x017F;o &#x017F;chließt man alle Hähne, &#x017F;chraubt<lb break="yes"/>die beyden Schläuche ab, und &#x017F;chickt das nun<lb break="yes"/>wieder ganz <choice>
+                        <sic>leere-Luftmagazin</sic>
+                        <corr type="editorial">leere Luftmagazin</corr>
+                    </choice> in freye Luft, um<lb break="yes"/>es mit &#x017F;elber füllen zu la&#x017F;&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>Alle die&#x017F;e In&#x017F;trumente, die Lampe vor Ort,<lb break="yes"/>die Fahrlampe, die Huntslampe (für den Flötz-<lb break="no"/>bergbau) &#x017F;ind vom <hi rendition="#i">Hrn. v. <persName key="humboldt_av"/>Humboldt</hi> ausgeführt,<lb break="yes"/>und ver&#x017F;ucht worden. Schon voll&#x017F;tändige Appara-<lb break="no"/>te &#x017F;ind zu <hi rendition="#i">
+                        <placeName key="berlin"/>Berlin, <placeName key="breslau" >Breslau</placeName>, <placeName key="rothenburg" >Rothenburg</placeName>, <placeName key="clausthal">Claus-<lb break="no" />thal</placeName>, <placeName key="freiberg"/>Freyberg, <placeName key="muenchen">München</placeName>, <placeName key="ingelfingen" >Ingelfingen</placeName>,</hi> und <placeName key="bayreuth">
+                        <hi rendition="#i">Bay-<lb break="no"/>reuth</hi>
+                    </placeName> zu &#x017F;ehen: auch i&#x017F;t ein &#x017F;olcher für das Ka-<lb break="no"/>meral-Modellenkabinet in <hi rendition="#i">
+                        <placeName key="salzburg">Salzburg</placeName>
+                    </hi> bereits be&#x017F;tellt.</p>
+                <lb break="yes"/>
+                <p>Für Gruben, wo die Wetter &#x017F;o bö&#x017F;e &#x017F;ind,<lb break="yes"/>daß alle gewöhnlichen, mit reiner atmosphäri&#x017F;chen<lb break="yes"/>Luft gefüllten Lichterhalter nur eine dunkle Flam-<lb break="no"/>me geben, &#x017F;chlägt <hi rendition="#i">Hr. v. <persName key="humboldt_av" />Humboldt</hi> eine <hi rendition="#i">Bla&#x017F;en-<lb break="no" />lampe</hi> vor. Man füllt nämlich eine Bla&#x017F;e, welche<lb break="yes" />vorne einen meßingenen An&#x017F;atz mit Schraubengän-<lb break="no"/>gen hat, der auf einen mit einer Schraubenmutter<lb break="yes"/>ver&#x017F;ehenen Glastrichter paßt, mit Lebensluft. Dieß<lb break="yes"/>ge&#x017F;chieht dadurch, daß man die na&#x017F;&#x017F;e Bla&#x017F;e mög-<lb break="no" />lich&#x017F;t zu&#x017F;ammendrückt, um &#x017F;ie luftrein zu ma-<lb break="no"/>chen, &#x017F;ie auf den Glastrichter auf&#x017F;chraubt, dann<lb break="yes"/>den in ihrem An&#x017F;atze angebrachten Hahn öffnet,<lb break="yes"/>und eine mit Lebensluft gefüllte Fla&#x017F;che unter<lb break="yes"/>Wa&#x017F;&#x017F;er derge&#x017F;talt unter den mit der Bla&#x017F;e verbun-<lb break="no"/>denen Glastrichter bringt, daß die Luft in die<lb break="yes"/>Bla&#x017F;e tritt, und &#x017F;ie ausdehnt. I&#x017F;t &#x017F;ie gefüllt, &#x017F;o<lb break="yes"/>&#x017F;chließt man den Hahn, und &#x017F;chraubt den An&#x017F;atz<lb break="yes"/>an eine Glasröhre, welche in eine mit Oel gefüll-<lb break="no"/>te blecherne Lampe führt. Die&#x017F;e Lampe hat ei-<lb break="no"/>nen gewöhnlichen hohlen argandi&#x017F;chen Docht;<lb break="yes"/>
+                    <fw type="catch" place="bottom">die</fw>
+                    <lb break="yes"/>
+                    <pb n="218" facs="#f0026"/> die Mündung des Luftrohres, oder der Glasröhre<lb break="yes"/>aber kaum 3&#x222B;4 &#x2034; im Durchme&#x017F;&#x017F;er.</p>
+                <lb break="yes"/>
+                <p>Oeffnet man nun den Hahn, &#x017F;o fährt die<lb break="yes"/>Lebensluft aus der ge&#x017F;pannten Bla&#x017F;e in die Flam-<lb break="no"/>me, und blä&#x017F;t &#x017F;ie an. Damit der Oeldampf das<lb break="yes"/>Auf&#x017F;teigen der Lebensluft nicht hindere, wird das<lb break="yes"/>Aus&#x017F;trömen der&#x017F;elben, durch einen Druck mit der<lb break="yes"/>Hand, wenn die Bla&#x017F;e &#x017F;enkrecht an dem glä&#x017F;ernen<lb break="yes"/>Luftrohre herabhängt, oder mittel&#x017F;t eines Ge-<lb break="no"/>wichts, wenn &#x017F;ie in ein blechernes Kä&#x017F;tchen ge-<lb break="no"/>&#x017F;etzt i&#x017F;t, befördert. Bey einem, durch einen &#x017F;ol-<lb break="no"/>chen Druck immer unterhaltenen Luft&#x017F;trome wird<lb break="yes"/>eine Bla&#x017F;e zu 120 Kubik Zoll in einer kleinen,<lb break="yes"/>1&#x222B;4 Stunde ausgeleert.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> hat mit <choice>
+                        <sic>&#x017F;eiuen</sic>
+                        <corr type="editorial">&#x017F;einen</corr>
+                    </choice> Lichterhal-<lb break="no"/>tern ent&#x017F;cheidende, Ver&#x017F;uche gemacht; &#x2014; den letz-<lb break="no"/>ten am 13. Oktober 1796, mit der Ringlampe<lb break="yes"/>in dem <hi rendition="#i">
+                        <placeName key="berneck">Bernecker</placeName>
+                    </hi> Alaunwerke. Die Wetter im<lb break="yes"/>Quer&#x017F;chlage da&#x017F;elb&#x017F;t waren &#x017F;o matt, daß &#x017F;ie jedes<lb break="yes" />Geleuchte, wie Wa&#x017F;&#x017F;er auslö&#x017F;chten. Kaum brann-<lb break="no"/>te die Armlampe, als eine der wirk&#x017F;am&#x017F;ten noch<lb break="yes"/>darinn fort. Dagegen loderte die Ringlampe,<lb break="yes" />eben &#x017F;o hell, wie in der rein&#x017F;ten Tagesluft, fort.<lb break="yes"/>Um zu ver&#x017F;uchen, ob es nicht möglich &#x017F;eyn &#x017F;oll-<lb break="no"/>te die Flamme zu erlö&#x017F;chen, kroch er durch einen<lb break="yes"/>Ein&#x017F;chnitt, der in die Blende des ver&#x017F;chlagenen Orts<lb break="yes"/>gemacht war, um &#x017F;ie nicht immer ganz auf-<lb break="no"/>reißen zu dürfen. Er fuhr allein, weil der Hr.<lb break="yes"/>Oberbergmei&#x017F;ter <hi rendition="#i">
+                        <persName key="killinger_01">Killinger</persName>,</hi> &#x017F;ein fleißiger Gefährte<lb break="yes"/>bey den gefährlich&#x017F;ten Ver&#x017F;uchen über die Gru-<lb break="no"/>benwetter, &#x017F;ich durch andere Ver&#x017F;uche in der <hi rendition="#i">
+                        <placeName key="steeben">Ste-<lb break="no"/>bener</placeName>
+                    </hi> Revier Bru&#x017F;t&#x017F;chmerzen verur&#x017F;acht hatte, und<lb break="yes"/>deßhalb auf &#x017F;ein wiederholtes Bitten zurückblieb.<lb break="yes"/>
+                    <fw type="catch" place="bottom">Die</fw>
+                    <lb break="yes"/>
+                    <pb n="219" facs="#f0027"/> Die Wetter waren mit Stickluft und Kohlen&#x017F;äure<lb break="yes"/>&#x017F;o überladen, daß er Papier und Licht auch nicht<lb break="yes"/>auf eine einzige Sekunde an &#x017F;einer Wetterlampe<lb break="yes"/>anzünden konnte. Er gelangte 6 &#x2014; 8 Lr. über<lb break="yes"/>die Gegend hinüber, wo noch Re&#x017F;te des ver-<lb break="no"/>brannten Schwefels lagen, und &#x017F;tand &#x017F;chon mitten<lb break="yes"/>im faulen Holze, als &#x017F;eine Ringlampe noch im-<lb break="no"/>mer, wie am Tage, brannte. Er &#x017F;etzte &#x017F;ie nie-<lb break="no"/>der, um das Brennen der unter&#x017F;ten Schicht zu<lb break="yes"/>beobachten; aber das Gemenge vom verkohlten<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toff-Ga&#x017F;e, welches das Grubenholz aus-<lb break="no"/>hauchte, benahm ihm plötzlich alle Be&#x017F;innung. Er<lb break="yes"/>wurde mit einer &#x017F;ehr angenehmen Empfindung<lb break="yes"/>müde, und &#x017F;ank endlich unmächtig neben der<lb break="yes"/>Lampe hin. Zum Glücke &#x017F;oll er noch kurz vor-<lb break="no"/>her den Steiger <hi rendition="#i">
+                        <persName key="bauer_s" ref="http://d-nb.info/gnd/">Bauer</persName>
+                    </hi> gerufen haben. Die&#x017F;er<lb break="yes"/>und der Herr Oberbergmei&#x017F;ter <hi rendition="#i">
+                        <persName key="killinger_01">Killinger</persName>
+                    </hi> eilten<lb break="yes"/>ihm zu Hilfe, und zogen ihn &#x017F;o &#x017F;chnell bey den<lb break="yes"/>Fü&#x017F;&#x017F;en heraus, daß er in der reinern Grubenluft<lb break="yes"/>bald wieder zu &#x017F;ich kam. Er hatte die Freude, bey<lb break="yes"/>dem Erwachen, &#x017F;eine Lampe noch brennen zu &#x017F;ehn.<lb break="yes"/>Bis auf wenige Mattigkeit &#x017F;pürte er des andern<lb break="yes"/>Tages von dem unangenehmen Vorfalle keine Fol-<lb break="no"/>gen mehr; hatte aber an &#x017F;ich &#x017F;elb&#x017F;t erfahren, wie<lb break="yes"/>irre&#x017F;pirabel Gasarten &#x017F;eyn können, in welchen &#x017F;ei-<lb break="no"/>ne neue Lampe dennoch hell fortbrennt.</p>
+                <lb break="yes"/>
+                <p>Nicht allein <hi rendition="#i">Hr. v. <persName key="humboldt_av" />Humboldt,</hi> und der Ober-<lb break="no"/>bergmei&#x017F;ter <hi rendition="#i">
+                        <persName key="killinger_01">Killinger</persName>,</hi> auch der Hr. Bergamtsa&#x017F;-<lb break="no"/>&#x017F;e&#x017F;&#x017F;or <hi rendition="#i">
+                        <persName key="freiesleben_jc">Freiesleben</persName>
+                    </hi> zu <hi rendition="#i">
+                        <placeName key="marienberg">Marienberg</placeName>,</hi> und Hr. Berg-<lb break="no"/>mei&#x017F;ter <hi rendition="#i">
+                        <persName key="sievert_01" ref="http://d-nb.info/gnd/">Sievert</persName>
+                    </hi> be&#x017F;chäftigten &#x017F;ich mit Ver&#x017F;uchen,<lb break="yes"/>die &#x017F;ämmtlich glückten, und die Ausführbarkeit<lb break="yes"/>des Unternehmens zeigten.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Hr.</fw>
+                <lb break="yes"/>
+                <pb n="220" facs="#f0028"/>
+                <p>Hr. <hi rendition="#i">
+                        <persName key="lempe_01" ref="http://d-nb.info/gnd/">Lempe</persName>
+                    </hi> rieth, den Luft&#x017F;trom nicht durch<lb break="yes"/>ein gerades Luftrohr unmittelbar, und mit &#x017F;einer<lb break="yes"/>ganzen Stärke in die Flamme bla&#x017F;en zu la&#x017F;&#x017F;en,<lb break="yes"/>&#x017F;ondern ihn er&#x017F;t durch einen <choice>
+                        <sic>uuterhalb</sic>
+                        <corr type="editorial">unterhalb</corr>
+                    </choice> des obern<lb break="yes"/>Bodens des Luftbehälters angebrachten horizonta-<lb break="no"/>len und &#x017F;piralförmig gewundenen Gang zu füh-<lb break="no"/>ren, um dadurch die Ge&#x017F;chwindigkeit des Luft-<lb break="no"/>&#x017F;troms nach Um&#x017F;tänden zu mäßigen, und die me-<lb break="no"/>chani&#x017F;chen Er&#x017F;chütterungen der Lampe, welche<lb break="yes"/>
+                    <hi rendition="#i">Hr. v. H.</hi> bey unvor&#x017F;ichtigem Fahren der Flamme<lb break="yes"/>nachtheilig gefunden hatte, für die Flamme un-<lb break="no" />&#x017F;chädlich zu machen. Mit die&#x017F;er Vorrichtung<lb break="yes" />&#x017F;ind noch keine Ver&#x017F;uche abgeführt worden.</p>
+                <lb break="yes"/>
+                <p>Man könnte auch 2 Lampen auf den Lich-<lb break="no"/>tererhalter &#x017F;etzen, um auf die Fortdauer der einen<lb break="yes"/>rechnen zu mögen, wenn die andere durch ir-<lb break="no"/>gend einen Unfall erlö&#x017F;chen &#x017F;ollte, oder die Flam-<lb break="no"/>me durch einen oben und unten offenen Schirm<lb break="yes"/>von Glas, oder dünnem Horne für dem Ausbla-<lb break="no" />&#x017F;en durch äußere Luft&#x017F;tröme, oder Eintröpfeln<lb break="yes" />des Wa&#x017F;&#x017F;ers &#x017F;ichern.</p>
+                <lb break="yes"/>
+                <p>Um die Flamme nach Willkür wenden zu<lb break="yes"/>mögen, könnte man auch das Luftrohr von Re-<lb break="no"/>&#x017F;ina ela&#x017F;tica machen.</p>
+                <lb break="yes"/>
+                <p>Bey dem Gebrauche des Lichterhälters &#x017F;ind<lb break="yes"/>folgende Vor&#x017F;ichten nöthig:</p>
+                <lb break="yes"/>
+                <p>1) muß man &#x017F;ich vor der Anwendung in<lb break="yes"/>der Grube durch vielmaliges Anzünden und wie-<lb break="no"/>derholte Ver&#x017F;uche über Tage hinlängliche Fertig-<lb break="no"/>keit im Gebrauche der&#x017F;elben erwerben;</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">2) mü&#x017F;-</fw>
+                <lb break="yes"/>
+                <pb n="221" facs="#f0029"/>
+                <p>2) mü&#x017F;&#x017F;en die Dochte von feinerer Art &#x017F;eyn,<lb break="yes" />und der obere Kranz der&#x017F;elben weit genug heraus-<lb break="no"/>gezogen werden, um die Lampe mit einer hellen<lb break="yes"/>runden Flamme anzünden zu können: auch mü&#x017F;-<lb break="no"/>&#x017F;en die Dochte von Zeit zu Zeit mit kleinen Zän-<lb break="no"/>gelchen geputzt werden;</p>
+                <lb break="yes"/>
+                <p>3) darf nur &#x017F;o viel Oel eingego&#x017F;&#x017F;en werden,<lb break="yes" />daß es etwa 1&#x222B;4 &#x2032; &#x2014; 1&#x222B;2 &#x2032; hoh in der Lampe<lb break="yes"/>&#x017F;teht; zu vieles Oel würde beym gering&#x017F;ten Schwan-<lb break="no"/>ken die Flamme aus&#x017F;to&#x017F;&#x017F;en;</p>
+                <lb break="yes"/>
+                <p>4) man zünde die Lampe er&#x017F;t dann an,<lb break="yes"/>wenn gewöhnliche Lichter zu brennen aufhören<lb break="yes"/>wollen; la&#x017F;&#x017F;e &#x017F;ie aber lebhaft anbrennen, ehevor<lb break="yes"/>man in die bö&#x017F;en Wetter fährt;</p>
+                <lb break="yes"/>
+                <p>5) das Anzünden ge&#x017F;chieht am be&#x017F;ten mit<lb break="yes"/>einem in Oel getauchten Holz&#x017F;pahne, oder mit<lb break="yes"/>einem Wachs&#x017F;tocke;</p>
+                <lb break="yes"/>
+                <p>6) anfangs gebe man einen etwas reichli-<lb break="no"/>chen Luft&#x017F;trom, und vermindere ihn allmählig<lb break="yes"/>durch Ver&#x017F;chließung des Hahns bis zu dem nö-<lb break="no"/>thigen Minimum;</p>
+                <lb break="yes"/>
+                <p>7) während des Einfüllens der fri&#x017F;chen Luft<lb break="yes"/>lö&#x017F;che man, wo immer möglich, die Flamme<lb break="yes"/>aus, damit der Kohlendampf nicht die neue ein-<lb break="no"/>&#x017F;trömende fri&#x017F;che Luft verunreinige.</p>
+                <lb break="yes"/>
+                <p>Die Lichterhälter werden vorzüglich dazu die-<lb break="no"/>nen, &#x2014; Er&#x017F;tickte in bö&#x017F;en Wettern zu finden &#x2014;<lb break="yes"/>in &#x017F;olchen Wettern das Auffahren zu erleichtern,<lb break="yes"/>und die nöthigen Durch&#x017F;chläge &#x017F;chneller zu ma-<lb break="no"/>
+                    <fw type="catch" place="bottom">chen,</fw>
+                    <lb break="yes"/>
+                    <pb n="222" facs="#f0030"/> chen, &#x2014; in manchen Fällen ko&#x017F;tbare Wetterma-<lb break="no"/>&#x017F;chinen, Wetter&#x017F;chächte, Lichtlöcher, und Ver-<lb break="no"/>&#x017F;pündungen des Tragewerks zu er&#x017F;paren &#x2014; we-<lb break="no"/>gen Wetter-Mangels aufläßige Gruben wieder zu<lb break="yes"/>erheben &#x2014; in matten Wettern zu liedern, und<lb break="yes"/>bey Ma&#x017F;chinen nachzu&#x017F;ehen &#x2014; in &#x017F;elben zu ver-<lb break="no"/>mark&#x017F;cheiden &#x2014; Thür&#x017F;töcke in Stollenflügeln und<lb break="yes"/>Strecken auszuwech&#x017F;eln &#x2014; in brennenden Häu&#x017F;ern<lb break="yes"/>durch die Dampf&#x017F;äulen zu gehen, und Men&#x017F;chen,<lb break="yes"/>Geld, Dokumente etc. zu retten &#x2014; in mit Pul-<lb break="no"/>verdampfe angefüllten Minen zu operiren &#x2014; Höh-<lb break="no"/>len, Keller, und Souterrains zu unter&#x017F;uchen etc.</p>
+                <lb break="yes"/>
+                <p>Eine blecherne Fahrlampe kann etwa 2, eine<lb break="yes"/>vor Ort zu &#x017F;etzende 1 Rthlr. ko&#x017F;ten, wenn alle<lb break="yes" />Er&#x017F;parni&#x017F;&#x017F;e dabey angebracht werden. Schon die<lb break="yes"/>Lampe (der Licht-Erhalter) allein, i&#x017F;t für die<lb break="yes"/>Ge&#x017F;undheit des Bergvolks wohlthätig, weil in<lb break="yes"/>Fällen, wo Durch&#x017F;chläge auf Stollflügeln zu ma-<lb break="no"/>chen &#x017F;ind, man oft aus Wettermangel mit &#x017F;chlecht<lb break="yes"/>brennendem gewöhnlichen Geleuchte, oder gar im<lb break="yes"/>Fin&#x017F;tern Monate lang auffährt, was bey dem<lb break="yes"/>Lichterhalter ohne Aufenthalt in einigen Wochen<lb break="yes" />zu erringen wäre.</p>
+                <lb break="yes"/>
+                <p>Uebrigens haben weitere Ver&#x017F;uche <hi rendition="#i">Hrn. v.<lb break="yes"/>
+                        <persName key="humboldt_av"/>Humboldt</hi> auf folgende Gradation des Geleuchtes<lb break="yes"/>für matte Wetter geführt.</p>
+                <lb break="yes"/>
+                <p>1) Wachs- und Taglichter erlö&#x017F;chen am<lb break="yes" />frühe&#x017F;ten;</p>
+                <lb break="yes"/>
+                <p>2) Lampen mit einfachen baumwollenen<lb break="yes"/>Dochten, und mit Un&#x017F;chlitt gefüllt, brennen län-<lb break="no"/>ger;</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">3) Lam-</fw>
+                <lb break="yes"/>
+                <pb n="223" facs="#f0031"/>
+                <p>3) Lampen mit gewöhnlichen Dochten und<lb break="yes"/>Oel, be&#x017F;onders mit Rüb&#x017F;aatöl gefüllt, noch län-<lb break="no"/>ger;</p>
+                <lb break="yes"/>
+                <p>4) Lampen mit hohlen Dochten am läng&#x017F;ten.<lb break="yes"/>Durch den Gebrauch gemeiner Lampen mit hoh-<lb break="no"/>len Dochten könnte al&#x017F;o viel Zeit und Geleuchte<lb break="yes"/>bey dem Bergbaue er&#x017F;part werden.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> ließ auch hohle Dochte in<lb break="yes"/>Talglichter ziehen, und hohle zylindri&#x017F;che Wachs-<lb break="no"/>lichter gießen. Die Schwierigkeit ihrer Vorrich-<lb break="no"/>tung macht &#x017F;ie aber im Gro&#x017F;&#x017F;en nicht wohl an-<lb break="no"/>wendbar.</p>
+                <lb break="yes"/>
+                <p>Beym Stro&#x017F;&#x017F;enbaue, Aus&#x017F;chlagen der Rad-<lb break="no" />&#x017F;tuben, überhaupt wo mehrere Häuer nahe an-<lb break="no"/>einander arbeiten, könnte man auch eine gemein-<lb break="no"/>&#x017F;chäftliche Lampe aufhängen, um viele einzelne<lb break="yes"/>Lichter zu er&#x017F;paren.</p>
+                <lb break="yes"/>
+                <p>Um in &#x017F;ehr bö&#x017F;en Wettern mit gro&#x017F;&#x017F;er Ge-<lb break="no"/>&#x017F;chwindigkeit Licht zu erhalten, könnte man<lb break="yes"/>Phosphor in kleineren Stückgen unter Wa&#x017F;&#x017F;er in ei-<lb break="no"/>nem Gla&#x017F;e bey &#x017F;ich führen, oder den&#x017F;elben mit<lb break="yes"/>Kampfer zu&#x017F;ammen ge&#x017F;chmolzen, in einer ble-<lb break="no"/>chernen Kap&#x017F;el aufbewahren, und &#x017F;o durch Rei-<lb break="no"/>ben mit einem Schwefelhölzgen &#x017F;ehr <choice>
+                        <sic>&#x017F;ehnell</sic>
+                        <corr type="editorial">&#x017F;chnell</corr>
+                    </choice> Feuer<lb break="yes"/>machen.</p>
+                <lb break="yes"/>
+                <p>Durch den Lichterhalter i&#x017F;t für das Ausge-<lb break="no"/>hen des Geleuchtes in bö&#x017F;en Wettern ge&#x017F;orgt, &#x2014;<lb break="yes"/>aber nicht für den Aufenthalt, und das Athmen<lb break="yes"/>der Men&#x017F;chen. Die Schwaden tödten viele Men-<lb break="no"/>&#x017F;chen, vorzüglich beym Steinkohlenbergbaue, beym<lb break="yes"/>
+                    <fw type="catch" place="bottom">Brun-</fw>
+                    <lb break="yes"/>
+                    <pb n="224" facs="#f0032"/> Brunnengraben, Keller&#x017F;prengen, Mineurwe&#x017F;en und<lb break="yes"/>Fe&#x017F;tungsbaue. Man hat zwar vorläng&#x017F;t auf Ma-<lb break="no"/>&#x017F;chinen zur Re&#x017F;piration ge&#x017F;under Luft mehr oder<lb break="yes"/>minder Aufmerk&#x017F;amkeit verwendet; die mei&#x017F;ten<lb break="yes"/>hydrauli&#x017F;chen Schrift&#x017F;teller machen davon Erwäh-<lb break="no"/>nung. Der berühmte <hi rendition="#i">
+                        <persName key="hales_s" ref="http://d-nb.info/gnd/">Hales</persName>
+                    </hi> gab ein Re&#x017F;pirations-<lb break="no"/>rohr an, und rieth allen Fabrikanten, die in<lb break="yes"/>mehr oder minder irre&#x017F;pirabeln Luftarten zu ar-<lb break="no"/>beiten haben, ein Mundband mit mehrfach <choice>
+                        <sic>zu&#x017F;am-<lb break="no"/>mengefchlagenen</sic>
+                        <corr type="editorial">zu&#x017F;am-<lb break="no" />menge&#x017F;chlagenen</corr>
+                    </choice> Streifen von Tuch, oder Flanell<lb break="yes"/>an, welche vorher in einer &#x017F;tarken Auflö&#x017F;ung<lb break="yes"/>von Wein&#x017F;tein&#x017F;alz, Potta&#x017F;che, oder Koch&#x017F;alz ein-<lb break="no"/>geweicht, und nachher wohl getrocknet worden.<lb break="yes" />Andere riethen, die ausgeathmete Luft durch<lb break="yes"/>Ab&#x017F;orbtion der Kohlen&#x017F;äure, mittel&#x017F;t Kalkwa&#x017F;&#x017F;ers<lb break="yes" />wieder re&#x017F;pirabel zu machen, wieder andere, Men-<lb break="no" />&#x017F;chen, die &#x017F;ich in mephiti&#x017F;cher Luft aufhalten<lb break="yes"/>mü&#x017F;&#x017F;en, mit einem Schlauche voll dephlogi&#x017F;ti&#x017F;irter<lb break="yes"/>Luft zum Athmen aus &#x017F;elbem zu ver&#x017F;ehen, die<lb break="yes"/>ausgeathmete Luft aber wieder zurück in den Luft-<lb break="no"/>vorrath gehen zu la&#x017F;&#x017F;en. <hi rendition="#i">
+                        <persName key="pilatrederozier_jf">Rozier</persName>,</hi> und<lb break="yes"/>l&#x2019;<hi rendition="#i">
+                        <persName key="laulnaye_fhs" ref="http://d-nb.info/gnd/">Aulnage</persName>
+                    </hi> gaben einen <hi rendition="#i">Re&#x017F;pirateur antimephitique</hi>
+                    <lb break="yes"/>an, mittel&#x017F;t de&#x017F;&#x017F;en ein Futteral von Meßingblech,<lb break="yes"/>mit Chenille <choice>
+                        <sic>geftütert</sic>
+                        <corr>gefüttert</corr>
+                    </choice>, an die Na&#x017F;e befe&#x017F;tigt, und<lb break="yes"/>durch ein meßingenes Rohr, welches in das Fut-<lb break="no"/>teral eingelöthet war, mittel&#x017F;t eines Schlauches,<lb break="yes"/>die reine Luft eingeathmet wurde, mit welcher<lb break="yes"/>man den Schlauch in Kommunikation &#x017F;etzte; die<lb break="yes"/>Luft wurde durch die Na&#x017F;e ein- und durch den<lb break="yes"/>Mund ausgeathmet. Das Na&#x017F;en&#x017F;tück ward in der<lb break="yes"/>Folge gegen eine an die Lippen genau an&#x017F;chlie&#x017F;-<lb break="no"/>&#x017F;ende Mu&#x017F;chel vertau&#x017F;cht, und das meßingene<lb break="yes"/>Rohr mit 2 Ventilen ver&#x017F;ehen, davon das eine<lb break="yes"/>innerhalb des Rohrs, zum Einathmen, das andere,<lb break="yes"/>oberhalb des Rohrs, zum Ausathmen diente.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Aber</fw>
+                <lb break="yes"/>
+                <pb n="225" facs="#f0033"/>
+                <p>Aber alle die&#x017F;e Vor&#x017F;chläge &#x017F;ind theils mehr<lb break="yes" />&#x017F;chädlich, als nützlich &#x2014; theils auf fal&#x017F;chen Prin-<lb break="no"/>zipien gegründet &#x2014; theils unzureichend, und we-<lb break="no"/>gen zu &#x017F;ehr zu&#x017F;ammenge&#x017F;etzter Apparate unan-<lb break="no"/>wendbar; <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> verfiel daher auf eine<lb break="yes" />neue Vorrichtung, zu der ihn <hi rendition="#i">
+                        <persName key="hales_s" ref="http://d-nb.info/gnd/">Hales</persName>
+                    </hi> Ver&#x017F;uche<lb break="yes"/>veranlaßten, und die er ein <hi rendition="#i">Re&#x017F;pirationsrohr</hi> nen-<lb break="no"/>net. Er erinnert ausdrücklich, daß, &#x017F;o &#x017F;ehr er<lb break="yes"/>&#x017F;ich die Erfindung des Lichterhalters und der da-<lb break="no"/>mit verbundenen In&#x017F;trumente als neu zu&#x017F;chreiben<lb break="yes"/>dürfe, &#x017F;o wenig halte er die Re&#x017F;pirationsma&#x017F;chine<lb break="yes"/>für &#x017F;ein Eigenthum. Sie &#x017F;ey eine Zu&#x017F;ammen&#x017F;et-<lb break="no"/>zung aus bekannten einzelnen Theilen.</p>
+                <lb break="yes"/>
+                <p>Es war nämlich darum zu thun, Men&#x017F;chen,<lb break="yes"/>welche in &#x017F;olchen Wettern leben, und arbeiten<lb break="yes"/>mü&#x017F;&#x017F;en, einen hinlänglichen Vorrath athembarer<lb break="yes"/>Luft mitzugeben, und ihre Re&#x017F;pirationsorgane von<lb break="yes"/>dem Kontakte mit irre&#x017F;pirabeln Gasarten auszu-<lb break="no"/>&#x017F;chließen.</p>
+                <lb break="yes"/>
+                <p>Die Rettungsma&#x017F;chine be&#x017F;teht aus dem Re&#x017F;pi-<lb break="no" />rationsrohre, einer Maske, oder Binde, einem<lb break="yes" />Luft&#x017F;chlauche, und einem Luft&#x017F;acke.</p>
+                <lb break="yes"/>
+                <p>Das er&#x017F;te muß die einzuathmende Luft von<lb break="yes"/>der auszuathmenden trennen, und i&#x017F;t &#x017F;omit das<lb break="yes" />Schwierig&#x017F;te in der Sache. Es hat zwey Arme,<lb break="yes"/>wovon der eine &#x017F;enkrecht auf den andern ge-<lb break="no"/>&#x017F;etzt i&#x017F;t, und jeder an &#x017F;einem gegen die offene<lb break="yes"/>Luft gekehrten Ende ein &#x017F;ehr leicht bewegli-<lb break="no"/>ches Klappenventil hat, deren eines &#x017F;ich nach in-<lb break="no"/>nen, das andere nach außen öffnet. Das Rohr<lb break="yes"/>endigt &#x017F;ich an dem gegen den Mund gekehrten<lb break="yes"/>Ende entweder in eine hohle, und auf der ent-<lb break="no"/>
+                    <fw type="catch" place="bottom">gegen</fw>
+                    <lb break="yes"/>
+                    <pb n="226" facs="#f0034"/> gegenge&#x017F;etzten Seite offene Nuß, welche man<lb break="yes"/>in den Mund nimmt, und wobey man die Na&#x017F;e<lb break="yes"/>ver&#x017F;topft, oder es wird an einer Maske befe&#x017F;tigt,<lb break="yes"/>die man um den Mund bindet. Während dem<lb break="yes"/>nun das Rohr mit dem einen Ende entweder un-<lb break="no" />mittelbar, oder mittel&#x017F;t der Maske an den Mund<lb break="yes"/>gebracht wird, &#x017F;teckt es mit dem andern Ende,<lb break="yes"/>wo das Einathmungs-Ventil &#x017F;ich nach innen öff-<lb break="no"/>net, in dem Schlauche, welcher die Luft aus dem<lb break="yes"/>Luft&#x017F;acke zum Munde führt, wo &#x017F;ie durch das<lb break="yes"/>gerade Rohr eingeathmet, und durch den andern<lb break="yes"/>&#x017F;enkrecht auf&#x017F;itzenden Arm, mittel&#x017F;t des &#x017F;ich nach<lb break="yes"/>außen öffnenden Ex&#x017F;pirations-Ventils, wieder aus-<lb break="no"/>gehaucht wird.</p>
+                <lb break="yes"/>
+                <p>Die Ventile mü&#x017F;&#x017F;en &#x017F;ich äußer&#x017F;t leicht öffnen,<lb break="yes"/>und &#x017F;chließen, und zu dem Ende die beyden Ar-<lb break="no"/>me des Rohrs an ihren Enden in obliquer Rich-<lb break="no" />tung unter einem Winkel von 45 Graden abge-<lb break="no"/>&#x017F;chnitten &#x017F;eyn.</p>
+                <lb break="yes"/>
+                <p>Das Re&#x017F;pirationsrohr wird von Meßing ge-<lb break="no"/>macht, erhält eine gleichförmige innere Weite<lb break="yes"/>von 10 Linien; der gerade Arm hat 3 Zoll Län-<lb break="no"/>ge, der &#x017F;enkrechte 1 Zoll, die Klappen-Ventile<lb break="yes"/>haben 6 Linien im Durchme&#x017F;&#x017F;er, und <formula notation="TeX">\frac{1}{16}</formula> Linie<lb break="yes" />Meßing&#x017F;tärke.</p>
+                <lb break="yes"/>
+                <p>Die Maske be&#x017F;teht in einem Blech&#x017F;treifen,<lb break="yes"/>welcher durch Zu&#x017F;ammenbinden am Nacken an<lb break="yes"/>den Mund befe&#x017F;tiget wird, wornach das Re&#x017F;pira-<lb break="no"/>tionsrohr im Innern der Maske eine trichterförmi-<lb break="no"/>ge Mündung bildet, gegen welche &#x017F;ich die Lip-<lb break="no"/>pen von &#x017F;elb&#x017F;t anlegen.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Wo</fw>
+                <lb break="yes"/>
+                <pb n="227" facs="#f0035"/>
+                <p>Wo man die Augen für Pulver-Kohlen-<lb break="yes"/>oder Schwefeldampf &#x017F;chützen muß, wird eine<lb break="yes"/>mit 2 runden Glas&#x017F;cheiben &#x017F;tatt der Augen ver&#x017F;e-<lb break="no"/>hene Maske von Ei&#x017F;enblech gebraucht, welche<lb break="yes"/>das ganze Ge&#x017F;icht bedeckt, jedoch, weil &#x017F;ie kon-<lb break="no"/>vex i&#x017F;t, weit von &#x017F;elbem ab&#x017F;teht, und ringsum<lb break="yes"/>am Kopfe an&#x017F;chließt<choice>
+                        <sic>.</sic>
+                        <corr type="editorial">,</corr>
+                    </choice> wo &#x017F;ie, um allen Zutritt<lb break="yes"/>der äußern Luft zu hemmen, mit Leinwand und<lb break="yes"/>Baumwolle gefüttert i&#x017F;t.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> hat die&#x017F;e Maske be&#x017F;onders<lb break="yes"/>für die Mineurs be&#x017F;timmt, und &#x017F;ie dem Apparate<lb break="yes"/>beygefügt, den &#x017F;ich das königl. Preußi&#x017F;che Ober-<lb break="no"/>kriegskollegium von ihm erbat.</p>
+                <lb break="yes"/>
+                <p>Der Schlauch, mittel&#x017F;t de&#x017F;&#x017F;en die einzuath-<lb break="no" />mende Luft aus dem Luft&#x017F;acke durch das Re&#x017F;pi-<lb break="no" />rationsrohr in den Mund geführt wird, muß &#x017F;ehr<lb break="yes"/>leicht und bieg&#x017F;am &#x017F;eyn; er be&#x017F;teht inwendig aus<lb break="yes" />&#x017F;piralförmig gedrehtem Drate, der mit Leder<lb break="yes"/>luftdicht überzogen i&#x017F;t. An &#x017F;einen Enden hat er<lb break="yes"/>2 meßingene An&#x017F;ätze, um einer&#x017F;eits das Re&#x017F;pira-<lb break="no" />tionsrohr in ihn einzu&#x017F;tecken, anderer Seits ihn<lb break="yes"/>in den Luft&#x017F;ack einzumünden. Die&#x017F;er letzte An-<lb break="no"/>&#x017F;atz i&#x017F;t mit einem Hahne ver&#x017F;ehen, welcher er&#x017F;t<lb break="yes" />geöffnet wird, wenn das Bedürfniß aus dem<lb break="yes"/>Luft&#x017F;acke zu athmen anfängt, und wodurch man<lb break="yes"/>das Aus&#x017F;trömen der Luft ganz in &#x017F;einer Gewalt<lb break="yes"/>hat.</p>
+                <lb break="yes"/>
+                <p>Die Länge des Schlauches i&#x017F;t ver&#x017F;chieden, je<lb break="yes" />nachdem man den Luft&#x017F;ack auf dem Rücken<lb break="yes"/>trägt, oder auf der Sohle der Strecke hinter &#x017F;ich<lb break="yes"/>her zieht, oder den Schlauch ganz ohne Luft&#x017F;ack<lb break="yes"/>mit einer der <choice>
+                        <sic>außern</sic>
+                        <corr type="editorial">äußern</corr>
+                    </choice> Luft&#x017F;chichten unmittelbar<lb break="yes"/>kommuniziren läßt.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Der</fw>
+                <lb break="yes"/>
+                <pb n="228" facs="#f0036"/>
+                <p>Der Luft&#x017F;ack wird mit athmosphäri&#x017F;cher Luft<lb break="yes" />gefüllt. Lebensluft würde theils bey langem In-<lb break="no"/>&#x017F;piriren &#x017F;chädlich, theits zu ko&#x017F;tbar &#x017F;eyn.</p>
+                <lb break="yes"/>
+                <p>Der Ausathmungsarm darf nicht wegbleiben;<lb break="yes"/>würde man die Luft wieder in den Luft&#x017F;ack zu-<lb break="no"/>rück ausathmen, &#x017F;o würde die kohlen&#x017F;aure Luft,<lb break="yes"/>welche &#x017F;ammt der Lebensluft ausgeathmet wird,<lb break="yes"/>und &#x017F;ich, nach <hi rendition="#i">Hrn. v. <persName key="humboldt_av"/>Humboldts</hi> Ver&#x017F;uchen, nicht<lb break="yes"/>gleichmäßig unter die Luft im Luft&#x017F;acke vertheilt,<lb break="yes"/>&#x017F;ondern in dem Schlauche &#x017F;tehen bleibt, wieder<lb break="yes"/>eingezogen werden, und beäng&#x017F;tigende Bru&#x017F;t-<lb break="no"/>&#x017F;chmerzen erregen.</p>
+                <lb break="yes"/>
+                <p>Man bedarf übrigens für 1 Stunde 25 Kubik-<lb break="no"/>fuß Luft.</p>
+                <lb break="yes"/>
+                <p>Die einzuathmende Luft wird in eine Bla&#x017F;e,<lb break="yes"/>oder in ein Gefäß, welches weder von Metall,<lb break="yes"/>noch von Holz &#x017F;eyn darf, einge&#x017F;chlo&#x017F;&#x017F;en. Die all-<lb break="no"/>mälige Verdünnung der einzuathmenden Luft macht<lb break="yes"/>alle Gefä&#x017F;&#x017F;e mit fe&#x017F;ten Wänden hiezu unbrauch-<lb break="no"/>bar. Man würde am Ende das Gefäß durch<lb break="yes"/>blo&#x017F;&#x017F;es Athmen nicht mehr ausleeren können.<lb break="yes"/>Der Gebrauch einträufelnden Wa&#x017F;&#x017F;ers zur Beförde-<lb break="no"/>rung des Aus&#x017F;trömens der Luft aus dem Gefä&#x017F;&#x017F;e,<lb break="yes"/>&#x017F;o wie bey den Lichterhältern, i&#x017F;t nicht thunlich,<lb break="yes"/>weil der nöthige Wa&#x017F;&#x017F;ervorrath die Ma&#x017F;chine all-<lb break="no"/>zugroß und unbequem machen würde.</p>
+                <lb break="yes"/>
+                <p>Es mü&#x017F;&#x017F;en daher die Luft&#x017F;äcke aus einem<lb break="yes" />bieg&#x017F;amen ela&#x017F;ti&#x017F;chen Materiale be&#x017F;tehen, damit<lb break="yes"/>der Druck der äußern atmosphäri&#x017F;chen Luft die<lb break="yes"/>Ausleerung bewirke. Leder bricht zu leicht,<lb break="yes" />wenn es naß, und nicht vor&#x017F;ichtig getrocknet<lb break="yes"/>
+                    <fw type="catch" place="bottom">wird.</fw>
+                    <lb break="yes"/>
+                    <pb n="229" facs="#f0037"/> wird. Säcke von Wachstaffent fein zu&#x017F;ammen-<lb break="no"/>genäht, und die Nähte mit in Naphta aufgelö-<lb break="no"/>&#x017F;ter Ro&#x017F;ina ela&#x017F;tica be&#x017F;trichen taugen am be&#x017F;ten.<lb break="yes"/>Am kürze&#x017F;ten wäre es, die Säcke gleich rund<lb break="yes"/>weben zu la&#x017F;&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. v. <persName key="humboldt_av"/>Humboldt</hi> will künftig Ver&#x017F;uche mit<lb break="yes"/>Luft&#x017F;äcken aus gro&#x017F;&#x017F;en Bla&#x017F;en machen, welche auf-<lb break="no" />ge&#x017F;chnitten, zu&#x017F;ammengenäht, und auf den Näh-<lb break="no"/>ten mit Streifen von Wachstaffent beklebt werden.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Hr. Dr. <persName key="fischer_01" ref="http://d-nb.info/gnd/">Fi&#x017F;cher</persName>
+                    </hi> rieth, den Luft&#x017F;ack aus ge-<lb break="no"/>wöhnlichem überfirnißten Taffent zu machen, und<lb break="yes"/>die Nähte mit Kopalfirniß zu über&#x017F;treichen. Man<lb break="yes"/>könnte auch die Nähte mit Bla&#x017F;e überkleben.</p>
+                <lb break="yes"/>
+                <p>Damit der Luft&#x017F;ack nicht Schaden nehme,<lb break="yes"/>wird er in einen blechenen Ka&#x017F;ten einge&#x017F;chlo&#x017F;&#x017F;en,<lb break="yes" />welcher mittel&#x017F;t der Oeffnung, wodurch der<lb break="yes"/>Schlauch herausgeht, mit der Atmosphäre kom-<lb break="no"/>munizirt, und zugleich einigen Raum zwi&#x017F;chen<lb break="yes"/>&#x017F;ich und der Luftbla&#x017F;e übrig läßt. Wenn nun<lb break="yes"/>die Luft, mittel&#x017F;t des Schlauchs, aus dem Luft&#x017F;a-<lb break="no"/>cke herausgezogen wird, und die&#x017F;er zu&#x017F;ammen-<lb break="no"/>&#x017F;inkt, &#x017F;o tritt dagegen atmosphäri&#x017F;che Luft in den<lb break="yes"/>blechenen Ka&#x017F;ten, und befördert durch ihren Druck<lb break="yes"/>auf die Bla&#x017F;e oder den Luft&#x017F;ack die weitere Aus-<lb break="no" />leerung.</p>
+                <lb break="yes"/>
+                <p>Man kann für Mineurs im Kriege, wenn<lb break="yes"/>&#x017F;ie im Pulverdampf recogno&#x017F;ciren &#x017F;ollen, das Ge-<lb break="no"/>fäß mit Rollen ver&#x017F;ehen, um es in der Grube<lb break="yes"/>bequemer hinter &#x017F;ich nachzu&#x017F;chleppen.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Das</fw>
+                <lb break="yes"/>
+                <pb n="230" facs="#f0038"/>
+                <p>Das Füllen des Luft&#x017F;acks ge&#x017F;chieht mittel&#x017F;t<lb break="yes" />eines wenig veränderten, nur mit einem Ven-<lb break="no"/>tile ver&#x017F;ehenen, gemeinen Bla&#x017F;ebalgs, der da ein-<lb break="no" />ge&#x017F;teckt wird, wo der Schlauch in den Luft&#x017F;ack<lb break="yes" />eingemündet i&#x017F;t. Das Material dazu i&#x017F;t in der<lb break="yes" />Grube &#x017F;elb&#x017F;t, auf Stöllen, unter Schächten, und<lb break="yes" />überall, wo fri&#x017F;che Wetter &#x017F;ind, anzutreffen.</p>
+                <lb break="yes"/>
+                <p>Zu einer halben Stunde bedürfte man eines<lb break="yes"/>Luft&#x017F;ackes von 12 1&#x222B;2 Kubikfuß, oder einer<lb break="yes"/>Grundfläche von 4, 166 Quadratfuß bey 3 Fuß<lb break="yes"/>Höhe. Es werden aber in den mei&#x017F;ten Fällen 12<lb break="yes"/>&#x2014; 18 Minuten hinlänglich &#x017F;eyn, um die tödtli-<lb break="no"/>che Luft&#x017F;chicht durchzufahren, und den Er&#x017F;tickten<lb break="yes"/>herauszuziehen, und dann kann man den Luft-<lb break="no"/>&#x017F;ack in einem blechenen Ka&#x017F;ten entweder <choice>
+                        <sic>au&#x017F;</sic>
+                        <corr type="editorial">auf</corr>
+                    </choice> dem<lb break="yes"/>Rücken tragen, oder ihn unbedeckt über die<lb break="yes"/>Schultern auf die Bru&#x017F;t und den Rücken verthei-<lb break="no"/>len, auch wohl in dem blechenen Gefä&#x017F;&#x017F;e an ei-<lb break="no"/>ner Schnur auf der Sohle nachziehen. Bindet<lb break="yes"/>man &#x017F;ich den Luft&#x017F;ack auf die Bru&#x017F;t, und den<lb break="yes" />Rücken, &#x017F;o muß man ihn er&#x017F;t anziehen, ehe er<lb break="yes"/>mit dem Bla&#x017F;ebalge aufgebla&#x017F;en wird.</p>
+                <lb break="yes"/>
+                <p>Soll ein Bergmann, oder (was eher eintre-<lb break="no"/>ten könnte) der Mineur bey der Attäque einer<lb break="yes"/>Ve&#x017F;tung mit der Re&#x017F;pirationsma&#x017F;chine vor Ort ar-<lb break="no"/>beiten, &#x017F;o &#x017F;teht der Luftka&#x017F;ten in Ge&#x017F;talt eines<lb break="yes" />Fa&#x017F;&#x017F;es neben ihm. Für 3&#x222B;4 Stunden muß der&#x017F;elbe<lb break="yes"/>18 3&#x222B;4 Kubik-Fuß Luft fa&#x017F;&#x017F;en. Man braucht<lb break="yes"/>auch hier den Luft&#x017F;ack in keinem ge&#x017F;chlo&#x017F;&#x017F;enen<lb break="yes"/>Fa&#x017F;&#x017F;e anzubringen, &#x017F;ondern man kann ihn in ein<lb break="yes"/>Ge&#x017F;telle von einigen Säulchen, die unten in einen<lb break="yes"/>Boden einge&#x017F;etzt &#x017F;ind, und oben einen bewegli-<lb break="no"/>chen Deckel ein&#x017F;chließen, legen. Hat der Boden<lb break="yes"/>
+                    <fw type="catch" place="bottom">5 Qua-</fw>
+                    <lb break="yes"/>
+                    <pb n="231" facs="#f0039"/> 5 Quadratfuß-Fläche, und die Säulchen 5 Fuß<lb break="yes"/>Höhe, &#x017F;o fa&#x017F;&#x017F;en &#x017F;ie einen Luft&#x017F;ack mit 25 Kub.<lb break="yes"/>Fuß Luft, al&#x017F;o genug für 1 Stunde Aufenthalt.</p>
+                <lb break="yes"/>
+                <p>Der bewegliche Deckel wird nieder&#x017F;inken,<lb break="yes"/>in dem Maaße, wie der Luft&#x017F;ack zu&#x017F;ammen-<lb break="no"/>fällt, und &#x017F;o die darinn enthaltene Luft rein her-<lb break="no"/>ausdrücken. Das Faß wird auf der Sohle der<lb break="yes"/>Strecke, oder der Gallerie fortgewälzt, oder auf<lb break="yes"/>einer Roll&#x017F;chleife gezogen. Die Ge&#x017F;talt de&#x017F;&#x017F;elben<lb break="yes"/>läßt &#x017F;ich daher tau&#x017F;endfach abändern. I&#x017F;t es aus-<lb break="no"/>geathmet, &#x017F;o &#x017F;chafft man ein anderes hin, und<lb break="yes"/>&#x017F;teckt Schlauch und Rohr auf das neu angekom-<lb break="no"/>mene Luftfaß.</p>
+                <lb break="yes"/>
+                <p>Vor einem Orte, wo man hinlänglichen Raum<lb break="yes"/>hat, könnte man allenfalls auch die wachstaffent-<lb break="no"/>nen Säcke er&#x017F;paren, und ein hölzernes Luftfaß<lb break="yes"/>machen, in welches der Re&#x017F;pirations&#x017F;chlauch un-<lb break="no"/>mittelbar eingemündet wäre; dann müßte man<lb break="yes"/>aber doch auf &#x017F;o ein Luftfaß entweder einen<lb break="yes"/>Wa&#x017F;&#x017F;erka&#x017F;ten auf&#x017F;etzen, oder fließendes Wa&#x017F;&#x017F;er<lb break="yes"/>auf da&#x017F;&#x017F;elbe leiten, damit durch das Eintröpfeln<lb break="yes" />de&#x017F;&#x017F;elben (wie bey dem Lichterhalter) die Luft<lb break="yes" />ausgetrieben würde. Wäre z. E. das Ort 5&#x222B;4 L.<lb break="yes"/>hoh, &#x017F;o könnte man das Luftfaß für eine Stunde<lb break="yes"/>Aufenthalt, mit 5 Quadratfuß Grundfläche 5 Fuß<lb break="yes"/>hoh machen, und noch einen <choice>
+                        <sic>Au&#x017F;&#x017F;atz</sic>
+                        <corr type="editorial">Auf&#x017F;atz</corr>
+                    </choice> für das ein-<lb break="no"/>fallende Wa&#x017F;&#x017F;er von 2 Fuß Höhe darauf &#x017F;etzen.<lb break="yes"/>Letzteres würde &#x017F;ich dann freylich alle 20 Min.<lb break="yes"/>ausleeren, und müßte al&#x017F;o in jeder Stunde drey-<lb break="no"/>mal vollgego&#x017F;&#x017F;en werden. Daher wäre es aller-<lb break="no"/>dings zeiter&#x017F;parender, wenn man über dem Luft-<lb break="no"/>fa&#x017F;&#x017F;e von 25 Kub. Fuß Innhalt auch einen gleich<lb break="yes"/>gro&#x017F;&#x017F;en Wa&#x017F;&#x017F;erka&#x017F;ten anbringen könnte. Allein<lb break="yes"/>
+                    <fw type="catch" place="bottom">wie</fw>
+                    <lb break="yes"/>
+                    <pb n="232" facs="#f0040"/> wie weitläufig i&#x017F;t nicht er&#x017F;t die&#x017F;e Vorrichtung?<lb break="yes"/>Wie viel Zeit geht nicht auf, die Wa&#x017F;&#x017F;erkä&#x017F;ten,<lb break="yes"/>wenn &#x017F;ie ausgelaufen &#x017F;ind, immer wieder zu fül-<lb break="no"/>len? und dann i&#x017F;t auch der Wa&#x017F;&#x017F;erdruck keine<lb break="yes"/>permanent wirkende Kraft. Daher kömmt man<lb break="yes"/>immer auf das Re&#x017F;ultat zurück, daß es für die<lb break="yes"/>Re&#x017F;pirationsma&#x017F;chine in allen Fällen, auch bey<lb break="yes"/>ihrem Gebrauche vor Ort, be&#x017F;&#x017F;er &#x017F;ey, die Luft&#x017F;ä-<lb break="no"/>cke von einem bieg&#x017F;amen ela&#x017F;ti&#x017F;chen Materiale zu<lb break="yes"/>machen, worauf der Druck der äußern Luft zum<lb break="yes"/>Auspre&#x017F;&#x017F;en der einge&#x017F;chlo&#x017F;&#x017F;enen wirken kann,<lb break="yes" />&#x017F;tatt, daß man die&#x017F;es dem einfallenden Wa&#x017F;&#x017F;er<lb break="yes"/>überläßt.</p>
+                <lb break="yes"/>
+                <p>In vielen Fällen, z. B. wenn in einem we-<lb break="no"/>nige Lr. tiefen Ge&#x017F;enke nach einer Ma&#x017F;chine ge-<lb break="no"/>&#x017F;ehen, oder einem Verunglückten nachgefahren<lb break="yes"/>werden &#x017F;oll, und auf der näch&#x017F;ten Strecke über<lb break="yes"/>dem Ge&#x017F;enke die Wetter fri&#x017F;ch und re&#x017F;pirabel &#x017F;ind,<lb break="yes"/>&#x2014; wenn eine Wetterma&#x017F;chine für ein wetternö-<lb break="no"/>thiges Ort angelegt, und eine Tour Wetterlotten<lb break="yes"/>bis vor da&#x017F;&#x017F;elbe gezogen worden, die hintergebla-<lb break="no"/>&#x017F;enen Wetter aber zu &#x017F;chwach &#x017F;ind, die ganze<lb break="yes"/>Luftma&#x017F;&#x017F;e vor Ort re&#x017F;pirabel zu machen, &#x2014; wenn<lb break="yes"/>vor einem höch&#x017F;t wetternöthigen Orte ein Bohr-<lb break="no"/>loch, um einen Durch&#x017F;chlag vorzubereiten, ange-<lb break="no"/>legt, und in den tödtlich bö&#x017F;en Wettern abge-<lb break="no"/>bohrt werden muß, &#x2014; bey vielen Arbeiten in<lb break="yes"/>Hüttwerken, be&#x017F;onders bey <choice>
+                        <sic>Ar&#x017F;enikhütteu</sic>
+                        <corr type="editorial">Ar&#x017F;enikhütten</corr>
+                    </choice>, kann<lb break="yes"/>(und dieß verdiente die größte Aufmerk&#x017F;amkeit)<lb break="yes"/>der <hi rendition="#i" >Luft&#x017F;ack ganz er&#x017F;part,</hi> und &#x017F;omit der Re&#x017F;pi-<lb break="no"/>rationsapparat &#x017F;ehr vereinfacht werden. Man kann<lb break="yes"/>in einem &#x017F;olchen Falle den längern Luft&#x017F;chlauch,<lb break="yes"/>mittel&#x017F;t eines Ringes, an die Hängebank, wo<lb break="yes"/>noch <choice>
+                        <sic>frifches</sic>
+                        <corr type="editorial">fri&#x017F;ches</corr>
+                    </choice> Wetter i&#x017F;t, befe&#x017F;tigen, oder den&#x017F;el-<lb break="no"/>
+                    <fw type="catch" place="bottom">ben</fw>
+                    <lb break="yes"/>
+                    <pb n="233" facs="#f0041"/> ben mit der Mündung der Röhrentour in Verbin-<lb break="no"/>dung &#x017F;etzen, und in Hütten zum näch&#x017F;ten Fen&#x017F;ter<lb break="yes"/>hinaus an die freye Luft führen.</p>
+                <lb break="yes"/>
+                <p>Liegt der Verunglückte in einem mit bö&#x017F;en<lb break="yes"/>Wettern gefüllten Ge&#x017F;enke, &#x017F;o i&#x017F;t ein Luft&#x017F;chlauch<lb break="yes"/>von 6 &#x2014; 8 L. Länge oft zur Rettung hinläng-<lb break="no"/>lich; die Mündung des Schlauches bleibt in den<lb break="yes" />fri&#x017F;chen Wettern liegen, und der Rettende athmet<lb break="yes" />al&#x017F;o nur die Luft, welche die&#x017F;e Mündung umgiebt.</p>
+                <lb break="yes"/>
+                <p>Ein Re&#x017F;pirationsapparat nach der bisherigen<lb break="yes"/>Einrichtung kann kaum auf 6 Rthl. zu &#x017F;tehen<lb break="yes"/>kommen, und es &#x017F;ollte billig nicht nur auf jeder<lb break="yes"/>Revier ein &#x017F;olcher Apparat vorräthig &#x017F;eyn, &#x017F;on-<lb break="no"/>dern von Phy&#x017F;ikern, und Bergbeamten unabläßig<lb break="yes"/>an Vereinfachung und thätiger Anwendung einer<lb break="yes"/>&#x017F;o wohlthätigen Ma&#x017F;chine gearbeitet werden.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

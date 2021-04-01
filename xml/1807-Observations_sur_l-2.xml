@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="257" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">BEOBACHTUNGEN<lb break="yes"/>
+                        <hi rendition="#i">über die Stärke und über die Neigung<lb break="yes"/>der magneti&#x017F;chen Kräfte,<lb break="yes"/>ange&#x017F;tellt in Frankreich, der Schweiz, Italien<lb break="yes"/>und Deut&#x017F;chland,</hi>
+                        <lb break="yes"/>von</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Alex. von <persName key="humboldt_av">Humboldt</persName>
+                    </hi> und <persName key="gaylussac_jl">
+                        <hi rendition="#k">Gay-Lussac.</hi>
+                    </persName>
+                    <lb break="yes"/>Vorgele&#x017F;en von letzterem im Nat.-In&#x017F;t. am 8ten Sept. 1806.<lb break="yes"/>
+                    <hi rendition="#i">(Mémoires de la Soc. d&#x2019;Arcueil, T. I, p.</hi> 1 <hi rendition="#i">f.)</hi>
+                    <lb break="yes"/>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                </head>
+                <p>
+                    <hi rendition="#in">D</hi>ie Ur&#x017F;achen und die Ge&#x017F;etze des Erd-Magnetis-<lb break="no"/>mus &#x017F;ind noch immer in Dunkel gehüllt, ungeach-<lb break="no"/>tet der Fort&#x017F;chritte, welche die Phy&#x017F;ik in andern<lb break="yes"/>Theilen gemacht hat. Die täglichen, &#x017F;o wie die &#x017F;e-<lb break="no"/>cularen Variationen der Magnetnadel, ihre Nei-<lb break="no"/>gung und Abweichung an den vornehm&#x017F;ten Punk-<lb break="no"/>ten der Erde, die Stärke der magneti&#x017F;chen Kräfte,<lb break="yes"/>die Zahl und die Ge&#x017F;talt der Banden ohne Abwei-<lb break="no"/>
+                    <pb n="258" facs="#f0002"/> chung; alles das i&#x017F;t bis jetzt nur wenig bekannt. Die<lb break="yes"/>Beobachtungen von Rei&#x017F;enden und Phy&#x017F;ikern haben<lb break="yes"/>bisher fa&#x017F;t allein die Abweichung betroffen, und &#x017F;ie<lb break="yes"/>liegen zu weit aus einander, und &#x017F;ind mit In&#x017F;tru-<lb break="no"/>menten und nach Methoden ange&#x017F;tellt, welche zu<lb break="yes"/>wenig genau waren, als daß es möglich wäre, auf<lb break="yes"/>&#x017F;ie die Grundpfeiler einer Theorie zu gründen, wel-<lb break="no"/>che alle Er&#x017F;cheinungen des Erdmagnetismus um-<lb break="no"/>faßte.</p>
+                <lb break="yes"/>
+                <p>Der Wun&#x017F;ch, dazu beizutragen, die nöthigen<lb break="yes"/>Materialien herbei zu &#x017F;chaffen, von denen das Fort-<lb break="no"/>&#x017F;chreiten un&#x017F;erer Kenntni&#x017F;&#x017F;e in die&#x017F;em Theile der<lb break="yes"/>Phy&#x017F;ik abhängt, hat uns, Hrn. <hi rendition="#g">von <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <lb break="yes"/>und mich, bewogen, eine Reihe von Ver&#x017F;uchen über<lb break="yes"/>die Stärke und die Neigung der magneti&#x017F;chen Kräfte<lb break="yes"/>zu unternehmen. Wir haben uns damit auf einer<lb break="yes" />Rei&#x017F;e durch Frankreich, durch die Schweiz, durch<lb break="yes" />Italien und durch Deut&#x017F;chland be&#x017F;chäftigt; die&#x017F;e<lb break="yes"/>Rei&#x017F;e dauerte ein Jahr, und ich habe auf ihr die<lb break="yes"/>viel umfa&#x017F;&#x017F;enden Kenntni&#x017F;&#x017F;e meines Freundes be-<lb break="no"/>nutzt. Die Beobachtungen, welche wir auf die&#x017F;er<lb break="yes"/>Rei&#x017F;e gemacht haben, lege ich heute dem National-<lb break="maybe"/>In&#x017F;titute vor. Der kurze Zeitraum, innerhalb<lb break="yes"/>de&#x017F;&#x017F;en &#x017F;ie gemacht &#x017F;ind, (&#x017F;ie fallen alle zwi&#x017F;chen<lb break="yes"/>den 15ten März 1805 und den 1&#x017F;ten Mai 1806,<lb break="yes"/>und es i&#x017F;t daher &#x017F;o gut, als wären &#x017F;ie alle gleichzei-<lb break="no"/>tig,) der große Raum, den &#x017F;ie umfa&#x017F;&#x017F;en, und wir<lb break="yes" />dürfen hinzu fügen, ihre Genauigkeit, la&#x017F;&#x017F;en uns<lb break="yes" />hoffen, daß &#x017F;ie für das National-In&#x017F;titut einiges In-<lb break="no"/>tere&#x017F;&#x017F;e haben werden.</p>
+                <lb break="yes"/>
+                <pb n="259" facs="#f0003"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Art, zu beobachten und die Beobachtungen zu<lb break="yes"/>berechnen.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Zur Be&#x017F;timmung der <hi rendition="#i">Neigung</hi> der magneti&#x017F;chen<lb break="yes"/>Kräfte haben wir uns einer <persName key="borda_jcd">Bordai&#x017F;chen</persName> Inclina-<lb break="no" />tions-Bou&#x017F;&#x017F;ole bedient; &#x017F;ie war von <hi rendition="#g">Lenoir</hi> für die<lb break="yes"/>Expedition von <persName key="entrecasteau_jbd">
+                            <hi rendition="#g">d&#x2019;Entreca&#x017F;teaux</hi>
+                        </persName> gemacht und<lb break="yes"/>uns von dem Mini&#x017F;ter der Marine anvertraut wor-<lb break="no"/>den. Die <hi rendition="#i" >horizontalen Schwingungen</hi> beobachte-<lb break="no"/>ten wir vermittel&#x017F;t eines rechtwinkligen Magnet&#x017F;ta-<lb break="no" />bes, der an einem Faden roher Seide in einem Ka-<lb break="no" />&#x017F;ten hing, welcher an zwei gegen über &#x017F;tehenden<lb break="yes"/>Seitenflächen Glas&#x017F;cheiben hatte und die Bewegun-<lb break="no"/>gen der Luft abhielt. Die Einfachheit die&#x017F;es In&#x017F;tru-<lb break="no"/>ments, die große Genauigkeit, welche &#x017F;ich damit<lb break="yes"/>erreichen läßt, und <persName key="borda_jcd">
+                            <hi rendition="#g">Borda&#x2019;s</hi>
+                        </persName> Methode, aus den<lb break="yes"/>Schwingungen der Nadeln auf die Kraft zu &#x017F;chlie-<lb break="no"/>ßen, welche die&#x017F;e bewirkt; das alles i&#x017F;t jetzt allge-<lb break="no"/>mein bekannt. Nicht &#x017F;o i&#x017F;t es vielleicht die be&#x017F;te<lb break="yes"/>Methode, wie man die Neigung und die Stärke der<lb break="yes"/>magneti&#x017F;chen Kräfte an einem gegebenen Orte beob-<lb break="no"/>achtet. Man &#x017F;cheint darüber noch ver&#x017F;chiedener<lb break="yes"/>Meinung zu &#x017F;eyn, und die&#x017F;es be&#x017F;timmt uns, hier bei<lb break="yes"/>in einiges Detail einzugehen.</p>
+                    <lb break="yes"/>
+                    <p>Befindet &#x017F;ich die Inclinations-Nadel genau in der<lb break="yes" />magneti&#x017F;chen Mittagsebene, und wird dann die<lb break="yes"/>Ebene der Nadel ein wenig zur Rechten oder zur<lb break="yes"/>Linken gedreht, &#x017F;o nimmt jedes Mahl ihre Neigung<lb break="yes"/>zu. Ein Mittel, &#x017F;ie genau in den magneti&#x017F;chen Me-<lb break="no"/>ridian zu &#x017F;tellen, würde al&#x017F;o &#x017F;eyn, die Ebene zu<lb break="yes" />&#x017F;uchen, in welcher ihre Neigung am klein&#x017F;ten i&#x017F;t.<lb break="yes"/>
+                        <pb n="260" facs="#f0004"/> Die&#x017F;es Verfahren i&#x017F;t indeß &#x017F;o einfach und leicht<lb break="yes"/>nicht, als es auf den er&#x017F;ten Anblick &#x017F;cheint, und<lb break="yes"/>wir werden &#x017F;ogleich &#x017F;ehen, daß es ein genaueres<lb break="yes"/>und &#x017F;chnelleres Mittel giebt.</p>
+                    <lb break="yes"/>
+                    <p>Steht die Ebene der Inclinations-Nadel &#x017F;enk-<lb break="no"/>recht auf der magneti&#x017F;chen Mittagsebene, &#x017F;o muß<lb break="yes"/>die Nadel eine völlig &#x017F;enkrechte Lage annehmen,<lb break="yes"/>weil in die&#x017F;em Falle der Theil der magneti&#x017F;chen<lb break="yes"/>Kraft, welcher horizontal wirkt, auf die Lage der<lb break="yes"/>Nadel keinen Einfluß hat. Hierdurch wird es aus-<lb break="no"/>nehmend leicht, jene Ebene zu finden; be&#x017F;onders<lb break="yes"/>da man nicht abzuwarten braucht, bis die Nadel in<lb break="yes"/>Ruhe gekommen i&#x017F;t, um über ihre Lage zu urthei-<lb break="no"/>len, &#x017F;ondern zu dem Ende nur die Gränzen ihrer<lb break="yes"/>Schwingungsbogen zu beobachten nöthig hat. Sind<lb break="yes"/>beide nicht gleich entfernt von der &#x017F;enkrechten Li-<lb break="no"/>nie durch die Drehungsach&#x017F;e der Nadel, &#x017F;o dreht<lb break="yes"/>man die Ebene; und zwar hat eine &#x017F;ehr kleine Dre-<lb break="no"/>hung &#x017F;chon einen bedeutenden Einfluß auf die Lage<lb break="yes"/>der Nadel, da die horizontale Kraft mit dem Sinus<lb break="yes"/>des Winkels wäch&#x017F;t, den die Ebene der Nadel mit<lb break="yes"/>der Ebene macht, die &#x017F;enkrecht auf dem magneti-<lb break="no"/>&#x017F;chen Meridiane &#x017F;teht. Hat man auf die&#x017F;e Art die<lb break="yes"/>letztere Ebene gefunden, &#x017F;o i&#x017F;t auch die magneti-<lb break="no"/>&#x017F;che Mittagsebene bekannt. Man dreht nämlich die<lb break="yes"/>Ebene der Nadel um 90° weiter, und be&#x017F;timmt<lb break="yes"/>dann die Neigung. Da aber die Reibung an den<lb break="yes"/>Ach&#x017F;en machen kann, daß die Nadel etwas höher<lb break="yes"/>oder tiefer &#x017F;tehen bleibt, als &#x017F;ie &#x017F;ollte, &#x017F;o muß man<lb break="yes"/>
+                        <pb n="261" facs="#f0005"/> nothwendig mehrere Beobachtungen machen, und<lb break="yes"/>aus ihnen das Mittel nehmen.</p>
+                    <lb break="yes"/>
+                    <p>Wären alle Inclinations-Nadeln fehlerlos, &#x017F;o<lb break="yes"/>hätte man nun die wahre Neigung. Das &#x017F;ind &#x017F;ie<lb break="yes"/>aber höch&#x017F;t &#x017F;elten, und deßhalb bedarf es noch eini-<lb break="no" />ger Correctionen, die man folgender Maßen findet.</p>
+                    <lb break="yes"/>
+                    <p>Der Schwerpunkt der Nadel kann außerhalb<lb break="yes"/>der Aufhängungsach&#x017F;e und außerhalb einer geraden<lb break="yes"/>Linie, welche mitten durch die Nadel geht, liegen;<lb break="yes"/>und dann i&#x017F;t die magneti&#x017F;che Mittagsebene nicht<lb break="yes"/>mehr &#x017F;enkrecht auf der Ebene, in welcher die Na-<lb break="no"/>del vertikal &#x017F;teht. Man findet die wahre magneti-<lb break="no" />&#x017F;che Mittagsebene, wenn man die Ebene der Nadel<lb break="yes" />&#x017F;o weit dreht, bis die Nadel wiederum &#x017F;enkrecht<lb break="yes"/>&#x017F;teht, und den Bogen zwi&#x017F;chen beiden Lagen hal-<lb break="no"/>birt. Auch die beobachtete Neigung bedarf einer<lb break="yes"/>Correction, da &#x017F;ie zu klein oder zu groß i&#x017F;t, je<lb break="yes"/>nachdem der Schwerpunkt der Nadel höher hinauf<lb break="yes"/>oder tiefer hinab als die Aufhängungsach&#x017F;e liegt.<lb break="yes"/>Verkehrt man die Pole der Nadel, &#x017F;o fällt der<lb break="yes"/>Schwerpunkt auf die entgegen ge&#x017F;etzte Seite der<lb break="yes"/>Ach&#x017F;e, wie zuvor, und das Mittel aus den Beob-<lb break="no"/>achtungen giebt die wahre Neigung. Es i&#x017F;t jedoch<lb break="yes"/>nicht nöthig, daß man die Pole der Nadel jedes<lb break="yes"/>Mahl umkehre, wenn man die Neigung be&#x017F;timmen<lb break="yes"/>will. I&#x017F;t die Correction an einem Orte gefunden,<lb break="yes"/>&#x017F;o läßt &#x017F;ie &#x017F;ich ohne merkbaren Fehler für Or-<lb break="no"/>te, die nicht zu weit von einander entfernt &#x017F;ind,<lb break="yes"/>als be&#x017F;tändig annehmen, voraus ge&#x017F;etzt, daß die<lb break="yes"/>Nadel &#x017F;elb&#x017F;t keine Veränderung erleide.</p>
+                    <lb break="yes"/>
+                    <pb n="262" facs="#f0006"/>
+                    <p>Herr <hi rendition="#g">Laplace</hi> hat noch eine andere eben &#x017F;o<lb break="yes"/>einfache Methode vorge&#x017F;chlagen, um die Neigung<lb break="yes"/>der Magnetnadel zu be&#x017F;timmen. Wenn <hi rendition="#i">M</hi> und <hi rendition="#i">P</hi>
+                        <lb break="yes"/>die Zahlen der Schwingungen bedeuten, welche<lb break="yes" />die Inclinations-Nadel in gleichen Zeiten, das eine<lb break="yes"/>Mahl in der magneti&#x017F;chen Mittagsebene, das zweite<lb break="yes"/>Mahl in der auf ihr &#x017F;enkrechten Ebene, macht, &#x017F;o<lb break="yes"/>wird die Inclination der Nadel <hi rendition="#i">I</hi> durch folgende<lb break="yes"/>Formel gegeben: <formula notation="MathML">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <mi>&#x017F;in.</mi>
+                                <mi>I</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <msup>
+                                        <mi>P</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <msup>
+                                        <mi>M</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mfrac>
+                            </math>
+                        </formula>
+                        <note place="foot" n="*)">Vergl. die Abhandlung der Herren <hi rendition="#g">von Hum-<lb break="no"/>boldt</hi> und <persName key="biot_jb">
+                                <hi rendition="#g">Biot</hi>
+                            </persName> in den <hi rendition="#i">Annalen,</hi> XX, 262, Anm.,<lb break="yes"/>(Jahrg. 1805, St. 7.) <persName key="gilbert_lw">
+                                <hi rendition="#et">
+                                    <hi rendition="#g">
+                                        <hi rendition="#i">Gilb.</hi>
+                                    </hi>
+                                </hi>
+                            </persName>
+                        </note>Da die Zeit der<lb break="yes"/>Schwingungen &#x017F;ich mit Schärfe me&#x017F;&#x017F;en läßt, &#x017F;o &#x017F;ind<lb break="yes"/>wir überzeugt, daß die&#x017F;e Methode zu einer &#x017F;ehr<lb break="yes" />großen Genauigkeit führen kann; wir mü&#x017F;&#x017F;en in-<lb break="no" />deß bedauern, daß un&#x017F;re Nadel, die nicht &#x017F;ehr<lb break="yes" />groß und nicht im höch&#x017F;ten Grade beweglich war,<lb break="yes"/>uns nicht erlaubte, eine hinlänglich große Zahl von<lb break="yes"/>Schwingungen zu zählen, um die&#x017F;e Methode mit<lb break="yes"/>Erfolg anzuwenden.</p>
+                    <lb break="yes"/>
+                    <p>Die Stärke der magneti&#x017F;chen Kräfte findet &#x017F;ich,<lb break="yes" />wenn man die Inclinations-Nadel in ihrer Mittags-<lb break="no"/>ebene &#x017F;chwingen läßt und die Zahl von Schwin-<lb break="no"/>gungen in der&#x017F;elben Zeit vergleicht: &#x017F;ie i&#x017F;t propor-<lb break="no"/>tional dem Quadrate die&#x017F;er Zahl. Es i&#x017F;t indeß mög-<lb break="no"/>lich, daß die Nadel in der Zwi&#x017F;chenzeit der Beob-<lb break="no"/>achtungen eine Veränderung erleidet, und in die-<lb break="no"/>&#x017F;em Falle würde in allen Beobachtungen ein Fehler<lb break="yes"/>mit eingehen, der bedeutend &#x017F;eyn könnte. Man<lb break="yes"/>
+                        <pb n="263" facs="#f0007"/> kann zwar die Pole der Nadel verkehren und &#x017F;ie bis<lb break="yes"/>zur Sättigung magneti&#x017F;iren, allein die Ver&#x017F;chieden-<lb break="no"/>heiten, welche &#x017F;ich in den Schwingungen zeigen,<lb break="yes"/>wenn man die Nadel zwei Mahl nach entgegen ge-<lb break="no"/>&#x017F;etzter Richtung magneti&#x017F;irt, &#x017F;ind häufig &#x017F;o groß,<lb break="yes"/>daß man es &#x017F;ich bei Beobachtungen, welche Ge-<lb break="no"/>nauigkeit erfordern, nicht erlauben darf, die&#x017F;e Ver-<lb break="no"/>änderungen zu machen.</p>
+                    <lb break="yes"/>
+                    <p>Die Methode, deren wir uns bedient haben,<lb break="yes"/>&#x017F;cheint keinem die&#x017F;er Bedenken ausge&#x017F;etzt zu &#x017F;eyn.<lb break="yes"/>Sie be&#x017F;teht darin, daß man die Schwingungen einer<lb break="yes"/>horizontal &#x017F;chwebenden Magnetnadel, welche an<lb break="yes"/>einem Faden aufgehängt i&#x017F;t, mißt, und aus ihnen<lb break="yes"/>und der bekannten Neigung an dem Orte auf die<lb break="yes"/>Zahl von Schwingungen &#x017F;chließt, welche &#x017F;ie in ih-<lb break="no"/>rer wahren Lage gemacht haben würde. Es &#x017F;ey <hi rendition="#i">F</hi>
+                        <lb break="yes"/>die ganze magneti&#x017F;che Kraft an einem be&#x017F;timmten<lb break="yes"/>Orte, <hi rendition="#i">I</hi> die Neigung, und <hi rendition="#i">N</hi> die Zahl von Schwin-<lb break="no" />gungen, welche in der horizontalen Ebene während<lb break="yes"/>der Zeit <hi rendition="#i">T</hi> an jenem Orte ge&#x017F;chehen, &#x017F;o i&#x017F;t die An-<lb break="no"/>zahl von Schwingungen, welche die Nadel in ihrer<lb break="yes"/>wahren Lage während der Zeiteinheit gemacht ha-<lb break="no"/>ben würde, <formula notation="MathML">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>N</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>T</mi>
+                                        <mo>&#8901;</mo>
+                                        <msqrt/>
+                                        <mi>co&#x017F;.</mi>
+                                        <mi>I</mi>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                        </formula>.</p>
+                    <lb break="yes"/>
+                    <p>Und will man die Inten&#x017F;ität der magneti&#x017F;chen Kräfte<lb break="yes"/>an die&#x017F;em Orte &#x017F;ogleich mit denen <hi rendition="#i">F&#x2032;</hi> an einem an-<lb break="no"/>dern Orte vergleichen, &#x017F;o hat man<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="MathML">
+                                <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                    <mfrac>
+                                        <mi>F</mi>
+                                        <mi mathvariant="italic">F'</mi>
+                                    </mfrac>
+                                    <mo>=</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <msup>
+                                                <mi>N</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                        </mrow>
+                                        <mrow>
+                                            <msup>
+                                                <mi>T</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                            <mo>&#8901;</mo>
+                                            <mi>co&#x017F;.</mi>
+                                            <mi>I</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>&#8901;</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <msup>
+                                                <mi mathvariant="italic">T'</mi>
+                                                <mi>2</mi>
+                                            </msup>
+                                            <mo>&#8901;</mo>
+                                            <mi>co&#x017F;.</mi>
+                                            <mi mathvariant="italic">I'</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <msup>
+                                                <mi>N'</mi>
+                                                <mn>2</mn>
+                                            </msup>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </formula>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;es &#x017F;ind die Mittel, die wir angewendet ha-<lb break="no" />ben, um die Neigung und die Stärke der magneti-<lb break="no"/>
+                        <pb n="264" facs="#f0008"/> &#x017F;chen Kräfte an ver&#x017F;chiedenen Orten zu be&#x017F;timmen,<lb break="yes"/>welche wir auf un&#x017F;rer Rei&#x017F;e berührt haben. Wir<lb break="yes"/>haben die Re&#x017F;ultate aller un&#x017F;rer Beobachtungen in<lb break="yes"/>eine <hi rendition="#i" >Tabelle</hi> zu&#x017F;ammen ge&#x017F;tellt, (die man am Ende<lb break="yes"/>die&#x017F;es Auf&#x017F;aztes findet). Sie enthält den Namen un-<lb break="no"/>&#x017F;erer Beobachtungsorte; deren Breite und Länge;<lb break="yes"/>eine Reduction der&#x017F;elben auf den magneti&#x017F;chen Ae-<lb break="no"/>quator, wie ihn nach den Beobachtungen der Her-<lb break="no"/>ren <hi rendition="#g">Lamanon</hi> und <hi rendition="#g">von <persName key="humboldt_av">Humboldt</persName>
+                        </hi> in Ame-<lb break="no"/>rika, Herr <persName key="biot_jb">
+                            <hi rendition="#g">Biot</hi>
+                        </persName> be&#x017F;timmt hat, damit man un&#x017F;re<lb break="yes" />Beobachtungen mit den <persName key="biot_jb" >Biot&#x2019;&#x017F;chen</persName> Formeln verglei-<lb break="no" />chen könne; <note place="foot" n="*)">
+                            <hi rendition="#i">Ueber die Variationen des Erdmagnetismus in ver-<lb break="no"/>&#x017F;chiedenen Breiten,</hi> von den Herren <hi rendition="#g">von Hum-<lb break="no"/>boldt</hi> und <persName key="biot_jb">
+                                <hi rendition="#g">Biot,</hi>
+                            </persName>
+                            <hi rendition="#i">Annalen,</hi> XX, 272 und 282.<lb break="yes"/>
+                            <persName key="gilbert_lw">
+                                <hi rendition="#et">
+                                    <hi rendition="#g">
+                                        <hi rendition="#i">Gilbert.</hi>
+                                    </hi>
+                                </hi>
+                            </persName>
+                        </note> ferner die Neigung, ein Mahl,<lb break="yes"/>wie wir &#x017F;ie an jedem Orte beobachtet haben, zwei-<lb break="no"/>tens, wie &#x017F;ie aus den <persName key="biot_jb">Biot&#x2019;&#x017F;chen</persName> Formeln folgt, und<lb break="yes"/>die Unter&#x017F;chiede beider; endlich die Zahl von Se-<lb break="no"/>cunden, welche an jedem Orte auf 60 Schwingun-<lb break="no"/>gen un&#x017F;rer horizontalen Magnetnadel hingingen,<lb break="yes"/>und die die&#x017F;en Beobachtungen ent&#x017F;prechende Stärke<lb break="yes"/>der ganzen magneti&#x017F;chen Kraft. Und zwar haben<lb break="yes"/>wir, um un&#x017F;re Re&#x017F;ultate auf eine &#x017F;chickliche Art<lb break="yes"/>mit einander zu vergleichen, zur Einheit der Ver-<lb break="no"/>gleichung die Stärke der magneti&#x017F;chen Kräfte unter<lb break="yes"/>dem <placeName key="magnetaequator" >magneti&#x017F;chen Aequator</placeName> genommen, wie &#x017F;ie aus<lb break="yes"/>den Beobachtungen folgt, welche einer von uns an-<lb break="no"/>ge&#x017F;tellt hat, und &#x017F;ie gleich 10000 ge&#x017F;etzt. Die&#x017F;e<lb break="yes"/>
+                        <pb n="265" facs="#f0009"/> frühern Beobachtungen lehrten, daß eine Inclina-<lb break="no"/>tions-Nadel, welche in Paris in einer be&#x017F;timmten<lb break="yes"/>Zeit 245 Schwingungen macht, unter dem <placeName key="magnetaequator">magneti-<lb break="no"/>&#x017F;chen Aequator</placeName> in der&#x017F;elben Zeit nur 211 Schwin-<lb break="no"/>gungen vollendet. Da wir nun die Neigung und<lb break="yes" />die Zahl horizontaler Schwingungen un&#x017F;rer Nadel<lb break="yes"/>in Paris kannten, &#x017F;o ließ &#x017F;ich daraus die Zahl der<lb break="yes" />Schwingungen berechnen, welche &#x017F;ie in Paris, und<lb break="yes" />dann auch die, welche &#x017F;ie unter dem <placeName key="magnetaequator" >magneti&#x017F;chen<lb break="yes"/>Aequator</placeName> gemacht haben würde, hätte &#x017F;ie &#x017F;ich an<lb break="yes"/>beiden Orten in der wahren Richtung der magneti-<lb break="no"/>&#x017F;chen Kräfte befunden. Denn, voraus ge&#x017F;etzt, die<lb break="yes" />Inten&#x017F;itäten, welche an ver&#x017F;chiedenen Orten durch<lb break="yes"/>zwei Nadeln gegeben werden, &#x017F;ind einander pro-<lb break="no"/>portional, &#x017F;o mü&#x017F;&#x017F;en die&#x017F;es auch die Zahlen ihrer<lb break="yes"/>Schwingungen an jenen Orten während der&#x017F;elben<lb break="yes"/>Zeit &#x017F;eyn.</p>
+                    <lb break="yes"/>
+                    <p>Wir haben bei un&#x017F;ern Beobachtungen jedes<lb break="yes"/>Mahl Sorge getragen, die Natur des Bodens und<lb break="yes"/>die Höhe des Orts über der Meeresfläche zu be-<lb break="no"/>&#x017F;timmen, und beide nehmen eigne Spalten in un&#x017F;rer<lb break="yes"/>Tabelle ein. Einige Gebirgsarten können ihrer Na-<lb break="no"/>tur nach gar keinen Einfluß auf die Magnetnadel<lb break="yes"/>haben; andere dagegen wirken manchmahl auf &#x017F;ie<lb break="yes"/>&#x017F;ehr &#x017F;tark, wie z. B. die Ba&#x017F;alte und die Serpentine,<lb break="yes"/>die nicht &#x017F;elten viel Ei&#x017F;en enthalten. Die Beobach-<lb break="no"/>tungen haben gelehrt, daß in weit größern Hö-<lb break="no"/>hen, als bis zu welchen man &#x017F;ich auf Bergen er-<lb break="no"/>heben kann, die magneti&#x017F;che Kraft nicht bemerk-<lb break="no"/>
+                        <pb n="266" facs="#f0010"/> bar &#x017F;chwächer als an der Oberfläche der Erde i&#x017F;t; <note place="foot" n="*)">Vergl. <hi rendition="#i" >Bericht</hi>
+                            <persName key="gaylussac_jl">
+                                <hi rendition="#g">Gay-Lu&#x017F;&#x017F;ac&#x2019;s</hi>
+                            </persName>
+                            <hi rendition="#i">von &#x017F;einer <choice>
+                                    <sic>aero&#x017F;ta-<lb break="no"/>&#x017F;ti&#x017F;chen</sic>
+                                    <corr type="editorial">aero&#x017F;ta-<lb break="no" />ti&#x017F;chen</corr>
+                                </choice> Rei&#x017F;e am</hi> 16<hi rendition="#i">ten Sept.</hi> 1804. <hi rendition="#i">Annalen,</hi> XX,<lb break="yes"/>19 f. <persName key="gilbert_lw">
+                                <hi rendition="#et">
+                                    <hi rendition="#g">
+                                        <hi rendition="#i">Gilb.</hi>
+                                    </hi>
+                                </hi>
+                            </persName>
+                        </note>
+                        <lb break="yes"/>und hiernach &#x017F;cheint es unnöthig zu &#x017F;eyn, auf die<lb break="yes"/>Höhe der Beobachtungsorte über dem Meere zu<lb break="yes"/>&#x017F;ehen. Sie dient wenig&#x017F;tens, eine Idee von dem Ein-<lb break="no"/>flu&#x017F;&#x017F;e zu geben, den die Erhöhungen auf die Nadel<lb break="yes"/>haben würden, wenn &#x017F;ie Ei&#x017F;en enthielten. Ueber<lb break="yes"/>dies hängt die phy&#x017F;ikali&#x017F;che Be&#x017F;chaffenheit eines<lb break="yes"/>Land&#x017F;trichs eben &#x017F;o &#x017F;ehr von der Erhöhung über<lb break="yes"/>der Meeresfläche, als von der geographi&#x017F;chen Lage<lb break="yes"/>ab, und es hat uns intere&#x017F;&#x017F;ant ge&#x017F;chienen, alles an-<lb break="no"/>zugeben, was dazu dienen kann, &#x017F;ie kennen zu<lb break="yes"/>lernen, da man bis jetzt die&#x017F;en Gegen&#x017F;tand allzu<lb break="yes"/>&#x017F;ehr vernachlä&#x017F;&#x017F;igt hat.</p>
+                    <lb break="yes"/>
+                    <p>Wir erhielten in <hi rendition="#g">Paris</hi> er&#x017F;t am Tage vor un-<lb break="no"/>&#x017F;erer Abrei&#x017F;e die In&#x017F;trumente zu un&#x017F;rer Dispo&#x017F;ition.<lb break="yes"/>Es war uns daher nicht möglich, dort die Neigung<lb break="yes"/>und die Stärke der magneti&#x017F;chen Kräfte zu be&#x017F;tim-<lb break="no"/>men. Un&#x017F;re Beobachtungen fingen &#x017F;ich an zu <hi rendition="#i" >Vil-<lb break="no"/>leneuve an der Yonne,</hi> und von da an haben wir &#x017F;ie<lb break="yes"/>auf un&#x017F;rer ganzen Rei&#x017F;e an allen Orten ange&#x017F;tellt,<lb break="yes"/>die einige Aufmerk&#x017F;amkeit verdienten. Ich muß<lb break="yes"/>jedoch bemerken, daß die Stärke der magneti&#x017F;chen<lb break="yes"/>Kräfte, wie ich &#x017F;ie ein Jahr &#x017F;päter nach meiner Rück-<lb break="no"/>kehr zu Paris gefunden habe, mit den übrigen Beob-<lb break="no"/>achtungen, was die Schwingungsnadel betrifft, voll-<lb break="no"/>kommen harmoniren muß. Denn wir &#x017F;ind zwei<lb break="yes"/>
+                        <pb n="267" facs="#f0011"/> Mahl in <hi rendition="#g">Mailand</hi> gewe&#x017F;en, das zweite Mahl 6<lb break="yes"/>Monat &#x017F;päter als das er&#x017F;te Mahl, und wir fanden,<lb break="yes"/>daß un&#x017F;re Nadel beide Mahl genau die&#x017F;elbe Zahl<lb break="yes"/>von Schwingungen in einer Secunde machte, &#x017F;o<lb break="yes"/>wohl innerhalb als außerhalb der Stadt.</p>
+                    <lb break="yes"/>
+                    <p>Da die Beobachtungen, welche wir zu <hi rendition="#g">Turin</hi>
+                        <lb break="yes"/>über die Stärke der magneti&#x017F;chen Kräfte gemacht<lb break="yes"/>hatten, durch den Einfluß einer ganz be&#x017F;ondern<lb break="yes"/>Ur&#x017F;ache gar &#x017F;ehr von dem Ge&#x017F;etze abzuweichen<lb break="yes"/>&#x017F;chien, welche un&#x017F;re übrigen Beobachtungen be-<lb break="no"/>folgten, und das auf eine entgegen ge&#x017F;etzte Art; &#x017F;o<lb break="yes"/>verglichen wir zu Mailand die Schwingungen einer<lb break="yes"/>neuen Nadel mit denen un&#x017F;rer Nadel, und über-<lb break="no"/>&#x017F;chickten dann jene Herrn <persName key="vassallieandi_ad">
+                            <hi rendition="#g">Va&#x017F;&#x017F;alli,</hi>
+                        </persName> der die Gü-<lb break="no"/>te gehabt hat, ihre Schwingungen an ver&#x017F;chiedenen<lb break="yes"/>Orten innerhalb und außerhalb Turins zu zählen.<lb break="yes"/>Nach die&#x017F;en Re&#x017F;ultaten haben wir die Zahl von<lb break="yes"/>Schwingungen berechnet, welche un&#x017F;re Nadel in<lb break="yes"/>Turin gemacht haben würde.</p>
+                    <lb break="yes"/>
+                    <p>Noch mü&#x017F;&#x017F;en wir, bevor wir weiter gehn, ein<lb break="yes" />Wort über den <hi rendition="#i">Grad der Genauigkeit</hi> &#x017F;agen, der<lb break="yes"/>&#x017F;ich bei die&#x017F;er Art von Ver&#x017F;uchen erlangen läßt, da-<lb break="no"/>mit man durch kleine Anomalieen, welche &#x017F;ich in<lb break="yes"/>un&#x017F;ern Re&#x017F;ultaten finden können, nicht irre wer-<lb break="no"/>de. Was zuer&#x017F;t die <hi rendition="#i">Inclinationen</hi> betrifft, &#x017F;o wür-<lb break="no"/>de es &#x017F;elb&#x017F;t bei vollkommener Wind&#x017F;tille &#x017F;chwer<lb break="yes"/>&#x017F;eyn, mit einem In&#x017F;trumente von 0<hi rendition="#sup">m</hi>,07 (2<formula notation="TeX">\frac{1}{2}</formula> Zoll)<lb break="yes" />Halbme&#x017F;&#x017F;er, &#x017F;ie mit einer Genauigkeit von mehr<lb break="yes"/>als etwa 6 Minuten zu be&#x017F;timmen. Auf einer Rei&#x017F;e,<lb break="yes"/>wo es häufig an Zeit und an Bequemlichkeit fehlt,<lb break="yes"/>
+                        <pb n="268" facs="#f0012"/> mü&#x017F;&#x017F;en die Gränzen der möglichen Fehler noch et-<lb break="no"/>was weiter aus einander liegen; doch glauben wir,<lb break="yes"/>daß die größten Fehler un&#x017F;rer Ver&#x017F;uche, be&#x017F;onders<lb break="yes"/>derer, die wir auf der Rei&#x017F;e von Rom nach Berlin<lb break="yes"/>ange&#x017F;tellt haben, nicht über 10 Minuten betragen.<lb break="yes"/>Wie weit der Einfluß örtlicher Be&#x017F;onderheiten gehen<lb break="yes"/>kann, darüber läßt &#x017F;ich nichts be&#x017F;timmen, ob&#x017F;chon<lb break="yes"/>er im Ganzen ziemlich klein &#x017F;eyn muß. Nicht immer<lb break="yes"/>haben wir unter freiem Himmel beobachten kön-<lb break="no"/>nen; doch haben wir in die&#x017F;em Falle &#x017F;tets die größ-<lb break="no"/>ten Zimmer ausgewählt, und alle die vermieden,<lb break="yes"/>wo wir irgend eine bedeutende Ei&#x017F;enma&#x017F;&#x017F;e wahr-<lb break="no"/>nahmen.</p>
+                    <lb break="yes"/>
+                    <p>Bei den <hi rendition="#i">horizontalen Schwingungen</hi> können<lb break="yes"/>wir für ihre vollkommene Genauigkeit ein&#x017F;tehen.<lb break="yes"/>Die Zeit nahmen wir jedes Mahl nach einem Chro-<lb break="no"/>nometer von <persName key="berthoud_l">
+                            <hi rendition="#g">Berthoud,</hi>
+                        </persName> und die weitere Beobach-<lb break="no"/>tung i&#x017F;t ohne die gering&#x017F;te Schwierigkeit. An dem-<lb break="no"/>&#x017F;elben Orte geben &#x017F;ie &#x017F;tets die größte Ueberein&#x017F;tim-<lb break="no" />mung. Scheint es, bei Vergleichung der horizon-<lb break="no"/>talen Schwingungen an ver&#x017F;chiedenen Orten, als<lb break="yes"/>beobachteten &#x017F;ie kein vollkommen regelmäßiges<lb break="yes"/>Ge&#x017F;etz, &#x017F;o muß man die Ur&#x017F;ache davon in Oertlich-<lb break="no" />keiten &#x017F;uchen.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;es betraf die Art, wie wir un&#x017F;re Beobach-<lb break="no" />tungen ange&#x017F;tellt, reducirt und mit einander ver-<lb break="no" />glichen haben. Jetzt wenden wir uns<lb break="yes"/>
+                        <hi rendition="#c">
+                            <hi rendition="#i">zu den Re&#x017F;ultaten der&#x017F;elben.</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Es war einer der Hauptzwecke un&#x017F;rer Rei&#x017F;e, uns<lb break="yes" />zu vergewi&#x017F;&#x017F;ern, ob die hohe Kette der <placeName key="alpen">Alpen</placeName> ei-<lb break="no"/>
+                        <pb n="269" facs="#f0013"/>nen Einfluß auf die Stärke und auf die Neigung der<lb break="yes"/>magneti&#x017F;chen Kräfte habe. Wir haben &#x017F;ie zwei<lb break="yes"/>Mahl, und das an zwei ver&#x017F;chiedenen Orten, über-<lb break="no"/>&#x017F;tiegen; das er&#x017F;te Mahl den <hi rendition="#g">Mont Cenis</hi> auf dem<lb break="yes"/>Wege von <hi rendition="#g">Lyon</hi> nach <hi rendition="#g">Turin,</hi> und das zweite<lb break="yes"/>Mahl den <hi rendition="#g">St. Gotthard</hi> auf dem Wege von <hi rendition="#g">Co-<lb break="no"/>mo</hi> nach <hi rendition="#g">
+                            <placeName key="altorf">Altorf</placeName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Man &#x017F;ieht in der Tafel un&#x017F;rer Beobachtungen,<lb break="yes" />daß die <hi rendition="#i">Neigung</hi> betrug: zu <hi rendition="#g" >Lyon</hi> 66° 14&#x2032;; zu<lb break="yes"/>
+                        <hi rendition="#g">Chambéry, St. Michel</hi> und <hi rendition="#g" >Modane,</hi> wel-<lb break="no"/>che mit Lyon fa&#x017F;t in einerlei Breite und in der Kette<lb break="yes"/>&#x017F;elb&#x017F;t liegen, 66° 12&#x2032;, 66° 12&#x2032;, 66° 6&#x2032;; zu <hi rendition="#g">Lans-<lb break="no"/>lebourg</hi> am Fuße des Mont Cenis 66° 9&#x2032;; auf dem<lb break="yes"/>
+                        <hi rendition="#g">Mont Cenis</hi> &#x017F;elb&#x017F;t, im Ho&#x017F;pitium, in einer Höhe<lb break="yes"/>von 2120 Mètres, 66° 22&#x2032;; endlich zu <hi rendition="#g">Turin</hi> an<lb break="yes"/>der andern Seite der <placeName key="alpen">Alpenkette</placeName> 66° 3&#x2032;. Turin<lb break="yes"/>liegt ein wenig &#x017F;üdlicher als Lyon, daher darf es<lb break="yes"/>uns nicht überra&#x017F;chen, wenn dort die Abweichung<lb break="yes"/>11&#x2032; kleiner i&#x017F;t. I&#x017F;t auf dem Mont Cenis die Neigung<lb break="yes"/>&#x017F;tärker, als &#x017F;ie es im Vergleiche mit den Beobach-<lb break="no"/>tungen an der in der Nähe, in der Kette der <placeName key="alpen">Alpen</placeName>
+                        <lb break="yes"/>liegenden Orte Chambéry, St. Michel, Mondane<lb break="yes" />und Lanslebourg &#x017F;eyn müßte; &#x017F;o &#x017F;cheint &#x017F;ie doch un-<lb break="no"/>gefähr &#x017F;o zu &#x017F;eyn, wie &#x017F;ie &#x017F;eyn &#x017F;ollte, wenn man<lb break="yes"/>auf die geographi&#x017F;che Lage allein &#x017F;ieht. Aus die-<lb break="no" />&#x017F;er geringen Vermehrung der Neigung an einem ein-<lb break="no" />zigen Beobachtungsorte läßt &#x017F;ich folglich nichts<lb break="yes" />&#x017F;chließen, und das um &#x017F;o weniger, da wir auf dem<lb break="yes"/>
+                        <hi rendition="#g">St. Gotthard</hi> in einer gleichen Höhe, im Gegen-<lb break="no"/>theile eine etwas geringere Neigung als zu <hi rendition="#g">
+                            <placeName key="airolo">Airolo</placeName>
+                        </hi>
+                        <lb break="yes"/>
+                        <pb n="270" facs="#f0014"/> am &#x017F;üdlichen und zu <hi rendition="#g" >Ur&#x017F;ern</hi> am nördlichen Ab-<lb break="no"/>hange des Gotthards gefunden haben.</p>
+                    <lb break="yes"/>
+                    <p>Auch den Einfluß der <placeName key="alpen">Alpen</placeName> auf die <hi rendition="#i">Stärke</hi> der<lb break="yes"/>magneti&#x017F;chen Kräfte finden wir im Allgemeinen &#x017F;ehr<lb break="yes"/>geringe, i&#x017F;t anders überhaupt ein &#x017F;olcher Einfluß<lb break="yes" />vorhanden. Zu <hi rendition="#g">Lyon</hi> i&#x017F;t die Stärke fa&#x017F;t die&#x017F;elbe<lb break="yes"/>als zu <hi rendition="#g" >Turin;</hi> auf dem <hi rendition="#g">Mont Cenis</hi> i&#x017F;t &#x017F;ie<lb break="yes"/>ein wenig größer, zu <hi rendition="#g" >Lanslebourg</hi> dagegen<lb break="yes"/>ein wenig kleiner als in jenen beiden Städten. Im<lb break="yes"/>Hospiz auf dem <hi rendition="#g">St. Gotthard</hi> fanden wir &#x017F;ie<lb break="yes"/>ungefähr um 0,005 größer als zu <hi rendition="#g">
+                            <placeName key="airolo">Airolo</placeName>
+                        </hi> und<lb break="yes"/>zu <hi rendition="#g">Ur&#x017F;ern,</hi> und 0,01 kleiner als zu <hi rendition="#g">
+                            <placeName key="altorf">Altorf</placeName>.</hi>
+                        <lb break="yes"/>Auch muß man etwas auf die Fehler der Beobach-<lb break="no"/>tung rechnen; denn ein Fehler von einigen Minu-<lb break="no"/>ten in der Neigung hat einen Irrthum von einigen<lb break="yes"/>Tau&#x017F;endteln in der Stärke der magneti&#x017F;chen Kräfte<lb break="yes"/>zur Folge. Es läßt &#x017F;ich ferner glauben, bevor nicht<lb break="yes"/>das Gegentheil bewie&#x017F;en &#x017F;eyn wird, daß in der Nei-<lb break="no"/>gung ähnliche Variationen als in der Abweichung<lb break="yes"/>zu ver&#x017F;chiedenen Stunden des Tages und der Nacht<lb break="yes"/>Statt finden. Aber &#x017F;elb&#x017F;t, wenn wir zugeben wol-<lb break="no"/>len, daß eine Ver&#x017F;chiedenheit Statt findet, welche<lb break="yes"/>von den <placeName key="alpen" >Alpen</placeName> herrührt, &#x017F;o geht &#x017F;ie doch nur auf<lb break="yes"/>ein Hunderttel, wenn man einige Orte, die mitten<lb break="yes"/>in der Kette liegen, mit andern weit davon ent-<lb break="no"/>fernten vergleicht, und für andere i&#x017F;t &#x017F;ie noch klei-<lb break="no"/>ner. Wir glauben folglich zu dem Schlu&#x017F;&#x017F;e berech-<lb break="no"/>tigt zu &#x017F;eyn, daß die Kette der <placeName key="alpen">Alpen</placeName>, wenig&#x017F;tens<lb break="yes"/>an den Orten, wo wir über &#x017F;ie gekommen &#x017F;ind, ei-<lb break="no"/>
+                        <pb n="271" facs="#f0015"/> nen nur wenig merkbaren Einfluß auf die Neigung<lb break="yes"/>und auf die Stärke der magneti&#x017F;chen Kräfte hat.</p>
+                    <lb break="yes"/>
+                    <p>Während un&#x017F;ers Aufenthalts auf dem <hi rendition="#g">Mont<lb break="yes"/>Cenis,</hi> wo wir uns mit andern Ver&#x017F;uchen be&#x017F;chäf-<lb break="no"/>tigten, wollten wir uns überzeugen, ob nicht die<lb break="yes"/>Stärke der magneti&#x017F;chen Kräfte auf eine merkbare<lb break="yes"/>Art variirt, während der ver&#x017F;chiedenen Stunden des<lb break="yes"/>Tages und der Nacht. Wir ließen zu dem Ende<lb break="yes"/>zu ver&#x017F;chiedenen Zeiten un&#x017F;re Nadel 250 Schwin-<lb break="no"/>gungen machen; nie fand &#x017F;ich indeß in der Zeit von<lb break="yes"/>1234&#x2033;, welche &#x017F;ie dazu brauchte, ein größerer<lb break="yes"/>Unter&#x017F;chied, als von einer einzigen Secunde mehr<lb break="yes"/>oder weniger. Wir haben noch ein Mahl zu <hi rendition="#g">Rom</hi>
+                        <lb break="yes"/>eine große Anzahl von Ver&#x017F;uchen der&#x017F;elben Art<lb break="yes"/>ange&#x017F;tellt, und erhielten ein ähnliches Re&#x017F;ultat.<lb break="yes"/>Es &#x017F;cheint uns hiernach evident zu &#x017F;eyn, daß die<lb break="yes"/>magneti&#x017F;che Kraft an Stärke nicht merkbar während<lb break="yes"/>des Tages oder der Nacht variirt. <note place="foot" n="*)">Unter der Voraus&#x017F;etzung, daß alle magneti&#x017F;che<lb break="yes"/>Er&#x017F;cheinungen gegen&#x017F;eitig von einander abhängen,<lb break="yes"/>ließe &#x017F;ich hieraus &#x017F;chließen, daß die Neigung<lb break="yes" />gleichfalls keinen wahrzunehmenden Variationen<lb break="yes" />unterworfen &#x017F;ey, da &#x017F;chon die der Abweichung<lb break="yes"/>&#x017F;ehr geringe &#x017F;ind. <hi rendition="#et">
+                                <hi rendition="#i">G.-L.</hi>
+                            </hi>
+                        </note> Wir bemer-<lb break="no"/>ken für die, welche &#x017F;ich mit die&#x017F;em Gegen&#x017F;tande<lb break="yes"/>be&#x017F;chäftigen wollen, daß man des langweiligen Zäh-<lb break="no"/>lens aller Schwingungen bei jeder Beobachtung<lb break="yes"/>überhoben &#x017F;eyn kann, wenn man eine &#x017F;ehr träge<lb break="yes"/>Nadel nimmt, die zu jeder Schwingung mehr Zeit<lb break="yes"/>bedarf, als die Variation nach aller Vermuthung<lb break="yes"/>
+                        <pb n="272" facs="#f0016"/> beträgt; man kann &#x017F;ich nämlich dann des Mittels<lb break="yes"/>der A&#x017F;tronomen bei Beobachtungen des Umlaufs der<lb break="yes"/>Sonnenflecke bedienen.</p>
+                    <lb break="yes"/>
+                    <p>Während un&#x017F;ers kurzen Aufenthalts in Neapel<lb break="yes"/>waren wir Zeuge des heftigen Erdbebens am 26&#x017F;ten<lb break="yes"/>Julius, und des Ausbruchs des Ve&#x017F;uvs am 12ten Aug.<lb break="yes"/>1805. Wir ver&#x017F;äumten die&#x017F;e Gelegenheit nicht, nach-<lb break="no" />zufor&#x017F;chen, welchen Einfluß die&#x017F;er Vulkan auf die<lb break="yes"/>Stärke und auf die Neigung der magneti&#x017F;chen Kräfte<lb break="yes"/>haben möchte. Man weiß, daß unter den Pro-<lb break="no"/>dukten der vulkani&#x017F;chen Ausbrüche manchmahl<lb break="yes"/>&#x017F;ehr viel Ei&#x017F;en vorkömmt, das nur wenig oxydirt<lb break="yes"/>i&#x017F;t und auf die Magnetnadel &#x017F;tark wirkt. Es &#x017F;chien<lb break="yes"/>daher, man dürfe von den Vulkanen einen großen<lb break="yes"/>Einfluß auf beide erwarten; wir werden aber &#x017F;ehen,<lb break="yes"/>daß die&#x017F;er Einfluß bei dem Ve&#x017F;uv nur &#x017F;ehr einge-<lb break="no"/>&#x017F;chränkt i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Die Neigung fanden wir nämlich zu <hi rendition="#g">Neapel,</hi>
+                        <lb break="yes"/>welches ungefähr 2 Stunden vom Vulkane entfernt<lb break="yes"/>liegt, 61° 35&#x2032;. Von Orten ab, die &#x017F;ehr viel nördli-<lb break="no"/>cher liegen, nehmen bis Neapel die Neigungen ziem-<lb break="no"/>lich regelmäßig ab. Zu <hi rendition="#g" >Portici,</hi> welches über<lb break="yes"/>dem ver&#x017F;chütteten Herculanum &#x017F;teht, und durch<lb break="yes"/>das mehrere Lava&#x017F;tröme gehn, fanden wir die Nei-<lb break="no"/>gung 60° 50&#x2032;; bei der Ein&#x017F;iedelei <hi rendition="#g">St. Salvator,</hi>
+                        <lb break="yes"/>ungefähr auf der halben Höhe des Ve&#x017F;uvs und ne-<lb break="no"/>ben neuen Lava&#x017F;trömen, 62° 15&#x2032;; und endlich im<lb break="yes"/>
+                        <hi rendition="#i">Krater des Ve&#x017F;uvs</hi> &#x017F;elb&#x017F;t auf Schlacken, 62° 0&#x2032;.<lb break="yes"/>Man &#x017F;ieht, daß zwar die&#x017F;e Neigungen alle ver-<lb break="no"/>&#x017F;chieden &#x017F;ind, daß ihr Unter&#x017F;chied aber &#x017F;o groß<lb break="yes"/>
+                        <fw type="catch" place="bottom">nicht</fw>
+                        <lb break="yes"/>
+                        <pb n="273" facs="#f0017"/> nicht i&#x017F;t, als man hätte erwarten &#x017F;ollen, und daß,<lb break="yes"/>wenn der Ve&#x017F;uv einen Einfluß auf die Neigung der<lb break="yes"/>Magnetnadel hat, die&#x017F;er Einfluß wenig&#x017F;tens &#x017F;ehr<lb break="yes"/>klein und &#x017F;ehr local i&#x017F;t. Bei der Ein&#x017F;iedelei zu St.<lb break="yes"/>Salvador war die Neigung um 40&#x2032; größer, zu Por-<lb break="no"/>tici um 35&#x2032; kleiner als zu Neapel.</p>
+                    <lb break="yes"/>
+                    <p>Die Stärke der magneti&#x017F;chen Kräfte &#x017F;cheint<lb break="yes" />merklicher und auf eine unregelmäßigere Art va-<lb break="no"/>riirt zu haben. Neapel liegt &#x017F;üdlicher als Rom, und<lb break="yes"/>doch fanden wir &#x017F;ie dort um <formula notation="TeX" >\frac{1}{100}</formula>tel größer. Zu Por-<lb break="no"/>tici i&#x017F;t &#x017F;ie noch um <formula notation="TeX" >\frac{1}{91}</formula>&#x017F;tel und in der Ein&#x017F;iedelei um<lb break="yes"/>
+                        <formula notation="TeX">\frac{1}{45}</formula>&#x017F;tel größer als zu Neapel. Im Krater des Ve&#x017F;uvs<lb break="yes"/>dagegen i&#x017F;t &#x017F;ie um <formula notation="TeX">\frac{1}{15}</formula>tel kleiner. Eine &#x017F;o große<lb break="yes"/>Unregelmäßigkeit, und ein &#x017F;o &#x017F;chnelles Abnehmen<lb break="yes"/>in der Stärke, vom Fuße des Ve&#x017F;uvs bis zur Spitze,<lb break="yes"/>bewei&#x017F;en, daß &#x017F;ich die&#x017F;er Vulkan für kein magneti-<lb break="no" />&#x017F;ches Centrum nehmen läßt; denn die Einwirkung<lb break="yes" />eines &#x017F;olchen müßte &#x017F;ich in die Ferne er&#x017F;trecken.<lb break="yes"/>Hier &#x017F;cheint im Gegentheile die Einwirkung &#x017F;ehr lo-<lb break="no"/>cal zu &#x017F;eyn, und lediglich von dem Einflu&#x017F;&#x017F;e einiger<lb break="yes"/>Lavama&#x017F;&#x017F;en abzuhängen, die an einigen Stellen et-<lb break="no"/>was ei&#x017F;enreicher als an andern &#x017F;ind. Als wir mit-<lb break="no" />ten im Krater auf vulkani&#x017F;chen Schlacken &#x017F;tan-<lb break="no" />den, konnte un&#x017F;re Nadel, welche die horizontalen<lb break="yes" />Schwingungen machte, &#x017F;ich nahe bei einer magne-<lb break="no" />ti&#x017F;chen Schlacke befinden, deren Pole eine entge-<lb break="no" />gen ge&#x017F;etzte Lage als die ihrigen hatten; daraus<lb break="yes" />würde &#x017F;ich die Verminderung in der Stärke erklä-<lb break="no" />ren, die un&#x017F;re Beobachtung gab. Doch welchen<lb break="yes"/>Grund man auch &#x017F;on&#x017F;t noch dafür annehmen will,<lb break="yes"/>
+                        <pb n="274" facs="#f0018"/> durch die glühenden Materien, welche der Ve&#x017F;uv<lb break="yes"/>in &#x017F;ich &#x017F;chließt, läßt &#x017F;ie &#x017F;ich nicht erklären. Denn<lb break="yes"/>ge&#x017F;etzt, es &#x017F;ey richtig, daß die Hitze die Kraft eines<lb break="yes"/>Magnets zer&#x017F;töre, &#x017F;o i&#x017F;t doch ein Vulkan ein blo-<lb break="no" />ßer Punkt auf der Erde, und die Einwirkung des<lb break="yes" />magneti&#x017F;chen Kerns der Erde würde auf die&#x017F;elbe<lb break="yes"/>Art in das Innere des Vulkans dringen, und &#x017F;ich<lb break="yes"/>über da&#x017F;&#x017F;elbe hinaus verbreiten, wie &#x017F;ie in den<lb break="yes"/>Raum, der &#x017F;ich über der Oberfläche der Erde befin-<lb break="no"/>det, eindringt, und &#x017F;ich durch den&#x017F;elben fortpflanzt.</p>
+                    <lb break="yes"/>
+                    <p>Wir wollen zuletzt noch einen allgemeinen Ue-<lb break="no"/>berblick un&#x017F;rer Beobachtungen von Berlin bis Nea-<lb break="no"/>pel nehmen.</p>
+                    <lb break="yes"/>
+                    <p>Die Spalte der folgenden Tabelle, welche die<lb break="yes"/>Zeit angiebt, die auf 60 horizontale Schwingun-<lb break="no"/>gen hinging, zeigt, daß die&#x017F;e Zeit zugleich mit<lb break="yes"/>der Breite abnimmt. Sie betrug in Berlin 316&#x2033;,5,<lb break="yes"/>in Paris 314&#x2033;, in Mailand 295&#x2033;,5, in Rom 281&#x2033;,8,<lb break="yes"/>und in Neapel &#x017F;elb&#x017F;t nur 279&#x2033;. Augen&#x017F;cheinlich<lb break="yes" />wäch&#x017F;t al&#x017F;o die horizontale Kraft von Berlin ab im-<lb break="no"/>mer mehr, wenn man &#x017F;ich dem magneti&#x017F;chen Ae-<lb break="no"/>quator nähert. Die&#x017F;es muß im Ganzen &#x017F;tets der<lb break="yes"/>Fall &#x017F;eyn; immer muß im Ganzen die Stärke der<lb break="yes"/>horizontalen magneti&#x017F;chen Kräfte in höhern Breiten<lb break="yes"/>kleiner &#x017F;eyn; doch ließe &#x017F;ich denken, daß vermö-<lb break="no"/>ge des uns noch unbekannten Ge&#x017F;etzes des Erd-Ma-<lb break="no"/>gnetismus, ein Maximum der horizontalen Kraft in<lb break="yes"/>irgend einer Breite Statt fände. Die Lage eines &#x017F;ol-<lb break="no"/>chen Punktes würde für die Auffindung jenes Ge-<lb break="no"/>&#x017F;etzes wichtig &#x017F;eyn. Un&#x017F;ern Beobachtungen zu Fol-<lb break="no"/>
+                        <pb n="275" facs="#f0019"/> ge kann er &#x017F;ich nur in kleinern Breiten, als in der<lb break="yes"/>von Neapel befinden.</p>
+                    <lb break="yes"/>
+                    <p>Berechnet man aus den horizontalen Schwingun-<lb break="no"/>gen die Schwingungen, welche die Nadel gemacht<lb break="yes"/>haben würde, hätte &#x017F;ie &#x017F;ich in der wahren Richtung<lb break="yes"/>der magneti&#x017F;chen Kräfte befunden, &#x017F;o findet man für<lb break="yes" />die ganze Stärke der magneti&#x017F;chen Kräfte ein ande-<lb break="no" />res Ge&#x017F;etz: &#x017F;ie nimmt ab, indem die Breite abnimmt.<lb break="yes"/>Wenn &#x017F;ie unter dem <placeName key="aequator" >Aequator</placeName> gleich 10000 i&#x017F;t, &#x017F;o<lb break="yes" />beträgt &#x017F;ie in Berlin 13703, in Paris 13482, in Lyon<lb break="yes" />13334, in Mailand 13364, in Rom 12642, und in<lb break="yes"/>Neapel 12745. Al&#x017F;o findet &#x017F;ich das von Hrn. <hi rendition="#g">von<lb break="yes"/>
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> auf &#x017F;einer Rei&#x017F;e zwi&#x017F;chen den Wende-<lb break="no"/>krei&#x017F;en entdeckte Ge&#x017F;etz, daß die Stärke der ma-<lb break="no"/>gneti&#x017F;chen Kräfte wäch&#x017F;t, wenn man &#x017F;ich von dem<lb break="yes"/>
+                        <placeName key="magnetaequator">magneti&#x017F;chen Aequator</placeName> nach den Polen zu ent-<lb break="no"/>fernt, <note place="foot" n="*)">
+                            <hi rendition="#i">Annalen,</hi> XX, 270 f. <persName key="gilbert_lw">
+                                <hi rendition="#et">
+                                    <hi rendition="#g">
+                                        <hi rendition="#i">Gilb.</hi>
+                                    </hi>
+                                </hi>
+                            </persName>
+                        </note> auch für Europa, in Frankreich, Italien<lb break="yes"/>und Deut&#x017F;chland be&#x017F;tätigt.</p>
+                    <lb break="yes"/>
+                    <p>Betrachten wir die Neigung der magneti&#x017F;chen<lb break="yes"/>Kräfte, &#x017F;o zeigt &#x017F;ich, daß &#x017F;ie zugleich mit den Brei-<lb break="no"/>ten auf eine ziemlich regelmäßige Art abnimmt.<lb break="yes"/>Wir haben &#x017F;ie gefunden in Berlin 69° 53&#x2032;, in Göt-<lb break="no"/>tingen 69° 29&#x2032;, (und eben da&#x017F;elb&#x017F;t Herr <persName key="mayer_jtv">
+                            <hi rendition="#g">Mayer</hi>
+                        </persName>
+                        <lb break="yes"/>69° 26&#x2032;,) in Paris 69° 12&#x2032;, in Lyon 66° 14&#x2032;, in Mai-<lb break="no"/>land 65° 40&#x2032;, in Rom 61° 57&#x2032;, und zu Neapel 61° 35&#x2032;.<lb break="yes"/>Die ihnen ent&#x017F;prechenden Neigungen, welche nach<lb break="yes"/>Herrn <persName key="biot_jb">
+                            <hi rendition="#g">Biot</hi>
+                        </persName> die Theorie giebt, &#x017F;ind alle viel zu<lb break="yes" />groß; die klein&#x017F;ten Unter&#x017F;chiede betragen volle 4°.<lb break="yes"/>
+                        <pb n="276" facs="#f0020"/> Nehmen wir an, daß die Lage des <placeName key="magnetaequator">magneti&#x017F;chen<lb break="yes" />Aequators</placeName> mit Genauigkeit be&#x017F;timmt i&#x017F;t, &#x017F;o würde<lb break="yes"/>hieraus folgen, daß in Europa die magneti&#x017F;chen Pa-<lb break="no"/>rallelkrei&#x017F;e bedeutend nach dem <placeName key="aequator">Aequator</placeName> zu gebo-<lb break="no" />gen &#x017F;ind, wovon der Grund in der Einwirkung ei-<lb break="no"/>nes be&#x017F;ondern magneti&#x017F;chen Centrums zu &#x017F;uchen<lb break="yes"/>&#x017F;eyn würde. Allein noch i&#x017F;t es zu früh, hierüber<lb break="yes"/>irgend etwas zu folgern, und wir mü&#x017F;&#x017F;en zuvor<lb break="yes"/>genaue Beobachtungen in größerer Menge haben,<lb break="yes"/>um auf &#x017F;ie als eine fe&#x017F;te Grundlage eine exacte<lb break="yes"/>Theorie zu gründen, welche &#x017F;ie alle umfaßt.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+            <pb n="276" facs="#f0021"/>
+            <div n="2">
+                <head>
+                    <hi rendition="#g">RESULTATE<lb break="yes"/>
+                        <hi rendition="#i">der Beobachtungen der Herren von</hi>
+                        <hi rendition="#k">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                        <hi rendition="#i">und</hi>
+                        <persName key="gaylussac_jl">
+                            <hi rendition="#k">Gay-Lussac</hi>
+                        </persName>
+                        <hi rendition="#i">über die Neigung und die Stärke der magneti&#x017F;chen Krafte, geordnet<lb break="yes"/>nach der Breite.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <table xml:id="t1-1" next="#t1-2">
+                    <row>
+                        <cell rows="4">Ort der Beobachtung.</cell>
+                        <cell rows="4">Breite.</cell>
+                        <cell rows="4">Länge.</cell>
+                        <cell cols="2">
+                            <hi rendition="#g">Magneti&#x017F;che</hi>
+                        </cell>
+                        <cell rows="4">Zeit für 60<lb break="yes"/>horizontale<lb break="yes" />Schwin-<lb break="no"/>gungen.</cell>
+                        <cell cols="4">
+                            <hi rendition="#g">Der magneti&#x017F;chen Kräfte</hi>
+                        </cell>
+                        <cell rows="4">Erhöhung<lb break="yes"/>über der<lb break="yes"/>Meeres-<lb break="no"/>fläche in<lb break="yes"/>Mètres.</cell>
+                        <cell rows="4">Natur des Bodens.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell>ö&#x017F;tliche Länge</cell>
+                        <cell rows="3">Stärke,<lb break="yes"/>die Stärke<lb break="yes"/>unter dem<lb break="yes"/>magn. Aeq.<lb break="yes"/>gl. 10000<lb break="yes"/>ge&#x017F;etzt.</cell>
+                        <cell cols="3">
+                            <hi rendition="#g">Neigung</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">gerechnet vom</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="magnetaequator">magneti&#x017F;chen<lb break="yes" />Aequator</placeName> an.</cell>
+                        <cell>Knoten, des<lb break="yes"/>magn. Aeq. in<lb break="yes"/>der Süd&#x017F;ee an.</cell>
+                        <cell rows="2">beob-<lb break="no"/>achtet.</cell>
+                        <cell rows="2">berechnet</cell>
+                        <cell rows="2">Unter&#x017F;chied.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032;</cell>
+                        <cell/>
+                        <cell>° &#x2032;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>Mètres</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Berlin .......</cell>
+                        <cell>52 31 30</cell>
+                        <cell>11 00 30</cell>
+                        <cell>60 03 17</cell>
+                        <cell>143 09 40</cell>
+                        <cell>316 05</cell>
+                        <cell>13703</cell>
+                        <cell>69 53</cell>
+                        <cell>73 55 54</cell>
+                        <cell>4 02 54</cell>
+                        <cell>26</cell>
+                        <cell>Sand den Kalk&#x017F;tein bedeckend</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Magdeburg ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>316 05</cell>
+                        <cell>...</cell>
+                        <cell>69 35</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>76</cell>
+                        <cell>Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Göttingen ......</cell>
+                        <cell>51 32 05</cell>
+                        <cell>07 33 00</cell>
+                        <cell>59 36 15</cell>
+                        <cell>138 34 40</cell>
+                        <cell>316 02</cell>
+                        <cell>13485</cell>
+                        <cell>69 29</cell>
+                        <cell>73 39 13</cell>
+                        <cell>4 10 13</cell>
+                        <cell>192</cell>
+                        <cell>Jüngerer Kalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Kleve .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>70 08</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Heidelberg ......</cell>
+                        <cell>49 24 30</cell>
+                        <cell>06 21 23</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>68 39</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>132</cell>
+                        <cell>Granit</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Heilbronn ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>68 01</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>162</cell>
+                        <cell>Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris .......</cell>
+                        <cell>48 50 14</cell>
+                        <cell>...</cell>
+                        <cell>57 57 00</cell>
+                        <cell>128 22 47</cell>
+                        <cell>314 00</cell>
+                        <cell>13482</cell>
+                        <cell>69 12</cell>
+                        <cell>72 62 00</cell>
+                        <cell>3 50 00</cell>
+                        <cell>40</cell>
+                        <cell>Gyps; neuerer Kalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tübingen ......</cell>
+                        <cell>48 31 04</cell>
+                        <cell>06 43 15</cell>
+                        <cell>56 46 36</cell>
+                        <cell>136 20 20</cell>
+                        <cell>305 02</cell>
+                        <cell>13569</cell>
+                        <cell>68 04</cell>
+                        <cell>71 52 26</cell>
+                        <cell>3 48 26</cell>
+                        <cell>376</cell>
+                        <cell>Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Wellendingen .....</cell>
+                        <cell>48 03 49</cell>
+                        <cell>06 22 15</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>67 57</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>440?</cell>
+                        <cell>Jurakalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Villeneuve an der Yonne ...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>306 04</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>95</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lucie-le-bois .....</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>68 10</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zürich .......</cell>
+                        <cell>47 22 00</cell>
+                        <cell>06 12 30</cell>
+                        <cell>55 43 11</cell>
+                        <cell>135 18 40</cell>
+                        <cell>304 01</cell>
+                        <cell>...</cell>
+                        <cell>67 27</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>426</cell>
+                        <cell>Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Luzern .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>301 04</cell>
+                        <cell>...</cell>
+                        <cell>67 10</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>450</cell>
+                        <cell>Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="altorf">Altorf</placeName> .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>301 05</cell>
+                        <cell>13228</cell>
+                        <cell>66 53</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>494</cell>
+                        <cell>Uebergangs-Kalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ur&#x017F;ern, am nördl. Abhange des Gotthards</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>302 02</cell>
+                        <cell>13069</cell>
+                        <cell>66 42</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Glimmer&#x017F;chiefer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ho&#x017F;piz auf dem St. Gottbard ..</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>299 04</cell>
+                        <cell>13138</cell>
+                        <cell>66 22</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Neuer Granit</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="airolo">Airolo</placeName> am &#x017F;üdl. Abhange des Gotthards</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>297 03</cell>
+                        <cell>13090</cell>
+                        <cell>65 55</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Glimmer&#x017F;chiefer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Como .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>298 08</cell>
+                        <cell>13104</cell>
+                        <cell>66 12</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>36</cell>
+                        <cell>Uebergangs-Kalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lyon .......</cell>
+                        <cell>45 45 52</cell>
+                        <cell>02 29 09</cell>
+                        <cell>54 37 42</cell>
+                        <cell>130 22 52</cell>
+                        <cell>296 04</cell>
+                        <cell>13334</cell>
+                        <cell>66 14</cell>
+                        <cell>70 27 26</cell>
+                        <cell>4 13 26</cell>
+                        <cell>186</cell>
+                        <cell>Gneuß</cell>
+                    </row>
+                    <lb break="yes"/>
+                </table>
+                <pb facs="#f0022"/>
+                <table xml:id="t1-2" prev="#t1-1">
+                    <row>
+                        <cell rows="4">Ort der Beobachtung.</cell>
+                        <cell rows="4">Breite.</cell>
+                        <cell rows="4">Länge.</cell>
+                        <cell cols="2">
+                            <hi rendition="#g">Magneti&#x017F;che</hi>
+                        </cell>
+                        <cell rows="4">Zeit für 60<lb break="yes"/>horizontale<lb break="yes" />Schwin-<lb break="no"/>gungen.</cell>
+                        <cell cols="4">
+                            <hi rendition="#g">Der magneti&#x017F;chen Kräfte</hi>
+                        </cell>
+                        <cell rows="4">Erhöhung<lb break="yes"/>über der<lb break="yes"/>Meeres-<lb break="no"/>fläche in<lb break="yes"/>Mètres.</cell>
+                        <cell rows="4">Natur des Bodens.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell>ö&#x017F;tliche Länge</cell>
+                        <cell rows="3">Stärke,<lb break="yes"/>die Stärke<lb break="yes"/>unter dem<lb break="yes"/>magn. Aeq.<lb break="yes"/>gl. 10000<lb break="yes"/>ge&#x017F;etzt.</cell>
+                        <cell cols="3">
+                            <hi rendition="#g">Neigung</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">gerechnet vom</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="magnetaequator">magneti&#x017F;chen<lb break="yes" />Aequator</placeName> an.</cell>
+                        <cell>Knoten des<lb break="yes"/>magn. Aeq. in<lb break="yes"/>der Süd&#x017F;ee an.</cell>
+                        <cell rows="2">beob-<lb break="no"/>achtet.</cell>
+                        <cell rows="2">berechnet.</cell>
+                        <cell rows="2">Unter&#x017F;chied.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032;</cell>
+                        <cell/>
+                        <cell>° &#x2032;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>Mètres.</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Saìnt-Michel .....</cell>
+                        <cell>45 23 17</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>294 05</cell>
+                        <cell>13488</cell>
+                        <cell>66 12</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Uebergangs-Thon&#x017F;chiefer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Modane ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>66 06</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Da&#x017F;&#x017F;elbe</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lans-le-Bourg am Fuße des Mont Cénis</cell>
+                        <cell>45 17 40</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>297 01</cell>
+                        <cell>13227</cell>
+                        <cell>66 09</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>&#x2014; &#x2014; &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Hospiz auf dem Mont Cénis ...</cell>
+                        <cell>45 14 10</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>296 00</cell>
+                        <cell>13441</cell>
+                        <cell>66 22</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>2120</cell>
+                        <cell>Glimmer&#x017F;chiefer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Turin .......</cell>
+                        <cell>45 04 14</cell>
+                        <cell>05 20 00</cell>
+                        <cell>53 35 00</cell>
+                        <cell>133 31 09</cell>
+                        <cell>295 00</cell>
+                        <cell>13364</cell>
+                        <cell>66 03</cell>
+                        <cell>69 45 09</cell>
+                        <cell>3 42 09</cell>
+                        <cell>...</cell>
+                        <cell>Serpentinberge mit Schiller&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mailand ......</cell>
+                        <cell>45 28 05</cell>
+                        <cell>06 51 15</cell>
+                        <cell>53 46 14</cell>
+                        <cell>134 34 46</cell>
+                        <cell>295 05</cell>
+                        <cell>13121</cell>
+                        <cell>65 40</cell>
+                        <cell>69 52 49</cell>
+                        <cell>4 12 49</cell>
+                        <cell>...</cell>
+                        <cell>Sand, der das Urgebirge bedeckt</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pavia .......</cell>
+                        <cell>45 10 47</cell>
+                        <cell>06 49 33</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>291 05</cell>
+                        <cell>...</cell>
+                        <cell>65 26</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>86</cell>
+                        <cell>Da&#x017F;&#x017F;elbe</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Piacenza ......</cell>
+                        <cell>45 02 44</cell>
+                        <cell>07 22 17</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>65 00</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Parma .......</cell>
+                        <cell>44 48 01</cell>
+                        <cell>08 00 19</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>65 07</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Modena ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>64 55</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bologna ......</cell>
+                        <cell>44 29 36</cell>
+                        <cell>09 00 15</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>290 03</cell>
+                        <cell>...</cell>
+                        <cell>64 48</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>124</cell>
+                        <cell>Jüngerer Sand&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Genua .......</cell>
+                        <cell>44 25 00</cell>
+                        <cell>06 38 00</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>295 00</cell>
+                        <cell>...</cell>
+                        <cell>64 45</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>16</cell>
+                        <cell>Uebergangs-Kalk&#x017F;tein, &#x017F;üdl. von d. Bocchetta</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rimini .......</cell>
+                        <cell>44 03 43</cell>
+                        <cell>10 12 36</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>63 48</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>6</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Faenza .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>63 54</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>20</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pezara .......</cell>
+                        <cell>43 55 01</cell>
+                        <cell>10 33 21</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>64 18</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>10</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Florenz ......</cell>
+                        <cell>43 46 30</cell>
+                        <cell>08 55 00</cell>
+                        <cell>51 49 28</cell>
+                        <cell>137 15 45</cell>
+                        <cell>290 00</cell>
+                        <cell>12782</cell>
+                        <cell>63 57</cell>
+                        <cell>68 42 22</cell>
+                        <cell>4 45 22</cell>
+                        <cell>74</cell>
+                        <cell>Grauwacke</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Spoleto ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>62 51</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>280</cell>
+                        <cell>Jurakalk&#x017F;tein</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nocera ......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>285 04</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Da&#x017F;&#x017F;elbe</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rom .......</cell>
+                        <cell>41 53 54</cell>
+                        <cell>10 07 30</cell>
+                        <cell>49 48 50</cell>
+                        <cell>138 03 49</cell>
+                        <cell>281 08</cell>
+                        <cell>12642</cell>
+                        <cell>61 57</cell>
+                        <cell>67 06 16</cell>
+                        <cell>5 09 16</cell>
+                        <cell>58</cell>
+                        <cell>Ba&#x017F;alt Laven, Tuff, Parperino m. Ei&#x017F;englimm.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tivoli .......</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>281 06</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>240</cell>
+                        <cell>Jurakalk&#x017F;tein, Tuff</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neapel ......</cell>
+                        <cell>40 50 15</cell>
+                        <cell>11 56 00</cell>
+                        <cell>48 30 53</cell>
+                        <cell>139 47 35</cell>
+                        <cell>279 00</cell>
+                        <cell>12745</cell>
+                        <cell>61 35</cell>
+                        <cell>66 08 54</cell>
+                        <cell>4 33 54</cell>
+                        <cell>16</cell>
+                        <cell>Tuff</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Portici am Fuße des Vefuvs ..</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>274 02</cell>
+                        <cell>12883</cell>
+                        <cell>60 50</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>20</cell>
+                        <cell>Laven</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ein&#x017F;iedelei St. Salvador auf d. Abh. d. Ve&#x017F;.</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>279 00</cell>
+                        <cell>13026</cell>
+                        <cell>62 15</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>Laven</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Krater des Ve&#x017F;uvs ....</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>290 03</cell>
+                        <cell>11933</cell>
+                        <cell>62 00</cell>
+                        <cell>...</cell>
+                        <cell>...</cell>
+                        <cell>1000</cell>
+                        <cell>Laven</cell>
+                    </row>
+                    <lb break="yes"/>
+                </table>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI> 

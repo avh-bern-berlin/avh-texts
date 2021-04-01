@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1014897157">
+                        <surname>Wernicke</surname>
+                        <forename>Norbert</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="205" facs="#f0001"/>
+            <lb break="yes"/>
+            <div n="1" xml:lang="deu">
+                <head>Über die bei verschiedenen Völkern üblichen Systeme<lb break="yes"/>von Zahlzeichen und über den Ursprung des Stellen-<lb break="no"/>werthes in den indischen Zahlen.<lb break="yes"/>(Vorgelesen in einer Klassen-Sitzung der Königl. Academie der Wissenschaften zu <placeName>Berlin</placeName>,<lb break="yes"/>den 2. März 1829.)<lb break="yes"/>(Von Sr. Excellenz dem Königl. wirkl. Geheimen-Rathe, Herrn Freiherrn<lb break="yes"/>
+                    <hi rendition="#i">Alex. von Humboldt.</hi>)<lb break="yes"/>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                </head>
+                <p>
+                    <hi rendition="#in">M</hi>an hat sich bisher, in den Untersuchungen über die numerischen Zei-<lb break="no"/>chen (den einzigen Hieroglyphen, welche sich bei den Völkern des Alten<lb break="yes"/>Continents neben der Tonzergliedernden Buchstaben-Schrift erhalten ha-<lb break="no"/>ben,) ernster mit der characteristischen Physiognomik der Zeichen und<lb break="yes"/>ihrer individuellen Gestaltung, als mit dem Geist der Methoden beschäf-<lb break="no" />tiget, durch welche es dem menschlichen Scharfsinne geglückt ist, Grö-<lb break="no"/>ßen mit mehr oder weniger Einfachheit auszudrücken. Der Gang der<lb break="yes"/>Untersuchung ist hier fast eben so einseitig, als in den Sprachen gewe-<lb break="no"/>sen, die lange Zeit hindurch mehr nach der Frequenz gewisser Töne<lb break="yes"/>und Endungen, nach der Gestalt der Wurzeln, als nach dem organischen<lb break="yes"/>Bau ihrer Grammatik verglichen worden sind. Ich bin seit mehreren<lb break="yes"/>Jahren anhaltend und mit besonderer Vorliebe bemüht gewesen, die bei<lb break="yes"/>verschiedenen Völkern alter und neuerer Zeit üblichen Systeme von Zahl-<lb break="no"/>zeichen unter einen allgemeinen Gesichtspunct zu stellen. Die Kennt-<lb break="no"/>niß gewisser Ziffern bei den <hi rendition="#g">Azteken</hi> (Mexikanern) und bei den <hi rendition="#g">Muys-<lb break="no"/>cas</hi>
+                    <note place="foot" n="*)">Ueber die Meinung, daß die Zahlzeichen der <hi rendition="#g">Muyscas</hi> (zugleich Hieroglyphen der Mond-<lb break="no"/>tage des zunehmenden Alters des Mondes) mit dem sich nach den verschiedenen Phasen allmälig<lb break="yes"/>entwickelnden Mondgesichte zusammenhängen, siehe <bibl>
+                            <hi rendition="#g">Humboldt,</hi>
+                            <hi rendition="#i">Vues des Cord. et Monumens<lb break="yes"/>des peuples indigènes de l&#x2019;Amérique T. II. pag.</hi> 237 &#x2014; 243. <hi rendition="#i">Pl. XLIV.</hi>
+                        </bibl>
+                    </note> (den Bewohnern der Hoch-Ebene von <hi rendition="#g">
+                        <placeName>Cundinamarca</placeName>
+                    </hi>), die ich<lb break="yes"/>von meiner Reise zurückgebracht habe; <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Thomas Young&#x2019;s</persName>
+                    </hi> Entdeckung<lb break="yes"/>der ägyptischen Zahlzeichen, die (wie wir jetzt wissen) nicht alle durch<lb break="yes"/>
+                    <hi rendition="#g">Nebeneinanderstellung</hi> (<hi rendition="#i" >juxtaposition</hi>) das Vielfache der Gruppen aus-<lb break="no"/>
+                    <pb n="206" facs="#f0002"/> drücken; die so wenig beachtete arabische <hi rendition="#g">Gobar</hi> (Staub)-Schrift, welche<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>
+                    </hi> in einem Pariser Manuscript auffand; die Verglei-<lb break="no"/>chung, welche ich zwischen dieser Bezeichnungsart und den mexicani-<lb break="no" />schen und chinesischen Zahlzeichen anstellte; die durch viele in <hi rendition="#g">
+                        <placeName>Indien</placeName>
+                    </hi>
+                    <lb break="yes"/>erschienene Sprachlehren erlangte Gewißheit, daß diesseits und jen-<lb break="no"/>seits des <hi rendition="#g">
+                        <placeName>Ganges</placeName>
+                    </hi> nicht bloß ganz verschieden gestaltete Ziffern und Buch-<lb break="no" />staben-Zahlen, sondern auch ganz verschiedene Zahlen-Systeme, mit<lb break="yes"/>und ohne Stellenwerth, herrschen; endlich eine ganz unbekannte indi-<lb break="no"/>sche Methode, die ein Scholion des griechischen Mönchs <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>
+                    </hi>
+                    <lb break="yes"/>darbietet, lieferten mir eine Reihe von Materialien, welche einiges Licht<lb break="yes"/>auf unser sogenanntes arabisches Zahlen-System werfen können. Ich<lb break="yes"/>habe zuerst im Jahre 1819 in einer Abhandlung, welche ich zu Paris<lb break="yes"/>in den Sitzungen der <hi rendition="#i">Académie des inscriptions et belles-lettres</hi> gelesen,<lb break="yes"/>zu zeigen gesucht, wie bei Völkern, welche die rohe Methode der Juxta-<lb break="no"/>position dadurch abkürzen, daß sie (nach Art der <hi rendition="#g">Mexikaner,</hi> in den<lb break="yes"/>Ligaturen von 4 mal 13 oder 52 Jahren, der <hi rendition="#g">Chinesen, Japanesen</hi> und<lb break="yes"/>
+                    <hi rendition="#g">Tamulen</hi>) Exponenten oder Indicatoren über die Zahlenzeichen schreiben,<lb break="yes"/>aus diesen Indicatoren, durch Suppression der senkrecht oder horizontal<lb break="yes"/>gereiheten Gruppenzeichen, das herrliche indische System des Stellenwer-<lb break="no" />thes entstehen konnte. Die Verbreitung dieses Systems mußte durch den<lb break="yes"/>uralten Gebrauch der Erinnerungs- und Zahlschnüre, welche theils lose, als<lb break="yes"/>
+                    <hi rendition="#i">quippos</hi> der <hi rendition="#g">Tataren, Chinesen, Aegypter, Peruaner</hi>
+                    <note place="foot" n="*)">Ueber die <hi rendition="#i">quippos</hi> zur Abzählung der Sünden im Beichtstuhle s. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Acosta</persName>
+                            </hi>
+                            <hi rendition="#i">Hist. natural<lb break="yes"/>de las Indias, lib.</hi> 6. <hi rendition="#i">cap.</hi> 8</bibl>. <bibl>
+                            <hi rendition="#i">El Inca</hi>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Garcilaso</persName>,</hi>
+                            <hi rendition="#i">lib.</hi> 6. <hi rendition="#i">cap.</hi> 9</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Fréret</persName>
+                            </hi>
+                            <hi rendition="#i">Mém. de l&#x2019;acad.<lb break="yes"/>T.</hi> 6. <hi rendition="#i">p.</hi> 609.</bibl>
+                    </note> und <hi rendition="#g">Mexi-<lb break="no"/>kaner,</hi> zu christlichen Paternostern oder Ritual-Rechenmaschinen <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Klaproth</persName>
+                            </hi> Asiat. Mag. Th. II. S. 78</bibl>.</note> um-<lb break="no" />geformt wurden, theils in feste Rahmen gespannt, den <hi rendition="#i" >Suanpan</hi> von ganz<lb break="yes"/>Inner-Asien, den <hi rendition="#i" >abacus</hi> der <hi rendition="#g">Römer</hi> und <hi rendition="#g" >Tusker</hi>
+                    <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Otfried Müller</persName>,</hi> Etrusker, T. II. p. 318.</bibl>
+                    </note> und die Werkzeuge<lb break="yes"/>der palpabeln Arithmetik <hi rendition="#g">slavischer</hi> Stämme <note place="foot" n="&#x2020;)">Im Russischen heißt der Rosenkranz <hi rendition="#i">tschotki;</hi> das Rechenbrett mit Schnüren (der <hi rendition="#i">Suan-<lb break="no" />pan</hi> der Tataren) <hi rendition="#i">tschotü.</hi>
+                    </note> bilden, ansehnlich begün-<lb break="no"/>stigt werden. Diese Schnur- und <choice><sic>Drathreihen</sic><corr type="editorial">Drahtreihen</corr></choice> des einfachsten asiatischen<lb break="yes"/>
+                    <hi rendition="#i">Suanpan</hi> repräsentiren höhere und niedere Gruppen eines Zahlen-Systems,<lb break="yes"/>gleichviel ob Zehner, Hunderte und Tausende, oder in 60theiliger Abthei-<lb break="no"/>lung: Grade, Minuten, Secunden. Der Geist der Methode ist derselbe.<lb break="yes"/>
+                    <pb n="207" facs="#f0003"/> Die Perlen auf jeder Schnurreihe sind wieder die Indicatoren der Grup-<lb break="no"/>pen, und eine leere Schnur deutet auf Null, also auf das leere <hi rendition="#i">Sunya</hi>
+                    <lb break="yes"/>(sanscr.) <hi rendition="#i">sifr</hi> oder eigentlich <hi rendition="#i">sifron sihron</hi> (arabisch, nach <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Meninski</persName>:</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">prorsus vacuum</hi>). Ich kann nicht historisch entwickeln, daß der Ur-<lb break="no"/>sprung des indischen Stellenwerthes von 9 Ziffern wirklich der sei, wel-<lb break="no"/>chen ich angegeben; aber ich glaube einen Weg gefunden zu haben, auf<lb break="yes"/>welchem allmälig die Entdeckung gemacht werden konnte. Auf die<lb break="yes"/>Einsicht solcher Möglichkeiten führt ja überhaupt nur die dunkle und<lb break="yes"/>eben darum so anziehende Geschichte der alterthümlichen Entwickelung<lb break="yes"/>geistiger Kräfte und Bildung des Menschen-Geschlechts.</p>
+                <lb break="yes"/>
+                <p>Von jener in der <hi rendition="#i">Académie des inscriptions</hi> gelesenen Abhandlung<lb break="yes"/>ist nur ein kurzer Auszug gedruckt worden, und an einem Orte <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Gay Lussac</persName>
+                            </hi>
+                            <hi rendition="#i">et</hi>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Arago</persName>,</hi>
+                            <hi rendition="#i">Annales de chimie et de physique T. XII. p.</hi> 93</bibl>. in der mo-<lb break="no"/>natlichen Anzeige der Verhandlungen des Instituts. <bibl>
+                            <hi rendition="#g">Humboldt</hi>
+                            <hi rendition="#i">Essais pol. sur la nouv. Espagne</hi>
+                            <lb break="yes"/>(2. <hi rendition="#i">édit.</hi>) <hi rendition="#i" >T. III. p.</hi> 122&#x2014;124</bibl>.</note>, wo<lb break="yes" />man ihn schwerlich sucht. Das Manuscript selbst ist in Herrn <hi rendition="#g">Cham-<lb break="no"/>pollion&#x2019;s</hi> Händen, der es mit weit wichtigeren, von ihm in <hi rendition="#g">Turin</hi> ent-<lb break="no" />deckten Thatsachen über die verschiedenen Methoden der ägyptischen<lb break="yes"/>Zahlzeichen, bekannt machen wollte. Ich habe seitdem von Zeit zu Zeit<lb break="yes"/>fortgefahren, meine erste Arbeit zu vervollständigen; aber da ich nicht<lb break="yes"/>hoffen darf, Muße genug zu finden, sie in ihrer ganzen Ausdehnung her-<lb break="no"/>auszugeben, so werde ich in dieser Abhandlung mehrere der Haupt-Re-<lb break="no"/>sultate zusammendrängen. Bei der neuen und glücklichen Richtung,<lb break="yes"/>welche das Studium der Sprachen und Monumente genommen, bei dem<lb break="yes"/>wachsenden Verkehr mit den süd- und ost-asiatischen Völkern, ist es<lb break="yes"/>wohl nicht ohne einigen Nutzen, Probleme zur Sprache zu bringen, welche<lb break="yes"/>mit dem Gange des menschlichen Geistes, und (durch die letzten Ver-<lb break="no"/>zweigungen der Zahlen-Hieroglyphik und einfacher graphischer Metho-<lb break="no"/>den) mit den glänzendsten Fortschritten der Mathematik in so enger Ver-<lb break="no" />bindung stehen. &#x201E;Der Gedanke, alle Quantitäten durch neun Zeichen<lb break="yes"/>auszudrücken, indem man ihnen zugleich einen absoluten und einen Stel-<lb break="no"/>lungswerth giebt, sagt einer der größten Geometer unserer Zeit und<lb break="yes"/>aller Zeiten, der Verfasser der <hi rendition="#i">Mécanique céleste</hi>
+                    <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Laplace</persName>
+                            </hi>
+                            <hi rendition="#i">Expos. du système du monde</hi> (5. <hi rendition="#i">édit.</hi>) <hi rendition="#i">p.</hi> 325</bibl>. Mit diesem Urtheile contra-<lb break="no"/>stirte sonderbar die Behauptung von <hi rendition="#g">Delambre</hi> in seinem Streite über das Verdienst der alt-<lb break="no"/>indischen Arithmetik, wie sie in <hi rendition="#g">
+                            <bibl>Bhascara Acharya&#x2019;s</bibl>
+                        </hi>
+                        <hi rendition="#i">Lilawati</hi> enthalten ist (<bibl>
+                            <hi rendition="#i">Hist. de l&#x2019;astro-<lb break="no"/>nomie ancienne T. I. p.</hi> 543.</bibl>). Sprache allein führt wohl nicht auf Suppression der Gruppenzeichen.</note>, ist so einfach, daß<lb break="yes"/>
+                    <pb n="208" facs="#f0004"/> man eben deshalb nicht genugsam erkennt, welche Bewunderung er ver-<lb break="no"/>dient. Aber eben diese Einfachheit und die Leichtigkeit, welche die<lb break="yes"/>Methode dem Calcul zusichert, erheben das arithmetische System der<lb break="yes"/>
+                    <hi rendition="#g">Inder</hi> zu dem Range der nützlichsten Entdeckungen. Wie schwer es<lb break="yes"/>war, eine solche Methode aufzufinden, kann man daraus abnehmen, daß<lb break="yes"/>sie dem Genie des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Archimedes</persName>
+                    </hi> und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Apollonius von Perga</persName>,</hi> zweier<lb break="yes"/>der größten Geister des Alterthums, entgangen war.&#x201D; Die nachfolgen-<lb break="no"/>den Bemerkungen werden zeigen, wie ich hoffe, daß die <hi rendition="#g">indische</hi> Me-<lb break="no"/>thode allmälig aus früheren, noch jetzt im <placeName>östlichen <hi rendition="#g" >Asien</hi>
+                    </placeName> üblichen, ent-<lb break="no"/>stehen konnte.</p>
+                <lb break="yes"/>
+                <p>So wie <hi rendition="#g">Sprache</hi> im Allgemeinen auf <hi rendition="#g" >Schrift,</hi> und Schrift, unter<lb break="yes"/>gewissen, von <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>
+                </hi> und meinem Bruder untersuchten Be-<lb break="no"/>dingungen, auf die Sprache zurückwirkt, so stehen auch die, bei verschie-<lb break="no"/>denen Völkern so verschiedenen Arten zu zählen mit der Zahlen-Hierogly-<lb break="no" />phik in genauer Wechselwirkung. Doch ist von dieser Wechselwirkung<lb break="yes"/>nicht immer strenge Consequenz zu erwarten. Die Zahlzeichen folgen nicht<lb break="yes"/>immer denselben Gruppirungen von Einheiten, als die Sprache; in der<lb break="yes"/>Sprache finden wir nicht immer dieselben Ruhepuncte (dieselben quinären<lb break="yes"/>Zwischenstufen) als in den Zahlzeichen. Fasset man aber, was Sprache<lb break="yes"/>(Zahlworte) und numerische Graphik in den entferntesten Erdstrichen<lb break="yes"/>darbieten, unter einen Blick zusammen, gleichsam als gemeinsames Pro-<lb break="no"/>duct der menschlichen Intelligenz, auf quantitative Verhältnisse angewandt,<lb break="yes"/>so <choice><sic>endeckt</sic><corr type="editorial">entdeckt</corr></choice> man in der <hi rendition="#g">Zahlenschrift</hi> des einen Völkerstammes die<lb break="yes"/>isolirt scheinenden <hi rendition="#g" >Sprachsonderbarkeiten</hi> eines anderen Stammes;<lb break="yes"/>ja, man muß hinzusetzen, daß eine gewisse Unbehülflichkeit im nume-<lb break="no" />rischen Gebiete der Sprache und Schrift einen sehr trüglichen Maaßstab<lb break="yes"/>für den sogenannten Cultur-Zustand der Menschheit giebt. Hier finden<lb break="yes"/>dieselben verwickelten, unter einander contrastirenden Verhältnisse Statt,<lb break="yes"/>als bei Völkern, die Buchstabenschrift oder bloß ideographische Zeichen,<lb break="yes"/>die den üppigsten Reichthum grammatischer Formen, aus dem Innern<lb break="yes"/>des Wurzellautes sich organisch-entwickelnde Flexionen, oder fast ganz<lb break="yes"/>Flexions- und Formenlose, wie im ersten Ausbruche erstarrte Sprachen<lb break="yes"/>(und alles dies in den verschiedensten Gradationen intellectueller Bildung<lb break="yes"/>und politischer Einrichtungen) besitzen. So fühlt sich das <hi rendition="#g">einige</hi> Men-<lb break="no" />schengeschlecht durch Wechselwirkung der inneren und äußeren Welt<lb break="yes"/>(eine Wechselwirkung, deren erste bestimmenden Gründe in dem mythi-<lb break="no"/>
+                    <pb n="209" facs="#f0005"/> schen Dunkel der Vorwelt verhüllt bleiben) in die verschiedensten Richtun-<lb break="no"/>gen gestoßen; meist unaufhaltsam, die alte Natur bewahrend, auch wenn<lb break="yes"/>große Welt-Erschütterungen die heterogensten Sprachstämme einander geo-<lb break="no"/>graphisch näher bringen; aber Ähnlichkeit der durch die fernsten Erdstriche<lb break="yes" />wiederhallenden Anklänge, in grammatischen Sprachformen und graphi-<lb break="no"/>schen Versuchen große Zahlen auszudrücken, bezeugen die Einheit des<lb break="yes"/>alten Geschlechts, das Übergewicht dessen, was aus der inneren Intelli-<lb break="no"/>genz, aus der gemeinsamen Organisation der Menschheit entspringt.</p>
+                <lb break="yes"/>
+                <p>Reisende, welche beim Zählen Steinchen und Samenkörner in Hau-<lb break="no"/>fen von 5 oder 20 zusammenlegen sahen, behaupten, daß viele Natio-<lb break="no" />nen nicht über 5 oder 20 zählen <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Pauw</persName>,</hi>
+                            <hi rendition="#i">Recherches philos. sur les Américains. T. II. p.</hi> 162</bibl>. (<bibl>
+                            <hi rendition="#g">Humboldt</hi>
+                            <hi rendition="#i">Monumens<lb break="yes"/>américains. T. II. p.</hi> 232&#x2014;237.</bibl>)</note>. Eben so könnte man behaupten,<lb break="yes"/>daß die Europäer nicht über 10 zählen, da siebenzehn aus 10 und 7 Ein-<lb break="no"/>heiten zusammengesetzt ist. Bei den cultivirtesten Völkern des Abendlan-<lb break="no"/>des, z. B. bei <hi rendition="#g">Griechen</hi> und <hi rendition="#g">Römern,</hi> deuten bekanntlich die Sprachen<lb break="yes"/>noch auf jene Haufen- und Gruppen-Bildung hin; daher die Ausdrücke<lb break="yes"/>
+                    <hi rendition="#i">psephizein, ponere calculum, calculum detrahere.</hi> Gruppen von Einheiten<lb break="yes"/>gewähren <hi rendition="#g">Ruhepuncte</hi> beim Zählen, und die verschiedensten Völker,<lb break="yes"/>in Folge der gleichen körperlichen Gliederung (4 fünffach getheilter Ex-<lb break="no"/>tremitäten) stehen still, entweder bei einer Hand, oder bei beiden, oder<lb break="yes"/>bei Händen und Füßen. Nach dieser Verschiedenheit der Ruhepunkte<lb break="yes" />bilden sich Gruppen von 5, 10 und 20. Merkwürdig ist es immer, daß<lb break="yes"/>im <placeName>Neuen Continent</placeName>, wie bei den africanischen <hi rendition="#g">Mandingas,</hi> den <hi rendition="#g" >Basken</hi>
+                    <lb break="yes"/>und den kymrischen (galischen) Stämmen des <placeName>Alten Continents</placeName>, meist<lb break="yes"/>Gruppen von 20 herrschen <note place="foot" n="**)">Beispiele solcher Zahlgruppen von 20 Einheiten liefern in America: die <hi rendition="#g">Muyscas,</hi> die<lb break="yes"/>
+                        <hi rendition="#g">Otomiten,</hi> die <hi rendition="#g">Azteken,</hi> die <hi rendition="#g">Cora-Indianer</hi> u. s. f.</note>. In der <hi rendition="#g">Chibcha-</hi>Sprache der <hi rendition="#g">Muyscas</hi>
+                    <lb break="yes"/>(eines Volkes, das, wie die <hi rendition="#g">Japanesen</hi> und <hi rendition="#g">Tibetaner,</hi> ein geistliches und<lb break="yes"/>ein weltliches Oberhaupt hatte und dessen <hi rendition="#g">Nordindische</hi> Intercalations-<lb break="maybe"/>Methode eines 37sten Monats ich bekannt gemacht habe <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#i">Monum. amér. T. II. p.</hi> 250&#x2014;253</bibl>. Die <hi rendition="#g">Muyscas</hi> hatten Steine mit Zahlzeichen bedeckt,<lb break="yes"/>die in ihrer Folge den Priestern (<hi rendition="#i">xeques</hi>) die Intercalation des rituellen Jahres erleichterten. Siehe<lb break="yes"/>die Abbildung eines solchen Intercalations-Steines <bibl>a. a. Orte, Tab. XLIV</bibl>.</note>) heißen 11,<lb break="yes"/>12, 13: <hi rendition="#g">Fuß eins</hi> (<hi rendition="#i">quihieha ata</hi>); <hi rendition="#g">Fuß zwei</hi> (<hi rendition="#i">quihieha bosa</hi>); <hi rendition="#g">Fuß<lb break="yes" />drei</hi> (<hi rendition="#i">quihieha mica</hi>) von <hi rendition="#i" >quihieha</hi> oder <hi rendition="#i">qhieha</hi> (<hi rendition="#g" >Fuß</hi>) und den 3 ersten<lb break="yes"/>Einheiten <hi rendition="#i" >ata, bozha</hi> oder <hi rendition="#i">bosa</hi> und <hi rendition="#i" >mica.</hi> Das Zahlwort <hi rendition="#g">Fuß</hi> bedeu-<lb break="no"/>
+                    <pb n="210" facs="#f0006"/> tet <hi rendition="#g">zehn,</hi> weil man den Fuß nennt, wenn schon beide Hände durchge-<lb break="no"/>zählt sind. <hi rendition="#g">Zwanzig</hi> heißt demnach in dem Sprachsysteme der <hi rendition="#g">Muys-<lb break="no"/>cas: Fuß-zehn</hi> oder ein <hi rendition="#g">Häuschen</hi> (<hi rendition="#i">gueta</hi>), vielleicht weil man mit<lb break="yes"/>Maiskörnern statt der Steinchen zählte, und ein Häufchen Mais an das<lb break="yes"/>Vorraths-Haus, die Mais-Scheuer, erinnert. Aus dem Worte <hi rendition="#g">Haus,</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">gueta,</hi> oder zwanzig (beide Füße und Hände) entstehen nun 30, 40, 80<lb break="yes"/>mit den Benennungen: <hi rendition="#g">zwanzig <hi rendition="#i">plus</hi>
+                    </hi> 10; <hi rendition="#g">zweimal zwanzig; vier-<lb break="no"/>mal zwanzig;</hi> ganz wie die celtischen, in die romanischen Sprachen<lb break="yes"/>übergegangenen Ausdrücke <hi rendition="#i">quatre-vingt,</hi> und <hi rendition="#i">quinze vingt,</hi> ja die selte-<lb break="no"/>nern <hi rendition="#i">six vingt, sept vingt, huit vingt. Deux-</hi> und <hi rendition="#i">trois vingt</hi> sind im<lb break="yes"/>Französischen nicht üblich, da doch im galischen oder celtischen Dialecte<lb break="yes"/>der westlichen <hi rendition="#g">
+                        <placeName>Bretagne</placeName>,</hi> die ich vor wenigen Jahren durchstrichen bin,<lb break="yes"/>von <hi rendition="#i">ugent</hi>
+                    <hi rendition="#g">zwanzig,</hi>
+                    <hi rendition="#i">daou-ugent</hi>
+                    <hi rendition="#g">zwei-zwanzig</hi> oder 40; <hi rendition="#i">tri-ugent</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">drei-zwanzig</hi> oder 60; ja <hi rendition="#i">deh ha nao ugent</hi> 190 oder <hi rendition="#g">zehn über<lb break="yes"/>neun</hi> Zwanziger heißen <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Davies</persName>
+                            </hi>
+                            <hi rendition="#i">Celtic Researches</hi> 1804. <hi rendition="#i" >p.</hi> 321</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Legodinec</persName>
+                            </hi>
+                            <hi rendition="#i">grammaire celto-bretonne</hi> 1807.<lb break="yes"/>
+                            <hi rendition="#i">p.</hi> 55</bibl>. Im celtischen oder kymrischen Dialecte von <hi rendition="#g">
+                            <placeName>Wales</placeName>
+                        </hi> heißt 5 <hi rendition="#i">pump;</hi> 10 <hi rendition="#i">deg;</hi> 20 <hi rendition="#i">ugain;</hi> 30<lb break="yes"/>
+                        <hi rendition="#i">deg ar ugein</hi> (10 und 20); 40 <hi rendition="#i" >deugain;</hi> 60 <hi rendition="#i">trigain.</hi> (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">William Owen</persName>
+                            </hi>
+                            <hi rendition="#i">Dict. of the Welsh lan-<lb break="no"/>guage. Vol. I. p.</hi> 134.</bibl>) Nach demselben Systeme der Zwanziger finden wir im <hi rendition="#g">Baskischen:</hi>
+                        <hi rendition="#i">bi</hi> 2;<lb break="yes"/>
+                        <hi rendition="#i">lau</hi> 4; <hi rendition="#i">amar</hi> 10; <hi rendition="#i">oguai</hi> 20; <hi rendition="#i">birroguai</hi> 40; <hi rendition="#i">lauroguai</hi> 80; <hi rendition="#i">berroguetamar</hi> 50, d. i. 40 und (<hi rendition="#i">ata</hi>) <hi rendition="#g">zehn.<lb break="yes"/>
+                            <persName ref="http://d-nb.info/gnd/">Larramendi</persName>,</hi>
+                        <bibl>
+                            <hi rendition="#i">Arte de la lengua bascongada</hi> 1729. <hi rendition="#i">p.</hi> 38</bibl>. (Die baskischen und kymrischen Zahl-<lb break="no"/>wörter sind in <bibl>meinen <hi rendition="#i" >Monum. II. p.</hi> 237</bibl>. nicht vermengt, aber um die Vergleichung zu erleich-<lb break="no"/>tern, zusammengestellt: nur steht durch einen Druckfehler <hi rendition="#i">les premiers</hi> statt <hi rendition="#i">les deux</hi> oder <hi rendition="#i">les uns<lb break="yes"/>et les autres.</hi>)</note>.</p>
+                <lb break="yes"/>
+                <p>Von der Analogie der <hi rendition="#g">Sprache</hi> und der <hi rendition="#g" >Zahlen-Hieroglyphik</hi>
+                    <lb break="yes"/>könnte ich noch andere merkwürdige Beispiele anführen, in der Juxta-<lb break="no"/>position, im Abziehen von Einheiten, indem man sie graphisch der Gruppe<lb break="yes"/>vorsetzt; in Mittelstufen von 5 zu 15, bei Völkern, die nach Gruppen<lb break="yes"/>von 10 oder 20 zählen. Bei sehr rohen amerikanischen Stämmen, z. B.<lb break="yes"/>bei den <hi rendition="#g" >Guaranis</hi> und <hi rendition="#g">Lulos,</hi> heißen 6, 7 und 8 <hi rendition="#g">vier mit zwei, vier<lb break="yes"/>mit drei, fünf mit drei.</hi> Bei den gebildeteren <hi rendition="#g">Muyscas</hi> finden wir<lb break="yes"/>
+                    <hi rendition="#g">zwanzig</hi> (oder Haus) <hi rendition="#g">mit zehn</hi> für 30, wie die <hi rendition="#g">Kymren</hi> in <hi rendition="#g">
+                        <placeName>Wales</placeName>
+                    </hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">deg</hi> (<hi rendition="#g">zehn</hi>) <hi rendition="#i">or ugain</hi> (<hi rendition="#g">mit zwanzig</hi>), die <hi rendition="#g" >Franzosen</hi> für 70 <hi rendition="#i">soixante<lb break="yes"/>et dix</hi> sagen. Summirungen durch Juxtaposition finden wir überall bei<lb break="yes"/>
+                    <hi rendition="#g">Etruskern, Römern, Mexikanern</hi> und <hi rendition="#g" >Aegyptern;</hi> subtractive oder<lb break="yes"/>mindernde Sprachformen <note place="foot" n="**)">Herr <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Bopp</persName>
+                        </hi> führt selbst 95 oder ein um 5 vermindertes Hundert an, <hi rendition="#i">pantschonam satam</hi>
+                        <lb break="yes"/>(aus <hi rendition="#i">pantscha</hi> 5 und <hi rendition="#i">una</hi>
+                        <hi rendition="#g">weniger</hi> zusammengezogen.)</note> im Sanscrit bei den <hi rendition="#g">Indern:</hi> in 19 oder <hi rendition="#i">una-</hi>
+                    <lb break="yes"/>
+                    <pb n="211" facs="#f0007"/>
+                    <hi rendition="#i">vinsati;</hi> 99 <hi rendition="#i">unusata;</hi> bei den <hi rendition="#g">Römern</hi> in <hi rendition="#i">undeviginti</hi> für 19 (<hi rendition="#i">unus de<lb break="yes"/>viginti</hi>)<choice>
+                        <sic>.</sic>
+                        <corr type="editorial">;</corr>
+                    </choice>
+                    <hi rendition="#i">undeoctoginta</hi> für 79; <hi rendition="#i">duo de quadraginta</hi> für 38; bei den <hi rendition="#g">Grie-<lb break="no" />chen</hi>
+                    <hi rendition="#i">eikosi deonta henos</hi> 19 und <hi rendition="#i">pentekonta düoin deontoin</hi> 48, d. i. feh-<lb break="no"/>lend 2 an 50. Dieselbe minorative Sprachform ist in die numerische<lb break="yes"/>Graphik übergegangen, wenn den Gruppenzeichen 5, 10, ja selbst ihren<lb break="yes" />Vielfachen, z. B. 50 oder 100, Charactere zur Linken gesetzt werden.<lb break="yes"/>(IV und I&#923;, XL und XT für 4 und 40 bei <hi rendition="#g" >Römern</hi> und <hi rendition="#g">Tuskern</hi>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Otfried Müller</persName>, Etrusker,</hi> II. p. 317&#x2014;320</bibl>.</note>,<lb break="yes" />obgleich bei den letzteren, nach <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Otfried Müller&#x2019;s</persName>
+                    </hi> neuen Untersuchun-<lb break="no"/>gen, die Ziffern wahrscheinlich ganz von dem Alphabet herstammen.)<lb break="yes"/>In seltenen römischen Inschriften, die <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Marini</persName>
+                    </hi> gesammlet <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#i">Iscrizioni della Villa di Albano, p.</hi> 193</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Hervas</persName>
+                            </hi>
+                            <hi rendition="#i">Aritmetica delle nazioni</hi> 1786. <hi rendition="#i">p.</hi> 11. 16</bibl>.</note>, finden sich<lb break="yes"/>sogar 4 Einheiten vor 10, z. B. IIIIX für 6. Wir werden bald sehen,<lb break="yes"/>daß es graphische Methoden bei indischen Völkerstämmen giebt, in wel-<lb break="no"/>chen der Stellenwerth, welcher bei Tuskern und Römern nur <hi rendition="#g">addi-<lb break="no"/>tiv</hi> oder <hi rendition="#g">subtractiv</hi> ist, nach Maaßgabe der Stellung oder Richtung<lb break="yes"/>der Zeichen, auf <hi rendition="#g">Addition</hi> und <hi rendition="#g">Multiplication</hi> hindeutet. In diesen<lb break="yes" />indischen Systemen ist (um mich römischer Ziffern zu bedienen) IIX<lb break="yes"/>
+                    <hi rendition="#g">zwanzig,</hi> und XII <hi rendition="#g">zwölf.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>In einer großen Zahl von Sprachen werden die Normal-Gruppen 5,<lb break="yes" />10, 20 <hi rendition="#g">eine Hand, zwei Hände,</hi> und <hi rendition="#g" >Hand und Fuß</hi> (bei den <hi rendition="#g">Gua-<lb break="no" />ranis</hi>
+                    <hi rendition="#i">mbombiabe</hi>) genannt. Hat man an beiden Extremitäten die Finger<lb break="yes"/>abgezählt, so erscheint der <hi rendition="#g">ganze Mensch</hi> als ein Symbol von 20; daher<lb break="yes"/>heißt in der Sprache der <hi rendition="#g">Yaruros</hi> (von denen ich volkreiche Missions-<lb break="maybe"/>Dörfer am <placeName>
+                        <hi rendition="#g">Apure-</hi>Flusse</placeName>, der sich in den <hi rendition="#g">
+                        <placeName>Orinoco</placeName>
+                    </hi> einmündet, gefunden)<lb break="yes"/>40 <hi rendition="#g">zwei Menschen,</hi>
+                    <hi rendition="#i">noeni pume</hi> von <hi rendition="#i">noeni</hi>
+                    <hi rendition="#g">zwei</hi> und <hi rendition="#i">pume</hi>
+                    <hi rendition="#g">Mensch.</hi>
+                    <lb break="yes"/>Im Persischen drückt bekanntlich <hi rendition="#i" >pentscha</hi> die <hi rendition="#g">Faust,</hi>
+                    <hi rendition="#i">pendj</hi>
+                    <hi rendition="#g">fünf</hi> aus,<lb break="yes"/>herstammend von dem Sanscrit-Worte <hi rendition="#i">pantscha.</hi> &#x201E;Letzteres hat (nach<lb break="yes"/>Hrn. <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Bopp&#x2019;s</persName>
+                    </hi> scharfsinniger Bemerkung) auf das römische <hi rendition="#i">quinque</hi> geführt,<lb break="yes"/>wie das indische <hi rendition="#i">tschatur</hi> auf <hi rendition="#i">quatuor.</hi> Der Plural von <hi rendition="#i" >tschatur</hi> (4.) ist<lb break="yes"/>
+                    <hi rendition="#i">tschatvaras</hi>, und steht dem Dorisch-Aeolischen <hi rendition="#i">tettares</hi> sehr nahe. Das<lb break="yes"/>indische <hi rendition="#i">ch</hi>, wie im Englischen ausgesprochen, also <hi rendition="#i">tsch</hi>, wird nemlich im<lb break="yes"/>Griechischen ein <hi rendition="#i">t</hi>; daher sich <hi rendition="#i">tschatvaras</hi> in <hi rendition="#i">tatvaras</hi>, wie <hi rendition="#i">pantscha</hi> (5)<lb break="yes"/>in <hi rendition="#i">panta</hi> (das griechische <hi rendition="#i">pente</hi>, äolisch <hi rendition="#i">pempe</hi>, davon <hi rendition="#i">pempazein</hi> an den<lb break="yes"/>Fingern oder Fünfen zählen) umwandelt. Im Lateinischen entspricht<lb break="yes"/>dagegen <hi rendition="#i">qu</hi> dem indischen <hi rendition="#i">ch</hi> oder vielmehr <hi rendition="#i">tsch;</hi> daher <hi rendition="#i">tschatur</hi> und<lb break="yes"/>
+                    <pb n="212" facs="#f0008"/>
+                    <hi rendition="#i">pantscha</hi> in <hi rendition="#i">quatuor</hi> und <hi rendition="#i">quinque</hi> übergehen. <hi rendition="#i">Pantscha</hi> selbst heißt im<lb break="yes"/>Sancrit nie Hand, sondern bedeutet einzig die Zahl 5. Doch ist <hi rendition="#i">pantscha-<lb break="no"/>sakha</hi> ein beschreibender Ausdruck für Hand, als eines <hi rendition="#g">fünfästigen</hi>
+                    <lb break="yes"/>Organs <note place="foot" n="*)">Ueber die Sanscrit-Zahlwörter in Vergleichung mit griechischen, lateinischen und gothi-<lb break="no" />schen Zahlwörtern hat mir Herr Prof. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Bopp</persName>,</hi> in <placeName>Paris</placeName>, im Jahre 1820, einen interessanten hand-<lb break="no"/>schriftlichen Aufsatz mitgetheilt, der ursprünglich bestimmt war, in <bibl>meinem Werke: <hi rendition="#g">Ueber die<lb break="yes"/>Zahlzeichen der Völker</hi>
+                            </bibl><choice><sic>&#x201D;</sic><corr type="editorial"></corr></choice> zu erscheinen.</note>.&#x201D;</p>
+                <lb break="yes"/>
+                <p>Wie nun in der Sprache und, mit besonderer Naivität, in den<lb break="yes" />südamerikanischen Sprachen, die Gruppen von 5, 10, 20, gleichsam als<lb break="yes"/>Ruhepuncte bezeichnet sind, so erkennen wir dieselben Gruppen in der<lb break="yes"/>Zahlen-Hieroglyphik. Die Römer und Tusker haben einfache Ziffern <note place="foot" n="**)">Für das tuskische Zeichen von 500 s. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Otfried Müller</persName>,</hi> Abth. IV. Fig. 2</bibl>.</note>
+                    <lb break="yes"/>für 5, 50, 500. Das <hi rendition="#g">quinare</hi> System hat sich neben dem <hi rendition="#g">denaren</hi>
+                    <lb break="yes"/>erhalten. Im <hi rendition="#g">Aztekischen (Mexikanischen)</hi> finden wir nicht<lb break="yes"/>bloß Gruppenzeichen für 20 eine <hi rendition="#g">Fahne;</hi> für das Quadrat von 20 oder<lb break="yes"/>400 eine <hi rendition="#g">Feder</hi> mit Goldkörnern gefüllt, die in einigen mexikanischen<lb break="yes"/>Provinzen als Münze dienten; für den Cubus von 20 oder 8000 ein <hi rendition="#g">Säck-<lb break="no" />chen,</hi>
+                    <hi rendition="#i">xiquipilli</hi>, mit 8000 Cacao-Bohnen, ebenfalls zum Tauschhandel<lb break="yes"/>bestimmt; sondern auch (da die <hi rendition="#g">Fahne</hi> in 4 Fächer getheilt und halb<lb break="yes"/>oder zu <formula notation="TeX">\frac{3}{4}</formula> colorirt ist) Zahlzeichen für halb-zwanzig oder 10, und für<lb break="yes"/>
+                    <formula notation="TeX">\frac{3}{4}</formula> zwanzig oder 15, gleichsam 2 Hände und 1 Fuß <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">Humboldt,</hi>
+                            <hi rendition="#i">Monum. amér. I. p.</hi> 309</bibl>.</note>. Den denkwür-<lb break="no"/>digsten von allen Beweisen der Wechselwirkung zwischen Graphik und<lb break="yes"/>Sprache bietet aber <hi rendition="#g">
+                        <placeName>Indien</placeName>
+                    </hi> dar. Der <hi rendition="#g">Stellenwerth</hi> der Einheiten ist<lb break="yes"/>im Sanscrit selbst in die Rede eingedrungen. Die Indier haben nemlich<lb break="yes"/>eine gewisse bildliche Methode, Zahlen durch die Namen von Gegen-<lb break="no"/>ständen auszudrücken, deren eine bestimmte Zahl bekannt ist. <hi rendition="#i">Surya</hi>
+                    <lb break="yes"/>(<hi rendition="#g">Sonne</hi>), zum Beispiel, bedeutet 12; denn in indischen Mythen werden<lb break="yes"/>12 Sonnen nach der Reihe der Monate angenommen. Die auch in den<lb break="yes"/>Mondhäusern oder <hi rendition="#i">naktschatras</hi> vorkommenden beiden <hi rendition="#i" >Aswinas</hi> (<hi rendition="#g">Castor</hi>
+                    <lb break="yes"/>und <hi rendition="#g">Pollux</hi>) drücken die Zahl 2 aus; <hi rendition="#i">Manu</hi> bedeutet 14, nach den <hi rendition="#g">Menus</hi>
+                    <lb break="yes"/>der Mythologie. Aus diesen vorläufigen Andeutungen erhellet nun, wie <hi rendition="#i">Su-<lb break="no"/>rymanu</hi>, die Zusammenstellung der Symbole von 12 und 14, die Jahrs-<lb break="no"/>zahl 1214 bezeichnet. Diese Thatsache verdanke ich der gütigen Mit-<lb break="no"/>theilung des gelehrten <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Colebrooke</persName>.</hi> Wahrscheinlich heißt, nach dem-<lb break="no"/>selben Prinzip, 1412 <hi rendition="#i">Manusurya</hi> und 214 <hi rendition="#i">Aswinimanu</hi>. Im Sanscrit ist<lb break="yes"/>
+                    <pb n="213" facs="#f0009"/> übrigens die Numeration so vollkommen, daß man sogar ein einfaches<lb break="yes"/>Wort, <hi rendition="#i">koti</hi>, für 10 Millionen findet, wie die peruanische <hi rendition="#i" >qquichua</hi>-Sprache,<lb break="yes"/>die nicht nach Gruppen von 20 zählt, ein einfaches Wort für eine Mil-<lb break="no"/>lion (<hi rendition="#i" >hunu</hi>) kennt.</p>
+                <lb break="yes"/>
+                <p>Rechnen wir nach Zehnern nur deshalb, wie <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Ovid</persName>
+                    </hi> sagt, <hi rendition="#i">quia tot<lb break="yes"/>digiti, per quos numerare solemus,</hi> so würde der Mensch bei 6fach ge-<lb break="no" />theilten Extremitäten zu einer duodenaren Scale, zu Gruppen von 12,<lb break="yes"/>gelangt sein <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Debrosses</persName>
+                            </hi> II. 158.</bibl>
+                    </note>, die den großen Vorzug von bruchlosen Theilungen durch<lb break="yes" />2, 3, 4 und 6 gewährt, und der sich die <hi rendition="#g">Chinesen</hi> seit den frühe-<lb break="no"/>sten Zeiten bei ihren Maaßen und Gewichten bedienen.</p>
+                <lb break="yes"/>
+                <p>Von diesen Betrachtungen über den Verkehr zwischen <hi rendition="#g" >Sprache</hi>
+                    <lb break="yes"/>und <hi rendition="#g">Schrift</hi>, zwischen <hi rendition="#g">Zahlwörtern</hi> und <hi rendition="#g">Zahlzeichen,</hi> gehen wir<lb break="yes"/>nun zu den letzteren selbst über. Ich wiederhole es, daß in diesem Aus-<lb break="no"/>zuge aus meinem größeren, unvollendeten Werke nicht sowohl von der<lb break="yes"/>
+                    <hi rendition="#g">heterogenen Gestaltung</hi> einzelner Elemente (Ziffern), als von dem<lb break="yes"/>
+                    <hi rendition="#g">Geist der Methoden</hi> die Rede sein wird, welche die verschiedenen<lb break="yes"/>Nationen im Ausdruck numerischer Größen angewandt haben. Der Ge-<lb break="no"/>stalt und Form der Ziffern erwähne ich hier nur, wenn sie auf die<lb break="yes"/>Schlüsse über Identität und Heterogeneität der Methoden einwirken. Die<lb break="yes"/>Art zu procediren, um die <hi rendition="#g">reinen</hi> und <hi rendition="#g">gemischten</hi>
+                    <hi rendition="#i">multipla</hi> der de-<lb break="no"/>naren Fundamental-Gruppen <hi rendition="#i">n</hi> (z. B. 4<hi rendition="#i" >n,</hi> 4<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>, oder 4<hi rendition="#i">n</hi> + 7, 4<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> + 6<hi rendition="#i">n,</hi>
+                    <lb break="yes"/>4<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> + 6<hi rendition="#i">n</hi> + 5) auszudrücken, ist nemlich sehr vielfältig, und geschieht bald<lb break="yes"/>durch <hi rendition="#g">Reihung</hi> (Stellenwerth, <hi rendition="#i" >position</hi>), wie bei verschiedenen indischen<lb break="yes"/>Völkern; bald durch rohe <hi rendition="#g">Juxtaposition,</hi> wie bei den <hi rendition="#g" >Tuskern, Rö-<lb break="no"/>mern, Mexicanern</hi> und <hi rendition="#g" >Aegyptern;</hi> bald durch <hi rendition="#g">nebenstehende<lb break="yes" />Coefficienten,</hi> wie bei den Tamulsprechenden Bewohnern der südlichen,<lb break="yes"/>
+                    <placeName>indischen Halbinsel</placeName>; bald durch gewisse, über den Gruppenzeichen stehende<lb break="yes"/>
+                    <hi rendition="#g">Exponenten</hi> oder Indicatoren, wie bei den <hi rendition="#g">Chinesen, Japanesen</hi> und<lb break="yes"/>den Myriaden der <hi rendition="#g">Griechen;</hi> bald in der inversen Methode, durch eine<lb break="yes"/>
+                    <hi rendition="#g">Zahl</hi> von <hi rendition="#g">Nullen</hi> oder <hi rendition="#g">Puncten,</hi> welche neun Ziffern <hi rendition="#g" >oben</hi> angehängt<lb break="yes"/>werden, um den relativen oder Stellenwerth jeder Ziffer zu bezeichnen,<lb break="yes"/>gleichsam Gruppenzeichen, welche über die Einheiten gesetzt werden,<lb break="yes"/>wie in der arabischen Gobarschrift und in einem, vom Mönch <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophy-<lb break="no"/>tos</persName>
+                    </hi> erläuterten indischen Zahlen-Systeme. Die eben genannten 5 Metho-<lb break="no"/>
+                    <pb n="214" facs="#f0010"/> den sind von der <hi rendition="#g">Gestaltung der Ziffern</hi> ganz unabhängig, und um<lb break="yes"/>diese Unabhängigkeit noch besser zu bewähren, habe ich es mir in die-<lb break="no"/>ser Abhandlung zum Gesetz gemacht, keine anderen Zeichen, als die ge-<lb break="no" />wöhnlichsten arithmetischen und algebraischen zu gebrauchen. Die Auf-<lb break="no"/>merksamkeit wird auf diese Weise mehr auf das Wesentliche, auf den<lb break="yes"/>Geist der Methode, gerichtet. Ich habe schon bei einem anderen, sehr<lb break="yes"/>heterogenen Gegenstande, in Beziehung der regelmäßigen Aufeinander-<lb break="maybe"/>Lagerung, oft periodischen Reihung der Gebirgsarten (in dem Anhange<lb break="yes"/>zu dem <bibl>
+                        <hi rendition="#i">Essai géognostique sur le Gisement des Roches</hi>)
+                    </bibl>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#i">Ed. de</hi> 1823, <hi rendition="#i">p.</hi> 364&#x2014;375</bibl>.</note> zu zeigen ge-<lb break="no"/>sucht, wie durch <hi rendition="#g">pasigraphische Notationen</hi> die Verallgemeinerung<lb break="yes"/>der Begriffe gewinnen kann. Man unterdrückt die, ihrer Natur nach<lb break="yes"/>allerdings sehr richtigen Nebenbetrachtungen individueller Form und Mi-<lb break="no"/>schung, um eine Erscheinung, die man vorzugsweise verfolgen will, in<lb break="yes"/>ein desto reineres Licht zu setzen; ein Vortheil, der die frostige Nüch-<lb break="no"/>ternheit solcher Abstractionen einigermaßen rechtfertigen kann.</p>
+                <lb break="yes"/>
+                <p>Man ist gewohnt, in den graphischen Methoden der Völker zu un-<lb break="no" />terscheiden: Zeichen, welche von der <hi rendition="#g">Buchstabenschrift unabhän-<lb break="no"/>gig</hi> sind, und <hi rendition="#g" >Buchstaben,</hi> welche durch eine bestimmte Reihung, durch<lb break="yes" />gewisse beigefügte Striche und Puncte oder (in Beziehung auf die Sprache)<lb break="yes"/>durch Initialen der Zahlwörter <note place="foot" n="**)">Die arabischen Diwani-Ziffern, aus bloßen Monogrammen oder Abbreviationen von Zahl-<lb break="no"/>wörtern zusammengesetzt, geben das verwickelteste Beispiel solcher <hi rendition="#g">Initial-Schrift.</hi> Ob die<lb break="yes"/>uskischen und römischen <hi rendition="#i">C</hi>
+                        <hi rendition="#g">und</hi>
+                        <hi rendition="#i">M</hi> der tuskischen und römischen Sprache entlehnte Initialen sind,<lb break="yes"/>ist zweifelhafter, als man gewöhnlich glaubt. (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Leslie</persName>
+                            </hi>
+                            <hi rendition="#i">Philos. of Arith. p.</hi> 7&#x2014;9. 211</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Debros-<lb break="no" />ses</persName>
+                            </hi>
+                            <hi rendition="#i">T. I. p.</hi> 436</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Hervas</persName>
+                            </hi>
+                            <hi rendition="#i">p.</hi> 32. 35</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Otfr. Müller</persName>,</hi> Etrusker, p. 304. 318</bibl>.) Das griechische<lb break="yes" />rechtwinklige Kreuz, ganz dem chinesischen Zeichen von 10 ähnlich, bedeutet auf den ältesten In-<lb break="no"/>schriften <hi rendition="#g" >tausend</hi> (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Boeckh</persName>,</hi>
+                            <hi rendition="#i">Corp. inscript. graec. vol. I. p.</hi> 23.</bibl>) und ist nichts anderes, als<lb break="yes"/>die uralte Form des <hi rendition="#i">Chi</hi> (<bibl>
+                            <hi rendition="#i">Nouveau traité de Diplom. par deux Religieux de St. Maur. Vol. I.<lb break="yes"/>p.</hi> 678</bibl>.)</note> den numerischen Werth angeben.<lb break="yes"/>Es ist bekanntlich keinem Zweifel unterwofen, daß die hellenischen,<lb break="yes"/>die semitischen oder aramäischen Stämme (unter letzteren die <hi rendition="#g">Araber</hi>
+                    <lb break="yes"/>selbst, bis in das 5te Jahrhundert <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>,</hi>
+                            <hi rendition="#i">Gramm. arabe,</hi> 1810. <hi rendition="#i">T. I. p.</hi> 74. <hi rendition="#i">note</hi> 6</bibl>.</note> nach der Hegira, ehe sie durch<lb break="yes"/>die <hi rendition="#g">Perser</hi> die Ziffern erhielten) in der Epoche ihrer gereiften Cultur,<lb break="yes" />dieselben Zeichen als Buchstaben und Ziffern benutzten. Auf der anderen<lb break="yes"/>Seite sehen wir im neuen Continent wenigstens zwei Völker, die <hi rendition="#g">Azte-<lb break="no"/>ken</hi> und <hi rendition="#g" >Muyscas,</hi> welche <hi rendition="#g">Zahlzeichen und keine Buchstaben-</hi>
+                    <lb break="no"/>
+                    <pb n="215" facs="#f0011"/>
+                    <hi rendition="#g">schrift</hi> hatten. Bei den <hi rendition="#g" >Aegyptern</hi> scheinen die am meisten ge-<lb break="no"/>brauchten numerischen Hieroglyphen für Einheiten, Zehner, Hunderte<lb break="yes"/>und Tausende auch nicht mit den phonetischen Hieroglyphen zusammen-<lb break="no" />zuhängen. Ganz unabhängig vom Alphabet ist auch die altpersische<lb break="yes"/>
+                    <hi rendition="#g">Pehlwi-</hi>Zahlenschrift in den ersten 9 Einheiten, wie bei den <hi rendition="#g">Tus-<lb break="no"/>kern</hi> und den ältesten <hi rendition="#g">Griechen</hi> und den <hi rendition="#g">Römern. <persName ref="http://d-nb.info/gnd/">Anquetil</persName>
+                    </hi>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#i">Mém. de l&#x2019;Acad. des belles lettres T.</hi> 31. <hi rendition="#i">p.</hi> 357</bibl>.</note>
+                    <lb break="yes"/>bemerkt schon, daß das <hi rendition="#g">Zend-</hi>Alphabet, welches mit seinen 48 Ele-<lb break="no"/>menten die Zahlbezeichnung hätte erleichtern können, nicht als Ziffern<lb break="yes"/>gebraucht werde, und daß in den Zendbüchern die Zahlen immer zu-<lb break="no"/>gleich in Pehlwi-Ziffern und in Zendwörtern ausgedrückt sind. Sollte<lb break="yes"/>sich ein solcher Mangel von Zend-Zahlen durch künftige Untersuchun-<lb break="no"/>gen bestätigen, so würde derselbe, bei der innigen Verwandtschaft der<lb break="yes" />Zendsprache mit dem Sanscrit, zu der Meinung führen, das Zend-Volk<lb break="yes"/>habe sich von den Indern getrennt, als diese noch nicht den <hi rendition="#g">Stellenwerth<lb break="yes"/>der Ziffern</hi> kannten. Ueber 9 hinaus sind im <hi rendition="#i">Pehlwi</hi> die Gruppen-<lb break="maybe" />Zeichen 10, 100 und 1000 aus Buchstaben zusammengesetzt. <hi rendition="#i" >Dal</hi> ist 10;<lb break="yes"/>
+                    <hi rendition="#i">re</hi> mit <hi rendition="#i">za</hi> verschlungen 100; <hi rendition="#i">re</hi> mit <hi rendition="#i">ghain</hi> verschlungen 1000. Wenn<lb break="yes"/>man von der ganzen Masse der Zahlzeichen des Menschengeschlechts das<lb break="yes"/>Wenige betrachtet, was wir bisher kennen gelernt, so findet man, daß<lb break="yes"/>die Eintheilung in <hi rendition="#g">Buchstabenzahlen</hi> und eigentlich sogenannte <hi rendition="#g">Zif-<lb break="no"/>fern</hi> eben so unsicher und unfruchtbar ist, als die von ächten Sprach-<lb break="no"/>kennern längst aufgegebene Eintheilung in ein- und mehrsylbige Spra-<lb break="no"/>chen. Wer kann mit Sicherheit entscheiden, ob die <hi rendition="#g">Tamul-</hi>Ziffern in<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName>Süd-Indien</placeName>,</hi> die keinen Stellenwerth kennen, und, bis auf die Ziffer 2,<lb break="yes"/>ganz von den in den <hi rendition="#g" >Sanscrit-</hi>Handschriften gebräuchlichen abweichen,<lb break="yes"/>nicht von der alphabetischen <hi rendition="#g">Tamuls</hi>chrift selbst abzuleiten sind, da man<lb break="yes"/>in derselben zwar nicht das Gruppenzeichen für 100, aber wohl das Grup-<lb break="no"/>penzeichen 10 (im Buchstaben <hi rendition="#i">ya</hi>), und die 2 (im Buchstaben <hi rendition="#i">u</hi>) zu er-<lb break="no"/>kennen glaubt? Die <hi rendition="#g">Telugu-</hi>Ziffern <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Campbell</persName>,</hi>
+                            <hi rendition="#i">Grammar of the Teloogoo-Language (Madras)</hi> 1816. <hi rendition="#i">p.</hi> 4. 208</bibl>. <hi rendition="#i" >Teloogoo</hi>
+                        <lb break="yes"/>ist die fälschlich genannte Gentoo-Sprache, von den Eingebornen <hi rendition="#i">Trilinga</hi> oder <hi rendition="#i" >Telenga</hi> genannt.<lb break="yes"/>Man vergleiche die Ziffertafel von <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Campbell</persName>
+                        </hi> mit anderen Varietäten indischer Ziffern in <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Wahl&#x2019;s</persName>
+                            </hi>
+                            <lb break="yes"/>allgem. Geschichte der morgenländ. Sprachen 1784. Tab. I</bibl>.</note> mit Stellenwerth, ebenfalls im<lb break="yes" />südlichen Theile der <placeName>indischen Halbinsel</placeName> gebräuchlich, weichen in 1, 8 und<lb break="yes"/>9 sonderbar von allen uns bekannten indischen Ziffern ab, da sie hingegen<lb break="yes"/>
+                    <pb n="216" facs="#f0012"/> in 2, 3, 4 und 6 mit denselben übereinstimmen. Das Bedürfniß, Zahlen<lb break="yes"/>graphisch zu bezeichnen, ist wohl am frühesten gefühlt worden, und nu-<lb break="no"/>merische Zeichen gehören zu den ältesten aller Schriftzeichen. Die<lb break="yes"/>Werkzeuge der <hi rendition="#g" >palpablen</hi> Arithmetik, wie sie Herr <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Leslie</persName>
+                    </hi> in seinem<lb break="yes"/>geistreichen Werke: <bibl>
+                        <hi rendition="#i">the Philosophy of <choice>
+                                <sic>Artihmetic</sic>
+                                <corr type="editorial">Arithmetic</corr>
+                            </choice>
+                        </hi> (1817)</bibl> der <hi rendition="#g">figurati-<lb break="no"/>ven</hi> oder <hi rendition="#g">graphischen</hi> entgegensetzt, sind beide menschlichen Hände,<lb break="yes"/>Häufchen von Steinen (<hi rendition="#i">calculi, psephoi</hi>), Samenkörner, lose Schnüre<lb break="yes"/>mit Knoten (Rechenschnüre, tatarische und peruanische <hi rendition="#i">quippos</hi>), einge-<lb break="no"/>rahmte <hi rendition="#g">Suanpan</hi> und <hi rendition="#g">Abacus-</hi>Tafeln, die slavische Rechenmaschine<lb break="yes"/>mit aufgezogenen Kugeln oder Samenkörnern. Alle diese Werkzeuge lie-<lb break="no"/>ferten dem Auge die ersten <hi rendition="#g" >graphischen</hi> Bezeichnungen von Gruppen<lb break="yes"/>verschiedener Abstufung. Eine Hand oder eine Schnur mit Knoten oder<lb break="yes" />verschiebbaren Kugeln bezeichnet die Einheiten bis 5 oder 10 oder 20.<lb break="yes"/>Wie oft durch Schließung der einzelnen Finger eine Hand durchgezählt<lb break="yes"/>ist, (<hi rendition="#i">pempazesthai</hi>) giebt die andere Hand an, auf der dann jeder Finger,<lb break="yes"/>d. i. jede Einheit, eine Gruppe von Fünf ausdrückt. Eben so verhalten<lb break="yes"/>sich zwei lose Knotenschnüre gegen einander, und zu Gruppen 2ter, 3ter<lb break="yes" />und 4ter Ordnung übergehend, stehen in demselben auf- und absteigenden<lb break="yes"/>Gruppen-Verhältniß die aufgespannten, mit Kugeln bezogenen Rechen-<lb break="no"/>schnüre, der alt-asiatische <hi rendition="#g" >Suanpan,</hi> der zu den abendländischen Völ-<lb break="no"/>kern als <hi rendition="#i">abax</hi> oder <hi rendition="#i">tabula logistica</hi> früh (vielleicht durch <hi rendition="#g">Aegypter</hi>
+                    <lb break="yes"/>zur Zeit des Pythagore&#x00EF;schen Bundes) übergegangen ist. Die <hi rendition="#g">
+                        <hi rendition="#i">Koua&#x2019;s</hi>,</hi>
+                    <lb break="yes"/>welche älter als die jetzige chinesische Schrift sind, ja die notenartigen,<lb break="yes"/>knotigen, oft gebrochenen Parallellinien der Zauberbücher (<hi rendition="#i">raml</hi>) von <hi rendition="#g">
+                        <placeName>In-<lb break="no"/>ner-Asien</placeName>
+                    </hi> und <hi rendition="#g">
+                        <placeName>Mexiko</placeName>
+                    </hi> scheinen nur graphische Projectionen von diesen<lb break="yes"/>Rechen- und Denkschnüren <note place="foot" n="*)">Im <placeName>Orient</placeName> wird <hi rendition="#i">raml</hi> die negromantische <hi rendition="#g">Kunst des Sandes</hi> genannt. Ganze oder ge-<lb break="no"/>brochene Linien und Puncte, welche die Elemente vorstellen, leiten den Weissager. (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Richard-<lb break="no" />son</persName>
+                            </hi>
+                            <hi rendition="#i">and</hi>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Wilkins</persName>
+                            </hi>
+                            <hi rendition="#i">Diction. Persian and Arabic.</hi> 1806. <hi rendition="#i">T. I. p.</hi> 482.</bibl>) Als ein solcher orienta-<lb break="no"/>lischer <hi rendition="#g">Raml</hi> ist das merkwürdige, ächt mexikanische, wie mit Musik-Noten bedeckte Manuscript,<lb break="yes"/>das zu <hi rendition="#g">
+                            <placeName>Dresden</placeName>
+                        </hi> aufbewahrt wird, und welches ich in <bibl>meinen <hi rendition="#i" >Monum. améric. pl.</hi> 44</bibl>. abgebildet,<lb break="yes"/>von einem gelehrten Perser, der mich in <placeName>Paris</placeName> besuchte, auf den ersten Blick erkannt worden.<lb break="yes"/>Ganz ähnliche, ächt amerikanische <hi rendition="#g">Koua</hi> und notenförmige Linear-Zeichnungen habe ich seitdem<lb break="yes"/>in mehreren aztekischen hieroglyphischen Handschriften und in den Sculpturen des <hi rendition="#g">
+                            <placeName>Palenque</placeName>,</hi> im<lb break="yes"/>Staat von <hi rendition="#g">
+                            <placeName>Guatimala</placeName>
+                        </hi> entdeckt. Im alten Styl der chinesischen Zahlenschriften ist das Gruppen-<lb break="no"/>zeichen für 10, eine Perle auf einer Schnur, offenbar (projectionsartig) vom <hi rendition="#i">quippu</hi> hergenommen.</note>. Im asiatischen <hi rendition="#g">Suanpan</hi> oder im <hi rendition="#g">Abacus,</hi>
+                    <lb break="yes"/>dessen die <hi rendition="#g">Römer</hi> sich bei ihren unbehülflichen Zahlzeichen weit mehr<lb break="yes"/>bedienten, als die in der Zahlen-Graphik glücklicher fortgeschrittenen<lb break="yes"/>
+                    <pb n="217" facs="#f0013"/>
+                    <hi rendition="#g">Griechen</hi>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Nicomachus</persName>
+                            </hi> in <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Ast</persName>,</hi>
+                            <hi rendition="#i">Theologumena arithm.</hi> 1817</bibl>. <hi rendition="#i">p.</hi> 96. In dem Finanz-Wesen des<lb break="yes" />Mittelalters wurde der Rechentisch (<hi rendition="#i">abax</hi>) zum <hi rendition="#i">exchequer.</hi>
+                    </note>, erhielten sich, neben den <hi rendition="#g">denaren</hi> Reihen, die in geome-<lb break="no"/>trischer Progression auf- und absteigen, auch <hi rendition="#g">quinare</hi> Reihen. Zur Seite<lb break="yes"/>jeder Zahlenschnur der Gruppen oder Ordnungen <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> stand eine klei-<lb break="no"/>nere Schnur, welche je fünf Kugeln der größeren durch eine einzige<lb break="yes"/>bezeichnete. Mittelst dieser Einrichtung ward die Zahl der Einheiten so<lb break="yes" />vermindert, daß die Hauptschnur nur 4, die Nebenschnüre nur 1 Kugel<lb break="yes"/>bedurfte <note place="foot" n="**)">So im Römischen <hi rendition="#i">abacus;</hi> im Chinesischen gebrauchte man 5 und 2 Kugeln. Die nicht<lb break="yes"/>zählenden Kugeln wurden dann zur Seite geschoben.</note>. Die Chinesen scheinen, von den frühesten Zeiten an, will-<lb break="no"/>kürlich irgend eine der aufeinander folgenden parallelen Schnüre, als die<lb break="yes"/>
+                    <hi rendition="#g">Schnur der Einheiten</hi> betrachtet zu haben, so daß sie, auf- und<lb break="yes"/>abwärts, Decimalbrüche und ganze Zahlen und Potenzen von 10 erhiel-<lb break="no"/>ten. Wie spät <note place="foot" n="***)">Ueber die ersten Versuche der Decimal-Bezeichnung von <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Michael Stifelius</persName>
+                        </hi> aus <hi rendition="#g">
+                            <placeName>Es-<lb break="no"/>lingen</placeName>, <persName ref="http://d-nb.info/gnd/">Stevinus</persName>
+                        </hi> aus <hi rendition="#g">
+                            <placeName>Brügge</placeName>
+                        </hi> und <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Bombelli</persName>
+                        </hi> aus <hi rendition="#g">
+                            <placeName>Bologna</placeName>
+                        </hi> s. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Leslie</persName>
+                            </hi>
+                            <hi rendition="#i">Phil. of Arithm.<lb break="yes"/>p.</hi> 134.</bibl>
+                    </note> (im Anfange des 16ten Jahrhunderts?) ist in die<lb break="yes" />Abendländer die Kenntniß der Decimal-Brüche gekommen, zu welcher<lb break="yes"/>die palpable Arithmetik im Orient längst geführt hatte! Bei den <hi rendition="#g">Grie-<lb break="no"/>chen</hi> war, jenseit der Einheit, die aufsteigende Scale nur im Sexage-<lb break="no"/>simal-System, bei Graden, Minuten und Secunden bekannt; aber da<lb break="yes"/>man nicht <hi rendition="#i">n</hi>&#x2014;1, das heißt, 59 Zeichen hatte, ward der Stellenwerth<lb break="yes"/>nur in zweigliedrigen Schichten beobachtet.</p>
+                <lb break="yes"/>
+                <p>Wenden wir unsern Blick auf den Ursprung der Zahlen, so finden<lb break="yes" />wir, daß in aufgehäuften Steinchen, oder auf den mit Kugeln bedeckten<lb break="yes"/>Schnüren der Rechenbretter, Zahlen mit großer Regelmäßigkeit transi-<lb break="no"/>torisch geschrieben und gelesen wurden. Die Eindrücke, welche diese<lb break="yes"/>Operationen hinterließen, haben überall auf die früheste Zahlen-Gra-<lb break="no"/>phik eingewirkt. In den historischen, rituellen und negromantischen<lb break="yes"/>Hieroglyphen der <hi rendition="#g">Mexikaner,</hi> die ich bekannt gemacht, werden die<lb break="yes"/>Einheiten bis 19 (das erste einfache Gruppenzeichen ist 20) als große<lb break="yes"/>runde farbige Körner nebeneinander gestellt, und, was sehr merkwürdig<lb break="yes"/>ist, die Rechnung geht von der Rechten zur Linken, wie die semitische<lb break="yes"/>Schrift. Man bemerkt diese Folge deutlichst bei 12, 15, 17, wo die erste<lb break="yes"/>Reihe 10 enthält, und die zweite nicht ganz ausgefüllt ist. In den älte-<lb break="no"/>
+                    <pb n="218" facs="#f0014"/> sten Hellenischen Monumenten, in den Tuskischen Sepulcral-Inschriften,<lb break="yes"/>bei den <hi rendition="#g" >Römern</hi> und <hi rendition="#g">Aegyptern</hi> (wie <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Thomas Young</persName>, <persName ref="http://d-nb.info/gnd/">Jomard</persName>
+                    </hi>
+                    <lb break="yes"/>und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Champollion</persName>
+                    </hi> gezeigt haben) sind die Einheiten durch senkrechte<lb break="yes"/>Linien bezeichnet. Bei den <hi rendition="#g">Chinesen</hi> und in einigen von <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Eckhel</persName>
+                    </hi> (<bibl>T. III.<lb break="yes"/>410.</bibl>) beschriebenen ächt phönicischen Münzen sind diese Striche bis 4<lb break="yes"/>horizontal. Die Römer reiheten zuweilen (das quinare Gruppenzeichen<lb break="yes" />überspringend,) in Inschriften, bis 8 Striche als Einheiten aneinander.<lb break="yes"/>Viele solche Beispiele giebt <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Marini</persName>
+                    </hi> in der merkwürdigen Schrift: <hi rendition="#i">Mo-<lb break="no"/>numenti dei fratelli Arvali</hi>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#i">T. I. p.</hi> 31</bibl>. <bibl>
+                            <hi rendition="#i">T. II. p.</hi> 675</bibl>. z. B. in <hi rendition="#i">Octumvir.</hi>
+                    </note>. Die Nagelköpfe zur alten römischen Jah-<lb break="no"/>res-Rechnung (<hi rendition="#i">annales antea in clavis fuerunt, quos ex lege vetusta<lb break="yes"/>figebat Praetor Maximus,</hi> sagt <bibl>
+                        <hi rendition="#g">Plin.</hi> VII. 40.</bibl>) hätten auf die mexikani-<lb break="no"/>schen Einheitspuncte führen können, welche auch wirklich neben den<lb break="yes"/>(chinesischen und phönicischen) Horizontal-Linien, in Unter-Abtheilun-<lb break="no"/>gen der Unzen und Fuße, vorkommen <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Marini</persName>
+                            </hi>
+                            <hi rendition="#i">T. I. p.</hi> 228</bibl>.</note>. Diese Puncte und Striche, 9<lb break="yes"/>oder 19 an der Zahl, in der <hi rendition="#g" >denaren</hi> oder <hi rendition="#g">Vicesimal-</hi>Scale (Hand- oder<lb break="yes"/>Hand- und Fuß-Scale) des Alten und Neuen Continents sind die rohesten<lb break="yes"/>aller Bezeichnungen im Systeme der Juxtaposition. Man <hi rendition="#g">zählt</hi> dann die<lb break="yes"/>Einheiten mehr als man sie <hi rendition="#g">lieset.</hi> Das Für sich bestehen, gleichsam<lb break="yes"/>die Individualität einzelner Gruppen von Einheiten, als Zeichen, fängt<lb break="yes"/>erst an, in den Buchstabenzahlen der <hi rendition="#g">semitischen</hi> und <hi rendition="#g">hellenischen</hi>
+                    <lb break="yes"/>Stämme, oder bei den <hi rendition="#g">Tibetanern</hi> und <hi rendition="#g">indischen</hi> Stämmen, die<lb break="yes"/>durch einzelne ideographische Zeichen 1, 2, 3, 4 ausdrücken. Im alt-<lb break="no"/>persischen <hi rendition="#i">Pehlwi</hi> zeigt sich ein merkwürdiger Uebergang von der ro-<lb break="no"/>hen Methode der Juxtaposition von Einheitszeichen, zur isolirten Existenz<lb break="yes"/>zusammengesetzter ideographischer Hieroglyphen. Der Ursprung der er-<lb break="no"/>sten 9 Ziffern durch Zahl der Einschnitte oder Zähne, liegen hier vor<lb break="yes"/>Augen; 5 bis 9 sind sogar bloße Verschlingungen der Zeichen 2, 3 und<lb break="yes"/>4, ohne Wiederkehren des Zeichens von 1. In den ächt-indischen Sy-<lb break="no"/>stemen der <hi rendition="#g">Devanagari,</hi> persischen und arabisch-europäischen Ziffern,<lb break="yes"/>sind nur in 2 und 3, Contractionen <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Abel Remusat</persName>,</hi>
+                            <hi rendition="#i">Langues Tatares p. XXX.</hi>
+                        </bibl> Ueber die sonderbaren indischen Ziffern<lb break="yes"/>
+                        <bibl>in <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Java s. Crawfurd</persName>
+                            </hi> II. p. 263</bibl>.</note> von 2 und 3 Einheiten zu er-<lb break="no"/>kennen, gewiß nicht in den höheren Ziffern, welche in der indischen<lb break="yes"/>Halbinsel auf die sonderbarste Weise von einander abweichen.</p>
+                <lb break="yes"/>
+                <pb n="219" facs="#f0015"/>
+                <p>Indem ich hier und in den folgenden Theilen der Abhandlung der<lb break="yes"/>
+                    <hi rendition="#g">indischen</hi> Zahlen erwähne, muß ich mich zuerst über diese Benennung<lb break="yes"/>und über die alten Vorurtheile, als habe <hi rendition="#g">Indien</hi> einerlei gestaltete Ziffern<lb break="yes"/>und keine Buchstaben-Zahlen, als sei in <placeName>Indien</placeName> überall Kenntniß des<lb break="yes"/>Stellenwerthes und Nicht-Gebrauch von eigenen Gruppen-Zeichen für<lb break="yes"/>
+                    <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> .... erklären. So wie, nach der oftmaligen Aeußerung mei-<lb break="no"/>nes Bruders, <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Wilh. von Humboldt</persName>,</hi> das <hi rendition="#g">Sanskrit</hi> sehr unbestimmt<lb break="yes"/>durch die Benennungen &#x201E;<hi rendition="#g">indische</hi> und <hi rendition="#g" >alt-indische</hi> Sprache&#x201D; bezeich-<lb break="no"/>net wird, da es in der Indischen Halbinsel mehrere sehr alte, vom Sanskrit<lb break="yes"/>gar nicht abstammende Sprachen giebt: so ist auch der Ausdruck &#x201E;in-<lb break="no"/>dische, alt-indische Ziffern&#x201D; im Allgemeinen sehr unbestimmt, und diese<lb break="yes"/>Unbestimmtheit bezieht sich sowohl auf die Gestaltung der Zahlzeichen<lb break="yes"/>als auf den Geist der Methoden, welche man durch Juxtaposition, oder<lb break="yes"/>durch Coefficienten, oder durch bloßen Stellenwerth der Haupt-Gruppen<lb break="yes"/>
+                    <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> und der Vielfachen derselben 2 <hi rendition="#i" >n,</hi> 3 <hi rendition="#i">n</hi> .... bezeichnet. Selbst<lb break="yes" />die Existenz eines Null-Zeichens ist, wie das Scholion des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>
+                    </hi>
+                    <lb break="yes"/>lehrt, in indischen Ziffern noch kein nothwendiges Bedingniß des Stel-<lb break="no"/>lenwerthes. Im <placeName>südlichen Theile der indischen Halbinsel</placeName> sind die <hi rendition="#g">Ta-<lb break="no"/>mul-</hi> und <hi rendition="#g">Telugu-</hi>Sprachen die weitverbreitetsten. Die Tamulsprechen-<lb break="no"/>den Inder haben von ihrem Alphabet abweichende Zahlzeichen, von de-<lb break="no"/>nen die 2 und die 8 eine schwache Aehnlichkeit mit den indischen (<hi rendition="#g">De-<lb break="no"/>vanagari-</hi>) Ziffern von 2 und 5 haben <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Robert Anderson</persName>,</hi>
+                            <hi rendition="#i">Rudiments of Tamul Grammar.</hi> 1821. <hi rendition="#i">p.</hi> 135</bibl>.</note>. Noch verschiedener von den<lb break="yes"/>indischen Ziffern sind die <hi rendition="#g" >cingalesischen</hi>
+                    <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">James Chater</persName>,</hi>
+                            <hi rendition="#i">Grammar of the Cingalese language, <hi rendition="#g" >Colombo</hi>
+                            </hi> 1815. <hi rendition="#i">p.</hi> 135</bibl>.</note>. In diesen und den Ta-<lb break="no"/>mulischen findet man keinen Stellenwerth, kein Nullzeichen, sondern Hie-<lb break="no"/>roglyphen für die Gruppen <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> .... Die <hi rendition="#g">Cingalesen</hi> operiren<lb break="yes"/>durch Juxtaposition, die <hi rendition="#g" >Tamulen</hi> durch Coefficienten. Jenseits des<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName>Ganges</placeName>,</hi> im <placeName>
+                        <hi rendition="#g">Burman-</hi>Reiche</placeName>, sehen wir Stellenwerth und Nullzeichen;<lb break="yes"/>aber von den arabischen, persischen und Devanagari-indischen Ziffern<lb break="yes"/>gänzlich abweichende Zeichen <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Carey</persName>,</hi>
+                            <hi rendition="#i">Grammar of the Burman language.</hi> 1814. <hi rendition="#i">p.</hi> 196</bibl>. Bloß die Burmanischen Ziffern<lb break="yes"/>3, 4 und 7 haben einige Aehnlichkeit mit 2, 5 und 7.</note>. Die von den <hi rendition="#g">Arabern</hi> gebrauchten<lb break="yes"/>persischen Ziffern weichen alle 9 gänzlich von den Devanagari-Ziffern <note place="foot" n="&#x2020;)">
+                        <bibl>Vergl. <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">John Shakespear</persName>,</hi>
+                            <hi rendition="#i">Grammar of the Hindustani language.</hi> 1813. <hi rendition="#i">p.</hi> 95. u. <hi rendition="#i">Pl. I.</hi>
+                        </bibl>
+                        <lb break="yes"/>
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">William Jones</persName>,</hi>
+                            <hi rendition="#i">Grammar of the Persian language.</hi> 1809. <hi rendition="#i">p.</hi> 93</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>,</hi>
+                            <hi rendition="#i">Gram-<lb break="no"/>maire arabe. Pl. VIII.</hi>
+                        </bibl>
+                    </note> ab;<lb break="yes"/>
+                    <pb n="220" facs="#f0016"/> 7 ist wie eine römische, 8 wie eine tuskische 5 gestaltet. Unter dem,<lb break="yes"/>was wir heute arabische Ziffern nennen, sind bloß 1, 2, 3 den Devana-<lb break="no"/>gari-Ziffern gleicher Bedeutung ähnlich; die devanagari 4 ist unsere 8;<lb break="yes"/>unsere 9 ist eine devanagari 7; unsere 7 ist eine persische 6. Im <hi rendition="#g">Ben-<lb break="no"/>gali</hi> ist 5 ein halber Mond und 3, 5, 6, 8 und 9 weichen ganz von den<lb break="yes"/>Devanagari-Ziffern ab <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Graves Chamney Haughton</persName>,</hi>
+                            <hi rendition="#i">Rud. of Bengali Grammar.</hi> 1821. <hi rendition="#i">p.</hi> 133.</bibl>
+                    </note>. Bloß verunstaltete indische Devanagari-Ziffern<lb break="yes"/>sind die von <hi rendition="#g">
+                        <placeName>Guzerath</placeName>
+                    </hi>
+                    <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Robert Drummond</persName>,</hi>
+                            <hi rendition="#i">Illustrations of the Grammat. Parts of the <hi rendition="#g">Guzerath</hi> and<lb break="yes"/>
+                                <hi rendition="#g">Mahratt-</hi>language.</hi> 1808. <hi rendition="#i">p.</hi> 25</bibl>.</note>.</p>
+                <lb break="yes"/>
+                <p>Betrachtungen über den Einfluß der frühesten Zahlzeichen auf das<lb break="yes" />Alphabet, über geflissentliche Verunstaltungen der Buchstaben, um sie<lb break="yes"/>nicht mit Ziffern zu verwechseln, über die verschiedene Reihung der<lb break="yes"/>Zahlbuchstaben, welche bei demselben Volke nicht immer mit dem üb-<lb break="no"/>lichen Alphabet übereinstimmt (wie im <hi rendition="#i">aboudjed</hi> semitischer Stämme in<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName>Asien</placeName>
+                    </hi> und <hi rendition="#g">
+                        <placeName>Afrika</placeName>
+                    </hi>
+                    <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>
+                            </hi> T. I. p. 10.</bibl>
+                    </note>, gehören nicht in diese Abhandlung, und ha-<lb break="no"/>ben zu vielen grundlosen Hypothesen im Felde der vergleichenden Alpha-<lb break="no"/>betik und Hieroglyphik Anlaß gegeben. Ich habe selbst ehemals die<lb break="yes" />Vermuthung geäußert, daß die indischen Zahlen, trotz der Form von 2<lb break="yes"/>und 3, Buchstaben eines alten Alphabets sind, dessen Abglanz sich noch<lb break="yes"/>in den phönicischen, samaritanischen, palmyrischen und ägyptischen<lb break="yes"/>(Mumien-) Schriftzügen, ja an den alt-persischen Monumenten von <hi rendition="#g">
+                        <placeName>Nak-<lb break="no"/>schi-Rustan</placeName>
+                    </hi>
+                    <note place="foot" n="&#x2020;)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>,</hi>
+                            <hi rendition="#i">Antiquités de la Perse. Pl. I. n.</hi> 1</bibl>. Vergl. die Zahlen-Inschriften<lb break="yes"/>am <hi rendition="#g">
+                            <placeName>Sinai</placeName>
+                        </hi> in <bibl>
+                            <hi rendition="#i">Descr. de l&#x2019;Egypte. Vol.</hi> 5. <hi rendition="#i">Pl.</hi> 57</bibl>.</note> findet. Wie viele Lettern sehen nicht in diesen Al-<lb break="no"/>phabeten den ausschließlich sogenannten indischen Ziffern ähnlich. Ein<lb break="yes"/>phönicischer Ursprung der sogenannten indischen Zahlen ist schon von<lb break="yes"/>anderen Gelehrten behauptet worden <note place="foot" n="&#x2020;&#x2020;)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Guyot de la Marne</persName>
+                            </hi> in <hi rendition="#i">Mém. de Trevoux</hi> 1736. <hi rendition="#i">p.</hi> 160</bibl>. <bibl>1740. <hi rendition="#i" >Mars p.</hi> 260</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Jahn</persName>
+                            </hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">Bibl. Archaeolog. B. I. p.</hi> 479</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Büttner</persName>
+                            </hi> vergl. Tafeln 1779. <hi rendition="#i">St.</hi> 2. <hi rendition="#i">p.</hi> 13</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Eichhorn</persName>
+                            </hi> Einleit.<lb break="yes"/>in das alte Testament. B. I. p. 197</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Wahl</persName>,</hi> Gesch. der morgenl. Litt. p. 601. 630</bibl>. <bibl>Fundgruben<lb break="yes" />des Orients B. 3. p. 87.</bibl>
+                    </note>, und der scharfsinnige <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Eckhel</persName>
+                    </hi>
+                    <lb break="yes"/>machte schon darauf aufmerksam, daß die Zahlen-Aehnlichkeit phönici-<lb break="no"/>scher Buchstaben so auffallend sei, daß das Wort <hi rendition="#g">Abdera</hi> durch 19990<lb break="yes"/>und 15550 bezeichnet werde <note place="foot" n="&#x2020;&#x2020;&#x2020;)">
+                        <bibl>
+                            <hi rendition="#i">Doctrina nummorum veterum.</hi> 1794. <hi rendition="#i">T. III. p.</hi> 396&#x2014;404, 421, 494</bibl>.</note>. Aber über diesen Ursprung der Zif-<lb break="no"/>fern und Buchstaben herrscht ein Dunkel, welches bei den vorhandenen<lb break="yes"/>
+                    <pb n="221" facs="#f0017"/> Materialien eine gründliche philologische Untersuchung unmöglich macht,<lb break="yes"/>wenn man sie nicht auf negative Resultate beschränken will.</p>
+                <lb break="yes"/>
+                <p>So wie oft dieselben Völker zugleich mit Buchstaben-Zahlen und<lb break="yes" />ideographischen oder willkürlich gewählten Zahlzeichen rechnen, so fin-<lb break="no"/>den sich auch in einem und demselben Zahlen-System, in Hinsicht auf<lb break="yes"/>den Ausdruck der <hi rendition="#i">multipla</hi> der Fundamental-Gruppe, die verschieden-<lb break="no"/>artigsten Methoden, ja was in einem System gleichsam nur angedeutet<lb break="yes"/>ist, zeigt sich im andern vollständig entwickelt. Eben so präludiren,<lb break="yes"/>in den Sprachen, bei einer Nation grammatische Formen, welche eine<lb break="yes" />andere mit besonderer Vorliebe und allem Aufwande intellectueller Kraft<lb break="yes"/>ausgebildet hat. Beschreibt man die Zahlensysteme einzeln, wie sie je-<lb break="no"/>des Volk anwendet, so verdunkeln sich die Aehnlichkeiten der Methoden;<lb break="yes"/>man verliert die Spur, auf welcher der menschliche Geist zu dem Mei-<lb break="no"/>sterwerke der indischen Arithmetik gelangt ist, in der jedes Zeichen ei-<lb break="no"/>nen absoluten und relativen Werth hat, in der sie in geometrischer Pro-<lb break="no"/>gression von der Rechten zur Linken wachsen. Ich verlasse daher in den<lb break="yes"/>folgenden Sätzen die ethnographische Folge und betrachte bloß die verschie-<lb break="no"/>denen Mittel, welche angewandt wurden, um dieselben Gruppen von Ein-<lb break="no" />heiten (gemischte oder ungemischte Gruppen) <hi rendition="#g">graphisch</hi> auszudrücken.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#i">Erste Methode.</hi> Juxtaposition;</hi> bloß additiv bei Buchstaben-<lb break="no"/>zahlen und eigentlichen Ziffern. So <hi rendition="#g">Tusker, Römer, Griechen,</hi> bis<lb break="yes"/>zu der Myriade, <hi rendition="#g">semitische</hi> Stämme, <hi rendition="#g" >Mexikaner</hi> und der größere<lb break="yes"/>Theil der <hi rendition="#g" >Pehlwi-</hi>Ziffern. Diese Methode macht besonders das Rechnen<lb break="yes"/>beschwerlich, wenn die <hi rendition="#i">multipla</hi> der Gruppen (2<hi rendition="#i">n,</hi> 3<hi rendition="#i">n,</hi> 2<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> ....) nicht<lb break="yes"/>eigene Zeichen haben. Bei den <hi rendition="#g">Tuskern</hi> und <hi rendition="#g">Römern</hi> ist Wiederho-<lb break="no"/>lung von den Zeichen 10 bis 50, bei den <hi rendition="#g">Mexikanern,</hi> wo das erste<lb break="yes"/>Gruppenzeichen 20 (eine Fahne) ist, findet Wiederholung desselben Hiero-<lb break="no"/>glyphen bis 400 statt. Dagegen haben die <hi rendition="#g">Griechen</hi> in den beiden Reihen<lb break="yes"/>der Zehner und Hunderter, die mit <hi rendition="#i" >iota</hi> und <hi rendition="#i">rho</hi> anfangen, Zeichen für<lb break="yes"/>20, 30, 400 und 600. Drei <hi rendition="#g">Episemen</hi> (Buchstaben eines veralteten Al-<lb break="no"/>phabets) <hi rendition="#i">bau, koppa</hi> und <hi rendition="#i">sampi</hi> drücken aus: 6, 90 und 900; die letzte-<lb break="no"/>ren beiden schließen die Reihen der Zehner und Hunderter, wodurch<lb break="yes"/>der Zahlenwerth der griechischen Buchstaben dem des semitischen <hi rendition="#i">aboud-<lb break="no"/>jed&#x2019;s</hi> etwas ähnlicher wird <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Hervas</persName>
+                            </hi>
+                            <hi rendition="#i">Arithm. delle nazioni. p.</hi> 78</bibl>. Ueber alte Reihenfolge der Lettern in semitischen<lb break="yes"/>Alphabeten: <bibl>
+                            <hi rendition="#i">Descript. de l&#x2019;Egypte moderne. T. II. P. II. p.</hi> 208</bibl>.</note>. Herr <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Böckh</persName>
+                    </hi> hat in seinen gelehrten Un-<lb break="no"/>
+                    <pb n="222" facs="#f0018"/> tersuchungen über das Digamma gezeigt, daß <hi rendition="#i">bau</hi> das <hi rendition="#i">wau</hi> der <hi rendition="#g">Semi-<lb break="no"/>ten</hi> (der <hi rendition="#g" >Lateiner</hi>) ist; <hi rendition="#i">koppa</hi> war das semitische <hi rendition="#i">koph</hi> (9) und <hi rendition="#i">sampi</hi>
+                    <lb break="yes"/>das semitische <hi rendition="#i">schin</hi>
+                    <note place="foot" n="*)">
+                        <bibl>Staatshaushaltung der Athener B. II. p. 385.</bibl>
+                    </note>. Die Reihe der Einheiten von <hi rendition="#i">alpha</hi> bis <hi rendition="#i">theta</hi>
+                    <lb break="yes"/>bildet bei den <hi rendition="#g">Griechen</hi> die Wurzelzahlen (<hi rendition="#i">püthmenes</hi>), mit welchen<lb break="yes" />man durch Kunstgriffe, die <hi rendition="#g">Apollonius</hi> erfand <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Delambre</persName>
+                            </hi>
+                            <hi rendition="#i">hist. de l&#x2019;astron. ancienne T. II. p.</hi>
+                        </bibl> 10.</note>, im Rechnen so ope-<lb break="no"/>rirte, daß man sie, im letzten Resultate, auf die correspondirenden Glie-<lb break="no"/>der der 2ten und 3ten Reihen (der Analogen) reducirte.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#i">Zweite Methode.</hi> Vervielfachung oder Verminderung<lb break="yes"/>des Werthes durch darüber oder darunter gesetzte Zeichen.</hi>
+                    <lb break="yes"/>In der vierten Reihe der griechischen Notation kehren bekanntlich die<lb break="yes"/>
+                    <hi rendition="#i">püthmenes</hi> aus Analogie wieder, tausendfach vermehrt, durch Hinzufü-<lb break="no"/>gung eines Strichs nach unten. So reichte man bis zur Myriade; man<lb break="yes"/>schrieb bis 9999. Hätte man die Strich-Notation für alle Gruppen an-<lb break="no"/>gewandt, und alle Zeichen nach dem <hi rendition="#i">theta</hi> (9) unterdrückt, so hätte man<lb break="yes"/>für &#x03B2;, mit einem oder 2 oder 3 Strichen, Ausdrücke für 20, 200 und<lb break="yes"/>2000 gehabt, und sich, wie wir bald sehen werden, den wenig bekann-<lb break="no"/>ten arabischen <hi rendition="#g">Gobar-</hi>Zahlen, und mit ihnen den Stellenwerthen genä-<lb break="no"/>hert; aber mit einer unglücklichen Ueberspringung der Gruppen von Zeh-<lb break="no"/>nern und Hunderten, fing die Strich-Notation erst mit den Tausenden<lb break="yes"/>an, und ward selbst nicht in höheren Gruppen versucht.</p>
+                <lb break="yes"/>
+                <p>Wenn ein Strich, der unten zugefügt wird, die Zahl tausendfach<lb break="yes" />vermehrt, so bezeichnet dagegen bei den <hi rendition="#g">Griechen</hi> ein senkrechter<lb break="yes"/>Strich, oben hinzugefügt, einen Bruch, dessen Zähler die Einheit und dessen<lb break="yes"/>Nenner die Zahl ist, welche unter dem Strich notirt wird. So ist im<lb break="yes"/>
+                    <persName ref="http://d-nb.info/gnd/">Diophantus</persName> &#x03B3;&#x2032; = <formula notation="TeX">frac{1}{3}</formula>; &#x03B4;&#x2032; = <formula notation="TeX">\frac{1}{4}</formula>, aber die untere Zahl bezeichnet den Zähler,<lb break="yes"/>wenn dieser größer als die Einheit ist, und der Nenner des Bruches wird<lb break="yes"/>alsdann wie ein Exponent geschrieben, so daß z. B. &#x03B3;<hi rendition="#sup">&#x03B4;</hi> = <formula notation="TeX" >\frac{3}{4}</formula>
+                    <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Delambre</persName>
+                            </hi>
+                            <hi rendition="#i">T. II. p.</hi> 11</bibl>. Der Strich, der zu den Buchstaben oben hinzugefügt wird, bloß<lb break="yes"/>um anzuzeigen, daß sie als Zahlen gebraucht werden, muß nicht mit dem Fractionszeichen verwech-<lb break="no"/>selt werden. Auch ist derselbe in den älteren mathematischen Handschriften eigentlich nie senkrecht,<lb break="yes" />sondern horizontal, und daher mit dem Fractionszeichen nie zu verwechseln. (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Bast</persName>:</hi>
+                            <hi rendition="#i">de usu littera-<lb break="no"/>rum ad numeros indicandos</hi> in <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Gregorii</persName>
+                            </hi>
+                            <hi rendition="#i">Corinthii liber de dialectis linguae graecae</hi> 1811. <hi rendition="#i">p.</hi> 850.</bibl>)</note>. In rö-<lb break="no"/>mischen Inschriften vermehrt ein Horizontal-Strich, nach oben zuge-<lb break="no"/>fügt, die Zahl tausendfach, was als ein Mittel der Abkürzung und Er-<lb break="no"/>sparung des Raumes betrachtet werden kann.</p>
+                <lb break="yes"/>
+                <pb n="223" facs="#f0019"/>
+                <p>Wichtiger ist die Methode des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Eutocius</persName>
+                    </hi> zum Ausdruck der My-<lb break="no"/>riaden. Hier treffen wir bei den <hi rendition="#g">Griechen</hi> die erste Spur des, für<lb break="yes"/>den Orient so wichtigen Exponential- oder vielmehr Indications-Systems.<lb break="yes"/>
+                    <hi rendition="#i">M</hi>
+                    <hi rendition="#sup">&#x03B1;</hi>, <hi rendition="#i">M</hi>
+                    <hi rendition="#sup">&#x03B2;</hi>, <hi rendition="#i">M</hi>
+                    <hi rendition="#sup">&#x03B3;</hi> bezeichnen 10000, 20000, 30000. Was hier bei den My-<lb break="no"/>riaden allein angewandt wird, geht bei den <hi rendition="#g">Chinesen</hi> und den <hi rendition="#g">Japa-<lb break="no" />nesen,</hi> die ihre Cultur von den <hi rendition="#g">Chinesen</hi> 200 Jahre vor unserer Zeit-<lb break="no"/>rechnung erhielten, durch alle <hi rendition="#i">multipla</hi> der Gruppen durch. Drei Hori-<lb break="no" />zontalstriche unter dem Zeichen von zehn bedeuten 13; aber drei Hori-<lb break="no"/>zontalstriche darüber bedeuten 30. Nach dieser Methode wird 3456 also<lb break="yes"/>geschrieben (ich bediene mich der römischen Zahlen als Gruppenzeichen,<lb break="yes"/>der indischen als Exponenten):</p>
+                <lb break="yes"/>
+                <list>
+                    <item>
+                        <hi rendition="#i">M</hi>
+                        <hi rendition="#sup">3</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#i">C</hi>
+                        <hi rendition="#sup">4</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#i">X</hi>
+                        <hi rendition="#sup">5</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#i">I</hi>
+                        <hi rendition="#sup">6</hi>.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Bei den <hi rendition="#g">Aegyptern</hi> finden sich dieselben Indicatoren. Auf einen ge-<lb break="no"/>krümmten Strich <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Kosegarten</persName>
+                            </hi>
+                            <hi rendition="#i">de Hierogl. Aegypt. p.</hi> 54</bibl>. <hi rendition="#g">Gatterer&#x2019;s</hi> aus <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Bianchini</persName>
+                            </hi> (<hi rendition="#i">Decad. I.<lb break="yes"/>cap.</hi> 3</bibl>. <hi rendition="#i">p.</hi> 3.), aus <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Goguet</persName>
+                            </hi> (<hi rendition="#i">I. p.</hi> 226.)</bibl> und aus <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Debrosses</persName>
+                            </hi> (<hi rendition="#i">I. p.</hi> 432.)</bibl> entlehnte Behauptung,<lb break="yes"/>daß <hi rendition="#g">Aegypter</hi> in senkrechter Richtung den 9 Einheiten Stellenwerth gaben, ist durch neuere Un-<lb break="no"/>tersuchungen keinesweges bestätigt worden. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Gatterer</persName>,</hi> Weltgeschichte bis Cyrus, p. 555. 586.</bibl>
+                    </note>, der 1000 andeutet, werden 2 oder 4 Einheiten ge-<lb break="no"/>stellt für 2000 und 4000. Bei den <hi rendition="#g">Azteken</hi> oder <hi rendition="#g">Mexikanern</hi> habe<lb break="yes"/>ich für 312 Jahre das Zeichen der <hi rendition="#g">Ligatur</hi> mit 6 Einheiten als Ex-<lb break="no"/>ponent gefunden (6 &#x00D7; 52 = 312) und in meinem Werke über Amerika-<lb break="no"/>nische Monumente abgebildet. Bei <hi rendition="#g" >Chinesen, Azteken</hi> und <hi rendition="#g">Aegyp-<lb break="no" />tern</hi> steht überall das Gruppenzeichen unten, als schriebe man gleich-<lb break="no"/>sam <hi rendition="#i">X</hi>
+                    <hi rendition="#sup">5</hi> für 50; in den arabischen <hi rendition="#g" >Gobar-</hi>Ziffern steht das Gruppenzeichen<lb break="yes"/>über dem Indicator. Im <hi rendition="#g">Gobar</hi> sind nemlich die Gruppenzeichen Puncte,<lb break="yes"/>also Nullen, denn in <hi rendition="#g">Indien, Tibet</hi> und <hi rendition="#g">Persien</hi> sind Nullen und<lb break="yes"/>Puncte identisch. Diese <hi rendition="#g">Gobar-</hi>Zeichen, welche seit dem Jahre 1818<lb break="yes"/>meine ganze Aufmerksamkeit auf sich gezogen haben, sind von meinem<lb break="yes"/>Freunde und Lehrer, Herrn <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Silvestre de Sacy</persName>,</hi> in einem Manuscript<lb break="yes"/>aus der Bibliothek der alten <placeName>Abtey <hi rendition="#g">St. Germain du Près</hi>
+                    </placeName> entdeckt<lb break="yes"/>worden. Dieser große <hi rendition="#g" >Orientalist</hi> sagt: <hi rendition="#i">Le <hi rendition="#g">gobar</hi> a un grand rapport<lb break="yes"/>avec le chiffre indien, mais il n&#x2019;a pas de zéro</hi>
+                    <note place="foot" n="**)">
+                        <bibl>S. <hi rendition="#i">Gramm. arabe p.</hi> 76. und die der <hi rendition="#i">Pl.</hi> 8.</bibl> zugefügte Note.</note>. Ich glaube, daß aller-<lb break="no"/>
+                    <pb n="224" facs="#f0020"/> dings das Nullzeichen vorhanden sei: es steht aber, wie im Scholion des<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>,</hi> über den Einheiten, nicht daneben; ja es sind gerade die<lb break="yes"/>Nullzeichen oder Puncte, welche diesen Characteren den sonderbaren Na-<lb break="no"/>men <hi rendition="#i">gobar</hi> oder <hi rendition="#g">Staubschrift</hi> gegeben. Man ist auf den ersten Blick<lb break="yes"/>ungewiß, ob man einen Übergang zwischen Ziffern und Buchstaben darin<lb break="yes"/>erkennen soll. Man unterscheidet mit Mühe die indische 3, 4, 5 und 9.<lb break="yes"/>
+                    <hi rendition="#i">Dal</hi> und <hi rendition="#i">ha</hi> sind vielleicht schlecht gestellte indische Ziffern 6 und 2.<lb break="yes"/>Die Indication durch Puncte ist folgende:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>3<hi rendition="#sup">&#x2024;</hi> für 30,</item>
+                    <lb break="yes"/>
+                    <item>4<hi rendition="#sup">&#x2025;</hi> für 400,</item>
+                    <lb break="yes"/>
+                    <item>6<hi rendition="#sup">&#x2234;</hi> für 6000.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Diese Puncte erinnern an eine alt-griechische, aber seltene Bezeichnung <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Ducange</persName>
+                            </hi>
+                            <hi rendition="#i">Palaeogr. p. XII.</hi>
+                        </bibl>
+                    </note>,<lb break="yes"/>die erst mit der Myriade anfängt: &#x03B1;<hi rendition="#sup">&#x2025;</hi> für 10000, &#x03B2;<hi rendition="#sup" >&#x2237;</hi> für 200 Millionen.<lb break="yes"/>In diesem Systeme geometrischer Progressionen ist ursprünglich ein Punct,<lb break="yes"/>den man aber nicht anwendet, 100. Bei <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Diophantus</persName>
+                    </hi> und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Pappus</persName>
+                    </hi>
+                    <lb break="yes"/>stehet ein Punct zwischen den Buchstabenzahlen, statt der Initiale &#x039C;&#x03C5;<lb break="yes"/>(Myriade). Ein Punct multiplicirt dann, was zur Linken steht, 10000 mal.<lb break="yes"/>Man möchte glauben, daß dunkle Ideen von Bezeichnungen durch Puncte<lb break="yes"/>und Nullen sich durch <hi rendition="#g">Alexandriner</hi> aus dem Orient nach Europa ver-<lb break="no"/>breitet hatten. Das wirkliche Nullzeichen, und als etwas <hi rendition="#g">Fehlendes,</hi>
+                    <lb break="yes"/>wendet <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Ptolemäus</persName>
+                    </hi> in der abwärts steigenden Sexagesimal-Scale für<lb break="yes"/>fehlende Grade, Minuten oder Secunden an. Auch in Handschriften des<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Theon</persName>,</hi> im Commentar zur Syntaxis des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Ptolemäus</persName>,</hi> will <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Delambre</persName>
+                    </hi>
+                    <lb break="yes"/>das Nullzeichen gefunden haben <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#i">Histoire de l&#x2019;astron. ancienne T. I. p.</hi> 547</bibl>. <bibl>
+                            <hi rendition="#i">T. II. p.</hi> 10</bibl>. Die Stelle im <hi rendition="#g">Theon</hi> ist in<lb break="yes"/>seinen gedruckten Werken nicht aufzufinden. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Delambre</persName>
+                        </hi> ist geneigt, das griechische Nullzeichen<lb break="yes"/>bald der Abbreviatur von <hi rendition="#i">ouden,</hi> bald einer besonderen Beziehung zuzuschreiben, in welcher das<lb break="yes"/>Zahlzeichen <hi rendition="#i">omicron</hi> mit den Sexagesimal-Brüchen steht. <bibl>
+                            <hi rendition="#i">L. c. T II. p.</hi> 14</bibl>. und <bibl>
+                            <hi rendition="#i">Journal des sa-<lb break="no"/>vans.</hi> 1817. <hi rendition="#i">p.</hi> 539</bibl>. Sonderbar, daß in der alt-indischen Arithmetik der <hi rendition="#g">
+                            <bibl>Lilawati</bibl>
+                        </hi> die Null neben<lb break="yes"/>einer Zahl bedeutet, daß die Zahl abzuziehen ist. <bibl>
+                            <hi rendition="#g">Delambre</hi>
+                            <hi rendition="#i">I. p.</hi> 540</bibl>. Was bezeichnet der <hi rendition="#i">Ling</hi>
+                        <lb break="yes"/>(eine wahre Null), welcher in den chinesischen Zahlzeichen unter 12, 13, 22, 132 geschrieben wird?<lb break="yes"/>In römischen Inschriften sind Nullen mehrfach wiederholte Obole. (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Böckh</persName>
+                            </hi> Staatshaushaltung<lb break="yes"/>der Athener B. 2. S. 379.</bibl>)</note>. Es ist daher im Occident weit äl-<lb break="no"/>ter, als der Einbruch der <hi rendition="#g">Araber. <persName ref="http://d-nb.info/gnd/">Planudes</persName>
+                    </hi>
+                    <bibl>Schrift über die <hi rendition="#i">arith-<lb break="no"/>moi indikoi.</hi>
+                    </bibl>
+                </p>
+                <lb break="yes"/>
+                <pb n="225" facs="#f0021"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#i">Dritte Methode.</hi> Vervielfachung des Werthes durch<lb break="yes"/>Coefficienten.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Was wir bei den <hi rendition="#g">Chinesen</hi> als Indicatoren in der senkrechten<lb break="yes"/>Schrift gefunden haben, ein Unterschied von <formula notation="TeX">\underset{2}{X} = 12</formula> und <formula notation="TeX">\overset{2}{X} = 20</formula>, wird<lb break="yes"/>in horizontaler Richtung bei <hi rendition="#g">Griechen,</hi> bei <hi rendition="#g">Armeniern</hi> und bei den<lb break="yes"/>
+                    <hi rendition="#g">Tamul-</hi>redenden Bewohnern der südlichen Halb-Insel von <hi rendition="#g">
+                        <placeName>Indien</placeName>
+                    </hi> wie-<lb break="no"/>derholt. <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Diophantus</persName>
+                    </hi> und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Pappus</persName>
+                    </hi> schreiben &#x03B2;&#x039C;&#x03C5; für zweimal zehn-<lb break="no" />tausend oder 20000, da &#x03B1;&#x039C;&#x03C5;&#x03B2; (wenn &#x03B2; der Initiale der Myriade rechts<lb break="yes"/>steht) einmal zehntausend plus zwei, oder 10002 bezeichnet. Dasselbe fin-<lb break="no"/>det statt bei den Tamulziffern, gleichsam als wäre 4 <hi rendition="#i">X</hi> = 40 und <hi rendition="#i">X</hi> 4 = 14.<lb break="yes"/>Im alt-persischen Pehlwi, nach <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Anquetil</persName>,</hi> und im Armenischen, nach<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Cerbied</persName>
+                    </hi>
+                    <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#i">Grammaire Armenienne.</hi> 1823. <hi rendition="#i" >p.</hi> 25.</bibl>
+                    </note> erkennt man links stehende Multiplicatoren, um die Viel-<lb break="no" />fachen von 100 auszudrücken. Hierher gehört auch, der Methode nach,<lb break="yes"/>der oben erwähnte Punct des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Diophantus</persName>,</hi> welcher für &#x039C;&#x03C5; stehet und<lb break="yes"/>1000 mal das Vorhergehende erhöht <note place="foot" n="**)">Solche Abtheilungen durch Puncte, welche, auf eine übrigens sehr inconsequente Weise,<lb break="yes"/>einen Stellenwerth bezeichnen, findet man ebenfalls in drei oft bestrittenen Stellen des <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Plinius</persName>
+                        </hi>
+                        <lb break="yes"/>(<bibl>
+                            <hi rendition="#i">VI.</hi> 24. 33. <hi rendition="#i">XXX.</hi> 3</bibl>).</note>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#i">Vierte Methode.</hi> Vervielfältigung und Verminderung,<lb break="yes"/>aufsteigend und absteigend, durch Abtheilung von Zahl-<lb break="no"/>schichten, deren Werth sich in geometrischer Progression<lb break="yes"/>vermindert.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Archimedes</persName>
+                    </hi> in den Octaden, <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Apollonius</persName>
+                    </hi> in den Tetraden, haben<lb break="yes"/>diese Notation nur in Zahlen über (10000)<hi rendition="#sup">2</hi> und in 100 Millionen oder<lb break="yes" />einer Myriade von Myriaden gebraucht <note place="foot" n="***)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Delambre</persName>,</hi>
+                            <hi rendition="#i">Hist. de l&#x2019;astron. ancienne T. I. p.</hi> 105</bibl>. <bibl>
+                            <hi rendition="#i">T. II. p.</hi> 9.</bibl>
+                    </note>. Hier ist offenbar Stellen-<lb break="no"/>werth derselben Zeichen, die in verschiedenen Schichten aufeinander<lb break="yes"/>folgen, also ein relativer und absoluter Werth, wie in der absteigenden<lb break="yes" />Sexagesimal-Scale der alexandrinischen Astronomen, wenn sie Grade,<lb break="yes"/>Minuten, Secunden angeben. Da aber im letzteren Falle (aus Mangel von<lb break="yes"/>
+                    <hi rendition="#i">n</hi>&#x2014;1 oder 59 Zeichen) jede Schicht zweiziffrig ist, so kann der Stellen-<lb break="no"/>werth nicht den Vortheil indischer Zahlen gewähren. Wenn die drei-<lb break="no"/>hundert sechzigsten Theile eines Kreises als Ganze betrachtet werden,<lb break="yes"/>so sind Minuten Sechzigstel dieser Ganzen, Secunden Sechzigstel der Mi-<lb break="no"/>nuten u. s. f. Als <hi rendition="#g">Brüchen</hi> gab ihnen <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Ptolemäus</persName>
+                    </hi> demnach bruch-<lb break="no"/>ähnliche Zeichen, den Strich nach oben, und um die absteigende Progres-<lb break="no"/>
+                    <pb n="226" facs="#f0022"/> sion anzudeuten, in welcher jede Schicht von 2 Ziffern 60 mal kleiner<lb break="yes"/>als die vorhergehende ist, wurden die Bruchstriche von Schicht zu<lb break="yes"/>Schicht vervielfältigt. Auf diese Weise erhielten die Minuten den ein-<lb break="no"/>fachen Strich der gemeinen griechischen Brüche (deren Zähler die Ein-<lb break="no"/>heit ist), die Secunden zwei solcher Striche, die Tertien drei, die Grade<lb break="yes" />selbst, als das Ganze, keinen Strich, vielleicht als <hi rendition="#g" >nichts</hi> (<hi rendition="#i">ouden</hi>) eine<lb break="yes"/>Null <note place="foot" n="*)">Ueber Anwendung des Nullzeichens s. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Leslie</persName>
+                            </hi>
+                            <hi rendition="#i">p.</hi> 12. 135</bibl>.<bibl>
+                            <hi rendition="#g">Kuithen, Germanen</hi> und<lb break="yes"/>
+                            <hi rendition="#g">Griechen</hi>
+                            <hi rendition="#i">Hist.</hi> 2. <hi rendition="#i">p.</hi> 2&#x2014;33</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Ducange</persName>
+                            </hi>
+                            <hi rendition="#i">Glossar. mediae graecitatis T. II p.</hi> 572</bibl>. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Mannert</persName>
+                            </hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">de numerorum quos arabicos vocant origine.</hi>
+                            <hi rendition="#g">Pythagor.</hi> p. 17</bibl>. In der griechischen Arithmetik<lb break="yes"/>bedeutet <hi rendition="#i">M</hi>° eine Einheit, <hi rendition="#i">monas,</hi> wie ein <hi rendition="#i" >delta</hi> mit übergeschriebener Null (eigentlich <hi rendition="#i" >omicron</hi>),<lb break="yes"/>
+                        <hi rendition="#i">tetartos;</hi>
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Bast</persName>, Gregor. Cor.</hi>
+                            <hi rendition="#i">p.</hi> 851</bibl>. So ist beim <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Diophantus</persName>
+                        </hi>
+                        <hi rendition="#i">M</hi>° &#x03BA; &#x03B1; = 21. Das indische gram-<lb break="no"/>matische Zeichen, <hi rendition="#i">Anuswara,</hi> hat allerdings die Form der indischen Null (<hi rendition="#i">Sunya</hi>). Es bezeichnet<lb break="yes"/>aber nur eine Modification in der Betonung des nahe stehenden Vocals und ist dem <hi rendition="#i">Sunya</hi> gänz-<lb break="no"/>lich fremd.</note>. Ich sage <hi rendition="#g" >vielleicht,</hi> denn im <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Ptolemäus</persName>
+                    </hi> und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Théon</persName>
+                    </hi> fehlen<lb break="yes"/>noch Nullen als Gradzeichen.</p>
+                <lb break="yes"/>
+                <p>In der einfachen Herzählung der verschiedenen Methoden, welche<lb break="yes" />Völker, denen die indische Positions-Arithmetik unbekannt war, ange-<lb break="no"/>wandt haben, um die <hi rendition="#i">multipla</hi> der Fundamental-Gruppen auszudrücken,<lb break="yes"/>liegt, glaube ich, die Erklärung von der allmäligen Entstehung des in-<lb break="no"/>dischen Systems. Wenn man 3568 perpendiculär und horizontal durch<lb break="yes"/>Indicatoren schreibt: <formula notation="TeX" >\overset{3}{M}\overset{5}{C}\overset{6}{X}\overset{8}{I}</formula>, so erkennt man leicht, daß die Gruppen-<lb break="no"/>zeichen <hi rendition="#i" >M, C</hi> ... weggelassen werden können. Unsere indische Zah-<lb break="no" />len sind aber nichts anderes als die Multiplicatoren der verschiedenen<lb break="yes"/>Gruppen. An diese alleinige Bezeichnung durch Einheiten (Multiplica-<lb break="no"/>toren) erinnert ohnedies der <hi rendition="#g" >Suanpan,</hi> mit seinen aufeinanderfolgenden<lb break="yes"/>Schnüren der Tausende, Hunderte, Zehner und Einheiten. Diese Schnüre<lb break="yes"/>zeigten in dem gegebenen Falle 3, 5, 6 und 8 Kugeln. Hier ist kein<lb break="yes" />Gruppenzeichen sichtbar. Die Gruppenzeichen sind die Stellen selbst,<lb break="yes"/>und diese Stellen (Schnüre) sind mit den Einheiten (Multiplicatoren) ge-<lb break="no"/>füllt. Auf beiden Wegen der figurativen (schreibenden) und palpablen<lb break="yes"/>(betastenden) Arithmetik gelangt man also zur indischen <hi rendition="#g">Position.</hi> Ist die<lb break="yes" />Schnur <hi rendition="#g">leer,</hi> die Schicht im Schreiben offen, fehlt eine Gruppe (ein Glied<lb break="yes"/>der Progression), so wird die Leere graphisch durch den Hieroglyphen<lb break="yes"/>des Leeren, einen unausgefüllten Kreis: <hi rendition="#i">Sunya, sifron, tzüphra</hi>
+                    <note place="foot" n="**)">Im Englischen hat sich <hi rendition="#i">
+                            <hi rendition="#g">cyph</hi>er</hi> für <hi rendition="#g">Null</hi> erhalten, da in den abendländischen Sprachen,<lb break="yes"/>welche <hi rendition="#i">zéro</hi> (<hi rendition="#i">sifron siron</hi>) für Null gebrauchen, Ziffer nur ein Zahlzeichen im Allgemeinen andeu-<lb break="no" />tet. Im Sanscrit heißt nach <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Wilson</persName>
+                        </hi> Zahl, Quantität: <hi rendition="#i">sambhara.</hi>
+                    </note> ausgefüllt.</p>
+                <lb break="yes"/>
+                <pb n="227" facs="#f0023"/>
+                <p>Für die successive Vervollkommnung der Zahlenbezeichnung in<lb break="yes"/>
+                    <hi rendition="#g">Indien</hi> sprechen die <hi rendition="#g" >Tamul-</hi>Ziffern, die durch 9 Zeichen der Einheiten<lb break="yes"/>und durch Gruppenzeichen für 10, 100 oder 1000 alle Werthe mittelst<lb break="yes"/>der links zugefügten Multiplicatoren ausdrücken; dafür sprechen endlich<lb break="yes"/>die sonderbaren <hi rendition="#i">arithmoi indikoi</hi> im Scholion des Mönchs <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>,</hi>
+                    <lb break="yes"/>welches in der <bibl>Pariser Bibliothek (<hi rendition="#i" >Cod. Reg. fol.</hi> 15.)</bibl> aufbewahrt wird,<lb break="yes"/>und dessen gütige Mittheilung ich Herrn Prof. <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Brandis</persName>
+                    </hi> verdanke. Die<lb break="yes"/>9 Ziffern des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>
+                    </hi> sind, außer der 4, ganz den persischen ähn-<lb break="no"/>lich. Die Ziffern 1, 2, 3 und 9 finden sich sogar in ägyptischen Zah-<lb break="no" />len-Inschriften <note place="foot" n="*)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Kosegarten</persName>
+                            </hi> p. 54</bibl>.</note>. Die 9 Einheiten werden 10fach, 100fach, 1000fach<lb break="yes"/>erhöht, indem man eine, zwei oder drei Nullen darüber schreibt, gleich-<lb break="no"/>sam also: <formula notation="TeX" >\overset{\circ}{2}=20</formula>, <formula notation="TeX" >\overset{\circ}{24}=240</formula>, <formula notation="TeX" >\overset{\circ\circ}{5}=500</formula>, <formula notation="TeX" >\overset{\overset{\circ}{\circ\circ}}{6}=6000</formula>. Denken wir uns statt<lb break="yes"/>der Nullen Puncte, so haben wir die arabischen <hi rendition="#g">Gobar-</hi>Ziffern. Ich lasse<lb break="yes"/>hier das Scholion in einer wörtlichen lateinischen Uebersetzung folgen.<lb break="yes" />Der Mönch nennt fälschlich <hi rendition="#i">tzüphron</hi> ein indisches Wort.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Tzyphra est et vocatur id, quod cuivis litterae inde a decade et<lb break="yes"/>insequentibus numeris quasi</hi> &#x03BF;&#x0304;&#x03BC;&#x03B9;&#x03BA;&#x03C1;&#x1F78;&#x03BD; <hi rendition="#i">inscribitur. Significat autem hac In-<lb break="no"/>dica voce tale analogiam numerorum. Ubi igitur scriptum est simile<lb break="yes" />primae litterae</hi> &#x1F04;&#x03BB;&#x03C6;&#x03B1;, <hi rendition="#i" >pro unitate scriptae, atque superimpositum habet<lb break="yes"/>vel punctum vel quasi</hi> &#x03BF;&#x0304;&#x03BC;&#x03B9;&#x03BA;&#x03C1;&#x1F78;&#x03BD;, <hi rendition="#i">addita altera figura litterae Indicae, dif-<lb break="no" />ferentiam et augmentum numerorum declarat. E. g. pro primo Graeco<lb break="yes"/>numero,</hi> &#x1FB1; <hi rendition="#i">scripto, apud Indos | sive linea recta perpendicularis, quando<lb break="yes"/>non habet superimpositum punctum vel</hi> &#x03BF;&#x0304;&#x03BC;&#x03B9;&#x03BA;&#x03C1;&#x1F78;&#x03BD;, <hi rendition="#i">ipsum hoc denotat uni-<lb break="no"/>tatem, ubi vero superimpositum sit punctum atque altera littera ad-<lb break="no"/>scripta sit, figura quidem similis priori, significat XI, propter addita-<lb break="no"/>mentum similis litterae atque superimpositum unum punctum. Simili-<lb break="no"/>ter etiam in reliquis litteris, quemadmodum adspectus docet. Si vero<lb break="yes"/>plura habet puncta, plura denotat. Quod intelligas, lector, et supputes<lb break="yes"/>unumquidque.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Von Position ist hier nicht mehr zu erkennen als in der <hi rendition="#g" >Gobar-</hi>
+                    <lb break="maybe"/>Methode. Man schrieb 3006 also: <formula notation="TeX" >\overset{\overset{\circ}{\circ\circ}}{36}</formula>; aber man mußte bald bemerken,<lb break="yes"/>daß dieselben Ziffern mit anderen Werthen wiederkamen, daß (wenn<lb break="yes"/>alle Gruppen ausgefüllt waren) in <formula notation="TeX">\overset{\overset{\circ}{\circ\circ}}{3}</formula>
+                    <formula notation="TeX">\overset{\circ\circ}{4}</formula>
+                    <formula notation="TeX">\overset{\circ}{6}</formula> 7 die so regelmäßig abnehmen-<lb break="no"/>
+                    <pb n="228" facs="#f0024"/> den Puncte oder Nullen überflüssig wurden. Diese Nullen erleichter-<lb break="no"/>ten gleichsam nur das Aussprechen der Zahlen. Entstand die Gewohn-<lb break="no"/>heit, die Nullen statt über die Ziffern, neben dieselben zu schreiben, so<lb break="yes"/>hatte man die jetzige indische Bezeichnung für die ungemischte Gruppe<lb break="yes"/>
+                    <formula notation="TeX">\overset{\overset{\circ}{\circ\circ}}{3}=3000</formula>. Wollte man zu <formula notation="TeX" >\overset{\overset{\circ}{\circ\circ}}{3}</formula> oder 3000, <formula notation="TeX">\overset{\circ}{4}=40</formula> addiren, so füllte man die-<lb break="no"/>jenige Null-Stelle aus, in welche 40, nach seinem die Gruppen-Stufe be-<lb break="no"/>zeichnenden Exponenten, hingehört. Man erhielt so: 3040 und von den<lb break="yes"/>3 Nullen, welche den Tausenden eigenthümlich sind, und welche auf die<lb break="yes"/>Linie mit den Einheiten <hi rendition="#g">herabgezogen</hi> wurden, blieben zwei, als leere,<lb break="yes"/>unausgefüllte Stellen. Nach <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>
+                    </hi> Scholion sind also Nullen (wie<lb break="yes"/>Puncte im <hi rendition="#g">Gobar</hi>) Indicatoren für die Notation der aufsteigenden Grup-<lb break="no"/>pen, und man begreift, aus den eben entwickelten Betrachtungen, wie diese<lb break="yes"/>Nullen, bei Einführung des Stellenwerthes der Ziffern, in die Reihe her-<lb break="no"/>abkommen und sich dort erhalten konnten.</p>
+                <lb break="yes"/>
+                <p>Wenn wir noch einmal den Blick auf die vielen, zum Theil so wenig<lb break="yes" />bekannten, Notationsmethoden der Völker beider Continente zurückwerfen,<lb break="yes"/>so sehen wir 1° wenige Gruppenzeichen, und fast nur für <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">4</hi> ....,<lb break="yes"/>nicht für 2<hi rendition="#i" >n,</hi> 3<hi rendition="#i">n,</hi> und 2 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>, 2<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> .... wie bei <hi rendition="#g">Römern</hi>
+                    <note place="foot" n="*)">Wir abstrahiren hier der Kürze wegen von den Gruppenzeichen des dazwischen laufenden<lb break="yes"/>
+                        <hi rendition="#g">quinaren</hi> Systems <hi rendition="#i">V, L, D</hi> ....</note> und <hi rendition="#g">Tuskern</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">X, C, M</hi> (daher alle Zwischenstufen, z. B. 2 <hi rendition="#i">n</hi> oder 2 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>, durch Juxtaposi-<lb break="no"/>tion wie in <hi rendition="#i">XX</hi> oder <hi rendition="#i">CCC</hi> bezeichnet werden); 2° viele Gruppenzeichen<lb break="yes"/>nicht bloß für <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi> (<hi rendition="#i">iota</hi> und <hi rendition="#i" >rho</hi> in den griechischen Buchstaben-Ziffern),<lb break="yes"/>sondern auch für 3 <hi rendition="#i">n</hi> oder 4 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> (in &#x03BB; und &#x03C5;), woraus große Heterogen&#x00EB;i-<lb break="no"/>tät der einzelnen Elemente im Ausdruck für 2 + 2 <hi rendition="#i">n</hi> + 2 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> entstehet (z. E.<lb break="yes" />&#x03C3;&#x03BA;&#x03B2; für 222); 3° Bezeichnung der Vielfachen der Fundamental-Gruppe<lb break="yes"/>und ihrer Potenzen (2 <hi rendition="#i" >n,</hi> 3 <hi rendition="#i">n,</hi> 4 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>, 5 <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi>), entweder durch Hinzufügung (dar-<lb break="no" />über und daneben) von Indicatoren zu den Gruppenzeichen (chinesisch: <formula notation="TeX">\overset{2}{X}</formula>,<lb break="yes"/>
+                    <formula notation="TeX">\overset{3}{X}</formula>, <formula notation="TeX" >\overset{4}{C}</formula>, <formula notation="TeX">\overset{5}{C}</formula>; indisch-tamulisch 2 <hi rendition="#i">X,</hi> 3 <hi rendition="#i">X,</hi> 4<hi rendition="#i">C,</hi> 5 <hi rendition="#i">C</hi>), oder durch stufenweise<lb break="yes"/>Bepunctung oder Accentuirung der ersten 9 Einheitszeichen, gleichsam<lb break="yes"/>&#x03B1; für 10, @&#x2024;&#x03B2; für 20, @&#x2025;&#x03B1; für 100, @&#x2234;&#x03B1; für 1000, @&#x2237;&#x03B4; für 40000, im <hi rendition="#g">Gobar,</hi> im<lb break="yes"/>Scholion des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neophytos</persName>,</hi> und in absteigender Sexagesimal-Scale der<lb break="yes"/>alexandrinischen Astronomen für <formula notation="TeX">\frac{1}{60}</formula>, <formula notation="TeX" >\frac{1}{60^2}</formula>, <formula notation="TeX">\frac{1}{60^3}</formula>, in 1° 37&#x2032; 37&#x2033; 37&#x2034; ....<lb break="yes"/>Wir haben gesehen, wie die Indicatoren (Multiplicatoren) der Ost-Asia-<lb break="no"/>
+                    <pb n="229" facs="#f0025"/> ten und Bewohner der <placeName>südlichen und indischen Halb-Insel</placeName>, oder, wenn<lb break="yes"/>ursprünglich Gruppenzeichen für <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> verschieden waren, wie die<lb break="yes" />Accentuirung der <hi rendition="#i">Püthmenes</hi> im <hi rendition="#g" >Gobar-</hi>Systeme, oder Scholion des <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Neo-<lb break="no" />phytos</persName>,</hi> ja endlich wie die Kugelschnüre des Suampan, in dem ein poten-<lb break="no"/>zirter Werth nur durch relative Lage der Schnur ausgedrückt wird,<lb break="yes"/>zum Stellenwerthe führen konnten.</p>
+                <lb break="yes"/>
+                <p>Ob das einfache indische Positions-System seinen Weg in die<lb break="yes" />Abendländer durch den Aufenthalt des gelehrten Astronomen <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Rihan<lb break="yes"/>Muhammed ebn Ahmet Albiruni</persName>
+                    </hi> in <hi rendition="#g">
+                        <placeName>Indien</placeName>
+                    </hi>
+                    <note place="foot" n="*)">Nach des gelehrten, der griechischen und arabischen Astronomie gleich kundigen Orien-<lb break="no"/>talisten <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Sedillot</persName>
+                        </hi> Bemerkung.</note>, oder durch <hi rendition="#g">mau-<lb break="no" />rische</hi> Zollbeamte an der <placeName>nord-afrikanischen Küste</placeName> und den Verkehr<lb break="yes"/>der italienischen Kaufleute mit diesen Zollbeamten gefunden hat, lassen<lb break="yes"/>wir hier unentschieden. Eben so ungewiß ist es, trotz des Alters der<lb break="yes" />indischen Cultur, ob das Positionssystem, welches so mächtig auf den Zu-<lb break="no"/>stand der Mathematik eingewirkt hat, schon zur Zeit der macedonischen<lb break="yes"/>Expedition jenseits des <hi rendition="#g">
+                        <placeName>Indus</placeName>
+                    </hi> bekannt war. Wie ganz anders, vervoll-<lb break="no"/>kommnet, würden <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Archimedes</persName>, <persName ref="http://d-nb.info/gnd/">Apollonius</persName>
+                    </hi>
+                    <persName ref="http://d-nb.info/gnd/">von <hi rendition="#g">Perga</hi>
+                    </persName> und <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Dio-<lb break="no"/>phantos</persName>
+                    </hi> die mathematischen Wissenschaften dem gelehrten Zeitalter<lb break="yes" />der <hi rendition="#g">Haschemiten</hi> überliefert haben, wenn die Abendländer, 12 oder<lb break="yes"/>13 Jahrhunderte früher, also durch <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Alexanders</persName>
+                    </hi> Heerzüge, die indi-<lb break="no"/>sche Positions-Arithmetik empfangen hätten. Aber der von den Grie-<lb break="no"/>chen durchzogene Theil von <placeName>Vorder-Indien</placeName>, das <hi rendition="#g">
+                        <placeName>Penjab</placeName>
+                    </hi> bis <hi rendition="#g">
+                        <placeName>Palibo-<lb break="no"/>thra</placeName>
+                    </hi> hin, war, nach Herrn <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Lassen&#x2019;s</persName>
+                    </hi> gelehrten Untersuchungen, ein<lb break="yes"/>Wohnsitz wenig cultivirter Völker. Von den östlicher wohnenden wur-<lb break="no"/>den sie selbst Barbaren genannt. Erst <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Seleucus Nicator</persName>
+                    </hi> drang über<lb break="yes"/>die Grenze, welche Cultur und Uncultur schied, über den Fluß <hi rendition="#g">
+                        <placeName>Saras-<lb break="no"/>vatis</placeName>
+                    </hi>
+                    <note place="foot" n="**)">
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Lassen</persName>,</hi>
+                            <hi rendition="#i">Comment. geogr. de Pentapot. p.</hi> 58</bibl>.</note> bis zum <hi rendition="#g">
+                        <placeName>Ganges</placeName>
+                    </hi> vor. Wir sehen aus den alten indischen <hi rendition="#g">Ta-<lb break="no"/>mul-</hi>Ziffern, die durch beigesetzte Multiplicatoren 2<hi rendition="#i">n,</hi> 3<hi rendition="#i">n</hi>
+                    <hi rendition="#sup">2</hi> .... aus-<lb break="no"/>drücken, und daher außer den Zeichen für die ersten 9 Einheiten, eigene<lb break="yes"/>Zeichen für <hi rendition="#i">n, n</hi>
+                    <hi rendition="#sup">2</hi>, <hi rendition="#i">n</hi>
+                    <hi rendition="#sup">3</hi> .... haben, daß in <placeName>Indien</placeName>, neben dem fast allein<lb break="yes"/>sogenannten indischen (oder arabischen) Zahlen-Systeme mit Stellen-<lb break="no"/>werth, auch andere, ohne Stellenwerth, gleichzeitig existirt haben. Viel-<lb break="no"/>leicht kamen <persName ref="http://d-nb.info/gnd/">Alexander</persName> und seine bactrischen Nachfolger bei ihrem tem-<lb break="no"/>
+                    <pb n="230" facs="#f0026"/> porären Vordringen nicht mit Nationen in Contact, bei welchen die Po-<lb break="no"/>sitions-Methode ausschließlich vorherrschte.</p>
+                <lb break="yes"/>
+                <p>Möchten die Spuren von dem Vielen, was noch zu entdecken übrig<lb break="yes" />ist, recht bald ernster verfolgt werden, theils von Philologen, welche<lb break="yes"/>griechische, persische oder arabische <note place="foot" n="*)" >Unter den arabischen Handschriften sind besonders solche zu empfehlen, welche vom Zoll-<lb break="yes"/>und Finanzwesen, oder von der Arithmetik im Allgemeinen handeln, z. B. <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Abu Jose Alchin-<lb break="no" />dus</persName>
+                            </hi>
+                            <hi rendition="#i">de arithmetica indica;</hi>
+                        </bibl>
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Abdelhamid Ben Vasee Abulphadl</persName>,</hi>
+                            <hi rendition="#i">de numerorum proprieta-<lb break="no"/>ibus;</hi>
+                        </bibl>
+                        <bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Ahmad Ben Omar Alkarabisi</persName>
+                            </hi>
+                            <hi rendition="#i">liber de indica numerandi ratione;</hi>
+                        </bibl> die indische Alge-<lb break="no"/>bra des <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Katka</persName>; <persName ref="http://d-nb.info/gnd/">Mohammed Ben Lara</persName>
+                        </hi>
+                        <hi rendition="#i">de numerorum disciplina</hi> (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Casiri</persName>
+                            </hi>
+                            <hi rendition="#i">Bibl. arabico-<lb break="no"/>hispana T. I. p.</hi> 353. 405. 410. 426. 433.</bibl>)</note> Handschriften zu untersuchen Ge-<lb break="no"/>legenheit finden, theils von Reisenden, die sich in der <placeName>indischen Halb-<lb break="maybe"/>Insel</placeName> selbst aufhalten. Die bloße Pagination alter Codices aus der Sanscrit-<lb break="maybe" />Literatur kann zu merkwürdigen Beobachtungen führen. Wer würde<lb break="yes" />z. B. geahndet haben, daß es unter den <hi rendition="#g">Indiern,</hi> neben der Decimal-Po-<lb break="no"/>sitions-Arithmetik, ein Sedecimal-System ohne Position gab, daß ge-<lb break="no"/>wisse indische Stämme meist nach Gruppen von 16, wie die amerikani-<lb break="no"/>schen Völker, die <hi rendition="#g" >Kymren</hi> und <hi rendition="#g">Basken,</hi> nach Gruppen von 20 zähl-<lb break="no"/>ten. Eine solche seltsame Numeration ist aber vor mehr als 10 Jahren<lb break="yes"/>in einem Codex des alt-indischen Gedichts <bibl>
+                        <hi rendition="#i">Mahabharata</hi> (<hi rendition="#i">Cod. Reg. Paris.<lb break="yes"/>p.</hi> 178.)</bibl> vom Herrn Professor <hi rendition="#g">
+                        <persName ref="http://d-nb.info/gnd/">Bopp</persName>
+                    </hi> aufgefunden, und mir zu der Zeit, als<lb break="yes"/>ich meine erste Abhandlung über <hi rendition="#g">die Zahlzeichen der Völker</hi> der<lb break="yes"/>
+                    <hi rendition="#i">Académie des inscriptions et belles lettres</hi> vorlegte, gütigst zur Bekannt-<lb break="no"/>machung mitgetheilt worden. Fünf und sechszig Seiten dieser Hand-<lb break="no"/>schrift sind mit <hi rendition="#g" >indischen Buchstabenzahlen</hi> paginirt, doch so,<lb break="yes"/>daß nur die Consonanten des Sanskrit-Alphabets (<hi rendition="#i">k</hi> für 1, <hi rendition="#i">kh</hi> für 2 ....)<lb break="yes"/>gebraucht werden, was dem bisher so allgemein verbreiteten Vorur-<lb break="no"/>theile <note place="foot" n="**)">
+                        <hi rendition="#i">Si l&#x2019;arithmétique de position n&#x2019;est pas originaire de l&#x2019;Inde, elle doit au moins y avoir<lb break="yes" />existé de tems immémorial; car on ne trouve chez les Indiens aucune trace d&#x2019;une notation alpha-<lb break="no"/>bétique telle que la notation des Hébreux, des Grecs et des Arabes</hi> (<bibl>
+                            <hi rendition="#g">
+                                <persName ref="http://d-nb.info/gnd/">Delambre</persName>
+                            </hi>
+                            <hi rendition="#i">Hist. de l&#x2019;astron.<lb break="yes"/>ancienne T. I. p.</hi> 543.</bibl>).</note> widerspricht, als fänden sich in <hi rendition="#g">Indien</hi> bloß Ziffern, nicht<lb break="yes"/>Buchstaben als Ziffern gebraucht, wie bei <hi rendition="#g">semitischen</hi> Stämmen und<lb break="yes"/>den <hi rendition="#g">Griechen.</hi> Mit der 60sten Seite beginnt die wunderbare Sedeci-<lb break="no"/>mal-Notation. Man erkennt in den ersten 15 <hi rendition="#i">püthmenes</hi> kaum zwei<lb break="yes" />Zeichen, &#x2014; die Sanskrit-Buchstaben sind etwa für 3 ein aspirirtes <hi rendition="#i">t</hi>
+                    <lb break="yes"/>und für 12 ein <hi rendition="#i">d,</hi> &#x2014; eben so wenig die eigentlich sogenannten indischen<lb break="yes"/>
+                    <pb n="231" facs="#f0027"/> (arabischen) Zeichen. Merkwürdig ist, daß die Ziffer 1 mit einer bei-<lb break="no"/>gesetzten Null 4, die Ziffer 1 doppelt (zwei senkrechte Striche) mit einer<lb break="yes"/>beigesetzten Null 8 bedeuten, gleichsam Ruhepuncte, Mittelstufen des Se-<lb break="no"/>decimal-Systems für <formula notation="TeX">\frac{1}{4}</formula> und <formula notation="TeX" >\frac{1}{2}</formula>
+                    <hi rendition="#i">n;</hi> aber <formula notation="TeX">\frac{3}{4}</formula> von <hi rendition="#i">n</hi> (12) ist ohne Null und<lb break="yes"/>hat eine eigene Hieroglyphe, der arabischen 4 ähnlich. Für die Normal-<lb break="no" />gruppe selbst, 16, und für die <hi rendition="#i">multipla</hi> der Normalgruppe: 2 <hi rendition="#i">n,</hi> 3 <hi rendition="#i">n</hi> ....<lb break="yes"/>werden die bekannten bengalischen Ziffern gebraucht, so daß 16 die ben-<lb break="no"/>galische 1 mit einem vorgesetzten gekrümmten Striche; 32 die benga-<lb break="no"/>lische 2; 48 die bengalische 3 ist. Die <hi rendition="#i">multipla</hi> von <hi rendition="#i">n</hi> sind also bloß<lb break="yes"/>wie Gruppen erster, zweiter, dritter .... Ordnung; die Zahlen 2 <hi rendition="#i">n</hi> + 4<lb break="yes"/>oder 3 <hi rendition="#i" >n</hi> + 6 (d. i. im Sedecimal-System 36 und 54) sind durch eine<lb break="yes"/>bengalische 2 und eine beigefügte <hi rendition="#g" >Mahabharata-</hi>Ziffer <note place="foot" n="*)">Ich bediene mich hier dieses uneigentlichen Ausdruckes, bloß um das Zahlen-System,<lb break="yes" />welches eine Abschrift des Gedichts darbietet, mit einem passenden Worte zu bezeichnen.</note> 4, wie durch<lb break="yes"/>eine bengalische Ziffer 3 und eine beigefügte <hi rendition="#g">Mahabharata-</hi>Ziffer 6<lb break="yes" />bezeichnet: eine zwar sehr regelmäßige, aber unbehülflich verwickelte<lb break="yes"/>Art zu numeriren, deren Ursprung um so räthselhafter ist, da sie die<lb break="yes"/>Kenntniß der bengalischen Ziffern voraussetzt.</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

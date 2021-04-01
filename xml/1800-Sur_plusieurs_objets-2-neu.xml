@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="275" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#g">HUMBOLDT&#x2019;S TRAVELS THROUGH SPANISH AMERICA.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>The following letter from this enterpri&#x017F;ing philo&#x017F;opher to<lb break="yes"/>
+                    <persName key="fourcroy_afd">Fourcroy</persName> has lately been publi&#x017F;hed in one of the French<lb break="yes"/>journals:</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <dateline>
+                        <hi rendition="#et">&#x201C;Guyara, January 25, 1800.</hi>
+                    </dateline>
+                    <lb break="yes"/>
+                    <p>&#x201C;As the yellow fever, which de&#x017F;olates this part of <placeName key="amerika">South<lb break="yes"/>America</placeName>, obliges us to make our &#x017F;tay here as &#x017F;hort as po&#x017F;-<lb break="no" />&#x017F;ible, I &#x017F;natch this opportunity of &#x017F;ending you a few lines,<lb break="yes"/>and repeating, from the middle of the torrid zone, how much<lb break="yes"/>my thoughts are occupied with you and your illu&#x017F;trious col-<lb break="no"/>leagues, among whom I met with &#x017F;uch a flattering reception<lb break="yes"/>during my la&#x017F;t &#x017F;tay at Paris. Since our departure from Saint<lb break="yes"/>Croix in Teneriffe, where I de&#x017F;cended into the crater of the<lb break="yes" />volcano, the atmo&#x017F;pheric air being there at 0&#x00B7;8 of R. and<lb break="yes"/>at 0&#x00B7;19 of oxygen, I have written to you twice. I have &#x017F;ent<lb break="yes"/>to <persName key="delambre_jbj" >Delambre</persName> and <persName key="lalande_jjlfd" >Lalande</persName> an extract of my a&#x017F;tronomical<lb break="yes" />labours; the longitude of &#x017F;ome important places; an ob&#x017F;er-<lb break="no"/>vation of the eclip&#x017F;e on the 28th of October la&#x017F;t; immer&#x017F;ions<lb break="yes"/>
+                        <fw type="catch" place="bottom">of</fw>
+                        <lb break="yes"/>
+                        <pb n="276" facs="#f0002"/> of the &#x017F;atellites, and re&#x017F;earches re&#x017F;pecting the inten&#x017F;ity of<lb break="yes"/>light of the au&#x017F;tral &#x017F;tars, mea&#x017F;ured by means of diaphragms.<lb break="yes"/>I have addre&#x017F;&#x017F;ed to the In&#x017F;titute a chemical memoir on the<lb break="yes"/>pho&#x017F;phore&#x017F;cence of the &#x017F;ea; ob&#x017F;ervations on a particular gas<lb break="yes" />furni&#x017F;hed by the fruit of the <hi rendition="#i">coffea arabica</hi> when expo&#x017F;ed to<lb break="yes"/>the &#x017F;un; on a &#x017F;now white feld-&#x017F;par, which, when moi&#x017F;tened,<lb break="yes"/>ab&#x017F;orbs all the moi&#x017F;ture of the atmo&#x017F;phere; experiments on<lb break="yes"/>the milk of the <hi rendition="#i">cecropia peltata</hi> and the <hi rendition="#i" >euphorbia cura&#x017F;&#x017F;a-<lb break="no"/>vica,</hi> which will form a &#x017F;upplement to your excellent memoir<lb break="yes"/>on the <hi rendition="#i">cahout-chouc,</hi> and to that of our friend <persName key="chaptal_jac">Chaptal</persName>; and<lb break="yes"/>on the air which circulates in vegetables.</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;The crui&#x017F;ers which cover the &#x017F;eas here make me ap-<lb break="no"/>prehend that a part of my letters may not have reached you;<lb break="yes"/>though I &#x017F;ent them &#x017F;ometimes by way of Guadaloupe, and<lb break="yes"/>&#x017F;ometimes by that of Spain. The&#x017F;e few lines I have &#x017F;ent by<lb break="yes"/>an American ve&#x017F;&#x017F;el, which will fail in a few days for Bo&#x017F;ton;<lb break="yes"/>and, though they cannot reach you but through Hamburgh,<lb break="yes"/>they will, perhaps, be le&#x017F;s liable to mi&#x017F;carry. People here<lb break="yes"/>are accu&#x017F;tomed to make four or five duplicates of their letters.<lb break="yes"/>But how can I find time, when I have &#x017F;o many things to<lb break="yes"/>ob&#x017F;erve, arrange, and calculate?</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;I &#x017F;hall confine my&#x017F;elf, therefore, to letting you once<lb break="yes"/>more know that I &#x017F;till enjoy the be&#x017F;t health po&#x017F;&#x017F;ible, and<lb break="yes"/>that I am treated with the utmo&#x017F;t kindne&#x017F;s by the inhabit-<lb break="no"/>ants of the&#x017F;e countries: that the pa&#x017F;&#x017F;ports and letters of re-<lb break="no"/>commendation from the Spani&#x017F;h government procure me<lb break="yes"/>every facility for making re&#x017F;earches u&#x017F;eful to the &#x017F;ciences:<lb break="yes"/>that none of my in&#x017F;truments, even the mo&#x017F;t delicate, &#x017F;uch as<lb break="yes"/>barometers, thermometers, hygrometers, <persName key="borda_jcd">Bordas&#x2019;</persName> dipping<lb break="yes" />needle, &#x0026;c. are deranged: and that, at the extremity of the<lb break="yes"/>mi&#x017F;&#x017F;ionary e&#x017F;tabli&#x017F;hments among the Chayma Indians, in<lb break="yes"/>the mountains of Toumiriquiri, I have my laboratory<lb break="yes"/>mounted as if I were in the Hotel Bo&#x017F;ton, in the Rue du<lb break="yes"/>Colombier. My fellow-traveller, <persName key="bonpland_ajag">Bonpland</persName>, educated in the<lb break="yes"/>
+                        <hi rendition="#i">Jardin des Plantes,</hi> becomes every day more valuable to me.<lb break="yes"/>To an exten&#x017F;ive knowledge of botany and comparative ana-<lb break="no"/>tomy he unites indefatigable zeal. I hope one day to re-<lb break="no"/>&#x017F;tore him to his country, worthy of attracting public atten-<lb break="no"/>tion. Never did any foreigner enjoy &#x017F;uch permi&#x017F;&#x017F;ion as that<lb break="yes"/>
+                        <fw type="catch" place="bottom">granted</fw>
+                        <lb break="yes"/>
+                        <pb n="277" facs="#f0003"/> granted to me by the king of Spain. This idea alone is ca-<lb break="no"/>pable of exciting us to redouble our activity. During the<lb break="yes"/>&#x017F;even months we have been in this beautiful continent, we<lb break="yes"/>have dried (with duplicates) nearly 4000 plants, written<lb break="yes"/>more than 800 de&#x017F;criptions of new &#x017F;pecies or &#x017F;pecies little<lb break="yes"/>known, particularly new genera of palms, cryptogamia, bifaria,<lb break="yes" />mela&#x017F;toma; collected in&#x017F;ects and &#x017F;hells, and made many<lb break="yes"/>drawings re&#x017F;pecting the anatomy of marine worms; with<lb break="yes"/>ob&#x017F;ervations on magneti&#x017F;m, electricity, humidity, the tempe-<lb break="no"/>rature of the atmo&#x017F;phere, and the quantity of oxygen it con-<lb break="no"/>tains. We have mea&#x017F;ured that immen&#x017F;e and high chain of<lb break="yes" />mountains extending to the coa&#x017F;t of Paria, and examined<lb break="yes"/>their volcanoes, which vomit forth kindled inflammable<lb break="yes"/>air, &#x017F;ulphur, and hydro-&#x017F;ulphurous water. We have al&#x017F;o<lb break="yes"/>collected many &#x017F;eeds, which we &#x017F;hall &#x017F;end off in three or<lb break="yes"/>four weeks for Europe, addre&#x017F;&#x017F;ed to the <hi rendition="#i">Jardin des Plantes.</hi>
+                        <lb break="yes"/>We have &#x017F;pent five months in the interior of New Anda-<lb break="no"/>lu&#x017F;ia and on the coa&#x017F;ts of Paria, where we experienced very<lb break="yes"/>violent earthquakes in the end of la&#x017F;t year. One part of the&#x017F;e<lb break="yes"/>countries is &#x017F;till inhabited by the &#x017F;avage Indians, and others<lb break="yes"/>have began to be cultivated only within &#x017F;ive or &#x017F;ix years. In<lb break="yes"/>what words &#x017F;hall I de&#x017F;cribe to you the maje&#x017F;ty of the vege-<lb break="no"/>tation here; the fore&#x017F;ts of Ceiba, Hura, Hymenea, which<lb break="yes"/>the rays of the &#x017F;un never penetrate; the variety of the ani-<lb break="no"/>mals; the &#x017F;uperb plumage of the birds; the apes, the tigers;<lb break="yes"/>the hideous a&#x017F;pect of the crocodiles (<hi rendition="#i">caimans</hi>) which &#x017F;warm<lb break="yes"/>in the rivers, and of which &#x017F;ome are thirty feet in length?<lb break="yes" />From Cumana we proceeded to Caraccas, where we remain-<lb break="no"/>ed during the month of November and part of December:<lb break="yes"/>A charming capital &#x017F;ituated in a valley which has 426 toi&#x017F;es<lb break="yes"/>of elevation; and, though in latitude 10° 31&#x2032;, enjoys the<lb break="yes"/>coolne&#x017F;s, and I might &#x017F;ay the cold, of Paris! From this<lb break="yes"/>place we a&#x017F;cended to the &#x017F;ummit of the famous Silla de Ca-<lb break="no"/>raccas, or Sierra de <placeName key="avila">Avila</placeName>, where, at the height of 1316<lb break="yes"/>toi&#x017F;es, we di&#x017F;covered beautiful cry&#x017F;tals of titanium. I found<lb break="yes"/>al&#x017F;o dendrites &#x017F;imilar to tho&#x017F;e of mangane&#x017F;e, which are oxyd<lb break="yes"/>of titanium.</p>
+                    <lb break="yes"/>
+                    <p>We &#x017F;hall proceed hence for Varina and the &#x017F;now-covered<lb break="yes"/>mountains of Merida, the cataracts of Rio Nigro, and the<lb break="yes"/>
+                        <fw type="catch" place="bottom">unknown</fw>
+                        <lb break="yes"/>
+                        <pb n="278" facs="#f0004"/> unknown world of Oronoco, in order to return by Guyana<lb break="yes"/>to Cumana, from which we &#x017F;hall &#x017F;et out for the Havannah<lb break="yes"/>and Mexico.</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;We &#x017F;hall take care to tran&#x017F;mit the &#x017F;eeds we have col-<lb break="no"/>lected for the <hi rendition="#i">Jardin des Plantes</hi> at Paris, the Mu&#x017F;eum, and<lb break="yes"/>Sir <persName key="banks_j">Jo&#x017F;eph Banks</persName>, as we agreed with <persName key="jussieu_ald">Ju&#x017F;&#x017F;ieu</persName> &#x2012; &#x2012; &#x2012; &#x2012;.</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;How much I lament the fate of <persName key="dolomieu_dgd" >Dolomieu</persName>, detained a<lb break="yes"/>pri&#x017F;oner in Sicily! If he &#x017F;hould return, communicate to him<lb break="yes"/>the following fact: &#x2014; It is more than three years &#x017F;ince I an-<lb break="no"/>nounced to <persName key="lametherie_jcd" >Lametherie</persName>, that, in the primitive mountains of<lb break="yes"/>Italy, France, Swi&#x017F;&#x017F;erland, Poland, and I can now add Spain,<lb break="yes"/>there exi&#x017F;ts a <hi rendition="#i" >paralleli&#x017F;m of direction</hi> between the &#x017F;trata of<lb break="yes"/>foliaceous granites, &#x017F;late, micaceous &#x017F;chi&#x017F;ts, corneous &#x017F;chi&#x017F;ts:<lb break="yes"/>that the&#x017F;e &#x017F;trata incline (&#x017F;ink down) towards the north-we&#x017F;t,<lb break="yes"/>and that their direction makes with the axis of the globe an<lb break="yes"/>angle of 45° 57&#x2032;: that this inclination and direction in no<lb break="yes"/>manner depend on the form and direction of the mountains:<lb break="yes"/>that it is not any way affected by the valleys, but that it<lb break="yes"/>announces a cau&#x017F;e much greater, and more general: that it<lb break="yes"/>depends on a phenomenon of attraction which has acted at<lb break="yes"/>the time of the con&#x017F;olidation of the globe. Having travelled<lb break="yes"/>over the greater part of Europe on foot, and with &#x017F;extants<lb break="yes" />and compa&#x017F;&#x017F;es, I have a very exten&#x017F;ive collection of ob&#x017F;erva-<lb break="no"/>tions on that &#x017F;ubject. My manu&#x017F;cript on the identity of<lb break="yes"/>&#x017F;trata in the con&#x017F;truction of the globe, is in the hands of my<lb break="yes" />brother. I was employed on it &#x017F;ince 1791, but it will not<lb break="yes"/>appear till I have &#x017F;een more of the globe. To my great a&#x017F;to-<lb break="no"/>ni&#x017F;hment, I have ob&#x017F;erved in the Cordillera of Paria, New<lb break="yes"/>Andalu&#x017F;ia, <placeName key="barcelona">New Barcelona</placeName>, and Venzuela, that in the new<lb break="yes"/>world, near the equator, the &#x017F;trata follow the &#x017F;ame laws and<lb break="yes"/>the &#x017F;ame paralleli&#x017F;m.</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;You remember the la&#x017F;t ingenious ob&#x017F;ervations of <persName key="coulomb_cad">Cou-<lb break="no"/>lomb</persName> on the air which i&#x017F;&#x017F;ues with explo&#x017F;ion from the trunks<lb break="yes"/>of trees when they are pierced. I have made experiments<lb break="yes"/>on the <hi rendition="#i">clu&#x017F;ea ro&#x017F;ea,</hi> in which (in the interior of the <hi rendition="#i">pneumato-<lb break="maybe"/>chimi&#x017F;er,</hi> ve&#x017F;&#x017F;els of <persName key="hedwig_j">Hedwig</persName>, the <hi rendition="#i" >va&#x017F;a cochleata</hi> of <persName key="malpighi_m" >Malpighi</persName>,)<lb break="yes"/>there circulates an immen&#x017F;e quantity of air. This air con-<lb break="no"/>tains as far as <formula notation="TeX">\frac{35}{100}</formula> of oxygen. The leaves of the &#x017F;ame tree,<lb break="yes"/>when expo&#x017F;ed to the &#x017F;un under water, do not give a cubic<lb break="yes"/>
+                        <fw type="catch" place="bottom">mellimetre</fw>
+                        <lb break="yes"/>
+                        <pb n="279" facs="#f0005"/> mellimetre of air. This air, which circulates, certainly<lb break="yes"/>&#x017F;erves, as in the animal body, to coagulate the fihrous part<lb break="yes"/>by ab&#x017F;orption of oxygen. The <hi rendition="#i">clu&#x017F;ea</hi> is a milky plant, and<lb break="yes"/>ela&#x017F;tic gluten is formed in it.</p>
+                    <lb break="yes"/>
+                    <p>&#x201C;Though the purity of the atmo&#x017F;pheric air amounts here,<lb break="yes"/>particularly in the night, to 0&#x00B7;305 of oxygen, I have found<lb break="yes"/>that the air contained in the pods and cap&#x017F;ules of equinoctial<lb break="yes"/>plants, for in&#x017F;tance the <hi rendition="#i">paullinia,</hi> is more azotous than our<lb break="yes"/>atmo&#x017F;pherie air. It does not exceed 0&#x00B7;24 or 0&#x00B7;25 of oxygen.<lb break="yes"/>The air in the <hi rendition="#i" >culmi geniculati</hi> here, has only 0&#x00B7;15 of oxygen.<lb break="yes"/>All this proves that the air which circulates is purer, and<lb break="yes"/>that the air which is in a &#x017F;tate of re&#x017F;t, depo&#x017F;ited in the cap-<lb break="no"/>&#x017F;ules or <hi rendition="#i">utriculi,</hi> is le&#x017F;s pure than atmo&#x017F;pheric air. The<lb break="yes"/>former is recently produced by the organs which decompo&#x017F;e<lb break="yes"/>the water: it proceeds to tho&#x017F;e parts where it ought to &#x017F;erve,<lb break="yes"/>by its abundance of oxygen, to precipitate the fibrous prin-<lb break="no"/>ciple to form the fibrous ti&#x017F;&#x017F;ue. The other is the re&#x017F;iduum<lb break="yes"/>of a gas which has already di&#x017F;charged the&#x017F;e functions.</p>
+                    <lb break="yes"/>
+                    <closer>
+                        <salute>
+                            <hi rendition="#et">ALEX. HUMBOLDT.&#x201D;</hi>
+                        </salute>
+                    </closer>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

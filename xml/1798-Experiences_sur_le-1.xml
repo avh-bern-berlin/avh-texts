@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Expériences sur le Gaz nitreux, et ses combinaisons avec l’Oxigène</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1798-Experiences_sur_le-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Schussermühlen</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">30. September 1798</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Annales de chimie</title>
+                        <biblScope unit="volume">28</biblScope>
+                        <biblScope unit="issue">2</biblScope>
+                        <biblScope unit="pages">123–180</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="123" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">EXPÈRIENCES</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">Sur le Gaz nitreux, et ses combinaisons<lb break="yes"/>avec l&#x2019;Oxigène;</hi>
+                    <lb break="yes"/>Par <hi rendition="#k">Alexandre-Fréderic</hi>
+                    <hi rendition="#g">
+                        <persName key="humboldt_av"/>HUMBOLDT.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>§. I. <hi rendition="#k">
+                        <hi rendition="#in">L</hi>es</hi> expériences, que je vais rapporter<lb break="yes"/>dans ce Mémoire, ont été faites pour conno&#x00EE;tre<lb break="yes"/>la nature du gaz nitreux, et les fluides aérifor-<lb break="no" />mes avec lesquels il se trouve constamment<lb break="yes"/>m&#x00EA;lé. C&#x2019;est à la nouvelle chimie que l&#x2019;on doit<lb break="yes"/>la découverte importante des élémens de l&#x2019;aci-<lb break="no"/>de nitreux; c&#x2019;est elle qui nous a prouvé que cet<lb break="yes"/>acide et le gaz nitreux ne diffèrent que par<lb break="yes"/>la proportion des quantités d&#x2019;azote et d&#x2019;oxi-<lb break="no"/>gène qu&#x2019;ils contiennent. Mais, quelque belle<lb break="yes"/>et fondée que soit cette théorie, les chimistes<lb break="yes"/>les plus célèbres se contredisent encore actuel-<lb break="no"/>lement en déterminant la <hi rendition="#i">quantité de gaz<lb break="yes"/>nitreux</hi> requise pour saturer une partie d&#x2019;oxi-<lb break="no"/>gène; détermination qui cependant est du plus<lb break="yes"/>grand intér&#x00EA;t pour l&#x2019;analyse exacte de l&#x2019;at-<lb break="no"/>mosphère. Divisez une somme <hi rendition="#i" >z</hi> en deux<lb break="yes"/>parties, d&#x2019;après la proportion donnée <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi>,<lb break="yes"/>voilà à quoi revient toute la solution du pro-<lb break="no"/>bl&#x00EA;me eudiométrique. Soit <hi rendition="#i">m</hi> le volume du<lb break="yes"/>gaz nitreux nécessaire pour saturer une partie<lb break="yes"/>
+                    <pb n="124" facs="#f0002"/> d&#x2019;oxigène <hi rendition="#i">n</hi>; soit <hi rendition="#i">z</hi> la quantité des gaz <choice>
+                        <sic>at-<lb break="no"/>mosphérique</sic>
+                        <corr type="editorial">at-<lb break="no"/>mosphériques</corr>
+                    </choice> et nitreux absorbés (anéantis)<lb break="yes"/>dans le tube de <persName key="fontana_af"/>Fontana, et cette somme <hi rendition="#i" >z</hi>
+                    <lb break="yes"/>sera composée de <hi rendition="#i">x</hi> = au gaz nitreux, et de</p>
+                <lb break="yes"/>
+                <list>
+                    <item>
+                        <hi rendition="#i">y</hi> = à l&#x2019;oxigène absorbé par <hi rendition="#i">x</hi>; donc<lb break="yes"/>
+                        <hi rendition="#i">z</hi> = <hi rendition="#i">x</hi> + <hi rendition="#i" >y</hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi> = <hi rendition="#i" >x</hi> : <hi rendition="#i">y</hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">m</hi> + <hi rendition="#i">n</hi> : <hi rendition="#i" >n</hi> = <hi rendition="#i">x</hi> + <hi rendition="#i">y</hi> : <hi rendition="#i">y</hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">y</hi> = <formula notation="TeX" >\frac{zn}{m+n.}</formula>
+                        <lb break="yes"/>En mettant <hi rendition="#i">n</hi> = 1<lb break="yes"/>
+                        <hi rendition="#i">y</hi> = <formula notation="TeX">\frac{z}{1+m}</formula>
+                        <lb break="yes"/>
+                        <hi rendition="#i">m</hi> = <formula notation="TeX">\frac{z}{y}</formula> &#x2014; 1.</item>
+                </list>
+                <lb break="yes"/>
+                <p>§. II. Connoissant donc un moyen certain<lb break="yes"/>de déterminer directement la quantité d&#x2019;oxi-<lb break="no"/>gène <hi rendition="#i" >y</hi> qu&#x2019;un gaz atmosphérique contient, il<lb break="yes"/>seroit facile de trouver la valeur de <hi rendition="#i">m</hi>. On<lb break="yes" />m&#x00EA;lera 100 parties de ce gaz atmosphérique<lb break="yes"/>à 100 parties de gaz nitreux, et le quotient du<lb break="yes"/>volume absorbé, divisé par <hi rendition="#i">y</hi>, donnera <hi rendition="#i">m</hi> + 1.<lb break="yes"/>Il suffit, pour le moment, d&#x2019;indiquer, en gé-<lb break="no"/>néral, le chemin qu&#x2019;il faudra suivre pour trou-<lb break="no"/>ver la valeur de <hi rendition="#i">m</hi>. Avant d&#x2019;entrer dans le dé-<lb break="no"/>tail des expériences m&#x00EA;mes, jetons les yeux<lb break="yes"/>sur les nombres que l&#x2019;illustre <persName key="lavoisier_ald"/>Lavoisier,<lb break="yes"/>
+                    <persName key="priestley_j">Priestley</persName>, <persName key="ingenhousz_j" >Ingenhouss</persName>, <persName key="scherer_01">Scherer</persName> (de <placeName key="wien">Vienne</placeName>)<lb break="yes"/>et d&#x2019;autres chimistes nous ont présentés pour<lb break="yes"/>
+                    <pb n="125" facs="#f0003"/> déterminer la proportion fondamentale <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi>.<lb break="yes"/>Ces nombres variant de 1.7 jusqu&#x2019;à 4.5; in-<lb break="no"/>certitude à laquelle on ne devroit pas s&#x2019;attendre<lb break="yes"/>dans un temps où la chimie pneumatique re-<lb break="no"/>pose sur des bases aussi solides.</p>
+                <lb break="yes"/>
+                <p>§. III. <persName key="lavoisier_ald"/>Lavoisier annonce que, par un grand<lb break="yes"/>nombre d&#x2019;expériences faites avec un gaz oxi-<lb break="no"/>gène très-pur et du gaz nitreux dégagé du su-<lb break="no"/>cre et du mercure par le moyen de l&#x2019;acide<lb break="yes"/>nitrique, il trouva <hi rendition="#i">m</hi> entre 1.725 et 1.830.<lb break="yes"/>Cette m&#x00EA;me proportion est indiquée dans la<lb break="yes"/>plupart de nos meilleurs manuels de chimie,<lb break="yes"/>dans celui de <persName key="chaptal_jac"/>Chaptal, <persName key="girtanner_c" >Girtanner</persName>, <persName key="jacquin_njfv"/>Jacquin,<lb break="yes"/>
+                    <persName key="gren_fag">Gren</persName> et Scheèle. <persName key="priestley_j" >Priestley</persName> raconte que 100 par-<lb break="no"/>ties d&#x2019;air vital ont été absorbées jusqu&#x2019;à 0.03<lb break="yes"/>par 200 parties de gaz nitreux; ce qui donne<lb break="yes"/>
+                    <hi rendition="#i">m</hi> = 1.970. Des expériences faites sur l&#x2019;<hi rendition="#i">air<lb break="yes"/>vital</hi> ne paroissent, à la vérité, pas les plus<lb break="yes"/>propres pour déterminer combien de parties<lb break="yes"/>de gaz nitreux se combinent à une partie d&#x2019;<hi rendition="#i">oxi-<lb break="no"/>gène atmosphérique</hi>. Il n&#x2019;est pas douteux que<lb break="yes"/>ce dernier ne diffère en rien de l&#x2019;oxigène le<lb break="yes"/>plus pur, dégagé du muriate oxigéné de po-<lb break="no"/>tasse; mais cette identité de propriétés n&#x2019;éloi-<lb break="no"/>gne pas la crainte que la m&#x00EA;me substance ne<lb break="yes"/>suive des lois d&#x2019;affinités différentes, agissant<lb break="yes"/>seule ou combinée avec l&#x2019;azote. Il se pourroit<lb break="yes"/>
+                    <pb n="126" facs="#f0004"/> très-bien que les deux bases constituantes de<lb break="yes"/>notre atmosphère, se rapprochant déjà de l&#x2019;état<lb break="yes"/>d&#x2019;une <hi rendition="#i">combinaison chimique</hi>, l&#x2019;oxigène at-<lb break="no"/>mosphérique, retenu par les liens de l&#x2019;azote,<lb break="yes"/>s&#x2019;un&#x00EE;t en moindre quantité à une partie de gaz<lb break="yes"/>nitreux, que l&#x2019;oxigène pur contenu dans l&#x2019;air<lb break="yes"/>vital. Il se pourroit qu&#x2019;un mélange artificiel<lb break="yes"/>d&#x2019;oxigène et d&#x2019;azote nous présent&#x00E2;t une autre<lb break="yes"/>valeur de <hi rendition="#i">m</hi> que l&#x2019;air atmosphérique, et qu&#x2019;il<lb break="yes"/>se form&#x00E2;t des acides, tant&#x00F4;t plus, tant&#x00F4;t moins<lb break="yes"/>oxigénés. Les faits, que nous allons exposer<lb break="yes"/>dans la suite, nous prouveront combien cette<lb break="yes"/>crainte a été fondée. Nous verrons que, pour<lb break="yes"/>avoir des résultats propres à servir de base au<lb break="yes"/>calcul eudiométrique, il faut chercher à déter-<lb break="no" />miner la proportion <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi> par des expériences<lb break="yes"/>faites <hi rendition="#i">dans les m&#x00EA;mes conditions</hi> que celles<lb break="yes"/>que nous offre l&#x2019;analyse de l&#x2019;atmosphère dans le<lb break="yes"/>tube de <persName key="fontana_af"/>Fontana. Mais, avant d&#x2019;entreprendre ce<lb break="yes"/>travail, arr&#x00EA;tons-nous encore à examiner l&#x2019;ex-<lb break="no"/>périence fondamentale de <persName key="lavoisier_ald" />Lavoisier. C&#x2019;est ho-<lb break="no"/>norer la mémoire de ce grand homme que de<lb break="yes"/>rectifier les plus petites erreurs éparses dans<lb break="yes"/>les ouvrages qu&#x2019;il a laissés à la postérité.</p>
+                <lb break="yes"/>
+                <p>§. IV. En m&#x00EA;lant 300 parties de gaz nitreux<lb break="yes"/>à 100 parties de gaz oxigène, <persName key="lavoisier_ald"/>Lavoisier trouva<lb break="yes" />un résidu de 128 parties; ce qui donna pour<lb break="yes"/>
+                    <pb n="127" facs="#f0005"/>
+                    <hi rendition="#i">m</hi> 1.72. Il faut supposer que cet illustre chi-<lb break="no"/>miste ait travaillé sur un gaz oxigène qui p&#x00FB;t<lb break="yes"/>&#x00EA;tre totalement absorbé par le phosphore. Une<lb break="yes"/>azotation de 0.10 (impureté que l&#x2019;on trouve<lb break="yes"/>beaucoup plus souvent que l&#x2019;on ne s&#x2019;imagine<lb break="yes"/>vulgairement) changeroit la valeur de <hi rendition="#i">m</hi> en<lb break="yes"/>
+                    <formula notation="TeX">\frac{172}{90}</formula> = 1.91. Il n&#x2019;en est pas de m&#x00EA;me avec l&#x2019;im-<lb break="no"/>pureté du gaz nitreux. <persName key="lavoisier_ald"/>Lavoisier, ne connois-<lb break="no"/>sant pas les moyens de l&#x2019;essayer, il est très-<lb break="maybe"/>probable (comme nous allons le prouver tan-<lb break="no"/>t&#x00F4;t) qu&#x2019;il n&#x2019;existe pas de gaz nitreux qui ne<lb break="yes"/>contienne au moins 0.10 à 0.14 d&#x2019;azote.<lb break="yes"/>Mais ce mélange n&#x2019;altère pas le calcul de La-<lb break="no"/>voisier. Soit son gaz nitreux à 0.10 d&#x2019;azote;<lb break="yes"/>alors le résidu du gaz nitreux sera 128&#x2013;30=98,<lb break="yes"/>et <hi rendition="#i">m</hi> = <formula notation="TeX">\frac{270-98}{100}</formula> encore = 1.72. M. <persName key="mayer_jts">Mayer</persName>
+                    <lb break="yes"/>d&#x2019;<placeName key="erlangen">Erlangen</placeName>, le géomètre qui a donné un ex-<lb break="no"/>cellent traité sur le calorique, vit des résidus<lb break="yes"/>de 123<choice>
+                        <sic>.</sic>
+                        <corr type="editorial">,</corr>
+                    </choice> 118 et 122 parties de gaz nitreux.<lb break="yes"/>Mais toutes ces expériences furent faites dans<lb break="yes"/>le tube eudiométrique, qui n&#x2019;a jamais au-delà<lb break="yes"/>de 3 centimètres en diamètre. En combinant<lb break="yes"/>dans ce m&#x00EA;me tube 300 parties de gaz nitreux,<lb break="yes"/>et 100 parties de gaz oxigène, j&#x2019;eus aussi 130,<lb break="yes"/>132, 134 et 130 parties non absorbées. Mais,<lb break="yes"/>en répétant la m&#x00EA;me expérience dans un cy-<lb break="no" />lindre de 11 centimètres en diamètre, les ré-<lb break="no"/>
+                    <pb n="128" facs="#f0006"/> sidus ne furent que de 51, 53, 49, 58, 61, 59,<lb break="yes"/>52, 53, 62, 49, 51 parties en onze expériences.<lb break="yes" />L&#x2019;absorption dans le vaisseau large fut donc<lb break="yes"/>de 68 à 85 parties plus forte que dans le tube<lb break="yes"/>eudiométrique. Le gaz nitreux que j&#x2019;employai<lb break="yes"/>contenoit 0.13, le gaz oxigène 0.06 d&#x2019;azote;<lb break="yes"/>par conséquent <hi rendition="#i">m</hi> étoit égal à 2.64. (Ces<lb break="yes"/>300 &#x2014; 39 &#x2014; 13 = 228, divisées par 100 &#x2013; 6,<lb break="yes"/>les 39 sont 3 &#x00D7; 13 d&#x2019;azote, et les 13 provien-<lb break="no"/>nent d&#x2019;un résidu de 58 parties &#x2014; 39 et 6<lb break="yes"/>d&#x2019;azote). Voilà deux valeurs de <hi rendition="#i">m</hi>, une<lb break="yes"/>de 1.72, et l&#x2019;autre de 2.64. La première est<lb break="yes"/>le résultat d&#x2019;une expérience, dans laquelle le<lb break="yes"/>gaz oxigène ne présente pas assez de contact<lb break="yes"/>au gaz nitreux.</p>
+                <lb break="yes"/>
+                <p>§. V. Mais, sans recourir aux expériences<lb break="yes"/>directes que je viens d&#x2019;exposer, et à d&#x2019;autres<lb break="yes"/>circonstancs qui, depuis long-temps, auroient<lb break="yes"/>d&#x00FB; nous porter à croire que la proportion de<lb break="yes"/>
+                    <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi> ne peut pas &#x00EA;tre évaluée ni comme 66:40,<lb break="yes"/>ni comme 69 : 40. Si l&#x2019;on fixe les yeux sur les<lb break="yes"/>nombres eudiométriques, présentés par les<lb break="yes"/>physiciens les plus célèbres; si l&#x2019;on considère<lb break="yes"/>la parfaite harmonie qui règne entre ces nom-<lb break="no" />bres, on s&#x2019;étonne qu&#x2019;en convertissant les de-<lb break="no" />grés de l&#x2019;eudiomètre de <persName key="fontana_af"/>Fontana en centièmes,<lb break="yes"/>d&#x2019;après le calcul fondamental de <persName key="lavoisier_ald"/>Lavoisier,<lb break="yes"/>
+                    <fw type="catch" place="bottom">l&#x2019;atmosphère</fw>
+                    <lb break="yes"/>
+                    <pb n="129" facs="#f0007"/> l&#x2019;atmosphère s&#x2019;élève à un degré de pureté<lb break="yes"/>qu&#x2019;elle n&#x2019;atteint jamais dans nos climats. Jac-<lb break="no"/>quin et <persName key="scherer_01" >Scherer</persName> ont trouvé la pureté moyenne<lb break="yes"/>de l&#x2019;air atmosphérique à <placeName key="wien">Vienne</placeName> de 107°, c&#x2019;est-<lb break="maybe"/>à-dire, en m&#x00EA;lant 100 parties de gaz nitreux<lb break="yes"/>à 100 parties d&#x2019;air atmosphérique, il y eut une<lb break="yes"/>absorption de 93 parties dans le tube eudio-<lb break="no"/>métrique. D&#x2019;après la formule donnée au §. I;<lb break="yes"/>et mettant <hi rendition="#i">m</hi> = 1.7, ces 107° indiquent <formula notation="TeX">\frac{34}{100}</formula>
+                    <lb break="yes"/>d&#x2019;oxigène. D&#x2019;après ces m&#x00EA;mes données, la<lb break="yes"/>plus grande impureté de l&#x2019;atmosphère ayant<lb break="yes"/>été observée à 116°, et l&#x2019;air le plus pur (de mer)<lb break="yes"/>à 90°, le <hi rendition="#i">maximum</hi> d&#x2019;oxigène seroit à 0.40,<lb break="yes"/>le <hi rendition="#i">minimum</hi> à 0.31, nombres qui certaine-<lb break="no"/>ment n&#x2019;inspirent pas de la confiance en la<lb break="yes"/>justesse du calcul.</p>
+                <lb break="yes"/>
+                <p>§. VI. Si, d&#x2019;un c&#x00F4;té, l&#x2019;illustre <persName key="lavoisier_ald"/>Lavoisier ra-<lb break="no"/>baisse la valeur de <hi rendition="#i">m</hi> à 1.7 ou 1.8, de l&#x2019;au-<lb break="no"/>tre, <persName key="ingenhousz_j">Ingenhouss</persName> et <persName key="scherer_01">Scherer</persName> (de <placeName key="wien" >Vienne</placeName>) l&#x2019;élè-<lb break="no"/>vent à 3.5 et jusqu&#x2019;à 5. <persName key="ingenhousz_j">Ingenhouss</persName> (expé-<lb break="no"/>riences sur les végétaux. A <placeName key="paris" >Paris</placeName>, 1787, pag.<lb break="yes"/>205, 296) dit très-positivement que 6, 7,<lb break="yes"/>et m&#x00EA;me quelquefois plus de mesures d&#x2019;air<lb break="yes"/>nitreux sont nécessaires pour saturer 2 mesures<lb break="yes"/>d&#x2019;air vital. En d&#x2019;autres passages il répète que<lb break="yes"/>100 parties d&#x2019;air vital anéantissent 450 par-<lb break="no"/>ties de gaz nitreux avant que le volume de<lb break="yes"/>
+                    <pb n="130" facs="#f0008"/> la colonne d&#x2019;air commence à s&#x2019;agrandir. Sche-<lb break="no"/>rer, dans son manuel d&#x2019;eudiométrie, met<lb break="yes"/>
+                    <hi rendition="#i">m</hi> = 4 ou 5. Mais, dans toutes les expériences<lb break="yes"/>dont sont tirés ces résultats, l&#x2019;impureté du<lb break="yes"/>gaz oxigène ne fut pas connue; et le gaz nitreux,<lb break="yes"/>n&#x2019;entrant pas dans le tube peu-à-peu, (par un<lb break="yes"/>robinet à bulles d&#x2019;air) mais par mesures en-<lb break="no"/>tières, il faut soigneusement observer que,<lb break="yes"/>dans le moment où l&#x2019;on fit monter la 4<hi rendition="#sup">e</hi>. me-<lb break="no"/>sure, tout l&#x2019;air vital peut-&#x00EA;tre avoit déjà été ab-<lb break="no"/>sorbé jusqu&#x2019;à <formula notation="TeX" >\frac{1}{100}</formula>, et que, de cette dernière et<lb break="yes"/>4<hi rendition="#sup">e</hi>. mesure, il n&#x2019;y a, en ce cas, que 0.02, ou 0.03<lb break="yes"/>qui agissent. Cependant toutefois la valeur de<lb break="yes"/>
+                    <hi rendition="#i">m</hi> seroit encore au-delà de 3, proportion qui<lb break="yes"/>diffère énormément des calculs de <persName key="lavoisier_ald" />Lavoisier,<lb break="yes"/>et qui feroit évaluer le <hi rendition="#i" >maximum</hi> et le <hi rendition="#i">mini-<lb break="no"/>mum</hi> de la pureté atmosphérique à 0.27 et<lb break="yes"/>0.21 d&#x2019;oxigène. La salubrité moyenne de l&#x2019;air<lb break="yes"/>de <placeName key="wien" >Vienne</placeName> seroit, d&#x2019;après ces m&#x00EA;mes données,<lb break="yes"/>égale à 0.23 d&#x2019;oxigène; impureté de l&#x2019;air qui<lb break="yes"/>est en contradiction directe avec un grand<lb break="yes" />nombre d&#x2019;autres expériences que j&#x2019;ai faites en<lb break="yes" />cette ville au moyen du phosphore et du sul-<lb break="no"/>fure de potasse. Si, au contraire, on admet<lb break="yes"/>la pureté moyenne de <placeName key="wien">Vienne</placeName> ou de <placeName key="paris">Paris</placeName> à<lb break="yes"/>0.27 d&#x2019;oxigène, la formule <hi rendition="#i" >m</hi> = <formula notation="TeX">\frac{z}{y}</formula> &#x2013; 1 donne<lb break="yes"/>(<hi rendition="#i">z</hi> étant = 93°) la valeur de <hi rendition="#i">m</hi> à <hi rendition="#i">z</hi>; nombre<lb break="yes"/>
+                    <pb n="131" facs="#f0009"/> qui se rapproche presque de <formula notation="TeX" >\frac{1}{10}</formula> de celui que<lb break="yes"/>j&#x2019;annoncerai dans la suite comme le résultat<lb break="yes"/>de mes propres recherches.</p>
+                <lb break="yes"/>
+                <p>§. VII. Ayant vu combien les calculs eu-<lb break="no"/>diométriques des chimistes les plus célèbres<lb break="yes"/>s&#x2019;éloignent de la vérité, j&#x2019;ai cru devoir recom-<lb break="no"/>mencer un travail qui n&#x2019;a point encore été en-<lb break="no"/>trepris avec toute l&#x2019;exactitude dont il est suscep-<lb break="no"/>tible. Mes expériences ont été dirigées à con-<lb break="no"/>no&#x00EE;tre, 1°. la nature du gaz nitreux, et les<lb break="yes"/>degrés de son azotation trouvés au moyen<lb break="yes"/>du sulfate de fer et du gaz acide muriatique<lb break="yes"/>oxigéné; 2°. la formation de l&#x2019;acide nitri-<lb break="no"/>que en faisant le mélange du gaz nitreux<lb break="yes"/>et de l&#x2019;air atmosphérique sur du mercure;<lb break="yes"/>3°. la décomposition de l&#x2019;eau et la composi-<lb break="no"/>tion de l&#x2019;ammoniaque en secouant du gaz ni-<lb break="no" />treux avec de l&#x2019;eau distillée; 4°. la valeur de<lb break="yes"/>
+                    <hi rendition="#i">m</hi> en m&#x00EA;lant du gaz nitreux avec de l&#x2019;air vital<lb break="yes"/>dans les proportions de 1 : 1, ou de 3 : 1,<lb break="yes"/>et dans des vaisseaux plus ou moins larges;<lb break="yes"/>5°. les différences entre un mélange artificiel<lb break="yes"/>d&#x2019;oxigène et d&#x2019;azote et l&#x2019;air atmosphérique na-<lb break="no"/>turel; 6°. la valeur de <hi rendition="#i">m</hi> en décomposant de<lb break="yes" />l&#x2019;air atmosphérique par le gaz nitreux, et en<lb break="yes"/>analysant le résidu. La plus grande partie de<lb break="yes"/>ces expériences ont été faites dans les mois de<lb break="yes"/>
+                    <pb n="132" facs="#f0010"/> vent&#x00F4;se et de germinal, durant mon séjour à<lb break="yes"/>
+                    <placeName key="salzburg">Salzbourg</placeName> en <placeName key="deutschland" >Allemagne</placeName>. Ce sont celles dont<lb break="yes"/>j&#x2019;ai rendu compte à la première classe de l&#x2019;ins-<lb break="no"/>titut national, dans deux mémoires lus dans<lb break="yes"/>les séances des 6 et 11 prairial. D&#x2019;autres, et les<lb break="yes"/>plus concluantes, ont été faites et répétées pen-<lb break="no"/>dant 2 mois à <placeName key="paris" >Paris</placeName> au laboratoire de l&#x2019;agence<lb break="yes"/>des mines, conjointement avec le cit. <persName key="tassaert_bm" >Tassaert</persName>,<lb break="yes"/>chimiste habile, dont les lumières et la grande<lb break="yes"/>exactitude m&#x2019;ont été infiniment utiles dans<lb break="yes"/>des recherches d&#x2019;une nature aussi délicate.</p>
+                <lb break="yes"/>
+                <p>§. VIII. Tous les physiciens, qui travail-<lb break="no"/>lent avec l&#x2019;eudiomètre de <persName key="fontana_af"/>Fontana, ont ob-<lb break="no"/>servé, depuis long-tems, que, se servant d&#x2019;un<lb break="yes"/>acide nitrique tant&#x00F4;t plus, tant&#x00F4;t moins étendu<lb break="yes"/>d&#x2019;eau, les résultats de leurs expériences va-<lb break="no"/>rient de 10 à 15 degrés de l&#x2019;échelle centigrade.<lb break="yes"/>Le m&#x00EA;me air atmosphérique, combiné avec<lb break="yes"/>deux espèces de gaz nitreux, est réduit à des<lb break="yes"/>volumes très-différens. De 200 parties, il en<lb break="yes" />reste tant&#x00F4;t 109, tant&#x00F4;t 124, et ce seroit à<lb break="yes" />tort que l&#x2019;on croiroit l&#x2019;air essayé, plus ou moins<lb break="yes"/>azoté selon le volume du résidu. Si, au con-<lb break="no" />traire, on a soin de se servir toujours du m&#x00EA;me<lb break="yes"/>
+                    <hi rendition="#i">fil de <hi rendition="#k">cu</hi>ivre</hi> très-pur, et du m&#x00EA;me acide étendu<lb break="yes"/>de 4 à 5 parties d&#x2019;eau distillée, on dégagera<lb break="yes"/>un gaz nitreux aussi uniforme, aussi égal en ces<lb break="yes"/>
+                    <pb n="133" facs="#f0011"/> propriétés, qu&#x2019;en analysant le m&#x00EA;me air at-<lb break="no"/>mosphérique avec 12 portions de gaz nitreux,<lb break="yes"/>obtenu par les m&#x00EA;mes substances en 12 cor-<lb break="no" />nues différentes, les résultats de ces ana-<lb break="no"/>lyses ne différeront pas au-delà de 1 jusqu&#x2019;à<lb break="yes"/>1 degré <formula notation="TeX">\frac{1}{2}</formula> de l&#x2019;échelle eudiométrique. Ce fait<lb break="yes"/>important, annoncé déjà par <persName key="ingenhousz_j">Ingenhouss</persName>,<lb break="yes"/>
+                    <persName key="scherer_01">Scherer</persName>, <persName key="vanbreda_01" >Vanbreda</persName>, <persName key="priestley_j">Priestley</persName> et <persName key="jacquin_njfv"/>Jacquin, est<lb break="yes"/>conforme aux phénomènes que j&#x2019;ai observés<lb break="yes"/>dans un travail de plusieurs années. Mais<lb break="yes"/>quelles sont les causes qui quelquefois ren-<lb break="no"/>dent le gaz nitreux aussi inégal dans sa pro-<lb break="no" />priété absorbante? Est-il m&#x00EA;lé de quelques<lb break="yes"/>substances hétérogènes, qui, n&#x2019;agissant point<lb break="yes"/>sur l&#x2019;air vital, ne servent qu&#x2019;à dilater les vo-<lb break="no"/>lumes des résidus? Voilà une question qui doit<lb break="yes"/>&#x00EA;tre résolue la première. Il faut conno&#x00EE;tre la<lb break="yes"/>nature du gaz nitreux avant que d&#x2019;examiner<lb break="yes"/>ses combinaisons avec l&#x2019;oxigène.</p>
+                <lb break="yes"/>
+                <p>§. IX. Les substances gazeuses, que nous<lb break="yes"/>devons supposer comme m&#x00EA;lées au gaz ni-<lb break="no"/>treux, se réduisent à trois; savoir, à l&#x2019;<hi rendition="#i">oxi-<lb break="no"/>gène,</hi> l&#x2019;<hi rendition="#i">hydrogène</hi> et l&#x2019;<hi rendition="#i">azote.</hi> L&#x2019;oxigène peut<lb break="yes"/>provenir des interstices des substances em-<lb break="no"/>ployées; l&#x2019;azote de la m&#x00EA;me source, mais<lb break="yes"/>sur-tout d&#x2019;une décomposition d&#x2019;acide nitrique;<lb break="yes"/>l&#x2019;hydrogène d&#x2019;une décomposition d&#x2019;eau, peu<lb break="yes"/>
+                    <pb n="134" facs="#f0012"/> vraisemblable cependant dans des conditions<lb break="yes"/>où le métal est à m&#x00EA;me de s&#x2019;emparer de l&#x2019;oxi<choice>
+                        <sic>.</sic>
+                        <corr type="editorial">-</corr>
+                    </choice>
+                    <lb break="no"/>gène de l&#x2019;acide. Commen&#x00E7;ons par l&#x2019;<hi rendition="#i">oxigène.</hi>
+                    <lb break="yes"/>Si le gaz nitreux se dégage au moyen d&#x2019;un<lb break="yes" />acide très-fort; si l&#x2019;on emploie une grande<lb break="yes"/>quantité de ce dernier à-la-fois, on obtiendra<lb break="yes"/>(quoique l&#x2019;on se serve d&#x2019;une cornue très-pe-<lb break="no"/>tite, et que l&#x2019;on laisse s&#x2019;échapper soigneuse-<lb break="no"/>ment l&#x2019;air atmosphérique qu&#x2019;elle contient) un<lb break="yes"/>gaz nitreux, dans lequel le <hi rendition="#i">phosphore</hi> répand<lb break="yes"/>une foible lueur. L&#x2019;oxigène atmosphérique,<lb break="yes"/>sur-tout des interstices de l&#x2019;acide, ne paro&#x00EE;t<lb break="yes"/>pas avoir le tems de se combiner avec le gaz<lb break="yes"/>nitreux; il est entra&#x00EE;né, et quelques atomes<lb break="yes"/>en restent mécaniquement m&#x00EA;lés à ce fluide<lb break="yes"/>aériforme. L&#x2019;azote, dont nous verrons bient&#x00F4;t<lb break="yes"/>l&#x2019;existence prouvée dans ce mélange aériforme,<lb break="yes"/>paro&#x00EE;t servir à cacher cet oxigène, et à le<lb break="yes"/>préserver, pour ainsi dire, du contact des<lb break="yes" />bases acidifiables. J&#x2019;ai vu luire quelquefois<lb break="yes"/>le phosphore dans le gaz nitreux pendant<lb break="yes"/>4 à 5 minutes; cette époque passée, la lueur<lb break="yes"/>disparo&#x00EE;t, sans que le volume du gaz se trouve<lb break="yes"/>
+                    <hi rendition="#i">sensiblement</hi> altéré. Ce dernier phénomène<lb break="yes" />n&#x2019;a pas de quoi nous étonner. Nous savons,<lb break="yes"/>par d&#x2019;autres expériences, qu&#x2019;il faut un <hi rendition="#i">mini-<lb break="no"/>mum</hi> d&#x2019;acide pour rougir des couleurs végé-<lb break="no"/>tales; qu&#x2019;un <hi rendition="#i">minimum</hi> d&#x2019;oxigène suffit pour<lb break="yes"/>
+                    <pb n="135" facs="#f0013"/> faire répandre de la lueur au phosphore,<lb break="yes"/>comme un bois luisant. La combustion de<lb break="yes"/>cet atome d&#x2019;oxigène peut d&#x2019;autant moins s&#x2019;an-<lb break="no" />noncer par un changement de volume, qu&#x2019;elle<lb break="yes" />n&#x2019;est pas nécessairement suivie d&#x2019;une absorp-<lb break="no" />tion, mais qu&#x2019;il se forme une nouvelle com-<lb break="no"/>binaison gazeuse de phosphore, d&#x2019;oxigène et<lb break="yes"/>d&#x2019;azote. Le gaz nitreux, dégagé lentement<lb break="yes"/>par un acide foible, et employé en petite quan-<lb break="no"/>tité, éteint le phosphore lors de son premier<lb break="yes"/>contact. Il paro&#x00EE;t que pas un atome d&#x2019;oxigène<lb break="yes"/>libre n&#x2019;y est m&#x00EA;lé; car cette substance, ne<lb break="yes"/>trouvant que peu d&#x2019;azote (à peine 0.12) pour<lb break="yes"/>le cacher, se consume en formant un peu<lb break="yes" />d&#x2019;acide nitrique. Tous ces phénomènes nous<lb break="yes"/>annoncent que l&#x2019;oxigène, dont le gaz nitreux<lb break="yes"/>est quelquefois m&#x00EA;lé, n&#x2019;a pas de quoi fixer<lb break="yes"/>notre attention. Il n&#x2019;est intéressant qu&#x2019;en nous<lb break="yes"/>présentant un nouvel exemple et de la forte<lb break="yes"/>attraction qui règne entre l&#x2019;oxigène et l&#x2019;azote,<lb break="yes"/>et de la manière dont souvent les substances<lb break="yes"/>gazeuses se m&#x00EA;lent sans se combiner.</p>
+                <lb break="yes"/>
+                <p>§. X. La présence de l&#x2019;<hi rendition="#i">azote</hi> est plus dif-<lb break="no"/>ficile à reconno&#x00EE;tre dans le gaz nitreux que<lb break="yes"/>celle de l&#x2019;oxigène. Je me suis servi à cet égard<lb break="yes"/>de deux moyens qui présentent chacun leurs<lb break="yes" />avantages, de la solution du <hi rendition="#i">sulfate de fer</hi>, <lb break="yes"/>
+                    <pb n="136" facs="#f0014"/> et de <hi rendition="#i">l&#x2019;acide muriatique oxigéné.</hi> Ces deux<lb break="yes"/>substances, dont la première a été trop peu<lb break="yes"/>employée jusqu&#x2019;ici dans l&#x2019;analyse du gaz, ab-<lb break="no"/>sorbent également le gaz nitreux, et en sépa-<lb break="no"/>rent l&#x2019;azote. <persName key="priestley_j" >Priestley</persName> a le premier observé<lb break="yes"/>&#x00AB;la décomposition du gaz nitreux par une<lb break="yes"/>dissolution du vitriol vert.&#x00BB; Il en fait men-<lb break="no"/>tion dans la préface du 4<hi rendition="#sup">e</hi>. volume de ses ex-<lb break="no"/>périences sur l&#x2019;air (1780, pag. 45.) Il ajoute<lb break="yes"/>que la dissolution du sulfate de fer en devient<lb break="yes"/>obscure; qu&#x2019;elle redevient verte lorsqu&#x2019;elle<lb break="yes"/>reste exposée à l&#x2019;air libre, et que cette expé-<lb break="no"/>rience peut mener à d&#x2019;autres plus utiles. Pré-<lb break="no"/>parant (depuis l&#x2019;hiver dernier) très-souvent<lb break="yes"/>de l&#x2019;azote, en décomposant l&#x2019;air atmosphéri-<lb break="no"/>que par le gaz nitreux, et en lavant le résidu<lb break="yes" />avec la dissolution du sulfate de fer, fondant<lb break="yes"/>m&#x00EA;me une partie de mes calculs eudiométri-<lb break="no"/>ques sur l&#x2019;action de ce sulfate, il me devint<lb break="yes"/>indispensable d&#x2019;examiner les lois d&#x2019;affinités<lb break="yes"/>sur lesquelles s&#x2019;opère cette absorption du gaz<lb break="yes"/>nitreux. Je crus d&#x2019;abord (et d&#x2019;autres chimistes<lb break="yes"/>furent du m&#x00EA;me avis) que le sulfate de fer<lb break="yes"/>agissoit en se désoxidant. J&#x2019;attribuois la cou-<lb break="no"/>leur noire de la dissolution à la formation d&#x2019;un<lb break="yes"/>oxide de fer noir, qui avoit perdu une partie<lb break="yes"/>de son oxigène, attiré par la base acidifiable<lb break="yes" />du gaz nitreux. Cependant d&#x2019;autres considé-<lb break="no"/>
+                    <pb n="137" facs="#f0015"/> rations s&#x2019;opposèrent à cette hypothèse, et ren-<lb break="no"/>dirent probable que ce singulier phénomène<lb break="yes"/>(trop négligé jusqu&#x2019;à ce jour) se fondoit sur<lb break="yes"/>une décomposition d&#x2019;eau, occasionnée par un<lb break="yes"/>jeu de doubles affinités. Des expériences, faites<lb break="yes"/>sur de grands volumes, pouvoient seules éloi-<lb break="no" />gner ces doutes. Le travail, que j&#x2019;ai entrepris<lb break="yes"/>à cet égard, conjointement avec le cit. Vau-<lb break="no"/>quelin, a donné lieu à un mémoire que ce<lb break="yes"/>grand chimiste prépare en ce moment. Nous<lb break="yes"/>v&#x00EE;mes absorbés 43 centimètres cubes de gaz<lb break="yes"/>nitreux, 12 décagrammes de sulfate de fer<lb break="yes" />dissous dans l&#x2019;eau distillée. Il suffit d&#x2019;annoncer<lb break="yes"/>ici que nous avons découvert qu&#x2019;il se forme,<lb break="yes"/>en cette expérience, du <hi rendition="#i">nitrate de fer</hi> et du<lb break="yes"/>
+                    <hi rendition="#i">sulfate d&#x2019;ammoniaque,</hi> l&#x2019;eau se décompo-<lb break="no"/>sant par la double affinité de l&#x2019;hydrogène pour<lb break="yes"/>l&#x2019;azote, et de l&#x2019;oxigène pour le gaz nitreux.</p>
+                <lb break="yes"/>
+                <p>§. XI. Pour déterminer la quantité de subs-<lb break="no"/>tances gazeuses hétérogènes, m&#x00EA;lées au gaz<lb break="yes"/>nitreux, il faut se servir d&#x2019;une dissolution de<lb break="yes"/>sulfate de fer chaude et très-saturée. En se-<lb break="no"/>couant un volume de 100 parties avec cette<lb break="yes"/>solution pendant 4&#x2013;5 minutes, on le verra<lb break="yes"/>diminué tant&#x00F4;t jusqu&#x2019;à 0.09, tant&#x00F4;t jusqu&#x2019;à<lb break="yes"/>0.45. Il s&#x2019;agit de savoir si ces derniers 0.09<lb break="yes"/>de résidu, par exemple, ne contiennent pas<lb break="yes"/>
+                    <pb n="138" facs="#f0016"/> plus de gaz nitreux. Pour répondre à cette<lb break="yes"/>question, on n&#x2019;a qu&#x2019;à les m&#x00EA;ler à 100 parties<lb break="yes"/>de gaz oxigène. On ne les verra pas diminuer<lb break="yes"/>d&#x2019;un centième, mais conserver le volume de<lb break="yes"/>109 parties. Ils annoncent, au contraire, tou-<lb break="no" />tes les propriétés que nous reconnoissons dans<lb break="yes"/>le gaz azote. Si, au lieu de secouer le gaz ni-<lb break="no"/>treux avec le sulfate, on le met simplement<lb break="yes"/>en contact avec le dernier, l&#x2019;absorption se fait<lb break="yes"/>très-lentement; il faut souvent 8&#x2013;9 heures pour<lb break="yes"/>en attendre la fin. On observera alors, en opé-<lb break="no"/>rant bien soigneusement, que le m&#x00EA;me gaz ni-<lb break="no"/>treux, qui, secoué, laissa un résidu de 0.090, n&#x2019;en<lb break="yes"/>doit laisser, d&#x2019;après la dernière méthode, que<lb break="yes"/>0.065 ou 0.070. Mon <hi rendition="#i">tube d&#x2019;absorption</hi>
+                    <note place="foot" n="(1)">Les personnes qui desireront se procurer cet<lb break="yes"/>
+                        <hi rendition="#i">instrument</hi> qui sert principalement pour l&#x2019;acide car-<lb break="no"/>bonique, comme anthracomètre, ou mon nouveau<lb break="yes"/>
+                        <hi rendition="#i">baromètre,</hi> s&#x2019;adresseront au cit. <hi rendition="#i">
+                            <persName key="dumotiez_01">Dumotiez</persName>,</hi> rue du Jar-<lb break="no"/>dinet, n°. 12. Les descriptions de ces instrumens et de<lb break="yes"/>plusieurs autres auxquels j&#x2019;ai travaillé depuis quelques<lb break="yes"/>années, vont paro&#x00EE;tre, pendant le cours du grand<lb break="yes"/>voyage auquel je me prépare, dans un ouvrage séparé.</note>,<lb break="yes"/>(le m&#x00EA;me dont j&#x2019;ai fait mention dans le mé-<lb break="no"/>moire sur les combinaisons ternaires) est très-<lb break="maybe"/>propre pour évaluer exactement cette diffé-<lb break="no"/>rence. Elle provient de l&#x2019;air contenu dans les<lb break="yes"/>interstices de la dissolution du sulfate de fer;<lb break="yes"/>
+                    <pb n="139" facs="#f0017"/> air qui ne sort point en laissant le tube en re-<lb break="no"/>pos, mais qui s&#x2019;échappe et se m&#x00EA;le au résidu<lb break="yes"/>par les secousses de la première opération.<lb break="yes" />Deux observations viennent à l&#x2019;appui de ce<lb break="yes" />raisonnement. 100 parties d&#x2019;air atmosphé-<lb break="no"/>rique, secouées avec le sulfate, augmen-<lb break="no"/>tent aussi de 0.020 à 0.025 en volume.<lb break="yes"/>Un gaz nitreux, dans lequel le phosphore ne<lb break="yes"/>répand aucune lueur, laisse souvent, après<lb break="yes"/>le lavage, un azote qui entretient foiblement<lb break="yes"/>la phosphorescence. Or d&#x2019;autres expériences,<lb break="yes"/>dont le récit seroit trop long ici, prouvent que<lb break="yes"/>l&#x2019;air atmosphérique, contenu dans les inters-<lb break="no"/>tices du sulfate, est plus <choice>
+                        <sic>azotéencore</sic>
+                        <corr type="editorial">azoté encore</corr>
+                    </choice> que celui<lb break="yes"/>qui est m&#x00EA;lé à l&#x2019;eau de puits, qu&#x2019;il ne montre<lb break="yes"/>que 0.12 d&#x2019;oxigène, sur 0.88 d&#x2019;azote. Ce<lb break="yes"/>m&#x00EA;me air donc, en augmentant le volume des<lb break="yes"/>résidus, y fait entrer quelques atomes d&#x2019;oxi-<lb break="no"/>gène, qui n&#x2019;y existoient pas auparavant, et<lb break="yes"/>auxquels il seroit difficile d&#x2019;assigner une autre<lb break="yes"/>source. Ces considérations doivent nous prou-<lb break="no" />ver, qu&#x2019;en secouant le gaz nitreux avec le<lb break="yes"/>sulfate, <hi rendition="#i">il faut diminuer le résidu de</hi> 0.02<lb break="yes"/>
+                    <hi rendition="#i">à</hi> 0.03, <hi rendition="#i">pour le regarder comme le volume<lb break="yes"/>de l&#x2019;azote préexistant.</hi> Un grand nombre<lb break="yes"/>d&#x2019;expériences, faites avec le cit. <persName key="tassaert_bm">Tassaert</persName>; nous<lb break="yes"/>ont prouvé que ce dégagement d&#x2019;air des in-<lb break="no"/>terstices du sulfate de fer se fait très-unifor-<lb break="no"/>
+                    <pb n="140" facs="#f0018"/> mément. Le m&#x00EA;me gaz nitreux, essayé 3 à 4<lb break="yes"/>fois, a constamment donné un résidu de<lb break="yes"/>0.090 à 0.095, pourvu que l&#x2019;on se serv&#x00EE;t<lb break="yes"/>d&#x2019;un flacon de la m&#x00EA;me capacité, du m&#x00EA;me<lb break="yes"/>volume de gaz, et d&#x2019;une dissolution chauffée<lb break="yes"/>à la m&#x00EA;me température.</p>
+                <lb break="yes"/>
+                <p>§. XII. On pourroit &#x00EA;tre tenté de croire<lb break="yes"/>que l&#x2019;azote, obtenu de cette maniere, n&#x2019;est<lb break="yes"/>pas préexistant dans le gaz nitreux, mais qu&#x2019;il<lb break="yes"/>doit son existence à une décomposition par-<lb break="no"/>tielle de ce dernier. On pourroit admettre<lb break="yes"/>que le sulfate de fer enlève au gaz nitreux<lb break="yes"/>une partie de son oxigène, en agissant sur<lb break="yes"/>lui comme la limaille de fer ou le sulfure de<lb break="yes"/>potasse qui (d&#x2019;après les expériences ingénieu-<lb break="no"/>ses des cit. <persName key="deimann_01">Deiman</persName> et <persName key="trostwyck_01" >Troostwyck</persName>) le con-<lb break="no"/>vertissent en oxide d&#x2019;azote, ou azote déphlo-<lb break="no"/>gistiqué de <persName key="priestley_j">Priestley</persName>. Le travail que j&#x2019;ai fait,<lb break="yes"/>conjointement avec le cit. <persName key="vauquelin_ln" >Vauquelin</persName>, sur<lb break="yes"/>l&#x2019;action du sulfate de fer, prouve combien<lb break="yes"/>cette supposition seroit mal fondée. Le gaz<lb break="yes"/>nitreux est absorbé parce qu&#x2019;il se combine à<lb break="yes"/>l&#x2019;oxigène de l&#x2019;eau, tandis que l&#x2019;hydrogène de<lb break="yes"/>cette m&#x00EA;me eau décomposée se m&#x00EA;le à l&#x2019;azote<lb break="yes"/>pour former de l&#x2019;ammoniaque. Le nitrate de<lb break="yes"/>fer, trouvé dans le résidu du sulfate, annonce<lb break="yes"/>que le gaz nitreux s&#x2019;<hi rendition="#i">oxide,</hi> au lieu de se <hi rendition="#i">dé-</hi>
+                    <lb break="no"/>
+                    <pb n="141" facs="#f0019"/>
+                    <hi rendition="#i">soxider</hi> dans cette opération. Or il seroit<lb break="yes"/>contre toute analogie chimique, que les m&#x00EA;-<lb break="no"/>mes substances suivissent en m&#x00EA;me tems des<lb break="yes" />lois d&#x2019;affinités diamétralement opposées. Il<lb break="yes" />n&#x2019;est pas probable que quelques molécules<lb break="yes"/>d&#x2019;un gaz gagnent de l&#x2019;oxigène, tandis que<lb break="yes"/>d&#x2019;autres en perdent. Aussi ne sauroit-on ré-<lb break="no"/>soudre le probl&#x00EA;me, pourquoi un gaz nitreux<lb break="yes"/>laisse constamment (en 6 ou 8 expériences)<lb break="yes"/>un résidu de 0.12 ou 0.13 d&#x2019;azote, tandis<lb break="yes"/>qu&#x2019;un autre en présente 0.35 ou 0.34. Ces<lb break="yes"/>différences constantes prouvent assez que la<lb break="yes" />nature du gaz n&#x2019;est pas toujours la m&#x00EA;me.<lb break="yes" />Long-tems avant que les bases de la nouvelle<lb break="yes"/>chimie fussent posées, le cit. <persName key="fourcroy_afd">Fourcroy</persName> avoit<lb break="yes"/>déjà observé que presque toujours le gaz phlo-<lb break="no" />gistiqué étoit mélangé avec le gaz nitreux.</p>
+                <lb break="yes"/>
+                <p>§. XIII. La m&#x00EA;me quantité d&#x2019;azote, que la<lb break="yes"/>solution du sulfate de fer annonce dans le<lb break="yes"/>gaz nitreux, s&#x2019;y retrouve au moyen du <hi rendition="#i">gaz<lb break="yes"/>acide muriatique oxigéné.</hi> Des expériences,<lb break="yes"/>faites avec cette dernière substance, ne ser-<lb break="no"/>vent pas seulement à constater le calcul; elles<lb break="yes"/>me paroissoient m&#x00EA;me indispensables pour le<lb break="yes"/>rectifier. Le sulfate d&#x2019;ammoniaque, qui se trou-<lb break="no"/>ve dans le résidu du sulfate de fer, secoué avec<lb break="yes" />le gaz nitreux, nous annonce que quelques cen-<lb break="no"/>
+                    <pb n="142" facs="#f0020"/> tièmes d&#x2019;azote ont perdu leur forme gazeuse<lb break="yes"/>pour se combiner à l&#x2019;hydrogène de l&#x2019;eau dé-<lb break="no"/>composée. L&#x2019;analyse du gaz nitreux, faite au<lb break="yes"/>moyen du sulfate de fer, nous annonce, par<lb break="yes" />conséquent, par-tout l&#x2019;azote préexistant. Il<lb break="yes"/>falloit évaluer le <hi rendition="#i">maximum</hi> de cette erreur,<lb break="yes"/>en analysant le m&#x00EA;me gaz par les deux moyens<lb break="yes"/>du <hi rendition="#i">sulfate de fer et du gaz acide muriati-<lb break="no"/>que oxigéné.</hi> Pour conno&#x00EE;tre la quantité d&#x2019;air<lb break="yes" />atmosphérique contenue dans ce dernier,<lb break="yes"/>nous la m&#x00EE;mes en contact avec l&#x2019;eau: il avoit<lb break="yes"/>été dégagé du muriate oxigéné de potasse,<lb break="yes"/>et s&#x2019;absorboit dans l&#x2019;eau jusqu&#x2019;à 0.10. Ce<lb break="yes"/>résidu ne contenoit que 0.07 ou 0.06 d&#x2019;a-<lb break="no"/>zote. Or 100 parties de gaz nitreux très-pur,<lb break="yes"/>mises en contact avec 100 parties de cet acide<lb break="yes" />muriatique oxigéné, (que nous venons d&#x2019;ana-<lb break="no"/>lyser) laissèrent un résidu de 0.20, qui avoit<lb break="yes"/>toutes les propriétés de l&#x2019;azote. Le gaz nitreux<lb break="yes"/>ayant détruit les 0.03 ou 0.04 d&#x2019;oxigène con-<lb break="no"/>tenu dans l&#x2019;air atmosphérique de l&#x2019;acide mu-<lb break="no"/>riatique oxigéné, nous déduis&#x00EE;mes du résidu<lb break="yes"/>de 0.20, les 0.06 d&#x2019;azote atmosphérique, et<lb break="yes"/>trouv&#x00E2;mes, par conséquent, 0.14 d&#x2019;azote pré-<lb break="no"/>existant dans le gaz nitreux essayé. Ce m&#x00EA;me<lb break="yes"/>gaz nitreux, analysé avec le sulfate de fer,<lb break="yes" />donnoit un résidu de 0.11 d&#x2019;azote. Or en dé-<lb break="no"/>duisant (§. XI) environ 0.02 pour l&#x2019;air sorti<lb break="yes"/>
+                    <pb n="143" facs="#f0021"/> des interstices, ce résidu de 0.09 prouve que<lb break="yes"/>14&#x2014;9, ou cinq centièmes parties d&#x2019;azote sont<lb break="yes"/>entrées dans la formation de l&#x2019;ammoniaque.<lb break="yes"/>D&#x2019;autres expériences, faites avec les m&#x00EA;mes<lb break="yes"/>substances, donnèrent constamment des dif-<lb break="no" />férences de 0.05 ou 0.06. La justesse de cette<lb break="yes"/>évaluation fut m&#x00EA;me constatée par un acide<lb break="yes"/>muriatique oxigéné très-impur, qui contenoit<lb break="yes"/>0.55 d&#x2019;air atmosphérique. Nous trouv&#x00E2;mes<lb break="yes"/>ces 55 parties assez impures. Elles étoient com-<lb break="no"/>posées de 43 d&#x2019;azote et de 12 d&#x2019;oxigène. En<lb break="yes"/>m&#x00EA;lant 100 parties de cet acide muriatique<lb break="yes"/>oxigéné à 100 parties de gaz nitreux, il y eut<lb break="yes" />un résidu de 57 parties, qui (analysé par le<lb break="yes"/>gaz nitreux) furent reconnues pour de l&#x2019;azote<lb break="yes"/>pur. Or 43 parties étant préexistantes dans<lb break="yes"/>l&#x2019;acide muriatique oxigéné, il faut compter<lb break="yes"/>0.14 pour le gaz nitreux. Ce m&#x00EA;me gaz, es-<lb break="no"/>sayé par le sulfate de fer, laissa un résidu de<lb break="yes" />0.09 et de 0.08. Il résulte de ces expériences,<lb break="yes"/>répétées plusieurs fois avec le cit. <persName key="tassaert_bm">Tassaert</persName>,<lb break="yes"/>qu&#x2019;en secouant du gaz nitreux avec le sulfate<lb break="yes"/>de fer, <hi rendition="#i">il faut, pour évaluer la quantité<lb break="yes"/>d&#x2019;azote préexistant, augmenter le résidu<lb break="yes"/>d&#x2019;environ</hi> 3 <hi rendition="#i">centièmes</hi>; car, en déduisant<lb break="yes"/>0.02 pour les interstices, on doit ajouter 0.05<lb break="yes"/>à cause de la formation de l&#x2019;ammoniaque. Il<lb break="yes"/>est superflu d&#x2019;observer que cette règle ne peut<lb break="yes"/>
+                    <pb n="144" facs="#f0022"/> servir que pour les gaz d&#x2019;une pureté médiocre,<lb break="yes"/>que les chimistes préparent communément.<lb break="yes"/>En travaillant sur du gaz nitreux à 0.30 ou<lb break="yes" />0.40 d&#x2019;azote, les résultats, obtenus par le<lb break="yes"/>sulfate de fer et l&#x2019;acide muriatique oxigéné,<lb break="yes"/>doivent nécessairement différer davantage. Il<lb break="yes"/>ne s&#x2019;agit ici que d&#x2019;indiquer la voie par laquelle<lb break="yes"/>cette difficulté peut &#x00EA;tre levée.</p>
+                <lb break="yes"/>
+                <p>§. XIV. Nous avons vu jusqu&#x2019;ici que le gaz<lb break="yes"/>nitreux contient (§. IX) quelques atomes<lb break="yes"/>d&#x2019;<hi rendition="#i" >oxigène;</hi> mais que l&#x2019;<hi rendition="#i">azote</hi> est la seule subs-<lb break="no"/>tance qui en change le volume. Il ne resteroit<lb break="yes"/>qu&#x2019;à examiner la présence de l&#x2019;<hi rendition="#i" >hydrogène,</hi>
+                    <lb break="yes"/>formée peut-&#x00EA;tre par une décomposition de<lb break="yes" />l&#x2019;eau qui sert de base à l&#x2019;acide nitrique, si la<lb break="yes" />chimie analytique donnoit les moyens de<lb break="yes"/>reconno&#x00EE;tre un peu d&#x2019;hydrogène m&#x00EA;lé à l&#x2019;azote.<lb break="yes"/>Les <hi rendition="#i">poids</hi>, la <hi rendition="#i">combustion</hi> et la <hi rendition="#i">formation</hi>
+                    <lb break="yes"/>d&#x2019;ammoniaque, seroient les trois méthodes<lb break="yes" />que l&#x2019;on pourroit tenter à cet égard. Un azote<lb break="yes"/>pur doit certainement avoir plus de pesanteur<lb break="yes"/>spécifique que de l&#x2019;azote combiné à de l&#x2019;hy-<lb break="no"/>drogène: mais l&#x2019;eau, contenue dans le gaz,<lb break="yes"/>et qui ne peut en &#x00EA;tre enlevée totalement, nous<lb break="yes"/>emp&#x00EA;che de bien juger sur le poids d&#x2019;une subs-<lb break="no"/>tance gazeuse, m&#x00EA;lée avec quelques atomes<lb break="yes"/>hétérogènes. Le phosphore se dissout certai-<lb break="no"/>
+                    <fw type="catch" place="bottom">nement</fw>
+                    <lb break="yes"/>
+                    <pb n="145" facs="#f0023"/> nement dans l&#x2019;azote. Qui voudroit entrepren-<lb break="no"/>dre d&#x2019;annoncer le changement de poids que<lb break="yes"/>cette dissolution doit causer? Beaucoup d&#x2019;hy-<lb break="no"/>drogène, m&#x00EA;lé à de l&#x2019;azote, s&#x2019;annonce par la<lb break="yes"/>combustion, dont le mélange devient suscep-<lb break="no" />tible en le combinant avec de l&#x2019;oxigène. Mais<lb break="yes"/>un peu d&#x2019;hydrogène se cache tellement dans<lb break="yes"/>une grande masse d&#x2019;azote, en est retenu par<lb break="yes"/>des affinités si puissantes, que ni la com-<lb break="no"/>bustion, ni la formation d&#x2019;eau ne deviennent<lb break="yes"/>sensibles. Les moffettes des mines de houilles<lb break="yes"/>présentent des exemples frappans de ce dernier<lb break="yes" />phénomène. On pourroit encore essayer l&#x2019;eu-<lb break="no"/>diomètre de <persName key="volta_agv"/>Volta, dans lequel, au moyen de<lb break="yes" />l&#x2019;étincelle électrique, un mélange d&#x2019;hydrogène<lb break="yes" />et d&#x2019;azote donnent de l&#x2019;ammoniaque. Mais<lb break="yes" />l&#x2019;électricité décomposant en m&#x00EA;me tems l&#x2019;hu-<lb break="no"/>midité contenue dans les gaz et tout l&#x2019;appa-<lb break="no"/>reil, on ne seroit jamais certain si l&#x2019;hydrogène<lb break="yes"/>préexistoit dans l&#x2019;azote ou dans l&#x2019;eau décom-<lb break="no"/>posée. J&#x2019;ai cru nécessaire d&#x2019;examiner les diffi-<lb break="no"/>cultés de ces méthodes, pour fixer l&#x2019;attention<lb break="yes"/>des chimistes sur un probl&#x00EA;me aussi inté-<lb break="no"/>ressant que celui de la séparation de l&#x2019;hydro-<lb break="no"/>gène de l&#x2019;azote. Je suppose que l&#x2019;azote at-<lb break="no"/>mosphérique, dans les couches d&#x2019;air les plus<lb break="yes"/>basses, est constamment m&#x00EA;lé d&#x2019;un peu d&#x2019;hy-<lb break="no"/>drogène. Il seroit très-important pour la mé-<lb break="no"/>
+                    <pb n="146" facs="#f0024"/> téorologie (particulièrement pour l&#x2019;hygromé-<lb break="no"/>trie) de constater, ou de réfuter cette suppo-<lb break="no"/>sition par des faits.</p>
+                <lb break="yes"/>
+                <p>§. XV. Lorsqu&#x2019;on verse de l&#x2019;acide nitri-<lb break="no"/>que sur du fil de cuivre le plus pur, une par-<lb break="no"/>tie de cet acide se décompose totalement, et<lb break="yes"/>dégage de l&#x2019;azote, tandis qu&#x2019;une autre se<lb break="yes"/>désoxide simplement en formant du gaz ni-<lb break="no" />treux. J&#x2019;ignore s&#x2019;il est possible de faire du<lb break="yes" />gaz nitreux tout pur. Dans un travail d&#x2019;un an,<lb break="yes"/>pendant lequel j&#x2019;ai travaillé journellement<lb break="yes"/>avec ce gaz, je n&#x2019;en ai jamais obtenu qui ne<lb break="yes"/>f&#x00FB;t pas m&#x00EA;lé d&#x2019;azote. Le <hi rendition="#i">minimum</hi> d&#x2019;azotation<lb break="yes"/>que j&#x2019;ai vu étoit à 0.10; le <hi rendition="#i" >maximum</hi> à 0.68.<lb break="yes"/>
+                    <persName key="priestley_j">Priestley</persName>, en m&#x00EA;lant 200 parties de gaz ni-<lb break="no"/>treux à 100 parties de gaz vital tout pur, n&#x2019;eut<lb break="yes"/>qu&#x2019;un résidu de 0.03. On pourroit regarder<lb break="yes"/>comme prouvé par-là que ce physicien in-<lb break="no"/>génieux a travaillé sur un gaz nitreux beau-<lb break="no"/>coup plus pur que le mien. Mais nous ver-<lb break="no"/>rons dans la suite de ce mémoire, par<lb break="yes"/>quelles causes une partie de l&#x2019;azote disparut<lb break="yes"/>dans les expériences eudiométriques faites<lb break="yes"/>sur le gaz oxigène. Le gaz nitreux, que les<lb break="yes" />chimistes doivent préparer pour l&#x2019;analyse<lb break="yes"/>exacte de l&#x2019;atmosphère, s&#x2019;obtient avec un aci-<lb break="no"/>de nitrique, étendu d&#x2019;autant de parties d&#x2019;eau<lb break="yes"/>
+                    <pb n="147" facs="#f0025"/> distillée, que sa gravité spécifique ne monte<lb break="yes"/>qu&#x2019;à environ 17 ou 21 degrés de l&#x2019;aréomètre<lb break="yes"/>
+                    <persName key="baume_a">de Baumé</persName>. A cette densité, 3 décagrammes<lb break="yes"/>de cuivre, et 30 décagrammes d&#x2019;acide donnent<lb break="yes"/>5227 centimètres cubes de gaz nitreux, qui<lb break="yes" />contient 0.13 à 0.14 d&#x2019;azote. Des acides,<lb break="yes"/>très-forts ou très-foibles, dégagent des gaz<lb break="yes"/>non seulement <hi rendition="#i" >infiniment impurs,</hi> mais<lb break="yes"/>aussi très-<hi rendition="#i" >différens</hi> dans le degré de leur azo-<lb break="no"/>tation. Il seroit assez difficile d&#x2019;expliquer les<lb break="yes"/>causes de ces petits phénomènes, qui tiennent<lb break="yes"/>à des jeux d&#x2019;affinités dont nous ne connoissons<lb break="yes"/>pas les modifications. Mais il est très-certain,<lb break="yes"/>et prouvé par un grand nombre d&#x2019;expériences,<lb break="yes"/>qu&#x2019;il n&#x2019;y a qu&#x2019;un certain degré de délaiement<lb break="yes"/>de l&#x2019;acide nitrique, auquel il donne constam-<lb break="no"/>ment des gaz à 0.10 ou 0.13 d&#x2019;azote; quoi-<lb break="no"/>que ce degré soit assez marqué par le nombre<lb break="yes"/>aérométrique, indiqué ci-dessus, il paro&#x00EE;t ce-<lb break="no"/>pendant beaucoup plus s&#x00FB;r de ne pas se borner<lb break="yes"/>à cette mesure, mais de recourir plut&#x00F4;t à l&#x2019;ex-<lb break="no"/>périence avec le sulfate de fer; expérience qui<lb break="yes"/>est très-simple et peu embarrassante en elle-<lb break="maybe"/>m&#x00EA;me. Une petite quantité d&#x2019;acide une fois<lb break="yes"/>préparée, il est facile d&#x2019;en faire une quantité<lb break="yes"/>quelconque, qui dégage un gaz de la m&#x00EA;me<lb break="yes" />pureté. On n&#x2019;a qu&#x2019;à faire des expériences com-<lb break="no" />paratives sur le m&#x00EA;me air atmosphérique. Si<lb break="yes"/>
+                    <pb n="148" facs="#f0026"/> le gaz nitreux qu&#x2019;on a obtenu par le nouvel<lb break="yes"/>acide donne exactement le m&#x00EA;me degré de<lb break="yes"/>l&#x2019;échelle eudiométrique, que le gaz nitreux<lb break="yes"/>dont on conno&#x00EE;t l&#x2019;azotation, on peut se passer<lb break="yes"/>de l&#x2019;analyse du premier par le sulfate de fer,<lb break="yes"/>ou l&#x2019;acide muriatique oxigéné.</p>
+                <lb break="yes"/>
+                <p>§. XVI. Les acides forts donnent, en gé-<lb break="no"/>néral, un gaz nitreux plus azoté que les acides<lb break="yes"/>foibles; cependant j&#x2019;ai observé des exceptions<lb break="yes"/>très-marquantes. Un acide nitrique, qui avoit<lb break="yes"/>dégagé un gaz nitreux à 0.35 d&#x2019;azote, fut m&#x00EA;lé<lb break="yes"/>de 9 parties d&#x2019;eau distillée. Plusieurs heures<lb break="yes"/>s&#x2019;écoulèrent avant qu&#x2019;une bulle d&#x2019;eau appar&#x00FB;t<lb break="yes"/>dans l&#x2019;appareil pneumatique. Pendant toute<lb break="yes"/>une nuit, il se forma peu-à-peu 17 centimètres<lb break="yes"/>cubes de gaz nitreux, qui, essayé par le sulfate<lb break="yes" />de fer, contenoit 0.47 d&#x2019;azote. Si, au con-<lb break="no"/>traire, l&#x2019;acide est très-fort, et qu&#x2019;il se forme<lb break="yes"/>un gaz nitreux très-azoté, on peut &#x00EA;tre s&#x00FB;r que<lb break="yes"/>le degré de cette azotation diminue à mesure<lb break="yes"/>que plus de gaz se dégage, et qu&#x2019;il paro&#x00EE;t avec<lb break="yes"/>plus de lenteur. En séparant des volumes égaux,<lb break="yes"/>selon l&#x2019;époque de leur formation, on obtien-<lb break="no"/>dra le plus souvent des fluides élastiques, dans<lb break="yes"/>lesquels l&#x2019;azote diminue en progression arith-<lb break="no"/>métique. J&#x2019;ai recueilli successivement 40 cen-<lb break="no"/>timètres cubes de gaz nitreux, qui contenoient<lb break="yes"/>
+                    <pb n="149" facs="#f0027"/> 0.62&#x2013;0.51&#x2013;0.43&#x2014;0.30 d&#x2019;azote. La solution<lb break="yes"/>d&#x2019;<hi rendition="#i" >ammoniaque</hi> découvre constamment des<lb break="yes"/>
+                    <hi rendition="#i">vapeurs d&#x2019;acide nitreux</hi> dans ces mélanges<lb break="yes"/>aériformes. La pureté du métal employé a<lb break="yes"/>aussi une influence très-prononcée sur la pu-<lb break="no"/>reté du gaz nitreux. Le m&#x00EA;me acide, versé<lb break="yes"/>sur du fil de laiton et du fil de cuivre, en dé-<lb break="no"/>gage des gaz nitreux très-différens dans le de-<lb break="no"/>gré de leur azotation. Le premier contiendra<lb break="yes" />0.25 d&#x2019;azote, quand le dernier n&#x2019;en aura que<lb break="yes" />0.12. C&#x2019;est la grande affinité du zinc pour<lb break="yes" />l&#x2019;oxigène, qui paro&#x00EE;t causer cette différence<lb break="yes" />dans la décomposition (désoxidation) de l&#x2019;a-<lb break="no"/>cide nitrique. Toutes ces modifications du<lb break="yes"/>gaz nitreux rendroient cette substance très-<lb break="maybe"/>peu propre aux travaux analytiques, si nous<lb break="yes"/>ne connoissions pas des moyens certains et<lb break="yes"/>directs (§. XI&#x2013;XIII.) pour en trouver le de-<lb break="no"/>gré d&#x2019;impureté.</p>
+                <lb break="yes"/>
+                <p>§. XVII. Après avoir examiné la <hi rendition="#i">nature</hi>
+                    <lb break="yes"/>du gaz nitreux, il s&#x2019;agit de le voir entrer en<lb break="yes"/>contact avec l&#x2019;oxigène. L&#x2019;eau décomposant<lb break="yes"/>(§. XIX.) par elle-m&#x00EA;me le gaz nitreux, il<lb break="yes"/>seroit naturel de commencer ce travail dans<lb break="yes"/>un <hi rendition="#i">appareil à mercure.</hi> On pourroit espérer<lb break="yes"/>de trouver, par ce moyen, et par les expérien-<lb break="no" />ces comparatives faites par l&#x2019;eau, ce qui est<lb break="yes"/>
+                    <pb n="150" facs="#f0028"/> d&#x00FB; aux gaz oxigène et nitreux, ou aux liquides<lb break="yes"/>à travers lesquels on les transvase. Mais le tra-<lb break="no"/>vail, que j&#x2019;ai entrepris, à cet égard, au labe-<lb break="no"/>ratoire de l&#x2019;école polytechnique, a prouvé<lb break="yes"/>combien cette espérance est mal fondée. En<lb break="yes" />m&#x00EA;lant 100 parties de gaz nitreux (à 0.12<lb break="yes" />d&#x2019;azote) à 100 parties d&#x2019;air atmosphérique<lb break="yes"/>(à 0.274 d&#x2019;oxigène), l&#x2019;air rougit sur-le-champ;<lb break="yes"/>mais tout l&#x2019;acide qui se forma resta aériforme.<lb break="yes"/>Il n&#x2019;y eut, après 18 heures, que quelques<lb break="yes"/>gouttes d&#x2019;acide de formé, qui nageoient sur<lb break="yes"/>le mercure. Depuis le 14 jusqu&#x2019;au 16 ther-<lb break="no"/>midor, aucune cloche ne montra une absorp-<lb break="no"/>tion au-delà de 0.36; tandis qu&#x2019;on devoit s&#x2019;at-<lb break="no"/>tendre au moins à 0.94, ou 0.96 d&#x2019;absorbés.<lb break="yes"/>Pour enlever au résidu d&#x2019;azote la grande quan-<lb break="no"/>tité d&#x2019;acide nitreux, qu&#x2019;on devoit y présumer<lb break="yes"/>suspendue, je le mis en contact avec de la po-<lb break="no"/>tasse caustique: elle ne diminua, en 36 heu-<lb break="no"/>res, le volume que de 0.02. Ce phénomène<lb break="yes"/>n&#x2019;a pas de quoi nous étonner. Nous voyons,<lb break="yes"/>dans un grand nombre d&#x2019;expériences analo-<lb break="no"/>gues, qu&#x2019;il faut de l&#x2019;eau pour faire passer un<lb break="yes"/>acide, de l&#x2019;état gazeux, à l&#x2019;état liquide. Il ne<lb break="yes"/>peut donc, (lors du contact des airs atmosphé-<lb break="no"/>rique et nitreux sur le mercure) se former<lb break="yes" />d&#x2019;acide nitrique qu&#x2019;autant qu&#x2019;il se trouve de<lb break="yes"/>l&#x2019;humidité dans l&#x2019;appareil et les gaz. Lors-<lb break="no"/>
+                    <pb n="151" facs="#f0029"/> que je fis passer 100 parties de gaz am-<lb break="no"/>moniacal sous les cloches, qui contenoient<lb break="yes" />encore un résidu de 164 parties, il y eut une<lb break="yes"/>absorption de 53 et 55 parties: or il y avoit eu</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>0.36</cell>
+                        <cell>absorbés par le contact des airs m&#x00EA;mes,</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0.02</cell>
+                        <cell>&#x2014; par la potasse,</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#u">0.54</hi>
+                        </cell>
+                        <cell>&#x2014; par le gaz ammoniacal.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0.92</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Il y eut par conséquent <formula notation="TeX">\frac{92}{100}</formula> de moins en<lb break="yes"/>volume; diminution qui s&#x2019;approche assez de<lb break="yes"/>celle à laquelle on devoit s&#x2019;attendre par l&#x2019;ana-<lb break="no"/>logie des expériences faites sur l&#x2019;eau. Le gaz<lb break="yes"/>ammoniacal n&#x2019;étant jamais tout pur, et la<lb break="yes"/>quantité de ce gaz, requise pour saturer une<lb break="yes" />partie d&#x2019;acide gazeux, n&#x2019;étant pas connue, on<lb break="yes"/>ne sauroit se fier à la rigueur d&#x2019;un calcul aussi<lb break="yes" />compliqué.</p>
+                <lb break="yes"/>
+                <p>§. XVIII. Pour examiner la combinaison<lb break="yes"/>du gaz nitreux avec l&#x2019;oxigène, il faut aban-<lb break="no"/>donner le travail au mercure. Il faut en reve-<lb break="no"/>nir à celui fait à l&#x2019;eau, et cette recherche sera<lb break="yes"/>d&#x2019;autant plus utile, que l&#x2019;illustre <persName key="lavoisier_ald"/>Lavoisier<lb break="yes"/>s&#x2019;est servi constamment de la m&#x00EA;me méthode.<lb break="yes"/>C&#x2019;est en comparant ses résultats avec les n&#x00F4;-<lb break="no"/>tres, que nous parviendrons à dissiper, en par-<lb break="no"/>tie, les doutes qui embarrassent les chimistes<lb break="yes"/>
+                    <pb n="152" facs="#f0030"/> dans le calcul eudiométrique. On a observé,<lb break="yes"/>(depuis qu&#x2019;on travaille sur la pureté de l&#x2019;air)<lb break="yes"/>que le gaz nitreux, secoué avec l&#x2019;eau, en souf-<lb break="no"/>fre une diminution de volume. Quelques phy-<lb break="no"/>siciens attribuent ce changement à une vraie<lb break="yes" />absorption, à une dissolution du gaz nitreux<lb break="yes"/>dans l&#x2019;eau, d&#x2019;autres à l&#x2019;air contenu dans les<lb break="yes" />interstices de tous les fluides. Le cit. <persName key="vanbreda_01" >Vanbreda</persName>,<lb break="yes"/>à <placeName key="delft" >Delft</placeName>, a fait des recherches très-exactes sur<lb break="yes" />l&#x2019;influence des eaux de pluie et de puits, sur<lb break="yes"/>les nombres eudiométriques; et les belles ex-<lb break="no"/>périences du cit. <persName key="hassenfratz_jh">Hassenfratz</persName>, sur l&#x2019;abondance<lb break="yes"/>d&#x2019;oxigène, contenue dans les eaux de neige et<lb break="yes"/>de pluie, font supposer que l&#x2019;air des intersti-<lb break="no"/>ces de l&#x2019;eau joue un r&#x00F4;le important dans l&#x2019;ab-<lb break="no"/>sorption du gaz nitreux. En comparant ces<lb break="yes"/>effets avec les phénomènes observés dans la<lb break="yes" />décomposition du sulfate de fer, nous suppo-<lb break="no"/>s&#x00E2;mes, le cit. <persName key="tassaert_bm">Tassaert</persName> et moi, que le simple<lb break="yes"/>contact du gaz nitreux avec l&#x2019;eau distillée<lb break="yes"/>pourroit bien causer une décomposition de ce<lb break="yes" />dernier. Nous examin&#x00E2;mes soigneusement une<lb break="yes"/>petite quantité d&#x2019;eau distillée, secouée avec<lb break="yes"/>beaucoup de gaz nitreux très-pur, et nous<lb break="yes"/>trouv&#x00E2;mes, au moyen de la terre calcaire et<lb break="yes"/>de l&#x2019;acide muriatique, qu&#x2019;il s&#x2019;y forme du <hi rendition="#i">ni-<lb break="no"/>trate d&#x2019;ammoniaque.</hi> L&#x2019;eau se décompose, en<lb break="yes" />cette opération, par une double affinité de<lb break="yes"/>
+                    <pb n="153" facs="#f0031"/> l&#x2019;oxigène pour le gaz nitreux, et de l&#x2019;hydro-<lb break="no"/>gène pour l&#x2019;azote; il se forme de l&#x2019;acide ni-<lb break="no"/>trique et de l&#x2019;<hi rendition="#i" >ammoniaque</hi>; et, quoique la<lb break="yes"/>quantité du dernier paroisse trop petite pour<lb break="yes"/>en évaluer exactement la quantité, son exis-<lb break="no"/>tence cependant se manifeste, (à ne pas en<lb break="yes"/>douter) par le dégagement des vapeurs, qui<lb break="yes" />blanchissent dans la proximité de l&#x2019;acide mu-<lb break="no"/>riatique. Voilà un fait bien frappant que la<lb break="yes"/>composition d&#x2019;une substance alcaline par le<lb break="yes"/>contact d&#x2019;un acide et de l&#x2019;eau. C&#x2019;est à la nou-<lb break="no"/>velle théorie chimique, et principalement aux<lb break="yes"/>grands travaux du cit. <persName key="berthollet_cl">Berthollet</persName>, que nous<lb break="yes"/>devons la facilité avec laquelle nous pouvons<lb break="yes"/>expliquer ce phénomène curieux.</p>
+                <lb break="yes"/>
+                <p>§. XIX. 100 parties de gaz nitreux, (à 0.14<lb break="yes"/>d&#x2019;azote) secouées avec de <hi rendition="#i">l&#x2019;eau distillée,</hi> ré-<lb break="no"/>cemment cuite, diminuent en volume de<lb break="yes"/>0.11, ou 0.12. Ce m&#x00EA;me gaz, en contact avec<lb break="yes"/>l&#x2019;<hi rendition="#i">eau de puits,</hi> ne perd que 0.02. La cause<lb break="yes" />de cette différence de 0.09, ou 0.10, ne<lb break="yes"/>doit pas &#x00EA;tre attribuée ni à l&#x2019;impureté de l&#x2019;air<lb break="yes"/>atmosphérique, contenu dans les interstices<lb break="yes"/>de l&#x2019;eau, ni à la décomposition de cette eau<lb break="yes"/>m&#x00EA;me. Elle n&#x2019;est qu&#x2019;apparente; car l&#x2019;acide<lb break="yes"/>nitrique, qui se forme par le contact du gaz<lb break="yes"/>nitreux avec l&#x2019;eau de puits, en décompose le<lb break="yes"/>
+                    <pb n="154" facs="#f0032"/> carbonate de chaux. Il se dégage de l&#x2019;acide<lb break="yes"/>carbonique, qui, en augmentant le volume du<lb break="yes"/>résidu, rend l&#x2019;absorption du gaz nitreux moins<lb break="yes"/>sensible. Pour déterminer la quantité de cet<lb break="yes" />acide carbonique, je lavai le résidu avec de<lb break="yes"/>l&#x2019;eau de chaux. Dans un grand nombre<lb break="yes"/>d&#x2019;expériences, le volume diminua de 0.09,<lb break="yes"/>ou 0.07. Il faut en conclure que l&#x2019;<hi rendition="#i">eau de<lb break="yes"/>puits</hi> absorbe réellement 9 + 2, ou 7 + 2<lb break="yes"/>parties de gaz nitreux, c&#x2019;est-à-dire, à-peu-près<lb break="yes"/>la m&#x00EA;me quantité que l&#x2019;<hi rendition="#i">eau distillée.</hi> Les<lb break="yes"/>m&#x00EA;mes différences <hi rendition="#i">apparentes,</hi> que présen-<lb break="no"/>tent les eaux mises en contact avec le gaz<lb break="yes"/>nitreux seul, se manifestent aussi en faisant<lb break="yes"/>l&#x2019;analyse de l&#x2019;air atmosphérique dans deux tu-<lb break="no"/>bes, dont l&#x2019;un est rempli d&#x2019;eau distillée,<lb break="yes"/>l&#x2019;autre d&#x2019;eau de puits. 8 expériences donnèrent,<lb break="yes"/>pour la première, un résidu de 101, ou 102;<lb break="yes"/>pour le second, un résidu de 112, ou 113.<lb break="yes"/>Je préparai, au moyen de l&#x2019;air atmosphé-<lb break="no" />rique et d&#x2019;un azote pur, (obtenu par l&#x2019;humus<lb break="yes"/>ou la terre argileuse) un mélange gazeux de<lb break="yes"/>0.12 d&#x2019;oxigène, et de 0.8 d&#x2019;azote. Ce mé-<lb break="no"/>lange, essayé sur l&#x2019;eau distillée, ne laissa<lb break="yes"/>qu&#x2019;un résidu de 156, 155, 155 <formula notation="TeX">\frac{1}{2}</formula>; essayé sur<lb break="yes" />l&#x2019;eau de puits, il resta 165, 166, 164 <formula notation="TeX" >\frac{1}{2}</formula>. Les<lb break="yes"/>différences furent donc constamment de 0.10<lb break="yes"/>à 0.11; résultat qui est aussi important que<lb break="yes"/>
+                    <pb n="155" facs="#f0033"/> consolant pour l&#x2019;analyse des gaz. Le physi-<lb break="no"/>cien, pour rendre <hi rendition="#i">comparables</hi> les nombres<lb break="yes"/>eudiométriques qu&#x2019;il présente au public, n&#x2019;a<lb break="yes"/>pas besoin de travailler toujours dans de l&#x2019;eau<lb break="yes"/>distillée ou cuite. Il suffit qu&#x2019;une fois pour<lb break="yes"/>toutes il détermine la propriété absorbante<lb break="yes"/>de l&#x2019;eau, dont il se sert par rapport à l&#x2019;eau<lb break="yes"/>distillée. Cette propriété étant indiquée par<lb break="yes" />la différence des volumes absorbés, on peut<lb break="yes"/>aisément se former une petite <hi rendition="#i">table de correc-<lb break="no"/>tion,</hi> pour réduire tous les nombres eudiomé-<lb break="no"/>triques à l&#x2019;état des expériences faites à l&#x2019;eau<lb break="yes"/>distillée.</p>
+                <lb break="yes"/>
+                <p>§. XX. En réfléchissant sur les moyens de<lb break="yes"/>trouver la valeur de <hi rendition="#i">m</hi>: <hi rendition="#i">n,</hi> ou (§. I.) la quan-<lb break="no"/>tité de gaz nitreux, requise pour saturer une<lb break="yes" />partie d&#x2019;oxigène, deux voies se présentent à<lb break="yes"/>notre esprit, parmi lesquelles une a été ten-<lb break="no"/>tée par le célèbre <persName key="lavoisier_ald"/>Lavoisier. On peut (comme<lb break="yes" />lui) m&#x00EA;ler 300 parties de gaz nitreux à 100<lb break="yes"/>parties de gaz oxigène, et noter la diminu-<lb break="no"/>tion du volume, ou l&#x2019;on peut combiner les<lb break="yes"/>parties égales d&#x2019;air atmosphérique et de gaz<lb break="yes"/>nitreux, et analyser le résidu pour déterminer<lb break="yes"/>la quantité d&#x2019;oxigène par le volume de l&#x2019;azote<lb break="yes"/>atmosphérique. Mais, avant d&#x2019;entrer dans le<lb break="yes"/>détail de ces méthodes, il faut observer que<lb break="yes"/>
+                    <pb n="156" facs="#f0034"/> toutes deux sont sujettes à une petite erreur,<lb break="yes"/>dont heureusement nous pouvons indiquer les<lb break="yes"/>
+                    <hi rendition="#i">limites.</hi> Sachant évaluer la quantité d&#x2019;azote<lb break="yes"/>contenue dans le gaz nitreux, sur lequel nous<lb break="yes" />travaillons, nous déterminerons le volume de<lb break="yes"/>gaz absorbé plus exactement que l&#x2019;on ne pou-<lb break="no"/>voit le faire du tems de <persName key="lavoisier_ald"/>Lavoisier. Mais nous<lb break="yes"/>devons (comme ce grand chimiste) opérer<lb break="yes"/>sur de l&#x2019;<hi rendition="#i">eau;</hi> et ce liquide, (§. XVIII.-XIX.)<lb break="yes" />absorbant et décomposant une partie du gaz<lb break="yes"/>nitreux, on ne peut pas admettre que tout le<lb break="yes"/>volume, qui ne se retrouve pas dans le ré-<lb break="no"/>sidu, se soit combiné avec le gaz atmosphé-<lb break="no" />rique. Il est très-probable que les bases acidi-<lb break="no"/>fiables du gaz nitreux, étant en contact avec<lb break="yes"/>l&#x2019;air atmosphérique, agissent moins sur l&#x2019;eau<lb break="yes"/>qu&#x2019;en les secouant seuls avec ce liquide; mais<lb break="yes"/>toujours cette action doit avoir lieu, sans que<lb break="yes"/>nous soyons en état d&#x2019;en déterminer exacte-<lb break="no"/>ment l&#x2019;effet. Nous verrons, dans la suite de<lb break="yes"/>ce mémoire (§. XXIX.) que le <hi rendition="#i">maximum</hi>
+                    <lb break="yes"/>de cette erreur ne peut changer la valeur de<lb break="yes"/>
+                    <hi rendition="#i">m</hi> que de 0.3. Il se peut que <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi> soit au<lb break="yes"/>lieu de 2.6 : 1 comme 2.3 : 1. Mais cette<lb break="yes"/>petite incertitude m&#x00EA;me ne concerne qu&#x2019;une<lb break="yes"/>spéculation théorétique. Elle n&#x2019;influe presque<lb break="yes"/>en rien sur le calcul eudiométrique de l&#x2019;air.<lb break="yes"/>Si l&#x2019;eau enlevoit une fois 0.07, une autre fois<lb break="yes"/>
+                    <pb n="157" facs="#f0035"/> 0.05 de gaz nitreux; alors ce calcul seroit sujet<lb break="yes"/>aux erreurs les plus graves. On ne sauroit<lb break="yes"/>pas si l&#x2019;on devroit attribuer la différence des<lb break="yes"/>volumes absorbés à la pureté de l&#x2019;air, ou à<lb break="yes"/>l&#x2019;effet de l&#x2019;eau contenue dans le tube eudio-<lb break="no"/>
+                    <choice>
+                        <sic>métriqne</sic>
+                        <corr type="editorial">métrique</corr>
+                    </choice>. Heureusement que les travaux<lb break="yes"/>exacts de <persName key="ingenhousz_j">Ingenhouss</persName> et de plusieurs autres<lb break="yes"/>physiciens ont levé ces doutes. Le m&#x00EA;me air<lb break="yes"/>atmosphérique, analysé sur la m&#x00EA;me eau,<lb break="yes" />donne constamment les m&#x00EA;mes nombres de<lb break="yes"/>l&#x2019;échelle eudiométrique. En travaillant, les<lb break="yes"/>différences ne vont pas au-delà d&#x2019;un degré.<lb break="yes"/>Un air atmosphérique, essayé sur deux eaux<lb break="yes"/>de puits différentes, laissera un résidu de 108<lb break="yes"/>et 105 parties. M&#x00EA;lez quelques bulles d&#x2019;azote<lb break="yes"/>à cet air, et la seconde analyse donnera sur<lb break="yes" />les m&#x00EA;mes causes 112 et 109, ou 108.5. On<lb break="yes"/>doit conclure de-là que ce que l&#x2019;eau absorbe<lb break="yes"/>en la secouant avec des parties égales de gaz<lb break="yes"/>nitreux et d&#x2019;air atmosphérique, est d&#x2019;une <hi rendition="#i">va-<lb break="no"/>leur constante.</hi> En le mettant = &#x03BB;, il est aisé<lb break="yes"/>de voir, rigoureusement parlant, que nos ex-<lb break="no"/>périences ne nous indiquent pas la valeur<lb break="yes"/>de <hi rendition="#i">z</hi> = <hi rendition="#i">y</hi> + <hi rendition="#i">x</hi>, mais = <hi rendition="#i">y</hi> + <hi rendition="#i" >x</hi> + &#x03BB;; de m&#x00EA;me<lb break="yes"/>la formule <formula notation="TeX">\frac{z}{y}</formula> &#x2014; 1 ne donne pas exactement la<lb break="yes"/>valeur de <hi rendition="#i">m,</hi> mais celle de <hi rendition="#i">m</hi> &#x2014; <formula notation="TeX" >\frac{\lambda}{y.}</formula> Il suffit<lb break="yes"/>d&#x2019;avoir indiqué ce point d&#x2019;incertitude appa-<lb break="no"/>
+                    <pb n="158" facs="#f0036"/> rente. Des expériences comparatives, et des<lb break="yes"/>considérations exposées à la fin de ce mémoire,<lb break="yes" />nous prouveront que toute correction est pres-<lb break="no"/>que superflue à cet égard.</p>
+                <lb break="yes"/>
+                <p>§. XXI. Des deux méthodes indiquées<lb break="yes"/>(§. XX.) pour évaluer la valeur de <hi rendition="#i">m </hi>: <hi rendition="#i">n,</hi>
+                    <lb break="yes"/>celle qui a été suivie par <persName key="lavoisier_ald" />Lavoisier doit la pre-<lb break="no"/>mière fixer notre attention. Les expériences<lb break="yes"/>que j&#x2019;ai faites seront rapportées en forme de<lb break="yes"/>tableau. Le gaz oxigène, avec lequel je m&#x00EA;lai<lb break="yes"/>des parties égales de gaz nitreux, étoit dé-<lb break="no" />gagé tant&#x00F4;t du nitrate, tant&#x00F4;t (pour l&#x2019;avoir<lb break="yes"/>plus pur) du muriate oxigéné de potasse. Les<lb break="yes" />mots, <hi rendition="#i">absorption apparente et réelle,</hi> indi-<lb break="no"/>quent une correction que les chimistes ont<lb break="yes" />négligée jusqu&#x2019;ici. En m&#x00EA;lant 100 parties de<lb break="yes"/>gaz nitreux à 0.10 d&#x2019;azote, et 100 parties<lb break="yes"/>de gaz oxigène, il y aura une diminution de<lb break="yes"/>volume de 0.28. Mais cette diminution n&#x2019;est<lb break="yes"/>qu&#x2019;apparente; le résidu ayant été augmenté<lb break="yes"/>de 0.10 d&#x2019;azote, il faut ajouter ce nombre<lb break="yes"/>pour évaluer la quantité d&#x2019;oxigène réellement<lb break="yes"/>absorbée par le gaz nitreux. L&#x2019;absorption se<lb break="yes"/>faisant très-rapidement, et le tube eudio-<lb break="no" />métrique n&#x2019;ayant presque pas du tout été se-<lb break="no"/>coué, je n&#x2019;ai pas cru nécessaire de rien compter<lb break="yes"/>de l&#x2019;air qui pourroit &#x00EA;tre sorti des interstices<lb break="yes"/>
+                    <pb n="159" facs="#f0037"/> de l&#x2019;eau. La valeur de <hi rendition="#i" >m</hi> est le quotient de<lb break="yes"/>100, divisé par l&#x2019;absorption réelle.</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <table>
+                        <head>
+                            <hi rendition="#i">Expériences faites avec des parties égales<lb break="yes"/>de gaz oxigène et nitreux.</hi>
+                        </head>
+                        <row>
+                            <cell role="label">Volume<lb break="yes"/>d&#x2019;Azote con-<lb break="no"/>tenu dans le<lb break="yes"/>gaz nitreux.</cell>
+                            <cell role="label">Absorption<lb break="yes"/>apparente.</cell>
+                            <cell role="label">Absorption<lb break="yes"/>réelle.</cell>
+                            <cell role="label">Valeur<lb break="yes"/>de <hi rendition="#i">m n.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.10</cell>
+                            <cell>0.29</cell>
+                            <cell>1.39</cell>
+                            <cell>2.5:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.10</cell>
+                            <cell>0.28</cell>
+                            <cell>0.38</cell>
+                            <cell>2.6:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.12</cell>
+                            <cell>0.26</cell>
+                            <cell>0.38</cell>
+                            <cell>2.6:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.14</cell>
+                            <cell>0.26</cell>
+                            <cell>0.40</cell>
+                            <cell>2.5:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.18</cell>
+                            <cell>0.18</cell>
+                            <cell>0.36</cell>
+                            <cell>2.7:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.18</cell>
+                            <cell>0.19</cell>
+                            <cell>0.37</cell>
+                            <cell>2.7:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.18</cell>
+                            <cell>0.20</cell>
+                            <cell>0.38</cell>
+                            <cell>2.6:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.20</cell>
+                            <cell>0.10</cell>
+                            <cell>0.30</cell>
+                            <cell>3.3:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.20</cell>
+                            <cell>0.11</cell>
+                            <cell>0.31</cell>
+                            <cell>3.2:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.21</cell>
+                            <cell>0.08</cell>
+                            <cell>0.29</cell>
+                            <cell>3.4:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.21</cell>
+                            <cell>0.15</cell>
+                            <cell>0.36</cell>
+                            <cell>2.7:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.23</cell>
+                            <cell>0.14</cell>
+                            <cell>0.37</cell>
+                            <cell>2.7:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.25</cell>
+                            <cell>0.06</cell>
+                            <cell>0.31</cell>
+                            <cell>3.2:1</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Le <hi rendition="#i">terme moyen</hi> pour la valeur de <hi rendition="#i" >m</hi> est<lb break="yes"/>par conséquent = 2.82; ce qui diffère beau-<lb break="no"/>coup du nombre de 1.72, adopté jusqu&#x2019;ici<lb break="yes"/>
+                        <pb n="160" facs="#f0038"/> par les chimistes modernes. J&#x2019;ai cru apper-<lb break="no"/>cevoir, dans un grand nombre d&#x2019;expériences<lb break="yes"/>faites sur des gaz oxigènes très-impurs, et<lb break="yes"/>dont le détail fatigueroit le lecteur, que l&#x2019;ab-<lb break="no"/>sorption des gaz est d&#x2019;autant plus petite, et<lb break="yes"/>par conséquent la valeur de <hi rendition="#i" >m</hi> d&#x2019;autant plus<lb break="yes"/>grande, que l&#x2019;air vital est d&#x2019;autant plus pur.<lb break="yes"/>L&#x2019;oxigène se trouvant moins libre dans un<lb break="yes"/>gaz plus impur ou plus azoté, il paro&#x00EE;t qu&#x2019;a-<lb break="no"/>lors la combinaison du gaz nitreux est plus<lb break="yes"/>lente, et que moins de parties du dernier ten-<lb break="no"/>dent à se joindre à lui. Il se forme un acide<lb break="yes"/>nitrique, miscible à l&#x2019;eau, mais moins oxi-<lb break="no"/>géné, se rapprochant davantage de l&#x2019;état<lb break="yes"/>d&#x2019;acide nitreux. En général, j&#x2019;ai observé, dans<lb break="yes"/>le cours de ces expériences, que celles faites<lb break="yes"/>sur le <hi rendition="#i">gaz oxigène</hi> ne présenteront de long-<lb break="no"/>tems cette belle harmonie qui se manifeste<lb break="yes"/>dans l&#x2019;analyse de l&#x2019;air atmosphérique. Un mé-<lb break="no"/>lange gazeux, formé par la nature, est plus<lb break="yes"/>homogène, plus uniforme dans ces affinités,<lb break="yes" />que des gaz artificiels, dégagés de différentes<lb break="yes" />substances, et à des températures très-éloignées<lb break="yes"/>les unes des autres.</p>
+                    <lb break="yes"/>
+                    <p>§. XXII. Si, au lieu de m&#x00EA;ler des parties<lb break="yes"/>égales de gaz nitreux et oxigène, on fait entrer<lb break="yes"/>300 parties de gaz nitreux, et 100 parties de<lb break="yes"/>
+                        <fw type="catch" place="bottom">gaz</fw>
+                        <lb break="yes"/>
+                        <pb n="161" facs="#f0039"/> gaz oxigène dans le tube eudiométrique, la<lb break="yes"/>valeur de <hi rendition="#i">m</hi> (au lieu de rester à 2.8 jusqu&#x2019;à<lb break="yes"/>3.1) descend jusqu&#x2019;à 1.8. L&#x2019;absorption du<lb break="yes"/>gaz paro&#x00EE;t alors infiniment petite, non que<lb break="yes"/>moins de gaz nitreux soit alors requis pour sa-<lb break="no"/>turer 0.02 d&#x2019;oxigène, mais parce que, dans<lb break="yes"/>un tube de 25 millimètres en diamètre, l&#x2019;acide<lb break="yes"/>nitrique conserve, en grande partie, son état<lb break="yes"/>gazeux, étant trop éloigné de la petite surface<lb break="yes"/>de l&#x2019;eau, qui pourroit le faire passer à l&#x2019;état<lb break="yes"/>liquide. Je crois qu&#x2019;il se présente la m&#x00EA;me dif-<lb break="no"/>ficulté qui s&#x2019;opposa à nos travaux dans l&#x2019;ap-<lb break="no"/>pareil au mercure; car, en faisant (comme<lb break="yes"/>nous venons de l&#x2019;indiquer plus haut §. IV)<lb break="yes"/>le m&#x00EA;me mélange de gaz oxigène et nitreux<lb break="yes"/>dans un vase de 10 ou 15 centimètres en dia-<lb break="no" />mètre, l&#x2019;absorption est très-grande, et la va-<lb break="no"/>leur de <hi rendition="#i">m</hi> remonte à 2.6 ou 2.7. En analy-<lb break="no" />sant l&#x2019;air vital éminemment pur, que le cit.<lb break="yes"/>
+                        <persName key="guytondemorveau_lbb">Guyton</persName> avoit destiné pour la combustion d&#x2019;un<lb break="yes"/>diamant, je m&#x00EA;lai 3 mesures de gaz nitreux<lb break="yes"/>à 0.10 d&#x2019;azote, à 1 mesure de gaz oxigène<lb break="yes"/>dans une cloche très-large, et sans secouer<lb break="yes"/>l&#x2019;appareil. Le résidu ne fut que de 0.31,<lb break="yes"/>preuve certaine qu&#x2019;il ne resta que l&#x2019;azote pré-<lb break="no"/>existant dans le gaz nitreux. Cette expérience<lb break="yes"/>donne <formula notation="TeX" >m=\frac{270}{100}=2.7</formula>.</p>
+                    <lb break="yes"/>
+                    <pb n="162" facs="#f0040"/>
+                    <p>§. XXIII. Avant de passer à la seconde<lb break="yes"/>
+                        <hi rendition="#i">méthode</hi> d&#x2019;évaluer la valeur de <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi>, aux<lb break="yes" />expériences faites sur l&#x2019;air atmosphérique, je<lb break="yes"/>dois m&#x2019;arr&#x00EA;ter à une observation très-impor-<lb break="no"/>tante pour la météorologie. Travaillant sur le<lb break="yes"/>gaz vital pur, il nous vint dans l&#x2019;idée d&#x2019;imiter<lb break="yes"/>la nature en composant de 0.25 d&#x2019;oxigène, et<lb break="yes"/>de 0.75 d&#x2019;azote, un mélange semblable à l&#x2019;air<lb break="yes" />atmosphérique. Si ce mélange e&#x00FB;t donné les<lb break="yes" />résultats analogues à celles faites sur l&#x2019;air na-<lb break="no" />turel, la valeur de <hi rendition="#i">y</hi> étant connue, on auroit<lb break="yes"/>déterminé facilement celle de <hi rendition="#i">m</hi>. Nous prépa-<lb break="no"/>r&#x00E2;mes de l&#x2019;azote au moyen du gaz nitreux et<lb break="yes"/>du sulfate de fer; 400 parties en furent m&#x00EA;-<lb break="no"/>lées à 100 parties de gaz vital tout pur, dé-<lb break="no"/>gagé du muriate oxigéné de potasse. Ce mé-<lb break="no"/>lange, analysé à parties égales dans le tube de<lb break="yes"/>
+                        <persName key="fontana_af"/>Fontana, donna une absorption de 0.98;<lb break="yes"/>tandis que l&#x2019;air atmosphérique (à 0.27 d&#x2019;oxi-<lb break="no"/>gène) n&#x2019;en donna que 0.93. Un second mé-<lb break="no"/>lange artificiel, qui contenoit 0.20 d&#x2019;oxigène,<lb break="yes"/>et 0.80 d&#x2019;azote, ne laissa, dans le tube eudio-<lb break="no"/>métrique, qu&#x2019;un résidu de 121 parties. Ces<lb break="yes"/>expériences, répétées plus souvent, donnèrent<lb break="yes"/>la valeur de <hi rendition="#i">m</hi> = 2.9. Un air artificiel, <hi rendition="#i">moins<lb break="yes"/>pur</hi>, absorbant plus de gaz nitreux qu&#x2019;un air<lb break="yes"/>naturel, on peut juger de-là (ce qui est ap-<lb break="no"/>
+                        <pb n="163" facs="#f0041"/> puyé par un grand nombre d&#x2019;autres phéno-<lb break="no"/>mènes) que <hi rendition="#i">l&#x2019;état de combinaison</hi>, dans le-<lb break="no"/>quel se trouvent l&#x2019;azote et l&#x2019;oxigène, influe sur<lb break="yes"/>la valeur de <hi rendition="#i">m</hi>. L&#x2019;air atmosphérique artificiel<lb break="yes"/>conserve encore la propriété du gaz vital d&#x2019;ab-<lb break="no"/>sorber beaucoup de gaz nitreux; c&#x2019;est un mé-<lb break="no"/>lange physique d&#x2019;azote et d&#x2019;oxigène, tandis<lb break="yes"/>que l&#x2019;air que nous respirons s&#x2019;approche de<lb break="yes"/>l&#x2019;état d&#x2019;une combinaison chimique. L&#x2019;oxigène<lb break="yes"/>dans ce dernier étant fortement attiré par<lb break="yes"/>l&#x2019;azote, il tend moins à se joindre au gaz ni-<lb break="no"/>treux, et en absorbe une quantité plus petite.</p>
+                    <lb break="yes"/>
+                    <p>§. XXIV. Toutes ces considérations doi-<lb break="no"/>vent nous porter à ne pas vouloir chercher la<lb break="yes"/>solution du probl&#x00EA;me eudiométrique dans les<lb break="yes"/>expériences faites ou sur le gaz oxigène, ou sur<lb break="yes"/>des mélanges artificiels d&#x2019;oxigène et d&#x2019;azote.<lb break="yes"/>Les premières présentent m&#x00EA;me quelquefois<lb break="yes"/>une difficulté qui est assez curieuse par rap-<lb break="no"/>port à la théorie des affinités. Nous avons ob-<lb break="no"/>servé des cas particuliers dans lesquels de<lb break="yes" />300 parties de gaz nitreux (à 0.10 d&#x2019;azote) et<lb break="yes"/>de 100 parties de gaz oxigène pur, il ne resta<lb break="yes"/>qu&#x2019;un résidu de 0.19, ou de 0.22 d&#x2019;azote.<lb break="yes"/>Une ou deux fois cette diminution monta<lb break="yes"/>m&#x00EA;me jusqu&#x2019;à 0.16. Il n&#x2019;est pas probable que<lb break="yes"/>
+                        <pb n="164" facs="#f0042"/> tout cet azote se soit combiné à l&#x2019;hydrogène<lb break="yes"/>de l&#x2019;eau décomposée pour former de l&#x2019;ammo-<lb break="no"/>niaque. Pourquoi cette formation seroit-elle<lb break="yes"/>si abondante, lorsque la petite surface de l&#x2019;eau<lb break="yes"/>est couverte d&#x2019;une couche d&#x2019;acide? On doit<lb break="yes"/>supposer plut&#x00F4;t qu&#x2019;il existe des circonstances<lb break="yes"/>sous lesquelles, dans une formation très-ra-<lb break="no"/>pide d&#x2019;acide nitrique, cet acide m&#x00EA;me absorbe<lb break="yes"/>de l&#x2019;azote.</p>
+                    <lb break="yes"/>
+                    <p>§. XXV. Si <choice>
+                            <sic>L</sic>
+                            <corr type="editorial">l</corr>
+                        </choice>&#x2019;analyse du gaz vital ne nous<lb break="yes"/>présente que des difficultés à vaincre, celui<lb break="yes"/>de l&#x2019;air atmosphérique donne des résultats<lb break="yes"/>plus surs et plus uniformes. Connoissant<lb break="yes"/>des moyens de séparer l&#x2019;azote et le gaz ni-<lb break="no"/>treux, on peut déterminer la quantité d&#x2019;oxi-<lb break="no"/>gène contenue dans l&#x2019;air essayé, en analysant<lb break="yes"/>le résidu qui résulte du mélange des deux airs.<lb break="yes"/>Ce résidu est l&#x2019;azote atmosphérique + le<lb break="yes"/>gaz nitreux qui n&#x2019;a pas trouvé de l&#x2019;oxigène<lb break="yes"/>pour se convertir en acide nitrique + l&#x2019;azote<lb break="yes"/>contenu dans ce gaz nitreux. En enlevant le<lb break="yes"/>second par le sulfate de fer, et en évaluant le<lb break="yes"/>dernier par une expérience comparative, on<lb break="yes" />saura déterminer l&#x2019;azote de l&#x2019;atmosphère. Ce<lb break="yes" />calcul sera d&#x2019;autant plus juste que l&#x2019;on tiendra<lb break="yes"/>compte des volumes d&#x2019;air sortis des interstices<lb break="yes"/>
+                        <pb n="165" facs="#f0043"/> de l&#x2019;eau et du sulfate de fer, employés dans<lb break="yes"/>ces différentes opérations. Ayant présenté une<lb break="yes"/>partie de mes expériences sous la forme d&#x2019;un<lb break="yes"/>tableau, il sera nécessaire d&#x2019;exposer le mode<lb break="yes"/>de calcul que j&#x2019;ai suivi, dans un seul exemple:<lb break="yes"/>100 parties d&#x2019;air atmosphérique, m&#x00EA;lées à 100<lb break="yes"/>parties de gaz nitreux, (à 0.14 d&#x2019;azote) lais-<lb break="no"/>sent, le tout fortement secoué dans le tube<lb break="yes"/>eudiométrique, un résidu de 100 parties.<lb break="yes" />Dans cette opération, 0.04 d&#x2019;air sortent des<lb break="yes" />interstices de l&#x2019;eau, dont 0.01 d&#x2019;oxigène est<lb break="yes" />absorbé par le gaz nitreux avec l&#x2019;oxigène de<lb break="yes" />l&#x2019;atmosphère. Il faut compter, par conséquent,<lb break="yes"/>que le volume du résidu = 100 a été aug-<lb break="no"/>menté de 0.03. Ce résidu, lavé et fortement<lb break="yes"/>secoué avec le sulfate de fer, ne perd que<lb break="yes"/>0.08. Il reste donc 92 parties, augmentées<lb break="yes"/>de nouveau de 0.03 d&#x2019;azote, sortis des in-<lb break="no"/>terstices du sulfate de fer. Ce calcul donne:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>3</cell>
+                            <cell>des interstices de l&#x2019;eau,</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>3</cell>
+                            <cell>&#x2014; du sulfate de fer,</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <hi rendition="#u">14</hi>
+                            </cell>
+                            <cell>préexistans dans le gaz nitreux.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>20.</cell>
+                            <cell/>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>ou 92 &#x2014; 20 = 72 d&#x2019;azote atmosphérique. Or<lb break="yes"/>100 parties de gaz nitreux n&#x2019;étoient vraiment<lb break="yes"/>que 100 &#x2014; 14 = 86, et comme 0.08 + 0.03<lb break="yes"/>
+                        <pb n="166" facs="#f0044"/> en furent retrouvés dans le résidu, les 0.28<lb break="yes"/>d&#x2019;oxigène atmosphérique + 0.01 des in-<lb break="no" />terstices de l&#x2019;eau ont été absorbés par</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>86 &#x2014; 11 = 75 ou</item>
+                        <lb break="yes"/>
+                        <item>
+                            <formula notation="TeX">m = \frac{75}{29} = 2.59</formula>.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Il paro&#x00EE;t superflu de tenir compte dans ce<lb break="yes"/>calcul de l&#x2019;acide carbonique; son volume se<lb break="yes"/>trouvant souvent au-dessous d&#x2019;un centième,<lb break="yes"/>la valeur de <hi rendition="#i">m</hi> : <hi rendition="#i">n</hi> ne sera pas sensiblement<lb break="yes"/>altérée.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="167" facs="#f0045"/>
+                <div n="2">
+                    <table>
+                        <head>
+                            <hi rendition="#i">Expériences faites avec des parties égales<lb break="yes"/>du gaz nitreux et d&#x2019;air atmosphérique.</hi>
+                        </head>
+                        <row>
+                            <cell role="label">Valeur<lb break="yes"/>des deux<lb break="yes"/>gaz absorbés</cell>
+                            <cell role="label">Résidu<lb break="yes"/>après l&#x2019;abs.<lb break="yes"/>par le sulf.<lb break="yes"/>de fer.</cell>
+                            <cell role="label">Azote<lb break="yes"/>cont. dans<lb break="yes"/>le gaz nit.<lb break="yes"/>employé.</cell>
+                            <cell role="label">Azote<lb break="yes"/>cont. dans<lb break="yes" />l&#x2019;air atmos-<lb break="no"/>phérique.</cell>
+                            <cell role="label">Valeur<lb break="yes"/>de <hi rendition="#i">m n.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>1.00</cell>
+                            <cell>0.92</cell>
+                            <cell>0.14</cell>
+                            <cell>0.72</cell>
+                            <cell>2.59:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.98</cell>
+                            <cell>0.95</cell>
+                            <cell>0.16</cell>
+                            <cell>0.73</cell>
+                            <cell>2.64:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.95</cell>
+                            <cell>0.93</cell>
+                            <cell>0.14</cell>
+                            <cell>0.73</cell>
+                            <cell>2.53:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.98</cell>
+                            <cell>0.94</cell>
+                            <cell>0.16</cell>
+                            <cell>0.72</cell>
+                            <cell>2.51:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.97</cell>
+                            <cell>0.91</cell>
+                            <cell>0.11</cell>
+                            <cell>0.74</cell>
+                            <cell>2.74:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.87</cell>
+                            <cell>0.92</cell>
+                            <cell>0.10</cell>
+                            <cell>0.76</cell>
+                            <cell>2.60:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.97</cell>
+                            <cell>0.90</cell>
+                            <cell>0.12</cell>
+                            <cell>0.72</cell>
+                            <cell>2.47:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.90</cell>
+                            <cell>0.96</cell>
+                            <cell>0.14</cell>
+                            <cell>0.76</cell>
+                            <cell>2.76:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.99</cell>
+                            <cell>0.92</cell>
+                            <cell>0.14</cell>
+                            <cell>0.72</cell>
+                            <cell>2.55:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.99</cell>
+                            <cell>0.92</cell>
+                            <cell>0.15</cell>
+                            <cell>0.71</cell>
+                            <cell>2.43:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.92</cell>
+                            <cell>0.94</cell>
+                            <cell>0.14</cell>
+                            <cell>0.74</cell>
+                            <cell>2.55:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.90</cell>
+                            <cell>0.95</cell>
+                            <cell>0.14</cell>
+                            <cell>0.75</cell>
+                            <cell>2.61:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.88</cell>
+                            <cell>0.96</cell>
+                            <cell>0.14</cell>
+                            <cell>0.76</cell>
+                            <cell>2.68:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.95</cell>
+                            <cell>0.91</cell>
+                            <cell>0.11</cell>
+                            <cell>0.74</cell>
+                            <cell>2.64:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.94</cell>
+                            <cell>0.93</cell>
+                            <cell>0.14</cell>
+                            <cell>0.73</cell>
+                            <cell>2.50:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.95</cell>
+                            <cell>0.92</cell>
+                            <cell>0.14</cell>
+                            <cell>0.72</cell>
+                            <cell>2.41:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.90</cell>
+                            <cell>0.95</cell>
+                            <cell>0.14</cell>
+                            <cell>0.75</cell>
+                            <cell>2.62:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.81</cell>
+                            <cell>0.93</cell>
+                            <cell>0.12</cell>
+                            <cell>0.75</cell>
+                            <cell>2.65:1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>0.97</cell>
+                            <cell>0.90</cell>
+                            <cell>0.12</cell>
+                            <cell>0.72</cell>
+                            <cell>2.48:1</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="168" facs="#f0046"/>
+                    <p>§. XXVI. Voilà un grand nombre d&#x2019;ex-<lb break="no"/>périences dans lesquelles les valeurs de <hi rendition="#i">m</hi> ne<lb break="yes" />diffèrent que de 0.02. La plupart donnent<lb break="yes"/>un résultat qui tombe entre 2.5 et 2.6; et,<lb break="yes"/>pour la justesse du calcul eudiométrique, on<lb break="yes"/>pourra admettre, avec beaucoup d&#x2019;assurance,<lb break="yes"/>
+                        <hi rendition="#i">qu&#x2019;en secouant des volumes égaux de gaz<lb break="yes"/>nitreux et d&#x2019;air atmosphérique sur de l&#x2019;eau<lb break="yes"/>distillée, il faut</hi> 2.55 <hi rendition="#i">du premier pour ab-<lb break="no"/>sorber</hi> 0.01 <hi rendition="#i">d&#x2019;oxigène</hi>; il suit de-là, 1°, que<lb break="yes"/>si l&#x2019;acide nitrique est composé de 3.9 d&#x2019;oxi-<lb break="no"/>gène et 1 d&#x2019;azote, le <hi rendition="#i">gaz nitreux</hi> ne peut pas<lb break="yes"/>(comme l&#x2019;illustre <persName key="lavoisier_ald"/>Lavoisier l&#x2019;indique) conte-<lb break="no"/>nir 2.1 d&#x2019;oxigène sur 1 d&#x2019;azote, mais que<lb break="yes"/>les élémens du dernier doivent &#x00EA;tre en rap-<lb break="no"/>port de 1.4 : 1; et 2°. qu&#x2019;en travaillant sur des<lb break="yes"/>gaz nitreux très-chargés d&#x2019;azote, (par exem-<lb break="no"/>ple à 0.50 d&#x2019;azote) 100 parties de ce gaz im-<lb break="no"/>pur ne suffiront pas pour saturer tout l&#x2019;oxi-<lb break="no"/>gène contenu dans un volume d&#x2019;air atmosphé-<lb break="no"/>rique: car, 67.8 parties de gaz nitreux étant<lb break="yes"/>requis pour anéantir 0.27 d&#x2019;oxigène, un gaz<lb break="yes"/>nitreux, à 0.50 d&#x2019;azote, doit laisser un ré-<lb break="no"/>sidu de 0.07 d&#x2019;oxigène, qui ne trouve pas<lb break="yes"/>de quoi se saturer. Les expériences faites pour<lb break="yes"/>examiner la nature de ces gaz impurs, n&#x2019;ont<lb break="yes"/>pas toutes présenté l&#x2019;harmonie des nombres<lb break="yes"/>auxquels on avoit droit de s&#x2019;attendre. Il se<lb break="yes"/>
+                        <pb n="169" facs="#f0047"/> présenta des cas où il paroissoit impossible de<lb break="yes"/>retrouver l&#x2019;oxigène non absorbé dans le ré-<lb break="no"/>sidu. Un nombre d&#x2019;expériences sembloient<lb break="yes"/>indiquer que la valeur de <hi rendition="#i">m</hi> diminuoit à pro-<lb break="no"/>portion que le gaz nitreux employé étoit plus<lb break="yes"/>chargé d&#x2019;azote. Je crus qu&#x2019;il se formoit alors<lb break="yes"/>(tel qu&#x2019;en travaillant sur l&#x2019;air vital §. XXI)<lb break="yes"/>des acides plus ou moins oxigénés. Mais l&#x2019;ab-<lb break="no"/>sence de l&#x2019;oxigène dans les résidus ayant été<lb break="yes"/>moins prouvée directement que par la pré-<lb break="no"/>sence de quelques centièmes de gaz nitreux,<lb break="yes" />annoncée par le sulfate de fer, je n&#x2019;osai me<lb break="yes"/>fier à ce changement de la valeur de <hi rendition="#i">m</hi>. Une<lb break="yes" />diminution de volume, causée par la forma-<lb break="no"/>tion d&#x2019;ammoniaque, (diminution que je n&#x2019;ai<lb break="yes"/>appris à conno&#x00EE;tre que depuis le mois de ther-<lb break="no"/>midor) peut m&#x2019;avoir induit en erreur; et des<lb break="yes"/>expériences, faites avec le cit. <persName key="tassaert_bm">Tassaert</persName> sur des<lb break="yes"/>mélanges artificiels d&#x2019;azote et de gaz nitreux,<lb break="yes"/>ont prouvé indubitablement qu&#x2019;il falloit près de<lb break="yes"/>2 centièmes et <formula notation="TeX" >\frac{1}{2}</formula> du dernier pour saturer un<lb break="yes"/>100<hi rendition="#sup">e</hi>. d&#x2019;oxigène. Nous prépar&#x00E2;mes un gaz ni-<lb break="no"/>treux à 0.60 d&#x2019;azote. M&#x00EA;lé à des parties égales<lb break="yes"/>d&#x2019;air atmosphérique, il n&#x2019;y eut que 0.52 parties<lb break="yes"/>d&#x2019;absorbées. En supposant donc qu&#x2019;il y e&#x00FB;t<lb break="yes"/>0.27 d&#x2019;oxigène dans l&#x2019;air essayé, et que <hi rendition="#i">m</hi>
+                        <lb break="yes"/>soit égal à 2.5, le résidu du tube devoit en-<lb break="no" />core contenir 0.12 d&#x2019;oxigène. En effet, en<lb break="yes"/>
+                        <pb n="170" facs="#f0048"/> joignant 100 parties de gaz nitreux très-pur à<lb break="yes"/>ce résidu, il y eut encore près de 0.40 d&#x2019;ab-<lb break="no"/>sorbés; ce qui prouve assez que la valeur de<lb break="yes"/>
+                        <hi rendition="#i">m</hi> n&#x2019;avoit pas changé. D&#x2019;autres expériences,<lb break="yes"/>faites sur des gaz nitreux, à 0.35, 0.38, 0.45,<lb break="yes"/>0.52 et 0.68 d&#x2019;azote, donnèrent des résultats<lb break="yes"/>très-analogues. Tout gaz nitreux, qui contient<lb break="yes"/>beaucoup au-delà de 0.32 d&#x2019;azote, ne peut<lb break="yes"/>pas saturer l&#x2019;oxigène de l&#x2019;atmosphère. Ces gaz<lb break="yes"/>impurs présentent des nombres eudiométri-<lb break="no"/>ques très-différens les uns des autres; mais,<lb break="yes"/>connoissant des moyens certains d&#x2019;examiner<lb break="yes"/>le degré de leur azotation, on n&#x2019;a plus à crain-<lb break="no"/>dre des erreurs dont on sait évaluer les limites.<lb break="yes"/>Nous avons trouvé qu&#x2019;en général l&#x2019;<hi rendition="#i">air at-<lb break="no"/>mosphérique requiert près de</hi> 0.85 <hi rendition="#i">de gaz<lb break="yes"/>nitreux, pour le convertir en azote.</hi> Car<lb break="yes"/>0.85, contenant environ 0.13 d&#x2019;azote, les<lb break="yes"/>0.72 de gaz nitreux tout pur suffiront pour<lb break="yes"/>saturer les 0.28 d&#x2019;oxigène atmosphérique<lb break="yes"/>+ 0.01 d&#x2019;oxigène qui sort des interstices de<lb break="yes"/>l&#x2019;eau. Cette proportion gardée, on ne trouvera<lb break="yes"/>que peu de gaz nitreux m&#x00EA;lé avec l&#x2019;azote qui<lb break="yes"/>reste dans le tube eudiométrique. Il est utile<lb break="yes"/>de désigner ces nombres pour ceux qui vou-<lb break="no"/>dront se préparer une grande masse d&#x2019;azote<lb break="yes"/>à-peu-près pur, sans recourir au sulfate de<lb break="yes" />fer.</p>
+                    <lb break="yes"/>
+                    <pb n="171" facs="#f0049"/>
+                    <p>§. XXVII. Un phénomène, assez curieux<lb break="yes"/>et analogue à celui que nous avons observé en<lb break="yes"/>travaillant sur le mercure, se présente lorsque,<lb break="yes"/>dans le tube eudiométrique, on m&#x00EA;le 300 par-<lb break="no"/>ties de gaz nitreux à 100 parties d&#x2019;air at-<lb break="no"/>mosphérique. Le dernier se trouvant en con-<lb break="no"/>tact immédiat avec l&#x2019;eau, il y a la m&#x00EA;me ab-<lb break="no"/>sorption, comme si le tube ne contenoit que<lb break="yes"/>des parties égales de gaz nitreux et d&#x2019;air at-<lb break="no"/>mosphérique. Si, au contraire, ce dernier<lb break="yes" />(au lieu d&#x2019;&#x00EA;tre dans la partie inférieure du<lb break="yes" />tube) occupe la partie supérieure, alors l&#x2019;ab-<lb break="no" />sorption paro&#x00EE;t de <formula notation="TeX">\frac{1}{3}</formula> plus petite. La première<lb break="yes"/>méthode donne, par exemple, un résidu de<lb break="yes"/>112 parties, lorsque la seconde en laisse au-<lb break="no"/>delà de 140. On a beau secouer l&#x2019;instrument,<lb break="yes"/>le volume n&#x2019;en diminue pas plus. Tout l&#x2019;oxi-<lb break="no"/>gène a certainement trouvé de quoi se combi-<lb break="no"/>ner, et la valeur de <hi rendition="#i">m</hi> paro&#x00EE;t avoir baissé dans<lb break="yes"/>cette expérience jusqu&#x2019;à 1.3. Mais ce manque<lb break="yes"/>d&#x2019;absorption n&#x2019;est qu&#x2019;apparent; car, en lavant<lb break="yes"/>le résidu de 140 parties avec de l&#x2019;eau, dans<lb break="yes"/>un vase de 12 centimètres en diamètre, il di-<lb break="no"/>minue jusqu&#x2019;à 116 parties. On voit par-là qu&#x2019;il<lb break="yes"/>s&#x2019;étoit formé de l&#x2019;acide dans la partie supé-<lb break="no"/>rieure du tube, qui, étant trop éloigné de la<lb break="yes"/>surface de l&#x2019;eau, reste en état gazeux. On se-<lb break="no"/>roit singulièrement frappé de ce phénomène,<lb break="yes"/>
+                        <pb n="172" facs="#f0050"/> s&#x2019;il ne s&#x2019;accordoit pas parfaitement aux expé-<lb break="no"/>riences rapportées au commencement de ce<lb break="yes"/>mémoire (§. IV.-XVII.-XXII.)</p>
+                    <lb break="yes"/>
+                    <p>§. XXVIII. Si les bases acidifiables du<lb break="yes"/>sulfure de potasse, ou du phosphore, absor-<lb break="no"/>boient tout l&#x2019;oxigène contenu dans l&#x2019;air at-<lb break="no"/>mosphérique, nous aurions un excellent moyen<lb break="yes"/>de constater la valeur de <hi rendition="#i" >m.</hi> En analysant le<lb break="yes"/>m&#x00EA;me air par le gaz nitreux et le sulfure de<lb break="yes"/>potasse, on compareroit la quantité d&#x2019;oxigène<lb break="yes"/>trouvée à l&#x2019;absorption eudiométrique dans le<lb break="yes"/>tube de <persName key="fontana_af" />Fontana; on diroit que 97 degrés ab-<lb break="no"/>sorbés sont égaux à 0.276 d&#x2019;oxigène, ou<lb break="yes"/>104° = 0.292; on rectifieroit l&#x2019;analyse faite<lb break="yes"/>au moyen du gaz nitreux, du sulfate de fer<lb break="yes"/>et de l&#x2019;acide muriatique oxigéné, avec celle<lb break="yes"/>faite au phosphore; et, la valeur de <hi rendition="#i">y</hi> bien<lb break="yes"/>constatée, on trouveroit <hi rendition="#i">m</hi> par <hi rendition="#i">z.</hi> Mais le phos-<lb break="no"/>phore, le sulfure de potasse n&#x2019;enlève presque<lb break="yes"/>jamais tout l&#x2019;oxigène à l&#x2019;azote atmosphérique.<lb break="yes"/>Il se forme ou des oxides gazeux à doubles<lb break="yes"/>bases de phosphore et d&#x2019;azote, ou de l&#x2019;oxigène<lb break="yes"/>qui dilate le volume des résidus. Le gaz ni-<lb break="no"/>treux enlève presque constamment jusqu&#x2019;à<lb break="yes"/>0.04 d&#x2019;oxigène à ce résidu; mais il y en a<lb break="yes"/>d&#x2019;autres qui y restent cachés; phénomènes<lb break="yes"/>que j&#x2019;ai exposé dans un mémoire sur les com-<lb break="no"/>
+                        <pb n="173" facs="#f0051"/> binaisons ternaires du phosphore, de l&#x2019;oxi<choice>
+                            <sic>.</sic>
+                            <corr type="editorial">-</corr>
+                        </choice>
+                        <lb break="no"/>gène et de l&#x2019;azote. On n&#x2019;ose donc pas compter<lb break="yes"/>sur une longue série d&#x2019;expériences compara-<lb break="no"/>tives faites pour vérifier la valeur de <hi rendition="#i">m.</hi> Dans<lb break="yes"/>quelques centaines, on n&#x2019;en rencontre que 2<lb break="yes"/>ou 3 dans lesquelles le phosphore absorbe<lb break="yes"/>jusqu&#x2019;à 0.28 d&#x2019;oxigène. Le 28 brumaire de<lb break="yes"/>l&#x2019;an 6, en br&#x00FB;lant du phosphore très-rapide-<lb break="no"/>ment dans un vase très-exactement calibré,<lb break="yes"/>le m&#x00EA;me air atmosphérique, analysé dans le<lb break="yes"/>tube de <persName key="fontana_af"/>Fontana avec un gaz nitreux à 0.14<lb break="yes"/>d&#x2019;azote, donna 101 parties d&#x2019;absorbées; ce<lb break="yes"/>qui fait évaluer <hi rendition="#i" >m</hi> = 2.6.</p>
+                    <lb break="yes"/>
+                    <p>§. XXIX. Ces diverses méthodes de dé-<lb break="no"/>terminer la quantité de gaz nitreux, requise<lb break="yes"/>pour saturer 0.01 d&#x2019;oxigène contenu dans l&#x2019;air<lb break="yes"/>atmosphérique, nous mettent en état de con-<lb break="no"/>vertir les degrés de l&#x2019;eudiomètre de <persName key="fontana_af"/>Fontana<lb break="yes"/>en millièmes d&#x2019;oxigène. Tous ceux qui s&#x2019;occu-<lb break="no"/>pent de la chimie pneumatique reconno&#x00EE;tront<lb break="yes"/>sans doute la grande utilité de cette opération.<lb break="yes"/>La petite table ci-jointe est construite d&#x2019;après<lb break="yes"/>un calcul d&#x2019;approximation. Elle est fondée<lb break="yes"/>sur un grand nombre d&#x2019;expériences faites à<lb break="yes"/>l&#x2019;eau distillée et avec un gaz nitreux de 0.10<lb break="yes"/>à 0.15 d&#x2019;azote. Un physicien habile ne pou-<lb break="no"/>vant se tromper au-delà d&#x2019;un degré ou de 1.5,<lb break="yes"/>
+                        <pb n="174" facs="#f0052"/> il est aisé de voir que nous pouvons détermi-<lb break="no"/>ner avec certitude jusqu&#x2019;à <hi rendition="#i">trois millièmes</hi>
+                        <lb break="yes"/>d&#x2019;oxigène. L&#x2019;erreur d&#x2019;un centième présume-<lb break="no"/>roit une incertitude de 4 degrés: considéra-<lb break="no"/>tion qui est très-consolante pour ceux qui<lb break="yes" />suivent les variations de l&#x2019;atmosphère. J&#x2019;ai<lb break="yes" />observé moi-m&#x00EA;me ces variations depuis 99°<lb break="yes" />jusqu&#x2019;à 116° de l&#x2019;échelle eudiométrique; ce<lb break="yes" />qui prouve que l&#x2019;air, bien loin d&#x2019;&#x00EA;tre cons-<lb break="no"/>tamment entre 0.27 ou 0.28 d&#x2019;oxigène, ba-<lb break="no"/>lance dans nos climats tempérés, sur le con-<lb break="no" />tinent, entre 0.284 et 0.236 d&#x2019;oxigène.<lb break="yes" />D&#x2019;après des expériences faites par d&#x2019;autres<lb break="yes" />physiciens sur mer et à l&#x2019;&#x00EE;le de <placeName key="malta" >Malte</placeName>, il pa-<lb break="no"/>ro&#x00EE;t que la pureté de l&#x2019;atmosphère peut encore<lb break="yes"/>augmenter de 0.02 ou 0.03 d&#x2019;oxigène de plus.<lb break="yes"/>Il est certain qu&#x2019;une différence de 7° de l&#x2019;échelle<lb break="yes"/>eudiométrique indique une différence de 0.02<lb break="yes"/>en oxigène; mais il est très-probable que je me<lb break="yes"/>trompe dans les <hi rendition="#i">nombres absolus</hi>, et que 92<lb break="yes"/>degrés sont égaux à 0.264, au lieu de 0.259.<lb break="yes"/>Nous ne pouvons fonder notre calcul que sur les<lb break="yes"/>méthodes d&#x2019;analyse que nous possédons jusqu&#x2019;à<lb break="yes"/>ce jour. Ce sera à la postérité de vérifier les<lb break="yes"/>erreurs qui s&#x2019;y sont glissées, et il sera prudent<lb break="yes"/>de ne regarder les nombres présentés dans la<lb break="yes"/>table ci-jointe, que comme évalués par un<lb break="yes"/>
+                        <hi rendition="#i">calcul approximatif.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <pb n="175" facs="#f0053"/>
+                    <table>
+                        <row>
+                            <cell role="label">
+                                <hi rendition="#g">VOLUME</hi>
+                                <lb break="yes"/>absorbé.</cell>
+                            <cell role="label">
+                                <hi rendition="#g">OXIGÈNE.</hi>
+                            </cell>
+                            <cell role="label">
+                                <hi rendition="#g">VOLUME</hi>
+                                <lb break="yes"/>
+                                <choice>
+                                    <sic>dn</sic>
+                                    <corr type="editorial">du</corr>
+                                </choice> résidu.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>109°</cell>
+                            <cell>0.307.</cell>
+                            <cell>91°</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>108</cell>
+                            <cell>0.304.</cell>
+                            <cell>92</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>107</cell>
+                            <cell>0.301.</cell>
+                            <cell>93</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>106</cell>
+                            <cell>0.298.</cell>
+                            <cell>94</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>105</cell>
+                            <cell>0.295.</cell>
+                            <cell>95</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>104</cell>
+                            <cell>0.293.</cell>
+                            <cell>96</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>103</cell>
+                            <cell>0.290.</cell>
+                            <cell>97</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102</cell>
+                            <cell>0.287.</cell>
+                            <cell>98</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101</cell>
+                            <cell>0.284.</cell>
+                            <cell>99</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>0.281.</cell>
+                            <cell>100</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>99</cell>
+                            <cell>0.278.</cell>
+                            <cell>101</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>98</cell>
+                            <cell>0.276.</cell>
+                            <cell>102</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>97</cell>
+                            <cell>0.274.</cell>
+                            <cell>103</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>96</cell>
+                            <cell>0.270.</cell>
+                            <cell>104</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>95</cell>
+                            <cell>0.267.</cell>
+                            <cell>105</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>94</cell>
+                            <cell>0.264.</cell>
+                            <cell>106</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>93</cell>
+                            <cell>0.261.</cell>
+                            <cell>107</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>92</cell>
+                            <cell>0.259.</cell>
+                            <cell>108</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>91</cell>
+                            <cell>0.256.</cell>
+                            <cell>109</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>90</cell>
+                            <cell>0.253.</cell>
+                            <cell>110</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>89</cell>
+                            <cell>0.250.</cell>
+                            <cell>111</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>88</cell>
+                            <cell>0.247.</cell>
+                            <cell>112</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>87</cell>
+                            <cell>0.245.</cell>
+                            <cell>112</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>86</cell>
+                            <cell>0.242.</cell>
+                            <cell>114</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>85</cell>
+                            <cell>0.239.</cell>
+                            <cell>115</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>84</cell>
+                            <cell>0.236.</cell>
+                            <cell>116</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="176" facs="#f0054"/>
+                    <p>Je dois ajouter pour ceux que la théorie du<lb break="yes"/>calcul intéresse plus particulièrement, que<lb break="yes"/>cette table est construite d&#x2019;après la simple<lb break="yes"/>formule</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#i">y</hi> = <formula notation="TeX" >\frac{z}{r+m}</formula>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>en négligeant la petite quantité <formula notation="TeX" >\frac{\lambda}{y}</formula> de laquelle<lb break="yes"/>(§. XX) la valeur de <hi rendition="#i">m</hi> sera trop grande<lb break="yes"/>à cause de l&#x2019;action de l&#x2019;eau sur le gaz nitreux,<lb break="yes"/>Nous avons vu plus haut qu&#x2019;il n&#x2019;existe pas de<lb break="yes"/>moyen pour déterminer la valeur de &#x03BB;; mais il<lb break="yes"/>nous reste au moins à examiner les limites de<lb break="yes"/>cette erreur. En m&#x00EA;lant 100 parties de gaz ni-<lb break="no"/>treux à 100 parties d&#x2019;azote tout pur, et en les<lb break="yes"/>secouant comme d&#x2019;ordinaire, le volume des<lb break="yes"/>deux gaz ne paro&#x00EE;t pas altéré. Or d&#x2019;autres ex-<lb break="no"/>périences prouvent que, dans cette opération,<lb break="yes"/>près de 0.03 d&#x2019;azote sortent des interstices de<lb break="yes"/>l&#x2019;eau: il est par conséquent certain que cette<lb break="yes"/>m&#x00EA;me eau a absorbé 0.03 de gaz nitreux,<lb break="yes"/>parce que, sans cette opération, au lieu de<lb break="yes"/>200 parties, il en resteroit 203. Si le gaz ni-<lb break="no"/>treux agit si peu sur l&#x2019;eau en le m&#x00EA;lant à<lb break="yes"/>l&#x2019;azote, il est probable que cette action est<lb break="yes"/>bien moindre encore lorsque, dans l&#x2019;essai de<lb break="yes"/>l&#x2019;air atmosphérique, il trouve de l&#x2019;oxigène<lb break="yes"/>libre, et que la surface de l&#x2019;eau dans le tube<lb break="yes"/>se couvre d&#x2019;acide nitrique récemment formé.<lb break="yes"/>
+                        <fw type="catch" place="bottom">Supposons</fw>
+                        <lb break="yes"/>
+                        <pb n="177" facs="#f0055"/> Supposons (§. XIX) que l&#x2019;absorption du gaz<lb break="yes"/>nitreux par l&#x2019;eau soit à son <hi rendition="#i">maximum</hi> à 0.11,<lb break="yes"/>alors <hi rendition="#i">m</hi> &#x2014; <formula notation="TeX" >\frac{\lambda}{y}</formula> balanceroit entre 2.18 et 2.08,<lb break="yes"/>et la table indiqueroit, au lieu de 0.307 et de<lb break="yes"/>0.236, les nombres 0.308 et 0.237; diffé-<lb break="no" />rence qui mérite d&#x2019;autant moins d&#x2019;attention,<lb break="yes" />qu&#x2019;elle ne changeroit que la valeur absolue<lb break="yes"/>des degrés eudiométriques.</p>
+                    <lb break="yes"/>
+                    <p>Il paro&#x00EE;t suivre des expériences contenues<lb break="yes"/>dans ce mémoire;</p>
+                    <lb break="yes"/>
+                    <p>1°. Que la quantité de gaz nitreux, requise<lb break="yes"/>pour saturer une partie d&#x2019;oxigène, diffère<lb break="yes"/>beaucoup de la valeur de 1.8, et que si les<lb break="yes"/>élémens constituans de l&#x2019;acide nitrique sont<lb break="yes"/>= 3.9 : 1, ceux du gaz nitreux ne peuvent<lb break="yes"/>pas &#x00EA;tre (tels que l&#x2019;illustre <persName key="lavoisier_ald"/>Lavoisier l&#x2019;indique)<lb break="yes"/>= 2.1 : 1;</p>
+                    <lb break="yes"/>
+                    <p>2°. Que la solution du sulfate de fer ab-<lb break="no"/>sorbe totalement le gaz nitreux, en <choice>
+                            <sic>en</sic>
+                            <corr type="editorial"/>
+                        </choice> sépa-<lb break="no"/>rant l&#x2019;azote qu&#x2019;il contient m&#x00EA;lé, et que, pen-<lb break="no"/>dant cette absorption, il se forme du nitrate<lb break="yes"/>de fer et du sulfate d&#x2019;ammoniaque;</p>
+                    <lb break="yes"/>
+                    <p>3°. Que le gaz acide muriatique oxigéné<lb break="yes"/>découvre constamment plus d&#x2019;azote dans le<lb break="yes"/>gaz nitreux que le sulfate de fer, et que cette<lb break="yes"/>di&#x017F;&#x017F;érence de 0.05 provient de l&#x2019;azote qui se<lb break="yes"/>
+                        <pb n="178" facs="#f0056"/> combine à l&#x2019;hydrogène de l&#x2019;eau pour former<lb break="yes"/>de l&#x2019;ammoniaque;</p>
+                    <lb break="yes"/>
+                    <p>4°. Que pendant le contact d&#x2019;un métal avec<lb break="yes" />l&#x2019;acide nitrique, une partie de cet acide se<lb break="yes" />désoxide, tandis qu&#x2019;une autre se décompose<lb break="yes" />totalement, et que, pour cela, tout gaz ni-<lb break="no"/>treux est m&#x00EA;lé d&#x2019;azote de 0.10 jusqu&#x2019;à 0.68;</p>
+                    <lb break="yes"/>
+                    <p>5°. Que le gaz nitreux, le plus propre aux<lb break="yes"/>expériences chimiques, et obtenu par un<lb break="yes"/>acide délayé à 17&#x2013;20 degrés de l&#x2019;aréomètre<lb break="yes"/>
+                        <persName key="baume_a">de Baumé</persName>, contient de 0.10 à 0.15 d&#x2019;azote;</p>
+                    <lb break="yes"/>
+                    <p>6°. Qu&#x2019;en m&#x00EA;lant du gaz nitreux avec de<lb break="yes" />l&#x2019;oxigène dans l&#x2019;appareil au mercure, il ne<lb break="yes" />se forme qu&#x2019;autant d&#x2019;acide nitrique liquide<lb break="yes" />qu&#x2019;il y a de l&#x2019;eau contenue dans les gaz. L&#x2019;ab-<lb break="no"/>sorption paro&#x00EE;t très-petite, parce que (tel que<lb break="yes"/>le gaz ammoniacal le prouve) il reste dilaté<lb break="yes" />dans un état gazeux;</p>
+                    <lb break="yes"/>
+                    <p>7°. Qu&#x2019;en secouant du gaz nitreux avec de<lb break="yes"/>l&#x2019;eau distillée, il se forme du nitrate d&#x2019;ammo-<lb break="no"/>niaque par une décomposition de l&#x2019;eau, et<lb break="yes"/>un jeu de double affinité;</p>
+                    <lb break="yes"/>
+                    <p>8°. Que la largeur des vaisseaux, dans les-<lb break="no"/>quels on m&#x00EA;le les gaz nitreux et oxigène, in-<lb break="no"/>flue sensiblement sur le volume absorbé. Dans<lb break="yes"/>des tubes, la valeur de <hi rendition="#i">m</hi> paro&#x00EE;t diminuer<lb break="yes" />jusqu&#x2019;à 1.8, parce que l&#x2019;acide nitrique qui se<lb break="yes"/>
+                        <pb n="179" facs="#f0057"/> forme est trop éloigné de la surface de l&#x2019;eau<lb break="yes"/>pour en &#x00EA;tre absorbé;</p>
+                    <lb break="yes"/>
+                    <p>9°. Que des mélanges de gaz nitreux et<lb break="yes"/>d&#x2019;air vital ne présentent pas des résultats aussi<lb break="yes"/>uniformes que les expériences faites sur l&#x2019;air<lb break="yes"/>atmosphérique, la valeur de <hi rendition="#i">m</hi> variant de 3.2<lb break="yes"/>à 2.8, selon que l&#x2019;oxigène tend plus à se<lb break="yes"/>combiner avec le gaz nitreux, et qu&#x2019;il se<lb break="yes"/>forme des acides plus ou moins oxigénés;</p>
+                    <lb break="yes"/>
+                    <p>10°. Qu&#x2019;un mélange artificiel de 0.27 d&#x2019;oxi-<lb break="no" />gène, et de 0.73 d&#x2019;azote, diffère de l&#x2019;air at-<lb break="no" />mosphérique, en ce que l&#x2019;azote du dernier,<lb break="yes"/>par une attraction chimique, emp&#x00EA;che l&#x2019;oxi-<lb break="no"/>gène de se combiner aussi librement au gaz<lb break="yes"/>nitreux, qu&#x2019;il paro&#x00EE;t le faire dans l&#x2019;air vital;</p>
+                    <lb break="yes"/>
+                    <p>11°. Qu&#x2019;en analysant par le sulfate de fer<lb break="yes"/>le résidu que laissent, dans le tube eudio-<lb break="no"/>métrique, des mélanges de gaz nitreux et d&#x2019;air<lb break="yes"/>atmosphérique, on peut déterminer très-exac-<lb break="no"/>tement la quantité d&#x2019;oxigène contenue dans<lb break="yes"/>l&#x2019;air essayé. La valeur de <hi rendition="#i">m</hi>, trouvée par ces<lb break="yes"/>expériences fondamentales, et par celles faites<lb break="yes"/>comparativement avec du phosphore, est entre<lb break="yes"/>2.6 et 2.5;</p>
+                    <lb break="yes"/>
+                    <p>12°. Que, connoissant la valeur de <hi rendition="#i">m</hi>, et<lb break="yes"/>une méthode certaine pour examiner la na-<lb break="no" />ture du gaz nitreux, on peut, par les moyens<lb break="yes"/>combinés du sulfate de fer, de l&#x2019;acide muria-<lb break="no"/>
+                        <pb n="180" facs="#f0058"/> tique oxigéné et du gaz nitreux, analyser l&#x2019;air<lb break="yes"/>atmosphérique jusqu&#x2019;à pouvoir indiquer des<lb break="yes"/>différences de 0.003 d&#x2019;oxigène;</p>
+                    <lb break="yes"/>
+                    <p>13°. Qu&#x2019;en divisant le volume absorbé de<lb break="yes"/>parties égales de gaz nitreux (à 0.10&#x2013;0.15<lb break="yes"/>d&#x2019;azote) et d&#x2019;air atmosphérique par 3.55, le<lb break="yes"/>quotient trouvé indiquera, par un calcul ap-<lb break="no"/>proximatif, la quantité d&#x2019;oxigène contenu<lb break="yes"/>dans l&#x2019;air analysé.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

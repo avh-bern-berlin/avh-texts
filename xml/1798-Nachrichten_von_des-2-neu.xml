@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Des Herrn v. Humboldt's Entdeckungen über die Natur der Grubenwetter.</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1798-Nachrichten_von_des-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Des Herrn v. Humboldt's Entdeckungen über die Natur der Grubenwetter.</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Freiberg</pubPlace>
+                        <date type="publication">1798</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Jahrbücher der Berg- und Hüttenkunde</title>
+                        <biblScope unit="volume">2</biblScope>
+                        <biblScope unit="pages">193–233</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.3.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.2.0" when="2018-10-03" who="#wernicke_nd">Markup. <note type="remarkRevision">Fehlende persName und placeName ergänzt.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="291" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Des Herrn v.<hi rendition="#g">
+                        <persName key="humboldt_av"/> Humboldt&#x2019;s</hi> Entdeckun-<lb break="yes"/>gen u&#x0364;ber die Natur der Grubenwetter.</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">D</hi>er Herr Oberbergrath <hi rendition="#fr">Friedr. Alex. v. <persName key="humboldt_av"/>Hum-<lb break="no"/>boldt</hi>, hat wichtige Entdeckungen u&#x0364;ber die Natur der<lb break="yes"/>Grubenwetter gemacht, mit deren Analy&#x017F;e er &#x017F;ich<lb break="yes"/>noch be&#x017F;cha&#x0364;ftigt, und die Re&#x017F;ultate &#x017F;einer For&#x017F;chun-<lb break="no"/> gen in einer Schrift: &#x201D;<hi rendition="#fr">Ueber die Grubenwetter<lb break="yes"/> und die Mittel, ihren Nachtheil zu vermindern:<lb break="yes"/> ein Beytrag zur Phy&#x017F;ik und prakti&#x017F;chen Berg-<lb break="no" />baukunde</hi>&#x201D; näch&#x017F;tens bekannt machen wird. Herr<lb break="yes"/>
+                    <hi rendition="#fr">
+                        <persName key="moll_v">von Moll</persName>
+                    </hi> hat in &#x017F;einen <hi rendition="#fr">Jahrbüchern der Berg-<lb break="maybe"/> und Hüttenkunde</hi>, 2ter Band, 1898, S. 194 folg.<lb break="yes"/> bereits einige Nachrichten von die&#x017F;en Entdeckungen<lb break="yes"/>gegeben, die hier am &#x017F;chicklichen Orte &#x017F;tehen werden.<lb break="yes"/>
+                </p>
+                <lb break="yes"/>
+                <p>Die Grubenwetter &#x017F;ind bis jetzt, in Ab&#x017F;icht auf<lb break="yes"/> ihre Be&#x017F;tandtheile, noch &#x017F;ehr wenig bekannt gewe-<lb break="no" />&#x017F;en und ihre Eintheilung in fri&#x017F;che, oder matte,<lb break="yes" /> in kalte, oder warme, in bo&#x0364;&#x017F;e, oder gute, in Schwa-<lb break="no"/>den oder &#x017F;chlagende Wetter, erkla&#x0364;rte wenig, oder<lb break="yes"/>nichts. Die Lehren von den einfachen Gasarten<lb break="yes"/> der Laboratorien, die gewo&#x0364;hnlichen Kenntni&#x017F;&#x017F;e von<lb break="yes"/>Stickluft, brennbarer Luft, u. &#x017F;. w. reichen durchaus <lb break="yes"/>
+                    <fw type="catch" place="bottom">nicht</fw>
+                    <lb break="yes"/>
+                    <pb n="292" facs="#f0002"/>
+                    <lb break="yes"/> nicht hin, um die Natur der Grubenwetter zu er-<lb break="no" />kla&#x0364;ren; denn die&#x017F;e Gasarten kommen in den unter-<lb break="no" />irdi&#x017F;chen Luftregionen gewo&#x0364;hnlich in ganz eigenen<lb break="yes"/> Verbindungen und Umhu&#x0364;llungen mit einander vor,<lb break="yes"/>und von der Bekannt&#x017F;chaft mit die&#x017F;en Verbindun-<lb break="no"/>gen ha&#x0364;ngt die Ausfu&#x0364;hrbarkeit wichtiger prakti&#x017F;cher<lb break="yes"/> Vorrichtungen ab. Sauer&#x017F;toff, Stick&#x017F;toff, Wa&#x017F;&#x017F;er-<lb break="no" />&#x017F;toff und Kohlen&#x017F;toff &#x017F;ind die ha&#x0364;ufig&#x017F;ten Be&#x017F;tandtheile<lb break="yes"/> der Grubenwetter, ihre Mi&#x017F;chungen aber a&#x0364;ußer&#x017F;t<lb break="yes"/> ver&#x017F;chieden. Man würde &#x017F;ich irren, wenn man den<lb break="yes" />Grund die&#x017F;er Modifikationen in dem ver&#x017F;chiedenen<lb break="yes" />quantitativen Verhältni&#x017F;&#x017F;e des Gemenges &#x017F;uchen<lb break="yes"/> wollte. Indeß &#x017F;ind Stick&#x017F;toff- Kohlen&#x017F;toff- und<lb break="yes"/> Wa&#x017F;&#x017F;er&#x017F;toff-Gas die vorzu&#x0364;glich&#x017F;ten Be&#x017F;tandtheile<lb break="yes"/> der Grubenwetter; Ar&#x017F;enik hat &#x017F;ich gewiß, Ei&#x017F;en<lb break="yes" /> und Zink, nach <persName key="humboldt_av"/>
+                    <hi rendition="#fr">Humboldt</hi> und <persName key="leonhardi_01" ref="http://d-nb.info/gnd/">
+                        <hi rendition="#fr" >Leonhardi</hi>
+                    </persName>, wahr-<lb break="no"/>&#x017F;cheinlich, in Wa&#x017F;&#x017F;er&#x017F;toff-Gas aufgelo&#x0364;&#x017F;t gefunden.<lb break="yes"/> Die Wetter &#x017F;tehen in der Grube oft nur auf einem<lb break="yes"/> Theile der Stollen&#x017F;ohle; Wetter von gleicher<lb break="yes"/> Schwere und Ela&#x017F;ticita&#x0364;t umgeben &#x017F;ie, ohne &#x017F;ich mit<lb break="yes"/> ihnen in ein Niveau zu &#x017F;etzen; &#x017F;ie &#x017F;ind bald un&#x017F;icht-<lb break="no"/>bar, bald &#x017F;ichtbar, von einem milchigten An&#x017F;ehen,<lb break="yes"/> und deutlichen Umri&#x017F;&#x017F;en. Kohlen&#x017F;aures Gas zeigt<lb break="yes" /> &#x017F;ich in &#x017F;eltenen Fa&#x0364;llen wie ein blaues Wo&#x0364;lkchen, oder<lb break="yes"/> wie ein grauer Nebel. Es &#x017F;chla&#x0364;gt bisweilen auf<lb break="yes"/> &#x017F;tehenden Grubenwa&#x017F;&#x017F;ern eine blauliche Haut nieder.<lb break="yes"/> Brennbare Luft mit unbekannten Stoffen verbun-<lb break="no"/>den, ha&#x0364;ngt &#x017F;ich in England in der Ge&#x017F;talt eines<lb break="yes"/> Spinnengewebes, oder weißlicher Kugeln, an das<lb break="yes"/>
+                    <fw type="catch" place="bottom">Gruben-</fw>
+                    <lb break="yes"/>
+                    <pb n="293" facs="#f0003"/> Grubenholz an. Matte Wetter be&#x017F;tehen theils aus<lb break="yes"/> atmospha&#x0364;ri&#x017F;cher Luft, welcher ein Theil Sauer&#x017F;toffs<lb break="yes"/> entzogen i&#x017F;t, theils aus einem Gemi&#x017F;che, in dem<lb break="yes"/> zwar Sauer&#x017F;toff genug vorhanden i&#x017F;t, in welchem<lb break="yes"/> der&#x017F;elbe aber von der Kohlen&#x017F;a&#x0364;ure &#x017F;o umhu&#x0364;llt wird,<lb break="yes"/>daß er weder von <choice>
+                        <sic>den</sic>
+                        <corr type="editorial">dem</corr>
+                    </choice> veno&#x0364;&#x017F;en Blute (beym Athmen),<lb break="yes"/> noch an Tochten (beym brennenden Lichte), abge&#x017F;chie-<lb break="no"/>den werden kann. Herr <hi rendition="#fr">von <persName key="humboldt_av"/>Humboldt</hi> vermuthet<lb break="yes"/> nach &#x017F;einen analyti&#x017F;chen Ver&#x017F;uchen, daß es eine<lb break="yes"/> u&#x0364;ber&#x017F;aure Kohlen&#x017F;a&#x0364;ure gebe (<hi rendition="#aq">gas acide carbonique<lb break="yes"/> &#x017F;uroxygené</hi>), welche die Kohle des Tochts nicht zer-<lb break="no"/>&#x017F;etzen kann, da der Sauer&#x017F;toff in ihr &#x017F;chon am Koh-<lb break="no"/>len&#x017F;toff gebunden i&#x017F;t. Die Menge des Sauer&#x017F;toffs<lb break="yes"/> in einem Luftgemenge ent&#x017F;cheidet nicht fu&#x0364;r &#x017F;eine<lb break="yes"/> Athembarkeit, und lichterhaltende Eigen&#x017F;chaft. Bo&#x0364;&#x017F;e<lb break="yes"/> Wetter, Schwaden, &#x017F;ind entweder gro&#x0364;ßtentheils<lb break="yes"/> kohlen&#x017F;aures Gas, oder Kohlen&#x017F;a&#x0364;ure mit Stick- und<lb break="yes"/> Wa&#x017F;&#x017F;er&#x017F;toff-Gas gemengt. Je nach dem &#x017F;ta&#x0364;rkern,<lb break="yes"/> oder geringern Gehalte an Kohlen&#x017F;toff, und mehr<lb break="yes"/> oder minderer Beymengung von Lebensluft gehen<lb break="yes"/> die Lichter in &#x017F;elbigen fru&#x0364;her oder &#x017F;pa&#x0364;ter aus. Der<lb break="yes"/> Schwaden liegt entweder nach dem Verha&#x0364;ltni&#x017F;&#x017F;e<lb break="yes"/> &#x017F;eines Gewichts zu jenem der athmospha&#x0364;ri&#x017F;chen Luft,<lb break="yes"/> wie ein wei&#x017F;slicher, oder blaulicher Nebel auf der<lb break="yes"/> Sohle der Grubenbaue, oder mit etwas Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="maybe" />Gas gemengt, erhebt er &#x017F;ich an die Fir&#x017F;te. Der Ruß,<lb break="yes"/> welchen die Schwaden manchmal auf trockenen Stre-<lb break="no"/>cken ab&#x017F;etzen, &#x017F;cheint von einer Zer&#x017F;etzung der luft-<lb break="no"/>&#x017F;auren Wetter, und einem Freywerden ihres Koh-<lb break="no"/>
+                    <fw type="catch" place="bottom">len-</fw>
+                    <lb break="yes"/>
+                    <pb n="294" facs="#f0004"/> len&#x017F;toffs herzuru&#x0364;hren. Die kohlen&#x017F;aure Luft ent&#x017F;teht<lb break="yes"/> keineswegs in den Gruben bloß aus dem Athmen<lb break="yes"/> der Men&#x017F;chen, oder dem Brennen der Lichter. Sie<lb break="yes"/> bildet &#x017F;ich (außer aus faulendem Holze) auch durch<lb break="yes"/> die bloße Beru&#x0364;hrung des atmospha&#x0364;ri&#x017F;chen Sauer-<lb break="no"/>&#x017F;toffs mit kohlen&#x017F;toffhaltigen Foßilien, als: Horn-<lb break="no"/>blende, Lydi&#x017F;chem Steine, Alaun&#x017F;chiefer, Stein-<lb break="no"/>kohlen, und manchem Thon&#x017F;chiefer. Die&#x017F;e Verbin-<lb break="no"/>dung geht, (wie <hi rendition="#fr">
+                        <persName key="lametherie_jcd" ref="http://d-nb.info/gnd/">la Metherie</persName>
+                    </hi>, Herr von <hi rendition="#fr">
+                        <persName key="humboldt_av"/>Hum-<lb break="no"/>boldt</hi> und Herr <hi rendition="#fr">
+                        <persName key="lampadius_01" ref="http://d-nb.info/gnd/">Lampadius</persName>
+                    </hi> gezeigt haben) bey &#x017F;ehr<lb break="yes"/> niedriger Temperatur vor. Seltener &#x017F;ind bo&#x0364;&#x017F;e Wet-<lb break="no"/>ter, in welchen Lichter brennen, obwohl &#x017F;ie fu&#x0364;r<lb break="yes"/> Men&#x017F;chen irre&#x017F;pirabel &#x017F;ind. Sie &#x017F;cheinen <persName key="priestley_j" ref="http://d-nb.info/gnd/">Pri&#x017F;tley</persName>&#x2019;s<lb break="yes"/> dephlogi&#x017F;ti&#x017F;irte Salpeterluft zu &#x017F;eyn. Brennbare,<lb break="yes"/> &#x017F;chlagende Wetter be&#x017F;tehen gro&#x0364;ßtentheils aus Hy-<lb break="no"/>drogen, und ha&#x0364;ngen in kleinen Wo&#x0364;lkchen, in grau-<lb break="no"/>lichen Ballen, wie We&#x017F;penne&#x017F;ter, oder wie Spin-<lb break="no"/>nengewebe an den Fir&#x017F;ten, oder &#x017F;ie &#x017F;inken, wenn<lb break="yes"/> das Hydrogen mit Kohlen&#x017F;toff gemengt i&#x017F;t, auf die<lb break="yes"/> Sohle nieder. I&#x017F;t das Hydrogen mit Luft&#x017F;a&#x0364;ure<lb break="yes"/> verbunden: &#x017F;o entzu&#x0364;nden &#x017F;ie &#x017F;ich gemeiniglich ganz<lb break="yes"/> &#x017F;till, bisweilen mit einem a&#x0364;ußern violeten Scheine,<lb break="yes"/> oder auch wohl mit einer &#x017F;cho&#x0364;nen blauen Farbe; i&#x017F;t<lb break="yes"/> da&#x017F;&#x017F;elbe rein mit Lebensluft in Beru&#x0364;hrung getreten:<lb break="yes"/> &#x017F;o ent&#x017F;teht bey der Entzu&#x0364;ndung ein Knall; entbin-<lb break="no"/>den &#x017F;ich die Wetter aus metalli&#x017F;chen Ko&#x0364;rpern: &#x017F;o i&#x017F;t<lb break="yes"/> die Flamme oft &#x017F;ehr lebhaft, gla&#x0364;nzend und gru&#x0364;n-<lb break="no"/>lich-weiß mit rothen Funken. Das Hydrogen ent-<lb break="no"/>bindet &#x017F;ich in den Gruben durch Verdu&#x0364;n&#x017F;tung aus<lb break="yes"/>
+                    <fw type="catch" place="bottom">den</fw>
+                    <lb break="yes"/>
+                    <pb n="295" facs="#f0005"/> den unterirdi&#x017F;chen Pflanzen, aus fe&#x017F;tem fri&#x017F;chen<lb break="yes"/> Grubenholze, und durch eine Wa&#x017F;&#x017F;erzer&#x017F;etzung mit-<lb break="no"/>tel&#x017F;t brennbarer Foßilien, &#x017F;chweflichter, oder ar&#x017F;eni-<lb break="no" />kali&#x017F;cher Erze. Da es nur &#x017F;ehr &#x017F;elten rein vorkommt:<lb break="yes"/> &#x017F;o &#x017F;ind auch die &#x017F;chlagenden Wetter minder ha&#x0364;ufig;<lb break="yes"/> die Mi&#x017F;chung der brennbaren Luft mit Kohlen&#x017F;a&#x0364;ure<lb break="yes"/> und Stickluft, hemmt ihre Entzu&#x0364;ndung, und ha&#x0364;lt<lb break="yes"/> &#x017F;ie, ihrer Leichtigkeit ungeachtet, in den Gruben<lb break="yes"/> fe&#x017F;t. Die &#x017F;eltenen Selb&#x017F;tentzu&#x0364;ndungen &#x017F;chlagender<lb break="yes"/> Wetter &#x017F;cheinen von phosphori&#x017F;chem Gas (<hi rendition="#aq">hydro-<lb break="no"/>gene phosphori&#x017F;é</hi>), in Beru&#x0364;hrung mit Oxygen zu<lb break="yes"/> ent&#x017F;tehen. Es giebt außerdem noch einige, bisher<lb break="yes"/> noch &#x017F;o gut, als ga&#x0364;nzlich unbekannte Wetterarten,<lb break="yes"/> z. B. Wetter, welche &#x017F;ich mitten auf gangbaren<lb break="yes"/>Stollen flu&#x0364;geln, auf 2 &#x2014; 3 Lachter, von den be-<lb break="no"/>nachbarten guten Wettern ganz &#x017F;charf abge&#x017F;chnitten,<lb break="yes"/> durch einen &#x017F;u&#x0364;ßlich-&#x017F;techenden Geruch und Wa&#x0364;rme<lb break="yes" /> zu erkennen geben, in welchen das Holz ganz trocken<lb break="yes"/> bleibt, nach der La&#x0364;nge der Fibern leicht &#x017F;paltet, auf-<lb break="no" />geri&#x017F;&#x017F;en, und mit einem &#x017F;taubigen, grauen, &#x017F;pinne-<lb break="no"/>webe-a&#x0364;hnlichen Schimmel behangen i&#x017F;t; Wetter,<lb break="yes"/> welche den Arbeitern ein heftiges Zittern verur&#x017F;a-<lb break="no"/>chen; Wetter, die im Abbrennen den Geruch des<lb break="yes"/> thieri&#x017F;chen Dippel&#x017F;chen Oels geben, z. B. in der<lb break="yes"/>
+                    <placeName key="gailenreuthhoehle">Gailenreuther Ho&#x0364;hle</placeName>. Es i&#x017F;t bis jetzt wenig fu&#x0364;r die<lb break="yes"/> Auffindung zweckma&#x0364;ßiger Mittel, verderbte Gruben-<lb break="no"/>wetter re&#x017F;pirabel, und lichterhaltend zu machen, ge-<lb break="no" />&#x017F;chehen; am wenig&#x017F;ten dachte man hierbey an die<lb break="yes"/> Mittel, welche man etwa aus der Chemie &#x017F;cho&#x0364;pfen<lb break="yes"/>
+                    <fw type="catch" place="bottom">ko&#x0364;nnte</fw>
+                    <lb break="yes"/>
+                    <pb n="296" facs="#f0006"/> ko&#x0364;nnte. Bey allen den Mitteln, die man den gu-<lb break="no"/>ten und bo&#x0364;&#x017F;en Wettern entgegen &#x017F;tellte, nahm man<lb break="yes"/> als richtig an, daß der Wetterwech&#x017F;el einzig und<lb break="yes"/> allein vom Drucke der a&#x0364;ußern Atmo&#x017F;pha&#x0364;re abha&#x0364;nge,<lb break="yes"/> da &#x017F;ich doch die Temperatur der Grubenluft nicht<lb break="yes"/> &#x017F;elten &#x017F;o wenig nach der a&#x0364;ußern Atmo&#x017F;pha&#x0364;re richtet,<lb break="yes"/> daß vielmehr Ka&#x0364;lte und Wa&#x0364;rme in der Grube &#x017F;elb&#x017F;t<lb break="yes"/> ent&#x017F;tehen, ohne Aenderung der Temperatur in der<lb break="yes"/> a&#x0364;ußern Luft. Die Ver&#x017F;uche, die bo&#x0364;&#x017F;en Wetter durch<lb break="yes"/> a&#x0364;tzende Alkalien und Kaltwa&#x017F;&#x017F;er, welche die Luft&#x017F;a&#x0364;ure<lb break="yes" /> &#x017F;chnell ab&#x017F;orbieren &#x017F;ollten, zu verbe&#x017F;&#x017F;ern, wollten<lb break="yes"/> dem Herrn <hi rendition="#fr" >von <persName key="humboldt_av"/>Humboldt</hi> niemals glu&#x0364;cken, weil<lb break="yes"/> die Kohlen&#x017F;a&#x0364;ure von Hydrogen umhu&#x0364;llt i&#x017F;t. Er be-<lb break="no"/>mu&#x0364;hete &#x017F;ich, die bo&#x0364;&#x017F;en Wetter mit Lebensluft zu<lb break="yes"/> verbe&#x017F;&#x017F;ern, welches aber mit Schwierigkeiten ver-<lb break="no"/> bunden war, und betra&#x0364;chtliche Ko&#x017F;ten verur&#x017F;achte.<lb break="yes"/> Herr <hi rendition="#fr">von <persName key="humboldt_av" />Humboldt</hi> gerieth daher auf den Gedan-<lb break="no"/>ken, &#x017F;tatt die Wetter fu&#x0364;r Re&#x017F;piration und Lichterhal-<lb break="no"/>tung zugleich zu verbe&#x017F;&#x017F;ern, fu&#x0364;r die letzte eine nicht<lb break="yes"/> erlo&#x0364;&#x017F;chende Lampe, und fu&#x0364;r die er&#x017F;te eine Re&#x017F;pi-<lb break="no" />rations-Ma&#x017F;chine zu erfinden, deren bereits im<lb break="yes"/> vorigen Jahrgange un&#x017F;eres Almanachs S. 406 ge-<lb break="no"/>dacht worden i&#x017F;t. Die um&#x017F;ta&#x0364;ndlich&#x017F;te Be&#x017F;chreibung<lb break="yes"/> die&#x017F;er Ma&#x017F;chinen hat Herr <persName key="moll_v" >v. Moll</persName> in &#x017F;einen <hi rendition="#fr">Jahr-<lb break="no" />büchern der Berg- und Hüttenkunde</hi>, 2ter Band,<lb break="yes"/> 1798, S. 203 folg. geliefert.</p>
+                <lb break="yes"/>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

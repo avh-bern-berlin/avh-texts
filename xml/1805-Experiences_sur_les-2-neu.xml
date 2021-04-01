@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="45" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Ver&#x017F;uche u&#x0364;ber die eudiometri&#x017F;chen Mittel und<lb break="yes"/>das Verha&#x0364;ltniß der Be&#x017F;tandtheile der At-<lb break="no"/>mo&#x017F;pha&#x0364;re.<lb break="yes"/>
+                    <hi rendition="#g">Von A. von <persName key="humboldt_av">Humboldt</persName> und <persName key="gaylussac_jl">J. F. Gay-Lu&#x017F;&#x017F;ac</persName>.</hi>
+                    <lb break="yes"/>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Ueber&#x017F;etzt</hi>
+                    <note place="foot" n="1)">Aus dem <hi rendition="#aq">Journal de Physique. Pluviose XIII. T. LX,<lb break="yes"/>P.</hi> 129.</note>
+                    <persName key="gehlen_af">
+                        <hi rendition="#g">von A. F. Gehlen</hi>
+                    </persName>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">W</hi>enn Phy&#x017F;iker und Chemiker jetzt auch u&#x0364;ber die Qualita&#x0364;t<lb break="yes"/>der Be&#x017F;tandtheile der Atmo&#x017F;pha&#x0364;re ein&#x017F;timmig &#x017F;ind, &#x017F;o &#x017F;ind<lb break="yes"/>&#x017F;ie es doch noch nicht u&#x0364;ber ihre Quantita&#x0364;t. Seit <persName key="scheele_01">
+                        <hi rendition="#g">Scheele</hi>
+                    </persName>
+                    <lb break="yes"/>und <persName key="lavoisier_ald">
+                        <hi rendition="#g">Lavoi&#x017F;ier,</hi>
+                    </persName> die den Sauer&#x017F;toffgehalt auf 0,27 be-<lb break="no" />&#x017F;timmten, haben zahlreiche Ver&#x017F;uche der <hi rendition="#g">
+                        <persName key="cavendish_h">Cavendi&#x017F;h</persName>,<lb break="yes"/>
+                        <persName key="marti_01">Marti</persName>, <persName key="berthollet_cl" >Berthollet</persName>, <persName key="fourcroy_afd">Fourcroy</persName>
+                    </hi> und <persName key="davy_h">
+                        <hi rendition="#g">Davy</hi>
+                    </persName> die&#x017F;es<lb break="yes"/>Verha&#x0364;ltniß &#x017F;ehr modificirt und es auf 0,20 bis 0,23 ge-<lb break="no"/>&#x017F;etzt. Die&#x017F;e Grenzen aber &#x017F;ind noch &#x017F;ehr von einander ent-<lb break="no"/>fernt und weit unter dem Grade von Genauigkeit, den<lb break="yes"/>un&#x017F;ere jetzigen Kenntni&#x017F;&#x017F;e zula&#x017F;&#x017F;en: oder fa&#x0364;nden die&#x017F;e Gren-<lb break="no" />zen wirklich Statt, &#x017F;o mu&#x0364;ßte man daraus &#x017F;chließen, daß<lb break="yes"/>die Mi&#x017F;chung der Atmo&#x017F;pha&#x0364;re bedeutende Abwech&#x017F;elungen<lb break="yes"/>erleide. Zwar fu&#x0364;r die mei&#x017F;ten chemi&#x017F;chen Er&#x017F;cheinungen<lb break="yes" />wa&#x0364;re die &#x017F;treng&#x017F;te Kenntniß der ab&#x017F;oluten Menge ihrer Be-<lb break="no"/>
+                    <pb n="46" facs="#f0002"/> &#x017F;tandtheile nicht no&#x0364;thig, inde&#x017F;&#x017F;en i&#x017F;t doch die&#x017F;e Kenntniß<lb break="yes" />eben &#x017F;o intere&#x017F;&#x017F;ant an &#x017F;ich &#x017F;elb&#x017F;t, als wichtig fu&#x0364;r die Ge-<lb break="no"/>&#x017F;chichte der Erde. Wenn alle geologi&#x017F;che That&#x017F;achen darin<lb break="yes"/>zu&#x017F;ammen kommen, daß die Erde nicht mehr &#x017F;ey, was &#x017F;ie<lb break="yes" />ehedem war, daß die Gewa&#x0364;&#x017F;&#x017F;er &#x017F;ehr hohe Gebirge u&#x0364;ber-<lb break="no"/>&#x017F;tro&#x0364;mten, und daß der Norden Thiere erna&#x0364;hrte, die jetzt<lb break="yes"/>nur noch den Tropen eigen &#x017F;ind: &#x017F;o zeigen eben die&#x017F;e Ver-<lb break="no" />a&#x0364;nderungen, wie nu&#x0364;tzlich es fu&#x0364;r die ku&#x0364;nftigen Jahrhun-<lb break="no"/>derte &#x017F;eyn wu&#x0364;rde, den heutigen Zu&#x017F;tand der Erde genau<lb break="yes"/>zu be&#x017F;timmen; und &#x017F;ollten auch die großen Cata&#x017F;trophen,<lb break="yes"/>die &#x017F;ie erlitt, nicht wieder eintreten, &#x017F;o ko&#x0364;nnte &#x017F;ie lang-<lb break="no"/>&#x017F;ame Modificationen erleiden, unmerkbar dem Men&#x017F;chen,<lb break="yes"/>fa&#x0364;nde er nicht unbe&#x017F;treitbare Bewei&#x017F;e davon in den Anna-<lb break="no"/>len der Wi&#x017F;&#x017F;en&#x017F;chaft. Es wa&#x0364;re demnach von der ho&#x0364;ch&#x017F;ten<lb break="yes"/>Wichtigkeit, alle große Naturer&#x017F;cheinungen, die man als<lb break="yes"/>vera&#x0364;nderlich annehmen ko&#x0364;nnte, unzweifelbar fe&#x017F;tzu&#x017F;etzen,<lb break="yes" />z. B. die Inten&#x017F;ita&#x0364;t der magneti&#x017F;chen Kra&#x0364;fte, die Ho&#x0364;he<lb break="yes"/>des Barometers auf der Meeresfla&#x0364;che, die des Meeres<lb break="yes"/>&#x017F;elb&#x017F;t, die mittle Temperatur eines jeden Clima, und das<lb break="yes"/>Verha&#x0364;ltniß der Be&#x017F;tandtheile der Atmo&#x017F;pha&#x0364;re. Nur das<lb break="yes"/>letztere &#x017F;oll uns hier be&#x017F;cha&#x0364;ftigen, und wiewohl wir die&#x017F;en<lb break="yes" />Gegen&#x017F;tand noch nicht zu un&#x017F;erer eigenen Befriedigung ent-<lb break="no"/>wickelt haben, &#x017F;o wagen wir es doch, den Anfang un&#x017F;erer<lb break="yes"/>Arbeit u&#x0364;ber den&#x017F;elben und die Unter&#x017F;uchungen, auf welche<lb break="yes"/>er uns leitete, bekannt zu machen.</p>
+                <lb break="yes"/>
+                <p>Aber die eudiometri&#x017F;chen Mittel, die zur Be&#x017F;timmung<lb break="yes" />jenes Verha&#x0364;ltni&#x017F;&#x017F;es dienen &#x017F;ollen, &#x017F;ind nicht alle einer glei-<lb break="no"/>chen Genauigkeit fa&#x0364;hig, und einige ausgezeichnete Chemi-<lb break="no"/>ker ziehen eines, mit Aus&#x017F;chluß aller u&#x0364;brigen, vor. Wir<lb break="yes"/>mußten daher durchaus die bekannten eudiometri&#x017F;chen Me-<lb break="no"/>
+                    <pb n="47" facs="#f0003"/> thoden der Unter&#x017F;uchung unterwerfen, um &#x017F;ie genau kennen<lb break="yes"/>zu lernen, denn wir &#x017F;ind u&#x0364;berzeigt, daß die Genauigkeit<lb break="yes"/>der Ver&#x017F;uche weniger von der getreuen Beobachtung der<lb break="yes"/>Abtheilungen des In&#x017F;truments abha&#x0364;nge, als von der Ge-<lb break="no"/>nauigkeit der Methode &#x017F;elb&#x017F;t. Wiewohl das Salpetergas<lb break="yes"/>auf den er&#x017F;ten Blick das un&#x017F;icher&#x017F;te eudiometri&#x017F;che Mittel,<lb break="yes"/>&#x017F;o man wa&#x0364;hlen ko&#x0364;nnte, zu &#x017F;eyn &#x017F;cheint, &#x017F;o haben wir uns<lb break="yes"/>doch u&#x0364;berzeugt, daß, wenn man &#x017F;eine Wirkung mit der<lb break="yes" />des &#x017F;chwefel&#x017F;auren Ei&#x017F;ens oder der oxydirten Salz&#x017F;a&#x0364;ure und<lb break="yes"/>des Kali verbindet, es mit vieler Genauigkeit den in der<lb break="yes"/>Luft enthaltenen Sauer&#x017F;toff angeben ko&#x0364;nne. Alle eudiome-<lb break="no"/>tri&#x017F;che Mittel mu&#x0364;ßten die&#x017F;elben Re&#x017F;ultate geben, wenn man<lb break="yes" />&#x017F;ie alle gleich genau kennte, nur da es &#x017F;ehr &#x017F;chwierig i&#x017F;t,<lb break="yes"/>alle die Correctionen zu machen, welche einige davon er-<lb break="no"/>fordern, &#x017F;o giebt man natu&#x0364;rlich denen den Vorzug, die<lb break="yes"/>deren weniger bedu&#x0364;rfen, wenngleich ihre Anwendung nicht<lb break="yes"/>immer die einfach&#x017F;te i&#x017F;t. Zuer&#x017F;t wollen wir un&#x017F;ere eudio-<lb break="no"/>metri&#x017F;chen Unter&#x017F;uchungen mittheilen und &#x017F;ie dann auf die<lb break="yes" />Analy&#x017F;e der atmo&#x017F;pha&#x0364;ri&#x017F;chen Luft und der unter ver&#x017F;chiede-<lb break="no"/>nen Um&#x017F;ta&#x0364;nden aus dem Wa&#x017F;&#x017F;er erhaltenen und mit dem-<lb break="no"/>&#x017F;elben in Beru&#x0364;hrung ge&#x017F;etzten Gasarten anwenden. Wir<lb break="yes"/>werden aber jetzt nur die Hauptre&#x017F;ultate vorlegen, indem<lb break="yes"/>wir un&#x017F;ere Unter&#x017F;uchungen unterbrechen mußten, ehe wir<lb break="yes" />&#x017F;ie in der Ausdehnung, welche die&#x017F;er Gegen&#x017F;tand verdient,<lb break="yes"/>ausfu&#x0364;hren konnten.</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Beobachtungen u&#x0364;ber einige eudiometri&#x017F;che<lb break="yes"/>Mittel</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Man wird hier nur er&#x017F;t un&#x017F;ere Unter&#x017F;uchungen u&#x0364;ber<lb break="yes"/>die Schwefelalkalien und vorzu&#x0364;glich das Wa&#x017F;&#x017F;er&#x017F;toffgas fin-<lb break="no"/>
+                        <pb n="48" facs="#f0004"/> den, mit welchen wir uns be&#x017F;onders be&#x017F;cha&#x0364;ftigt haben; die<lb break="yes"/>u&#x0364;ber die u&#x0364;brigen eudiometri&#x017F;chen Mittel &#x017F;ind noch zu un-<lb break="no"/>voll&#x017F;ta&#x0364;ndig.</p>
+                    <lb break="yes"/>
+                    <p>Wiewohl die Schwefelalkalien in der Analy&#x017F;e der Luft<lb break="yes" />eine Wirkung zeigen, die &#x017F;ich im Allgemeinen &#x017F;ehr gleich<lb break="yes"/>bleibt, was ihnen auch vor den u&#x0364;brigen eudiometri&#x017F;chen<lb break="yes"/>Mitteln mit Recht den Vorzug ver&#x017F;chafft hat, &#x017F;o zeigen<lb break="yes"/>&#x017F;ich doch auch bey ihnen einige Veranla&#x017F;&#x017F;ungen zur Unge-<lb break="no" />wißheit, die man durchaus kennen muß, wenn man &#x017F;ich<lb break="yes" />auf ihre Re&#x017F;ultate ganz verla&#x017F;&#x017F;en will. Man glaubte lange,<lb break="yes"/>daß &#x017F;ie auf das Stickgas keine Wirkung ha&#x0364;tten, und wie-<lb break="no"/>wohl <persName key="marti_01">
+                            <hi rendition="#g">Marti</hi>
+                        </persName> 1790 anzeigte, daß &#x017F;ie dies Gas ab&#x017F;orbir-<lb break="no"/>ten, &#x017F;o i&#x017F;t man doch hierauf weiter nicht aufmerk&#x017F;am ge-<lb break="no"/>we&#x017F;en. Zwar hatte <persName key="marti_01">
+                            <hi rendition="#g">Marti</hi>
+                        </persName> zugleich bemerkt, daß, wenn<lb break="yes"/>man &#x017F;ie mit Stickgas &#x017F;a&#x0364;ttige, man &#x017F;ie zur Analy&#x017F;e der<lb break="yes"/>Luft mit Vortheil anwenden ko&#x0364;nne, und dann &#x017F;tets eine<lb break="yes"/>Ab&#x017F;orbtion von Sauer&#x017F;toff zwi&#x017F;chen 0,21 und 0,23 erhalte;<lb break="yes"/>da er inde&#x017F;&#x017F;en das Einzelne &#x017F;einer Ver&#x017F;uche nicht genau<lb break="yes"/>angab, &#x017F;o hatte &#x017F;ie <persName key="berthollet_cl">
+                            <hi rendition="#g">Berthollet,</hi>
+                        </persName> der &#x017F;ie unter andern<lb break="yes" />Um&#x017F;ta&#x0364;nden wiederholte, nicht be&#x017F;ta&#x0364;ttigt gefunden (<hi rendition="#aq">Statique<lb break="yes"/>chimique T. I. P.</hi> 513.) und beruhigte dadurch u&#x0364;ber<lb break="yes"/>die Anwendung der Schwefelalkalien die Chemiker wieder.<lb break="yes"/>Im Anfange bedienten wir uns auch die&#x017F;es Mittels mit<lb break="yes" />großem Vertrauen und fanden nur die La&#x0364;nge der Zeit, die<lb break="yes"/>es erforderte, daran auszu&#x017F;etzen; bald aber bemerkten wir,<lb break="yes"/>durch Zufall begu&#x0364;n&#x017F;tigt, daß es nicht &#x017F;tets gleichfo&#x0364;rmig<lb break="yes"/>wirke. Als wir na&#x0364;hmlich 100 Theile atm. Luft, in drey<lb break="yes"/>ungleich weiten Gefa&#x0364;ßen, mit warmbereiteter Schwefelkali-<lb break="no" />auflo&#x0364;&#x017F;ung in Beru&#x0364;hrung ge&#x017F;etzt hatten, &#x017F;o fanden wir, daß<lb break="yes"/>nach acht Tagen die Luft darin 0,230, 0,236, 0,260 ver-<lb break="no"/>
+                        <fw type="catch" place="bottom">loren</fw>
+                        <lb break="yes"/>
+                        <pb n="49" facs="#f0005"/> loren hatte. Die&#x017F;e, uns Anfangs &#x017F;ehr u&#x0364;berra&#x017F;chende, Un-<lb break="no"/>gleichheit vermutheten wir durch Ab&#x017F;orbtion von Stickgas<lb break="yes" />bewirkt, indem &#x017F;ie in dem weite&#x017F;ten Gefa&#x0364;ße am gro&#x0364;ßten<lb break="yes"/>war, und wiederholten daher, um dies zu be&#x017F;ta&#x0364;ttigen, den<lb break="yes"/>Ver&#x017F;uch, unter u&#x0364;brigens gleichen Um&#x017F;ta&#x0364;nden, in zwei noch<lb break="yes"/>ungleichern Gefa&#x0364;ßen, worin denn nach 10 Tagen die Ab-<lb break="no"/>&#x017F;orbtion in der That 0,225 und 0,306 war. Am bewei-<lb break="no"/>&#x017F;end&#x017F;ten aber war es, daß wir fanden, daß reines Stickgas<lb break="yes"/>von einer &#x017F;iedend bereiteten Schwefelkaliauflo&#x0364;&#x017F;ung, und<lb break="yes"/>zwar nach Maßgabe des Inhalts der Gefa&#x0364;ße, ab&#x017F;orbirt<lb break="yes" />wurde. Es wa&#x0364;re demnach mo&#x0364;glich, eine be&#x017F;timmte Menge<lb break="yes"/>atm. Luft durch eine Schwefelkaliauflo&#x0364;&#x017F;ung ganz ver&#x017F;chwin-<lb break="no" />den zu machen und &#x017F;ie als reines Sauer&#x017F;toffgas anzu&#x017F;e-<lb break="no"/>hen, vorausge&#x017F;etzt, daß man die <choice>
+                            <sic>Raumsvermindernng</sic>
+                            <corr type="editorial">Raumsverminderung</corr>
+                        </choice> die-<lb break="no"/>&#x017F;em zu&#x017F;chriebe. Bedient man &#x017F;ich aber &#x017F;tatt einer heißbe-<lb break="no"/>reiteten einer kaltbereiteten Schwefelkaliauflo&#x0364;&#x017F;ung, wie <persName key="berthollet_cl">
+                            <hi rendition="#g">Ber-<lb break="no"/>thollet</hi>
+                        </persName> &#x017F;tets gethan hat, &#x017F;o findet keine Ab&#x017F;orbtion des<lb break="yes"/>Stickgas Statt, und die dadurch erhaltenen Re&#x017F;ultate wer-<lb break="no"/>den dann weit vergleichbarer. Die&#x017F;e ver&#x017F;chiedene Wir-<lb break="no"/>kung der Schwefelalkalien, je nachdem &#x017F;ie kalt oder heiß<lb break="yes" />aufgelo&#x0364;&#x017F;t &#x017F;ind, erfordert na&#x0364;her ins Licht ge&#x017F;tellt zu werden,<lb break="yes"/>welches folgende analoge, aber weniger verwickelte, That-<lb break="no"/>&#x017F;achen thun werden.</p>
+                    <lb break="yes"/>
+                    <p>Erhitzt man Wa&#x017F;&#x017F;er, welches immer eine gewi&#x017F;&#x017F;e Menge,<lb break="yes"/>einer &#x017F;auer&#x017F;toffreichern als die atmo&#x017F;pha&#x0364;ri&#x017F;che, Luft entha&#x0364;lt,<lb break="yes" />oder lo&#x0364;&#x017F;et ein Salz darin auf, &#x017F;o la&#x0364;ßt es einen Theil Luft<lb break="yes"/>fahren, und beha&#x0364;lt einen andern zuru&#x0364;ck, den es er&#x017F;t in<lb break="yes" />&#x017F;ta&#x0364;rkerer Hitze ausgiebt. Bringt man nun Wa&#x017F;&#x017F;er, welches<lb break="yes"/>die letztere verloren hat, mit atm. Luft in Beru&#x0364;hrung, &#x017F;o<lb break="yes"/>wird es, wenn es wieder zu der vorigen Temperatur zuru&#x0364;ck-<lb break="no"/>
+                        <pb n="50" facs="#f0006"/> kommt, einen der verlornen Menge gleichen Theil davon<lb break="yes"/>aufnehmen; und i&#x017F;t man hiervon nicht unterrichtet gewe&#x017F;en,<lb break="yes"/>und ha&#x0364;lt &#x017F;ich bloß an den a&#x0364;ußern Schein, &#x017F;o kann man<lb break="yes" />glauben, daß das reine oder &#x017F;alzige Wa&#x017F;&#x017F;er eine Analy&#x017F;e<lb break="yes"/>bewirkt habe, wie ku&#x0364;rzlich Herr <persName key="heller_01">
+                            <hi rendition="#g">Heller</hi>
+                        </persName>
+                        <note place="foot" n="2)">Vergl. die&#x017F;es Journal oben S. 163.</note>, de&#x017F;&#x017F;en Angabe<lb break="yes"/>wir mit einer &#x017F;ehr ge&#x017F;a&#x0364;ttigten, aber kalt bereiteten, Koch-<lb break="no" />&#x017F;alzauflo&#x0364;&#x017F;ung nicht be&#x017F;ta&#x0364;ttigt gefunden haben, indem &#x017F;ich<lb break="yes"/>zwi&#x017F;chen 1<formula notation="TeX">\frac{1}{2}</formula> Monat daru&#x0364;ber ge&#x017F;tandener und gewo&#x0364;hnlicher<lb break="yes"/>atm. Luft nicht der minde&#x017F;te Unter&#x017F;chied zeigte.</p>
+                    <lb break="yes"/>
+                    <p>Genau wie mit einem Salze verha&#x0364;lt es &#x017F;ich auch mit<lb break="yes"/>einem Schwefelalkali. In dem Augenblick, da man es in<lb break="yes"/>Wa&#x017F;&#x017F;er auflo&#x0364;&#x017F;t, wird ein Theil Luft ausgetrieben, und es<lb break="yes"/>tritt zwi&#x017F;chen der zuru&#x0364;ckbleibenden, dem Wa&#x017F;&#x017F;er und dem<lb break="yes" />Schwefelalkali ein Gleichgewicht ein, &#x017F;o daß, wenn die<lb break="yes"/>Um&#x017F;ta&#x0364;nde &#x017F;ich nicht a&#x0364;ndern, kein Grund da i&#x017F;t, weshalb die<lb break="yes" />Auflo&#x0364;&#x017F;ung noch wieder Luft ab&#x017F;orbiren &#x017F;ollte; erhitzt man<lb break="yes"/>&#x017F;ie aber, &#x017F;o giebt &#x017F;ie noch einen Theil der darin enthalte-<lb break="no"/>nen Luft aus, und die&#x017F;en nimt &#x017F;ie, zur vorigen Temperatur<lb break="yes" />zuru&#x0364;ckkehrend, um das Gleichgewicht wieder herzu&#x017F;tellen,<lb break="yes"/>wieder auf. (Wir &#x017F;prechen hier na&#x0364;mlich von derjenigen<lb break="yes"/>Ab&#x017F;orbtion, die unabha&#x0364;ngig von der des Sauer&#x017F;toffs i&#x017F;t,<lb break="yes"/>wodurch &#x017F;ich das Schwefelalkali in &#x017F;chwefel&#x017F;aures uma&#x0364;n-<lb break="no"/>dert. Da aber das Schwefelalkali den im Wa&#x017F;&#x017F;er befind-<lb break="no"/>lichen Sauer&#x017F;toff ab&#x017F;orbirt, &#x017F;o ko&#x0364;nnte es &#x017F;ehr wahr&#x017F;cheinlich<lb break="yes" />der Fall &#x017F;eyn, daß die Auflo&#x0364;&#x017F;ung eine gro&#x0364;ßere Menge<lb break="yes"/>Stickgas ab&#x017F;orbirte, als &#x017F;on&#x017F;t ge&#x017F;chehen wu&#x0364;rde, und daß<lb break="yes" />daher, wenn man eine ganz fri&#x017F;che, wenn gleich kalt berei-<lb break="no"/>
+                        <pb n="51" facs="#f0007"/> tete Auflo&#x0364;&#x017F;ung zur Luftpru&#x0364;fung anwendete, eine gro&#x0364;ßere<lb break="yes" />Volumsverminderung erfolgte, als eigentlich von dem ab-<lb break="no" />&#x017F;orbirten Sauer&#x017F;toffgas herru&#x0364;hrt. Doch haben wir hieru&#x0364;ber<lb break="yes"/>noch nicht Ver&#x017F;uche gemacht). Der Unter&#x017F;chied zwi&#x017F;chen<lb break="yes"/>den Re&#x017F;ultaten <persName key="marti_01">
+                            <hi rendition="#g">Marti&#x2019;s</hi>
+                        </persName> und <persName key="berthollet_cl">
+                            <hi rendition="#g">Berthollet&#x2019;s</hi>
+                        </persName> mo&#x0364;gte al&#x017F;o<lb break="yes"/>bloß von der Ver&#x017F;chiedenheit der Um&#x017F;ta&#x0364;nde &#x017F;elb&#x017F;t, unter<lb break="yes"/>welchen &#x017F;ie arbeiteten, abzuleiten &#x017F;eyn; doch &#x017F;cheint er&#x017F;terer<lb break="yes"/>geglaubt zu haben, daß das Schwefelalkali als &#x017F;olches das<lb break="yes" />Stickgas ab&#x017F;orbire, welches keinesweges Statt findet, &#x017F;on-<lb break="no"/>dern es verhindert vielmehr das Wa&#x017F;&#x017F;er, womit man es<lb break="yes"/>hat &#x017F;ieden la&#x017F;&#x017F;en, &#x017F;o viel zu ab&#x017F;orbiren, als es &#x017F;on&#x017F;t gethan<lb break="yes"/>haben wu&#x0364;rde.</p>
+                    <lb break="yes"/>
+                    <p>Sieht man al&#x017F;o darauf, die Auflo&#x0364;&#x017F;ung der Schwefel-<lb break="no"/>alkalien kalt zu bereiten, und &#x017F;ie einige Zeit mit atm. Luft<lb break="yes"/>oder mit Stickgas in Beru&#x0364;hrung zu la&#x017F;&#x017F;en, &#x017F;o kann man<lb break="yes"/>&#x017F;ie mit Vortheil zur Analy&#x017F;e der Luft anwenden. Da in-<lb break="no" />de&#x017F;&#x017F;en ihre voll&#x017F;ta&#x0364;ndige Wirkung viel Zeit erfordert, &#x017F;o muß<lb break="yes"/>man zu Berichtigungen des Barometer- und Thermome-<lb break="no"/>ter&#x017F;tandes &#x017F;eine Zuflucht nehmen, die oft &#x017F;ehr ungewiß &#x017F;ind.<lb break="yes" />Das be&#x017F;te Mittel, die&#x017F;er Unbequemlichkeit abzuhelfen, i&#x017F;t<lb break="yes"/>ohne Zweifel die Befolgung der Methode <persName key="berthollet_cl">
+                            <hi rendition="#g">Berthollet&#x2019;s</hi>
+                        </persName>
+                        <lb break="yes"/>und <persName key="marti_01">
+                            <hi rendition="#g">Marti&#x2019;s,</hi>
+                        </persName> na&#x0364;hmlich eine be&#x017F;timmte Portion Luft zur<lb break="yes"/>Vergleichung auch u&#x0364;ber bloßes Wa&#x017F;&#x017F;er zu bringen, und von<lb break="yes"/>ihren Volumsvera&#x0364;nderungen auf die der in der Zerlegung<lb break="yes"/>befindlichen Luft zu &#x017F;chließen; es hat uns aber ge&#x017F;chienen,<lb break="yes"/>daß &#x017F;ie in der Ausu&#x0364;bung nicht ganz den Vortheil gewa&#x0364;hre,<lb break="yes"/>den &#x017F;ie zu ver&#x017F;prechen &#x017F;cheint.</p>
+                    <lb break="yes"/>
+                    <p>Ueberhaupt i&#x017F;t in Hin&#x017F;icht aller fe&#x017F;ten oder flu&#x0364;&#x017F;&#x017F;igen<lb break="yes"/>eudiometri&#x017F;chen Mittel noch zu bemerken, daß, wenn ein<lb break="yes"/>
+                        <pb n="52" facs="#f0008"/> Irrthum, entweder in Beobachtung der Abtheilungen des<lb break="yes"/>In&#x017F;truments, oder in Scha&#x0364;tzung der Ungewißheiten der<lb break="yes"/>Methode, begangen wird, die&#x017F;er Irrthum nothwendig bloß<lb break="yes"/>das Sauer&#x017F;toffgas treffe, und da man, bey aller mo&#x0364;glichen<lb break="yes"/>Genauigkeit, fu&#x0364;r eine viel geringere Menge als 0,01 nicht<lb break="yes"/>&#x017F;tehen kann, &#x017F;o wu&#x0364;rde daraus folgen, daß man u&#x0364;ber die&#x017F;es<lb break="yes"/>hinaus die Menge des in einer Luft enthaltenen Sauer-<lb break="no"/>&#x017F;toffgas nicht be&#x017F;timmen ko&#x0364;nne: wie denn auch wirklich<lb break="yes"/>bey Chemikern, die &#x017F;ich gleicher eudiometri&#x017F;chen Mittel be-<lb break="no"/>dienten, in Betreff die&#x017F;er Menge bedeutende Abweichungen<lb break="yes"/>bemerkt werden; und &#x017F;elb&#x017F;t <persName key="marti_01">
+                            <hi rendition="#g">Marti,</hi>
+                        </persName> der mit den Schwe-<lb break="no"/>felalkalien &#x017F;ehr viele Ver&#x017F;uche ange&#x017F;tellt zu haben &#x017F;cheint,<lb break="yes" />nach Ein&#x017F;icht der bey ihnen erforderlichen Vor&#x017F;ichtsmaßre-<lb break="no"/>geln, &#x017F;ie noch zwi&#x017F;chen 0,21 &#x2014; 0,23 &#x017F;etzt. I&#x017F;t aber das<lb break="yes"/>ab&#x017F;orbirende eudiometri&#x017F;che Mittel gasfo&#x0364;rmig, &#x017F;o i&#x017F;t, wie<lb break="yes"/>wir &#x017F;ehen werden, eine gro&#x0364;ßere Genauigkeit erreichbar.</p>
+                    <lb break="yes"/>
+                    <p>Da wir uns gleich bey dem Anfange un&#x017F;erer Arbeit<lb break="yes" />vorge&#x017F;etzt hatten, die Anwendbarkeit des <persName key="volta_agv" >Voltai&#x017F;chen</persName> Eudio-<lb break="no"/>meters zur Analy&#x017F;e der Luft zu pru&#x0364;fen, &#x017F;o richteten wir<lb break="yes"/>auf da&#x017F;&#x017F;elbe vorzu&#x0364;glich un&#x017F;ere Aufmerk&#x017F;amkeit. Man hatte<lb break="yes"/>die&#x017F;es In&#x017F;trument be&#x017F;chuldigt, untreu zu &#x017F;eyn und zu ge-<lb break="no"/>ringe Mengen Sauer&#x017F;toff in der Luft anzuzeigen; es &#x017F;chien<lb break="yes"/>uns inde&#x017F;&#x017F;en, daß, im Fall es Berichtigungen erforderte,<lb break="yes"/>man es doch &#x017F;ehr genau und bequem machen ko&#x0364;nnte, wenn<lb break="yes"/>man die&#x017F;e Berichtigungen und das Ge&#x017F;etz ihrer Abweichun-<lb break="no"/>gen auffa&#x0364;nde.</p>
+                    <lb break="yes"/>
+                    <p>Wir legten uns daher folgende Fragen vor:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>1) Kann, wenn man in dem <persName key="volta_agv" >Voltai&#x017F;chen</persName> Eudiometer<lb break="yes"/>ein Gemi&#x017F;ch von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>
+                            <pb n="53" facs="#f0009"/> entzu&#x0364;ndet, die Ab&#x017F;orbtion des einen von beyden voll-<lb break="no"/>&#x017F;ta&#x0364;ndig ge&#x017F;chehen?</item>
+                        <lb break="yes"/>
+                        <item>2) I&#x017F;t das Product ihrer Verbindung von &#x017F;tets gleicher<lb break="yes"/>Be&#x017F;chaffenheit?</item>
+                        <lb break="yes"/>
+                        <item>3) Wie i&#x017F;t genau das Verha&#x0364;ltniß, in welchem &#x017F;ie erfor-<lb break="no"/>derlich &#x017F;ind, um Wa&#x017F;&#x017F;er zu bilden?</item>
+                        <lb break="yes"/>
+                        <item>4) Innerhalb welcher Grenzen i&#x017F;t der mo&#x0364;gliche Irrthum<lb break="yes"/>bey dem <persName key="volta_agv" >Volta&#x2019;&#x017F;chen</persName> Eudiometer?</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Wir werden die&#x017F;e Fragen der Reihe nach durchgehen,<lb break="yes" />nachdem er&#x017F;t noch die Bereitungsart der zu un&#x017F;ern Ver&#x017F;u-<lb break="no"/>chen angewandten Gasarten angegeben worden.</p>
+                    <lb break="yes"/>
+                    <p>Zur Dar&#x017F;tellung des Sauer&#x017F;toffgas bedienten wir uns<lb break="yes"/>des u&#x0364;beroxydirt&#x017F;alz&#x017F;auren Kali. Es wurde aus einer Glas-<lb break="no"/>retorte entwickelt, an welche die gekru&#x0364;mmte Leitungsro&#x0364;hre<lb break="yes"/>vor der Lampe angebla&#x017F;en war, und um es von Stickgas<lb break="yes" />mo&#x0364;glich&#x017F;t frey zu haben, war die Retorte bis ungefa&#x0364;hr zu<lb break="yes"/>
+                        <formula notation="TeX">\frac{1}{4}</formula> mit Wa&#x017F;&#x017F;er gefu&#x0364;llt worden, welches, da es nachher, vor<lb break="yes" />Zer&#x017F;etzung des Salzes, in Da&#x0364;mpfe verwandelt wurde, bald<lb break="yes"/>alle Luft aus der Retorte trieb. Um aber die Ab&#x017F;orbtion<lb break="yes"/>zu <choice>
+                            <sic>verhu&#x0364;teu</sic>
+                            <corr type="editorial">verhu&#x0364;ten</corr>
+                        </choice>, die, ehe &#x017F;ich das Gas entwickelte, Statt gehabt<lb break="yes"/>haben wu&#x0364;rde, tauchten wir das Ende der Ro&#x0364;hre in eine<lb break="yes"/>Schale mit Queck&#x017F;ilber, die bey Anfang der Gasentbin-<lb break="no"/>dung &#x017F;ogleich fortgenommen wurde. Um zu vermeiden,<lb break="yes"/>daß das Sauer&#x017F;toffgas wa&#x0364;hrend des Durchgehens durch<lb break="yes"/>das Wa&#x017F;&#x017F;er aus letzterm Stickgas entwickelte, fu&#x0364;hrten wir<lb break="yes"/>es &#x017F;ogleich oben in den Recipienten, indem eine rechtwink-<lb break="no"/>lich gebogene, bis an die Decke des Recipienten reichende,<lb break="yes"/>Ro&#x0364;hre, durch einen gemein&#x017F;chaftlichen durchbohrten Kork,<lb break="yes"/>mit der Retorte verbunden wurde. Die&#x017F;es &#x017F;ehr leicht an-<lb break="no"/>
+                        <pb n="54" facs="#f0010"/> zuwendende Verfahren i&#x017F;t be&#x017F;onders bey den im Wa&#x017F;&#x017F;er<lb break="yes"/>auflo&#x0364;slichen Gasarten, wie dem kohlen&#x017F;auren Gas, dem<lb break="yes"/>oxydirten Stickgas &#x017F;ehr vortheilhaft. Das Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>erhielten wir durch Auflo&#x0364;&#x017F;ung des Zinks in Salz&#x017F;a&#x0364;ure oder<lb break="yes"/>in mit 6 Theilen Wa&#x017F;&#x017F;er verdu&#x0364;nnter Schwefel&#x017F;a&#x0364;ure; wir<lb break="yes"/>beobachteten dabey die Vor&#x017F;icht, das Entwickelungsgefa&#x0364;ß<lb break="yes" />ga&#x0364;nzlich mit der Sa&#x0364;ure anzufu&#x0364;llen, und das Gas nicht<lb break="yes"/>durch die ganze Wa&#x017F;&#x017F;er&#x017F;a&#x0364;ule hindurch treten zu la&#x017F;&#x017F;en. Aller<lb break="yes"/>die&#x017F;er Vor&#x017F;icht ungeachtet ließ un&#x017F;er Sauer&#x017F;toffgas bei der<lb break="yes" />Ab&#x017F;orbtion durch Schwefelalkali 0,004 und das, durch an-<lb break="no"/>dere Mittel gepru&#x0364;fte, Wa&#x017F;&#x017F;er&#x017F;toffgas 0,006 Stickgas zuru&#x0364;ck.<lb break="yes"/>Dies vorausge&#x017F;etzt, gehen wir nun zur Beantwortung der<lb break="yes"/>er&#x017F;ten Frage.</p>
+                    <lb break="yes"/>
+                    <p>Wenn aller Sauer&#x017F;toff oder aller Wa&#x017F;&#x017F;er&#x017F;toff ga&#x0364;nzlich<lb break="yes"/>ab&#x017F;orbirt wu&#x0364;rde, dachten wir, mu&#x0364;ßte man, wenn die bey-<lb break="no"/>den Gasarten vollkommen rein wa&#x0364;ren, oder der Grad ih-<lb break="no"/>rer Reinheit bekannt, &#x017F;tets da&#x017F;&#x017F;elbe Verha&#x0364;ltniß fu&#x0364;r die<lb break="yes"/>Be&#x017F;tandtheile des Wa&#x017F;&#x017F;ers erhalten, es mogte nun das<lb break="yes"/>Sauer&#x017F;toffgas oder das Wa&#x017F;&#x017F;er&#x017F;toffgas im Uebermaß vor-<lb break="no"/>handen &#x017F;eyn. Wirklich erhielten wir nach Verpuffung von<lb break="yes" />Gemi&#x017F;chen aus 300 Wa&#x017F;&#x017F;er&#x017F;toffgas und 100 Sauer&#x017F;toffgas<lb break="yes"/>und wieder aus 200 von er&#x017F;term und eben &#x017F;o viel vom<lb break="yes"/>letzterm, nachdem die no&#x0364;thige Berichtigung wegen der Un-<lb break="no"/>reinheit der beyden Gasarten gemacht war, &#x017F;ehr nahe<lb break="yes" />da&#x017F;&#x017F;elbe Verha&#x0364;ltniß; woraus &#x017F;ich zugleich ergab, daß bey<lb break="yes"/>dem Uebermaß des einen oder des andern Gas auch nicht<lb break="yes"/>etwa ein oxydirtes oder hydrogenirtes Wa&#x017F;&#x017F;er ent&#x017F;tehe, in<lb break="yes"/>welchem Fall, wenn auch die Ab&#x017F;orbtion des einen oder<lb break="yes"/>des andern Gas voll&#x017F;ta&#x0364;ndig war, doch nothwendig das<lb break="yes" />Verha&#x0364;ltniß ver&#x017F;chieden &#x017F;eyn mußte. Aber wenngleich die<lb break="yes"/>
+                        <pb n="55" facs="#f0011"/> Ab&#x017F;orbtion unter gewi&#x017F;&#x017F;en Um&#x017F;ta&#x0364;nden voll&#x017F;ta&#x0364;ndig i&#x017F;t, &#x017F;o<lb break="yes"/>muß man doch nicht glauben, daß &#x017F;ie es &#x017F;ey, welch ein<lb break="yes"/>Verha&#x0364;ltniß der beyden Gasarten man auch anwende, &#x017F;on-<lb break="no"/>dern es giebt vielmehr Mi&#x017F;chungen, aus ihnen allein oder<lb break="yes"/>auch zugleich mit Stickgas oder irgend einem andern Gas,<lb break="yes"/>die man durch den electri&#x017F;chen Funken nicht nur nicht anzu&#x0364;n-<lb break="no"/>den kann, &#x017F;ondern deren Verbrennung, wenn &#x017F;ie auch ange-<lb break="no"/>fangen hat, vor der Vollendung aufho&#x0364;rt, wie die Re&#x017F;ultate<lb break="yes"/>der in folgender Tabelle aufgefu&#x0364;hrten Ver&#x017F;uche, in denen<lb break="yes" />ver&#x017F;chiedene Verha&#x0364;ltni&#x017F;&#x017F;e der beyden Gasarten der Verpuf-<lb break="no"/>fung ausge&#x017F;etzt wurden, anzeigen.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Wa&#x017F;&#x017F;er&#x017F;toffgas Sauer&#x017F;toffgas Ab&#x017F;orbtion</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 200 &#x2014; 146</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 300 &#x2014; 146</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 600 &#x2014; 146</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 900 &#x2014; 146</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 950 &#x2014; 68</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 1000 &#x2014; 55</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 1200 &#x2014; 24</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 1400 &#x2014; 14</item>
+                        <lb break="yes"/>
+                        <item>100 &#x2014; 1600 &#x2014; 0 <note place="foot" n="2)">Die Ab&#x017F;orbtionen 68, 55, 24, 14 &#x017F;ind vielleicht nicht auf<lb break="yes"/>0,02 oder 0,03 genau, da wir, weil un&#x017F;ere In&#x017F;trumente fu&#x0364;r die<lb break="yes" />corre&#x017F;pondirenden Verha&#x0364;ltni&#x017F;&#x017F;e zu klein waren, die Gasmengen<lb break="yes"/>auf mehrere Mahl me&#x017F;&#x017F;en mußten; dies hat inde&#x017F;&#x017F;en auf die Er-<lb break="no"/>&#x017F;cheinung im Ganzen keinen Einfluß.</note>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Was in die&#x017F;en ver&#x017F;chiedenen Ver&#x017F;uchen merkwu&#x0364;rdig i&#x017F;t, i&#x017F;t<lb break="yes"/>1. daß die Ab&#x017F;orbtion, welche bey &#x017F;ehr abweichenden Verha&#x0364;lt-<lb break="no" />ni&#x017F;&#x017F;en gleich bleibt, plo&#x0364;tzlich abnehmend wird; 2. daß die ange-<lb break="no"/>
+                        <pb n="56" facs="#f0012"/> fangene Verbrennung des Wa&#x017F;&#x017F;er&#x017F;toffgas vor der Vollen-<lb break="no"/>dung aufho&#x0364;rt; 3. daß Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas in<lb break="yes" />Verha&#x0364;ltni&#x017F;&#x017F;en gemengt &#x017F;eyn ko&#x0364;nnen, in welchen ihre Ent-<lb break="no"/>zu&#x0364;ndung unmo&#x0364;glich i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Die vorerwa&#x0364;hnten Er&#x017F;cheinungen finden nicht bloß un-<lb break="no"/>ter den angefu&#x0364;hrten Um&#x017F;ta&#x0364;nden Statt: &#x017F;ie erfolgen auch,<lb break="yes"/>wenn man 100 Sauer&#x017F;toffgas mit 200, 300, ... 1000 &#xA75B;c.<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas verpufft; es i&#x017F;t bloß der Unter&#x017F;chied, daß<lb break="yes"/>in die&#x017F;em Fall der Zeitpunkt, in welchem die Ab&#x017F;orbtion<lb break="yes"/>aufho&#x0364;rt, &#x017F;ich gleich zu bleiben, weiter entfernt i&#x017F;t. Um<lb break="yes" />den Grund davon einzu&#x017F;ehen, darf man nur bemerken,<lb break="yes" />daß in die&#x017F;em Fall ungefa&#x0364;hr 300 Theile durch die Ent-<lb break="no"/>zu&#x0364;ndung ver&#x017F;chwanden, wogegen in dem vorigen nur die<lb break="yes"/>Ha&#x0364;lfte &#x017F;o viel ver&#x017F;chwand.</p>
+                    <lb break="yes"/>
+                    <p>Das Stickgas und das kohlen&#x017F;aure Gas bieten eben-<lb break="no"/>falls a&#x0364;hnliche Er&#x017F;cheinungen dar. Entzu&#x0364;ndet man z. B.<lb break="yes"/>ein Gemenge von 900 Stickgas, 100 Wa&#x017F;&#x017F;er&#x017F;toffgas und<lb break="yes"/>100 Sauer&#x017F;toffgas, &#x017F;o betra&#x0364;gt die Ab&#x017F;orbtion, die bey<lb break="yes"/>voll&#x017F;ta&#x0364;ndiger Verbrennung auf 146 &#x017F;teigen &#x017F;ollte, nur 50,<lb break="yes"/>wiewohl &#x017F;ie in einigen Ver&#x017F;uchen auch etwas darunter oder<lb break="yes" />daru&#x0364;ber war. Bey einem geringern Verha&#x0364;ltniß von Stick-<lb break="no"/>gas dagegen hatten wir be&#x017F;ta&#x0364;ndig die gleiche Ab&#x017F;orbtion<lb break="yes"/>von 146. Wiewohl &#x017F;ich das Stickgas hier wie das Sauer-<lb break="no"/>&#x017F;toffgas zu verhalten &#x017F;cheint, indem wir bey 100 Wa&#x017F;&#x017F;er-<lb break="no" />&#x017F;toffgas und 1000 Sauer&#x017F;toffgas fa&#x017F;t da&#x017F;&#x017F;elbe Re&#x017F;ultat hat-<lb break="no"/>ten, wie bei 900 Stickgas, 100 Sauer&#x017F;toffgas und 100<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas, &#x017F;o wollen wir doch daraus gar keine Fol-<lb break="no"/>gerung ziehen, weil wir un&#x017F;ere Ver&#x017F;uche noch nicht hin-<lb break="no"/>la&#x0364;nglich vervielfa&#x0364;ltigt und abgea&#x0364;ndert haben. So viel je-<lb break="no"/>
+                        <pb n="57" facs="#f0013"/> doch gehet aus den bisher ange&#x017F;tellten hervor, daß, wenn<lb break="yes"/>be&#x017F;timmte Verha&#x0364;ltni&#x017F;&#x017F;e von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="no"/>gas mit ver&#x017F;chiedenen Gasarten gemengt worden, die Ab-<lb break="no" />&#x017F;orbtion bis auf einen gewi&#x017F;&#x017F;en Punkt gleichbleibend &#x017F;eyn<lb break="yes"/>kann, nach de&#x017F;&#x017F;en Ueber&#x017F;chreitung &#x017F;ie &#x017F;chnell abnimt.</p>
+                    <lb break="yes"/>
+                    <p>Wenn nun die Ab&#x017F;orbtion des Sauer&#x017F;toffs und Wa&#x017F;-<lb break="no"/>&#x017F;er&#x017F;toffs bei be&#x017F;timmten Verha&#x0364;ltni&#x017F;&#x017F;en voll&#x017F;ta&#x0364;ndig, bei an-<lb break="no"/>dern aber es wieder nicht i&#x017F;t, &#x017F;o wird man immer im<lb break="yes"/>Stande &#x017F;eyn, ein Gasgemi&#x017F;ch der letztern Art in eins der<lb break="yes"/>er&#x017F;tern umzua&#x0364;ndern, indem man ihm Sauer&#x017F;toffgas oder<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas oder auch beyde zu&#x017F;ammen zu&#x017F;etzt.</p>
+                    <lb break="yes"/>
+                    <p>Da in dem vorerwa&#x0364;hnten Ver&#x017F;uch die 100 Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas nicht voll&#x017F;ta&#x0364;ndig verbrannt worden, &#x017F;o unter&#x017F;uchten<lb break="yes"/>wir den Ru&#x0364;ck&#x017F;tand. 100 Theile davon, in welche Phos-<lb break="no"/>phor gebracht wurde, verminderten &#x017F;ich in 4 Stunden um<lb break="yes"/>7; zum offenbaren Bewei&#x017F;e, daß der Ru&#x0364;ck&#x017F;tand Sauer&#x017F;toff<lb break="yes"/>enthielt. Um uns zu u&#x0364;berzeugen, ob er Wa&#x017F;&#x017F;er&#x017F;toff zuru&#x0364;ck<lb break="yes"/>behalten ha&#x0364;tte, entzu&#x0364;ndeten wir in <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;s</hi>
+                        </persName> Eudiometer<lb break="yes"/>ein Gemi&#x017F;ch von 200 jenes Ru&#x0364;ck&#x017F;tandes + 200 Sauer&#x017F;toff-<lb break="no"/>gas + 200 Wa&#x017F;&#x017F;er&#x017F;toffgas = 600. Es waren 312 Theile<lb break="yes"/>ver&#x017F;chwunden. Da nun, nach weiter unten anzufu&#x0364;hrenden<lb break="yes"/>Erfahrungen, 100 Theile reines Sauer&#x017F;toffgas 200 Wa&#x017F;-<lb break="no" />&#x017F;er&#x017F;toffgas zu ihrer Sa&#x0364;ttigung erfordern, &#x017F;o ha&#x0364;tte die Ab-<lb break="no"/>&#x017F;orbtion mit dem hier angewandten Wa&#x017F;&#x017F;er&#x017F;toffgas nur 292<lb break="yes" />betragen &#x017F;ollen und jener Ru&#x0364;ck&#x017F;tand muß daher noch &#x017F;o<lb break="yes"/>viel gegeben haben, um &#x017F;ie von 292 bis auf 312 zu er-<lb break="no"/>ho&#x0364;hen, d. h. er muß 13,3 de&#x017F;&#x017F;elben enthalten haben. Der<lb break="yes"/>Rechnung nach mu&#x0364;ßte er 12 davon enthalten; es i&#x017F;t al&#x017F;o<lb break="yes"/>klar bewie&#x017F;en, daß, obgleich die Entzu&#x0364;ndung anfing, die<lb break="yes"/>
+                        <pb n="58" facs="#f0014"/> Verbrennung doch nicht voll&#x017F;ta&#x0364;ndig war, da wir das Wa&#x017F;-<lb break="no"/>&#x017F;er&#x017F;toffgas, welches nicht ab&#x017F;orbirt worden, in dem Ru&#x0364;ck-<lb break="no" />&#x017F;tande wiederfanden. Wir bemerken hier, daß in allen<lb break="yes" />Fa&#x0364;llen, wo die Ab&#x017F;orbtion nicht beendigt wurde, die Ent-<lb break="no"/>zu&#x0364;ndung nicht &#x017F;ehr lebhaft war.</p>
+                    <lb break="yes"/>
+                    <p>Bei Vergleichung der Wirkungen der Electricita&#x0364;t mit<lb break="yes" />denen einer hohen Temperatur, in Entzu&#x0364;ndung des Sauer-<lb break="no"/>&#x017F;toffwa&#x017F;&#x017F;er&#x017F;toffgas, wurden wir auf den Gedanken geleitet,<lb break="yes"/>daß die Entzu&#x0364;ndung durch den electri&#x017F;chen Stoß wohl von<lb break="yes"/>der Wa&#x0364;rme herru&#x0364;hren ko&#x0364;nnte, die die <choice>
+                            <sic>angenblickliche</sic>
+                            <corr type="editorial">augenblickliche</corr>
+                        </choice> Com-<lb break="no"/>pre&#x017F;&#x017F;ion des durchgehenden electri&#x017F;chen Funkens hervorbringt.<lb break="yes"/>Wir wi&#x017F;&#x017F;en wirklich durch eigene Erfahrung, daß die Entzu&#x0364;n-<lb break="no"/>dung eines Gemi&#x017F;ches von Sauer&#x017F;toff- und Wa&#x017F;&#x017F;er&#x017F;toffgas,<lb break="yes" />wenn &#x017F;ie durch Wa&#x0364;rme bewirkt wird, allein von der<lb break="yes"/>Temperatur abha&#x0364;ngt: denn wenn man die&#x017F;es Gemi&#x017F;ch<lb break="yes"/>&#x017F;ehr lang&#x017F;am durch eine von Außen nach ihrem Mittel-<lb break="no"/>punkt &#x017F;ehr &#x017F;tufenwei&#x017F;e erhitzte Ro&#x0364;hre, &#x017F;o jedoch, daß nichts<lb break="yes"/>der freien Ausdehnung des Gas im Wege &#x017F;teht, treten<lb break="yes"/>la&#x0364;ßt, &#x017F;o wird die Entzu&#x0364;ndung erfolgen, &#x017F;obald als die<lb break="yes" />Temperatur hoch genug ge&#x017F;tiegen i&#x017F;t. Setzen wir nun,<lb break="yes"/>wie es denn i&#x017F;t, daß die Entzu&#x0364;ndung nur bei einer be&#x017F;timm-<lb break="no"/>ten Temperatur erfolge, &#x017F;o &#x017F;ehen wir, was bei der durch<lb break="yes"/>den electri&#x017F;chen Funken ge&#x017F;chehenden vorgeht. Indem die-<lb break="no"/>&#x017F;er durch das erwa&#x0364;hnte Gemi&#x017F;ch tritt, dra&#x0364;ngt er es zuru&#x0364;ck,<lb break="yes"/>indem &#x017F;ein Durchgang &#x017F;o plo&#x0364;tzlich i&#x017F;t, daß die Gasmole-<lb break="no"/>kulen die Bewegung einander nicht &#x017F;o &#x017F;chnell, wie &#x017F;ie die-<lb break="no"/>&#x017F;elbe empfingen, mittheilen ko&#x0364;nnen, wodurch eine augenblick-<lb break="no"/>liche &#x017F;ehr &#x017F;tarke Zu&#x017F;ammenpre&#x017F;&#x017F;ung erfolgt, die eine Tem-<lb break="no" />peraturerho&#x0364;hung bewirkt, welche die zur Verbindung der<lb break="yes"/>beyden Gasarten no&#x0364;thige noch u&#x0364;ber&#x017F;teigt, und die nun einmahl<lb break="yes"/>
+                        <pb n="59" facs="#f0015"/> angefangene Entzu&#x0364;ndung muß &#x017F;ich dann &#x017F;chnell ver-<lb break="no"/>breiten.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;er An&#x017F;icht nach dachten wir, daß, wenn ein<lb break="yes" />&#x017F;chwacher electri&#x017F;cher Funke in einem Gemi&#x017F;ch aus Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas und Sauer&#x017F;toffgas nur eine unvoll&#x017F;ta&#x0364;ndige Ver-<lb break="no"/>brennung bewirkt, ein &#x017F;ta&#x0364;rkerer eine voll&#x017F;ta&#x0364;ndigere zu Stande<lb break="yes"/>bringen wu&#x0364;rde; aber &#x017F;ey es nun, daß wir keine hinla&#x0364;ng-<lb break="no"/>lich &#x017F;tarke Electricita&#x0364;t anwandten, oder daß wir un&#x017F;ere<lb break="yes"/>Ver&#x017F;uche noch nicht genug vervielfa&#x0364;ltigt haben: wir erhiel-<lb break="no"/>ten keinen merklich ver&#x017F;chiedenen Erfolg, wenn wir den<lb break="yes"/>Funken eines, drey Decimeter im Durchme&#x017F;&#x017F;er haltenden,<lb break="yes" />Electrophors oder einer &#x017F;tark geladenen Leydener Fla&#x017F;che<lb break="yes"/>anwandten. Die Einrichtung un&#x017F;eres Eudiometers erlaubte<lb break="yes"/>uns inde&#x017F;&#x017F;en nicht, &#x017F;ehr &#x017F;tarke Funken zu ziehen, und wir<lb break="yes"/>wollen, um u&#x0364;ber den Einfluß der Sta&#x0364;rke der Electricita&#x0364;t<lb break="yes"/>in Entzu&#x0364;ndung des Sauer&#x017F;toffwa&#x017F;&#x017F;er&#x017F;toffgas zu ent&#x017F;cheiden,<lb break="yes"/>den Erfolg neuer Ver&#x017F;uche abwarten.</p>
+                    <lb break="yes"/>
+                    <p>Da nun in dem obigen Gemi&#x017F;ch aus 900 Stickgas,<lb break="yes"/>100 Sauer&#x017F;toffgas und 100 Wa&#x017F;&#x017F;er&#x017F;toffgas die Ab&#x017F;orbtion<lb break="yes"/>nicht voll&#x017F;ta&#x0364;ndig war, &#x017F;ondern &#x017F;tehen blieb, wie es, zu<lb break="yes"/>Folge der nachherigen Analy&#x017F;e, noch aus 0,06 Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="no"/>gas, 0,08 Sauer&#x017F;toffgas und 0,86 Stickgas be&#x017F;tand, &#x017F;o<lb break="yes"/>i&#x017F;t zu &#x017F;chließen, daß auch ein neuer Funke ein &#x017F;olches Ge-<lb break="no"/>mi&#x017F;ch nicht wu&#x0364;rde entzu&#x0364;nden ko&#x0364;nnen. In der Atmo&#x017F;pha&#x0364;re,<lb break="yes"/>wo &#x017F;ich viel weniger als 0,06 Wa&#x017F;&#x017F;er&#x017F;toffgas befindet,<lb break="yes"/>wu&#x0364;rde demnach der electri&#x017F;che Funke keine Entzu&#x0364;ndung de&#x017F;-<lb break="no"/>&#x017F;elben bewirken ko&#x0364;nnen, oder wenn &#x017F;ie auch vermo&#x0364;ge &#x017F;einer<lb break="yes"/>großen Sta&#x0364;rke an dem Orte &#x017F;eines Durchgangs Statt<lb break="yes"/>fa&#x0364;nde, &#x017F;o wu&#x0364;rde &#x017F;ie &#x017F;ich doch nicht verbreiten ko&#x0364;nnen, &#x017F;on-<lb break="no"/>dern auf jene Stelle be&#x017F;chra&#x0364;nkt bleiben, und man kann<lb break="yes"/>
+                        <pb n="60" facs="#f0016"/> daher nicht die feurigen Meteore durch eine Entzu&#x0364;ndung<lb break="yes"/>des Wa&#x017F;&#x017F;er&#x017F;toffgas vermittel&#x017F;t des Blitzes oder gar durch<lb break="yes"/>noch &#x017F;chwa&#x0364;chere electri&#x017F;che Entladungen erkla&#x0364;ren, oder wa&#x0364;-<lb break="no"/>ren die&#x017F;e feurigen Lufter&#x017F;cheinungen wirklich das Re&#x017F;ultat<lb break="yes"/>einer Entzu&#x0364;ndung von Wa&#x017F;&#x017F;er&#x017F;toffgas, &#x017F;o mu&#x0364;ßte man &#x017F;chließen,<lb break="yes"/>daß in dem Augenblick, da &#x017F;ie &#x017F;ich zeigen, mehr als 0,06<lb break="yes"/>davon in der Luft vorhanden &#x017F;eyen, was gegen alle Wahr-<lb break="no" />&#x017F;cheinlichkeit i&#x017F;t, be&#x017F;onders wenn man &#x017F;ich erinnert, daß<lb break="yes"/>Luft, die in einer &#x017F;ehr hohen Ho&#x0364;he ge&#x017F;cho&#x0364;pft worden, bei<lb break="yes"/>der Vergleichung mit in der Ebene ge&#x017F;cho&#x0364;pfter, keine be-<lb break="no"/>merkbare Spur de&#x017F;&#x017F;elben gezeigt hat.</p>
+                    <lb break="yes"/>
+                    <p>Wenn aber wirklich bey jedem electri&#x017F;chen Funken, den<lb break="yes" />man aus einem Gemi&#x017F;ch von Sauer&#x017F;toff- und Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>oder von Stickgas, Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas, &#x017F;o<lb break="yes"/>nicht entzu&#x0364;ndungsfa&#x0364;hig i&#x017F;t, zieht, durch den bey &#x017F;einem<lb break="yes"/>Durchgange ausgeu&#x0364;bten Druck eine locale augenblickliche<lb break="yes"/>Hitze bewirkt wird: &#x017F;o wa&#x0364;re es mo&#x0364;glich, daß bey jedem<lb break="yes" />der&#x017F;elben, in die&#x017F;em Falle, eine kleine locale Entzu&#x0364;ndung<lb break="yes"/>Statt fa&#x0364;nde und daß man &#x017F;o durch eine Reihe der&#x017F;elben<lb break="yes"/>eine be&#x017F;timmte Menge von Wa&#x017F;&#x017F;er&#x017F;toffgas, die in viel<lb break="yes"/>Stickgas und Sauer&#x017F;toffgas oder auch nur in letzterm al-<lb break="no"/>lein eingehu&#x0364;llt i&#x017F;t, zer&#x017F;to&#x0364;ren wu&#x0364;rde. Was die&#x017F;e Vermu-<lb break="no"/>thung unter&#x017F;tu&#x0364;tzen ko&#x0364;nnte, i&#x017F;t, daß bekanntlich Aether und<lb break="yes"/>Ammonium, die vermittel&#x017F;t des Durchtreibens in Dun&#x017F;tge-<lb break="no" />&#x017F;talt durch eine glu&#x0364;hende Ro&#x0364;hre zer&#x017F;etzt werden, die&#x017F;e Zer-<lb break="no"/>&#x017F;etzung auch durch wiederholte electri&#x017F;che Funken erleiden.<lb break="yes"/>Auch wa&#x0364;re es &#x017F;ehr intere&#x017F;&#x017F;ant zu wi&#x017F;&#x017F;en, ob man durch<lb break="yes"/>den electri&#x017F;chen Funken ein &#x017F;chickliches Gemi&#x017F;ch von Sauer-<lb break="no" />&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas entzu&#x0364;nden ko&#x0364;nnte, nachdem es<lb break="yes"/>durch die Luftpumpe verdu&#x0364;nnt worden. Ru&#x0364;hrte die Ent-<lb break="no"/>
+                        <pb n="61" facs="#f0017"/> zu&#x0364;ndung durch den electri&#x017F;chen Funken in der That von der,<lb break="yes"/>durch die von ihm herru&#x0364;hrende Zu&#x017F;ammendru&#x0364;ckung, bewirk-<lb break="no" />ten Wa&#x0364;rme her, &#x017F;o &#x017F;ollte man natu&#x0364;rlich denken, daß, da die<lb break="yes"/>Compre&#x017F;&#x017F;ion in dem verdu&#x0364;nnten Gasgemi&#x017F;ch &#x017F;chwa&#x0364;cher i&#x017F;t,<lb break="yes"/>auch die daraus ent&#x017F;tehende Wa&#x0364;rme viel &#x017F;chwa&#x0364;cher &#x017F;eyn<lb break="yes" />mu&#x0364;&#x017F;&#x017F;e, und daß es einen Grad von Verdu&#x0364;nnung geben<lb break="yes"/>ko&#x0364;nne, bey welchem die Entzu&#x0364;ndung gar nicht Statt finden<lb break="yes"/>wu&#x0364;rde. Wir haben noch nicht Zeit gehabt, die&#x017F;e ver&#x017F;chie-<lb break="no"/>denen Ver&#x017F;uche an&#x017F;tellen zu ko&#x0364;nnen, geben aber den Vor-<lb break="no"/>&#x017F;atz dazu nicht auf, &#x017F;ondern hoffen &#x017F;elb&#x017F;t, ihn bald ausfu&#x0364;h-<lb break="no"/>ren zu ko&#x0364;nnen.</p>
+                    <lb break="yes"/>
+                    <p>Man ko&#x0364;nnte den Fall, wo die Verbrennung nicht<lb break="yes" />voll&#x017F;ta&#x0364;ndig i&#x017F;t, nach den Verwandt&#x017F;chaftsge&#x017F;etzen erkla&#x0364;ren,<lb break="yes" />indem man &#x017F;agte, daß das eine Gas, wenn es ein großes<lb break="yes"/>Uebergewicht erha&#x0364;lt, das andere durch &#x017F;eine Verwandt&#x017F;chaft<lb break="yes"/>vor der Verbrennung &#x017F;chu&#x0364;tzen und es der&#x017F;elben zum Theil ent-<lb break="no" />ziehen ko&#x0364;nne. Wenn auch die&#x017F;e Verwandt&#x017F;chaft &#x017F;ehr &#x017F;chwach<lb break="yes"/>wa&#x0364;re, &#x017F;o begreift man nach <persName key="berthollet_cl">
+                            <hi rendition="#g">Berthollet</hi>
+                        </persName> leicht, wie &#x017F;ie<lb break="yes"/>durch die Menge des Gas er&#x017F;etzt werden ko&#x0364;nnte, und die<lb break="yes"/>Fa&#x0364;lle, wo die Verbrennung fru&#x0364;her oder &#x017F;pa&#x0364;ter aufho&#x0364;rt, je<lb break="yes"/>nachdem das eine oder das andere Gas u&#x0364;ber&#x017F;chu&#x0364;&#x017F;&#x017F;ig i&#x017F;t,<lb break="yes" />ließen &#x017F;ich aus der ver&#x017F;chiedenen Natur der ver&#x017F;chiedenen<lb break="yes"/>Gasarten ableiten. Wie will man aber bey die&#x017F;er An-<lb break="no"/>nahme es erkla&#x0364;ren, daß bey Verbrennung eines Gemi&#x017F;ches<lb break="yes"/>von bloßem Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas die Ab&#x017F;orb-<lb break="no"/>tion, die &#x017F;o lange &#x017F;ich gleich blieb, plo&#x0364;tzlich abnimt, wenn<lb break="yes"/>man darin u&#x0364;bereinkommt, daß, im Fall das eine Gas<lb break="yes"/>durch die Wirkung des andern der Verbindung entzogen<lb break="yes"/>werden ko&#x0364;nne, die&#x017F;e Wirkung ein regelma&#x0364;ßiges Ge&#x017F;etz befol-<lb break="no"/>gen mu&#x0364;&#x017F;&#x017F;e? Wie &#x017F;oll man es begreifen, daß die&#x017F;e beiden<lb break="yes"/>
+                        <pb n="62" facs="#f0018"/> Gasarten, da &#x017F;ie &#x017F;ich in zu ihrer Verbindung gu&#x0364;n&#x017F;tigen<lb break="yes"/>Um&#x017F;ta&#x0364;nden befanden, &#x017F;ich durch ihre Verwandt&#x017F;chaft im<lb break="yes" />ela&#x017F;ti&#x017F;chen Zu&#x017F;tande erhielten, wenn &#x017F;ie eine weit dichtere<lb break="yes"/>Verbindung, das Wa&#x017F;&#x017F;er, bilden konnten? Wie endlich<lb break="yes"/>begreifen, daß eine Verwandt&#x017F;chaft, die eine &#x017F;ehr große<lb break="yes" />Verdichtung und Sa&#x0364;ttigung bewirkt, geringer &#x017F;eyn ko&#x0364;nne,<lb break="yes"/>als eine Verwandt&#x017F;chaft, die gar keine Vera&#x0364;nderung in den<lb break="yes"/>Dimen&#x017F;ionen der beyden Gasarten, gar keine Sa&#x0364;ttigung<lb break="yes"/>bewirkt? Wa&#x017F;&#x017F;er&#x017F;toff und Sauer&#x017F;toff haben, in welchem Zu-<lb break="no"/>&#x017F;tande &#x017F;ie &#x017F;ich auch befinden mo&#x0364;gen, &#x017F;tets die&#x017F;elbe Verwandt-<lb break="no" />&#x017F;chaft gegen einander, weil die&#x017F;e Verwandt&#x017F;chaft durch ihre<lb break="yes"/>Sa&#x0364;ttigungscapacita&#x0364;t be&#x017F;timmt wird; der jedesmahlige Zu-<lb break="no"/>&#x017F;tand kann nur ihre Verbindung mehr oder weniger begu&#x0364;n-<lb break="no" />&#x017F;tigen. Aber zu &#x017F;agen, daß Wa&#x017F;&#x017F;er&#x017F;toff und Sauer&#x017F;toff<lb break="yes"/>&#x017F;ta&#x0364;rker mit einander verwandt &#x017F;eyen im gasfo&#x0364;rmigen Zu-<lb break="no" />&#x017F;tande, heißt behaupten, ihre Molekulen ziehen &#x017F;ich &#x017F;ta&#x0364;rker<lb break="yes"/>an, wenn &#x017F;ie von einander &#x017F;ehr entfernt, als wenn &#x017F;ie &#x017F;ich<lb break="yes" />&#x017F;ehr nahe &#x017F;ind. Da die&#x017F;e Einwu&#x0364;rfe gegen eine bloß auf<lb break="yes"/>die Verwandt&#x017F;chaften gegru&#x0364;ndete Erkla&#x0364;rung uns von eini-<lb break="no"/>gem Gewicht zu &#x017F;eyn &#x017F;chienen, &#x017F;o haben wir eine andere<lb break="yes"/>zu geben ver&#x017F;ucht, die un&#x017F;erer Meinung nach keinen &#x017F;olchen<lb break="yes"/>Schwierigkeiten unterworfen i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Alle verbrennliche Ko&#x0364;rper u&#x0364;berhaupt bedu&#x0364;rfen, um &#x017F;ich<lb break="yes"/>mit dem Sauer&#x017F;toffe zu verbinden, einer be&#x017F;timmten Erho&#x0364;-<lb break="no"/>hung der Temperatur: die Kohle z. B. verwandelt &#x017F;ich<lb break="yes"/>nur im rothglu&#x0364;henden Zu&#x017F;tande in Kohlen&#x017F;a&#x0364;ure, und eben<lb break="yes"/>die&#x017F;elbe, welche fortfa&#x0364;hrt zu brennen, wenn in hoher Tem-<lb break="no"/>peratur ein Strom von Wa&#x017F;&#x017F;erdampf auf &#x017F;ie geleitet wird,<lb break="yes" />verli&#x017F;cht, wenn man &#x017F;ie in Wa&#x017F;&#x017F;er taucht. Die&#x017F;en Grund-<lb break="no"/>&#x017F;atz zugegeben, wollen wir annehmen, daß ein Ko&#x0364;rper in<lb break="yes"/>
+                        <pb n="63" facs="#f0019"/> einem be&#x017F;timmten Volum atmo&#x017F;pha&#x0364;ri&#x017F;cher Luft brenne, und<lb break="yes"/>die dazu no&#x0364;thige Temperatur bloß durch die von der Ab-<lb break="no" />&#x017F;orbtion des Sauer&#x017F;toffs herru&#x0364;hrende Wa&#x0364;rme unterhalten<lb break="yes"/>werde; ferner, daß im Anfange der Verbrennung die von<lb break="yes"/>der Bindung des, in einem Cubikcentimeter Luft befindlichen,<lb break="yes"/>Sauer&#x017F;toffs herru&#x0364;hrende Wa&#x0364;rme gleich 1, und die wa&#x0364;hrend<lb break="yes"/>die&#x017F;er Bindung, theils als &#x017F;trahlende Wa&#x0364;rme, theils ver-<lb break="no"/>mittel&#x017F;t der Ab&#x017F;orbtion durch den Stick&#x017F;toff oder andere<lb break="yes" />Ko&#x0364;rper verlorne Wa&#x0364;rme gleich <formula notation="TeX" >\frac{1}{2}</formula> &#x017F;ey, (indem wir hier das<lb break="yes" />Ge&#x017F;etz, nach welchem &#x017F;ie abnimt, u&#x0364;bergehen): &#x017F;o wird, wie<lb break="yes"/>man &#x017F;ieht, in den er&#x017F;ten Augenblicken der Verbrennung die<lb break="yes"/>Temperatur des Ko&#x0364;rpers erho&#x0364;het werden, in dem Maße<lb break="yes"/>aber, als die Menge des Sauer&#x017F;toffs &#x017F;ich vermindern, und<lb break="yes"/>die des Stick&#x017F;toffs verha&#x0364;ltnißma&#x0364;ßig vergro&#x0364;ßern wird, auch<lb break="yes"/>die mitgetheilte Wa&#x0364;rme abnehmen mu&#x0364;&#x017F;&#x017F;en. Es wird dem-<lb break="no"/>nach ein Zeitpunct eintreten, in welchem die verlorne Wa&#x0364;r-<lb break="no"/>me der mitgetheilten gleich i&#x017F;t, und nach welchem die Ver-<lb break="no" />brennung, da die Temperatur zu niedrig i&#x017F;t, aufho&#x0364;ren wird.<lb break="yes"/>Daß aber das Verbrennen wirklich wegen der zu niedrigen<lb break="yes"/>Temperatur aufho&#x0364;re, das ergiebt &#x017F;ich hinla&#x0364;nglich daraus,<lb break="yes"/>daß es fortdauert, wenn man die Temperatur durch a&#x0364;ußere<lb break="yes"/>Mittel hoch genug erha&#x0364;lt.</p>
+                    <lb break="yes"/>
+                    <p>I&#x017F;t die&#x017F;e Erkla&#x0364;rung richtig, &#x017F;o wird &#x017F;ie auch fe&#x017F;t&#x017F;tehen,<lb break="yes"/>wenn &#x017F;tatt des Stickgas &#x017F;chwefelig&#x017F;aures, kohlen&#x017F;aures oder<lb break="yes"/>jedes andere Gas mit dem Sauer&#x017F;toffgas vermi&#x017F;cht i&#x017F;t:<lb break="yes"/>bloß in dem fru&#x0364;hern oder &#x017F;pa&#x0364;tern Aufho&#x0364;ren der Verbren-<lb break="no" />nung ko&#x0364;nnten &#x017F;ich Unter&#x017F;chiede vom Stickgas zeigen, je<lb break="yes"/>nachdem &#x017F;ie eine gro&#x0364;ßere oder geringere Capacita&#x0364;t fu&#x0364;r die<lb break="yes"/>Wa&#x0364;rme ha&#x0364;tten, (vorausge&#x017F;etzt u&#x0364;brigens, daß &#x017F;ie in gleichem<lb break="yes"/>Verha&#x0364;ltniß mit dem Sauer&#x017F;toffgas gemengt wa&#x0364;ren), als<lb break="yes"/>
+                        <pb n="64" facs="#f0020"/> die&#x017F;es; und ha&#x0364;tte jedes Gas eine gleiche Capacita&#x0364;t fu&#x0364;r die-<lb break="no"/>&#x017F;elbe, &#x017F;o mu&#x0364;ßte in allen die Verbrennung in dem gleichen<lb break="yes"/>Zeitpunct aufho&#x0364;ren, wie wir denn ge&#x017F;ehen haben, daß es<lb break="yes"/>in Hin&#x017F;icht des Sauer&#x017F;toffgas und Stickgas fa&#x017F;t Statt<lb break="yes"/>finde, und man ko&#x0364;nnte vielleicht auf die&#x017F;em Wege zur Auf-<lb break="no" />lo&#x0364;&#x017F;ung der &#x017F;o wichtigen Frage, ob die ver&#x017F;chiedenen Gas-<lb break="no"/>arten gleiche oder ungleiche Capacita&#x0364;t fu&#x0364;r die Wa&#x0364;rme ha-<lb break="no"/>ben, gelangen.</p>
+                    <lb break="yes"/>
+                    <p>Dem zu Folge wu&#x0364;rde ein verbrennlicher Ko&#x0364;rper, der<lb break="yes"/>Schwefel z. B., nicht deswegen in einem be&#x017F;timmten Volum<lb break="yes"/>Luft zu brennen aufho&#x0364;ren, weil das Stickgas oder die er-<lb break="no"/>zeugten Gasarten eine gro&#x0364;ßere Verwandt&#x017F;chaft zu dem<lb break="yes"/>Sauer&#x017F;toff haben, als der verbrennliche Ko&#x0364;rper, &#x017F;ondern<lb break="yes"/>weil die&#x017F;e Gasarten, die ihre Temperatur mit der des ver-<lb break="no" />brennenden Ko&#x0364;rpers ins Gleichgewicht zu &#x017F;etzen &#x017F;treben,<lb break="yes"/>mehr Wa&#x0364;rme ab&#x017F;orbiren, als durch die Bindung des Sauer-<lb break="no"/>&#x017F;toffgas hervorgebracht wird, wodurch denn bald die<lb break="yes"/>Temperatur unter die zur Verbrennung no&#x0364;thige kommt.<lb break="yes"/>Man weiß in der That auch, daß der Schwefel in einer<lb break="yes"/>Luft, in welcher er verlo&#x0364;&#x017F;cht war, bei hinreichender Erho&#x0364;-<lb break="no" />hung der Temperatur zu brennen fortfahren kann.</p>
+                    <lb break="yes"/>
+                    <p>Das, was bei der augenblicklichen Verbrennung des<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas in <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;s</hi>
+                        </persName> Eudiometer Statt hat, i&#x017F;t<lb break="yes"/>durchaus dem a&#x0364;hnlich, was bei &#x017F;einer allma&#x0364;hligen in einem<lb break="yes"/>be&#x017F;timmten Volum von Luft, oder bei der Verbrennung<lb break="yes"/>jedes andern Ko&#x0364;rpers vorgeht. Stellt man eine Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgaslampe unter eine Glocke mit Sauer&#x017F;toffgas, &#x017F;o wird<lb break="yes"/>die Flamme klein, lebhaft und &#x017F;chwach gefa&#x0364;rbt &#x017F;eyn; fu&#x0364;llet<lb break="yes"/>man &#x017F;ie &#x017F;tatt de&#x017F;&#x017F;en mit atmo&#x017F;pha&#x0364;ri&#x017F;cher Luft, &#x017F;o wird die<lb break="yes"/>
+                        <fw type="catch" place="bottom">Flamme</fw>
+                        <lb break="yes"/>
+                        <pb n="65" facs="#f0021"/> Flamme einen gro&#x0364;ßern Umfang haben, weniger lebhaft und<lb break="yes"/>&#x017F;ta&#x0364;rker gefa&#x0364;rbt &#x017F;eyn. In dem Maße, wie das Sauer-<lb break="no"/>&#x017F;toffgas abnimt, wird die Flamme, weil das Wa&#x017F;&#x017F;er-<lb break="no" />&#x017F;toffgas geno&#x0364;thigt i&#x017F;t, den Sauer&#x017F;toff in einer gro&#x0364;ßern Ent-<lb break="no"/>fernung zu &#x017F;uchen, aufs Neue an Umfang wach&#x017F;en, und<lb break="yes"/>bald, nachdem &#x017F;ie &#x017F;ich &#x017F;chwach bla&#x0364;ulichgru&#x0364;n gefa&#x0364;rbt hat,<lb break="yes"/>ganz erlo&#x0364;&#x017F;chen. Von gleicher Art &#x017F;ind die Er&#x017F;cheinungen<lb break="yes"/>in <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;s</hi>
+                        </persName> Eudiometer: i&#x017F;t das Verha&#x0364;ltniß des Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas und Sauer&#x017F;toffgas nicht weit von demjenigen entfernt,<lb break="yes"/>in welchem &#x017F;ie Wa&#x017F;&#x017F;er bilden, &#x017F;o i&#x017F;t die Flamme, ihrer Aus-<lb break="no"/>breitung ungeachtet, noch &#x017F;ehr lebhaft; mi&#x017F;cht man aber<lb break="yes"/>z. B. 1000 Sauer&#x017F;toffgas mit 100 Wa&#x017F;&#x017F;er&#x017F;toffgas, &#x017F;o i&#x017F;t<lb break="yes"/>die Flamme &#x017F;chwach, bla&#x0364;ulichgru&#x0364;n, und die Verbrennung<lb break="yes"/>des Wa&#x017F;&#x017F;er&#x017F;toffgas i&#x017F;t bey weitem nicht voll&#x017F;ta&#x0364;ndig, da man<lb break="yes"/>noch fa&#x017F;t <formula notation="TeX">\frac{2}{3}</formula> davon im Ru&#x0364;ck&#x017F;tande findet. Was auch noch<lb break="yes"/>bewei&#x017F;et, daß bloß wegen zu niedriger Temperatur die Ver-<lb break="no"/>brennung nicht voll&#x017F;ta&#x0364;ndig war, i&#x017F;t, daß alles Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="no"/>gas ab&#x017F;orbirt wird, wenn man den Ru&#x0364;ck&#x017F;tand durch eine glu&#x0364;-<lb break="no"/>hende Porcellainro&#x0364;hre gehen la&#x0364;ßt, wie wir die&#x017F;es ver&#x017F;ucht haben.</p>
+                    <lb break="yes"/>
+                    <p>Wir wollen noch eines be&#x017F;ondern Um&#x017F;tandes bey der<lb break="yes"/>Verbindung des Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas geden-<lb break="no"/>ken, der &#x017F;eit langer Zeit <persName key="monge_g">
+                            <hi rendition="#g">Monge&#x2019;s</hi>
+                        </persName> Aufmerk&#x017F;amkeit erregt<lb break="yes"/>hat. Wie kommt es, &#x017F;agt die&#x017F;er beru&#x0364;hmte Phy&#x017F;iker, daß,<lb break="yes"/>wenn man die Temperatur der beyden Gasarten erho&#x0364;ht,<lb break="yes"/>d. h. die Menge des Auflo&#x0364;&#x017F;ungsmittels vergro&#x0364;ßert, man<lb break="yes"/>die Anziehung vermindert, die es fu&#x0364;r &#x017F;eine Grundlagen<lb break="yes"/>hatte? Weit entfernt zu glauben, daß man bey dem gegen-<lb break="no"/>wa&#x0364;rtigen Zu&#x017F;tande un&#x017F;erer Kenntni&#x017F;&#x017F;e davon eine genu&#x0364;gende<lb break="yes" />Erkla&#x0364;rung geben ko&#x0364;nne, wollen wir vielmehr nur die Aufmerk-<lb break="no"/>&#x017F;amkeit der Phy&#x017F;iker darauf lenken. In der That zeigt<lb break="yes"/>
+                        <pb n="66" facs="#f0022"/> der ela&#x017F;ti&#x017F;che Zu&#x017F;tand nach dem Begriffe, welchen man &#x017F;ich<lb break="yes"/>von der Kraft, welche Verbindungen hervorbringt, und den<lb break="yes"/>Kra&#x0364;ften, die ihr entgegen wirken, machen kann, an, daß<lb break="yes"/>die Coha&#x0364;&#x017F;ionskraft zer&#x017F;to&#x0364;rt &#x017F;ey, und daß beyde Ko&#x0364;rper in<lb break="yes"/>die&#x017F;em Zu&#x017F;tande in der zur Verbindung gu&#x0364;n&#x017F;tig&#x017F;ten Bedin-<lb break="no"/>gung &#x017F;ich befinden, &#x017F;o daß, wenn nun die anziehende Kraft<lb break="yes"/>ihrer Molekulen in eine zuru&#x0364;ck&#x017F;toßende umgea&#x0364;ndert wird,<lb break="yes"/>alles, was die letztere begu&#x0364;n&#x017F;tigt, der er&#x017F;tern entgegenwirkt.<lb break="yes" />Nun aber ge&#x017F;chieht es, daß man durch Erho&#x0364;hung der Tem-<lb break="no"/>peratur der beyden Gasarten, d. h. durch Vermehrung<lb break="yes"/>ihrer Zuru&#x0364;ck&#x017F;toßungskraft, ihre Anziehungskraft begu&#x0364;n&#x017F;tigt.<lb break="yes"/>Man kann nicht glauben, daß die Wa&#x0364;rme hier bloß ihre<lb break="yes"/>Molekulen von einander entferne: denn warum &#x017F;ollte dann<lb break="yes"/>nicht ein Gemi&#x017F;ch von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ich<lb break="yes"/>unter dem Recipienten einer Luftpumpe entzu&#x0364;nden, wo man<lb break="yes" />&#x017F;ie ins Unendliche verdu&#x0364;nnen kann? Auch kann man nicht<lb break="yes"/>glauben, daß die Wa&#x0364;rme etwa, indem &#x017F;ie plo&#x0364;tzlich einwirkte,<lb break="yes"/>eine Zu&#x017F;ammenpre&#x017F;&#x017F;ung hervorbringen ko&#x0364;nne, welche die Ver-<lb break="no"/>bindung der beyden Gasarten begu&#x0364;n&#x017F;tigte, indem &#x017F;ie ihre<lb break="yes"/>Molekulen einander na&#x0364;hert; denn man kann &#x017F;ich leicht u&#x0364;ber-<lb break="no"/>zeugen, daß ein Gemi&#x017F;ch von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas, wenn man es auch &#x017F;ehr allma&#x0364;hlig erhitzt, und &#x017F;o,<lb break="yes"/>daß nichts &#x017F;eine Ausdehnung verhindert, &#x017F;ich doch entzu&#x0364;nden<lb break="yes"/>wird, &#x017F;obald als die Temperatur hoch genug ge&#x017F;tiegen i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Wir gehen jetzt zur Beantwortung der zweyten Frage.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <persName key="allen_w">Allen</persName> u&#x0364;ber die Zu&#x017F;ammen&#x017F;etzung des Wa&#x017F;&#x017F;ers ange-<lb break="no" />&#x017F;tellten Ver&#x017F;uchen zu Folge hat man das Re&#x017F;ultat allge-<lb break="no"/>mein als gleichfo&#x0364;rmig ange&#x017F;ehen. Bisweilen jedoch erhielt<lb break="yes"/>man eine kleine Menge Salpeter&#x017F;a&#x0364;ure; aber man fand<lb break="yes"/>
+                        <pb n="67" facs="#f0023"/> daß die&#x017F;e Sa&#x0364;ure kein be&#x017F;ta&#x0364;ndiges Product der Verbrennung<lb break="yes"/>des Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ey, und <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="seguin_01">Seguin</persName>
+                        </hi> und<lb break="yes"/>
+                        <hi rendition="#g">Vauquelin</hi> lehrten, wie man die Bildung der&#x017F;elben ver-<lb break="no"/>meiden, und ein nicht &#x017F;aures Wa&#x017F;&#x017F;er erhalten ko&#x0364;nne. Aber<lb break="yes"/>noch i&#x017F;t nicht bewie&#x017F;en, daß man nicht oxygenirtes oder<lb break="yes"/>hydrogenirtes Wa&#x017F;&#x017F;er gebildet habe, weil man in allen ge-<lb break="no"/>nauen Ver&#x017F;uchen, die man an&#x017F;tellte, die Verbrennung des<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas immer auf die&#x017F;elbe Wei&#x017F;e bewirkte, und es<lb break="yes"/>wa&#x0364;re ho&#x0364;ch&#x017F;tens bewie&#x017F;en, daß unter jenen Um&#x017F;ta&#x0364;nden das<lb break="yes" />Wa&#x017F;&#x017F;er immer gleichfo&#x0364;rmig gewe&#x017F;en &#x017F;ey. Vergleicht man<lb break="yes"/>die Verbrennung des Wa&#x017F;&#x017F;er&#x017F;toffgas mit der des Salpeter-<lb break="no" />gas, deren Product &#x017F;o vera&#x0364;nderlich i&#x017F;t, &#x017F;o wird man noch<lb break="yes"/>mehr zu dem Gedanken be&#x017F;timmt, daß &#x017F;ich, da in den ange-<lb break="no"/>&#x017F;tellten Ver&#x017F;uchen immer Sauer&#x017F;toffgas u&#x0364;ber&#x017F;chu&#x0364;&#x017F;&#x017F;ig gewe&#x017F;en<lb break="yes"/>i&#x017F;t, ein oxygenirtes Wa&#x017F;&#x017F;er gebildet haben ko&#x0364;nne, &#x017F;o wie<lb break="yes"/>ein hydrogenirtes, wenn das Wa&#x017F;&#x017F;er&#x017F;toffgas hervor&#x017F;tehend<lb break="yes" />gewe&#x017F;en wa&#x0364;re. Angenommen nun, daß &#x017F;ich z. B. ein oxy-<lb break="no"/>genirtes Wa&#x017F;&#x017F;er bilden ko&#x0364;nne, &#x017F;o wa&#x0364;re dies, wenn es in<lb break="yes"/>allen Fa&#x0364;llen ent&#x017F;ta&#x0364;nde, und &#x017F;tets gleichfo&#x0364;rmig wa&#x0364;re, fu&#x0364;r die<lb break="yes"/>Analy&#x017F;e der Luft, die &#x017F;ich nur auf das Verha&#x0364;ltniß &#x017F;einer<lb break="yes" />Be&#x017F;tandtheile &#x017F;tu&#x0364;tzt, gleichgu&#x0364;ltig; ent&#x017F;ta&#x0364;nde es aber nur,<lb break="yes"/>wenn Sauer&#x017F;toffgas u&#x0364;ber&#x017F;chu&#x0364;&#x017F;&#x017F;ig i&#x017F;t, &#x017F;o wu&#x0364;rde man offenbar<lb break="yes"/>nicht mehr die&#x017F;elben Verha&#x0364;ltni&#x017F;&#x017F;e erhalten, wenn wech&#x017F;els-<lb break="no"/>wei&#x017F;e bald das eine, bald das andere Gas u&#x0364;ber&#x017F;chu&#x0364;&#x017F;&#x017F;ig wa&#x0364;re.<lb break="yes"/>Nun hat aber eine große Anzahl von uns ange&#x017F;tellter Ver-<lb break="no"/>&#x017F;uche gezeigt, daß man &#x017F;tets die&#x017F;elben Verha&#x0364;ltni&#x017F;&#x017F;e erhalte,<lb break="yes"/>wenn man ein Mahl das eine, ein ander Mahl das an-<lb break="no"/>dere Gas im Uebermaß zu&#x017F;etzt: das Re&#x017F;ultat der Verbren-<lb break="no"/>nung des Wa&#x017F;&#x017F;er&#x017F;toffgas i&#x017F;t al&#x017F;o von &#x017F;tets gleichfo&#x0364;rmiger<lb break="yes"/>Be&#x017F;chaffenheit. Die Er&#x017F;cheinungen bei der Zer&#x017F;etzung des<lb break="yes"/>
+                        <pb n="68" facs="#f0024"/> Wa&#x017F;&#x017F;ers durch den <persName key="galvani_la">Galvanismus</persName> &#x017F;cheinen inde&#x017F;&#x017F;en zu be-<lb break="no"/>wei&#x017F;en, daß das Wa&#x017F;&#x017F;er der Oxygenirung und Hydrogeni-<lb break="no"/>rung fa&#x0364;hig &#x017F;ey, und eben durch die&#x017F;e Annahme haben <hi rendition="#g">La-<lb break="no"/>place</hi> und <persName key="berthollet_cl">
+                            <hi rendition="#g">Berthollet</hi>
+                        </persName> jene Zer&#x017F;etzung erkla&#x0364;rt. Ohne<lb break="yes" />die&#x017F;er Erkla&#x0364;rung, welche uns die genugthuend&#x017F;te zu &#x017F;eyn<lb break="yes"/>&#x017F;cheint, die bis jetzt aufge&#x017F;tellt worden, etwas entgegen&#x017F;etzen<lb break="yes"/>zu wollen, bemerken wir nur, daß die voll&#x017F;ta&#x0364;ndige Ab&#x017F;orb-<lb break="no"/>tion des Wa&#x017F;&#x017F;er&#x017F;toffs an dem einen Drahte, und die des<lb break="yes"/>Sauer&#x017F;toffs an dem andern bewei&#x017F;et, daß das Wa&#x017F;&#x017F;er in<lb break="yes"/>der That nicht hydrogenirt oder oxygenirt werde, denn um<lb break="yes"/>es zu werden, mu&#x0364;ßte es von dem einen Gas ein gro&#x0364;ßeres<lb break="yes"/>Verha&#x0364;ltniß ab&#x017F;orbiren, als zur Zu&#x017F;ammen&#x017F;etzung des Wa&#x017F;-<lb break="no"/>&#x017F;ers erforderlich i&#x017F;t. Ab&#x017F;orbirt es aber an den beiden Dra&#x0364;h-<lb break="no"/>ten beide in dem zu jener Zu&#x017F;ammen&#x017F;etzung no&#x0364;thigen Ver-<lb break="no" />ha&#x0364;ltni&#x017F;&#x017F;e, &#x017F;o mu&#x0364;&#x017F;&#x017F;en begreiflich die Eigen&#x017F;chaften des einen<lb break="yes"/>Gas durch die des andern neutrali&#x017F;irt werden. Das Wa&#x017F;-<lb break="no" />&#x017F;er kann &#x017F;ich al&#x017F;o in dem beregten Falle augenblicklich zwar<lb break="yes"/>an dem einen Drahte oxygeniren, an dem andern hydro-<lb break="no"/>geniren, aber die beiden Gasarten mu&#x0364;&#x017F;&#x017F;en, da &#x017F;ie der Ela-<lb break="no" />&#x017F;ticita&#x0364;t beraubt &#x017F;ind, und &#x017F;ich in dem geho&#x0364;rigen Verha&#x0364;ltniß<lb break="yes"/>zu einander befinden, bald wieder in Verbindung treten.</p>
+                    <lb break="yes"/>
+                    <p>Nachdem nun wohl bewie&#x017F;en i&#x017F;t, daß, unter be&#x017F;timm-<lb break="no"/>ten Um&#x017F;ta&#x0364;nden, das Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas voll-<lb break="no" />&#x017F;ta&#x0364;ndig ab&#x017F;orbirt werden ko&#x0364;nnen, und daß das Product<lb break="yes"/>ihrer Verbindung &#x017F;tets gleichfo&#x0364;rmig &#x017F;ey, &#x017F;o haben wir jetzt,<lb break="yes" />zur Beantwortung der dritten Frage, nur das Verha&#x0364;ltniß<lb break="yes"/>zu be&#x017F;timmen, in welchem &#x017F;ie Wa&#x017F;&#x017F;er bilden, worauf die<lb break="yes"/>folgenden Ver&#x017F;uche gehen.</p>
+                    <lb break="yes"/>
+                    <p>100 Theile Sauer&#x017F;toffgas mit 300 Theilen Wa&#x017F;&#x017F;er-<lb break="no"/>
+                        <pb n="69" facs="#f0025"/> &#x017F;toffgas vermi&#x017F;cht, gaben nach der Entzu&#x0364;ndung durch den<lb break="yes"/>electri&#x017F;chen Funken in zwo&#x0364;lf Ver&#x017F;uchen nach&#x017F;tehende Ru&#x0364;ck-<lb break="no"/>&#x017F;ta&#x0364;nde:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>100,8</cell>
+                            <cell>101,0</cell>
+                            <cell>102,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101,4</cell>
+                            <cell>101,7</cell>
+                            <cell>102,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100,5</cell>
+                            <cell>102,0</cell>
+                            <cell>101,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101,0</cell>
+                            <cell>101,5</cell>
+                            <cell>101,5</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Nach einer Mittelzahl al&#x017F;o 101,3.</p>
+                    <lb break="yes"/>
+                    <p>100 Theile als &#x017F;ehr rein angenommenes Sauer&#x017F;toff-<lb break="no" />gas wu&#x0364;rden al&#x017F;o 198,7 Wa&#x017F;&#x017F;er&#x017F;toffgas erfordert haben:<lb break="yes"/>bei der Pru&#x0364;fung durch Schwefelalkali aber wurde er&#x017F;teres<lb break="yes"/>nur bis auf nahe 0,004 ab&#x017F;orbirt; es folgt al&#x017F;o, daß 99,6<lb break="yes" />Sauer&#x017F;toffgas 199,1 Wa&#x017F;&#x017F;er&#x017F;toffgas ab&#x017F;orbirt haben, oder<lb break="yes"/>daß 100 des er&#x017F;tern 199,89 des letztern ab&#x017F;orbirt haben<lb break="yes"/>wu&#x0364;rden; in runden Zahlen: daß 100 Sauer&#x017F;toffgas 200<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas zur vo&#x0364;lligen Sa&#x0364;ttigung bedu&#x0364;rfen.</p>
+                    <lb break="yes"/>
+                    <p>In den vor&#x017F;tehenden Ver&#x017F;uchen war das Sauer&#x017F;toff-<lb break="no"/>gas der ganz ab&#x017F;orbirte Theil; die folgenden Re&#x017F;ultate &#x017F;ind<lb break="yes"/>von 12 Ver&#x017F;uchen, wo das umgekehrte Statt fand, und<lb break="yes"/>200 Theile von jedem Gas entzu&#x0364;ndet wurden:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>101,5</cell>
+                            <cell>102,0</cell>
+                            <cell>101,5</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101,3</cell>
+                            <cell>102,0</cell>
+                            <cell>102,3</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102,2</cell>
+                            <cell>101,0</cell>
+                            <cell>102,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102,0</cell>
+                            <cell>101,0</cell>
+                            <cell>102,0</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Mittele Menge des Ru&#x0364;ck&#x017F;tandes 101,7</p>
+                    <lb break="yes"/>
+                    <p>Mittele Ab&#x017F;orbtion &#x2012; &#x2012; 298,3</p>
+                    <lb break="yes"/>
+                    <p>200 Theile Wa&#x017F;&#x017F;er&#x017F;toffgas, als rein angenommen, wu&#x0364;r-<lb break="no"/>den demnach 98,3 Sauer&#x017F;toffgas erfordern, wa&#x0364;hrend nach<lb break="yes"/>
+                        <pb n="70" facs="#f0026"/> dem eben be&#x017F;timmten Verha&#x0364;ltniß 100 no&#x0364;thig &#x017F;eyn &#x017F;ollten.<lb break="yes"/>Nehmen wir die&#x017F;es Verha&#x0364;ltniß als genau an, &#x017F;o wa&#x0364;-<lb break="no"/>ren in den ab&#x017F;orbirten 298,3 nur 198,8 Wa&#x017F;&#x017F;er&#x017F;toffgas,<lb break="yes"/>wodurch in dem letzteren 0,006 Stickgas angedeutet<lb break="yes"/>wu&#x0364;rden.</p>
+                    <lb break="yes"/>
+                    <p>Aber auch &#x017F;elb&#x017F;t, wenn man annimt, daß das Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas vollkommen rein war, &#x017F;o &#x017F;timmen die zwey, das<lb break="yes"/>eine Mahl bei u&#x0364;berwiegendem Wa&#x017F;&#x017F;er&#x017F;toffgas, das andere<lb break="yes"/>Mahl bei u&#x0364;berwiegendem Sauer&#x017F;toffgas erhaltenen, Verha&#x0364;lt-<lb break="no"/>ni&#x017F;&#x017F;e hinreichend unter &#x017F;ich, um alles bisher Ge&#x017F;agte zu<lb break="yes" />be&#x017F;ta&#x0364;ttigen. Um &#x017F;ie ganz gleich zu machen, darf man nur<lb break="yes"/>0,006 Stickgas in dem Wa&#x017F;&#x017F;er&#x017F;toffgas annehmen, de&#x017F;&#x017F;en<lb break="yes"/>Gegenwart wir auch wirklich bewei&#x017F;en ko&#x0364;nnen.</p>
+                    <lb break="yes"/>
+                    <p>Wir &#x017F;ahen, daß in den vorerwa&#x0364;hnten Ver&#x017F;uchen 200<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas, ohne eine Berichtigung vorzunehmen, 98,3<lb break="yes"/>Sauer&#x017F;toffgas ab&#x017F;orbirten. Nehmen wir jetzt die von der<lb break="yes"/>Verpuffung von 100 Sauer&#x017F;toffgas mit 300 Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>ru&#x0364;ck&#x017F;ta&#x0364;ndigen 101,0 und 101,5, und la&#x017F;&#x017F;en &#x017F;ie mit 200<lb break="yes"/>Sauer&#x017F;toffgas verpuffen. In die&#x017F;en beyden Ru&#x0364;ck&#x017F;ta&#x0364;nden<lb break="yes"/>mu&#x0364;&#x017F;&#x017F;en von den bei der er&#x017F;ten Verpuffung gebrauchten 200<lb break="yes"/>Sauer&#x017F;toffgas, 0,008 Stickgas befindlich &#x017F;eyn, und wa&#x0364;re<lb break="yes"/>nun der Re&#x017F;t von 201,7 reines Wa&#x017F;&#x017F;er&#x017F;toffgas, &#x017F;o mu&#x0364;ßte<lb break="yes"/>er 99,1 Sauer&#x017F;toffgas ab&#x017F;orbiren, und folglich &#x017F;ollten durch<lb break="yes"/>die Entzu&#x0364;ndung 300,8 ver&#x017F;chwinden. Es ver&#x017F;chwanden<lb break="yes"/>aber nur 295,0; der Re&#x017F;t von 201,7 muß demnach nicht<lb break="yes"/>reines Wa&#x017F;&#x017F;er&#x017F;toffgas gewe&#x017F;en &#x017F;eyn, &#x017F;ondern nach dem Ver-<lb break="no" />ha&#x0364;ltniß von 100 Sauer&#x017F;toff zu 200 Wa&#x017F;&#x017F;er&#x017F;toff 5,0 Stick-<lb break="no"/>gas enthalten haben, die von 600 Wa&#x017F;&#x017F;er&#x017F;toffgas herru&#x0364;hr-<lb break="no"/>ten, was folglich 0,008 betra&#x0364;gt.</p>
+                    <lb break="yes"/>
+                    <pb n="71" facs="#f0027"/>
+                    <p>Es &#x017F;cheint uns demnach bewie&#x017F;en, daß 100 Theile<lb break="yes" />Sauer&#x017F;toffgas (dem Volum nach) nahe 200 Theile Wa&#x017F;-<lb break="no"/>&#x017F;er&#x017F;toffgas zu ihrer Sa&#x0364;ttigung bedu&#x0364;rfen. Dem Ver&#x017F;uch der<lb break="yes"/>Herren <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="seguin_01">Seguin</persName>
+                        </hi> und <persName key="vauquelin_ln">
+                            <hi rendition="#g">Vauquelin</hi>
+                        </persName> zu Folge<lb break="yes"/>wu&#x0364;rde das Verha&#x0364;ltniß = 100: 205 &#x017F;eyn; wir bemerken<lb break="yes"/>inde&#x017F;&#x017F;en, daß man, es werde nun das eine oder das andere<lb break="yes" />Verha&#x0364;ltniß angenommen, in Hin&#x017F;icht der ab&#x017F;oluten Menge<lb break="yes"/>des Sauer&#x017F;toffs der Luft nur ho&#x0364;ch&#x017F;tens um 0,0035 &#x017F;ich<lb break="yes"/>irren ko&#x0364;nne, und daß der Irrthum noch viel kleiner i&#x017F;t,<lb break="yes"/>wenn es auf Be&#x017F;timmung relativer Mengen ankommt.</p>
+                    <lb break="yes"/>
+                    <p>Wir haben uns u&#x0364;berzeugt, daß das Verha&#x0364;ltniß &#x017F;ich<lb break="yes"/>durch die Abwech&#x017F;elungen der Temperatur nicht vera&#x0364;ndere.<lb break="yes"/>Es i&#x017F;t einleuchtend, daß es &#x017F;o &#x017F;ich auch verhalten mußte,<lb break="yes"/>weil die Wa&#x0364;rme beide Gasarten gleich &#x017F;ehr ausdehnt, <choice>
+                            <sic>nnd</sic>
+                            <corr type="editorial">und</corr>
+                        </choice>
+                        <lb break="yes"/>&#x017F;ie eine gleiche Menge Wa&#x017F;&#x017F;er auflo&#x0364;&#x017F;en macht, folglich die<lb break="yes"/>in gleichen Volumen enthaltenen Gewichte von wirklichem<lb break="yes" />Sauer&#x017F;toff und Wa&#x017F;&#x017F;er&#x017F;toff unter &#x017F;ich &#x017F;tets in dem&#x017F;elben<lb break="yes"/>Verha&#x0364;ltniß bleiben. Es wa&#x0364;re daher, angenommen, daß<lb break="yes"/>das dem Volum nach ausgemittelte Verha&#x0364;ltniß wohl ge-<lb break="no"/>gru&#x0364;ndet i&#x017F;t, genauer zu &#x017F;agen, daß 100 Sauer&#x017F;toffgas 200<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas, dem Maße nach, erfordern, als das Be-<lb break="no"/>&#x017F;tandtheilverha&#x0364;ltniß des Wa&#x017F;&#x017F;ers nach Gewicht anzugeben.<lb break="yes" />Wa&#x0364;re das Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas, woraus man<lb break="yes" />Wa&#x017F;&#x017F;er gebildet hat, vollkommen trocken gewe&#x017F;en, oder ha&#x0364;tte<lb break="yes"/>man wegen der vielleicht darin befindlichen Feuchtigkeit die<lb break="yes"/>no&#x0364;thige Berichtigung gemacht, &#x017F;o wu&#x0364;rde es gleichgu&#x0364;ltig<lb break="yes" />&#x017F;eyn, das Verha&#x0364;ltniß in Gewichten oder in Maßen anzu-<lb break="no"/>geben; da aber das Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ich in doppelt &#x017F;o gro-<lb break="no"/>ßem Volum mit dem Sauer&#x017F;toffgas verbindet, beide aber<lb break="yes"/>gleich viel Wa&#x017F;&#x017F;er auflo&#x0364;&#x017F;en, &#x017F;o i&#x017F;t offenbar, daß die Wa&#x017F;&#x017F;er-<lb break="no"/>
+                        <pb n="72" facs="#f0028"/> mengen, welche &#x017F;ie in die Verbindung bringen, unter &#x017F;ich<lb break="yes"/>nicht in dem&#x017F;elben Verha&#x0364;ltniß &#x017F;tehen, wie die Gewichts-<lb break="no"/>mengen des Wa&#x017F;&#x017F;er&#x017F;toffs und Sauer&#x017F;toffs, und daß folglich<lb break="yes"/>das Be&#x017F;tandtheilverha&#x0364;ltniß des Wa&#x017F;&#x017F;ers dadurch beeintra&#x0364;ch-<lb break="no"/>tigt werden mu&#x0364;&#x017F;&#x017F;e.</p>
+                    <lb break="yes"/>
+                    <p>Das Verha&#x0364;ltniß dem Maße nach hat folglich den<lb break="yes" />Vortheil, bei Temperatur- und Feuchtigkeitszu&#x017F;tands-Wech-<lb break="no"/>&#x017F;el be&#x017F;ta&#x0364;ndig zu &#x017F;eyn, wogegen das dem Gewicht nach un-<lb break="no"/>ter gleichen Um&#x017F;ta&#x0364;nden vera&#x0364;nderlich i&#x017F;t. Man glaube nicht,<lb break="yes"/>daß die&#x017F;er Um&#x017F;tand &#x017F;o unbedeutend &#x017F;ey: es la&#x0364;ßt &#x017F;ich &#x017F;ehr<lb break="yes"/>leicht zeigen, daß er auf das Be&#x017F;tandtheilverha&#x0364;ltniß des<lb break="yes" />Wa&#x017F;&#x017F;ers bedeutenden Einfluß habe. Nach dem Ver&#x017F;uche<lb break="yes"/>der Herren <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="seguin_01">Seguin</persName>
+                        </hi> und <persName key="vauquelin_ln">
+                            <hi rendition="#g">Vauquelin,</hi>
+                        </persName> dem<lb break="yes"/>bis jetzt genaue&#x017F;ten u&#x0364;ber die&#x017F;en Gegen&#x017F;tand, entha&#x0364;lt das<lb break="yes" />Wa&#x017F;&#x017F;er dem Gewicht nach 85,662 Sauer&#x017F;toff und 14,338<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toff. Da nun der Ver&#x017F;uch in einer Temperatur<lb break="yes"/>von ungefa&#x0364;hr 14° ange&#x017F;tellt, die Berichtigung wegen des in<lb break="yes" />Auflo&#x0364;&#x017F;ung befindlichen Wa&#x017F;&#x017F;ers aber nicht gemacht wurde, &#x017F;o<lb break="yes"/>folgt: daß, wenn man ihr &#x017F;pecifi&#x017F;ches Gewicht des Sauer-<lb break="no"/>&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas annimt, &#x017F;o wie ihr Verha&#x0364;ltniß<lb break="yes"/>des Volums der beiden Gasarten, und wenn man ferner,<lb break="yes"/>nach <persName key="saussure_hbd">
+                            <hi rendition="#g">Sau&#x017F;&#x017F;ure,</hi>
+                        </persName> zugiebt, daß ein Cubickfuß Luft bei 14°<lb break="yes" />&#x017F;ehr nahe 10 Grains Wa&#x017F;&#x017F;er aufgelo&#x0364;&#x017F;t halte, das Gewicht-<lb break="no"/>verha&#x0364;ltniß des Sauer&#x017F;toffs zum Wa&#x017F;&#x017F;er&#x017F;toff nicht 85,662:<lb break="yes"/>14,338 &#x017F;ondern 87,41:12,59 &#x017F;eyn wu&#x0364;rde, ein &#x017F;ehr merk-<lb break="no"/>licher Unter&#x017F;chied, der be&#x017F;onders bey Analy&#x017F;en, wo es auf<lb break="yes"/>die Be&#x017F;timmung des wirklichen Gewichts des Wa&#x017F;&#x017F;er&#x017F;toffs<lb break="yes" />ankommt, &#x017F;ehr großen Einfluß haben muß. Da&#x017F;&#x017F;elbe la&#x0364;ßt<lb break="yes"/>&#x017F;ich auch auf das &#x017F;pec. Gewicht der Gasarten, be&#x017F;onders<lb break="yes"/>des Wa&#x017F;&#x017F;er&#x017F;toffgas anwenden, wovon, bei der hier voraus-<lb break="no"/>
+                        <pb n="73" facs="#f0029"/> ge&#x017F;etzten Temperatur von 14° R., ungefa&#x0364;hr der 6te Theil<lb break="yes"/>auf Rechnung des aufgelo&#x0364;&#x017F;ten Wa&#x017F;&#x017F;ers kommt. Wir zwei-<lb break="no"/>feln daher nicht, daß, wenn man vollkommen trocknes und<lb break="yes"/>von Stickgas, welches es &#x017F;ehr oft zu begleiten &#x017F;cheint,<lb break="yes"/>freies Wa&#x017F;&#x017F;er&#x017F;toffgas ha&#x0364;tte, man es wenig&#x017F;tens 15 Mahl<lb break="yes"/>&#x017F;pec. leichter als atm. Luft finden werde.</p>
+                    <lb break="yes"/>
+                    <p>Es bleiben uns nun noch die Grenzen des mo&#x0364;glichen<lb break="yes" />Irrthums bei <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;</hi>s</persName> Eudiometer auszumitteln und die<lb break="yes"/>klein&#x017F;ten Mengen von Wa&#x017F;&#x017F;er&#x017F;toff und Sauer&#x017F;toff zu be-<lb break="no" />&#x017F;timmen, die man durch da&#x017F;&#x017F;elbe &#x017F;cha&#x0364;tzen ko&#x0364;nne. Da der<lb break="yes"/>Ver&#x017F;uch mit dem&#x017F;elben augenblicklich gemacht i&#x017F;t, &#x017F;o &#x017F;ind<lb break="yes"/>die Erfolge von dem Thermometer- und Barometer&#x017F;tande<lb break="yes"/>unabha&#x0364;ngig. In die&#x017F;er Hin&#x017F;icht hat es vor dem Phos-<lb break="no"/>phor und den Schwefelalkalien den Vorzug, daß &#x017F;eine Re-<lb break="no" />&#x017F;ultate &#x017F;ehr fa&#x0364;hig &#x017F;ind, unter einander verglichen zu wer-<lb break="no"/>den; aber die&#x017F;er i&#x017F;t nicht der einzige: es be&#x017F;itzt auch noch<lb break="yes"/>den, welchen eudiometri&#x017F;che Mittel gewa&#x0364;hren, die die zu<lb break="yes" />&#x017F;cha&#x0364;tzende Menge vielfach in &#x017F;ich enthalten. Denn da je-<lb break="no"/>des <formula notation="TeX">\frac{1}{100}</formula> Sauer&#x017F;toffgas in die&#x017F;em In&#x017F;trument durch eine<lb break="yes"/>drey Mahl &#x017F;o große Ab&#x017F;orbtion vorge&#x017F;tellt wird, &#x017F;o trifft<lb break="yes"/>jeder mo&#x0364;gliche Irrthum nur zu <formula notation="TeX" >\frac{1}{3}</formula> auf die&#x017F;es; und jetzt<lb break="yes" />be&#x017F;onders, wo wir &#x017F;ehr genaue In&#x017F;trumente haben, die das<lb break="yes"/>Maß in 300 Theile theilen, kann, wie man &#x017F;ieht, die<lb break="yes"/>Genauigkeit in Scha&#x0364;tzung der Menge des Sauer&#x017F;toff-<lb break="no"/>gas, wenn man &#x017F;ich auch um 1 Theil des Maßes betru&#x0364;-<lb break="no"/>gen &#x017F;ollte, nahe auf <formula notation="TeX">\frac{1}{1000}</formula> der analy&#x017F;irten Luft gebracht<lb break="yes"/>werden.</p>
+                    <lb break="yes"/>
+                    <p>Wenn al&#x017F;o die Re&#x017F;ultate der Verbrennung des Wa&#x017F;-<lb break="no"/>&#x017F;er&#x017F;toffgas &#x017F;o vergleichbar &#x017F;ind, und der Irrthum in &#x017F;o<lb break="yes"/>
+                        <pb n="74" facs="#f0030"/> enge Grenzen einge&#x017F;chlo&#x017F;&#x017F;en i&#x017F;t, &#x017F;o kann man offenbar<lb break="yes"/>nicht nur geringe Unter&#x017F;chiede zwi&#x017F;chen zwey Arten<lb break="yes"/>atm. Luft auffinden, &#x017F;ondern auch noch weniger als<lb break="yes"/>
+                        <formula notation="TeX">\frac{3}{1000}</formula> Sauer&#x017F;toffgas, die unter Wa&#x017F;&#x017F;er&#x017F;toffgas oder Stick-<lb break="no"/>gas verloren &#x017F;ind, be&#x017F;timmen und umgekehrt; nur mu&#x0364;ßte<lb break="yes"/>man in die&#x017F;en Fa&#x0364;llen der zu pru&#x0364;fenden Luft, damit eine<lb break="yes"/>Entzu&#x0364;ndung erfolgen ko&#x0364;nne, eine angeme&#x017F;&#x017F;ene Menge Sauer-<lb break="no"/>&#x017F;toffgas oder Wa&#x017F;&#x017F;er&#x017F;toffgas zu&#x017F;etzen, die man vorher in<lb break="yes"/>Hin&#x017F;icht der Gro&#x0364;ße der Ab&#x017F;orbtion, die &#x017F;ie erleiden, unter-<lb break="no"/>&#x017F;ucht hat, da denn die gro&#x0364;ßere Ab&#x017F;orbtion im zweyten<lb break="yes"/>Falle auf Rechnung des in der unter&#x017F;uchten Luft befind-<lb break="no"/>lich gewe&#x017F;enen Sauer&#x017F;toffgas oder Wa&#x017F;&#x017F;er&#x017F;toffgas kommt.<lb break="yes"/>Auf die&#x017F;e Wei&#x017F;e haben wir, bei der jetzt erlangten Fertig-<lb break="no"/>keit, 0,003 Wa&#x017F;&#x017F;er&#x017F;toffgas, die wir zu atm. Luft ge&#x017F;etzt hat-<lb break="no"/>ten, wiederfinden ko&#x0364;nnen.</p>
+                    <lb break="yes"/>
+                    <p>Es ko&#x0364;nnte gegen <persName key="volta_agv">
+                            <hi rendition="#g">Volta</hi>&#x2019;s</persName> Eudiometer eingewandt<lb break="yes"/>werden, daß man, weil das Wa&#x017F;&#x017F;er&#x017F;toffgas nicht von &#x017F;tets<lb break="yes" />gleicher Be&#x017F;chaffenheit i&#x017F;t, in Irrthu&#x0364;mer fallen ko&#x0364;nne, die &#x017F;chwer<lb break="yes"/>zu &#x017F;cha&#x0364;tzen &#x017F;eyn wu&#x0364;rden. Inde&#x017F;&#x017F;en, ob es Stickgas enthielte,<lb break="yes"/>wa&#x0364;re gleichgu&#x0364;ltig; nur wenn Sauer&#x017F;toffgas darin vorhan-<lb break="no"/>den wa&#x0364;re, wu&#x0364;rde &#x017F;ich die&#x017F;es mit der zu &#x017F;cha&#x0364;tzenden Menge<lb break="yes"/>vermi&#x017F;chen und die Re&#x017F;ultate beeintra&#x0364;chtigen. Zur Ver-<lb break="no"/>meidung die&#x017F;es Nachtheils kann man zuer&#x017F;t 500 Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="yes"/>gas mit 100 Sauer&#x017F;toffgas be&#x017F;onders verpuffen la&#x017F;&#x017F;en und<lb break="yes"/>den Ru&#x0364;ck&#x017F;tand, in welchem der Sauer&#x017F;toffgehalt jetzt zer-<lb break="no"/>&#x017F;to&#x0364;rt &#x017F;eyn wird, zu der Analy&#x017F;e anwenden. Bei Anwen-<lb break="no" />dung die&#x017F;er Vor&#x017F;icht kann man &#x017F;ich eines auch noch &#x017F;o<lb break="yes"/>nachla&#x0364;ßig bereiteten Gas bedienen, wenn es nur aus Zink<lb break="yes"/>und Schwefel- oder Salz&#x017F;a&#x0364;ure entwickelt worden; denn<lb break="yes"/>
+                        <pb n="75" facs="#f0031"/> aus andern Metallen, z. B. Ei&#x017F;en, i&#x017F;t es bekanntlich von<lb break="yes"/>anderer Be&#x017F;chaffenheit.</p>
+                    <lb break="yes"/>
+                    <p>Allen bisher erza&#x0364;hlten Beobachtungen nach waren wir<lb break="yes" />wohl berechtigt zu &#x017F;chließen, daß <persName key="volta_agv">
+                            <hi rendition="#g">Volta</hi>&#x2019;s</persName> Eudiometer al-<lb break="no"/>les in der atmo&#x017F;pha&#x0364;ri&#x017F;chen Luft enthaltene Sauer&#x017F;toffgas<lb break="yes"/>anzeigen mu&#x0364;&#x017F;&#x017F;e; inde&#x017F;&#x017F;en wollten wir uns durch einen be-<lb break="no"/>&#x017F;timmten Ver&#x017F;uch davon u&#x0364;berzeugen, und analy&#x017F;irten da-<lb break="no"/>her eine Luft, die aus 0,20 &#x017F;ehr reinem Sauer&#x017F;toffgas und<lb break="yes" />0,80 Stickgas, &#x017F;o durch Zer&#x017F;etzung des Ammonium ver-<lb break="no"/>mittel&#x017F;t oxydirter Salz&#x017F;a&#x0364;ure, unter mo&#x0364;glich&#x017F;ter Verhu&#x0364;tung<lb break="yes"/>des Zutritts der atm. Luft, bereitet war, zu&#x017F;ammenge&#x017F;etzt<lb break="yes" />worden. Die klein&#x017F;te und gro&#x0364;ßte Ab&#x017F;orbtion eines Gemi-<lb break="no"/>&#x017F;ches von 200 die&#x017F;er Luft mit 200 Wa&#x017F;&#x017F;er&#x017F;toffgas war, in<lb break="yes"/>fu&#x0364;nf Ver&#x017F;uchen, nur um 0,005 von einander abweichend<lb break="yes"/>und die mittle betrug 124,9, welche 41,6 Sauer&#x017F;toffgas<lb break="yes" />anzeigt, wovon die Ha&#x0364;lfte 20,8 hundert Theilen un&#x017F;erer<lb break="yes"/>ku&#x0364;n&#x017F;tlichen Luft ent&#x017F;prechen. Wir haben al&#x017F;o 0,008 Sauer-<lb break="no"/>&#x017F;toffgas mehr, als wir zuge&#x017F;etzt haben, was anzuzeigen<lb break="yes"/>&#x017F;cheinen ko&#x0364;nnte, daß das fe&#x017F;tge&#x017F;etzte Verha&#x0364;ltniß von 100<lb break="yes"/>Sauer&#x017F;toffgas zu 200 Wa&#x017F;&#x017F;er&#x017F;toffgas etwas zu groß i&#x017F;t;<lb break="yes" />wir mu&#x0364;&#x017F;&#x017F;en aber bemerken, daß un&#x017F;er Stickgas, obgleich<lb break="yes"/>es &#x017F;ehr &#x017F;orgfa&#x0364;ltig zubereitet war, doch noch mit Phos-<lb break="no"/>phor leuchtete, und daß es zur Erkla&#x0364;rung un&#x017F;ers Re&#x017F;ul-<lb break="no"/>tats hinreichend &#x017F;ey, nur 0,01 Sauer&#x017F;toffgas in dem&#x017F;elben<lb break="yes"/>anzunehmen, was &#x017F;ehr wahr&#x017F;cheinlich i&#x017F;t, wenn man be-<lb break="no"/>denkt, daß die oxydirte Salz&#x017F;a&#x0364;ure &#x017F;ich &#x017F;ehr &#x017F;chnell am<lb break="yes"/>Lichte zer&#x017F;etzt.</p>
+                    <lb break="yes"/>
+                    <p>Man kann al&#x017F;o die obige Folgerung in Hin&#x017F;icht der<lb break="yes"/>Anwendbarkeit die&#x017F;es Eudiometers als gegru&#x0364;ndet an&#x017F;ehen,<lb break="yes"/>
+                        <pb n="76" facs="#f0032"/> und dem beru&#x0364;hmten Phy&#x017F;iker <persName key="volta_agv">
+                            <hi rendition="#g">Volta,</hi>
+                        </persName> der die Phy&#x017F;ik mit den<lb break="yes" />&#x017F;cho&#x0364;n&#x017F;ten Entdeckungen bereichert hat, wu&#x0364;rde auch der<lb break="yes"/>Ruhm gebu&#x0364;hren, der Chemie das genaue&#x017F;te und &#x017F;cha&#x0364;tzens-<lb break="no" />werthe&#x017F;te In&#x017F;trument zu ihren Analy&#x017F;en gegeben zu haben.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Analy&#x017F;e der atmo&#x017F;pha&#x0364;ri&#x017F;chen Luft durch <persName key="volta_agv">Volta&#x2019;s</persName>
+                            <lb break="yes"/>Eudiometer</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Das Vorige vorausge&#x017F;etzt ko&#x0364;nnen wir nun die An-<lb break="no" />wendung auf die Analy&#x017F;e der Luft machen. Angenommen,<lb break="yes" />daß das fe&#x017F;tge&#x017F;etzte Verha&#x0364;ltniß des Sauer&#x017F;toffgas zum Wa&#x017F;-<lb break="no" />&#x017F;er&#x017F;toffgas = 100:200 &#x017F;trenge genau &#x017F;ey, &#x017F;o werden wir<lb break="yes"/>auch genau das Verha&#x0364;ltniß des Sauer&#x017F;toffgas zum Stick-<lb break="no"/>gas in der Luft ausmitteln ko&#x0364;nnen; ge&#x017F;etzt aber auch, daß<lb break="yes"/>die Menge des Wa&#x017F;&#x017F;er&#x017F;toffgas um 5 Einheiten zu groß<lb break="yes" />oder zu klein wa&#x0364;re, &#x017F;o wu&#x0364;rde der Irrthum in der analy-<lb break="no"/>&#x017F;irten Luft doch nicht u&#x0364;ber 0,003 gehen und wir wu&#x0364;rden<lb break="yes"/>eine gro&#x0364;ßere Genauigkeit erreichen, als durch andere eudio-<lb break="no" />metri&#x017F;che Mittel.</p>
+                    <lb break="yes"/>
+                    <p>Die von uns analy&#x017F;irte Luft wurde mitten u&#x0364;ber der<lb break="yes"/>Seine in kalter, gema&#x0364;ßigter und regniger Witterung und bei<lb break="yes"/>ver&#x017F;chiedenen Winden ge&#x017F;cho&#x0364;pft. Um eine gro&#x0364;ßere Gleich-<lb break="no" />heit der Um&#x017F;ta&#x0364;nde zu bewirken und Ver&#x017F;chiedenheiten, wenn<lb break="yes"/>&#x017F;ie Statt fa&#x0364;nden, de&#x017F;to be&#x017F;&#x017F;er wahrzunehmen, haben wir<lb break="yes"/>die ver&#x017F;chiedene zu ver&#x017F;chiedenen Zeiten ge&#x017F;ammelte Luft,<lb break="yes"/>die in gut ver&#x017F;chlo&#x017F;&#x017F;enen und in Wa&#x017F;&#x017F;er ver&#x017F;enkten Gla&#x0364;&#x017F;ern<lb break="yes"/>aufbewahrt worden, an Einem Tage gepru&#x0364;ft. Der Ku&#x0364;rze<lb break="yes"/>wegen findet man die Re&#x017F;ultate in folgender Tabelle zu-<lb break="no"/>&#x017F;ammenge&#x017F;tellt.</p>
+                    <lb break="yes"/>
+                    <pb n="77" facs="#f0033"/>
+                    <table>
+                        <row>
+                            <cell cols="2">Tage,<lb break="yes"/>an welchen<lb break="yes"/>die Luft ge-<lb break="no"/>&#x017F;ammelt<lb break="yes"/>worden.</cell>
+                            <cell> Tempe-<lb break="no"/>ratur<lb break="yes"/>nach<lb break="yes" />dem 100<lb break="yes"/>gradi-<lb break="no"/>gen<lb break="yes" />Therm.<lb break="yes"/>be&#x017F;timt</cell>
+                            <cell> Zu&#x017F;tand der Atmo&#x017F;pha&#x0364;re</cell>
+                            <cell>Ab&#x017F;orb-<lb break="no"/>tion nach<lb break="yes"/>Verpuf-<lb break="no"/>fung von<lb break="yes"/>200 atm.<lb break="yes" />Luft und<lb break="yes"/>200 Wa&#x017F;-<lb break="no" />&#x017F;er&#x017F;toffgas</cell>
+                            <cell> Menge<lb break="yes"/>des<lb break="yes"/>Sauer-<lb break="no" />&#x017F;toffgas<lb break="yes"/>in 100<lb break="yes" />Theilen<lb break="yes"/>Luft</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="10" rendition="#rightBraced">
+                                <hi rendition="#aq">Brumaire</hi>
+                            </cell>
+                            <cell rows="2">26</cell>
+                            <cell rows="2">70,3</cell>
+                            <cell rows="2" rendition="#rightBraced">Bedeckter Himmel; O&#x017F;t.<lb break="yes"/>wind &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">27</cell>
+                            <cell rows="2">4,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Bedeckter Himmel; O&#x017F;t-<lb break="maybe"/>Su&#x0364;d-O&#x017F;twind &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell> 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">28</cell>
+                            <cell rows="2">4,7</cell>
+                            <cell rows="2" rendition="#rightBraced">Feiner Regen; &#x017F;ehr &#x017F;tar-<lb break="no"/>ker Sud-We&#x017F;twind</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">29</cell>
+                            <cell rows="2">10,0</cell>
+                            <cell rows="2" rendition="#rightBraced">Feiner Regen; Su&#x0364;dwind</cell>
+                            <cell>126,0</cell>
+                            <cell> 21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,5</cell>
+                            <cell>21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">30</cell>
+                            <cell rows="2">12,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Bed. Himm.; S. W. Wind</cell>
+                            <cell>126,8</cell>
+                            <cell> 21,2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="18" rendition="#rightBraced">
+                                <hi rendition="#aq">Frimaire</hi>
+                            </cell>
+                            <cell rows="2">1</cell>
+                            <cell rows="2">6,7</cell>
+                            <cell rows="2" rendition="#rightBraced">Bewo&#x0364;lkter Himmel; ge-<lb break="no"/>linder Regen, S. W. Wind</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">2</cell>
+                            <cell rows="2">1,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Bew. Himm.; W. Wind</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">3</cell>
+                            <cell rows="2">8,5</cell>
+                            <cell rows="2" rendition="#rightBraced">Regen; Su&#x0364;d-Wind</cell>
+                            <cell>126,3</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,5</cell>
+                            <cell>21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">4</cell>
+                            <cell rows="2">10,6</cell>
+                            <cell rows="2" rendition="#rightBraced">Bed. Himm.; S. W. Wind</cell>
+                            <cell>126,2</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,5</cell>
+                            <cell>21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">5</cell>
+                            <cell rows="2">3,3</cell>
+                            <cell rows="2" rendition="#rightBraced">Bew. Himm.; O&#x017F;t-Wind</cell>
+                            <cell>126,5</cell>
+                            <cell> 21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>6</cell>
+                            <cell>1,6</cell>
+                            <cell>Reif; Nord-Wind</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>7</cell>
+                            <cell>1,3</cell>
+                            <cell>Schnee; Nord-Wind</cell>
+                            <cell>126,5</cell>
+                            <cell>21,1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>10</cell>
+                            <cell>4,1</cell>
+                            <cell>Nebel; Nord-Nord-O&#x017F;t-<lb break="maybe"/>Wind &#x2014; &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>12</cell>
+                            <cell>2,3</cell>
+                            <cell>Bewo&#x0364;lkter Himmel; Du&#x0364;n&#x017F;te;<lb break="yes" />O&#x017F;t-Wind &#x2014;</cell>
+                            <cell>125,5</cell>
+                            <cell> 20,9</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>14</cell>
+                            <cell>4,2</cell>
+                            <cell>Regen; Su&#x0364;d-Wind</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>16</cell>
+                            <cell>3,1</cell>
+                            <cell>Dicker Nebel &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>22</cell>
+                            <cell>9,6</cell>
+                            <cell>Regen; Su&#x0364;d-Su&#x0364;d-We&#x017F;t-<lb break="maybe"/>Wind &#x2014; &#x2014;</cell>
+                            <cell> 126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>28</cell>
+                            <cell>2,2</cell>
+                            <cell>Bedeckter Himmel; Nord-<lb break="maybe"/>O&#x017F;t-Wind &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell>21,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">
+                                <hi rendition="#aq">Nivose</hi>
+                            </cell>
+                            <cell>2</cell>
+                            <cell>1,0</cell>
+                            <cell>Glatteis, dicker Nebel;<lb break="yes" />Su&#x0364;d-O&#x017F;t-Wind &#x2014;</cell>
+                            <cell>126,0</cell>
+                            <cell> 21,0</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Wie man &#x017F;ieht, bewei&#x017F;en alle un&#x017F;ere Ver&#x017F;uche; 1. daß<lb break="yes"/>die Variationen im Sauer&#x017F;toffgehalt der Atmo&#x017F;pha&#x0364;re nicht<lb break="yes"/>u&#x0364;ber 0,001 betragen, obgleich die Luft, da &#x017F;ie bei &#x017F;ehr ver-<lb break="no"/>
+                        <pb n="78" facs="#f0034"/> &#x017F;chiedenen Winden aufgefangen wurde, aus &#x017F;ehr entfernten<lb break="yes"/>La&#x0364;ndern kam; 2. daß das Verha&#x0364;ltniß des Sauer&#x017F;toffgas<lb break="yes"/>zu den andern Gasarten in der Luft = 21:79 i&#x017F;t. Das<lb break="yes"/>er&#x017F;te Re&#x017F;ultat, daß die Luft in ihrer Mi&#x017F;chung keinen be-<lb break="no"/>deutenden Aba&#x0364;nderungen unterworfen &#x017F;ey, i&#x017F;t &#x017F;trenge genau,<lb break="yes"/>da es von dem Verha&#x0364;ltniß, in welchem Sauer&#x017F;toff und<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toff Wa&#x017F;&#x017F;er bilden, unabha&#x0364;ngig i&#x017F;t und das zweyte,<lb break="yes"/>u&#x0364;ber das Be&#x017F;tandtheilverha&#x0364;ltniß der Luft, kann &#x017F;ich, dem<lb break="yes"/>Obigen nach, von der &#x017F;trengen Wahrheit auch nicht &#x017F;ehr<lb break="yes"/>entfernen.</p>
+                    <lb break="yes"/>
+                    <p>Man hat manche meteori&#x017F;che Er&#x017F;cheinungen durch Ent-<lb break="no"/>zu&#x0364;ndung des Wa&#x017F;&#x017F;er&#x017F;toffgas zu erkla&#x0364;ren ge&#x017F;ucht, welches man<lb break="yes"/>in der Atmo&#x017F;pha&#x0364;re annahm. Wir &#x017F;uchten deshalb zu erfah-<lb break="no"/>ren, ob die&#x017F;e Annahme gegru&#x0364;ndet &#x017F;ey und analy&#x017F;irten da-<lb break="no"/>her eine ku&#x0364;n&#x017F;tliche Luft, die &#x017F;icher kein Wa&#x017F;&#x017F;er&#x017F;toffgas ent-<lb break="no"/>hielt, in Vergleichung mit atm. Luft; erhielten aber in 6<lb break="yes"/>mit jeder ange&#x017F;tellten Ver&#x017F;uchen genau die&#x017F;elben Re&#x017F;ultate.<lb break="yes"/>Da wir nun noch 0,003 in un&#x017F;erm In&#x017F;trument &#x017F;cha&#x0364;tzen<lb break="yes" />ko&#x0364;nnen, &#x017F;o muß die Menge des Wa&#x017F;&#x017F;er&#x017F;toffgas in der At-<lb break="no" />mo&#x017F;pha&#x0364;re, wenn es darin vorhanden i&#x017F;t, wenig&#x017F;tens nicht<lb break="yes"/>bis auf die&#x017F;e Menge reichen. Daß eine geringe Menge<lb break="yes"/>darin &#x017F;ich befinde, i&#x017F;t wohl nicht zu bezweifeln, denn es<lb break="yes"/>entwickelt &#x017F;ich &#x017F;tets aus den Su&#x0364;mpfen, aber &#x017F;ie kann &#x017F;o<lb break="yes"/>klein &#x017F;eyn, z. B. 0,001, daß &#x017F;ie &#x017F;ich allen un&#x017F;ern Mitteln<lb break="yes"/>entzieht. Das Verha&#x0364;ltniß der in der Atmo&#x017F;pha&#x0364;re befindli-<lb break="no"/>chen Kohlen&#x017F;a&#x0364;ure &#x017F;ollte weit gro&#x0364;ßer &#x017F;eyn, wenn man die zahl-<lb break="no"/>reichen Quellen, die es ausgeben, betrachtet und doch, wenn<lb break="yes"/>&#x017F;ie nicht die Eigen&#x017F;chaft ha&#x0364;tte, mit dem Kalk und Baryt &#x017F;icht-<lb break="no"/>bare unauflo&#x0364;sliche Verbindungen zu bilden, wu&#x0364;rde man bloß<lb break="yes"/>durch Vera&#x0364;nderung des Volums vielleicht noch nicht wi&#x017F;&#x017F;en,<lb break="yes"/>
+                        <pb n="79" facs="#f0035"/> ob &#x017F;ich welche in der Luft befinde. Die Kohlen&#x017F;a&#x0364;ure kann<lb break="yes"/>&#x017F;ich freylich in der Atmo&#x017F;pha&#x0364;re nicht anha&#x0364;ufen, weil &#x017F;ie<lb break="yes"/>durch die Vegetation zer&#x017F;etzt wird; aber kann es nicht auch<lb break="yes"/>Mittel geben, welche der Erde das Wa&#x017F;&#x017F;er&#x017F;toffgas zuru&#x0364;ck-<lb break="no"/>geben und es dadurch verhindern, &#x017F;ich in der Atmo&#x017F;pha&#x0364;re<lb break="yes"/>anzuha&#x0364;ufen.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;e Einerleiheit der Mi&#x017F;chung der Atmo&#x017F;pha&#x0364;re und<lb break="yes"/>die&#x017F;e Abwe&#x017F;enheit des Wa&#x017F;&#x017F;er&#x017F;toffgas, welche &#x017F;ich aus un-<lb break="no"/>&#x017F;ern Unter&#x017F;uchungen ergeben, mu&#x0364;&#x017F;&#x017F;en den Geometer u&#x0364;ber<lb break="yes"/>die Theorie der Refractionen beruhigen. Da das Bre-<lb break="no" />chungsvermo&#x0364;gen der ver&#x017F;chiedenen Gasarten ver&#x017F;chieden i&#x017F;t,<lb break="yes"/>und die des Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ta&#x0364;rker, als die des Sauer&#x017F;toff-<lb break="no"/>gas und Stickgas, &#x017F;o wu&#x0364;rde jene Theorie, die &#x017F;ich bloß<lb break="yes"/>auf die Variationen des Barometers und Thermometers<lb break="yes"/>gru&#x0364;ndet, &#x017F;ehr unvollkommen &#x017F;eyn, wenn die Atmo&#x017F;pha&#x0364;re<lb break="yes"/>&#x017F;ich in ihren Be&#x017F;tandtheilen merklich a&#x0364;nderte. Dem Vori-<lb break="no"/>gen zu Folge findet dies inde&#x017F;&#x017F;en nicht Statt, und der<lb break="yes"/>Geometer wird bloß auf das Barometer, Thermometer und<lb break="yes"/>Hygrometer Ru&#x0364;ck&#x017F;icht zu nehmen haben.</p>
+                    <lb break="yes"/>
+                    <p>In der That reicht ein wenig Nachdenken hin, um<lb break="yes"/>uns zu u&#x0364;berzeugen, daß die Atmo&#x017F;pha&#x0364;re in Verlauf<lb break="yes"/>einiger Jahre, und noch weniger einiger Tage, &#x017F;ich<lb break="yes"/>nicht merklich vera&#x0364;ndern ko&#x0364;nne, &#x017F;ofern man nicht von ei-<lb break="no"/>nigen &#x017F;ehr einzelnen, localen Vera&#x0364;nderungen &#x017F;prechen will.<lb break="yes"/>Denn wenn &#x017F;ie in &#x017F;olch kurzer Zeit &#x017F;ich &#x017F;o vera&#x0364;nderte, durch<lb break="yes"/>was fu&#x0364;r ein Wunder ge&#x017F;cha&#x0364;he denn dies, und welches an-<lb break="no"/>dere bra&#x0364;chte &#x017F;ie plo&#x0364;tzlich wieder in ihren vorigen Zu&#x017F;tand<lb break="yes"/>zuru&#x0364;ck? Wie &#x017F;oll man eine Ur&#x017F;ache begreifen, die ma&#x0364;ch-<lb break="no"/>tig genug wa&#x0364;re, um von einem Tage auf den andern<lb break="yes"/>das Verha&#x0364;ltniß des Sauer&#x017F;toffs auch nur um 0,001 zu<lb break="yes"/>
+                        <pb n="80" facs="#f0036"/> a&#x0364;ndern, wenn man nicht eine electri&#x017F;che, oder magneti&#x017F;che,<lb break="yes"/>oder irgend eine andere, eben &#x017F;o eingebildete, Kraft anneh-<lb break="no"/>men will, die durch unbekannte Modificationen das Sauer-<lb break="no" />&#x017F;toffgas in Stickgas und umgekehrt verwandeln ko&#x0364;nne? Es<lb break="yes"/>i&#x017F;t inde&#x017F;&#x017F;en mo&#x0364;glich, daß die Atmo&#x017F;pha&#x0364;re &#x017F;ehr lang&#x017F;am, theils<lb break="yes" />in dem Verha&#x0364;ltni&#x017F;&#x017F;e ihrer Be&#x017F;tandtheile, theils in ihrem<lb break="yes"/>Gewicht &#x017F;ich vera&#x0364;ndere, und die&#x017F;en Vera&#x0364;nderungen, mu&#x0364;&#x017F;&#x017F;en<lb break="yes"/>die Phy&#x017F;iker ihre Aufmerk&#x017F;amkeit &#x017F;chenken, wenngleich &#x017F;ie<lb break="yes"/>&#x017F;o wenig merklich &#x017F;ind.</p>
+                    <lb break="yes"/>
+                    <p>Nachdem es nun hinla&#x0364;nglich bewie&#x017F;en i&#x017F;t, daß die At-<lb break="no"/>mo&#x017F;pha&#x0364;re im Allgemeinen ihre Mi&#x017F;chung nicht vera&#x0364;ndere,<lb break="yes"/>&#x017F;o i&#x017F;t jetzt der Grund von den Ver&#x017F;chiedenheiten aufzu&#x017F;u-<lb break="no"/>chen, die man unter gewi&#x017F;&#x017F;en Um&#x017F;ta&#x0364;nden, in welchen man<lb break="yes"/>&#x017F;ie analy&#x017F;irte, wahrzunehmen geglaubt hat. Vulkane auf<lb break="yes"/>hohen Gebirgen, Ga&#x0364;hrungen an einzelnen Orten, das &#x017F;till-<lb break="no"/>&#x017F;tehende Wa&#x017F;&#x017F;er eines Sumpfes oder Sees ko&#x0364;nnte die Rein-<lb break="no"/>heit der &#x017F;ie beru&#x0364;hrenden Atmo&#x017F;pha&#x0364;re etwas beeintra&#x0364;chtigen,<lb break="yes" />theils durch Entziehung von Sauer&#x017F;toffgas, theils durch<lb break="yes"/>Ausgift unathembarer Gasarten; wie klein aber muß die&#x017F;e<lb break="yes"/>Verminderung des Sauer&#x017F;toffgehalts in einer &#x017F;o großen,<lb break="yes"/>be&#x017F;ta&#x0364;ndig bewegten, Luftma&#x017F;&#x017F;e nicht &#x017F;eyn, wenn man be-<lb break="no"/>denkt, daß an Orten, wo eine &#x017F;ehr große Men&#x017F;chenzahl<lb break="yes"/>ver&#x017F;ammelt i&#x017F;t, oder andern, wo eine Quelle von An&#x017F;teckung<lb break="yes"/>zu &#x017F;eyn &#x017F;cheint, die Luft nur &#x017F;ehr geringe Vera&#x0364;nderungen<lb break="yes"/>erleidet. Wir zerlegten zwey Portionen Luft, wovon die<lb break="yes"/>eine mitten im Parterre des Theatre francais einen Au-<lb break="no"/>genblick vor dem Aufzuge des Vorhangs zur Vor&#x017F;tellung<lb break="yes"/>des zweyten Stu&#x0364;cks, 3<formula notation="TeX">\frac{1}{2}</formula> Stunde nach der Ver&#x017F;ammlung<lb break="yes"/>einer großen Menge von Zu&#x017F;chauern und die zweyte drey<lb break="yes"/>
+                        <fw type="catch" place="bottom">Mi-</fw>
+                        <lb break="yes"/>
+                        <pb n="81" facs="#f0037"/> Minuten nach Beendigung des Schau&#x017F;piels im ho&#x0364;ch&#x017F;ten<lb break="yes"/>Theile des Sales ge&#x017F;cho&#x0364;pft worden. Beide tru&#x0364;bten kaum<lb break="yes" />das Kalkwa&#x017F;&#x017F;er; die Re&#x017F;ultate der vergleichenden Analy&#x017F;e<lb break="yes"/>zeigten, daß die Luft des Parterre 20,2, und die aus der<lb break="yes"/>Ho&#x0364;he des Schau&#x017F;piel&#x017F;als ge&#x017F;cho&#x0364;pfte 20,4 Sauer&#x017F;toffgas<lb break="yes"/>enthielt, wogegen andere zu gleicher Zeit analy&#x017F;irte atm.<lb break="yes"/>Luft 21,0 zeigte. Herr <persName key="seguin_01">
+                            <hi rendition="#g">Seguin</hi>
+                        </persName> hat auch Luft aus 12<lb break="yes"/>Stunden lang genau ver&#x017F;chlo&#x017F;&#x017F;en gehaltenen Sa&#x0364;len in Hos-<lb break="no"/>pita&#x0364;lern unter&#x017F;ucht, und &#x017F;ie fa&#x017F;t eben &#x017F;o rein gefunden, als<lb break="yes" />gewo&#x0364;hnliche Luft, wiewohl &#x017F;ie einen unertra&#x0364;glichen faulen<lb break="yes"/>Geruch be&#x017F;aß <note place="foot" n="4)">Es wa&#x0364;re in gewi&#x017F;&#x017F;en Beziehungen &#x017F;ehr wu&#x0364;n&#x017F;chenswerth,<lb break="yes"/>auch das Ab&#x017F;orbtionsverha&#x0364;ltniß zwi&#x017F;chen oxydirtem Stickgas und<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas auszumitteln. </note>.</p>
+                    <lb break="yes"/>
+                    <p>Wenn demnach, auch unter den zur Ab&#x017F;orbtion des<lb break="yes" />Sauer&#x017F;toffs gu&#x0364;n&#x017F;tig&#x017F;ten Um&#x017F;ta&#x0364;nden, die Luft noch nicht 0,01<lb break="yes"/>davon verliert, &#x017F;o la&#x017F;&#x017F;en &#x017F;ich hieraus nicht die Beklemmung,<lb break="yes"/>die man in ver&#x017F;chlo&#x017F;&#x017F;enen und mit Men&#x017F;chen angefu&#x0364;llten Orten<lb break="yes"/>erleidet, noch die Krankheiten ableiten, die bei Su&#x0364;mpfen und<lb break="yes" />Mora&#x0364;&#x017F;ten, oder in gewi&#x017F;&#x017F;en La&#x0364;ndern Statt finden. In ei-<lb break="no"/>nigen Fa&#x0364;llen werden &#x017F;ie durch Ausdu&#x0364;n&#x017F;tungen bewirkt &#x017F;eyn,<lb break="yes"/>die allen un&#x017F;ern eudiometri&#x017F;chen Mitteln entwi&#x017F;chen und<lb break="yes"/>auf eine eigenthu&#x0364;mliche Wei&#x017F;e auf un&#x017F;ern Ko&#x0364;rper wirken.<lb break="yes"/>So ko&#x0364;nnen eine Bla&#x017F;e Schwefelwa&#x017F;&#x017F;er&#x017F;toffgas oder oxydirt-<lb break="maybe"/>&#x017F;alz&#x017F;aures Gas, eine faule Ausdu&#x0364;n&#x017F;tung, eine Blume einen<lb break="yes"/>ungemein großen Raum mit ihrem Geruch anfu&#x0364;llen, und,<lb break="yes"/>uns zur Bewunderung ihrer ausnehmenden Feinheit no&#x0364;-<lb break="no"/>thigen, wenn &#x017F;ie uns &#x017F;chon unertra&#x0364;glich werden. Die<lb break="yes"/>Pe&#x017F;tmiasmen ko&#x0364;nnen eben &#x017F;o fein &#x017F;eyn, und allen un-<lb break="no"/>
+                        <pb n="82" facs="#f0038"/> &#x017F;ern Unter&#x017F;uchungsmitteln auf gleiche Wei&#x017F;e entgehen,<lb break="yes"/>ohne deshalb weniger to&#x0364;dtlich zu &#x017F;eyn. Glu&#x0364;cklicher Wei&#x017F;e<lb break="yes"/>ko&#x0364;nnen wir, nach <persName key="guytondemorveau_lbb">
+                            <hi rendition="#g">Guytons,</hi>
+                        </persName> fu&#x0364;r die Men&#x017F;chheit &#x017F;o<lb break="yes" />wohltha&#x0364;tigen, Arbeiten, ihre Wirkung zer&#x017F;to&#x0364;ren, wenn es<lb break="yes"/>uns gleich nicht mo&#x0364;glich i&#x017F;t, ihre Natur kennen zu lernen.<lb break="yes"/>In andern Fa&#x0364;llen aber ko&#x0364;nnen die Krankheiten von der<lb break="yes"/>Feuchtigkeit der Luft, ihrer Temperatur, ihrem electri&#x017F;chen<lb break="yes" />Zu&#x017F;tande, oder u&#x0364;berhaupt von dem Zu&#x017F;tand der Atmo&#x017F;pha&#x0364;re<lb break="yes"/>und der Wirkung de&#x017F;&#x017F;elben auf uns nach den Dispo&#x017F;itio-<lb break="no" />nen, in welchen wir uns befinden, abha&#x0364;ngen, und in<lb break="yes" />die&#x017F;en Fa&#x0364;llen, die &#x017F;ehr ha&#x0364;ufig &#x017F;eyn ko&#x0364;nnen, kann die<lb break="yes"/>Krankheit große Verwu&#x0364;&#x017F;tungen anrichten, ohne daß man<lb break="yes"/>ihr Grenzen zu &#x017F;etzen im Stande i&#x017F;t. Man wu&#x0364;rde<lb break="yes"/>&#x017F;ich demnach ta&#x0364;u&#x017F;chen, alles Einer Ur&#x017F;ache zuzu&#x017F;chreiben,<lb break="yes"/>wenn der Zu&#x017F;tand der Ge&#x017F;undheit des Men&#x017F;chen von dem<lb break="yes" />Zu&#x017F;ammenwirken aller der Um&#x017F;ta&#x0364;nde abha&#x0364;ngt, die auf ihn<lb break="yes"/>einfließen.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Von der Be&#x017F;chaffenheit der aus dem Wa&#x017F;&#x017F;er er-<lb break="no"/>haltenen Luft und der Wirkung des Wa&#x017F;&#x017F;ers<lb break="yes"/>auf reine und gemi&#x017F;chte Gasarten</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>In dem Verlauf un&#x017F;erer Ver&#x017F;uche, be&#x017F;onders der u&#x0364;ber<lb break="yes"/>die Schwefelalkalien, nahmen wir wahr, daß das Wa&#x017F;&#x017F;er<lb break="yes"/>und andere Flu&#x0364;&#x017F;&#x017F;igkeiten eine Wirkung auf die Luft aus-<lb break="no"/>u&#x0364;ben, die oft eine Veranla&#x017F;&#x017F;ung zum Irrthum werden kann,<lb break="yes"/>welche um &#x017F;o wichtiger i&#x017F;t, da &#x017F;ie bis jetzt noch nicht bemerkt<lb break="yes" />worden. Wir ha&#x0364;tten daher fu&#x0364;rchten mu&#x0364;&#x017F;&#x017F;en, un&#x017F;ere Arbeit<lb break="yes"/>noch unvollkommener zu la&#x017F;&#x017F;en, als &#x017F;ie &#x017F;chon i&#x017F;t, wenn wir<lb break="yes"/>nicht un&#x017F;ere Unter&#x017F;uchungen auf die&#x017F;e Wirkung des Wa&#x017F;&#x017F;ers<lb break="yes"/>auf reine und gemi&#x017F;chte Gasarten, die man damit in Be-<lb break="no"/>
+                        <pb n="83" facs="#f0039"/> ru&#x0364;hrung bringt, gerichtet ha&#x0364;tten. Mit die&#x017F;en wollen wir<lb break="yes"/>un&#x017F;ere Abhandlung &#x017F;chließen.</p>
+                    <lb break="yes"/>
+                    <p>Es i&#x017F;t allgemein bekannt, daß das Wa&#x017F;&#x017F;er Luft aufge-<lb break="no"/>lo&#x0364;&#x017F;t enthalten kann. <hi rendition="#g">
+                            <persName key="boyle_r">Boyle</persName>, <persName key="huygens_c" >Huygens</persName>
+                        </hi> und <persName key="mairan_01">
+                            <hi rendition="#g">Mairan</hi>
+                        </persName>
+                        <lb break="yes"/>haben von die&#x017F;em Gegen&#x017F;tande gehandelt; &#x017F;ie kannten aber<lb break="yes"/>keine Mittel, um zu finden, daß die&#x017F;e Luft &#x017F;ich von der<lb break="yes" />atmo&#x017F;pha&#x0364;ri&#x017F;chen Luft chemi&#x017F;ch unter&#x017F;cheide. Der beru&#x0364;hmte<lb break="yes"/>
+                        <hi rendition="#g">Prie&#x017F;tley</hi> bemerkte zuer&#x017F;t, daß die aus den Wa&#x0364;&#x017F;&#x017F;ern gezo-<lb break="no"/>gene Luft mehr Sauer&#x017F;toff enthalte. Seitdem zeigte <persName key="hassenfratz_jh">
+                            <hi rendition="#g">Ha&#x017F;-<lb break="no"/>&#x017F;enfratz,</hi>
+                        </persName> daß das Regenwa&#x017F;&#x017F;er eine Luft entwickele,<lb break="yes"/>die nahe 0,40 Sauer&#x017F;toffgas enthalte, und die Herren <persName key="ingenhousz_j">
+                            <hi rendition="#g">In-<lb break="no"/>genhouß</hi>
+                        </persName> und <persName key="vanbreda_01">
+                            <hi rendition="#g">Breda</hi>
+                        </persName> waren bei ihren Ver&#x017F;uchen u&#x0364;ber<lb break="yes" />das Salpetergas auf a&#x0364;hnliche Re&#x017F;ultate geleitet worden.</p>
+                    <lb break="yes"/>
+                    <p>Auf der andern Seite hat man auch angegeben, daß<lb break="yes"/>das Wa&#x017F;&#x017F;er leichter und reichlicher das Sauer&#x017F;toffgas als<lb break="yes"/>das Stickgas ab&#x017F;orbire, und Herr <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>
+                        </hi> fu&#x0364;hrt &#x017F;ogar<lb break="yes"/>die be&#x017F;ondere That&#x017F;ache an, die er jedoch &#x017F;elb&#x017F;t fu&#x0364;r noch<lb break="yes"/>nicht hinreichend verificirt ha&#x0364;lt, daß das mit Sauer&#x017F;toff<lb break="yes"/>ge&#x017F;chwa&#x0364;ngerte Wa&#x017F;&#x017F;er das Wa&#x017F;&#x017F;er&#x017F;toffgas ab&#x017F;orbire, auf wel-<lb break="no"/>ches das gewo&#x0364;hnliche Wa&#x017F;&#x017F;er fa&#x017F;t gar keine Wirkung habe.<lb break="yes"/>Wir werden weiter unten &#x017F;ehen, daß die Wirkung, die es<lb break="yes" />auf die&#x017F;es oder jenes Gas ausu&#x0364;bt, von der Natur desjeni-<lb break="no"/>gen abha&#x0364;nge, &#x017F;o es bereits aufgelo&#x0364;&#x017F;t entha&#x0364;lt.</p>
+                    <lb break="yes"/>
+                    <p>Herr <persName key="henry_01">
+                            <hi rendition="#g">Henry</hi>
+                        </persName> hat in einer ku&#x0364;rzlich in England bekannt<lb break="yes" />gemachten Abhandlung die Ab&#x017F;orbtion ver&#x017F;chiedener Gasar-<lb break="no"/>ten durch das von Luft befreiete Wa&#x017F;&#x017F;er unter&#x017F;ucht. Er<lb break="yes"/>bewirkte die&#x017F;e Ab&#x017F;orbtionen durch einen dem Gewicht zweier<lb break="yes"/>oder dreier Atmo&#x017F;pha&#x0364;ren gleich kommenden Druck; aber er<lb break="yes"/>hat &#x017F;ich nicht mit Gemi&#x017F;chen ver&#x017F;chiedener Gasarten be-<lb break="no"/>
+                        <pb n="84" facs="#f0040"/> &#x017F;cha&#x0364;ftigt, noch mit der Verwandt&#x017F;chaft, die das Wa&#x017F;&#x017F;er auf<lb break="yes" />&#x017F;olche Gemi&#x017F;che ausu&#x0364;bt. Er be&#x017F;chra&#x0364;nkt &#x017F;ich auf die Be&#x017F;tim-<lb break="no"/>mung der nach Ver&#x017F;chiedenheit der Temperatur und des<lb break="yes" />barometri&#x017F;chen Drucks ab&#x017F;orbirten Menge, ohne &#x017F;eine Unter-<lb break="no"/>&#x017F;uchungen auf die Wirkung des mit Gasarten bereits ge&#x017F;a&#x0364;t-<lb break="no"/>tigten Wa&#x017F;&#x017F;ers zu richten.</p>
+                    <lb break="yes"/>
+                    <p>Wir glaubten einen Gegen&#x017F;tand nicht vernachla&#x0364;ßigen<lb break="yes"/>zu du&#x0364;rfen, der mit den eudiometri&#x017F;chen Arbeiten &#x017F;o enge<lb break="yes"/>verbunden i&#x017F;t, und mit welchem die Chemiker &#x017F;ich bis jetzt<lb break="yes"/>wenig be&#x017F;cha&#x0364;ftigt zu haben &#x017F;cheinen. Wir haben den Ver-<lb break="no"/>wandt&#x017F;chaftsgrad unter&#x017F;ucht, vermittel&#x017F;t de&#x017F;&#x017F;en das im<lb break="yes" />Wa&#x017F;&#x017F;er aufgelo&#x0364;&#x017F;te Sauer&#x017F;toffgas nach Verha&#x0364;ltniß der Tem-<lb break="no"/>peratur und der Salze, welche das Wa&#x017F;&#x017F;er aufnehmen kann,<lb break="yes"/>darin zuru&#x0364;ckgehalten wird. Wir haben mit dem Wa&#x017F;&#x017F;er<lb break="yes"/>gleiche Mengen reiner und gemi&#x017F;chter Gasarten in Beru&#x0364;h-<lb break="no"/>rung ge&#x017F;etzt, und die Vera&#x0364;nderungen beobachtet, welche die&#x017F;e<lb break="yes" />Gemi&#x017F;che erleiden. Endlich haben wir auch angefangen,<lb break="yes"/>ein fu&#x0364;r die Meteorologie &#x017F;ehr wichtiges Problem zu un-<lb break="no"/>ter&#x017F;uchen, ob na&#x0364;hmlich das Regenwa&#x017F;&#x017F;er Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes" />aufgelo&#x0364;&#x017F;t enthalte. Alle die&#x017F;e Unter&#x017F;uchungen, die wir im<lb break="yes"/>Verlauf die&#x017F;es Jahres, be&#x017F;onders auf den Gebirgen, die<lb break="yes"/>wir jetzt durchwandern wollen, fort&#x017F;etzen werden, &#x017F;ind noch<lb break="yes"/>nicht &#x017F;ehr weit gediehen, und wir mu&#x0364;&#x017F;&#x017F;en uns begnu&#x0364;gen,<lb break="yes"/>einige vorzu&#x0364;gliche That&#x017F;achen vorzulegen, die, wie wir uns<lb break="yes"/>&#x017F;chmeicheln, nicht ohne Intere&#x017F;&#x017F;e &#x017F;eyn werden.</p>
+                    <lb break="yes"/>
+                    <p>Wenn man alle Luft, die das Wa&#x017F;&#x017F;er durch Sieden<lb break="yes" />von Anfang bis zu Ende des Ver&#x017F;uchs ausgiebt, zu&#x017F;am-<lb break="no"/>menla&#x0364;ßt, &#x017F;o hat die&#x017F;elbe, mit <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;s</hi>
+                        </persName> Eudiometer gepru&#x0364;ft,<lb break="yes"/>folgenden Sauer&#x017F;toffgehalt auf 100:</p>
+                    <lb break="yes"/>
+                    <pb n="85" facs="#f0041"/>
+                    <p>Die Luft aus de&#x017F;tillirtem Wa&#x017F;&#x017F;er, &#x017F;o an der Atmo-<lb break="no"/>&#x017F;pha&#x0364;re ge&#x017F;tanden &#x2012; &#x2012; &#x2012; 32,8</p>
+                    <lb break="yes"/>
+                    <p>Die Luft aus Seinewa&#x017F;&#x017F;er &#x2012; &#x2012; 31,9</p>
+                    <lb break="yes"/>
+                    <p>Die Luft aus Regenwa&#x017F;&#x017F;er &#x2012; &#x2012; 31,0</p>
+                    <lb break="yes"/>
+                    <p>Es folgt aus die&#x017F;en Ver&#x017F;uchen, daß jene drei Wa&#x0364;&#x017F;&#x017F;er<lb break="yes"/>eine Luft geben, die ungefa&#x0364;hr gleich reich an Sauer&#x017F;toff,<lb break="yes"/>und um 0,10 reiner, als die atmo&#x017F;pha&#x0364;ri&#x017F;che i&#x017F;t. In den<lb break="yes"/>Brunnenwa&#x0364;&#x017F;&#x017F;ern, die im Innern der Erde &#x017F;ich mit Sub-<lb break="no"/>&#x017F;tanzen in Beru&#x0364;hrung finden, die gegen den Sauer&#x017F;toff Ver-<lb break="no" />wandt&#x017F;chaft ausu&#x0364;ben, i&#x017F;t die&#x017F;er Sauer&#x017F;toffgehalt vera&#x0364;nder-<lb break="no"/>licher. Das zu einer andern Zeit ge&#x017F;ammelte Seinewa&#x017F;&#x017F;er<lb break="yes" />gab uns eine Luft von nur 29,1 Sauer&#x017F;toff, al&#x017F;o eine<lb break="yes"/>etwas weniger reine, als die des Regenwa&#x017F;&#x017F;ers.</p>
+                    <lb break="yes"/>
+                    <p>Wenn die zu&#x017F;ammen aufgefangene Luft der erwa&#x0364;hnten<lb break="yes"/>Wa&#x0364;&#x017F;&#x017F;er eine viel reinere Be&#x017F;chaffenheit, als die atmo&#x017F;pha&#x0364;ri-<lb break="no" />&#x017F;che zeigt, &#x017F;o gewa&#x0364;hrt die Unter&#x017F;uchung der in einzelnen<lb break="yes"/>Portionen, durch &#x017F;tufenwei&#x017F;e ver&#x017F;ta&#x0364;rkte Hitze, entwickelten<lb break="yes"/>noch intere&#x017F;&#x017F;antere Re&#x017F;ultate. In die&#x017F;en Ver&#x017F;uchen &#x017F;ieht<lb break="yes"/>man die große Verwandt&#x017F;chaft des Sauer&#x017F;toffs zum Wa&#x017F;&#x017F;er<lb break="yes"/>in vollem Lichte. Wir erhitzten Seinewa&#x017F;&#x017F;er allma&#x0364;hlig bis<lb break="yes"/>zum Sieden, und fingen die &#x017F;ich entwickelnde Luft in auf-<lb break="no"/>einander folgenden, aber ungleichen, Portionen auf; 200 von<lb break="yes"/>jedem die&#x017F;er Antheile mit 200 Wa&#x017F;&#x017F;er&#x017F;toffgas verpufft, ga-<lb break="no"/>ben uns folgende Re&#x017F;ultate:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Antheile der Luft nach<lb break="yes"/>der Folge ihrer Ent-<lb break="no"/>wickelung</cell>
+                            <cell> Ab&#x017F;orbtion</cell>
+                            <cell>Sauer&#x017F;toffgas-<lb break="no"/>gehalt.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>1&#x017F;te</cell>
+                            <cell>142,0</cell>
+                            <cell>23,7</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>2te</cell>
+                            <cell>164,0</cell>
+                            <cell>27,4</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>3te</cell>
+                            <cell>185,0</cell>
+                            <cell>30,2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>4te</cell>
+                            <cell>195,0</cell>
+                            <cell>32,5</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="86" facs="#f0042"/>
+                    <p>Die&#x017F;e, mehrmahls wiederholte, Ver&#x017F;uche bewei&#x017F;en, daß<lb break="yes"/>das Wa&#x017F;&#x017F;er Anfangs eine Luft ausgiebt, die etwas reiner<lb break="yes"/>i&#x017F;t, als die atmo&#x017F;pha&#x0364;ri&#x017F;che; hierauf wa&#x0364;ch&#x017F;t die Sauer&#x017F;toff-<lb break="no"/>menge, wie die Entbindung fort&#x017F;chreitet, und die letzten<lb break="yes"/>Antheile der Luft &#x017F;ind daran am reichhaltig&#x017F;ten. Bei Wie-<lb break="no" />derholung die&#x017F;es Ver&#x017F;uchs mit Schneewa&#x017F;&#x017F;er enthielten die<lb break="yes"/>er&#x017F;tern Luftportionen 24,0, und die letztern 34,8 Sauer&#x017F;toff-<lb break="no"/>gas. Wenn man das Wa&#x017F;&#x017F;er noch lang&#x017F;amer erhitzte, und<lb break="yes"/>die kleine, zuer&#x017F;t u&#x0364;bergehende, Menge Luft &#x017F;orgfa&#x0364;ltig ab&#x017F;on-<lb break="no"/>derte, &#x017F;o wu&#x0364;rde man vielleicht zu Anfang der Operation<lb break="yes"/>eine noch weniger reine Luft als die obige erhalten.</p>
+                    <lb break="yes"/>
+                    <p>Die Wirkung, welche das Wa&#x017F;&#x017F;er auf den Sauer&#x017F;toff<lb break="yes"/>und Stick&#x017F;toff ausu&#x0364;bt, i&#x017F;t al&#x017F;o nicht gleich &#x017F;tark, und die<lb break="yes"/>Wa&#x0364;rme &#x017F;chwa&#x0364;cht eher die auf letztern als auf er&#x017F;tern. Es<lb break="yes"/>i&#x017F;t &#x017F;elb&#x017F;t wahr&#x017F;cheinlich, daß die zuletzt entwickelte Luftpor-<lb break="no"/>tion noch reiner als 0,32 &#x2014; 0,34 &#x017F;eyn wu&#x0364;rde, wenn nicht<lb break="yes"/>das Wa&#x017F;&#x017F;er der Wanne &#x017F;ich zu erhitzen anfinge, und &#x017F;eine,<lb break="yes"/>dann unreinere, Luft der andern beimi&#x017F;chte. Dies i&#x017F;t be&#x017F;on-<lb break="no"/>ders der Fall, wenn der Wa&#x017F;&#x017F;erdampf u&#x0364;berzugehen anfa&#x0364;ngt<lb break="yes"/>und aus die&#x017F;em Um&#x017F;tande, &#x017F;o wie aus der Ungleichheit des<lb break="yes"/>Volums der vier abge&#x017F;onderten Luftantheile erkla&#x0364;rt es &#x017F;ich,<lb break="yes"/>daß die zuletzt entwickelte Luft nur jenen Gehalt hat, da<lb break="yes"/>die ganze, auf einmahl aufgefangene, Luftma&#x017F;&#x017F;e bis 0,31<lb break="yes"/>entha&#x0364;lt.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;e ungleiche Wirkung des Wa&#x017F;&#x017F;ers auf den Sauer-<lb break="no"/>&#x017F;toff und Stick&#x017F;toff zeigt &#x017F;ich auch bei der Auflo&#x0364;&#x017F;ung von<lb break="yes"/>Salzen. Wir bemerkten, daß reines Seinewa&#x017F;&#x017F;er nahe die<lb break="yes"/>Ha&#x0364;lfte mehr Luft durch Sieden gab, als da&#x017F;&#x017F;elbe mit Salz<lb break="yes"/>ge&#x017F;a&#x0364;ttigte. Die Ur&#x017F;ache die&#x017F;er Verminderung liegt in der<lb break="yes"/>
+                        <pb n="87" facs="#f0043"/> &#x017F;ehr betra&#x0364;chtlichen Menge Luft, die &#x017F;ich wa&#x0364;hrend der Auflo&#x0364;-<lb break="no" />&#x017F;ung des Salzes &#x017F;chon in der Ka&#x0364;lte entwickelt. Die&#x017F;e letz-<lb break="no"/>tere zeigte bei genauer Analy&#x017F;e nur 0,225 Sauer&#x017F;toffgehalt,<lb break="yes"/>wa&#x0364;hrend die aus der Koch&#x017F;alzauflo&#x0364;&#x017F;ung durch Sieden ent-<lb break="no" />wickelte 0,305 gab. Es folgt hieraus, daß das Wa&#x017F;&#x017F;er bei<lb break="yes"/>der Auflo&#x0364;&#x017F;ung des Salzes einen Theil der aufgelo&#x0364;&#x017F;ten Luft<lb break="yes"/>fahren la&#x017F;&#x017F;e, und daß die&#x017F;e unreiner &#x017F;ey, als die zuru&#x0364;ck-<lb break="no"/>behaltene.</p>
+                    <lb break="yes"/>
+                    <p>Die Er&#x017F;tarrung des Wa&#x017F;&#x017F;ers bei dem Gefrieren i&#x017F;t ein<lb break="yes"/>dritter Fall, in welchem man a&#x0364;hnliche Er&#x017F;cheinungen, wie<lb break="yes"/>die bisher bemerkten, wahrnimmt. Das Eiswa&#x017F;&#x017F;er giebt<lb break="yes"/>nur ungefa&#x0364;hr die Ha&#x0364;lfte der Luft, die man aus gewo&#x0364;hnli-<lb break="no"/>chem Wa&#x017F;&#x017F;er erha&#x0364;lt, und es i&#x017F;t zu bemerken, daß es &#x017F;eine<lb break="yes"/>Luft nur er&#x017F;t auszugeben anfa&#x0364;ngt, wenn &#x017F;eine Temperatur<lb break="yes"/>bereits u&#x0364;ber den 60° der hunderttheiligen Scale ge&#x017F;tiegen<lb break="yes"/>i&#x017F;t. Die in zwei ungleichen Portionen aufgefangene Luft<lb break="yes"/>zeigte in <persName key="volta_agv">
+                            <hi rendition="#g">Volta&#x2019;s</hi>
+                        </persName> Eudiometer 27,5 und 33,5 Sauer-<lb break="no" />&#x017F;toffgas.</p>
+                    <lb break="yes"/>
+                    <p>Die geringe Menge und große Reinheit der aus dem<lb break="yes" />Eiswa&#x017F;&#x017F;er entwickelten Luft bewei&#x017F;t, daß das Wa&#x017F;&#x017F;er bei<lb break="yes"/>dem Uebergange in den &#x017F;tarren Zu&#x017F;tand einen großen Theil<lb break="yes"/>und zwar einer viel unreinern Luft, als es zuru&#x0364;ckbeha&#x0364;lt,<lb break="yes"/>fahren la&#x0364;ßt. Es bringen al&#x017F;o drei auf den er&#x017F;ten Blick<lb break="yes"/>ver&#x017F;chiedene Um&#x017F;ta&#x0364;nde, na&#x0364;hmlich die Erho&#x0364;hung der Tempe-<lb break="no"/>ratur des Wa&#x017F;&#x017F;ers auf 35 &#x2014; 40°, das Auflo&#x0364;&#x017F;en eines Sal-<lb break="no"/>zes in der Ka&#x0364;lte, und das Gefrieren ganz gleiche Re&#x017F;ultate<lb break="yes"/>in Hin&#x017F;icht der Wirkung auf den Sauer&#x017F;toff und Stick&#x017F;toff<lb break="yes"/>hervor.</p>
+                    <lb break="yes"/>
+                    <p>Eine &#x017F;ehr auffallende Er&#x017F;cheinung i&#x017F;t es, daß das<lb break="yes"/>
+                        <pb n="88" facs="#f0044"/> Wa&#x017F;&#x017F;er weniger Luft fahren la&#x0364;ßt, wenn es zu Schnee ver-<lb break="no"/>dichtet wird, als wenn es in Eis u&#x0364;bergeht. Durch Schmel-<lb break="no"/>zen fri&#x017F;ch gefallenen Schnees und allma&#x0364;hliges Erhitzen des<lb break="yes" />erhaltenen Wa&#x017F;&#x017F;ers erhielten wir ein fa&#x017F;t doppelt &#x017F;o großes<lb break="yes"/>Volum Luft, als aus dem Eiswa&#x017F;&#x017F;er. Die Luft aus dem<lb break="yes" />Schneewa&#x017F;&#x017F;er war fa&#x017F;t eben &#x017F;o reichlich, als die aus dem<lb break="yes"/>Seinewa&#x017F;&#x017F;er: dies letztere gab durch Sieden 1940 Luft,<lb break="yes"/>wenn ein gleiches Volum Schneewa&#x017F;&#x017F;er 1892 gab. Die&#x017F;e<lb break="yes"/>letztere, nach Maßgabe wie &#x017F;ie &#x017F;ich entwickelte, in 5 An-<lb break="no" />theilen aufgefangene, zeigte in <persName key="volta_agv">
+                            <hi rendition="#g">Volta</hi>&#x2019;s</persName> Eudiometer folgen-<lb break="no"/>den Gehalt:</p>
+                    <lb break="yes"/>
+                    <p>1&#x017F;te Antheil 24,0 Sauer&#x017F;toffgas</p>
+                    <lb break="yes"/>
+                    <p>2te &#x2014; 26,8</p>
+                    <lb break="yes"/>
+                    <p>3te &#x2014; 29,6</p>
+                    <lb break="yes"/>
+                    <p>4te &#x2014; 32,0</p>
+                    <lb break="yes"/>
+                    <p>5te &#x2014; 34,8. Die&#x017F;er letztere Antheil i&#x017F;t die rein-<lb break="no"/>&#x017F;te Luft, die wir je aus irgend einem Wa&#x017F;&#x017F;er erhalten haben.</p>
+                    <lb break="yes"/>
+                    <p>Da das Volum eines jeden Antheils beobachtet wor-<lb break="no"/>den, &#x017F;o konnte man daraus den Sauer&#x017F;toffgehalt der gan-<lb break="no"/>zen Luftma&#x017F;&#x017F;e berechnen, welcher 28,7 betrug. Das Seine-<lb break="no"/>wa&#x017F;&#x017F;er gab an die&#x017F;em Tage eine Luft, die um 0,004 unrei-<lb break="no"/>ner war. Das Volum von Luft, welches die beiden Wa&#x0364;&#x017F;-<lb break="no"/>&#x017F;er, das Schnee- und Flußwa&#x017F;&#x017F;er ausgeben, betra&#x0364;gt u&#x0364;bri-<lb break="no"/>gens ungefa&#x0364;hr <formula notation="TeX">\frac{1}{25}</formula> des ihrigen.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;e Ver&#x017F;uche u&#x0364;ber das Schnee- und Eiswa&#x017F;&#x017F;er, die<lb break="yes"/>wir in der Folge noch vielfa&#x0364;ltig abzua&#x0364;ndern hoffen, bieten<lb break="yes" />fu&#x0364;r das Studium der Meteorologie &#x017F;ehr auffallende Be-<lb break="no"/>trachtungen dar. Der Schnee i&#x017F;t weiter nichts, als ein<lb break="yes"/>Ha&#x0364;uf&#x017F;el kleiner Eiskry&#x017F;talle, die &#x017F;ich in den obern Regionen<lb break="yes"/>
+                        <pb n="89" facs="#f0045"/> der Atmo&#x017F;pha&#x0364;re bilden, und doch geben die&#x017F;e kleine Kry&#x017F;talle<lb break="yes"/>nach dem Schmelzen eine fa&#x017F;t doppelt &#x017F;o große Menge<lb break="yes" />Luft, wie das Eis, welches &#x017F;ich an un&#x017F;ern Flu&#x0364;&#x017F;&#x017F;en bildete.<lb break="yes"/>Man mu&#x0364;ßte daraus &#x017F;chließen, daß, wenn das in der Luft<lb break="yes" />aufgelo&#x0364;&#x017F;te Wa&#x017F;&#x017F;er zu Schnee er&#x017F;tarrt, es nicht &#x017F;o viel Luft<lb break="yes"/>austreibe, als bei dem Gefrieren auf der Oberfla&#x0364;che der<lb break="yes"/>Erde, wenn man nicht muthmaßen du&#x0364;rfte, daß der Schnee<lb break="yes"/>eine gewi&#x017F;&#x017F;e Menge davon zwi&#x017F;chen &#x017F;einen kleinen Kry&#x017F;tallen<lb break="yes"/>zuru&#x0364;ckhalte, die er bei dem Schmelzen ab&#x017F;orbirt; denn es<lb break="yes"/>&#x017F;cheint, daß das Wa&#x017F;&#x017F;er vorzu&#x0364;glich in dem Augenblick &#x017F;eines<lb break="yes"/>Gefrierens die gro&#x0364;ßte Menge &#x017F;einer Luft entwickele.</p>
+                    <lb break="yes"/>
+                    <p>Die &#x017F;cho&#x0364;ne Vegetation, welche die Glet&#x017F;cher umgiebt,<lb break="yes"/>die &#x017F;chnelle Entwickelung der Pflanzen bei dem Schmelzen<lb break="yes"/>des Schnees im Fru&#x0364;hlinge, und mehrere Er&#x017F;cheinungen, die<lb break="yes"/>man bei dem Ackerbau und dem Bleichen zu bemerken ge-<lb break="no"/>glaubt hat, erregten die Vermuthung, daß das Eis- Schnee-<lb break="maybe"/>und Regenwa&#x017F;&#x017F;er durch eine Menge aufgelo&#x0364;&#x017F;t enthaltenden<lb break="yes" />Sauer&#x017F;toffs, den &#x017F;ie entwickelten, be&#x017F;ondere Wirkungen her-<lb break="no"/>vorbra&#x0364;chten. Un&#x017F;ere bis jetzt ange&#x017F;tellten Ver&#x017F;uche &#x017F;cheinen<lb break="yes" />die&#x017F;e Muthmaßung nicht zu begu&#x0364;n&#x017F;tigen. Es giebt ohne<lb break="yes"/>Zweifel Brunnen, die eine unreinere als die atmo&#x017F;pha&#x0364;ri&#x017F;che<lb break="yes"/>Luft enthalten, und die&#x017F;e, außerdem noch mit Salzen und<lb break="yes" />Kohlen&#x017F;a&#x0364;ure beladenen, Brunnenwa&#x0364;&#x017F;&#x017F;er mu&#x0364;&#x017F;&#x017F;en bei der Vege-<lb break="no"/>tation und dem Bleichen ganz anders wirken, als das<lb break="yes" />Schneewa&#x017F;&#x017F;er. Aber die Unter&#x017F;chiede, die das der Luft aus-<lb break="no"/>ge&#x017F;etzt gewe&#x017F;ene de&#x017F;tillirte Wa&#x017F;&#x017F;er, das Regen- Schnee- und<lb break="yes" />Flußwa&#x017F;&#x017F;er bewirkt, la&#x017F;&#x017F;en &#x017F;ich &#x017F;chwerlich aus dem aufge-<lb break="no"/>lo&#x0364;&#x017F;ten Sauer&#x017F;toff ableiten, wenn man &#x017F;ich erinnert, daß alle<lb break="yes"/>die&#x017F;e Wa&#x0364;&#x017F;&#x017F;er eine fa&#x017F;t gleich reine Luft in beinahe gleicher<lb break="yes"/>Menge enthalten. Die Er&#x017F;cheinungen der Vegetation, wie<lb break="yes"/>
+                        <pb n="90" facs="#f0046"/> die der Meteorologie, &#x017F;ind &#x017F;o verwickelt, ha&#x0364;ngen von der<lb break="yes"/>Vereinigung &#x017F;o vieler Um&#x017F;ta&#x0364;nde auf einmahl ab, daß man<lb break="yes" />&#x017F;ich wohl hu&#x0364;ten muß, einer einzigen Ur&#x017F;ache etwas zuzu-<lb break="no"/>&#x017F;chreiben, was durch mehrere bewirkt wird.</p>
+                    <lb break="yes"/>
+                    <p>Die Ver&#x017F;uche, welche wir u&#x0364;ber die Kraft mitgetheilt<lb break="yes"/>haben, mit welcher die letzten Antheile des aufgelo&#x0364;&#x017F;ten<lb break="yes"/>Sauer&#x017F;toffs vom Wa&#x017F;&#x017F;er zuru&#x0364;ck gehalten werden, werfen<lb break="yes" />ein gro&#x0364;ßeres Licht auf den Zu&#x017F;tand, in welchem die Luft<lb break="yes"/>&#x017F;ich in den Flu&#x0364;&#x017F;&#x017F;igkeiten befindet. <persName key="mairan_01">
+                            <hi rendition="#g">Mairan</hi>
+                        </persName> hatte &#x017F;chon<lb break="yes"/>mit Grund ge&#x017F;chlo&#x017F;&#x017F;en, daß &#x017F;ie darin nicht im ela&#x017F;ti&#x017F;chen<lb break="yes"/>Zu&#x017F;tande vorhanden &#x017F;eyn ko&#x0364;nne, weil das &#x017F;pec. Gewicht des<lb break="yes" />luftvollen und luftleeren Wa&#x017F;&#x017F;ers nicht merklich ver&#x017F;chieden<lb break="yes"/>i&#x017F;t. Die chemi&#x017F;chen Er&#x017F;cheinungen be&#x017F;ta&#x0364;ttigen die&#x017F;e Folge-<lb break="no"/>rung. Ko&#x0364;nnte das durch De&#x017F;tillation oder durch die Luft-<lb break="no"/>pumpe &#x017F;einer Luft beraubte Wa&#x017F;&#x017F;er als ein Schwamm be-<lb break="no"/>trachtet werden, de&#x017F;&#x017F;en Poren leer &#x017F;ind: warum &#x017F;ollten die&#x017F;e<lb break="yes"/>Poren &#x017F;ich dann nicht bei der er&#x017F;ten Beru&#x0364;hrung mit der<lb break="yes"/>Luft anfu&#x0364;llen? woher &#x017F;ollte die Ab&#x017F;orbtion vielmehr &#x017F;o lang-<lb break="no"/>&#x017F;am vor &#x017F;ich gehen? warum be&#x017F;onders &#x017F;ollte das Wa&#x017F;&#x017F;er<lb break="yes"/>dann mehr von einem als dem andern Gas aufnehmen?<lb break="yes"/>warum, wie wir noch ho&#x0364;ren werden, das Wa&#x017F;&#x017F;er einen An-<lb break="no" />theil von einem Gas fahren la&#x017F;&#x017F;en, um an de&#x017F;&#x017F;en Stelle<lb break="yes"/>ein anderes aufzunehmen? Die&#x017F;e Auflo&#x0364;&#x017F;ung der Luft im<lb break="yes" />Wa&#x017F;&#x017F;er kann al&#x017F;o nur als der Erfolg einer chemi&#x017F;chen Ver-<lb break="no"/>wandt&#x017F;chaft ange&#x017F;ehen werden.</p>
+                    <lb break="yes"/>
+                    <p>Jetzt wollen wir noch un&#x017F;ere Ver&#x017F;uche u&#x0364;ber die mit<lb break="yes"/>dem Wa&#x017F;&#x017F;er in Beru&#x0364;hrung ge&#x017F;etzten reinen oder gemi&#x017F;chten<lb break="yes"/>Gasarten mittheilen. Es i&#x017F;t la&#x0364;ng&#x017F;t bekannt, daß das u&#x0364;ber<lb break="yes"/>Wa&#x017F;&#x017F;er aufbewahrte Sauer&#x017F;toffgas unrein werde; aber noch<lb break="yes"/>
+                        <pb n="91" facs="#f0047"/> waren die Er&#x017F;cheinungen, welche die ver&#x017F;chiedenen Gasarten<lb break="yes"/>bei ihrer Wirkung auf das Wa&#x017F;&#x017F;er zeigen, in ihrer Ge-<lb break="no"/>&#x017F;ammtheit zu unter&#x017F;uchen. Die Gasarten, die wir anwand-<lb break="no"/>ten, hatten alle genau da&#x017F;&#x017F;elbe Volum, und die Mengen<lb break="yes" />filtrirtes Seinewa&#x017F;&#x017F;er waren fa&#x017F;t gleich. Nach 6 bis 8 Ta-<lb break="no"/>gen maßen wir nicht nur das ab&#x017F;orbirte Volum, &#x017F;ondern<lb break="yes"/>analy&#x017F;irten auch die Ru&#x0364;ck&#x017F;ta&#x0364;nde. Das letztere war um &#x017F;o<lb break="yes"/>no&#x0364;thiger, da man oft aus der nur &#x017F;ehr geringen Vera&#x0364;nde-<lb break="no"/>rung des Umfanges der mit dem Wa&#x017F;&#x017F;er in Beru&#x0364;hrung ge-<lb break="no"/>&#x017F;etzten Luft zu &#x017F;chließen geneigt &#x017F;eyn ko&#x0364;nnte, daß keine merk-<lb break="no"/>liche Wirkung Statt gehabt, wenn nicht die Analy&#x017F;e gezeigt<lb break="yes"/>ha&#x0364;tte, daß &#x017F;ie vielmehr &#x017F;ehr groß gewe&#x017F;en, aber durch die<lb break="yes" />Menge der an die Stelle der ab&#x017F;orbirten aus dem Wa&#x017F;&#x017F;er<lb break="yes"/>ausgetretenen Luft verdeckt &#x017F;ey.</p>
+                    <lb break="yes"/>
+                    <p>Unter allen wird das Sauer&#x017F;toffgas vom Seinewa&#x017F;&#x017F;er<lb break="yes"/>am &#x017F;ta&#x0364;rk&#x017F;ten ab&#x017F;orbirt. Von 100 Sauer&#x017F;toffgas, Stickgas<lb break="yes"/>und Wa&#x017F;&#x017F;er&#x017F;toffgas, hatte das er&#x017F;te 0,40, die andern nur<lb break="yes"/>0,05 und 0,03 verloren. Aber die Ab&#x017F;orbtion des Sauer-<lb break="no"/>&#x017F;toffgas i&#x017F;t noch viel gro&#x0364;ßer, als es die &#x017F;ichtliche Vermin-<lb break="no"/>derung anzeigt. Die ru&#x0364;ck&#x017F;ta&#x0364;ndigen 0,60 enthielten, an&#x017F;tatt<lb break="yes"/>reines Sauer&#x017F;toffgas zu &#x017F;eyn, 0,37 Stickgas und nur 0,23<lb break="yes" />Sauer&#x017F;toffgas, &#x017F;o daß al&#x017F;o die 100 von letzterm 0,77 u&#x0364;ber<lb break="yes"/>dem Seinewa&#x017F;&#x017F;er verloren und 0,37 Stickgas ausgetrieben<lb break="yes"/>hatten. Es nimt al&#x017F;o Flußwa&#x017F;&#x017F;er, welches lange der Luft<lb break="yes" />ausge&#x017F;etzt gewe&#x017F;en i&#x017F;t, welches man fu&#x0364;r mit der&#x017F;elben ge-<lb break="no"/>&#x017F;a&#x0364;ttigt halten &#x017F;ollte, eine große Menge dargebotenes Sauer-<lb break="no" />&#x017F;toffgas auf, ohne eine eben &#x017F;o große Menge Stickgas<lb break="yes"/>auszugeben.</p>
+                    <lb break="yes"/>
+                    <p>Auf das Volum des Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;cheint das Wa&#x017F;-<lb break="no"/>
+                        <pb n="92" facs="#f0048"/> &#x017F;er fa&#x017F;t gar keinen Einfluß zu haben. Die Ungleichheit<lb break="yes"/>der erhaltenen Re&#x017F;ultate verhindert uns, u&#x0364;ber die kleinen<lb break="yes" />Vera&#x0364;nderungen, die es wa&#x0364;hrend die&#x017F;er Beru&#x0364;hrung erleiden<lb break="yes"/>kann, etwas Be&#x017F;timmtes anzugeben.</p>
+                    <lb break="yes"/>
+                    <p>Das Volum des reinen Stickgas wird u&#x0364;ber Wa&#x017F;&#x017F;er<lb break="yes"/>um 0,02 bis 0,03 vermindert; der Ru&#x0364;ck&#x017F;tand i&#x017F;t aber kein<lb break="yes"/>reines Stickgas mehr: wir fanden darin 0,11 Sauer&#x017F;toff-<lb break="no"/>gas, die aus dem Wa&#x017F;&#x017F;er durch 0,14 Stickgas ausgetrie-<lb break="no"/>ben waren. Das Stickgas vertreibt al&#x017F;o hier das Sauer-<lb break="no"/>&#x017F;toffgas, wie vorhin umgekehrt; nur die re&#x017F;pectiven Mengen<lb break="yes" />&#x017F;ind ver&#x017F;chieden.</p>
+                    <lb break="yes"/>
+                    <p>Das Verhalten eines Gemenges von Sauer&#x017F;toffgas<lb break="yes"/>und Wa&#x017F;&#x017F;er&#x017F;toffgas in Beru&#x0364;hrung mit dem Flußwa&#x017F;&#x017F;er wurde<lb break="yes"/>unter ver&#x017F;chiedenen Um&#x017F;ta&#x0364;nden unter&#x017F;ucht. Bald nahmen<lb break="yes"/>wir beide zu gleichen Theilen, bald ließen wir das eine<lb break="yes"/>davon u&#x0364;ber&#x017F;chu&#x0364;&#x017F;&#x017F;ig. Die Umfangsverminderung wird gro&#x0364;ßer,<lb break="yes"/>wenn das Sauer&#x017F;toffgas vor&#x017F;ticht, na&#x0364;hmlich, wenn 200<lb break="yes" />Sauer&#x017F;toff und 100 Wa&#x017F;&#x017F;er&#x017F;toffgas u&#x0364;ber Wa&#x017F;&#x017F;er gebracht<lb break="yes"/>wurden. In allen die&#x017F;en Fa&#x0364;llen wurde Stickgas aus dem<lb break="yes"/>Wa&#x017F;&#x017F;er getrieben. Bei Unter&#x017F;uchung des Ru&#x0364;ck&#x017F;tandes eines<lb break="yes"/>Gemenges von gleichen Theilen Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas fanden wir darin auf 100 Theile 20 Stickgas 50<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toffgas und 30 Sauer&#x017F;toffgas. Je gro&#x0364;ßer die Ab-<lb break="no"/>&#x017F;orbtion des letztern gewe&#x017F;en war, de&#x017F;to mehr Stickgas fan-<lb break="no"/>den wir. 600 Theile eines Gemenges von 400 Sauer&#x017F;toff-<lb break="no"/>gas und 200 Wa&#x017F;&#x017F;er&#x017F;toffgas wurden durch zehnta&#x0364;giges Ste-<lb break="no"/>hen u&#x0364;ber Seinewa&#x017F;&#x017F;er auf 562 reducirt. Ha&#x0364;tte der Ru&#x0364;ck-<lb break="no"/>&#x017F;tand von die&#x017F;en Gasarten im vorigen Verha&#x0364;ltniß keine Ver-<lb break="no"/>a&#x0364;nderung erlitten und wa&#x0364;re auch kein anderes Gas ausge-<lb break="no"/>
+                        <pb n="93" facs="#f0049"/>trieben worden, &#x017F;o ha&#x0364;tte er 375 Sauer&#x017F;toffgas und<lb break="yes"/>187 Wa&#x017F;&#x017F;er&#x017F;toffgas enthalten mu&#x0364;&#x017F;&#x017F;en: die Analy&#x017F;e aber<lb break="yes"/>zeigte darin 246 Stickgas, 142 Wa&#x017F;&#x017F;er&#x017F;toffgas und<lb break="yes"/>174 Sauer&#x017F;toffgas.</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;e Ver&#x017F;uche bewei&#x017F;en, daß das Wa&#x017F;&#x017F;er&#x017F;toffgas, wel-<lb break="no"/>ches, wenn es allein mit dem Wa&#x017F;&#x017F;er in Beru&#x0364;hrung i&#x017F;t,<lb break="yes"/>nicht &#x017F;ehr merklich ab&#x017F;orbirt wird, in Verbindung mit<lb break="yes"/>Sauer&#x017F;toffgas allerdings und zwar in betra&#x0364;chtlicher Menge<lb break="yes"/>ab&#x017F;orbirt werde. Es bietet &#x017F;ich hier eine &#x017F;ehr wichtige<lb break="yes"/>Frage dar, na&#x0364;hmlich, ob das vom Wa&#x017F;&#x017F;er ab&#x017F;orbirte<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ich darin als Wa&#x017F;&#x017F;er&#x017F;toff befinde, oder ob<lb break="yes"/>es &#x017F;ich mit dem Sauer&#x017F;toff zu Wa&#x017F;&#x017F;er verbinde? Wir &#x017F;uchten<lb break="yes"/>die&#x017F;e Frage dadurch zu lo&#x0364;&#x017F;en, daß wir ein durch Kochen<lb break="yes"/>von Luft befreietes Wa&#x017F;&#x017F;er mit einem Gemenge von Sauer-<lb break="no" />&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas in Beru&#x0364;hrung &#x017F;etzten. Nach<lb break="yes"/>12 Tagen <choice>
+                            <sic>de&#x017F;tillirren</sic>
+                            <corr type="editorial">de&#x017F;tillirten</corr>
+                        </choice> wir die&#x017F;es Wa&#x017F;&#x017F;er und fanden bei<lb break="yes"/>nachheriger Analy&#x017F;e der dadurch erhaltenen Luft in ihr das<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas in &#x017F;olcher Menge, daß wir &#x017F;ie in <persName key="volta_agv">
+                            <hi rendition="#g">Volta</hi>&#x2019;s</persName>
+                        <lb break="yes"/>Eudiometer entzu&#x0364;nden konnten, ohne ein anderes Gas zu-<lb break="no"/>&#x017F;etzen zu du&#x0364;rfen. Hieraus ergiebt &#x017F;ich nun ohne Zweifel,<lb break="yes"/>daß das ab&#x017F;orbirte Wa&#x017F;&#x017F;er&#x017F;toffgas &#x017F;ich wiederfinden ließ; ob<lb break="yes"/>aber in der&#x017F;elben Menge, in welcher es ab&#x017F;orbirt wurde?<lb break="yes"/>ob es &#x017F;ich nicht in la&#x0364;ngerer Zeit mit dem Sauer&#x017F;toff ver-<lb break="no"/>binden wu&#x0364;rde? daru&#x0364;ber haben wir uns eine Reihe von<lb break="yes" />Ver&#x017F;uchen anzu&#x017F;tellen vorge&#x017F;etzt. Ko&#x0364;nnten der im Wa&#x017F;&#x017F;er<lb break="yes"/>befindliche Sauer&#x017F;toff und Wa&#x017F;&#x017F;er&#x017F;toff &#x017F;ich darin verbinden,<lb break="yes" />&#x017F;o wa&#x0364;re es leichter zu begreifen, woher das Wa&#x017F;&#x017F;er&#x017F;toffgas,<lb break="yes"/>welches &#x017F;ich von der Erde erhebt, weder in der Luft, die<lb break="yes"/>uns umgiebt, noch in den hohen Regionen, bis zu welchen<lb break="yes"/>
+                        <pb n="94" facs="#f0050"/> man &#x017F;ich erhoben hat, wiederzufinden i&#x017F;t. Wir mu&#x0364;&#x017F;&#x017F;en hier<lb break="yes"/>bemerken, daß wir bei einer &#x017F;orgfa&#x0364;ltigen Analy&#x017F;e der Luft<lb break="yes"/>aus Regenwa&#x017F;&#x017F;er darin kein Wa&#x017F;&#x017F;er&#x017F;toffgas gefunden haben,<lb break="yes" />wenig&#x017F;tens keine bis auf 0,003 &#x017F;teigende Menge; wir wer-<lb break="no"/>den die&#x017F;e Ver&#x017F;uche mit dem Regen in ver&#x017F;chiedenen Jahrs-<lb break="no"/>zeiten, be&#x017F;onders mit Gewitterregen wiederholen.</p>
+                    <lb break="yes"/>
+                    <p>Auf Gemenge von Sauer&#x017F;toffgas und Stickgas wirkte<lb break="yes"/>das Flußwa&#x017F;&#x017F;er weniger als auf die von Sauer&#x017F;toffgas<lb break="yes"/>und Wa&#x017F;&#x017F;er&#x017F;toffgas. Die&#x017F;es i&#x017F;t nicht &#x017F;o &#x017F;ehr u&#x0364;berra&#x017F;chend,<lb break="yes"/>wenn man einen Blick auf das Ganze die&#x017F;er Er&#x017F;cheinungen<lb break="yes"/>wirft. Man findet, daß das Wa&#x017F;&#x017F;er be&#x017F;ta&#x0364;ndig das Be-<lb break="no" />&#x017F;treben a&#x0364;ußere, &#x017F;ich mit den Gasarten, die man ihm dar-<lb break="no"/>bietet, ins Gleichgewicht zu &#x017F;etzen: Setzt man es mit<lb break="yes"/>Sauer&#x017F;toffgas in Beru&#x0364;hrung, &#x017F;o giebt es Stickgas aus;<lb break="yes"/>bietet man ihm letzteres dar, &#x017F;o la&#x0364;ßt es er&#x017F;teres fahren;<lb break="yes"/>von einem Gemenge von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>ab&#x017F;orbirt es einen Theil und giebt Stickgas an die Stelle.<lb break="yes"/>Ueberall &#x017F;ucht es das Verha&#x0364;ltniß der Luft, die es entha&#x0364;lt,<lb break="yes"/>nach der Natur desjenigen Gas zu modificiren, welches<lb break="yes"/>man ihm darbietet. Da nun das Seinewa&#x017F;&#x017F;er bereits mit<lb break="yes"/>einem Gemenge von Sauer&#x017F;toffgas und Stickgas beladen<lb break="yes"/>war, &#x017F;o &#x017F;cheint es natu&#x0364;rlich, daß es mehr Wirkung auf ein<lb break="yes"/>Gemenge von Sauer&#x017F;toffgas und Wa&#x017F;&#x017F;er&#x017F;toffgas a&#x0364;ußerte,<lb break="yes"/>als auf eins von Sauer&#x017F;toffgas und Stickgas, welches der<lb break="yes"/>in ihm bereits befindlichen Luft a&#x0364;hnlich i&#x017F;t. Um richtig<lb break="yes"/>u&#x0364;ber die&#x017F;e Er&#x017F;cheinungen urtheilen zu ko&#x0364;nnen, werden wir<lb break="yes"/>Wa&#x017F;&#x017F;er, welches eben von aller Luft entleert worden, mit<lb break="yes"/>ver&#x017F;chiedenen einzelnen und gemengten Gasarten an&#x017F;chwa&#x0364;n-<lb break="no"/>gern und die Wirkung die&#x017F;es Wa&#x017F;&#x017F;ers nach einem langen<lb break="yes"/>
+                        <pb n="95" facs="#f0051"/> Zeitraum unter&#x017F;uchen, denn oft kann er&#x017F;t in einem &#x017F;olchen<lb break="yes"/>die Natur die Hinderni&#x017F;&#x017F;e be&#x017F;iegen, die &#x017F;ich dem Spiel der<lb break="yes"/>Verwandt&#x017F;chaften in den Weg werfen.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

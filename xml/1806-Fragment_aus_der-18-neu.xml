@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="3" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#k">Beauties of Tropical Vegetation.</hi>
+                </head>
+                <p>&#x2014; It is under the<lb break="yes"/>burning rays of a tropical sun that vegetation displays its most<lb break="yes"/>majestic forms. In the cold north the bark of trees is covered<lb break="yes"/>with lichens and mosses, whilst between the tropics the cym-<lb break="no"/>bidium and fragrant vanilla enliven the trunks of the anacardia<lb break="yes"/>and of the gigantic fig-trees. The fresh verdure of the pothos<lb break="yes"/>leaves, and of the dracontias, contrasts with the many-coloured<lb break="yes"/>flowers of the orchide&#x00E6;. Climbing banhinias, passifloras, and<lb break="yes"/>yellow flowering banisterias, twine round the trunks of the<lb break="yes"/>forest trees. Delicate blossoms spring from the roots of the<lb break="yes"/>theobroma. and from the thick and rough bark of the crescen-<lb break="no"/>tias and the gustavia. In the midst of this profusion of flowers<lb break="yes"/>and fruits, and in the luxuriant interturnings of the climbing<lb break="yes"/>plants, the naturalist often finds it difficult to discover to which<lb break="yes"/>stem the different flowers and leaves really belong. A single<lb break="yes"/>tree adorned with paullinias, bignonias, and dendrobium, form<lb break="yes"/>a group of plants which, if disentangled and separated from<lb break="yes"/>each other, would cover a considerable space of ground. In<lb break="yes"/>the tropics vegetation is generally of a fresher verdure, more<lb break="yes"/>luxuriant and succulent, and adorned with larger and more<lb break="yes"/>shining leaves than in our northern climates. The &#x201C;social&#x201D;<lb break="yes"/>plants, which often impart so uniform and monotonous a cha-<lb break="no"/>racter to European countries, are almost entirely absent in the<lb break="yes"/>
+                    <placeName key="aequatorialgegend">equatorial regions</placeName>. Trees almost as lofty as our oaks are<lb break="yes"/>adorned with flowers as large and beautiful as our lilies. On<lb break="yes"/>the shady banks of the Rio Madalena in <placeName key="suedamerika">South America</placeName>, there<lb break="yes" />grows a climbing aristolochia bearing flowers four feet in cir-<lb break="no" />cumference, which the Indian boys draw over their heads in<lb break="yes" />sport, and wear as hats or helmets. In the islands of the Indian<lb break="yes"/>Archipelago, the flower of the rafflesia is nearly three feet in<lb break="yes"/>diameter, and weighs above fourteen pounds.... These<lb break="yes"/>and many other of the enjoyments which nature affords are<lb break="yes"/>wanting to the nations of the north. Many constellations and<lb break="yes"/>many vegetable forms, and of the latter those which are the<lb break="yes"/>most beautiful, remain for ever unknown to them. Individual<lb break="yes"/>plants languishing in our hot-house, can give a very faint idea<lb break="yes"/>of the majestic vegetation of the tropical zone. But the high<lb break="yes"/>cultivation of our languages, the glowing fancy of the poet,<lb break="yes"/>and the imitative art of the painter, open to us sources whence<lb break="yes"/>flow abundant compensations, and from whence our imagina-<lb break="no"/>tion can derive the living image of that more vigorous nature<lb break="yes"/>which other climes display. In the frigid north, in the midst<lb break="yes"/>of the barren heath, the solitary student can appropriate men-<lb break="no"/>tally all that has been discovered in the most distant regions,<lb break="yes"/>and can create within himself a world free and imperishable as<lb break="yes"/>the spirit by which it is conceived.&#x2014;<hi rendition="#i">
+                        <persName key="humboldt_av">Humboldt</persName>&#x2019;s Aspects of<lb break="yes"/>Nature.</hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

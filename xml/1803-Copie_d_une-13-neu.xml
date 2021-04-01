@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="259" facs="#f0001"/>
+            <div n="1" xml:lang="nld">
+                <head>
+                    <hi rendition="#g">BRIEF</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">van</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">ALEXANDER v. HUMBOLD</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">aan den</hi>
+                    <lb break="yes"/>B. <persName key="delambre_jbj">
+                        <hi rendition="#g">DELAMBRE,</hi>
+                    </persName>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Aanhoudenden Geheimschryver van het<lb break="yes"/>Nat. Institut te Parys.</hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <hi rendition="#et">
+                        <hi rendition="#k">Lima,</hi>
+                        <hi rendition="#i">den</hi> 25 <hi rendition="#i">Nov.</hi> 1802.</hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>Zoo even kome ik, ge&#x00EB;erde Vriend! uit het binnen-gedeel-<lb break="no"/>te van het land, waar ik, in eene groote vlakte, proeven ge-<lb break="no"/>nomen hebbe, omtrent de afwykingen van de Kompasnaalde<lb break="yes"/>in het uur; en worde met leedwezen gewaar, dat het Fre-<lb break="no"/>gat <hi rendition="#i" >Astigarraga,</hi> &#x2019;t welk eerst met de 14 dagen naar Ca-<lb break="no"/>dix zou zeilen, deszelfs vertrek verbaast heeft, en dezen<lb break="yes"/>nacht onder zeil gegaan is. Deze was, &#x017F;edert 5 maanden,<lb break="yes"/>de eer&#x017F;te gelegenheid, welke zich in de eenzaamheid van de<lb break="yes"/>Zuid-Zee, naar Europa, aanbood; en gebrek aan tyd belet<lb break="yes"/>my, om aan het Nationaal In&#x017F;titut, dat my een zoo aandoen-<lb break="no"/>
+                    <fw type="catch" place="bottom">lyk</fw>
+                    <lb break="yes"/>
+                    <pb n="160" facs="#f0002"/> lyk bewys van deszelfs deelneming en toegenegenheid geeft,<lb break="yes"/>te &#x017F;chryven, gelyk ik anders verpligt was te doen.</p>
+                <lb break="yes"/>
+                <p>Weinige dagen voor myn vertrek van <hi rendition="#i">Quito</hi> naar <hi rendition="#i">Jaen,</hi>
+                    <lb break="yes"/>en de <placeName key="amazonas">Amazonen-rivier</placeName>, ontving ik den brief van 2 Pluvio&#x017F;e,<lb break="yes"/>des 9den jaars, dien my dit beroemd Genoot&#x017F;chap door uwe<lb break="yes"/>hand liet toekomen. Dezelve bleef 2 jaren onder weg, eer<lb break="yes"/>ik dien in de <hi rendition="#i">Kordillera</hi> der <hi rendition="#i">
+                        <placeName key="anden">Anden</placeName>
+                    </hi> in handen kreeg. Ik<lb break="yes"/>ontving hem, daags na een tweeden uit&#x017F;tap, dien ik gedaan<lb break="yes"/>had naar den Krater des Volkaans van <hi rendition="#i">Pichincha,</hi> om &#x2019;er<lb break="yes"/>een Electrometer van <persName key="volta_agv">
+                        <hi rendition="#i">Volta</hi>
+                    </persName> te brengen, en deszelfs middel-<lb break="no"/>lyn te meten. Ik vond haar 752 Toi&#x017F;en, daar die van den<lb break="yes"/>Ve&#x017F;uvius &#x017F;lechts 312 bedraagt. Dit errinnerde my, dat <persName key="lacondamine_cmd">
+                        <hi rendition="#i">la<lb break="yes"/>Condamine</hi>
+                    </persName> en <persName key="bouguer_p">
+                        <hi rendition="#i">Bouguer,</hi>
+                    </persName> op den top van den <hi rendition="#i">Guaguapi-<lb break="no" />chincha,</hi> dien ik meermalen bezocht, (en als een klas&#x017F;iken<lb break="yes"/>grond bemin) hunne eer&#x017F;te brieven der voormalige Akademie<lb break="yes"/>ontvingen, en ik verbeelde my, dat de <hi rendition="#i">Pichincha, Si mag-<lb break="no"/>na licet componere parvis,</hi> den Natuurkenneren geluk aan-<lb break="no"/>brengt.</p>
+                <lb break="yes"/>
+                <p>Hoe zal ik u uitdrukken, met welk een genoegen ik de-<lb break="no"/>zen Brief van het In&#x017F;titut, nevens de herhaalde verzekering<lb break="yes"/>van uw vriendelyk aandenken, las! Hoe zoet is de overtui-<lb break="no"/>ging, dat die geenen aan ons denken, welken onophoudelyk<lb break="yes"/>bezig zyn om de voortgangen van &#x2019;s men&#x017F;chen geest te bevor-<lb break="no"/>deren! In de woestyn der vlakten van <hi rendition="#i">
+                        <placeName key="apure">Apure</placeName>,</hi> in de digte<lb break="yes" />wouden van <hi rendition="#i">Ca&#x017F;iguian</hi> en van <hi rendition="#i" >Oronoko,</hi> had ik altyd hunne<lb break="yes"/>namen voor mynen geest, en, terwyl ik de ver&#x017F;chillende tyd-<lb break="no"/>vakken van myn omzwervend leven nadacht, &#x017F;tond ik met<lb break="yes"/>genoegen &#x017F;til, by de jaren 6 en 7, toen ik onder u woonde,<lb break="yes"/>en toe <hi rendition="#i">
+                        <persName key="laplace_ps">Laplace</persName>, <persName key="fourcroy_afd" >Fourcroix</persName>, <persName key="vauquelin_ln" >Vauquelin</persName>, <persName key="halle_jn">Halle</persName>, <persName key="lalande_jjlfd">Lalan-<lb break="no"/>de</persName>, <persName key="guytondemorveau_lbb">Guyton</persName>, <persName key="chaptal_jac" >Chaptal</persName>, <persName key="jussieu_ald" >Jus&#x017F;ieu</persName>, <persName key="desfontaines_rl" >Desfontaines</persName>, <persName key="prony_gcfmrbd" >Prony</persName>,</hi>
+                    <lb break="yes"/>en vooral gy, edelmoedige, gevoelvolle, man, my, in de<lb break="yes"/>vlakte van <hi rendition="#i">Lieur&#x017F;aint,</hi> met weldaden overlaadden: ontvangt<lb break="yes"/>gy allen den tol myner teedre erkentelykheid, mynen nimmer<lb break="yes"/>ophoudenden dank.</p>
+                <lb break="yes"/>
+                <p>Een geruimen tyd, voor dat ik den door u, als Secretaris<lb break="yes"/>van het In&#x017F;titut, ge&#x017F;chreven brief ontving, zond ik, na elkan-<lb break="no"/>der, 3 brieven af aan de Natuur- en Wiskundige klas&#x017F;e, waar<lb break="yes"/>van twee van <hi rendition="#i">Sant a Fe de Bogota,</hi> inhoudende een Verhan-<lb break="no"/>deling over het ge&#x017F;lacht der <hi rendition="#i">Chinkona</hi> (te weten &#x017F;talen der<lb break="yes"/>&#x017F;chors van zevenderleie &#x017F;oorten, afgezette Teekeningen, ver-<lb break="no"/>beeldende deze planten, met de ontleding van hare bloemen,<lb break="yes"/>welke in de langte van derzelver &#x017F;tuifvezeltjes zoo zeer on-<lb break="no"/>derling ver&#x017F;chillen, en met oplettendheid gedroogde geraam-<lb break="no"/>ten derzelven). D. <persName key="mutis_jc">
+                        <hi rendition="#i">Mutis,</hi>
+                    </persName> die my duizend vriendelykhe-<lb break="no"/>den bewezen heeft, en ten wiens gevalle ik de Magdalenen-<lb break="maybe"/>rivier in 40 dagen opvoer, &#x017F;chonk my over de honderd prach-<lb break="no"/>tige teekeningen, in groot folio, van de nieuwe ge&#x017F;lachten en<lb break="yes"/>&#x017F;oorten zyner Flora van <hi rendition="#i">Bogota,</hi> die &#x017F;lechts in hand&#x017F;chrift<lb break="yes"/>
+                    <fw type="catch" place="bottom">aan-</fw>
+                    <lb break="yes"/>
+                    <pb n="261" facs="#f0003"/> aanwezig is. Ik hebbe begrepen, dat deze verzameling, die<lb break="yes"/>even belangryk voor de Kruidkunde, als merkwaardig, uit<lb break="yes"/>hoofde van het &#x017F;choon koloriet, is, in geene betere handen<lb break="yes"/>zich kan bevinden, dan in die van <hi rendition="#i">
+                        <persName key="jussieu_ald">Jus&#x017F;ieu</persName>, <persName key="lamarck_jbpadmd">Lamarck</persName>
+                    </hi> en <persName key="desfontaines_rl">
+                        <hi rendition="#i">Des-<lb break="no"/>fontaines:</hi>
+                    </persName> weshalven ik ze als een gering bewys myner hoog-<lb break="no" />achting het Nationaal In&#x017F;titut hebbe aangeboden. Deze verza-<lb break="no"/>meling met die van de <hi rendition="#i">Chinkona&#x2019;s</hi> zyn, omtrent Juny dezes<lb break="yes"/>jaars, naar Indisch Karthagena afgezonden, en de Hr. <persName key="mutis_jc">
+                        <hi rendition="#i">Mutis</hi>
+                    </persName>
+                    <lb break="yes"/>heeft zelf op zich genomen, om die verder naar Parys te be-<lb break="no"/>zorgen. Een derde brief aan het In&#x017F;titut ging van <hi rendition="#i">Quito</hi>
+                    <lb break="yes"/>af, met eene Geologi&#x017F;che verzameling der voortbreng&#x017F;els van<lb break="yes"/>den <hi rendition="#i">Pichinga, <choice>
+                            <sic>Colopax</sic>
+                            <corr type="editorial">Cotopaxi</corr>
+                        </choice>
+                    </hi> en den <hi rendition="#i">Chimboras&#x017F;o.</hi> Hoe droe-<lb break="no" />vig is de onzekerheid over de aankomst van deze dingen, ge-<lb break="no"/>lyk ook van de zeldzame zaden, die wy, &#x017F;ints 3 jaren, naar<lb break="yes"/>de Kruidtuin van Parys hebben afgezonden!</p>
+                <lb break="yes"/>
+                <p>Gebrek aan ledigen tyd laat my heden niet toe om u eene<lb break="yes" />&#x017F;chets van myne togten en verrigtingen, &#x017F;edert onze terug-<lb break="no"/>komst van <hi rendition="#i">Rio Negro,</hi> te geven. Bekend is het u, dat in<lb break="yes"/>de Havannah ons het valsch bericht ter oore kwam nopens het<lb break="yes"/>vertrek van Kapitein <persName key="baudin_tn">
+                        <hi rendition="#i">Baudin</hi>
+                    </persName> naar Buenos Ayres. Getrouw<lb break="yes"/>aan myne beloften, om by hem te komen, waar zulks my<lb break="yes"/>mogelyk zou zyn, en overtuigd van het nut voor de Weten-<lb break="no"/>&#x017F;chappen, byaldien ik myne pogingen met die der Natuuron-<lb break="no"/>derzoekers, by Kapit. <persName key="baudin_tn">
+                        <hi rendition="#i">Baudin,</hi>
+                    </persName> voegde, aarzelde ik geen<lb break="yes"/>oogenblik om de geringe zegenpraal van een einde aan myne<lb break="yes"/>eigene ondernemingen te maken, opteofferen, en rustte ter-<lb break="no"/>&#x017F;tond, in Vetabano, een klein vaartuig uit, om my naar het<lb break="yes"/>Indisch Karthagena te begeven. Stormen hielden ons langer<lb break="yes"/>dan eene maand op in dezen overtogt; de winden van de<lb break="yes"/>Zuid-Zee, waar ik Kapit. <persName key="baudin_tn">
+                        <hi rendition="#i">Baudin</hi>
+                    </persName> meende te vinden, waren<lb break="yes"/>voorby, en ik begaf my op den moeilyken weg van Honda,<lb break="yes"/>Ibagur, van de gebergten Quindin, Papayan, en Pasto, naar<lb break="yes"/>Quito. Myne gezondheid voer voort, met, op eene wonder-<lb break="no"/>bare wyze, de afwis&#x017F;elingen der temperatur te braveeren,<lb break="yes"/>waar aan men op dezen weg is blootge&#x017F;teld. Dagelyks gaat<lb break="yes"/>men van be&#x017F;neeuwde hoogtens van 2,460 toi&#x017F;en, in dalen af,<lb break="yes"/>waar de Thermometer van <persName key="reaumur_rafd">
+                        <hi rendition="#i">Reaumur</hi>
+                    </persName> nooit onder 24 tot 26°<lb break="yes"/>&#x017F;taat.</p>
+                <lb break="yes"/>
+                <p>Myn togtgenoot, <persName key="bonpland_ajag">
+                        <hi rendition="#i">Bompland,</hi>
+                    </persName> wiens kunde, moed en on-<lb break="no"/>begrypelyke werkzaamheid my, in de Kruidkundige na&#x017F;poo-<lb break="no"/>ringen en in die voor de vergelykende Ontleedkunde, van het<lb break="yes"/>groot&#x017F;te nut waren, had twee maanden aan de derdendaag-<lb break="no"/>&#x017F;che koorts ge&#x017F;ukkeld. De Regentyd overviel ons op het ge-<lb break="no" />vaarlyk&#x017F;te gedeelte van den weg, op den hoogen rug van den<lb break="yes"/>Pas&#x017F;a. Na eene reize van acht maanden kwamen wy in Qui-<lb break="no"/>to, waar wy vernamen, dat Kapt. <persName key="baudin_tn">
+                        <hi rendition="#i">Baudin</hi>
+                    </persName> zyn weg van West<lb break="yes"/>naar Oost op de Kaap de Goede Hoop genomen had. Ge-<lb break="no"/>woon aan ongelukken, getroosten wy ons, zoo veel te heb-<lb break="no"/>
+                    <fw type="catch" place="bottom">ben</fw>
+                    <lb break="yes"/>
+                    <pb n="262" facs="#f0004"/> ben opgeöfferd, om het goede te bevorderen. Wanneer wy<lb break="yes"/>het oog lieten gaan over onze gedroogde Planten, over onze<lb break="yes"/>Barometri&#x017F;che en Geode&#x017F;i&#x017F;che metingen, over onze afteeke-<lb break="no"/>ningen, over onze proefnemingen omtrent de lucht, op de<lb break="yes"/>Kordilleras, dan konden wy niet ligt berouw hebben, landen<lb break="yes"/>doorreist te hebben, welker meerendeel nog door geen Na-<lb break="no"/>tuur-onderzoeker bezocht was.</p>
+                <lb break="yes"/>
+                <p>De Provintie <hi rendition="#i">Quito,</hi> het hoog&#x017F;te punt der wereld, &#x2019;t welk<lb break="yes"/>door de groote Katastrophe van 4 Febr. 1797 geheel omge-<lb break="no"/>keerd is, bood ons een wyd veld voor Natuurkundige waar-<lb break="no"/>nemingen aan. Zulke vervaarlyke Volkans, welker vlammen<lb break="yes"/>tot de hoogte van 1,000 Metres &#x017F;tygen, bragten geen dropje<lb break="yes"/>vloeiende Lava voort: zy braken niet dan kokend water,<lb break="yes"/>zwavelzure water&#x017F;tof, modder en koolzure klei (<hi rendition="#i">argile car-<lb break="no"/>boné</hi>) uit. Sedert het boven genoemd jaar is dit geheele we-<lb break="no"/>relddeel in oproer. Ieder oogenblik gevoelen wy vrees&#x017F;elyke<lb break="yes"/>&#x017F;chuddingen, en, in de vlakten van <hi rendition="#i">Riobomba,</hi> gelykt het<lb break="yes" />onderaardsch gedruisch naar dat van een berg, die onder on-<lb break="no"/>ze voeten in&#x017F;tort. De Dampkrings-lucht, en door en door<lb break="yes" />vochtige gronden (alle deze Volkans &#x017F;taan in een opgeloscht<lb break="yes"/>Porfyr) &#x017F;chynen de voornaam&#x017F;te dryfve&#x00EA;ren te zyn van deze<lb break="yes"/>ont&#x017F;teking en onderaard&#x017F;che gisting.....</p>
+                <lb break="yes"/>
+                <p>Tot dus verre hield men in Quito 2,470 Toi&#x017F;en voor de<lb break="yes" />uitter&#x017F;te hoogte, in welke de mensch de dunte der Lucht kan<lb break="yes"/>uit&#x017F;taan. Wy bragten, in de maand Maart van 1802, een<lb break="yes"/>geruimen tyd door in de groote vlakte, welke den Volkan<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="antisana">Anti&#x017F;ana</placeName>,</hi> op de hoogte van 2,107 Toi&#x017F;en, omgee&#x017F;t, waar<lb break="yes"/>dikwyls het bloed uit den bek &#x017F;pringt van de Os&#x017F;en, die men<lb break="yes"/>jaagt. Den 16 Maart ontdekten wy eenen weg op de &#x017F;neeuw,<lb break="yes"/>die glooijend afliep, langs welken wy tot op 2,773 Toi&#x017F;en op-<lb break="no" />klommen. De lucht bevattede 0,008 koolzuur, 0,218 zuur-<lb break="no" />&#x017F;tof en 0,774 &#x017F;tik&#x017F;tof. De Thermometer van <persName key="reaumur_rafd">
+                        <hi rendition="#i">Reaum.</hi>
+                    </persName> &#x017F;tond<lb break="yes"/>niet hooger dan op 15°, en het was &#x2019;er geheel niet koud;<lb break="yes"/>echter drong ons het bloed uit oogen en mond. De plaats<lb break="yes"/>liet ons niet toe, om, ergens anders dan in een hol, meer<lb break="yes"/>benedenwaarts, op 2,457 toi&#x017F;en, proeven te nemen met <persName key="borda_jcd">Bor-<lb break="no" />da&#x2019;s</persName> Kompas. De Inten&#x017F;iteit der magneti&#x017F;che krachten was,<lb break="yes"/>op die hoogte, grooter dan in Quito, in verhouding van 230<lb break="yes"/>tot 218; men moet echter niet vergeten, dat het getal der<lb break="yes"/>&#x017F;lingeringen dikwyls toeneemt, wanneer de Inklinatie afneemt,<lb break="yes"/>en dat die Inten&#x017F;iteit vermeerderd wordt, door de Bergmas&#x017F;a,<lb break="yes" />welker Profyr de magneet aandoet.</p>
+                <lb break="yes"/>
+                <p>By den togt, dien ik, den 23 Jun. 1802, op den <hi rendition="#i">Chimbo-<lb break="no"/>ras&#x017F;o</hi> deed, ondervonden wy, dat men, geduld hebbende,<lb break="yes"/>eene noch meer verylde lucht kan verdragen. Het gelukte<lb break="yes"/>ons noch 500 Toi&#x017F;es hooger te komen, dan <persName key="lacondamine_cmd">
+                        <hi rendition="#i">la Condamine</hi>
+                    </persName>
+                    <lb break="yes"/>(op den <hi rendition="#i">Carazon</hi>) bereikte, en namen op den <hi rendition="#i">Chimboras-<lb break="no"/>&#x017F;o,</hi> tot de hoogte van 3,031 Toi&#x017F;en, Werktuigen mede. Toen<lb break="yes"/>
+                    <fw type="catch" place="bottom">de</fw>
+                    <lb break="yes"/>
+                    <pb n="263" facs="#f0005"/> de kwik in de Barometer op 18 dm. 11,2 l. viel, en de Ther-<lb break="no"/>mometer op 1°,3 onder 0 &#x017F;tond, drong ons nog het bloed<lb break="yes"/>uit de lippen. Onze Indianen gingen, naar gewoonte, loo-<lb break="no"/>pen; <persName key="bonpland_ajag">
+                        <hi rendition="#i">Bompland</hi>
+                    </persName> en de Hr. <persName key="montufarylarrea_c">
+                        <hi rendition="#i">Montu&#x017F;on,</hi>
+                    </persName> Zoon van den Mar-<lb break="no"/>quis van <persName key="montufarylarrea_jpd">
+                        <hi rendition="#i">Selvalegre,</hi>
+                    </persName> uit Quito, waren de eenigen, die het<lb break="yes"/>met my uithielden. Allen wierden wy kwalyk, flaauw, en<lb break="yes"/>kregen neiging tot braken: &#x2019;t weik voorzeker meer aan ge-<lb break="no"/>brek van zuur&#x017F;tof, dan aan de dunte der lucht, in dat ge-<lb break="no"/>west, was toete&#x017F;chryven. Een vervaarlyke klove in den grond<lb break="yes" />belettede ons, den top van den <hi rendition="#i">Chimboras&#x017F;o</hi> opte&#x017F;tygen: be-<lb break="no"/>neden welken wy niet meer dan 206 Toi&#x017F;en ons bevonden.<lb break="yes"/>Gy weet, dat men, omtrent de hoogte van dezen Kolos, nog<lb break="yes"/>zeer in het onzekere is. <persName key="lacondamine_cmd">
+                        <hi rendition="#i">La Condamine,</hi>
+                    </persName> die denzelven zeer<lb break="yes"/>van verre mat, geeft hem ongeveer 3,220 Toi&#x017F;en; terwyl Don<lb break="yes"/>
+                    <persName key="juanysantacilia_j">
+                        <hi rendition="#i">George Juan</hi>
+                    </persName> de hoogte op 3,380 Toi&#x017F;en &#x017F;chat, zonder dat<lb break="yes"/>dit ver&#x017F;chil is toete&#x017F;chryven aan de ver&#x017F;chillende hoogte, wel-<lb break="no"/>ke deze Sterrekundigen voor de hoogte van het &#x017F;ignal van<lb break="yes"/>Carabourou aannemen. Ik mat, in de vlakte van <hi rendition="#i">Tapia,</hi> een<lb break="yes"/>Ba&#x017F;is van 1,702 Metres &#x2014; (vergeef my, dat ik nu eens van<lb break="yes" />Toi&#x017F;en, dan weder van Metres &#x017F;preek, naar dat de aard van<lb break="yes"/>myne Werktuigen zulks met zich brengt; gy kund ligt naar-<lb break="no"/>gaan, dat ik alles, eer ik myne Aanteekeningen in &#x2019;t licht<lb break="yes"/>geve, op de Metre, en de Thermometer van 100 graden, zal<lb break="yes"/>berekenen) &#x2014; twee Geode&#x017F;i&#x017F;che bewerkingen bepaalden my<lb break="yes"/>den <hi rendition="#i" >Chimboras&#x017F;o</hi> op 3,267 Toi&#x017F;en, boven de Zee; men moet<lb break="yes"/>&#x017F;lechts die berekeningen naar den af&#x017F;tand der Sextant van den<lb break="yes"/>kun&#x017F;tigen Horizont regelen.</p>
+                <lb break="yes"/>
+                <p>De Volkan <hi rendition="#i">Tongouragoa</hi> is, &#x017F;edert <persName key="lacondamine_cmd">
+                        <hi rendition="#i">la Condamine&#x2019;s</hi>
+                    </persName> tyd,<lb break="yes"/>niet weinig afgenomen. In plaats van 2,620 Toi&#x017F;en, vinde ik<lb break="yes"/>hem nu nog maar 2,531, en ik durf vertrouwen, dat dit ver-<lb break="no"/>&#x017F;chil niet uit een mis&#x017F;lag in de opneming ont&#x017F;taat. Want, by<lb break="yes"/>myne meting van den <hi rendition="#i">Cayambo,</hi> den <hi rendition="#i">
+                        <placeName key="antisana">Anti&#x017F;ana</placeName>, <choice>
+                            <sic>Cotopari</sic>
+                            <corr type="editorial">Cotopaxi</corr>
+                        </choice>
+                    </hi>
+                    <lb break="yes"/>en <hi rendition="#i">Iliniga,</hi> wyke ik vaak by de kleine 10 graden van <persName key="lacondamine_cmd">
+                        <hi rendition="#i">la<lb break="yes"/>Condamine&#x2019;s</hi>
+                    </persName> en <persName key="bouguer_p">
+                        <hi rendition="#i">Bouguer&#x2019;s</hi>
+                    </persName> re&#x017F;ultaten af. Ook zeggen alle<lb break="yes"/>de bewooners van dat onzalig oord, dat de <hi rendition="#i">Tongouragoa</hi> oog-<lb break="no"/>&#x017F;chynlyk lager geworden is. De <hi rendition="#i">
+                        <choice>
+                            <sic>Cotopari</sic>
+                            <corr type="editorial">Cotopaxi</corr>
+                        </choice>,</hi> daar en tegen,<lb break="yes"/>die zulke geweldige uitbar&#x017F;tingen onderging, is tegenwoordig<lb break="yes"/>nog even hoog als in 1744, zelfs noch iets hooger; &#x2019;t welk<lb break="yes"/>echter mogelyk aan een mis&#x017F;lag van mynen kant is toete&#x017F;chry-<lb break="no"/>ven. Maar de &#x017F;teenaardige top van den <hi rendition="#i">
+                        <choice>
+                            <sic>Cotopari</sic>
+                            <corr type="editorial">Cotopaxi</corr>
+                        </choice>
+                    </hi> wyst ook<lb break="yes"/>werkelyk uit, dat hy een &#x017F;choor&#x017F;teen is, die we&#x00EA;r&#x017F;tand biedt,<lb break="yes" />en zyne gedaante &#x017F;teeds behoudt.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#et">(<hi rendition="#i">Het vervolg in onze eerstkomende.</hi>)</hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+            <pb n="277" facs="#f0006"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#g">BRIEF</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">van</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">ALEXANDER v. HUMBOLD</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">aan den</hi>
+                    <lb break="yes"/>B. <persName key="delambre_jbj">
+                        <hi rendition="#g">DELAMBRE,</hi>
+                    </persName>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Aanhoudenden Geheimschryver van het<lb break="yes"/>Nat. Institut te Parys.</hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <hi rendition="#et">
+                        <hi rendition="#k">Lima,</hi>
+                        <hi rendition="#i">den</hi> 25 <hi rendition="#i">Nov.</hi> 1802.</hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(<hi rendition="#i">Vervolg en &#x017F;lot van bladz.</hi> 263.)</hi>
+                </p>
+                <lb break="yes"/>
+                <p>De waarnemingen, van January tot July, door ons gedaan<lb break="yes"/>in de <placeName key="anden">Anden</placeName> van Quito, bragten den ingezetenen de droevige<lb break="yes"/>tyding, dat de krater van den <hi rendition="#i" >Pichincha,</hi> welke <hi rendition="#i">la Conda-<lb break="no"/>mine</hi> met &#x017F;neeuw gevuld vond, op nieuw brandt, en dat de<lb break="yes"/>
+                    <hi rendition="#i">Chimboras&#x017F;o,</hi> dien men voor vreedzaam en on&#x017F;chadelyk hield,<lb break="yes"/>een volkan was, en mogelyk nog eens worden kan. Wy ont-<lb break="no"/>moetten, tot op de hoogte van 3,031 Toi&#x017F;en, verbrande rot-<lb break="no"/>&#x017F;en en puim&#x017F;teenen. Wee het Men&#x017F;chelyk Ge&#x017F;lacht, wanneer<lb break="yes"/>het volkaan&#x017F;che vuur &#x2014; want men kan de geheele Bergvlak-<lb break="no" />te van Quito voor een enkelen volkan met ver&#x017F;cheidene krui-<lb break="no"/>nen houden &#x2014; zich door den <hi rendition="#i" >Chimboras&#x017F;o</hi> ontlast! Men<lb break="yes"/>heeft dikwyls beweerd, dat deze berg van Granit zou wezen;<lb break="yes"/>doch hier van is geen &#x017F;poor te vinden. Ook be&#x017F;taat hy hier<lb break="yes"/>en daar in zuilen van gevormd Porphyr, &#x2019;t welk verglaasd<lb break="yes" />Veld&#x017F;pat, Hoorn&#x017F;teen en Olivin bevat.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">De-</fw>
+                <lb break="yes"/>
+                <pb n="278" facs="#f0007"/>
+                <p>Deze Porphyr-laag heeft eene dikte van 1,900 Toi&#x017F;en. Ik<lb break="yes" />kon, by deze gelegenheid, gewag maken van Poolwyzenden<lb break="yes" />Porphyr, dien wy in <hi rendition="#i">Vai&#x017F;aco</hi> by <hi rendition="#i">Pasta</hi> ontdekten en die,<lb break="yes"/>gelyk de Serpentin&#x017F;teen, welken ik in het <hi rendition="#i">Journal de Phy-<lb break="no"/>&#x017F;ique</hi> be&#x017F;chreef, Poolen, zonder aantrekkingskracht, heeft; ik<lb break="yes"/>kon u noch andere gewrochten, met opzicht tot de groote<lb break="yes"/>wet der Aard-beddingen en derzelver bystere dikte om en by<lb break="yes"/>de Middagslinie mededeelen; ware zulks niet te veel voor een<lb break="yes"/>brief, die mis&#x017F;chien nooit te regt komt. By eene nadere ge-<lb break="no"/>legenheid &#x017F;chryve ik wel hier over. Thans zal ik &#x2019;er &#x017F;lechts<lb break="yes"/>byvoegen, dat wy voor den B. <persName key="cuvier_g">
+                        <hi rendition="#i">Cuvier,</hi>
+                    </persName> buiten de Oly&#x017F;ants-<lb break="no"/>tanden, welken wy hem van de Berg-vlakte <hi rendition="#i">Santa Fé,</hi> op de<lb break="yes"/>hoogte van 1,350 Toi&#x017F;en, zonden, noch andere fraaie bewa-<lb break="no"/>ren, deels van den vleeschvretenden Olyfant, deels van een<lb break="yes" />&#x017F;oort, die een weinig van het Afrikaan&#x017F;che ras ver&#x017F;chilt, uit<lb break="yes"/>het dal <hi rendition="#i">Timana,</hi> de &#x017F;tad <hi rendition="#i">Ibarra</hi> en uit <hi rendition="#i">Chili.</hi> Het aanwe-<lb break="no"/>zen van dit vleeschvretend gedrocht van den <hi rendition="#i">Ohio,</hi> op 50<lb break="yes"/>graden Noordelyker en 35 graden Oostelyker breedte is dus<lb break="yes"/>bewezen.</p>
+                <lb break="yes"/>
+                <p>In <hi rendition="#i">Quito</hi> bragt ik zeer genoeglyke uren door. De Pre&#x017F;i-<lb break="no"/>dent, Baron <persName key="carondelet_flhd">
+                        <hi rendition="#i">v. Corundiles</hi>
+                    </persName> overlaadde ons met weldaden,<lb break="yes"/>en &#x017F;edert 3 jaren heb ik geen enkelen dag over de Agenten<lb break="yes"/>der Spaan&#x017F;che Regeering te klagen gehad. Zy hebben my,<lb break="yes"/>in alle opzichten, met eene kieschheid, en met eene onder-<lb break="no" />&#x017F;cheiding behandeld, die voor altoos myne dankerkentenis ver-<lb break="no"/>dient. Veel moeite heb ik my gegeven omtrent de Pyrami-<lb break="no"/>den en derzelver fundamenten, en houde die geheel niet,<lb break="yes"/>wat de hoek&#x017F;teenen betreft, voor verplaatst. Een edelmoedige<lb break="yes"/>onbeambte, die te gelyk een vriend is van de weten&#x017F;chappen<lb break="yes"/>en van zuike mannen, als haar bevorderden, gelyk <hi rendition="#i">
+                        <persName key="lacondamine_cmd">la Con-<lb break="no"/>damine</persName>, <persName key="godin_l">Godin</persName>
+                    </hi> en <persName key="bouguer_p">
+                        <hi rendition="#i">Bouguer,</hi>
+                    </persName> de <persName key="montufarylarrea_jpd">Marquis van <hi rendition="#i">Selvalegre,</hi>
+                    </persName>
+                    <lb break="yes"/>te Quito, is voornemens om ze te laten her&#x017F;tellen: maar dit<lb break="yes"/>voert my te verre.</p>
+                <lb break="yes"/>
+                <p>Na over <hi rendition="#i">As&#x017F;oriay</hi> en <hi rendition="#i" >Cuen&#x00E7;a</hi> (alwaar men Stierengevech-<lb break="no"/>ten hield) gekomen te zyn, &#x017F;loegen wy den weg van <hi rendition="#i">Loxa</hi>
+                    <lb break="yes"/>in, om onzen arbeid over den <hi rendition="#i">Cinchona</hi> ten einde te bren-<lb break="no"/>gen. Sedert bragten wy eene maand door, in de Provintien<lb break="yes"/>
+                    <hi rendition="#i">Taen, Burcamoros,</hi> en in den Pongos der <placeName key="amazonas">Amazonen-ri-<lb break="no"/>vier</placeName>, welker oevers pryken met de <hi rendition="#i">Andira</hi> en <persName key="bougainville_lad">
+                        <hi rendition="#i">Bougainvil-<lb break="no"/>lea</hi>
+                    </persName> van <persName key="jussieu_ald">
+                        <hi rendition="#i">Jus&#x017F;ieu.</hi>
+                    </persName> Het kwam my voor, van belang te wezen,<lb break="yes"/>om de langte van <hi rendition="#i">Tomependa</hi> en <hi rendition="#i">Chuchanga,</hi> alwaar de<lb break="yes"/>kaart van <persName key="lacondamine_cmd">
+                        <hi rendition="#i">la Condamine</hi>
+                    </persName> begint, te bepalen, en dit punt met<lb break="yes"/>de kust te verbinden. <persName key="lacondamine_cmd">
+                        <hi rendition="#i">La Condamine</hi>
+                    </persName> had &#x017F;lechts de Langte<lb break="yes"/>van den mond der <hi rendition="#i">Napo</hi> kunnen bepalen; den Tyd-meter ken-<lb break="no" />de men toen nog niet, zoo dat de Langtemeting van dien oord<lb break="yes" />noch veel verandering noodig hebbe. Myn Chronometer van<lb break="yes"/>
+                    <persName key="berthoud_l">
+                        <hi rendition="#i">L. Berthoud</hi>
+                    </persName> doet wonderen, naar myne gedachten, naardien<lb break="yes"/>ik my, van tyd tot tyd, door den eer&#x017F;ten wachter van Jupi-<lb break="yes"/>
+                    <fw type="catch" place="bottom">ter</fw>
+                    <lb break="no"/>
+                    <pb n="279" facs="#f0008"/>ter orienteer, en myne ver&#x017F;cheidenheden der middagshoogte,<lb break="no"/>&#x017F;tip by &#x017F;tip, vergelyke met die, welke <hi rendition="#i">
+                        <persName key="fidalgo_jfd">
+                            <choice>
+                                <sic>Fidalga</sic>
+                                <corr type="editorial">Fidalgo</corr>
+                            </choice>
+                        </persName>,</hi> by diens<lb break="yes"/>opneming, vond, toen hy, op order des Konings, trigonome-<lb break="no"/>tri&#x017F;che metingen van <hi rendition="#i">Cumana</hi> tot <hi rendition="#i">Karthagena</hi> deed.</p>
+                <lb break="yes"/>
+                <p>Van de <placeName key="amazonas">Amazonen-rivier</placeName> begaven wy ons, door de Mynen<lb break="yes"/>van <hi rendition="#i">Haalgyac,</hi> (die jaarlyks een Millioen Piasters opleveren,<lb break="yes"/>en alwaar men het graauw, met zilver bezwangerde koper-<lb break="no"/>erts, op de hoogte van 2,065 Toi&#x017F;en, vindt) over de <hi rendition="#i">
+                        <placeName key="anden">Anden</placeName>.</hi>
+                    <lb break="yes"/>Wy &#x017F;tegen die af, by <hi rendition="#i">Truxella,</hi> over <hi rendition="#i">Cascamarca,</hi> alwaar<lb break="yes"/>ik in het paleis van <persName key="atahualpa">
+                        <hi rendition="#i">Atahualpa,</hi>
+                    </persName> de Peruviaan&#x017F;che bogen en<lb break="yes"/>gewelven afteekende. Van daar trokken wy de woestynen aan<lb break="yes"/>de kusten der Zuidzee, tot <hi rendition="#i">Lima,</hi> door, alwaar de lucht,<lb break="yes" />gedurende een halfjaar, met dikken nevel betrokken is. Ik<lb break="yes" />haastte my, em daar te komen, ten einde, op 9 Novemb.<lb break="yes"/>den doorgang van Merkurius waar te nemen. (Hier volgen<lb break="yes"/>twee bladzyden met Sterrekundige berekeningen.)</p>
+                <lb break="yes"/>
+                <p>Onze verzamelingen van Planten en van Afteekeningen ter<lb break="yes"/>ontleding der ge&#x017F;lachten, volgens het denkbeeld, my, door<lb break="yes"/>den B. <persName key="jussieu_ald">
+                        <hi rendition="#i">Jus&#x017F;ieu,</hi>
+                    </persName> by onze ge&#x017F;prekken in het Genoot&#x017F;chap der<lb break="yes"/>Nat. Historie, aan de hand gegeven, zyn, door de &#x017F;chatten,<lb break="yes"/>welken wy in <hi rendition="#i">Quito, Loxa,</hi> aan de <placeName key="amazonas">Amazonen-rivier</placeName> en op<lb break="yes"/>de Kordilleras van <hi rendition="#i">Peru</hi> gevonden hebben, niet weinig ver-<lb break="no"/>meerderd geworden. Wy hebben vele Planten, door <persName key="jussieu_jd">
+                        <hi rendition="#i">Jo&#x017F;eph<lb break="yes"/>Jus&#x017F;ieu</hi>
+                    </persName> gezien, opgedaan, by voorb. de Llogue, <hi rendition="#i">affinis<lb break="yes"/>Guillajac</hi> en anderen. Ook bezitten wy een nieuw foort van<lb break="yes"/>
+                    <hi rendition="#i">Hesperis,</hi> die allerliefst is, ettelyke <hi rendition="#i">Collatix,</hi> ver&#x017F;cheidene<lb break="yes"/>
+                    <hi rendition="#i">Pas&#x017F;iflora</hi> en <hi rendition="#i">Loranthus,</hi> als boomen van 60 voeten. By-<lb break="no"/>zonderlyk zyn wy rykelyk voorzien van Dadelboomen en van<lb break="yes"/>grasaardige planten, waar over <persName key="bonpland_ajag">
+                        <hi rendition="#i">Bompland</hi>
+                    </persName> eene uit voerige<lb break="yes"/>Verhandeling ge&#x017F;chreven heeft. Tegenwoordig hebben wy<lb break="yes"/>reeds 3,784 zeer volledige be&#x017F;chryvingen, in het Latyn, en<lb break="yes"/>byna noch een derde gedeelte van dit getal, gedroogde plan-<lb break="no"/>ten, die wy, by gebrek aan tyd, nog niet hebben kunnen<lb break="yes"/>be&#x017F;chryven. &#x2019;Er zyn geene planten, van welken wy de rot-<lb break="no"/>&#x017F;en, waar op zy groeijen, en de hoogte, naar Toi&#x017F;en geme-<lb break="no"/>ten, op welke zy &#x017F;taan, niet kunnen noemen, zoo dat de<lb break="yes"/>Geographie der Planten, in onze Hand&#x017F;chritren, zeer naauw-<lb break="no"/>keurige bouw&#x017F;toffen zal aantreffen. Om onze zaken des te<lb break="yes"/>beter te verrichten, hebben <persName key="bonpland_ajag">
+                        <hi rendition="#i">Bompland</hi>
+                    </persName> en ik, elk afzonder-<lb break="no"/>lyk, dezelfde planten be&#x017F;chreven, &#x017F;choon men evenwel twee<lb break="yes"/>derde en noch meer der be&#x017F;chryvingen eeniglyk te danken<lb break="yes"/>hebbe aan den yver des eerstgenoemden, wiens vlyt en on-<lb break="no"/>begrensde zucht ter bevordering van de Weten&#x017F;chappen, niet<lb break="yes"/>genoeg kan bewonderd worden. <hi rendition="#i">
+                        <persName key="jussieu_ald">Jus&#x017F;ieu</persName>, <persName key="desfontaines_rl">Desfontaines</persName>
+                    </hi> en<lb break="yes"/>
+                    <persName key="lamarck_jbpadmd">
+                        <hi rendition="#i">Lamark</hi>
+                    </persName> hebben van hem een zeer uitmuntenden Leerling<lb break="yes" />gemaakt.</p>
+                <lb break="yes"/>
+                <p>Wy hebben onze Kruidboeken (<hi rendition="#i">Herbaria</hi>) by die van den<lb break="yes"/>Hr. <persName key="mutis_jc">
+                        <hi rendition="#i">Mutis</hi>
+                    </persName> nagezien en met ver&#x017F;cheidene Werken, in de bys-<lb break="no"/>
+                    <fw type="catch" place="bottom">ter</fw>
+                    <lb break="yes"/>
+                    <pb n="280" facs="#f0009"/> ter groote Boekery van dezen groeten man, geraadpleegd.<lb break="yes"/>Wy houden ons verzekerd vele nieuwe ge&#x017F;lachten en &#x017F;oorten<lb break="yes"/>te bezitten: het zal echter niet weinig tyd en moeite kosten,<lb break="yes"/>om te be&#x017F;lis&#x017F;chen, wat werkelyk nieuw is. Ook brengen wy<lb break="yes" />een &#x017F;teenaardige zelf&#x017F;tandigheid mede, die veel overeenkomst heeft<lb break="yes"/>met de Oost-Indi&#x017F;che <hi rendition="#i" >Tabashir,</hi> welke de Hr. <persName key="mutis_jc">
+                        <hi rendition="#i">Mutis</hi>
+                    </persName> ontleed<lb break="yes"/>heeft. Men vindt dezelve in de le&#x00EA;knoopen van een byster<lb break="yes"/>grof en groot &#x017F;oort van gras (of riet) &#x2019;t welk men met den<lb break="yes"/>Bambus verwis&#x017F;elt, doch welks bloemen van <persName key="schreber_jcdev">
+                        <hi rendition="#i">Schreber&#x2019;s</hi>
+                    </persName> Bam-<lb break="no"/>bu&#x017F;a ver&#x017F;chillen. Ik weet niet, of de B. <persName key="fourcroy_afd">
+                        <hi rendition="#i">Fourcroix</hi>
+                    </persName> de melk<lb break="yes"/>ontvangen heeft van de Koeplant, gelyk de Indianen haar noe-<lb break="no"/>men, welke my, met behulp van het Salpeter-zuur, een Bal-<lb break="no"/>&#x017F;emgeurige <hi rendition="#i" >Caoutchouk</hi> heeft opgeleverd, maar die, in plaats<lb break="yes"/>van invretend en &#x017F;chadelyk te wezen, gelyk alle andere melk<lb break="yes" />van planten, zeer voedzaam en aangenaam om te drinken is.<lb break="yes"/>Wy vonden haar op den weg naar de <hi rendition="#i">Oronoko,</hi> op eene<lb break="yes"/>plantagie, waar de Negers haar veel drinken. Ook heb ik,<lb break="yes"/>over Guadeloupe, aan den B. <persName key="fourcroy_afd">
+                        <hi rendition="#i">Fourcroix,</hi>
+                    </persName> en aan Sir <persName key="banks_j">
+                        <hi rendition="#i">Jo&#x017F;eph<lb break="yes"/>Banks,</hi>
+                    </persName> over Trinidad, onze <hi rendition="#i">Dapi&#x017F;che,</hi> of de witte geöxy-<lb break="no"/>deerde <hi rendition="#i">Caoutchouk,</hi> die uit de wortelen van een boom zy-<lb break="no"/>pelt, in de bos&#x017F;chen van <hi rendition="#i">Pimichin,</hi> aan den uitter&#x017F;ten hoek<lb break="yes" />der wereld, by den oor&#x017F;prong der <hi rendition="#i">Rio Negro</hi> (zwarte Ri-<lb break="no"/>vier).</p>
+                <lb break="yes"/>
+                <p>Eindelyk is ons, na drie jaren wachtens, in November 1802,<lb break="yes"/>de Mechanismus des Hemels van <persName key="laplace_ps">
+                        <hi rendition="#i">Laplace,</hi>
+                    </persName> ter hand geko-<lb break="no"/>men. Ik ben &#x2019;er met een &#x017F;oort van woedende Hondshonger<lb break="yes"/>op gevallen ......</p>
+                <lb break="yes"/>
+                <p>Dit &#x017F;tuk heeft my op nieuw overgehaald, om myne na&#x017F;poo-<lb break="no"/>ringen omtrent de Ebbe en Vloed der Dampkringslucht, waar<lb break="yes"/>over ik, in het jaar 1799, te <hi rendition="#i">Cumana,</hi> een groot aantal van<lb break="yes"/>waarnemingen deed, verder voort te zetten: <choice>
+                        <sic>gelvk</sic>
+                        <corr type="editorial">gelyk</corr>
+                    </choice> ik gemeld<lb break="yes"/>heb in mynen Brief aan den B. <hi rendition="#i">
+                        <persName key="lalande_jjlfd">Lalande</persName>. <persName key="godin_l" >Godin</persName>
+                    </hi> &#x017F;chynt &#x2019;er<lb break="yes"/>iets van geweten te hebben, zonder dat hy de oorzaak op-<lb break="no"/>geeft. <persName key="mosely_01">
+                        <hi rendition="#i">Mo&#x017F;ely</hi>
+                    </persName> zegt, tegen de waarheid, in eene Verhande-<lb break="no"/>ling over de ziekten onder de Keerkringen, dat de Barometer<lb break="yes"/>op het hoog&#x017F;te klimt, wanneer de Zon op de Middaghoogte<lb break="yes" />&#x017F;taat. Dit is zeer valsch; het maximum heeft plaats op het 21&#x017F;te<lb break="yes"/>en het 11de uur; het minimum om 4 uren en 15<formula notation="TeX">\frac{1}{2}</formula> uren.<lb break="yes"/>De Maan &#x017F;chynt niet zoo zeer de tyden als de hoogten<lb break="yes"/>te veranderen. Ik neem tegenwoordig, voornamelyk, de da-<lb break="no"/>gen der oppo&#x017F;itie en conjunctie waar, en, daar myn Barome-<lb break="no"/>ter, het twintig&#x017F;te deel eener lyn aanwyst, twyfele ik geens-<lb break="no" />zins, of de B. <persName key="lalande_jjlfd">
+                        <hi rendition="#i">Lalande,</hi>
+                    </persName> wiens Genie de Ebbe en Vloed der<lb break="yes"/>Zee, aan banden gelegd heeft, zal ook wel de wetten van de<lb break="yes"/>Ebbe en Vloed der lucht ontdekken, zoo dra ik hem &#x017F;lechts<lb break="yes"/>ettelyke duizenden waarnemingen heb geleverd.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Be-</fw>
+                <lb break="yes"/>
+                <pb n="281" facs="#f0010"/>
+                <p>Beoordeel zelf, hoe merkwaardig het ver&#x017F;chyn&#x017F;el is.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell/>
+                        <cell>d.</cell>
+                        <cell>lyn.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>24 Novemb. 10 u. </cell>
+                        <cell>des Morgens</cell>
+                        <cell>27 .</cell>
+                        <cell>5 . 75</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 12</cell>
+                        <cell>45 min.</cell>
+                        <cell/>
+                        <cell>5 . 45</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 2</cell>
+                        <cell>0</cell>
+                        <cell/>
+                        <cell>5 . 25</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 3</cell>
+                        <cell>30</cell>
+                        <cell/>
+                        <cell>5 . 10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 4</cell>
+                        <cell>45</cell>
+                        <cell/>
+                        <cell>5 . 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 5</cell>
+                        <cell>30</cell>
+                        <cell/>
+                        <cell>5 . 10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 7</cell>
+                        <cell>0</cell>
+                        <cell/>
+                        <cell>5 . 60</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 8</cell>
+                        <cell>0</cell>
+                        <cell/>
+                        <cell>5 . 60</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 9</cell>
+                        <cell>0</cell>
+                        <cell/>
+                        <cell>5 . 65</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014; &#x2014; &#x2014; 10</cell>
+                        <cell>30</cell>
+                        <cell/>
+                        <cell>5 . 65</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Te gelyk nam ik den Hygrometer en Thermometer waar.<lb break="yes"/>Myn Barometer is een Engel&#x017F;che.</p>
+                <lb break="yes"/>
+                <p>Maar ik ga te verre. Ik wilde ook aan myn lieven vriend<lb break="yes"/>
+                    <persName key="pommard_01">
+                        <hi rendition="#i">Pommard</hi>
+                    </persName> &#x017F;chryven; de tyd ontbreekt my: hy bemint my,<lb break="yes" />en zal my ver&#x017F;choonen.</p>
+                <lb break="yes"/>
+                <p>Ik ga niet naar de <hi rendition="#i">Philippynen:</hi> maar over <hi rendition="#i">
+                        <placeName key="acapulco">Acapulco</placeName>,<lb break="yes"/>Mexico</hi> en <hi rendition="#i">Havannah</hi> naar Europa, alwaar ik u, in Sep-<lb break="no"/>tember of October 1803, in <hi rendition="#i">Parys</hi> hoop te omhelzen. &#x2014;&#x2014;<lb break="yes"/>&#x00F4; hoe verlange ik aldaar te wezen!</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

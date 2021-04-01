@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="15" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#b">Allgemeines Bild der Flora auf der Erde.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Ungleich i&#x017F;t der Teppich gewebt, den die blüthenreiche Flora<lb break="yes"/>über den nackten Erdkörper ausgebreitet, dichter, wo die Sonne<lb break="yes"/>höher an dem nie bewölkten Himmel empor&#x017F;teigt, lockerer gegen<lb break="yes"/>die trägen Pole hin, wo der wiederkehrende Fro&#x017F;t bald die ent-<lb break="no"/>wickelte Knospe tödtet, bald die reifende Frucht erha&#x017F;cht. Doch<lb break="yes"/>überall darf der Men&#x017F;ch &#x017F;ich der nährenden Pflanzen erfreuen.<lb break="yes" />Trennt im Meeresboden ein Vulkan die kochende Flut und<lb break="yes"/>
+                    <pb n="16" facs="#f0002"/> &#x017F;chiebt plötzlich, wie zwi&#x017F;chen den <placeName key="griechinseln">griechi&#x017F;chen In&#x017F;eln</placeName>, einen<lb break="yes"/>&#x017F;chlackigen Fels hervor, oder erheben, um an eine friedlichere<lb break="yes"/>Naturer&#x017F;cheinung zu erinnern, die einträchtigen Nereiden ihre<lb break="yes"/>zelligen Wohnungen, bis &#x017F;ie nach Jahrtau&#x017F;enden über den Wa&#x017F;-<lb break="no" />&#x017F;er&#x017F;piegel hervorragend, ab&#x017F;terben und ein flaches Koralleneiland<lb break="yes"/>bilden, &#x017F;o &#x017F;ind die organi&#x017F;chen Kräfte &#x017F;ogleich bereit, den todten<lb break="yes" />Fels zu beleben. Was den Samen &#x017F;o plötzlich herbeiführt, ob<lb break="yes"/>wandernde Vögel oder Winde, oder die Wogen des Meeres, i&#x017F;t<lb break="yes"/>bei der großen Entfernung der Kü&#x017F;te &#x017F;chwer zu unter&#x017F;cheiden.</p>
+                <lb break="yes"/>
+                <p>Aber auf dem nackten Steine, &#x017F;obald ihn zuer&#x017F;t die Luft be-<lb break="no"/>rührt, bildet &#x017F;ich in den nordi&#x017F;chen Ländern ein Gewebe <choice>
+                        <sic>&#x017F;amen-<lb break="no"/>artiger</sic>
+                        <corr type="editorial">&#x017F;amt-<lb break="no"/>artiger</corr>
+                    </choice> Fa&#x017F;ern, die dem unbewaffneten Auge als farbige Flecken<lb break="yes"/>er&#x017F;cheinen. Einige &#x017F;ind durch hervorragende Linien bald einfach,<lb break="yes"/>bald doppelt begrenzt, andere &#x017F;ind in Furchen durch&#x017F;chnitten<lb break="yes"/>und in Fächer getheilt. Mit zunehmendem Alter verdunkelt &#x017F;ich<lb break="yes"/>ihre lichte Farbe, das fernleuchtende Gelb wird braun und das<lb break="yes"/>bläuliche Grau der Leprarien verwandelt &#x017F;ich nach und nach in<lb break="yes"/>ein &#x017F;taubartiges Schwarz. Die Grenzen der alternden Decke<lb break="yes" />fließen ineinander und auf dem dunkeln Grunde bilden &#x017F;ich neue<lb break="yes"/>zirkelrunde Flechten von blendender Weiße.</p>
+                <lb break="yes"/>
+                <p>So lagert &#x017F;ich &#x017F;chichtenwei&#x017F;e ein organi&#x017F;ches Gewebe auf das<lb break="yes"/>andere, und wie das &#x017F;ich an&#x017F;iedelnde Men&#x017F;chenge&#x017F;chlecht be&#x017F;timmte<lb break="yes"/>Stufen der &#x017F;ittlichen Kultur durchlaufen muß, &#x017F;o i&#x017F;t die allmäh-<lb break="no"/>lige Verbreitung der Pflanzen an be&#x017F;timmte phy&#x017F;i&#x017F;che Ge&#x017F;etze<lb break="yes"/>gebunden. Wo jetzt hohe Waldbäume ihre Gipfel luftig erhe-<lb break="no"/>ben, da überzogen ein&#x017F;t zarte Flechten das erdenlo&#x017F;e Ge&#x017F;tein<lb break="yes"/>und Laubmoo&#x017F;e, Grä&#x017F;er und kräuterartige Gewäch&#x017F;e und Sträu-<lb break="no"/>cher füllen die Kluft der langen aber ungeme&#x017F;&#x017F;enen Zwi&#x017F;chen-<lb break="no"/>zeit aus. Was im Norden Flechten und Moo&#x017F;e, das bewir-<lb break="no"/>ken in den Tropen Portulaceen, Gomphrenen und andere nie-<lb break="no"/>drige Uferpflanzen. Die Ge&#x017F;chichte der Pflanzendecke und ihre<lb break="yes"/>
+                    <pb n="17" facs="#f0003"/> allmälige Ausbreitung über die öde Erdrinde hat ihre Epochen,<lb break="yes"/>wie die Ge&#x017F;chichte des &#x017F;pätern Men&#x017F;chenge&#x017F;chlechtes.</p>
+                <lb break="yes"/>
+                <p>I&#x017F;t aber auch Fülle des Lebens überall verbreitet, i&#x017F;t der<lb break="yes"/>Organismus auch unablä&#x017F;&#x017F;ig bemüht, die durch den Tod<lb break="yes"/>entfe&#x017F;&#x017F;elten Elemente zu neuen Ge&#x017F;talten zu verbinden, &#x017F;o i&#x017F;t<lb break="yes"/>die&#x017F;e Lebensfülle und ihre Erneuerung doch nach Ver&#x017F;chiedenheit<lb break="yes" />der Himmels&#x017F;triche ver&#x017F;chieden. Periodi&#x017F;ch er&#x017F;tarrt die Natur<lb break="yes"/>in der kalten Zone, denn Flü&#x017F;&#x017F;igkeit i&#x017F;t die Bedingung zum Le-<lb break="no"/>ben. Thiere und Pflanzen &#x2014; Laubmoos und andere Kryptoga-<lb break="no"/>men abgerechnet &#x2014; liegen hier viele Monate hindurch im<lb break="yes" />Winter&#x017F;chlafe vergraben. In einem großen Theile der Erde<lb break="yes" />haben daher nur &#x017F;olche organi&#x017F;che We&#x017F;en &#x017F;ich entwickeln können,<lb break="yes"/>welche einer beträchtlichen Entziehung von Wärme&#x017F;toff zu wi-<lb break="no"/>der&#x017F;tehen oder einer langen Unterbrechung der Lebensfunktionen<lb break="yes"/>fähig &#x017F;ind. Je näher dagegen den Tropen, de&#x017F;to mehr nimmt<lb break="yes"/>Mannigfaltigkeit der Bildungen, Anmuth der Form und des<lb break="yes"/>Farbengemi&#x017F;ches, ewige Jugend und Kraft des organi&#x017F;chen Le-<lb break="no"/>bens zu.</p>
+                <lb break="yes"/>
+                <p>Die&#x017F;e Zunahme kann leicht von denen bezweifelt werden,<lb break="yes" />welche nie un&#x017F;ern Welttheil verla&#x017F;&#x017F;en, oder das Studium der<lb break="yes"/>allgemeinen Erdkunde vernachlä&#x017F;&#x017F;igt haben. Wenn man aus<lb break="yes"/>un&#x017F;ern dicklaubigen Eichenwäldern über die <placeName key="alpen">Alpen</placeName>- oder Pyre-<lb break="no" />näenkette nach Wel&#x017F;chland oder Spanien hinab&#x017F;teigt, wenn man<lb break="yes"/>gar &#x017F;einen Blick auf die <placeName key="afrika" >afrikani&#x017F;chen Kü&#x017F;tenländer</placeName> des Mittel-<lb break="no"/>meeres richtet, &#x017F;o wird man leicht zu dem Fehl&#x017F;chlu&#x017F;&#x017F;e verleitet,<lb break="yes"/>als &#x017F;ei Baumlo&#x017F;igkeit der Charakter heißer Klimate. Aber man<lb break="yes" />vergißt, daß das &#x017F;üdliche Europa eine ganz andere Ge&#x017F;talt hatte,<lb break="yes"/>als pelasgi&#x017F;che und karthagi&#x017F;che Pflanzvölker &#x017F;ich zuer&#x017F;t darin<lb break="yes" />fe&#x017F;t&#x017F;etzten; man vergißt, daß die frühere Bildung des Men&#x017F;chen-<lb break="no"/>ge&#x017F;chlechtes die Waldungen verdrängt, und daß der um&#x017F;chaffende<lb break="yes"/>Gei&#x017F;t der Nationen der Erde allmälig den Schmuck raubt, der uns<lb break="yes"/>in dem Norden erfreut, und der mehr als alle Ge&#x017F;chichte die Ju-<lb break="no"/>
+                    <pb n="18" facs="#f0004"/> gend un&#x017F;erer &#x017F;ittlichen Kultur anzeigt. Die große Kata&#x017F;trophe,<lb break="yes"/>durch welche das Mittelmeer &#x017F;ich gebildet, indem es, ein an&#x017F;chwel-<lb break="no"/>lendes Binnenwa&#x017F;&#x017F;er, die Schleußen der Dardanellen und die<lb break="yes" />Säulen des <persName key="herakles">Herkules</persName> durchbrochen, die&#x017F;e Kata&#x017F;trophe &#x017F;cheint die<lb break="yes"/>angrenzenden Länder eines großen Theiles ihrer Dammerde<lb break="yes"/>beraubt zu haben.</p>
+                <lb break="yes"/>
+                <p>Auch i&#x017F;t in allen Ländern, welche das Mittelmeer begrenzt,<lb break="yes" />und welche die Kalkformation des Jura charakteri&#x017F;irt, ein<lb break="yes"/>großer Theil der Erdoberfläche nackter Fels. Das Maleri&#x017F;che<lb break="yes"/>italieni&#x017F;cher Gegenden beruht vorzüglich auf die&#x017F;em lieblichen<lb break="yes"/>Kontra&#x017F;te zwi&#x017F;chen dem unbelebten, öden Ge&#x017F;teine und der üppi-<lb break="no" />gen Vegetation, welche in&#x017F;elförmig darin auf&#x017F;proßt. Wo die&#x017F;es<lb break="yes"/>Ge&#x017F;tein minder zerklüftet, die Wa&#x017F;&#x017F;er auf der Oberfläche zu&#x017F;am-<lb break="no"/>menhält, wo die&#x017F;e mit Erde bedeckt i&#x017F;t, wie an den reizenden<lb break="yes" />Ufern des Albaner See&#x2019;s, da hat Italien &#x017F;eine Eichenwälder, &#x017F;o<lb break="yes"/>&#x017F;chattig und grün, als der Bewohner des Nordens &#x017F;ie nur<lb break="yes"/>wün&#x017F;cht.</p>
+                <lb break="yes"/>
+                <p>Auch die Wü&#x017F;te jen&#x017F;eits des <placeName key="atlas" >Atlas</placeName> und die unermeßlichen<lb break="yes"/>Ebenen oder Steppen von <placeName key="suedamerika">Süd-Amerika</placeName> &#x017F;ind als bloße Lokal-<lb break="no"/>er&#x017F;cheinungen zu betrachten. Die&#x017F;e findet man in der Regen-<lb break="no"/>zeit wenig&#x017F;tens mit Gras und niedrigen, fa&#x017F;t krautartigen Mi-<lb break="no"/>mo&#x017F;en bedeckt; jene &#x017F;ind Sandmeere im Innern des alten<lb break="yes"/>Kontinents, große pflanzenleere Räume mit ewig grünenden<lb break="yes"/>waldigen Ufern umgeben. Nur einzeln &#x017F;tehende Fächerpalmen<lb break="yes"/>erinnern den Wanderer, daß die&#x017F;e Einöden Theile einer beleb-<lb break="no"/>ten Schöpfung &#x017F;ind. Im trügeri&#x017F;chen Licht&#x017F;piele, das die &#x017F;trah-<lb break="no"/>lende Wärme erregt, &#x017F;ieht man bald den Fuß die&#x017F;er Palmen frei<lb break="yes"/>in der Luft &#x017F;chweben, bald ihr umgekehrtes Bild in den wogen-<lb break="no"/>artig zitternden Luft&#x017F;chichten wiederholt. Auch we&#x017F;tlich von der<lb break="yes"/>peruani&#x017F;chen <placeName key="anden">Andeskette</placeName> an der Kü&#x017F;te des &#x017F;tillen Meeres haben<lb break="yes"/>wir Wochen gebraucht, um &#x017F;olche wa&#x017F;&#x017F;erleeren Wü&#x017F;ten zu durch-<lb break="no" />&#x017F;treifen.</p>
+                <lb break="yes"/>
+                <pb n="19" facs="#f0005"/>
+                <p>Der Ur&#x017F;prung der&#x017F;elben, die&#x017F;e Pflanzenlo&#x017F;igkeit großer Erd-<lb break="no"/>&#x017F;trecken in Gegenden, wo umher die kraftvoll&#x017F;te Vegetation<lb break="yes"/>herr&#x017F;cht, i&#x017F;t ein wenig beobachtetes geogno&#x017F;ti&#x017F;ches Phänomen,<lb break="yes" />welches &#x017F;ich un&#x017F;treitig in allen Naturrevolutionen, in Ueber-<lb break="no"/>&#x017F;chwemmungen oder vulkani&#x017F;chen Umwandlungen der Erdrinde<lb break="yes"/>gründet.</p>
+                <lb break="yes"/>
+                <p>Hat eine Gegend einmal ihre Pflanzendecke verloren, i&#x017F;t<lb break="yes" />der Sand beweglich und quellenleer, hindert die heiße, &#x017F;enkrecht<lb break="yes"/>auf&#x017F;teigende Luft den Nieder&#x017F;chlag der Wolken, &#x017F;o vergehen<lb break="yes"/>Jahrtau&#x017F;ende, ehe von den grünen Ufern aus organi&#x017F;ches Leben<lb break="yes"/>in das Innere der Einöde dringt.</p>
+                <lb break="yes"/>
+                <p>Wer demnach die Natur mit einem Blicke zu umfa&#x017F;&#x017F;en und<lb break="yes"/>von Lokalphänomenen zu ab&#x017F;trahiren weiß, der &#x017F;ieht mit Zu-<lb break="no"/>nahme der belebenden Wärme, von den Polen zum <placeName key="aequator">Aequator</placeName>
+                    <lb break="yes"/>hin, &#x017F;ich auch allmälig organi&#x017F;che Kraft und Lebensfülle ver-<lb break="no"/>mehren. Aber bei die&#x017F;er Vermehrung &#x017F;ind jedem Erd&#x017F;triche be-<lb break="no"/>&#x017F;ondere Schönheiten vorbehalten; den Tropen Mannigfaltigkeit<lb break="yes"/>und Größe der Pflanzenformen, dem Norden der Anblick der<lb break="yes"/>Wie&#x017F;en und das periodi&#x017F;che Wiedererwachen der Natur beim<lb break="yes" />er&#x017F;ten Wehen der Frühlingslüfte. Jede Zone hat außer den ihr<lb break="yes"/>eigenen Vorzügen auch ihren eigenthümlichen Charakter.</p>
+                <lb break="yes"/>
+                <p>So wie man an einzelnen organi&#x017F;chen We&#x017F;en eine be&#x017F;timmte<lb break="yes"/>Phy&#x017F;iognomie erkennt, &#x017F;o gibt es auch eine gewiße Naturphy-<lb break="no"/>&#x017F;iognomie, welche jedem Himmels&#x017F;triche aus&#x017F;chließlich zukommt.</p>
+                <lb break="yes"/>
+                <closer>
+                    <salute>
+                        <hi rendition="#et">
+                            <hi rendition="#g">Alexander v. <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                        </hi>
+                    </salute>
+                </closer>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

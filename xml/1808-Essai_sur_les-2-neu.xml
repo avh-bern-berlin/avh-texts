@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="169" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">ESSAI</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">
+                        <hi rendition="#g">
+                            <hi rendition="#k">Sur</hi>
+                        </hi> les Réfractions astronomiques dans la<lb break="yes"/>zone torride, correspondantes à des angles<lb break="yes"/>de hauteurs plus petits que dix degrés, et<lb break="yes"/>considérées comme effet du décroissement<lb break="yes"/>du calorique.</hi>
+                    <lb break="yes"/>Par M. <hi rendition="#g">
+                        <hi rendition="#k">de <persName key="humboldt_av">Humboldt</persName>.</hi>
+                    </hi>
+                    <lb break="yes"/>Lu à la première Chambre de l&#x2019;Institut le <date>29 février 1808.</date>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#in">N</hi>
+                        <hi rendition="#k">ous</hi>
+                    </hi> avons déjà parlé, dans le n°. 137 de<lb break="yes"/>ce Journal, des recherches que M. de <persName key="humboldt_av">Humboldt</persName>
+                    <lb break="yes"/>a communiquées à la première Classe de l&#x2019;Ins-<lb break="no"/>titut. Ces recherches tendent, comme on l&#x2019;a vu,<lb break="yes"/>à résoudre ce problème, si les réfractions astro-<lb break="no" />nomiques sont les m&#x00EA;mes sous l&#x2019;équateur que<lb break="yes" />celles qu&#x2019;on observe dans la zone tempérée? &#x00AB;La<lb break="yes" />résolution de ce problème pouvait, dit l&#x2019;au-<lb break="no"/>teur, para&#x00EE;tre moins importante à une époque<lb break="yes"/>où de bons observateurs, munis d&#x2019;instrumens<lb break="yes"/>imparfaits, quoique d&#x2019;un rayon très-considé-<lb break="no"/>rable, se trouvaient exposés à commettre des<lb break="yes"/>erreurs de douze ou quinze secondes sexagési-<lb break="no"/>males. Il importait peu alors qu&#x2019;un voyageur<lb break="yes"/>réduis&#x00EE;t ses observations d&#x2019;après la table de<lb break="yes"/>réfraction de <persName key="lacaille_nld">La Caille</persName>, ou d&#x2019;après celle que<lb break="yes"/>
+                    <persName key="bouguer_p">Bouguer</persName> a dressée pendant son séjour à Quito.<lb break="yes"/>Il para&#x00EE;t m&#x00EA;me (j&#x2019;en ai trouvé plusieurs exem-<lb break="no"/>ples dans mes recherches géographiques) que<lb break="yes"/>la grande harmonie que l&#x2019;on observe quelque-<lb break="no"/>fois entre les latitudes déterminées de nos jours,<lb break="yes"/>
+                    <pb n="170" facs="#f0002"/> et celles qui sont indiquées dans des relations<lb break="yes"/>de voyages anciens, se fonde sur une compen-<lb break="no" />sation accidentelle de l&#x2019;erreur de l&#x2019;instrument,<lb break="yes" />et de la déviation trop grande ou trop petite<lb break="yes"/>que l&#x2019;observateur avait attribuée au rayon de<lb break="yes"/>lumière pendant son passage dans l&#x2019;atmosphère.<lb break="yes"/>Mais on ne doit plus compter sur des compen-<lb break="no"/>sations accidentelles dans un tems où presque<lb break="yes"/>tous les élémens peuvent &#x00EA;tre soumis au calcul<lb break="yes"/>le plus rigoureux. La grande perfection des ins-<lb break="no"/>trumens, la méthode ingénieuse de diminuer<lb break="yes"/>à l&#x2019;infini ou de faire dispara&#x00EE;tre les erreurs<lb break="yes" />d&#x2019;observations en prenant des multiples de<lb break="yes" />l&#x2019;angle à mesurer, la réunion de ces avantages<lb break="yes"/>fait parvenir les astronomes à l&#x2019;exactitude d&#x2019;une<lb break="yes" />seconde centésimale. Plus ces progrès de l&#x2019;as-<lb break="no"/>tronomie pratique sont admirables, plus il im-<lb break="no"/>porte que dans la réduction de la hauteur ap-<lb break="no"/>parente de l&#x2019;astre à la hauteur vraie, le calcula-<lb break="no"/>teur ne soit pas exposé à commettre des erreurs<lb break="yes"/>quadruples de celles que l&#x2019;on peut supposer au<lb break="yes"/>résultat de l&#x2019;observation. Ces m&#x00EA;mes considé-<lb break="no"/>rations, depuis l&#x2019;usage plus fréquent des cer-<lb break="no"/>cles répétiteurs, ont engagé les astronomes et<lb break="yes" />les géomètres à soumettre à de nouveaux exa-<lb break="no"/>mens, ce que Simpson, <persName key="mayer_jtv">Mayer</persName> et <persName key="bradley_j" >Bradley</persName> nous<lb break="yes"/>ont transmis sur la théorie des réfractions. Il<lb break="yes"/>suffit de citer les observations nombreuses faites<lb break="yes"/>par M. <persName key="delambre_jbj" >Delambre</persName> pour déterminer la réfraction<lb break="yes" />correspondante à 49° de hauteur, et l&#x2019;analyse<lb break="yes"/>complète des phénomènes de réfraction de la<lb break="yes"/>lumière contenue dans le quatrième volume<lb break="yes"/>de la <hi rendition="#i">Mécanique céleste.</hi> C&#x2019;est en suivant les<lb break="yes"/>idées énoncées dans ce dernier ouvrage, que<lb break="yes"/>je développerai mes recherches sur la consti-<lb break="no"/>
+                    <pb n="171" facs="#f0003"/> tution de l&#x2019;atmosphère dans la zone torride,<lb break="yes"/>et sur l&#x2019;influence que cette constitution exerce<lb break="yes"/>sur l&#x2019;inflexion des rayons dans les couches d&#x2019;air<lb break="yes"/>atmosphérique&#x00BB;.</p>
+                <lb break="yes"/>
+                <p>Au moment de la publication de notre n°. 137,<lb break="yes"/>le travail de M. de <persName key="humboldt_av">Humboldt</persName> ne nous était pas<lb break="yes"/>encore parvenu; nous avons alors été forcés,<lb break="yes" />pour ne pas différer de faire conna&#x00EE;tre le ré-<lb break="no"/>sultat de ce beau travail, de nous borner à in-<lb break="no"/>sérer dans ce recueil une courte Notice qui<lb break="yes"/>venait de para&#x00EE;tre dans le <hi rendition="#i">Nouveau Bulletin<lb break="yes"/>des Sciences.</hi> Mais actuellement nous nous<lb break="yes"/>trouvons à portée de fixer, d&#x2019;une manière plus<lb break="yes"/>particulière, l&#x2019;attention de nos lecteurs sur les<lb break="yes"/>différentes recherches auxquelles M. de Hum-<lb break="no"/>boldt s&#x2019;est livré, ce savant ayant eu la com-<lb break="no"/>plaisance de faire remettre un exemplaire de<lb break="yes"/>son ouvrage à M. <persName key="gilletdelaumont_fpn">Gillet-Laumont</persName>, Membre du<lb break="yes"/>Conseil des Mines.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;ouvrage de M. de <persName key="humboldt_av">Humboldt</persName> est divisé en<lb break="yes"/>trois parties.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;auteur, dans la première (la partie histo-<lb break="no"/>rique), développe les opinions diverses qu&#x2019;ont<lb break="yes"/>eues les astronomes sur les réfractions de la<lb break="yes"/>zone torride.</p>
+                <lb break="yes"/>
+                <p>Dans la seconde partie (la partie physique),<lb break="yes"/>il examine la constitution physique de l&#x2019;atmos-<lb break="no"/>phère équinoxiale, et les causes qui, d&#x2019;après<lb break="yes"/>l&#x2019;état actuel de nos connaissances, peuvent<lb break="yes"/>modifier la déviation des rayons lumineux.</p>
+                <lb break="yes"/>
+                <p>Enfin la troisième partie (la partie astrono-<lb break="no"/>mique) présente les observations astronomi-<lb break="no"/>ques que M. de <persName key="humboldt_av">Humboldt</persName> a faites à des hau-<lb break="no" />teurs auxquelles la loi du décroissement de la<lb break="yes"/>température détermine le pouvoir réfringent<lb break="yes"/>
+                    <pb n="172" facs="#f0004"/> des couches, ou, ce qui est identique, la vi-<lb break="no"/>tesse de la lumière.</p>
+                <lb break="yes"/>
+                <p>La Notice qui a déjà été publiée dans ce<lb break="yes"/>Journal, peut suffire pour donner une idée<lb break="yes"/>générale de la première et de la troisième<lb break="yes"/>partie de l&#x2019;ouvrage de M. de <persName key="humboldt_av">Humboldt</persName>: quant<lb break="yes"/>à la seconde partie, nous avons pensé qu&#x2019;on<lb break="yes"/>nous saurait gré de L&#x2019;avoir fait ici imprimer<lb break="yes"/>en entier, attendu que cette partie est consa-<lb break="no"/>crée à des objets qui sont étroitement liés à<lb break="yes"/>ceux auxquels ce recueil est destiné.</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">
+                            <hi rendition="#k">partie physique.</hi>
+                        </hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>La réfraction est l&#x2019;effet de l&#x2019;action qu&#x2019;exer-<lb break="no"/>cent les couches d&#x2019;air atmosphérique sur la<lb break="yes"/>route du rayon de lumière. Cette action dé-<lb break="no" />pend des propriétés chimiques et physiques du<lb break="yes"/>mélange gazeux, propriétés que l&#x2019;on pourrait<lb break="yes"/>réunir dans une équation de condition, et qui<lb break="yes"/>présentent autant de quantités variables dont<lb break="yes"/>il importe d&#x2019;examiner l&#x2019;influence sur la dévia-<lb break="no"/>tion de la lumière.</p>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Oxygène et Azote.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>L&#x2019;oxygène, d&#x2019;après les expériences de<lb break="yes"/>MM. <persName key="biot_jb">Biot</persName> et <persName key="arago_dfj" >Arrago</persName>, étant de tous les flui-<lb break="no"/>des, et m&#x00EA;me de tous les corps de la nature,<lb break="yes"/>celui qui réfracte le moins, et le pouvoir ré-<lb break="no"/>fringent de l&#x2019;oxygène à l&#x2019;azote étant dans le<lb break="yes"/>rapport de 86 à 103, les réfractions devraient<lb break="yes"/>varier à la m&#x00EA;me température et à la m&#x00EA;me<lb break="yes"/>pression barométrique d&#x2019;une époque et d&#x2019;une<lb break="yes"/>
+                            <pb n="173" facs="#f0005"/> zone à l&#x2019;autre, si, comme on le supposait au-<lb break="no"/>trefois, la constitution chimique de l&#x2019;atmos-<lb break="no"/>phère était variable selon la différence des sai-<lb break="no"/>sons et des lieux. D&#x2019;après les hypothèses re&#x00E7;ues<lb break="yes"/>alors, l&#x2019;air de mer et celui de la zone torride,<lb break="yes"/>plus riches en oxygène, l&#x2019;air des hautes mon-<lb break="no"/>tagnes plus abondant en azote et en hydrogène,<lb break="yes"/>devraient altérer le jeu des réfractions atmos-<lb break="no"/>phériques. Mais des observations exactes ont<lb break="yes"/>constaté que le rapport des parties constituantes<lb break="yes"/>de l&#x2019;atmosphère n&#x2019;est pas variable; que, favo-<lb break="no"/>risé par les vents et par l&#x2019;effet du courant as-<lb break="no"/>cendant, le mélange gazeux est uniforme de-<lb break="no"/>puis le niveau de l&#x2019;Océan jusqu&#x2019;au-delà de 6000<lb break="yes"/>mètres de hauteur; que si toutefois il existe<lb break="yes"/>une légère variation, elle ne peut pas aller au-<lb break="maybe"/>delà d&#x2019;un ou de deux millièmes d&#x2019;oxygène.</p>
+                        <lb break="yes"/>
+                        <p>Ces résultats importans sont conformes aux<lb break="yes"/>expériences et aux calculs faits par MM. <persName key="biot_jb">Biot</persName>
+                            <lb break="yes"/>et <persName key="arago_dfj">Arrago</persName>. Le prisme et le cercle répétiteur ont<lb break="yes"/>conduit ces astronomes à une analyse de l&#x2019;air<lb break="yes" />presqu&#x2019;aussi exacte que celle que l&#x2019;on obtient<lb break="yes"/>par le moyen de l&#x2019;eudiomètre à gaz hydrogène.<lb break="yes"/>En effet, tel est l&#x2019;admirable encha&#x00EE;nement des<lb break="yes"/>phénomènes de la nature, que depuis long-<lb break="no"/>tems, par la mesure seule d&#x2019;un angle de ré-<lb break="no"/>fraction, le géomètre aurait pu prouver au chi-<lb break="no"/>miste que l&#x2019;air atmosphérique ne contient pas<lb break="yes"/>vingt-sept ou vingt-huit centièmes d&#x2019;oxygène.</p>
+                        <lb break="yes"/>
+                        <p>Mais cette identité constante de composition<lb break="yes"/>chimique, cette quantité absolue de gaz vital<lb break="yes"/>reconnue dans l&#x2019;air atmosphérique, ont-elles<lb break="yes"/>toujours été les m&#x00EA;mes, ou seraient-elles, dans<lb break="yes"/>la suite des siècles, variables avec l&#x2019;intensité des<lb break="yes"/>forces magnétiques, avec la hauteur moyenne<lb break="yes"/>
+                            <pb n="174" facs="#f0006"/> du baromètre qui indique la hauteur de l&#x2019;at-<lb break="no"/>mosphère, et avec la température moyenne<lb break="yes"/>des lieux? Les sciences naturelles et l&#x2019;art de<lb break="yes"/>bien observer sont trop neufs encore pour que<lb break="yes"/>l&#x2019;histoire physique du globe puisse prononcer<lb break="yes"/>sur des problèmes aussi délicats. La mer, qui<lb break="yes"/>occupe trois cinquièmes de la surface de notre<lb break="yes"/>planète, et qui est remplie de débris de mollus-<lb break="no"/>ques et d&#x2019;autres matières animales propres à se<lb break="yes"/>décomposer; le terreau humecté, les argiles<lb break="yes"/>m&#x00EA;lés d&#x2019;oxyde de fer et d&#x2019;hydrures de carbone,<lb break="yes"/>peut-&#x00EA;tre m&#x00EA;me le roc schisteux ou amphibo-<lb break="no"/>lique, ces cimes pierreuses qui s&#x2019;élancent au-<lb break="maybe"/>dessus de la région des nuages, agissent sur<lb break="yes"/>l&#x2019;atmosphère qui les entoure. Ils paraissent fixer<lb break="yes"/>plus d&#x2019;oxygène qu&#x2019;ils ne dégagent d&#x2019;acide car-<lb break="no"/>bonique. La décomposition de ce dernier acide<lb break="yes"/>est le travail diurne et bienfaisant des végé-<lb break="no"/>taux; mais la culture de l&#x2019;homme, en substi-<lb break="no"/>tuant aux for&#x00EA;ts des plantes herbacées et des<lb break="yes"/>céréales, parvient à altérer peu à peu l&#x2019;équilibre<lb break="yes"/>primitif de l&#x2019;océan aérien. Il se pourrait que,<lb break="yes"/>par des procédés lents et presqu&#x2019;impercepti-<lb break="no"/>bles, la cro&#x00FB;te de notre planète enlev&#x00E2;t, en<lb break="yes"/>vieillissant, plus d&#x2019;oxygène à l&#x2019;atmosphère<lb break="yes"/>qu&#x2019;elle ne lui en rend annuellement. Par con-<lb break="no"/>séquent, il serait possible encore que du tems<lb break="yes"/>d&#x2019;Hipparque, la lumière des astres e&#x00FB;t éprouvé<lb break="yes"/>dans sa route une déviation différente de celle<lb break="yes"/>que l&#x2019;on observera quelques milliers d&#x2019;années<lb break="yes"/>après nous. On reconna&#x00EE;trait dès-lors que la<lb break="yes"/>réfraction n&#x2019;est pas toujours fonction de la den-<lb break="no"/>sité seule des couches d&#x2019;air atmosphérique.<lb break="yes"/>Mais ne nous perdons pas dans des idées pu-<lb break="no"/>rement hypothétiques, lorsqu&#x2019;il ne s&#x2019;agit que<lb break="yes"/>
+                            <pb n="175" facs="#f0007"/> de l&#x2019;ordre actuel des choses et des faits capa-<lb break="no"/>bles d&#x2019;&#x00EA;tre exactement observés!</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Hydrogène et Acide carbonique.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>De toutes les substances gazeuses, l&#x2019;hydro-<lb break="no"/>gène est celle dont le pouvoir réfringent est le<lb break="yes"/>plus fort. Il est frappant que ce m&#x00EA;me gaz,<lb break="yes"/>comme l&#x2019;a découvert M. <persName key="gaylussac_jl">Gay-Lussac</persName>, est aussi<lb break="yes"/>celui dont la capacité pour le calorique est la<lb break="yes"/>plus grande. Son pouvoir réfringent surpasse<lb break="yes"/>huit fois celui de l&#x2019;oxygène; il est à celui de<lb break="yes"/>l&#x2019;air atmosphérique comme 661 : 100. Mais<lb break="yes"/>l&#x2019;hydrogène m&#x00EA;lé à l&#x2019;air atmosphérique en di-<lb break="no"/>minue le pouvoir réfringent; car il s&#x2019;en faut<lb break="yes"/>de beaucoup que la légèreté spécifique de l&#x2019;hy-<lb break="no"/>drogène soit compensée par l&#x2019;excès de sa force<lb break="yes"/>réfractive. Dans un Mémoire lu à l&#x2019;Institut en<lb break="yes"/>vent&#x00F4;se an XIII, nous avons déterminé, M. <persName key="gaylussac_jl">Gay-<lb break="maybe" />Lussac</persName> et moi, le <hi rendition="#i">minimum</hi> de gaz hydrogène<lb break="yes"/>que l&#x2019;on peut découvrir avec certitude dans un<lb break="yes"/>mélange d&#x2019;azote et d&#x2019;oxygène. Nous avons in-<lb break="no"/>diqué un moyen précis par lequel on peut éva-<lb break="no"/>luer jusqu&#x2019;à <formula notation="TeX">\frac{2}{1000}</formula> d&#x2019;hydrogène. Ce moyen, in-<lb break="no"/>connu lors de mon expédition à l&#x2019;équateur, n&#x2019;a<lb break="yes"/>point encore été employé sur l&#x2019;air des tropiques;<lb break="yes"/>mais ayant constaté qu&#x2019;en Europe, quelle que<lb break="yes"/>soit la région d&#x2019;où souffle le vent le plus impé-<lb break="no"/>tueux, l&#x2019;atmosphère ne contient pas d&#x2019;hydro-<lb break="no"/>gène, et que l&#x2019;air recueilli, soit à 6000 mètres<lb break="yes"/>de hauteur, soit au milieu d&#x2019;un nuage, comme<lb break="yes"/>au Mont-Cenis, ne diffère pas sensiblement de<lb break="yes"/>l&#x2019;air des plaines, on peut supposer que ce man-<lb break="no"/>que d&#x2019;hydrogène est général dans toutes les<lb break="yes"/>zones et à toutes les hauteurs. Je n&#x2019;ignore pas<lb break="yes"/>
+                            <pb n="176" facs="#f0008"/> que la considération de la grande légèreté spé-<lb break="no"/>cifique de l&#x2019;air inflammable, jointe à des hy-<lb break="no"/>pothèses météorologiques, a fait supposer à<lb break="yes"/>quelques physiciens que la dernière couche de<lb break="yes"/>l&#x2019;océan aérien est une couche d&#x2019;hydrogène,<lb break="yes"/>site inabordable des phénomènes lumineux,<lb break="yes"/>de l&#x2019;aurore boréale, des étoiles filantes, et<lb break="yes"/>peut-&#x00EA;tre des bolides m&#x00EA;me. Cette couche s&#x2019;é-<lb break="no"/>tendrait jusqu&#x2019;aux dernières limites de l&#x2019;atmos-<lb break="no"/>phère, jusqu&#x2019;au point où la force centrifuge<lb break="yes"/>est balancée par la pesanteur. Mais pourquoi,<lb break="yes"/>en s&#x2019;éloignant perpendiculairement de la sur-<lb break="no"/>face de la terre de plus d&#x2019;un demi-myriamètre,<lb break="yes"/>ne voit-on pas augmenter la quantité d&#x2019;hydro-<lb break="no"/>gène atmosphérique? Comment cet hydrogène<lb break="yes"/>serait-il parvenu à se réunir dans une couche<lb break="yes"/>séparée? et une fois réuni, comment se serait-il<lb break="yes"/>conservé dans cet état d&#x2019;isolement? Les con-<lb break="no"/>naissances que nous avons acquises, depuis<lb break="yes"/>quelques années, sur la manière suivant laquelle<lb break="yes"/>se comportent au contact deux gaz d&#x2019;une gra-<lb break="no"/>vité spécifique différente, rendent peu proba-<lb break="no"/>ble que l&#x2019;hydrogène qui s&#x2019;élève de la surface<lb break="yes"/>de la terre puisse se réunir dans une couche<lb break="yes"/>particulière placée à la limite supérieure de<lb break="yes"/>l&#x2019;atmosphère. L&#x2019;expérience nous prouve qu&#x2019;au<lb break="yes"/>moindre mouvement les fluides aériformes se<lb break="yes"/>pénètrent, et que les molécules du gaz plus<lb break="yes"/>pesant s&#x2019;insinuent entre les molécules du gaz<lb break="yes"/>plus léger, sans se placer d&#x2019;après la loi de leur<lb break="yes"/>pesanteur spécifique. Lorsqu&#x2019;on m&#x00EA;le 21 d&#x2019;oxy-<lb break="no"/>gène à 79 d&#x2019;hydrogène, cet air atmosphérique<lb break="yes"/>à base d&#x2019;hydrogène reste uniforme dans sa<lb break="yes"/>composition, quelle que soit la durée du repos<lb break="yes"/>auquel on abandonne le mélange. L&#x2019;analyse<lb break="yes"/>
+                            <fw type="catch" place="bottom">chimique</fw>
+                            <lb break="yes"/>
+                            <pb n="177" facs="#f0009"/> chimique m&#x2019;a offert les m&#x00EA;mes résultats, que<lb break="yes"/>j&#x2019;aie éprouvé l&#x2019;air contenu dans la partie su-<lb break="no"/>périeure ou celui de la partie inférieure du<lb break="yes"/>vase. L&#x2019;analogie nous conduit à croire que l&#x2019;hy-<lb break="no"/>drogène, dégagé par les marais, par plusieurs<lb break="yes"/>sources, par les mines et par les volcans, se<lb break="yes"/>m&#x00EA;le uniformément à l&#x2019;air atmosphérique. Il<lb break="yes"/>s&#x2019;y m&#x00EA;le d&#x2019;autant plus facilement, que l&#x2019;atmos-<lb break="no"/>phère est perpétuellement agitée par de petites<lb break="yes"/>variations de température et de pression baro-<lb break="no"/>métrique. L&#x2019;effet de cette agitation est si frap-<lb break="no"/>pant, que malgré l&#x2019;abondance des sources d&#x2019;hy-<lb break="no"/>drogène sulfuré que l&#x2019;on trouve, par exemple,<lb break="yes"/>dans la <hi rendition="#i">Campagne de Rome,</hi> le chimiste ne<lb break="yes" />découvre dans l&#x2019;atmosphère ambiante pas plus<lb break="yes"/>de cet hydrogène que dans l&#x2019;air de mer ou dans<lb break="yes"/>les vents qui soufflent du large. L&#x2019;idée de cette<lb break="yes" />uniformité dans la composition chimique de<lb break="yes" />l&#x2019;atmosphère rassure l&#x2019;astronome, lorsqu&#x2019;il se<lb break="yes"/>défie du fluide aériforme à travers lequel lui<lb break="yes"/>parvient la lumière des astres. Mais cette m&#x00EA;me<lb break="yes"/>uniformité fait aussi le désespoir du physiologis-<lb break="no"/>te. Réfléchissant sur la salubrité des climats, il<lb break="yes"/>croit en appeler en vain au tribunal de l&#x2019;eudiomé-<lb break="no"/>trie moderne. Le chimiste lui répond que, d&#x2019;après<lb break="yes"/>les expériences intéressantes de MM. <persName key="thenard_j">Thénard</persName>
+                            <lb break="yes"/>et <persName key="dupuytren_g">Dupuytren</persName>, des quantités d&#x2019;hydrogène sul-<lb break="no"/>furé, beaucoup trop petites pour &#x00EA;tre appré-<lb break="no"/>ciées dans nos instrumens, trop petites pour<lb break="yes"/>produire des changemens dans les réfractions,<lb break="yes"/>exercent encore une influence destructive sur<lb break="yes"/>la vie animale.</p>
+                        <lb break="yes"/>
+                        <p>L&#x2019;ensemble de ces considérations physiques<lb break="yes"/>nous prouve qu&#x2019;il n&#x2019;y a aucune raison d&#x2019;ad-<lb break="no"/>
+                            <pb n="178" facs="#f0010"/> mettre une couche de gaz hydrogène aux limites<lb break="yes"/>de notre atmosphère. Il est m&#x00EA;me difficile de<lb break="yes"/>concevoir l&#x2019;existence de cette couche à l&#x2019;épo-<lb break="no"/>que reculée où se formait le noyau de notre<lb break="yes"/>planète. Dès-lors l&#x2019;hydrogène se serait m&#x00EA;lé au<lb break="yes"/>reste de l&#x2019;atmosphère qui était agitée par les<lb break="yes"/>courans. La quantité moyenne d&#x2019;hydrogène<lb break="yes"/>répandue dans l&#x2019;air ne peut &#x00EA;tre qu&#x2019;infiniment<lb break="yes"/>petite. Ce résultat d&#x2019;expériences directes a été<lb break="yes"/>confirmé par l&#x2019;harmonie frappante que trou-<lb break="no"/>vent MM. <persName key="biot_jb">Biot</persName> et <persName key="arago_dfj" >Arrago</persName>, entre le pouvoir<lb break="yes"/>réfringent de l&#x2019;air atmosphérique observé, et<lb break="yes"/>entre le pouvoir réfringent calculé dans l&#x2019;hypo-<lb break="no"/>thèse, que l&#x2019;atmosphère est un simple mélange<lb break="yes"/>d&#x2019;azote et d&#x2019;oxygène. De plus, en considérant<lb break="yes"/>les produits de la putréfaction des matières or-<lb break="no"/>ganiques, en réfléchissant sur la réunion peu<lb break="yes"/>commune des circonstances sous lesquelles, par<lb break="yes"/>une simple décomposition de l&#x2019;eau, il s&#x2019;élève<lb break="yes"/>de la surface du globe du gaz inflammable pur,<lb break="yes"/>nous trouvons que le <hi rendition="#i">minimum</hi> d&#x2019;hydrogène<lb break="yes" />atmosphérique dont nous admettons l&#x2019;exis-<lb break="no"/>tence, devient par là m&#x00EA;me moins redoutable<lb break="yes"/>pour les astronomes; que cet hydrogène, pour<lb break="yes"/>la plus grande partie, est un mélange d&#x2019;hy-<lb break="no"/>drogène carburé, oxy-carburé, phosphuré et<lb break="yes"/>sulfuré. Le phosphore se combinant avec le<lb break="yes"/>soufre et avec le carbone, comme l&#x2019;ont fait voir<lb break="yes"/>
+                            <persName key="pelletier_01">Pelletier</persName> et M. <persName key="proust_notmarcel">Proust</persName>; le soufre hydrogéné<lb break="yes"/>dissolvant aisément le phosphore, comme l&#x2019;ont<lb break="yes"/>prouvé MM. <persName key="clementdesormes_n" >Clément</persName> et <persName key="desormes_cb" >Desormes</persName>, il est plus<lb break="yes"/>que probable que les miasmes m&#x00EA;lés à l&#x2019;atmos-<lb break="no"/>phère, contiennent des variétés particulières<lb break="yes"/>de gaz hydrogène dans lesquelles deux ou trois<lb break="yes"/>
+                            <pb n="179" facs="#f0011"/> substances oxygénables sont dissoutes à la fois.<lb break="yes"/>Il est probable aussi que sous les tropiques, où<lb break="yes"/>une chaleur constante et une grande humidité<lb break="yes"/>favorisent le développement des &#x00EA;tres orga-<lb break="no"/>nisés, ces émanations gazeuses sont plus com-<lb break="no"/>munes que dans les climats tempérés; elles y<lb break="yes"/>causeraient un jeu de réfractions extraordinai-<lb break="no"/>res, si elles parvenaient à s&#x2019;accumuler momenta-<lb break="no"/>nément. Mais cette crainte s&#x2019;évanouit, lors-<lb break="no"/>qu&#x2019;on considère, 1°. les circonstances qui s&#x2019;op-<lb break="no"/>posent à cette accumulation dans une région<lb break="yes"/>où le mouvement perpétuel de l&#x2019;air, depuis<lb break="yes"/>l&#x2019;équateur aux p&#x00F4;les, cause l&#x2019;apparence des<lb break="yes"/>vents alisés; 2°. les quantités extr&#x00EA;mement pe-<lb break="no"/>tites de ces émanations, que des expériences<lb break="yes"/>eudiométriques les plus exactes nous permettent<lb break="yes"/>de supposer dans l&#x2019;air; 3°. le fait remarquable<lb break="yes"/>et rassurant que l&#x2019;hydrogène, qui contient d&#x2019;au-<lb break="no"/>tres substances oxygénales en dissolution, a un<lb break="yes"/>pouvoir réfringent qui n&#x2019;est pas le tiers du pou-<lb break="no"/>voir réfringent de l&#x2019;hydrogène pur, et qui n&#x2019;est<lb break="yes" />que le double de celui de l&#x2019;air atmosphérique.<lb break="yes" />Il résulte aussi de ces m&#x00EA;mes considérations,<lb break="yes" />que les phénomènes singuliers de réfraction, et<lb break="yes" />sur-tout ceux de réflexion aérienne que l&#x2019;on<lb break="yes" />n&#x2019;observe que dans certaines régions de la terre,<lb break="yes"/>par exemple, à Reggio et dans la partie méri-<lb break="no"/>dionale de la Calabre, ne peuvent guère s&#x2019;ex-<lb break="no"/>pliquer par l&#x2019;hypothèse d&#x2019;une constitution par-<lb break="no"/>ticulière et locale de l&#x2019;atmosphère. Ces phéno-<lb break="no"/>mènes n&#x2019;ont été qu&#x2019;imparfaitement observés<lb break="yes"/>jusqu&#x2019;ici; ils se présentent à des hauteurs<lb break="yes"/>considérables au-dessus de l&#x2019;horizon. Il ne faut<lb break="yes"/>pas les confondre avec les effets du mirage<lb break="yes"/>
+                            <pb n="180" facs="#f0012"/> commun. La <hi rendition="#i">Fata Morgana</hi> para&#x00EE;t &#x00EA;tre l&#x2019;effet<lb break="yes" />catoptrique d&#x2019;une aggregation de vapeurs vési-<lb break="no" />culaires. Il n&#x2019;est plus permis d&#x2019;en chercher la<lb break="yes"/>cause dans l&#x2019;abondance du gaz hydrogène<lb break="yes"/>qu&#x2019;autrefois des physiciens voyageurs suppo-<lb break="no"/>saient exister dans les pays agités par des vol-<lb break="no"/>cans et par des tremblemens de terre.</p>
+                        <lb break="yes"/>
+                        <p>Ce que nous venons d&#x2019;exposer sur le <hi rendition="#i">mini-<lb break="no"/>mum</hi> d&#x2019;hydrogène contenu dans l&#x2019;atmosphère,<lb break="yes"/>s&#x2019;applique aussi à l&#x2019;acide carbonique, dont la<lb break="yes"/>quantité, d&#x2019;après mes expériences, peut &#x00EA;tre<lb break="yes"/>évalué sous l&#x2019;équateur de trois à huit millièmes.<lb break="yes" />D&#x2019;ailleurs ce fluide, quoique plus dense, est<lb break="yes" />moins propre à modifier les réfractions atmos-<lb break="no" />phériques. D&#x2019;après MM. <persName key="biot_jb">Biot</persName> et <persName key="arago_dfj">Arrago</persName>, son<lb break="yes" />pouvoir réfringent est à peu près le m&#x00EA;me que<lb break="yes" />celui de l&#x2019;air atmosphérique; il ne le surpasse<lb break="yes" />que de <formula notation="TeX">\frac{4}{1000}</formula>. Les belles expériences faites par<lb break="yes"/>M. <persName key="malus_el" >Malus</persName>, sur le charbon, n&#x2019;altèrent pas ce<lb break="yes"/>résultat; elles indiquent seulement un pouvoir<lb break="yes"/>réfringent du carbone plus grand que celui<lb break="yes"/>qu&#x2019;admet M. <persName key="biot_jb" >Biot</persName>, observation qui diminue<lb break="yes"/>la quantité d&#x2019;hydrogène que l&#x2019;on se croyait<lb break="yes" />forcé d&#x2019;admettre dans le diamant. C&#x2019;est à tort<lb break="yes"/>qu&#x2019;un célèbre astronome italien a récemment<lb break="yes"/>attribué à une accumulation momentanée d&#x2019;a-<lb break="no"/>cide carbonique, les petites variations de ré-<lb break="no"/>fractions observées à Malte et en Sicile aussi<lb break="yes"/>long-tems que souffle le sirocco. Cette abon-<lb break="no"/>dance d&#x2019;acide carbonique sur les bords de la<lb break="yes"/>Méditerranée n&#x2019;a été constatée par aucune ex-<lb break="no"/>périence directe. D&#x2019;après le rapport trouvé<lb break="yes"/>entre le pouvoir réfringent de l&#x2019;acide carbo-<lb break="no"/>nique et celui de l&#x2019;air commun, il faudrait que<lb break="yes"/>
+                            <pb n="181" facs="#f0013"/> l&#x2019;atmosphère dev&#x00EE;nt énormément méphitisée<lb break="yes"/>avant que l&#x2019;effet des réfractions f&#x00FB;t d&#x2019;une ou<lb break="yes"/>de deux secondes sexagésimales.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Condensation.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Mais la déviation de la lumière ne dépend<lb break="yes"/>pas uniquement de la quantité d&#x2019;oxygène,<lb break="yes"/>d&#x2019;azote, d&#x2019;hydrogène ou d&#x2019;acide carbonique;<lb break="yes"/>elle ne dépend pas uniquement du rapport dans<lb break="yes"/>lequel se trouvent les parties constituantes de<lb break="yes"/>l&#x2019;atmosphère. Le pouvoir réfringent des fluides<lb break="yes"/>est modifié par l&#x2019;état de condensation plus ou<lb break="yes"/>moins grand que présentent les élémens aéri-<lb break="no"/>formes. L&#x2019;inflexion du rayon lumineux n&#x2019;est<lb break="yes"/>pas la m&#x00EA;me dans l&#x2019;oxyde d&#x2019;azote et dans un<lb break="yes"/>mélange physique d&#x2019;oxygène et d&#x2019;azote. Or,<lb break="yes"/>malgré le principe d&#x2019;identité de composition<lb break="yes"/>que nous venons d&#x2019;établir, les réfractions de<lb break="yes"/>la zone torride pourraient &#x00EA;tre différentes de<lb break="yes"/>celles des zones tempérées, si, par l&#x2019;effet d&#x2019;une<lb break="yes" />température plus ou moins élevée, l&#x2019;oxygène<lb break="yes" />exer&#x00E7;ait une action chimique plus ou moins<lb break="yes" />grande sur l&#x2019;azote. D&#x2019;après cette opinion ré-<lb break="no"/>pandue dans plusieurs ouvrages de physiolo-<lb break="no"/>gie, la respiration ou plut&#x00F4;t la décomposition<lb break="yes"/>de l&#x2019;air dans les poumons dépendrait, outre la<lb break="yes"/>quantité d&#x2019;oxygène inspiré, du degré d&#x2019;affinité<lb break="yes"/>par lequel cette base est liée à l&#x2019;azote atmos-<lb break="no"/>phérique. Quelques phénomènes chimiques qui<lb break="yes"/>n&#x2019;ont pas encore été rigoureusement analysés,<lb break="yes"/>par exemple, l&#x2019;observation qu&#x2019;un mélange de<lb break="yes"/>0,25 d&#x2019;oxygène et 0,75 d&#x2019;acide carbonique n&#x2019;est<lb break="yes"/>
+                            <pb n="182" facs="#f0014"/> pas propre à entretenir la flamme, ont paru fa-<lb break="no"/>voriser cette idée. Mais nous pourrions citer<lb break="yes"/>un grand nombre d&#x2019;expériences précises qui<lb break="yes"/>rendent probable que, dans l&#x2019;état aériforme,<lb break="yes"/>ces bases n&#x2019;exercent aucune ou du moins une<lb break="yes"/>très-faible action chimique les unes sur les au-<lb break="no"/>tres. La condensation ne commence à influer<lb break="yes"/>d&#x2019;une manière sensible sur le pouvoir réfrin-<lb break="no"/>gent, que lorsque les élémens gazeux entrent<lb break="yes"/>dans une union très-intime. Le gaz ammoniacal<lb break="yes"/>nous en offre un exemple frappant. MM. <persName key="biot_jb">Biot</persName>
+                            <lb break="yes"/>et <persName key="arago_dfj">Arrago</persName> ont trouvé que ce gaz agit sur la lu-<lb break="no"/>mière comme un simple mélange physique de<lb break="yes"/>0,80 d&#x2019;azote et de 0,20 d&#x2019;hydrogène, en éva-<lb break="no"/>luant les élémens d&#x2019;après le poids. C&#x2019;étaient,<lb break="yes"/>en effet, les nombres qui résultaient de l&#x2019;a-<lb break="no"/>nalyse de M. <persName key="davy_h">Davy</persName>. Le m&#x00EA;me chimiste ayant<lb break="yes"/>annoncé depuis, à l&#x2019;occasion de ses décou-<lb break="no"/>vertes sur les substances alcalines, que l&#x2019;am-<lb break="no"/>moniaque contenait 0,20 d&#x2019;oxygène, M. <persName key="berthollet_a">Ber-<lb break="no" />thollet fils</persName> reprit le beau travail de son père,<lb break="yes"/>publié dans les <hi rendition="#i">Mémoires de l&#x2019;Académie</hi> de<lb break="yes"/>l&#x2019;année 1785. Des expériences très-exactes,<lb break="yes"/>qui ne diffèrent pas entre elles d&#x2019;un centième,<lb break="yes"/>lui ont appris qu&#x2019;un volume de 100 parties<lb break="yes"/>d&#x2019;ammoniaque est composé de 75,5 d&#x2019;hydro-<lb break="no"/>gène et de 24,5 d&#x2019;azote, ce qui donne en poids,<lb break="yes"/>d&#x2019;après les densités de la Table de <persName key="biot_jb">Biot</persName>, 18,83<lb break="yes" />d&#x2019;hydrogène et 81,17 d&#x2019;azote. En calculant,<lb break="yes"/>d&#x2019;après ces données de M. <persName key="berthollet_a">Berthollet fils</persName>, le<lb break="yes" />pouvoir réfringent pour le gaz ammoniacal,<lb break="yes"/>on trouve 2,08471, tandis que par observation<lb break="yes"/>on trouve 2,168. Le gaz ammoniacal contenant<lb break="yes"/>un peu plus d&#x2019;hydrogène que n&#x2019;en admettait<lb break="yes"/>
+                            <pb n="183" facs="#f0015"/> autrefois M. <persName key="berthollet_cl" >Berthollet le père</persName>
+                            <note place="foot" n="(1)">M. <persName key="berthollet_cl">Berthollet le père</persName> (<hi rendition="#i">Mém. de l&#x2019;Acad.,</hi> 1785,<lb break="yes"/>p. 324), trouva en volume 72,50 d&#x2019;hydrogène, 27,50 d&#x2019;a-<lb break="no" />zote, ce qui lui donna, en supposant la pesanteur spéci-<lb break="no"/>fique de l&#x2019;hydrogène à celle de l&#x2019;azote, = 1 : 11 en poids,<lb break="yes"/>19,33 d&#x2019;hydrogène et 80,67 d&#x2019;azote. Mais, d&#x2019;après la table<lb break="yes"/>des densités de MM. <persName key="biot_jb">Biot</persName> et <persName key="arago_dfj" >Arrago</persName>, il résulte de l&#x2019;expé-<lb break="no" />rience de M. <persName key="berthollet_cl">Berthollet</persName> 16,6 d&#x2019;hydrogène et 83,4 d&#x2019;azote.</note>, et 0,02 de<lb break="yes"/>moins qu&#x2019;en supposait M. <persName key="biot_jb">Biot</persName>, d&#x2019;après <persName key="davy_h" >Davy</persName>,<lb break="yes"/>l&#x2019;effet de la condensation devient sensible; car<lb break="yes"/>le pouvoir réfringent du composé est de 2,168,<lb break="yes"/>au lieu de 2,08471.</p>
+                        <lb break="yes"/>
+                        <p>Nous avons vu jusqu&#x2019;ici que la constitution<lb break="yes" />chimique de l&#x2019;atmosphère, sous l&#x2019;équateur, ne<lb break="yes"/>présente aucune modification particulière pro-<lb break="no"/>pre à favoriser l&#x2019;opinion de l&#x2019;influence des cli-<lb break="no"/>mats sur les réfractions moyennes, influence<lb break="yes"/>qui fut indépendante de la température et de<lb break="yes"/>la pression barométrique de l&#x2019;air. En supposant<lb break="yes"/>sous les tropiques, comme quelques physiciens<lb break="yes"/>l&#x2019;ont fait arbitrairement, plus d&#x2019;acide carboni-<lb break="no"/>que ou (à composition égale) plus de conden-<lb break="no"/>sation de bases, ces différences, bien loin d&#x2019;ex-<lb break="no"/>pliquer, comme le feraient des accumulations<lb break="yes"/>d&#x2019;hydrogène et d&#x2019;oxygène, une diminution<lb break="yes"/>dans le pouvoir réfringent du mélange, ten-<lb break="no"/>draient plut&#x00F4;t à en augmenter les effets.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Humidité. Brume. Nuages.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Il en est de m&#x00EA;me d&#x2019;une quatrième et der-<lb break="no" />nière cause qu&#x2019;il nous reste à examiner, de<lb break="yes"/>
+                            <pb n="184" facs="#f0016"/> l&#x2019;humidité. Si l&#x2019;influence de cette cause est<lb break="yes"/>sensible, elle doit augmenter l&#x2019;inflexion des<lb break="yes"/>rayons lumineux sous l&#x2019;équateur, quelle que<lb break="yes"/>soit la grandeur de l&#x2019;angle apparent que l&#x2019;on<lb break="yes"/>observe. En effet, dans ces climats br&#x00FB;lans,<lb break="yes"/>le sol couvert d&#x2019;épaisses for&#x00EA;ts, et humecté<lb break="yes"/>par des pluies presque continuelles, répand<lb break="yes"/>des masses d&#x2019;eau énormes dans un air dont la<lb break="yes"/>température varie de 22 à 36°. L&#x2019;humidité<lb break="yes"/>extr&#x00EA;me de ces régions équinoxiales contraste<lb break="yes"/>avec la sécheresse à laquelle l&#x2019;atmosphère po-<lb break="no"/>laire se trouve réduite par le froid.</p>
+                        <lb break="yes"/>
+                        <p>La gravité spécifique de la vapeur d&#x2019;eau<lb break="yes"/>étant, à forces élastiques égales, à la gravité<lb break="yes"/>spécifique de l&#x2019;air comme 10 : 14, celui-ci<lb break="yes"/>pèse d&#x2019;autant moins, qu&#x2019;il est plus près du<lb break="yes" />degré extr&#x00EA;me de sa saturation. Or, l&#x2019;air hu-<lb break="no"/>mide n&#x2019;est qu&#x2019;un mélange d&#x2019;eau et de vapeurs;<lb break="yes"/>par conséquent, sa densité est aussi moins<lb break="yes"/>grande que celle d&#x2019;un air plus sec. On peut<lb break="yes"/>concevoir par là comment, sous l&#x2019;équateur,<lb break="yes"/>une source constante de chaleur et d&#x2019;humidité<lb break="yes"/>produit une diminution dans les hauteurs<lb break="yes"/>moyennes du baromètre, l&#x2019;air dilaté dans des<lb break="yes"/>colonnes plus élevées refluant sans cesse sur<lb break="yes"/>les colonnes voisines, et pesant moins à cause<lb break="yes"/>de son mouvement ascensionnel. On peut en<lb break="yes"/>conclure de m&#x00EA;me que, si la vapeur d&#x2019;eau<lb break="yes"/>avait <choice>
+                                <sic>exactemeut</sic>
+                                <corr type="editorial">exactement</corr>
+                            </choice> le m&#x00EA;me pouvoir réfrigent<lb break="yes"/>que l&#x2019;air, les réfractions devraient &#x00EA;tre moin-<lb break="no" />dres dans l&#x2019;air humide que dans l&#x2019;air sec. Mais<lb break="yes"/>des expériences précises, faites par les deux<lb break="yes"/>savans distingués que l&#x2019;Institut en avait char-<lb break="no"/>gés, ont confirmé ce que le génie du géo-<lb break="no"/>
+                            <pb n="185" facs="#f0017"/> mètre avait prédit depuis long-tems. M. La-<lb break="no"/>place avait prouvé que l&#x2019;état hygroscopique de<lb break="yes"/>l&#x2019;air ne pouvait avoir qu&#x2019;un effet presqu&#x2019;im-<lb break="no"/>perceptible sur les réfractions, l&#x2019;excès de la<lb break="yes"/>force réfringente de la vapeur aqueuse sur<lb break="yes"/>celle de l&#x2019;air étant compensé, en grande partie,<lb break="yes"/>par sa densité plus petite. Les formules déve-<lb break="no"/>loppées dans le dixième livre du quatrième<lb break="yes"/>volume de la <hi rendition="#i">Mécanique céleste,</hi> annoncent<lb break="yes"/>m&#x00EA;me que, si la compensation n&#x2019;est pas tout-<lb break="maybe"/>à-fait complète, ce manque d&#x2019;équilibre entre<lb break="yes"/>la dilatabilité et le pouvoir réfringent doit plu-<lb break="no"/>t&#x00F4;t renforcer que diminuer l&#x2019;effet des réfrac-<lb break="no"/>tions équatoriales. Aussi MM. <persName key="delambre_jbj">Delambre</persName> et<lb break="yes"/>
+                            <persName key="biot_jb">Biot</persName>, dans une suite d&#x2019;observations très-exac-<lb break="no"/>tes faites au cercle répétiteur, n&#x2019;ont pas vu<lb break="yes"/>varier sensiblement les réfractions pendant que<lb break="yes"/>l&#x2019;hygromètre indiquait de fortes variations d&#x2019;hu-<lb break="no"/>midité.</p>
+                        <lb break="yes"/>
+                        <p>Tels sont les effets de l&#x2019;eau dissoute dans l&#x2019;at-<lb break="no"/>mosphère d&#x2019;une manière à ne pas en altérer la<lb break="yes"/>transparence. Mais la vapeur qu&#x2019;on appelle <hi rendition="#i">vési-<lb break="no"/>culaire</hi> ne para&#x00EE;t pas toujours suivre les m&#x00EA;mes<lb break="yes"/>lois. Il ne s&#x2019;agit pointici de déterminer si le brouil-<lb break="no"/>lard et les nuages sont des amas de globules so-<lb break="no"/>lides, comme M. <persName key="monge_g">Monge</persName> a t&#x00E2;ché de le prouver<lb break="yes"/>dans son Mémoire sur la Météorologie, ou si,<lb break="yes"/>comme j&#x2019;incline à croire avec beaucoup d&#x2019;au-<lb break="no"/>tres physiciens, les nuages sont composés de<lb break="yes"/>sphères creuses dans lesquelles, probablement,<lb break="yes"/>un air extr&#x00EA;mement humide est enveloppé d&#x2019;une<lb break="yes"/>pellicule plus ou moins mince d&#x2019;eau. Il suffit<lb break="yes"/>ici d&#x2019;examiner les circonstances qui peuvent<lb break="yes"/>influer sur la différence de réfractions qu&#x2019;of-<lb break="no"/>
+                            <pb n="186" facs="#f0018"/> frent les nuages et le brouillard. Les brouil-<lb break="no"/>lards sont des couches de vapeurs qui, repo-<lb break="no"/>sant sur le sol, environnent l&#x2019;observateur. Les<lb break="yes"/>nuages, au contraire, sont des couches plus<lb break="yes"/>légères suspendues dans un air parfaitement<lb break="yes"/>transparent. Cet état de choses doit contribuer<lb break="yes"/>à modifier les réfractions dans ces amas de<lb break="yes"/>vapeurs vésiculaires. L&#x2019;expérience nous offre<lb break="yes"/>des exemples de ces contradictions apparentes.<lb break="yes"/>M. <persName key="arago_dfj" >Arrago</persName>, à l&#x2019;invitation de M. <persName key="laplace_ps">Laplace</persName>, a pris<lb break="yes"/>quelques hauteurs méridiennes du soleil vu à<lb break="yes"/>travers des nuages qui en laissaient apercevoir<lb break="yes"/>distinctement les bords. Cet astronome n&#x2019;a pas<lb break="yes"/>observé que les réfractions fussent changées<lb break="yes"/>par le passage du rayon à travers un groupe<lb break="yes"/>de vapeurs vésiculaires. Pendant mon séjour<lb break="yes"/>dans le royaume de Quito, j&#x2019;ai pris des angles<lb break="yes"/>d&#x2019;élévation de la cime de plusieurs volcans,<lb break="yes"/>nommément de ceux d&#x2019;Ilinissa et de Cotopaxi,<lb break="yes"/>au moment que des flocons de nuages blancs et<lb break="yes"/>transparens couvraient la cr&#x00EA;te de la Cordil-<lb break="no"/>lère. J&#x2019;étais s&#x00FB;r d&#x2019;évaluer, je ne dis pas une<lb break="yes"/>quantité absolue, mais bien une différence de<lb break="yes"/>cinq ou six secondes sexagésimales. Cependant,<lb break="yes"/>je ne trouvai pas que l&#x2019;angle apparent f&#x00FB;t sen-<lb break="no"/>siblement variable avant et au moment de la<lb break="yes"/>formation du nuage.</p>
+                        <lb break="yes"/>
+                        <p>Le brouillard ne produit pas constamment<lb break="yes"/>le m&#x00EA;me effet. Dans une matière aussi déli-<lb break="no"/>cate, il importe de réunir tous les faits qui<lb break="yes"/>ont été bien constatés. En parcourant le grand<lb break="yes"/>travail de M. <persName key="delambre_jbj">Delambre</persName>, sur les réfractions at-<lb break="no"/>mosphériques, contenu dans le second volume<lb break="yes"/>de la <hi rendition="#i">Base du système métrique,</hi> on y trouve<lb break="yes"/>
+                            <pb n="187" facs="#f0019"/> des observations très-curieuses faites à Bois-<lb break="no"/>commun pendant un tems de brouillard épais.<lb break="yes"/>La vapeur vésiculaire augmenta tellement le<lb break="yes"/>jeu des réfractions terrestres, que neuf résul-<lb break="no"/>tats donnèrent à M. <persName key="delambre_jbj" >Delambre</persName> le facteur <hi rendition="#i">n</hi>
+                            <lb break="yes"/>entre 0,146 et 0,175, tandis que des mesures<lb break="yes"/>prises par un air transparent présentent ce fac-<lb break="no"/>teur de la moitié plus petit, égal à 0,078.<lb break="yes"/>Mais cette contradiction apparente entre l&#x2019;ac-<lb break="no"/>tion qu&#x2019;exerce le nuage sur le rayon lumineux<lb break="yes"/>et l&#x2019;action qu&#x2019;on attribue au brouillard, n&#x2019;a<lb break="yes"/>pas de quoi nous étonner. Les nuages, selon<lb break="yes"/>des observations directes que j&#x2019;ai eu occasion<lb break="yes"/>de faire sur la pente de la Cordillère des <placeName key="anden">Andes</placeName>,<lb break="yes"/>ont souvent 12 à 1600 mètres d&#x2019;épaisseur per-<lb break="no" />pendiculaire. On con&#x00E7;oit comment, malgré ce<lb break="yes" />volume, malgré cet agroupement énorme de<lb break="yes"/>vapeurs vésiculaires, le rayon lumineux peut<lb break="yes"/>passer à travers le nuage, comme s&#x2019;il passait<lb break="yes"/>à travers un verre parfaitement plan. Si les<lb break="yes"/>globules de vapeurs sont solides, l&#x2019;observateur<lb break="yes"/>voit le disque solaire par des rayons qui passent<lb break="yes"/>par le centre, ou par des rayons qui traversent<lb break="yes"/>l&#x2019;air humide dans lequel nagent les globules:<lb break="yes"/>si, au contraire, les petites sphères sont creu-<lb break="no"/>ses, la lumière, en pénétrant dans l&#x2019;intérieur<lb break="yes"/>à travers une pellicule d&#x2019;eau très-mince,<lb break="yes"/>éprouve, en entrant, la m&#x00EA;me inflexion qu&#x2019;elle<lb break="yes"/>subit en sortant. L&#x2019;extinction de la lumière<lb break="yes"/>doit &#x00EA;tre presque nulle, si (comme le rend<lb break="yes"/>probable M. <persName key="laplace_ps">Laplace</persName>, dans son Supplément à<lb break="yes"/>la Théorie de l&#x2019;action capillaire) l&#x2019;enveloppe<lb break="yes"/>est une lame d&#x2019;eau dont l&#x2019;épaisseur est plus<lb break="yes"/>petite que le rayon d&#x2019;activité sensible de ses<lb break="yes"/>
+                            <pb n="188" facs="#f0020"/> molécules. L&#x2019;air dans lequel se trouvent les va-<lb break="no"/>peurs vésiculaires est saturé d&#x2019;eau, et, comme<lb break="yes"/>nous venons de le voir tant&#x00F4;t par les expérien-<lb break="no"/>ces du prisme de M. <persName key="biot_jb">Biot</persName>, l&#x2019;eau dissoute n&#x2019;al-<lb break="no"/>tère aucunement le jeu des réfractions.</p>
+                        <lb break="yes"/>
+                        <p>Il para&#x00EE;t donc que les expériences de M. <persName key="arago_dfj" >Ar-<lb break="no"/>rago</persName> et les miennes, sur le pouvoir réfringent<lb break="yes"/>des nuages, sont conformes à la théorie. Les<lb break="yes"/>phénomènes extrordinaires observés par M. <persName key="delambre_jbj">De-<lb break="no"/>lambre</persName> pendant un mois entier à Boiscommun,<lb break="yes"/>peuvent avoir été causés, non par l&#x2019;état hygro-<lb break="no"/>métrique de l&#x2019;atmosphère, mais par les ano-<lb break="no"/>malies dans la loi du décroissement du calori-<lb break="no"/>que dans les couches d&#x2019;air supposées. C&#x2019;étaient<lb break="yes"/>des observations de réfractions terrestres, m&#x00EA;me<lb break="yes"/>des angles de dépression; par conséquent, les<lb break="yes"/>réfractions atmosphériques observées à Bois-<lb break="no"/>commun, étaient modifiées par la différence<lb break="yes"/>de densité entre la couche d&#x2019;air qui forme le<lb break="yes"/>brouillard, et entre les couches qui agissent<lb break="yes"/>sur ce dernier. L&#x2019;observateur, enveloppé dans<lb break="yes"/>le brouillard, se trouve dans l&#x2019;air humide qui<lb break="yes"/>remplit les interstices de la vapeur vésiculaire;<lb break="yes"/>il est environné d&#x2019;un air condensé par un re-<lb break="no"/>froidissement subit et local. En effet, d&#x2019;autres<lb break="yes"/>observations prouvent qu&#x2019;à des angles de hau-<lb break="no"/>teur auxquels l&#x2019;influence du décroissement du<lb break="yes"/>calorique est imperceptible, le brouillard<lb break="yes"/>n&#x2019;exerce pas d&#x2019;influence sur les réfractions.<lb break="yes"/>Dans le grand nombre d&#x2019;observations d&#x2019;An-<lb break="no"/>tarès, faites avec le plus grand soin à l&#x2019;Obser-<lb break="no"/>vatoire Impérial, on n&#x2019;a pas remarqué qu&#x2019;après<lb break="yes" />avoir employé les corrections nécessaires pour<lb break="yes"/>le baromètre et le thermomètre, les passages<lb break="yes"/>
+                            <pb n="189" facs="#f0021"/> d&#x2019;Antarès, par le méridien, aient donné des<lb break="yes"/>angles sensiblement différens, selon qu&#x2019;on les<lb break="yes"/>a pris par un tems sec et dans une brume assez<lb break="yes"/>épaisse. Il serait important d&#x2019;examiner si les<lb break="yes"/>mèmes brouillards, qui altèrent la réfraction<lb break="yes"/>terrestre, affectent aussi la déviation des rayons<lb break="yes"/>qui nous arrivent sous des angles au-dessus de<lb break="yes"/>12 ou 14°. Ces observations décideraient si les<lb break="yes"/>brouillards agissent par une autre voie qu&#x2019;en<lb break="yes"/>diminuant le jeu du calorique rayonnant à la<lb break="yes"/>surface du globe, et en ralentissant le décrois-<lb break="no"/>sement du calorique.</p>
+                        <lb break="yes"/>
+                        <p>Il résulte de ces considérations développées<lb break="yes"/>dans la seconde partie de mon Mémoire, que<lb break="yes"/>la constitution chimique de l&#x2019;atmosphère, non<lb break="yes"/>plus que son état hygrométrique, ne présentent<lb break="yes"/>aucune cause qui puisse expliquer une dimi-<lb break="no"/>nution dans les réfractions sous l&#x2019;équateur. L&#x2019;in-<lb break="no"/>flexion du rayon lumineux, supposé qu&#x2019;il nous<lb break="yes"/>parvienne sous un angle plus grand que 10°,<lb break="yes"/>est simplement fonction de la pression et de la<lb break="yes"/>température de la couche inférieure de l&#x2019;air<lb break="yes"/>qui entoure l&#x2019;observateur. Quelques astronomes<lb break="yes"/>ont jeté des doutes sur la correction thermo-<lb break="no"/>métrique appliquée à des extr&#x00EA;mes de chaleur<lb break="yes"/>et de froid; mais en se rappelant que, d&#x2019;après<lb break="yes"/>les expériences de M. <persName key="gaylussac_jl">Gay-Lussac</persName>, les dilata-<lb break="no"/>tions des gaz sont proportionnelles à leur tem-<lb break="no"/>pérature, et que depuis le point de la glace<lb break="yes"/>fondante jusqu&#x2019;à 100°, la marche du thermo-<lb break="no"/>mètre à air est la m&#x00EA;me que celle du thermo-<lb break="no"/>mètre à mercure, on se voit forcé d&#x2019;admettre<lb break="yes"/>que la correction thermométrique est croissante<lb break="yes"/>uniformément avec les degrés du thermomètre<lb break="yes"/>
+                            <pb n="190" facs="#f0022"/> à mercure observé à l&#x2019;air libre au moment que<lb break="yes"/>l&#x2019;angle est pris à l&#x2019;instrument. Cette uniformité<lb break="yes"/>se manifeste d&#x2019;une manière frappante dans<lb break="yes"/>deux observations de M. <persName key="svanberg_01">Swanberg</persName>, que nous<lb break="yes"/>allons développer plus bas, et qui présentent<lb break="yes"/>la plus grande harmonie, quoique l&#x2019;une e&#x00FB;t<lb break="yes"/>été faite à 29° et l&#x2019;autre à 13° au-dessous de<lb break="yes"/>zéro, le baromètre n&#x2019;ayant varié que de douze<lb break="yes"/>millimètres.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Décroissement du Calorique.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Il nous reste à examiner la constitution de<lb break="yes" />l&#x2019;atmosphère des tropiques, sous le rapport qui<lb break="yes" />influe le plus sur les réfractions horizontales<lb break="yes"/>et presque horizontales: je parle de la loi du<lb break="yes" />décroissement du calorique dans les couches<lb break="yes" />d&#x2019;air <choice>
+                                <sic>snperposées</sic>
+                                <corr type="editorial">superposées</corr>
+                            </choice> les unes aux autres. Si cette<lb break="yes"/>loi fut trouvée différente dans les zones di-<lb break="no"/>verses, les réfractions au-dessous de 10° de-<lb break="no"/>vraient l&#x2019;&#x00EA;tre aussi, malgré l&#x2019;identité dans la<lb break="yes"/>composition chimique de l&#x2019;atmosphère, et mal-<lb break="no"/>gré l&#x2019;influence nulle de la sécheresse et de<lb break="yes"/>l&#x2019;humidité. En effet, un astronome distingué,<lb break="yes"/>séduit par la comparaison des réfractions ob-<lb break="no"/>servées par <persName key="piazzi_01" >Piazzi</persName> et <persName key="maskelyne_01" >Masklyne</persName>, a tenté de<lb break="yes"/>prouver récemment, <hi rendition="#i">a priori,</hi> que le dé-<lb break="no" />croissement du calorique doit &#x00EA;tre plus rapide<lb break="yes" />dans les climats chauds, et que par consé-<lb break="no"/>quent la réfraction horizontale doit augmenter<lb break="yes"/>en raison inverse de la température moyenne<lb break="yes"/>des lieux. Cette assertion, si elle embrasse les<lb break="yes"/>observations faites pendant l&#x2019;été, est démentie<lb break="yes"/>par un grand nombre d&#x2019;expériences que j&#x2019;ai<lb break="yes"/>
+                            <pb n="191" facs="#f0023"/> eu occasion de faire pendant le cours de mon<lb break="yes"/>expédition à l&#x2019;équateur. Aucun autre voyageur<lb break="yes"/>ne s&#x2019;étant occupé de ces recherches sur le dé-<lb break="no"/>croissement du calorique dans l&#x2019;atmosphère de<lb break="yes"/>la zone torride, je réunirai dans une table les<lb break="yes"/>résultats de mes observations faites dans les<lb break="yes"/>deux hémisphères. Je m&#x2019;arr&#x00EA;terai aux seuls<lb break="yes"/>nombres. Le détail des localités sur lesquelles<lb break="yes"/>se fonde le choix des observations, et la pro-<lb break="no"/>babilité des résultats qu&#x2019;elles présentent, se<lb break="yes"/>trouve discuté dans un Mémoire qui va pa-<lb break="no"/>ra&#x00EE;tre dans ceux de l&#x2019;Académie de Berlin pour<lb break="yes"/>l&#x2019;année 1807.</p>
+                        <lb break="yes"/>
+                        <p>Si, au lieu d&#x2019;un noyau solide enveloppé<lb break="yes" />d&#x2019;un fluide aériforme, nous nous figurons un<lb break="yes" />sphéro&#x00EF;de gazeux transparent, et tournant sur<lb break="yes" />lui-m&#x00EA;me autour du soleil, nous concevons que<lb break="yes" />les rayons solaires n&#x2019;y produiraient de la cha-<lb break="no" />leur, qu&#x2019;autant que la lumière serait affaiblie en<lb break="yes"/>passant par des couches d&#x2019;air plus ou moins<lb break="yes"/>denses. L&#x2019;extinction de la lumière y serait la<lb break="yes"/>seule cause de la chaleur. Par conséquent, la<lb break="yes"/>température serait moindre vers la surface que<lb break="yes"/>dans les couches intérieures. La température<lb break="yes"/>augmenterait d&#x2019;abord avec la densité croissante<lb break="yes"/>des couches; mais, à cause de l&#x2019;affaiblissement<lb break="yes"/>m&#x00EA;me des rayons lumineux, cette température<lb break="yes"/>parviendrait probablement à son <hi rendition="#i">maximum</hi> dans<lb break="yes"/>un point éloigné du centre et de la surface. Jus-<lb break="no"/>qu&#x2019;ici notre sphéro&#x00EF;de gazeux ressemblerait à<lb break="yes"/>ces corps célestes que <persName key="herschel_w">Herschel</persName> a nommés des<lb break="yes"/>
+                            <hi rendition="#i">Nébuleuses planétaires.</hi>
+                        </p>
+                        <lb break="yes"/>
+                        <p>Imaginons maintenant un noyau solide au<lb break="yes"/>milieu de ce fluide aériforme: dès ce moment,<lb break="yes"/>
+                            <pb n="192" facs="#f0024"/> nous voyons na&#x00EE;tre deux autres causes de tem-<lb break="no"/>pérature; le faible effet de l&#x2019;extinction de la<lb break="yes"/>lumière se perd auprès de l&#x2019;effet du calorique<lb break="yes"/>rayonnant et du courant ascendant. Il est inu-<lb break="no"/>tile de discuter ici la possibilité d&#x2019;une qua-<lb break="no"/>trième cause. Nous n&#x2019;agiterons pas la question,<lb break="yes"/>si les fluides aériformes peuvent conduire le<lb break="yes"/>calorique sans mouvement de translation dans<lb break="yes"/>les molécules. Un physicien célèbre, M. <persName key="rumford_g">de<lb break="yes"/>Rumford</persName>, s&#x2019;est occupé de la résolution de ce<lb break="yes"/>problème. Il ne nous intéresserait que dans le<lb break="yes"/>cas où des vents chauds souffleraient dans les<lb break="yes"/>hautes régions seules de l&#x2019;atmosphère. Cepen-<lb break="no"/>dant l&#x2019;agitation de l&#x2019;air m&#x00EA;lerait bient&#x00F4;t les<lb break="yes" />molécules voisines; il serait m&#x00EA;me alors im-<lb break="no" />possible de faire abstraction du mouvement de<lb break="yes" />translation.</p>
+                        <lb break="yes"/>
+                        <p>L&#x2019;effet du courant ascendant, comme celui<lb break="yes"/>du calorique rayonnant, n&#x2019;avait pas échappé<lb break="yes"/>à la sagacité d&#x2019;<persName key="aristoteles">Aristote</persName> et de ses disciples. J&#x2019;ai<lb break="yes"/>développé, dans un autre endroit, que dans<lb break="yes"/>le premier livre des <hi rendition="#i">Meteorologica,</hi> et dans la<lb break="yes" />vingt-cinquième section des Problèmes attri-<lb break="no"/>bués à <persName key="aristoteles">Aristote</persName>, la hauteur des nuages et leur<lb break="yes"/>densité sont considérées comme des phénomènes<lb break="yes"/>qui dépendent de l&#x2019;ascension de la chaleur, et<lb break="yes"/>qui contribuent à en modifier l&#x2019;action <note place="foot" n="(1)">
+                                <hi rendition="#i">
+                                    <persName key="aristoteles">Aristotelis</persName> opera omnia,</hi> t. II, <hi rendition="#i">ed. <persName key="casaubonus_i">Casaub.</persName>,</hi> p. 458.<lb break="yes"/>327.</note>.</p>
+                        <lb break="yes"/>
+                        <p>Le décroissement du calorique étant l&#x2019;effet<lb break="yes" />simultané de trois causes générales, de l&#x2019;ex-<lb break="no"/>
+                            <fw type="catch" place="bottom">tinction</fw>
+                            <lb break="yes"/>
+                            <pb n="193" facs="#f0025"/> tinction de la lumière pendant son passage à<lb break="yes"/>travers les couches d&#x2019;air plus ou moins den-<lb break="no"/>ses, de la chaleur rayonnante et du courant<lb break="yes"/>ascendant, tout ce qui modifie ces causes doit<lb break="yes"/>aussi modifier la loi du décroissement. Ce der-<lb break="no"/>nier doit &#x00EA;tre plus lent au-dessus de la sur-<lb break="no"/>face de la mer ou au-dessus d&#x2019;une campagne<lb break="yes"/>couverte de neige, qu&#x2019;au-dessus d&#x2019;un désert<lb break="yes"/>dénué de végétaux ou au-dessus d&#x2019;une couche<lb break="yes"/>horizontale de schiste micacé. Il doit &#x00EA;tre plus<lb break="yes"/>rapide sur la pente d&#x2019;une montagne conique,<lb break="yes"/>qu&#x2019;au-dessus d&#x2019;une cordillère qui présente de<lb break="yes"/>grands plateaux élevés par étages les uns au-<lb break="maybe"/>dessus des autres. Mais en discutant la réfrac-<lb break="no"/>tion moyenne correspondante à de petits an-<lb break="no"/>gles de hauteurs entre 6 et 10°, il ne s&#x2019;agit<lb break="yes"/>aussi que de la loi du décroissement moyen.<lb break="yes"/>Nous verrons tant&#x00F4;t que cette loi est plus cons-<lb break="no"/>tante qu&#x2019;on devrait le supposer, à cause des<lb break="yes"/>variations de température produites par les<lb break="yes"/>courans d&#x2019;air horizontaux et verticaux; nous<lb break="yes"/>trouverons qu&#x2019;elle est aisée à reconna&#x00EE;tre à<lb break="yes"/>travers un grand nombre de petites perturba-<lb break="no"/>tions locales.</p>
+                        <lb break="yes"/>
+                        <p>La progression selon laquelle les couches<lb break="yes"/>d&#x2019;air superposées sont plus froides selon qu&#x2019;on<lb break="yes" />s&#x2019;éloigne de la surface du globe, peut &#x00EA;tre re-<lb break="no"/>connue par cinq voies différentes, dont les<lb break="yes"/>deux premières seules paraissent mener à des<lb break="yes"/>résultats certains. Ces moyens sont des ascen-<lb break="no"/>sions aérostatiques, des voyages vers la cime<lb break="yes"/>de montagnes isolées et à pente rapide, la com-<lb break="no"/>paraison des températures moyennes observées<lb break="yes"/>pendant plusieurs années dans deux endroits<lb break="yes"/>qui auraient une élévation très-différente, et<lb break="yes"/>
+                            <pb n="194" facs="#f0026"/> qui seraient peu éloignés l&#x2019;un de l&#x2019;autre, la<lb break="yes"/>température des sources et celle des cavernes,<lb break="yes"/>que quelques physiciens osent nommer la tem-<lb break="no"/>pérature de l&#x2019;intérieur du globe. On pourrait<lb break="yes"/>y ajouter la connaissance des réfractions hori-<lb break="no"/>zontales, et un septième moyen, peu exact,<lb break="yes"/>celui de déduire le décroissement du calorique<lb break="yes"/>de la hauteur à laquelle se maintiennent les<lb break="yes"/>neiges éternelles dans les différentes zones du<lb break="yes"/>globe.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Voyages dans les <placeName key="anden" >Andes</placeName>.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Des excursions faites à la cime d&#x2019;un pic élevé<lb break="yes"/>et très-escarpé, offrent presque les m&#x00EA;mes<lb break="yes"/>avantages que les ascensions aérostatiques,<lb break="yes"/>l&#x2019;observateur au pied du pic se trouvant, pour<lb break="yes"/>ainsi dire, dans la m&#x00EA;me verticale que l&#x2019;ob-<lb break="no"/>servateur placé au sommet. Dans le tableau<lb break="yes"/>suivant de mes expériences, on peut distinguer,<lb break="yes"/>sous ce rapport, comme plus exactes, les ex-<lb break="no"/>cursions que nous avons faites, M. <persName key="bonpland_ajag">Bonpland</persName>
+                            <lb break="yes"/>et moi, au Mexique, à la cime du Naucampa-<lb break="no"/>tepetel, appelé aujourd&#x2019;hui le <hi rendition="#i" >Cofre de Pe-<lb break="no"/>rote,</hi> et au Nevado de Toluca; sur les bords<lb break="yes"/>de la mer du Sud, à la cime de Rucu-Pichin-<lb break="no"/>cha; sur la c&#x00F4;te de Venezuela, à la Sille de<lb break="yes"/>Caraccas; à l&#x2019;&#x00EE;le de Ténériffe, au sommet du<lb break="yes"/>pic de Teyde. Je nomme ce volcan le dernier,<lb break="yes"/>parce que, rapproché des c&#x00F4;tes du continent<lb break="yes"/>de <placeName key="afrika" >l&#x2019;Afrique</placeName>, il a le désavantage d&#x2019;&#x00EA;tre baigné<lb break="yes"/>quelquefois par des courans d&#x2019;air chaud qui<lb break="yes"/>soufflent de l&#x2019;Est et du Sud-Est. En effet,<lb break="yes"/>M. <persName key="labillardiere_jjd" >Labillardière</persName>, qui est parvenu huit ans<lb break="yes" />avant moi, le 17 octobre 1791, à la cime du<lb break="yes"/>pic de Ténériffe, et qui y a fait un nombre<lb break="yes"/>
+                            <pb n="195" facs="#f0027"/> d&#x2019;observations importantes, rapporte, dans la<lb break="yes"/>relation de son voyage, qu&#x2019;à 3700 mètres de<lb break="yes"/>hauteur, en automne, l&#x2019;air y avait une tem-<lb break="no"/>pérature de 18°,7 du thermomètre centigrade.<lb break="yes"/>Aussi le vent, comme l&#x2019;indique l&#x2019;observateur<lb break="yes"/>lui-m&#x00EA;me, était Sud-Sud-Est. Par conséquent,<lb break="yes"/>la différence de température entre la cime et<lb break="yes"/>l&#x2019;air de la c&#x00F4;te ne dépassait pas 9°, au lieu<lb break="yes"/>qu&#x2019;avec un vent Ouest qui ne souffle pas du<lb break="yes"/>continent de <placeName key="afrika">l&#x2019;Afrique</placeName>, je trouvai une diffé-<lb break="no"/>rence de 20°. <persName key="delamanon_01" >Lamanon</persName>, lors de l&#x2019;expédition<lb break="yes"/>de <persName key="laperouse_jfdgcd">Laperouse</persName>, en trouva 19°. Cette harmo-<lb break="no"/>nie, entre les résultats obtenus sous des cir-<lb break="no"/>constances favorables, est d&#x2019;autant plus frap-<lb break="no"/>pante, que j&#x2019;observai au bord du cratère,<lb break="yes"/>mais à l&#x2019;ombre et très-éloigné du sol, + 2°,7,<lb break="yes"/>tandis que le thermomètre de <persName key="delamanon_01">Lamanon</persName> mar-<lb break="no"/>quait + 11°,6. L&#x2019;une de ces observations donne<lb break="yes"/>un décroissement de chaleur de 184 mètres,<lb break="yes"/>l&#x2019;autre de 195 mètres par degré centigrade,<lb break="yes"/>décroissemens qui ne diffèrent entre eux que<lb break="yes"/>de 11 mètres.</p>
+                        <lb break="yes"/>
+                        <p>Le tableau suivant indique l&#x2019;époque de l&#x2019;ob-<lb break="no" />servation; la latitude des lieux, fondée sur<lb break="yes"/>mes propres déterminations astronomiques;<lb break="yes"/>la hauteur de la colonne d&#x2019;air parcourue,<lb break="yes"/>calculée d&#x2019;après la formule barométrique de<lb break="yes"/>M. <persName key="laplace_ps" >Laplace</persName>, en y appliquant le nouveau<lb break="yes" />co&#x00EB;fficient de M. <persName key="ramonddecarbonnieres_lf" >Ramond</persName>; la différence de<lb break="yes"/>température entre la couche inférieure et su-<lb break="no"/>périeure, et la loi du décroissement pour 1°<lb break="yes"/>du thermomètre centigrade.</p>
+                        <lb break="yes"/>
+                        <p>Les hauteurs des colonnes d&#x2019;air que j&#x2019;ai tra-<lb break="no" />versées sont, la plupart, entre 3000 et 5800 mè-<lb break="no"/>tres: j&#x2019;y ai ajouté les résultats <choice>
+                                <sic>dn</sic>
+                                <corr type="editorial">du</corr>
+                            </choice> décroisse-<lb break="no"/>
+                            <pb n="196" facs="#f0028"/> ment du calorique relatif à 1° du thermomètre<lb break="yes"/>de <persName key="reaumur_rafd" >Réanmur</persName>.</p>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell rows="2">LIEUX ET ÉPOQUES<lb break="yes"/>de<lb break="yes"/>
+                                    <hi rendition="#g">
+                                        <hi rendition="#k">l&#x2019;observation.</hi>
+                                    </hi>
+                                </cell>
+                                <cell rows="2">
+                                    <hi rendition="#k">latitude</hi>
+                                    <lb break="yes"/>des<lb break="yes"/>lieux.</cell>
+                                <cell rows="2">
+                                    <hi rendition="#k">hauteur</hi>
+                                    <lb break="yes"/>de la<lb break="yes"/>colonne<lb break="yes" />d&#x2019;air<lb break="yes"/>parcourue.</cell>
+                                <cell rows="2">
+                                    <hi rendition="#k">différ.</hi>
+                                    <lb break="yes"/>de tem-<lb break="maybe"/>pérature<lb break="yes"/>entre la<lb break="yes"/>couche<lb break="yes" />infér. et<lb break="yes"/>supér.<lb break="yes"/>(Therm.<lb break="yes"/>centig.)</cell>
+                                <cell cols="2" rendition="#bottomBraced">
+                                    <hi rendition="#g">LOI<lb break="yes"/>
+                                        <hi rendition="#k">du décroissement.</hi>
+                                    </hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Pour 1 deg.<lb break="yes"/>centigrade.</cell>
+                                <cell>Pour 1 deg.<lb break="yes"/>
+                                    <choice>
+                                        <sic>dn</sic>
+                                        <corr type="editorial">du</corr>
+                                    </choice>
+                                    <lb break="yes"/>therm. R.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Coffre de Perotte...<lb break="yes" />(février 1804.)</cell>
+                                <cell>19° 29&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>4047<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>22°,1</cell>
+                                <cell>183,<hi rendition="#sup">m.</hi>1</cell>
+                                <cell>117,<hi rendition="#sup">t.</hi>3</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Nevado de Toluca ..<lb break="yes" />(septembre 1803.)</cell>
+                                <cell>10° 6&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>4619<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>23°,2</cell>
+                                <cell>198,<hi rendition="#sup">m.</hi>7</cell>
+                                <cell>128,<hi rendition="#sup">t.</hi>1</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Silla de Caraccas...<lb break="yes" />(janvier 1800.)</cell>
+                                <cell>10°37&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>2603<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>13°,7</cell>
+                                <cell>189,<hi rendition="#sup">m.</hi>8</cell>
+                                <cell>121,<hi rendition="#sup">t.</hi>4</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Fuerte de la Cuchilla.<lb break="yes" />(décembre 1799.)</cell>
+                                <cell>10°33&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>1512<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>8°,5</cell>
+                                <cell>177,<hi rendition="#sup">m.</hi>8</cell>
+                                <cell>114,<hi rendition="#sup">t.</hi>1</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Guadalupe......<lb break="yes" />(juillet 1801.)</cell>
+                                <cell>4°36&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>3287<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>16°,9</cell>
+                                <cell>194,<hi rendition="#sup">m.</hi>4</cell>
+                                <cell>124,<hi rendition="#sup">t.</hi>3</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Pichincha......<lb break="yes"/>(mai 1802.)</cell>
+                                <cell>0° 14&#x2032;<hi rendition="#sup">austr.</hi>
+                                </cell>
+                                <cell>4679<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>23°,7</cell>
+                                <cell>197,<hi rendition="#sup">m.</hi>8</cell>
+                                <cell> 126,<hi rendition="#sup">t.</hi>3</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rendition="#rightBraced">Chimborazo.....<lb break="yes"/>(juin 1802.)</cell>
+                                <cell>1°28&#x2032;<hi rendition="#sup">austr.</hi>
+                                </cell>
+                                <cell>5876<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>29°,1</cell>
+                                <cell>201,<hi rendition="#sup">m.</hi>9</cell>
+                                <cell> 129,<hi rendition="#sup">t.</hi>4</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell rows="2" rendition="#rightBraced">Pico de Teneriffa...<lb break="yes"/>(juin 1799.)</cell>
+                                <cell rows="2">28° 17&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell rows="2" rendition="#rightBraced">3704<hi rendition="#sup" >m.</hi>
+                                </cell>
+                                <cell>20°,1</cell>
+                                <cell>184,<hi rendition="#sup">m.</hi>2</cell>
+                                <cell>118,<hi rendition="#sup">t.</hi>3</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>19°,0</cell>
+                                <cell rendition="#u">194, 9</cell>
+                                <cell rendition="#u">125, 3</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="4">Terme moyen....</cell>
+                                <cell>191,<hi rendition="#sup">m.</hi>4</cell>
+                                <cell>122,<hi rendition="#sup">t.</hi>6</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <pb n="197" facs="#f0029"/>
+                        <p>Les extr&#x00EA;mes des résultats obtenus ne dif-<lb break="no"/>fèrent du résultat moyen, pour les <hi rendition="#i">minimum</hi>
+                            <lb break="yes"/>et les <hi rendition="#i">maximum,</hi> que de 10 et de 14 mètres.<lb break="yes"/>D&#x2019;après cette harmonie frappante, on pour-<lb break="no"/>rait supposer que les observations contenues<lb break="yes"/>dans le tableau, ont été choisies parmi un<lb break="yes"/>grand nombre, et que le choix n&#x2019;a pas été<lb break="yes"/>fait avec toute l&#x2019;impartialité requise. Nous<lb break="yes"/>éloignerons ce soup&#x00E7;on, en observant que tout<lb break="yes"/>le journal de mon voyage, n&#x2019;offre d&#x2019;autres<lb break="yes"/>expériences que celles rapportées dàns le ta-<lb break="no"/>bleau, à l&#x2019;exception de deux seulement faites<lb break="yes"/>dans des circonstances peu favorables. Cepen-<lb break="no"/>dant, ces deux observations rejetées, offrent<lb break="yes"/>encore un résultat qui ne diffère que de 21<lb break="yes"/>et 25 mètres du résultat moyen. En ne les re-<lb break="no"/>jetant pas, on aurait pour la loi du décroisse-<lb break="no"/>ment 193 mètres, au lieu de 191 mètres.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Température moyenne de toute l&#x2019;année.<lb break="yes"/>Effet des plateaux.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>S&#x2019;il existait à la cime de l&#x2019;<placeName key="aetna" >Etna</placeName>, du pic de<lb break="yes"/>Ténériffe ou de Pichincha, des observatoires<lb break="yes"/>dans lesquels on f&#x00EE;t des expériences diurnes<lb break="yes"/>sur la température de l&#x2019;air, sur son humidité<lb break="yes"/>et sa tension électrique, sur les réfractions ho-<lb break="no"/>rizontales, sur les variations horaires de la<lb break="yes"/>déclinaison magnétique, expériences compa-<lb break="no"/>rables à d&#x2019;autres qu&#x2019;à la m&#x00EA;me époque on<lb break="yes"/>ferait dans les plaines voisines, l&#x2019;ensemble<lb break="yes"/>de ces travaux importans répandrait un grand<lb break="yes"/>jour sur la connaissance physique du globe et<lb break="yes"/>de l&#x2019;atmosphère qui l&#x2019;enveloppe. La comparai-<lb break="no"/>son des températures moyennes d&#x2019;une année<lb break="yes"/>
+                            <pb n="198" facs="#f0030"/> entière donnerait, sans doute, sur le décroisse-<lb break="no"/>ment du calorique, un résultat plus exact que<lb break="yes"/>des ascensions aérostatiques ou des excursions<lb break="yes"/>faites à la cime des montagnes les plus élevées.<lb break="yes"/>Mais (par malheur pour le progrès des scien-<lb break="no"/>ces physiques) dans la zone qui est le centre<lb break="yes"/>de la culture intellectuelle, les villes considé-<lb break="no"/>rables situées sur les plateaux les plus élevés<lb break="yes"/>en Europe (Madrid et Inspruck), n&#x2019;ont pas<lb break="yes"/>600 mètres d&#x2019;élévation au-dessus du niveau<lb break="yes"/>de l&#x2019;Océan. Il est vrai que dans les Pyrénées<lb break="yes"/>et dans les <placeName key="alpen" >Alpes</placeName>, deux villages, Heas et Saint-<lb break="maybe" />Remy, sont placés à 1400 et 1600 mètres de<lb break="yes"/>hauteur. Le couvent du Saint-Bernard est l&#x2019;en-<lb break="no"/>droit le plus élevé qui soit perpétuellement<lb break="yes"/>habité en Europe: sa hauteur perpendiculaire<lb break="yes"/>est de deux mille mètres. Mais nous ne con-<lb break="no"/>naissons point la température moyenne de<lb break="yes"/>cet endroit; nous l&#x2019;ignorons dans la zone tem-<lb break="no"/>pérée pour toute couche d&#x2019;air plus élevée que<lb break="yes"/>celle dans laquelle se trouve le couvent du<lb break="yes"/>Saint-Gothard. Au contraire, dans la partie<lb break="yes"/>équinoxiale du <placeName key="amerika">nouveau continent</placeName>, l&#x2019;homme<lb break="yes"/>habite des plateaux dont la hauteur est bien<lb break="yes"/>au-delà de 4000 mètres. Je ne parle pas de<lb break="yes"/>quelques hameaux épars; nombre de villes<lb break="yes"/>considérables, comme Huancavelica et Micui-<lb break="no"/>pampa au Pérou, sont construites sur le dos<lb break="yes"/>des <placeName key="anden">Andes</placeName> à 3700 mètres d&#x2019;élévation au-dessus<lb break="yes"/>du niveau de la mer du Sud. Cette position<lb break="yes"/>extraordinaire facilitera singulièrement le pro-<lb break="no"/>grès des sciences physiques, quand la civili-<lb break="no"/>sation du monde, accélérant la marche qu&#x2019;elle<lb break="yes"/>a tenue depuis long-tems de l&#x2019;Est à l&#x2019;Ouest,<lb break="yes"/>arrivera des c&#x00F4;tes orientales de <placeName key="atlantik">l&#x2019;Océan Atlan-<lb break="no"/>
+                                <pb n="199" facs="#f0031"/> tique</placeName> aux rives du Missoury et du Maranon.<lb break="yes"/>Jusqu&#x2019;ici le peu d&#x2019;observations que l&#x2019;on a pu<lb break="yes"/>recueillir sur la température moyenne des gran-<lb break="no"/>des villes de Quito, de Santa-Fe de Bogota, de<lb break="yes"/>Mexico et de Popayan, ne saurait conduire à<lb break="yes"/>un résultat exact sur la loi du décroissement<lb break="yes"/>du calorique. La position de ces villes s&#x2019;y op-<lb break="no"/>pose; elles ont été fondées au milieu de vastes<lb break="yes"/>plaines élevées de 1800 à 3000 mètres au-dessus<lb break="yes"/>des c&#x00F4;tes voisines. On peut considérer ces pla-<lb break="no"/>teaux comme des bancs ou des bas-fonds de<lb break="yes"/>l&#x2019;océan aérien; fixant les rayons solaires, ils<lb break="yes"/>élèvent la température des courans d&#x2019;air froid<lb break="yes"/>et raréfié qui baignent leur surface. A la cime<lb break="yes"/>du Chimborazo, l&#x2019;air est généralement de 34°<lb break="yes"/>plus froid que celui des c&#x00F4;tes, parce que la<lb break="yes"/>couche d&#x2019;air qui enveloppe le sommet est éloi-<lb break="no"/>gnée de 6550 mètres de la surface du globe qui<lb break="yes"/>absorbe et fixe les rayons. Si tout le diamètre<lb break="yes"/>de la terre augmentait de 6500 mètres, la<lb break="yes"/>couche d&#x2019;air dont nous venons de désigner la<lb break="yes"/>température, serait rapprochée de la cro&#x00FB;te<lb break="yes"/>de notre planète et aurait le climat des plaines<lb break="yes"/>actuelles. Par un effet analogue, les plateaux<lb break="yes"/>dans lesquels sont situées les grandes capitales<lb break="yes"/>de <placeName key="spanischeskolonialreich">l&#x2019;Amérique espagnole</placeName>, donnent à ces villes<lb break="yes"/>une température beaucoup plus élevée qu&#x2019;elles<lb break="yes"/>ne devraient avoir à cause de leur hauteur. Cette<lb break="yes"/>influence des plateaux, sur l&#x2019;air des hautes ré-<lb break="no"/>gions de l&#x2019;atmosphère, se manifeste dans le<lb break="yes"/>tableau suivant, dans lequel j&#x2019;ai réuni mes<lb break="yes"/>observations sur la température moyenne de<lb break="yes"/>quatre villes principales du Nouveau-Conti-<lb break="no"/>nent. Sur le dos prolongé de la Cordillère,<lb break="yes"/>dans les hautes plaines des <placeName key="anden">Andes</placeName>, on trouve<lb break="yes"/>
+                            <pb n="200" facs="#f0032"/> à 1600 mèt. de hauteur la température moyenne<lb break="yes"/>d&#x2019;<placeName key="algier" >Alger</placeName>, à 2700 mètres celle de Florence et de<lb break="yes"/>Rome; mais sur la pente rapide, partout où<lb break="yes"/>il n&#x2019;y a point de plateaux, il faut descendre<lb break="yes"/>beaucoup plus bas pour trouver des climats<lb break="yes"/>analogues à ceux de l&#x2019;Italie et de <placeName key="nordafrika">l&#x2019;Afrique<lb break="yes" />septentrionale</placeName>.</p>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell rows="2">
+                                    <hi rendition="#g">
+                                        <hi rendition="#k">lieux</hi>
+                                    </hi>
+                                    <lb break="yes"/>d&#x2019;observation.</cell>
+                                <cell rows="2">
+                                    <hi rendition="#g">
+                                        <hi rendition="#k">latitude</hi>
+                                    </hi>
+                                    <lb break="yes"/>des lieux.</cell>
+                                <cell rows="2">
+                                    <hi rendition="#k">élévation</hi>
+                                    <lb break="yes"/>au&#x2013;dessus<lb break="yes"/>du niveau de<lb break="yes"/>la mer.</cell>
+                                <cell rows="2">Température<lb break="yes"/>moyenne<lb break="yes" />observée sur<lb break="yes"/>le therm.<lb break="yes" />centigr.</cell>
+                                <cell cols="2" rendition="#bottomBraced">
+                                    <hi rendition="#g">
+                                        <hi rendition="#k">décroissement</hi>
+                                    </hi>
+                                    <lb break="yes"/>du calorique.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Pour 1°<lb break="yes"/>centigrade.</cell>
+                                <cell>Pour 1°<lb break="yes"/>du<lb break="yes"/>therm. R.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Quito.....</cell>
+                                <cell>0° 13&#x2032; 17&#x2032; <hi rendition="#sup">austr.</hi>
+                                </cell>
+                                <cell>2907.<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>15°,0</cell>
+                                <cell> 244<hi rendition="#sup">m.</hi>,4</cell>
+                                <cell>157<hi rendition="#sup">t</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Popayan....</cell>
+                                <cell>2° 26&#x2032; 17&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>1769.<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>20°,6</cell>
+                                <cell> 283<hi rendition="#sup">m.</hi>,1</cell>
+                                <cell>181<hi rendition="#sup">t</hi>,6</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>S. Fe de Bogota.</cell>
+                                <cell>4° 35&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>2660.<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>16°,5</cell>
+                                <cell>256<hi rendition="#sup">m.</hi>,1</cell>
+                                <cell>164<hi rendition="#sup">t</hi>,5</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Mexico....</cell>
+                                <cell>19° 25&#x2032; 55&#x2032; <hi rendition="#sup">bor.</hi>
+                                </cell>
+                                <cell>2277.<hi rendition="#sup">m.</hi>
+                                </cell>
+                                <cell>16°,9</cell>
+                                <cell rendition="#u"> 249<hi rendition="#sup">m.</hi>,3</cell>
+                                <cell rendition="#u">160<hi rendition="#sup">t</hi>,6</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="4">Terme moyen.....</cell>
+                                <cell>258<hi rendition="#sup">m.</hi>,4</cell>
+                                <cell>165<hi rendition="#sup">t</hi>,7</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <p>Ces expériences, faites dans des plateaux<lb break="yes"/>propres à échauffer l&#x2019;air ambiant, donnent,<lb break="yes"/>conformément à la théorie développée plus<lb break="yes"/>haut, un décroissement plus lent que celui<lb break="yes"/>qui résulte des ascensions aérostatiques ou des<lb break="yes"/>excursions entreprises vers la cime de pics iso-<lb break="no"/>lés. Au lieu de 191 mètres, on trouve pour terme<lb break="yes"/>moyen 258 mètres. Il est aussi intéressant d&#x2019;ob-<lb break="no"/>server que l&#x2019;influence des plateaux sur la tem-<lb break="no"/>pérature est si uniforme, que trois observations<lb break="yes"/>s&#x2019;accordent entre elles à 12 mètres près, et que<lb break="yes"/>la seule observation faite dans un plateau beau-<lb break="no"/>coup moins élevé et abrité contre les vents<lb break="yes"/>
+                            <pb n="201" facs="#f0033"/> froids, ne diffère que de 25 mètres du terme<lb break="yes"/>moyen des autres.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Température des Sources.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>La troisième méthode indiquée pour déter-<lb break="no"/>miner la loi du décroissement du calorique,<lb break="yes"/>est la température décroissante des sources qui<lb break="yes"/>sont plus ou moins élevées au-dessus du niveau<lb break="yes"/>de l&#x2019;Océan. Ce phénomène curieux a été l&#x2019;objet<lb break="yes"/>des recherches de plusieurs savans distingués,<lb break="yes"/>de <persName key="saussure_hbd" >Saussure</persName>, de <persName key="cavendish_h" >Cavendish</persName>, et récemment d&#x2019;un<lb break="yes" />physicien minéralogiste, M. <persName key="buch_lv">de Buch</persName>, qu&#x2019;une<lb break="yes"/>noble ardeur pour les sciences a guidé au Cap-<lb break="maybe"/>Nord, pour y étudier les phénomènes que pré-<lb break="no"/>sente la nuit polaire. Les sources indiquent le<lb break="yes"/>plus souvent la température moyenne des lieux.<lb break="yes"/>Elles l&#x2019;indiqueraient toujours, si les petits cou-<lb break="no"/>rans d&#x2019;eau qui filtrent dans l&#x2019;intérieur des ro-<lb break="no"/>ches venaient de la m&#x00EA;me hauteur, et si, par<lb break="yes"/>conséquent, ces eaux ne réunissaient pas au<lb break="yes"/>sein de la terre des températures moyennes<lb break="yes"/>qui appartiennent à des élévations différentes.<lb break="yes"/>M. <persName key="hunter_j" >Hunter</persName>, à l&#x2019;invitation de <persName key="cavendish_h">Cavendish</persName>, a me-<lb break="no"/>suré la chaleur des sources qui arrosent à la<lb break="yes"/>Jama&#x00EF;que la pente des montagnes Bleues. De-<lb break="no"/>puis le niveau de la mer jusqu&#x2019;à la hauteur de<lb break="yes"/>1272 mètres, M. <persName key="hunter_j">Hunter</persName> trouva que la tempé-<lb break="no" />rature de ces sources diminuait peu à peu de<lb break="yes"/>26°,5 à 16°,5 du thermomètre centigrade. Ce<lb break="yes"/>décroissement est beaucoup trop rapide pour ne<lb break="yes"/>pas croire que la source la plus élevée, et par<lb break="yes"/>conséquent la plus froide, celle de <persName key="wallen_01">Wallen-<lb break="maybe" />Housse</persName>, ne re&#x00E7;oive ses eaux de la cime des<lb break="yes"/>montagnes Bleues, qui ont 2218 mètres d&#x2019;élé-<lb break="no"/>
+                            <pb n="202" facs="#f0034"/> vation au-dessus des c&#x00F4;tes de la Jama&#x00EF;que. Pen-<lb break="no"/>dant le cours de mes voyages, j&#x2019;ai eu occasion<lb break="yes"/>de faire un grand nombre d&#x2019;observations ana-<lb break="no"/>logues. Dans la province de Caraccas, j&#x2019;ai<lb break="yes"/>trouvé constamment (comme je l&#x2019;ai exposé<lb break="yes"/>dans un autre endroit) que les sources étaient<lb break="yes"/>de 4&#x2014;5° plus froides que la chaleur moyenne<lb break="yes"/>du lieu où elles venaient au jour. De m&#x00EA;me,<lb break="yes"/>dans la plaine de Rome, les sources ont 11&#x2014;12°,<lb break="yes"/>tandis que la chaleur moyenne de l&#x2019;air y est<lb break="yes"/>de 16°.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Cavernes.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>La température des cavernes, ou celle des<lb break="yes"/>galeries creusées par la main de l&#x2019;homme, in-<lb break="no"/>diquerait aussi le décroissement du calorique,<lb break="yes"/>s&#x2019;il était possible d&#x2019;observer cette température<lb break="yes"/>sous des conditions qui excluraient l&#x2019;influence<lb break="yes" />d&#x2019;une multitude de causes locales et m&#x00EA;me va-<lb break="no"/>riables dans les <hi rendition="#i">mines</hi> les plus voisines. Je ne<lb break="yes"/>doute pas qu&#x2019;on ne p&#x00FB;t obtenir des résultats<lb break="yes"/>intéressans sur ce que l&#x2019;on désigne du nom<lb break="yes"/>pompeux de la température de l&#x2019;intérieur du<lb break="yes"/>globe, si sur la pente de la Cordillère des<lb break="yes"/>
+                            <placeName key="anden">Andes</placeName>, on creusait des galeries (dans une roche<lb break="yes"/>sèche qui ne contiendrait ni partie métallique,<lb break="yes"/>ni fentes ouvertes à la circulation de l&#x2019;air) de<lb break="yes"/>1000 mètres environ, depuis le niveau de la mer<lb break="yes"/>du Sud, jusqu&#x2019;à 4800 mètres de hauteur. Les<lb break="yes"/>expériences faites depuis tant d&#x2019;années dans<lb break="yes"/>les caves de l&#x2019;Observatoire Impérial, et dans<lb break="yes"/>quelques autres endroits de l&#x2019;Europe, prouvent<lb break="yes"/>que l&#x2019;on trouverait dans ces galeries une cha-<lb break="no"/>leur identique avec la température moyenne<lb break="yes"/>des couches d&#x2019;air qui sont placées à la m&#x00EA;me<lb break="yes"/>
+                            <pb n="203" facs="#f0035"/> hauteur que la bouche de la mine. Mais le<lb break="yes"/>voyageur, qui n&#x2019;a à sa disposition que les creux<lb break="yes"/>ouverts par la main de la nature ou par l&#x2019;in-<lb break="no"/>dustrie de l&#x2019;homme, est bien éloigné de pou-<lb break="no"/>voir fournir des résultats satisfaisans; il me-<lb break="no"/>sure la température de la cro&#x00FB;te du globe, mo-<lb break="no"/>difiée par la décomposition des substances mé-<lb break="no"/>talliques, par la formation des fluides aéri-<lb break="no"/>formes, par la force conductrice qu&#x2019;ont les<lb break="yes"/>différentes roches pour le calorique, et par<lb break="yes"/>des courans d&#x2019;eau et d&#x2019;air dont il ignore l&#x2019;ori-<lb break="no"/>gine et la longueur du chemin tortueux. Je<lb break="yes"/>me suis trouvé aux <placeName key="anden" >Andes</placeName>, dans l&#x2019;hémisphère<lb break="yes" />austral, dans les <hi rendition="#i">mines</hi> dont le fond était élevé<lb break="yes"/>de 3700 mètres au-dessus du niveau des mers;<lb break="yes"/>l&#x2019;air y était constamment de 13°,7 à 14°,2, tandis<lb break="yes"/>que l&#x2019;atmosphère extérieure variait de &#x2014; 2 <formula notation="TeX">\frac{1}{2}</formula> à<lb break="yes"/>+ 8°. Deux mille sept cents mètres plus bas<lb break="yes"/>que cette mine péruvienne de Micuipampa,<lb break="yes" />dans la caverne du Guacharo, dans la province<lb break="yes"/>de Cumana, le thermomètre centigrade indi-<lb break="no"/>quait 18°,7. Sur les c&#x00F4;tes de l&#x2019;&#x00EE;le de Cuba, la<lb break="yes" />température des cavernes calcaires voisines de<lb break="yes"/>la Havane, est de 22 <formula notation="TeX">\frac{1}{2}</formula>. Ces résultats sont d&#x2019;au-<lb break="no"/>tant plus curieux, qu&#x2019;on ne peut les obtenir<lb break="yes"/>qu&#x2019;à la pente du groupe colossal des <placeName key="anden">Andes</placeName>.<lb break="yes"/>On n&#x2019;y méconna&#x00EE;t pas l&#x2019;influence de l&#x2019;élévation<lb break="yes"/>des sites sur la température des cavernes et des<lb break="yes"/>mines; mais ces observations, que j&#x2019;ai t&#x00E2;ché de<lb break="yes"/>multiplier aussi souvent que les circonstances<lb break="yes"/>l&#x2019;ont permis, ne sont pas d&#x2019;une nature à pou-<lb break="no"/>voir mener à la connaissance exacte de la loi<lb break="yes"/>que nous cherchons.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <pb n="204" facs="#f0036"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Limite des Neiges perpétuelles.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>La différence de hauteur à laquelle se trou-<lb break="no"/>vent les neiges perpétuelles, depuis le p&#x00F4;le jus-<lb break="no" />qu&#x2019;à l&#x2019;équateur, présente un sixième et dernier<lb break="yes"/>moyen par lequel on pourrait &#x00EA;tre tenté de<lb break="yes"/>vouloir résoudre le problème du décroissement<lb break="yes"/>de la chaleur. Si, conformément à la supposi-<lb break="no"/>tion de <persName key="bouguer_p">Bouguer</persName>, cette limite inférieure se trou-<lb break="no"/>vait exactement à la hauteur d&#x2019;une couche d&#x2019;air<lb break="yes"/>dont la température moyenne est zéro, la<lb break="yes"/>simple détermination de cette hauteur, com-<lb break="no"/>parée à la température moyenne de la plaine<lb break="yes"/>voisine, offrirait dans chaque zone le décrois-<lb break="no"/>sement du calorique. Or, d&#x2019;après les mesures<lb break="yes"/>faites dans les différentes parties du globe par<lb break="yes"/>
+                            <persName key="saussure_hbd">Saussure</persName>, <persName key="ramonddecarbonnieres_lf">Ramond</persName>, <persName key="ohlsen_01">Ohlsen</persName>, M. <persName key="buch_lv">de Buch</persName> et<lb break="yes"/>par moi, les neiges éternelles commencent:</p>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell>Sous l&#x2019;équateur à</cell>
+                                <cell>4800 <hi rendition="#sup">m. de hauteur.</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>20° de lat. à</cell>
+                                <cell>4600</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>45°....</cell>
+                                <cell>2550</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>62°....</cell>
+                                <cell>1750</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>65°....</cell>
+                                <cell>950</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <p>Les températures moyennes correspondantes<lb break="yes"/>à ces latitudes indiquées, sont, d&#x2019;après les ob-<lb break="no"/>servations les plus exactes:</p>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell>Pour 0° latitude</cell>
+                                <cell>27°</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>20°</cell>
+                                <cell>26°</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>45°</cell>
+                                <cell>12,7°</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>62°</cell>
+                                <cell>4°</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>65°</cell>
+                                <cell>0°</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <p>Il suit de la comparaison de ces deux séries<lb break="yes"/>de nombres, un décroissement moyen de cha-<lb break="no"/>leur, qui ne s&#x2019;accorde guère avec le résultat des<lb break="yes"/>
+                            <pb n="205" facs="#f0037"/> voies plus directes. Le manque d&#x2019;harmonie se<lb break="yes"/>fait peu sentir depuis l&#x2019;équateur jusqu&#x2019;au pa-<lb break="no"/>rallèle de 45°, où l&#x2019;on trouve, au lieu de 191<lb break="yes"/>mètres par degré du thermomètre centigrade,<lb break="yes"/>177, 176 et 200 mètres. Mais plus on approche<lb break="yes"/>du p&#x00F4;le, et plus on s&#x2019;aper&#x00E7;oit que la méthode<lb break="yes"/>est défectueuse; on trouverait 437 mètres et<lb break="yes"/>950 mètres pour la Norwège et pour l&#x2019;Islande.<lb break="yes"/>Cependant la cause de ces irrégularités est fa-<lb break="no"/>cile à entrevoir. Nous prouverons plus bas que<lb break="yes"/>le décroissement de la chaleur dans l&#x2019;air est<lb break="yes"/>fonction de la température moyenne des plai-<lb break="no"/>nes; et que par conséquent le décroissement,<lb break="yes"/>dans la m&#x00EA;me zone, est plus lent en hiver<lb break="yes"/>qu&#x2019;en été. En considérant le décroissement<lb break="yes"/>moyen de toute l&#x2019;année, on le trouve aussi<lb break="yes"/>plus rapide dans les régions équinoxiales que<lb break="yes"/>dans la zone plus voisine du p&#x00F4;le. Des obser-<lb break="no"/>vations de réfractions horizontales faites ré-<lb break="no"/>cemment à Torneo, fixent m&#x00EA;me les limites<lb break="yes"/>de ces variations; elles prouvent que le dé-<lb break="no"/>croissement correspondant à 62° de latitude,<lb break="yes"/>bien loin d&#x2019;&#x00EA;tre la moitié de celui observé sous<lb break="yes"/>l&#x2019;équateur, n&#x2019;est encore que d&#x2019;un cinquième<lb break="yes"/>plus lent. Si l&#x2019;on parcourt les différentes zones<lb break="yes"/>depuis les tropiques jusqu&#x2019;au cercle polaire; si<lb break="yes"/>l&#x2019;on jette les yeux sur les dernières mesures<lb break="yes"/>très-exactes faites par MM. <persName key="buch_lv">de Buch</persName>, <persName key="ohlsen_01">Ohlsen</persName>
+                            <lb break="yes"/>et <persName key="wetlafsen_01">Vetlafsen</persName>, on est frappé de la grande hau-<lb break="no"/>teur à laquelle commencent les neiges perpé-<lb break="no"/>tuelles au-delà du 58° de latitude boréale. On<lb break="yes"/>voit diminuer la température moyenne, depuis<lb break="yes"/>Paris jusqu&#x2019;en Norwège, en raison de 3 : 1,<lb break="yes"/>tandis que les limites des neiges perpétuelles<lb break="yes"/>sont en rapport de 5 : 3. Mais la cause de ce<lb break="yes"/>
+                            <pb n="206" facs="#f0038"/> phénomène n&#x2019;est pas l&#x2019;effet seul de la lenteur<lb break="yes"/>du décroissement du calorique; des expériences<lb break="yes"/>directes prouvent (et ce point n&#x2019;a pas encore<lb break="yes"/>été discuté par les physiciens) que la couche<lb break="yes"/>d&#x2019;air par laquelle passe la courbe des neiges<lb break="yes"/>éternelles, n&#x2019;a pas la m&#x00EA;me température<lb break="yes"/>moyenne dans les différentes zones du globe;<lb break="yes"/>que bien loin d&#x2019;&#x00EA;tre à zéro, comme <persName key="bouguer_p">Bouguer</persName>
+                            <lb break="yes"/>et après lui tous les physiciens l&#x2019;ont supposé,<lb break="yes"/>elle est au-dessus de zéro sous l&#x2019;équateur et<lb break="yes"/>au-dessous dans les régions boréales. M. <persName key="cotte_l">Cotta</persName>
+                            <lb break="yes"/>a déduit soigneusement la température moyenne<lb break="yes"/>du couvent du Saint-Gothard, des observations<lb break="yes"/>qui y ont été faites à l&#x2019;invitation de la Société<lb break="yes"/>météorologique de Manheim: cette température<lb break="yes"/>moyenne est d&#x2019;un degré au-dessous du point de<lb break="yes"/>la congélation. Cependant, le couvent est bai-<lb break="no"/>gné par des vents chauds venant des plaines de<lb break="yes"/>la Lombardie, et le passage du Saint-Gothard<lb break="yes"/>est de près de 600 mètres plus bas que la limite<lb break="yes"/>des neiges perpétuelles. Les frères Moraves,<lb break="yes"/>qui observent assid&#x00FB;ment le thermomètre à<lb break="yes"/>Nain, situé sur la c&#x00F4;te orientale du Labrador,<lb break="yes"/>sous les 56° 55&#x2032; de latitude, y trouvent la tem-<lb break="no"/>pérature moyenne de 3° au-dessous de zéro, et<lb break="yes"/>cependant Nain est encore éloigné de 9° du<lb break="yes"/>cercle polaire, et peut-&#x00EA;tre de plus de 20° du<lb break="yes"/>point où la courbe des neiges éternelles co&#x00EF;n-<lb break="no"/>cide avec la surface du globe. M. <persName key="pictet_ma">Pictet</persName>, qui<lb break="yes" />nous a fourni des observations curieuses sur la<lb break="yes" />hauteur des neiges à la pente du Buet, pense<lb break="yes"/>aussi que ces neiges commencent dans une<lb break="yes"/>couche d&#x2019;air, dont la température moyenne<lb break="yes"/>peut &#x00EA;tre évaluée à 4° <formula notation="TeX">\frac{1}{2}</formula> au-dessous du point<lb break="yes"/>de la congélation. Plus au Nord, cette couche<lb break="yes"/>
+                            <pb n="207" facs="#f0039"/> d&#x2019;air est plus froide encore; car, plus les neiges<lb break="yes"/>descendent, et plus elles sont exposées à la cha-<lb break="no"/>leur que pendant l&#x2019;été communique la surface<lb break="yes"/>du globe aux couches d&#x2019;air supérieures. Ces<lb break="yes"/>variations de température, dont l&#x2019;influence est<lb break="yes"/>en rapport inverse avec la hauteur à laquelle<lb break="yes"/>commencent les glaces, se manifestent aussi<lb break="yes"/>dans le phénomène que l&#x2019;on peut appeler l&#x2019;<hi rendition="#i">os-<lb break="no"/>cillation</hi> de la limite inférieure; oscillation qui<lb break="yes"/>sous l&#x2019;équateur est de 50 mètres, sous le tro-<lb break="no"/>pique du Cancer de plus de 600 mètres, sous<lb break="yes"/>les 45° de plus de 2000 mètres.</p>
+                        <lb break="yes"/>
+                        <p>Dans la zone torride, où l&#x2019;influence des sai-<lb break="no"/>sons est nulle, on trouve les neiges perpé-<lb break="no"/>tuelles à une élévation dont la température<lb break="yes"/>moyenne est à peu près 1° <formula notation="TeX">\frac{1}{2}</formula> au-dessus de zéro.<lb break="yes"/>Il est infiniment rare, dans la Cordillère des<lb break="yes"/>
+                            <placeName key="anden">Andes</placeName>, de voir entre 4000 et 5300 mètres<lb break="yes"/>de hauteur le thermomètre à zéro, sur-tout<lb break="yes"/>depuis sept heures du matin jusqu&#x2019;à huit heures<lb break="yes"/>du soir: à cette époque, la température de l&#x2019;air<lb break="yes"/>reste généralement entre 3° et 9°; quelquefois<lb break="yes"/>elle monte, et c&#x2019;est très-remarquable, jusqu&#x2019;à<lb break="yes"/>15° ou 19°. A la pente du Chimborazo, à 5550<lb break="yes"/>mètres d&#x2019;élévation, par un tems froid et bru-<lb break="no"/>meux, le soleil ayant été caché pendant vingt-<lb break="maybe"/>deux heures de suite, il se soutint encore à<lb break="yes"/>2°,8 <hi rendition="#i">au-dessus</hi> de zéro. Le plus grand froid que<lb break="yes"/>les académiciens fran&#x00E7;ais observèrent, en 1737,<lb break="yes"/>dans leur cabane de Pichincha, située près<lb break="yes"/>de la limite des neiges perpétuelles, était au<lb break="yes"/>lever du soleil de &#x2014; 6°. Or, la température<lb break="yes"/>du jour était entre 3 et 9°: il s&#x2019;ensuit que<lb break="yes"/>la moyenne est aussi <hi rendition="#i">au-dessus</hi> de zéro. Ce<lb break="yes"/>résultat est conforme à la théorie; car à ces<lb break="yes"/>
+                            <pb n="208" facs="#f0040"/> hauteurs il tombe presque journellement de la<lb break="yes"/>neige, le thermomètre étant à 1° ou 2° <hi rendition="#i">au-<lb break="maybe"/>dessus</hi> du point de la congélation. Ce qui en<lb break="yes"/>fond pendant quelques heures est compensé<lb break="yes"/>par une nouvelle précipitation. La couche in-<lb break="no"/>térieure est défendue par la couche exté-<lb break="no"/>rieure; l&#x2019;équilibre se maintient dans un air<lb break="yes"/>dont la température moyenne est celle à la-<lb break="no"/>quelle il tombe de la neige dans tous les cli-<lb break="no"/>mats. Il suit de ces recherches, que la con-<lb break="no"/>naissance de la limite des glaces éternelles,<lb break="yes"/>ne peut pas conduire à la connaissance de la<lb break="yes"/>loi du décroissement, cette limite n&#x2019;étant pas<lb break="yes"/>seulement fonction du décroissement, mais<lb break="yes"/>aussi d&#x2019;une autre quantité qui est variable se-<lb break="no"/>lon les latitudes, et que nous ne pouvons dé-<lb break="no"/>terminer qu&#x2019;imparfaitement.</p>
+                        <lb break="yes"/>
+                        <p>Nous venons de discuter les six méthodes<lb break="yes"/>par lesquelles on pouvait espérer de fixer la<lb break="yes"/>loi du refroidissement des couches d&#x2019;air su-<lb break="no"/>perposées. Nous avons vu que les ascensions<lb break="yes"/>aérostatiques et les voyages faits à la cime de<lb break="yes"/>montagnes escarpées, sont les seuls moyens<lb break="yes"/>qui mènent à la résolution complète d&#x2019;un pro-<lb break="no"/>blème, dont dépend l&#x2019;inflexion des rayons lu-<lb break="no"/>mineux au-dessous de dix degrés de hauteur<lb break="yes"/>apparente. Le résultat d&#x2019;une série d&#x2019;expérien-<lb break="no"/>ces, dont les extr&#x00EA;mes s&#x2019;accordent à 14 mètres<lb break="yes"/>près, est que dans la région équinoxiale, où<lb break="yes"/>la température moyenne de la plaine est de<lb break="yes"/>22° à 26°, le décroissement moyen est de<lb break="yes"/>191 mètres pour 1° du thermomètre centi-<lb break="no"/>grade. Il nous reste à comparer ce décroisse-<lb break="no"/>ment avec celui observé dans la zone tem-<lb break="no" />pérée; car, comme nous l&#x2019;avons développé<lb break="yes"/>
+                            <fw type="catch" place="bottom">plus</fw>
+                            <lb break="yes"/>
+                            <pb n="209" facs="#f0041"/> plus haut, si les réfractions horizontales ou<lb break="yes"/>
+                            <choice>
+                                <sic>presqne</sic>
+                                <corr type="editorial">presque</corr>
+                            </choice> horizontales étaient aussi petites sous<lb break="yes" />l&#x2019;équateur que <persName key="bouguer_p">Bouguer</persName> les indique, la cause<lb break="yes"/>de ce phénomène ne pourrait &#x00EA;tre fondée que<lb break="yes"/>sur un décroissement qui serait plus rapide<lb break="yes"/>sous les tropiques et plus lent en Europe.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Expériences faites en Europe sur le décroisse-<lb break="no"/>ment du calorique.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Mais nous verrons bient&#x00F4;t que cette diffé-<lb break="no"/>rence n&#x2019;est qu&#x2019;imaginaire. Je ne parlerai pas<lb break="yes" />des r&#x00EA;ves d&#x2019;un grand homme, qui crut que<lb break="yes" />la température de l&#x2019;air pouvait augmenter à<lb break="yes" />mesure que l&#x2019;on s&#x2019;éloignait de la surface du<lb break="yes"/>globe. Daniel Bernouilli, dans son <hi rendition="#i" >Traité<lb break="yes"/>d&#x2019;Hydrodynamique,</hi> attribue le froid que l&#x2019;on<lb break="yes"/>sent sur les montagnes à quelque influence<lb break="yes"/>secrète du sol. Séduit par de fausses obser-<lb break="no"/>vations du P. <persName key="feuillee_p" >Feuillée</persName>, il ajoute: <hi rendition="#i">Non puto<lb break="yes"/>absurdum esse si dicamus calorem aeris me-<lb break="no"/>dium eo majorem esse, quo magis a superficie<lb break="yes"/>maris distat.</hi> Je ne citerai pas les nombres aux-<lb break="no"/>quels s&#x2019;arr&#x00EA;te <persName key="lambert_jh">Lambert</persName> dans sa <hi rendition="#i" >Pyrométrie</hi> et<lb break="yes"/>dans les <hi rendition="#i" >Mémoires de l&#x2019;Académie de Berlin</hi>
+                            <lb break="yes"/>pour l&#x2019;année 1772. Des spéculations théoriques<lb break="yes"/>conduisirent ce géomètre à admettre que le dé-<lb break="no"/>croissement du calorique, depuis le niveau de<lb break="yes"/>la mer jusqu&#x2019;à 1000 mètres de hauteur, est de<lb break="yes"/>80 mètres; depuis 1000 jusqu&#x2019;à 3000 mètres,<lb break="yes"/>de 100 mètres; et au-delà de la cime de l&#x2019;<placeName key="aetna">Etna</placeName>,<lb break="yes"/>de 129 mètres. <persName key="saussure_hbd">Saussure</persName>, guidé par des expé-<lb break="no"/>riences directes, suppose le décroissement pen-<lb break="no"/>dant l&#x2019;été de 160 mètres, pendant l&#x2019;hiver de<lb break="yes"/>230 mètres. Son voyage à la cime de l&#x2019;<placeName key="aetna">Etna</placeName> lui<lb break="yes"/>
+                            <pb n="210" facs="#f0042"/> donne 177 mètres, celui au Mont-Blanc 142<lb break="yes"/>mètres; mais <persName key="saussure_hbd" >Saussure</persName> m&#x00EA;me regarde le der-<lb break="no"/>nier résultat comme peu exact, à cause des<lb break="yes"/>circonstances particulières qui ont accompagné<lb break="yes" />l&#x2019;observation.</p>
+                        <lb break="yes"/>
+                        <p>Le résultat le plus précis que nous ayons<lb break="yes"/>jusqu&#x2019;à ce jour, sur le refroidissement des cou-<lb break="no"/>ches d&#x2019;air atmosphérique, est celui fourni par<lb break="yes"/>la seconde ascension aérostatique que M. <persName key="gaylussac_jl" >Gay-<lb break="maybe"/>Lussac</persName> a faite à l&#x2019;invitation de l&#x2019;Institut: le<lb break="yes"/>thermomètre indiquait à terre + 270,7 à 3700<lb break="yes"/>mètres au-dessus de Paris 8°,5 à 6980 mètres &#x2014;<lb break="yes"/>9°,5. Il en résulte, pour la première colonne<lb break="yes"/>d&#x2019;air de 1900 toises, un décroissement de 193<lb break="yes"/>mètres; pour la région de l&#x2019;atmosphère, située<lb break="yes"/>entre la hauteur du pic de Ténériffe et celle du<lb break="yes"/>Chimborazo, 182 mètres; pour toute la hau-<lb break="no"/>teur de 7000 mètres, 187 mètres. Si l&#x2019;on admet<lb break="yes"/>que le petit changement de température de 3°<lb break="yes"/>qui a eu lieu à la surface de la terre pendant<lb break="yes"/>la durée de l&#x2019;ascension, s&#x2019;est fait sentir instan-<lb break="no"/>tanément à l&#x2019;énorme hauteur à laquelle se trou-<lb break="no"/>vait le voyageur (supposition qui ne para&#x00EE;t pas<lb break="yes"/>tout-à-fait exacte), on aura 173 mètres au lieu<lb break="yes"/>de 193 mètres. Il suit de cette observation pré-<lb break="no"/>cieuse, qu&#x2019;à une époque où, sous les 49° de<lb break="yes"/>latitude, la température de la plaine était égale<lb break="yes"/>à la température moyenne des tropiques, la loi<lb break="yes"/>du décroissement du calorique était la m&#x00EA;me<lb break="yes"/>dans les deux zones. Le résultat que je trouve<lb break="yes"/>pour l&#x2019;équateur, ne diffère de celui obtenu au-<lb break="maybe"/>dessus de Paris, que de 2 mètres, et dans le<lb break="yes"/>cas d&#x2019;une supposition moins fondée, de 18 mè-<lb break="no"/>tres sur 191 mètres. Cette distribution égale<lb break="yes"/>du calorique, cet équilibre de température<lb break="yes"/>
+                            <pb n="211" facs="#f0043"/> dans lequel se placent des couches d&#x2019;air hori-<lb break="no"/>zontalement éloignées les unes des autres de<lb break="yes"/>plus de 2000 lieues, ont de quoi exciter notre<lb break="yes"/>admiration. Au-dessus de la hauteur du Mont-<lb break="maybe"/>Blanc, nous avons, M. <persName key="gaylussac_jl">Gay-Lussac</persName> et moi,<lb break="yes" />l&#x2019;un sous les 49° de latitude, l&#x2019;autre sur la<lb break="yes"/>pente du Chimborazo, observé à un demi-de-<lb break="no"/>gré près, aux m&#x00EA;mes hauteurs, les m&#x00EA;mes tem-<lb break="no"/>pératures.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Effet du froid des plaines sur la loi du<lb break="yes"/>décroissement du calorique.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Nous pourrions nous arr&#x00EA;ter aux résultats<lb break="yes"/>que nous venons d&#x2019;obtenir; ils suffisent pour<lb break="yes"/>prouver que la loi que suit le décroissement<lb break="yes"/>du calorique sous l&#x2019;équateur, n&#x2019;y peut pas pro-<lb break="no"/>duire une différence de réfractions horizon-<lb break="no"/>tales avec celles qui ont été observées pendant<lb break="yes"/>l&#x2019;été dans le Nord de l&#x2019;Europe. Mais pour com-<lb break="no"/>pléter ces recherches sur la constitution phy-<lb break="no"/>sique de l&#x2019;atmosphère, il est important de dis-<lb break="no"/>cuter un autre point sur lequel nous manquons<lb break="yes"/>d&#x2019;observations précises. Si la température des<lb break="yes"/>couches d&#x2019;air superposées décro&#x00EE;t au-dessus<lb break="yes"/>d&#x2019;une plaine dont l&#x2019;air ambiant est entre 22°<lb break="yes"/>et 30°, à raison de 191 mètres par degré du<lb break="yes"/>thermomètre centigrade, il ne s&#x2019;en suit pas<lb break="yes"/>de-là que cette loi soit la m&#x00EA;me, lorsque l&#x2019;air<lb break="yes"/>de la plaine s&#x2019;éloigne de cette température nor-<lb break="no"/>male à laquelle ont été faites les observations<lb break="yes"/>sous l&#x2019;équateur et en Europe. Les habitans des<lb break="yes" />montagnes savent, et la théorie de l&#x2019;échauffe-<lb break="no" />ment du globe par les rayons solaires l&#x2019;explique<lb break="yes" />facilement, qu&#x2019;en hiver il fait beaucoup moins<lb break="yes"/>
+                            <pb n="212" facs="#f0044"/> froid sur les grandes hauteurs qu&#x2019;on ne de-<lb break="no"/>vrait le supposer, d&#x2019;après la différence de<lb break="yes"/>température observée en été entre les mon-<lb break="no"/>tagnes et les plaines. <persName key="saussure_hbd" >Saussure</persName> crut (comme<lb break="yes"/>je l&#x2019;ai rapporté plus haut) que si le décrois-<lb break="no"/>sement en été était de 160 mètres, il devrait<lb break="yes"/>&#x00EA;tre de 230 mètres pendant les hivers de l&#x2019;Eu-<lb break="no"/>rope. Aucune observation directe n&#x2019;a été faite<lb break="yes" />jusqu&#x2019;ici pour confirmer cette supposition. Les<lb break="yes" />hauteurs des trois couvens du Saint-Gothard,<lb break="yes"/>du Saint-Bernard et du Mont-Cenis, sont beau-<lb break="no"/>coup trop petites pour donner des résultats<lb break="yes"/>exacts. Des excursions vers la cime de mon-<lb break="no"/>tagnes considérablement élevées, des ascen-<lb break="no"/>sions aérostatiques, sont des entreprises éga-<lb break="no"/>lement dangereuses à exécuter par un froid<lb break="yes"/>très-rigoureux. Afin de résoudre cependant un<lb break="yes"/>problème si intéressant pour la théorie des<lb break="yes"/>réfractions et des mesures barométriques, je<lb break="yes"/>me suis servi de la voie indirecte qu&#x2019;a indi-<lb break="no"/>quée, le premier, M. <persName key="laplace_ps" >Laplace</persName>, dans le qua-<lb break="no"/>trième volume de sa <hi rendition="#i">Mécanique céleste.</hi> Le<lb break="yes"/>voyage aérien de M. <persName key="gaylussac_jl">Gay-Lussac</persName> a engagé ce<lb break="yes"/>grand géomètre à donner des formules par les-<lb break="no"/>quelles on détermine le décroissement de la<lb break="yes"/>chaleur par l&#x2019;observation des réfractions ho-<lb break="no"/>rizontales. M. <persName key="svanberg_01" >Svanberg</persName>, un des savans sué-<lb break="no"/>dois envoyés au cercle polaire pour vérifier<lb break="yes"/>la mesure de <persName key="maupertuis_plmd">Maupertuis</persName>, nous a transmis<lb break="yes"/>deux observations de réfractions presque ho-<lb break="no"/>rizontales faites par un froid excessif de 13°<lb break="yes"/>et 29° centigrade au-dessous du point de la<lb break="yes"/>congélation. J&#x2019;ai invité M. <persName key="mathieu_cl">Matthieu</persName>, secré-<lb break="no"/>taire au Bureau des longitudes, de vouloir<lb break="yes"/>bien calculer ces observations d&#x2019;après les for-<lb break="no"/>
+                            <pb n="213" facs="#f0045"/> mules de la <hi rendition="#i">Mécanique céleste.</hi> Cet astro-<lb break="no"/>nome, dont la grande exactitude est connue<lb break="yes"/>des savans, a trouvé un résultat extr&#x00EA;me-<lb break="no"/>ment curieux. Un des angles de M. <persName key="svanberg_01">Svan-<lb break="no"/>berg</persName> donne 243<hi rendition="#sup">m</hi>,8, l&#x2019;autre 243<hi rendition="#sup">m</hi> par degré du<lb break="yes"/>thermomètre centigrade, ou 156<hi rendition="#sup">t</hi>,5 pour un<lb break="yes" />degré du thermomètre de <persName key="reaumur_rafd" >Réaumur</persName>. Ces nom-<lb break="no"/>bres, qui ne s&#x2019;écartent entre eux que de huit<lb break="yes"/>décimètres, prouvent encore cette admirable<lb break="yes"/>uniformité avec laquelle la chaleur se répand<lb break="yes"/>dans l&#x2019;atmosphère pendant deux jours, dont<lb break="yes"/>la température diffère de 16°. Des deux ob-<lb break="no"/>servations de M. <persName key="svanberg_01" >Svanberg</persName>, l&#x2019;une a été faite<lb break="yes"/>à 0° 55&#x2032;, l&#x2019;autre à 0° 16&#x2032; de hauteur appa-<lb break="no"/>rente. M. <persName key="mathieu_cl" >Matthieu</persName>, pour les réduire à l&#x2019;ho-<lb break="no" />rizon, s&#x2019;est servi de la supposition plus que<lb break="yes" />probable, que les réfractions sous les 45° de<lb break="yes"/>latitude et au p&#x00F4;le, sont proportionnelles pour<lb break="yes"/>des hauteurs égales et très-petites.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Variations des réfractions horizontales.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Nous ignorons encore, pour les zones tem-<lb break="no"/>pérées, la réfraction horizontale de toute l&#x2019;an-<lb break="no"/>née. Pour la déterminer, il faudrait un grand<lb break="yes"/>nombre d&#x2019;observations précises faites à diffé-<lb break="no"/>rentes températures; il faudrait qu&#x2019;on les ré-<lb break="no" />duis&#x00EE;t toutes à la m&#x00EA;me pression barométrique<lb break="yes"/>et au m&#x00EA;me degré <choice>
+                                <sic>dn</sic>
+                                <corr type="editorial">du</corr>
+                            </choice> thermomètre. La belle<lb break="yes"/>série d&#x2019;observations faites par M. <persName key="delambre_jbj" >Delambre</persName>
+                            <lb break="yes"/>à Bourges, à 230 mètres au-dessus du niveau<lb break="yes"/>de la mer, prouve que le thermomètre de-<lb break="no" />meurant entre 12° et 25°, les réfractions ho-<lb break="no" />rizontales varient de 30&#x2032; 20&#x2033; à 35&#x2032;. La moyen-<lb break="no"/>ne, à cette température, était de 32&#x2032; 24&#x2033;,<lb break="yes"/>
+                            <pb n="214" facs="#f0046"/> qui font 34&#x2032; 14&#x2033; du point de la congélation.<lb break="yes"/>Dans la table de <persName key="mayer_jtv">Mayer</persName>, cette réfraction ho-<lb break="no" />rizontale est d&#x2019;une minute plus petite; dans<lb break="yes" />celle de M. <persName key="laplace_ps">Laplace</persName>, elle est de 1&#x2032; 22&#x2033; plus<lb break="yes"/>grande. Ces différences de 4&#x2032; 40&#x2033; observées<lb break="yes"/>par M. <persName key="delambre_jbj">Delambre</persName>, semblaient indiquer une<lb break="yes"/>variation considérable dans le décroissement<lb break="yes"/>du calorique. Il me paraissait indispensable<lb break="yes"/>d&#x2019;en déterminer la quantité absolue. Voici ce<lb break="yes"/>que donne le calcul, en réduisant la réfraction<lb break="yes"/>à zéro de température:</p>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell>Nouvelle<lb break="yes"/>division.</cell>
+                                <cell>Ancienne<lb break="yes"/>division.</cell>
+                                <cell> Décroissem.<lb break="yes"/>calculé<lb break="yes"/>pour 1° R.</cell>
+                                <cell>Décroissem.<lb break="yes"/>calculé pour<lb break="yes"/>1° centigrade.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>7447&#x2033;</cell>
+                                <cell>40&#x2032; 13&#x2033;</cell>
+                                <cell>156 <hi rendition="#sup">t.</hi>
+                                </cell>
+                                <cell>244 <hi rendition="#sup">m.</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>7000&#x2033;</cell>
+                                <cell>37&#x2032; 48&#x2033;</cell>
+                                <cell>139</cell>
+                                <cell>217</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>6500&#x2033;</cell>
+                                <cell>35&#x2032; 6&#x2033;</cell>
+                                <cell>110</cell>
+                                <cell>172</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>6000&#x2033;</cell>
+                                <cell>32&#x2032; 24&#x2033;</cell>
+                                <cell>68</cell>
+                                <cell>106</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <p>On pourrait &#x00EA;tre frappé de ne pas voir cor-<lb break="no" />respondre dans ce tableau, à la réfraction<lb break="yes"/>moyenne de 34&#x2032; 14&#x2033;, réfraction qui est l&#x2019;effet<lb break="yes" />de la constitution moyenne de l&#x2019;atmosphère<lb break="yes"/>en été, le m&#x00EA;me décroissement du calorique<lb break="yes"/>que nous ont donné des expériences directes.<lb break="yes"/>Le calcul n&#x2019;offre que 151 mètres au lieu de<lb break="yes"/>191. Mais il ne faut pas oublier que le soleil<lb break="yes"/>levant ou couchant ne sert pas seulement à<lb break="yes"/>mesurer la réfraction horizontale; il influe<lb break="yes"/>aussi lui-m&#x00EA;me sur la constitution de l&#x2019;atmos-<lb break="no"/>phère. Il est probable qu&#x2019;à ces deux époques<lb break="yes"/>
+                            <pb n="215" facs="#f0047"/> du jour, des couches d&#x2019;air les plus voisines<lb break="yes"/>ont la densité la plus différente. Cette irrégu-<lb break="no"/>larité, causée par les premiers ou par les der-<lb break="no"/>niers rayons du soleil, doit rendre plus rapide<lb break="yes"/>le décroissement de la chaleur, et sur-tout<lb break="yes"/>sous les tropiques. On con&#x00E7;oit que la réfrac-<lb break="no"/>tion horizontale du disque solaire ne donne<lb break="yes"/>pas rigoureusement le décroissement moyen<lb break="yes"/>du jour, mais qu&#x2019;elle indique ce décroisse-<lb break="no"/>ment modifié par le lever ou le coucher de<lb break="yes"/>l&#x2019;astre. Cependant, ces variations correspon-<lb break="no"/>dantes à 4&#x2032; 40&#x2033; (quantité dont varient, selon<lb break="yes"/>M. <persName key="delambre_jbj" >Delambre</persName>, les réfractions horizontales d&#x2019;un<lb break="yes"/>jour à l&#x2019;autre en été), ne sont encore que de<lb break="yes"/>48 mètres par degré du thermomètre centigrade.<lb break="yes"/>Il est aisé de conclure de ce <hi rendition="#i" >maximum,</hi> com-<lb break="no"/>bien doit &#x00EA;tre constante la loi du décroissement<lb break="yes"/>pendant le milieu du jour, lorsque les petites<lb break="yes"/>causes d&#x2019;irrégularité cessent de troubler l&#x2019;équi-<lb break="no"/>libre général de l&#x2019;atmosphère.</p>
+                        <lb break="yes"/>
+                        <p>Nous venons d&#x2019;établir, par l&#x2019;ensemble de ces<lb break="yes" />discussions, 1°. que le refroidissement des cou-<lb break="no"/>ches d&#x2019;air superposées, suit la m&#x00EA;me loi sous<lb break="yes" />les tropiques que dans la zone tempérée pen-<lb break="no"/>dant l&#x2019;été, et que cette loi est à peu près de<lb break="yes"/>200 mètres par degré du thermomètre centi-<lb break="no"/>grade; 2°. que le décroissement varie avec la<lb break="yes"/>température plus ou moins élevée de la couche<lb break="yes"/>inférieure de l&#x2019;air; mais que ce ralentissement,<lb break="yes"/>pendant le froid le plus rigoureux, ne para&#x00EE;t<lb break="yes"/>pas dépasser 244 mètres, c&#x2019;est-à-dire, que le<lb break="yes"/>décroissement diminue d&#x2019;un cinquième, de-<lb break="no"/>puis 25° au-dessus, jusqu&#x2019;à 29° au-dessous du<lb break="yes"/>point de la congélation; 3° que le décroisse-<lb break="no"/>ment moyen de toute l&#x2019;année, est fonction de<lb break="yes"/>
+                            <pb n="216" facs="#f0048"/> la température moyenne des différentes zones,<lb break="yes"/>et que par conséquent il se ralentit depuis l&#x2019;é-<lb break="no"/>quateur au p&#x00F4;le. Nous terminerons la seconde<lb break="yes"/>partie de ce Mémoire, par une remarque sur<lb break="yes"/>la nature de la progression que suit le refroi-<lb break="no"/>dissement des couches d&#x2019;air atmosphérique.</p>
+                        <lb break="yes"/>
+                        <p>L&#x2019;expression généralement re&#x00E7;ue, qu&#x2019;une<lb break="yes"/>colonne d&#x2019;air de telle ou telle hauteur appar-<lb break="no"/>tient à un décroissement d&#x2019;une quantité cons-<lb break="no"/>tante de chaleur, n&#x2019;est pas rigoureusement<lb break="yes"/>exacte: elle l&#x2019;est tout aussi peu que celle qu&#x2019;un<lb break="yes"/>millimètre d&#x2019;abaissement barométrique équi-<lb break="no"/>vaut à tant et tant de mètres de hauteur. Les<lb break="yes"/>observations d&#x2019;hiver tendent à prouver que le<lb break="yes"/>décroissement ne suit plus une progression arith-<lb break="no"/>métique, lorsqu&#x2019;on s&#x2019;éloigne beaucoup de la<lb break="yes" />température normale de 25°, à laquelle la<lb break="yes"/>plus grande partie des mesures ont été prises.<lb break="yes"/>Soient <hi rendition="#i">T</hi> et <hi rendition="#i">T&#x2032;</hi> les températures de deux cou-<lb break="no"/>ches d&#x2019;air, <hi rendition="#i">h</hi> la hauteur de la colonne, et <hi rendition="#i">f</hi> un<lb break="yes"/>facteur constant, alors les observations peuvent<lb break="yes"/>&#x00EA;tre représentées ou par <hi rendition="#i">T &#x2014; T&#x2032; = hf,</hi> ou en<lb break="yes" />admettant constant le rapport de <hi rendition="#i">T</hi> à <hi rendition="#i">T&#x2032;.</hi> Si,<lb break="yes"/>par exemple, la température de Milan est en<lb break="yes"/>été de 15°, lorsqu&#x2019;à la cime du Saint-Gothard<lb break="yes"/>elle est de 5°, l&#x2019;expérience prouve que cette<lb break="yes"/>différence sera moindre lorsque la chaleur di-<lb break="no"/>minue à Milan. Il est probable que la diffé-<lb break="no"/>rence serait plus grande si la chaleur de la<lb break="yes"/>plaine pouvait augmenter de 15 ou 20°. Une<lb break="yes"/>progression géométrique exprime à peu près<lb break="yes"/>cet état de variation du décroissement au-<lb break="maybe"/>dessus ou au-dessous de la température nor-<lb break="no"/>male de la plaine. Aussi <persName key="euler_l" >Euler</persName>, en 1754, dans<lb break="yes"/>un Mémoire célèbre sur les réfractions de la<lb break="yes"/>
+                            <pb n="217" facs="#f0049"/> lumière en passant par l&#x2019;atmosphère, s&#x2019;arr&#x00EA;te<lb break="yes"/>à l&#x2019;hypothèse d&#x2019;une progression géométrique.<lb break="yes"/>En nommant <hi rendition="#i">h</hi> la différence de hauteur de<lb break="yes" />deux couches d&#x2019;air, dans lesquelles un ther-<lb break="no" />momètre à air marque 1 + <hi rendition="#i">T</hi> et 1 + <hi rendition="#i">T&#x2032;</hi>, <persName key="euler_l" >Euler</persName>
+                            <lb break="yes"/>trouve:</p>
+                        <lb break="yes"/>
+                        <p>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\frac{1}{f} = \frac{T-{T}'}{h (1 + {T}')}</formula>
+                            </hi>
+                        </p>
+                        <lb break="yes"/>
+                        <p>M. <persName key="olstmanns_j">Oltmanns</persName> a réduit le thermomètre à air<lb break="yes"/>au thermomètre à mercure, en supposant<lb break="yes"/>que, depuis le terme de la glace fondante,<lb break="yes"/>jusqu&#x2019;au terme de l&#x2019;eau bouillante, un volume<lb break="yes"/>d&#x2019;air augmente de 1,375. Il trouve pour six de<lb break="yes"/>mes observations les valeurs suivantes du co&#x00EB;ffi-<lb break="no"/>cient <formula notation="TeX" >\frac{1}{f}</formula>:</p>
+                        <lb break="yes"/>
+                        <list>
+                            <item>Pour le Pic de Ténériffe... = 0,000036563.</item>
+                            <lb break="yes"/>
+                            <item>&#x2014;&#x2014; le Nevado de Toluca .. = 0,000039633.</item>
+                            <lb break="yes"/>
+                            <item>&#x2014;&#x2014; la Sille de Caraccas... = 0,000035506.</item>
+                            <lb break="yes"/>
+                            <item>&#x2014;&#x2014; Pichincha ..... = 0,000036579.</item>
+                            <lb break="yes"/>
+                            <item>&#x2014;&#x2014; le Fuerte de la Cuchilla . = 0,000038344.</item>
+                            <lb break="yes"/>
+                            <item>&#x2014;&#x2014; le Chimborazo .... = 0,000036447.</item>
+                        </list>
+                        <lb break="yes"/>
+                        <p>Ces nombres résultant d&#x2019;observations dans<lb break="yes" />lesquelles les températures inférieures étaient<lb break="yes"/>peu différentes entre elles, offrent une har-<lb break="no"/>monie très-grande. Cependant, les écarts de-<lb break="no"/>viennent considérables à mesure que la tempé-<lb break="no"/>rature de la couche inférieure diminue beau-<lb break="no"/>coup. Ainsi ces considérations confirment le<lb break="yes"/>principe établi par l&#x2019;auteur de la <hi rendition="#i">Mécanique<lb break="yes"/>céleste,</hi> que le décroissement du calorique est<lb break="yes"/>compris entre les limites d&#x2019;une densité décrois-<lb break="no"/>sante en progression géométrique et d&#x2019;une den-<lb break="no"/>sité décroissante en progression arithmétique.<lb break="yes"/>
+                            <pb n="218" facs="#f0050"/> Mais ce n&#x2019;est qu&#x2019;après avoir recueilli un grand<lb break="yes"/>nombre d&#x2019;observations précises, faites à des<lb break="yes"/>températures très-basses, que l&#x2019;on parviendra<lb break="yes"/>à la connaissance complète d&#x2019;une loi aussi im-<lb break="no"/>portante. Jusqu&#x2019;à cette époque, il sera pru-<lb break="no"/>dent de considérer les résultats obtenus, comme<lb break="yes"/>dépendans des <hi rendition="#i" >températures normales</hi> des plai-<lb break="no"/>nes au-dessus desquelles le décroissement a été<lb break="yes"/>observé.</p>
+                    </div>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+    </text>
+</TEI> 

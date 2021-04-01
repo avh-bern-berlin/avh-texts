@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="4" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">HUMBOLDT&#x2019;S HISTORY OF NEW<lb break="yes"/>SPAIN.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">The &#x201C;Literary Panorama&#x201D; contains a<lb break="yes"/>very excellent review of <persName key="humboldt_av" >Humboldt</persName>&#x2019;s<lb break="yes"/>Political Essay on the Kingdom of New<lb break="yes"/>Spain. We shall present our readers<lb break="yes"/>with frequent extracts from this valu-<lb break="no"/>able track of information. At present<lb break="yes"/>we have only room for the following:<lb break="yes"/>
+                        <hi rendition="#c">[<hi rendition="#i">Boston Gazette.</hi>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201C;<hi rendition="#k">
+                        <hi rendition="#in">T</hi>he</hi> condition of man is the most<lb break="yes"/>interesting object in every coun-<lb break="no"/>try; and we confess ourselves gratified<lb break="yes"/>by finding that in New Spain the num-<lb break="no"/>ber of slaves [negroes] is comparatively<lb break="yes" />few, and the state of the Indians is less<lb break="yes"/>unhappy than we had been accustomed<lb break="yes"/>to suppose. We extract with pleasure<lb break="yes"/>a passage from which it appears that the<lb break="yes"/>mines, though a considerable source of<lb break="yes"/>wealth, are not the only, or even the<lb break="yes"/>
+                    <hi rendition="#i">chief</hi> wealth of the province of Mexico.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The Indian cultivator is poor, but he<lb break="yes"/>is free. His state is even greatly pref-<lb break="no"/>erable to that of the peasantry in a great-<lb break="no"/>er part of the north of Europe. There<lb break="yes" />are neither corvees nor villanage in New<lb break="yes"/>Spain; and the number of slaves is next<lb break="yes"/>to nothing. Sugar is chiefly the pro-<lb break="no"/>duce of free hands. There the princi-<lb break="no"/>pal objects of agriculture are not the<lb break="yes"/>productions to which European luxury<lb break="yes"/>has assigned a variable and arbitrary val-<lb break="no"/>ue, but cereal gramina, nutrive roots,<lb break="yes"/>and the agave, the vine of the Indians.<lb break="yes"/>The appearance of the country proclaims<lb break="yes"/>to the traveller, that the soil nourishes<lb break="yes"/>him who cultivates it, and that the true<lb break="yes" />prosperity of the Mexican people neither<lb break="yes"/>depends on the accidents of foreign<lb break="yes"/>commerce, nor on the unruly politicks<lb break="yes"/>of Europe.</p>
+                <lb break="yes"/>
+                <p>&#x201C;Those who only know the interiour<lb break="yes"/>of the Spanish colonies from the vague<lb break="yes"/>and uncertain notions hitherto published,<lb break="yes"/>will have some difficulty in believing that<lb break="yes"/>the principal sources of the Mexican<lb break="yes"/>riches are by no means the mines; but<lb break="yes"/>an agriculture which has been gradually<lb break="yes"/>ameliorating since the end of the last<lb break="yes"/>century. Without reflecting on the<lb break="yes"/>immense extent of the country, and es-<lb break="no"/>pecially the great number of provinces<lb break="yes" />which appear totally destitute of precious<lb break="yes"/>metals, we generally imagine that all the<lb break="yes"/>activity of the Mexican population is di-<lb break="no"/>rected to the working of the mines. Be-<lb break="no"/>cause the agriculture has made a very<lb break="yes" />considerable progress in the <hi rendition="#i">capitania<lb break="yes" />general</hi> of Caraccas, in the kingdom of<lb break="yes"/>Guatimala, the island of Cuba, and wher-<lb break="no"/>ever the mountains are accounted poor<lb break="yes"/>in mineral productions, it has been in-<lb break="no" />ferred that it is to the working of the<lb break="yes"/>mines that we are to attribute the small<lb break="yes"/>care bestowed on the cultivation of the<lb break="yes"/>soil in other parts of the Spanish colo-<lb break="no"/>nies. This reasoning is just when ap-<lb break="no"/>plied to small portions of territory. No<lb break="yes"/>doubt in the provinces of Chaco and An-<lb break="no"/>tioquia, and the coast of Barbacoas, the<lb break="yes" />inhabitants are fonder of seeking for<lb break="yes"/>gold washed down in the brooks and ra-<lb break="no"/>vines, than of cultivating a virgin and<lb break="yes"/>
+                </p>
+                <cb/>
+                <p>fertile soil; and in the beginning of the<lb break="yes"/>conquest, the Spaniards who abandoned<lb break="yes"/>the peninsula or Canary Islands, to set-<lb break="no"/>tle in Peru and Mexico, had no other<lb break="yes"/>view but the discovery of the precious<lb break="yes"/>metals. <hi rendition="#i">Auri rabida sitis a cultura His-<lb break="no"/>panos divertit,</hi> says a writer of those<lb break="yes"/>times, Pedro Martyr, in his work on the<lb break="yes"/>discovery of Yutacan and the coloniza-<lb break="no"/>tion of the <placeName key="antillen">Antilles</placeName>.</p>
+                <lb break="yes"/>
+                <p>&#x201C;In Mexico, the best cultivated fields,<lb break="yes"/>those which recall to the mind of the<lb break="yes"/>traveller the beautiful plains of France,<lb break="yes"/>are those which extend from Salamanca<lb break="yes"/>towards Siloe, Guauaxuato, and the Vil-<lb break="no"/>la de Leon, and, which surround the<lb break="yes"/>richest mines of the known world.<lb break="yes" />Wherever metallick seams have been<lb break="yes"/>discovered in the most uncultivated parts<lb break="yes"/>of the Cordilleras, on the insulated and<lb break="yes"/>desert tablelands, the working of mines,<lb break="yes"/>far from impeding the cultivation of the<lb break="yes"/>soil, has been singularly favorable to it.<lb break="yes"/>Travelling along the ridge of the An-<lb break="no"/>des, or the mountainous part of Mexico,<lb break="yes"/>we every where see the most striking<lb break="yes"/>examples of the beneficial influence of<lb break="yes"/>the mines on agriculture. Were it not<lb break="yes"/>for the establishments formed for the<lb break="yes"/>working of the mines, how many places<lb break="yes"/>would have remained desert? How<lb break="yes"/>many districts uncultivated in the four<lb break="yes"/>intendancies of Guanaxuato, Zacatecs,<lb break="yes"/>San Luis Potosi, and Durango, between<lb break="yes"/>the parallels of 21 and 25 where the<lb break="yes"/>most considerable metallick wealth of<lb break="yes"/>New Spain is to be found? If the town<lb break="yes"/>is placed on the arid side, or the crest of<lb break="yes"/>the Cordilleras, the new colonists can<lb break="yes"/>only draw from a distance the means<lb break="yes"/>of their subsistence, and the maintenance<lb break="yes"/>of the great number of cattle employed<lb break="yes"/>in drawing off the water, and raising and<lb break="yes" />amalgamating the mineral produce. <lb break="yes"/>What soon awakens industry.&#x2014; The soil<lb break="yes"/>begins to be cultivated in the ravines and<lb break="yes"/>declivities of the neighbouring moun-<lb break="no" />tains, wherever the rock is covered with<lb break="yes"/>earth. Farms are established in the<lb break="yes"/>neighbourhood of the mine. The high<lb break="yes"/>price of provision, from the competition<lb break="yes"/>of the purchasers indemnities the culti-<lb break="no"/>vator for the privations to which he is<lb break="yes"/>exposed, from the hard life of the moun-<lb break="no"/>tains. Thus, from the hope of gain<lb break="yes"/>alone, and the motives of mutual inter-<lb break="no"/>est, which are the most powerful bonds<lb break="yes"/>of society, and without any interference<lb break="yes"/>on the part of the government in coloni-<lb break="no"/>zation, a mine which, at first, appeared<lb break="yes"/>insulated in the midst of wild and desert<lb break="yes"/>mountains, becomes, in a short time,<lb break="yes" />connected with the lands which have<lb break="yes"/>long been under cultivation.&#x201D;</p>
+                <lb break="yes"/>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

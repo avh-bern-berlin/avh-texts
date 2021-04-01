@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="260" facs="#f0001"/>
+            <div n="1" xml:lang="ita">
+                <head>
+                    <hi rendition="#i">Delle foreste di</hi> Cinchona <hi rendition="#i">nell <placeName key="suedamerika">America meri-<lb break="no" />dionale</placeName>, di</hi> Alessandro <hi rendition="#i">von <persName key="humboldt_av">Humboldt</persName>.</hi> (Ma-<lb break="no" />gazin fuer die neuesten entdeckungen in der<lb break="yes"/>gesammten naturkunde. <choice>
+                        <sic>Eosten</sic>
+                        <corr type="editorial">Ersten</corr>
+                    </choice> Jahrgangs erstes<lb break="yes"/>Quartal.)</head>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">CAPITOLO</hi> I.</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#k">
+                            <hi rendition="#in">S</hi>i</hi> vuole in questo trattato considerare la<lb break="yes"/>pianta della <hi rendition="#i">Cinchona</hi> come oggetto di geogra-<lb break="no"/>fia vegetale. Tra gli scrittori che di essa par-<lb break="no"/>larono, solo <persName key="lacondamine_cmd">la Condamine</persName>, <persName key="ruizlópez_hipolito" >Ruiz</persName>, <persName key="pavon_j">Pavon</persName> e Zea<lb break="yes"/>la videro nel continente dell&#x2019;<placeName key="suedamerika">America meridio-<lb break="no"/>nale</placeName>. Il primo ne diede la descrizione fisica;<lb break="yes"/>gli altri, siccome <persName key="jacquin_njfv">Jacquin</persName> e <persName key="swarz_01">Swartz</persName> che la chi-<lb break="no"/>na esaminarono delle isole delle Indie occiden-<lb break="no"/>tali, e <persName key="vahl_m">Vahl</persName> e <persName key="lambert_ab" >Lambert</persName> che esemplari secchi<lb break="yes"/>descrissero, si sono unicamente occupati della<lb break="yes"/>descrizione naturale e della diagnosi botanica.<lb break="yes"/>Rimasto quattro anni nell&#x2019;<placeName key="suedamerika">America meridionale</placeName>,<lb break="yes"/>ebbi occasione di vivere a lungo in paesi in<lb break="yes"/>cui queste piante sono indigene. Ne vidimo<lb break="yes"/>
+                        <persName key="bonpland_ajag">Bonpland</persName> ed io al nord e al sud dell&#x2019;<placeName key="aequator">equatore</placeName>,<lb break="yes"/>nel regno di Nuova-Grenada, tra Honda e Santa<lb break="yes"/>Fe de Bogotta nella provincia di Popayan, nel<lb break="yes"/>
+                        <hi rendition="#i">Corregimiento di Loxa,</hi> lungo il fiume delle<lb break="yes"/>
+                        <placeName key="amazonas">Amazoni</placeName> nella provincia Jaen de Bracamorros e<lb break="yes"/>nella parte settentrionale del Perù. In Santa<lb break="yes"/>Fe vidimo la preziosa collezione botanica di<lb break="yes"/>
+                        <pb n="261" facs="#f0002"/>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Don Jose Celestino Mutis</hi>
+                        </persName> presso cui dimoram-<lb break="no"/>mo: e in Ispagna dall&#x2019;editore della <hi rendition="#i">Flora Pe-<lb break="no" />ruviana,</hi> a Guayaquil (porto di Quito alle<lb break="yes"/>coste del mare del sud) dal sig. <persName key="tafalla_jj">Tafalla</persName> scolaro<lb break="yes"/>di <persName key="ruizlópez_hipolito" >Ruitz</persName>, e nella picciola città di Loxa dal<lb break="yes" />regio ispettore delle foreste di china <persName key="olmedo_v">
+                            <hi rendition="#i">Don Vin-<lb break="no"/>cente Olmedo,</hi>
+                        </persName> appresimo molte importanti co-<lb break="no"/>gnizioni, che senza la costoro amichevole co-<lb break="no"/>municazione ci sarebbero per sempre rimaste<lb break="yes"/>ignote. Per decidere l&#x2019;aspra controversia insorta<lb break="yes"/>tra <persName key="mutis_jc" >Mutis</persName>, Zea, <persName key="ruizlópez_hipolito" >Ruitz</persName> e <persName key="pavon_j">Pavon</persName> intorno all&#x2019;iden-<lb break="no"/>tità della così detta vera <hi rendition="#i">Cinchona di Uritusin-<lb break="no"/>ga,</hi> sino dal 1638 famosa, e la corteccia febbri-<lb break="no"/>fuga color di arancio di Santa Fe nella Nuova-Gre-<lb break="no"/>nada, o la peruviana <hi rendition="#i">Cinchona nitida</hi> descritta da<lb break="yes"/>
+                        <persName key="ruizlópez_hipolito">Ruitz</persName> e <persName key="pavon_j">Pavon</persName>, conveniva visitare la patria di que-<lb break="no"/>ste tre piante. Ma nessuno de&#x2019;collitiganti vide il<lb break="yes"/>
+                        <hi rendition="#i">Corregemiento di Loxa,</hi> onde ciascun partito<lb break="yes"/>con eguale insussistenza avanzava, essere la cor-<lb break="no"/>teccia febbrifuga più attiva del proprio distretto<lb break="yes"/>la vera di Uritusinga. Nel secondo fascicolo del-<lb break="no"/>le nostre piante equinoziali <note place="foot" n="(1)" >Plantes équinotiales, par Mrs. <persName key="humboldt_av" >Humboldt</persName> et <persName key="bonpland_ajag" >Bonpland</persName>.<lb break="yes"/>Troisième livraison p. 39.</note> abbiamo dimo-<lb break="no"/>strato che quest&#x2019; ultima, <hi rendition="#i">la Cascarilla fina de<lb break="yes"/>Loxa</hi> è essenzialmente diversa dalla <hi rendition="#i">Cinchona<lb break="yes" />Lancifolia <persName key="mutis_jc">Mutis</persName>,</hi> e da tutte le chine peruviane<lb break="yes"/>descritte nella Quinologia di <persName key="ruizlópez_hipolito">Ruiz</persName>, nella <hi rendition="#i" >Flora</hi>
+                        <lb break="yes"/>
+                        <pb n="262" facs="#f0003"/>
+                        <hi rendition="#i">Peruviana,</hi> e nel supplimento alla Quinolo-<lb break="no"/>gia. Lontani dal voler contendere con questi<lb break="yes" />esimii botanici, vogliamo però lusingarci che<lb break="yes"/>il nostro giudizio sarà per meritarsi qualche<lb break="yes"/>considerazione, poichè, oltre le selve di china<lb break="yes"/>de&#x2019; dintorni di Santa Fe, vidimo eziandio<lb break="yes"/>quelle di Loxa, le quali dopo <persName key="jussieu_jd">Giuseppe di<lb break="yes"/>Jussieu</persName>, le cui osservazioni non sono state nem-<lb break="no"/>meno pubblicate, dunque da 62 anni, non sono<lb break="yes"/>state visitate da verun altro viaggiatore natura-<lb break="no"/>lista. Favorito da questa circostanza, cred&#x2019;io<lb break="yes"/>poter parlare con qualche con&#x017F;idenza di un og-<lb break="no"/>getto cotanto difficile, e da molteplici contro-<lb break="no"/>versie reso sempre più intralciato.</p>
+                    <lb break="yes"/>
+                    <p>Sarebbe superfluo ripetere quanto si è favo-<lb break="no"/>leggiato intorno alla storia della scoperta delle<lb break="yes"/>proprietà medicamentose della china. Taluno<lb break="yes"/>vuole che un infermo ne scoprisse l&#x2019;amarezza,<lb break="yes"/>bevendo in un pantano in cui ne erano cadu-<lb break="no"/>ti dei rami; altri che un lione guarito di feb-<lb break="no"/>bre masticando china, fissasse l&#x2019;attenzione degli<lb break="yes"/>Indiani sopra questa pianta. <persName key="lambert_ab" >Lambert</persName> nella sua<lb break="yes"/>Monografia della <hi rendition="#i">Cinchona</hi>
+                        <note place="foot" n="(1)">A description of the genus <hi rendition="#i" >Cinchona</hi> 1797. p. 39.</note> riunì tutte le<lb break="yes" />opinioni. &#x00C8; certamente comune formola di favole<lb break="yes" />volgari che molte cose imparassero gli uomini<lb break="yes"/>dagli animali. Così è voce generale presso gli<lb break="yes"/>Indiani, che il <hi rendition="#i">Falco Guaco</hi> di nuova Grenada,<lb break="yes"/>
+                        <pb n="263" facs="#f0004"/> il quale i serpenti assale e combatte (siccome<lb break="yes"/>il <hi rendition="#i">Falco Serpentarius),</hi> loro indicasse l&#x2019;eccel-<lb break="no"/>lente contravveleno <hi rendition="#i">Vejuco del Guaco,</hi> pianta<lb break="yes"/>da <persName key="mutis_jc">Mutis</persName> descritta, affine alla Mikania, e stata<lb break="yes"/>erroneamente scambiata coll&#x2019;Ayapana del Brasile.<lb break="yes"/>Che poi l&#x2019;indomito gran lione americano, <hi rendition="#i">Fe-<lb break="no"/>lis concolor,</hi> soffra la febbre è una ipotesi in-<lb break="no"/>sussistente al pari dell&#x2019;asserzione degli abitanti<lb break="yes"/>della valle pestifera Gualla bamba (presso la<lb break="yes"/>città di Quito), i quali mi assicurarono avere<lb break="yes"/>gli avoltoj de&#x2019; loro contorni (<hi rendition="#i">Vultur aura)</hi>
+                        <lb break="yes"/>la stessa malattia. Nella regione in cui crescono<lb break="yes"/>le selve di china, è il <hi rendition="#i">Felis concolor,</hi> amico<lb break="yes"/>della calda temperatura, affatto sconosciuto:<lb break="yes"/>appena trovasi il gatto <hi rendition="#i" >Puma,</hi> non ancora bene<lb break="yes"/>descritto, ch&#x2019;io vorrei nominare <hi rendition="#i">Felis andicola,<lb break="yes"/>le petit Lion du Volcan de Pichincha de <persName key="lacondamine_cmd">la<lb break="yes"/>Condamine</persName>,</hi> che noi trovammo sino all&#x2019;altezza<lb break="yes"/>di 2500 tese.</p>
+                    <lb break="yes"/>
+                    <p>La storia generalmente ripetuta della <persName key="chinchon_01">contessa<lb break="yes"/>
+                            <hi rendition="#i">Cinchon,</hi>
+                        </persName> vice-Regina del Perù, è dubbiosa assai<lb break="yes"/>più che non si crede. Fuvvi certamente un conte<lb break="yes"/>
+                        <persName key="fernandezdecabreraybobadilla_lj">
+                            <hi rendition="#i">Chinchon don Geronimo Fernandez de Cabrera<lb break="yes"/>Bobadella y Mendoza</hi>
+                        </persName> dal 1629 sino al 1639 vice-<lb break="maybe"/>Re di Lima; ed è molto verosimile che sua con-<lb break="no"/>sorte al ritorno in Ispagna nel 1640 spargesse<lb break="yes"/>la prima volta la corteccia febbrifuga in Euro-<lb break="no"/>pa. Il nome <hi rendition="#i">pulvis comitissae</hi> sembra essere<lb break="yes"/>più antico del nome <hi rendition="#i">pulvis Jesuiticus</hi> ossia <hi rendition="#i">pul-</hi>
+                        <lb break="yes"/>
+                        <pb n="264" facs="#f0005"/>
+                        <hi rendition="#i">vis Patrum.</hi> Tuttavia non credo, e meco con-<lb break="no"/>viene il sig. <persName key="olmedo_v">Olmedo</persName> di Loxa, che il Corregi-<lb break="no"/>dor di Loxa <persName key="cannizares_jld">
+                            <hi rendition="#i">don Juan Lopez de Cannizares</hi>
+                        </persName>
+                        <lb break="yes"/>
+                        <note place="foot" n="(1)">Flora peruviana t. II. p. 2.</note>, il quale la contessa malata debbe aver cu-<lb break="no"/>rata, ricevesse il rimedio dagli Indiani. In Lo-<lb break="no"/>xa non solo non esiste tradizione di questo fatto;<lb break="yes"/>ma non è neppure verosimile che i popoli ori-<lb break="no"/>ginarj d&#x2019;<placeName key="amerika" >America</placeName> scoprissero i primi l&#x2019;efficacia<lb break="yes"/>della Cinchona. Questi al pari degli abitanti<lb break="yes"/>dell&#x2019;Indostan sono inflessibilmente attaccati alle<lb break="yes"/>loro costumanze, ai loro cibi e rimedj; e ad<lb break="yes"/>essi come in Loxa, Guancabamba e molto lun-<lb break="no" />gi all&#x2019;intorno, l&#x2019;uso della corteccia febbrifuga<lb break="yes"/>è interamente sconosciuto. Nelle profonde e co-<lb break="no"/>centi valli dei monti Catamayo, Rio Calvas e<lb break="yes" />Macara, è malattia comune la febbre intermit-<lb break="no"/>tente; ma questi abitanti, come quelli di Loxa,<lb break="yes"/>di qualunque tribù essi siano, vorrebbero piut-<lb break="no"/>sto morire che pigliar china, la quale al pari<lb break="yes"/>degli oppiati risguardano come veleno pro-<lb break="no"/>duttore di cancrena. Gl&#x2019;Indiani usano contro<lb break="yes"/>questa malattia la limonata, la scorza aromatica<lb break="yes"/>oleosa dei piccioli cedri selvatici, l&#x2019;infusione ca-<lb break="no"/>rica della <hi rendition="#i">scoparia dulcis</hi> e di caffè <note place="foot" n="(2)">Tra gl&#x2019;Indiani in Orinoco, e particolarmente in <placeName key="atures">Atures</placeName>
+                            <lb break="yes"/>e Maypure, abbiamo trovato un ottimo rimedio febbrifugo,<lb break="yes"/>
+                            <hi rendition="#i">le frutta de Burro,</hi> le frutta cioè di una nuova specie di<lb break="yes"/>Uvaria, che descriveremo sotto il nome di <hi rendition="#i">Uvaria febbrifuga.</hi>
+                        </note>. Appena in<lb break="yes"/>
+                        <pb n="265" facs="#f0006"/> Malacates, dove sonovi molti Cascarilleros (scor-<lb break="no"/>ticatori di china) cominciasi ad avere qualche<lb break="yes"/>confidenza per la <hi rendition="#i">Cinchona.</hi> In Loxa non havvi<lb break="yes"/>altro documento che possa dilucidarne la storia<lb break="yes"/>della scoperta, oltre l&#x2019;antica voce tutt&#x2019;ora sus-<lb break="no"/>sistente, che i Gesuiti nel segnare, secondo il<lb break="yes"/>costume del paese, le diverse specie di piante<lb break="yes"/>destinate al tagliamento con denticchiarne la<lb break="yes"/>corteccia, scoprissero in questo modo la forte<lb break="yes"/>amarezza della <hi rendition="#i">Cinchona</hi>: e siccome furonvi<lb break="yes"/>sempre medici tra i missionarj, è quindi pro-<lb break="no"/>babile ch&#x2019; essi ne esperimentassero l&#x2019;infusione<lb break="yes"/>contra la febbre terzana, malattia endemica di<lb break="yes"/>que&#x2019; contorni. Questa voce è meno inverosimi-<lb break="no"/>le dell&#x2019;asserzione degli <choice>
+                            <sic>scrttiori</sic>
+                            <corr type="editorial">scrittori</corr>
+                        </choice> europei, i qua-<lb break="no"/>li, compresi <persName key="ruizlópez_hipolito">Ruiz</persName> e <persName key="pavon_j" >Pavon</persName>, ne attribuiscono la<lb break="yes"/>scoperta agl&#x2019; Indiani. Nel regno di Nuova-Gre-<lb break="no"/>nada i naturali del paese nulla decisamente<lb break="yes"/>sanno ancora della sua efficacia anti-febbrile.</p>
+                    <lb break="yes"/>
+                    <p>Un secolo trascorse prima che si avesse al-<lb break="no"/>cuna descrizione botanica della pianta, la cui<lb break="yes"/>corteccia formava la polvere gesuitica. L&#x2019;astro-<lb break="no"/>nomo <persName key="lacondamine_cmd">La Condamine</persName> fu il primo ad esaminarla<lb break="yes"/>e descriverla <note place="foot" n="(1)" >Voyage à l&#x2019;&#x00C9;quateur pag. 31, 75, 186, 203.</note>, passando nel 1737 da Loxa<lb break="yes"/>a Lima; e ne pubblicò la descrizione nelle<lb break="yes"/>memorie dell&#x2019;accademia per l&#x2019;anno 1738. Nel<lb break="yes"/>1639 <persName key="jussieu_jd" >Giuseppe de Jussieu</persName> ivi e ne&#x2019; dintorni<lb break="yes"/>
+                        <pb n="266" facs="#f0007"/> di Zaruma raccolse molte piante, che sono<lb break="yes"/>tutt&#x2019;ora conservate nell&#x2019;erbario che porta il suo<lb break="yes"/>nome in Parigi, e che noi abbiamo paragonate<lb break="yes"/>colle nostre ivi, appunto sessant&#x2019;anni dopo rac-<lb break="no"/>colte. Tra queste trovossi la <hi rendition="#i">Cinchona pubescens</hi>
+                        <lb break="yes"/>da <persName key="vahl_m">Vahl</persName> descritta come nuova, la quale però,<lb break="yes"/>siccome dimostreremo in appresso, è la prima<lb break="yes"/>
+                        <hi rendition="#i">Cinchona officinalis</hi> del <hi rendition="#i">Sistema naturae</hi> di <persName key="linne_cv">Lin-<lb break="no" />neo</persName> secondo la dodicesima edizione. Nel 1743<lb break="yes" />tornò <persName key="lacondamine_cmd">La Condamine</persName> in Loxa, d&#x2019;onde, siccome<lb break="yes"/>noi nel 1802, passò a Tomependa e verso il<lb break="yes"/>fiume delle <placeName key="amazonas" >Amazzoni</placeName>. Fece in quest&#x2019;occasione<lb break="yes"/>il primo ed ultimo esperimento abbastanza sin-<lb break="no"/>golare di portare in Europa tronchi delle pian-<lb break="no"/>te giovani e vivi. Ma, dopo averli custoditi col-<lb break="no"/>la maggiore sollecitudine in una navigazione di<lb break="yes"/>1200 leghe per lo spazio di otto mesi, incappò<lb break="yes"/>presso il cap d&#x2019;Orange al nord di Parà in un<lb break="yes"/>enorme flutto che sommerse il naviglio.</p>
+                    <lb break="yes"/>
+                    <p>Lungo tempo rimasero i botanici senza co-<lb break="no"/>noscere altra specie di <hi rendition="#i">Cinchona,</hi> oltre quella<lb break="yes"/>detta <hi rendition="#i">officinalis</hi> da <persName key="linne_cv" >Linneo</persName>, nella cui descri-<lb break="no"/>zione egli senza avvedersene accoppiò la nostra<lb break="yes"/>
+                        <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName> a la C. cordifolia <persName key="mutis_jc">Mutis</persName>:</hi> im-<lb break="no"/>perocchè l&#x2019;esemplare mandatogli da Santa Fe<lb break="yes"/>era china gialla, onninamente diversa dalla china<lb break="yes"/>disegnata, per verità imperfettamente, da <persName key="lacondamine_cmd">Con-<lb break="no"/>damine</persName>. <persName key="jacquin_njfv">Jacquin</persName> scoprì la seconda specie, la<lb break="yes"/>
+                        <hi rendition="#i">C. caribea;</hi> finchè nuovi viaggi alle isole delle<lb break="yes"/>
+                        <pb n="267" facs="#f0008"/> Indie occidentali, al mare del Sud e alle In-<lb break="no"/>die orientali ne moltiplicarono il numero; re-<lb break="no" />stando però le più benefiche del continente<lb break="yes" />dell&#x2019;<placeName key="suedamerika">America meridionale</placeName> le ultime a conoscersi.</p>
+                    <lb break="yes"/>
+                    <p>Dal 1638 al 1776 rimase in commercio la<lb break="yes"/>sola china del <hi rendition="#i">Corregimiento de Loxa</hi> e dei<lb break="yes"/>vicini dintorni. <persName key="lacondamine_cmd">La Condamine</persName> fa menzione della<lb break="yes"/>china di Riobamba e Cuenca nella provincia<lb break="yes"/>di Quito, e di quella di <placeName key="ayabaca" >Ayavaca</placeName> e Jaen de<lb break="yes"/>Bracamorros. Ma non conobbe la china delle<lb break="yes"/>parti interne del Perù (intorno Huanuco e<lb break="yes"/>nella provincia La Paz), nè quella del regno di<lb break="yes"/>Nova-Grenada. E l&#x2019;opinione generale, che al<lb break="yes"/>nord dell&#x2019; <placeName key="aequator" >equatore</placeName>, cioè nel nostro emisfero,<lb break="yes"/>non si trovasse china sarebbe più a lungo du-<lb break="no"/>rata se il caso non avesse guidato il <hi rendition="#i">Superin-<lb break="no"/>tendente general de Moneda de S. Fe, Don<lb break="yes"/>
+                            <persName key="santiesteban_md">Miguel de Santistevan</persName>,</hi> da Popayan a Santa<lb break="yes"/>Fe de Bogota nel ritornare in Ispagna. Benchè<lb break="yes"/>non avesse che poche cognizioni botaniche,<lb break="yes"/>riconobbe tuttavia alla fisonomia, cioè al sem-<lb break="no"/>plice <hi rendition="#i">habitus,</hi> le piante di china da Loxa sino<lb break="yes"/>al 2 <formula notation="TeX" >\frac{1}{2}</formula>° di latitudine settentrionale; e in un<lb break="yes" />progetto risguardante il commercio di questa<lb break="yes"/>corteccia (<hi rendition="#i">estanco de cascarilla</hi>) indirizzato<lb break="yes"/>nel 1753 al Vice-Re <persName key="pizarro_ja">marchese di Villar</persName> soggiun-<lb break="no"/>geva espressamente d&#x2019;aver trovate piante di china<lb break="yes"/>non solo tra Loxa e Quito, cioè a levante di<lb break="yes"/>Cuenca presso i villaggi Paute e Gualasco, al<lb break="yes"/>
+                        <pb n="268" facs="#f0009"/> nord di Riobamba, alla pendìo di Chimborazo<lb break="yes"/>presso <placeName key="angas">Angas</placeName> e alla <hi rendition="#i">Cuesta</hi> de S. Antonio, ma<lb break="yes"/>ancora tra Quito e Santa Fe, dovunque il ter-<lb break="no"/>reno avea l&#x2019;eguale elevatezza di Loxa, cioè 800<lb break="yes"/>tese sopra il livello del mare. Quest&#x2019; altezza di<lb break="yes"/>Loxa è secondo le recenti dimensioni e l&#x2019;antica<lb break="yes"/>di <persName key="lacondamine_cmd">la Condamine</persName>
+                        <note place="foot" n="(1)">Voyage de la rivière de <placeName key="amazonas" >l&#x2019;Amazone</placeName> p. 25.</note> almeno minore di 250 tese:<lb break="yes"/>pure l&#x2019;ottima osservazione sulla media altezza,<lb break="yes"/>a cui sempre si trova la <hi rendition="#i" >Cinchona</hi> al pendio<lb break="yes"/>dei monti, è tanto più reflessibile, quanto che<lb break="yes"/>i naturalisti di que&#x2019; tempi non solevano prestar<lb break="yes"/>grande attenzione alla geografia delle piante e<lb break="yes"/>all&#x2019;elevazione del luogo. È similmente degno di<lb break="yes"/>osservazione, che quantunque <persName key="santiesteban_md">Santistevan</persName>, se-<lb break="no"/>condo notizie in iscritto ch&#x2019;io mi sono da lui<lb break="yes"/>procurate, parli in generale delle piante di china<lb break="yes"/>tra Quito e Santa Fe; pure nella citazione de&#x2019;<lb break="yes"/>luoghi, egli dice di aver scoperto questo pre-<lb break="no"/>zioso prodotto solamente nella valle del Rio<lb break="yes"/>Tuanambu al nord di Pasto, nelle selve di<lb break="yes"/>Beruecos e presso Popayan (al periglioso passo<lb break="yes"/>dell&#x2019;<placeName key="anden">Andes</placeName> detto Guanacas, tra il villaggio di<lb break="yes"/>questo nome e il <hi rendition="#i">Sitio de los Corrales</hi>).</p>
+                    <lb break="yes"/>
+                    <p>A questo stato erano le cognizioni della Cin-<lb break="no"/>chona al nord dell&#x2019;<placeName key="aequator">equatore</placeName> sino al 1772. Tutta<lb break="yes"/>la china che si trovava in commercio era di Loxa,<lb break="yes"/>Cuancabamba e Jaen, fors&#x2019;anco di Riobamba e<lb break="yes"/>
+                        <pb n="269" facs="#f0010"/> Cuenca; e veniva esportata dai porti del mare<lb break="yes"/>del Sud. La scoperta appena fatta della stessa<lb break="yes"/>pianta nelle provincie Pasto e Popayan restò<lb break="yes" />infruttuosa. Nel 1772 <persName key="mutis_jc">
+                            <hi rendition="#i">Don Jose Celestino Mutis</hi>
+                        </persName>
+                        <lb break="yes"/>trovò china all&#x2019;intorno di Santa Fe, e d&#x2019;allora<lb break="yes"/>in poi ebbe Europa di questa corteccia che<lb break="yes"/>non proveniva dal Cap Horn, ma da Cartagena<lb break="yes"/>de Yndias a Cadice.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <persName key="mutis_jc">Mutis</persName> era stato dodici anni antecedentemente<lb break="yes"/>nel regno di Nuova-Grenada. Scorse due volte<lb break="yes"/>a cavallo le foreste tra Guaduas e Santa Fe,<lb break="yes"/>dove le piante di china sono circondate dalle<lb break="yes"/>belle quercie di Grenada. La varietà dei vege-<lb break="no"/>tabili che l&#x2019;occhio sorprende del Botanico in<lb break="yes"/>questi paesi, e la lunghezza dei tronchi delle<lb break="yes"/>piante sotto i tropici, i quali le foglie e i fiori<lb break="yes"/>nascondono, hanno fatto sì, che egli non isco-<lb break="no"/>prisse la <hi rendition="#i">Cinchona</hi> se non nel 1772, in cui la<lb break="yes"/>trovò fiorita. Questo bravo naturalista è nativo<lb break="yes"/>di Cadice; studiò tre anni in Madrid, e seguì<lb break="yes"/>nel 1760 per amore della botanica, in qualità<lb break="yes"/>di medico, il Vice-Re <persName key="cerda_pmdl">
+                            <hi rendition="#i">Don Pedro Mesia de la<lb break="yes"/>Cerda</hi>
+                        </persName> a Santa Fe. Visse lungo tempo nei Cir-<lb break="no"/>coli di Pampelona e de la Montuosa, nome che<lb break="yes"/>
+                        <persName key="linne_cv">Linneo</persName>, a grande meraviglia di <persName key="mutis_jc">Mutis</persName>, trasformò<lb break="yes"/>in Messico; talchè lo svedese botanico tutte le<lb break="yes"/>piante che ricevea da Montuosa, ha indicate<lb break="yes"/>come Messicane <note place="foot" n="(1)">Esempigrazia: <hi rendition="#i">Manettia reclinata.</hi>
+                        </note>. Errore in verità molto sor-<lb break="no"/>
+                        <pb n="270" facs="#f0011"/> prendente, poichè <persName key="linne_cv" >Linneo</persName> era in continua cor-<lb break="no"/>rispondenza con <persName key="mutis_jc">Mutis</persName>, il quale trovavasi sopra<lb break="yes"/>Cartagena de Yndias; dunque per nessun conto<lb break="yes" />nel Messico; e fu solo per visitare le miniere<lb break="yes"/>al nord di Santa Fe, che si allontanò dalle selve<lb break="yes"/>di china di Mave, Gascas e dall&#x2019;<placeName key="aseradero">Aseradero</placeName>. <persName key="mutis_jc">Mutis</persName>,<lb break="yes"/>in uno scritto al Vice-Re <hi rendition="#i">Don <persName key="flores_ma">Manuel Antonio<lb break="yes"/>Florez</persName>,</hi> accenna per motivo della tarda scoperta<lb break="yes"/>della Cinchona, l&#x2019;aver egli intraprese sino al<lb break="yes"/>1772 le sue botaniche escursioni sempre fuori<lb break="yes"/>dei primi 5.° di latitudine settentrionale; ch&#x2019;egli<lb break="yes"/>risguarda come patria esclusiva della china. Il<lb break="yes"/>grande naturalista non presentiva allora che si<lb break="yes"/>sarebbe trovata Cinchona all&#x2019;imboccatura del<lb break="yes"/>Rio Opon, e a Santa Marta, dunque sino al<lb break="yes" />10.° di latitudine settentrionale.</p>
+                    <lb break="yes"/>
+                    <p>Nel 1761, col mezzo del Direttore delle mo-<lb break="no"/>nete <persName key="santiesteban_md">Santisteva</persName>, si procurò <persName key="mutis_jc">Mutis</persName> i primi esem-<lb break="no"/>plari secchi della china gialla di Loxa (<hi rendition="#i">C. cordifo-<lb break="no"/>lia</hi>). A quest&#x2019;epoca le cognizioni intorno al <hi rendition="#i">genus<lb break="yes"/>Cinchona</hi> erano quali egli le avea partecipate a<lb break="yes"/>
+                        <persName key="linne_cv">Linneo</persName>. Nel 1772 scorrendo a cavallo in compagnia<lb break="yes"/>del suo amico D. <persName key="ugarte_p" >Pedro Ugarte</persName> attraverso il bosco<lb break="yes"/>di Tena, in poca distanza dal montuoso pendìo<lb break="yes"/>di Santa Fe, scoprì piante di china; e un<lb break="yes"/>anno dappoi ne trovò eziandio tra Honda e<lb break="yes"/>Guaduas, di cui ne presentò un arbusto fiorito<lb break="yes"/>al Vice-Re <persName key="guirior_md">
+                            <hi rendition="#i">Don Manuel de Guirior,</hi>
+                        </persName> che giun-<lb break="no"/>geva in quel punto sul fiume della Maddalena,<lb break="yes"/>
+                        <pb n="271" facs="#f0012"/> siccome una nuova testimonianza preziosa di que-<lb break="no"/>sto paese, già largamente arricchito dalla natura<lb break="yes"/>con altre utilissime piante, tra le quali sono<lb break="yes"/>rimarchevoli, la <hi rendition="#i">Myristica Otoba,</hi> il <hi rendition="#i">Laurus<lb break="yes"/>cinnamoides Mut.,</hi> il <hi rendition="#i">Laurus Putseri Mut.,</hi> il<lb break="yes"/>
+                        <hi rendition="#i">Caryocar amigdaliferum Mut.,</hi> quattro specie<lb break="yes"/>di <hi rendition="#i">Styrax,</hi> la <hi rendition="#i" >Tuluifera indica,</hi> l&#x2019;<hi rendition="#i">Alstonia<lb break="yes"/>theaeformis Mut.,</hi> la <hi rendition="#i">Psychotria emetica Mut.,</hi>
+                        <lb break="yes"/>il <hi rendition="#i">Ceroxylon andicola <persName key="humboldt_av">Humb.</persName>,</hi> l&#x2019;<hi rendition="#i" >Aeginetia ca-<lb break="no"/>ranifera Mut.,</hi> la <hi rendition="#i">
+                            <persName key="wynter_w">Wintera</persName> grenadensis,</hi> la<lb break="yes"/>
+                        <hi rendition="#i">Quassia simaruba,</hi> e altri preziosi legni ad<lb break="yes"/>uso di tinture.</p>
+                    <lb break="yes"/>
+                    <p>&#x00C8; nella storia delle scienze comune avveni-<lb break="no"/>mento di considerare scopritore di alcuna cosa<lb break="yes"/>non chi fa la scoperta, ma quegli che l&#x2019;altrui<lb break="yes"/>sa con certa franchezza spacciare come propria.<lb break="yes"/>
+                        <persName key="mutis_jc">Mutis</persName>, uomo di carattere liberale, e alquanto<lb break="yes"/>stravagante, non avea invocata alcuna ricompensa<lb break="yes"/>dal Governo: esaminava in silenzio le nuove<lb break="yes"/>specie di china da lui ritrovate, ed occupavasi del<lb break="yes"/>loro uso in medicina. Appena nel 1783 ebbe un<lb break="yes"/>reale assegno, quando da <persName key="caballeroygongora_a">Gongora</persName>, il quale era<lb break="yes"/>allo stesso tempo Vescovo e Vice-Re, venne or-<lb break="no"/>ganizzata la spedizione botanica di Santa Fe.</p>
+                    <lb break="yes"/>
+                    <p>Quattr&#x2019;anni dopo la scoperta del dott. <persName key="mutis_jc" >Mutis</persName>
+                        <lb break="yes"/>(1776) uno scaltro e contenzioso medico di<lb break="yes" />S. Fe, <hi rendition="#i">Don <persName key="lopezruiz_sj">Sebastian Jose Lopez Ruiz</persName>,</hi> na-<lb break="no"/>tivo di Ganama, seppe persuadere il governo<lb break="yes"/>spagnuolo, aver egli scoperte le prime chine in<lb break="yes"/>
+                        <pb n="272" facs="#f0013"/> Nuova-Grenada: ne mandò esemplari a Madrid,<lb break="yes"/>e molto parlando dell&#x2019;importanza del nuovo ar-<lb break="no"/>ticolo di commercio, ottenne in ricompensa<lb break="yes" />un&#x2019;annuale pensione di 2000 piastre. Da docu-<lb break="no"/>menti autentici, che <persName key="lopezruiz_sj">Lopez</persName> mi fece, in gennajo<lb break="yes"/>1802, pervenire col mezzo di suo fratello cano-<lb break="no"/>nico in Quito, onde dimostrarmi la priorità di<lb break="yes"/>sua scoperta, rilevai, aver egli nel 1774 rico-<lb break="no"/>nosciuta la Cinchona ne&#x2019;dintorni di Honda, e<lb break="yes"/>fattine i primi esperimenti ad uso medico nel<lb break="yes"/>1775. <persName key="lopezruiz_sj">Lopez</persName> non fruì lungo tempo dell&#x2019;intera<lb break="yes"/>pensione. Il Vice-Re Gorgova, il quale assai<lb break="yes"/>stimava <persName key="mutis_jc" >Mutis</persName>, e il di lui primo secretario Don<lb break="yes"/>
+                        <persName key="alonzo_c">Zenon de Alonzo</persName>, zelante promotore delle scien-<lb break="no"/>ze, avendo alla Corte svelato non essere egli il<lb break="yes"/>primo ritrovatore della china di Nuova-Grenada,<lb break="yes"/>gli venne dimezzata, e indi tolta per intiero<lb break="yes"/>dal Vice-Re, quando, invitato a recarsi a Da-<lb break="no" />rien, ove pretendeva aver pure scoperta Cin-<lb break="no"/>chona, ricusò d&#x2019;andarvi. D&#x2019;allora in poi insorse<lb break="yes"/>grande contesa sopra la priorità della scoperta.<lb break="yes"/>
+                        <persName key="lopezruiz_sj">Lopez</persName> venne in Europa, e seppe di nuovo gua-<lb break="no"/>daguarsi molte piastre di assegno; e cattivatasi<lb break="yes"/>con adulazione la benevolenza di alcuni bo-<lb break="no"/>tanici nemici di <persName key="mutis_jc" >Mutis</persName>, gli fu da costoro ac-<lb break="no"/>cordato in parte l&#x2019;onore della scoperta: ono-<lb break="no"/>re, cui si è fitto in capo di aspirare anche il<lb break="yes"/>colonnello <persName key="torreymiranda_adl">
+                            <hi rendition="#i">Don Antonio de la Torre Miranda</hi>
+                        </persName>
+                        <lb break="yes"/>nella sua topografia della provincia di Carta-<lb break="no"/>
+                        <pb n="273" facs="#f0014"/> gena, che porta per titolo: <hi rendition="#i" >Noticia individual<lb break="yes"/>de los poblaciones nuevas fundadas en la pro-<lb break="no"/>vincia de Carthagena;</hi> benchè egli dica schiet-<lb break="no"/>tamente di aver trovata la china di Nuova-Gre-<lb break="no"/>nada la prima volta presso Fusagasuga nel 1783,<lb break="yes"/>cioè undici anni dopo <persName key="mutis_jc" >Mutis</persName>. Nel 1800 mandò il<lb break="yes"/>governo Spagnuolo il sig. <persName key="derieux_l">Luigi Derieux</persName>, perchè<lb break="yes"/>facesse proseguire la piantagione di <hi rendition="#i" >Cinchona</hi>
+                        <lb break="yes"/>e di <hi rendition="#i">Laurus Cinnamoides</hi> incominciata da<lb break="yes"/>
+                        <persName key="mutis_jc">Mutis</persName> a Mariguita nelle missioni di Anda-<lb break="no"/>lusia, promovesse la coltura della <hi rendition="#i">Myristica in-<lb break="no"/>digena,</hi> e sopra intendesse all&#x2019;appalto della<lb break="yes"/>china di Nuova-Grenada. Vi si recò costui<lb break="yes"/>con 2000 piastre di assegno, col titolo gene-<lb break="no"/>rale di <hi rendition="#i">Commissionado y <choice>
+                                <sic>enoargado</sic>
+                                <corr type="editorial">encargado</corr>
+                            </choice> de inve-<lb break="no"/>stigationes de historias natural en el Nuevo<lb break="yes"/>Reyno de Grenada.</hi> &#x2014; Ma non molto dopo,<lb break="yes"/>per motivi politici, fu obbligato abbandonare<lb break="yes"/>quel Vice-Regno; e le piante di china ora cre-<lb break="no"/>scono senza coltura; la quale, a dir vero, non<lb break="yes"/>corrispose per nulla all&#x2019;aspettazione del gover-<lb break="no"/>no, comunque foss&#x2019;egli impegnato di miglio-<lb break="no"/>rarla.</p>
+                    <lb break="yes"/>
+                    <p>Da questa semplice storía potrà ognuno rile-<lb break="no"/>vare, che tutta la china sino al 1772 veniva<lb break="yes"/>raccolta nelle selve di Loxa, <placeName key="ayabaca">Ayavaca</placeName> e Jaen<lb break="yes"/>de Bracamorros, dunque solamente tra il terzo<lb break="yes"/>e quinto grado di latitudine meridionale, e che<lb break="yes"/>soltanto nel 1772 furono introdotte nell&#x2019;emi-<lb break="no"/>
+                        <pb n="274" facs="#f0015"/> sfero settentrionale specie di Cinchona originarie<lb break="yes"/>dell&#x2019;<placeName key="suedamerika" >America meridionale</placeName>; cioè chine scoperte<lb break="yes" />tra il 4.° e 5.° di latitudine. Sino a questo tempo<lb break="yes"/>non se ne conosceva ancora del Perù propria-<lb break="no"/>mente detto, e particolarmente dei monti vicini<lb break="yes"/>alla capitale Lima. La valle di Rio Calvas, e<lb break="yes"/>il castello di <placeName key="ayabaca">Ayavaca</placeName>, nelle cui vicinanze cresce<lb break="yes"/>l&#x2019;ottima <hi rendition="#i">Cinchona <persName key="lacondamine_cmd">condaminea</persName>,</hi> conosciuta nel<lb break="yes"/>1738, appartiene veramente in rapporto politico<lb break="yes"/>al Perù, ma ambidue giacciono agli ultimi con-<lb break="no"/>fini del Corregemiento di Loxa, e la china di<lb break="yes"/>
+                        <placeName key="ayabaca">Ayavaca</placeName>, siccome quella di Jaen, furono vendute<lb break="yes"/>sotto il nome <hi rendition="#i">di Cascarilla fina di Uritusinga</hi>
+                        <lb break="yes"/>e imbarcate per Payta.</p>
+                    <lb break="yes"/>
+                    <p>Il vero commercio della china peruviana co-<lb break="no"/>minciò del 1776. <persName key="renquifo_f">
+                            <hi rendition="#i">Don Francisco Renquifo</hi>
+                        </persName> trovò<lb break="yes"/>presso Huanuco sul monte S. Cristo val de<lb break="yes"/>Cuchero la <hi rendition="#i">Cinchona nitida <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> specie molto<lb break="yes"/>affine alla china color d&#x2019;arancio di <persName key="mutis_jc">Mutis</persName>
+                        <hi rendition="#i">(Cin-<lb break="no"/>chona lancifolia);</hi> e <persName key="alcarraz_e">
+                            <hi rendition="#i">Don Emanuel Alcarraz</hi>
+                        </persName>
+                        <lb break="yes"/>ne trasportò le prime prove a Lima, dove ne<lb break="yes" />introdusse l&#x2019;uso in medicina. Gli editori della<lb break="yes"/>
+                        <hi rendition="#i">Flora peruviana</hi> non inoltraronsi nel 1779 sino<lb break="yes"/>al fiume delle <placeName key="amazonas" >Amazzoni</placeName>: arrestaronsi alla foce dei<lb break="yes"/>fiumi che vi concorrono. Visitarono le deliziose<lb break="yes"/>valli di Tarma, Xauxa e Huamalies, e determina-<lb break="no"/>rono i caratteri specifici delle specie del Perù<lb break="yes"/>settentrionale nel 1779; dunque sette anni dopo<lb break="yes"/>che <persName key="mutis_jc">Mutis</persName> aveva incominciate le sue ricerche sulle<lb break="yes"/>
+                        <pb n="275" facs="#f0016"/> specie di Cinchona di Nuova-Grenada. Indi a poco<lb break="yes"/>a poco si trovarono chine nelle parti meridionali e<lb break="yes"/>settentrionali dell&#x2019;<placeName key="suedamerika">America meridionale</placeName>, nei monti<lb break="yes"/>vicini a Santa Marta, nel regno di Buenos-Ayres<lb break="yes"/>presso la Paz e Cochabamba, dove un offiziale di<lb break="yes"/>marina, <persName key="celis_rd">Rubin de Celis</persName>, e il botanico tedesco<lb break="yes"/>
+                        <persName key="haenke_t">Taddeus Hänke</persName> fissarono l&#x2019;attenzione degli abi-<lb break="no"/>tanti sopra questo prezioso prodotto.</p>
+                    <lb break="yes"/>
+                    <p>Nel 1780, per mezzo de&#x2019;porti di Payta, Gua-<lb break="no"/>yaquil, Lima, Buenos-Ayres, Cartagena e Santa<lb break="yes"/>Marta, venne l&#x2019;Europa inondata di china di<lb break="yes"/>diverso grado d&#x2019;efficacia, che in parte veniva<lb break="yes"/>immediatamente dalla Spagna, e in parte per<lb break="yes"/>contrabbando dall&#x2019;<placeName key="nordamerika">America settentrionale</placeName> o dal-<lb break="no"/>l&#x2019;Inghilterra. Alle specie di china delle Indie<lb break="yes"/>occidentali furono qua e là frammiste le chine<lb break="yes"/>del continente: e chine furono dette alcune<lb break="yes" />corteccie, per verità febbrifughe, ma per nes-<lb break="no"/>sun conto spettanti al <hi rendition="#i">genus Cinchona.</hi> Cosi in<lb break="yes" />Cadice chiamavasi la Cascarilla, <hi rendition="#i">Quina de Cu-<lb break="no"/>mana</hi> e <hi rendition="#i">Quina de la <placeName key="angostura">Angostura</placeName>;</hi> e senza ri-<lb break="no"/>flettere, che chine di eguale efficacia possono<lb break="yes"/>mostrare differenze specifiche nel modo di loro<lb break="yes"/>azione, fu divisa tutta la china conosciuta in<lb break="yes"/>vera e falsa. Ricercavasi a preferenza la china<lb break="yes"/>di Loxa, e non si pensava che dal 1738 ne<lb break="yes" />venivano da questa città in Europa almeno tre<lb break="yes"/>o quattro specie, provenienti da altrettante piante<lb break="yes"/>differenti. Si ignorava che la bontà della china<lb break="yes"/>
+                        <pb n="276" facs="#f0017"/> non tanto dipendeva dall&#x2019;essere corteccia di <hi rendition="#i">C.<lb break="yes"/>lancifolia</hi> ó di <hi rendition="#i">C. macrocarpa,</hi> quanto piutto-<lb break="no"/>sto dal luogo, dall&#x2019;età della pianta e dall&#x2019;ap-<lb break="no"/>passire più o men rapido della medesima. Si<lb break="yes"/>confusero le specie, quando invece di essere in<lb break="yes"/>
+                        <hi rendition="#i">canutillos,</hi> cioè in sottili rotoli, era in grossi<lb break="yes"/>
+                        <hi rendition="#i">cortezones</hi> od in polvere: ed ora per errore ora<lb break="yes"/>per frode si mescolarono scorze di <hi rendition="#i">
+                            <persName key="wynter_w">Wintera</persName>
+                            <lb break="yes"/>granadensis</hi> e di <hi rendition="#i">Weinmania</hi> liscia tra le cor-<lb break="no"/>teccie della china; anzi talvolta fu smerciata<lb break="yes"/>per china questa stessa artificialmente colorita<lb break="yes"/>colla infusione del legno del Brasile.</p>
+                    <lb break="yes"/>
+                    <p>In questo stato di cose nacquero gli strani<lb break="yes"/>pregiudizj sul giudizio della <hi rendition="#i">Cinchona.</hi> Certe<lb break="yes"/>case di commercio in Ispagna, che da mezzo<lb break="yes"/>secolo possedevano esclusivamente il commercio<lb break="yes"/>della china di Loxa, cercarono discreditare la<lb break="yes"/>china di Nuova-Grenada e del Perù meridionale,<lb break="yes"/>e trovarono cortesi botanici, i quali innalzando<lb break="yes"/>varietà a specie, spaciarono essere tutte le<lb break="yes"/>chine del Perù specificamente diverse dalle chine<lb break="yes"/>di Santa Fe. I fisici, ad imitazione de&#x2019;Papi,<lb break="yes"/>tirarono una linea di demarcaz one sulla carta,<lb break="yes"/>e sostennero che al di là d&#x2019;un certo grado di<lb break="yes"/>latitudine verso l&#x2019;emisfero settentrionale non<lb break="yes"/>poteva nascervi china attiva. Siccome però il<lb break="yes"/>commercio delle chine di Huamalias e Huanu-<lb break="no" />co, celebrate da <persName key="gomezortega_c">Ortega</persName>, <persName key="ruizlópez_hipolito">Ruiz</persName>, <persName key="pavon_j">Pavon</persName> e <persName key="tafalla_jj" >Tafalla</persName>,<lb break="yes"/>passò tosto nelle mani di coloro, che facevano<lb break="yes"/>
+                        <pb n="277" facs="#f0018"/> il commercio nel mare del Sud colla vecchia<lb break="yes"/>china di Loxa; così le nuove chine del Perù<lb break="yes" />si introdussero più agevolmente in Ispagna, che<lb break="yes"/>non le chine di Santa Fe. Quest&#x2019;ultima al con-<lb break="no"/>trario, che gl&#x2019;Inglesi e gli Americani del nord<lb break="yes"/>facilmente procuravansi in Cartagena, siccome<lb break="yes"/>porto favorevole al contrabbando, acquistò prin-<lb break="no"/>cipalmente fama in Londra, Germania e in<lb break="yes"/>Italia. L&#x2019;effetto delle brighe de&#x2019;commercianti<lb break="yes"/>andò tant&#x2019;oltre, che in Cadice per decreto reale<lb break="yes"/>fu abbruciata una gran quantità di eccellente<lb break="yes"/>china color d&#x2019;arancio di Nuova-Grenada, che<lb break="yes"/>
+                        <persName key="mutis_jc">Mutis</persName> a spese del Governo avea fatto scorticare;<lb break="yes"/>mentre in tutti gli spedali militari soffrivasi<lb break="yes"/>grande penuria di questo prezioso prodotto del-<lb break="no"/>
+                        <placeName key="amerika">l&#x2019;America meridionale</placeName>. Porzione della china<lb break="yes"/>condannata alle fiamme fu secretamente com-<lb break="no"/>prata da&#x2019;mercanti inglesi, e venduta ad alto<lb break="yes"/>prezzo in Londra. Ma quegli che maggiormente<lb break="yes" />contribuì a suscitare novelli dubbj sulla bontà<lb break="yes"/>della china di Santa Fe, fu il sig. Zea, ispet-<lb break="no"/>tore attuale del giardino botanico di Madrid,<lb break="yes"/>il quale negli <hi rendition="#i">Annales de Cuencias naturales,</hi>
+                        <lb break="yes"/>contro gli editori della <hi rendition="#i">Flora peruviana</hi> sosten-<lb break="no"/>ne, che le specie di chine del Perù da essi<lb break="yes"/>descritte erano identiche colle chine del <persName key="mutis_jc">Mutis</persName>,<lb break="yes"/>e che aveano descritte le stesse specie sotto due<lb break="yes"/>sino a tre differenti nomi. Il supplimento alla<lb break="yes"/>Quinologia è scritto con tale rancore che sdegna<lb break="yes"/>
+                        <pb n="278" facs="#f0019"/> il tranquillo naturalista, cui sta a cuore i veri<lb break="yes"/>progressi della scienza.</p>
+                    <lb break="yes"/>
+                    <p>Pria di passare dalla storia della scoperta alla<lb break="yes"/>propagazione geografica, e all&#x2019;esposizione dei<lb break="yes"/>fisici rapporti della <hi rendition="#i">Cinchona,</hi> getteremo uno<lb break="yes" />sguardo sulle differenze specifiche delle sue di-<lb break="no"/>verse specie. Un&#x2019;analisi accurata botanica sarebbe<lb break="yes" />contraria allo scopo di questo trattato. La ten-<lb break="no"/>teremo io e <persName key="bonpland_ajag">Bonpland</persName> nella descrizione delle<lb break="yes"/>2000 nuove specie di piante scoperte nella no-<lb break="no"/>stra spedizione, e già in parte dall&#x2019;amico nostro<lb break="yes"/>
+                        <persName key="willdenow_kl">Willdenow</persName> determinate. E siccome pressochè, ogni<lb break="yes"/>specie di china cresce in una propria regione,<lb break="yes"/>ed ha un particolare grado di elevatezza nel<lb break="yes"/>pendìo de&#x2019;monti della catena dell&#x2019;<placeName key="anden">Andes</placeName>, è<lb break="yes"/>quindi indispensabile per trattare con fonda-<lb break="no"/>mento di quest&#x2019;oggetto, di rivedere almeno la<lb break="yes"/>sinomimia delle specie officinali più importanti.<lb break="yes"/>Io non parlerò strettamente se non di ciò che<lb break="yes"/>ho io stesso ocularmente osservato.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">(<hi rendition="#i">sarà continuato</hi>)</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <closer>
+                        <signed>
+                            <persName key="omodei_a">
+                                <hi rendition="#et">
+                                    <hi rendition="#k">Omodei.</hi>
+                                </hi>
+                            </persName>
+                        </signed>
+                    </closer>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb n="145" facs="#f0020"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Delle foreste di China nell&#x2019;<placeName key="suedamerika">America meridio-<lb break="no"/>nale</placeName>, di</hi> Alessandro <hi rendition="#i">von</hi>
+                    <persName key="humboldt_av">Humboldt</persName> (Vedi il<lb break="yes"/>num. III. pag. 260.)</head>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>CAPITOLO SECONDO.</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#k">
+                            <hi rendition="#in">I</hi>l</hi>
+                        <hi rendition="#i">genus Cinchona</hi> appartiene a quei generi<lb break="yes"/>di piante, le cui specie sono state ne&#x2019;moderni<lb break="yes"/>tempi prodigiosamente accresciute. <persName key="linne_cv" >Linneo</persName> non<lb break="yes"/>ne conosceva che due specie, la <hi rendition="#i">C. officinalis</hi> e<lb break="yes"/>la <hi rendition="#i">C. caribaea:</hi> nove ne annovera <persName key="vahl_m" >Vahl</persName> nel suo<lb break="yes"/>trattato sulla China <note place="foot" n="(1)">Sckrivter of Natur historie Selskabet I. B. 1. St. p. 16.</note>; undici <persName key="lambert_ab">Lambert</persName> nella<lb break="yes"/>sua monografia <note place="foot" n="(2)" >Description of the genus Cinchona 1797.</note>, e ventuna <persName key="persoon_ch">Persoon</persName> nel suo<lb break="yes"/>picciolo <hi rendition="#i">Enchiridium botanicum</hi> comparso nel<lb break="yes" />1805 <note place="foot" n="(3)">Synopsis plantarum P. I. p. 196.</note>. Aggiuntevi le due <hi rendition="#i">Cosmibuene</hi> della<lb break="yes" />Flora peruviana, altre volte comprese tra la<lb break="yes"/>
+                        <hi rendition="#i">Cinchona,</hi> la <hi rendition="#i">Cinchona excelsa</hi>
+                        <persName key="roxburgh_w">Roxb.</persName> scoperta<lb break="yes"/>nelle Indie orientali, la mia <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>,</hi>
+                        <lb break="yes"/>la <hi rendition="#i">C. spinosa</hi> di <persName key="vavasseur_01">Vavasseur</persName>, e la <hi rendition="#i">C. brasiliensis</hi>
+                        <lb break="yes"/>a foglie minute di <persName key="willdenow_kl" >Willdenow</persName> non ancora de-<lb break="no"/>scritta, e scoperta nella spedizione di storia<lb break="yes"/>naturale intrapresa per commissione del conte<lb break="yes"/>
+                        <pb n="146" facs="#f0021"/>
+                        <persName key="hoffmannsegg_jcv">Hoffmannsegg</persName>, il numero delle piante di China<lb break="yes"/>conosciute, si troverà in oggi portato a 27 spe-<lb break="no"/>cie. Gli autori della Flora peruviana hanno<lb break="yes"/>per verità creduto di averne descritte essi soli<lb break="yes"/>13 specie: ma <persName key="mutis_jc">Mutis</persName> a sette solamente riduce<lb break="yes"/>tutte le cinchone da esso lui esaminate nell&#x2019;A-<lb break="no"/>merica meridionale; e il prof. Zea, negli <hi rendition="#i">Ana-<lb break="no"/>les de ciencias naturales de Madrid</hi> per l&#x2019;anno<lb break="yes"/>1801, avventurò persino di sostenere che quasi<lb break="yes"/>tutte le specie fornite d&#x2019;efficacia, indicate da<lb break="yes"/>
+                        <persName key="ruizlópez_hipolito">Ruiz</persName> e <persName key="pavon_j" >Pavon</persName>, possono ridursi alle quattro<lb break="yes"/>specie descritte da <persName key="mutis_jc">Mutis</persName> nella Gazzetta lette-<lb break="no"/>raria di Santa Fe de Bogota per l&#x2019;anno 1793<lb break="yes"/>
+                        <note place="foot" n="(1)">Pubel periodico de Santa Fe 1793. N. 111.</note>, e conosciute sotto il nome di <hi rendition="#i">C. lancifolia,<lb break="yes"/>C. oblongifolia, C. cordifolia</hi> e <hi rendition="#i">C. ovalifolia.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>In effetto non conosco alcuna pianta più<lb break="yes"/>variabile nella forma delle foglie della <hi rendition="#i">Cin-<lb break="no"/>chona.</hi> Quegli che nel determinarne le specie<lb break="yes"/>unicamente si affida a parziali esemplari sec-<lb break="no"/>chi degli erbolaj, e non ha l&#x2019;opportunità di<lb break="yes"/>esaminarne egli stesso le piante nelle fore-<lb break="no"/>ste, crede spesso nelle foglie di un mede-<lb break="no"/>simo ramo, di vederne differenti spezie, presso<lb break="yes"/>appoco come avviene nella <hi rendition="#i">
+                            <persName key="broussonet_pma">Broussonettia</persName> papy-<lb break="no"/>rifera.</hi> Noi vidimo la China gialla, <hi rendition="#i">C. pu-<lb break="no"/>bescens <persName key="vahl_m" >Vahl</persName>,</hi> allo stesso tempo <hi rendition="#i">foliis ovatis,<lb break="yes"/>oblongis, ovato-lanceolatis</hi> e <hi rendition="#i">ovato-cordatis.</hi>
+                        <persName key="mutis_jc">Mu-<lb break="no"/>
+                            <pb n="147" facs="#f0022"/> tis</persName> chiama questa China, <hi rendition="#i">C. cordifolia,</hi> perchè<lb break="yes"/>è l&#x2019;unica specie in cui ritrovansi talvolta fo-<lb break="no"/>glie cuoriformi. La medesima specie, p. e. la<lb break="yes"/>China bianca, <hi rendition="#i">C. ovali&#x017F;olia <persName key="mutis_jc" >Mutis</persName>
+                        </hi> (C. macrocarpa<lb break="yes"/>
+                        <persName key="vahl_m">Vahl</persName>), trovasi ora <hi rendition="#i" >foliis utrinque laevibus,</hi> ora <hi rendition="#i">foliis<lb break="yes"/>utrinque pubescentibus.</hi> Codeste varietà possono<lb break="yes"/>vedersi nelle eleganti tavole colorite datemi in<lb break="yes"/>dono dal sig. <persName key="mutis_jc">Mutis</persName> nel mio soggiorno in Santa<lb break="yes"/>Fe, ed ora conservate nel <hi rendition="#i">Jardin des plantes</hi>
+                        <lb break="yes"/>di Parigi assieme a un completo erbario della<lb break="yes"/>mia spedizione alle regioni tropiche. Anche la<lb break="yes"/>China a foglie di alloro, <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>,</hi> la<lb break="yes" />China più fina di Uritusinga, al crescere della<lb break="yes"/>medesima sopra monti eguali all&#x2019;<placeName key="aetna">Etna</placeName> o al<lb break="yes"/>S. Gottardo, ha le più varioformi foglie, ed in-<lb break="no"/>gannerebbe gli scorticatori di china, se non ne<lb break="yes"/>riconoscessero le piante alle ghiande per sì<lb break="yes" />lungo tempo dai botanici neglette. Per far ve-<lb break="no"/>dere contra <persName key="ruizlópez_hipolito">Ruiz</persName> e <persName key="pavon_j">Pavon</persName>
+                        <note place="foot" n="(1)">Supplement a la Quinologia p. 32.</note> quanto siano equi-<lb break="no"/>voci tutti i caratteri dedotti unicamente dalle<lb break="yes"/>foglie, in Gonzanama poco lungi da Loxa,<lb break="yes"/>stampammo gran numero di queste eterogenee<lb break="yes" />forme delle foglie con nero degli stampatori.<lb break="yes"/>Il metodo da lungo tempo noto, ma tuttora<lb break="yes"/>imperfetto degli <hi rendition="#i">Ectypa</hi> è di un vantaggio ine-<lb break="no" />stimabile per codesti e somiglianti scopi; esso<lb break="yes" />somministra a&#x2019;viaggiatori molto affaccendati un<lb break="yes"/>
+                        <pb n="148" facs="#f0023"/> mezzo facile di ottenere in pochi minuti i più<lb break="yes"/>fedeli abbozzi delle figure.</p>
+                    <lb break="yes"/>
+                    <p>Se adunque la varia altezza del luogo, la<lb break="yes"/>dolcezza o asprezza del clima, il trovarsi dei<lb break="yes"/>tronchi isolati o circondati da altre piante, il<lb break="yes"/>crescere rigoglioso, e la maggiore o minore umi-<lb break="no"/>dità del suolo, fanno sensibilmente variare la<lb break="yes"/>forma e lisciezza delle foglie delle piante di<lb break="yes"/>China, nel precisarne i caratteri uopo sarà avere<lb break="yes"/>tanto maggior riguardo alla forma de&#x2019;fiori, e<lb break="yes"/>particolarmente alla lunghezza degli stami, e al<lb break="yes"/>rapporto tra i filamenti e le antere, non meno<lb break="yes"/>che tra la parte scoperta o nascosta dei fila-<lb break="no"/>menti. Non basta dividere le specie in quelle<lb break="yes" />che hanno <hi rendition="#i">corollam glabram</hi> o <hi rendition="#i" >hirsutam, sta-<lb break="no"/>mina exerta</hi> o <hi rendition="#i" >inclusa.</hi> Un osservatore dili-<lb break="no"/>gente quasi in ogni specie trova sensibili va-<lb break="no"/>riazioni nella forma della corolla. Per modo<lb break="yes"/>d&#x2019;esempio la <hi rendition="#i">C. parviflora Mut.</hi> ha <hi rendition="#i">filamenta<lb break="yes" />basi dilatata et pubescentia</hi>; la <hi rendition="#i">C. macrocarpa<lb break="yes"/>
+                            <persName key="vahl_m">Vahl</persName>, filamenta vix ulla, antheras in parte su-<lb break="no"/>periori tubi latentes;</hi> la <hi rendition="#i">C. oblongifolia Mut.<lb break="yes"/>filamenta brevissima, antheras infra medium tubi<lb break="yes"/>sitas.</hi> La <hi rendition="#i">Cinchona ovalifolia <persName key="mutis_jc" >Mutis</persName>,</hi> la China<lb break="yes"/>bianca, varia spesso da 6 a 7 stami; la <hi rendition="#i">C. con-<lb break="no" />daminea</hi> solamente da 3 a 4. Nella prima il<lb break="yes"/>
+                        <hi rendition="#i">limbus</hi> ha il più comunemente 6 o 7 incisioni;<lb break="yes"/>nella seconda più spesso ne ha 4. Nella <hi rendition="#i" >Ca-<lb break="no"/>scarilla fina della provincia de Jaen,</hi> che <persName key="bonpland_ajag">Bon-<lb break="no"/>
+                            <pb n="149" facs="#f0024"/> pland</persName> in breve descriverà, trovai l&#x2019;antera co-<lb break="no"/>stantemente più breve della parte libera del<lb break="yes"/>filamento, e questa parte libera di nuovo più<lb break="yes"/>lunga della parte nascosta nel tubo della co-<lb break="no" />rolla; mentre nella <hi rendition="#i">Cascarilla fina</hi> di <hi rendition="#i">Uritu-<lb break="no"/>singa,</hi> ossia nella <hi rendition="#i">C. <persName key="lacondamine_cmd" >condaminea</persName>,</hi> le antere erano<lb break="yes"/>il doppio più lunghe della parte libera del fila-<lb break="no"/>mento, e questa parte libera due terzi più corta<lb break="yes"/>della parte nascosta. L&#x2019;indicazione di questi<lb break="yes"/>rapporti manca quasi totalmente nelle altronde<lb break="yes"/>eccellenti descrizioni della Cinchona di <persName key="vahl_m">Vahl</persName>,<lb break="yes"/>di <persName key="swarz_01">Swartz</persName> e degli autori della Flora peruviana.</p>
+                    <lb break="yes"/>
+                    <p>In commercio molte scorze sono denominate<lb break="yes"/>corteccie di China, che non appartengono al<lb break="yes"/>medesimo genere di Cinchona. Così chiama-<lb break="no"/>vasi in Ispagna <hi rendition="#i">Quina de la Guayana o de la<lb break="yes"/>
+                            <placeName key="angostura">Angostura</placeName>
+                        </hi> l&#x2019;ottimo rimedio scopertoci dai Cap-<lb break="no"/>pucini Catalonesi delle missioni al fiume <hi rendition="#i">Ca-<lb break="no" />rony.</hi>
+                        <persName key="mutis_jc">Mutis</persName> conobbe la prima volta la cortec-<lb break="no"/>cia di <hi rendition="#i">
+                            <placeName key="angostura">Angostura</placeName>
+                        </hi> nel 1759 in Madrid presso<lb break="yes"/>don <persName key="rivas_vrd">Vincente Rodriguez de Rivas</persName>
+                        <note place="foot" n="(1)">Pubel periodico de Santa Fe. N. 97. p. 337.</note>; ne usò<lb break="yes"/>nella sua pratica; e sino d&#x2019;allora sospettò<lb break="yes"/>che non appartenesse al <hi rendition="#i">genus Cinchona.</hi>
+                        <persName key="loefling_p">Loe-<lb break="no"/>fling</persName> morì nelle missioni di <hi rendition="#i">Carony</hi> senza co-<lb break="no"/>noscere questo prezioso prodotto, il quale venne<lb break="yes"/>dappoi attribuito ora alla <hi rendition="#i">
+                            <persName key="bruce_j">Brucea</persName> ferruginea</hi>
+                        <lb break="yes"/>propria dell&#x2019;Abissinia, ora alla <hi rendition="#i" >Magnolia glau-</hi>
+                        <lb break="yes"/>
+                        <pb n="150" facs="#f0025"/>
+                        <hi rendition="#i">ca,</hi> ora, e con più verisimiglianza, alla <hi rendition="#i">Ma-<lb break="no"/>gnolia <persName key="plumier_c" >Plumeri</persName>
+                        </hi> delle Indie occidentali. Nella no-<lb break="no"/>stra spedizione ebbimo occasione di esaminare<lb break="yes"/>i caratteri botanici della pianta <hi rendition="#i">Cuspa</hi> onde<lb break="yes"/>traggesi la corteccia di <placeName key="angostura">Angostura</placeName>; e vi sco-<lb break="no"/>primmo un nuovo genere, cui il celebre no-<lb break="no" />stro amico <persName key="willdenow_kl">Willdenow</persName> negli Atti dell&#x2019; Accade-<lb break="no"/>mia delle scienze, ad onore del mio compa-<lb break="no"/>gno di viaggio impose il nome di <persName key="bonpland_ajag">
+                            <hi rendition="#i">Bonplan-<lb break="no"/>dia</hi>
+                        </persName>
+                        <note place="foot" n="(1)">Samml. deutscher Abhandl. fuer 1801 und 1802 p. 36.</note>; nome che gli venne conservato, poi-<lb break="no"/>chè abbiamo cambiato la <hi rendition="#i">
+                            <persName key="bonpland_ajag">Bonplandia</persName> geminiflora</hi>
+                        <lb break="yes"/>del Messico introdotta da <persName key="cavanilles_aj" >Cavanilles</persName> in <hi rendition="#i">Cal-<lb break="no"/>dasia heterophylla.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Dalla Cinchona parimenti diversa è la china<lb break="yes"/>di Cumana, spedita nella Spagna quattro o cin-<lb break="no"/>que anni fa sotto il nome di <hi rendition="#i">Cascarilla de<lb break="yes"/>Nueva Andalusia</hi> da quell&#x2019;indefesso Governatore<lb break="yes"/>don <persName key="emparan_v">Vincente Emparan</persName>. Un chimico distingue-<lb break="no"/>rebbe difficilmente questa corteccia di Cuspa<lb break="yes" />dalla vera corteccia di china. Essa è un ottimo<lb break="yes" />febbrifugo. Ma per quanto osservassimo la pianta<lb break="yes"/>Cuspa di Rio Manzanario presso Cumana per lo<lb break="yes"/>spazio di circa un anno, non ci venne giammai<lb break="yes"/>fatto di rinvenirne i fiori; ond&#x2019;è, che non sappia-<lb break="no"/>mo ancora per quali caratteri il genere Cinchona<lb break="yes"/>differisca dal genere <persName key="bonpland_ajag">Bonplandia</persName>, benchè la man-<lb break="no" />canza delle stipole, la direzione delle foglie,<lb break="yes"/>
+                        <pb n="151" facs="#f0026"/> e l&#x2019;intero <hi rendition="#i" >habitus</hi> inducano forte sospetto,<lb break="yes"/>che la Cuspa non sia per nessun conto Cin-<lb break="no"/>chona. La mancanza delle stipole è quivi il ca-<lb break="no"/>rattere più significante: poichè ad onta delle<lb break="yes"/>foglie alterne potrebbe la china di Cumana es-<lb break="no"/>ser tuttavia Cinchona, nella stessa guisa che<lb break="yes" />il <hi rendition="#i">Cornus alternifolia</hi> sta isolato tra dodici spe-<lb break="no"/>cie di <hi rendition="#i">Cornus foliis oppositis.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Neppure ci fu possibile di assicurarci se<lb break="yes"/>la corteccia di China di <placeName key="atacamez">Atacamez</placeName>, villaggio<lb break="yes"/>situato a ponente della villa di Ibarra sulle<lb break="yes"/>coste del mare del sud tra Rio verde e Rio<lb break="yes" />Esmeraldita, ottengasi veramente da una spe-<lb break="no"/>cie di China. I suoi fiori, che vidimo sog-<lb break="no"/>giornando nella città di Popayan, non furono<lb break="yes"/>ancora esaminati da alcun botanico, eccettua-<lb break="no"/>te le poche notizie dateci nella monografia di<lb break="yes"/>
+                        <persName key="lambert_ab">Lambert</persName> da <persName key="brown_d" >Brown</persName>, il quale nel 1793 trova-<lb break="no"/>vasi nel mare del sud; ma che per inesperienza<lb break="yes"/>geografica, o per istravolgimento del nome chia-<lb break="no"/>molla <hi rendition="#i">Bark of <placeName key="atacamez">Tecamez</placeName>
+                        </hi> invece di <hi rendition="#i">Cascarilla of<lb break="yes"/>
+                            <placeName key="atacamez">Atacamez</placeName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Un quarto genere di piante che somministrano<lb break="yes"/>corteccia di china è il <hi rendition="#i">genus Cosmibuena</hi> della<lb break="yes" />Flora Peruviana, sotto cui è compresa la <hi rendition="#i">Cin-<lb break="no"/>chona longiflora <persName key="mutis_jc" >Mutis</persName>,</hi> ossia <hi rendition="#i">Cinchona gran-<lb break="no"/>difolia <persName key="ruizlópez_hipolito" >Ruiz</persName>,</hi> pianta di sorprendente bellezza<lb break="yes"/>che vidimo spesso pompeggiare con vaghi fiori<lb break="yes"/>olezzanti in profonde e ardenti valli. Gli stami<lb break="yes"/>
+                        <pb n="152" facs="#f0027"/> giacciono profondamente nascosti nel tubo della<lb break="yes"/>corolla, e i semi assomigliano quelli delle al-<lb break="no"/>tre specie di Cinchona in guisa, che difficil-<lb break="no" />mente alcuno potrebbe persuadersi di fare del<lb break="yes"/>
+                        <hi rendition="#i">genus Cosmibuena</hi> un genere particolare.</p>
+                    <lb break="yes"/>
+                    <p>Per lo contrario sarebbe forse lodevole pro-<lb break="no"/>getto, di riunire in un quinto genere partico-<lb break="no"/>lare analogo alle cinchone le piante di China<lb break="yes"/>a stami molto sopravanzanti il tubo della co-<lb break="no"/>rolla, siccome sono la <hi rendition="#i">C. caribaea</hi> di <persName key="jacquin_njfv">
+                            <hi rendition="#i">Jacquin,</hi>
+                        </persName>
+                        <lb break="yes"/>la <hi rendition="#i">C. angustifolia</hi> di <persName key="swarz_01">
+                            <hi rendition="#i">Swartz,</hi>
+                        </persName> la <hi rendition="#i">C. brachycarpa</hi>
+                        <lb break="yes"/>e la <hi rendition="#i">C. floribunda.</hi> Le sette specie quivi spettanti<lb break="yes"/>hanno lo speciale carattere di abitare tutte<lb break="yes"/>indistintamente isole, cioè le isole Filippi-<lb break="no"/>ne, le isole delle Indie occidentali e del<lb break="yes" />mare del Sud, valli cocenti, e prediligere il<lb break="yes"/>piano a&#x2019;luoghi montuosi. Nel continente dell&#x2019;A-<lb break="no" />merica meridionale non conosco che due spe-<lb break="no"/>cie che hanno <hi rendition="#i">stamina exerta,</hi> la <hi rendition="#i">C. longiflora</hi>
+                        <lb break="yes"/>di <persName key="lambert_ab">Lambert</persName> della Guyana francese, e la <hi rendition="#i">C.<lb break="yes"/>dissimiliflora <persName key="mutis_jc">Mutis</persName>
+                        </hi> non ancora descritta (<hi rendition="#i">sta-<lb break="no"/>minibus longe exertis, corollae laciniis tubo lon-<lb break="no"/>gioribus, foliis cordato oblongis),</hi> la quale nel<lb break="yes"/>regno di Nuova Grenada discende sul pendio<lb break="yes"/>de&#x2019;monti verso il piano sino a 200 tese sopra<lb break="yes"/>il livello del mare. Nelle Indie occidentali tro-<lb break="no"/>vasi la <hi rendition="#i">C. caribaea</hi> e la <hi rendition="#i">C. angustifolia</hi> in punti<lb break="yes"/>ancora più profondi, persino ne&#x2019;luoghi che<lb break="yes"/>hanno la temperatura opportuna per la colti-<lb break="no"/>
+                        <pb n="153" facs="#f0028"/> vazione delle canne da zucchero. Tutte codeste<lb break="yes"/>cinchone delle isole, <hi rendition="#i" >staminibus exertis,</hi> hanno<lb break="yes"/>corolle liscie, e tutte, non eccettuata l&#x2019;unica<lb break="yes"/>
+                        <hi rendition="#i">C. philippica</hi>
+                        <note place="foot" n="(1)">
+                            <persName key="cavanilles_aj">Cavanilles</persName> Icon. T. IV. p. 17. tab. 329.</note>
+                        <hi rendition="#i">pedunculis biternato corymbosis,</hi>
+                        <lb break="yes"/>scoperta da <persName key="nee_l">Nee</persName> a Santa Cruz de la laguna<lb break="yes"/>presso Manilla, hanno <hi rendition="#i" >stigma capitatum o obtu-<lb break="no"/>sum</hi>: mentre in tutte le cinchone <hi rendition="#i">staminibus<lb break="yes"/>inclusis,</hi> rimarcasi uno stigma partito, e la co-<lb break="no"/>rolla or liscia ora villosa. Già <persName key="mutis_jc">Mutis</persName> nella Gaz-<lb break="no"/>zetta letteraria di Santa Fe propone, di se-<lb break="no" />parare le cinchone a lunghi stami sopravan-<lb break="no"/>zanti molto il tubo della corolla dalle restanti.<lb break="yes"/>&#x00AB;Io non so, dic&#x2019;egli, che ne pensasse il mio<lb break="yes"/>amico <persName key="linne_cv">Linneo</persName> delle corteccie di China del mare<lb break="yes"/>del Sud: l&#x2019;essere esse ricevute nel <hi rendition="#i">supplimento</hi>
+                        <lb break="yes"/>dimostra solamente l&#x2019;assenso del figlio, la cui<lb break="yes"/>opinione non ha per me lo stesso valore delle<lb break="yes"/>opinioni del padre.&#x00BB; Gli autori della Flora<lb break="yes"/>peruviana vorrebbero ridurre queste cinchone<lb break="yes" />delle isole alle Portlandie <note place="foot" n="(2)">Flor. peruv. T. II. praef. p. 49.</note>; ma <persName key="swarz_01">Swarz</persName> dimo-<lb break="no"/>stra con ragione nel Giornale per la botanica di<lb break="yes"/>
+                        <persName key="schrader_ha">Schrader</persName>
+                        <note place="foot" n="(3)">Band I. p. 378.</note>, che nelle cinchone delle isole, come<lb break="yes"/>in quelle del continente, la capsula ha un <hi rendition="#i">disse-<lb break="no"/>pimentum loculorum exacte parallelum,</hi> e nella Port-<lb break="no"/>landia un <hi rendition="#i">dissepimentum vere contrarium</hi>: ragione<lb break="yes"/>
+                        <pb n="154" facs="#f0029"/> per cui la <hi rendition="#i">Portlandia corymbosa</hi> di <persName key="ruizlópez_hipolito">Ruiz</persName> non può<lb break="yes"/>essere vera Portlandia, ma vuolsi comprendere<lb break="yes"/>tra le cinchone <hi rendition="#i">filamentis e basi tubi ortis,</hi> cioè<lb break="yes"/>
+                        <hi rendition="#i">C. caribaea, C. floribunda,</hi> e <hi rendition="#i">C. brachycar-<lb break="no"/>pa,</hi> gruppo di piante che <persName key="swarz_01">Swarz</persName> similmente a<lb break="yes"/>motivo dei fiori e non dei semi vorrebbe riu-<lb break="no"/>nire in un genere particolare. A dir vero la<lb break="yes"/>
+                        <hi rendition="#i">C. excelsa,</hi> che ha foglie lunghe spesso 12<lb break="yes"/>pollici e larghe 4, scoperta nelle Indie orien-<lb break="no"/>tali, e che sta come trammezzo alle cinchone<lb break="yes" />delle Indie occidentali e dell&#x2019;<placeName key="suedamerika">America meri-<lb break="no"/>dionale</placeName>, parrebbe dissuadere la proposta sepa-<lb break="no"/>razione de&#x2019;due generi. Però la <hi rendition="#i">C. excelsa</hi>
+                        <persName key="roxburgh_w">Roxb.</persName>
+                        <lb break="yes"/>è meno analoga alle cinchone delle isole, che<lb break="yes"/>alle cinchone di Nuova Grenada e del Perù:<lb break="yes"/>
+                        <hi rendition="#i">corolla pubescenti, staminibus medio tubi insertis<lb break="yes"/>nec e basi tubi nascentibus, antheris nec fila-<lb break="no"/>mentis exertis, margine seminum lacero haud<lb break="yes"/>integro.</hi> Le antere in questa specie delle Indie<lb break="yes"/>orientali sono otto volte più lunghe dei fila-<lb break="no"/>menti. Dalla forma dei semi ben difficilmente<lb break="yes" />potrebbe desumersi alcun carattere per riunire<lb break="yes"/>le cinchone delle isole in un genere particolare.<lb break="yes"/>Esse distinguonsi dalle corteccie di China del<lb break="yes"/>continente dell&#x2019;<placeName key="suedamerika">America meridionale</placeName>
+                        <note place="foot" n="(1)">
+                            <persName key="schrader_ha">Schrader</persName> op. cit. p. 359.</note>: <hi rendition="#i">Val-<lb break="no"/>vulis minus extrorsum divergentibus et recepta-<lb break="no"/>culo ovato nec lineari, seminumque margine inte-</hi>
+                        <lb break="yes"/>
+                        <pb n="155" facs="#f0030"/>
+                        <hi rendition="#i">gro nec lacero.</hi> I semi, oltre il margine liscio<lb break="yes"/>nè intaccato, che trovai quasi costante, pre-<lb break="no" />sentano nelle restanti forme variazioni appena<lb break="yes"/>sensibili; che le une alle altre, come in una<lb break="yes"/>catena, tutte le chine riuniscono. Per il nuovo<lb break="yes"/>genere delle cinchone delle isole, abitanti le<lb break="yes"/>pianure delle regioni calde, vi resterebbe an-<lb break="no"/>cora, <hi rendition="#i">corolla glabra filamentis longe exertis ex<lb break="yes"/>basi tubi nascentibus. Semina margine integro cin-<lb break="no"/>cta. Stigma simplex capitatum.</hi> Ma vuolsi osser-<lb break="no"/>vare. 1. Che molte cinchone <hi rendition="#i" >staminibus inclusis,</hi>
+                        <lb break="yes"/>e la <hi rendition="#i">C. grandifolia <persName key="ruizlópez_hipolito">Ruiz</persName>
+                        </hi> hanno <hi rendition="#i">corollam glabram.</hi>
+                        <lb break="yes"/>2. Che la <hi rendition="#i">C. philippica</hi> ha filamenti sopra-<lb break="no"/>vanzanti molto il tubo della <hi rendition="#i">corolla, stigma bi-<lb break="no"/>lamellatum,</hi> e probabilmente <hi rendition="#i">semina margine<lb break="yes"/>integro cincta.</hi> 3. Che la <hi rendition="#i">C. excelsa</hi> ha <hi rendition="#i">stigma<lb break="yes"/>subcapitatum leviter emarginatum,</hi> e semi non<lb break="yes"/>intaccati, nè filamenti risorgenti fuori del tubo<lb break="yes"/>della corolla: eccezioni tutte, le quali rende-<lb break="no"/>ranno mai sempre ardimentoso troppo il ten-<lb break="no"/>tativo di separare generi naturali di piante co-<lb break="no"/>tanto analoghi.</p>
+                    <lb break="yes"/>
+                    <p>Estranea al genere Cinchona sembra pure a<lb break="yes"/>primo aspetto la singolare <hi rendition="#i">C. spinosa</hi> dell&#x2019;isola<lb break="yes"/>di S. Domingo, per le sue foglie meravigliosa-<lb break="no"/>mente minute, e spesso ternoverticillate; e<lb break="yes" />più ancora lo sembra, per il colore dalle vere<lb break="yes"/>piante di China diverso, un&#x2019;altra Cinchona<lb break="yes"/>spinosa, che nasce sulle coste del mare del<lb break="yes"/>
+                        <pb n="156" facs="#f0031"/> Sud presso <hi rendition="#i">Guayaquil,</hi> e fattaci conoscere dal<lb break="yes"/>sig. <persName key="tafalla_jj" >Tafalla</persName> nel soggiornar che fecimo colà<lb break="yes" />nell&#x2019;inverno del 1803. Quest&#x2019;ultima specie non<lb break="yes"/>per anco descritta, è una pianta a vitichj, e<lb break="yes"/>quindi in qualche maniera analoga al <hi rendition="#i" >genus<lb break="yes"/>Danais</hi> del Madagascar, che <persName key="persoon_ch">Persoon</persName> riduce<lb break="yes"/>alla Portlandia, poichè la <hi rendition="#i">Paederia fragrans</hi>
+                        <lb break="yes"/>rassomigliante la <hi rendition="#i">Cinchona</hi> è stata disgiunta<lb break="yes"/>dalla <hi rendition="#i">Paederia foetida.</hi> I semi di questa nuova<lb break="yes"/>
+                        <hi rendition="#i">C. scandens</hi> di <persName key="tafalla_jj" >Tafalla</persName>, sono nel resto dell&#x2019;in-<lb break="no"/>tutto simili ai semi della Cinchona febbrifuga:<lb break="yes"/>onde può questa pianta risguardarsi come uno<lb break="yes"/>de&#x2019;più singolari fenomeni della fisonomia ve-<lb break="no"/>getabile.</p>
+                    <lb break="yes"/>
+                    <p>La somiglianza dei semi delle vere Cincho-<lb break="no"/>ne, ci conduce alla considerazione della <hi rendition="#i">Pinknea<lb break="yes"/>pubescens <persName key="michaux_a">Michaux</persName>
+                        </hi>
+                        <note place="foot" n="(1)">Flor. Americana I. p. 109.</note>, pianta, che vidi colti-<lb break="no"/>vata assieme alla <hi rendition="#i">C. caribaea</hi> nel ricchissimo<lb break="yes"/>giardino botanico del sig. <persName key="hamilton_w02">Hamilton</persName> in Fila-<lb break="no" />delfia. La <hi rendition="#i">Pinknea</hi> cresce lungo il fiume delle<lb break="yes"/>
+                        <hi rendition="#i">Marie</hi> nella provincia della Georgia, ed è<lb break="yes"/>stata descritta da <persName key="bartram_01" >Batram</persName>
+                        <hi rendition="#i">propter calycis laci-<lb break="no"/>niam unicam foliaceam bracteaeformem</hi> sotto il<lb break="yes"/>nome di <hi rendition="#i">Mussaenda bracteolata.</hi> Se questa pianta<lb break="yes"/>analoga al genere Cinchona, e abitante fuori<lb break="yes" />delle tropiche regioni possegga forza febbrifuga,<lb break="yes"/>ignorasi tuttora. <persName key="walker_jm">Walker</persName> bensì, in due eccel-<lb break="no"/>
+                        <pb n="157" facs="#f0032"/> lenti dissertazioni, ha dimostrato, che la cor-<lb break="no"/>teccia del <hi rendition="#i">Cornus florida</hi> della Virginia, e<lb break="yes"/>quella del <hi rendition="#i">C. sericea</hi> di Pensilvania, della Sud-<lb break="maybe"/>Carolina, e perfino del <hi rendition="#i">Liriodendron Tulipifera</hi> po-<lb break="no"/>trebbero vantaggiosamente usarsi nell&#x2019;<placeName key="nordamerika">America<lb break="yes"/>settentrionale</placeName> come rimedio febbrifugo <note place="foot" n="(1)">
+                            <persName key="walker_jm">Walker</persName> on the virtues of the Cornus and the Cinchona<lb break="yes"/>comparated. Philad. 1803. <persName key="roger_01">Roger</persName> diss. on the proprieties of<lb break="yes"/>the Liriodendron. Philadel. 1802.</note>.<lb break="yes"/>Nel Regno di Nuova-Spagna, dove non si è<lb break="yes" />sinora scoperta alcuna specie di China, l&#x2019;I-<lb break="no" />spettore del giardino botanico dell&#x2019;Accade-<lb break="no"/>mia del Messico mi ha assicurato, che alla<lb break="yes"/>China di Loxa vi si può supplire colla <hi rendition="#i">Portlan-<lb break="no"/>dia mexicana,</hi> ritrovata da <persName key="sesselacasta_md">Sesse</persName> e non per<lb break="yes"/>anco descritta; e nelle Indie orientali, secondo<lb break="yes"/>il Dott. <persName key="klein_01">Klein</persName> in Tranquebar, colla <hi rendition="#i">Swietenia fe-<lb break="no" />brifuga</hi> disegnata da <persName key="roxburgh_w" >Roxburgh</persName>. Anche la cortec-<lb break="no"/>cia di China della Guyana francese, conosciuta<lb break="yes"/>in Francia sotto il nome di <hi rendition="#i">écorce fébrifuge de<lb break="yes"/>Cayenne,</hi> deriva da una pianta molto analoga<lb break="yes"/>alla Portlandia, <hi rendition="#i">Portlandia hexandra</hi> di <persName key="swarz_01" >Swarz</persName> e<lb break="yes"/>
+                        <persName key="jacquin_njfv">Jacquin</persName>, <hi rendition="#i" >(Coutarea speciosa</hi> di <hi rendition="#i">
+                            <persName key="aublet_jcf">Aublet</persName>)</hi>
+                        <note place="foot" n="(2)">
+                            <persName key="ventenant_ep">Ventenat</persName> Tableau du regne végétal. T. II. p. 378.</note> e non<lb break="yes"/>già da alcuna cinchona, siccome abbiamo fatto<lb break="yes"/>vedere, che da cinchone neppure deriva la così<lb break="yes"/>detta China di Cumana o la Cuspa dell&#x2019;<placeName key="angostura">An-<lb break="no" />gostura</placeName>.</p>
+                    <lb break="yes"/>
+                    <pb n="158" facs="#f0033"/>
+                    <p>Fin qui dei caratteri generici delle piante<lb break="yes"/>analoghe alla cinchona, e tutte spettanti alla<lb break="yes"/>grande famiglia delle <hi rendition="#i">Rubiacee.</hi> Nella stessa<lb break="yes"/>guisa, che vediamo il Caoutchouc <note place="foot" n="(1)">Si nomina spesso la <hi rendition="#i">Cecropia peltata</hi> come una pianta,<lb break="yes" />che somministra una parte del Caoutchuc di <placeName key="amerika" >America</placeName>. Ma<lb break="yes"/>io dubito che in alcuna parte del nuovo Continente si im-<lb break="no"/>pieghi a qualche uso questo sugo cotanto difficile da con-<lb break="no"/>densarsi.</note> sepa-<lb break="no"/>rarsi in copia dal sugo di piante assai differen-<lb break="no"/>ti; in Orinoco e nella Cayenna dall&#x2019;<hi rendition="#i">Hevea,</hi>
+                        <lb break="yes"/>nel Canno Pimichin che cade nel Rio Negro,<lb break="yes" />dalla pianta <hi rendition="#i">Jacio,</hi> nel Regno di Nuova Gre-<lb break="no"/>nada da una nuova specie di Fico, nella pro-<lb break="no" />vincia Popayan presso l&#x2019;indiano villaggio la<lb break="yes"/>Cruz da una <hi rendition="#i">Lobelia</hi> che in appresso descrive-<lb break="no"/>remo, a <placeName key="bengalen">Bengala</placeName> dall&#x2019;<hi rendition="#i">Urceola elastica</hi> dise-<lb break="no" />gnata nel 5 volume delle <hi rendition="#i">Asiat. Researches,</hi>
+                        <lb break="yes"/>nel Madagascar dalla <hi rendition="#i">Commiphora madagasca-<lb break="no"/>rensis;</hi> nella stessa guisa offre la natura il<lb break="yes"/>principio febbrifugo della China, ossia quel<lb break="yes"/>mescuglio ricco di concino e avido di ossigeno,<lb break="yes"/>che noi di eminente bontà troviamo nella <hi rendition="#i" >C.<lb break="yes"/>
+                            <persName key="lacondamine_cmd">condaminea</persName>,</hi> nella <hi rendition="#i">C. pubescens</hi>
+                        <persName key="vahl_m">Vahl</persName> e nella<lb break="yes"/>
+                        <hi rendition="#i">C. lanceifolia <persName key="mutis_jc" >Mutis</persName>,</hi> in piante, che per nessun<lb break="yes"/>conto appartengono al medesimo genere. Un<lb break="yes"/>chimico forse vi troverebbe maggiori differenze<lb break="yes"/>tra le corteccie febbrifughe delle Indie occi-<lb break="no"/>
+                        <pb n="159" facs="#f0034"/> dentali e dell&#x2019;<placeName key="suedamerika">America meridionale</placeName>, che tra la<lb break="yes"/>Cuspa di Cumana e la China di Loxa; ep-<lb break="no"/>pure la pianta di Cuspa <hi rendition="#i">foliis alternis stipulis<lb break="yes"/>nullis,</hi> è verosimilmente un genere meno ana-<lb break="no"/>logo alla Cinchona.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">
+                            <hi rendition="#i">(sarà continuato).</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <closer>
+                        <signed>
+                            <persName key="omodei_a">
+                                <hi rendition="#et">A. O.</hi>
+                            </persName>
+                        </signed>
+                    </closer>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb n="186" facs="#f0035"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Delle foreste di China nell&#x2019;<placeName key="suedamerika">America meridio-<lb break="no"/>nale</placeName>, di</hi> Alessandro <hi rendition="#i">de</hi>
+                    <persName key="humboldt_av">Humboldt</persName> (Vedi il<lb break="yes"/>num. V. pag. 145).</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <hi rendition="#in">I</hi>ndicate</hi> con accuratezza le piante che hanno<lb break="yes"/>qualche analogia botanica colla Cinchona, e<lb break="yes"/>quelle sostanze che in commercio sono presso<lb break="yes" />diverse nazioni conosciute sotto il nome di<lb break="yes"/>China, di Cascarilla, di Quinquina o <hi rendition="#i">écorce<lb break="yes" />fébrifuge;</hi> distinte le Cinchone che hanno stami<lb break="yes" />rinchiusi non risorgenti dal fondo del tubo della<lb break="yes"/>corolla, stigma diviso e semi con margine den-<lb break="no"/>tato, dalle Cinchone delle isole, i cui lunghi<lb break="yes"/>stami nati profondamente dal tubo della corolla<lb break="yes"/>hanno stigma intero e semi con margine liscio;<lb break="yes"/>esaminata l&#x2019;affinità e la supposta identità di<lb break="yes"/>genere tra la Cinchona, la Portlandia, la<lb break="yes" />Coutarea, la Cosmibuena, la Pinkneya, la Da-<lb break="no"/>nais, la <persName key="bonpland_ajag">Bonplandia</persName>, la Cuspa e la pianta di<lb break="yes"/>
+                    <placeName key="atacamez">Atacamez</placeName>; uopo è che ci facciamo a determi-<lb break="no"/>nare quelle specie di Cinchona, che per il<lb break="yes"/>commercio e la medicina sono divenute più<lb break="yes" />importanti. Senza un&#x2019;accurata analisi de&#x2019;carat-<lb break="no" />teri specifici, e senza rettificare una parte della<lb break="yes"/>sinonimia, quanto sono per dire intorno alla<lb break="yes"/>propagazione geografica della corteccia febbri-<lb break="no"/>fuga, e i suoi rapporti fisici, sarebbe rimasto<lb break="yes"/>oscuro ed equivoco, poichè, come già dissi su-<lb break="no"/>periormente, quasi a ciascuna specie è stata as-<lb break="no"/>
+                    <pb n="187" facs="#f0036"/> segnata una particolare regione, ed alcuni bo-<lb break="no"/>tanici con grave danno della scienza hanno col<lb break="yes" />medesimo nome indicate le più eterogenee spe-<lb break="no"/>cie. A cagion d&#x2019;esempio la <hi rendition="#i">Cinchona longiflora</hi>
+                    <lb break="yes"/>Mut. e la <hi rendition="#i">C. longiflora</hi>
+                    <persName key="lambert_ab">Lambert</persName>, hanno amen-<lb break="no"/>due <hi rendition="#i">corollam glabram,</hi> e spettano tra le Cin-<lb break="no"/>chone meno febbrifuge e proprie de&#x2019;climi cal-<lb break="no"/>di, e sono tuttavia tra loro diversissime. La<lb break="yes" />prima, di Nuova Grenada, ha <hi rendition="#i">stamina inclusa,</hi>
+                    <lb break="yes"/>ed è verosimilmente identica colla <hi rendition="#i">C. grandi-<lb break="no"/>flora Flor. Peruv.</hi>; al contrario la <hi rendition="#i">C. longiflora</hi>
+                    <lb break="yes"/>di <persName key="lambert_ab">Lambert</persName>, della Guyana Francese, appartiene<lb break="yes"/>alle specie che hanno <hi rendition="#i" >filamenta longe exerta</hi> e<lb break="yes"/>capsule brevissime. La <hi rendition="#i">C. caribaea</hi> Jacq. è pure<lb break="yes" />dell&#x2019;intutto diversa dalla <hi rendition="#i">C. caribaea</hi> descritta<lb break="yes"/>nel <hi rendition="#i">Journal de Physique october</hi> 1790. Le se-<lb break="no"/>guenti diagnosi non sono ricopiate da opere altrui:<lb break="yes"/>in parte sono frutto delle mie proprie osserva-<lb break="no"/>zioni istituite da me medesimo sulla natura, e in<lb break="yes"/>parte dell&#x2019;istruttiva conversazione col Sigr. <persName key="mutis_jc">Mutis</persName>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Caratteristica di alcune specie di Cinchone.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="vahl_m">Vahl</persName> nella sua Monografia ampliata da <persName key="lambert_ab">Lam-<lb break="no"/>bert</persName> divide tutte le specie in due gruppi di<lb break="yes"/>piante: <hi rendition="#i">floribus tomentosis staminibus inclu-<lb break="no"/>sis,</hi> e <hi rendition="#i" >floribus glabris staminibus exertis.</hi> Que-<lb break="no"/>sta divisione ha il difetto di riunire due carat-<lb break="no"/>teri non sempre osservabili allo stesso tempo in<lb break="yes"/>tutte le Cinchone conosciute: poichè, se da una<lb break="yes"/>parte non havvi <hi rendition="#i">Cinchona floribus tomentosis</hi>
+                    <lb break="yes"/>
+                    <pb n="188" facs="#f0037"/> con stami molto risorgenti all&#x2019;infuori del tubo<lb break="yes"/>della corolla (nelle specie delle Indie Orien-<lb break="no"/>tali essendo visibili solamentele antere), per<lb break="yes" />l&#x2019;altra ve n&#x2019;ha di quelle la cui corolla è liscia, e<lb break="yes"/>rinchiusi sono gli stami, quali p. e. sono la<lb break="yes"/>
+                    <hi rendition="#i">C. parviflora Mut.</hi> e la <hi rendition="#i">C. grandiflora Flor.<lb break="yes"/>Peruv.</hi> La divisione in Cinchone <hi rendition="#i">staminibus in-<lb break="no"/>clusis, stigmate bilamellato, seminum ala den-<lb break="no"/>ticulata vel lacera,</hi> e in Cinchone <hi rendition="#i">filamentis<lb break="yes"/>insertis ex imo tubo nascentibus, seminibus<lb break="yes"/>membrana integra cinctis,</hi> benchè un poco più<lb break="yes"/>esatta, sembra però meno giusta logicamente<lb break="yes"/>della divisione in Cinchone che hanno la co-<lb break="no" />rolla liscia, e in quelle che l&#x2019;hanno pelosa:<lb break="yes"/>dappoichè con quest&#x2019;ultimo ordine il primo<lb break="yes"/>spartimento soltanto si scomporrebbe secondo<lb break="yes"/>la lunghezza degli stami in due picciole tribù, cui<lb break="yes"/>indi seguirebbero tutte le specie febbrifuge in un<lb break="yes"/>gruppo, vantaggio per verità solamente secondario.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">A<lb break="yes"/>
+                            <hi rendition="#k">cinchonae corollis tomentosis</hi>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>1. <hi rendition="#i">C. <persName key="lacondamine_cmd">Condaminea</persName>, corollae tubo hirto, foliis<lb break="yes"/>ovato-lanceolatis utrinque glaberrimis, in axil-<lb break="no"/>lis nervorum interne scrobiculatis.</hi>
+                    <persName key="humboldt_av">Humb.</persName> e<lb break="yes"/>
+                    <persName key="bonpland_ajag">Bonpl.</persName>
+                    <hi rendition="#i">Plant. &#x00C9;quin.</hi> Fasc. II. p. 29. tab. 10.</p>
+                <lb break="yes"/>
+                <p>Questa specie, la China fina di Uritusinga,<lb break="yes"/>si distingue dalla <hi rendition="#i">C. glandulifera Flor. Peruv.</hi>
+                    <lb break="yes"/>con cui unicamente potrebbe scambiarsi, dall&#x2019;<lb break="yes"/>
+                    <pb n="189" facs="#f0038"/> avere quest&#x2019;ultima la corolla <hi rendition="#i">solummodo intus<lb break="yes"/>lanuginosa, tubo externe glaberrimo, foliis<lb break="yes"/>inferne villosis</hi>
+                    <note place="foot" n="(1)">Flor. Peruv. t. 3, p. 1, t. 224.</note> e dall&#x2019;annoverarsi dagli abi-<lb break="no"/>tuati di Chicoplaya, i quali la chiamano <hi rendition="#i">Casca-<lb break="no"/>rilla negrilla,</hi> tra le specie meno efficaci di China.</p>
+                <lb break="yes"/>
+                <p>La corteccia di Cascarilla fina di Uritusinga<lb break="yes"/>è da tempo immemorabile vantata nelle Spagne<lb break="yes"/>come il più sicuro rimedio contra la terzana;<lb break="yes"/>in oggi è unicamente riserbata per uso della<lb break="yes"/>farmacia regia, e quindi per ordine supremo<lb break="yes"/>esclusa dal commercio.</p>
+                <lb break="yes"/>
+                <p>Questa è la pianta che sopra ogni altra merite-<lb break="no"/>rebbe il titolo di <hi rendition="#i">C. officinalis;</hi> se di denominarla<lb break="yes" />dalla sua bontà ed efficacia medicamentosa non<lb break="yes"/>ce lo vietasse l&#x2019;osservare: 1. che non una ma<lb break="yes"/>tutte le specie di Cinchone a fiori pelosi o ve-<lb break="no"/>luta ti sono officinali, e che alcuna specie non<lb break="yes"/>merita assoluta preferenza nell&#x2019;uso medico, con-<lb break="no"/>venendo secondo diverse forme di mali or que-<lb break="no"/>sta or quella specie; a cagione d&#x2019;esempio nelle<lb break="yes"/>febbri intermittenti ostinate la <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>,</hi>
+                    <lb break="yes"/>nelle vaste suppurazioni la <hi rendition="#i">C. lancifolia Mut.,</hi> e<lb break="yes"/>nella reconvalescenza ad oggetto di prevenire<lb break="yes"/>le ricadute la <hi rendition="#i">C. cordifolia Mut.</hi> come più mi-<lb break="no"/>te: 2. che, avendo diversi botanici chiamato<lb break="yes"/>
+                    <hi rendition="#i">C. officinalis</hi> la <hi rendition="#i">C. cordifolia Mut.,</hi> la <hi rendition="#i">C.<lb break="yes"/>macrocarpa <persName key="vahl_m">Vahl</persName>
+                    </hi> e la <hi rendition="#i">C. nitida <persName key="ruizlópez_hipolito" >Ruiz</persName>,</hi> l&#x2019;im-<lb break="no"/>
+                    <pb n="190" facs="#f0039"/> porre questo nome esclusivamente alla China fina<lb break="yes"/>di Uritusinga avrebbe facilmente dato luogo a<lb break="yes" />confondere queste tre distinte specie.</p>
+                <lb break="yes"/>
+                <p>Quest&#x2019;ultimo punto, egualmente importante<lb break="yes"/>per la sinonimia che per la materia medica, ci<lb break="yes"/>conduce a ricercare qual pianta descrivesse <persName key="linne_cv">Lin-<lb break="no"/>neo</persName> nella 12.<hi rendition="#sup">ma</hi> edizione del <hi rendition="#i">Systema Naturae</hi>
+                    <lb break="yes"/>sotto il titolo di <hi rendition="#i">C. officinalis.</hi> L&#x2019;opinione di<lb break="yes"/>
+                    <persName key="vahl_m">Vahl</persName>
+                    <note place="foot" n="(1)">Act. Haun. I., p. 19. <persName key="lambert_ab" >Lambert</persName> p. 22.</note> che sia la sua <hi rendition="#i">C. macrocarpa</hi> del Regno<lb break="yes"/>di Nuova-Grenada mandata a <persName key="linne_cv">Linneo</persName> da <persName key="gomezortega_c" >Ortega</persName>,<lb break="yes"/>non è plausibile; perchè questa tale sua <hi rendition="#i">C. ma-<lb break="no"/>crocarpa</hi> non è altro che la nostra China bianca<lb break="yes"/>di S. Fe a grandi fiori, <hi rendition="#i" >C. ovalifolia <persName key="mutis_jc">Mutis</persName>,</hi> la<lb break="yes"/>quale secondo la testimonianza di <persName key="mutis_jc" >Mutis</persName> non fu<lb break="yes"/>giammai veduta da <persName key="linne_cv">Linneo</persName>. Il gran botanico di<lb break="yes" />Kopenhaghen, la cui morte prematura sarà com-<lb break="no"/>pianta da tutt&#x2019;i botanici, fu indotto in errore<lb break="yes"/>dal sapere: 1. che <persName key="linne_cv">Linneo</persName> prese posterior-<lb break="no" />mente la descrizione della <hi rendition="#i">C. officinalis</hi> da esem-<lb break="no"/>plari ricevuti da Santa Fe; e 2. dal supporre<lb break="yes" />falsamente che tutte le foreste di China sco-<lb break="no"/>perte da <persName key="mutis_jc">Mutis</persName> ne&#x2019;contorni di Santa Fe, risul-<lb break="no"/>tassero di China bianca, ossia di <hi rendition="#i" >C. macro-<lb break="no"/>carpa.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="linne_cv">Linneo</persName> sotto la denominazione di <hi rendition="#i">C. offici-<lb break="no"/>nalis</hi> comprese, come si disse di sopra, due<lb break="yes"/>specie di piante affatto eterogenee. <persName key="mutis_jc">Mutis</persName> mi<lb break="yes"/>
+                    <pb n="191" facs="#f0040"/> ha più volte assicurato verbalmente, che l&#x2019;esem-<lb break="no"/>plare secco ond&#x2019;egli ne ricopiò la diagnosi era<lb break="yes"/>China gialla, <hi rendition="#i">C. cordifolia Mut.,</hi> la medesima<lb break="yes"/>specie che <persName key="vahl_m" >Vahl</persName> chiama <hi rendition="#i">C. pubescens,</hi> una va-<lb break="no"/>rietà della quale <hi rendition="#i">ha folia utrinque glabra.</hi> E<lb break="yes"/>siccome la specie descritta da <persName key="lacondamine_cmd">la Condamine</persName>
+                    <lb break="yes"/>nelle Memorie dell&#x2019;Accademia per il 1738 è<lb break="yes"/>stata da <persName key="linne_cv">Linneo</persName> indicata qual sinonimo, è dun-<lb break="no"/>que evidentemente manifesto, ch&#x2019;ei ha riunito<lb break="yes"/>una specie di S. Fe con altra esclusiva de&#x2019;con-<lb break="no"/>torni di Loxa.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="ruizlópez_hipolito">Ruiz</persName> nella Quinologia <note place="foot" n="(1)">
+                        <hi rendition="#i">Cascarilla officinal.</hi> Quinologia art. II, p. 56.</note> chiama <hi rendition="#i">C. offici-<lb break="no"/>nalis</hi> una specie, che dappoi nella <hi rendition="#i">Flora peruv.</hi>
+                    <lb break="yes"/>descrive sotto il nome di <hi rendition="#i">C. nitida.</hi> Credeva al-<lb break="no"/>lora che questa pianta delle foreste di Huama-<lb break="no"/>lies e di Xauxa, quindi lungi da Loxa, tra il<lb break="yes" />10°&#x2014;12° di latitudine meridionale, fosse la<lb break="yes"/>China descritta da <persName key="lacondamine_cmd">la Condamine</persName>: ma nel sup-<lb break="no"/>plimento alla Quinologia pag. 68 si riconvenne<lb break="yes"/>dell&#x2019;errore. In fatti la <hi rendition="#i">C. nitida,</hi> ossia la <hi rendition="#i">C. of-<lb break="no" />ficinalis</hi> di <persName key="ruizlópez_hipolito">Ruiz</persName>, non è altro che la <hi rendition="#i">Cascarilla<lb break="yes"/>naranjanda</hi> di S. Fe, ossia la <hi rendition="#i">C. lancifolia Mut.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>In memoria di quegli che primo descrisse la<lb break="yes"/>China fina di Uritusinga, l&#x2019;abbiamo chiamata<lb break="yes"/>
+                    <hi rendition="#i">C. <persName key="lacondamine_cmd" >condaminea</persName>.</hi> Il titolo di <hi rendition="#i">C. officinalis</hi> non<lb break="yes"/>ci parve convenire, a motivo che questo stesso<lb break="yes"/>nome è stato dato a quattro differenti specie,<lb break="yes"/>
+                    <pb n="192" facs="#f0041"/> cioè, a questa China fina di Uritusinga, alla<lb break="yes"/>
+                    <hi rendition="#i">C. pubescens <persName key="vahl_m">Vahl</persName>,</hi> alla <hi rendition="#i">C. nitida <persName key="ruizlópez_hipolito" >Ruiz</persName>,</hi> e alla<lb break="yes"/>
+                    <hi rendition="#i">C. macrocarpa <persName key="vahl_m">Vahl</persName>.</hi> Il sentimento di <persName key="ruizlópez_hipolito">Ruiz</persName> che la<lb break="yes"/>pianta, oggidì chiamata in Loxa Gascarilla fina,<lb break="yes" />fosse ignota all&#x2019;astronomo francese, è smentito<lb break="yes"/>dalla concorde testimonianza di tutti gli abitanti<lb break="yes"/>di Loxa, Caxanuma e di Uritusinga, non meno<lb break="yes"/>che dalle osservazioni comparative fatte da <persName key="bonpland_ajag">Bon-<lb break="no"/>pland</persName> tra la nostra <hi rendition="#i">C. <persName key="lacondamine_cmd" >condaminea</persName>
+                    </hi> e gli esem-<lb break="no"/>plari raccolti da <persName key="jussieu_ald" >Jussieu</persName> e da <persName key="lacondamine_cmd">la Condamine</persName> tut-<lb break="no"/>tora conservati a Parigi nell&#x2019;erbario che porta<lb break="yes"/>il nome del primo. Non vi restò più alcun dub-<lb break="no"/>bio sulla identità della specie.</p>
+                <lb break="yes"/>
+                <p>La <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                    </hi> non è stata sinora che im-<lb break="no"/>perfettamente descritta, perchè, a guisa della<lb break="yes"/>
+                    <hi rendition="#i">Myristica,</hi> del <hi rendition="#i">Caryocar amygdaliferum</hi> e di<lb break="yes"/>molti altri preziosi prodotti delle regioni tro-<lb break="no"/>piche, non si trova che in un picciolissimo spa-<lb break="no"/>zio. <persName key="ruizlópez_hipolito">Ruiz</persName>, <persName key="pavon_j">Pavon</persName>, <persName key="tafalla_jj" >Tafalla</persName>, <persName key="nee_l">Nee</persName>, <persName key="haenke_t">Haenke</persName>, <persName key="mutis_jc">Mutis</persName>
+                    <lb break="yes"/>nè alcun altro botanico videro questa pianta nel<lb break="yes" />suo luogo natio; onde non voglionsi considerare<lb break="yes"/>che come immagini imperfette quelle che di essa<lb break="yes"/>occorrono nelle <hi rendition="#i">Mém. de l&#x2019;Academ.</hi> del 1738,<lb break="yes"/>p. 114, nell&#x2019;<hi rendition="#i">Encyclopédie</hi> di <persName key="lamarck_jbpadmd">Lamarck</persName>, pl. 164,<lb break="yes"/>fig. 1, in <persName key="vahl_m">Vahl</persName>
+                    <hi rendition="#i">Skrivt. af Naturh. <choice>
+                            <sic>Selfkabet</sic>
+                            <corr type="editorial">Selskabet</corr>
+                        </choice>
+                    </hi> 1,<lb break="yes"/>tab. 1, e nella Monogr. di <persName key="lambert_ab" >Lambert</persName>, tab. 1. In<lb break="yes"/>tutte vi è stato fallito il vero carattere delle fo-<lb break="no"/>glie: e sarebbe imprudenza l&#x2019;addurre questa si-<lb break="no"/>nonimia finchè ci sono ignoti gli esemplari che<lb break="yes"/>loro hanno servito di modello.</p>
+                <lb break="yes"/>
+                <pb n="193" facs="#f0042"/>
+                <p>La nostra <hi rendition="#i">C. <persName key="lacondamine_cmd" >condaminea</persName>
+                    </hi> cresce tra il quarto<lb break="yes"/>grado di latitudine meridionale all&#x2019;altezza media<lb break="yes"/>di 900 a 1200 tese sul pendio de&#x2019;monti. Ama<lb break="yes"/>un clima un poco più temperato della China<lb break="yes"/>color d&#x2019;arancio, la <hi rendition="#i">C. lancifolia</hi> Mut. di S. Fe,<lb break="yes"/>dove la media temperatura è di 19 a 16° di R.,<lb break="yes"/>pressappoco eguale alla temperatura media delle<lb break="yes"/>isole Canarie. Io trascrivo quivi la diagnosi, da<lb break="yes"/>me abbozzata in Gonzanama, la quale, obbliata<lb break="yes" />tra manoscritti astronomici, fu ommessa dal sig.<lb break="yes"/>
+                    <persName key="bonpland_ajag">Bonpland</persName> nell&#x2019;edizione del secondo Fascicolo<lb break="yes"/>delle <hi rendition="#i">Plant. Équinoxiales.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201E;<hi rendition="#i">Calix</hi> tubulosus basi angustatus sub-5-gonus<lb break="yes"/>subhirtus ore, 5-dentato, dentibus ovatis acumi-<lb break="no" />natis patentibus. <hi rendition="#i">Cor.</hi> hypocrateriformis, tubo cy-<lb break="no"/>lindrico rubro laevissimo hirto 5-gono (ad basin<lb break="yes" />persaepe fisso), limbo 5-fido saepissime 4-fido, laci-<lb break="no"/>niis ovatis acutis, apice et margine ciliatis vel to-<lb break="no"/>mentosis, ciliis albis. <hi rendition="#i">Faux</hi> corollae et totius tubi<lb break="yes"/>pars interior rubra, 4-fida; saepius stamina quin-<lb break="no"/>que numeravi. <hi rendition="#i">Filamenta</hi> ex rubro albescentia,<lb break="yes"/>imo tubo adnata, cum eo cohaerentia, tertiam<lb break="yes"/>tubi partem aequantia, eademque tantum tertia<lb break="yes"/>sui longitudinis parte libera. <hi rendition="#i">Anthaerae</hi> flavae<lb break="yes"/>lineares, parte libera filamenti duplo longiores.<lb break="yes"/>
+                    <hi rendition="#i">Germen</hi> rotundum subdepressum rubescens, saepe<lb break="yes"/>punctatum et 5-sulcatum. <hi rendition="#i">Stylus</hi> fere longitudine<lb break="yes"/>tubi crassus, teres. <hi rendition="#i" >Stigma</hi> tubum vix superans,<lb break="yes"/>viridescens, compressum, bifidum, saepe bipar-<lb break="no"/>
+                    <pb n="194" facs="#f0043"/> titum. <hi rendition="#i">Capsula</hi> calice coronata, oblonga, flore<lb break="yes"/>tertia parte longior, bipartibilis, striato-costata,<lb break="yes"/>de medio hiscens, dissepimento parallelo. <hi rendition="#i">Semina</hi>
+                    <lb break="yes"/>plura, compressa, ala membranacea crenulata uni-<lb break="no" />ta. &#x2014; <hi rendition="#i">Rami</hi> cicatrisati post casum foliorum, sub-<lb break="maybe"/>4-goni, juniores glaberrimi, subpulverulenti. <hi rendition="#i">Fo-<lb break="no"/>lia</hi> petiolata; decussatim opposita, lanceolata ob-<lb break="no"/>tusa acuta, integerrima, utrinque viridia, nullis<lb break="yes"/>venis rubris picta, fere laurina, glaberrima, in<lb break="yes"/>axillis nervorum inferne scrobiculata. <hi rendition="#i" >Glandu-<lb break="no"/>lae</hi> nullis pilis obsitae, convexitate in pagina<lb break="yes"/>superiori folii conspicua, venas altitudine supe-<lb break="no"/>rantes. Pagina folii inferior scrobiculum demon-<lb break="no" />strat. <hi rendition="#i">Petioli</hi> saeperubescentes, superne plani, in-<lb break="no"/>ferne teretes. Stipulae deciduae, oblongae, cari-<lb break="no" />natae. Panicula axillaris et terminalis, folio lon-<lb break="no"/>gior, floribus brevi pedicellatis.<choice>
+                        <sic>&#x201E;</sic>
+                        <corr type="editorial">"</corr>
+                    </choice>
+                </p>
+                <lb break="yes"/>
+                <p>In una pianta per la prima volta fiorita la<lb break="yes"/>grandezza delle parti è quale segue, in misura<lb break="yes"/>di Parigi: calice 1 <formula notation="TeX">\frac{7}{10}</formula> linee lungo; corolla 5 <formula notation="TeX">\frac{4}{10}</formula>
+                    <lb break="yes"/>linee; capsula 8 lin. lunga e 3 <formula notation="TeX" >\frac{1}{2}</formula> lin. larga. Fo-<lb break="no"/>glie senza picciolo cresciute rette, 4 poll. 3<lb break="yes"/>lin. lunghe, e 1 pol. 9 lin. larghe. Le foglie<lb break="yes"/>giovani sono spesso lunghe cinque pollici; 4<lb break="yes"/>pollici, 7 linee è la massima larghezza a cui<lb break="yes" />arrivano.</p>
+                <lb break="yes"/>
+                <p>La <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                    </hi> varia grandemente nella<lb break="yes"/>forma delle foglie innanzi fiorire. Nelle piante<lb break="yes"/>molto giovani si osservano spesso <hi rendition="#i">folia lato-ovata</hi>
+                    <lb break="yes"/>
+                    <pb n="195" facs="#f0044"/> e <hi rendition="#i">ovato-lanceolata.</hi> Coll&#x2019;invecchiare della pianta<lb break="yes"/>le foglie diventano vieppiù picciole; e nel mas-<lb break="no"/>simo vigore dell&#x2019;accrescimento assai sovente scom-<lb break="no"/>pajono quelle fossette, che, guardata la foglia<lb break="yes"/>nella parte superiore, rassembrano convesse ghian-<lb break="no"/>dolette. Nelle foglie larghissime, il cui <hi rendition="#i" >Parenchyma</hi>
+                    <lb break="yes"/>è molto espanso, mancano quasi per intero. Pure<lb break="yes" />anco in questo caso hannovi sempre sul mede-<lb break="no"/>simo ramo alcune foglie <hi rendition="#i">scrobiculate.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>2. <hi rendition="#i">C. lancifolia foliis lanceolatis acutis utrin-<lb break="no"/>que glaberrimis.</hi>
+                    <persName key="mutis_jc">Mutis</persName> period. de St. Fe, p.<lb break="yes" />465 (et Flora Bogot. Mss.). In Santa Fe si co-<lb break="no"/>nosce sotto il nome di Quina naranjada, Quin-<lb break="no"/>quina orangé, ossia China color d&#x2019;arancio. Dopo<lb break="yes"/>la <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                    </hi> è la più febbrifuga; ed è<lb break="yes"/>questa la specie che <persName key="mutis_jc">Mutis</persName> nella sua Quinologia<lb break="yes"/>chiama <hi rendition="#i">China primitiva direttamente febrifuga,</hi>
+                    <lb break="yes"/>perchè la preferisce alle tre seguenti, e perchè<lb break="yes" />egli crede, erroneamente però, che la China fina<lb break="yes"/>di Uritusinga sia identica colla Quina naranjada<lb break="yes"/>di Nuova-Grenada. La <hi rendition="#i">C. lancifolia</hi> ha foglie<lb break="yes"/>più picciole di tutte le altre specie di china<lb break="yes"/>
+                    <hi rendition="#i">corollis tomentosis,</hi> e costantemente lisce; al<lb break="yes"/>contrario della china bianca e gialla, le cui fo-<lb break="no" />glie sono talvolta pelose per la varietà dei luoghi.</p>
+                <lb break="yes"/>
+                <p>La Quina naranjada ama un clima rigido;<lb break="yes"/>cresce tra il quarto e quinto grado di latitudine<lb break="yes"/>settentrionale sul pendio de&#x2019;monti all&#x2019;altezza di<lb break="yes"/>700 a 1500 tese. La media temperatura di que-<lb break="no"/>
+                    <pb n="196" facs="#f0045"/> sta situazione è pressappoco eguale a quella di<lb break="yes"/>Roma, di 13°. R. Quelle piante però di China,<lb break="yes" />che si accostano maggiormente alla sommità dei<lb break="yes"/>monti, hanno spesso una temperatura di 8° 9.°<lb break="yes"/>Durante il freddo notturno il termometro in<lb break="yes"/>questi boschi alpestri discende sino al punto<lb break="yes"/>della congelazione: ma sino all&#x2019;altezza di 1900<lb break="yes"/>tese non nevica mai in questa latitudine.</p>
+                <lb break="yes"/>
+                <p>La Quina naranjada è come la <hi rendition="#i">C. <persName key="lacondamine_cmd">condami-<lb break="no"/>nea</persName>
+                    </hi> una delle più rare specie di China. Persino<lb break="yes"/>nel regno di Nuova-Grenada vi si trova in<lb break="yes"/>molto minore quantità che la China rossa e<lb break="yes"/>gialla, le quali vi formano de&#x2019;cespugli; al con-<lb break="no"/>trario della <hi rendition="#i">C. lancifolia,</hi> la quale sta sempre<lb break="yes"/>isolata; e per somma disavventura, è anco men<lb break="yes"/>facile a propagarsi per polloni di queste.</p>
+                <lb break="yes"/>
+                <p>Nelle Monografie di <persName key="vahl_m">Vahl</persName> e di <persName key="lambert_ab">Lambert</persName> non<lb break="yes"/>si trova fatto cenno di questa Quina naranjada<lb break="yes"/>di S. Fe: n&#x2019;è però incontrastabilmente un si-<lb break="no"/>nonimo la <hi rendition="#i">Cinchona angustifolia <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> di cui<lb break="yes"/>se ne vede la figura nella pag. 21 del Suppl. a<lb break="yes"/>la Quinologia. Fa in vero meraviglia, che un<lb break="yes" />botanico così diligente quanto <persName key="ruizlópez_hipolito" >Ruiz</persName> scambiasse<lb break="yes"/>l&#x2019;antico nome di <persName key="mutis_jc">Mutis</persName> di <hi rendition="#i">C. lancifolia</hi> in <hi rendition="#i">C.<lb break="yes"/>angustifolia,</hi> che finora è stato dato da <persName key="swarz_01">Swartz</persName>
+                    <lb break="yes"/>ad una nota Cinchona delle isole <hi rendition="#i">cor. glabris,<lb break="yes"/>staminibus longe exertis.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Il professor Zea crede, e parmi con fonda-<lb break="no"/>mento, che molte spezie della Flora Peruviana<lb break="yes"/>
+                    <pb n="197" facs="#f0046"/> siano solamente diversi stati della Quina na-<lb break="no"/>ranjada, dipendenti dall&#x2019;età, dal clima e dal<lb break="yes"/>luogo. Così sembrano varietà della <hi rendition="#i">C. lancifolia<lb break="yes"/>Mut.</hi> 1. la <hi rendition="#i">C. nitida</hi> Flor. Peruv. II. Icon. t.<lb break="yes"/>191 (<persName key="ruizlópez_hipolito">Ruiz</persName> Quinolog. II. p. 96.) <hi rendition="#i">Cascarilla<lb break="yes"/>officinal. di <persName key="ruizlópez_hipolito">Ruiz</persName>.,</hi> 2. la <hi rendition="#i" >C. lanceolata</hi> della Flor.<lb break="yes"/>Peruv. II. p. 51, e la <hi rendition="#i">C. glabra <persName key="ruizlópez_hipolito">Ruiz</persName>
+                    </hi> Quinol.<lb break="yes"/>II. p. 64, la Cascarilla lampina, di cui non havvi<lb break="yes"/>alcuna figura. A queste vorrebbe Zea aggiun-<lb break="no"/>gere anco la <hi rendition="#i">C. rosea</hi> Flor. Per. II. Ic. 199, spe-<lb break="no"/>cie che deve essere la più rara nel Perù, che<lb break="yes"/>discende nelle più profonde valli <note place="foot" n="(1)">
+                        <persName key="ruizlópez_hipolito">Ruiz</persName>, Supp. à la Quinalog, p. 54.</note>, fenomeno<lb break="yes"/>per verità che non troppa combina colla na-<lb break="no"/>tura della <hi rendition="#i">C. lancifolia.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>La corteccia febbrifuga di eminente efficacia<lb break="yes"/>celebrata in Cadice sotto il nome di Calisaya<lb break="yes"/>appartiene secondo <persName key="mutis_jc">Mutis</persName> alla <hi rendition="#i">C. lancifolia.</hi>
+                    <lb break="yes"/>
+                    <persName key="ruizlópez_hipolito">Ruiz</persName> nella Quinologia la considerava quale<lb break="yes"/>sinonimo della sua <hi rendition="#i">C. glabra;</hi> ma nell&#x2019;opera<lb break="yes"/>critica contro Zea ritirò quest&#x2019;opinione, ed as-<lb break="no"/>sicura non crescere intorno Huanuco alcuna<lb break="yes"/>specie, la cui corteccia rassomigli a quella della<lb break="yes"/>Calisaya. Del resto il nome di Calisaya è quello<lb break="yes" />della provincia in cui nasce, e che giace nel<lb break="yes"/>Perù meridionale nell&#x2019;Intendencia della Paz.</p>
+                <lb break="yes"/>
+                <p>Della China color d&#x2019;arancio, come in gene-<lb break="no"/>rale delle tre seguenti specie di <persName key="mutis_jc">Mutis</persName>, della<lb break="yes"/>
+                    <pb n="198" facs="#f0047"/> gialla cioè della rossa e della bianca, se ne<lb break="yes"/>trovano le figure nell&#x2019;opera recente di <persName key="alibert_jl">Ali-<lb break="no"/>bert</persName>
+                    <note place="foot" n="(1)">Traité des fiévres ataxiques, 2 édition.</note>, ricopiate da esemplari secchi, definiti<lb break="yes"/>da <persName key="mutis_jc">Mutis</persName>, e somministrati da Zea dal suo proprio<lb break="yes"/>erbario durante il suo soggiorno in Parigi.</p>
+                <lb break="yes"/>
+                <p>3. <hi rendition="#i">C. cordifolia, fol. orbiculato-ovatis saepe<lb break="yes" />subcordatis subtus tomentosis supra pubescen-<lb break="no"/>tibus, <persName key="mutis_jc">Mutis</persName>, Mss.</hi> Quina amarilla, Quinquina<lb break="yes"/>Jaune, China gialla; la specie che <persName key="linne_cv">Linneo</persName> ha<lb break="yes"/>descritto nel <hi rendition="#i">Syst. Nat.</hi> T. II. ed. 12. p. 64<lb break="yes"/>sotto il nome di <hi rendition="#i">C. officinalis.</hi> Nella <hi rendition="#i">C. cordifo-<lb break="no"/>lia</hi> e nella <hi rendition="#i">C. lancifolia</hi> risorgono le antere sino<lb break="yes"/>alla parte suprema della corolla; al contrario quelle<lb break="yes"/>della China rossa (<hi rendition="#i">C. oblongifolia</hi>) sono pro-<lb break="no"/>fondamente rinchiuse nella parte media del tubo.<lb break="yes"/>La <hi rendition="#i">C. cordifolia</hi> ha due varietà: 1. <hi rendition="#i">foliis vix<lb break="yes"/>cordatis utrinque glabris</hi>: 2. <hi rendition="#i" >foliis utrinque<lb break="yes"/>hirsutis,</hi> chiamata dal volgo nel regno di Nuova<lb break="yes"/>Grenada China cannellata. Cresce tra il 4.° di<lb break="yes"/>lat. settentrionale all&#x2019;altezza di 900 a 1440 tese.<lb break="yes"/>Le foglie cuoriformi sono rare: havvene però<lb break="yes" />quasi costantemente in ogni ramo. La <hi rendition="#i">C. cor-<lb break="no" />difolia</hi> Mut., secondo le osservazioni di <persName key="bonpland_ajag">Bonpland</persName>
+                    <lb break="yes"/>instituite nell&#x2019;erbario di <persName key="jussieu" >Jussieu</persName>, donde ebbe<lb break="yes"/>
+                    <persName key="vahl_m">Vahl</persName> il suo esemplare, è identica colla <hi rendition="#i">C. pu-<lb break="no"/>bescens</hi> di quest&#x2019;ultimo. <persName key="jussieu_jd">Giuseppe di Jussieu</persName>
+                    <lb break="yes"/>raccolse cioè nel 1738 questa specie di China<lb break="yes"/>
+                    <pb n="199" facs="#f0048"/> e la nostra <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                    </hi> nelle foreste di Loxa-<lb break="maybe"/>Anco la <hi rendition="#i">C. ovata</hi> Flor. Per. II. t. 195. <hi rendition="#i">Casca-<lb break="no" />rilla pallida <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> Quinolog. art. 7 pag. 74,<lb break="yes"/>chiamata ne&#x2019;dintorni di Pozuzo <hi rendition="#i">Pata de Gual-<lb break="no"/>lerata,</hi> è pure un sinonimo della <hi rendition="#i">C. cordifolia</hi>
+                    <lb break="yes"/>
+                    <persName key="mutis_jc">Mutis</persName>. <persName key="ruizlópez_hipolito" >Ruiz</persName> e <persName key="pavon_j">Pavon</persName> ne hanno essi medesimi te-<lb break="no"/>stè riconosciuta l&#x2019;identità <note place="foot" n="(1)">Supp. à la Quinolog. p. 18.</note>.</p>
+                <lb break="yes"/>
+                <p>4. <hi rendition="#i">C. oblongifolia, foliis oblongis acuminatis<lb break="yes" />glabris, filamentis brevissimis, antheris infra<lb break="yes"/>medium tubi latentibus. Mut. Mss.</hi> Quina roxa,<lb break="yes"/>Quinquina rouge de S. Fe. Differt a <hi rendition="#i">C. lan-<lb break="no"/>cifolia</hi> 1. foliis latioribus majoribus oblongis<lb break="yes"/>nec lanceolatis. 2. antheris haud in summo tubo<lb break="yes"/>latentibus.</p>
+                <lb break="yes"/>
+                <p>Cresce tra il 5.° di lat. settentrionale all&#x2019;al-<lb break="no"/>tezza di 600 e 1300 tese: abbonda specialmente<lb break="yes"/>nel regno di Nuova-Grenada ne&#x2019;dintorni della<lb break="yes"/>picciola città di Mariquita, dove lungo tempo restò<lb break="yes"/>il sig. <persName key="mutis_jc">Mutis</persName> durante la sua spedizione botanica.<lb break="yes"/>Porta spesso frutti molto più grossi della China<lb break="yes"/>bianca, <hi rendition="#i">C. ovalifolia,</hi> onde con maggior ragione<lb break="yes"/>di questa meriterebbe il nome di <hi rendition="#i">macrocarpa.</hi> La<lb break="yes" />sua corteccia è meno febbrifuga della scorza della<lb break="yes"/>
+                    <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                    </hi> e della <hi rendition="#i">C. lancifolia</hi>; lo è più<lb break="yes" />della China gialla; <hi rendition="#i">C. cordifolia.</hi> &#x00C8; molto irri-<lb break="no"/>tante per le costituzioni deboli, e quanto dan-<lb break="no"/>nosa nelle malattie steniche altrettanto benefica<lb break="yes"/>
+                    <pb n="200" facs="#f0049"/> usata esternamente nelle malattie muscolari,<lb break="yes"/>nelle piaghe cancrenose ed ulcere maligne.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="ruizlópez_hipolito">Ruiz</persName> medesimo conviene che la <hi rendition="#i">C. oblongi-<lb break="no"/>folia</hi> Mut., ossia la China rossa di S. Fe, è<lb break="yes"/>identica colla China gialla, <hi rendition="#i">Cascarilla ama-<lb break="no"/>rilla</hi> Quinol. art. 6, p. 71, ossia <hi rendition="#i">C. magnifo-<lb break="no"/>lia</hi> Flor. Peruv. II. Ic. 196, la quale a mo-<lb break="no"/>tivo dell&#x2019;odore di arancio de&#x2019;fiori è chiamata<lb break="yes"/>nel Perù <hi rendition="#i">Flor de Azahar,</hi> e nel Popayan<lb break="yes"/>
+                    <hi rendition="#i">Palo de requeson.</hi>
+                    <note place="foot" n="(1)">Period de S. Fe, p. 333.</note>.</p>
+                <lb break="yes"/>
+                <p>5. <hi rendition="#i">C. ovalifolia, fol. elipticis supra glaber-<lb break="no" />rimis subtus pubescentibus, antheris in parte<lb break="yes"/>tubi superiori latentibus, filamentis vix ullis.<lb break="yes"/>Mut. Mss.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Quina blanca, Quinquina blanc. China bianca<lb break="yes"/>di S. Fe.</p>
+                <lb break="yes"/>
+                <p>Var. 1. fol. utrinque pubescentibus. 2. fol.<lb break="yes"/>utrinque laevibus. Queste varietà, e specialmente<lb break="yes"/>la prima, hanno spesso corollam 6-7-lobam,<lb break="yes"/>stamina 6-7.</p>
+                <lb break="yes"/>
+                <p>Cresce tra il 3 e 6 grado di lat. settentrio-<lb break="no"/>nale, all&#x2019;altezza di 700 a 1400 tese. La varietà<lb break="yes"/>a foglie lisce è assai comune ne&#x2019;contorni di<lb break="yes"/>S. Marta. <persName key="ruizlópez_hipolito">Ruiz</persName> e <persName key="mutis_jc" >Mutis</persName>
+                    <note place="foot" n="(2)">Suppl. pag. 18.</note> riconoscono eglino<lb break="yes"/>medesimi come sinonimo la <hi rendition="#i">C. macrocarpa</hi>
+                    <persName key="vahl_m">Vahl</persName>
+                    <lb break="yes"/>(<persName key="lambert_ab">Lambert</persName> p. 22. pl. 3). Tra le Cinchone a<lb break="yes"/>
+                    <pb n="201" facs="#f0050"/> corolle pelose è quella che porta i fiori più<lb break="yes"/>grandi. Non vuolsi però confonderla colla <hi rendition="#i" >C.<lb break="yes"/>grandiflora</hi> Flor. Peruv. II. p. 54. (<hi rendition="#i">Cosmibuena<lb break="yes"/>obtusifolia</hi> Flor. Per. III. t. 198) che ha la<lb break="yes"/>corolla onninamente liscia.</p>
+                <lb break="yes"/>
+                <p>6. <hi rendition="#i">C. brasiliensis foliis oblongis acuminatis,<lb break="yes" />venis subtus pubescentibus, panicula terminali,<lb break="yes"/>tubo calicis longitudine. <persName key="willdenow_kl">Willd.</persName> Mss.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>&#x00C8; questa una specie a fiori picciolissimi, di<lb break="yes"/>cui, unitamente alla <hi rendition="#i">C. longiflora</hi>
+                    <persName key="aublet_jcf">Aublet</persName> e <persName key="lambert_ab" >Lam-<lb break="no"/>bert</persName> della Guyana Francese, siamo debitori,<lb break="yes"/>siccome è stato superiormente avvertito, al conte<lb break="yes"/>di <persName key="hoffmannsegg_jcv" >Hoffmansegg</persName>. &#x00C8; l&#x2019;unica scorza febbrifuga<lb break="yes"/>scoperta sulle coste dell&#x2019;<placeName key="suedamerika" >America meridionale</placeName>.<lb break="yes"/>Non si sa positivamente qual sia l&#x2019;altezza del<lb break="yes"/>suo luogo nativo; siccome però è stata spedita<lb break="yes"/>dalle vicinanze della città di Gran Para, dove<lb break="yes"/>non hannovi che collinette, v&#x2019;è ragione per<lb break="yes"/>congetturare ch&#x2019;essa appartenga alle Cinchone<lb break="yes"/>delle regioni calde.</p>
+                <lb break="yes"/>
+                <p>Il carattere ritrovato da <persName key="willdenow_kl">Willdenow</persName>, <hi rendition="#i">tubus<lb break="yes"/>corollae longitudine calicis,</hi> distingue questa<lb break="yes"/>Cinchona dalle altre fin qui descritte. <hi rendition="#i">Faux<lb break="yes"/>corollae hirsuta; pili rari breves in laciniarum<lb break="yes"/>corolla interiori superficie adpressi.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>7. <hi rendition="#i">C. excelsa, corolla pubescente, filamentis<lb break="yes" />e medio tubi nascentibus, antheris exertis,<lb break="yes"/>foliis oblongis acutis subtus pubescentibus.</hi>
+                    <persName key="roxburgh_w">Roxb.</persName>,<lb break="yes"/>Plant. of the Coast of Coromandel II. t. 106.</p>
+                <lb break="yes"/>
+                <pb n="202" facs="#f0051"/>
+                <p>La sola scorza febbrifuga scoperta nel <placeName key="altewelt">vecchio<lb break="yes"/>continente</placeName>: a motivo della sua amarezza non è<lb break="yes"/>stata finora adoprata per uso medico. Ha fiori<lb break="yes"/>picciolissimi bianco-verdognoli, e più d&#x2019;ogni<lb break="yes"/>altra Cinchona foglie grandissime, lunghe tal-<lb break="no" />volta 1 piede e larghe 5 pollici. I filamenti sono<lb break="yes"/>otto volte più brevi delle antere.</p>
+                <lb break="yes"/>
+                <p>La <hi rendition="#i">C. excelsa, Bundaroo</hi> degl&#x2019;Indiani di<lb break="yes"/>Telinga, cresce sulla catena de&#x2019;monti che scor-<lb break="no"/>rono tra levante e settentrione della costa della<lb break="yes" />grande penisola dell&#x2019;Indostan. <persName key="retzius_aj" >Retzius</persName>, sopra<lb break="yes"/>notizie ricevute da <persName key="koenig_jg">König</persName>, ha parlato di una<lb break="yes"/>Cinchona di Malacca, rimpetto alla costa di<lb break="yes"/>Coromandel, che somministra la vera <hi rendition="#i">terra Ja-<lb break="no"/>ponica,</hi> detta <hi rendition="#i">Cottu Cambar,</hi> specie di pro-<lb break="no"/>dotto vegetabile, che fu per lungo tempo er-<lb break="no"/>roneamente attribuito alla <hi rendition="#i">Mimosa spicata Pluck.</hi>
+                    <lb break="yes"/>Questa Cinchona di Malacca non sarebbe per<lb break="yes" />avventura una specie diversa dalla <hi rendition="#i">C. excelsa?</hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">B<lb break="yes"/>
+                            <hi rendition="#k">cinchonae corollis glaberrimis.</hi>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">a. Staminibus inclusis.</hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>8. <hi rendition="#i">C. grandiflora, tubo corollae longissimo,<lb break="yes" />fol. lanceolato oblongis utrinque glabris.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Io ho ritenuto l&#x2019;antico nome della Flor peruv.<lb break="yes"/>benchè <persName key="ruizlópez_hipolito">Ruiz</persName> chiami questa specie <hi rendition="#i">Cosmibuena<lb break="yes"/>obtusifolia</hi> (Flor. per. vol. III). Essa è iden-<lb break="no"/>tica colla <hi rendition="#i">C. longiflora Mut.,</hi> denominazione la<lb break="yes"/>
+                    <pb n="203" facs="#f0052"/> quale arrecò non poca confusione, perchè con<lb break="yes"/>tal nome fu già chiamata da <persName key="lambert_ab" >Lambert</persName> la cor-<lb break="no"/>teccia febbrifuga delle isole, <hi rendition="#i">stam. longe exertis,</hi>
+                    <lb break="yes"/>descritta nel <hi rendition="#i">Journal de Physique</hi> sotto il titolo<lb break="yes"/>di <hi rendition="#i">C. caribaea.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>La nostra <hi rendition="#i">C. grandiflora</hi> ha fiori odorosi gra-<lb break="no"/>tissimi: cresce nelle regioni calde a due o tre-<lb break="no" />cento tese di altezza sopra que&#x2019;monti la cui<lb break="yes"/>media temperatura è di 18&#x2014;19 gradi.</p>
+                <lb break="yes"/>
+                <p>9. <hi rendition="#i">C. parviflora, fol. ovatis glabris, filamentis<lb break="yes"/>basi dilatatis et pubescentibus Mut. Mss.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>I semi di questa Cinchona sono più piccioli<lb break="yes"/>che in ogni altra.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">b. Staminibus exertis.</hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>10. <hi rendition="#i">C. dissimiflora, foliis cordato-oblongis<lb break="yes" />glaberrimis, limbo corollae tubo longiori, cap-<lb break="no"/>sulis sublinearibus angustissimis. Mut. Mss.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Questa e la <hi rendition="#i">C. longiflora <persName key="lambert_ab" >Lamb</persName>.</hi> sono le sole<lb break="yes"/>specie del continente <hi rendition="#i">stamin. exertis.</hi> La prima<lb break="yes" />cresce all&#x2019;altezza di 200&#x2014;700 tese nelle regioni<lb break="yes" />calde.</p>
+                <lb break="yes"/>
+                <p>11. <hi rendition="#i">C. caribaea <persName key="swarz_01" >Swartz</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>12. <hi rendition="#i">C. longiflora <persName key="lambert_ab" >Lamb</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>13. <hi rendition="#i">C. lineata <persName key="vahl_m">Vahl</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>14. <hi rendition="#i">C. floribunda <persName key="swarz_01" >Swartz</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>15. <hi rendition="#i">C. angustifolia <persName key="swarz_01" >Swartz</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>16. <hi rendition="#i">C. brachycarpa <persName key="vahl_m" >Vahl</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Queste sei specie crescono tutte nelle isole<lb break="yes"/>
+                    <pb n="204" facs="#f0053"/> delle Indie occidentali ad una temperatura di<lb break="yes"/>17&#x2014;22° R.</p>
+                <lb break="yes"/>
+                <p>17. <hi rendition="#i">C. corymbifera <persName key="forster_g" >Forster</persName>.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Nelle isole della Società nel mare del Sud.</p>
+                <lb break="yes"/>
+                <p>18. <hi rendition="#i">C. philippica Cav.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Scoperta da <persName key="nee_l">Nee</persName> presso Manilla.</p>
+                <lb break="yes"/>
+                <p>Io non ardisco di affermare che tutte le cin-<lb break="no"/>chone conosciute siano comprese sotto queste 18<lb break="yes"/>specie. Quelle soltanto ho io voluto annoverare<lb break="yes"/>che per osservazioni proprie o per altrui perfette<lb break="yes"/>figure mi sono sembrate specificamente distinte.<lb break="yes"/>La <hi rendition="#i">C. acutifolia,</hi> la <hi rendition="#i" >C. micrantha,</hi> la <hi rendition="#i">C. glandu-<lb break="no" />lifera,</hi> la <hi rendition="#i">C. dichotoma,</hi> la <hi rendition="#i">Cosmibuena</hi> e la <hi rendition="#i">C.<lb break="yes" />spinosa</hi> meritano un più accurato esame. Forse<lb break="yes" />converrebbe portare il genere a 24 specie.</p>
+                <lb break="yes"/>
+                <closer>
+                    <signed>
+                        <hi rendition="#et">A. Q.</hi>
+                    </signed>
+                </closer>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

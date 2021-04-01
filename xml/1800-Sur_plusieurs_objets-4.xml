@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="351" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Ueber einige Gegen&#x017F;ta&#x0364;nde der Chemie und<lb break="yes"/>der Naturge&#x017F;chichte des <placeName key="suedamerika" >&#x017F;u&#x0364;dlichen<lb break="yes" />Amerika&#x2019;s</placeName>.<lb break="yes"/>Vom Hrn. <persName key="humboldt_av">A. v. <hi rendition="#g">Humboldt</hi>
+                    </persName>. <note place="foot" n="*)">Aus einem Briefe an den B. <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>
+                        </hi>
+                        <hi rendition="#aq">Annal.<lb break="yes"/>de Chim. T. 35. pag.</hi> 102-111.</note>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">H</hi>offentlich werden meine Abhandlungen u&#x0364;ber die<lb break="yes"/>Phosphore&#x017F;cenz des Meers, u&#x0364;ber das be&#x017F;ondre<lb break="yes"/>Gas, welches im Sonnen&#x017F;cheine aus dem Flei&#x017F;che<lb break="yes"/>der fri&#x017F;chen Kaffeefrucht &#x017F;ich entbindet <note place="foot" n="**)">Es i&#x017F;t ange&#x017F;a&#x0364;uertes gekohltes Wa&#x017F;&#x017F;er&#x017F;toffgas, wel-<lb break="no"/>ches, vom Wa&#x017F;&#x017F;er einge&#x017F;ogen, ihm den Ge&#x017F;chmack<lb break="yes"/>von Alkohol giebt.</note>, u&#x0364;ber<lb break="yes" />einen &#x017F;chneeweißen Feld&#x017F;path, welcher, angefeuch-<lb break="no" />tet, <hi rendition="#g">allen</hi> Sauer&#x017F;toff der Atmo&#x017F;pha&#x0364;re ein&#x017F;augt;<lb break="yes"/>u&#x0364;ber die Milch der <hi rendition="#aq">Cecropia peltata</hi> und <hi rendition="#aq" >Euphor-<lb break="no"/>bia cura&#x017F;&#x017F;auica</hi> (als Beytrag zur Ent&#x017F;tehungsart<lb break="yes"/>des Caoutchouc); u&#x0364;ber die Luft, die in den Pflan-<lb break="no"/>zen circulirt &#x2014; geho&#x0364;rig eingelaufen &#x017F;eyn. Ich ge-<lb break="no"/>nieße hier &#x017F;tets der be&#x017F;ten Ge&#x017F;undheit von der Welt,<lb break="yes"/>werde mit Gefa&#x0364;lligkeiten von den Einwohnern u&#x0364;ber-<lb break="no" />ha&#x0364;uft, und die Vergu&#x0364;n&#x017F;tigungen und Empfehlungs-<lb break="no"/>&#x017F;chreiben der Spani&#x017F;chen Regierung ver&#x017F;chaffen mir<lb break="yes"/>alle Leichtigkeit zu den vorge&#x017F;etzten wi&#x017F;&#x017F;en&#x017F;chaftlichen<lb break="yes" />Unter&#x017F;uchungen. Alle meine In&#x017F;trumente, auch<lb break="yes"/>die fein&#x017F;ten, haben nichts gelitten, und mitten in<lb break="yes"/>
+                    <fw type="catch" place="bottom">den</fw>
+                    <lb break="yes"/>
+                    <pb n="352" facs="#f0002"/> den Be&#x017F;itzungen der Indianer, <hi rendition="#g">Choymas,</hi> in<lb break="yes"/>den Gebirgen von Tumiriquiri, i&#x017F;t mein Laborato-<lb break="no"/>rium eben &#x017F;o eingerichtet, als es in Paris war.<lb break="yes"/>Mein Rei&#x017F;egefa&#x0364;hrte <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName>, ein guter Kra&#x0364;u-<lb break="no"/>terkenner, wird mir jeden Tag unentbehrlicher. Die<lb break="yes"/>großen Vergu&#x0364;n&#x017F;tigungen vom Ko&#x0364;nige, deren noch<lb break="yes"/>nie ein Rei&#x017F;ender genoß, wa&#x0364;ren &#x017F;chon allein ver-<lb break="no"/>mo&#x0364;gend, un&#x017F;re Tha&#x0364;tigkeit zu verdoppeln. Seit<lb break="yes"/>7 Monaten, daß wir in die&#x017F;em &#x017F;cho&#x0364;nen Lande &#x017F;ind,<lb break="yes"/>haben wir fa&#x017F;t 4000 Pflanzen (und jede doppelt)<lb break="yes"/>getrocknet, 800 Be&#x017F;chreibungen von neuen oder<lb break="yes"/>wenig bekannten Arten abgefaßt, In&#x017F;ekten und Mu-<lb break="no"/>&#x017F;chel&#x017F;chaalen ge&#x017F;ammelt, viele Zeichnungen u&#x0364;ber die<lb break="yes"/>Anatomie der Meergewu&#x0364;rme gefertigt. Wir un-<lb break="no"/>ternahmen viele Beobachtungen u&#x0364;ber den Magne-<lb break="no"/>tismus, die Elektricita&#x0364;t, die Feuchtigkeit, die<lb break="yes"/>Temperatur, die Menge des Sauer&#x017F;toffs in der<lb break="yes"/>Luft, die Me&#x017F;&#x017F;ung der hohen Kette der Gebirge,<lb break="yes"/>welche &#x017F;ich bis nach Paria zu er&#x017F;trecken, deren Vul-<lb break="no"/>kane wir unter&#x017F;ucht haben, Vulkane, die entzu&#x0364;nde-<lb break="no"/>te brennbare Luft, Schwefel und Schwefelleber-<lb break="maybe"/>Wa&#x017F;&#x017F;er aus&#x017F;toßen. Wir &#x017F;ammelten viele Saamen-<lb break="no"/>ko&#x0364;rner, welche fu&#x0364;r den Pflanzengarten zu Paris<lb break="yes"/>be&#x017F;timmt &#x017F;ind. Wir haben uns 3 Monate im In-<lb break="no"/>nern von Neu-Andalu&#x017F;ien, und an den Ufern des<lb break="yes"/>Paria aufgehalten, wo wir ein &#x017F;ehr &#x017F;tarkes Erdbe-<lb break="no"/>ben erlitten. Ein Theil die&#x017F;er Gegenden i&#x017F;t noch<lb break="yes"/>durch Wilde bewohnt, ein andrer nur er&#x017F;t &#x017F;eit 5<lb break="yes"/>bis 6 Jahren angebaut. Wie vermo&#x0364;chte ich, Ih-<lb break="no"/>nen die Maje&#x017F;ta&#x0364;t die&#x017F;er Vegetationen, die&#x017F;e Geho&#x0364;l-<lb break="no"/>
+                    <fw type="catch" place="bottom">ze</fw>
+                    <lb break="yes"/>
+                    <pb n="353" facs="#f0003"/> ze von Ceiba, Hura, Hymena&#x0364;a zu be&#x017F;chreiben, wo<lb break="yes"/>man niemals die Sonnen&#x017F;trahlen empfindet; die<lb break="yes"/>große Mannigfaltigkeit der Thiere, das pra&#x0364;chtige<lb break="yes"/>Gefieder der Vo&#x0364;gel, die Affen, Tieger, den ab-<lb break="no"/>&#x017F;cheulichen Anblick der (30&#x2032; langen) Crokodile, von<lb break="yes"/>welchen die Flu&#x0364;&#x017F;&#x017F;e wimmeln? &#x2014; &#x2014; Caraccas i&#x017F;t<lb break="yes"/>eine reizende Haupt&#x017F;tadt, die in einem Thale gele-<lb break="no"/>gen i&#x017F;t, welches 426 Lachter Ho&#x0364;he hat, und bey<lb break="yes"/>10° 31 der Breite, der ku&#x0364;hlen Temperatur von<lb break="yes"/>Paris genießt. Von dort ab er&#x017F;tiegen wir die Spiz-<lb break="no"/>ze des beru&#x0364;chtigten <hi rendition="#g">Silla de Caraccas,</hi> oder<lb break="yes"/>
+                    <hi rendition="#g">Sierra de <placeName key="avila">Avila</placeName>
+                    </hi>, wo, auf 1316 Lachter Ho&#x0364;he,<lb break="yes"/>wir &#x017F;cho&#x0364;ne prismati&#x017F;che Kry&#x017F;tallen von Titanium;<lb break="yes"/>und außer den&#x017F;elben noch Dendriten (&#x017F;tatt des Braun-<lb break="no"/>&#x017F;teins) von Titankalke fanden.</p>
+                <lb break="yes"/>
+                <p>Wir denken von hier u&#x0364;ber Varina, und die mit<lb break="yes"/>Schnee bedeckten Gebirge von Merida nach den<lb break="yes"/>Ca&#x017F;caden des <hi rendition="#g">Rio nigro,</hi> zu gehn, um durch<lb break="yes"/>Gujana und Cumana zuru&#x0364;ckzukommen, von da<lb break="yes"/>wir nach der Havana und Mexico gehen werden. &#x2014;<lb break="yes"/>Schon vor 3 Jahren erwa&#x0364;hnte ich, daß man in<lb break="yes"/>den uranfa&#x0364;nglichen Gebirgen von Italien, Frank-<lb break="no"/>reich, Deut&#x017F;chland, Pohlen (und jetzt fu&#x0364;ge ich hin-<lb break="no"/>zu) Spanien einen Parallelismus in der Rich-<lb break="no"/>tung (oder Neigung) zwi&#x017F;chen den Lagen der<lb break="yes"/>bla&#x0364;ttrigen Granite und der Thon-, Glimmer-<lb break="maybe"/>und Horn&#x017F;chiefer wahrnimmt, daß die&#x017F;e Lagen<lb break="yes"/>nach Nordwe&#x017F;t fallen, und daß ihre Richtung<lb break="yes"/>mit der Ach&#x017F;e der Erdkugel einen Winkel von<lb break="yes"/>
+                    <fw type="catch" place="bottom">45,57°</fw>
+                    <lb break="yes"/>
+                    <pb n="354" facs="#f0004"/> 45,57° machen, daß dies Fallen und Streichen<lb break="yes"/>keinesweges von der Direktion oder Ge&#x017F;talt des Ge-<lb break="no"/>birges abha&#x0364;ngt; daß die Tha&#x0364;ler keinen Einfluß<lb break="yes"/>darauf haben, &#x017F;ondern daß jenes &#x017F;ich auf eine viel<lb break="yes"/>gro&#x0364;ßere und allgemeinere Ur&#x017F;ache, und zwar auf<lb break="yes"/>die Anziehungskraft beziehe, die bey dem Fe&#x017F;twer-<lb break="no"/>den des Erdko&#x0364;rpers wirk&#x017F;am war. Da ich den<lb break="yes"/>gro&#x0364;ßten Theil von Europa zu Fuß und mit dem<lb break="yes"/>Sextanten und der Magnetnadel durchwandert ha-<lb break="no"/>be, &#x017F;o habe ich eine betra&#x0364;chtliche Menge Beobach-<lb break="no"/>tungen u&#x0364;ber die&#x017F;en <choice>
+                        <sic>Gegen&#x017F;taud</sic>
+                        <corr type="editorial">Gegen&#x017F;tand</corr>
+                    </choice> ge&#x017F;ammelt. Zu<lb break="yes"/>meinem großen Er&#x017F;taunen habe ich in den Cordille-<lb break="no"/>ren des Paria, in Neu-Andalu&#x017F;ien, <placeName key="barcelona">Neu-Bar-<lb break="no" />cellona</placeName> und Venezuela beobachtet, daß in der neuen<lb break="yes"/>Welt, nahe beym <placeName key="aequator">Aequator</placeName>, die Schichten die&#x017F;el-<lb break="no"/>ben Ge&#x017F;etze, den&#x017F;elben Parallelismus befolgen.</p>
+                <lb break="yes"/>
+                <p>Nach <persName key="coulomb_cad">
+                        <hi rendition="#g">Coulomb&#x2019;s</hi>
+                    </persName> merkwu&#x0364;rdigen Ver&#x017F;uchen<lb break="yes"/>u&#x0364;ber die Luft, die mit einer Art von Verplatzung<lb break="yes"/>aus den Baum&#x017F;ta&#x0364;mmen geht, wenn man in &#x017F;ie<lb break="yes"/>bohrt, ver&#x017F;uchte ich da&#x017F;&#x017F;elbe mit der <hi rendition="#aq" >Clu&#x017F;ea ro&#x017F;ea</hi>
+                    <lb break="yes"/>in deren <hi rendition="#aq">va&#x017F;is cochlear.</hi> (nach <persName key="malpighi_m">
+                        <hi rendition="#g">Malpighi</hi>
+                    </persName>) eine<lb break="yes"/>unermeßliche Menge Luft circulirt. Die&#x017F;e Luft ent-<lb break="no"/>ha&#x0364;lt <formula notation="TeX" >\frac{35}{100}</formula> an Sauer&#x017F;toff. Ihre Bla&#x0364;tter, im Son-<lb break="no"/>nen&#x017F;cheine unter Wa&#x017F;&#x017F;er, geben nicht einen Millime-<lb break="no"/>ter-Wu&#x0364;rfel an Luft. Die&#x017F;e umlaufende Luft dient<lb break="yes"/>&#x017F;icherlich (wie im thieri&#x017F;chen Ko&#x0364;rper) die fa&#x017F;erigten<lb break="yes"/>Theile durch Ein&#x017F;augung des Sauer&#x017F;toffs gerinnen<lb break="yes"/>zu machen; <choice>
+                        <sic>ans</sic>
+                        <corr type="editorial">aus</corr>
+                    </choice> jener Milch bildet &#x017F;ich ein ela&#x017F;ti-<lb break="no" />&#x017F;cher Schleim. Obgleich die Reinigkeit der hie&#x017F;igen<lb break="yes"/>
+                    <fw type="catch" place="bottom">Luft</fw>
+                    <lb break="yes"/>
+                    <pb n="355" facs="#f0005"/> Luft u&#x0364;ber 0,305 an Sauer&#x017F;toff, be&#x017F;onders die<lb break="yes"/>Nachtzeit &#x017F;teigt, &#x017F;o habe ich dagegen gefunden, daß<lb break="yes"/>die Luft in den Schoten und Kap&#x017F;eln der Aequino-<lb break="no"/>ctial-Pflanzen, z. B. die <hi rendition="#g" >Paulinien</hi> viel mehr<lb break="yes"/>Stick&#x017F;toff entha&#x0364;lt, als in un&#x017F;rer atmo&#x017F;pha&#x0364;ri&#x017F;chen<lb break="yes"/>Luft i&#x017F;t; &#x017F;ie &#x017F;teigt &#x017F;elten auf 0,24 oder 0,25 an<lb break="yes"/>Sauer&#x017F;toff. Die Luft in den Knoten der grasarti-<lb break="no"/>gen Pflanzen (<hi rendition="#aq">culmi genic.</hi>) hat hier nur 0,15 an<lb break="yes"/>Sauer&#x017F;toff. Alles dies bewei&#x017F;t, daß die Luft, die cir-<lb break="no"/>culirt, reiner i&#x017F;t, und die Luft, die in Ruhe, und in<lb break="yes"/>Kap&#x017F;eln oder Beutelchen abge&#x017F;etzt i&#x017F;t, weniger rein<lb break="yes"/>als die atmo&#x017F;pha&#x0364;ri&#x017F;che Luft &#x017F;ey. Die er&#x017F;te i&#x017F;t fri&#x017F;ch<lb break="yes"/>durch die Werkzeuge hervorgebracht, die das Wa&#x017F;-<lb break="no"/>&#x017F;er zerlegt, und &#x017F;ie begiebt &#x017F;ich hin, wo &#x017F;ie die Fa&#x0364;-<lb break="no"/>&#x017F;erchen nieder&#x017F;chlagen &#x017F;oll, um das fa&#x017F;erigte Gewe-<lb break="no" />be zu bilden. Die andre i&#x017F;t das Ru&#x0364;ckbleib&#x017F;el eines<lb break="yes"/>Gas&#x2019;s, welches &#x017F;chon &#x017F;eine Dien&#x017F;te gethan hat.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

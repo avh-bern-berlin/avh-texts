@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="2" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#k">Notice sur la configuration du sol de l&#x2019;Espagne<lb break="yes"/>et son climat,</hi>
+                    <hi rendition="#i">par M. A. de <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <note place="foot" n="1">Cette notice, écrite en 1808, a été revue et augmentée<lb break="yes"/>par M. de <persName key="humboldt_av" >Humboldt</persName>, en 1826.</note>.</head>
+                <lb break="yes"/>
+                <p>Aucun pays de l&#x2019;Europe ne présente une<lb break="yes"/>configuration aussi singulière que celle de<lb break="yes"/>l&#x2019;Espagne; c&#x2019;est cette forme qui explique et<lb break="yes"/>l&#x2019;aridité du sol dans l&#x2019;intérieur des Castilles,<lb break="yes"/>
+                    <pb n="3" facs="#f0002"/> où ne manquent cependant pas les rivières,<lb break="yes"/>et la différence de température que nous ob-<lb break="no" />servons entre Madrid et Naples, deux villes<lb break="yes"/>situées à peu près sous le m&#x00EA;me degré de lati-<lb break="no"/>tude. Nous ne pourrons donner qu&#x2019;une légère<lb break="yes"/>esquisse de ce tableau météorologique de l&#x2019;Es-<lb break="no"/>pagne: un très-petit nombre d&#x2019;observations sur<lb break="yes"/>la température moyenne ou sur les hauteurs<lb break="yes"/>barométriques y ont été faites jusqu&#x2019;à ce jour.<lb break="yes"/>Beaucoup de matériaux précieux peuvent &#x00EA;tre<lb break="yes"/>restés enfouis dans les manuscrits de quelques<lb break="yes" />personnes éclairées, qui, sans communication<lb break="yes"/>entre elles ou avec des savans étrangers, se<lb break="yes"/>sont adonnées à des recherches de ce genre.<lb break="yes"/>Quand les observations exactes nous manquent,<lb break="yes"/>il faut se contenter de l&#x2019;analogie que présen-<lb break="no"/>tent les pays limitrophes. Le tableau physique<lb break="yes" />de la Nouvelle-Espagne, sous le rapport mé-<lb break="no"/>thodique, est peut-&#x00EA;tre plus facile à tracer que<lb break="yes"/>celui de l&#x2019;ancienne.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;intérieur de l&#x2019;Espagne est un plateau; et,<lb break="yes"/>parmi les plateaux de l&#x2019;Europe qui occupent<lb break="yes"/>une grande étendue de terrain, c&#x2019;est le plus<lb break="yes"/>élevé. La Suisse, le Tyrol, l&#x2019;Écosse, renfer-<lb break="no"/>ment des groupes de montagnes rapprochées<lb break="yes"/>les unes des autres: ce sont des masses sillon-<lb break="no"/>nées par des vallées profondes, entourées de<lb break="yes"/>plaines peu élevées. La Suisse n&#x2019;est pas un vrai<lb break="yes"/>plateau. Les cantons de Berne, de Fribourg,<lb break="yes"/>
+                    <pb n="4" facs="#f0003"/> de Zurich, tous ces pays couverts d&#x2019;une for-<lb break="no"/>mation de grès tertiaire ou molasse, sont des<lb break="yes" />plaines dont la hauteur, au-dessus du niveau<lb break="yes"/>de l&#x2019;Océan, n&#x2019;est que de 240 à 280 toises <note place="foot" n="1" >Berne (ville), 298 toises; lac de Thoun, 274 toises, lac<lb break="yes"/>de Lucerne, 230 toises; lac de Zurich, 208 toises; lac de<lb break="yes" />Genève, 192 toises.</note>:<lb break="yes"/>elles font partie de la grande vallée longitu-<lb break="no"/>dinale qui se prolonge du sud-sud-ouest au<lb break="yes"/>nord-est, entre la cha&#x00EE;ne des <placeName key="alpen" >Hautes-Alpes</placeName> et<lb break="yes"/>le Jura, comme le prouvent les belles cartes<lb break="yes"/>géologiques de M. Ébel. La France et surtout<lb break="yes"/>l&#x2019;Allemagne présentent des plateaux peu éten-<lb break="no"/>dus sans doute, mais bien dignes d&#x2019;&#x00EA;tre cités.<lb break="yes"/>En France, le plateau le plus élevé est le<lb break="yes" />plateau granitique de l&#x2019;<placeName key="auvergne">Auvergne</placeName>, sur lequel<lb break="yes"/>reposent le Mont-d&#x2019;Or, le Cantal et le Puy-de-<lb break="maybe"/>D&#x00F4;me. Sa hauteur moyenne au-dessus de la<lb break="yes"/>mer est, d&#x2019;après les mesures barométriques<lb break="yes"/>de M. <persName key="ramonddecarbonnieres_lf" >Ramond</persName>, de 400 toises. La Lorraine forme<lb break="yes"/>un plateau qui s&#x2019;étend entre les Vosges et la<lb break="yes"/>cha&#x00EE;ne des montagnes qui, par Épinal et Saint-<lb break="maybe"/>Mihel, se joint aux <placeName key="ardennen">Ardennes</placeName>: ce plateau n&#x2019;a<lb break="yes"/>cependant que 130 à 140 toises d&#x2019;élévation.<lb break="yes"/>Le centre des plaines de la France, le dé-<lb break="no" />partement de Loir-et-Cher, a une hauteur de<lb break="yes"/>80 à 90 toises.</p>
+                <lb break="yes"/>
+                <p>Le plateau le plus étendu et le plus élevé de<lb break="yes"/>l&#x2019;Allemagne est la <placeName key="bayern">Bavière</placeName>. Une vaste plaine,<lb break="yes"/>
+                    <pb n="5" facs="#f0004"/> fond d&#x2019;un ancien lac, s&#x2019;étend depuis les mon-<lb break="no"/>tagnes granitiques du haut Palatinat (Fichtel<lb break="yes"/>Gebürge) jusqu&#x2019;au pied des <placeName key="tyroleralpen" >Alpes du Tyrol</placeName>:<lb break="yes"/>ces plaines (et ce fait est très-curieux) ont<lb break="yes"/>une élévation de 250 à 260 toises au-dessus du<lb break="yes"/>niveau de l&#x2019;Océan. Le plateau de la Souabe a<lb break="yes"/>140 toises.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;intérieur des deux Castilles offre un pla-<lb break="no"/>teau qui surpasse en hauteur et en étendue<lb break="yes"/>tous ceux que nous venons de nommer. Son<lb break="yes"/>élévation moyenne est de 350 toises. La hau-<lb break="no"/>teur barométrique de Madrid est, d&#x2019;après une<lb break="yes"/>note qui m&#x2019;a été communiquée, en 1805, par<lb break="yes"/>M. <persName key="bauza_f">Bauza</persName>, astronome distingué, et directeur<lb break="yes"/>au dép&#x00F4;t des cartes de la marine à Madrid, de<lb break="yes"/>26 pouces 2 lignes &#x2156;. Elle est par conséquent de<lb break="yes"/>deux pouces ou de <formula notation="TeX" >\frac{1}{14}</formula> moindre que la hauteur<lb break="yes"/>moyenne du mercure au niveau de l&#x2019;Océan. C&#x2019;est<lb break="yes"/>la différence de pression atmosphérique qu&#x2019;é-<lb break="no"/>prouvent tous les corps exposés à l&#x2019;air libre à<lb break="yes"/>Madrid, à Cadiz, ou à Bordeaux. On voit bais-<lb break="no"/>ser le baromètre à Madrid jusqu&#x2019;à 25 pouces<lb break="yes"/>6 lignes et m&#x00EA;me au-delà. Le <hi rendition="#i">Diario de los<lb break="yes"/>nuevos descubrimientos de todas las Ciencias<lb break="yes"/>fisicas,</hi> tome 111, pages 56, 200, 407, con-<lb break="no"/>tient une série d&#x2019;observations météorologiques<lb break="yes"/>très-intéressantes, mais qui, malheureusement,<lb break="yes" />n&#x2019;embrassent pas une année entière.</p>
+                <lb break="yes"/>
+                <p>Voici le tableau des variations de la pres-<lb break="no"/>
+                    <pb n="6" facs="#f0005"/> sion de l&#x2019;air dans les neuf premiers mois de<lb break="yes"/>l&#x2019;année 1793:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>1793.<lb break="yes"/>MOIS.</cell>
+                        <cell cols="2">MAXIMUM.</cell>
+                        <cell cols="2">MINIMUM.</cell>
+                        <cell cols="2"> HAUTEUR<lb break="yes"/>barométrique<lb break="yes" />moyenne.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>po.</cell>
+                        <cell>lig.</cell>
+                        <cell>po.</cell>
+                        <cell>lig.</cell>
+                        <cell>po.</cell>
+                        <cell>lig.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Janvier</cell>
+                        <cell>26</cell>
+                        <cell>5 8</cell>
+                        <cell>25</cell>
+                        <cell>9 8</cell>
+                        <cell>26</cell>
+                        <cell>2 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Février</cell>
+                        <cell>26</cell>
+                        <cell>5 3</cell>
+                        <cell>25</cell>
+                        <cell>6 2</cell>
+                        <cell>26</cell>
+                        <cell>1 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mars</cell>
+                        <cell>26</cell>
+                        <cell>4 7</cell>
+                        <cell>25</cell>
+                        <cell>6 0</cell>
+                        <cell>25</cell>
+                        <cell>11 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Avril</cell>
+                        <cell>26</cell>
+                        <cell>2 4</cell>
+                        <cell>25</cell>
+                        <cell>6 9</cell>
+                        <cell>25</cell>
+                        <cell>11 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mai</cell>
+                        <cell>26</cell>
+                        <cell>4 6</cell>
+                        <cell>25</cell>
+                        <cell>10 5</cell>
+                        <cell>26</cell>
+                        <cell>0 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Juin</cell>
+                        <cell>26</cell>
+                        <cell>4 0</cell>
+                        <cell>25</cell>
+                        <cell>11 8</cell>
+                        <cell>26</cell>
+                        <cell>1 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Juillet</cell>
+                        <cell>26</cell>
+                        <cell>4 3</cell>
+                        <cell>26</cell>
+                        <cell>0 7</cell>
+                        <cell>26</cell>
+                        <cell>2 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ao&#x00FB;t</cell>
+                        <cell>26</cell>
+                        <cell>3 2</cell>
+                        <cell>25</cell>
+                        <cell>11 5</cell>
+                        <cell>26</cell>
+                        <cell>1 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Septembre</cell>
+                        <cell>26</cell>
+                        <cell>4 3</cell>
+                        <cell>25</cell>
+                        <cell>11 0</cell>
+                        <cell>26</cell>
+                        <cell>1 7</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Les deux nivellemens barométriques que<lb break="yes"/>j&#x2019;avais faits en Espagne, de Valence à Madrid,<lb break="yes"/>et de Madrid à <placeName key="acoruna">la Corogne</placeName>, m&#x2019;avaient donné,<lb break="yes" />par Madrid à la grande place, 543 toises (<hi rendition="#i">An-<lb break="no" />nales de Ciencias naturales,</hi> t. 1<hi rendition="#sup">er</hi>, p. 86). Ce<lb break="yes"/>premier aper&#x00E7;u, obtenu en 1799, a été con-<lb break="no"/>firmé par d&#x2019;autres observateurs munis de meil-<lb break="no"/>leurs instrumens que ceux que je pouvais em-<lb break="no" />ployer alors. M. Antillon, dans la nouvelle<lb break="yes"/>
+                    <pb n="7" facs="#f0006"/> édition de la géographie <note place="foot" n="1">
+                        <hi rendition="#i">Elementos de la Geografia de Espana,</hi> 1808, p. <hi rendition="#k">xxxvi.</hi>
+                    </note>, donne, par la hau-<lb break="no"/>teur barométrique moyenne de Madrid, 30 &#x2153;<lb break="yes"/>pouces, mesure de Burgos, d&#x2019;où résulte une<lb break="yes"/>hauteur de 804 varas, ou 344 toises. Dans les<lb break="yes" />profils de la Péninsule espagnole, que j&#x2019;ai pu-<lb break="no"/>bliés en 1825, dans l&#x2019;atlas de mon <hi rendition="#i">Voyage aux<lb break="yes" />régions équinoxiales,</hi> je me suis arr&#x00EA;té à<lb break="yes"/>340 toises. Depuis cette publication, M. <persName key="bauza_f">Bauza</persName>
+                    <lb break="yes"/>a bien voulu me communiquer une série d&#x2019;ob-<lb break="no"/>servations astronomiques faites par lui, au<lb break="yes" />moyen d&#x2019;un excellent baromètre de <persName key="troughton_e" >Trougtin</persName>,<lb break="yes"/>dans la maison du <hi rendition="#i" >Déposito hydrografico</hi> de<lb break="yes"/>Madrid; les hauteurs du mercure furent ob-<lb break="no"/>servées quatre fois par jour à 8 ou 9 heures du<lb break="yes"/>matin, à midi, à 2 heures après-midi et à mi-<lb break="no"/>nuit. Les observations de 1820 ont donné,<lb break="yes" />réduites à zéro de température:</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Moyennes des mois en pouces, et millièmes de pouces<lb break="yes"/>anglais.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <cb type="start"/>
+                    <list>
+                        <item>Janvier,<space dim="horizontal"/>27,834</item>
+                        <lb break="yes"/>
+                        <item>Février,<space dim="horizontal"/>27,833</item>
+                        <lb break="yes"/>
+                        <item>Mars,<space dim="horizontal"/>27,633</item>
+                        <lb break="yes"/>
+                        <item>Avril,<space dim="horizontal"/>27,617</item>
+                        <cb/>
+                        <item>Mai,<space dim="horizontal"/>27,726</item>
+                        <lb break="yes"/>
+                        <item>Juin,<space dim="horizontal"/>27,807</item>
+                        <lb break="yes"/>
+                        <item>Juillet,<space dim="horizontal"/>27,736</item>
+                        <lb break="yes"/>
+                        <item>Ao&#x00FB;t,<space dim="horizontal"/>27,742</item>
+                        <cb/>
+                        <item>Septembre,<space dim="horizontal"/>27,829</item>
+                        <lb break="yes"/>
+                        <item>Octobre,<space dim="horizontal"/>27,705</item>
+                        <lb break="yes"/>
+                        <item>Novembre,<space dim="horizontal"/>27,665</item>
+                        <lb break="yes"/>
+                        <item>Décembre,<space dim="horizontal"/>27,791</item>
+                    </list>
+                    <cb type="end"/>
+                    <lb break="yes"/>
+                    <p>Il résulte de ces observations de M. <persName key="bauza_f" >Bauza</persName>,<lb break="yes"/>par la hauteur moyenne du baromètre à Ma-<lb break="no"/>drid, en 1820:</p>
+                    <lb break="yes"/>
+                    <pb n="8" facs="#f0007"/>
+                    <p>27,742 pouces angl. = 0<hi rendition="#sup">m</hi>, 70,465, le mer-<lb break="no"/>cure réduit à zéro de température. En suppo-<lb break="no" />sant l&#x2019;air à Madrid à 15° cent., et au niveau de<lb break="yes"/>la mer, le mercure 0<hi rendition="#sup">m</hi>, 763 à 15°, on obtient,<lb break="yes"/>d&#x2019;après la forme de M. <persName key="laplace_ps" >Laplace</persName>, pour la hau-<lb break="no"/>teur de Madrid, 651 mètres ou 334 toises.<lb break="yes"/>Des observations correspondantes, faites par<lb break="yes"/>MM. <persName key="ferrerycafranga_jj" >Ferrer</persName> et <persName key="bauza_f">Bauza</persName> à Bilbao et à Madrid, au<lb break="yes"/>moyen de deux baromètres bien comparés, ont<lb break="yes"/>donné à M. <persName key="bauza_f">Bauza</persName> la hauteur de Madrid, de<lb break="yes"/>336 toises. Les résultats extr&#x00EA;mes oscillèrent<lb break="yes"/>de 314 toises 28 à 343 toises. Madrid est par<lb break="yes"/>conséquent de 30 toises plus élevé que la ville<lb break="yes"/>d&#x2019;Inspruck, située dans une des gorges du Ty-<lb break="no"/>rol. Madrid est cinq fois plus élevé que le<lb break="yes"/>mont Valérien, un tiers de plus élevé que Ge-<lb break="no" />nève. <persName key="lalande_jjlfd">Lalande</persName> avait conclu, d&#x2019;observations que<lb break="yes"/>le célèbre géomètre Don <persName key="juanysantacilia_j">George Juan</persName> lui avait<lb break="yes" />communiquées, que la hauteur de Madrid (Mé-<lb break="no"/>moires de l&#x2019;Académie des sciences de Paris<lb break="yes"/>pour l&#x2019;année 1776, p. 148,) était, à la rue<lb break="yes"/>de los Presiados, près du <hi rendition="#i">portijo</hi> de San Mar-<lb break="no"/>tin, de 294 toises au-dessus de Paris; ce<lb break="yes"/>qui donnerait 314 toises au-dessus du niveau<lb break="yes"/>de l&#x2019;Océan. Le palais de la Granja est par con-<lb break="no"/>séquent de 5 toises plus élevé que le bord du<lb break="yes"/>cratère du Vésuve.</p>
+                    <lb break="yes"/>
+                    <p>Pour offrir une idée plus précise de la con-<lb break="no"/>figuration du sol de l&#x2019;Espagne, je donnerai<lb break="yes"/>
+                        <pb n="9" facs="#f0008"/> ici, d&#x2019;après mon nivellement barométrique,<lb break="yes"/>les points principaux dans la direction du sud-<lb break="maybe"/>est au nord-ouest de la Méditerranée à l&#x2019;Océan<lb break="yes"/>cantabre, en passant par Madrid et la grande<lb break="yes"/>cha&#x00EE;ne granitique du Guadarrama, qui sépare<lb break="yes"/>les deux Castilles.</p>
+                    <lb break="yes"/>
+                    <table xml:id="tb1-1" next="#tb1-2">
+                        <row>
+                            <cell/>
+                            <cell>toises.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Alginète, entre Valence et le Rio Xujar</cell>
+                            <cell>65</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Venta de Moxente</cell>
+                            <cell>164</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Puerto de Almansa</cell>
+                            <cell>317</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Almansa</cell>
+                            <cell>348</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Bonéte</cell>
+                            <cell>477</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Albaceite</cell>
+                            <cell>341</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Minaya</cell>
+                            <cell>374</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Quintanar de la Orden</cell>
+                            <cell>351</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Ocan&#x0303;a</cell>
+                            <cell>395</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <placeName key="aranjuez">Aranjuez</placeName>
+                            </cell>
+                            <cell>258</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Valdemoro</cell>
+                            <cell>317</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Madrid</cell>
+                            <cell>340</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Escurial <note place="foot" n="1">Mon observation du matin, réduite sur Madrid, m&#x2019;a<lb break="yes"/>donné le Lion 803 toises au-dessus du niveau de la mer. J&#x2019;ai<lb break="yes" />diminué ce résultat, parce que M. <persName key="betancourt_ad">de Bétancourt</persName> a trouvé,<lb break="yes"/>j&#x2019;ignore d&#x2019;après quelle formure, par l&#x2019;Escurial, 511; par le<lb break="yes"/>Lion, 729 toises; mais M. <persName key="bauza_f">Bauza</persName> donne à l&#x2019;Escurial 563 toi-<lb break="no"/>ses; ce qui me rassure.</note>
+                            </cell>
+                            <cell>541</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Puerto de Guadarrama, près du Lion</cell>
+                            <cell>770</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Villacastin</cell>
+                            <cell>572</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Sanchidrian</cell>
+                            <cell>474</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Medina del Campo</cell>
+                            <cell>330</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Tordesillas</cell>
+                            <cell>334</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Villalpando</cell>
+                            <cell>320</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="10" facs="#f0009"/>
+                    <table xml:id="tb1-2" prev="#tb1-1">
+                        <row>
+                            <cell/>
+                            <cell>toises.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <placeName key="benavent">Bénavente</placeName>
+                            </cell>
+                            <cell>330</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Astorga</cell>
+                            <cell>410</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Villafranca</cell>
+                            <cell>217</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Venta del Pagada del Bastro</cell>
+                            <cell>480</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Sobrado</cell>
+                            <cell>277</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Lugo</cell>
+                            <cell>209</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Gutriz</cell>
+                            <cell>212</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <placeName key="acoruna">La Corogne</placeName>
+                            </cell>
+                            <cell>3</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Voici d&#x2019;autres résultats obtenus, en 1817,<lb break="yes"/>par M. <persName key="bauza_f">Bauza</persName>, et fondés sur des observations<lb break="yes"/>correspondantes faites à Bilbao.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell/>
+                            <cell>toises.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Posada de Torrosa</cell>
+                            <cell>34</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Vergara</cell>
+                            <cell>110</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Vittoria</cell>
+                            <cell>277</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Miranda de Ebro</cell>
+                            <cell>236</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Quintanaxalla</cell>
+                            <cell>478</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Burgos</cell>
+                            <cell>449</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Lèrma</cell>
+                            <cell>444</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Horrubia</cell>
+                            <cell>541</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Fresnillo de la Fuente</cell>
+                            <cell>556</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Venta de Juanilla</cell>
+                            <cell>606</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Somosierra, le plus haut du chemin</cell>
+                            <cell>773</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Buitrago</cell>
+                            <cell>521</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La Granja</cell>
+                            <cell>641</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Montagne de Pen&#x0303;alara</cell>
+                            <cell>1286</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014;&#x2014; de Siete Sitios</cell>
+                            <cell>1073</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Quel est le souverain en Europe dont les<lb break="yes"/>ch&#x00E2;teaux (l&#x2019;Escurial et la Granja) soient situés<lb break="yes"/>à 550 et 640 toises de hauteur?</p>
+                    <lb break="yes"/>
+                    <pb n="11" facs="#f0010"/>
+                    <p>La hauteur du plateau des Castilles influe<lb break="yes"/>sur sa température. On est étonné de ne pas<lb break="yes"/>trouver d&#x2019;orangers en plein air, sous les 40 de-<lb break="no"/>grés de latitude, sous le m&#x00EA;me parallèle de<lb break="yes"/>Tarente, d&#x2019;une partie de la Calabre, de la<lb break="yes"/>Thessalie et de <placeName key="kleinasien">l&#x2019;Asie-Mineure</placeName>. La tempéra-<lb break="no"/>ture moyenne <note place="foot" n="1">Les physiciens trouvent la température moyenne de<lb break="yes" />l&#x2019;année en additionnant jour par jour les <hi rendition="#i" >maxima</hi> et les <hi rendition="#i">mi-<lb break="no"/>nima</hi> des observations thermométriques, et en divisant cette<lb break="yes" />somme par le nombre des observations. Sous la zone tempé-<lb break="no"/>rée, la chaleur moyenne d&#x2019;un endroit diffère sensiblement de<lb break="yes"/>la demi-somme du <hi rendition="#i" >maximum</hi> et du <hi rendition="#i">minimum</hi> de l&#x2019;année en-<lb break="no"/>tière.</note> de Madrid para&#x00EE;t &#x00EA;tre de 12° de<lb break="yes"/>
+                        <persName key="reaumur_rafd">Réaumur</persName>, ou 15° cent., quand celle de Saint-<lb break="maybe"/>Pétersbourg est de 3° &#x00BD;; celle d&#x2019;Édimbourg,<lb break="yes"/>8° <formula notation="TeX" >\frac{4}{6}</formula>; celle de Paris, 10° &#x2157;; celle de Lisbonne,<lb break="yes"/>16° &#x2157;; celle de Naples, 18°; celle des pays si-<lb break="no"/>tués sur l&#x2019;équateur, et au niveau de l&#x2019;Océan,<lb break="yes"/>27° &#x2157; du thermomètre centésimal. G&#x00EA;nes est<lb break="yes"/>de 4 degrés de latitude plus septentrional<lb break="yes"/>que Madrid; et cependant la température de<lb break="yes"/>G&#x00EA;nes est de près de 2 degrés plus élevée que<lb break="yes"/>celle de la capitale de l&#x2019;Espagne. Telle est l&#x2019;in-<lb break="no"/>fluence des causes locales, de l&#x2019;élévation du<lb break="yes"/>site, de la proximité de la mer, d&#x2019;une cha&#x00EE;ne<lb break="yes"/>de montagnes qui arr&#x00EA;te les vents froids du<lb break="yes"/>nord, et d&#x2019;une infinité de circonstances dont la<lb break="yes"/>réunion modifie la température des lieux et<lb break="yes"/>l&#x2019;inflexion des lignes isothermes.</p>
+                    <lb break="yes"/>
+                    <pb n="12" facs="#f0011"/>
+                    <p>Rome, de 2° 32&#x2032; plus austral que G&#x00EA;nes,<lb break="yes"/>mais de 1° 29&#x2032; plus boréal que Madrid, a pres-<lb break="no"/>que la m&#x00EA;me température moyenne que cette<lb break="yes"/>dernière ville. Elle est entre 15° &#x2158;, d&#x2019;après<lb break="yes"/>un grand nombre d&#x2019;observations très-exactes<lb break="yes"/>faites par M. Calandrelli, et par M. <persName key="humboldt_wv">Guillaume de<lb break="yes"/>Humboldt</persName>, jadis ministre du roi de Prusse en<lb break="yes"/>Italie. Le tableau suivant indique la tempéra-<lb break="no"/>ture moyenne de 9 mois observés à Madrid et<lb break="yes" />à Rome, en 1793 et en 1807. Je n&#x2019;ai pu me<lb break="yes"/>procurer des observations faites à la m&#x00EA;me<lb break="yes"/>époque; mais on sait que, dans les tempéra-<lb break="no"/>tures moyennes, la variation d&#x2019;une année à<lb break="yes"/>l&#x2019;autre est très-peu sensible.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <table>
+                        <head>TEMPÉRATURE MOYENNE.</head>
+                        <lb break="yes"/>
+                        <row>
+                            <cell cols="2">
+                                <hi rendition="#k">a madrid</hi>
+                                <note place="foot" n="1">Les observations de Madrid sont tirées du <hi rendition="#i">Diario de<lb break="yes"/>nuevos discubrimientos,</hi> cité plus haut, p. 8.</note>.</cell>
+                            <cell>
+                                <hi rendition="#k">a rome.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell cols="2">Latitude 40° 25&#x2032; 18&#x2033;.<lb break="yes" />Élévation, 340 toises.</cell>
+                            <cell> Latitude, 41° 53&#x2032; 54&#x2033;.<lb break="yes"/>Élévation, 9 toises.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Janvier.</cell>
+                            <cell>3°, 8 R.</cell>
+                            <cell>4°, 5 R.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Février.</cell>
+                            <cell>5, 4</cell>
+                            <cell>7, 2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Mars.</cell>
+                            <cell>7, 4</cell>
+                            <cell>8, 7</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Avril.</cell>
+                            <cell>9, 2</cell>
+                            <cell>10, 2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Mai.</cell>
+                            <cell>12, 2</cell>
+                            <cell>15, 5</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Juin.</cell>
+                            <cell>18, 1</cell>
+                            <cell>18, 0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Juillet.</cell>
+                            <cell>20, 6</cell>
+                            <cell>21, 0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Ao&#x00FB;t.</cell>
+                            <cell>22, 2</cell>
+                            <cell>21, 0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Septembre.</cell>
+                            <cell>15, 0</cell>
+                            <cell>18, 2</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="13" facs="#f0012"/>
+                    <p>A Rome m&#x00EA;me, les orangers ne peuvent point<lb break="yes"/>endurer les rigueurs de l&#x2019;hiver; il faut les cou-<lb break="no"/>vrir. Les températures moyennes décident<lb break="yes"/>certainement moins du genre de culture pro-<lb break="no"/>pre à tel ou tel climat, que la distribution de<lb break="yes"/>la chaleur entre les différentes parties de l&#x2019;an-<lb break="no"/>née. Elles exercent cependant une grande in-<lb break="no"/>fluence; et le tableau suivant indique, avec<lb break="yes"/>assez de certitude, quelle est la température<lb break="yes"/>moyenne annuelle au-dessous de laquelle telle<lb break="yes"/>ou telle production ne peut pas &#x00EA;tre cultivée<lb break="yes"/>avec succès.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Vignes donnant des vins potables.<space dim="horizontal"/>7°, 7 cent.</item>
+                        <lb break="yes"/>
+                        <item>Oliviers<space dim="horizontal"/>14, 5</item>
+                        <lb break="yes"/>
+                        <item>Orangers<space dim="horizontal"/>16, 8</item>
+                        <lb break="yes"/>
+                        <item>Cafier<space dim="horizontal"/>10, 0</item>
+                        <lb break="yes"/>
+                        <item>Canne à sucre<space dim="horizontal"/>19, 5</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Si la température moyenne du haut plateau<lb break="yes"/>de l&#x2019;Espagne est de 15° cent., celle des c&#x00F4;tes,<lb break="yes"/>depuis le 41<hi rendition="#sup">e</hi> de latitude jusqu&#x2019;au 36<hi rendition="#sup">e</hi>, est en-<lb break="no"/>tre 18° et 19°. Aussi voit-on végéter sur ces<lb break="yes"/>c&#x00F4;tes, sous des expositions abritées contre les<lb break="yes"/>vents froids, des bananiers, des héliconia et la<lb break="yes"/>canne à sucre.</p>
+                    <lb break="yes"/>
+                    <p>Le profil géologique que l&#x2019;on a ajouté à cet<lb break="yes"/>ouvrage est tracé d&#x2019;après les m&#x00EA;mes principes<lb break="yes"/>que j&#x2019;ai cru devoir suivre dans l&#x2019;atlas physique<lb break="yes" />du Nouveau Continent. Il présente la construc-<lb break="no"/>
+                        <pb n="14" facs="#f0013"/> tion extraordinaire de ce pays, dont une partie<lb break="yes"/>des c&#x00F4;tes para&#x00EE;t avoir été engloutie par les flots,<lb break="yes"/>tandis que le plateau central a résisté à l&#x2019;irrup-<lb break="no"/>tion de l&#x2019;Océan. En rappelant les traditions des<lb break="yes"/>anciens insulaires de Samothrace, et la grande<lb break="yes"/>catastrophe qui a frappé la Méditerranée, nous ne<lb break="yes"/>prétendons pas décider une question qui a récem-<lb break="no"/>ment occupé des savans d&#x2019;un mérite distingué.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;analogie de forme et de construction géo-<lb break="no"/>logique qu&#x2019;offrent la Péninsule et le Mexique<lb break="yes"/>conduit à un rapprochement qui peut intéres-<lb break="no"/>ser les physiciens. On a fait graver à la fois<lb break="yes"/>le profil de l&#x2019;ancienne et celui de la Nouvelle-<lb break="maybe"/>Espagne (<hi rendition="#k">Pl.</hi> III). Ces deux profils présentent<lb break="yes"/>des pays dont le plateau central jouit d&#x2019;un cli-<lb break="no"/>mat différent de celui des c&#x00F4;tes. Dans l&#x2019;un et<lb break="yes"/>dans l&#x2019;autre la capitale est placée au milieu du<lb break="yes"/>plateau intérieur; mais le plateau de la métro-<lb break="no"/>pole est pour ainsi dire la miniature du plateau<lb break="yes"/>de son ancienne colonie. La différence de hau-<lb break="no"/>teur qui existe entre les plus hautes cimes de<lb break="yes"/>l&#x2019;ancien et du <placeName key="amerika">nouveau monde</placeName> n&#x2019;est que de 900<lb break="yes"/>toises. Le Chimborazo n&#x2019;est que d&#x2019;un quart<lb break="yes"/>plus élevé que le Mont-Blanc, tandis que les<lb break="yes"/>hautes plaines des Castilles sont presque quatre<lb break="yes"/>fois moins hautes que le plateau central du<lb break="yes"/>Mexique. La température moyenne de Mexico<lb break="yes"/>est de 10° cent. plus basse que celle de Véra-<lb break="maybe"/>Cruz et <placeName key="acapulco" >d&#x2019;Acapulo</placeName>; celle de Madrid n&#x2019;est pro-<lb break="no"/>
+                        <pb n="15" facs="#f0014"/> bablement que de 3° à 4° cent. au-dessous de<lb break="yes"/>celle des c&#x00F4;tes de Valence. La capitale de la<lb break="yes"/>Nouvelle-Espagne jouit, comme Madrid, d&#x2019;un<lb break="yes"/>climat plus doux que l&#x2019;on devrait le supposer,<lb break="yes"/>à cause de la hauteur des deux villes. Des pla-<lb break="no"/>teaux très-étendus échauffent l&#x2019;air ambiant<lb break="yes"/>par l&#x2019;effet du rayonnement. La température<lb break="yes"/>moyenne de Mexico est de 17° cent.; elle est<lb break="yes" />au-dessous de celle de Cadiz, et, à 2° cent.<lb break="yes"/>près, égale à celle de Madrid. Le baromètre<lb break="yes"/>se soutient à Mexico à 21 pouces 7 lignes. La<lb break="yes"/>pression de l&#x2019;air y est exprimée par une co-<lb break="no"/>lonne de mercure de 5 pouces plus courte qu&#x2019;à<lb break="yes"/>Madrid.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;Espagne européenne, située à une lati-<lb break="no"/>tude sous laquelle, dans les plaines, végètent<lb break="yes"/>des palmiers (<hi rendition="#i">Ph&#x0153;nix dactilifera, Cham&#x0153;rops<lb break="yes"/>humilis</hi>), présente le spectacle majestueux<lb break="yes"/>d&#x2019;une cha&#x00EE;ne de montagnes dont la cime entre<lb break="yes"/>dans la région des neiges éternelles. Don <persName key="clementeroxas_01">Simon<lb break="yes"/>de Roxas y Clémente</persName> a trouvé, par un nivelle-<lb break="no"/>ment géodésique, exécuté avec le plus grand<lb break="yes"/>soin, que, dans la Sierra-Névada de Grenade,<lb break="yes"/>le Picacho-de-Véléta est élevé de 1,781 toises; le<lb break="yes"/>Mulahacen, de 1,826 toises au-dessus du niveau<lb break="yes"/>de la mer. Aucune montagne des Pyrénées<lb break="yes"/>n&#x2019;atteint cette grande hauteur: le Mont-Perdu,<lb break="yes"/>que l&#x2019;on a cru long-temps la cime la plus éle-<lb break="no"/>vée des Pyrénées espagnoles, n&#x2019;a que 1,746 toi-<lb break="no"/>
+                        <pb n="16" facs="#f0015"/> ses; le pic Néthou ou pic oriental de Maladetta,<lb break="yes"/>qui est le point culminant des Pyrénées, a,<lb break="yes"/>d&#x2019;après M. Reboul, 1,787 toises. Le pic de<lb break="yes"/>Mulahacen, dans la Sierra-Nevada de Grenada,<lb break="yes" />n&#x2019;a que 76 toises de moins que le pic de Té-<lb break="no" />nériffe. Cependant cette m&#x00EA;me cime, placée<lb break="yes"/>sous la latitude de la ville de Mexico, ne serait<lb break="yes"/>point couverte de neiges pendant toute l&#x2019;année:<lb break="yes"/>car ces neiges éternelles commencent sous l&#x2019;é-<lb break="no"/>quateur à 2,460 toises; sous les 20<hi rendition="#sup">e</hi> de lati-<lb break="no"/>tude, à 2,350 toises; sous les 45<hi rendition="#sup">e</hi> de latitude,<lb break="yes"/>à 1,370 toises; sous les 62<hi rendition="#sup">e</hi> de latitude, à 850<lb break="yes"/>toises. Tel est l&#x2019;abaissement de la courbe de-<lb break="no"/>puis l&#x2019;équateur jusqu&#x2019;au p&#x00F4;le <note place="foot" n="1">On assure que, dans la Sierra-Nevada de Grenada, la li-<lb break="no"/>mite des neiges perpétuelles atteint la hauteur de 1,418 toises.<lb break="yes"/>Je l&#x2019;aurais supposée plus élevée encore; car, dans les Pyré-<lb break="no"/>nées, M. Parrot l&#x2019;a trouvée, à la pente septentrionale, à<lb break="yes"/>1,300 toises; à la pente méridionale, à 1,450 toises.</note>.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

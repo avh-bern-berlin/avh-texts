@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.1" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.1" when="2018-10-06" who="wernicke_nd">Markup: correction. <note type="remarkRevision">Kodierungsfehler behoben.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="170" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="nld">
+                <head>
+                    <hi rendition="#g">AFSCHRIFT <hi rendition="#k">van enen</hi> BRIEF</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">van den heer</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">HUMBOLDT</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">aan den heer</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">BARON <hi rendition="#k">van</hi> FORELL,</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">Minister Plenipotentiaris van den Keurvorst van<lb break="yes"/>Saxen, aan het Hof van Spanje,<lb break="yes" />Ge&#x017F;chreven uit</hi>
+                    <hi rendition="#k">Caracas</hi>
+                    <hi rendition="#i">den</hi>
+                    <date>3<hi rendition="#i">den February</hi> 1800.</date>
+                </head>
+                <lb break="yes"/>
+                <opener>
+                    <salute>
+                        <hi rendition="#et">
+                            <hi rendition="#i">Mynheer de Baron!</hi>
+                        </hi>
+                    </salute>
+                </opener>
+                <lb break="yes"/>
+                <p>Behalven de brieven, welke ik u door middel van den<lb break="yes"/>
+                    <persName key="pizzaro_f">
+                        <hi rendition="#i">Pizarro,</hi>
+                    </persName> van het Fregat <hi rendition="#i">el Roy,</hi> en van een klein vaar-<lb break="no"/>
+                    <cb/> tuig van <hi rendition="#i">Cadix,</hi> heb zoeken te doen toekomen, tracht ik<lb break="yes"/>reeds weder u met dezen brief lastig te vallen. Ik weet<lb break="yes"/>hoe weinig &#x017F;taat men, in enen tyd, in welken alle de Zee&#x00EB;n<lb break="yes"/>met vyandelyke Schepen bedekt zyn, op de briefwis&#x017F;eling<lb break="yes"/>kan maken: ik weet hoe veel belang gy in den goeden uit-<lb break="no"/>&#x017F;lag van mynen arbeid &#x017F;telt, en met he veel toegevenheid<lb break="yes"/>gy alles, wat van my komt, ontfangt. Aan u, myn waar-<lb break="no"/>dige Vriend! ben ik de gelukkige om&#x017F;tandigheden, in welke<lb break="yes"/>ik my beyind, ver&#x017F;chuldigt &#x2014; aan u zal het Publiek het<lb break="yes"/>geringe nat, &#x2019;t welk mogelyk uit deze reize naar de Indien<lb break="yes" />voortvloeijen zal, ver&#x017F;chuldigt zyn. Terwyl ik den groten<lb break="yes"/>Oceaan, die de beroerde van de &#x017F;tille waereld afzondert,<lb break="yes"/>bevoer &#x2014; terwyl ik my aan de barre oevers der <hi rendition="#i">Guara-<lb break="no"/>picke,</hi> en midden in de oude Bos&#x017F;chen, welke de dalen van<lb break="yes"/>
+                    <hi rendition="#i">Tumeríquiri</hi> bedekken, bevond, was uw aandenken my al-<lb break="no"/>toos aanwezig. De mensch is tot dankbaarheid geboren, en<lb break="yes"/>de Natuurkundige, die de wetten der Natuur beöeffent,<lb break="yes"/>heeft, boven anderen, drangredenen om dankbaar te zyn.</p>
+                <lb break="yes"/>
+                <p>&#x2019;Er zyn naauwlyks 3 weken verlopen, &#x017F;edert myn laat&#x017F;te<lb break="yes"/>brief vertrokken is: maar ik vrees zo zeer, dat dezelve mis-<lb break="no"/>&#x017F;chien verloren zal raken, dat ik het wagen zal te herha-<lb break="no"/>len, &#x2019;t geen ik u reeds meermalen gemeld heb. &#x2014; Zonder<lb break="yes"/>Secretaris zynde, heb ik den moed niet, om (gelyk men<lb break="yes"/>hier gewoon is) enen en denzelfden brief tot viermalen toe<lb break="yes"/>afte&#x017F;chryven. Ver&#x017F;choon my derhalven, Mynheer de Baron!<lb break="yes"/>indien onder andere bewoordingen het wezen myner brief-<lb break="no"/>wis&#x017F;eling dikwyls het zelfde is.</p>
+                <lb break="yes"/>
+                <p>Hoe meer wy binnen in de <hi rendition="#i">Chaymas</hi> Mis&#x017F;ten zyn door-<lb break="no"/>gedrongen, hoc minder berouw wy hebben, dat wy niet<lb break="yes"/>regt&#x017F;treeksen naar de <hi rendition="#i">Havana</hi> gegaan zyn. Hoe was het<lb break="yes"/>mogelyk, zo digt by de kust van <hi rendition="#i">Paria</hi> &#x2014; by de wonde-<lb break="no"/>ren van den <hi rendition="#i">Oronoco</hi> &#x2014; by die onmetelyken bergketen<lb break="yes"/>(<hi rendition="#i">Cordillere</hi>), welke zich van <hi rendition="#i">Quito</hi> Oostwaarts tot <hi rendition="#i">Carou-<lb break="no"/>pano</hi> uit&#x017F;trekt &#x2014; by die &#x017F;tatelyke groeijing, welke ons<lb break="yes"/>
+                    <persName key="jacquin_njfv">
+                        <hi rendition="#k">Jacquin</hi>
+                    </persName> in zyne werken be&#x017F;chreven hee&#x017F;t, te zyn &#x2014; en &#x2019;er<lb break="yes"/>zich van te verwyderen met een Packet, die zich maar 3<lb break="yes"/>dagen te <hi rendition="#i">Cumana</hi> ophoudt! Daar ik ene zeer aanmerke-<lb break="no"/>lyke &#x017F;om gereed geld by my had, daar de vriend&#x017F;chap van<lb break="yes"/>den achtingswaardigen Governeur, den Scheeps-Kapitein D.<lb break="yes"/>
+                    <persName key="emparan_v">
+                        <hi rendition="#k">Vicente Emparan,</hi>
+                    </persName> my het groot&#x017F;te gemak bezorgde, daar<lb break="yes"/>ik tevens vreesde door de be&#x017F;metting ener kwaadaartige<lb break="yes" />koorts, welke na onze komst tus&#x017F;chen de keerkringen, op<lb break="yes" />ons Schip heerschte, aangedaan te zullen worden; be&#x017F;loot ik<lb break="yes"/>op ene kust te blyven, alwaar ik van wegens het gezonde<lb break="yes"/>Climaat, en afwezenheid van regen, aan&#x017F;tonds konde begin-<lb break="no"/>nen te werken; terwyl ik op het Eiland <hi rendition="#i">Cuba</hi> dit nog 3<lb break="yes"/>maanden zoude hebben moeten uit&#x017F;tellen. Waarom konde<lb break="yes"/>gy, myn waarde Vriend! die, niettegen&#x017F;taande de hoflucht,<lb break="yes"/>zulk een waar belang in de werken der Natuur &#x017F;telt, met<lb break="yes"/>ons de gevoelens van bewondering en genot niet delen, waar<lb break="yes"/>van wy doordrongen wierden, toen wy voor de eer&#x017F;te maal<lb break="yes"/>dezen bezielden grond van <placeName key="suedamerika">Zuid-Amerika</placeName> betraden? Indien<lb break="yes"/>wy in de <hi rendition="#i">Havana</hi> of te <hi rendition="#i">Caracas</hi> gekomen waren, zou-<lb break="no"/>den wy overal voet&#x017F;poren van Europeaan&#x017F;che be&#x017F;chaving heb-<lb break="no" />ben aangetroffen, maar in de Golf van <hi rendition="#i">Cariaco,</hi> aan<lb break="yes"/>
+                    <fw type="catch" place="bottom">wel-</fw>
+                    <lb break="yes"/>
+                    <pb n="171" facs="#f0002"/>
+                    <cb/> welke de wilde Indianen der moeras&#x017F;en (<hi rendition="#i">Guaraunos del<lb break="yes"/>Arco</hi>) tot op 15 mylen af&#x017F;tand naderen, kondigt alles nog<lb break="yes"/>de heer&#x017F;chappy der Natuur aan. De Tygers, de Crocodil-<lb break="no"/>len, de Apen zelve &#x017F;chrikken niet voor den Mensch; de<lb break="yes"/>kostbaar&#x017F;te Bomen, de Guajacan&#x2019;s, de Mahagony&#x2019;s, de Bra-<lb break="no"/>&#x017F;ilie-, de Campeche-hout-bomen, de Crispa&#x2019;s (Kina) &#x017F;trek-<lb break="no" />ken tot aan de kust toe en maken, door derzelver &#x017F;aamge-<lb break="no" />vlogtene takken, &#x017F;omtyds het landen moeilyk. De wateren<lb break="yes" />en de lucht zyn vervult met de zeldzaam&#x017F;te Vogelen. &#x2014;<lb break="yes"/>Van de Bo&#x2019;s af, die een Paard opeten, tot aan de Colibri<lb break="yes"/>toe, die op den kelk ener bloem rusten, zegt ons alles hier<lb break="yes"/>hoe groot, hoe vermogend en tevens hoe goed, de Na-<lb break="no"/>tuur is.</p>
+                <lb break="yes"/>
+                <p>Na dat wy &#x017F;edert 6 maanden de <hi rendition="#i">
+                        <placeName key="acoruna">Corunna</placeName>
+                    </hi> verlaten <choice>
+                        <sic>heb</sic>
+                        <corr type="editorial">heb-</corr>
+                    </choice>
+                    <lb break="no"/>ben, genieten myn reisgenoot en ik de beste gezondheid.<lb break="yes"/>Wy zyn thans reeds genoeg aan het Climaat gewoon, om te<lb break="yes"/>zien, dat een Europeaan in deze landen met voorzigtigheid<lb break="yes"/>byna even zo veel kan reizen, als in Europa. Wy hebben<lb break="yes"/>het geluk gehad, dat wy, na ons vertrek uit <hi rendition="#i" >Madrid,</hi>
+                    <lb break="yes"/>geen één in&#x017F;trument gebroken hebben; zelfs de teer&#x017F;te, de<lb break="yes"/>Barometers, de Hygrometers, de Cyanometers, het inclina-<lb break="no"/>tie Compas, de Scheikundige toe&#x017F;tel ter ontleding der damp-<lb break="no"/>kringslucht, zyn be&#x017F;tendig in gebruik geweest, &#x2019;t zy gedu-<lb break="no"/>rende onze overvaart (in welke ons de achtingwaardige Rid-<lb break="no"/>der <persName key="clavijo_r">
+                        <hi rendition="#k">Clavijo</hi>
+                    </persName> alle bedenkelyk gemak bezorgd heeft) &#x2019;t zy ter-<lb break="no" />wyl wy met Muilezels in de hoge <hi rendition="#i">Cordilleras</hi> reisden. <persName key="bonpland_ajag">
+                        <hi rendition="#k">Bon-<lb break="no"/>pland</hi>
+                    </persName> heeft enen onbegrypelyken yver en werkzaamheid ge-<lb break="no" />toond. &#x2014; Meer dan 6000 gedroogde planten (wanneer men<lb break="yes" />der de dubbele byrekent) 600 naauwkeurige be&#x017F;chryvingen<lb break="yes" />van belangryke of nieuwe planten, in&#x017F;ecten, veel hoorns en<lb break="yes"/>&#x017F;chulpen, Barometri&#x017F;che of Trigonometri&#x017F;che bepalingen van<lb break="yes"/>de hoge bergketen, Geologi&#x017F;che be&#x017F;chryvingen, een tamelyk<lb break="yes" />uitgebreidde Astronomi&#x017F;che arbeid over de lengte en breedte<lb break="yes"/>der plaat&#x017F;en, waarnemingen van de immer&#x017F;ien en émer&#x017F;ien<lb break="yes"/>der &#x017F;atelliten, en van de Zon-Eclips, die den 28&#x017F;ten Octo-<lb break="no"/>ber te zien geweest is, (deszelfs einde is te <hi rendition="#i">Cumana</hi> in<lb break="yes"/>middelbaren tyd geweest te 2 uren 14&#x2032; 22&#x2033;) proeven over<lb break="yes"/>de magneti&#x017F;chen inclinatien en declinatien, over de lengte<lb break="yes" />van den &#x017F;linger, over de warmte, de veerkracht, de door-<lb break="no" />&#x017F;chynendheid, de vogtigheid, de electri&#x017F;che lading, de hoe-<lb break="no"/>veelheid zuur&#x017F;tof van den dampkring, een vyftigtal tekenin-<lb break="no"/>gen betrekkelyk de ontleding van planten en &#x017F;chulpdieren &#x2013;<lb break="yes"/>deze zyn de vrugten van onzen arbeid in de Provintie van<lb break="yes"/>
+                    <hi rendition="#i">Cumana</hi> geweest. &#x2014; Ik heb aan den Hr. <persName key="urquijo_mld">
+                        <hi rendition="#k">d&#x2019;Urquijo</hi>
+                    </persName> ge-<lb break="no"/>&#x017F;chreven en neem de vryheid u te verzoeken hem op nieuw<lb break="yes"/>te verzekeren, dat ik de goedheid, met welke alle Koning-<lb break="no"/>lyke Officieren myne letterkundige uit&#x017F;tappen bevorderen,<lb break="yes"/>niet genoeg kan roemen.</p>
+                <lb break="yes"/>
+                <p>Wy &#x017F;preken reeds zo vlug Spaansch, dat het ons gene<lb break="yes"/>moeite kost, een ge&#x017F;prek van enige uren gaande te houden:<lb break="yes"/>ik bewonder, in de inwoners dezer afgelegene land&#x017F;treken,<lb break="yes" />die gulle oprechtheid (<hi rendition="#i">loyauté</hi>) die eenvoudigheid van ka-<lb break="no"/>rakter, dat mengzel van &#x017F;tyf heid en goedwilligheid, welke<lb break="yes"/>altoos de Spaan&#x017F;che Natie onder&#x017F;cheiden hebben: indien al<lb break="yes"/>de kundigheden weinig ver&#x017F;preid zyn, de onzedelykheid is<lb break="yes"/>
+                    <cb/> het des te minder. &#x2014; Veertig mylen van de kust, in de<lb break="yes"/>bergen van <hi rendition="#i">Guanaguana,</hi> hebben wy woningen aangetrof-<lb break="no"/>fen, welker bezitters zelfs van het aanzyn van myn vader-<lb break="no"/>land onkundig waren. Hoe zal ik u de aandoenlyke gast-<lb break="no"/>vryheid, met welke men ons behandeld heeft, af&#x017F;childeren!<lb break="yes"/>Men &#x017F;cheidt, na een verblyf van 4 dagen, van elkander,<lb break="yes"/>als of men zyn gehele leven te zamen had doorgebragt. Hoe<lb break="yes"/>langer ik in de Spaan&#x017F;che volkplantingen leef, hoe meer ge-<lb break="no"/>noegen ik &#x2019;er in &#x017F;chep: wanneer ik eenmaal in Europa zal<lb break="yes"/>te rug gekeert zyn, zal ik moeite hebben om my te ont-<lb break="no"/>&#x017F;panjaarden. &#x2014; Wy hebben, niettegen&#x017F;taande den regentyd,<lb break="yes"/>alleraangenaam&#x017F;te reizen naar de kust van <hi rendition="#i">Paria,</hi> naar de<lb break="yes" />Zendingen der Capucynen by de <hi rendition="#i">Chaymas</hi> en <hi rendition="#i">Guaraunos-</hi>
+                    <lb break="maybe"/>Indianen gedaan, nimmer heeft enig Natuurkundige in deze<lb break="yes"/>mis&#x017F;ien geweest. Wy hebben &#x2019;er ene menigte nieuwe plan-<lb break="no"/>ten en nieuwe &#x017F;oorten van palmbomen ontdekt. Wy hebben<lb break="yes"/>den top van den <hi rendition="#i">Tumeriguiri</hi> beklommen, en zyn neder-<lb break="no"/>gedaalt in de <hi rendition="#i">Cueva del Guacharo,</hi> ene onmetelyke &#x017F;pe-<lb break="no"/>lonk, die door duizende nagtvogelen (ene nieuwe &#x017F;oort van<lb break="yes"/>
+                    <hi rendition="#i">Caprimulgus</hi>
+                    <persName key="linne_cv">
+                        <hi rendition="#k">Linn.</hi>
+                    </persName>) bewoond wordt. Niets kan &#x017F;tatelyker<lb break="yes"/>zyn dan de ingang dezer &#x017F;pelonk, die door de &#x017F;choon&#x017F;te<lb break="yes"/>planten omkranst wordt. &#x2019;Er komt ene tamelyk grote rivier<lb break="yes"/>uit voort. Het binnenfte klinkt van het doodsch ge&#x017F;chrei<lb break="yes"/>der vogels. Dit is de <hi rendition="#i" >Acheron</hi> der <hi rendition="#i">Chaymas</hi> Indianen,<lb break="yes" />want volgens de Mythologie dezer volken, en der Indianen<lb break="yes"/>van den <hi rendition="#i">Oronoco,</hi> gaat de ziel der overledenen, naar de<lb break="yes"/>
+                    <hi rendition="#i">Cueva &#x2014; naar de Guacharo gaan,</hi> betekent in hunne<lb break="yes"/>taal, &#x017F;terven. Wy hebben byna 14 dagen in de valey van<lb break="yes"/>
+                    <hi rendition="#i">Caripe</hi> doorgebragt, zy legt 952 <hi rendition="#i">Varas Ca&#x017F;t.</hi> boven hot<lb break="yes"/>waterpas der Zee. Dit is ene valey, die door naakte India-<lb break="no"/>nen en zwarte Apen met rode baarden bewoond wordt. De<lb break="yes"/>Capucynen in het klooster, en de Zendelingen onder de half<lb break="yes"/>wilde Indianen, hebben ons met goedheid en beleefdheid<lb break="yes"/>overladen. Wy hopen, na ons 2 maanden in deze grote<lb break="yes"/>Stad, waar in de Europeaan&#x017F;che weelde reeds zeer &#x017F;terk<lb break="yes"/>doorgedrongen is, te hebben opgehouden, doortedringen in<lb break="yes"/>het binnen&#x017F;te van het land, in <hi rendition="#i">
+                        <placeName key="varinas">Varinas</placeName>,</hi> en <hi rendition="#i" >Sierra ne-<lb break="no"/>vada de Merida,</hi> vervolgens de <hi rendition="#i">
+                        <placeName key="apure">rio Apure</placeName>
+                    </hi> en de <hi rendition="#i">Orenoco</hi>
+                    <lb break="yes"/>aftezakken tot aan <hi rendition="#i">
+                        <placeName key="angostura">Angostura</placeName>
+                    </hi> in <hi rendition="#i">Guyana,</hi> om door <hi rendition="#i">la<lb break="yes"/>Villa del Pao</hi> naar <hi rendition="#i">Cumana</hi> te rug te keren, en &#x2019;er de<lb break="yes"/>Packet van Mey aftewagten, die, indien de Crocodillen van<lb break="yes"/>
+                    <hi rendition="#i">Caziguiare</hi> ons niet vooraf ver&#x017F;londen hebben, ons naar de<lb break="yes"/>
+                    <hi rendition="#i">Havana</hi> zal brengen. &#x2014; Een onzer vrienden, Vader <hi rendition="#k">An-<lb break="no"/>dujar,</hi> een Capucyn, zal ons verzellen; want wy zullen<lb break="yes"/>na <hi rendition="#i">
+                        <placeName key="apure">Apure</placeName>
+                    </hi> niets vinden dan Indianen en Mis&#x017F;ionaris&#x017F;en.<lb break="yes" />De Spanjaarden mogen niet in de Mis&#x017F;ien komen. Wy ge-<lb break="no" />nieten ene zeer byzondere be&#x017F;cherming van den Bis&#x017F;chop,<lb break="yes"/>van den Vader Guardiaan, van de <hi rendition="#i" >Os&#x017F;erranti</hi> en den<lb break="yes"/>Prefect der Capucynen.</p>
+                <lb break="yes"/>
+                <p>Deze brief is reeds veel te lang, om verloren te gaan en<lb break="yes"/>in het water geworpen te worden: maar hoe zoude ik aan<lb break="yes"/>den Baron <hi rendition="#k">
+                        <persName key="forell_pd">van Forell</persName>
+                    </hi> durven &#x017F;chryven, zonder een woord<lb break="yes"/>van Geogno&#x017F;ie te melden! Ik heb &#x017F;chone bouw&#x017F;toffen ver-<lb break="no"/>zameld voor myn werk <hi rendition="#i">ueber &#x017F;chichtung und lagerung<lb break="yes"/>der gebirgsmas&#x017F;en.</hi> Welke regelmatige con&#x017F;tructie, welke<lb break="yes"/>
+                    <fw type="catch" place="bottom">ana-</fw>
+                    <lb break="yes"/>
+                    <pb n="172" facs="#f0003"/>
+                    <cb/> analogie van vorming heerscht &#x2019;er in alle de Zonen &#x2014; op<lb break="yes"/>10° breette hellen de oor&#x017F;prongelyke lagen der bergen (ge-<lb break="no"/>lyk van den <hi rendition="#i">St. Gothard,</hi> in Sile&#x017F;ien, en in de Pyrene&#x00EB;n)<lb break="yes"/>naar het Noordwesten. <placeName key="suedamerika">Zuid-Amerika</placeName> is een Schier-Eiland,<lb break="yes"/>dat onmetelyk boven het waterpas der Zee verheven is. &#x2014;<lb break="yes"/>
+                    <hi rendition="#i">Los Planos,</hi> vlaktens die zich van <hi rendition="#i">
+                        <placeName key="varinas">Varinas</placeName>
+                    </hi> tot aan <hi rendition="#i">Bue-<lb break="no"/>nos-Ayres</hi> uit&#x017F;trekken, en op de welke de hemel den Ho-<lb break="no"/>rizon uitmaakt, hebben tot 800 of 900 <hi rendition="#i">Varas Caft.</hi> hoog-<lb break="no"/>te. Ik geloof, dat zy zich op de Zuiderbreette van 15° tot<lb break="yes"/>1400 <hi rendition="#i">Voras</hi> verheffen, en dat zy trapsgewyze boven el-<lb break="no"/>kander verhevene platte bergen vormen, gelyk de vlakte van<lb break="yes"/>
+                    <hi rendition="#i">Thibet,</hi> en &#x2019;t geen men in <placeName key="afrika" >Afrika</placeName> woestynen noemt. De<lb break="yes"/>hoge <hi rendition="#i">Cordillera</hi> (een tak van die van <hi rendition="#i" >Popayan</hi> en <hi rendition="#i">Quito</hi>)<lb break="yes"/>nadert meer tot de kust, dan zy zich naar het Westen uit-<lb break="no"/>&#x017F;trekt. Zy be&#x017F;taat uit gebladerde Granit, die hier, gelyk in<lb break="yes" />Zwit&#x017F;erland, gemengt is met groenen Spek&#x017F;teen, met glim-<lb break="no"/>meragtige &#x017F;chiefer, met ene oneindige menigte Granaten,<lb break="yes"/>met magnetisch yzer (te <hi rendition="#i" >Caracas</hi>) en oor&#x017F;pronglyke lei&#x017F;teen.<lb break="yes"/>Ik heb &#x017F;poren van <hi rendition="#i">Sy&#x00EB;nit</hi> en van de oor&#x017F;pronglyke vorming<lb break="yes"/>van <hi rendition="#i" >Grün&#x017F;tein</hi> gevonden, gelyk ook een innig mengzel van<lb break="yes"/>veld&#x017F;path en hoorn&#x017F;teen in glimmeragtigen &#x017F;chiefer&#x017F;teen, die<lb break="yes"/>de overgang van Talk&#x017F;chiefer tot Thon&#x017F;chiefer maakt: in de-<lb break="no"/>ze oor&#x017F;pronglyke rotzen vindt men, gelyk in Europa, on-<lb break="no" />derge&#x017F;chikte lagen van byna oor&#x017F;pronglyken digten kalk&#x017F;teen,<lb break="yes"/>maar met aderen van kalk&#x017F;path, die denzelve altoos ken-<lb break="no"/>&#x017F;chet&#x017F;en; lagen quarts, met een weinig Cyanit te <hi rendition="#i">Mani-<lb break="no"/>quares,</hi> en ene koperertz-vorming te <hi rendition="#i">Chacao-Aroa.</hi> De<lb break="yes" />oor&#x017F;pronglyke bergketen, die te <hi rendition="#i">Merida</hi> en <hi rendition="#i">la Santa Mar-<lb break="no"/>tha</hi> nog met &#x017F;neeuw bedekt is, en in de Provintie van<lb break="yes"/>
+                    <hi rendition="#i">Carcacas</hi> nog 3000 <hi rendition="#i">Vares</hi> hoogte hee&#x017F;t, daalt onbegrype-<lb break="no"/>lyk &#x017F;chielyk, naar mate zy zich meer naar het Oosten uit-<lb break="no"/>&#x017F;trekt. De bergen, die uit glimmeragtigen &#x017F;chiefer be&#x017F;taan,<lb break="yes"/>hebben in de Provintie van <hi rendition="#i">Cumana</hi> maar 600 of 700 <hi rendition="#i" >Va-<lb break="no"/>res</hi> hoogte. Zy volgen de landengte, welke de golf van<lb break="yes"/>
+                    <hi rendition="#i">Cariaco</hi> van den Oceaan af&#x017F;cheidt, en eindigen by de<lb break="yes"/>monden der <hi rendition="#i">Dragon,</hi> aan het Eiland <hi rendition="#i">Triniteit.</hi> By de <hi rendition="#i">
+                        <placeName key="puntaaraya">Pun-<lb break="no"/>ta Araja</placeName>
+                    </hi> is de oor&#x017F;pronglyke bergketen gene twee mylen<lb break="yes"/>meer breed, en men kent &#x2019;er genen arm der Colos&#x017F;ale ber-<lb break="no" />gen van <hi rendition="#i">Quito</hi> meer aan. Wanneer men het binnen&#x017F;te van<lb break="yes"/>den golf van <hi rendition="#i">Mexico</hi> en van dat gedeelte der <hi rendition="#i">Margueri-<lb break="no"/>ten,</hi> &#x2019;t welk men <hi rendition="#i">Macanao</hi> noemt, onderzoekt, voelt men<lb break="yes"/>zich genegen om te geloven, dat van <hi rendition="#i" >Cabo Codera</hi> af de<lb break="yes"/>oor&#x017F;pronglyke bergketen eertyds meer Noord-Oostwaards<lb break="yes"/>ging, en dat by de grote Cata&#x017F;trophe, waar door de Golf<lb break="yes"/>ont&#x017F;tond, het tegenovergelegene gedeelte der bergketen te<lb break="yes"/>
+                    <hi rendition="#i">Cumana,</hi> ver&#x017F;toord geworden is. Het is ten min&#x017F;ten ze-<lb break="no"/>ker, dat tegenwoordig de &#x017F;econdaire bergketen in de Pro-<lb break="no"/>vintien van <placeName key="barcelona">
+                        <hi rendition="#i">Nieuw Barcelona</hi>
+                    </placeName> en <hi rendition="#i">Nieuw Andaluzien,</hi> 3<lb break="yes"/>of 4 maal meer boven het waterpas der Zee verheven is,<lb break="yes"/>dan de oor&#x017F;pronglyke keten. De hoog&#x017F;te toppen dezer twe-<lb break="no" />de bergketen zyn, volgens myne afmetingen, de <hi rendition="#i">Brigan-<lb break="no"/>tin,</hi> de <hi rendition="#i">Guachara,</hi> de <hi rendition="#i">Cocollar</hi> en vooral de <hi rendition="#i">Tumirigui-<lb break="no"/>ri,</hi> van welken de <hi rendition="#i">Cucurucho,</hi> die uit zand&#x017F;teen en met<lb break="yes"/>oor&#x017F;pronglyken kalk&#x017F;teen be&#x017F;taat, 2244 <hi rendition="#i">Vares</hi> hoog is. De<lb break="yes"/>gehele bergketen behoudt lang ene hoogte van 1200&#x2013;1500<lb break="yes"/>
+                    <cb/>
+                    <hi rendition="#i">Vares;</hi> zy daalt zeer &#x017F;chielyk naar bet Noorden (den Oce-<lb break="no"/>aan) maar langzaam en allengskens naar het Zuiden, naar<lb break="yes"/>de <hi rendition="#i">Planos</hi> van <hi rendition="#i">Maturin, Tereczen,</hi> die, gelyk alle de<lb break="yes" />vlakten van <placeName key="amerika">Amerika</placeName>, meer dan 2000 voeten hoog zyn. &#x2014;<lb break="yes"/>De mineralen van ene &#x017F;econdaire vorming, zyn (om met<lb break="yes"/>die, welke onmiddelyk op den oor&#x017F;pronglyken lei&#x017F;teen rus-<lb break="no"/>ten, te beginnen) <hi rendition="#i">a. de kalk&#x017F;teen der hoge <placeName key="alpen" >Alpen</placeName>,</hi> die<lb break="yes"/>blaauw en digt is, &#x017F;omtyds in het fynkorlige overgaat, gene<lb break="yes"/>&#x017F;chelpen door zyne gehele mas&#x017F;a ver&#x017F;preid heeft, maar in<lb break="yes" />welken deze in byzondere lagen, op de hoog&#x017F;te toppen, ver-<lb break="no"/>zameld zyn. &#x2014; Men onderkent aan de gedaante dezer ber-<lb break="no"/>gen, aan hunne onregelmatige en gedraaide lagen, die zelf-<lb break="no"/>de kalkaartige vorming, die in een groot gedeelte der Py-<lb break="no"/>rene&#x00EB;n, der Apenynen, der <placeName key="alpen" >Zwit&#x017F;er&#x017F;che Alpen</placeName>, der Tyrol-<lb break="no" />&#x017F;che, Salzburg&#x017F;che en Stiermark&#x017F;che bergen gevonden wordt &#x2013;<lb break="yes"/>met één woord, alles, wat ik in de hoge bergketens van<lb break="yes"/>Europa gevonden heb &#x2014; dit is de <hi rendition="#i">middel-kalk&#x017F;teen</hi> van<lb break="yes"/>
+                    <hi rendition="#i">Fichtel.</hi> Maar het meest onder&#x017F;cheidende karakter, waar<lb break="yes"/>door de Natuur deze vorming heeft onder&#x017F;cheiden &#x2014; het<lb break="yes"/>karakter waar aan ik ontdekt heb, dat de Alpen-kalk&#x017F;teen<lb break="yes"/>vol&#x017F;trekt eenzelvig is met den zogenaamden <hi rendition="#i">Zech&#x017F;tein</hi> der<lb break="yes"/>Saxen, is daar in gelegen, dat men in den Zwit&#x017F;er&#x017F;chen Al-<lb break="no" />pen-kalk&#x017F;teen, even als in dien van den Tumiriquiri in <placeName key="suedamerika">Zuid-<lb break="maybe"/>Amerika</placeName>, lagen mergel&#x017F;chiefer en koper&#x017F;chie&#x017F;er vind &#x2014; de-<lb break="no"/>ze lagen zyn in de bergketen van Nieuw-Andalu&#x017F;ien van een<lb break="yes"/>tot 3 halve roeden (<hi rendition="#i" >toi&#x017F;es</hi>) dik &#x2014; zy be&#x017F;taan uit een innig<lb break="yes"/>meng&#x017F;el van kalk-, klei- en aluin-aarde, &#x2019;t welk door ene<lb break="yes"/>grote hoeveelheid kool&#x017F;tof gekleurd wordt. Wanneer ik de-<lb break="no"/>ze lagen aan de Zon bloot&#x017F;tel, worden zy wit en geven my<lb break="yes"/>kool&#x017F;tof houdende-water&#x017F;tof. &#x2014; Zy bevatten koper-pyriten<lb break="yes"/>en &#x017F;omtyds ook Petroleum. &#x2014; In enen berg, die 100 halve<lb break="yes"/>roeden hoog is, vindt men &#x017F;omtyds tot 10 of 12 van deze<lb break="yes"/>lagen mergel&#x017F;chiefer, juist gelyk in het dal van Lut&#x017F;chinen<lb break="yes"/>en van het Grindelwald. Somtyds (gelyk te <hi rendition="#i" >Cuchilla de<lb break="yes"/>Guanaguana el purgatorio</hi>) gaan zy over in lagen Flöz-<lb break="no"/>thon&#x017F;chiefer, welke met dien van Scheidek in Zwit&#x017F;erland<lb break="yes"/>overeenkomt. De kalk&#x017F;teen zelf bevat voet&#x017F;poren van bruin<lb break="yes"/>yzerertz (gelyk in het Stazlithal) en grote holen, waar uit<lb break="yes"/>Rivieren ont&#x017F;pringen. In deze holen heb ik nog gene ge-<lb break="no"/>gravene beenderen of phophorzure kalk ontdekt. &#x2014; De vier-<lb break="no"/>voetige dieren &#x017F;chynen van lateren oor&#x017F;prong te zyn dan de-<lb break="no" />ze kalk&#x017F;teen. Maar &#x2019;t geen zeer byzonder is (hoewel het<lb break="yes"/>overeenkomst heeft met de Boraciten en Quartz-kry&#x017F;tallen,<lb break="yes"/>die men in den gyps van Luneburg en Burgtonna in Saxen<lb break="yes"/>vindt) ik heb ver van alle aderen (<hi rendition="#i">filon&#x2019;s</hi>) en van alle he-<lb break="no"/>terogene lagen midden in den Alpen-kalk&#x017F;teen zeer fraaie<lb break="yes" />bergkry&#x017F;tallen ingewas&#x017F;en gevonden. Deze kry&#x017F;tallen zyn zo<lb break="yes"/>zeldzaam, dat een grote berg (de <hi rendition="#i" >Cuchivano</hi>) &#x2019;er mis&#x017F;chien<lb break="yes"/>niet meer dan 4 of 5 bevat. Zy zyn zonder droezen in de<lb break="yes"/>mas&#x017F;a bevat (<hi rendition="#i">empatées</hi>) gelyk de veld&#x017F;path in de porphy-<lb break="no"/>ren. &#x2014; <hi rendition="#i">b. ene zeer ver&#x017F;che Zand&#x017F;teen vorming,</hi> welke op<lb break="yes"/>den Alpen-kalk&#x017F;teen rust. Dit is ene &#x017F;amenhoping van &#x017F;chel-<lb break="no"/>pen, van kiezel&#x017F;tenen, quartz en niet oor&#x017F;pronglyken kalk-<lb break="no"/>&#x017F;teen (gelyk by <hi rendition="#i">Mont&#x017F;errat</hi> in <hi rendition="#i">Catalonien</hi>) welke door<lb break="yes"/>kool&#x017F;to&#x017F;zure kalk aan elkander gelymd zyn. Men kan zich<lb break="yes"/>
+                    <fw type="catch" place="bottom">ge-</fw>
+                    <lb break="yes"/>
+                    <pb n="173" facs="#f0004"/>
+                    <cb/> gemaklyk omtrent deze zand&#x017F;teen-vorming bedriegen, daar<lb break="yes"/>zy lagen bevat, die, op de diepte van 30 halve roeden, byna<lb break="yes"/>zuivere kal&#x017F;teen &#x017F;chynen te zyn. Wanneer men echter de-<lb break="no"/>zen naauwkeuriger be&#x017F;chouwt, outmoet men enige quarts<lb break="yes"/>keitjes in de mas&#x017F;a, en deze zelfde lagen vervolgende, ziet<lb break="yes"/>men allengskens de kalkaartige ba&#x017F;is verdwynen, en de keit-<lb break="no"/>jes zodanig toenemen, dat men eindelyk niets dan ene kie-<lb break="no"/>&#x017F;elaartige breccia gewaar wordt. Dit is hier dezel&#x017F;de zand-<lb break="no"/>&#x017F;teen als &#x2019;er in <hi rendition="#i">la Mancha</hi> en het Koningryk <hi rendition="#i">Leon</hi> gevon-<lb break="no"/>den wordt, of als die van <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>,</hi> waar over gy zulke<lb break="yes"/>vernuftige waarnemingen hebt medegedeeld. Digter by de<lb break="yes"/>Golf van <hi rendition="#i">Mexico</hi> en zelfs op &#x017F;ommige Eilanden, welker<lb break="yes"/>&#x017F;tructuur wy hebben kunnen onderzoeken (<hi rendition="#i">Cabagua, Co-<lb break="no"/>che, Marguerite,</hi> mis&#x017F;chien ook <hi rendition="#i">Tabago</hi>) bevat deze zand-<lb break="no"/>&#x017F;teen ene waereld van Conchylien, &#x017F;tukken madreporen, me-<lb break="no"/>andriten, &#x00E7;elkoralen, een halve cubiek voet groot. Over de<lb break="yes"/>verdeling dezer Conchylien kan men zeer fraaie waarnemin-<lb break="no"/>gen maken; ik vergenoege my 2 zaken optegeven, die vry<lb break="yes"/>wat tegen de, in Duitschland aangenomene, denkbeelden<lb break="yes"/>aanlopen: voor eerst, dat het groot&#x017F;te deel der ver&#x017F;teende<lb break="yes"/>Conchylien van deze <placeName key="amerika">Zuid-Amerika&#x017F;che kust</placeName>, tot dezelfde<lb break="yes"/>&#x017F;oort behoren, als die, welke wy in de Golf zelve verza-<lb break="no"/>meld hebben; en ten tweden, dat ik gedurende de ebbe<lb break="yes"/>duidelyk gezien heb, dat in de lagen zand&#x017F;teen, welke den<lb break="yes"/>bodem van den Oceaan uitmaken, de zoetwater Conchylien<lb break="yes"/>met die der Zee vermengd zyn. &#x2014; Ik heb nog gene Am-<lb break="no"/>moniten en Belemniten kunnen ontdekken. Daar de wate-<lb break="no"/>ren de landen, onder den &#x00C6;quator gelegen, van wegen de<lb break="yes"/>rotatie en middenpunt-vliedende kragt, langer bedekt heb-<lb break="no"/>ben, zyn dan deze zelfde landen daarom van een latere vor-<lb break="no"/>ming? &#x2014; <hi rendition="#i">c. ene vorming van</hi> (<hi rendition="#i">&#x017F;al gemm&#x00E6;</hi>) <hi rendition="#i" >&#x017F;teenzout</hi> &#x2014;<lb break="yes"/>ik verenig onder dezen naam die zelf&#x017F;tandigheden, welke ik<lb break="yes"/>in Polen, in Engeland, in Tyrol, in Bex en in Spanje al-<lb break="no"/>toos verenigd gevonden heb, den &#x017F;alzthon (zoutzure klei)<lb break="yes"/>den waren moeder&#x017F;teen van het &#x017F;teenzout, welke &#x2019;t zelve<lb break="yes"/>over de gehele aarde, gelyk de &#x017F;chieferthon de &#x017F;teenkolen,<lb break="yes" />verzelt: (deze &#x017F;oort van klei is den Mineralogisten weinig<lb break="yes"/>bekend, maar heeft in alle tyden den Mynwerker in het<lb break="yes"/>zoeken naar het &#x017F;teenzout geleid, zy is een meng&#x017F;el van<lb break="yes"/>aluin en kiezelaarde, een weinig kalk en veel magne&#x017F;ia, &#x2019;t<lb break="yes"/>geen wegens de kool&#x017F;tof houdende water&#x017F;tof, die het bevat,<lb break="yes"/>grys of bruin is, en noodlottige eigen&#x017F;chep in enen hogen<lb break="yes"/>graad bezit, dat het de dampkringlucht zeer volkomen en<lb break="yes"/>in weinige dagen ontleedt) &#x2014; den gyps, &#x2019;t zy in mas&#x017F;a, of<lb break="yes"/>lenticulair, en het &#x017F;teenzont. Deze zoutagtige kley, zo on-<lb break="no"/>gemeen ryk in <hi rendition="#i">Popayan</hi> en <hi rendition="#i">Quito,</hi> in de Oostlyke Provin-<lb break="no"/>tien (<placeName key="barcelona">
+                        <hi rendition="#i">Nieuw Barcelona</hi>
+                    </placeName> en <hi rendition="#i">Nieuw Andalu&#x017F;ien</hi>) zo arm,<lb break="yes"/>dat men &#x2019;er met moeite door het Microscoop het zout in<lb break="yes"/>ontdekt. &#x2014; Zy bevat meer dan 0,3 petroleum, waar uit<lb break="yes"/>de brounen van <hi rendition="#i">Brea, la Trenité</hi> en <hi rendition="#i">Buen Pastor</hi> op de<lb break="yes"/>kust van <hi rendition="#i">Paria</hi> ont&#x017F;taan, gelyk ook in de Golf van <hi rendition="#i">Ca-<lb break="no"/>riaco</hi> zelve, welke Golf, volgens de Geologi&#x017F;che overleve-<lb break="no"/>ring der Gucaigery Indianen, door ene aardbeving gevormd<lb break="yes"/>is, en nog gemeen&#x017F;chap &#x017F;chynt te hebben met de Volcanen<lb break="yes"/>van <hi rendition="#i" >Cumacatar,</hi> die zwavel, water&#x017F;tof gas, en warme,<lb break="yes" />zwavelig water&#x017F;tof houdende, wateren, uitwerpen.</p>
+                <lb break="yes"/>
+                <cb/>
+                <p>In den omtrek van de Golf zyn de aardbevingen het<lb break="yes"/>&#x017F;terkst ... Wy hebben in de maand November te <hi rendition="#i">Cumana</hi>
+                    <lb break="yes"/>zeer &#x017F;terke &#x017F;chokken ondervonden, welke de magneti&#x017F;che<lb break="yes"/>inclinatie verandert hebben. Vóór de aardbeving van den 4<lb break="yes"/>November was zy 44° 20&#x2032; nieuwe verdeling, na dezelve<lb break="yes"/>43° 35&#x2032;. Men moet aanmerken, dat de aardbevingen niet<lb break="yes"/>komen, dan na het einde der regens, dat dan de holen van<lb break="yes"/>den <hi rendition="#i">Cuchivano</hi> in den nacht water&#x017F;tof-gaz ontlasten, &#x2019;t welk<lb break="yes"/>men op 100 halve roeden hoogte ziet lichten. &#x2014; Het is<lb break="yes"/>zeer waar&#x017F;chynlyk, dat de ontleding van het water, in den<lb break="yes" />mergel&#x017F;chiefer, die vol pyriten is, en kool&#x017F;tof houdende wa-<lb break="no"/>ter&#x017F;tof bevat, ene voorname rol in deze ver&#x017F;chynzelen &#x017F;peelt.<lb break="yes"/>De Stad <hi rendition="#i" >Cumana</hi> legt nog &#x017F;edert 2 jaren in hare puin-<lb break="no" />hopen.</p>
+                <lb break="yes"/>
+                <p>Op de moeilyke en gevaarlyke reis, welke wy naar de<lb break="yes"/>
+                    <hi rendition="#i">Silla de Caracas</hi> gedaan hebben, en in ver&#x017F;cheidene ande-<lb break="no"/>re uit&#x017F;tappen, hebben wy vele zaden en mineralien (zeer<lb break="yes"/>kleine kry&#x017F;tallen van Titaneums, kruis&#x017F;teen, welke met den<lb break="yes"/>Spaan&#x017F;chen overeenkomt, groen&#x017F;teen, graniet rotzen enz.)<lb break="yes"/>verzameld: welke ik hier van daan voor den Tuin en het<lb break="yes"/>Kabinet van zyne Catholique Maje&#x017F;teit zal afzenden. &#x2014;&#x2014;<lb break="yes"/>Ene andere bezending zal ik van <hi rendition="#i">Cumana</hi> doen, van waar<lb break="yes"/>ik insgelyks ene uitgebreidere Verhandeling over de vorming<lb break="yes"/>van den Aardkloot, in dit gedeelte der waereld, zal afzen-<lb break="no"/>den. &#x2014;&#x2014; Indien uw &#x017F;choon werk over de Mineralogie van<lb break="yes"/>Spanje, gedurende myne afwezenheid, zoude uitkomen, ge-<lb break="no"/>ve ik u volkomen vryheid, om van myne geringe waarne-<lb break="no"/>mingen gebruik te maken. &#x2014;&#x2014; Ik zoude ten uitter&#x017F;ten ge-<lb break="no"/>lukkig zyn, indien ik iets ter bereiking van zulk een be-<lb break="no"/>langryk oogmerk konde toebrengen. Ik verzoek u, Myn-<lb break="no"/>heer de Baron! van mynen onderdanig&#x017F;ten dienst te willen<lb break="yes"/>aanbieden aan Mynheer den Ridder <persName key="urquijo_mld">
+                        <hi rendition="#k">d&#x2019;Urquijo,</hi>
+                    </persName> aan wien ik<lb break="yes"/>den 3den Augustus, 29&#x017F;ten September en 24&#x017F;ten November<lb break="yes"/>ge&#x017F;chreven heb, en den waardigen Dr. <persName key="clavijofaxardo_j">
+                        <hi rendition="#k">Joseph Clavijo,</hi>
+                    </persName> be-<lb break="no"/>nevens de Hrn. <hi rendition="#k">
+                        <persName key="herrgen_jjc">Hergen</persName>, <persName key="proust_notmarcel">Proust</persName>, Pertsch, <persName key="tribolethardy_dd">Tribolet</persName>
+                    </hi> en<lb break="yes"/>
+                    <hi rendition="#k">Talacger,</hi> hartelyk te willen groeten.</p>
+                <lb break="yes"/>
+                <p>Indien men te Madrid weet, waar myn Broeder zich op-<lb break="no"/>houdt, verzoek ik den Heer <persName key="tribolethardy_dd">
+                        <hi rendition="#k">Tribolet</hi>
+                    </persName> vriendelyk, my de<lb break="yes"/>belee&#x017F;dheid te willen bewyzen, van hem berigt te geven van<lb break="yes"/>dezen brief, en van den gelukkigen voortgang myner on-<lb break="no"/>derneming. &#x2014;&#x2014; Ik &#x017F;tel zo weinig vertrouwen in de brie-<lb break="no"/>ven, die men van hier &#x017F;chryft, dat ik geloof, dat &#x2019;er naauw-<lb break="no"/>lyks één van vier in behouden haven komt.</p>
+                <lb break="yes"/>
+                <p>Ik zende alle de Mineralen, welke ik bezit, aan het Ka-<lb break="no"/>binet van den Koning &#x2014; ik behoude niets voor my. &#x2014;<lb break="yes"/>Ik geloof niet onbe&#x017F;cheiden te zullen zyn, indien ik de Hrn.<lb break="yes"/>
+                    <persName key="clavijofaxardo_j">
+                        <hi rendition="#k">Clavijo</hi>
+                    </persName> en <persName key="herrgen_jjc">
+                        <hi rendition="#k">Hergen</hi>
+                    </persName> verzoek, zo zy dubbelde &#x017F;tukken of<lb break="yes" />voorwerpen, die hun minder belangryk voorkomen, in my-<lb break="no"/>ne bezendingen vinden, die wel voor my te willen bewa-<lb break="no"/>ren. &#x2014; Het zal my eenmaal zeer aangenaam zyn, ten min-<lb break="no"/>&#x017F;ten enige &#x017F;taaltjes te bezitten uit een land, waar in men<lb break="yes"/>met zo veel ongemak reist.</p>
+                <lb break="yes"/>
+                <p>Verzeker den Abt <persName key="cavanilles_aj">
+                        <hi rendition="#k">Cavanilles,</hi>
+                    </persName> van onze vriend&#x017F;chap,<lb break="yes"/>wy hebben hem van <hi rendition="#i">Cumana</hi> ge&#x017F;chreven, en zullen hem,<lb break="yes" />by onze terugkomst van den <hi rendition="#i">Oronoco,</hi> in Mey of Juny,<lb break="yes"/>ene fraaie verzameling planten zenden.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Ik</fw>
+                <lb break="yes"/>
+                <pb n="174" facs="#f0005"/>
+                <cb/>
+                <p>Ik hoop, dat gy de kleine verzameling van Volcani&#x017F;che<lb break="yes" />producten, welke ik voor het Kabinet des Konings,<lb break="yes"/>van Orotava, be&#x017F;temt heb, reeds zult ontfangen hebben.<lb break="yes"/>Onze oude vriend, de Hr. <hi rendition="#k">le Gros,</hi> welke in den Botani-<lb break="no"/>&#x017F;chen Tuin van den Marquis <hi rendition="#k">de Navar</hi> woonde, heeft dit<lb break="yes"/>op zich genomen. Hy &#x017F;tond op het punt, om zelve naar<lb break="yes"/>Madrid te vertrekken, en indien zyne reis uitge&#x017F;teld mogt<lb break="yes"/>zyn, zullen enige letteren aan den Marquis <hi rendition="#k">de Navar</hi> te<lb break="yes"/>
+                    <hi rendition="#i">Liguna,</hi> voldoen, om deze verzameling te krygen en nog<lb break="yes"/>ene veel fraaiere, daar de Hr. <hi rendition="#k">le Gros</hi> zo kundig als dienst-<lb break="no"/>vaardig is.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="bonpland_ajag">
+                        <hi rendition="#k">Bonpland</hi>
+                    </persName> verzoekt my u zynen dienst aan te bieden, en<lb break="yes"/>ik hoop, dat gy de betuigingen der &#x017F;terk&#x017F;te erkentelykheid<lb break="yes"/>en onveranderlyk&#x017F;te vriend&#x017F;chap, wel zult willen aannemen,<lb break="yes"/>met welke ik de eer heb te zyn enz.</p>
+                <lb break="yes"/>
+                <cb/>
+                <closer>
+                    <dateline>
+                        <hi rendition="#et">
+                            <hi rendition="#i">Caracas,</hi>
+                            <lb break="yes"/>den 3den Febr. 1800.</hi>
+                    </dateline>
+                    <lb break="yes"/>
+                    <cb/>
+                    <hi rendition="#et">(was get.)</hi>
+                    <lb break="yes"/>
+                    <salute>
+                        <hi rendition="#et">
+                            <hi rendition="#g">
+                                <hi rendition="#k">
+                                    <persName key="humboldt_av">Humbold</persName>.</hi>
+                            </hi>
+                        </hi>
+                    </salute>
+                </closer>
+                <lb break="yes"/>
+                <postscript>
+                    <p>PS. Indien gy naar Saxen &#x017F;chryft<choice>
+                            <sic>.</sic>
+                            <corr type="editorial">,</corr>
+                        </choice> zult gy my wel in het<lb break="yes"/>aandenken van den Baron <persName key="racknitz_v">
+                            <hi rendition="#k">van Raeknitz</hi>
+                        </persName> willen aan-<lb break="no"/>bevelen, en hem een woord van mynen arbeid mel-<lb break="no"/>den.</p>
+                </postscript>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

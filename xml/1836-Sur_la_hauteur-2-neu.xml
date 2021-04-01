@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-14" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="198" facs="#f0001"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#k">Physique du globe:</hi>
+                    <hi rendition="#i">Hauteur moyenne du baromètre au niveau<lb break="yes"/>de la mer par différentes latitudes.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>&#x2014; Nous avons d@ que M. Arago<lb break="yes"/>avait communiqué dans cette séance une série d&#x2019;observations rele-<lb break="no"/>vées par M. de Humboldt, desquelles résultait que la hauteur<lb break="yes"/>moyenne du baromètre est plus grande dans les régions tempérées<lb break="yes" />qu&#x2019;au p&#x00F4;le et à l&#x2019;équateur. Voici quelques détails à ce sujet:</p>
+                <lb break="yes"/>
+                <p>Dans son exploration de l&#x2019;Amérique, cette hauteur avait paru à<lb break="yes"/>M. de Humboldt moindre de 2 millimètres environ entre les tropi-<lb break="no"/>ques que dans la zone tempérée, ce qu&#x2019;il attribuait au courant as-<lb break="no"/>cendant équatorial dans l&#x2019;atmosphère (<hi rendition="#i">Essai sur la géographie des<lb break="yes"/>plantes,</hi> 1807, p. 90). Son baromètre était comparé à celui de l&#x2019;Obser-<lb break="no"/>vatoire de Paris. Depuis, et par des observations plus exactes, avec<lb break="yes"/>deux baromètres comparés et marchant d&#x2019;une manière parfaitement<lb break="yes"/>semblable, M. Boussingault trouve à la Guayra 336<hi rendition="#sup">lig.</hi>, 98, c&#x2019;est-à-<lb break="no"/>dire environ <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" >
+                            <mfrac>
+                                <mi>7</mi>
+                                <mi>10</mi>
+                            </mfrac>
+                        </math>
+                    </formula> de millimètre de moins qu&#x2019;à Paris, si l&#x2019;on adopte<lb break="yes"/>le nombre donné par M. Arago 755,43, ou 1<hi rendition="#sup">mill.</hi>, 24, si l&#x2019;on adopte<lb break="yes"/>avec M. Bouvard la valeur moyenne 755,99. La différence est dans<lb break="yes"/>le m&#x00EA;me sens, seulement moins forte que par les observations<lb break="yes"/>de M. de Humboldt. Depuis encore, à Christiansborg (c&#x00F4;te de<lb break="yes"/>Guinée), 5°, 24 lat. N. MM. Trentepohl et Chenon, avec d&#x2019;excel-<lb break="no"/>lens baromètres bien comparés, et par une moyenne de 22 mois<lb break="yes"/>d&#x2019;observations, trouvent (1829 et 1830) pour hauteur moyenne<lb break="yes"/>336<hi rendition="#sup">lig.</hi>,95, comme M. Boussingault.</p>
+                <lb break="yes"/>
+                <p>Enfin, dans son voyage récent au cap, sir J. Herschel, pendant<lb break="yes" />une courte traversée et par une mer extraordinairement calme, a<lb break="yes" />trouvé la hauteur barométrique équatoriale moindre de <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                            <mfrac>
+                                <mi>2</mi>
+                                <mi>10</mi>
+                            </mfrac>
+                        </math>
+                    </formula> de<lb break="yes"/>pouce anglais que la hauteur à 20° de latitude australe et boréale,<lb break="yes"/>moindre de <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" >
+                            <mfrac>
+                                <mi>3</mi>
+                                <mi>10</mi>
+                            </mfrac>
+                        </math>
+                    </formula> de pouce que la hauteur à 35°. Ce résultat se trouve<lb break="yes"/>entièrement confirmé par des observations de M. Ryan dans une<lb break="yes"/>traversée de Calcutta au cap, et par M. Mac Hardy dans son<lb break="yes"/>dernier voyage en Angleterre. M. Ryan trouve m&#x00EA;me des diffé-<lb break="no"/>rences un peu plus fortes.</p>
+                <lb break="yes"/>
+                <p>A l&#x2019;occasion de ces observations faites en mer, M. de Humboldt<lb break="yes"/>s&#x2019;est rappelé qu&#x2019;il y a 33 ans, se trouvant au Callao, il y rencontra<lb break="yes"/>une frégate espagnole, la <hi rendition="#i">Santa Rafina,</hi> venue de Cadix en quatre<lb break="yes" />mois (du 19 février au 21 juin), et commandée par le capitaine<lb break="yes" />Quevedo. Il y avait à bord un excelleut baromètre anglais de Ga-<lb break="no" />bory, et le journal des observations montre clairement la diminu-<lb break="no"/>tion de hauteur dans le grand sillon de l&#x2019;océan Atlantique. A la<lb break="yes"/>prière de M. de Humboldt, le capitaine Quevedo continua soi-<lb break="no"/>gneusement ces observations à son retour en Europe. La <hi rendition="#i">Santa<lb break="yes"/>Rafina</hi> ne mit alors que 27 jours à passer de 35°, 7&#x2032; lat. S. à l&#x2019;équa-<lb break="no"/>teur, et 23 jours de l&#x2019;équateur à 34°,59&#x2032; lat. N. On peut, aussi bien<lb break="yes"/>que le fait Herschel, regarder les observations comme simultanées.<lb break="yes"/>Voici les résultats réduits à o:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Hauteur du barom.</item>
+                    <lb break="yes"/>
+                    <item>de 34°59&#x2032; lat. N. à 7°53&#x2032; N....... 29<hi rendition="#sup" >p</hi>,92</item>
+                    <lb break="yes"/>
+                    <item>7 53 N. 6 29 S....... 29,62</item>
+                    <lb break="yes"/>
+                    <item>6 29 S. 35 7 S....... 29,79</item>
+                </list>
+                <lb break="yes"/>
+                <p>différence totale dans la zone nord <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" >
+                            <mfrac>
+                                <mi>3</mi>
+                                <mi>10</mi>
+                            </mfrac>
+                        </math>
+                    </formula> de pouce anglais ou 23<hi rendition="#sup">lig.</hi>, 38<lb break="yes"/>
+                    <pb n="199" facs="#f0002"/>
+                    <cb/> de Paris. Dans la traversée de Cadix au Callao, la différence avait<lb break="yes"/>été de <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" >
+                            <mfrac>
+                                <mi>31</mi>
+                                <mi>100</mi>
+                            </mfrac>
+                        </math>
+                    </formula> de pouce ou 3<hi rendition="#sup">lig.</hi>,49. Dans les deux voyages, l&#x2019;aller et<lb break="yes"/>le retour, la dépression au-delà du cap Horn a été très-sensible.<lb break="yes"/>On la reconna&#x00EE;t aussi dans les observations de l&#x2019;amiral Krusenstern,<lb break="yes"/>qui para&#x00EE;t l&#x2019;avoir remarquée le premier; dans celles du capitaine<lb break="yes" />Beechey et du doct. Meyen.</p>
+                <lb break="yes"/>
+                <p>La dépression équatoriale se voit encore dans les observations de<lb break="yes" />Trentepohl, qui a traversé quatre fois la ligne en 1826 et 1827,<lb break="yes"/>dans celles du capitaine Spencer et du doct. Lund. Elle s&#x2019;élève à<lb break="yes"/>4 lignes entières d&#x2019;après Trentepohl; ce qui n&#x2019;est sans doute pas<lb break="yes"/>la moyenne annuelle; Erman l&#x2019;a remarqué. Les observations de<lb break="yes"/>Krusenstern (nov. et déc. 1803, T. III, p. 318&#x2014;322) donnent</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Hauteur du barom.</item>
+                    <lb break="yes"/>
+                    <item>27°48&#x2032; lat. N. à 13°51&#x2032; lat. N..... 29<hi rendition="#sup" >p</hi>,79</item>
+                    <lb break="yes"/>
+                    <item>13 51 N. 12 16 S..... 29,62</item>
+                    <lb break="yes"/>
+                    <item>12 16 S. 25 34 S..... 29,68</item>
+                </list>
+                <lb break="yes"/>
+                <p>différence 0<hi rendition="#sup">p</hi>, 17 au nord; seulement 0<hi rendition="#sup">p</hi>,11 au sud; le m&#x00EA;me navi-<lb break="no" />gateur, en mai et juin 1806, trouve pour différences correspon-<lb break="no" />dantes 0<hi rendition="#sup">p</hi>,19 au nord; au sud 0<hi rendition="#sup" >p</hi>,02.</p>
+                <lb break="yes"/>
+                <p>Voici enfin les moyennes du capitaine Beechey, déduites de six<lb break="yes" />observations pour chaque jour:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>lat. de 25° à 20° N ..... 30<hi rendition="#sup">p</hi>,022</item>
+                    <lb break="yes"/>
+                    <item>20 15 N..... 30,005</item>
+                    <lb break="yes"/>
+                    <item>15 10 N..... 29,954</item>
+                    <lb break="yes"/>
+                    <item>10 5 N..... 29,929</item>
+                    <lb break="yes"/>
+                    <item>5 0 N..... 29,895</item>
+                    <lb break="yes"/>
+                    <item>0 5 S..... 29,918</item>
+                    <lb break="yes"/>
+                    <item>5 10 S..... 29,971</item>
+                    <lb break="yes"/>
+                    <item>10 15 S..... 30,013</item>
+                    <lb break="yes"/>
+                    <item>15 20 S..... 30,037</item>
+                    <lb break="yes"/>
+                    <item>20 25 S..... 30,040</item>
+                </list>
+                <lb break="yes"/>
+                <p>La marche est, comme on voit, parfaitement régulière les diffé-<lb break="no" />@ences extr&#x00EA;mes sont 0<hi rendition="#sup">p</hi>, 11 et 0<hi rendition="#sup">p</hi>, 13.</p>
+                <lb break="yes"/>
+                <p>La dépression dans les latitudes boréales, élevées, comme en<lb break="yes" />Norwége, comme au Groenland occidental, etc., est bien connue.<lb break="yes" />On peut consulter à ce sujet Krusenstern, Lütke et Erman, et<lb break="yes" />enfin la discussion de Schouw.</p>
+                <lb break="yes"/>
+                <p>Dans une note qui accompagne celle de M. de Humboldt, M. Pog-<lb break="no" />gendorf remarque que dans la recherche de la pression au niveau<lb break="yes" />de la mer, on a négligé à tort jusqu&#x2019;ici d&#x2019;appliquer aux hauteurs<lb break="yes"/>observées du baromètre la correction qui dépend de la variation<lb break="yes"/>de la pesanteur à différentes latitudes. M. Poggendorf calcule une<lb break="yes"/>petite table de cette correction d&#x2019;après la formule:</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">b=b</hi>
+                        <hi rendition="#sub">45</hi> (&#x2014;0,0025935 cos 2&#x03C6;),</hi>
+                </p>
+                <lb break="yes"/>
+                <p>où <hi rendition="#i">b</hi> représente la hauteur du baromètre à la latitude &#x03C6; et <hi rendition="#i">b</hi>
+                    <hi rendition="#sub">45</hi> la<lb break="yes"/>hauteur correspondant à 45°; la correction est donc soustractive<lb break="yes"/>de 45° à l&#x2019;équateur, additive de 45° au p&#x00F4;le. Loin de faire dispa-<lb break="no" />ra&#x00EE;tre la dépression équatoriale indiquée par les observations non<lb break="yes"/>corrigées, la correction l&#x2019;augmente donc; mais elle atténue, sans<lb break="yes"/>toutefois l&#x2019;expliquer entièrement, les dépressions polaires; la cor-<lb break="no"/>rection maximum du p&#x00F4;le à l&#x2019;équateur serait 0<hi rendition="#sup">lig.</hi>874.</p>
+                <lb break="yes"/>
+                <p>Dans une atmosphère en repos, la pression au niveau de la mer<lb break="yes" />serait partout égale. Les différences que la correction de détruit<lb break="yes"/>pas, ne peuvent donc &#x00EA;tre attribuées qu&#x2019;à l&#x2019;état de mouvement.</p>
+                <lb break="yes"/>
+                <p>M. Poggendorf donne en terminant le tableau des hauteurs ba-<lb break="no" />rométriques réunies par M. Schouw, réduites à zéro et au niveau<lb break="yes" />de la mer avec et sans la correction de pesanteur. Cette table, la<lb break="yes"/>voici:</p>
+                <lb break="yes"/>
+                <cb/>
+                <table>
+                    <row>
+                        <cell rows="2">LIEUX.</cell>
+                        <cell rows="2">
+                            <hi rendition="#k">latitude.</hi>
+                        </cell>
+                        <cell cols="2" rendition="#bottomBraced">
+                            <hi rendition="#k">hauteur du baromètre</hi>
+                            <lb break="yes"/>au niveau de la mer, à 0°,</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>non corrigée<lb break="yes"/>de la pesanteur.</cell>
+                        <cell>corrigée<lb break="yes"/>de la pesanteur.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cap ..................</cell>
+                        <cell>33° S.</cell>
+                        <cell>338&#x2033;,24</cell>
+                        <cell>337&#x2032;&#x2033;,88</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rio-Janeiro............</cell>
+                        <cell>23</cell>
+                        <cell>38,69</cell>
+                        <cell>38,08</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Christianborg ..........</cell>
+                        <cell>5 &#x00BD; N.</cell>
+                        <cell>36,95</cell>
+                        <cell>36,09</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La Guayra .............</cell>
+                        <cell>10</cell>
+                        <cell>36,98</cell>
+                        <cell>36,16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Saint-Thomas..........</cell>
+                        <cell>19</cell>
+                        <cell>37,13</cell>
+                        <cell>36,44</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Macao ................</cell>
+                        <cell>23</cell>
+                        <cell>38,23</cell>
+                        <cell>37,62</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ténériffe..............</cell>
+                        <cell>28</cell>
+                        <cell>38,77</cell>
+                        <cell>38,28</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Madère ...............</cell>
+                        <cell>32 &#x00BD;</cell>
+                        <cell>39,20</cell>
+                        <cell>38,83</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tripoli................</cell>
+                        <cell>33</cell>
+                        <cell>40,19</cell>
+                        <cell>39,83</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Palerme...............</cell>
+                        <cell>38</cell>
+                        <cell>38,21</cell>
+                        <cell>38,00</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Naples................</cell>
+                        <cell>41</cell>
+                        <cell>37,94</cell>
+                        <cell>37,82</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Florence ..............</cell>
+                        <cell>43 &#x00BD;</cell>
+                        <cell>37,76</cell>
+                        <cell>37,71</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Avignon ..............</cell>
+                        <cell>44</cell>
+                        <cell>37,80</cell>
+                        <cell>37,77</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bologne...............</cell>
+                        <cell>44 &#x00BD;</cell>
+                        <cell>37,87</cell>
+                        <cell>37,85</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Padoue ...............</cell>
+                        <cell>45</cell>
+                        <cell>37,87</cell>
+                        <cell>37,87</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris ...................</cell>
+                        <cell>49</cell>
+                        <cell>37,53</cell>
+                        <cell>37,65</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Londres................</cell>
+                        <cell>51 &#x00BD;</cell>
+                        <cell>37,33</cell>
+                        <cell>37,53</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Altona................</cell>
+                        <cell>53 &#x00BD;</cell>
+                        <cell>37,09</cell>
+                        <cell>37,35</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dantzick .............</cell>
+                        <cell>54 &#x00BD;</cell>
+                        <cell>36,95</cell>
+                        <cell>37,24</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Könisberg .............</cell>
+                        <cell>54 &#x00BD;</cell>
+                        <cell>37,12</cell>
+                        <cell>37,41</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Apenrade .............</cell>
+                        <cell>55</cell>
+                        <cell>36,72</cell>
+                        <cell>37,22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Edimbourg.............</cell>
+                        <cell>56</cell>
+                        <cell>36,13</cell>
+                        <cell>36,46</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Christiania .............</cell>
+                        <cell>60</cell>
+                        <cell>36,30</cell>
+                        <cell>36,74</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Hardanger ................</cell>
+                        <cell>60</cell>
+                        <cell>35,55</cell>
+                        <cell>35,99</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bergen................</cell>
+                        <cell>60</cell>
+                        <cell>35,58</cell>
+                        <cell>36,02</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Reikiavig.............</cell>
+                        <cell>64</cell>
+                        <cell>33,36</cell>
+                        <cell>33,89</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Godthaab ..............</cell>
+                        <cell>64</cell>
+                        <cell>33,33</cell>
+                        <cell>33,86</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Eyafiord ..............</cell>
+                        <cell>66</cell>
+                        <cell>34,06</cell>
+                        <cell>34,64</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Godhavn ..............</cell>
+                        <cell>68</cell>
+                        <cell>34,14</cell>
+                        <cell>34,76</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Upenavik ..............</cell>
+                        <cell>73</cell>
+                        <cell>34,77</cell>
+                        <cell>35,49</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>He-Melville............</cell>
+                        <cell>74 &#x00BD;</cell>
+                        <cell>35,61</cell>
+                        <cell>36,35</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Spitzberg..............</cell>
+                        <cell>75 &#x00BD;</cell>
+                        <cell>35,47</cell>
+                        <cell>36,23</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>M. Fremy a obtenu une cristallisation de mannite. D&#x2019;après cette<lb break="yes"/>expérience, il ne pense pas que la mannite soit un produit de la@</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

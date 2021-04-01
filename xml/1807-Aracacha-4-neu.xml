@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="1123" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">(Die Arracacha.)</hi>
+                </head>
+                <p>Die&#x017F;e Blätter haben in Nro.<lb break="yes"/>250 Notizen über die Wurzel der amerikani&#x017F;chen Pflanze<lb break="yes"/>Arracacha gegeben, deren Nüzlichkeit wenig&#x017F;tens der der<lb break="yes"/>Kartoffel gleich ge&#x017F;ezt wird, wenn &#x017F;ie &#x017F;olche nicht in die-<lb break="no" />&#x017F;er Hin&#x017F;ichtübertreffe. Die&#x017F;e Nachricht war aus der engli-<lb break="no"/>&#x017F;chen Zeit&#x017F;chrift <hi rendition="#aq" >Annals of Botany,</hi> Nro. 2, S. 400 über-<lb break="no"/>&#x017F;ezt, worin alle Angaben über die&#x017F;e Wurzel das Gepräge<lb break="yes"/>der Glaubwürdigkeit tragen. Die Berliner Haude- und<lb break="yes" />Spener&#x017F;che Zeitung machte jedoch in Nro. 123 der&#x017F;elben<lb break="yes"/>die gün&#x017F;tigen Nachrichten über die&#x017F;es neue Ge&#x017F;chenk, wel-<lb break="no"/>ches die <placeName key="altewelt">alte Welt</placeName> von der neuen erhielt, in &#x017F;o fern zwei-<lb break="no"/>felhaft, als &#x017F;ie anführte, Hr. Alexander v. <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>,</hi>
+                    <lb break="yes"/>der &#x017F;ich jezt mit &#x017F;einem Rei&#x017F;egefährten durch Amerika,<lb break="yes"/>Hrn. <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland,</hi>
+                    </persName> in Berlin aufhält, habe auf Er-<lb break="no"/>kundigung der Redaktion nach die&#x017F;er Pflanze, erklärt:<lb break="yes"/>&#x201E;Daß er im <placeName key="spanischeskolonialreich">&#x017F;pani&#x017F;chen Amerika</placeName> keine Wurzel kennen gelernt<lb break="yes"/>habe, welche mit der Kartoffel zu vergleichen wäre, und<lb break="yes"/>daß er &#x017F;chlechterdings nicht wi&#x017F;&#x017F;e, was die &#x017F;o geprie&#x017F;ene<lb break="yes"/>Arracacha &#x017F;ey.&#x201D; &#x2014; Hr. A. v. <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> hat hieraus<lb break="yes"/>Veranla&#x017F;&#x017F;ung genommen, in einem neuern Blatte obiger<lb break="yes"/>Berliner Zeitung eine Erklärung darüber zu geben, wel-<lb break="no"/>che uns wenig&#x017F;tens die Hoffnung läßt, die Pflanze Arra-<lb break="no"/>cacha könne mit Nutzen in Europa gebauet werden, &#x017F;o daß<lb break="yes"/>&#x017F;ich vielleicht noch in der Zukunft die höhere Meinung da-<lb break="no"/>von be&#x017F;tätigt, welche man in London von die&#x017F;er Pflanze<lb break="yes"/>hegt, deren Ueberbringer aus dem Königreiche Santa Fe<lb break="yes"/>nach London, ein Eingeborner die&#x017F;es Landes, Hr. <hi rendition="#g">Var-<lb break="no"/>gas,</hi> i&#x017F;t. Auch dürfen wir wohl bald näheren Nachrich-<lb break="no"/>ten über die&#x017F;e Pflanze aus Deut&#x017F;chland &#x017F;elb&#x017F;t entgegen<lb break="yes" />&#x017F;ehen, da, wie &#x017F;chon in Nro. 250 die&#x017F;er Zeitung ange-<lb break="no"/>führt worden, die Ge&#x017F;ell&#x017F;chaft zur Beförderung der Na-<lb break="no"/>turkunde und Indu&#x017F;trie in Breslau &#x017F;olche hat ver&#x017F;chrei-<lb break="no"/>ben la&#x017F;&#x017F;en. Die erwähnte Erklärung des Hrn. Alexan-<lb break="no"/>ders von <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> i&#x017F;t folgende:</p>
+                <lb break="yes"/>
+                <p>&#x201E;Da mein Name zufällig bey Gelegenheit die&#x017F;er<lb break="yes" />Pflanze genannt worden i&#x017F;t, &#x017F;o glaube ich, um das Miß-<lb break="no"/>ver&#x017F;tändniß zu verhüten, als zweifle ich an der Nüzlich-<lb break="no"/>keit oder gar an der Exi&#x017F;tenz die&#x017F;er Pflanze, folgende Er-<lb break="no"/>läuterung dem Publikum &#x017F;chuldig zu &#x017F;eyn. Wir erinnern<lb break="yes"/>uns mehrmals eine Pa&#x017F;tinak ahnliche Wurzel gege&#x017F;&#x017F;en zu<lb break="yes"/>haben, welche man Arracacha nannte. Da wir aber nie<lb break="yes"/>Gelegenheit gehabt haben, die&#x017F;e Gartenpflanze blühend<lb break="yes"/>zu &#x017F;ehen, oder botani&#x017F;ch zu unter&#x017F;uchen, &#x017F;o wi&#x017F;&#x017F;en wir<lb break="yes"/>nicht, zu welchem Ge&#x017F;chlecht &#x017F;ie gehört. Ihre Kultur in<lb break="yes"/>Europa mag allerdings nüzlich &#x017F;eyn. Daß die&#x017F;elbe aber<lb break="yes"/>je &#x017F;o wichtig &#x017F;eyn könne, als die Kultur der Kartoffeln,<lb break="yes"/>der Bataten und Dioskoreen, i&#x017F;t mir &#x017F;ehr unwahr&#x017F;chein-<lb break="no"/>lich. Der Pater <persName key="gilij_fs">
+                        <hi rendition="#g">Gili</hi>
+                    </persName> erwähnt der Arracacha als einer<lb break="yes"/>Gartenpflanze, und leitet den Namen aus der Inka- oder<lb break="yes"/>Qquichua-Sprache her. <hi rendition="#aq">Saggio di Storia americana.<lb break="yes"/>T. 4. pag.</hi> 156.</p>
+                <closer>
+                    <salute>
+                        <hi rendition="#et">A. v. <hi rendition="#g">
+                                <choice>
+                                    <sic>
+                                        <persName key="humboldt_av">Humboldt</persName>.</sic>
+                                    <corr type="editorial">
+                                        <persName key="humboldt_av" >Humboldt</persName>.&#x201C;</corr>
+                                </choice>
+                            </hi>
+                        </hi>
+                    </salute>
+                </closer>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="57" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Über die Chinawälder in Südamerika.<lb break="yes"/>Von <hi rendition="#i">
+                        <hi rendition="#g">Alexander von <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>Erster Abschnitt.</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">D</hi>er Zweck dieser Abhandlung ist den Fieberrindenbaum als einen Ge-<lb break="no"/>genstand der physikalischen Erdbeschreibung oder der Pflanzen-Geogra-<lb break="no"/>phie zu betrachten. Unter den mannigfaltigen Schriftstellern, welche der<lb break="yes"/>
+                        <hi rendition="#i">Cinchona</hi> erwähnen, sind keine als <hi rendition="#i">
+                            <persName key="lacondamine_cmd">La Condamine</persName>, <persName key="ruizlópez_hipolito">Ruiz</persName>, <persName key="pavon_j" >Pavon</persName>
+                        </hi> und<lb break="yes"/>
+                        <hi rendition="#i">Zea</hi> welche diesen wohlthätigen Baum auf dem südamerikanischen Con-<lb break="no"/>tinente selbst beobachtet haben. Unter ihnen giebt nur der erstere eine<lb break="yes"/>
+                        <pb n="58" facs="#f0002"/> physikalische Beschreibung der Pflanze. Die andern, so wie <persName key="jacquin_njfv">
+                            <hi rendition="#i">Jacquin</hi>
+                        </persName> und<lb break="yes"/>
+                        <persName key="swarz_01">
+                            <hi rendition="#i">Swartz,</hi>
+                        </persName> welche die Fieberinde auf den Westindischen Inseln sahen,<lb break="yes"/>oder <persName key="vahl_m">
+                            <hi rendition="#i">Vahl</hi>
+                        </persName> und <persName key="lambert_jh">
+                            <hi rendition="#i">Lambert,</hi>
+                        </persName> welche nach troknen Exemplaren arbeiteten,<lb break="yes"/>sind bloß mit dem naturbeschreibenden Theile, mit der botanischen Dia-<lb break="no"/>gnose beschäftigt gewesen. Bei meinem vierjährigen Aufenthalte in Süd-<lb break="no"/>amerika habe ich Gelegenheit gehabt, lange in Ländern zu leben, in<lb break="yes"/>welchen die Chinabäume einheimisch sind. Wir haben dieselbe, Herrn<lb break="yes"/>
+                        <persName key="bonpland_ajag">
+                            <hi rendition="#i">Bonpland</hi>
+                        </persName> und ich, nördlich und südlich vom Aequator, im Königreich<lb break="yes"/>Neu-Grenada, zwischen <hi rendition="#i">Honda</hi> und <hi rendition="#i">Santa Fe de Bogota,</hi> in der Pro-<lb break="no"/>vinz <hi rendition="#i">Popayan,</hi> im Corregiment <hi rendition="#i" >Loxa,</hi> am Amazonen-Strohme in der<lb break="yes"/>Provinz <hi rendition="#i">Jaen de Bracamoros</hi> und im nördlichen Theile von <hi rendition="#i">Peru</hi> beob-<lb break="no"/>achtet. Bei unserm Aufenthalt im Hause des Herrn <persName key="mutis_jc">
+                            <hi rendition="#i">Don Jose Celes-<lb break="no"/>tino Mutis</hi>
+                        </persName> in <hi rendition="#i">Santa Fe,</hi> sind uns die botanischen Schäze dieses gros-<lb break="no"/>sen Naturforschers geöfnet gewesen. Wir haben dazu in Spanien von<lb break="yes"/>den Herausgeber der <hi rendition="#i">Flora Peruviana,</hi> in <hi rendition="#i" >Guayaquil,</hi> (dem Hafen von<lb break="yes"/>
+                        <hi rendition="#i">Quito</hi> an der Küste der Südsee), von <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruizens</hi>
+                        </persName> Schüler, <persName key="tafalla_jj">
+                            <hi rendition="#i">Tafalla,</hi>
+                        </persName> in dem<lb break="yes"/>Städchen <hi rendition="#i">Loxa,</hi> von dem königlichen Aufseher der Chinawälder <hi rendition="#i">Don<lb break="yes"/>Vicente Olmedo,</hi> viele interessante Nachrichten über Gegenstände einzie-<lb break="no"/>hen können, welche uns ohne die mittheilende Güte dieser Freunde un-<lb break="no"/>bekannt geblieben wären. In dem mit grenzenloser Bitterkeit geführten<lb break="yes"/>Streite, ob die neu-grenadische pomeranzenfarbene Fieberrinde von<lb break="yes"/>
+                        <hi rendition="#i">Santa Fe</hi> oder die peruanische von <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruiz</hi>
+                        </persName> und <persName key="pavon_j">
+                            <hi rendition="#i">Pavon</hi>
+                        </persName> beschriebene<lb break="yes"/>
+                        <hi rendition="#i">Cinchona nitida</hi> mit der seit 1638 berufenen sogenannten <hi rendition="#i">ächten Cin-<lb break="no"/>chona</hi> von <hi rendition="#i">Uritusinga</hi> identisch sey, kann nur der entscheiden, der die<lb break="yes"/>Gegenden selbst besucht hat, welche diese drei Pflanzen hervorbringen.<lb break="yes"/>Aber keiner der streitenden Partheien, weder <hi rendition="#i">
+                            <persName key="mutis_jc">Mutis</persName>, Zea</hi> noch <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruiz</hi>
+                        </persName>
+                        <lb break="yes"/>und <persName key="pavon_j">
+                            <hi rendition="#i">Pavon</hi>
+                        </persName> haben das Corregiment von <hi rendition="#i">Loxa</hi> betreten. Daher jede<lb break="yes"/>Parthei mit gleichem Ungrunde vorgegeben hat, die wirksamste Fieber-<lb break="no"/>rinde ihres Districts sey die ächte von <hi rendition="#i">Uritusinga.</hi> Wir haben in dem<lb break="yes" />zweiten Fascikel unserer Aequinoctial-Pflanzen <note place="foot" n="*)">
+                            <hi rendition="#i">Plantes équinoctiales, par Mrs. <persName key="humboldt_av">Humboldt</persName> et <persName key="bonpland_ajag">Bonpland</persName>. Troisième livraison p.</hi> 39.</note> erwiesen, daß diese<lb break="yes"/>letztere, die <hi rendition="#i">Cascarilla Fina de Loxa,</hi> von der <hi rendition="#i">Cinchona lancifolia<lb break="yes"/>
+                            <persName key="mutis_jc">Mutis</persName>
+                        </hi> und allen in <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruiz</hi>ens</persName>
+                        <hi rendition="#i">Quinologia,</hi> in der <hi rendition="#i">Flora peruviana,</hi> und<lb break="yes"/>in dem neuern <hi rendition="#i" >Supplement</hi> zur <hi rendition="#i">Quinologia</hi> beschriebenen peruanischen<lb break="yes"/>Fieberinden ganz verschieden sey. So wenig wir es wagen dürfen, uns<lb break="yes"/>mit den vorgenannten vortreflichen Botanikern zu messen, so ist uns<lb break="yes"/>doch der zufällige Vorzug vor ihnen zu Theil geworden, außer den<lb break="yes"/>Chinawäldern um <hi rendition="#i">Santa Fe</hi> auch die von <hi rendition="#i">Loxa</hi> selbst gesehen zu ha-<lb break="no"/>ben. In der That hatte seit <persName key="jussieu_jd">
+                            <hi rendition="#i">Joseph de Jussieu</hi>
+                        </persName> dessen Beobachtungen<lb break="yes"/>ohnedies nie bekannt gemacht worden sind, also seit 62 Jahren kein<lb break="yes"/>
+                        <pb n="59" facs="#f0003"/> reisender Naturforscher vor uns diese schönen Gebirgsebenen von <hi rendition="#i">Loxa</hi>
+                        <lb break="yes"/>besucht. Durch diese Umstände begünstigt, glaube ich über einen so<lb break="yes"/>schwierigen und durch mannichfaltigen Streit immer mehr und mehr ver-<lb break="no"/>wirrt gewordenen Gegenstand mit einiger Zuversicht reden zu können.</p>
+                    <lb break="yes"/>
+                    <p>Es würde überflüßig seyn hier zu wiederholen was man über die<lb break="yes" />Geschichte der Entdekung der heilenden Eigenschaften der Fieberrinde<lb break="yes"/>gefabelt hat. Bald soll ein Kranker aus einer Lache getrunken haben,<lb break="yes"/>in welchen Chinastämme gelegen hatten und deren Wasser dadurch ei-<lb break="no"/>nen bittern Geschmack angenommen hatte; bald soll ein Löwe sich<lb break="yes"/>das Fieber durch kauen von Chinarinde geheilt und die Aufmerksam-<lb break="no"/>keit der Indianer auf diesen Baum gezogen haben. <persName key="lambert_jh">
+                            <hi rendition="#i">Lambert</hi>
+                        </persName> hat in sei-<lb break="no"/>ner <hi rendition="#i" >Monographie</hi> von <hi rendition="#i">Cinchona</hi>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">A description of the <choice>
+                                    <sic>gernus</sic>
+                                    <corr type="editorial">genus</corr>
+                                </choice> Cinchona</hi> 1797. <hi rendition="#i">p.</hi> 39.</note> alle diese Meinungen gesammelt.<lb break="yes"/>Daß Thiere den Menschen belehrt haben ist eine sehr gewöhnliche Form<lb break="yes"/>der Volksmährchen. Das vortrefliche Gegengift, <hi rendition="#i">Vejuco del Guaco,</hi> eine<lb break="yes"/>von <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> beschriebene Pflanze, die der <hi rendition="#i">Mikania</hi> verwandt ist, und die man<lb break="yes"/>fälschlich mit der <hi rendition="#i">Ayapana</hi> aus Brasilien verwechselt, soll auch der (wie<lb break="yes"/>der <hi rendition="#i">Falco serpentarius</hi>) mit Schlangen kämpfende Neu-Grenadische<lb break="yes"/>
+                        <hi rendition="#i">Falco Guaco,</hi> den Indianern gezeigt haben. Daß übrigens der unge-<lb break="no"/>mähnte große amerikanische Löwe, <hi rendition="#i">Felis concolor,</hi> das Fieber habe,<lb break="yes"/>ist eine so gewagte Hypothese als die Behauptung der Einwohner des<lb break="yes"/>verpesteten Thals <hi rendition="#i">Gualla bamba,</hi>
+                        <note place="foot" n="**)">Nahe bei der Stadt Quito.</note> welche mich versicherten, daß selbst<lb break="yes"/>die Geier <hi rendition="#i" >(Vultur aura)</hi> in ihrer Gegend fieberkrank wären. Ja in der<lb break="yes"/>Region der Chinawälder findet sich nicht einmal der die Wärme lieben-<lb break="no"/>de <hi rendition="#i">Felis concolor,</hi> sondern höchstens die noch nicht gehörig beschrie-<lb break="no"/>bene Katze <hi rendition="#i">Puma,</hi> welche ich <hi rendition="#i">Felis andicola</hi> nennen möchte, <hi rendition="#i">
+                            <persName key="lacondamine_cmd">La Con-<lb break="no" />damine&#x2019;s</persName> petit lion du volcan de Pichincha,</hi> den wir bis 2500 Toisen<lb break="yes"/>Höhe angetroffen haben.</p>
+                    <lb break="yes"/>
+                    <p>Die so oft nachgeschriebene Geschichte der Gräfin <persName key="chinchon_01">
+                            <hi rendition="#i">Chinchon,</hi>
+                        </persName> Vi-<lb break="no"/>cekönigin von <hi rendition="#i">Peru,</hi> ist wohl noch zweifelhafter als man gemeinhin<lb break="yes"/>glaubt. Allerdings war ein Graf <hi rendition="#i">Chinchon, Don Geronimo Fernandez<lb break="yes"/>de Cabrera Bobadella y Mendoza</hi> von 1629 bis 1639 Vicekönig in<lb break="yes"/>
+                        <hi rendition="#i">Lima.</hi> Es ist sehr wahrscheinlich, daß seine Gemahlin nach ihrer Zu-<lb break="no"/>rückkunft nach Spanien 1640 zuerst die Fieberrinde in Europa verbrei-<lb break="no"/>tete. Der Name <hi rendition="#i">Pulvis Comitissae</hi> scheint selbst älter als der <hi rendition="#i">Pulvis<lb break="yes"/>Jesuiticus</hi> oder <hi rendition="#i">Pulvis patrum.</hi> Aber ich glaube (und Herr <hi rendition="#i">Olmedo</hi> in<lb break="yes"/>
+                        <hi rendition="#i">Loxa</hi> ist mit mir derselben Meinung) ich glaube nicht, daß der Corre-<lb break="no"/>gidor von Loxa, <persName key="cannizares_jld">
+                            <hi rendition="#i">Don Juan Lopez de Cannizares,</hi>
+                        </persName>
+                        <note place="foot" n="***)">
+                            <hi rendition="#i">Flora Peruviana.</hi> T. II, p. 2.</note> der die fieberkranke<lb break="yes"/>
+                        <pb n="60" facs="#f0004"/>
+                        <persName key="chinchon_01">Gräfin</persName> geheilt haben soll, das Mittel von den Indianern empfing. In <hi rendition="#i">Loxa</hi>
+                        <lb break="yes"/>selbst herrscht nicht bloß gar keine Tradition dieser Art, sondern es ist<lb break="yes"/>auch nicht wahrscheinlich, daß die Erfindung der Heilkraft der <hi rendition="#i">Cinchona</hi>
+                        <lb break="yes"/>den amerikanischen Urvölkern zugehöre, wenn man bedenkt, daß diese<lb break="yes"/>(gleich den Einwohnern von Hindostan) mit unabänderlicher Beharrlich-<lb break="no"/>keit an ihren Gebräuchen, an ihren Speisen und Heilmitteln hängen, und<lb break="yes"/>daß ihnen dennoch in <hi rendition="#i">Loxa, Guancabamba</hi> und weit umher der Ge-<lb break="no"/>brauch der Fieberrinde ganz unbekannt ist. In den tiefen und heißen<lb break="yes"/>Gebirgsthälern von <hi rendition="#i">Catamayo, Rio Calvas</hi> und <hi rendition="#i">Macara</hi> sind Wechsel-<lb break="no"/>fieber überaus gemein. Aber die dasigen Einwohner sowohl als die von<lb break="yes"/>
+                        <hi rendition="#i">Loxa,</hi> zu welcher Kaste sie auch gehören mögen, sterben lieber, als daß<lb break="yes"/>sie den Entschluß fassen sollten, Chinarinde, welche sie mit den Opiaten<lb break="yes"/>in die Klasse branderregender Gifte setzen, einzunehmen. Die Indianer<lb break="yes" />heilen sich durch Limonaden, durch die ölige aromatische Schale der<lb break="yes"/>kleinen grünen wildwachsenden Citrone, durch Aufgüsse der <hi rendition="#i">Scoparia<lb break="yes"/>dulcis</hi> und durch starken Kaffee <note place="foot" n="*)">Unter den Indianern am <hi rendition="#i">Orinoco,</hi> besonders in <hi rendition="#i">
+                                <placeName key="atures">Atures</placeName>
+                            </hi> und <hi rendition="#i">Maypure,</hi> haben wir ein vortref-<lb break="no"/>liches fieberheilendes Mittel gefunden, die <hi rendition="#i">frutta de Burro,</hi> die Frucht einer neuen Art <hi rendition="#i">Uvaria,</hi>
+                            <lb break="yes"/>welche wir unter dem Namen <hi rendition="#i">Uvaria febrifuga</hi> beschreiben werden.</note>. Bloß in <hi rendition="#i">Malacates,</hi> wo so viele<lb break="yes" />Cascarilleros, Chinarinden-Schäler, wohnen, fängt man an Vertrauen zu<lb break="yes"/>der <hi rendition="#i">Cinchona</hi> zu gewinnen. In <hi rendition="#i">Loxa</hi> ist kein Document vorhanden,<lb break="yes" />welches die Geschichte der Erfindung der <hi rendition="#i">Cinchona</hi> aufklären könnte.<lb break="yes"/>Doch geht daselbst die alte Sage, die Jesuiten hätten beim Holzfällen<lb break="yes"/>nach Landessitte durch Kauen der Rinde die verschiedenen Baumarten<lb break="yes"/>unterschieden, und seien bei dieser Gelegenheit auf die große Bitterkeit<lb break="yes"/>der <hi rendition="#i">Cinchona</hi> aufmerksam geworden. Da unter den Missionairen stets<lb break="yes"/>Arzneykundige waren, so hätten, sagt man, diese den Aufguß bei der<lb break="yes"/>gewöhnlichen Krankheit der Gegend, dem Tertianfieber, versucht. Diese<lb break="yes"/>Sage ist minder unwahrscheinlich, als die Behauptung europäischer Schrift-<lb break="no" />steller, welche, wie noch neuerlichst <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruiz</hi>
+                        </persName> und <persName key="pavon_j">
+                            <hi rendition="#i">Pavon,</hi>
+                        </persName> die Erfindung den<lb break="yes"/>Indianern zuschreiben. Auch im Königreich Neu-Grenada war den Ein-<lb break="no"/>gebornen die Heilkraft der <hi rendition="#i">Cinchona</hi> gänzlich unbekannt.</p>
+                    <lb break="yes"/>
+                    <p>Hundert Jahre verflossen, ehe man irgend eine botanische Beschrei-<lb break="no"/>bung des Baumes erhielt, dessen gepülverte Rinde das Jesuiterpulver gab.<lb break="yes"/>Der Astronom <persName key="lacondamine_cmd">
+                            <hi rendition="#i">La Condamine,</hi>
+                        </persName> der mit unbeschreiblicher Lebhaftigkeit<lb break="yes"/>alle Theile des menschlichen Wissens umfaßte, und von dem <persName key="jussieu_ald">
+                            <hi rendition="#i">Jussieu</hi>
+                        </persName> in<lb break="yes"/>Paris mehrere sehr saubere botanische Zeichnungen besitzt, <hi rendition="#i">La Conda-<lb break="no"/>mine</hi> war der erste Gelehrte, welcher den Fieberrindenbaum untersuchte<lb break="yes"/>und beschrieb. Er reiste <note place="foot" n="**)">
+                            <hi rendition="#i">Voyage à l&#x2019;Equateur,</hi> p. 31. 75. 186 und 203.</note> durch <hi rendition="#i">Loxa</hi> nach <hi rendition="#i" >Lima</hi> im Jahr 1737, und<lb break="yes"/>seine Beschreibung der <hi rendition="#i">Cinchona</hi> erschien in den <hi rendition="#i">Mém. de l&#x2019;Academie</hi>
+                        <lb break="yes"/>
+                        <pb n="61" facs="#f0005"/> 1738. Späterhin, 1739, besuchte <persName key="jussieu_jd">
+                            <hi rendition="#i">Joseph de Jussieu</hi>
+                        </persName> die Gegend um <hi rendition="#i">Loxa.</hi>
+                        <lb break="yes"/>Er ärndtete daselbst und um <hi rendition="#i">Zaruma</hi> viele Pflanzen ein, welche sich<lb break="yes"/>noch im <persName key="jussieu">
+                            <hi rendition="#i">Jussieuschen</hi>
+                        </persName> Herbarium in Paris befinden, und welche wir mit<lb break="yes" />den unsrigen, eben dort, sechzig Jahr später eingesammelten verglichen<lb break="yes"/>haben. Unter diesen befand sich die <hi rendition="#i" >Cinchona pubescens,</hi> welche <persName key="vahl_m">
+                            <hi rendition="#i">Vahl</hi>
+                        </persName>
+                        <lb break="yes"/>als neu beschrieben hat, welche aber, wie wir weiter unten erweisen<lb break="yes"/>werden, die erste <hi rendition="#i">Cinchona officinalis</hi> des <persName key="linne_cv">Linneischen</persName>
+                        <hi rendition="#i">Systema Natu-<lb break="no"/>rae</hi> nach der zwölften Ausgabe ist. Im Jahr 1743 war <persName key="lacondamine_cmd">
+                            <hi rendition="#i">La Condamine</hi>
+                        </persName>
+                        <lb break="yes"/>zum zweiten Male in <hi rendition="#i">Loxa,</hi> von wo aus er, wie wir im Jahr 1802 nach<lb break="yes"/>
+                        <hi rendition="#i">Tomependa</hi> und dem Amazonenstrohme reiste. Damals wurde der erste,<lb break="yes"/>und sonderbar genug, der letzte Versuch gemacht, junge Stämme des<lb break="yes"/>Fieberrindenbaums lebendig nach Europa zu bringen. Nachdem der<lb break="yes"/>Astronom sie 8 Monathe lang auf einer Schiffahrt von 1200 Lieues sorg-<lb break="no"/>sam gepflegt hatte, verschlang sie ein hoher Wellenschlag, der beim <hi rendition="#i" >Cap<lb break="yes"/>d&#x2019;Orange</hi> nördlich von <hi rendition="#i">Parà</hi> das Canot überströmte.</p>
+                    <lb break="yes"/>
+                    <p>Lange kannten die Botaniker in ihren Systemen nur eine einzige<lb break="yes" />Species von <hi rendition="#i">Cinchona,</hi> welche <persName key="linne_cv">Linné</persName>
+                        <hi rendition="#i">officinalis</hi> nannte, und in deren<lb break="yes" />Beschreibung er unsere <hi rendition="#i">C. <persName key="lacondamine_cmd">condaminea</persName>
+                        </hi> und <hi rendition="#i">C. cordifolia <persName key="mutis_jc" >Mutis</persName>
+                        </hi> ohne<lb break="yes"/>es zu wissen verband; denn das ihm von <hi rendition="#i">Santa Fe</hi> aus gesandte Exem-<lb break="no"/>plar war gelbe China, und von der, von <persName key="lacondamine_cmd">
+                            <hi rendition="#i">La Condamine</hi>
+                        </persName> freilich unvoll-<lb break="no"/>kommen gezeichneten, ganz verschieden. <persName key="jacquin_njfv">
+                            <hi rendition="#i">Jacquin&#x2019;s</hi>
+                        </persName> Reise lehrte endlich<lb break="yes"/>eine zweite Species, die <hi rendition="#i">C. caribaea</hi> kennen. Die Westindischen Inseln,<lb break="yes"/>die Südsee, selbst Ostindien boten den Reisenden nach und nach mehr<lb break="yes"/>Arten der <hi rendition="#i">Cinchona</hi> dar; aber gerade die heilsamsten und merkwürdig-<lb break="no"/>sten des Continents von Südamerika blieben am längsten unbeachtet.</p>
+                    <lb break="yes"/>
+                    <p>Von 1638 bis 1776 kam keine andere Fieberrinde in den Handel<lb break="yes" />als die des <hi rendition="#i">Corregimiento de Loxa</hi> und der zunächst gelegenen Gegen-<lb break="no"/>den. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">La Condamine</hi>
+                        </persName> erwähnt der China von <hi rendition="#i">Riobamba</hi> und <hi rendition="#i">Cuenca</hi> in<lb break="yes"/>der Provinz Quito wie der von <placeName key="ayabaca">
+                            <hi rendition="#i">Ayavaca</hi>
+                        </placeName> und <hi rendition="#i">Jaen de Bracamorros.</hi> Aber<lb break="yes"/>die China von den innern Theilen von Peru (um <hi rendition="#i">Huanuco</hi> und in der<lb break="yes"/>Provinz <hi rendition="#i">La Paz</hi>) oder gar die China des Königreichs Neu-Grenada wa-<lb break="no"/>ren ihm völlig unbekannt.</p>
+                    <lb break="yes"/>
+                    <p>Man ahndete nicht, daß es nördlich vom Aequator, also in unserer<lb break="yes"/>Hemisphäre Fieberrindenbäume geben könne, bis ein glücklicher Zufall<lb break="yes"/>einen Mann, der lange Zeit wegen der ökonomischen Verhältnisse des<lb break="yes"/>Chinaschälens in Loxa gelebt hatte, auf seinem Rückwege nach Spanien<lb break="yes"/>über <hi rendition="#i">Popayan</hi> nach <hi rendition="#i">Santa Fe de Bogota</hi> führte. Dieser aufmerksame<lb break="yes"/>Reisende war der Obermünz-Direktor, (Superintendente general de Moneda<lb break="yes"/>de S. Fe) <persName key="santiesteban_md">
+                            <hi rendition="#i">Don Miguel de Santistevan,</hi>
+                        </persName> der ohne alle botanische Kennt-<lb break="no"/>nisse physiognomisch, das heißt nach den bloßen Habitus, die China-<lb break="no" />bäume von <hi rendition="#i">Loxa</hi> an bis zum 2<formula notation="TeX" >\frac{1}{2}</formula>° nördlicher Breite entdeckte. In einem<lb break="yes"/>
+                        <pb n="62" facs="#f0006"/> Projekte über die königliche Administration alles Fieberrindenhandels<lb break="yes"/>
+                        <hi rendition="#i">(estanco de cascarilla)</hi> welches er 1753 an den Vicekönig <persName key="pizarro_ja">Marquis <hi rendition="#i">de<lb break="yes"/>Villar</hi>
+                        </persName> richtete, sagt er ausdrücklich, daß er nicht bloß zwischen <hi rendition="#i">Loxa</hi>
+                        <lb break="yes"/>und <hi rendition="#i">Quito,</hi> z. B. östlich von <hi rendition="#i">Cuenca</hi> bei den Dörfern <hi rendition="#i">Paute</hi> und <hi rendition="#i">Gua-<lb break="no"/>lasco,</hi> westlich von <hi rendition="#i">Riobamba</hi> am Abfall des <hi rendition="#i" >Chimborazo</hi> bei <hi rendition="#i">Angas</hi>
+                        <lb break="yes"/>und an der <hi rendition="#i">Cuesta de S. Antonio,</hi> sondern auch zwischen <hi rendition="#i">Quito</hi> und<lb break="yes"/>
+                        <hi rendition="#i">S. Fe</hi> überall, wo das Erdreich gleiche Höhe mit <hi rendition="#i">Loxa</hi> hat, also 800<lb break="yes"/>Toisen über dem Meere erhoben ist, Fieberrindenbäume gefunden ha-<lb break="no"/>be. Die Angabe der Höhe von <hi rendition="#i">Loxa</hi> ist zwar nach neuern Messungen<lb break="yes"/>und selbst nach den ältern <persName key="lacondamine_cmd">
+                            <hi rendition="#i">La Condamineschen</hi>
+                        </persName>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">Voyage de la rivière de l&#x2019;Amazone p.</hi> 25.</note> um wenigstens 250<lb break="yes"/>Toisen zu gering; doch ist die feine Bemerkung über die mittlere Höhe,<lb break="yes"/>auf welcher sich stets die <hi rendition="#i">Cinchona</hi> am Gebirgsabhange findet, um so<lb break="yes"/>auffallender, als selbst gelehrte Naturforscher damals wenig auf die Geo-<lb break="no"/>graphie der Pflanzen und die Höhe des Standorts achteten. Auch ist zu<lb break="yes"/>bemerken, daß obgleich <persName key="santiesteban_md">
+                            <hi rendition="#i">Santistevan</hi>
+                        </persName> laut der handschriftlichen Nachrich-<lb break="no"/>ten, die ich mir von ihm verschafft, im Allgemeinen von Fieberrinden-<lb break="no" />bäumen zwischen <hi rendition="#i">Quito</hi> und <hi rendition="#i">S. Fe</hi> spricht, man dennoch aus der Aufzäh-<lb break="no"/>lung einzelner Orte ersieht, daß er dieses kostbare Produkt nur im Thal<lb break="yes"/>des <hi rendition="#i">Rio Tuanambu</hi> nördlich von <hi rendition="#i">Pasto,</hi> in den Wäldern von <hi rendition="#i" >Beruecos,</hi>
+                        <lb break="yes"/>und bei <hi rendition="#i">Popayan</hi> (beim gefährlichen Andes-Paß <hi rendition="#i">Guanacas</hi> zwischen<lb break="yes"/>dem Dorfe dieses Namens und dem <hi rendition="#i">Sitio</hi>
+                        <choice>
+                            <sic>d<hi rendition="#i">e</hi>
+                            </sic>
+                            <corr type="editorial">
+                                <hi rendition="#i">de</hi>
+                            </corr>
+                        </choice>
+                        <hi rendition="#i"> los Corrales</hi>) entdeckte.</p>
+                    <lb break="yes"/>
+                    <p>So stand es mit der Auffindung der <hi rendition="#i">Cinchona</hi> nördlich vom Aequa-<lb break="no"/>tor bis 1772. Alle Chinarinde, welche in den Handel kam, war von<lb break="yes"/>
+                        <hi rendition="#i">Loxa, Guancabamba</hi> und <hi rendition="#i">Jaen,</hi> vielleicht selbst von <hi rendition="#i">Riobamba</hi> und<lb break="yes"/>
+                        <hi rendition="#i">Cuenca.</hi> Alle wurde durch die Häfen der Südsee verschifft. Die Auf-<lb break="no"/>tige Entdeckung in den Provinzen <hi rendition="#i">Pasto</hi> und <hi rendition="#i">Popayan</hi> blieb unbe-<lb break="no"/>nutzt. Im Jahr 1772 entdeckte <persName key="mutis_jc">
+                            <hi rendition="#i">Don Jose Celestino Mutis</hi>
+                        </persName> die China-<lb break="no"/>rinde um <hi rendition="#i">Santa Fe,</hi> und seit dieser Epoche erhielt Europa Fieberrinde,<lb break="yes"/>welche nicht das <hi rendition="#i">Cap Horn</hi> umschiffte, und über <hi rendition="#i">Carthagena de Yn-<lb break="no" />dias</hi> nach <hi rendition="#i">Cadiz</hi> kam.</p>
+                    <lb break="yes"/>
+                    <p>Herr <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> hatte bereits 12 Jahre früher das Königreich Neu-Gre-<lb break="no"/>nada bewohnt. Er war zweimal durch die Wälder zwischen <hi rendition="#i">Guaduas</hi>
+                        <lb break="yes"/>und <hi rendition="#i">Santa Fe</hi> geritten, wo der Fieberrindenbaum von den schönen Gre-<lb break="no"/>nadischen Eichen umgeben ist. Wenn man die Mannigfaltigkeit der Ge-<lb break="no"/>wächse erwägt, welche in diesen Ländern den Botaniker beschäftigen,<lb break="yes" />wenn man bedenkt, wie die Höhe der Stämme in der Tropenwelt dem<lb break="yes"/>Auge Blätter und Blüthen fern entrückt, so darf man sich weniger wun-<lb break="no"/>dern, wie Herr <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> erst 1772 die <hi rendition="#i">Cinchona,</hi> da er sie blühend fand,<lb break="yes"/>erkannte. Dieser vortrefliche Naturforscher, der aus Cadiz gebürtig ist,<lb break="yes"/>
+                        <pb n="63" facs="#f0007"/> studirte 3 Jahr in Madrid und begleitete 1760 aus Liebe zur Botanik den<lb break="yes"/>Vicekönig <hi rendition="#i">Don Pedro Mesia de la Cerda</hi> als Leibarzt nach <hi rendition="#i">Santa Fe.</hi>
+                        <lb break="yes"/>Er lebte lange in den Bezirken von <hi rendition="#i" >Pampelona</hi> und <hi rendition="#i">de la Montuosa,</hi>
+                        <lb break="yes"/>ein Name, aus welchem <persName key="linne_cv" >Linné</persName> zu Herrn <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> größtem Mißvergnügen<lb break="yes"/>
+                        <hi rendition="#i">Mexico</hi> gemacht hat, so daß der schwedische Botaniker alle neu-gre-<lb break="no"/>nadische Pflanzen, die er von der <hi rendition="#i">Montuosa</hi> erhielt, als mexikanische<lb break="yes" />aufgeführt hat <note place="foot" n="*)">Zum Beispiel: <hi rendition="#i" >Manettia reclinata.</hi>
+                        </note>. Dieser Irrthum ist um so wunderbarer, da <persName key="linne_cv">
+                            <hi rendition="#i">Linné,</hi>
+                        </persName> der<lb break="yes"/>mit <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> stets über <hi rendition="#i">Carthagena de Yndias</hi> correspondirte, wohl mer-<lb break="no"/>ken mußte, daß dieser sich nie in Mexico aufhielt. Die Abwesenheit<lb break="yes"/>des letztern in den Bergwerken nördlich von <hi rendition="#i">S. Fe</hi> hatte ihn von den<lb break="yes"/>Chinawäldern von <hi rendition="#i">Mave, Gascas</hi> und den <hi rendition="#i">Aseradero</hi> entfernt gehalten.<lb break="yes"/>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> giebt in einem Berichte an den Vicekönig <persName key="flores_ma">
+                            <hi rendition="#i">Don Manuel Antonio<lb break="yes"/>Florez</hi>
+                        </persName> als Grund der spätern Auffindung der <hi rendition="#i" >Cinchona</hi> an, daß bis 1772<lb break="yes"/>alle seine botanische Excursionen außerhalb der ersten 5° nördl. Breite<lb break="yes"/>erichtet gewesen wären, welche er für das ausschließliche Vaterland <choice>
+                            <sic>derg</sic>
+                            <corr type="editorial">der</corr>
+                        </choice>
+                        <lb break="yes"/>Fieberrinde in der nördlichen Hemisphäre hielt. Der große Naturfor-<lb break="no"/>scher ahndete damals noch nicht, daß man bald darauf <hi rendition="#i">Cinchona</hi> bis<lb break="yes"/>zur Mündung des <hi rendition="#i">Rio Opon,</hi> ja bis <hi rendition="#i">Santa Martha,</hi> also bis zum 10°<lb break="yes"/>N. Br. entdecken würde.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> hatte sich 1761 die ersten trocknen Exemplare der gelben<lb break="yes"/>China von <hi rendition="#i">Loxa (C. cordifolia)</hi> durch den Münzdirektor <persName key="santiesteban_md">
+                            <hi rendition="#i">Santisteva</hi>
+                        </persName> ver-<lb break="no"/>schafft. Nach dieser wurde das <hi rendition="#i">genus Cinchona</hi> so festgestellt, wie er<lb break="yes"/>es an <persName key="linne_cv">Linné</persName> mittheilte. Im Jahr 1772, als <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> mit seinem Freunde<lb break="yes"/>
+                        <persName key="ugarte_p">
+                            <hi rendition="#i">Don Pedro Ugarte</hi>
+                        </persName> durch den Wald von <hi rendition="#i">Tena</hi> unfern dem Gebirgs-<lb break="no"/>abhange von <hi rendition="#i">S. Fe</hi> ritt, entdeckte er Fieberrindenbäume. Ein Jahr dar-<lb break="no"/>auf fand er sie auch zwischen <hi rendition="#i">Honda</hi> und <hi rendition="#i" >Guaduas</hi> und überreichte dem<lb break="yes"/>Vicekönig <persName key="guirior_md">
+                            <hi rendition="#i">Don Manuel de Guirior,</hi>
+                        </persName> der sich eben auf dem Magdalenen-<lb break="no"/>strome ausgeschifft hatte, einen blühenden Strauß der <hi rendition="#i" >Cinchona,</hi> als ein<lb break="yes"/>neu entdecktes kostbares Erzeugniß dieses Landes, welches die Natur<lb break="yes"/>überdies mit aromatischen Muskatnüssen, <hi rendition="#i">(Myristica Otoba)</hi> mit einem<lb break="yes"/>vortreflichen Zimmtlorbeer, <hi rendition="#i" >(Laurus cinnamoides <persName key="mutis_jc">Mut.</persName>)</hi> mit gewürzhaf-<lb break="no"/>ten <hi rendition="#i">Puchery</hi> oder <hi rendition="#i">Todaspecie, (Laurus Putseri <persName key="mutis_jc" >Mut.</persName>)</hi> mit Mandeln,<lb break="yes"/>
+                        <hi rendition="#i">(Caryocar amigdaliferum <persName key="mutis_jc" >Mut.</persName>)</hi> mit vier Arten von <hi rendition="#i" >Styrax,</hi> mit dem<lb break="yes"/>Balsam von <hi rendition="#i" >Tolu, (Tuluifera indica)</hi> mit einem Theebaume <hi rendition="#i" >(Alstonia<lb break="yes"/>theaeformis <persName key="mutis_jc" >Mut.</persName>)</hi> mit Ipecacacuanha, <hi rendition="#i" >(Psychotria emetica <persName key="mutis_jc">Mut.</persName>)</hi> mit<lb break="yes"/>Wachspalmen <hi rendition="#i">(Ceroxylon andicola <persName key="humboldt_av">Humb.</persName>)</hi> mit Caranniaharz <hi rendition="#i">(Aegine-<lb break="no"/>tia caranifera <persName key="mutis_jc">Mut.</persName>)</hi> mit Winterscher Rinde, <hi rendition="#i">(<persName key="wynter_w">Wintera</persName> grenadensis)</hi> mit<lb break="yes"/>
+                        <hi rendition="#i">Quassia Simaruba</hi> und mit den köstlichsten Farbenhölzern bereichert hat.</p>
+                    <lb break="yes"/>
+                    <p>Es ist in der Geschichte der Wissenschaften sehr gewöhnlich, daß<lb break="yes"/>
+                        <pb n="64" facs="#f0008"/> nicht der, welcher eine Entdeckung selbst macht, sondern der, welcher<lb break="yes"/>eine fremde Entdeckung als die seinige mit einer gewissen Keckheit ver-<lb break="no"/>breitet, für den ersten Entdecker gilt. <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis,</hi>
+                        </persName> ein Mann von einem li-<lb break="no"/>beralen, etwas neugierigen Charakter, hatte keine Belohnung von dem<lb break="yes"/>Gouvernement gefordert. Er beschäftigte sich in der Stille mit botani-<lb break="no" />schen Untersuchungen der neuen China-Arten, die er auffand, und mit<lb break="yes"/>Anwendung der Fieberrinden in ausgebreiteter medizinischer Praxis. Erst<lb break="yes"/>im Jahr 1783 erhielt er eine königliche Besoldung, als die botanische<lb break="yes"/>Expedition von <hi rendition="#i">Santa Fe</hi> durch <hi rendition="#i">Gongora,</hi> der zugleich Erzbischof und<lb break="yes"/>Vicekönig war, organisirt ward.</p>
+                    <lb break="yes"/>
+                    <p>Vier Jahre nach der Entdeckung des Doctor <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis,</hi>
+                        </persName> 1776, wußte<lb break="yes"/>ein verschlagener und zanksüchtiger Arzt zu <hi rendition="#i">S. Fe, Don <persName key="lopezruiz_sj">Sebastian Jose<lb break="yes"/>Lopez Ruiz</persName>
+                        </hi> aus <hi rendition="#i">Ganama</hi> gebürtig, die spanische Regierung zu überre-<lb break="no"/>den, daß er die ersten Fieberrindenbäume in Neu-Grenada entdeckt<lb break="yes"/>habe. Er sandte Proben der neuen China nach Madrid, sprach viel von<lb break="yes"/>der Wichtigkeit des neuen Handelsartikels und erhielt eine jährliche Pen-<lb break="no"/>sion von 2000 Piaster zur Belohnung. Aus Aktenstücken, welche Herr<lb break="yes"/>
+                        <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName> mir im Januar 1802 durch seinen Bruder, einen Kanonikus in<lb break="yes"/>Quito, zustellen ließ, um mir die Priorität seiner Entdeckung zu bewei-<lb break="no"/>sen, habe ich ersehen, daß er erst 1774 die <hi rendition="#i">Cinchona</hi> um <hi rendition="#i">Honda</hi> er-<lb break="no"/>kannte, und 1775 den ersten medizinischen Versuch damit machte. Herr<lb break="yes"/>
+                        <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName> genoß nicht lange seines vollen Jahrgehalts. Der Vicekönig <hi rendition="#i">Gon-<lb break="no"/>gora,</hi> der ohnedies Herrn <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> sehr schätzte, und dessen erster Sekre-<lb break="no"/>tair, <persName key="alonzo_c">
+                            <hi rendition="#i">Don Zenon de Alonzo,</hi>
+                        </persName> der ein eifriger Beförderer der Wissenschaften<lb break="yes" />war, stellte dem Hofe vor, daß <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName> nicht der frühere Entdecker der<lb break="yes"/>neugrenadischen Fieberrinde sei. Man strich sogleich die Hälfte der kö-<lb break="no" />niglichen Pension, befahl Herrn <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName> nach den <hi rendition="#i">Darien</hi> zu reisen, wo<lb break="yes"/>man ebenfalls vorgab <hi rendition="#i">Cinchona</hi> entdeckt zu haben, und da er sich wei-<lb break="no"/>gerte die Reise in ein so verpestetes Klima zu unternehmen, so zog der<lb break="yes"/>Vicekönig auch die letzte Hälfte des Jahrgehalts ein. Seit dieser Epoche<lb break="yes"/>entstand ein heftiger Streit über die Priorität der Entdeckung. <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName>
+                        <lb break="yes"/>machte eine Reise nach Europa und wußte sich 1000 Piaster Gehalt<lb break="yes"/>wieder zu verschaffen. Er schmeichelte sich bei Herrn <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> botani-<lb break="no"/>schen Widersachern ein, und diese erwähnten seitdem oft seiner als Mit-<lb break="no"/>entdecker. Noch auffallender ist es, daß der Obrist <persName key="torreymiranda_adl">
+                            <hi rendition="#i">Don Antonio de<lb break="yes"/>la Torre Miranda</hi>
+                        </persName> in seiner Topographie der Provinz Carthagena <hi rendition="#i" >(No-<lb break="no"/>ticia individual de los Poblaciones nuevas fundadas en la Provincia<lb break="yes"/>de Carthagena)</hi> durch Zeugnisse beweisen will, daß ihm die Ehre des<lb break="yes"/>Auffindens der Chinarinde in Neu-Grenada gehöre, weil er sie 1783 (also<lb break="yes"/>11 Jahr nach <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName>) zuerst bei <hi rendition="#i">Fusagasuga</hi> entdeckt habe. Herr <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName>
+                        <lb break="yes"/>hatte in Mariquita eine Pflanzung von Cinchona und von Kanell-Lorbeer<lb break="yes"/>
+                        <fw type="catch" place="bottom">der</fw>
+                        <lb break="yes"/>
+                        <pb n="65" facs="#f0009"/> der Andaquie-Missionen angefangen, deren Überbleibsel wir noch gese-<lb break="no"/>hen haben. Im Jahr 1800 trug das spanische Gouvernement einem fran-<lb break="no"/>zösischen Arzte, <hi rendition="#i">Louis Derieux,</hi> auf, diese Pflanzungen fortzusetzen, die<lb break="yes"/>einheimische <hi rendition="#i">Myristica</hi> zu kultiviren, und die allgemeine Aufsicht über<lb break="yes"/>das Verpacken der Chinarinde in Neu-Grenada zu führen. Er erhielt<lb break="yes"/>2000 Piaster Gehalt mit dem allgemeinen Titel eines <hi rendition="#i" >Commissionado y<lb break="yes"/>Encargado de investigaciones de historia Natural. en el Nuevo Reyno<lb break="yes"/>de Grenada.</hi> Er hatte so wenig botanische Kenntnisse als <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez,</hi>
+                        </persName> war<lb break="yes"/>aber ein Mann von vielem Geist und intellectueller Bildung. Er hatte<lb break="yes"/>lange vorher in <hi rendition="#i">Santa Fe</hi> gelebt, von wo man ihn unter der falschen<lb break="yes"/>Beschuldigung revolutionairer Gesinnungen in Ketten nach Carthagena,<lb break="yes"/>von da in ein Gefängniß nach Cadiz schleppte. Nach Anerkennung sei-<lb break="no"/>ner Unschuld gab ihm der Staatsminister <persName key="urquijo_mld">
+                            <hi rendition="#i">Don Mariano de Urquijo</hi>
+                        </persName> jene<lb break="yes"/>Aufsicht über die Chinawälder. Ich habe mit ihm die Reise auf dem<lb break="yes"/>Magdalenenstrome gemacht, während welcher sein liebenswürdiger Sohn<lb break="yes"/>mehrere Pflanzen für mich gezeichnet hat. Der Vater trat zwischen<lb break="yes"/>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> und <persName key="lopezruiz_sj">
+                            <hi rendition="#i">Lopez</hi>
+                        </persName> auf. Wie die specifiken Charaktere der Cinchona-<lb break="maybe"/>Arten in Madrid zwischen <hi rendition="#i">Zea, <persName key="ruizlópez_hipolito">Ruiz</persName>
+                        </hi> und <persName key="pavon_j">
+                            <hi rendition="#i">Pavon</hi>
+                        </persName> die bittersten Streitig-<lb break="no"/>keiten erregt haben, so ist die Fieberrinde in <hi rendition="#i">Santa Fe</hi> auch seit ihrer<lb break="yes"/>ersten Auffindung ein gehässiger Gegenstand der Verfolgung gewesen.<lb break="yes"/>Ich habe mit großem Mißvergnügen erfahren, daß Herr <hi rendition="#i">Derieux</hi> bald<lb break="yes"/>nachdem ich Südamerika verließ, sein Jahrgehalt verloren hat, ja sogar<lb break="yes" />aufs neue gezwungen worden ist, das Vicekönigreich zu räumen, so daß<lb break="yes"/>die <choice>
+                            <sic>Chinabaume</sic>
+                            <corr type="editorial">Chinabäume</corr>
+                        </choice> wiederum ohne eine Aufsicht wachsen, die freilich bis-<lb break="no"/>her ihre Vermehrung oder Erhaltung nicht befördert hat.</p>
+                    <lb break="yes"/>
+                    <p>Wir haben in dieser einfachen Geschichtserzählung gezeigt, daß bis<lb break="yes"/>1772 alle Fieberrinde in den Wäldern von <hi rendition="#i" >Loxa, <placeName key="ayabaca">Ayavaca</placeName>
+                        </hi> und <hi rendition="#i">Jaen<lb break="yes"/>de Bracamorros</hi> gesammelt wurde, also bloß zwischen dem 3<hi rendition="#sup">ten</hi> und 5<hi rendition="#sup">ten</hi>
+                        <lb break="yes"/>Grade südlicher Breite, und daß erst 1772 auf dem südamerikanischen<lb break="yes"/>Continent heilsame Cinchona-Arten in der nördlichen Halbkugel benutzt<lb break="yes"/>wurden, Cinchona-Arten, welche man zwischen dem 4° und 5° der Breite<lb break="yes"/>entdeckte. Bis dahin kannte man noch keine in dem eigentlichen Peru,<lb break="yes" />besonders nicht in den der Hauptstadt Lima näher gelegenen Gebirgen.<lb break="yes"/>Das Thal von <hi rendition="#i">Rio Calvas</hi> und das Dorf <hi rendition="#i">
+                            <placeName key="ayabaca">Ayavaca</placeName>,</hi> in dessen Nähe vor-<lb break="no"/>trefliche schon 1738 berufene <hi rendition="#i" >Cinchona <persName key="lacondamine_cmd">condaminea</persName>
+                        </hi> wächst, gehört zwar<lb break="yes"/>in politischer Hinsicht zu Peru, aber beide liegen dicht an der Grenze<lb break="yes"/>des Corregiments von <hi rendition="#i">Loxa</hi> und die China von <hi rendition="#i">
+                            <placeName key="ayabaca">Ayavaca</placeName>
+                        </hi> wurde wie die<lb break="yes"/>von <hi rendition="#i">Jaen</hi> sowohl unter dem Namen <hi rendition="#i">Cascarilla fina de Uritusinga</hi> ver-<lb break="no"/>kauft als auch in <hi rendition="#i">Payta</hi> eingeschifft.</p>
+                    <lb break="yes"/>
+                    <p>Erst 1776 fing das eigentliche Verkehr mit peruanischer Fieberrinde<lb break="yes"/>an. <hi rendition="#i">Don Francisco Renquifo</hi> entdeckte die <hi rendition="#i">C. nitida <persName key="ruizlópez_hipolito">Ruiz</persName>
+                        </hi> eine der<lb break="yes"/>
+                        <pb n="66" facs="#f0010"/>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Mutisischen</hi>
+                        </persName> pommeranzenfarbigen <hi rendition="#i">(Cinchona lancifolia)</hi> sehr nahe ver-<lb break="no"/>wandte Species bei <hi rendition="#i">Huanuco</hi> am Berg <hi rendition="#i">S. Christo val de Cuchero.</hi> Ein<lb break="yes"/>unternehmender Mann <persName key="alcarraz_e">
+                            <hi rendition="#i">Don Emanuel Alcarraz</hi>
+                        </persName> brachte die ersten Pro-<lb break="no"/>ben davon nach <hi rendition="#i">Lima</hi> und setzte die Benutzung dieses Produktes in<lb break="yes"/>Gang. Die Herausgeber der <hi rendition="#i">Flora Peruviana</hi> drangen 1779 zwar nicht<lb break="yes"/>bis an den Amazonenstrom selbst, aber doch bis an die Flüsse vor,<lb break="yes" />welche sich zunächst in denselben ergießen. Sie besuchten die schönen<lb break="yes"/>Thäler von <hi rendition="#i">Tarma, Xauxa,</hi> und <hi rendition="#i">Huamalies</hi> und bestimmten 1779, also<lb break="yes" />sieben Jahr nachdem <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> seine Arbeit über die neugrenadischen Cin-<lb break="no" />chona-Arten begann, die botanischen Charaktere der nordperuanischen<lb break="yes"/>Species. Nach und nach wurde heilsame Fieberrinde fast zugleich im<lb break="yes"/>nördlichsten und südlichsten Theile von Südamerika entdeckt, in den<lb break="yes"/>Gebirgen um <hi rendition="#i" >Santa Martha,</hi> und im Königreich <hi rendition="#i" >Buenosayres</hi> bei <hi rendition="#i">La<lb break="yes"/>Paz</hi> und <hi rendition="#i">Cochabamba,</hi> wo ein Seeofficier <hi rendition="#i">Rubin de Celis</hi> und der deut-<lb break="no"/>sche Botaniker <persName key="haenke_t">
+                            <hi rendition="#i">Taddäus Hänke</hi>
+                        </persName> die Einwohner auf dieses kostbare Pro-<lb break="no"/>dukt aufmerksam machten.</p>
+                    <lb break="yes"/>
+                    <p>Europa wurde demnach seit dem Jahr 1780 auf allen Seiten durch<lb break="yes" />die Häfen von <hi rendition="#i">Payta, Guayaquil, Lima, Buenosayres, Carthagena</hi> und<lb break="yes"/>
+                        <hi rendition="#i">Santa Martha</hi> mit Fieberrinde von verschiedener Heilkraft überströmt.<lb break="yes"/>Diese Fieberrinde kam theils unmittelbar nach Spanien, theils durch<lb break="yes"/>Schleichhandel nach Nordamerika und England. Hier und da wurden auch<lb break="yes" />Westindische Cinchona-Arten unter die des Continents gemengt. Man<lb break="yes"/>nannte Rinden, welche zwar auch überaus fieberheilend sind, aber von<lb break="yes"/>Bäumen herrühren, die nicht einmal dem <hi rendition="#i">genus Cinchona</hi> angehören,<lb break="yes"/>China. So sprach man in Cadiz von <hi rendition="#i">Cascarilla</hi> oder <hi rendition="#i">Quina de Cumana</hi>
+                        <lb break="yes"/>und von <hi rendition="#i">Quina de la Angostura.</hi> Ohne zu bedenken, daß wahre Fie-<lb break="no"/>berrinden zwar gleiche Heilkraft besitzen, aber doch specifike Unter-<lb break="no"/>schiede in der Art ihrer Wirksamkeit äußern können, theilte man alle<lb break="yes"/>China in ächte und unächte ein. Man forderte China wie die von <hi rendition="#i" >Loxa,</hi>
+                        <lb break="yes"/>ohne zu bedenken, daß schon 1738 von <hi rendition="#i" >Loxa</hi> selbst drei bis vier Arten<lb break="yes"/>Fieberrinden nach Europa kamen, welche von ganz verschiedenen Spe-<lb break="no"/>cies von <hi rendition="#i">Cinchona</hi> geliefert werden. Man vergaß, daß die Güte der<lb break="yes"/>Rinde nicht bloß davon abhänge, daß sie von <hi rendition="#i">C. lancifolia</hi> oder von<lb break="yes"/>
+                        <hi rendition="#i">C. macrocarpa</hi> sei, sondern daß eben so sehr Standort, Alter des Bau-<lb break="no"/>mes, schnelles und langsames Trocknen die Wirksamkeit bestimme. Man<lb break="yes"/>verkannte dieselbe Species, wenn die Rinde statt in Canutillos, d. h. in<lb break="yes"/>dünnen Rollen, in dicken Cortezones, oder gar gepülvert war. Man mengte<lb break="yes"/>bald aus Versehen, bald aus Betrug Rinden von <hi rendition="#i">
+                            <persName key="wynter_w">Wintera</persName> grenadensis</hi>
+                        <lb break="yes"/>und von gerbenden <hi rendition="#i">Weinmannien</hi> unter die Chinarinde, ja man färbte<lb break="yes"/>diese oft mit Aufguß von Brasilienholz.</p>
+                    <lb break="yes"/>
+                    <p>Unter diesen Verhältnissen entstanden die abentheuerlichsten Vor-<lb break="no"/>
+                        <pb n="67" facs="#f0011"/> urtheile in Beurtheilung der Cinchona. Gewisse Handlungshäuser in Spa-<lb break="no"/>nien, welche seit einem halben Jahrhundert im Besitze des Alleinhandels<lb break="yes"/>der China von <hi rendition="#i">Loxa</hi> waren, suchten die von Neu-Grenada und dem<lb break="yes"/>südlichen Peru zu verrufen. Sie fanden gefällige Botaniker, welche durch<lb break="yes"/>rasche Erhebung von Varietäten zu Species bewiesen, daß alle Peruani-<lb break="no"/>schen <hi rendition="#i" >Cinchonen</hi> von denen um <hi rendition="#i">S. Fe</hi> wachsenden specifisch verschieden<lb break="yes"/>wären. Physiker zogen, gleich den Päbsten, Demarcationslinien auf der<lb break="yes"/>Karte. Sie behaupteten, daß über einen gewissen Breitegrad hinaus in<lb break="yes"/>der nördlichen Hemisphäre keine wirksame China wachsen könne. Da<lb break="yes"/>indeß das Verkehr mit der Fieberrinde von <hi rendition="#i">Huamalies</hi> und <hi rendition="#i">Huanuco,</hi>
+                        <lb break="yes"/>welche <hi rendition="#i">
+                            <persName key="gomezortega_c">Ortega</persName>, <persName key="ruizlópez_hipolito">Ruiz</persName>, <persName key="pavon_j" >Pavon</persName>
+                        </hi> und <persName key="tafalla_jj">
+                            <hi rendition="#i">Tafalla</hi>
+                        </persName> anrühmten, bald in die Hände<lb break="yes"/>derer fiel, welche den Südseehandel mit der alten China von <hi rendition="#i">Loxa</hi> ge-<lb break="no"/>trieben hatten, so gewannen natürlich die neuen peruanischen Fieberrin-<lb break="no"/>den leichter Eingang in Spanien, als die von <hi rendition="#i">Santa Fe.</hi> Die letztern<lb break="yes"/>dagegen, welche die Engländer und Nordamerikaner sich leicht in <hi rendition="#i" >Car-<lb break="no"/>thagena</hi> als einem dem Schleichhandel zugänglicheren Hafen verschaffen<lb break="yes"/>konnten, erhielt vorzüglichen Ruf in London, Deutschland und Italien.<lb break="yes"/>Die Wirkung kaufmännischer Ränke ging so weit, daß in Cadiz auf kö-<lb break="no"/>niglichen Befehl eine Menge der vortreflichsten pommeranzenfarbenen<lb break="yes"/>China von Neu-Grenada, welche <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> auf königliche Kosten hatte schä-<lb break="no"/>len lassen, als ein völlig unwirksames Heilmittel verbrannt wurde, wäh-<lb break="no"/>rend man in allen spanischen Feldhospitälern an diesem köstlichen Er-<lb break="no"/>zeugnisse von Südamerika den größten Mangel litt. Ein Theil der zur<lb break="yes"/>Vernichtung verurtheilten China wurde von englischen Kaufleuten in Cadiz<lb break="yes"/>heimlich gekauft und in London zu hohen Preisen versteigert. Seitdem<lb break="yes"/>Herr <hi rendition="#i" >Zea,</hi> der jetzige Aufseher des botanischen Gartens zu Madrid, in<lb break="yes"/>den <hi rendition="#i">Annales de Cuencias naturales</hi> gegen die Herausgeber der <hi rendition="#i">Flora<lb break="yes" />Peruviana</hi> behauptet hat, daß ihre peruanischen Chinaarten mit den<lb break="yes"/>
+                        <persName key="mutis_jc">
+                            <hi rendition="#i">Mutisischen</hi>
+                        </persName> identisch sind, daß sie aber eine Species unter zwei bis<lb break="yes"/>drei Namen beschrieben haben, ist der Streit über die Güte der Fieber-<lb break="no"/>rinde von <hi rendition="#i">Santa Fe</hi> aufs neue lebhaft rege geworden. Das Supplement<lb break="yes"/>der Quinologia von <persName key="ruizlópez_hipolito">
+                            <hi rendition="#i">Ruiz</hi>
+                        </persName> und <persName key="pavon_j">
+                            <hi rendition="#i">Pavon</hi>
+                        </persName> ist mit einer Bitterkeit geschrieben,<lb break="yes"/>welche dem ruhigen Gange wissenschaftlicher Untersuchungen stets fremd<lb break="yes" />bleiben sollte.</p>
+                    <lb break="yes"/>
+                    <p>Ehe wir von der Geschichte der Entdeckung der <hi rendition="#i" >Cinchona</hi> zu ihrer<lb break="yes"/>geographischen Verbreitung und ihren übrigen physikalischen Verhält-<lb break="no"/>nissen übergehen, müssen wir einen Blick auf die specifiken Unterschiede<lb break="yes"/>der verschiedenen Arten werfen. Eine eigentliche vollständige botanische<lb break="yes"/>Auseinandersetzung ist gegen den Zweck dieser Abhandlung. Wir wer-<lb break="no"/>den dieselbe, Herr <persName key="bonpland_ajag">
+                            <hi rendition="#i">Bonpland</hi>
+                        </persName> und ich, bei einer andern Gelegenheit ver-<lb break="no" />suchen, nemlich in der Beschreibung der von uns, auf unserer Expedition<lb break="yes"/>entdeckten, von unserm vortrefflichen Freunde <persName key="willdenow_kl">
+                            <hi rendition="#i">Willdenow</hi>
+                        </persName> bereits zum<lb break="yes"/>
+                        <pb n="68" facs="#f0012"/> Theil bestimmten 2000 neuen Pflanzenarten. Da fast jede Species von<lb break="yes"/>China einer eigenen Region, einer eigenen Höhe am Gebirgsabhange der<lb break="yes"/>Andeskette zukömmt, so ist es zur gründlichen Behandlung des Gegen-<lb break="no"/>standes unumgänglich nöthig, wenigstens die Synonimie der wichtigsten<lb break="yes" />officinellen Arten zu berichtigen. Ich werde zuversichtlich nur dessen er-<lb break="no"/>wähnen, was ich selbst zu beobachten Gelegenheit gehabt habe.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#g">(Die Fortsetzung künftig.)</hi>
+                        </hi>
+                    </p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb n="104" facs="#f0013"/>
+            <div n="1">
+                <head>Über die Chinawälder in Südamerika.<lb break="yes"/>Von <hi rendition="#i" >Alexander von <persName key="humboldt_av">Humboldt</persName>.</hi>
+                </head>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>Zweiter Abschnitt.</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">D</hi>as <hi rendition="#i">genus Cinchona</hi> gehört zu den Pflanzengattungen, deren Arten<lb break="yes"/>in neuern Zeiten außerordentlich vermehrt worden sind. <persName key="linne_cv" >Linné</persName> kannte<lb break="yes"/>nur zwei derselben <hi rendition="#i">C. officinalis</hi> und <hi rendition="#i">C. caribaea.</hi>
+                        <persName key="vahl_m">Vahl</persName>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">Skrivter <choice>
+                                    <sic>of</sic>
+                                    <corr type="editorial">af</corr>
+                                </choice> Naturhistorie Selskabet</hi> B. 1. H. 1. p. 16.</note> führt in sei-<lb break="no"/>ner Abhandlung über die Fieberrinde neun, <persName key="lambert_jh">Lambert</persName>
+                        <note place="foot" n="**)">
+                            <hi rendition="#i">Description of the genus Cinchona</hi> 1797.</note> in seiner eng-<lb break="no"/>lischen Monographie eilf, Persoon im kleinen 1805 erschienenen <hi rendition="#i">Enchiri-<lb break="no"/>dium botanicum</hi>
+                        <note place="foot" n="***)">
+                            <hi rendition="#i">Synopsis plantarum</hi> P. 1. p. 196.</note> ein und zwanzig Species auf. Zählt man zu diesen<lb break="yes"/>noch zwei ehemals zur <hi rendition="#i">Cinchona</hi> gehörigen <hi rendition="#i" >Cosmibuenen</hi> der <hi rendition="#i">Flora Pe-<lb break="no" />ruviana,</hi> die in Ostindien entdeckte <hi rendition="#i">Cinchona excelsa <persName key="roxburgh_w">Roxb.</persName>,</hi> meine<lb break="yes"/>
+                        <persName key="lacondamine_cmd">
+                            <hi rendition="#i">C. condaminea,</hi>
+                        </persName>
+                        <persName key="vavasseur_01">Vavasseur&#x2019;s</persName>
+                        <hi rendition="#i">C. spinosa</hi> und <persName key="willdenow_kl" >Willdenow&#x2019;s</persName> noch unbe-<lb break="no"/>schriebene kleinblättrige <hi rendition="#i">C. brasiliensis,</hi> welche wir der vom Graf <persName key="hoffmannsegg_jcv">Hoff-<lb break="no" />mannsegg</persName> veranstalteten naturhistorischen Expedition verdanken, so scheint<lb break="yes"/>gegenwärtig die Zahl der entdeckten Fieberrindenbäume bis 27 Arten an-<lb break="no"/>gewachsen zu seyn. Die Verfasser der <hi rendition="#i">Flora Peruviana</hi> haben allein 13<lb break="yes"/>neue Species zu beschreiben geglaubt, während Herr <persName key="mutis_jc">Mutis</persName> alle von ihm<lb break="yes" />in Südamerika untersuchte Cinchonen nur auf sieben reducirt. Ja Herr<lb break="yes"/>
+                        <fw type="catch" place="bottom">Pro-</fw>
+                        <lb break="yes"/>
+                        <pb n="105" facs="#f0014"/> Professor Zea hat in den Anales de ciencias naturales de Madrid <note place="foot" n="*)">Anno 1801 No. 5.</note>
+                        <lb break="yes"/>zu beweisen gewagt, daß fast alle von <persName key="ruizlópez_hipolito">Ruiz</persName> und <persName key="pavon_j" >Pavon</persName> aufgeführte wirk-<lb break="no"/>same Species sich auf die von <persName key="mutis_jc">Mutis</persName> im Jahr 1793 in der Litteraturzei-<lb break="no"/>tung von Santa Fe de Bogota <note place="foot" n="**)">
+                            <hi rendition="#i">Pupel periodico de Santafe</hi> 1793. n. 111.</note> beschriebenen 4 Arten <hi rendition="#i">C. lancifolia,<lb break="yes"/>C. oblongifolia, C. cordifolia</hi> und <hi rendition="#i">C. ovalifolia</hi> zurückführen lassen.</p>
+                    <lb break="yes"/>
+                    <p>In der That ist mir kaum ein Baum bekannt, der mehr in der Ge-<lb break="no" />stalt seiner Blätter variirt, als die <hi rendition="#i">Cinchona.</hi> Wer einzelne trockene<lb break="yes"/>Exemplare der Herbarien bestimmt, und nicht selbst Gelegenheit hat die<lb break="yes"/>Pflanze in den Wäldern zu beobachten, wird fast wie bei der <hi rendition="#i">
+                            <persName key="broussonet_pma">Brousso-<lb break="no"/>nettia</persName> papyrifera,</hi> in Blättern, die von einem Zweige sind, verschiedene<lb break="yes"/>Species zu erkennen glauben. Die gelbe Fieberrinde, <hi rendition="#i">C. pubescens <persName key="vahl_m">Vahl</persName>,</hi>
+                        <lb break="yes"/>haben wir zugleich foliis ovatis, oblongis, ovato-lanceolatis und ovato-<lb break="no"/>cordatis gefunden. <persName key="mutis_jc">Mutis</persName> nennt sie <hi rendition="#i">C. cordifolia,</hi> weil sie die einzige<lb break="yes"/>Art ist, auf der man bisweilen herzförmige Blätter findet. Dieselbe Spe-<lb break="no"/>cies variirt wie die weiße China, <hi rendition="#i">C. ovalifolia <persName key="mutis_jc">Mut.</persName> (C. macrocarpa<lb break="yes"/>
+                            <persName key="vahl_m">Vahl</persName>)</hi> foliis utrinque laevibus und foliis utrinque pubescentibus. Diese<lb break="yes"/>Varietäten sind in den vortreflichen colorirten Zeichnungen dargestellt,<lb break="yes"/>welche mir Herr <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> bei meiner Anwesenheit in <hi rendition="#i">Santa Fe</hi> geschenkt<lb break="yes"/>und welche, mit einem vollständigen Herbarium meiner Expedition nach<lb break="yes"/>den Tropenländern, in dem Jardin des Plantes zu Paris deponirt sind.<lb break="yes"/>Selbst die lorbeerblättrige C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea,</hi>
+                        </persName> die feinste China von Uritu-<lb break="no"/>singa, hat, je nachdem sie in Höhen wächst, die der des Gothard oder<lb break="yes"/>des Aetna gleich sind, die verschiedenartigsten Blätter. Sie würde die<lb break="yes"/>Chinaschäler (Cascarilleros) täuschen, wenn sie den Baum nicht an den<lb break="yes"/>von den Botanikern so lange übersehenen Glandeln erkennten. Wir ha-<lb break="no"/>ben in Gonzanama unfern Loxa eine große Zahl dieser heterogenen<lb break="yes"/>Blattformen sauber mit Buchdruckerschwärze abgedruckt, um zu bewei-<lb break="no"/>sen, <note place="foot" n="***)">Gegen <hi rendition="#i">
+                                <persName key="ruizlópez_hipolito">Ruiz</persName> y <persName key="pavon_j">Pavon</persName> Supplem. a la Quinologia</hi> p. 32.<lb break="yes"/>
+                            <hi rendition="#et"/>
+                        </note> wie schwankend alle bloß von den Blättern hergenommene Kenn-<lb break="no"/>zeichen sind. Zu diesen und ähnlichen Zwecken ist die längst bekannte,<lb break="yes"/>aber noch sehr zu vervollkommnende Methode der Ectypa überaus nütz-<lb break="no"/>lich, da sie vielbeschäftigten Reisenden ein Mittel darbietet, sich in we-<lb break="no"/>nigen Minuten die treuesten Umrisse zu verschaffen.</p>
+                    <lb break="yes"/>
+                    <p>Je mehr die Fieberrindenbäume nach Höhe des Standorts, Rauhheit<lb break="yes"/>oder Milde des Klima&#x2019;s, nach Vereinzelung der Stämme oder dichter<lb break="yes"/>Umgebung von anderen Pflanzen, nach Geilheit des Wuchses und grös-<lb break="no"/>serer oder geringerer Nässe des Bodens in der Gestalt und Glätte der<lb break="yes"/>Blätter variiren, desto nothwendiger ist es bei den diagnostischen Kenn-<lb break="no"/>
+                        <pb n="106" facs="#f0015"/> zeichen <choice>
+                            <sic>ist</sic>
+                            <corr type="editorial"/>
+                        </choice> die Gestalt der Blüthen, besonders auf die Länge der Staub-<lb break="no"/>gefäße, auf das Verhältniß zwischen den Staubfäden und Staubbeuteln,<lb break="yes"/>wie zwischen dem freien und angewachsenen Theil der Filamente Rück-<lb break="no"/>sicht zu nehmen. Es ist nicht genug die Species in solche zu unter-<lb break="no"/>scheiden, welche Corollam glabram oder hirsutam, Stamina exserta oder<lb break="yes"/>inclusa haben. Ein aufmerksamer Beobachter findet fast in jeder Art<lb break="yes" />auffallende Verschiedenheiten in dem Bau der Corolla. So hat <hi rendition="#i">C. par-<lb break="no"/>viflora <persName key="mutis_jc" >Mut.</persName>
+                        </hi> filamenta basi dilatata et pubescentia, <hi rendition="#i">C. macrocarpa<lb break="yes"/>
+                            <persName key="vahl_m">Vahl</persName>
+                        </hi> filamenta vix ulla, antheras in parte superiori <choice>
+                            <sic>tnbi</sic>
+                            <corr type="editorial">tubi</corr>
+                        </choice> latentes,<lb break="yes"/>
+                        <hi rendition="#i">C. oblongifolia <persName key="mutis_jc">Mut.</persName>
+                        </hi> filamenta brevissima, antheras infra medium tubi<lb break="yes" />sitas. Die <hi rendition="#i">Cinchona ovalifolia <persName key="mutis_jc" >Mut.</persName>,</hi> die weiße China, variirt oft mit<lb break="yes"/>6 bis 7; die C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> nur mit 3 oder 4 Staubfäden. Bei der er-<lb break="no"/>stern wird der limbus oft in 6 bis 7, bei der letztern meist in 4 Ein-<lb break="no"/>schnitte getheilt gefunden. Bei der <hi rendition="#i" >Cascarilla fina de la Provincia de<lb break="yes"/>Jaen,</hi> welche Herr <persName key="bonpland_ajag">Bonpland</persName> nächstens beschreiben wird, fand ich den<lb break="yes"/>Staubbeutel stets kürzer als den freien Theil des Staubfadens, und die-<lb break="no"/>sen freien Theil wiederum länger als den angewachsenen, dagegen be-<lb break="no"/>merkte ich, daß bei der <hi rendition="#i">Cascarilla fina de Uritusinga</hi> oder der C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Con-<lb break="no"/>daminea</hi>
+                        </persName> die Antheren doppelt länger als der freie Theil des Filaments<lb break="yes"/>und dieser freien Theile <formula notation="TeX" >\frac{2}{3}</formula> kürzer als der angewachsene ist. Die Angabe<lb break="yes"/>dieser Verhältnisse fehlt fast ganz in den sonst so vortreflichen Beschrei-<lb break="no"/>bungen der Cinchona, die wir <persName key="vahl_m">Vahl</persName>, <persName key="swarz_01" >Swartz</persName> und den Verfassern der<lb break="yes"/>Flora Peruviana verdanken.</p>
+                    <lb break="yes"/>
+                    <p>In dem Handel werden mehrere Rinden Chinarinden genannt, welche<lb break="yes"/>nicht demselben genus Cinchona zugehören. So nannte man in Spanien<lb break="yes"/>
+                        <hi rendition="#i">Quina de la Guayana</hi> oder <hi rendition="#i">de la Angostura</hi> das vortreffliche Heilmittel,<lb break="yes"/>welches die Catalunnischen Capucinermönche der Missionen am Fluß<lb break="yes"/>
+                        <hi rendition="#i">Carony</hi> zuerst bekannt gemacht haben. Herr <persName key="mutis_jc">
+                            <hi rendition="#i">Mutis</hi>
+                        </persName> lernte den Cortex<lb break="yes"/>Angosturae schon 1759 in Madrid bei Don <persName key="rivas_vrd">Vincente Rodriguez de Ri-<lb break="no"/>vas</persName>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">Pupel periodico de Santafe</hi> n. 95. p. 337.</note> kennen, er bediente sich desselben in seiner medizinischen Praxis;<lb break="yes"/>er vermuthete schon damals, daß sie nicht dem genus Cinchona ange-<lb break="no"/>höre. <hi rendition="#i">Löfling</hi> ist in den Missionen von <hi rendition="#i">Carony</hi> gestorben, ohne dieses<lb break="yes"/>herrliche Produkt zu kennen. Man schrieb es hernach bald der <hi rendition="#i">Brucea<lb break="yes"/>ferruginea,</hi> die übrigens in Abyssinien wächst, bald der <hi rendition="#i">Magnolia glauca,</hi>
+                        <lb break="yes"/>bald (was allerdings wahrscheinlicher war) der westindischen <hi rendition="#i">Magnolia<lb break="yes"/>
+                            <persName key="plumier_c">Plumeri</persName>
+                        </hi> zu. Wir haben auf unsrer Expedition Gelegenheit gehabt, den<lb break="yes"/>
+                        <hi rendition="#i">Cusparebaum,</hi> welcher den Cortex Angosturae giebt, botanisch zu un-<lb break="no"/>tersuchen. Wir erkannten darin ein neues <hi rendition="#i">genus,</hi> welchem unser vortreff-<lb break="no"/>licher Freund <persName key="willdenow_kl">Willdenow</persName> in den Schriften der Königl. Akademie der<lb break="yes"/>
+                        <pb n="107" facs="#f0016"/> Wissenschaften den Namen <persName key="bonpland_ajag">
+                            <hi rendition="#i">Bonplandia</hi>
+                        </persName>
+                        <note place="foot" n="*)">Samml. deutscher Abhandl. für 1801 und 1802, S. 36.</note> beigelegt hat. Dieser Name<lb break="yes"/>meines Reisegefährten ist der Cuspapflanze geblieben, da wir die von<lb break="yes" />Cavanilles aufgestellte mexikanischen <hi rendition="#i">
+                            <persName key="bonpland_ajag">Bonplandia</persName> geminiflora</hi> in <hi rendition="#i">Cal-<lb break="no"/>dasia heterophylla</hi> verwandelt haben.</p>
+                    <lb break="yes"/>
+                    <p>Von der Cinchona ist ebenfalls verschieden die China von Cumana,<lb break="yes"/>welche unter dem Namen <hi rendition="#i">Cascarilla de Nueva Andalusia</hi> seit 4 bis 5<lb break="yes"/>Jahren durch den thätigen Gouverneur Don Vincente Emparan nach<lb break="yes"/>Spanien gesandt worden ist. Ein Chemiker würde diese Cusparinde<lb break="yes" />schwerlich von wahrer Fieberrinde unterscheiden können. Sie ist ein<lb break="yes"/>vortreffliches fieberheilendes Mittel. Ohnerachtet wir die Cuspabäume<lb break="yes"/>von Rio Manzanario bei Cumana fast ein Jahr lang beobachtet haben,<lb break="yes"/>so ist es uns doch leider nie geglückt ihre Blüthe zu finden. Wir wissen<lb break="yes"/>daher nicht, in welchem Kennzeichen sich das genus von Cinchona und<lb break="yes"/>
+                        <persName key="bonpland_ajag">Bonplandia</persName> unterscheidet, doch macht der Mangel von stipulis, der<lb break="yes"/>Blätterstand und der ganze habitus es mehr als wahrscheinlich, daß<lb break="yes"/>die Cuspa keine Cinchona ist. Die Abwesenheit der Afterblätter ist be-<lb break="no" />sonders auffallend. Trotz der folia alterna könnte indeß die China von<lb break="yes"/>Cumana doch wohl Cinchona seyn, wie <hi rendition="#i" >Cornus alternifolia</hi> isolirt zwi-<lb break="no"/>schen zwölf Cornusarten foliis oppositis steht.</p>
+                    <lb break="yes"/>
+                    <p>Sehr zweifelhaft ist uns ebenfalls geblieben, ob die Chinarinde von<lb break="yes"/>Atacamez, einem Dorfe das westlich von der Villa de Ibarra an der<lb break="yes"/>Küste der Südsee zwischen Rio verde und Rio Esmeraldita gelegen ist,<lb break="yes"/>von einer Cinchonaart geliefert wird. Die Blüthe dieser Atacamezrinde,<lb break="yes"/>welche wir bei unserm Aufenthalt in der Stadt Popayan haben kennen<lb break="yes"/>gelernt, ist noch von keinem Botaniker untersucht worden. Herr <persName key="brown_d" >Brown</persName>,<lb break="yes"/>der lange vor uns, 1793 in der Südsee war, hat bereits in <persName key="lambert_jh">Lamberts</persName> Mo-<lb break="no"/>nographie der Cinchona <note place="foot" n="**)">
+                            <persName key="lambert_jh">
+                                <hi rendition="#i">Lambert</hi>
+                            </persName> p. 30.</note> einige Nachricht von dieser neuen China-<lb break="no"/>rinde heißer Erdstriche gegeben. Er nennt sie aus geographischer Un-<lb break="no"/>kunde oder durch Verunstaltung des Namens, <hi rendition="#i">Bark of Tecamez</hi> statt<lb break="yes"/>
+                        <hi rendition="#i">Cascarilla of Atacamez.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Eine vierte Pflanzengattung, welche Chinarinde, wenn gleich von<lb break="yes"/>geringer Heilkraft giebt, ist das genus <hi rendition="#i" >Cosmibuena</hi> der Flora Peruviana.<lb break="yes"/>Daher gehört <hi rendition="#i">Cinchona longiflora <persName key="mutis_jc" >Mutis</persName>,</hi> oder <hi rendition="#i">Cinchona grandiflora<lb break="yes"/>
+                            <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> ein Baum von großer Schönheit, den wir oft in tiefen heißen Thä-<lb break="no"/>lern mit schönen duftenden Blüthen prangen gesehen. Die Staubfäden<lb break="yes" />liegen tief in dem tubus corollae versteckt, und die Frucht ist der der<lb break="yes"/>andern Cinchonaarten so ähnlich, daß das genus <hi rendition="#i">Cosmibuena</hi> wohl schwer-<lb break="no"/>lich als ein eigenes bestehen kann.</p>
+                    <lb break="yes"/>
+                    <pb n="108" facs="#f0017"/>
+                    <p>Dagegen wäre es vielleicht rathsam die Chinabäume mit langen aus<lb break="yes"/>der Röhre der Blumenkrone weit hervorragenden Staubfäden, wie <persName key="jaoquin_01">Jac-<lb break="no"/>quin&#x2019;s</persName>
+                        <hi rendition="#i">C. caribaea,</hi>
+                        <persName key="swarz_01">Swarzens</persName>
+                        <hi rendition="#i">C. angustifolia, C. brachycarpa</hi> und <hi rendition="#i">C.<lb break="yes"/>floribunda</hi> in ein eigenes fünftes, den Cinchonen nahe verwandtes genus<lb break="yes"/>zu vereinigen. Die sieben dazu gehörigen Arten haben das Eigenthüm-<lb break="no"/>liche, daß sie alle, bis auf eine Ausnahme, der Inselwelt, nemlich den<lb break="yes"/>philippinischen, westindischen und Südseeinseln zugehören, und heiße<lb break="yes"/>Thäler, ja selbst Ebenen dem hohen Gebirgsstande vorziehen. Auf dem<lb break="yes"/>südamerikanischen Continent kenne ich nur zwei Arten, welche stamina<lb break="yes"/>exserta haben, <persName key="lambert_jh">Lambert&#x2019;s</persName>
+                        <hi rendition="#i">C. longiflora</hi> aus der französischen Guyana,<lb break="yes"/>und der noch nicht beschriebenen <hi rendition="#i" >Cinchona dissimiliflora <persName key="mutis_jc">Mut.</persName> (sta-<lb break="no"/>minibus longe exsertis, corollae laciniis tubo longioribus, foliis cordato<lb break="yes"/>oblongis),</hi> welche im Königreich Neu-Grenada vom Gebirgsabhange ge-<lb break="no"/>gen die Ebene bis zu 200 Toisen über die Meeresfläche herabsteigt. In<lb break="yes" />Westindien findet sich <hi rendition="#i">C. caribaea</hi> und <hi rendition="#i">C. angustifolia</hi> an noch tiefern<lb break="yes" />Punkten, ja in Gegenden, die warm genug für die Kultur des Zuckerrohrs<lb break="yes"/>sind. Alle diese Insel-Cinchonen, staminibus exsertis, haben glatte Co-<lb break="no"/>rollen. Alle bis auf die einzige <hi rendition="#i">C. philippica</hi>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">Cavanilles Icon.</hi> T. IV. p. 15. t. 329.</note>
+                        <hi rendition="#i">pedunculis biternato</hi>
+                        <lb break="yes"/>corymbosis, welche <persName key="nee_l">Nee</persName> zu Santa Cruz de la Laguna bei Manilla ent-<lb break="no"/>deckt hat, haben Stigma capitatum oder obtusum. Dagegen bemerkt<lb break="yes"/>man in allen Cinchonen staminibus inclusis ein getheiltes Stigma. Die Blu-<lb break="no" />menkrone der letztern ist bald glatt, bald mit Filz bedeckt. Schon <persName key="mutis_jc">Mutis</persName>
+                        <lb break="yes"/>schlägt in der Litt. Zeit. von Santa Fe vor, die Cinchonen mit langen vor-<lb break="no"/>stehenden Staubfäden von den übrigen zu trennen. &#x201E;Ich weiß nicht,&#x201D; sagt<lb break="yes"/>er, &#x201E;was mein Freund <persName key="linne_cv">Linné</persName> von der Fieberrinde der Südsee gehalten<lb break="yes"/>&#x201E;hat, denn die Aufnahme im Supplement beweist nur die Gunst des<lb break="yes" />&#x201E;Sohnes, dessen Meinung für mich nicht das Gewicht der Meinungen<lb break="yes"/>&#x201E;des Vaters haben.&#x201D; Die Verfasser der Flora peruviana wollen jene<lb break="yes"/>Insel-Cinchonen zu Portlandien <note place="foot" n="**)">
+                            <hi rendition="#i">Flor. Peruv.</hi> T. II. <hi rendition="#i">Praef. et</hi> p. 49.</note> machen, aber Herr <persName key="swarz_01" >Swarz</persName> beweist<lb break="yes"/>mit Recht in <persName key="schrader_ha">Schraders</persName> Journal für die Botanik <note place="foot" n="***)">Band I. p. 358.</note> daß bei den Insel-<lb break="maybe"/>Cinchonen wie bei denen des festen Landes die Capsel ein dissepimen-<lb break="no"/>tum loculorum exacte parallelum und bei Portlandia ein dissepimen-<lb break="no"/>tum vere contrarium existirt. <persName key="ruizlópez_hipolito">Ruizens</persName>
+                        <hi rendition="#i">Portlandia corymbosa</hi> ist daher<lb break="yes"/>keine Portlandia, sondern gehört zu den Cinchonen filamentis e basi<lb break="yes" />tubi ortis, zu <hi rendition="#i">C. caribaea, C. floribunda</hi> und <hi rendition="#i">C. brachycarpa,</hi> eine<lb break="yes"/>Pflanzengruppe, welche Herr <persName key="swarz_01">Swartz</persName> ebenfalls der Blüthe, aber nicht der<lb break="yes"/>Frucht wegen in ein eigenes genus vereinigen möchte. Die in Ostindien<lb break="yes"/>entdeckte <hi rendition="#i">C. excelsa</hi> mit ungeheuer langen oft 12 Zoll langen und 5 Zoll<lb break="yes"/>
+                        <pb n="109" facs="#f0018"/> breiten Blättern steht zwischen den westindischen und südamerikanischen<lb break="yes"/>Cinchonen fast in der Mitte und ihre Existenz scheint die vorgeschlagene<lb break="yes"/>Trennung der beiden Gattungen gleichsam zu widerrathen. Doch nähert<lb break="yes" />sich <hi rendition="#i">C. excelsa <persName key="roxburgh_w" >Roxb.</persName>
+                        </hi> weniger den Insel-Cinchonen als den Neu-Gre-<lb break="no"/>nadischen und Peruanischen Corolla pubescenti, staminibus medio tubi<lb break="yes" />insertis nec e basi tubi nascentibus, antheris nec filamentis exsertis,<lb break="yes"/>margine seminum lacero haud integro. Die Antheren bei dieser ost-<lb break="no"/>indischen Art sind achtmal länger als die Staubfäden. In der Gestalt der<lb break="yes"/>Früchte ist es schwer Gründe für die Vereinigung der Insel-Cinchonen<lb break="yes"/>in ein eigenes genus zu finden. Sie unterscheiden sich <note place="foot" n="*)">
+                            <persName key="schrader_ha">Schrader</persName> a. a. O. S. 359.</note> von den Fie-<lb break="no"/>berrinden des Continents von Südamerika &#x201E;valvulis minus extrorsum<lb break="yes"/>divergentibus et receptaculo ovato nec lineari seminumque margine<lb break="yes"/>integro nec lacero.&#x201D; Aber außer der glatten ungekerbten Rinde der<lb break="yes" />Saamenflügel, welche ich meistens finde, zeigen die übrigen Gestalten der<lb break="yes"/>Früchte allmälige Übergänge, welche alle Cinchonen gleichsam an einan-<lb break="no"/>der ketten. Für das neue <hi rendition="#i">genus</hi> der die heiße Ebene liebenden Insel-<lb break="maybe"/>Cinchonen bliebe demnach übrig: Corolla glabra, filamentis longe ex-<lb break="no"/>sertis ex basi tubi nascentibus. Semina margine integro cincta. Stigma<lb break="yes"/>simplex capitatum. Aber 1) viele Cinchonen staminibus inclusis und <hi rendition="#i">C.<lb break="yes" />grandiflora <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> haben corollam glabram. 2) <hi rendition="#i">C. philippica</hi> hat weit<lb break="yes"/>vorragende Filamente, Stigma bilamellatum, und wie es scheint doch<lb break="yes"/>semina margine integro cincta. 3) <hi rendition="#i">C. excelsa</hi> hat Stigma subcapitatum<lb break="yes" />leviter emarginatum bei nicht gekerbtem Saamen und nicht hervorra-<lb break="no"/>genden Staubfäden. Bei diesen Ausnahmen, wäre es allerdings gewagt, so<lb break="yes"/>nahe verwandte natürliche Pflanzengattungen von einander zu trennen.</p>
+                    <lb break="yes"/>
+                    <p>Am wenigsten scheint auf dem ersten Anblick die sonderbare stach-<lb break="no"/>lige C. <hi rendition="#i">spinosa</hi> von der Insel S. Domingo zu dem genus Cinchona zu<lb break="yes"/>gehören. Sie ist wunderbar kleinblättrig und hat oft folia terna verti-<lb break="no"/>ticillata. Von der Farbe ächter Fieberrindenbäume entfernt sich noch<lb break="yes"/>mehr eine zweite stachliche Cinchona, welche bei <hi rendition="#i" >Guayaquil</hi> an der<lb break="yes"/>Südseeküste wächst, und welche uns Herr <persName key="tafalla_jj">Tafalla</persName> bei unserm Aufenthalte<lb break="yes"/>daselbst im Winter 1803 gezeigt hat. Diese letztere noch unbeschriebene<lb break="yes"/>Species ist eine rankende Pflanze, und dadurch einigermaßen dem genus<lb break="yes"/>Danais aus Madagascar verwandt, welches Persoon auf Portlandia fol-<lb break="no"/>gen läßt, da die C<hi rendition="#i">inchona</hi> ähnlichere <hi rendition="#i" >Paederia fragrans</hi> von <hi rendition="#i">Paederia<lb break="yes" />foetida</hi> getrennt worden ist. Diese <persName key="tafalla_jj" >Tafallasche</persName> neue <hi rendition="#i">C. scandens</hi> hat<lb break="yes"/>übrigens die völlige Frucht der fieberheilenden Cinchona und gehört un-<lb break="no"/>streitig <choice>
+                            <sic>zn</sic>
+                            <corr type="editorial">zu</corr>
+                        </choice> den merkwürdigsten Erscheinungen der Pflanzenphysiognomik.</p>
+                    <lb break="yes"/>
+                    <p>Eben diese Frucht der ächten C<hi rendition="#i">inchonen</hi> bringt <choice>
+                            <sic>auf</sic>
+                            <corr type="editorial">auch</corr>
+                        </choice>
+                        <hi rendition="#i">Pinkneya pu-</hi>
+                        <lb break="yes"/>
+                        <pb n="110" facs="#f0019"/>
+                        <hi rendition="#i">bens Michaux</hi>
+                        <note place="foot" n="*)">
+                            <hi rendition="#i">Flor. americana</hi> I. p. 105.</note> hervor, ein Baum, den ich mit <hi rendition="#i">C. caribaea</hi> in dem<lb break="yes" />vortrefflichen botanischen Garten des Herrn <persName key="hamilton_w02" >Hamilton</persName> bei Philadelphia<lb break="yes"/>kultivirt gefunden habe. Die <hi rendition="#i">Pinkneya</hi> wächst am Marienflusse in der<lb break="yes"/>Provinz Georgia, und ist von <persName key="bartram_01" >Bartram</persName> bereits propter calycis laciniam<lb break="yes" />unicam foliaceam bracteaeformem, unter dem Namen <hi rendition="#i" >Mussaenda brac-<lb break="no"/>teolata</hi> beschrieben. Die fieberheilenden Kräfte dieser dem genus Cin-<lb break="no"/>chona nahe verwandten, außerhalb der Tropenwelt wachsenden Pflanze<lb break="yes"/>sind noch nicht untersucht worden. Dagegen hat Herr <persName key="walker_jm" >Walker</persName> in zwei<lb break="yes"/>schönen Abhandlungen gezeigt, daß die Rinde von <hi rendition="#i">Cornus florida</hi> aus<lb break="yes" />Virginien und von C. <hi rendition="#i">sericea</hi> aus Pensylvanien und Süd-Carolina, ja selbst<lb break="yes"/>der Tulpenbaum <hi rendition="#i" >(Liriodendron Tulipifera)</hi> als fieberheilende Mittel mit<lb break="yes"/>Vortheil in Nordamerika gebraucht werden können <note place="foot" n="**)">
+                            <hi rendition="#i">
+                                <persName key="walker_jm">Walker</persName> on the virtues of the Cornus and the Cinchona compared. Philad.</hi> 1803. <hi rendition="#i">
+                                <persName key="roger_01">Rogers</persName>
+                                <lb break="yes"/>Di&#x017F;s on the properties of the Liriodendron Phil.</hi> 1802.</note>. Im Königreich<lb break="yes"/>Neu-Spanien, wo bisher keine Art der Cinchona entdeckt worden ist,<lb break="yes"/>kann, wie mich der Aufseher des akademischen botanischen Gartens zu<lb break="yes" />Mexico versichert hat, die von <persName key="sesselacasta_md" >Sesse</persName> aufgefundene noch unbeschriebene<lb break="yes"/>
+                        <hi rendition="#i">Portlandia mexicana</hi> die Fieberrinde von Loxa ersetzen; in Ostindien<lb break="yes"/>(nach D. <persName key="klein_01" >Klein</persName> in Tranquebar) kann es die von <persName key="roxburgh_w">Roxburgh</persName> abgebildete<lb break="yes"/>
+                        <hi rendition="#i">Switenia febrifuga.</hi> Eine mit Portlandia nahe verwandte Pflanze, <persName key="swarz_01">Swar-<lb break="no" />zens</persName> und <persName key="jacquin_njfv" >Jacquin&#x2019;s</persName>
+                        <hi rendition="#i">Portlandia hexandra,</hi> (<persName key="aublet_jcf" >Aublets</persName>
+                        <hi rendition="#i">Coutaria speciosa</hi>)<lb break="yes"/>liefert die Chinarinde der französischen Guyana, welche in Frankreich<lb break="yes" />unter dem Namen écorce fébrifuge de Cayenne <note place="foot" n="***)">
+                            <hi rendition="#i">
+                                <persName key="ventenant_ep">Ventenat</persName> Tableau du regne végétal.</hi> T. II. p. 578.</note> bekannt ist, und<lb break="yes" />welche so wenig als die China von Cumana oder die Cuspare der An-<lb break="no"/>gostura von einer Cinchona herstammt.</p>
+                    <lb break="yes"/>
+                    <p>So viel über die generischen Kennzeichen der Gewächse, welche<lb break="yes" />an C<hi rendition="#i">inchona</hi> grenzen und alle zu der großen Familie der <hi rendition="#i">Rubiacien</hi> ge-<lb break="no"/>hören. Wir sehen, daß so wie Caoutchouc <note place="foot" n="****)">Man <choice>
+                                <sic>nennr</sic>
+                                <corr type="editorial">nennt</corr>
+                            </choice> häufig die <hi rendition="#i">Cecropia peltata</hi> als einen Baum, der einen Theil des amerikanischen<lb break="yes"/>
+                            <hi rendition="#i">Caoutchucs</hi> liefere. Ich zweifle aber daß man in einem Theile des <placeName key="amerika">neuen Continents</placeName> sich <choice>
+                                <sic>die<lb break="yes"/>ses</sic>
+                                <corr type="editorial">die-<lb break="no"/>ses</corr>
+                            </choice> schwer zu verdickenden Saftes bediene.</note> aus dem Safte der ver-<lb break="no"/>schiedenartigsten Pflanzen in Menge abgeschieden wird, am Orinoco und<lb break="yes"/>in Cayenne aus der <hi rendition="#i" >Hevea,</hi> am Canno Pimichin der in den Rio Negro<lb break="yes" />fällt, aus dem Baume <hi rendition="#i">Jacio,</hi> im Königreich Neu-Grenada aus einer<lb break="yes"/>neuen Art von Ficus in der Provinz Popayan bei dem indianischen Dorfe<lb break="yes"/>la Cruz aus einer von uns zu beschreibenden Lobelia, in <placeName key="bengalen">Bengalen</placeName> aus<lb break="yes"/>der im 5ten Bande der <hi rendition="#i">Asiat. <choice>
+                                <sic>Rescarches</sic>
+                                <corr type="editorial">Researches</corr>
+                            </choice>
+                        </hi> abgebildeten <hi rendition="#i">Urecola elastica,</hi>
+                        <lb break="yes"/>in Madagascar aus C<hi rendition="#i">ommiphora madagascarensis;</hi> so bietet auch die Natur<lb break="yes"/>das fieberheilende Prinzip der China oder diejenige gerbestoffhaltige, Sauer-<lb break="no"/>
+                        <pb n="111" facs="#f0020"/> stoff absorbirende Mischung, die wir in vorzüglicher Güte von der <hi rendition="#i">Cin-<lb break="no"/>chona <persName key="lacondamine_cmd">Condaminea</persName>, C. pubescens</hi>
+                        <persName key="vahl_m">Vahl</persName>, und <hi rendition="#i">C. lanceifolia</hi>
+                        <persName key="mutis_jc">Mut.</persName>
+                        <choice>
+                            <sic>,</sic>
+                            <corr type="editorial"/>
+                        </choice> erhalten<lb break="yes"/>in Gewächsen dar, welche nicht einmal zu einer und derselben Gat-<lb break="no"/>tung gehören. Ein Chemiker würde vielleicht mehr Unterschiede<lb break="yes"/>zwischen den westindischen und südamerikanischen Fieberrinden, als<lb break="yes"/>zwischen der Cuspa von Cumana und der China von Loxa finden, und<lb break="yes"/>doch ist der Cuspabaum foliis alternis stipulis nullis höchst wahrschein-<lb break="no" />lich eine von Cinchona weit entfernte Gattung.</p>
+                    <lb break="yes"/>
+                    <p>Nachdem wir sorgfältig geschieden, was theils in botanischer Hin-<lb break="no"/>sicht mit Cinchona nahe verwandt, theils im Handel mit den Namen<lb break="yes"/>China, Cascarilla, Quinquina oder écorce fébrifuge von verschiedenen<lb break="yes"/>Nationen bezeichnet wird, nachdem wir getrennt die Cinchonen mit ein-<lb break="no"/>geschlossenen nicht aus dem untern Ende der Blumenröhre entspringen-<lb break="no"/>den Staubfäden mit getheilter Narbe und gezähnten Saamenrändern von<lb break="yes"/>den Insel-Cinchonen, deren lang hervorragende Filamente tief aus der<lb break="yes"/>Blumenröhre entspringen, und die bei ungezähnten Saamenflügeln ein<lb break="yes"/>ungetheiltes <hi rendition="#i" >Stigma</hi> haben; nachdem wir die Verwandtschaft und vor-<lb break="no"/>gegebene Mischungsähnlichkeit untersucht von Cinchona, Portlandia,<lb break="yes"/>Coutarea, Cosmibuena, Pinkneya, Danais, <persName key="bonpland_ajag">Bonplandia</persName>, Cuspa und Ata-<lb break="no"/>camez-Baum: so gehen wir zu der Bestimmung derjenigen Cinchona-<lb break="maybe"/>Arten über, welche für die Heilkunde und für das Verkehr der Nationen<lb break="yes"/>von großer Wichtigkeit geworden sind. Ohne die gründliche Auseinan-<lb break="no"/>dersetzung der specifischen Charaktere und ohne Berichtigung eines Theils<lb break="yes" />der Synonymie würde alles was ich von der geographischen Verbreitung<lb break="yes"/>der Fieberrinde und von seinen physikalischen Verhältnissen sagen werde,<lb break="yes"/>undeutlich und schwankend bleiben, da (wie ich schon oben erwähnt),<lb break="yes"/>fast jeder Species eine eigene Region angewiesen worden ist, und da ei-<lb break="no"/>nige Botaniker zum größten Schaden der Wissenschaften die heterogen-<lb break="no"/>sten Arten mit einerlei Namen belegt haben. So z. B. ist <hi rendition="#i">Cinchona<lb break="yes"/>longiflora</hi>
+                        <persName key="mutis_jc">Mut.</persName> ganz von C. <hi rendition="#i" >longiflora</hi>
+                        <persName key="lambert_jh">Lambert</persName>, verschieden. Beide<lb break="yes"/>haben zwar <hi rendition="#i">corollam glabram</hi> und gehören zu den wärmeliebenden<lb break="yes"/>minder fieberheilenden Cinchonen. Aber die erstere aus Neu-Grenada<lb break="yes"/>hat stamina inclusa und ist wahrscheinlich mit C. <hi rendition="#i">grandiflora Flor. Peruv.</hi>
+                        <lb break="yes"/>identisch. Dagegen gehört die C. <hi rendition="#i" >longiflora</hi>
+                        <persName key="lambert_jh">Lambert</persName> aus der französi-<lb break="no"/>schen Guyana zu den Arten, welche filamenta longe exserta und sehr<lb break="yes"/>kurze Saamenkapseln haben. <hi rendition="#i" >Cinchona caribaea</hi> Jacq. ist ganz von<lb break="yes"/>der C. <hi rendition="#i">caribaea</hi> verschieden, die im Journal de Physique 1790 Octobre,<lb break="yes"/>beschrieben ist. Die Diagnosen, welche ich beifüge, sind nicht aus an-<lb break="no"/>deren bereits gedruckten Werken entlehnt, sondern beziehen sich theils<lb break="yes"/>auf meine eigenen in der freien Natur angestellten Beobachtungen, theils<lb break="yes"/>auf das, was ich dem belehrenden Umgange des Herrn <persName key="mutis_jc" >Mutis</persName> verdanke.</p>
+                    <lb break="yes"/>
+                    <pb n="112" facs="#f0021"/>
+                    <p>
+                        <hi rendition="#c">Charakteristik einiger Cinchona-Arten.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>
+                        <persName key="vahl_m">Vahl</persName> in seiner vortrefflichen, von <persName key="lambert_jh">Lambert</persName> vermehrten Monographie,<lb break="yes"/>theilt alle Species in zwei Pflanzengruppen floribus tomentosis, stamini-<lb break="no"/>bus inclusis und floribus glabris staminibus exsertis ein. Diese Einthei-<lb break="no"/>lung hat den Fehler, daß zwei Charaktere neben einander gestellt wer-<lb break="no"/>den, welche keinesweges gleichzeitig bei allen jetzt bekannten Arten<lb break="yes" />beobachtet werden. Allerdings hat keine Cinchona floribus tomentosis<lb break="yes"/>lang hervorragende Staubfäden, denn bei der ostindischen Species sind<lb break="yes"/>bloß die Antheren sichtbar; aber es giebt Cinchonen, welche wie <hi rendition="#i">C.<lb break="yes"/>parviflora</hi>
+                        <persName key="mutis_jc">Mut.</persName> und C. <hi rendition="#i" >grandiflora Flor. Peruv.</hi> eine glatte Blumenkrone<lb break="yes" />und eingeschlossene Staubfäden haben. Mit mehreren, wenn gleich auch<lb break="yes"/>nicht mit vollem Rechte, könnte man trennen: Cinchonae staminibus in-<lb break="no"/>clusis stigmate bilamellato seminum ala denticulata vel lacera und<lb break="yes"/>Cinchonae filamentis insertis ex imo tubo nascentibus seminibus mem-<lb break="no"/>brana integra cinctis. Logisch richtiger scheint es indeß die Cinchonen<lb break="yes"/>in die mit glatten und in die mit haarigen Blumenkronen abzutheilen.<lb break="yes" />Dann zerfällt bloß die erste Abtheilung nach der Länge der Staubfäden<lb break="yes"/>in zwei kleinere tribus und dann gesellen sich (was freilich nur ein Ne-<lb break="no"/>bengewinn ist) noch alle nutzbaren und fieberheilenden Species in eine<lb break="yes"/>Gruppe zusammen.</p>
+                    <lb break="yes"/>
+                    <p>A. <hi rendition="#i">Cinchonae corollis tomentosis.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>1. <hi rendition="#i">C. <persName key="lacondamine_cmd">
+                                <hi rendition="#g">Condaminea</hi>
+                            </persName> corollae tubo hirto, foliis ovato-lanceolatis<lb break="yes" />utrinque glaberrimis, in axillis nervorum inferne scrobiculatis. <persName key="humboldt_av">Humb.</persName>
+                            <lb break="yes"/>et <persName key="bonpland_ajag">Bonpl.</persName> Plant. Equin. Fasc. II. p.</hi> 29. <hi rendition="#i">tab.</hi> 10.</p>
+                    <lb break="yes"/>
+                    <p>Diese Art, die feine China von Uritusinga, konnte bloß mit der C.<lb break="yes"/>
+                        <hi rendition="#i">glandulifera Flor. Peruv.</hi> verwechselt werden. Aber diese letztere un-<lb break="no"/>terscheidet sich corolla solummodo intus lanuginosa tubo externe gla-<lb break="no"/>berrimo, foliis inferne villosis <note place="foot" n="*)">
+                            <hi rendition="#i">Flor. Peruv.</hi> T. III. p. 1. t. 224.</note>. Auch zählen die Einwohner die C.<lb break="yes"/>
+                        <hi rendition="#i">glandulifera,</hi> welche (zu Chicoplaya) C<hi rendition="#i">ascarilla negrilla</hi> genannt wird,<lb break="yes"/>zu den minder heilsamen China-Arten.</p>
+                    <lb break="yes"/>
+                    <p>Wenn irgend eine Species ausschließlich den Namen C. <hi rendition="#i" >officinalis</hi>
+                        <lb break="yes"/>verdiente, so wäre es der Baum, welcher die Cascarilla fina de Uritu-<lb break="no"/>singa liefert, eine Fieberrinde, welche man in Spanien von jeher im<lb break="yes"/>Tertianfieber für die heilsamste von allen gehalten hat, und welche ge-<lb break="no"/>genwärtig bloß für die königl. Hofapotheke geschält wird, und daher<lb break="yes"/>auf gesetzmäßigen Wegen nie in den Handel kommt. Ohnerachtet dieser<lb break="yes"/>Vorzüge haben wir aus mehrern Gründen ihr doch lieber einen neuen,<lb break="yes"/>nicht von ihrer Güte oder Heilkraft hergenommenen Namen gegeben.<lb break="yes"/>
+                        <fw type="catch" place="bottom">1) Nicht</fw>
+                        <lb break="yes"/>
+                        <pb n="113" facs="#f0022"/> 1) Nicht eine Species, sondern alle mit haarigen und filzigen Blüthen ver-<lb break="no"/>sehenen Cinchonen sind officinell, und keine Art verdient einen absolu-<lb break="no"/>ten Vorzug vor allen, da nach Verschiedenheit der Krankheitsformen<lb break="yes"/>verschiedene Species, z. B. in intermittirenden eingewurzelten Fiebern,<lb break="yes" />C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> und C. <hi rendition="#i">lancifolia <persName key="mutis_jc" >Mut.</persName>
+                        </hi> bei Muskelkrankheiten oder ei-<lb break="no"/>ternden Geschwüren C. <hi rendition="#i">oblongifolia <persName key="mutis_jc">Mut.</persName>
+                        </hi> in der Nachkur, um Rück-<lb break="no"/>fälle zu vermeiden, die mildere C. <hi rendition="#i">cordifolia <persName key="mutis_jc" >Mut.</persName>
+                        </hi> anzuwenden ist.<lb break="yes"/>2) In den Schriften der Botaniker werden ganz heterogene Cinchona-<lb break="maybe"/>Arten unter dem Namen C. officinalis beschrieben. Hätten wir die China<lb break="yes"/>von Uritusinga mit <choice>
+                            <sic>demselbeu</sic>
+                            <corr type="editorial">demselben</corr>
+                        </choice> Namen belegt, so hätte man sie mit der<lb break="yes"/>gelben C. <hi rendition="#i">cordifolia <persName key="mutis_jc" >Mut.</persName>,</hi> mit der weißen C. <hi rendition="#i">macrocarpa <persName key="vahl_m">Vahl</persName>,</hi> oder<lb break="yes" />gar mit C. <hi rendition="#i">nitida <persName key="ruizlópez_hipolito" >Ruiz</persName>,</hi> welche drei Species zu verschiedenen Zeiten<lb break="yes"/>C. <hi rendition="#i">officinalis</hi> geheißen haben, verwechselt.</p>
+                    <lb break="yes"/>
+                    <p>Dieser letztere für die botanische Synonymie und die Materia me-<lb break="no"/>dica gleich wichtige Punkt verdient eine genauere Erläuterung. Man<lb break="yes"/>frägt: welches Gewächs hat <persName key="linne_cv">Linné</persName> in der 12ten Ausgabe des Systema Na-<lb break="no"/>turae C. <hi rendition="#i">officinalis</hi> genannt? <persName key="vahl_m">Vahl</persName> behauptet, es sei seine C. macro-<lb break="no"/>carpa <note place="foot" n="*)">
+                            <hi rendition="#i">Act. Havn</hi> I. p. 19. <persName key="lambert_jh">
+                                <hi rendition="#i">Lambert</hi>
+                            </persName> p. 22.</note> aus dem Königreich Neu-Grenada, die ihm <persName key="gomezortega_c">Ortega</persName> mittheilte.<lb break="yes"/>Da nun aber C. macrocarpa <persName key="vahl_m" >Vahl</persName> nichts anders als unsere weiße groß-<lb break="no" />blüthige China von S. Fe, C. <hi rendition="#i">ovalifolia</hi>
+                        <persName key="mutis_jc">Mut.</persName> ist, und laut Herrn <persName key="mutis_jc">Mutis</persName>
+                        <lb break="yes"/>eigenem Zeugniß diese nie von <persName key="linne_cv" >Linné</persName> gesehen ward, so darf C. <hi rendition="#i">macro-<lb break="no"/>carpa</hi>
+                        <persName key="vahl_m">Vahl</persName> nicht als Synonym von C. <hi rendition="#i">officinalis</hi>
+                        <persName key="linne_cv">Linn.</persName> Syst. Nat. ed. 12.<lb break="yes" />aufgeführt werden. Der große Kopenhagner Botaniker, dessen frühzei-<lb break="no"/>tigen Tod alle Freunde der Pflanzenkunde mit Recht betrauern, ward zu<lb break="yes"/>einer irrigen Synonymie dadurch verleitet, daß er 1) wußte, <persName key="linne_cv">Linné</persName> habe<lb break="yes"/>im spätern Zeitraum seine Beschreibung der C. <hi rendition="#i">officinalis</hi> auf Exemplare<lb break="yes"/>gegründet, welche er von S. Fe erhielt, und 2) daß er fälschlich voraus<lb break="yes" />setzte, alle um S. Fe von <persName key="mutis_jc">Mutis</persName> entdeckten Chinawälder beständen aus<lb break="yes"/>weißer Fieberrinde, oder C. <hi rendition="#i">macrocarpa.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>
+                        <persName key="linne_cv">Linné</persName> vereinigte, wie schon oben bemerkt worden ist, zwei ganz<lb break="yes"/>verschiedene Pflanzen unter der Benennung C. <hi rendition="#i">officinalis.</hi> Das getrock-<lb break="no" />nete Exemplar, welches er zur selbst entworfenen Diagnose benutzte,<lb break="yes"/>war (wie mich Herr <persName key="mutis_jc" >Mutis</persName> wiederholt mündlich versichert hat) gelbe<lb break="yes"/>China, C. <hi rendition="#i">cordifolia</hi>
+                        <persName key="mutis_jc">Mut.</persName>, und dieselbe Species, welche <persName key="vahl_m">Vahl</persName> C. <hi rendition="#i" >pubescens</hi>
+                        <lb break="yes"/>nennt, von der aber eine Varietät völlig glatte Blätter, folia utrinque gla-<lb break="no"/>bra, hat. Als Synonym führte <persName key="linne_cv">Linné</persName> die von <persName key="lacondamine_cmd" >la Condamine</persName> in den<lb break="yes"/>Mém. de l&#x2019;Academie 1738 beschriebene Art an. Er vereinigte demnach<lb break="yes"/>eine Species von S. Fe mit einer andern, welche ausschließlich in der<lb break="yes"/>Gegend von Loxa wächst.</p>
+                    <lb break="yes"/>
+                    <pb n="114" facs="#f0023"/>
+                    <p>
+                        <persName key="ruizlópez_hipolito">Ruiz</persName> nennt in der Quinologia <note place="foot" n="*)">
+                            <hi rendition="#i">Cascarilla officinal.</hi> Quinologia Act. II. p. 56.</note> C. <hi rendition="#i">officinalis</hi> eine Art, welche er<lb break="yes"/>späterhin in der Flora Peruviana unter dem Namen <hi rendition="#i">C. nitida</hi> beschreibt.<lb break="yes"/>Er behauptete damals, daß dieser Baum, welcher in den Wäldern von<lb break="yes" />Huamalies und Xauxa, also fern von Loxa unter dem 10°&#x2014;12° südl. Br.<lb break="yes"/>wächst, die von <persName key="lacondamine_cmd">La Condamine</persName> beschriebene China sei. Im Supplement<lb break="yes"/>à la Quinologia, p. 68, einer gegen Herrn Zea, <persName key="mutis_jc">Mutis</persName> und Cavanilles er-<lb break="no" />schienenen botanischen Streitschrift, wird diese Behauptung mit Recht<lb break="yes"/>zurückgenommen. In der That ist C. <hi rendition="#i" >nitida</hi> oder C. <hi rendition="#i">officinalis <persName key="ruizlópez_hipolito">Ruiz</persName>
+                        </hi> keine<lb break="yes"/>andere als die Cascarilla naranjanda von S. Fe, oder C. <hi rendition="#i">lancifolia</hi>
+                        <persName key="mutis_jc">Mut.</persName>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Weil demnach bereits vier verschiedene Arten, die Cascarilla fina<lb break="yes"/>de Uritusinga, die <persName key="lacondamine_cmd">La Condamine</persName> gezeichnet, C. <hi rendition="#i">pubescens</hi>
+                        <persName key="vahl_m">Vahl</persName>, C. <hi rendition="#i">ni-<lb break="no"/>tida</hi>
+                        <persName key="ruizlópez_hipolito">Ruiz</persName> und C. <hi rendition="#i" >macrocarpa</hi>
+                        <persName key="vahl_m">Vahl</persName>, mit dem Namen C. <hi rendition="#i" >officinalis</hi> belegt<lb break="yes"/>worden sind, so haben wir zum Andenken an die ersten Beschreiber,<lb break="yes"/>jene China von Uritusinga C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> genannt. Zwar äußert Herr<lb break="yes"/>
+                        <persName key="ruizlópez_hipolito">Ruiz</persName> im Supplemento <choice>
+                            <sic>a</sic>
+                            <corr type="editorial">à</corr>
+                        </choice> la Quinologia die Meinung, daß die Pflanze,<lb break="yes"/>welche man jetzt in Loxa Cascarilla fina nennt, nicht die von dem fran-<lb break="no"/>zösischen Astronomen beschriebene Pflanze sei; aber dagegen zeugt<lb break="yes"/>nicht bloß das einstimmige Zeugniß aller Einwohner von Loxa, Caxa-<lb break="no"/>numa und Uritusinga, sondern auch das <persName key="jussieu">Jussieusche</persName> Herbarium zu Paris<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice>
+                        <lb break="yes"/>Herr <persName key="bonpland_ajag" >Bonpland</persName> hat unsere C. <persName key="lacondamine_cmd">C<hi rendition="#i">ondaminea</hi>
+                        </persName> sorgfältig mit den Exem-<lb break="no"/>plaren verglichen, welche von <persName key="jussieu_jd">Joseph de Jussieu</persName> und <persName key="lacondamine_cmd">La Condamine</persName>
+                        <lb break="yes"/>gesammelt wurden. Es blieb kein Zweifel über die Identität der Species<lb break="yes"/>übrig.</p>
+                    <lb break="yes"/>
+                    <p>Da die C. <persName key="lacondamine_cmd">C<hi rendition="#i">ondaminea</hi>
+                        </persName> wie Myristica, Caryocar amygdaliferum, und<lb break="yes"/>viele kostbare Produkte der Tropenwelt auf einen sehr kleinen Raum<lb break="yes" />beschränkt ist, so hat man sie auch bisher am unvollständigsten beschrie-<lb break="no"/>ben. Kein Botaniker, weder <persName key="ruizlópez_hipolito">Ruiz</persName> und <persName key="pavon_j" >Pavon</persName>, noch <persName key="tafalla_jj">Tafalla</persName> oder <persName key="nee_l">Nee</persName>,<lb break="yes"/>oder <persName key="haenke_t">Hänke</persName> oder <persName key="mutis_jc" >Mutis</persName> hat sie vor uns an ihrem Standorte beobachtet.<lb break="yes"/>Als unvollständige Abbildungen der C. <persName key="lacondamine_cmd">C<hi rendition="#i">ondaminea</hi>
+                        </persName> darf man betrachten<lb break="yes"/>1) Mém. de l&#x2019;Acad. de 1738, p. 114. 2) <persName key="lamarck_jbpadmd">Lamark</persName> Encyclopédie pl. 164. fig. 1.<lb break="yes"/>3) <persName key="vahl_m" >Vahl</persName> Skrivt. af Naturh. Sel&#x017F;kabet I. tab. 1. und <persName key="lambert_jh">Lambert</persName> Monogr. Tab. 1.<lb break="yes"/>Überall ist der wahre Charakter der Blätter verfehlt und es würde gewagt<lb break="yes"/>seyn diese Synonymie anzuführen, wäre man nicht durch Untersuchung<lb break="yes"/>der Exemplare gesichert, welche zu den Abbildungen gedient haben.</p>
+                    <lb break="yes"/>
+                    <p>Unsere C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> wächst unter dem 4ten Grade südlicher Breite<lb break="yes"/>am Gebirgsabhange in der mittlern Höhe zwischen 900 und 1200 Toi-<lb break="no" />sen. Sie liebt ein etwas milderes Klima als die orangenfarbige China,<lb break="yes"/>C. <hi rendition="#i">lancifolia</hi>
+                        <persName key="mutis_jc">Mut.</persName> von S. Fe. Sie ist einer mittlern Temperatur von 15<lb break="yes"/>bis 16° R. ausgesetzt, welches ungefähr die mittlere Wärme der Kana-<lb break="no"/>rischen Inseln ist.</p>
+                    <lb break="yes"/>
+                    <pb n="115" facs="#f0024"/>
+                    <p>Ich schalte hier eine genaue Diagnose der C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> ein, welche<lb break="yes"/>ich zu Gonzanama entworfen, und die (da sie unter astronomischen Ma-<lb break="no"/>nuskripten vergraben blieb) von Herrn <persName key="bonpland_ajag">Bonpland</persName> bei Herausgabe des<lb break="yes"/>2ten Fasciculs der Plant. équinoxiales nicht hat benutzt werden <choice>
+                            <sic>können,</sic>
+                            <corr type="editorial">können.</corr>
+                        </choice>
+                    </p>
+                    <lb break="yes"/>
+                    <p>C<hi rendition="#i">alyx</hi> tubulosus basi angustatus sub 5-gonus subhirtus ore 5-dentato,<lb break="yes"/>dentibus ovatis acuminatis patentibus. C<hi rendition="#i">or.</hi> hypocrateriformis tubo cy-<lb break="no" />lindrico rubro laevissime hirto 5-gono (ad basin persaepe fisso) limbo 5-<lb break="maybe"/>fido saepissime 4 fido, laciniis ovatis acutis apice et margine ciliatis, vel<lb break="yes"/>tomentosis ciliis albis. <hi rendition="#i">Faux</hi> Corollae et totius tubi pars interior rubra<lb break="yes"/>glabra, nec ciliata. <hi rendition="#i">Stamina</hi> quinque, rarius tria et quatuor. In Corolla<lb break="yes"/>4 fida saepius stamina quinque numeravi. <hi rendition="#i">Filamenta</hi> ex rubro albescentia,<lb break="yes"/>imo tubo adnata, cum eo cohaerentia, tertiam tubi partem aequantia, ea-<lb break="no"/>demque tantum tertia sui longitudinis parte libera. <hi rendition="#i">Antherae</hi> flavae linea-<lb break="no"/>res, parte libera filamenti duplo longiores. <hi rendition="#i">Germen</hi> rotundum subdepres-<lb break="no"/>sum rubescens, saepe punctatum et 5-sulcatum. <hi rendition="#i">Stylus</hi> fere longitudine<lb break="yes"/>tubi crassus teres. <hi rendition="#i" >Stigma</hi> tubum vix superans viridescens, compressum,<lb break="yes" />bifidum saepe bipartitum, C<hi rendition="#i">apsula</hi> calyce coronata, oblonga flore tertia<lb break="yes"/>parte longior, bipartibilis, striato-costata, de medio hiscens, dissepi-<lb break="no"/>mento parallelo. <hi rendition="#i">Semina</hi> plura compressa ala membranacea crenulata<lb break="yes"/>cincta. &#x2014; <hi rendition="#i">Rami</hi> cicatrisati post casum foliorum, sub 4 goni juniores gla-<lb break="no" />berrimi, subpulverulenti. <hi rendition="#i">Folia</hi> petiolata decussatim opposita lanceolata<lb break="yes"/>obtusa acuta, integerrima, utrinque viridia, nullis venis rubris picta, fere<lb break="yes"/>laurina, glaberrima, in axillis nervorum inferne scrobiculata. <hi rendition="#i" >Glandulae</hi>
+                        <lb break="yes"/>nullis pilis obsitae, convexitate in pagina superiori folii conspicua, venas<lb break="yes"/>altitudine superantes. Pagina folii inferior scrobiculum demonstrat. <hi rendition="#i">Petioli,</hi>
+                        <lb break="yes"/>saepe rubescentes superne plani inferne teretes. Stipulae deciduae ob-<lb break="no"/>longae carinatae. Panicula axillaris et terminalis folio longior floribus<lb break="yes"/>breve pedicellatis.</p>
+                    <lb break="yes"/>
+                    <p>Größe der Theile bei einem Baume, der zum erstenmale blüht:<lb break="yes" />Kelch, 1<formula notation="TeX">\frac{7}{10}</formula> Linien lang; Blumenkrone, 5<formula notation="TeX">\frac{4}{10}</formula> Linien; Capsel 8 Linien lang,<lb break="yes"/>3<formula notation="TeX" >\frac{1}{2}</formula> Lin. breit; stets Par. Maaß. Blätter ohne Blattstiel, die recht aus-<lb break="no"/>gewachsen, 4 Z. 3. Lin. lang und 1 Z. 9 Lin. breit. Die jungen Blätter<lb break="yes"/>haben oft eine Länge von 5 Zoll und dabei die große Breite von 4 Z. 7 Lin.</p>
+                    <lb break="yes"/>
+                    <p>Die C. <persName key="lacondamine_cmd">Condaminea</persName> variirt außerordentlich in den Blättern, ehe der<lb break="yes"/>Baum zur Blüthe kommt. In den Schößlingen und sehr jungen Bäumen<lb break="yes"/>bemerkt man oft folia lato ovata und ovato-lanceolata. Je älter der Baum<lb break="yes" />wird, desto schmälere Blätter trägt er. Bei großer Geilheit des Wuchses<lb break="yes"/>verschwinden oft die Grübchen, welche auf der obern Blattseite als convexe<lb break="yes"/>Glandeln erscheinen. Auf sehr breiten Blättern, in denen das Paren-<lb break="no"/>chyma beträchtlich ausgedehnt ist, fehlen sie fast ganz. Doch trifft man<lb break="yes"/>selbst dann auf demselben Zweige immer einzelne folia scrobiculata.</p>
+                    <lb break="yes"/>
+                    <pb n="116" facs="#f0025"/>
+                    <p>2. C. <hi rendition="#i">
+                            <hi rendition="#g">lancifolia</hi> foliis lanceolatis acutis utrinque glaberrimis.</hi>
+                        <lb break="yes"/>
+                        <persName key="mutis_jc">Mutis</persName> Period. de St. Fe, p. 465. (et Flor. Bogot. Mss.) In Santa Fe un-<lb break="no"/>ter dem Namen Quina naranjanda, Quinquina orangé oder pommeran-<lb break="no"/>zenfarbige China bekannt. Nächst der C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> die fieberheilend-<lb break="no"/>ste aller China-Arten, die Species, welche Herr <persName key="mutis_jc">Mutis</persName> in seiner Quino-<lb break="no"/>logia die Quina primitiva directamente febrifuga nennt, weil er sie den<lb break="yes"/>folgenden drei Arten vorzieht und weil er glaubt, was freilich unrichtig<lb break="yes"/>ist, die feine China von Uritusinga sei, mit der Quina naranjada von<lb break="yes"/>Neu-Grenada identisch. Die C. <hi rendition="#i">lancifolia</hi> hat kleinere Blätter als alle<lb break="yes"/>andere Arten corollis tomentosis. Auch sind dieselben stets glatt, da<lb break="yes"/>hingegen bei der gelben und weißen Fieberrinde der Standort Varietäten<lb break="yes"/>mit haarigen Blättern erzeugt.</p>
+                    <lb break="yes"/>
+                    <p>Die Quina naranjada liebt ein rauhes Klima. Sie wächst zwischen<lb break="yes"/>dem 4ten und 5ten Grade N. Br. auf Gebirgsabhängen, die 700 bis 1500<lb break="yes"/>Toisen hoch sind. Die mittlere Temperatur dieses Standorts ist ohnge-<lb break="no"/>fähr der <choice>
+                            <sic>von</sic>
+                            <corr type="editorial"/>
+                        </choice> von Rom gleich. Sie beträgt 13° R., doch sind die Fieber-<lb break="no"/>rindenbäume, welche am höchsten gegen den Gipfel der Gebirge auf-<lb break="no"/>steigen, meist eine Temperatur von 8 bis 9° ausgesetzt. Bei nächtlicher<lb break="yes"/>Kälte sinkt das Thermometer in diesen Alpenwäldern stundenlang bis<lb break="yes"/>zum Gefrierpunkt herab, doch fällt bis 1500 Toisen Höhe kein Schnee<lb break="yes"/>in dieser Breite.</p>
+                    <lb break="yes"/>
+                    <p>Die Quina naranjada gehört mit der C. <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> zu den seltenen<lb break="yes"/>China-Arten. Die Natur hat sie selbst im Königreich Neu-Grenada in<lb break="yes"/>viel geringerer Menge als die rothe und gelbe Fieberrinde hervorge-<lb break="no"/>bracht, welche letztere hie und da fast zusammenhängende Gebüsche<lb break="yes"/>bilden. C. <hi rendition="#i">lancifolia</hi> dagegen steht immer einzeln, und was bei einem<lb break="yes"/>so kostbaren Erzeugniß sehr zu bedauern ist, sie vermehrt sich minder<lb break="yes"/>leicht durch Wurzelsprößlinge als C. <hi rendition="#i">cordifolia</hi> und C. <hi rendition="#i" >oblongifolia.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>In <persName key="vahl_m">Vahls</persName>
+                        <choice>
+                            <sic>nnd</sic>
+                            <corr type="editorial">und</corr>
+                        </choice>
+                        <persName key="lambert_jh">Lamberts</persName> Monographien ist der Art naranjada von S. Fe<lb break="yes"/>nicht erwähnt. Ein unbestreitbares Synonymum hingegen ist C<hi rendition="#i">inchona<lb break="yes" />angustifolia <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> Suppl. à la Quinologia, p. 21., wo eine vortreffliche<lb break="yes" />Abbildung gegeben wird. Es ist in der That zu verwundern, daß ein<lb break="yes"/>so genauer Botaniker als Herr <persName key="ruizlópez_hipolito">Ruiz</persName> den alten <persName key="mutis_jc">Mutisischen</persName> Namen <hi rendition="#i">C.<lb break="yes"/>lancifolia</hi> in C. <hi rendition="#i" >angustifolia</hi> umändert, da derselbe bis jetzt von <persName key="swarz_01">Swartz</persName>
+                        <note place="foot" n="*)">Flor. Ind. occ. I. p. 380. <persName key="lambert_jh">Lambert</persName> p. 29. Pl. 9.</note>
+                        <lb break="yes"/>einer bekannten Insel-Cinchone cor. glabris staminibus longe exsertis ge-<lb break="no"/>geben worden ist.</p>
+                    <lb break="yes"/>
+                    <p>Herr Professor Zea glaubt, und wie mir scheint mit vollem Recht,<lb break="yes"/>daß mehrere Species der Flora Peruviana bloß verschiedene Zustände<lb break="yes"/>der Quina naranjada bezeichnen, Zustände, welche von Alter, Klima und<lb break="yes"/>
+                        <pb n="117" facs="#f0026"/> Standort abhängen. So scheinen Varietäten der C. <hi rendition="#i">lancifolia <persName key="mutis_jc">Mut.</persName>
+                        </hi> zu<lb break="yes"/>seyn: 1) C. <hi rendition="#i">nitida</hi> Flor. Peruv. II. Icon. t. 191. (<persName key="ruizlópez_hipolito">Ruiz</persName> Quinol. II. p. 56.)<lb break="yes"/>
+                        <persName key="ruizlópez_hipolito">Ruizens</persName> Cascarilla officinal. 2) C. <hi rendition="#i">lanceolata</hi> Flor. Per. II. p. 51. und C.<lb break="yes"/>glabra <persName key="ruizlópez_hipolito">Ruiz</persName> Quin. II. p. 64., Cascarilla lampina, von der keine Abbildung<lb break="yes" />geliefert wird. Herr Zea glaubt auch hieher rechnen zu dürfen C. <hi rendition="#i">rosea</hi>
+                        <lb break="yes"/>Flor. Per. II. Ic. 199. eine Art, welche in Peru die seltenste seyn soll,<lb break="yes"/>und (was mit der Natur der C. <hi rendition="#i">lancifolia</hi> wenig übereinstimmt) in die<lb break="yes"/>tiefsten Gegenden <note place="foot" n="*)">
+                            <persName key="ruizlópez_hipolito">Ruiz</persName> Supplem. <choice>
+                                <sic>a</sic>
+                                <corr type="editorial">à</corr>
+                            </choice> la Quinologia p. 54.</note> vom Gebirge herabsteigt.</p>
+                    <lb break="yes"/>
+                    <p>Die Fieberrinde, welche in Cadiz unter dem Namen Calisaya be-<lb break="no" />rühmt und von vorzüglicher Heilkraft ist, gehört nach <persName key="mutis_jc">Mutis</persName> unbezweifelt<lb break="yes"/>der C. <hi rendition="#i">lancifolia</hi> zu. <persName key="ruizlópez_hipolito" >Ruiz</persName> hält sie in der Quinologia für synonym mit<lb break="yes"/>seiner C. glabra. In der Streitschrift gegen Zea nimmt er aber diese<lb break="yes"/>Meinung zurück, und versichert, daß um Huanuco keine Species wachse,<lb break="yes"/>welche eine der Calisaya ähnliche Rinde gebe <note place="foot" n="**)">a. a. O. p. 73 und 95.</note>. Der Name Calysaja<lb break="yes"/>ist übrigens der der Provinz, welche diese Fieberrinde liefert und welche<lb break="yes"/>im südlichsten Peru in der Intendencia de la Paz liegt.</p>
+                    <lb break="yes"/>
+                    <p>Von der orangefarbenen China, wie überhaupt von den drei nächst-<lb break="no"/>folgenden <persName key="mutis_jc">Mutisischen</persName> Arten, der gelben, rothen und weißen, enthält<lb break="yes"/>eine neuere französische Schrift, <persName key="alibert_jl">Aliberts</persName> Traité des fièvres ataxiques,<lb break="yes"/>zweite Auflage, sehr genaue Abbildungen. Dieselben sind nach trocknen<lb break="yes"/>Exemplaren entworfen, welche durch Herrn <persName key="mutis_jc">Mutis</persName> bestimmt waren und<lb break="yes"/>Herr Zea während seines Aufenthalts in Paris aus seinem Herbarium lieferte.</p>
+                    <lb break="yes"/>
+                    <p>3. C. <hi rendition="#i">
+                            <hi rendition="#g">cordifolia</hi> fol. orbiculato-ovatis saepe subcordatis subtus<lb break="yes"/>tomentosis supra pubescentibus <persName key="mutis_jc">Mutis</persName>, MSS.</hi> Quina amarilla, Quinquina<lb break="yes"/>jaune, gelbe China von S. Fe, wie oben entwickelt die von <persName key="linne_cv">Linné</persName> in<lb break="yes"/>Syst. Nat. T. II. ed. 12. p. 64 unter dem Namen C. <hi rendition="#i">officinalis</hi> beschrie-<lb break="no"/>bene Species. Bei der C. <hi rendition="#i">cordifolia</hi> und C. <hi rendition="#i" >lancifolia</hi> reichen die An-<lb break="no"/>theren bis in die obern Theile der Blumenröhre, dagegen sie bei der<lb break="yes"/>rothen China (C. <hi rendition="#i">oblongifolia</hi>) tief in der Mitte der Röhre verborgen sind.<lb break="yes"/>C. <hi rendition="#i">cordifolia</hi> hat zwei Varietäten. Var. &#x03B2;. <hi rendition="#i">foliis vix cordatis utrin-<lb break="no"/>que glabris.</hi> &#x03B3;. <hi rendition="#i" >foliis utrinque hirsutis, tertio.</hi> Sammet-China vom<lb break="yes" />gemeinen Volk im Königreich Neu-Grenada genannt. Unter dem 4°<lb break="yes"/>N. Br. zwischen 900 und 1440 Toisen Höhe. Herzförmige Blätter sind<lb break="yes"/>selten, doch bietet jeder Zweig meist einige dar. C. <hi rendition="#i">cordifolia <persName key="mutis_jc" >Mut.</persName>
+                        </hi> ist<lb break="yes"/>nach <persName key="bonpland_ajag" >Bonplands</persName> Untersuchung identisch mit C. <hi rendition="#i" >pubescens <persName key="vahl_m">Vahl</persName>,</hi> wie das<lb break="yes"/>
+                        <persName key="jussieu">Jussieusche</persName> Herbarium beweist, aus welchem <persName key="vahl_m">Vahl</persName> sein Exemplar erhielt.<lb break="yes"/>
+                        <persName key="jussieu_jd">Joseph de Jussieu</persName> hatte nemlich 1738 diese China-Art und unsere C.<lb break="yes"/>
+                        <persName key="lacondamine_cmd">
+                            <hi rendition="#i">Condaminea</hi>
+                        </persName> in den Wäldern von Loxa gesammelt.</p>
+                    <lb break="yes"/>
+                    <p>Eben so gewiß ist auch C. <hi rendition="#i">ovata</hi> Flor. Per. II. t. 195., C<hi rendition="#i">ascarilla</hi>
+                        <lb break="yes"/>
+                        <pb n="118" facs="#f0027"/>
+                        <hi rendition="#i">Pallido <persName key="ruizlópez_hipolito" >Ruiz</persName>,</hi> Quinol. Art. 7. p. 74, um Pozuzo <hi rendition="#i">Pata de Guallerata</hi> ge-<lb break="no"/>nannt, ein Synonym von C. cordifolia <persName key="mutis_jc">Mut.</persName>
+                        <persName key="ruizlópez_hipolito">Ruiz</persName> und <persName key="pavon_j">Pavon</persName> haben diese<lb break="yes"/>Identität neuerlichst selbst eingestanden <note place="foot" n="*)">Suppl. a la Quinol. p. 18.</note>.</p>
+                    <lb break="yes"/>
+                    <p>Nach Zea ist eine Varietät von C. cordifolia <persName key="mutis_jc" >Mut.</persName> die C. <hi rendition="#i">hirsuta</hi>
+                        <lb break="yes"/>Flor. Per. II. Ic. 192. C<hi rendition="#i">ascarillo delgado</hi> oder C. <hi rendition="#i">tenuis <persName key="ruizlópez_hipolito">Ruiz</persName>,</hi> Quinol.<lb break="yes"/>II. p. 56. Gehört auch hieher C. <hi rendition="#i" >purpurea</hi> Flor. Per. II. t. 193 oder C<hi rendition="#i">as-<lb break="no"/>carillo morado <persName key="ruizlópez_hipolito" >Ruiz</persName>
+                        </hi> Quinol. Art. V. p. 67? Diese Species variirt wun-<lb break="no" />derbar in den Blättern und zwar auf demselben Baume.</p>
+                    <lb break="yes"/>
+                    <p>4. C. <hi rendition="#i">
+                            <hi rendition="#g">oblongifolia</hi> foliis oblongis acuminatis glabris, filamentis<lb break="yes"/>brevissimis, antheris infra medium tubi latentibus. <persName key="mutis_jc">Mut.</persName> MSS.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Quina roxa, Quinquina rouge de S. Fe. Differt. a C. <hi rendition="#i" >lancifolia</hi>
+                        <lb break="yes"/>1) foliis latioribus majoribus oblongis nec lanceolatis, 2) antheris haud<lb break="yes"/>in summo tubo latentibus.</p>
+                    <lb break="yes"/>
+                    <p>Sie wächst unter dem 5° N. Br. zwischen 600 und 1300 Toisen <choice>
+                            <sic>Höhe.</sic>
+                            <corr type="editorial">Höhe</corr>
+                        </choice>
+                        <lb break="yes"/>und ist im Königreich Neu-Grenada vorzüglich gemein um das Städtchen<lb break="yes"/>Mariquita, wo so lange der Sitz von Herrn <persName key="mutis_jc">Mutis</persName> botanischer Expedition<lb break="yes"/>war. Sie trägt oft weit größere Frucht als die weiße China, C. <hi rendition="#i">ovali-<lb break="no"/>folia,</hi> daher sie mit mehrerem Rechte als diese den Namen <hi rendition="#i">macrocarpa</hi>
+                        <lb break="yes"/>verdiente. Ihre Rinde ist weniger fieberheilend als C. <persName key="lacondamine_cmd">C<hi rendition="#i">ondaminea</hi>
+                        </persName> und<lb break="yes"/>C. <hi rendition="#i">lancifolia,</hi> mehr als die gelbe China (C. <hi rendition="#i">cordifolia</hi>). Sie ist sehr rei-<lb break="no"/>zend, für schwache Constitutionen erhitzend, in sthenischen inflammato-<lb break="no"/>rischen Krankheiten oft gefährlich, um so wohlthätiger äußerlich ange-<lb break="no"/>wandt, in Muskelkrankheiten, eiternden und brandigen Geschwüren.</p>
+                    <lb break="yes"/>
+                    <p>Nach <persName key="ruizlópez_hipolito">Ruizens</persName> eigenen neueren Geständnissen ist mit C. <hi rendition="#i">oblongifolia</hi>
+                        <lb break="yes"/>
+                        <persName key="mutis_jc">Mut.</persName> oder mit der rothen China von S. Fe identisch die gelbe China,<lb break="yes"/>C<hi rendition="#i">ascarilla amarilla</hi> Quinol. Art. 6. p. 71. oder <choice>
+                            <sic>C:</sic>
+                            <corr type="editorial">C.</corr>
+                        </choice>
+                        <hi rendition="#i">magnifolia</hi> Flor. Per.<lb break="yes"/>II. Ic. 196, welche in Peru wegen des schönen orangenartigen Geruchs<lb break="yes"/>der Blüthe flor. de Azahar, in Popayan Palo de requeson <note place="foot" n="**)">Period. de St Fe, p. 335.</note> genannt wird.</p>
+                    <lb break="yes"/>
+                    <p>5. C. <hi rendition="#i">
+                            <hi rendition="#g">ovalifolia</hi> fol. elipticis supra glaberrimis subtus pubescen-<lb break="no"/>tibus, antheris in parte tubi superiori latentibus, filamentis vix ullis.<lb break="yes"/>
+                            <persName key="mutis_jc">Mut.</persName> MSS.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Quina blanca, Quinquina blanc. Weiße China von St. Fe.</p>
+                    <lb break="yes"/>
+                    <p>Var. &#x03B2;. fol. utrinque pubescentibus.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">&#x03B3;. fol. utrinque laevibus.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Beide Varietäten, besonders die erstere, hat oft corollam 6&#x2014;7 lo-<lb break="no"/>bam, stamina 6&#x2014;7.</p>
+                    <lb break="yes"/>
+                    <p>Unter dem 3ten bis 6ten Grade N. Br. zwischen 700 und 1400 Toi-<lb break="no" />sen Höhe. Die Var. mit glatten Blättern ist bei S. Martha häufig. Ein<lb break="yes"/>sicheres, selbst von <persName key="mutis_jc" >Mutis</persName> und <persName key="ruizlópez_hipolito">Ruiz</persName>
+                        <note place="foot" n="***)">Suppl. p. 18.</note> anerkanntes Synonym ist C. <hi rendition="#i">ma-</hi>
+                        <lb break="yes"/>
+                        <pb n="119" facs="#f0028"/>
+                        <hi rendition="#i">crocarpa <persName key="vahl_m">Vahl</persName>.</hi> (<persName key="lambert_jh">Lambert</persName> p. 22. pl. 3). Unter den Cinchonen mit haa-<lb break="no"/>rigen Blumenkronen ist sie die großblüthigste von allen. Sie muß indeß<lb break="yes"/>mit C. <hi rendition="#i">grandiflora</hi> Flor. Per. II. p. 54. (C<hi rendition="#i">osmibuena obtusifolia</hi> Flor. Per.<lb break="yes" />III. t. 198.) die eine völlig glatte corolla hat, nicht verwechselt werden.</p>
+                    <lb break="yes"/>
+                    <p>6. C. <hi rendition="#i">
+                            <hi rendition="#g">brasiliensis</hi> foliis oblongis acuminatis, venis subtus pubes-<lb break="no"/>centibus pan</hi>i<hi rendition="#i">cula terminali, tubo calycis longitudine <persName key="willdenow_kl" >Willd.</persName> MSS.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Eine sehr kleinblüthige Species, welche wir, wie schon oben er-<lb break="no" />wähnt, dem Gr. <persName key="hoffmannsegg_jcv">Hoffmansegg</persName> verdanken, mit <persName key="aublet_jcf">Aublets</persName> und <persName key="lambert_jh">Lamberts</persName> C.<lb break="yes"/>
+                        <hi rendition="#i">longiflora</hi> aus der <choice>
+                            <sic>französischnn</sic>
+                            <corr type="editorial">französischen</corr>
+                        </choice> Guayana, die einzige Fieberrinde, welche<lb break="yes"/>an der östlichen Küste des südamerikanischen Continents wächst. Man<lb break="yes" />weiß nichts bestimmtes über die Höhe ihres Standorts, da sie aber aus<lb break="yes"/>der Nähe der Stadt Gran Para, am Ausfluß des Amazonenstromes, einge-<lb break="no"/>sandt worden ist, und da sich in dieser Gegend nur niedrige Hügel be-<lb break="no"/>finden, so darf man vermuthen, daß C. <hi rendition="#i">brasiliensis</hi> den heißen Regio-<lb break="no"/>nen zugehört.</p>
+                    <lb break="yes"/>
+                    <p>Der von Herrn <persName key="willdenow_kl">Willdenow</persName> aufgefundene <choice>
+                            <sic>Charakter.</sic>
+                            <corr type="editorial">Charakter</corr>
+                        </choice> tubus corollae<lb break="yes"/>longitudine calycis, unterscheidet diese Cinchone von allen bisher be-<lb break="no"/>schriebenen. Faux corollae hirsuta; Pili rari breves in laciniarum corollae<lb break="yes" />interiori superficie adpressi.</p>
+                    <lb break="yes"/>
+                    <p>7. C. <hi rendition="#i">
+                            <hi rendition="#g">excelsa</hi> corolla pubescente, filamentis e medio tubi nascen-<lb break="no"/>tibus, antheris exsertis, foliis oblongis acutis subtus pubescentibus.</hi>
+                        <persName key="roxburgh_w">Roxb.</persName>
+                        <lb break="yes"/>Plant. of the Coast of Coromandel II. t. 106.</p>
+                    <lb break="yes"/>
+                    <p>Die einzige bisher auf dem <placeName key="altewelt">Continent der alten Welt</placeName> entdeckte Fie-<lb break="no"/>berrinde, über deren medizinischen Gebrauch indeß bei ihrer Bitterkeit<lb break="yes"/>noch keine Versuche angestellt worden sind. Sie hat grünlich weiße<lb break="yes"/>sehr kleine Blüthen und unter allen Cinchonen die größten bisweilen<lb break="yes"/>1 Fuß lange und 5 Zoll breite Blätter. Die Staubfäden sind achtmal<lb break="yes"/>kürzer als der Staubbeutel.</p>
+                    <lb break="yes"/>
+                    <p>Die <hi rendition="#i">C. excelsa, Bundaroo</hi> der Telinga-Indianer, wächst in der Berg-<lb break="no"/>reihe der Circars, welche an der nordöstlichen Küste der großen Halb-<lb break="no"/>insel von Hindostan hinläuft. Retzius <note place="foot" n="*)">Fasc. observ. bot. IV. p. 6.</note> hat früher aus Nachrichten, die<lb break="yes"/>ihm <persName key="koenig_jg" >König</persName> mittheilte, einer Cinchona erwähnt, welche der Küste von<lb break="yes"/>Coromandel gegenüber, in Malacca wächst, und von welcher die ächte<lb break="yes"/>terra Japonica, <hi rendition="#i">Cottu Cambar</hi> genannt, geliefert wird, ein Pflanzenpro-<lb break="no" />dukt, welches man lange der <hi rendition="#i">Mimosa spicata</hi> Pluk fälschlich zuschrieb.<lb break="yes"/>Sollte diese Cinchone aus Malacca eine von C. excelsa verschiedene<lb break="yes"/>Species seyn?</p>
+                    <lb break="yes"/>
+                    <p>B. <hi rendition="#i">Cinchonae corollis glaberrimis.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">a. <hi rendition="#i">staminibus inclusis.</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <pb n="120" facs="#f0029"/>
+                    <p>8. <hi rendition="#i">C. <hi rendition="#g">grandiflora</hi> tubo corollae longissimo, fol. lanceolato ob-<lb break="no"/>longis utrinque glabris.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Ich habe den älteren Namen der Flor. Per. beibehalten. Gegenwär-<lb break="no"/>tig nennt Herr <persName key="ruizlópez_hipolito" >Ruiz</persName> diese Species <hi rendition="#i">Cosmibuena obtusifolia</hi> (Flor. Per.<lb break="yes"/>Vol. III.) Sie ist identisch mit <hi rendition="#i">C. longiflora <persName key="mutis_jc" >Mut.</persName>,</hi> ein Name, welcher<lb break="yes"/>Verwirrung erregte, da <persName key="lambert_jh">Lambert</persName> die im Journ. de Phys. Oct. 1790 als<lb break="yes"/>
+                        <hi rendition="#i">C. caribaea</hi> beschriebene Insel-Fieberrinde stam. longe exsertis als <hi rendition="#i">C.<lb break="yes"/>longiflora</hi> aufführt. Unsere C. grandiflora hat überaus wohlriechende<lb break="yes" />Blüthen.</p>
+                    <lb break="yes"/>
+                    <p>Sie liebt die warmen Regionen und steigt bis zwei- und dreihundert<lb break="yes"/>Toisen Höhe vom Gebirge herab. Sie wächst in Gegenden, deren mitt-<lb break="no"/>lere Temperatur 18&#x2014;19 Grad ist.</p>
+                    <lb break="yes"/>
+                    <p>9. <hi rendition="#i">C. <hi rendition="#g">parviflora</hi> fol. ovatis glabris filamentis basi dilatatis et<lb break="yes"/>pubescentibus. <persName key="mutis_jc">Mut.</persName> MSS.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Sie hat die kleinsten Früchte unter allen Cinchonen.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">b. <hi rendition="#i">Staminibus exsertis.</hi>
+                        </hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>10. <hi rendition="#i">C. <hi rendition="#g">dissimiliflora</hi> foliis cordato-oblongis glaberrimis, limbo<lb break="yes"/>corollae tubo longiori, capsulis sublinearibus augustissimis. <persName key="mutis_jc" >Mut.</persName> MSS.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Nächst der <hi rendition="#i">C. longiflora <persName key="lambert_jh" >Lamb</persName>.,</hi> der einzigen Species des Conti-<lb break="no"/>nents, welche stamina exserta hat. Zwischen 200&#x2014;700 Toisen Höhe in<lb break="yes"/>warmen Gegenden.</p>
+                    <lb break="yes"/>
+                    <p>11. <hi rendition="#i">C. <hi rendition="#g">caribaea</hi>
+                            <persName key="swarz_01">Swartz</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>12. <hi rendition="#i">C. <hi rendition="#g">longiflora</hi>
+                            <persName key="lambert_jh">Lamb</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>13. <hi rendition="#i">C. <hi rendition="#g">lineata</hi>
+                            <persName key="vahl_m">Vahl</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>14. <hi rendition="#i">C. <hi rendition="#g">floribunda</hi>
+                            <persName key="swarz_01">Swartz</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>15. <hi rendition="#i">C. <hi rendition="#g">angustifolia</hi>
+                            <persName key="swarz_01">Swartz</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>16. <hi rendition="#i">C. <hi rendition="#g">brachycarpa</hi>
+                            <persName key="vahl_m">Vahl</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Diese letztern sechs Species wachsen alle in den westindischen In-<lb break="no"/>seln und lieben eine Temperatur von 17&#x2014;22° R.</p>
+                    <lb break="yes"/>
+                    <p>17. <hi rendition="#i">C. <hi rendition="#g">corymbifera</hi>
+                            <persName key="forster_g">Forster</persName>.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">Auf den Gesellschaftsinseln in der Südsee.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>18. <hi rendition="#i">C. <hi rendition="#g">philippica</hi> Cav.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#et">von <persName key="nee_l">Nee</persName> bei Manilla entdeckt.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Ich wage die Behauptung nicht, daß alle bisher bekannte Cinchonen<lb break="yes"/>unter den von mir aufgestellten 18 Arten begriffen sind. Ich habe bloß<lb break="yes"/>die aufzählen wollen, welche mir theils aus der Natur theils aus guten<lb break="yes"/>Abbildungen bekannt sind, und welche mir unbezweifelt specifisch von<lb break="yes"/>einander verschieden scheinen. Eine nähere Untersuchung verdienen <hi rendition="#i">C.<lb break="yes"/>acutifolia, C. micrantha, C. glanduli&#x017F;era, C. dichotoma, Cosmibuena<lb break="yes"/>acuminata</hi> und <hi rendition="#i">C. spinosa.</hi> Vielleicht dürfte das genus zu 24 Arten an-<lb break="no"/>schwellen.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#g">(Die Fortsetzung künftig.)</hi>
+                        </hi>
+                    </p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

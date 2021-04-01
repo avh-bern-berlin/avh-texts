@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="13" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#b">Die Gewohnheit der Indianer Erde zu e&#x017F;&#x017F;en.</hi>
+                    <lb break="yes"/>(Aus <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>&#x2019;s</hi> An&#x017F;ichten der Natur.)</head>
+                <lb break="yes"/>
+                <p>An den Ku&#x0364;&#x017F;ten von Cumana, <placeName key="barcelona" >Neu-Barcellona</placeName> und Caraccas,<lb break="yes"/>welche die Franziscanermo&#x0364;nche der Guayana auf ihrer Ru&#x0364;ckkehr<lb break="yes" />aus den Mi&#x017F;&#x017F;ionen be&#x017F;uchen, i&#x017F;t die Sage von erdefre&#x017F;&#x017F;enden Men-<lb break="no"/>&#x017F;chen am Orinoco verbreitet. Wir haben am 6ten Junius 1800<lb break="yes"/>auf un&#x017F;erer Ru&#x0364;ckrei&#x017F;e vom Rio Negro, als wir in &#x017F;echsunddreißig<lb break="yes"/>Tagen den Orinoco herab&#x017F;chifften, einen Tag in der Mi&#x017F;&#x017F;ion zuge-<lb break="no"/>bracht, die von den erdfre&#x017F;&#x017F;enden Otomaken bewohnt wird. Das<lb break="yes" />Do&#x0364;rfchen heißt la Concepcion di Uruana, und i&#x017F;t &#x017F;ehr mahleri&#x017F;ch<lb break="yes"/>an einem Granitfel&#x017F;en angelehnt. Seine geographi&#x017F;che Lage fand<lb break="yes"/>ich unter 7° 8&#x2032; 3&#x2033; Breite und 4° 38&#x2032; 38&#x2033; we&#x017F;tlicher La&#x0364;nge von<lb break="yes"/>Paris. Die Erde, welche die Otomaken verzehren, i&#x017F;t ein fetter<lb break="yes"/>milder Letten, wahrer Topferthon von gelblichgrauer Farbe mit et-<lb break="no"/>was Ei&#x017F;enoxyd gefa&#x0364;rbt. Sie wa&#x0364;hlen ihn &#x017F;orgfa&#x0364;ltig aus, und &#x017F;u-<lb break="no"/>chen ihn in eignen Ba&#x0364;nken am Ufer des Orinoco und Meta. Sie<lb break="yes"/>unter&#x017F;cheiden im Ge&#x017F;chmack eine <choice>
+                        <sic>Erdard</sic>
+                        <corr type="editorial">Erdart</corr>
+                    </choice> von der andern, denn aller<lb break="yes"/>Letten i&#x017F;t ihnen nicht gleich angenehm. Sie kneten die&#x017F;e Erde in<lb break="yes"/>Kugeln von 4 bis 6 Zoll Durchme&#x017F;&#x017F;er zu&#x017F;ammen, und brennen &#x017F;ie<lb break="yes"/>a&#x0364;ußerlich bei &#x017F;chwachem Feuer, bis die Rinde ro&#x0364;thlich wird. Beim<lb break="yes"/>E&#x017F;&#x017F;en wird die Kugel wieder befeuchtet. Die&#x017F;e Indianer &#x017F;ind gro&#x0364;ß-<lb break="no"/>tentheils wilde, Pflanzenbau verab&#x017F;cheuende, Men&#x017F;chen. Es i&#x017F;t ein<lb break="yes"/>Sprichwort unter den entfernte&#x017F;ten Nationen am Orinoco von et-<lb break="no"/>was recht Unreinlichem zu &#x017F;agen: &#x201E;&#x017F;o &#x017F;chmutzig, daß es der Oto-<lb break="no"/>make frißt.&#x201C; So lange der Orinoco und der Meta niedriges Wa&#x017F;-<lb break="no"/>&#x017F;er haben, leben die&#x017F;e Men&#x017F;chen von Fi&#x017F;chen und Schildkroten.<lb break="yes" />Er&#x017F;tere werden durch Pfeile erlegt, wenn &#x017F;ie auf die Oberfla&#x0364;che des<lb break="yes"/>Wa&#x017F;&#x017F;ers kommen; eine Jagd, bei der wir oft die große Ge&#x017F;chick-<lb break="no"/>lichkeit der Indianer bewundert haben. Schwellen die Stro&#x0364;me<lb break="yes"/>periodi&#x017F;ch an, &#x017F;o ho&#x0364;rt der Fi&#x017F;chfang auf; denn in tiefem Flußwa&#x017F;&#x017F;er<lb break="yes"/>i&#x017F;t &#x017F;o &#x017F;chwer als im tiefen Ozean zu fi&#x017F;chen. In die&#x017F;er Zwi&#x017F;chen-<lb break="no"/>zeit, die zwei bis drei Monate dauert, &#x017F;ieht man die Otomaken<lb break="yes"/>ungeheure Quantita&#x0364;ten Erde ver&#x017F;chlingen, Wir haben in ihren<lb break="yes"/>Hu&#x0364;tten große Vorra&#x0364;the davon gefunden, pyramidale Haufen, in<lb break="yes"/>
+                    <pb n="14" facs="#f0002"/> denen die Lettenkugeln zu&#x017F;ammengeha&#x0364;uft waren. Ein Indianer<lb break="yes"/>verzehrt, wie uns der ver&#x017F;ta&#x0364;ndige Mo&#x0364;nch, Fray <persName key="bueno_r">Ramon Bueno</persName>,<lb break="yes"/>aus Madrid gebu&#x0364;rtig, der zwo&#x0364;lf Jahre unter die&#x017F;en Indianern<lb break="yes"/>lebt, ver&#x017F;ichert, an einem Tage dreiviertel bis fu&#x0364;nfviertel Pfund.<lb break="yes"/>Nach der Aus&#x017F;age der Otomaken &#x017F;elb&#x017F;t, i&#x017F;t die&#x017F;e Erde, in der Epo-<lb break="no"/>che der Regenzeit, ihre Hauptnahrung. Sie e&#x017F;&#x017F;en indeß dabei hie<lb break="yes"/>und da, wenn &#x017F;ie es &#x017F;ich ver&#x017F;chaffen ko&#x0364;nnen, eine Eidexe, einen<lb break="yes"/>kleinen Fi&#x017F;ch und eine Farrenkraut-Wurzel. Ja &#x017F;ie &#x017F;ind nach dem<lb break="yes"/>Letten &#x017F;o lu&#x0364;&#x017F;tern, daß &#x017F;ie &#x017F;elb&#x017F;t in der trocknen Jahrszeit, wenn &#x017F;ie<lb break="yes"/>Fi&#x017F;chnahrung genug haben, doch als Leckerbi&#x017F;&#x017F;en ta&#x0364;glich nach der<lb break="yes"/>Mahlzeit etwas Erde verzehren. Die&#x017F;e Men&#x017F;chen haben eine dun-<lb break="no" />kel kupferbraune Farbe. Sie &#x017F;ind von unangenehmen Tartari&#x017F;chen<lb break="yes"/>Ge&#x017F;ichtszu&#x0364;gen, fei&#x017F;t, aber nicht dickba&#x0364;uchig. Der Franciskaner-<lb break="no" />mo&#x0364;nch, welcher als Mi&#x017F;&#x017F;ionair unter ihnen lebt, ver&#x017F;ichert, daß er<lb break="yes"/>in dem Befinden der Otomaken, wa&#x0364;hrend des Erdver&#x017F;chlingens,<lb break="yes"/>keine Vera&#x0364;nderung bemerkte. &#x2014; Dies &#x017F;ind einfache That&#x017F;achen.<lb break="yes"/>Die Indianer verzehren große Quantita&#x0364;ten Letten, ohne ihrer Ge-<lb break="no"/>&#x017F;undheit zu &#x017F;chaden, &#x017F;ie halten die&#x017F;e Erde fu&#x0364;r Nahrungsmittel, d.<lb break="yes"/>h. &#x017F;ie fu&#x0364;hlen &#x017F;ich durch ihren Genuß lange ge&#x017F;a&#x0364;ttigt. Sie &#x017F;chrei-<lb break="no"/>ben die&#x017F;e Sa&#x0364;ttigung dem Letten, nicht der anderweitigen &#x017F;par&#x017F;amen<lb break="yes"/>Nahrung zu, welche &#x017F;ie &#x017F;ich neben der Erde hie und da zu ver-<lb break="no"/>&#x017F;chaffen wi&#x017F;&#x017F;en. Befragt man den Otomaken nach &#x017F;einem Win-<lb break="no"/>tervorrath (Winter heißt im hei&#x017F;&#x017F;en Su&#x0364;damerica die Regenzeit),<lb break="yes"/>&#x017F;o zeigt er auf die Erdhaufen in &#x017F;einer Hu&#x0364;tte. Aber eben die&#x017F;e<lb break="yes" />einfachen That&#x017F;achen ent&#x017F;cheiden gar noch nicht die Fragen: kann<lb break="yes"/>der Letten wirklich Nahrungs&#x017F;toff &#x017F;eyn? ko&#x0364;nnen Erden &#x017F;ich a&#x017F;&#x017F;imi-<lb break="no"/>liren? oder dienen &#x017F;ie nur als Balla&#x017F;t im Magen? dehnen &#x017F;ie blos<lb break="yes"/>die Wa&#x0364;nde de&#x017F;&#x017F;elben aus und ver&#x017F;cheuchen &#x017F;ie auf die&#x017F;e Wei&#x017F;e den<lb break="yes" />Hunger? Ueber alle die&#x017F;e Fragen kann ich nicht ent&#x017F;cheiden. Auf-<lb break="no"/>fallend i&#x017F;t es, daß der &#x017F;on&#x017F;t &#x017F;o u&#x0364;beraus leichtgla&#x0364;ubige und unkriti-<lb break="no" />&#x017F;che Pater <persName key="gumilla_j">Gumilla</persName> das Erdfre&#x017F;&#x017F;en als &#x017F;olches geradezu leugnet.<lb break="yes" />(<hi rendition="#aq">Histoire de l&#x2019;Orenoque. T. 1. p.</hi> 283.) Er behauptet die Let-<lb break="no"/>tenkugeln &#x017F;eyen mit Maysmehl und Crokodilfett innig&#x017F;t gemengt.<lb break="yes"/>Aber der Mi&#x017F;&#x017F;ionair Fray <persName key="bueno_r">Ramon Bueno</persName>, und un&#x017F;er Freund und<lb break="yes"/>Rei&#x017F;egefa&#x0364;hrte, der Layenbruder Fray <persName key="gonzalez_j">Juan Gonzalez</persName>, den das Meer<lb break="yes"/>an den <placeName key="afrika">Africani&#x017F;chen Ku&#x0364;&#x017F;ten</placeName> mit einem Theil un&#x017F;erer Sammlun-<lb break="no"/>gen ver&#x017F;chlang, haben uns beide ver&#x017F;ichert, daß die Otomaken den<lb break="yes"/>Letten nie mit Crocodilfett be&#x017F;treichen. Von beigemi&#x017F;chtem Mehl<lb break="yes"/>haben wir vollends in Uruana gar nichts geho&#x0364;rt. Die Erde, wel-<lb break="no"/>che wir mitgebracht, und welche Hr. <persName key="vauquelin_ln">Vauquelin</persName> chemi&#x017F;ch unter-<lb break="no"/>&#x017F;ucht hat, i&#x017F;t ganz rein und ungemengt. Sollte <persName key="gumilla_j">Gumilla</persName>, aus<lb break="yes" />Verwech&#x017F;elung heterogener That&#x017F;achen, auf die Brodbereitung aus<lb break="yes"/>der langen Schote einer Inga-Art an&#x017F;pielen wollen? Die&#x017F;e Frucht<lb break="yes"/>wird allerdings in die Erde vergraben, damit &#x017F;ie fru&#x0364;her zu rotten<lb break="yes"/>beginne. &#x2014; Daß u&#x0364;brigens die Otomaken durch den Genuß &#x017F;o vie-<lb break="no"/>ler Erde nicht erkranken, &#x017F;cheint mir be&#x017F;onders auffallend. I&#x017F;t<lb break="yes"/>
+                    <pb n="15" facs="#f0003"/> die&#x017F;es Volk &#x017F;eit vielen Generationen an die&#x017F;en Reiz gewo&#x0364;hnt? In<lb break="yes"/>allen Tropenla&#x0364;ndern haben die Men&#x017F;chen eine wunderbare, fa&#x017F;t<lb break="yes"/>unwider&#x017F;tehliche Begier Erde zu ver&#x017F;chlingen, und zwar nicht &#x017F;o-<lb break="no"/>genannte alcali&#x017F;che (Kalkerde) um etwa Sa&#x0364;uren zu neutrali&#x017F;iren,<lb break="yes"/>&#x017F;ondern fetten, &#x017F;tarkriechenden Letten. Kinder muß man oft ein-<lb break="no" />&#x017F;perren, damit &#x017F;ie nach fri&#x017F;chgefallenem Regen nicht ins Freie lau-<lb break="no"/>fen und Erde e&#x017F;&#x017F;en. Die Indiani&#x017F;chen Weiber, die am Magdale-<lb break="no"/>nenenfluß, im Do&#x0364;rfchen <placeName key="banco">Banco</placeName>, To&#x0364;pfe drehen, fahren, wie ich mit<lb break="yes"/>Verwunderung ge&#x017F;ehen, wa&#x0364;hrend der Arbeit mit großen Portionen<lb break="yes"/>Letten nach dem Munde. <note place="foot" n="*)">Eben dies bemerkte &#x017F;chon <hi rendition="#aq">
+                            <persName key="gilij_fs">Gily</persName> Saggio di Storia America, T. II.<lb break="yes"/>p</hi> 311. &#x2014; Auch die Wölfe fre&#x017F;&#x017F;en im Winter Erde, de&#x017F;onders Let-<lb break="no" />ten. Es wäre &#x017F;ehr wichtig, die Excremente aller erdfre&#x017F;&#x017F;enden Men-<lb break="no"/>&#x017F;chen und Thiere genau zu unter&#x017F;uchen.</note> Außer den Otomaken erkranken die In-<lb break="no"/>dividuen aller andern Volks&#x017F;tamme, wenn &#x017F;ie die&#x017F;er &#x017F;onderbaren<lb break="yes"/>Neigung nach dem Genuß des Lettens nachgeben. In der Mi&#x017F;-<lb break="no"/>&#x017F;ion San Borja fanden wir das Kind einer Indianerin, das, nach<lb break="yes"/>Aus&#x017F;age der Mutter, nichts als Erde genießen wollte, dabei aber<lb break="yes"/>auch &#x017F;chon &#x017F;kelettartig abgezehrt war. Warum i&#x017F;t in den ka&#x0364;ltern<lb break="yes"/>Zonen die&#x017F;e krankhafte Begierde nach Erde um &#x017F;o viel &#x017F;eltener<lb break="yes"/>und fa&#x017F;t nur auf Kinder und &#x017F;chwangere Frauen einge&#x017F;chra&#x0364;nkt?<lb break="yes" />Ja man darf behaupten, daß in den Tropenla&#x0364;ndern aller Welttheile<lb break="yes"/>das Erde&#x017F;&#x017F;en einheimi&#x017F;ch &#x017F;ei. In Guinea e&#x017F;&#x017F;en die Negern eine<lb break="yes"/>gelbliche Erde, welche &#x017F;ie Caouac nennen. Werden &#x017F;ie als Skla-<lb break="no"/>ven nach We&#x017F;tindien gebracht, &#x017F;o &#x017F;uchen &#x017F;ie &#x017F;ich dort eine a&#x0364;hnliche<lb break="yes"/>zu ver&#x017F;chaffen. Sie ver&#x017F;ichern dabei, daß Erdee&#x017F;&#x017F;en &#x017F;ei in ihrem<lb break="yes"/>
+                    <placeName key="afrika">Africani&#x017F;chen Vaterlande</placeName> ganz un&#x017F;cha&#x0364;dlich. Aber der Caouac der<lb break="yes"/>
+                    <placeName key="amerika">Americani&#x017F;chen In&#x017F;eln</placeName> macht die Sklaven krank; daher war das<lb break="yes"/>Erdee&#x017F;&#x017F;en dort verboten, ob man gleichwol 1751 in Martinique<lb break="yes"/>heimlich Erde <hi rendition="#aq">(un tuf rouge, jaun&#x00E2;tre)</hi> auf den Ma&#x0364;rkten ver-<lb break="no"/>kaufte. <hi rendition="#aq">Les Negres de Guinée disent que dans leur pays ils<lb break="yes"/>mangent <hi rendition="#g" >habituellement</hi> une certaine terre, dont le<lb break="yes"/>gout leur plait <hi rendition="#g">sans en &#x00EA;tre incommodé.</hi> Ceux qui<lb break="yes"/>sont dans l&#x2019;abus de manger du Caouac en sont si friant<lb break="yes"/>qu&#x2019;il n&#x2019;y a pas de ch&#x00E2;timent qui puisse les emp&#x00EA;cher de dé-<lb break="no"/>vorer de la terre. <persName key="chanvalon_jbtd">
+                            <hi rendition="#g">Thibault de Chanvalon.</hi>
+                        </persName> p.</hi> 85.<lb break="yes"/>Auf der In&#x017F;el Java zwi&#x017F;chen Soutabaya und Samarang &#x017F;ah <persName key="labillardiere_jjd">La-<lb break="no"/>billardiere</persName> in den Do&#x0364;rfern kleine viereckige ro&#x0364;thliche Kuchen ver-<lb break="no" />kaufen. Die Eingebornen nennen &#x017F;ie Tanaampo. Als er &#x017F;ie na&#x0364;-<lb break="no"/>her unter&#x017F;uchte, fand er, daß es Kuchen von ro&#x0364;thlichem Letten<lb break="yes"/>waren, welche gege&#x017F;&#x017F;en werden. (<hi rendition="#aq">Voyage à la recherche de <persName key="laperouse_jfdgcd">la<lb break="yes"/>Peyrouse</persName> II. p.</hi> 322.) Die Einwohner von Neu-Caledonien e&#x017F;-<lb break="no" />&#x017F;en, um ihren Hunger zu &#x017F;tillen, fau&#x017F;tgroße Stu&#x0364;cken von zerreib-<lb break="no"/>lichem Speck&#x017F;tein, in dem <persName key="vauquelin_ln">Vauquelin</persName> einen nicht unbetra&#x0364;chtlichen<lb break="yes"/>
+                    <pb n="16" facs="#f0004"/> Kupfergehalt gefunden. (<hi rendition="#aq">L. c. p.</hi> 205.) In Popayan und in<lb break="yes"/>mehrern Theilen von Peru wird Kalkerde als Eßwaare fu&#x0364;r die In-<lb break="no"/>dianer auf dem Markte verkauft. Die&#x017F;er Kalk wird mit der Cocca<lb break="yes"/>(den Bla&#x0364;ttern des <hi rendition="#aq">Erythroxylon peruvianum</hi>) geno&#x017F;&#x017F;en. So<lb break="yes"/>finden wir das Erde-E&#x017F;&#x017F;en, welches die Natur eher den Bewoh-<lb break="no"/>nern des du&#x0364;rren Nordens be&#x017F;timmt zu haben &#x017F;chien, in der ganzen<lb break="yes"/>hei&#x017F;&#x017F;en Zone unter den tra&#x0364;gen Men&#x017F;chenracen verbreitet, welche die<lb break="yes"/>herrlich&#x017F;ten und fruchtbar&#x017F;ten Theile der Welt inne haben.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

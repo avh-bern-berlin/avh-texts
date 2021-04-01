@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-13" who="#wernicke_nd">Format. Validation.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="#f0001"/>
+            <cb/>
+            <p>&#x2014; In der Monati&#x017F;chrift, <hi rendition="#aq">
+                    <hi rendition="#g">la Revue protestante,</hi>
+                </hi>
+                <lb break="yes"/>findet &#x017F;ich ein Brief, den Alexander von Humbold, berühmt<lb break="yes"/>durch &#x017F;eine Rei&#x017F;en in Spani&#x017F;ch-Amerika, an H. Karl Co-<lb break="no"/>querel, Pfarrer zu Am&#x017F;terdam, ge&#x017F;chrieben hat. Wir glau-<lb break="no"/>ben un&#x017F;ern Le&#x017F;ern ein Vergnügen zu machen, wenn wir ih-<lb break="no"/>nen daraus folgende intere&#x017F;&#x017F;ante Notizen mittheilen:</p>
+            <lb break="yes"/>
+            <p>&#x201E;Die Zahl der Prote&#x017F;tanten in ganz Amerika, auf dem<lb break="yes"/>Fe&#x017F;tlande und den In&#x017F;eln, verhält &#x017F;ich zu jener der Rö-<lb break="no"/>mi&#x017F;ch-Katholi&#x017F;chen wie 1 zu 2. Auf der We&#x017F;tkü&#x017F;te von Nord-<lb break="no"/>amerika leben ein paar tau&#x017F;end Individuen, die &#x017F;ich zu der<lb break="yes"/>griechi&#x017F;chen Kirche bekennen. Mir i&#x017F;t die Menge der Inden<lb break="yes"/>nicht bekannt, die auf dem Gebiete der Vereinigten Staa-<lb break="no"/>ten und auf mehreren Antillen zer&#x017F;treut leben; ihre Anzahl<lb break="yes"/>i&#x017F;t wenig beträchtlich. Die unabhängigen Indianer, die zu<lb break="yes"/>gar keiner chri&#x017F;tlichen Sekte gehören, verhalten &#x017F;ich zu der<lb break="yes"/>chri&#x017F;tlichen @ wie 1 zu 42. Die numeri&#x017F;chen Ele-<lb break="no"/>me@, worauf &#x017F;ich folgende Tabelle gründet, findet man<lb break="yes"/>um@lich im dritten Bande meiner <hi rendition="#aq">Voyage aux Regions<lb break="yes"/>éq@inoxiales</hi> (Rei&#x017F;e in den &#x017F;üdamerikani&#x017F;chen Regionen),<lb break="yes"/>@uch <hi rendition="#aq">IX,</hi> Kapitel <hi rendition="#aq">XXVI,</hi> der unverzüglich er&#x017F;cheinen &#x017F;oll.</p>
+            <lb break="yes"/>
+            <pb facs="#f0002"/>
+            <cb/>
+            <table>
+                <head>Totalbevölkerung von <hi rendition="#g">Amerika:</hi> 34,284,000.</head>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="3">
+                        <hi rendition="#aq">I.</hi> Römi&#x017F;ch-Katholi&#x017F;che:</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="3">
+                        <hi rendition="#aq">a.</hi> Spani&#x017F;ch-Amerika:</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Weiße ....... </cell>
+                    <cell>2,937,000.</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Indianer ...... </cell>
+                    <cell>7,530,000.</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Gemi&#x017F;chte Racen u. Neger </cell>
+                    <cell>
+                        <hi rendition="#u">5,518,000.</hi>
+                    </cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell/>
+                    <cell/>
+                    <cell>
+                        <hi rendition="#et">15,985,000.</hi>
+                    </cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="3">
+                        <hi rendition="#aq">b.</hi> Portugie&#x017F;i&#x017F;ch-Amerika:</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Weiße ....... </cell>
+                    <cell>920,000.</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Neger ....... </cell>
+                    <cell>1,960,000.</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Gemi&#x017F;chte Racen und In-<lb break="no"/>dianer ...... </cell>
+                    <cell>
+                        <hi rendition="#u" >1,120,000.</hi>
+                    </cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell/>
+                    <cell/>
+                    <cell>
+                        <hi rendition="#et">4,000,000.</hi>
+                    </cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">c.</hi> Vereinigte Staaten, Nieder-Canada und<lb break="yes"/>Guyana .......... </cell>
+                    <cell>536,000.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">Haiti, Porto-Rico und franz. Antillen </cell>
+                    <cell>1,656,000.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="3">
+                        <hi rendition="#aq">II.</hi> Prote&#x017F;tanten:</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">a.</hi> Vereinigte Staaten ....... </cell>
+                    <cell>9,990,000.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">b.</hi> Alt-Engli&#x017F;ch-Canada, Neu-Schottland,<lb break="yes"/>Labrador ......... </cell>
+                    <cell>260,000.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">c.</hi> Engli&#x017F;ches und holländi&#x017F;ches Guyana . </cell>
+                    <cell>220,000.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">d.</hi> Engli&#x017F;che Antillen ....... </cell>
+                    <cell>734,500.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">e.</hi> Holländi&#x017F;che, däni&#x017F;che &#xA75B;c. Antillen .. </cell>
+                    <cell>82,500.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#aq">III.</hi> Unabhängige, nicht chri&#x017F;tliche Indianer . </cell>
+                    <cell>
+                        <hi rendition="#u">820,000.</hi>
+                    </cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell cols="2">
+                        <hi rendition="#et">Total&#x017F;umme</hi>
+                    </cell>
+                    <cell>34,284,000.</cell>
+                </row>
+            </table>
+            <lb break="yes"/>
+            <p>Zugleich giebt Hr. v. Humbold die Bevölkerung nach<lb break="yes"/>der Ver&#x017F;chiedenheit der Ab&#x017F;tammung und der Sprachen<lb break="yes"/>al&#x017F;o an:</p>
+            <lb break="yes"/>
+            <table>
+                <row>
+                    <cell>Weiße ..... </cell>
+                    <cell>13,162,000</cell>
+                    <cell> &#x2014; 38 Proz.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Indianer .... </cell>
+                    <cell>8,610,000</cell>
+                    <cell> &#x2014; 25 Proz.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Neger .... </cell>
+                    <cell>6,223,000</cell>
+                    <cell> &#x2014; 18 Proz.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Gemi&#x017F;chte Racen . </cell>
+                    <cell>
+                        <hi rendition="#u">6,289,000</hi>
+                    </cell>
+                    <cell>
+                        <hi rendition="#u"> &#x2014; 19 Proz.</hi>
+                    </cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell/>
+                    <cell>34,284,000.</cell>
+                    <cell/>
+                </row>
+            </table>
+            <lb break="yes"/>
+            <p>@ mit den<lb break="yes"/>Weißen und Indianern) be&#x017F;teht aus 1,141,000 Freien und<lb break="yes"/>5,079,000 Sklaven. Von den letztern &#x017F;ind 1,152,000 in<lb break="yes"/>dem Archipel der Antillen, 1,620,000 in den Vereinigten<lb break="yes"/>Staaten, und 1,800,000 in Bra&#x017F;ilien.</p>
+            <lb break="yes"/>
+            <p>Von den Einwohnern Amerika&#x2019;s &#x017F;prechen</p>
+            <lb break="yes"/>
+            <table>
+                <row>
+                    <cell>die engli&#x017F;che Sprache .... 11,297,500</cell>
+                    <cell> Individuen.</cell>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>die &#x017F;pani&#x017F;che Sprache .... 10,174,000</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>die portugie&#x017F;i&#x017F;che Sprache ... 3,740,000</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>die franzö&#x017F;i&#x017F;che Sprache ... 1,058,000</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>die holländi&#x017F;che, däni&#x017F;che, &#x017F;chwe-<lb break="no"/>di&#x017F;che und ru&#x017F;&#x017F;i&#x017F;che Sprache . 214,500</cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>Indiani&#x017F;che Sprachen .... <hi rendition="#u">7,800,000</hi>
+                    </cell>
+                    <cell/>
+                </row>
+                <lb break="yes"/>
+                <row>
+                    <cell>
+                        <hi rendition="#right">34,284,000.</hi>
+                    </cell>
+                    <cell/>
+                </row>
+            </table>
+            <lb break="yes"/>
+            <p>Man hat der deut&#x017F;chen, gali&#x017F;chen (irländi&#x017F;chen) und bas-<lb break="no"/>ki&#x017F;chen Sprache nicht be&#x017F;onders erwähnt, weil die Indivi-<lb break="no"/>duen, welche die Kenntniß die&#x017F;er drei Mutter&#x017F;prachen behal-<lb break="no"/>ten, zugleich die engli&#x017F;che oder ca&#x017F;tiliani&#x017F;che Sprache ver&#x017F;te-<lb break="no"/>hen. Die Anzahl der Individuen, welche gewöhnlich die<lb break="yes"/>indiani&#x017F;chen Sprachen reden, verhält &#x017F;ich gegenwärtig zu der<lb break="yes"/>Anzahl von Individuen, die &#x017F;ich der europäi&#x017F;chen Sprachen<lb break="yes"/>bedienen, wie 1 zu 3&#x2156;. In den indiani&#x017F;chen Dörfern Süd-<lb break="no"/>amerika&#x2019;s ver&#x017F;teht kaum <formula notation="MathML">
+                    <formula notation="MathML">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                            <mfrac>
+                                <mi>1</mi>
+                                <mi>20</mi>
+                            </mfrac>
+                        </math>
+                    </formula>
+                </formula> der Bevölkerung einige Worte<lb break="yes"/>ca&#x017F;tiliani&#x017F;ch oder portugie&#x017F;i&#x017F;ch. Ich glaube, daß es mehr als<lb break="yes"/>7&#x00BD; Mill. Eingeborne giebt, die den Gebrauch ihrer eigenen<lb break="yes"/>Sprache beibehielten, und die europäi&#x017F;chen Sprachen fa&#x017F;t<lb break="yes"/>gar nicht kennen. Dies i&#x017F;t auch die Meinung des H. Erz-<lb break="no"/>bi&#x017F;chofs von Mejiko und mehrerer &#x017F;ehr ehrwürdigen Gei&#x017F;t-<lb break="no"/>lichen, die lange in Ober-Peru gelebt haben, und die ich<lb break="yes"/>hierüber zu Rath ziehen konnte. Die kleine Anzahl von<lb break="yes"/>Indianern (eine Mill. vielleicht), welche die einheimi&#x017F;chen<lb break="yes"/>Sprachen gänzlich vergaßen, wohnen in den großen Städ-<lb break="no"/>ten und in den &#x017F;ehr volkreichen Dörfern, welche die&#x017F;e Städte<lb break="yes"/>
+                <cb/> umringen. Unter den Individuen in Amerika, die franzö-<lb break="no"/>&#x017F;i&#x017F;ch reden, findet man mehr als 700,000 Neger von afri-<lb break="no"/>kani&#x017F;cher Race, ein Um&#x017F;tand, welcher, trotz den &#x017F;ehr lö@li-<lb break="no"/>chen An&#x017F;trengungen der haiti&#x017F;chen Regierung für den Volks-<lb break="no"/>unterricht, nicht dazu beiträgt, die Reinheit der Sprache zu<lb break="yes"/>erhalten. Man kann annehmen, daß überhaupt auf dem<lb break="yes"/>amerikani&#x017F;chen Kontinent und auf den In&#x017F;eln, von 6,223,000<lb break="yes"/>Schwarzen mehr als ein Drittel (wenig&#x017F;tens 2,360,000)<lb break="yes"/>engli&#x017F;ch reden, über ein Viertel portugie&#x017F;i&#x017F;ch, und ein Ach-<lb break="no"/>tel franzö&#x017F;i&#x017F;ch.</p>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI>

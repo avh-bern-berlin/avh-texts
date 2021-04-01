@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="492" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">
+                        <hi rendition="#g">
+                            <hi rendition="#k">Observations</hi>
+                        </hi> extraites d&#x2019;une lettre de M. <hi rendition="#g">
+                            <hi rendition="#k">
+                                <persName key="humboldt_av">Humboldt</persName>.</hi>
+                        </hi>
+                        <lb break="yes"/>Éclipse du 16 juin 1806.</hi>
+                </head>
+                <lb break="yes"/>
+                <list>
+                    <item>Fin de l&#x2019;éclipse observée par M. <persName key="humboldt_av" >Humboldt</persName>, 6<hi rendition="#sup">h</hi> 39&#x2032; 40&#x2033; tems moyen.</item>
+                    <lb break="yes"/>
+                    <item>Par MM. <persName key="bode_je">Bode</persName> et <persName key="olbers_hwm">Olbers</persName>.............. 6. 39. 40,5</item>
+                    <lb break="yes"/>
+                    <item>Par M. <persName key="tralles_01" >Trallès</persName>....................... 6. 39. 42.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Les observateurs ont observé séparément, et ont fait, chacun de leur<lb break="yes"/>c&#x00F4;té, les observations propres à leur donner l&#x2019;état de leur horloge: la<lb break="yes"/>brume les emp&#x00EA;cha de voir le commencement; une montagne de la<lb break="yes"/>Lune a été visible pendant l&#x2019;éclipse; la fin était très-belle.</p>
+                <lb break="yes"/>
+                <p>M. <persName key="humboldt_av">Humboldt</persName> avait observé, avec tout le soin possible, l&#x2019;éclipse de<lb break="yes"/>Soleil du 28 octobre 1799, à Cumana. Cette observation, calculée par</p>
+                <lb break="yes"/>
+                <list>
+                    <item>M. <persName key="ciccolini_l">Ciccolini</persName>, avait donné pour la longitude du Cumana, 4<hi rendition="#sup">h</hi> 24&#x2032; 59&#x2033;3<lb break="yes"/>suivant M. <persName key="zach_fxv">de Zach</persName> ........................... 4. 24. 55,3</item>
+                </list>
+                <lb break="yes"/>
+                <p>Ces résultats s&#x2019;écartaient de 1&#x2032; de ce que M. <persName key="humboldt_av">Humboldt</persName> avait trouvé<lb break="yes"/>par le premier satellite de Jupiter et par le chronomètre.</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Cette m&#x00EA;me éclipse, calculée de nouveau par M. <persName key="olstmanns_j">Oltmanns</persName>, d&#x2019;après<lb break="yes" />les tables du Bureau des longitudes, a donné......... 4<hi rendition="#sup">h</hi> 25&#x2032; 46&#x2033;76</item>
+                    <lb break="yes"/>
+                    <item>Par les tables de M. <persName key="triesnecker_f" >Triesnecker</persName>................. 4. 25. 34,61</item>
+                    <lb break="yes"/>
+                    <item>Et le premier de ces résultats est parfaitement d&#x2019;accord avec celui du<lb break="yes"/>premier satellite, qui est.......................... 4<hi rendition="#sup">h</hi> 25&#x2032; 44&#x2033;</item>
+                    <lb break="yes"/>
+                    <item>Le chronomètre avait donné..................... 4. 25. 52.</item>
+                </list>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">
+                            <hi rendition="#g">
+                                <hi rendition="#k">Passage</hi>
+                            </hi> de Mercure, observé le 9 novembre 1802, au Callao,<lb break="yes" />par M. <hi rendition="#g">
+                                <hi rendition="#k">
+                                    <persName key="humboldt_av">Humboldt</persName>.</hi>
+                            </hi>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <list>
+                    <item>
+                        <list rendition="#rightBraced">
+                            <item>Contact intérieur de la sortie au Callao........ 18<hi rendition="#sup">h</hi> 32&#x2032; 51&#x2033;6</item>
+                            <lb break="yes"/>
+                            <item>
+                                <hi rendition="#et">extérieur......................... 18. 34. 12,6</hi>
+                            </item>
+                            <lb break="yes"/>
+                            <item>A Paris, à l&#x2019;Observatoire impérial............ 23. 50. 45,6</item>
+                            <lb break="yes"/>
+                            <item>A l&#x2019;École militaire....................... 23. 50. 50,1</item>
+                        </list>Tems moyen.</item>
+                    <lb break="yes"/>
+                </list>
+                <table>
+                    <row>
+                        <cell>Longitude &#x2609; .............</cell>
+                        <cell>7<hi rendition="#sup">s</hi> 16<hi rendition="#sup">d</hi> 23&#x2032; 54&#x2033;6</cell>
+                        <cell>7<hi rendition="#sup">s</hi> 16<hi rendition="#sup">d</hi> 23&#x2032; 58&#x2033;2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Longitude &#x263F; .............</cell>
+                        <cell>7. 16. 7. 51,5</cell>
+                        <cell>7. 16. 7. 46,7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Latitude géocentrique ......</cell>
+                        <cell>+ 3. 18,5</cell>
+                        <cell>+ 3. 19,3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Demi-diamètre &#x2609; .........</cell>
+                        <cell>16. 10,36</cell>
+                        <cell>16. 10,36</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>de &#x263F; .........</cell>
+                        <cell>4,45</cell>
+                        <cell>4,45</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Parallaxe horizontale &#x2609; .....</cell>
+                        <cell>8,78</cell>
+                        <cell>8,78</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x263F; .....</cell>
+                        <cell>12,87</cell>
+                        <cell>12,87</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Différ. des parall. de longit..</cell>
+                        <cell>3,578</cell>
+                        <cell>3,575</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Latitude apparente de &#x263F; ...</cell>
+                        <cell>3.20,18</cell>
+                        <cell>3. 20,94</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Conjonction apparente.....</cell>
+                        <cell>15<hi rendition="#sup">h</hi> 50&#x2032; 52&#x2033;</cell>
+                        <cell>15<hi rendition="#sup">h</hi> 50&#x2032; 42&#x2033; t. m.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="493" facs="#f0002"/>
+                <list>
+                    <item>MM. <persName key="humboldt_av">Humboldt</persName> et <persName key="olstmanns_j">Oltmanns</persName> trouvent que d&#x2019;après l&#x2019;observation de<lb break="yes"/>Paris, la conjonction a d&#x00FB; arriver à ....... 21<hi rendition="#sup">h</hi> 9&#x2032; 0&#x2033;6</item>
+                    <lb break="yes"/>
+                    <item>M. <persName key="wurm_jf">Wurm</persName> avait trouvé................ <hi rendition="#u">21. 9. 13,1</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>Milieu............... 21. 9. 6,9</item>
+                    <lb break="yes"/>
+                    <item>Conjonction au Callao ............... <hi rendition="#u">15. 50. 52.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>Différence des méridiens, contact intérieur. 5. 18. 15.</item>
+                    <lb break="yes"/>
+                    <item>extérieur. <hi rendition="#u">5. 18. 23.</hi>
+                    </item>
+                    <lb break="yes"/>
+                    <item>Milieu .............. 5. 18. 29 à l&#x2019;occident.</item>
+                    <lb break="yes"/>
+                    <item>Ce m&#x00EA;me passage, d&#x2019;après les calculs de M. <persName key="olstmanns_j">Oltmanns</persName>, donne 33&#x2032; 36&#x2033;80<lb break="yes"/>pour l&#x2019;observatoire de Seeberg, et suivant M. <persName key="wurm_jf">Wurm</persName>....... 33. 36,82</item>
+                </list>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

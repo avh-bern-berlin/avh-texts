@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="1289" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Blike auf neuere Rei&#x017F;ende.<lb break="yes"/>Alex. v. <persName key="humboldt_av">Humboldt</persName>. <persName key="hornemann_fk">Hornemann</persName>.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Die Rükkehr des edeln <hi rendition="#g">Alexander v. <persName key="humboldt_av" >Humboldt</persName>,</hi> der &#x017F;o<lb break="yes"/>vielen Gefahren und Todesgerüchten glüklich entgangen, und Ende<lb break="yes"/>Juli&#x2019;s zu Bordeaux angekommen i&#x017F;t, gehört zu den Begebenhei-<lb break="no"/>ten, welche alle Freunde der Wi&#x017F;&#x017F;en&#x017F;chaften durch eigene Liba-<lb break="no"/>tionen und Reunionen in allen gebildeten und bildungslu&#x017F;tigen<lb break="yes"/>Staaten Europa&#x2019;s feiern &#x017F;ollten. Noch i&#x017F;t <persName key="humboldt_av">Humboldt</persName> in Paris,<lb break="yes"/>und noch nicht zu &#x017F;einem Bruder nach Rom abgereist. Er hat,<lb break="yes"/>um der allgemeinen Neugier über &#x017F;eine gehaltvolle Rei&#x017F;en wenig-<lb break="no"/>&#x017F;tens einen Vorläufer entgegenzu&#x017F;chiken, neuerlich als Korre&#x017F;pon-<lb break="no"/>dent des National-In&#x017F;tituts in der phy&#x017F;ikali&#x017F;chen Kla&#x017F;&#x017F;e drei<lb break="yes"/>Vorle&#x017F;ungen gehalten über die Rei&#x017F;e, die er mit &#x017F;einem treuen<lb break="yes"/>
+                    <persName key="bonpland_ajag">Bompland</persName> in das mittägliche Amerika und nach Mexiko unter-<lb break="no"/>nommen hat. In der er&#x017F;tern hat er einen Abriß von &#x017F;einen<lb break="yes"/>Bemerkungen auf dem <placeName key="atlantik">atlanti&#x017F;chen Ozean</placeName>, auf dem Pic von Te-<lb break="no"/>neriffa und in Neu-Andalu&#x017F;ien gegeben. In der zweiten hat<lb break="yes"/>er von &#x017F;einen Arbeiten in der Provinz Venezuela und in der<lb break="yes"/>Ebene von Calobozo gegeben, wo er die merkwürdigen Ver&#x017F;uche<lb break="yes"/>mit dem <hi rendition="#aq">Synnolus electricus</hi> gemacht hat. In der dritten gab er<lb break="yes"/>eine gedrängte Ueber&#x017F;icht &#x017F;einer Schiffahrt auf dem Oronoko und<lb break="yes"/>
+                    <placeName key="amazonas">Amazonenfluß</placeName>. Die&#x017F;e Vorle&#x017F;ungen, die ein Blik auf alles in<lb break="yes"/>der Erd-, Pflanzen-, Stern- und Men&#x017F;chenkunde enthalten,<lb break="yes"/>was <persName key="humboldt_av">Humboldt</persName> zuer&#x017F;t oder neu &#x017F;ah, &#x017F;ind &#x017F;chon im Druk. Auch<lb break="yes"/>&#x017F;ind &#x017F;chon mehrere Kupferplatten für &#x017F;ein grö&#x017F;eres Werk in Ar-<lb break="no"/>beit. Es &#x017F;ind &#x017F;chon mehrere &#x017F;einer Briefe hier und da durch<lb break="yes"/>Zeitungsblätter und Journale in Umlauf ge&#x017F;ezt worden. Auch<lb break="yes"/>folgender, den er gleich nach &#x017F;einer Ankunft in Bordeaux an ei-<lb break="no"/>nen &#x017F;einer ältern Freunde in Kur&#x017F;ach&#x017F;en, an den Bergrath <persName key="freiesleben_jc">Freies-<lb break="no"/>leben</persName>, <choice>
+                        <sic>&#x017F;chr eb,</sic>
+                        <corr type="editorial">&#x017F;chrieb,</corr>
+                    </choice> verdient aufbewahrt zu werden. &#x201E;Bordeaux, den<lb break="yes"/>1 Aug. 1804. &#x2014; &#x2014; Vor zwei Stunden &#x017F;ind wir in die Garonne<lb break="yes"/>eingelaufen. Un&#x017F;re Ueberfahrt von Philadelphia war unbe&#x017F;chreib-<lb break="no"/>lich glüklich von 27 Tagen. Im Februar verließ ich Mexiko,<lb break="yes"/>und kam von Havannah nach <placeName key="nordamerika">Nordamerika</placeName>, wo der Prä&#x017F;ident<lb break="yes"/>des Kongre&#x017F;&#x017F;es <persName key="jefferson_t" >Jeffer&#x017F;on</persName> mich mit Ehrenbezeugungen überhäufte.<lb break="yes"/>Meine Expedition an 9,000 Meilen in beiden Hemi&#x017F;phären i&#x017F;t,<lb break="yes"/>vielleicht ohne Bei&#x017F;piel, glüklich gewe&#x017F;en. Ich war nie krank,<lb break="yes"/>und bin ge&#x017F;ünder, &#x017F;tärker, und arbeit&#x017F;amer, &#x017F;elb&#x017F;t heiterer, als<lb break="yes"/>je. Mit 30 Kü&#x017F;ten botani&#x017F;chen, a&#x017F;tronomi&#x017F;chen, geologi&#x017F;chen<lb break="yes"/>Schäzen beladen, kehre ich zurük, und werde Jahre brauchen,<lb break="yes"/>um mein gro&#x017F;es Werk herauszugeben. &#x2014; Ich gehe, &#x017F;obald die<lb break="yes"/>Quarantaine hier aufhört, nach Paris, um meine Arbeit, be-<lb break="no"/>&#x017F;onders in a&#x017F;tronomi&#x017F;chen Berechnungen, anzufangen. Meine<lb break="yes"/>Freunde &#x017F;ind in Spanien, Italien und mehreren Orten zer&#x017F;treut.<lb break="yes"/>
+                    <cb/> Ich &#x017F;cheue den er&#x017F;ten Winter. Ich bin &#x017F;o neu, daß ich mich<lb break="yes"/>er&#x017F;t orientiren muß. Grü&#x017F;&#x017F;e alle un&#x017F;re alten Freunde, und be-<lb break="no"/>&#x017F;onders auch <persName key="werner_ag">Wernern</persName>, für den meine Hochachtung mit jedem<lb break="yes"/>Jahre wächst, und de&#x017F;&#x017F;en Sy&#x017F;tem meine Rei&#x017F;en in beiden He-<lb break="no"/>mi&#x017F;phären be&#x017F;tätigen. Wo &#x017F;oll ich Zeit hernehmen, allen<lb break="yes"/>zu &#x017F;chreiben?&#x201D; &#x2014; Es hat H. v. <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> nun &#x017F;elb&#x017F;t<lb break="yes"/>&#x017F;chon dem Gerüchte wider&#x017F;prochen, als habe er die ober&#x017F;te Spize<lb break="yes"/>des Chimbora&#x017F;&#x017F;o er&#x017F;tiegen. Aber &#x017F;o viel i&#x017F;t gewiß, daß er bei<lb break="yes"/>&#x017F;einer halsbrechenden Erkletterung jenes Gebirgsrie&#x017F;en mathema-<lb break="no"/>ti&#x017F;che In&#x017F;trumente 3,000 Fuß höher gebraucht, als &#x017F;ie je vorher<lb break="yes"/>auf einer Gebirgshöhe in der alten und <placeName key="amerika" >neuen Welt</placeName> gebraucht<lb break="yes"/>wurden. Nach Ver&#x017F;icherungen, die er &#x017F;einen deut&#x017F;chen Freunden<lb break="yes"/>gegeben, wird er künftig &#x017F;eine Vater&#x017F;tadt Berlin zum eigentli-<lb break="no"/>chen Siz &#x017F;einer ruhigern Studien und Verarbeitungen wählen.<lb break="yes"/>Es &#x017F;teht von der &#x017F;o vielfach erprobten Gnade des jezigen Königs<lb break="yes"/>mit Sicherheit zu erwarten, daß er einem Manne, der in Um-<lb break="no"/>fang, Gründlichkeit und Autop&#x017F;ie wohl wenigen &#x017F;einer gelehrten<lb break="yes" />Zeitgeno&#x017F;&#x017F;en nach&#x017F;tehen dürfte, die ehrenvoll&#x017F;ten Anträge machen,<lb break="yes"/>und ihn dadurch auf immer gewinnen werde. Uebrigens äu&#x017F;&#x017F;erte<lb break="yes"/>H. in &#x017F;einen Unterredungen, daß ihm durch Ungewohnheit des<lb break="yes"/>Sprechens &#x017F;eine Mutter&#x017F;prache ganz ungewohnt geworden &#x017F;ey,<lb break="yes"/>und daß er &#x017F;chon darum eilen mü&#x017F;&#x017F;e, einmal &#x017F;ein Vaterland wie-<lb break="no"/>der zu be&#x017F;uchen. &#x2014; Fa&#x017F;t um die&#x017F;elbe Zeit, wo H. v. <persName key="humboldt_av" >Humboldt</persName>
+                    <lb break="yes"/>in Paris ankam, auch un&#x017F;er Landsmann <persName key="hornemann_fk">
+                        <hi rendition="#g">Hornemann</hi>
+                    </persName> ge-<lb break="no"/>&#x017F;und und wohlbehalten nach London zurük, und obgleich von den<lb break="yes"/>Re&#x017F;ultaten &#x017F;eines zweiten Eindringens ins Innere von <placeName key="afrika">Afrika</placeName>
+                    <lb break="yes"/>noch nichts bekannt wurde: &#x017F;o läßt &#x017F;ich doch &#x017F;elb&#x017F;t aus der aus-<lb break="no"/>gezeichneten Aufnahme, die er bei Sir <persName key="banks_j">Jo&#x017F;eph Banks</persName> und den<lb break="yes"/>übrigen Vor&#x017F;tehern der <hi rendition="#aq">Society for the discovery of the Interior<lb break="yes"/>of <placeName key="afrika" >Africa</placeName>
+                    </hi> fand, mit Recht vermuthen, daß er neue wichtige<lb break="yes" />Entdekungen gemacht haben werde. &#x2014; Kleinere naturhi&#x017F;tori&#x017F;che<lb break="yes"/>Rei&#x017F;en machen jezt noch zwei gelehrte Berliner. Der berühmte<lb break="yes"/>Mineralog, der Oberbergrath <persName key="karsten_dlg">Kar&#x017F;tens</persName>, durchreist Tyrol, und<lb break="yes"/>hoft auf dem Glockner eine &#x017F;chöne Ausbeute zu finden, und der<lb break="yes"/>Direktor des botani&#x017F;chen Gartens, Prof. <persName key="willdenow_kl">
+                        <hi rendition="#g">Willdenow,</hi>
+                    </persName> macht<lb break="yes"/>eine botani&#x017F;che Rei&#x017F;e über Wien durch Tyrol bis Trie&#x017F;t und Vene-<lb break="no"/>dig. Beide werden uns ihre Bemerkungen in eigenen Werken<lb break="yes"/>mittheilen.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

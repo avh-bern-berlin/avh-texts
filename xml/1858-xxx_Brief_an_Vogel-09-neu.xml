@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="2.2.0" when="2019-12-05" who="#wernicke_nd">Text constitution. Format. <note type="remarkRevision">Tilgung des offensichtlich nicht zugehörigen letzten Absatzes. Erneute Validierung.</note>
+                </change>
+                <change n="1.1.0" when="2019-06-05" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="2281" facs="#f0001"/>
+            <cb/>
+            <p>* Am 9. Nov. &#x017F;ind nach einer Mittheilung des Dresdner Journal zuer&#x017F;t directe<lb break="yes"/>officielle Nachrichten vom engli&#x017F;chen Generalcon&#x017F;ul in Tripolis an Alexander v. Hum-<lb break="no"/>
+                <cb/> boldt in Betreff der weitern Nachfor&#x017F;chungen nach dem Schick&#x017F;al <hi rendition="#g">Eduard Vo-<lb break="no"/>gel&#x2019;s</hi> in Wadai, datirt vom 22. Oct., durch er&#x017F;tern dem Vater des kühnen Rei-<lb break="no" />&#x017F;enden, Director <hi rendition="#aq">Dr.</hi> Vogel in Leipzig, mitgetheilt, da&#x017F;elb&#x017F;t angekommen. &#x201E;Da<lb break="yes" />wir&#x201C;, heißt es darin, &#x201E;bis zum 27. März d. J. keine be&#x017F;timmten Nachrichten über<lb break="yes"/>den Doctor erhalten hatten, wurde ein officieller Kurier von Murzuk an den Sul-<lb break="no"/>tan von Bornu abge&#x017F;andt &#x017F;owie gleichzeitig an die Chefs der Tuariks von Aier<lb break="yes"/>mit Briefen, worin man &#x017F;ie aufs dringend&#x017F;te um ihren Bei&#x017F;tand gebeten, falls der<lb break="yes"/>Rei&#x017F;ende noch am Leben und etwa gefangen, keine Mühe zu &#x017F;cheuen und keine Ko-<lb break="no"/>&#x017F;ten zu &#x017F;paren, &#x017F;eine Befreiung zu bewirken, &#x017F;ofern er aber nicht mehr lebe, die<lb break="yes"/>That&#x017F;ache &#x017F;eines Todes fe&#x017F;tzu&#x017F;tellen und &#x017F;ich in den Be&#x017F;itz &#x017F;einer Papiere zu &#x017F;etzen.<lb break="yes"/>Um aber nach Bornu zu gelangen und Antwort von dort zurückzubringen, erfor-<lb break="no"/>dert nicht viel weniger als 12 Monate Zeit, &#x017F;odaß wir die Nachrichten, nach de-<lb break="no"/>nen wir uns &#x017F;elb&#x017F;t &#x017F;o &#x017F;ehr &#x017F;ehnen, noch nicht haben erhalten können. Nichtsde&#x017F;to-<lb break="no"/>weniger habe ich bereits aufs neue an den Vicecon&#x017F;ul Ihrer briti&#x017F;chen Maj. in<lb break="yes"/>Murzuk Verfügung erla&#x017F;&#x017F;en, nichts unver&#x017F;ucht zu la&#x017F;&#x017F;en in die&#x017F;er Angelegenheit, die<lb break="yes"/>uns &#x017F;elb&#x017F;t &#x017F;o &#x017F;ehr am Herzen liegt. Ferner habe ich eine Berathung gepflogen mit<lb break="yes"/>einigen be&#x017F;onders ein&#x017F;ichtsvollen Bewohnern des Fezzan, welche augenblicklich &#x017F;ich<lb break="yes"/>hier aufhalten und ein&#x017F;timmig der Meinung &#x017F;ind, daß das einzige Mittel, über<lb break="yes"/>Vogel&#x2019;s Schick&#x017F;al unzweifelhafte Gewißheit zu erlangen, &#x017F;ein würde, entweder ei-<lb break="no"/>nen Kaufmann von Gadron (&#x017F;üdlich von Murzuk gelegen) oder einen Scherif nach<lb break="yes"/>Wadai abzu&#x017F;enden, da beide dort großes An&#x017F;ehen und Einfluß genö&#x017F;&#x017F;en. Dies habe<lb break="yes"/>ich &#x017F;chon Sr. Exc. dem Lord Malmesbury mitgetheilt und &#x017F;ehe de&#x017F;&#x017F;en weitern Be-<lb break="no"/>fehlen entgegen.&#x201C; Alexander v. Humboldt &#x017F;chreibt hierzu: &#x201E;Was mir heute auf<lb break="yes"/>Befehl von Lord Malmesbury unmittelbar von dem Con&#x017F;ulat zu Tripolis ge&#x017F;andt<lb break="yes"/>ward, hat in&#x017F;ofern großes Intere&#x017F;&#x017F;e, weil es das unverkennbar&#x017F;te Zeugniß darbietet,<lb break="yes"/>man ver&#x017F;äume kein denkbares Mittel, um endlich die &#x017F;ichere Nachricht &#x017F;elb&#x017F;t durch<lb break="yes"/>die Chefs der Tuariks zu &#x017F;chaffen. Der Vor&#x017F;chlag, die Gefängni&#x017F;&#x017F;e des Wadai un-<lb break="no" />ter&#x017F;uchen zu la&#x017F;&#x017F;en, i&#x017F;t &#x017F;icher, aber freilich am vielver&#x017F;prechend&#x017F;ten die Ver&#x017F;icherung:<lb break="yes" />&#x00AB;Keine Gelder&#x017F;parniß!&#x00BB; da wird nichts &#x017F;cheitern. La&#x017F;&#x017F;en Sie uns &#x2014; &#x017F;o rufe ich<lb break="yes"/>Ihnen und der theuern tro&#x017F;tbedürftigen Mutter zu &#x2014; la&#x017F;&#x017F;en Sie uns noch nicht<lb break="yes"/>an Gottes und durch ihn an der Men&#x017F;chen Hülfe ganz verzweifeln. Der kranke<lb break="yes"/>König war auch noch von Tegern&#x017F;ee zurückk@ mit Ihrem Eduard warm<lb break="yes"/>be&#x017F;chäftigt.</p>
+            <closer>
+                <salute>Ihr treuer, kaum halb gene&#x017F;e@</salute>
+            </closer>
+            <lb break="yes"/>
+            <dateline>Berlin, 7. No@</dateline>
+            <closer>
+                <salute>
+                    <hi rendition="#et">Humboldt.&#x201C;</hi>
+                </salute>
+            </closer>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+    </text>
+</TEI> 

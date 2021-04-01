@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="239" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                    <hi rendition="#i">Upon the Physical Causes which arrest the progress of<lb break="yes"/>Mexican population. (Political Essay on the Kingdom<lb break="yes"/>of New Spain. By</hi>
+                    <hi rendition="#g">
+                        <hi rendition="#k">Alexander de <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                    </hi>
+                    <hi rendition="#i">Trans-<lb break="no"/>lated by</hi>
+                    <hi rendition="#g">
+                        <hi rendition="#k">John Black,</hi>
+                    </hi> 1811.<hi rendition="#i">)</hi>
+                </head>
+                <lb break="yes"/>
+                <p>&#x201C;These causes are the small-pox, the cruel malady called<lb break="yes" />by the Indians <hi rendition="#i">Matlazahuatl,</hi> and especially famine, of which<lb break="yes"/>the effects are felt for a long time.</p>
+                <lb break="yes"/>
+                <p>The small-pox, introduced since 1520, appears only to<lb break="yes"/>exercise its ravages every seventeen or eighteen years. In the<lb break="yes"/>equinoxial regions it has, like the <hi rendition="#i">black vomiting</hi> and several<lb break="yes"/>other diseases, its fixed periods, to which it is very regularly<lb break="yes"/>subjected. We might say that in these countries the disposition<lb break="yes"/>for certain miasmata is only renewed in the natives at long<lb break="yes"/>intervals; for though the vessels from Europe frequently in-<lb break="no"/>troduce the germ of the small-pox, it never becomes epidemical<lb break="yes"/>but after very marked intervals; a singular circumstance,<lb break="yes"/>which renders the disease so much the more dangerous for<lb break="yes"/>adults. The small-pox committed terrible ravages in 1763,<lb break="yes"/>and especially in 1779, in which year it carried off in the ca-<lb break="no"/>pital of Mexico alone more than nine thousand persons.<lb break="yes"/>Every evening tumbrels passed through the streets to receive<lb break="yes"/>the corpses, as at Philadelphia during the yellow fever. A<lb break="yes"/>great part of the Mexican youth was cut down that year.</p>
+                <lb break="yes"/>
+                <p>The epidemic of 1797 was less destructive, chiefly owing<lb break="yes"/>to the zeal with which inoculation was propagated in the en-<lb break="no"/>virons of Mexico, and in the bishopric of Mechoachan. In<lb break="yes"/>the capital of this bishopric the city of Valladolid, of 6800<lb break="yes"/>individuals inoculated only 170, or 2<formula notation="TeX">\frac{1}{2}</formula> per cent. died; and<lb break="yes"/>we must also observe, that several of those who perished were<lb break="yes"/>inoculated at a time when they were probably already infected<lb break="yes"/>in the natural manner. Fifteen in the hundred died of in-<lb break="no"/>dividuals of all ages, who, without being inoculated, were<lb break="yes"/>victims of the natural small-pox. Several individuals, par-<lb break="no"/>ticularly among the clergy, displayed at that period a very<lb break="yes"/>praiseworthy patriotism, in arresting the progress of the dis-<lb break="no"/>case by inoculation. I shall merely mention the names of two<lb break="yes"/>enlightened men, M. de Reano, intendant of Guanaxuato, and<lb break="yes"/>Don Manuel Abad, penitentiary canon of the cathedral of<lb break="yes"/>Valladolid, whose generous and disinterested views were con-<lb break="no"/>stantly directed towards the public good. There were then<lb break="yes"/>inoculated in the kingdom between 50 and 60,000 individuals.</p>
+                <lb break="yes"/>
+                <p>But in the month of January 1804, the vaccine inoculation<lb break="yes"/>was even introduced at Mexico through the activity of a res-<lb break="no"/>
+                    <pb n="240" facs="#f0002"/> pectable citizen, Don <persName key="murphy_t" >Thomas Murphy</persName>, who brought seve-<lb break="no"/>ral times the virus from <placeName key="nordamerika">North America</placeName>. This introduction<lb break="yes"/>found few obstacles; the cow-pox appeared under the aspect<lb break="yes"/>of a very trivial malady; and the small-pox inoculation had<lb break="yes"/>already accustomed the Indians to the idea that it might be<lb break="yes"/>useful to submit to a temporary evil for the sake of evading a<lb break="yes"/>greater evil. If the vaccine inoculation, or even the ordinary<lb break="yes"/>inoculation, had been known in the <placeName key="amerika">new world</placeName> in the sixteenth<lb break="yes" />century, several millions of Indians would not have perished<lb break="yes" />victims to the small-pox, and particularly to the absurd<lb break="yes" />treatment by which the disease was rendered so fatal. To<lb break="yes"/>this disease the fearful diminution of the number of Indians<lb break="yes"/>in California is to be ascribed. The ships of war com-<lb break="no"/>missioned to carry the vaccine matter into <placeName key="amerika">America</placeName> and <placeName key="asien">Asia</placeName>
+                    <lb break="yes"/>arrived at Vera Cruz shortly after my arrival.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Don Antonio Valmis,</hi> physician general of this expedition,<lb break="yes"/>visited Portorico, Cuba, Mexico, and the Philippine islands;<lb break="yes"/>and his stay at Mexico, where nevertheless the cow-pox was<lb break="yes"/>known before his arrival, contributed singularly to facilitate<lb break="yes"/>the propagation of this salutary preservative. In the princi-<lb break="no"/>pal cities of the <choice>
+                        <sic>kimgdom</sic>
+                        <corr type="editorial">kingdom</corr>
+                    </choice> vaccine committees were formed<lb break="yes"/>
+                    <hi rendition="#i">(juntas centrales),</hi> composed of the most enlightened indi-<lb break="no"/>viduals, who, by vaccinating monthly, preserve the miasma<lb break="yes"/>from being lost. It is so much the less liable to be lost, as it<lb break="yes"/>exists in the country. M. <hi rendition="#i" >Valmis</hi> discovered it in the envi-<lb break="no"/>rons of Valladolid, and in the village of <placeName key="atlisco">Atlisco</placeName>, near la<lb break="yes"/>Puebla, in the udders of the Mexican cows. The commis-<lb break="no"/>sion having fulfilled the beneficent views of the king of Spain,<lb break="yes"/>we may indulge a hope that through the influence of the<lb break="yes"/>clergy, and especially of the religious missionaries, vaccina-<lb break="no"/>tion will be gradually introduced into the very interior of the<lb break="yes"/>country. The voyage of M. Valmis will thus remain for<lb break="yes"/>ever memorable in the annals of history. The Indies saw for<lb break="yes"/>the first time those vessels, which were formerly freighted<lb break="yes"/>only with instruments of carnage and destruction, bearing<lb break="yes"/>about the germ of relief and consolation to distressed and<lb break="yes"/>suffering humanity.</p>
+                <lb break="yes"/>
+                <p>The arrival of the armed frigates in which M. Valmis<lb break="yes"/>made the circuit of the <placeName key="atlantik">Atlantic</placeName> and Pacific oceans gave rise<lb break="yes"/>on several coasts to one of the most simple, and therefore<lb break="yes"/>most affecting, ceremonies. The bishops, military gover-<lb break="no"/>nors, and persons of greatest distinction, repaired to the<lb break="yes"/>shore, where they took in their arms the children who were<lb break="yes"/>to carry the cow-pox to the indigenous Americans and the<lb break="yes"/>Malays of the Philippine islands, and, followed with public<lb break="yes"/>acclamations, they laid at the foot of the altar those precious<lb break="yes"/>preservative deposits, returning thanks to the Supreme Being<lb break="yes"/>
+                    <fw type="catch" place="bottom">for</fw>
+                    <lb break="yes"/>
+                    <pb n="241" facs="#f0003"/> for having been the witnesses of so happy an event. We<lb break="yes"/>must have some knowledge of the ravages occasioned by the<lb break="yes"/>small-pox in the torrid zone, and especially among a race of<lb break="yes"/>men whose physical constitution seems adverse to cutaneous<lb break="yes"/>eruptions, in order to feel all the importance of M. Jenner&#x2019;s<lb break="yes"/>discovery. It is a much greater blessing for the equinoctial<lb break="yes"/>part of the <placeName key="amerika">new continent</placeName> than for the temperate climate of<lb break="yes"/>the old.</p>
+                <lb break="yes"/>
+                <p>It may be useful to relate here a fact of some importance,<lb break="yes"/>for those who take an interest in the progress of vaccination.<lb break="yes"/>It was unknown at Lima till the mouth of November 1802.<lb break="yes"/>At that period the small-pox prevailed on the coast of the<lb break="yes"/>South Sea. A merchant vessel, <hi rendition="#i">Santo Domingo de la Cal-<lb break="no" />zada,</hi> put into Lima in the passage from Spain to Manilla.<lb break="yes"/>An individual had had the good sense to send by this vessel<lb break="yes"/>vaccine matter to the Philippine islands. They availed<lb break="yes"/>themselves of this opportunity at Lima; and M. Unanue,<lb break="yes"/>professor of anatomy, and author of an excellent physiolo-<lb break="no"/>gical treatise on the climate of Peru<note place="foot" n="*" >This work, which displays an intimate acquaintance with the<lb break="yes" />French and English literature, bears the title of <hi rendition="#i" >Observaciones sobre el<lb break="yes"/>clima de Lima y sus influencias en los seres organizados en especial el<lb break="yes"/>hombre, por el Dr. D. Hipolito Unanue.</hi> Lima, 1806.</note>, vaccinated several in-<lb break="no"/>dividuals by means of the matter brought by the merchant<lb break="yes"/>vessel. No pustule appeared; and the virus appeared either<lb break="yes"/>altered or too weak. However, M. Unanue having observed<lb break="yes"/>that all the vaccinated individuals had a very mild small-pox,<lb break="yes"/>employed this variolous matter to render, if possible by the<lb break="yes"/>ordinary inoculation, the disease less fatal. He thus per-<lb break="no"/>ceived in an indirect way the effects of a vaccination sup-<lb break="no"/>posed to have failed.</p>
+                <lb break="yes"/>
+                <p>It was accidentally discovered in the course of the same<lb break="yes"/>epidemic in 1802, that the beneficent effect of vaccination had<lb break="yes"/>been long known to the country people among the Peruvian<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName>. A negro slave had been inoculated for the small-<lb break="maybe"/>pox in the house of the <persName key="valleumbroso_md">Marquis de Valleumbroso</persName> who shewed<lb break="yes"/>no symptom of the disease. They were going to repeat the ino-<lb break="no"/>culation, when the young man told them that he was certain<lb break="yes"/>of never having the small-pox, because in milking cows in<lb break="yes"/>the Cordillera of the <placeName key="anden" >Andes</placeName>, he had had a sort of cutaneous<lb break="yes" />eruptions, caused, as the Indian herdsmen said, by the con-<lb break="no" />tact of certain tubercules sometimes found on the udders of<lb break="yes" />cows. Those who have this eruption, said the negro, never<lb break="yes"/>take the small-pox. The Africans, and especially the Indians,<lb break="yes"/>display great sagacity in observing the character, habits, and<lb break="yes"/>
+                    <fw type="catch" place="bottom">diseases</fw>
+                    <lb break="yes"/>
+                    <pb n="242" facs="#f0004"/> diseases of the animals with which they live. We need not<lb break="yes"/>therefore be astonished, that, on the introduction of horned<lb break="yes"/>cattle into <placeName key="amerika" >America</placeName>, the lower people remarked that the pus-<lb break="no" />tules on the udders of cows communicated to the herdsmen a<lb break="yes" />species of benignant small-pox, and that those once infected<lb break="yes" />are secure from the general contagion during the epochs when<lb break="yes" />the disease is epidemical.</p>
+                <lb break="yes"/>
+                <p>The <hi rendition="#i">matlazahuatl,</hi> a disease peculiar to the Indian race,<lb break="yes"/>seldom appears more than once in a century. It raged in a<lb break="yes"/>particular manner in 1545, 1576, and 1736. It is called a<lb break="yes"/>plague by the Spanish authors. As the latest epidemic took<lb break="yes"/>place at a time when medicine was not considered a science,<lb break="yes"/>even in the capital, we have no exact data as to the <hi rendition="#i">matla-<lb break="no"/>zahuatl.</hi> It bears certainly some analogy to the yellow fever<lb break="yes"/>or black vomiting; but it never attacks white people, whe-<lb break="no"/>ther Europeans or descendants from the natives. The indi-<lb break="no"/>viduals of the race of Caucasus<note place="foot" n="*">Who are the individuals of the race of Caucasus? The Europeans.<lb break="yes"/>So at least we learn from the context, where they are opposed to the<lb break="yes"/>Mexican Indians. This involves the theory of the mountains of <placeName key="asien">Asia</placeName>
+                        <lb break="yes"/>being the nursery of the <placeName key="altewelt">old continent</placeName>. Every one, however, will not<lb break="yes"/>so easily be able to understand Europeans by this denomination. Such<lb break="yes"/>attempts to elevate the style, at the expence of perspicuity, can never<lb break="yes"/>enough be reprobated. <hi rendition="#i">Trans.</hi>
+                    </note> do not appear subject to this<lb break="yes"/>mortal typhus, while, on the other hand, the yellow fever<lb break="yes"/>or black vomiting very seldom attacks the Mexican Indians.<lb break="yes"/>The principal site of the <hi rendition="#i">vomito prieto</hi> is the maritime region,<lb break="yes"/>of which the climate is excessively warm and humid; but<lb break="yes"/>the <hi rendition="#i">matlazahuatl</hi> carries terror and destruction into the very<lb break="yes"/>interior of the country, to the central table-land, <choice>
+                        <sic>aud</sic>
+                        <corr type="editorial">and</corr>
+                    </choice> the<lb break="yes"/>coldest and most arid regions of the kingdom.</p>
+                <lb break="yes"/>
+                <p>Father <persName key="motolinia_t">Torribio</persName> a Franciscan, better known by his Mexican<lb break="yes"/>name of <persName key="motolinia_t" >Motolinia</persName>, asserts that the small-pox at its intro-<lb break="no"/>duction in 1520, by a negro slave of Narvaez, carried off the<lb break="yes"/>half of the inhabitants of Mexico. <persName key="torquemada_jd">Torquemada</persName> advances<lb break="yes"/>the hazardous opinion that in the two <hi rendition="#i">matlazahuatl</hi> epidemics<lb break="yes"/>of 1545 and 1576, 800,000 Indians died in the former, and<lb break="yes"/>2,000,000 in the latter. But when we reflect on the difficulty<lb break="yes"/>with which we can at this day estimate, in the eastern part<lb break="yes"/>of Europe, the number of those who fall victims to the plague,<lb break="yes"/>we shall very reasonably be inclined to doubt if the viceroys<lb break="yes"/>Mendoza and Almanza, governors of a recently conquered<lb break="yes"/>country, were able to procure an enumeration of the Indians<lb break="yes"/>cut off by the <hi rendition="#i">matlazahuatl.</hi> I do not accuse the two monkish<lb break="yes"/>historians of want of veracity; but there is very little pro-<lb break="no"/>bability that their calculation is founded on exact data.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">A</fw>
+                <lb break="yes"/>
+                <pb n="243" facs="#f0005"/>
+                <p>A very interesting problem remains to be resolved. Was<lb break="yes"/>the pest, which is said to have desolated from time to time<lb break="yes"/>the <placeName key="atlantik">Atlantic</placeName> regions of the United States before the arrival of<lb break="yes"/>the Europeans, and which the celebrated Rush and his fol-<lb break="no"/>lowers look upon as the principle of the yellow fever, iden-<lb break="no"/>tical with the <hi rendition="#i">matlazahuatl</hi> of the Mexican Indians? We may<lb break="yes"/>hope that this last disease, should it ever re-appear in New<lb break="yes"/>Spain, will be hereafter carefully observed by the physicians.</p>
+                <lb break="yes"/>
+                <p>A third obstacle to the progress of population in New<lb break="yes"/>Spain, and perhaps the most cruel of all, is famine. The<lb break="yes"/>American Indians, like the inhabitants of Hindostan, are<lb break="yes"/>contented with the smallest quantity of aliment on which life<lb break="yes"/>can be supported, and increase in number without a propor-<lb break="no"/>tional increase in the means of subsistence. Naturally in-<lb break="no"/>dolent, from their fine climate and generally fertile soil, they<lb break="yes"/>cultivate as much maize, potatoes, or wheat as is necessary<lb break="yes"/>for their own subsistence, or at most for the additional con-<lb break="no"/>sumption of the adjacent towns and mines. Agriculture, it<lb break="yes"/>is true, has made great progress within these last twenty years;<lb break="yes"/>but the consumption has also increased in an extraordinary<lb break="yes"/>manner from the augmentation of population, and an exces-<lb break="no"/>cive luxury formerly unknown to the mixed casts, and from<lb break="yes"/>the working of a great number of new seams, which require<lb break="yes"/>additional men, horses, and mules. Few hands, no doubt,<lb break="yes"/>are employed in manufactures in New Spain; but a great num-<lb break="no"/>ber are withdrawn from agriculture from the necessity of<lb break="yes"/>transporting on mules goods and the produce of the mines,<lb break="yes"/>iron, powder, and mercury, from the coast to the capital,<lb break="yes"/>and from thence to the mines along the ridge of the Cordil-<lb break="no"/>leras.</p>
+                <lb break="yes"/>
+                <p>Thousands of men and animals pass their lives on the great<lb break="yes"/>roads between Vera Cruz and Mexico, Mexico and <placeName key="acapulco" >Acapulco</placeName>,<lb break="yes"/>Oaxaca and Durango, and the cross roads by which provi-<lb break="no"/>sions are carried to the habitations established in arid and<lb break="yes"/>uncultivated regions. This class of inhabitants, called by<lb break="yes"/>the economists in their system, sterile and nonproductive, is<lb break="yes"/>consequently more numerous in <placeName key="amerika">America</placeName> than might be ex-<lb break="no"/>pected in a country where manufacturing industry is yet so<lb break="yes"/>little advanced. The want of proportion between the pro-<lb break="no"/>gress of population and the increase of food from cultivation<lb break="yes"/>renews the afflicting spectacle of famine, whenever a great<lb break="yes"/>drought or any other local cause has damaged the crop of<lb break="yes"/>maize. Scarcity of provisions has always been accompanied<lb break="yes"/>in all times and all parts of the globe with epidemical diseases<lb break="yes"/>fatal to population<note place="foot" n="*" xml:id="fn1-1" next="#fn1-2">This position requires qualification. Dr. Smith has, I believe,</note>. The want of nourishment in 1784 gave<lb break="yes"/>
+                    <fw type="catch" place="bottom">rise</fw>
+                    <lb break="yes"/>
+                    <pb n="244" facs="#f0006"/> rise to <hi rendition="#i">asthenical</hi> diseases among the most indigent class of<lb break="yes"/>people. These accumulated calamities cut off a great number<lb break="yes"/>of adults, and a still greater number of children; and it was<lb break="yes"/>computed that in the town and mines of Guanaxuato more<lb break="yes"/>than 8000 individuals perished. A very remarkable meteo-<lb break="no"/>rological phenomenon contributed principally to the scarcity:<lb break="yes"/>the maize, after an extraordinary drought, was nipt by frost<lb break="yes"/>on the night of the 28th of August, and, what is more sin-<lb break="no"/>gular, at an elevation of 1800 metres<note place="foot" n="*">5904 feet. <hi rendition="#i">Trans.</hi>
+                    </note>. The number of in-<lb break="no"/>habitants carried off by this fatal union of famine and disease<lb break="yes"/>throughout the whole surface of the kingdom was estimated<lb break="yes"/>at more than 300,000. This number will appear the less as-<lb break="no"/>tonishing to us when we consider, that even in Europe the po-<lb break="no"/>pulation is sometimes diminished by scarcity, more than it is<lb break="yes"/>augmented by the excess of births above the deaths for four<lb break="yes"/>consecutive years. There perished in Saxony, for example,<lb break="yes"/>in 1772, near 66,000 inhabitants, while the excess of births<lb break="yes"/>above the deaths was not, <hi rendition="#i" >communibus annis,</hi> from 1764 to<lb break="yes"/>1784 more than 17,000<note place="foot" n="&#x2020;">The translator is afraid that this number of 66,000 includes the<lb break="yes"/>whole deaths of Saxony in 1772, in which case the statement that the<lb break="yes"/>diminution of population from the famine exceeded the augmentation<lb break="yes"/>from the excess of births for four consecutive years will fall to the ground.<lb break="yes"/>Every one knows that it is impossible to state exactly the number of<lb break="yes"/>deaths from famine in any country, as literally few or none die of fa-<lb break="no"/>mine, but of diseases occasioned by a defective diet, which can never<lb break="yes"/>be separated in any bill of mortality from diseases owing to other causes.<lb break="yes"/>The nearest approximation, however, is to be found by deducing the<lb break="yes" />average mortality from the increased mortality in any given year of<lb break="yes"/>scarcity. I think it extremely probable that M. de <persName key="humboldt_av">Humboldt</persName> has not<lb break="yes" />adopted this method. He elsewhere states that the adjacent country of<lb break="yes"/>Prussia had, in 1802, on a population of nine millions, 282,109 deaths.<lb break="yes"/>If we take Mr. Pinkerton&#x2019;s estimate of the Saxon population, 2,104,000,<lb break="yes"/>say, however, 2,000,000, and assume a mortality for it proportionate<lb break="yes"/>to that of Prussia, we shall find the number of deaths 62,869. If, sup-<lb break="no" />posing then 60,000 the mortality of 1772, and 62,869 the average mor-<lb break="no"/>tality, the increase by famine in 1772 would only be 3311. This is<lb break="yes"/>a much more likely number than the enormous one given by M. de Hum-<lb break="no"/>boldt; but the fact can easily be ascertained. <hi rendition="#i">Trans.</hi>
+                    </note>.</p>
+                <lb break="yes"/>
+                <p>
+                    <note place="foot" n="*" xml:id="fn1-2" prev="#fn1-1">well remarked that in years of scarcity there are, perhaps, fewer diseases<lb break="yes"/>and deaths than usual, from the diminished consumption of spirituous<lb break="yes"/>liquors by the common people, one of the most productive sources of<lb break="yes"/>disease. The position will undoubtedly, however, hold with regard to<lb break="yes"/>a Hindoo or Indian population, who, in years of plenty, have no more<lb break="yes"/>than merely supports animal life, and to whom, therefore, any reduc-<lb break="no"/>tion must always prove fatal. <hi rendition="#i">Trans.</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">The</fw>
+                <lb break="yes"/>
+                <pb n="245" facs="#f0007"/>
+                <p>The effects of famine are common to almost all the equi-<lb break="no"/>noxial regions. In the province of New Andalusia in <placeName key="suedamerika" >South<lb break="yes"/>America</placeName> I have seen villages whose inhabitants were forced by<lb break="yes"/>famine to disperse themselves from time to time in the desarts<lb break="yes"/>to pick up a subsistence from the wild plants. In vain the<lb break="yes"/>missionaries employ their authority to prevent this dispersion.<lb break="yes"/>In the province <hi rendition="#i">de los Pastos,</hi> the Indians when the potatoes<lb break="yes"/>fail, which are their principal nourishment, repair sometimes<lb break="yes"/>to the most elevated ridge of the Cordillera to subsist on the juice<lb break="yes"/>of the achupallas, a plant related to the genus pitcarnia. The<lb break="yes"/>Otomacks at Uruana, on the banks of the Orinoco, swallow,<lb break="yes"/>during several months, potter&#x2019;s earth, to absorb by this load<lb break="yes"/>the gastric juice, and to satisfy, in some sort, the hunger<lb break="yes"/>which torments them<note place="foot" n="*">See my <hi rendition="#i">Tableaux de la Nature,</hi> t. I. P. 62, 191, and 209.</note>. In the islands of the South Sea, in<lb break="yes"/>a fertile soil, where nature has lavished all her blessings the<lb break="yes"/>inhabitants are frequently driven by famine to devour one<lb break="yes"/>another. Under the torrid zone, where a beneficent hand<lb break="yes"/>seems every where to have scattered the germ of abundance,<lb break="yes"/>man, careless and phlegmatic, experiences periodically a<lb break="yes"/>want of nourishment which the industry of more civilized na-<lb break="no"/>tions banishes from the most sterile regions of the north.</p>
+                <lb break="yes"/>
+                <p>The working of the mines has long been regarded as one of<lb break="yes"/>the principal causes of the depopulation of <placeName key="amerika" >America</placeName>. It will<lb break="yes"/>be difficult to call in question, that at the first epoch of the<lb break="yes"/>conquest, and even in the seventeenth century, many Indians<lb break="yes"/>perished from the excessive labour to which they were com-<lb break="no"/>pelled in the mines. They perished without posterity, as<lb break="yes"/>thousands of African slaves annually perish in the West In-<lb break="no"/>dian plantations from fatigue, defective nourishment, and<lb break="yes"/>want of sleep. In Peru, at least in the most southern part,<lb break="yes"/>the country is depopulated by the mines, because the bar-<lb break="no"/>barous law of the <hi rendition="#i">mita</hi> is yet in existence, which compels the<lb break="yes"/>Indians to remove from their homes into distant provinces,<lb break="yes"/>where hands are wanted for extracting the subterraneous<lb break="yes"/>wealth. But it is not so much the labour as the sudden change<lb break="yes"/>of climate, which renders the mita so pernicious to the health<lb break="yes"/>of the Indians. This race of men has not the flexibility of or-<lb break="no"/>ganization for which the Europeans are so eminently distin-<lb break="no"/>guished. The health of copper-coloured man suffers infi-<lb break="no"/>nitely when he is transported from a warm to a cold climate,<lb break="yes"/>particularly when he is forced to descend from the elevation<lb break="yes"/>of the Cordillera into those narrow and humid vallies, where<lb break="yes"/>all the miasmata of the neighbouring regions appear to be de-<lb break="no"/>posited.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">In</fw>
+                <lb break="yes"/>
+                <pb n="246" facs="#f0008"/>
+                <p>In the kingdom of New Spain, at least within the last thirty<lb break="yes"/>or forty years, the labour of the mines is free; and there re-<lb break="no"/>mains no trace of the <hi rendition="#i">mita,</hi> though a justly celebrated author<note place="foot" n="*">
+                        <persName key="robertson_w">Robertson&#x2019;s</persName> History of <placeName key="amerika">America</placeName>, vol. ii. p. 378.</note>
+                    <lb break="yes"/>has advanced the contrary. No where does the lower people<lb break="yes"/>enjoy in greater security the fruit of their labours than in the<lb break="yes"/>mines of Mexico; no law forces the Indian to choose this spe-<lb break="no"/>cies of labour, or to prefer one mine to another; and when he<lb break="yes"/>is displeased with the proprietor of the mine, he may offer<lb break="yes"/>his services to another master who may pay, perhaps, more<lb break="yes"/>regularly. These unquestionable facts are very little known<lb break="yes"/>in Europe. The number of persons employed In subterra-<lb break="no"/>neous operations, who are divided into several classes <hi rendition="#i">(Bare-<lb break="no"/>nadores, Faeneros, Tenateros, Bareterós),</hi> does not exceed<lb break="yes"/>in the whole kingdom of New Spain 28 or 30,000. Hence<lb break="yes"/>there is not more than <formula notation="TeX">\frac{1}{200}</formula> of the whole population immedi-<lb break="no"/>ately employed in the mines.</p>
+                <lb break="yes"/>
+                <p>The mortality among the miners of Mexico is not much<lb break="yes"/>greater than what is observed among the other classes. We<lb break="yes"/>may easily be convinced of this by examining the bills of<lb break="yes"/>mortality in the different parishes of Guanaxuato and Zaca-<lb break="no"/>tecas. This is a phenomenon, so much the more remarka-<lb break="no"/>ble, as the miner in several of these mines is exposed to a<lb break="yes"/>temperature 6 deg. above the mean temperatures of Jamaica<lb break="yes"/>and Pondicherry.<note place="foot" n="&#x2020;">Neariy 11 deg. of Fahrenheit. <hi rendition="#i" >Trans.</hi>
+                    </note> I found the centrigrade thermometer at<lb break="yes"/>34 deg. <note place="foot" n="&#x2021;">93 deg. of Fahrenheit. <hi rendition="#i">Trans. §</hi> 1681 feet. <hi rendition="#i">Trans.</hi>
+                    </note> at the bottom of the mine of Valenciana <hi rendition="#i">(en los<lb break="yes"/>planes),</hi> a perpendicular depth of 513 metres, § while at the<lb break="yes"/>mouth of the pit in the open air, the same thermometer sinks<lb break="yes"/>in winter to 4 deg. or 5 deg. <note place="foot" n="||">39 deg. or 41 deg. of Fahrenheit. <hi rendition="#i">Trans.</hi>
+                    </note> above 0. The Mexican mi-<lb break="no"/>ner is consequently exposed to a change of temperature of<lb break="yes"/>more than 30 deg. <note place="foot" n="**">54 deg. of Fahrenheit. <hi rendition="#i">Trans.</hi>
+                    </note>. But this enormous heat of the Valen-<lb break="no"/>ciana mine is not the effect of a great number of men and<lb break="yes"/>lights collected into a small space; it is much more owing<lb break="yes"/>to local and geological causes which we shall afterwards exa-<lb break="no"/>mine.</p>
+                <lb break="yes"/>
+                <p>It is curious to observe how the Mestizoes and Indians<lb break="yes"/>employed in carrying minerals on their back, who go by the<lb break="yes"/>name of <hi rendition="#i">Tenateros,</hi> remain continually loaded for six hours<lb break="yes"/>with a weight of from 225 to 350 pounds, and constantly<lb break="yes"/>exposed to a very high temperature, ascending eight or ten<lb break="yes"/>times successively, without intermission, stairs of 1800 steps.<lb break="yes"/>
+                    <fw type="catch" place="bottom">The</fw>
+                    <lb break="yes"/>
+                    <pb n="247" facs="#f0009"/> The appearance of these robust and laborious men would<lb break="yes"/>have operated a change in the opinions of the <persName key="raynal_gtf">Raynals</persName> and<lb break="yes"/>
+                    <persName key="pauw_cd">Pauws</persName>, and a number of other authors, however estimable<lb break="yes"/>in other respects, who have been pleased to declaim against<lb break="yes"/>the degeneracy of our species in the torrid zone. In the<lb break="yes"/>Mexican mines, children <hi rendition="#i" >(enfans)</hi> of seventeen years of age<note place="foot" n="*">I should be inclined to think that the author meant to say <hi rendition="#i">enfans de<lb break="yes"/>sept à dix ans,</hi> instead of <hi rendition="#i">enfans de dix sept ans,</hi> for <hi rendition="#i" >enfant,</hi> it is believed;<lb break="yes"/>can hardly be applied with propriety to a youth of 17; and if a full-<lb break="maybe"/>grown man could ascend eight or ten times, without intermission, 1800<lb break="yes"/>steps of a stair with 350 pounds, it certainly could not add to the evi-<lb break="no"/>dence of the strength of this race to say, that a young man of 17 could<lb break="yes"/>carry little more than the fourth part of that weight. <hi rendition="#i">Trans.</hi>
+                    </note>
+                    <lb break="yes"/>are able to carry masses of stone of a hundred pounds weight.<lb break="yes"/>This occupation of Tenateros is accounted unhealthy, if they<lb break="yes"/>enter more than three times a week into the mines. But the<lb break="yes"/>labour which ruins most rapidly the robustest constitutions<lb break="yes"/>is that of the <hi rendition="#i" >Barenadores,</hi> who blow up the rock with pow-<lb break="no"/>der. These men rarely pass the age of 35, if from a thirst<lb break="yes"/>of gain they continue their severe labour for the whole week.<lb break="yes"/>They generally pass no more than five or six years at this<lb break="yes"/>occupation, and then betake themselves to other employ-<lb break="no"/>ments less injurious to health.</p>
+                <lb break="yes"/>
+                <p>The art of mining is daily improving, and the pupils of<lb break="yes"/>the school of mines at Mexico gradually diffuse correct no-<lb break="no"/>tions respecting the circulation of air in pits and galleries.<lb break="yes" />Machines are beginning to be introduced in place of the old<lb break="yes" />method of carrying minerals and water on men&#x2019;s backs up<lb break="yes" />stairs of a rapid ascent. In proportion as the mines of New<lb break="yes" />Spain resemble more and more those of Freiberg, Clausthal,<lb break="yes"/>and Schemnitz, the miner&#x2019;s health will be less injured by the<lb break="yes" />influence of the <hi rendition="#i">Mofettes</hi>
+                    <note place="foot" n="*">The translator professes his ignorance of the meaning of this word.</note>, and the excessively prolonged<lb break="yes"/>efforts of muscular motion.</p>
+                <lb break="yes"/>
+                <p>From five to six thousand persons are employed in the amal-<lb break="no" />gamation of the minerals, or the preparatory labour. A great<lb break="yes" />number of these individuals pass their lives in walking bare-<lb break="no" />footed over heaps of brayed metal, moistened and mixed with<lb break="yes" />muriate of soda, <choice>
+                        <sic>sulphateof</sic>
+                        <corr type="editorial">sulphate of</corr>
+                    </choice> iron, and oxide of mercury, by<lb break="yes"/>the contact of the atmospheric air and the solar rays. It is a<lb break="yes"/>remarkable phenomenon to see these men enjoy the most per-<lb break="no"/>fect health. The physicians who practice in places where there<lb break="yes"/>are mines unanimously assert, that the nervous affections,<lb break="yes"/>which might be attributed to the effect of an absorption of<lb break="yes"/>oxid of mercury, very rarely occur. At Guanaxuato part of<lb break="yes"/>
+                    <fw type="catch" place="bottom">the</fw>
+                    <lb break="yes"/>
+                    <pb n="248" facs="#f0010"/> the inhabitants drink the very water in which the amalgama-<lb break="no"/>tion has been purified <hi rendition="#i">(aqua de lavaderos)</hi> without feeling any<lb break="yes"/>injury from it. This fact has often struck Europeans not in-<lb break="no"/>timately acquainted with the principles of chemistry. The<lb break="yes"/>water is at first of a greyish-blue colour, and contains in sus-<lb break="no"/>pension black oxid of mercury, and small globules of native<lb break="yes"/>mercury and amalgamation of silver. This metallic mixture<lb break="yes"/>gradually precipitates, and the water becomes limpid. It<lb break="yes"/>can neither dissolve the oxid of mercury nor the muriate of<lb break="yes"/>mercury, which is one of the most insoluble salts which we<lb break="yes"/>know. The mules are very fond of <choice>
+                        <sic>thls</sic>
+                        <corr type="editorial">this</corr>
+                    </choice> water, because it con-<lb break="no"/>tains a little muriate of soda in dissolution.</p>
+                <lb break="yes"/>
+                <p>In speaking of the progress of the Mexican population,<lb break="yes"/>and of the causes which retard that progress, I have neither<lb break="yes"/>mentioned the arrival of new European colonists, nor the<lb break="yes"/>mortality occasioned by the <hi rendition="#i">black vomiting.</hi> We shall dis-<lb break="no"/>cuss these subjects in the sequel. It is sufficient to observe<lb break="yes"/>here, that the <hi rendition="#i">vomito prieto</hi> is a scourge which is never felt<lb break="yes"/>but on the coast, and which does not, throughout the whole<lb break="yes"/>kingdom, carry off annually more than from two to three<lb break="yes"/>thousand individuals. As to Europe, it does not send more<lb break="yes"/>than 800 to Mexico. Political writers have always exagge-<lb break="no"/>rated what they call the depopulation of <placeName key="altewelt">the old continent</placeName> by<lb break="yes"/>the new. M. Page<note place="foot" n="*">Vol. ii. p. 427.</note>, for example, asserts in his work on<lb break="yes"/>the commerce of St. Domingo, that the emigrations from<lb break="yes"/>Europe supply annually more than 100,000 individuals to<lb break="yes"/>the United States. This estimate is twenty times higher than<lb break="yes"/>the truth; for, in 1784 and 1792, when the United States<lb break="yes"/>received the greatest number of European colonists, their<lb break="yes"/>number did not exceed 5000<note place="foot" n="&#x2020;">Samuel Blodget&#x2019;s Economies, 1806, p. 58.</note>. The progress of population<lb break="yes"/>in Mexico and <placeName key="nordamerika">North America</placeName> is solely derived from an in-<lb break="no"/>crease of internal <choice>
+                        <sic>prosperity.</sic>
+                        <corr type="editorial">prosperity.&#x201C;</corr>
+                    </choice>
+                </p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

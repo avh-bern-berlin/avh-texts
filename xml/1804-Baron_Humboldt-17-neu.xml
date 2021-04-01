@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Rei&#x017F;e der Herren von <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> und <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName>
+                    <lb break="yes"/>nach den Wendekrei&#x017F;en.<lb break="yes"/>
+                    <hi rendition="#g">In den Jahren 1799 bis 1804.</hi>
+                    <lb break="yes"/>Eine gedra&#x0364;ngte Ueber&#x017F;icht des Auszugs ihrer Memoiren<lb break="yes"/>v. <persName key="lametherie_jcd">J. C. Delametherie</persName>. <note place="foot" n="*)">Der Franzo&#x0364;&#x017F;i&#x017F;che Titel des Werkchens, wovon hier eine concentrirte<lb break="yes"/>Ueber&#x017F;etzung geliefert wird, lautet al&#x017F;o: <hi rendition="#aq">Notice d&#x2019;un Voyage aux<lb break="yes"/>tropiques exécuté par M. M. <persName key="humboldt_av" >Humboldt</persName> et <persName key="bonpland_ajag" >Bonpland</persName> en 1799, 1800,<lb break="yes"/>1801, 1802, 1803, et 1804. par <persName key="lametherie_jcd">I. C. Delametherie</persName>.</hi> 1805.</note>
+                    <lb break="yes"/>Nach dem Franzo&#x0364;&#x017F;i&#x017F;chen u&#x0364;bertragen von <hi rendition="#fr">Schirges</hi>
+                    <hi rendition="#aq">Dr.</hi>
+                </head>
+                <lb break="yes"/>
+                <cb n="401"/>
+                <div n="2">
+                    <head>Jahr 1799 &#x2014; 1800.</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">D</hi>as Intere&#x017F;&#x017F;e, welches die ge-<lb break="no"/>lehrte Welt an der Rei&#x017F;e der<lb break="yes"/>Herren v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> und<lb break="yes"/>
+                        <persName key="bonpland_ajag">
+                            <hi rendition="#fr">Bonpland</hi>
+                        </persName> nimmt, &#x017F;o wie meine<lb break="yes" />freund&#x017F;chaftliche Verbindung mit die-<lb break="no"/>&#x017F;en beyden edlen Ma&#x0364;nnern, &#x017F;agt <persName key="lametherie_jcd">
+                            <hi rendition="#fr">De-<lb break="no"/>lametherie,</hi>
+                        </persName> machet es mir zur will-<lb break="no"/>kommnen Pflicht, allen Freunden und<lb break="yes"/>Verehrern die&#x017F;er merkwu&#x0364;rdigen Rei-<lb break="no"/>&#x017F;enden eine genaue Ueber&#x017F;icht ihrer<lb break="yes"/>nunmehr vollendeten Rei&#x017F;e vorzulegen,<lb break="yes" />welche ich theils aus ihrem o&#x0364;ffentlichen<lb break="yes"/>und privat Briefwech&#x017F;el, theils aus<lb break="yes"/>
+                        <cb n="402"/> ihren im (franzo&#x0364;&#x017F;i&#x017F;chen) National-<lb break="maybe"/>In&#x017F;titut verle&#x017F;enen Memoiren zu&#x017F;am-<lb break="no"/>mengetragen habe.</p>
+                    <lb break="yes"/>
+                    <p>Nach achtja&#x0364;hrigen, in mehrern<lb break="yes"/>La&#x0364;ndern <hi rendition="#fr">Europas</hi> ange&#x017F;tellten phy&#x017F;i-<lb break="no"/>cali&#x017F;chen Nachfor&#x017F;chungen kam Hr. v.<lb break="yes"/>
+                        <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> 1798 nach Paris, um<lb break="yes"/>mit dem Capitain <persName key="baudin_tn">
+                            <hi rendition="#fr">Baudin</hi>
+                        </persName> die Rei&#x017F;e<lb break="yes"/>um die Welt zu machen, welchen der<lb break="yes"/>
+                        <persName key="bonpland_ajag">
+                            <hi rendition="#fr">Alexander-Aim</hi>
+                            <hi rendition="#aq">é</hi>
+                            <hi rendition="#fr">Gougou Bon-<lb break="no"/>pland</hi>
+                        </persName> (Arzt und Botaniker) gleich-<lb break="no"/>falls begleiten &#x017F;ollte.</p>
+                    <lb break="yes"/>
+                    <p>Der neue Krieg mit Oe&#x017F;terreich<lb break="yes"/>no&#x0364;thigte indeß das Directorium, die<lb break="yes"/>
+                        <fw type="catch" place="bottom">Rei&#x017F;e</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0002"/>
+                        <cb n="403"/> Rei&#x017F;e aufzu&#x017F;chieben. Herr von <hi rendition="#fr">Hum-<lb break="no"/>boldt,</hi> der &#x017F;eit 1792 eine phy&#x017F;icali-<lb break="no"/>&#x017F;che Rei&#x017F;e nach den Wendezirkeln beab-<lb break="no"/>&#x017F;ichtigte, be&#x017F;chloß nach <hi rendition="#fr">
+                            <placeName key="aegypten">Egypten</placeName>,<lb break="yes"/>
+                            <placeName key="arabien">Arabien</placeName>
+                        </hi> und <hi rendition="#fr">O&#x017F;tindien</hi> zu gehen.<lb break="yes"/>
+                        <hi rendition="#fr">Frankreichs</hi> Krieg mit <hi rendition="#fr" >England</hi>
+                        <lb break="yes"/>&#x017F;etzte ihm große Schwierigkeiten ent-<lb break="no" />gegen, denen er unter &#x017F;pani&#x017F;cher<lb break="yes"/>Flagge auszuweichen hoffte. Er be-<lb break="no"/>gab &#x017F;ich nach <hi rendition="#fr">Madrit,</hi> mußte in-<lb break="no"/>deß &#x017F;ein Vorhaben aufgeben, da er<lb break="yes"/>den Kriegs&#x017F;chauplatz in <hi rendition="#fr">
+                            <placeName key="afrika">Africa</placeName>
+                        </hi> nicht<lb break="yes"/>zu gelehrten Unter&#x017F;uchungen zweck-<lb break="no"/>ma&#x0364;&#x017F;&#x017F;ig fand.</p>
+                    <lb break="yes"/>
+                    <p>Dennoch ertheilte ihm der Spa-<lb break="no"/>ni&#x017F;che Hof 1799 die ausgedehnte&#x017F;te<lb break="yes"/>Erlaubniß zu einer wi&#x017F;&#x017F;en&#x017F;chaftlichen<lb break="yes"/>Rei&#x017F;e in den &#x017F;pani&#x017F;ch americani&#x017F;chen<lb break="yes"/>Colonien. Sr. Katholi&#x017F;chen Maje-<lb break="no"/>&#x017F;ta&#x0364;t &#x017F;chien ein per&#x017F;o&#x0364;nliches Intere&#x017F;&#x017F;e an<lb break="yes"/>dem Erfolge die&#x017F;es Projects zu neh-<lb break="no" />men, und der Hr. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                        <lb break="yes"/>verließ <hi rendition="#fr">Europa</hi> im Julius 1799,<lb break="yes"/>begleitet von &#x017F;einem Freunde <persName key="bonpland_ajag">
+                            <hi rendition="#fr">Bon-<lb break="no"/>pland;</hi>
+                        </persName> und beendigte in einem Zeit-<lb break="no"/>raume von fu&#x0364;nf Jahren, und auf<lb break="yes"/>&#x017F;eine eigene Ko&#x017F;ten eine Rei&#x017F;e zu Wa&#x017F;-<lb break="no"/>&#x017F;er und zu Lande von 9000 Meilen,<lb break="yes"/>welche die weite&#x017F;te i&#x017F;t, &#x017F;o je ein<lb break="yes"/>Privatmann unternahm.</p>
+                    <lb break="yes"/>
+                    <p>Mit der Fregatte <persName key="pizzaro_f">
+                            <hi rendition="#fr">Pizarro</hi>
+                        </persName> gien-<lb break="no"/>gen &#x017F;ie von <hi rendition="#fr">
+                            <placeName key="acoruna">Corunna</placeName>
+                        </hi> nach den <hi rendition="#fr">Ca-<lb break="no"/>nari&#x017F;chen</hi> In&#x017F;eln unter Seegel, lan-<lb break="no"/>deten zu <hi rendition="#fr" >Teneriffa,</hi> klimmten bis an<lb break="yes"/>den Crater des <hi rendition="#fr">Pic</hi> von <hi rendition="#fr">Teyde,</hi> um<lb break="yes"/>die atmospha&#x0364;ri&#x017F;che Luft zu analy&#x017F;iren,<lb break="yes"/>und Beobachtungen u&#x0364;ber die Ba&#x017F;alte<lb break="yes"/>und Porphyr&#x017F;chiefer <hi rendition="#fr">
+                            <placeName key="afrika">Africas</placeName>
+                        </hi> anzu-<lb break="no"/>&#x017F;tellen. Zu <hi rendition="#fr" >Cuncana</hi> im Mitta&#x0364;g-<lb break="no"/>lichen <hi rendition="#fr">
+                            <placeName key="amerika">Amerika</placeName>,</hi> beru&#x0364;hmt durch<lb break="yes"/>
+                        <cb n="404"/>
+                        <persName key="loefling_p">
+                            <hi rendition="#fr">Lo&#x0364;flings</hi>
+                        </persName> Mu&#x0364;h&#x017F;eligkeiten und Unfa&#x0364;lle,<lb break="yes"/>landeten &#x017F;ie; be&#x017F;uchten die Ku&#x0364;&#x017F;ten von<lb break="yes"/>
+                        <hi rendition="#fr">Paria,</hi> die Mi&#x017F;&#x017F;ionen der Indier<lb break="yes"/>
+                        <hi rendition="#fr">Chayma&#x2019;s,</hi> die Provinz <hi rendition="#fr" >Neu-An-<lb break="no"/>dalu&#x017F;ien,</hi> ein vorzu&#x0364;glich heißes, und<lb break="yes"/>den Erdbeben unterworfenes, aber<lb break="yes" />dennoch ge&#x017F;undes Land; ferner <hi rendition="#fr">
+                            <placeName key="barcelona">Neu-<lb break="maybe"/>Barcellona</placeName> Venezuela,</hi> und das<lb break="yes"/>&#x017F;pani&#x017F;che <hi rendition="#fr">Guyana.</hi> Die La&#x0364;ngen von<lb break="yes"/>
+                        <hi rendition="#fr">Cumana, Caraccas</hi> u. &#x017F;. w. wur-<lb break="no" />den nach <hi rendition="#fr">Jupiters</hi> Trabanten von<lb break="yes" />ihnen be&#x017F;timmt; &#x017F;ie <choice>
+                            <sic>bouani&#x017F;irten</sic>
+                            <corr type="editorial">botani&#x017F;irten</corr>
+                        </choice> auf<lb break="yes"/>den Gipfeln des <hi rendition="#fr" >Ceripe,</hi> der <hi rendition="#fr">Sylla</hi>
+                        <lb break="yes"/>von <hi rendition="#fr">
+                            <placeName key="avila">Avila</placeName>,</hi> rei&#x017F;eten zu den reizenden<lb break="yes"/>Tha&#x0364;lern von <hi rendition="#fr">
+                            <placeName key="aragua">Aragua</placeName>,</hi> wo der See<lb break="yes"/>von <hi rendition="#fr">Valenzia</hi> mit der &#x017F;cho&#x0364;nen tropi-<lb break="no"/>&#x017F;chen Vegetation &#x017F;ich befindet.</p>
+                    <lb break="yes"/>
+                    <p>Von <hi rendition="#fr">Portocabello</hi> drangen &#x017F;ie<lb break="yes" />bis an die Grenzen von <hi rendition="#fr">Bra&#x017F;ilien</hi>
+                        <lb break="yes"/>gegen den <placeName key="aequator">Aequator</placeName> vor, wanderten<lb break="yes"/>durch die Ebenen von <hi rendition="#fr" >Calabazo,<lb break="yes"/>
+                            <placeName key="apure">Apura</placeName>
+                        </hi> und <hi rendition="#fr">
+                            <placeName key="baxoorinoco">Nieder-Orinoko</placeName>,</hi> die<lb break="yes"/>
+                        <hi rendition="#fr">
+                            <choice>
+                                <sic>Clanos,</sic>
+                                <corr type="editorial">Llanos,</corr>
+                            </choice>
+                        </hi> wo durch das Zuru&#x0364;ckprallen<lb break="yes"/>der Sonnen&#x017F;trahlen der <persName key="reaumur_rafd">
+                            <hi rendition="#fr">Reaumu&#x0364;r&#x017F;che</hi>
+                        </persName>
+                        <lb break="yes"/>Thermometer im Schatten auf 33 bis<lb break="yes"/>37° &#x017F;tieg, und der glu&#x0364;hende Erdboden<lb break="yes"/>auf 2000 Quadrat-Meilen nur eine<lb break="yes"/>Abweichung der Bleywage von 5<lb break="yes"/>Zoll zeigt.</p>
+                    <lb break="yes"/>
+                    <p>Die Spuren der Refraction und<lb break="yes"/>das &#x017F;onderbar&#x017F;te Auf&#x017F;chwellen bemerket<lb break="yes"/>man an dem Sande der Meersfla&#x0364;che.<lb break="yes"/>Ohne daß in den heiße&#x017F;ten Monaten<lb break="yes"/>das klein&#x017F;te Gra&#x0364;schen auf ihm keimt,<lb break="yes"/>verbirgt er doch Krokodille und Schil-<lb break="no"/>der&#x017F;chlangen. Der Rei&#x017F;ende hat hier<lb break="yes"/>mit Wa&#x017F;&#x017F;ermangel, Sonnenhitze und<lb break="yes"/>dem von den hei&#x017F;&#x017F;en Winden aufge-<lb break="no"/>regten Saub zu ka&#x0364;mpfen, und muß<lb break="yes" />&#x017F;ich nach den Ge&#x017F;tirnen und nach ein-<lb break="no"/>
+                        <fw type="catch" place="bottom">zelnen</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0003"/>
+                        <cb n="405"/> zelnen Stra&#x0364;uchen der <hi rendition="#fr" >Mauritia,</hi>
+                        <lb break="yes"/>und des <hi rendition="#fr">Embothrium,</hi> die man<lb break="yes"/>alle 3 Meilen findet, richten.</p>
+                    <lb break="yes"/>
+                    <p>Von <placeName key="sanfernandodeapure">St. <hi rendition="#fr">Fernando</hi> von <hi rendition="#fr">Apura</hi>
+                        </placeName>
+                        <lb break="yes"/>unternahmen &#x017F;ie eine mu&#x0364;h&#x017F;elige Schif-<lb break="no"/>fahrt von 500 Seemeilen in Canots,<lb break="yes" />und entwarfen die Karte des Landes.<lb break="yes"/>Der nahen Gefahr eines Schifbruchs<lb break="yes"/>bey der In&#x017F;el <hi rendition="#fr" >Pananuma</hi> entgingen<lb break="yes"/>&#x017F;ie kaum, und be&#x017F;uchten die beru&#x0364;hm-<lb break="no"/>ten Wa&#x017F;&#x017F;erfa&#x0364;lle von <hi rendition="#fr">
+                            <placeName key="atures">Atures</placeName>
+                        </hi> und<lb break="yes"/>
+                        <hi rendition="#fr">Maypure,</hi> wo eine Ho&#x0364;hle die Mu-<lb break="no"/>mien einer, durch den Krieg zwi&#x017F;chen<lb break="yes" />den <hi rendition="#fr">Caraiben</hi> und <hi rendition="#fr" >Marariten</hi> auf-<lb break="no"/>geriebenen Nation in &#x017F;ich &#x017F;chließet.<lb break="yes"/>Sie fanden, daß der <hi rendition="#fr">Rio Guariare,</hi>
+                        <lb break="yes"/>den der Pater <persName key="gumilla_j">
+                            <hi rendition="#fr">Gumilla</hi>
+                        </persName> fa&#x0364;l&#x017F;chlich fu&#x0364;r<lb break="yes"/>die Quelle des <hi rendition="#fr">Orenoco</hi> gehalten,<lb break="yes"/>auf den <hi rendition="#fr">
+                            <placeName key="anden">Anden</placeName>
+                        </hi> in <hi rendition="#fr">Neu-Grenada</hi>
+                        <lb break="yes"/>ent&#x017F;pringt. Von <hi rendition="#fr">Jarita</hi> &#x017F;tiegen &#x017F;ie<lb break="yes"/>bis an die Quelle des <hi rendition="#fr">Guainia,</hi> des<lb break="yes"/>
+                        <hi rendition="#fr">Rio Negro</hi> der <hi rendition="#fr" >Europa&#x0364;er,</hi> und<lb break="yes"/>den <persName key="lacondamine_cmd">
+                            <hi rendition="#fr">Condamine</hi>
+                        </persName> ein Meer vom &#x017F;u&#x0364;ßen<lb break="yes" />Wa&#x017F;&#x017F;er nennt. Ueber den <hi rendition="#fr" >&#x017F;chwarzen<lb break="yes"/>Fluß</hi> kamen &#x017F;ie zu der kleinen, fa&#x0364;l&#x017F;ch-<lb break="no"/>lich unter dem <placeName key="aequator">Aequator</placeName> ver&#x017F;etzten Fe-<lb break="no" />&#x017F;tung St. <hi rendition="#fr">Carlos</hi> und bis an <hi rendition="#fr">Grand<lb break="yes"/>Para,</hi> der Hauptcapitanarie <hi rendition="#fr">Bra-<lb break="no"/>&#x017F;iliens.</hi> Durch Anlegung eines Ca-<lb break="no"/>nals wu&#x0364;rde man von <hi rendition="#fr">Rio Guallaga</hi>
+                        <lb break="yes"/>aus drey Tagerei&#x017F;en vom <hi rendition="#fr" >Su&#x0364;dmeer,</hi>
+                        <lb break="yes"/>auf einen Canot durch den <placeName key="amazonas">
+                            <hi rendition="#fr">Amazo-<lb break="no"/>nen-</hi>
+                        </placeName> und <hi rendition="#fr">Schwarzen-Fluß</hi> bis an<lb break="yes"/>die Mu&#x0364;ndung des <hi rendition="#fr">Orenoco</hi> hinunter<lb break="yes"/>fahren ko&#x0364;nnen, ein Weg von beynah<lb break="yes"/>2000 Meilen.</p>
+                    <lb break="yes"/>
+                    <p>Zur Unter&#x017F;uchung eines Armes<lb break="yes"/>des <hi rendition="#fr" >Orenoco, Ca&#x017F;&#x017F;iquare</hi> genannt,<lb break="yes"/>welcher er&#x017F;tern mit dem <placeName key="amazonas">
+                            <hi rendition="#fr">Amazonen-</hi>
+                            <lb break="maybe"/>Fluß</placeName> verbindet, und u&#x0364;ber de&#x017F;&#x017F;en Da-<lb break="no"/>
+                        <cb n="406"/> &#x017F;eyn man &#x017F;ich vor 50 Jahren heftig<lb break="yes"/>&#x017F;tritt, &#x017F;chiffte er von St. <hi rendition="#fr">Carlos</hi>
+                        <lb break="yes"/>wieder nach dem <hi rendition="#fr">Orenoco,</hi> und auf<lb break="yes"/>die&#x017F;em letztern bis an den Ur&#x017F;prung des<lb break="yes"/>Flu&#x017F;&#x017F;es bey dem Vulkan <hi rendition="#fr">Duida.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Das Land von We&#x017F;ten nach <hi rendition="#fr">Pa-<lb break="no" />&#x017F;imoni</hi> wird von den <hi rendition="#fr" >Guaicaz</hi>-In-<lb break="no"/>dianern, einer weißen, &#x017F;ehr kleinen,<lb break="yes"/>fa&#x017F;t zwerghaften, aber kriegeri&#x017F;chen<lb break="yes"/>Men&#x017F;chenrate bewohnt; und die noch<lb break="yes"/>wildern, kupferfarbenen <hi rendition="#fr" >Guajariben,</hi>
+                        <lb break="yes"/>welche &#x017F;ogar Men&#x017F;chenfre&#x017F;&#x017F;er &#x017F;ind,<lb break="yes"/>vereiteln jeden Ver&#x017F;uch an die Quellen<lb break="yes"/>des <hi rendition="#fr">Orenoco</hi> zu gelangen.</p>
+                    <lb break="yes"/>
+                    <p>Un&#x017F;ere Rei&#x017F;ende legten einen Weg<lb break="yes"/>von 340 Franzo&#x0364;&#x017F;i&#x017F;chen Meilen bis zur<lb break="yes" />Mu&#x0364;ndung des <hi rendition="#fr">Orenoco</hi> bey St.<lb break="yes"/>
+                        <hi rendition="#fr">Thomas</hi> in <choice>
+                            <sic>
+                                <hi rendition="#fr">Nen-Guayana</hi>
+                            </sic>
+                            <corr type="editorial">
+                                <hi rendition="#fr">Neu-Guayana</hi>
+                            </corr>
+                        </choice> auf<lb break="yes"/>dem&#x017F;elben zuru&#x0364;ck, pa&#x017F;&#x017F;irten zum zwey-<lb break="no"/>ten Mahle die Kataracten, auf<lb break="yes"/>deren &#x017F;u&#x0364;dlichen Seite der Pater <persName key="gumilla_j">
+                            <hi rendition="#fr">Gu-<lb break="no"/>milla</hi>
+                        </persName> und <persName key="caulin_a">
+                            <hi rendition="#fr">Caulin</hi>
+                        </persName> nie vorgedrungen<lb break="yes"/>waren.</p>
+                    <lb break="yes"/>
+                    <p>Auf die&#x017F;er Schiffahrt &#x017F;etzten Man-<lb break="no"/>gel an Lebensmitteln und Bedeckung,<lb break="yes"/>die na&#x0364;chtlichen Regengu&#x0364;&#x017F;&#x017F;e, der &#x017F;tete<lb break="yes" />Aufenthalt in den Wa&#x0364;ldern, die<lb break="yes"/>Mosquitos und tau&#x017F;end andere &#x017F;techende<lb break="yes"/>und giftige In&#x017F;ekten neb&#x017F;t der Unmo&#x0364;g-<lb break="no"/>lichkeit, wegen der Wildheit der Cro-<lb break="no"/>codille und der kleinen caraibi&#x017F;chen<lb break="yes"/>Fi&#x017F;che &#x017F;ich durch Baden zu erfri&#x017F;chen,<lb break="yes"/>und die Miasmen eines brennend hei&#x017F;&#x017F;en<lb break="yes"/>Himmel&#x017F;trichs, welcher zugleich feucht<lb break="yes"/>war, un&#x017F;ere Rei&#x017F;ende unaufho&#x0364;rlichen<lb break="yes"/>Leiden aus. Endlich kehrten &#x017F;ie unter<lb break="yes"/>andern u&#x0364;ber die Mi&#x017F;&#x017F;ionen der caribi-<lb break="no"/>&#x017F;chen Indianer, einer außerordentlichen,<lb break="yes"/>und nach den <hi rendition="#fr" >Patagonen,</hi> wahr-<lb break="no"/>&#x017F;cheinlich der gro&#x0364;ßten und nervig&#x017F;ten<lb break="yes"/>
+                        <fw type="catch" place="bottom">Men-</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0004"/>
+                        <cb n="407"/> Men&#x017F;chenrace nach <hi rendition="#fr">
+                            <placeName key="barcelona">Barcellona</placeName>
+                        </hi> und<lb break="yes"/>
+                        <hi rendition="#fr">Cumana</hi> zuru&#x0364;ck.</p>
+                    <lb break="yes"/>
+                    <p>Ihre Rei&#x017F;e ging darauf zur See<lb break="yes"/>nach <hi rendition="#fr">Havanna</hi> und <hi rendition="#fr">Jamaica</hi> und<lb break="yes"/>war wegen der &#x017F;pa&#x0364;ten Jahrszeit &#x017F;o<lb break="yes"/>langwierig, als gefa&#x0364;hrlich, da &#x017F;ie<lb break="yes"/>Gefahr liefen an <placeName key="baxodelavibora">Klippen bey <hi rendition="#fr">Vibora</hi>
+                        </placeName>
+                        <lb break="yes"/>zu &#x017F;cheitern.</p>
+                    <lb break="yes"/>
+                    <p>In <hi rendition="#fr">Cuba</hi> be&#x017F;cha&#x0364;ftigte man &#x017F;ich<lb break="yes"/>mit La&#x0364;ngenbe&#x017F;timmung der <hi rendition="#fr">Havana</hi>
+                        <lb break="yes"/>und der Con&#x017F;truction eines neuen Ofens<lb break="yes"/>fu&#x0364;r Zucker&#x017F;iedereyen, der ziemlich all-<lb break="no"/>gemein eingefu&#x0364;hrt ward. Fal&#x017F;che<lb break="yes"/>Nachrichten von des Capitain <persName key="baudin_tn">
+                            <hi rendition="#fr">Bau-<lb break="no"/>dins</hi>
+                        </persName> Rei&#x017F;e, die er hier durch Ameri-<lb break="no" />kani&#x017F;che Zeitungen erhielt, und dahin<lb break="yes"/>lauteten: daß er von <hi rendition="#fr">Buenos Aires</hi>
+                        <lb break="yes"/>das <hi rendition="#fr">Cap Horn</hi> um&#x017F;chiffen, und an<lb break="yes"/>den Ku&#x0364;&#x017F;ten von <hi rendition="#fr" >Chyli</hi> und <hi rendition="#fr">Peru</hi>
+                        <lb break="yes"/>hin&#x017F;egeln wu&#x0364;rde; und &#x017F;ein dem Capi-<lb break="no"/>tain 1798 gegebenes Ver&#x017F;prechen:<lb break="yes"/>auf welchem Theile der Erde er &#x017F;ich<lb break="yes" />auch befinden mo&#x0364;ge, &#x017F;o wolle er &#x017F;ich<lb break="yes" />doch an die Franzo&#x0364;&#x017F;i&#x017F;che Expedition<lb break="yes" />an&#x017F;chlie&#x017F;&#x017F;en, &#x017F;obald er von ihrem Aus-<lb break="no"/>kaufen Kenntniß erhalten, bewogen<lb break="yes"/>den Hrn. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>,</hi> &#x017F;eine ge-<lb break="no"/>&#x017F;ammelten Manu&#x017F;cripte grades Weges<lb break="yes"/>nach <hi rendition="#fr">Europa</hi> zu &#x017F;enden, und mit<lb break="yes"/>einer Goelette von <placeName key="batabano">
+                            <hi rendition="#fr">Batabano</hi>
+                        </placeName> nach<lb break="yes"/>
+                        <hi rendition="#fr">Cartagena</hi> in <hi rendition="#fr">Indien,</hi> und von<lb break="yes"/>da durch die Landenge von <hi rendition="#fr" >Panama</hi>
+                        <lb break="yes"/>nach der Su&#x0364;d&#x017F;ee zu gehen. Er hoffte<lb break="yes"/>den Capitain an der <placeName key="amerika" >Amerikani&#x017F;chen<lb break="yes" />Ku&#x0364;&#x017F;te</placeName> zu treffen. Seine Manu&#x017F;cripte<lb break="yes"/>und Sammlungen wollte er nicht den<lb break="yes"/>Gefahren &#x017F;o langer Seerei&#x017F;en aus-<lb break="no"/>fetzen, und &#x017F;ie kamen bis auf einen<lb break="yes" />Theil der Sammlungen, der Dubletten<lb break="yes"/>enthielt, glu&#x0364;cklich in <hi rendition="#fr">Philadelphia</hi>
+                        <lb break="yes"/>
+                        <cb n="408"/> an; doch verlohr ein Freund de&#x017F;&#x017F;elben,<lb break="yes"/>der mit ihnen rei&#x017F;ete, in einem Schif-<lb break="no" />bruch das Leben. Er hieß Bruder<lb break="yes"/>
+                        <persName key="gonzalez_j">
+                            <hi rendition="#fr">Juan Gonzales,</hi>
+                        </persName> war ein junger<lb break="yes"/>tha&#x0364;tiger Franziscaner, der aus dem<lb break="yes"/>Spani&#x017F;chen <hi rendition="#fr" >Guayana,</hi> in die&#x017F;e un-<lb break="no"/>bekannte Welt, wohin noch kein Eu-<lb break="no"/>ropa&#x0364;er kam, vorgedrungen war.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>Jahr 1801.</head>
+                    <lb break="yes"/>
+                    <p>Im Ma&#x0364;rz 1801 &#x017F;egelte der Hr. v.<lb break="yes"/>
+                        <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> von <hi rendition="#fr">Cuba,</hi> be&#x017F;timmte<lb break="yes" />mehrere Puncte der <hi rendition="#fr">Ko&#x0364;nigs-Ga&#x0364;rten</hi>
+                        <lb break="yes"/>genannten In&#x017F;el-Gruppen, und des<lb break="yes" />Hafens von <hi rendition="#fr">Trinidat</hi> a&#x017F;tronomi&#x017F;ch;<lb break="yes"/>verweilte am <hi rendition="#fr">Rio Sinu,</hi> wo noch<lb break="yes"/>kein Botaniker Kra&#x0364;uter &#x017F;uchte, und<lb break="yes"/>erhielt durch die Gefahr an <hi rendition="#fr">Geant</hi> zu<lb break="yes"/>&#x017F;cheitern, Muße, die Mondfin&#x017F;terniß<lb break="yes"/>vom 2ten Ma&#x0364;rz 1801 zu beobach-<lb break="no"/>ten.</p>
+                    <lb break="yes"/>
+                    <p>Hier erfuhr er, daß die &#x017F;pa&#x0364;te<lb break="yes"/>Jahrszeit die Fahrt nach der Su&#x0364;d&#x017F;ee<lb break="yes"/>von <hi rendition="#fr" >Panama</hi> aus nach <hi rendition="#fr">Guayaquil</hi>
+                        <lb break="yes"/>nicht erlaube; er verweilte daher einige<lb break="yes" />Wochen in den Wa&#x0364;ldern von <hi rendition="#fr">Tur-<lb break="no" />baco,</hi> fand die &#x017F;elten&#x017F;ten Pflanzen,<lb break="yes" />und ging dann in 35 Tagen den<lb break="yes"/>&#x017F;cho&#x0364;nen <hi rendition="#fr">Magdalenen</hi> Fluß hinauf,<lb break="yes"/>wovon er eine Karte trotz der Qualen<lb break="yes"/>der <hi rendition="#fr" >Mo&#x017F;quitos</hi> entwarf, indeß<lb break="yes"/>
+                        <persName key="bonpland_ajag">
+                            <hi rendition="#fr">Bonpland</hi>
+                        </persName> die reiche Vegetation<lb break="yes"/>&#x017F;tudierte.</p>
+                    <lb break="yes"/>
+                    <p>Von da ver&#x017F;u&#x0364;gten &#x017F;ie &#x017F;ich auf<lb break="yes" />Maule&#x017F;eln nach St. <hi rendition="#fr">F<hi rendition="#aq">é</hi>
+                        </hi> von <hi rendition="#fr">Bogota,</hi>
+                        <lb break="yes"/>der Haupt&#x017F;tadt von <hi rendition="#fr" >Neu-Grenada,</hi>
+                        <lb break="yes"/>die in einer &#x017F;cho&#x0364;nen Ebene gelegen,<lb break="yes"/>und in einem immerwa&#x0364;hrenden Fru&#x0364;h-<lb break="no"/>ling Waitzen und Se&#x017F;am cultiviret.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">
+                        <persName key="mutis_jc">
+                            <hi rendition="#fr">Mutis</hi>
+                        </persName>
+                    </fw>
+                    <lb break="yes"/>
+                    <pb facs="#f0005"/>
+                    <cb n="409"/>
+                    <p>
+                        <persName key="mutis_jc">
+                            <hi rendition="#fr">Mutis</hi>
+                        </persName> pra&#x0364;chtige Sammlungen,<lb break="yes"/>der Cataract von <hi rendition="#fr">Tequendama</hi> von<lb break="yes"/>98 Toi&#x017F;en Ho&#x0364;he, die Bergwerke <hi rendition="#fr">von<lb break="yes" />Mariquita,</hi> St. <hi rendition="#fr">Anna,</hi> und <hi rendition="#fr">Zi-<lb break="no"/>paguira,</hi> die Fel&#x017F;enbru&#x0364;cke von <hi rendition="#fr">Ico-<lb break="no" />nonzo,</hi> durch ein Erdbeben gewo&#x0364;lbet<lb break="yes" />&#x2014; be&#x017F;cha&#x0364;ftigten ihn bis zum Septem-<lb break="no" />ber.</p>
+                    <lb break="yes"/>
+                    <p>Um nach <hi rendition="#fr">Quito</hi> zu gelangen,<lb break="yes"/>kamen &#x017F;ie bey den <placeName key="anden">Anden</placeName> von <hi rendition="#fr">Quindiu</hi>
+                        <lb break="yes"/>vorbey, wo &#x017F;ich der be&#x017F;chneiete <hi rendition="#fr">Tolina</hi>
+                        <lb break="yes"/>aus Wa&#x0364;ldern von Storax, baumar-<lb break="no" />tigen Pa&#x017F;&#x017F;ions-Blumen, Bambusrohr<lb break="yes"/>und Wachspalmen erhebt. Durch<lb break="yes"/>tiefen Koth und ungebahnte Wa&#x0364;lder,<lb break="yes"/>worin man &#x017F;chlafen mußte, nahmen<lb break="yes"/>&#x017F;ie ihren Weg und langten baarfuß<lb break="yes"/>und bis auf die Haut durchna&#x0364;ßt, am<lb break="yes"/>
+                        <hi rendition="#fr">Cauca</hi> an, durch&#x017F;treiften die Provinz,<lb break="yes"/>
+                        <hi rendition="#fr">Choco,</hi> dem Vaterlande der Platina,<lb break="yes" />die &#x017F;ich dort zwi&#x017F;chen Olivin und Augit<lb break="yes" />enthaltenden Ba&#x017F;alt, Gru&#x0364;n&#x017F;tein und<lb break="yes" />&#x017F;o&#x017F;&#x017F;ilem Holz findet. Durch die Gold-<lb break="no" />wa&#x0364;&#x017F;chereyen von <hi rendition="#fr">Quilichao</hi> &#x017F;tiegen<lb break="yes"/>&#x017F;ie nach <hi rendition="#fr" >Popayan,</hi> mit einer reizen-<lb break="no"/>den Lage und durch ein vorzu&#x0364;gliches<lb break="yes"/>Clima ge&#x017F;egnet. Der Crater des<lb break="yes"/>Vulkans von <hi rendition="#fr">Purace</hi> war bis zur<lb break="yes"/>Mu&#x0364;ndung voll von &#x017F;iedendem Wa&#x017F;&#x017F;er,<lb break="yes"/>und wirft mitten im Schnee mit<lb break="yes"/>furchtbarem Gebru&#x0364;ll Du&#x0364;n&#x017F;te von ge-<lb break="no"/>&#x017F;chwefelten Wa&#x017F;&#x017F;er&#x017F;toff aus.</p>
+                    <lb break="yes"/>
+                    <p>Sie durch&#x017F;chnitten die Gebirgs-<lb break="no"/>ebene der Provinz <hi rendition="#fr">Delos Pa&#x017F;tos,</hi>
+                        <lb break="yes"/>die wegen ihrer großen Fruchtbarkeit<lb break="yes"/>an Waitzen und <hi rendition="#fr">Erythroxylon Pe-<lb break="no" />ruplanum</hi> &#x017F;o beru&#x0364;hmt i&#x017F;t, und ka-<lb break="no"/>men nach einer 4 monatlichen Rei&#x017F;e<lb break="yes" />nach <hi rendition="#fr">Ibarra</hi> und <hi rendition="#fr">Quito.</hi> Die<lb break="yes"/>Rei&#x017F;e durch die Cordilleren der hohen<lb break="yes"/>
+                        <cb n="410"/>
+                        <placeName key="anden">Anden</placeName>, auf ungangbaren Wegen,<lb break="yes"/>bey anhaltenden Regengu&#x0364;&#x017F;&#x017F;en, be-<lb break="no"/>&#x017F;chweret mit vielen In&#x017F;trumenten und<lb break="yes"/>Sammlungen wu&#x0364;rde ohne die Ver-<lb break="no" />wendung des Hrn. <persName key="mendiunetta">
+                            <hi rendition="#fr">Mendiunetta,</hi>
+                        </persName>
+                        <lb break="yes"/>Vice-Ko&#x0364;nigs v. St. <hi rendition="#fr">F<hi rendition="#aq">é</hi>
+                        </hi> und des<lb break="yes"/>Barons <persName key="carondelet_flhd">v. <hi rendition="#fr">Carondelet,</hi>
+                        </persName> Pra&#x0364;&#x017F;identen<lb break="yes"/>zu <hi rendition="#fr">Quito,</hi> welche die Wege und ge-<lb break="no" />fa&#x0364;hrlich&#x017F;ten Bru&#x0364;cken auf einern 450<lb break="yes" />langen Wege her&#x017F;tellen lie&#x017F;&#x017F;en, unmo&#x0364;g-<lb break="no"/>lich gewe&#x017F;en &#x017F;eyn.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>Jahr 1802.</head>
+                    <lb break="yes"/>
+                    <p>Un&#x017F;ere Rei&#x017F;ende langten am 6ten<lb break="yes"/>Januar in der beru&#x0364;hmten Haupt&#x017F;tadt<lb break="yes"/>
+                        <hi rendition="#fr">Quito</hi> an; und die Liebenswu&#x0364;rdigkeit<lb break="yes"/>der Einwohner, ihre Neigung zu den<lb break="yes" />Ku&#x0364;n&#x017F;ten und Wi&#x017F;&#x017F;en&#x017F;chaften zeichnet<lb break="yes"/>&#x017F;ie noch jetzt aus. Acht bis neun<lb break="yes" />Monate &#x017F;etzten &#x017F;ie ihre Nachfor&#x017F;chun-<lb break="no" />gen in die&#x017F;em Lande fort, das durch<lb break="yes"/>&#x017F;eine hohen Gebirge, &#x017F;eine &#x017F;tets Feuer,<lb break="yes" />Fel&#x017F;en&#x017F;tu&#x0364;cke, Schlamm, und Schwe-<lb break="no"/>fel &#x017F;peienden Vulkane, &#x017F;eine o&#x0364;fteren<lb break="yes" />Erdbeben, Vegetation, Re&#x017F;te peruvi-<lb break="no"/>ani&#x017F;cher Baukun&#x017F;t, und Sitten &#x017F;einer<lb break="yes"/>alten Bewohner eins der merkwu&#x0364;rdig-<lb break="no"/>&#x017F;ten der Erde i&#x017F;t. Zweymal erklimm-<lb break="no"/>ten &#x017F;ie den Feuer&#x017F;chlund des <hi rendition="#fr">Pichinga,</hi>
+                        <lb break="yes"/>wo &#x017F;ie Ver&#x017F;uche mit der Luft an&#x017F;tellten.<lb break="yes"/>
+                        <persName key="lacondamine_cmd">
+                            <hi rendition="#fr">La Condamine</hi>
+                        </persName> verglich ihn fru&#x0364;her<lb break="yes"/>treffend mit dem Chaos der Dichter,<lb break="yes"/>konnte es indeß nur kurze Zeit oben<lb break="yes"/>aushalten. Damals war &#x017F;eine in<lb break="yes" />Ba&#x017F;alt geho&#x0364;hlte Mu&#x0364;ndung mit Schnee<lb break="yes" />gefu&#x0364;llt und erkaltet; jetzt war er von<lb break="yes"/>neuen entzu&#x0364;ndet und furchtbar fu&#x0364;r<lb break="yes"/>das nahe <hi rendition="#fr">Quito.</hi> Nur wenig fehlte,<lb break="yes"/>daß der Hr. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> nicht &#x017F;ein<lb break="yes"/>
+                        <fw type="catch" place="bottom">Leben</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0006"/>
+                        <cb n="411"/>
+                        <choice>
+                            <sic>dabey</sic>
+                            <corr type="editorial">Leben dabey</corr>
+                        </choice> eingebu&#x0364;&#x017F;&#x017F;et hatte, indem er u&#x0364;ber<lb break="yes"/>eine nur mit du&#x0364;nnem Ei&#x017F;e belegte<lb break="yes"/>Spalte ging. Er be&#x017F;uchte unter an-<lb break="no" />dern auch den <hi rendition="#fr">Chimbora&#x017F;&#x017F;o,</hi> welcher<lb break="yes"/>der ho&#x0364;ch&#x017F;te Berg un&#x017F;rer Erde i&#x017F;t, und<lb break="yes"/>&#x017F;tudierte vorzu&#x0364;glich den geogno&#x017F;ti&#x017F;chen<lb break="yes"/>Theil der <hi rendition="#fr">Cordilleren</hi> der <hi rendition="#fr">
+                            <placeName key="anden">Anden</placeName>,</hi>
+                        <lb break="yes"/>woru&#x0364;ber noch nichts in <hi rendition="#fr" >Europa</hi> be-<lb break="no"/>kannt geworden i&#x017F;t. Seine Me&#x017F;&#x017F;un-<lb break="no"/>gen bewei&#x017F;en u&#x0364;brigens, daß einige von<lb break="yes"/>die&#x017F;en Vulkanen, haupt&#x017F;a&#x0364;chtlich der<lb break="yes"/>von <hi rendition="#fr" >Tunguragua</hi> &#x017F;ich &#x017F;eit 1753<lb break="yes" />ge&#x017F;enkt haben, welches die Einwohner<lb break="yes"/>als Augenzeugen bemerkten.</p>
+                    <lb break="yes"/>
+                    <p>Alle die&#x017F;e gro&#x017F;&#x017F;en Ma&#x017F;&#x017F;en &#x017F;ind das<lb break="yes"/>Werk der Kri&#x017F;talli&#x017F;ation.</p>
+                    <lb break="yes"/>
+                    <p>&#x201E;Alle Ma&#x017F;&#x017F;en, die &#x017F;ich bildeten,<lb break="yes" />&#x201E;(&#x017F;chreibt Hr. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>) verei-<lb break="no"/>&#x201E;nigten &#x017F;ich nach ihren Verwand&#x017F;chaf-<lb break="no"/>&#x201E;ten durch die Ge&#x017F;etze der Attraction,<lb break="yes"/>&#x201E;und brachten die&#x017F;e mehr oder weniger<lb break="yes"/>&#x201E;betra&#x0364;chtlichen Erho&#x0364;hungen an den<lb break="yes"/>&#x201E;ver&#x017F;chiedenen Orten der Oberfla&#x0364;che<lb break="yes"/>&#x201E;der Erde durch die Ge&#x017F;etze der allge-<lb break="no"/>&#x201E;meinen Kri&#x017F;talli&#x017F;ation hervor.</p>
+                    <lb break="yes"/>
+                    <p>Ein gewi&#x017F;&#x017F;er Marquis v. <hi rendition="#fr">Selra-<lb break="no"/>legre</hi> be&#x017F;cha&#x0364;ftiget &#x017F;ich in <hi rendition="#fr">Quito,</hi> die<lb break="yes"/>Pyramiden von <hi rendition="#fr">Sarouguier,</hi> Ter-<lb break="no"/>men von der beru&#x0364;hmten Ba&#x017F;is der<lb break="yes" />franzo&#x0364;&#x017F;i&#x017F;chen und &#x017F;pani&#x017F;chen Akademiker<lb break="yes"/>wiederher&#x017F;tellen zu la&#x017F;&#x017F;en. Der Sohn<lb break="yes"/>die&#x017F;es Mannes <persName key="montufarylarrea_c">
+                            <hi rendition="#fr">Carl Montufar</hi>
+                        </persName> be-<lb break="no"/>gleitete den Hrn. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> nicht<lb break="yes"/>allein auf &#x017F;einen Rei&#x017F;en in <hi rendition="#fr">Peru</hi> und<lb break="yes"/>
+                        <hi rendition="#fr">Mexico,</hi> &#x017F;ondern &#x017F;elb&#x017F;t nach <hi rendition="#fr">Eu-<lb break="no"/>ropa.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Auf dem <hi rendition="#fr">
+                            <placeName key="antisana">Anti&#x017F;ana</placeName>
+                        </hi> brachten &#x017F;ie<lb break="yes"/>ihre In&#x017F;trumente 2200, auf dem<lb break="yes"/>
+                        <hi rendition="#fr">Chimbora&#x017F;&#x017F;o</hi> 3300 Fuß ho&#x0364;her, als<lb break="yes"/>
+                        <persName key="lacondamine_cmd">
+                            <hi rendition="#fr">Condamine</hi>
+                        </persName> und <hi rendition="#fr">
+                            <choice>
+                                <sic>Bonqueo</sic>
+                                <corr type="editorial">Bouquer</corr>
+                            </choice>.</hi> Auf<lb break="yes"/>
+                        <cb n="412"/> dem letztern kamen &#x017F;ie zu der Ho&#x0364;he<lb break="yes"/>von 3036 u&#x0364;ber die Fla&#x0364;che des Meers,<lb break="yes"/>und &#x017F;ahen das Blut aus ihren Augen,<lb break="yes" />Lippen und Zahnflei&#x017F;ch hervordringen,<lb break="yes" />er&#x017F;tarrten von einer Ka&#x0364;lte, die der<lb break="yes" />Thermometer nicht anzeigte, die aber<lb break="yes"/>von dem wenigen Wa&#x0364;rme&#x017F;toff ent&#x017F;tand,<lb break="yes"/>der &#x017F;ich wa&#x0364;hrend dem Einathmen in<lb break="yes"/>einer &#x017F;o verdu&#x0364;nnten Luft entwickelte.<lb break="yes"/>Durch eine tiefe und breite Spalte<lb break="yes"/>wurden &#x017F;ie gehindert, den Gipfel des<lb break="yes"/>
+                        <hi rendition="#fr">Chimbora&#x017F;&#x017F;o,</hi> ohngefehr 224 Toi-<lb break="no"/>&#x017F;en zu er&#x017F;teigen.</p>
+                    <lb break="yes"/>
+                    <p>Hier erhielt er Nachrichten von<lb break="yes"/>der Route des Capitain <persName key="baudin_tn">
+                            <hi rendition="#fr">Baudin,</hi>
+                        </persName>
+                        <lb break="yes"/>welche ihn no&#x0364;thigten, die Hoffnung,<lb break="yes" />ihn zu treffen, aufzugeben. Er be-<lb break="no"/>&#x017F;uchte daher <hi rendition="#fr">Cinna</hi> und den <placeName key="amazonas">
+                            <hi rendition="#fr">Amazo-<lb break="no"/>nen</hi>-Fluß</placeName>, um den Durchgang des<lb break="yes"/>Merkurs durch die Sonne zu beobach-<lb break="no"/>ten; ferner die Ruinen von <hi rendition="#fr">Lacta-<lb break="no"/>cunga, Hambato</hi> und <hi rendition="#fr" >Riobamba,</hi>
+                        <lb break="yes"/>welche in dem Erdbeben von 1797<lb break="yes" />zer&#x017F;to&#x0364;hrt wurden; u&#x0364;ber <hi rendition="#fr" >Paramo</hi> und<lb break="yes"/>
+                        <hi rendition="#fr">Soraguro-Loxa,</hi> wo &#x017F;ie den<lb break="yes" />Baum, den die Chinarinde bekleidet,<lb break="yes" />unter&#x017F;uchten.</p>
+                    <lb break="yes"/>
+                    <p>Ueber <hi rendition="#fr">Loxa</hi> trafen &#x017F;ie in <hi rendition="#fr" >Peru</hi>
+                        <lb break="yes"/>ein; &#x017F;ie u&#x0364;ber&#x017F;tiegen die <hi rendition="#fr">
+                            <placeName key="anden">Anden</placeName>,</hi> um<lb break="yes"/>den <placeName key="amazonas">
+                            <hi rendition="#fr">Amazonen</hi>-Fluß</placeName> zu erreichen.<lb break="yes"/>In zwey Tagen mußten &#x017F;ie 35 Mal<lb break="yes" />u&#x0364;ber den <hi rendition="#fr">Rio</hi> von <hi rendition="#fr" >Chamaya</hi> &#x017F;etzen,<lb break="yes"/>eine Pa&#x017F;&#x017F;age, die immer &#x017F;ehr gefa&#x0364;hr-<lb break="no"/>lich war. Sie betrachteten die &#x017F;tolzen<lb break="yes"/>Re&#x017F;te der Chau&#x017F;&#x017F;e<hi rendition="#aq">é</hi> von <hi rendition="#fr" >Ynga,</hi> die<lb break="yes"/>u&#x0364;ber den porphyrnen Ru&#x0364;cken der <hi rendition="#fr">An-<lb break="no"/>den</hi> auf 1200 bis 1800 Toi&#x017F;en Ho&#x0364;he<lb break="yes"/>von <hi rendition="#fr" >Cusco</hi> an bis <hi rendition="#fr">
+                            <placeName key="assuay">A&#x017F;&#x017F;oney</placeName>
+                        </hi> gehet,<lb break="yes"/>und mit Herbergen und Springbrun-<lb break="no" />nen be&#x017F;etzet i&#x017F;t. Herr v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                        <lb break="yes"/>
+                        <fw type="catch" place="bottom">&#x017F;uchte</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0007"/>
+                        <cb n="413"/> &#x017F;uchte die Lu&#x0364;cken der &#x017F;on&#x017F;t &#x017F;cho&#x0364;nen<lb break="yes"/>Karte des franzo&#x0364;&#x017F;i&#x017F;chen A&#x017F;tronomen<lb break="yes"/>
+                        <persName key="lacondamine_cmd">
+                            <hi rendition="#fr">Condamine</hi>
+                        </persName> u&#x0364;ber den <placeName key="amazonas">
+                            <hi rendition="#fr">Amazonen</hi>-<lb break="maybe"/>Fluß</placeName> dadurch auszufu&#x0364;llen, daß er auf<lb break="yes"/>die&#x017F;em Strohm bis an die Cataracten<lb break="yes"/>von <hi rendition="#fr">Rentema</hi> fuhr, und zu <hi rendition="#fr">Tome-<lb break="no"/>penda</hi> einen detaillirten Plan von<lb break="yes"/>die&#x017F;em unbekannten Theile des hohen<lb break="yes"/>
+                        <hi rendition="#fr">Maranou,</hi> durch eigene Unter&#x017F;uchun-<lb break="no"/>gen und eingezogene Nachrichten von<lb break="yes"/>andern Rei&#x017F;enden entwarf.</p>
+                    <lb break="yes"/>
+                    <p>Herr <persName key="bonpland_ajag">
+                            <hi rendition="#fr">Bonpland</hi>
+                        </persName> entdeckte in der<lb break="yes"/>Gegend von der Stadt <hi rendition="#fr">Jean</hi> neue<lb break="yes"/>Arten der <hi rendition="#fr">Cinchona</hi> und andere<lb break="yes"/>Pflanzen, worauf un&#x017F;ere Rei&#x017F;ende<lb break="yes"/>zum fu&#x0364;nften Mahl die <hi rendition="#fr">Cordilleren</hi>
+                        <lb break="yes"/>der <hi rendition="#fr">
+                            <placeName key="anden">Anden</placeName>
+                        </hi> pa&#x017F;&#x017F;irten, um nach <hi rendition="#fr">Peru</hi>
+                        <lb break="yes"/>zuru&#x0364;ckzukehren.</p>
+                    <lb break="yes"/>
+                    <p>In den Minen von <hi rendition="#fr">Hualguayok</hi>
+                        <lb break="yes"/>befindet &#x017F;ich das Silber in gro&#x017F;&#x017F;en<lb break="yes"/>Ma&#x017F;&#x017F;en 2000 Toi&#x017F;en hoch u&#x0364;ber dem<lb break="yes"/>Meere. Einige metallreiche Ga&#x0364;nge<lb break="yes"/>der&#x017F;elben enthalten ver&#x017F;teinerte Mu-<lb break="no"/>&#x017F;cheln, und &#x017F;ind jetzt die reich&#x017F;ten mit<lb break="yes"/>in <hi rendition="#fr">Peru. Caramarca,</hi> durch &#x017F;eine<lb break="yes"/>Ba&#x0364;der und durch die Tru&#x0364;mmer von<lb break="yes"/>
+                        <persName key="atahualpa">
+                            <hi rendition="#fr">Atahualpas</hi>
+                        </persName> Palla&#x017F;t beru&#x0364;hmt, wie<lb break="yes"/>die Spuren der ungeheuren alten<lb break="yes"/>Stadt <hi rendition="#fr" >Men&#x017F;iche</hi> mit Pyramiden<lb break="yes"/>
+                        <cb n="414"/> geziert, in deren einer man im 18ten<lb break="yes"/>Seculo fu&#x0364;r mehr als 4 Millionen<lb break="yes"/>Livres ge&#x017F;chlagenes Gold fand, wur-<lb break="no"/>den von ihnen be&#x017F;uchet.</p>
+                    <lb break="yes"/>
+                    <p>Von den <hi rendition="#fr">
+                            <placeName key="anden">Anden</placeName>
+                        </hi> erblickten &#x017F;ie<lb break="yes"/>zuer&#x017F;t das <hi rendition="#fr">Stille Meer,</hi> und das<lb break="yes"/>Thal, de&#x017F;&#x017F;en Bewohner nichts vom<lb break="yes"/>Regen und Donner wi&#x017F;&#x017F;en, und wo<lb break="yes"/>unter einem glu&#x0364;cklichen Clima die<lb break="yes"/>ab&#x017F;olute&#x017F;te, und dem Men&#x017F;chen gefa&#x0364;hr-<lb break="no"/>kich&#x017F;te Gewalt, die Theocratie &#x017F;elb&#x017F;t<lb break="yes"/>die Wohltha&#x0364;tigkeit der Natur nachzu-<lb break="no"/>ahmen &#x017F;cheint.</p>
+                    <lb break="yes"/>
+                    <p>An der du&#x0364;rren Ku&#x0364;&#x017F;te des <hi rendition="#fr" >Su&#x0364;d-<lb break="no"/>meers</hi> rei&#x017F;eten &#x017F;ie nach <hi rendition="#fr">Lima,</hi> ver-<lb break="no"/>weilten da&#x017F;elb&#x017F;t einige Monate, und<lb break="yes"/>bemerkten die Lebhaftigkeit des Gei&#x017F;tes<lb break="yes"/>und die liberalen Ge&#x017F;innungen ihrer<lb break="yes"/>Einwohner. Ein ungewo&#x0364;hnliches<lb break="yes"/>Glu&#x0364;ck erlaubte den Hrn. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                        <lb break="yes"/>da den Durchgang des Merkurs zu<lb break="yes"/>beobachten. Auffallend war es ihm,<lb break="yes"/>die neue&#x017F;ten litterari&#x017F;chen Producte in<lb break="yes"/>der Chemie, Mathematik und Phy-<lb break="no"/>&#x017F;iologie hier zu finden; und er mußte<lb break="yes"/>den Ver&#x017F;tand der Eingebohrnen, die<lb break="yes" />in <hi rendition="#fr">Europa</hi> fu&#x0364;r Weichlinge gelten,<lb break="yes"/>bewundern.<lb break="yes"/>
+                        <hi rendition="#c">(<hi rendition="#g">Der Schluß folgt.</hi>)</hi>
+                    </p>
+                    <lb break="yes"/>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <pb facs="#f0008"/>
+            <div n="1">
+                <head>Rei&#x017F;e der Herren von <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> und <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName>
+                    <lb break="yes"/>nach den Wendekrei&#x017F;en.</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(Schluß.)</hi>
+                </p>
+                <lb break="yes"/>
+                <cb n="417"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Jahr 1803.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">I</hi>m Januar &#x017F;chifften &#x017F;ich un&#x017F;ere<lb break="yes"/>Rei&#x017F;enden nach <hi rendition="#fr" >Guayaquil</hi>
+                        <lb break="yes"/>ein, eine Fahrt, die bei gu&#x0364;n&#x017F;ti-<lb break="no"/>gen Stro&#x0364;hmungen und Winden in 3<lb break="yes"/>bis 4 Tagen vollbracht wird, da die<lb break="yes"/>Ru&#x0364;ckrei&#x017F;e &#x017F;o viele Monate erfordert.<lb break="yes"/>Die &#x017F;tolze Vegetation des Hafens<lb break="yes"/>u&#x0364;bertrifft alle Be&#x017F;chreibung; er liegt<lb break="yes"/>an einem großen Fluß, und hier war<lb break="yes"/>es, wo &#x017F;ie das ununterbrochene Bru&#x0364;l-<lb break="no"/>len des Vulkans <hi rendition="#fr" >Cotopaxi</hi> ho&#x0364;rten,<lb break="yes"/>der am 6ten Januar zum <hi rendition="#fr">Ausbruch</hi>
+                        <lb break="yes"/>kam. Sie rei&#x017F;ten &#x017F;ogleich ab, um<lb break="yes"/>nahe Zeugen &#x017F;einer Verwu&#x0364;&#x017F;tung zu<lb break="yes"/>&#x017F;eyn, aber die Nachricht des baldigen<lb break="yes" />Abgangs ihrer Fregatte <hi rendition="#fr">Atlante</hi> no&#x0364;-<lb break="no"/>thigte &#x017F;ie, wieder umzukehren.</p>
+                    <lb break="yes"/>
+                    <p>Nach einer 30ta&#x0364;gigen glu&#x0364;cklichen<lb break="yes"/>Fahrt auf dem &#x017F;tillen Meere erreich-<lb break="no"/>ten &#x017F;ie <hi rendition="#fr">
+                            <placeName key="acapulco">Acapulco</placeName>
+                        </hi> in Neu&#x017F;panien, das<lb break="yes"/>durch ein Ba&#x017F;&#x017F;in, welches in Granit-<lb break="no"/>
+                        <cb n="418"/> fel&#x017F;en gehauen zu &#x017F;eyn &#x017F;cheint, durch<lb break="yes"/>die heftigen Erdbeben, &#x017F;ein unge&#x017F;un-<lb break="no"/>des Clima, und das Elend &#x017F;einer Ein-<lb break="no" />wohner beru&#x0364;hmt i&#x017F;t, die hier Millio-<lb break="no"/>nen von Pia&#x017F;tern nach den <hi rendition="#fr">Philippi-<lb break="no" />nen</hi> und <hi rendition="#fr">China</hi> mu&#x0364;&#x017F;&#x017F;en ein&#x017F;chiffen<lb break="yes" />&#x017F;ehen.</p>
+                    <lb break="yes"/>
+                    <p>Hr. v. <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> wollte aus er-<lb break="no"/>heblichen Gru&#x0364;nden nur wenige Mo-<lb break="no"/>nate in <hi rendition="#fr">Mexico</hi> bleiben, und dann<lb break="yes"/>nach einer vierja&#x0364;hrigen Abwe&#x017F;enheit<lb break="yes"/>nach <hi rendition="#fr">Europa</hi> zuru&#x0364;ckkehren; doch die<lb break="yes"/>Reize des Landes, die Ho&#x017F;pitalita&#x0364;t der<lb break="yes"/>Einwohner, die Furcht vor dem in<lb break="yes"/>
+                        <hi rendition="#fr">Vera Crux</hi> herr&#x017F;chenden &#x017F;chwarzen<lb break="yes"/>Erbrechen, bewogen ihn, &#x017F;eine Ab-<lb break="no" />rei&#x017F;e bis im Winter aufzu&#x017F;chieben.<lb break="yes"/>Nachdem ihn botani&#x017F;che, phy&#x017F;ikali&#x017F;che<lb break="yes" />Unter&#x017F;uchungen und die La&#x0364;nge von<lb break="yes"/>
+                        <hi rendition="#fr">
+                            <placeName key="acapulco">Acapulco</placeName>
+                        </hi> be&#x017F;cha&#x0364;ftigt hatten, erhob<lb break="yes"/>er &#x017F;ich durch die &#x017F;chwu&#x0364;len Tha&#x0364;ler<lb break="yes" />von <hi rendition="#fr">Mescala</hi> und <hi rendition="#fr" >Papagayo,</hi> wo<lb break="yes"/>
+                        <fw type="catch" place="bottom">der</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0009"/>
+                        <cb n="419"/> der Thermometer &#x017F;ich im Schatten auf<lb break="yes" />32° <persName key="reaumur_rafd">Reaumu&#x0364;r</persName> hielt, zu den 6 bis<lb break="yes"/>700 Toi&#x017F;en u&#x0364;ber dem Meere erhabe-<lb break="no"/>nen Ebenen von <hi rendition="#fr">Tasco</hi> u. &#x017F;. w., wo<lb break="yes"/>unter einem ku&#x0364;hlen Clima die Eichen,<lb break="yes"/>Cypre&#x017F;&#x017F;en, Taunen, die baumartigen<lb break="yes"/>Farrenkra&#x0364;uter und europa&#x0364;i&#x017F;ches Ge-<lb break="no"/>treide gedeihen. In den a&#x0364;lte&#x017F;ten und<lb break="yes"/>&#x017F;on&#x017F;t reich&#x017F;ten Bergwerken von <hi rendition="#fr">Tasco</hi>
+                        <lb break="yes"/>unter&#x017F;uchten &#x017F;ie die Natur der Silber-<lb break="no"/>ga&#x0364;nge, und &#x017F;tiegen durch <hi rendition="#fr" >Cuerna-<lb break="no"/>raca</hi> nach der Haupt&#x017F;tadt <hi rendition="#fr">Mexico,</hi>
+                        <lb break="yes"/>welche 150,000 Einwohner za&#x0364;hlet,<lb break="yes" />und auf dem alten <hi rendition="#fr">Tenochritla&#x0364;n</hi> er-<lb break="no"/>bauet i&#x017F;t. Sie liegt mit breiten und<lb break="yes" />&#x017F;chnurgraden Straßen zwi&#x017F;chen zwey<lb break="yes" />Schneecolo&#x017F;&#x017F;en, wovon der eine noch<lb break="yes"/>brennet, und die die Ho&#x0364;he von 1160<lb break="yes"/>Toi&#x017F;en haben; genießt ein gema&#x0364;ßigtes<lb break="yes"/>Clima, hat Cana&#x0364;le, Alleen, und eine<lb break="yes"/>große Menge kleiner Do&#x0364;rfer um &#x017F;ich<lb break="yes"/>her: &#x017F;o daß &#x017F;ie mit den &#x017F;cho&#x0364;n&#x017F;ten<lb break="yes"/>Sta&#x0364;dten in <hi rendition="#fr">Europa</hi> eine Verglei-<lb break="no"/>chung ertra&#x0364;gt. Noch zeichnet &#x017F;ie &#x017F;ich<lb break="yes"/>durch große wi&#x017F;&#x017F;en&#x017F;chaftliche An&#x017F;tal-<lb break="no" />ten aus, die ihres gleichen nicht in der<lb break="yes"/>neuen, und &#x017F;ich nicht ha&#x0364;ufig in der al-<lb break="no"/>ten Welt finden. Der botani&#x017F;che<lb break="yes"/>Garten, unter Direction des Herrn<lb break="yes"/>
+                        <persName key="cervantes_vicente">
+                            <hi rendition="#fr">Cervantes,</hi>
+                        </persName> das In&#x017F;titut des Herrn<lb break="yes"/>
+                        <persName key="sesselacasta_md">
+                            <hi rendition="#fr">Se&#x017F;&#x017F;e,</hi>
+                        </persName> lediglich dem Studium mexi-<lb break="no"/>cani&#x017F;cher Pflanzen be&#x017F;timmt, und mit<lb break="yes"/>den be&#x017F;ten Zeichnern ver&#x017F;ehen, die<lb break="yes"/>Berg&#x017F;chule, die man der Freigebigkeit<lb break="yes"/>des Bergwerks-Corps, und dem Ge-<lb break="no"/>nie des Herrn <persName key="elhuyar_fd">
+                            <hi rendition="#fr">D&#x2019;Ethuyar</hi>
+                        </persName> verdankt,<lb break="yes"/>die Maler, Kupfer&#x017F;techer- und Bild-<lb break="no"/>hauer-Akademie, verbreiten Ge-<lb break="no" />&#x017F;chmack und Aufkla&#x0364;rung in einem<lb break="yes"/>
+                        <cb n="420"/> Lande, wo Reichthu&#x0364;mer ihnen entge-<lb break="yes" />gen&#x017F;treben.</p>
+                    <lb break="yes"/>
+                    <p>Die La&#x0364;nge von <hi rendition="#fr">Mexico,</hi> die bisher<lb break="yes"/>um zwei Grad unrichtig war, be&#x017F;timm-<lb break="no" />te Herr von <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> mit &#x017F;cho&#x0364;nen<lb break="yes"/>In&#x017F;trumenten aus der Bergwerks-<lb break="maybe"/>Schule. Er be&#x017F;uchte darauf die<lb break="yes"/>Bergwerke von <hi rendition="#fr">Moran</hi> und <hi rendition="#fr">Real<lb break="yes"/>del Monte,</hi> und unter&#x017F;uchte die<lb break="yes"/>
+                        <hi rendition="#fr">Ob&#x017F;idiane</hi> von <hi rendition="#fr" >Oyamel,</hi> welche in<lb break="yes"/>dem Perl&#x017F;tein und Porphyr Lager bil-<lb break="no"/>den, und den alten Bewohnern zu<lb break="yes" />Me&#x017F;&#x017F;ern dienten. Das ganze Land<lb break="yes"/>bietet die merkwu&#x0364;rdig&#x017F;ten Pha&#x0364;nomene<lb break="yes"/>fu&#x0364;r die Geologie dar, die Herr <hi rendition="#fr">del<lb break="yes"/>Rio,</hi> ein Schu&#x0364;ler von <persName key="werner_ag">
+                            <hi rendition="#fr">Werner,</hi>
+                        </persName>
+                        <lb break="yes"/>entwickelt hat.</p>
+                    <lb break="yes"/>
+                    <p>Nach der Ru&#x0364;ckkehr von <hi rendition="#fr">Moran</hi>
+                        <lb break="yes"/>im Julius, unternahm man einen Aus-<lb break="no"/>flug in den mitterna&#x0364;chtlichen Theil des<lb break="yes"/>Ko&#x0364;nigreichs. Zu <hi rendition="#fr">Huehuetoca</hi> hat<lb break="yes"/>man eine Oeffnung in das Gebirge<lb break="yes"/>von <hi rendition="#fr">Sincoq</hi> gemacht, die 6 Millio-<lb break="no"/>nen Pia&#x017F;ter ko&#x017F;tet, um das Wa&#x017F;&#x017F;er<lb break="yes"/>aus dem Thale von <hi rendition="#fr">Mexico</hi> in den<lb break="yes"/>Fluß <hi rendition="#fr">Montezuma</hi> zu leiten. <hi rendition="#fr">Gua-<lb break="no"/>naxuato,</hi> mit 50,000 Einwohnern,<lb break="yes" />liegt in einem engen Ke&#x017F;&#x017F;el, und hat<lb break="yes"/>noch betra&#x0364;chtlichere Bergwerke, als<lb break="yes"/>
+                        <hi rendition="#fr">Poto&#x017F;i.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Das Bergwerk des Grafen von<lb break="yes"/>
+                        <hi rendition="#fr">Valenziana,</hi> wodurch eine betra&#x0364;cht-<lb break="no"/>liche Stadt ent&#x017F;tand, auf einem Hu&#x0364;gel,<lb break="yes"/>wo vor 30 Jahren noch Ziegen weide-<lb break="no"/>ten, hat bereits eine &#x017F;eigere Tiefe von<lb break="yes"/>1840 Fuß. Es i&#x017F;t das tief&#x017F;te und<lb break="yes"/>reich&#x017F;te auf der Erde; der reine Ge-<lb break="no"/>winn betra&#x0364;gt im Durch&#x017F;chnitt ja&#x0364;hrlich<lb break="yes"/>3 Millionen Livres, in einzelnen<lb break="yes"/>
+                        <fw type="catch" place="bottom">Jah-</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0010"/>
+                        <cb n="421"/> Jahren belief er &#x017F;ich auf 5 bis 6 Mi-<lb break="no" />lionen.</p>
+                    <lb break="yes"/>
+                    <p>Nach zweimonatlichen Me&#x017F;&#x017F;ungen<lb break="yes"/>und geologi&#x017F;chen Unter&#x017F;uchungen und<lb break="yes" />Pru&#x0364;fung der Ba&#x0364;der von <hi rendition="#fr">Comagil-<lb break="no"/>las,</hi> die <persName key="sonnerat">
+                            <hi rendition="#fr">Sonnerat</hi>
+                        </persName> fu&#x0364;r die wa&#x0364;rm&#x017F;ten<lb break="yes"/>auf der Erde ha&#x0364;lt, deren Temperatur<lb break="yes"/>11° <persName key="reaumur_rafd">Reaumur</persName> ho&#x0364;her, als die der <hi rendition="#fr">Phi-<lb break="no"/>lippini&#x017F;chen</hi> In&#x017F;eln i&#x017F;t, gingen un&#x017F;ere<lb break="yes" />Rei&#x017F;ende nach der ehemaligen Haupt-<lb break="no"/>&#x017F;tadt des Ko&#x0364;nigreichs <hi rendition="#fr">Michoacan,<lb break="yes" />Valladolid.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Von da begaben &#x017F;ie &#x017F;ich an die Ku&#x0364;-<lb break="no" />&#x017F;ten des &#x017F;tillen Meers, in die Ebene<lb break="yes"/>
+                        <hi rendition="#fr">Jorullo,</hi> wo im Jahre 1750 in<lb break="yes"/>einer <hi rendition="#fr">einzigen</hi> Nacht, in einer der<lb break="yes" />furchtbar&#x017F;ten Revolutionen, die je der<lb break="yes"/>Erdball erlitt, aus der Ebne &#x017F;ich ein<lb break="yes"/>Vulkan von 1494 Fuß Ho&#x0364;he erhob,<lb break="yes"/>der noch mit mehr als 2000 kleinen<lb break="yes"/>Oeffnungen umgeben i&#x017F;t. Sie &#x017F;tiegen<lb break="yes"/>in den brennenden Crater des großen<lb break="yes"/>Vulkans 258 Fuß perpendiculair hin-<lb break="no"/>ab, &#x017F;prangen u&#x0364;ber Spalten, die ent-<lb break="no"/>zu&#x0364;ndetes, ge&#x017F;chwefeltes Wa&#x017F;&#x017F;er&#x017F;toffgas<lb break="yes"/>ausdampften, und kamen mit vieler<lb break="yes"/>Gefahr fa&#x017F;t bis in den Grund des<lb break="yes"/>Craters, de&#x017F;&#x017F;en mit Kohlen&#x017F;a&#x0364;ure au&#x017F;-<lb break="no"/>&#x017F;erordentlich u&#x0364;berladene Luft &#x017F;ie unter-<lb break="no"/>&#x017F;uchten.</p>
+                    <lb break="yes"/>
+                    <p>Aus <hi rendition="#fr">Mechoacan</hi> kehrten &#x017F;ie u&#x0364;ber<lb break="yes"/>die Ebene von <hi rendition="#fr">Tolucca</hi> nach <hi rendition="#fr">Mexico</hi>
+                        <lb break="yes"/>zuru&#x0364;ck, auf welchem Wege &#x017F;ie den be-<lb break="no"/>ru&#x0364;hmten Ha&#x0364;nde-Baum, den <hi rendition="#fr" >Cheiron-<lb break="no"/>tho&#x017F;taemon</hi> des Herrn <persName key="cervantes_vicente">
+                            <hi rendition="#fr">Cervantes,</hi>
+                        </persName>
+                        <lb break="yes"/>eine Gattung, die ein fa&#x017F;t einziges<lb break="yes" />Pha&#x0364;nomen dar&#x017F;tellt, weil na&#x0364;mlich von<lb break="yes" />den a&#x0364;lte&#x017F;ten Zeiten her nur ein einziges<lb break="yes"/>
+                        <cb n="422"/> Individuum davon exi&#x017F;tiret, in Au-<lb break="no" />gen&#x017F;chein nahmen.</p>
+                    <lb break="yes"/>
+                    <p>In <hi rendition="#fr">Mexico</hi> verweilten &#x017F;ie, um ihre<lb break="yes"/>be&#x017F;onders an Grasarten reiche Herba-<lb break="no" />ria und geologi&#x017F;che Sammlungen zu<lb break="yes"/>ordnen, und vorzu&#x0364;glich um die Bla&#x0364;t-<lb break="no"/>ter zu dem geologi&#x017F;chen Atlas, den<lb break="yes"/>Herr von <hi rendition="#fr">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi> herauszugeben<lb break="yes"/>Willens i&#x017F;t, ins Reine zeichnen zu<lb break="yes"/>la&#x017F;&#x017F;en. Sie wohnten der Errichtung<lb break="yes"/>der colo&#x017F;&#x017F;ali&#x017F;chen Statue des Ko&#x0364;nigs<lb break="yes"/>zu Pferde bei, die ein einziger Ku&#x0364;n&#x017F;tler,<lb break="yes"/>
+                        <hi rendition="#fr">Tol&#x017F;a,</hi> mit Ueberwindung von<lb break="yes" />Schwierigkeiten, wovon man &#x017F;ich in<lb break="yes"/>
+                        <hi rendition="#fr">Europa</hi> keine richtige Vorflellung<lb break="yes" />machen kann, modellirte, goß, und<lb break="yes"/>auf einem hohen Fußge&#x017F;tell errichtete.<lb break="yes"/>Sie i&#x017F;t, im rein&#x017F;ten, einfach&#x017F;ten Styl<lb break="yes"/>gearbeitet, ein Mei&#x017F;terwerk.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Jahr 1804.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Im Januar verlie&#x017F;&#x017F;en un&#x017F;re Rei&#x017F;en-<lb break="no" />den <hi rendition="#fr">Mexico,</hi> um den o&#x0364;&#x017F;tlichen Ab-<lb break="no"/>hang der <hi rendition="#fr">Cordilleren</hi> Neu&#x017F;paniens<lb break="yes"/>zu unter&#x017F;uchen; &#x017F;ie maßen die Vulkane<lb break="yes"/>von <hi rendition="#fr">La Puebla.</hi> Sie fanden, daß<lb break="yes"/>der Vulkan <hi rendition="#fr" >Popocatepec,</hi> den<lb break="yes"/>
+                        <persName key="sonneschmidt_ft">
+                            <hi rendition="#fr">Sonnen&#x017F;chmidt</hi>
+                        </persName> 2557 Toi&#x017F;en hoch<lb break="yes"/>erkletterte, ho&#x0364;her als der <hi rendition="#fr">Pic</hi> von<lb break="yes"/>
+                        <hi rendition="#fr">Oricaba</hi> &#x017F;ey, auch maßen &#x017F;ie die<lb break="yes"/>große Pyramide von <hi rendition="#fr">Cholula,</hi> ein<lb break="yes"/>my&#x017F;terio&#x0364;&#x017F;es Werk, aus gebrannten<lb break="yes"/>Ziegeln von den <hi rendition="#fr">Toltuquen</hi> empor-<lb break="no"/>gethu&#x0364;rmt, die man bis zum Gipfel<lb break="yes"/>er&#x017F;teigen kann.</p>
+                    <lb break="yes"/>
+                    <p>In <hi rendition="#fr">Xalapa,</hi> 674 Toi&#x017F;en u&#x0364;ber<lb break="yes"/>das Meer erhaben, genießt man die<lb break="yes" />Fru&#x0364;chte aller Himmels&#x017F;triche. Die<lb break="yes"/>
+                        <fw type="catch" place="bottom">Tem-</fw>
+                        <lb break="yes"/>
+                        <pb facs="#f0011"/>
+                        <cb n="423"/> Temperatur i&#x017F;t ho&#x0364;ch&#x017F;t ge&#x017F;und. Ein<lb break="yes"/>Herr <persName key="murphy_t">
+                            <hi rendition="#fr">Thomas Murphy,</hi>
+                        </persName> reich und<lb break="yes"/>gelehrt, erleichterte ihnen, ihre Ver&#x017F;u-<lb break="no"/>che in den benachbarten Gebirgen zu<lb break="yes"/>machen.</p>
+                    <lb break="yes"/>
+                    <p>Der Weg nach <hi rendition="#fr">Perote</hi> geht durch<lb break="yes" />undurchdringliche Wa&#x0364;lder; indeß ar-<lb break="no"/>beitet man jetzt an einer Heer&#x017F;traße,<lb break="yes"/>die un&#x017F;ere Rei&#x017F;enden dreimal mit dem<lb break="yes"/>Barometer nivellirten. Sie er&#x017F;tiegen<lb break="yes"/>den <hi rendition="#fr">Cofre,</hi> der 162 Toi&#x017F;en ho&#x0364;her,<lb break="yes"/>als der Pic auf <hi rendition="#fr">Teneriffa</hi> i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Man maaß auch den Pic von <hi rendition="#fr">Ori-<lb break="no"/>zava,</hi> de&#x017F;&#x017F;en hellleuchtende Ausdu&#x0364;n-<lb break="no" />&#x017F;tungen aus &#x017F;einem Crater, ihn einem<lb break="yes" />untergehenden Sterne a&#x0364;hnlich machen.<lb break="yes"/>Ueber &#x017F;eine La&#x0364;nge &#x017F;ind von <persName key="ferrerycafranga_jj">
+                            <hi rendition="#fr">Ferrer</hi>
+                        </persName>
+                        <lb break="yes"/>genaue Unter&#x017F;uchungen ange&#x017F;tellt.</p>
+                    <lb break="yes"/>
+                    <p>Nach einem intere&#x017F;&#x017F;anten Aufent-<lb break="no"/>halte &#x017F;tiegen un&#x017F;ere Rei&#x017F;enden nach<lb break="yes"/>
+                        <hi rendition="#fr">Vera Crux</hi> hinab, der zwi&#x017F;chen be-<lb break="no"/>weglichen Sandhu&#x0364;geln liegt, wo das<lb break="yes"/>
+                        <cb n="424"/> Zuru&#x0364;ckprellen der Sonnen&#x017F;trahlen ein<lb break="yes"/>er&#x017F;tickende Hitze verur&#x017F;acht. Glu&#x0364;cklich<lb break="yes"/>entgingen &#x017F;ie dem dort gra&#x017F;&#x017F;irenden,<lb break="yes"/>&#x017F;chwarzen Erbrechen.</p>
+                    <lb break="yes"/>
+                    <p>Sie rei&#x017F;eten mit einer &#x017F;pani&#x017F;chen<lb break="yes" />Fregatte nach der <hi rendition="#fr">Havanah,</hi> um<lb break="yes" />ihre da&#x017F;elb&#x017F;t deponirten Herbaria und<lb break="yes" />Sammlungen in Empfang zu neh-<lb break="no"/>men. Darauf be&#x017F;uchten &#x017F;ie die verei-<lb break="no"/>nigten Staaten; ein heftiger Sturm<lb break="yes"/>brachte &#x017F;ie in dem <placeName key="bahamakanal" >Canal von <hi rendition="#fr">Baha-<lb break="no"/>me</hi>
+                        </placeName> in die gro&#x0364;ße Gefahr; er dauerte<lb break="yes"/>7 ganze Tage.</p>
+                    <lb break="yes"/>
+                    <p>Nach 32 Tagen landeten &#x017F;ie in<lb break="yes"/>
+                        <hi rendition="#fr">Philadelphia</hi> an, be&#x017F;uchten die<lb break="yes"/>Stadt <hi rendition="#fr">Wa&#x017F;hington,</hi> und kehrten<lb break="yes"/>im Augu&#x017F;t 1804. nach <hi rendition="#fr" >Europa</hi> zu-<lb break="no"/>ru&#x0364;ck. Sie gingen u&#x0364;ber <hi rendition="#fr">Bordeaux,</hi>
+                        <lb break="yes"/>und brachten eine große Anzahl Zeich-<lb break="no" />nungen, 35 Ki&#x017F;ten mit Sammlun-<lb break="no"/>gen, und 6000 Arten Pflanzen mit<lb break="yes"/>&#x017F;ich.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

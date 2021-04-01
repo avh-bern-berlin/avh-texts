@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="138" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">
+                        <hi rendition="#k">Extrait</hi> d&#x2019;une lettre d&#x2019;Alexandre Hum-<lb break="no"/>boldt au C. <persName key="delambre_jbj" >Delambre</persName>, secrétaire-per-<lb break="no"/>pétuel de l&#x2019;institut national.</hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <hi rendition="#et">De Lima, le 25 novembre 1802.</hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>Votre lettre a mis deux ans à venir me trouver<lb break="yes"/>dans la Cordillière des <placeName key="anden">Andes</placeName>. Je la re&#x00E7;us le<lb break="yes"/>lendemain d&#x2019;une seconde expédition que je fis<lb break="yes"/>au cratère du volcan de Pichincha, pour y<lb break="yes" />porter un électromètre de <persName key="volta_agv">Volta</persName> et pour en<lb break="yes"/>mesurer le diamètre, que je trouve de 752<lb break="yes" />toises, tandis que celui du Vésuve n&#x2019;en a<lb break="yes"/>que 312.</p>
+                <lb break="yes"/>
+                <p>Le peu de loisir qui me reste aujourd&#x2019;hui,<lb break="yes"/>ne me permet pas de vous tracer le tableau de<lb break="yes"/>mes voyages et de mes occupations depuis notre<lb break="yes"/>retour de Rio-Negro; vous savez que c&#x2019;est à<lb break="yes"/>la Havane que nous avons re&#x00E7;u la fausse nou-<lb break="no"/>velle du départ du capitaine <persName key="baudin_tn" >Baudin</persName> pour Bue-<lb break="no"/>nos-Ayres. Fidèle à la promesse que j&#x2019;avais faite<lb break="yes"/>de le rejoindre où je le pourrais, et persuadé<lb break="yes"/>que je serais plus utile aux sciences en joi-<lb break="no"/>gnant mes traveaux à ceux des naturalistes qui<lb break="yes" />suivent le capitaine <persName key="baudin_tn">Baudin</persName>, je n&#x2019;ai pas hésité<lb break="yes"/>un moment à sacrifier la petite gloire de finir<lb break="yes"/>ma propre expédition, et j&#x2019;ai frété à l&#x2019;instant<lb break="yes"/>
+                    <pb n="139" facs="#f0002"/> un petit b&#x00E2;timent au <placeName key="batabano">Batabano</placeName> pour me rendre<lb break="yes"/>à Carthagène des Indes. Les temp&#x00EA;tes ont al-<lb break="no"/>longé ce court trajet de plus d&#x2019;un mois, les<lb break="yes"/>brises ayant cessé dans la mer du Sud, où<lb break="yes"/>je comptais chercher le C. <persName key="baudin_tn">Baudin</persName>, et je me<lb break="yes"/>suis engagé dans la pénible route de Honda,<lb break="yes"/>d&#x2019;Ibagué, du passage de la montagne de Quin-<lb break="no"/>diù, de Popayan, de Pasta à Quito. Ma santé<lb break="yes"/>a continué de résister merveilleusement au chan-<lb break="no" />gement de température auquel on est exposé<lb break="yes"/>dans cette route en descendant chaque jour<lb break="yes"/>des neiges de 2460 toises à des vallées arden-<lb break="no"/>tes, où le thermomètre de <persName key="reaumur_rafd" >Réaumur</persName> n&#x2019;est<lb break="yes"/>jamais au-desseus de 24 ou 26 degrés. Mon<lb break="yes"/>compagnon, dont les lumières, le courage et<lb break="yes"/>l&#x2019;immense activité m&#x2019;ont été du plus grand<lb break="yes"/>secours dans les recherches botaniques et d&#x2019;ana-<lb break="no"/>tomie comparée, le C. <persName key="bonpland_ajag" >Bompland</persName> a souffert<lb break="yes"/>des fièvres tierces pendant deux mois. Le temps<lb break="yes"/>des grandes pluies nous a pris dans le passage<lb break="yes"/>le plus critique, le haut plateau des Pastas; et,<lb break="yes"/>après un voyage de huit mois, nous sommes<lb break="yes" />arrivés à Quito, pour y apprendre que le<lb break="yes"/>C. <persName key="baudin_tn">Baudin</persName> avait pris la route de l&#x2019;ouest à l&#x2019;est<lb break="yes"/>par le Cap-de-Bonne-Espérance. Accoutumés<lb break="yes"/>aux revers, nous nous sommes consolés par<lb break="yes" />l&#x2019;idée d&#x2019;avoir fait de si grands sacrifices pour<lb break="yes" />avoir voulu le bien. En jetant les yeux sur<lb break="yes"/>nos herbiers, nos mesures barométriques et<lb break="yes"/>géodésiques, nos dessins, nos expériences sur<lb break="yes"/>l&#x2019;air de la Cordillière, nous n&#x2019;avons pas regretté<lb break="yes"/>d&#x2019;avoir parcouru des pays dont la majeure par-<lb break="no"/>
+                    <pb n="140" facs="#f0003"/> tie n&#x2019;a jamais été visitée par aucun naturaliste.<lb break="yes"/>Nous avons senti que l&#x2019;homme ne doit comp-<lb break="no"/>ter sur rien que sur ce qu&#x2019;il produit par sa<lb break="yes"/>propre énergie. La province de Quito, le<lb break="yes" />plateau le plus élevé du monde, et déchiré<lb break="yes"/>par la grande catastrophe du 4 février 1797,<lb break="yes"/>nous a fourni un vaste champ d&#x2019;observations<lb break="yes"/>physiques. De si énormes volcans dont les<lb break="yes"/>flammes s&#x2019;élèvent souvent à 1000 mètres de<lb break="yes"/>hauteur, n&#x2019;ont jamais pu produire une goutte<lb break="yes"/>de lave coulante, elles vomissent de l&#x2019;eau,<lb break="yes"/>du gaz hydrogène sulfuré, de la boue, et de<lb break="yes" />l&#x2019;argile carbonée. Depuis 1797, toute cette par-<lb break="no"/>tie du monde est en agitation. Nous éprouvons<lb break="yes"/>à chaque instant des secousses affreuses, et<lb break="yes"/>dans les plaines de Riobomba, le bruit sou-<lb break="no"/>terrain ressemble à celui d&#x2019;une montagne qui<lb break="yes"/>s&#x2019;écroule sous nos pieds. L&#x2019;air atmosphérique<lb break="yes"/>et les terres humectées (tous ces volcans se<lb break="yes" />trouvent dans un porphyre décomposé), pa-<lb break="no"/>raissent les grands agens de ces combustions,<lb break="yes"/>de ces fermentations souterraines... On a cru<lb break="yes"/>jusqu&#x2019;ici à Quito que 2470 toises était la plus<lb break="yes"/>grande hauteur à laquelle les hommes pussent<lb break="yes"/>résister à la rareté de l&#x2019;air. Au mois de mars<lb break="yes"/>1802, nous pass&#x00E2;mes quelques jours dans les<lb break="yes"/>grandes plaines qui entourent le volcan d&#x2019;An-<lb break="no"/>tisana à 2107 t., où les b&#x0153;ufs, quand on les<lb break="yes"/>chasse, vomissent souvent du sang. Le 16<lb break="yes"/>mars, nous reconn&#x00FB;mes un chemin sur la<lb break="yes"/>neige, une pente douce sur laquelle nous<lb break="yes"/>mont&#x00E2;mes à 2773 toises de hauteur. L&#x2019;air<lb break="yes"/>
+                    <pb n="141" facs="#f0004"/> y contenait 0,008 d&#x2019;acide carbonique, 0,218<lb break="yes"/>d&#x2019;oxigène, et 0,774 d&#x2019;azote. Le thermomètre<lb break="yes"/>de <persName key="reaumur_rafd" >Réaumur</persName> n&#x2019;était qu&#x2019;à 15°, il ne fit pas<lb break="yes"/>froid du tout; mais le sang nous sortait des lè-<lb break="no" />vres et des yeux. Le local ne permit pas de faire<lb break="yes" />l&#x2019;expérience de la boussole de <persName key="borda_jcd" >Borda</persName> que dans<lb break="yes"/>une grotte plus basse à 2467 toises. L&#x2019;inten-<lb break="no"/>sité des forces magnétiques était plus grande<lb break="yes"/>à cette hauteur qu&#x2019;à Quito dans le rapport<lb break="yes"/>de 230 <choice>
+                        <sic>
+                            <hi rendition="#i">:</hi>
+                        </sic>
+                        <corr type="editorial">:</corr>
+                    </choice>:218; mais il ne faut pas oublier<lb break="yes"/>que souvent le nombre des oscillations aug-<lb break="no"/>mente quand l&#x2019;inclinaison diminue, et que<lb break="yes"/>cette intensité augmente par la masse de la<lb break="yes"/>montagne dont les porphyres affectent l&#x2019;aimant.<lb break="yes"/>Dans l&#x2019;expédition que je fis, le 23 juin 1802,<lb break="yes"/>au Chimborazo, nous avons prouvé qu&#x2019;avec<lb break="yes" />de la patience on peut soutenir une plus grande<lb break="yes"/>rareté de l&#x2019;air; nous parv&#x00EE;nmes 500 toises plus<lb break="yes"/>haut que <persName key="lacondamine_cmd">la Condamine</persName> (au Corazon), et nous<lb break="yes"/>port&#x00E2;mes au Chimborazo des instrumens à 3031<lb break="yes"/>toises; voyant descendre le mercure dans le<lb break="yes" />baromètre à 13 pouces 11,2 lignes; le ther-<lb break="no"/>momètre étant de 1°3&#x2019; au-dessous de zéro,<lb break="yes"/>nous saign&#x00E2;mes encore des lèvres. Nos Indiens<lb break="yes"/>nous abandonnèrent comme de coutume; le<lb break="yes"/>C. <persName key="bonpland_ajag">Bompland</persName> et M. <persName key="montufarylarrea_c">Montuson</persName>, fils du <persName key="montufarylarrea_jpd">mar-<lb break="no"/>quis de Selvalegve</persName> de Quito, furent les seuls<lb break="yes"/>qui résistèrent; nous sentimes tous un mal-<lb break="no"/>aise, une débilité, une envie de vomir, qui<lb break="yes"/>certainement proviennent du manque d&#x2019;oxigène<lb break="yes"/>de ces régions, plus que de la rareté de l&#x2019;air.<lb break="yes"/>Je n&#x2019;ai trouvé que 0,20 d&#x2019;oxigène à cette im-<lb break="no"/>
+                    <pb n="142" facs="#f0005"/> mense hauteur. Une crevasse affreuse nous<lb break="yes"/>emp&#x00EA;cha de parvenir à la c&#x00EE;me du Chimborazo-<lb break="maybe"/>m&#x00EA;me, pour laquelle il ne nous manquait que<lb break="yes"/>206 toises.</p>
+                <lb break="yes"/>
+                <p>Vous savez qu&#x2019;il y a encore une grande incer-<lb break="no"/>titude sur la hauteur de ce colosse, que <persName key="lacondamine_cmd">la<lb break="yes" />Condamine</persName> ne mesura que de très-loin, lui<lb break="yes" />donnant à peu près 3220 toises, tandis que<lb break="yes"/>don <persName key="juanysantacilia_j">Georges Juan</persName> le met de 3380 toises,<lb break="yes"/>sans que la différence provienne de la diffé-<lb break="no" />rente hauteur qu&#x2019;adoptent ces astronomes pour<lb break="yes"/>le signal de Carabourou. J&#x2019;ai mesuré dans la<lb break="yes"/>plaine de Tapia une base de 1702 mètres,<lb break="yes"/>(pardonnez-moi de parler tant&#x00F4;t de toises et<lb break="yes"/>tantot de mètres, selon la nature de mes<lb break="yes"/>instrumens; vous sentez bien qu&#x2019;en publiant<lb break="yes"/>mes opérations, je réduirai tout au mètre et<lb break="yes"/>au thermomètre centigrade), deux opérations<lb break="yes"/>géodésiques me donnent Chimborazo de 3267<lb break="yes"/>toises au-dessus de la mer; mais il faut recti-<lb break="no"/>fier les calculs par la distance du sectant à<lb break="yes"/>l&#x2019;horizon artificiel, et d&#x2019;autres circonstances.<lb break="yes"/>Le volcan Tongouragoa a diminué beaucoup<lb break="yes"/>depuis le temps de <persName key="lacondamine_cmd">la Condamine</persName>; au lieu de<lb break="yes"/>2620 toises, je ne le trouve plus que de 2531,<lb break="yes"/>et j&#x2019;ose croire que cette différence ne provient<lb break="yes"/>pas d une erreur d&#x2019;opérations, parce que dans<lb break="yes"/>mes mesures de Cayambo, d&#x2019;<placeName key="antisana">Antisana</placeName>, de<lb break="yes"/>Cotopaxi, d&#x2019;Iliniga, je ne diffère souvent pas<lb break="yes"/>de 10 ou 15 toises des résultats de <persName key="lacondamine_cmd">la Con-<lb break="no" />damine</persName> et de <persName key="bouguer_p">Bouguer</persName>. Aussi tous les habi-<lb break="no"/>tans de ces malheureuses contrées, disent que<lb break="yes"/>
+                    <pb n="143" facs="#f0006"/> Tongouragoa a baissé à vue d&#x2019;&#x0153;il; au con-<lb break="no"/>traire Cotopaxi, qui a eu de si fortes explo-<lb break="no"/>sions, est de la m&#x00EA;me hauteur qu&#x2019;en 1744,<lb break="yes"/>et m&#x00EA;me de quelque chose de plus, ce qui<lb break="yes" />provient peut-&#x00EA;tre d&#x2019;une erreur de ma part;<lb break="yes"/>mais aussi la c&#x00EE;me pierreuse de Cotopaxi in-<lb break="no"/>dique que c&#x2019;est une cheminée qui résiste et<lb break="yes"/>conserve sa figure. Les opérations que nous<lb break="yes"/>avons faites, de janvier à juillet, dans les<lb break="yes"/>
+                    <placeName key="anden">Andes</placeName> de Quito, ont donné à ces habitans la<lb break="yes"/>triste nouvelle que le cratère de Pichincha<lb break="yes"/>que <persName key="lacondamine_cmd">la Condamine</persName> vit plein de neige, br&#x00FB;le<lb break="yes"/>de nouveau, et que Chimborazo, que l&#x2019;on<lb break="yes"/>croyait &#x00EA;tre si paisible et innocent, a été<lb break="yes"/>un volcan, et peut-&#x00EA;tre le sera un jour de<lb break="yes"/>nouveau. Nous avons des roches br&#x00FB;lées et de<lb break="yes"/>la pierre ponce à 3031 toises de haut. Mal-<lb break="no"/>heur au genre-humain si le feu volcanique,<lb break="yes"/>(car on peut dire que tout le haut plateau<lb break="yes"/>de Quito est un seul volcan à plusieurs c&#x00EE;mes),<lb break="yes"/>se fait jour à travers le Chimborazo. On a<lb break="yes"/>souvent imprimé que cette montagne est de<lb break="yes" />granit, mais on n&#x2019;en trouve pas un at&#x00F4;me;<lb break="yes" />c&#x2019;est un porphyre par-ci par-là, en colonnes,<lb break="yes" />enchassant du feld-spath vitreux, de la cor-<lb break="no"/>néenne et de l&#x2019;olivin. Cette couche de por-<lb break="no"/>phyre a 1900 toises d&#x2019;épaisseur. Je pourrais<lb break="yes"/>vous parler à ce sujet d&#x2019;un porphyre polarisant<lb break="yes"/>que nous avons découvert à Vaisaco, près de<lb break="yes"/>Pasta; porphyre qui, analogue à la serpentine<lb break="yes"/>que j&#x2019;ai décrite dans le <hi rendition="#i">Journal de Physique,</hi>
+                    <lb break="yes"/>a des p&#x00F4;les sans attraction: je pourrais vous<lb break="yes"/>
+                    <pb n="144" facs="#f0007"/> citer d&#x2019;autres faits relatifs à la grande loi des<lb break="yes"/>couches et à leur énorme épaisseur près l&#x2019;é-<lb break="no"/>quateur, mais ce serait trop pour une lettre<lb break="yes"/>qui peut-&#x00EA;tre se perdra, et j&#x2019;y reviendrai une<lb break="yes"/>autre fois. J&#x2019;ajoute seulement qu&#x2019;en outre des<lb break="yes"/>dents d&#x2019;éléphant que nous avons envoyées<lb break="yes"/>au C. <persName key="cuvier_g">Cuvier</persName>, du plateau de Santa-Fé, de<lb break="yes" />1350 toises de hauteur, nous lui en conser-<lb break="no"/>vons d&#x2019;autres plus belles, les unes de l&#x2019;éléphant<lb break="yes" />carnivore, les autres d&#x2019;une espèce un peu<lb break="yes"/>différente de celle d&#x2019;<placeName key="afrika">Afrique</placeName>, du val de Timana,<lb break="yes"/>de la ville d&#x2019;Ibarra et du Chili. Voilà donc<lb break="yes"/>l&#x2019;existence de ce monstre carnivore consta-<lb break="no"/>tée, depuis l&#x2019;Ohio à 50 degrés latitude boréale<lb break="yes"/>jusqu&#x2019;au 35<hi rendition="#sup">e</hi> degré de latitude australe.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

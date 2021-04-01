@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="140" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#b">Das Erde&#x017F;&#x017F;en der Indianer.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>An den Kü&#x017F;ten von Cumana, <placeName key="barcelona" >Neu-Barcelona</placeName> und Caracas, welche<lb break="yes"/>die Franciskanermönche der Guyana auf ihrer Rückkehr aus den Mi&#x017F;-<lb break="no"/>&#x017F;ionen be&#x017F;uchen, i&#x017F;t die Sage von erde&#x017F;&#x017F;enden Men&#x017F;chen am Orinoko<lb break="yes"/>verbreitet. Wir haben am 6 Junius 1800 auf un&#x017F;erer Rückrei&#x017F;e<lb break="yes" />von <choice>
+                        <sic>Ro</sic>
+                        <corr type="editorial">Rio</corr>
+                    </choice> Negro, als wir in 36 Tagen den <placeName key="orinoco" >Orinoko</placeName> herab&#x017F;chifften,<lb break="yes"/>einen Tag in der Mi&#x017F;&#x017F;ion zugebracht, die von den erdfre&#x017F;&#x017F;enden Oto-<lb break="no"/>maken bewohnt wird. Das Dörfchen heißt la Conception di Uruana,<lb break="yes"/>und i&#x017F;t &#x017F;ehr maleri&#x017F;ch an einen Granitfel&#x017F;en angelehnt.</p>
+                <lb break="yes"/>
+                <pb n="141" facs="#f0002"/>
+                <p>Die Erde, welche die Otomaken verzehren, i&#x017F;t ein fetter, milder<lb break="yes"/>Letten, wahrer Töpferthon von gelblich grauer Farbe mit etwas<lb break="yes"/>Ei&#x017F;enoxyd gefärbt. Sie wählen ihn &#x017F;orgfältig aus und &#x017F;uchen ihn in<lb break="yes"/>eigenen Bänken am Ufer des <placeName key="orinoco">Orinoko</placeName> und Meta. Sie unter&#x017F;cheiden<lb break="yes"/>im Ge&#x017F;chmack eine Erdart von der andern, denn aller Letten i&#x017F;t ihnen<lb break="yes"/>nicht gleich angenehm. Sie kneten die&#x017F;e Erde in Kugeln von 4 bis<lb break="yes"/>5 Zoll Durchme&#x017F;&#x017F;er zu&#x017F;ammen, und rö&#x017F;ten &#x017F;ie äußerlich bei &#x017F;chwachem<lb break="yes"/>Feuer, bis die Rinde röthlich wird. Beim E&#x017F;&#x017F;en wird die Kugel<lb break="yes"/>wieder befeuchtet.</p>
+                <lb break="yes"/>
+                <p>Die&#x017F;e Indianer &#x017F;ind größtentheils wilde, den Pflanzenbau ver-<lb break="no"/>achtende Men&#x017F;chen. Es i&#x017F;t ein Sprichwort unter den entfernte&#x017F;ten<lb break="yes"/>Nationen am <placeName key="orinoco" >Orinoko</placeName>, von etwas recht Unreinlichem zu &#x017F;agen: &#x201E;&#x017F;o<lb break="yes"/>&#x017F;chmutzig, daß es der Otomake frißt.&#x201C; So lange der <placeName key="orinoco">Orinoko</placeName> und der<lb break="yes"/>Meta niedriges Wa&#x017F;&#x017F;er haben, leben die&#x017F;e Men&#x017F;chen von Fi&#x017F;chen und<lb break="yes" />Schildkröten; &#x017F;chwellen die Ströme periodi&#x017F;ch an, &#x017F;o hört der Fi&#x017F;ch-<lb break="no"/>fang auf, denn im tiefen Flußwa&#x017F;&#x017F;er i&#x017F;t es &#x017F;o &#x017F;chwer als im tiefen<lb break="yes"/>Ocean zu fi&#x017F;chen. In die&#x017F;er Zwi&#x017F;chenzeit, die drei Monate dauert,<lb break="yes"/>&#x017F;ieht man die Otomaken ungeheure Quantitäten Erde ver&#x017F;chlingen. Wir<lb break="yes"/>haben in ihren Hütten große Vorräthe davon gefunden, pyramidale<lb break="yes"/>Haufen, in denen die Lettenkugeln zu&#x017F;ammengehäuft waren. Ein In-<lb break="no"/>dianer verzehrt an einem Tage &#x00BE; bis &#x2158; Pfund. Nach der Aus&#x017F;age<lb break="yes"/>der Otomaken &#x017F;elb&#x017F;t i&#x017F;t die&#x017F;e Erde in der Regenzeit ihre Hauptnahrung.<lb break="yes"/>Sie e&#x017F;&#x017F;en indeß dabei hie und da, wenn &#x017F;ie es &#x017F;ich ver&#x017F;chaffen können,<lb break="yes"/>eine Eidech&#x017F;e, einen kleinen Fi&#x017F;ch und eine Farrenkrautwurzel. Sie<lb break="yes"/>&#x017F;ind nach den Letten &#x017F;o lü&#x017F;tern, daß &#x017F;ie &#x017F;elb&#x017F;t in der trockenen Jah-<lb break="no"/>reszeit, wenn &#x017F;ie Fi&#x017F;chnahrung genug haben, doch als Leckerbi&#x017F;&#x017F;en täglich<lb break="yes"/>nach der Mahlzeit etwas Erde verzehren. Die&#x017F;e Men&#x017F;chen haben eine<lb break="yes"/>dunkel kupferbraune Farbe. Sie &#x017F;ind von unangenehm tartari&#x017F;chen<lb break="yes"/>Ge&#x017F;ichtszügen, fei&#x017F;t, aber nicht dickbäuchig.</p>
+                <lb break="yes"/>
+                <p>Auffallend i&#x017F;t es, daß die Otomaken durch den Genuß &#x017F;o vieler<lb break="yes"/>Erde nicht erkranken. Obgleich in allen Tropenländern die Men&#x017F;chen<lb break="yes"/>eine wunderbare, unwider&#x017F;tehliche Begierde haben, Erde zu ver&#x017F;chlin-<lb break="no"/>gen, &#x017F;o erkranken doch, außer den Otomaken, die Individuen aller<lb break="yes"/>andern Völker&#x017F;tämme, wenn &#x017F;ie die&#x017F;er &#x017F;onderbaren Neigung nach dem<lb break="yes"/>Genuß des Lettens nachgeben. In der Mi&#x017F;&#x017F;ion San Borja fanden<lb break="yes"/>wir das Kind einer Indianerin, das nach Aus&#x017F;age &#x017F;einer Mutter fa&#x017F;t<lb break="yes"/>nichts als Erde genießen wollte, dabei aber auch &#x017F;chon &#x017F;kelettartig<lb break="yes"/>abgezehrt war.</p>
+                <lb break="yes"/>
+                <p>In Guinea e&#x017F;&#x017F;en die Neger eine gelbliche Erde, welche &#x017F;ie Caouac<lb break="yes"/>nennen. Werden &#x017F;ie als Sklaven nach We&#x017F;tindien gebracht, &#x017F;o &#x017F;uchen<lb break="yes"/>&#x017F;ie &#x017F;ich dort eine ähnliche zu ver&#x017F;chaffen; aber der Caouac der ame-<lb break="no"/>rikani&#x017F;chen In&#x017F;eln macht die Sklaven krank. Die Einwohner von Neu-<lb break="maybe"/>Caledonien e&#x017F;&#x017F;en, um ihren Hunger zu &#x017F;tillen, fau&#x017F;tgroße Stücke von<lb break="yes" />zerreiblichem Speck&#x017F;tein, in dem &#x017F;ich ein ziemlicher Kupfergehalt findet.<lb break="yes"/>In Popayan und in mehreren Theilen von Peru wird Kalkerde als<lb break="yes"/>
+                    <pb n="142" facs="#f0003"/> Eßwaare für die Indianer auf dem Markte verkauft. So finden wir<lb break="yes"/>das Erde&#x017F;&#x017F;en, welches die Natur eher den Bewohnern des dürren<lb break="yes"/>Nordens be&#x017F;timmt zu haben &#x017F;chien, in der ganzen heißen Zone unter<lb break="yes"/>den trägen Men&#x017F;chenra&#x017F;&#x017F;en verbreitet, welche die herrlich&#x017F;ten und frucht-<lb break="no"/>bar&#x017F;ten Theile der Erde bewohnen. <hi rendition="#et">Nach <hi rendition="#g">
+                            <persName key="humboldt_av">Humboldt</persName>.</hi>
+                    </hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

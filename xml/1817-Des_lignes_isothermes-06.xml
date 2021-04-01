@@ -1,0 +1,2458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="#f0001"/>
+            <lb break="yes"/>
+            <cb n="852"/>
+            <lb break="yes"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#fr">Ueber die gleichwarmen Linien</hi>
+                    <lb break="yes"/>von <hi rendition="#aq">A. de, Humboldt. (Mem. d&#x2019;Arcueil <choice>
+                            <sic>Vul</sic>
+                            <corr type="editorial">Vol</corr>
+                        </choice>. III.<lb break="yes"/>Annales de Chimie</hi> 17 u. <hi rendition="#aq">Annales of Philo&#x017F;. 18).</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#aq">H.</hi> &#x017F;tellt nicht theoreti&#x017F;ch &#x017F;ondern nach den neue&#x017F;ten<lb break="yes"/>Beobachtungen die Vertheilung der Wa&#x0364;rme u&#x0364;ber der<lb break="yes"/>Erdkugel dar. Zuvo&#x0364;rder&#x017F;t unter&#x017F;ucht er die ver&#x017F;chiedenen<lb break="yes"/>Methoden, nach denen die Phy&#x017F;iker die <hi rendition="#g" >mittleren<lb break="yes"/>Temperaturen</hi> be&#x017F;timmt haben.</p>
+                <lb break="yes"/>
+                <p>Die <hi rendition="#g">mittlere Temperatur eines Tages,</hi>
+                    <lb break="yes"/>in der mathemati&#x017F;chen Bedeutung, i&#x017F;t die mittlere von<lb break="yes" />den Temperaturen aller Augenblicke, aus welchen der<lb break="yes"/>Tag be&#x017F;teht. Wenn man die Dauer die&#x017F;er Augenblicke<lb break="yes"/>auf <hi rendition="#g">eine Minute</hi> be&#x017F;timmen wollte, &#x017F;o mu&#x0364;ßte man<lb break="yes"/>die Summe von 1440 thermometri&#x017F;chen von einer Mitter-<lb break="no"/>
+                    <pb facs="#f0002"/>
+                    <cb n="853"/>
+                    <lb break="yes"/>nacht zur folgenden ange&#x017F;tellten Beobachtungen mit 1440<lb break="yes"/>= 24 + 60 theilen, und man erhielte die ge&#x017F;uchte<lb break="yes"/>Zahl; die Summe aller die&#x017F;er einzelnen Re&#x017F;ultate mit<lb break="yes"/>365 getheilt, ga&#x0364;be <hi rendition="#g">die mittlere Temperatur des<lb break="yes"/>Jahres.</hi> Da die Extreme der Thermometer-Ver-<lb break="no"/>a&#x0364;nderungen in einem Tage im Ganzen &#x017F;ich &#x017F;ehr nahe<lb break="yes"/>&#x017F;tehen, &#x017F;o &#x017F;ind die <hi rendition="#g">Grade der Wa&#x0364;rme</hi> einer Menge<lb break="yes"/>Augenblicke einerley, &#x017F;o daß jeder auf den Gehalt und<lb break="yes"/>die Dauer der endlich <hi rendition="#g">Mittleren</hi> einwirken wird.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#aq">H.</hi> i&#x017F;t unter die&#x017F;em Ge&#x017F;ichtspunct einige Reihen von<lb break="yes"/>Beobachtungen, die von Stunde zu Stunde, in ver&#x017F;chie-<lb break="no"/>denen Jahreszeiten, unter dem Aequator und zu Paris<lb break="yes"/>ange&#x017F;tellt worden, durchgegangen. Es ergab &#x017F;ich daraus,<lb break="yes"/>daß die halbe &#x2014; Summe der <hi rendition="#aq">Maximum</hi> und <hi rendition="#aq">Mini-<lb break="no" />mum-</hi>Temperaturen jedes Tages (die von 2 Uhr N. M.<lb break="yes"/>und bey Sonnen Aufgang) im Allgemeinen nur um ei-<lb break="no"/>nige Zehntheile eines Grades von der &#x017F;trengen Mittle-<lb break="no"/>ren abweicht, und die&#x017F;e er&#x017F;etzen kann.</p>
+                <lb break="yes"/>
+                <p>Indem Hr. <hi rendition="#aq">de H.</hi> eine große Anzahl zwi&#x017F;chen den<lb break="yes"/>Parallelen vom 46&#x00B0; und 48&#x00B0; ange&#x017F;tellter Beobachtungen<lb break="yes"/>berechnete, fand er daß <hi rendition="#g">die einzige Zeit des Son-<lb break="no"/>nen-Untergangs</hi> eine Temperatur giebt, die nur<lb break="yes"/>einige Zehntheile von derjenigen abweicht, welche <choice>
+                        <sic>dnrch</sic>
+                        <corr type="editorial">durch</corr>
+                    </choice>
+                    <lb break="yes"/>die Beobachtungen beim Aufgang und um 2 Uhr gefun-<lb break="no"/>den worden.</p>
+                <lb break="yes"/>
+                <p>Der ho&#x0364;ch&#x017F;te Punct in Europa, wo Beobachtungen<lb break="yes" />ange&#x017F;tellt werden, i&#x017F;t das Ho&#x017F;piz auf dem St. Gotthard<lb break="yes"/>etwa 6400 Fuß u&#x0364;berm Meere; in Su&#x0364;damerika, Quito<lb break="yes"/>
+                    <cb n="854"/>
+                    <lb break="yes"/>9000 Fuß, Huancavelica 11600 Fuß, das Bergwerk<lb break="yes"/>
+                    <hi rendition="#aq">Santa Barbara</hi> u&#x0364;ber 14400 Fuß, al&#x017F;o mehr als das<lb break="yes"/>doppelte von St. Gotthard. Um die in der heißen<lb break="yes"/>Zone erhaltenen <choice>
+                        <sic>Re&#x017F;ultat</sic>
+                        <corr type="editorial">Resultate</corr>
+                    </choice> mit der mittlern Wa&#x0364;rme der<lb break="yes"/>gema&#x0364;ßigten Zonen zu vergleichen, mußte man in Zwi-<lb break="no" />&#x017F;chenra&#x0364;umen von 10 Breitegraden aber in ver&#x017F;chiedenen<lb break="yes"/>Meridianen Orte auf&#x017F;uchen, deren mittlere Temperatur<lb break="yes"/>genau bekannt war. Die&#x017F;e bilden ve&#x017F;te Puncte, durch<lb break="yes"/>welche die gleichwarmen Linien laufen. Die&#x017F;e &#x017F;ind be-<lb break="no"/>&#x017F;onders in A&#x017F;ien &#x017F;ehr &#x017F;chlecht be&#x017F;timmt, und es i&#x017F;t in<lb break="yes"/>der That merkwu&#x0364;rdig daß die Ho&#x0364;he von Bagdad, Aleppo,<lb break="yes" />I&#x017F;pahan, Delhi, und vieler großer und alter Sta&#x0364;dte<lb break="yes"/>in der alten Welt unbekannt i&#x017F;t, wa&#x0364;hrend man in der<lb break="yes"/>heißen Zone der neuen, die von mehr als 500 Oertern,<lb break="yes"/>worunter &#x017F;elb&#x017F;t Do&#x0364;rfer und Weiler, genau kennt. In<lb break="yes"/>der alten Welt &#x017F;ind nur die Beobachtungen, welche zwi-<lb break="no"/>&#x017F;chen der Parallelen 30 und 70 N. B.: und 30&#x00B0; W. und<lb break="yes"/>20&#x00B0; O. L. gemacht worden, brauchbar. Davon &#x017F;ind die<lb break="yes"/>entfernte&#x017F;ten Puncte, Madera, Kairo und Nordcap, und<lb break="yes"/>begreifen etwa <formula notation="TeX" >\frac{1}{7}</formula> des Erdumfangs von O: nach W.</p>
+                <lb break="yes"/>
+                <p>Da Rei&#x017F;ende &#x017F;elten Gelegenheit haben, an jedem<lb break="yes"/>Orte hinla&#x0364;ngliche Beobachtungen zu Be&#x017F;timmung der<lb break="yes" />mittlern Temperatur des Jahres zu &#x017F;ammeln, &#x017F;o &#x017F;uchte <hi rendition="#aq">H.,</hi>
+                    <lb break="yes"/>welche Monate &#x017F;ie unmittelbar liefern ko&#x0364;nnte. Folgende<lb break="yes"/>Tabelle zeigt, daß bis zu &#x017F;ehr hohen Breiten, die Mo-<lb break="no"/>nate April und October, be&#x017F;onders aber der letztere, die&#x017F;e<lb break="yes" />be&#x017F;ondere Eigen&#x017F;chaft haben.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell rows="2">Orte.</cell>
+                        <cell cols="3">Mittlere Temperatur.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>vom<lb break="yes"/>Jahr</cell>
+                        <cell>von<lb break="yes"/>October</cell>
+                        <cell>von<lb break="yes"/>April</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cairo</cell>
+                        <cell>22&#x00B0;, 4</cell>
+                        <cell>22&#x00B0;, 4</cell>
+                        <cell>23&#x00B0;, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Algier</cell>
+                        <cell>21, 0</cell>
+                        <cell>22, 3</cell>
+                        <cell>17, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Natchez</cell>
+                        <cell>18, 9</cell>
+                        <cell>20, 2</cell>
+                        <cell>19, 1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rom</cell>
+                        <cell>15, 8</cell>
+                        <cell>16, 7</cell>
+                        <cell>13, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mailand</cell>
+                        <cell>13, 0</cell>
+                        <cell>14, 5</cell>
+                        <cell>13, 1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cincinnati</cell>
+                        <cell>12, 0</cell>
+                        <cell>12, 7</cell>
+                        <cell>13, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Philadelphia</cell>
+                        <cell>11, 9</cell>
+                        <cell>12, 2</cell>
+                        <cell>12, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neu-York</cell>
+                        <cell>12, 1</cell>
+                        <cell>12, 5</cell>
+                        <cell>9, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pecking</cell>
+                        <cell>12, 6</cell>
+                        <cell>13, 0</cell>
+                        <cell>13, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ofen</cell>
+                        <cell>10, 9</cell>
+                        <cell>11, 3</cell>
+                        <cell>9, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>London</cell>
+                        <cell>11, 0</cell>
+                        <cell>11, 3</cell>
+                        <cell>9, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris</cell>
+                        <cell>10, 6</cell>
+                        <cell>10, 7</cell>
+                        <cell>9, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Genf</cell>
+                        <cell>9, 6</cell>
+                        <cell>9, 6</cell>
+                        <cell>7, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dublin</cell>
+                        <cell>9, 2</cell>
+                        <cell>9, 3</cell>
+                        <cell>7, 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Edimburg</cell>
+                        <cell>8, 8</cell>
+                        <cell>9, 0</cell>
+                        <cell>8, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <cb/>
+                    <row>
+                        <cell rows="2">Orte.</cell>
+                        <cell cols="3">Mittlere Temperatur.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>vom<lb break="yes"/>Jahr</cell>
+                        <cell>von<lb break="yes"/>October</cell>
+                        <cell>von<lb break="yes"/>April</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Go&#x0364;ttingen</cell>
+                        <cell>8&#x00B0;, 3</cell>
+                        <cell>8&#x00B0;, 4</cell>
+                        <cell>6&#x00B0;, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Franecker</cell>
+                        <cell>11, 3</cell>
+                        <cell>12, 7</cell>
+                        <cell>10, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Copenhagen</cell>
+                        <cell>7, 6</cell>
+                        <cell>9, 3</cell>
+                        <cell>5, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Stockholm</cell>
+                        <cell>5, 7</cell>
+                        <cell>5, 8</cell>
+                        <cell>3, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Chri&#x017F;tiania</cell>
+                        <cell>5, 9</cell>
+                        <cell>4, 0</cell>
+                        <cell>5, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Up&#x017F;ala</cell>
+                        <cell>5, 4</cell>
+                        <cell>6, 3</cell>
+                        <cell>4, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Quebeck</cell>
+                        <cell>5, 5</cell>
+                        <cell>6, 0</cell>
+                        <cell>4, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Petersburg</cell>
+                        <cell>3, 8</cell>
+                        <cell>3, 9</cell>
+                        <cell>2, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Abo</cell>
+                        <cell>5, 2</cell>
+                        <cell>5, 0</cell>
+                        <cell>4, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Drontheim</cell>
+                        <cell>4, 4</cell>
+                        <cell>4, 0</cell>
+                        <cell>1, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Uleo</cell>
+                        <cell>0, 6</cell>
+                        <cell>3, 3</cell>
+                        <cell>1, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Umeo</cell>
+                        <cell>0, 7</cell>
+                        <cell>3, 2</cell>
+                        <cell>1, 1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nord-Cap</cell>
+                        <cell>0, 0</cell>
+                        <cell>0, 0</cell>
+                        <cell>&#x2014; 1, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Enontekies</cell>
+                        <cell>&#x2014; 2, 8</cell>
+                        <cell>&#x2014; 2, 5</cell>
+                        <cell>&#x2014; 3, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nain</cell>
+                        <cell>&#x2014; 3, 1</cell>
+                        <cell>+ 0, 6 </cell>
+                        <cell>&#x2014; 2, 3</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <cb n="853"/>
+                <lb break="yes"/>
+                <p>Die mittleren Temperaturen der Jahre &#x017F;ind weit<lb break="yes"/>gleicher als man nach dem Zeugniß un&#x017F;erer Empfindung<lb break="yes"/>und dem unter&#x017F;chiedenen Ertrag der Erndten ha&#x0364;tte glau-<lb break="no"/>ben &#x017F;ollen. Die a&#x0364;ußer&#x017F;ten O&#x017F;cillationen betragen kaum 2&#x00B0;,<lb break="yes"/>Hundertgradig.</p>
+                <lb break="yes"/>
+                <p>In Paris fand man von 1803 bis und mit 1816:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>+ 10&#x00B0;,6 &#x2014; 11&#x00B0;,1 &#x2014; 9&#x00B0;,7 &#x2014; 11&#x00B0;,9 &#x2014; 10&#x00B0;,8 &#x2014; 10&#x00B0;,3 &#x2014; 10&#x00B0;,6<lb break="yes"/>10&#x00B0;,5 &#x2014; 11&#x00B0;,5 &#x2014; 9&#x00B0;,9 &#x2014; 9&#x00B0;,9 &#x2014; 9&#x00B0;,7 &#x2014; 10&#x00B0;,5 &#x2014; 9&#x00B0;,6.</item>
+                    <lb break="yes"/>
+                    <item>In Genf, zwi&#x017F;chen 1803 bis und mit 1815, fand man</item>
+                    <lb break="yes"/>
+                    <item>+ 10&#x00B0;,2 &#x2014; 10&#x00B0;,6 &#x2014; 8&#x00B0;,8 &#x2014; 10&#x00B0;,8 &#x2014; 9&#x00B0;,6 &#x2014; 8&#x00B0;,3 &#x2014; 9&#x00B0;,4.<lb break="yes"/>10&#x00B0;,0 &#x2014; 10&#x00B0;,9 &#x2014; 8&#x00B0;,8 &#x2014; 9&#x00B0;,2 &#x2014; 9&#x00B0;,0 &#x2014; 10&#x00B0;,0 &#x2014; 0.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Die Unter&#x017F;chiede der mittlern Temperaturen des Mo-<lb break="no"/>
+                    <cb n="854"/>
+                    <lb break="yes"/>nats Januar &#x017F;teigen auf 7&#x00B0;; fu&#x0364;r den Monat Augu&#x017F;t &#x017F;el-<lb break="no"/>ten auf 4&#x00B0;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">Vom Zeichnen der I&#x017F;otherm-Linien.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>Nachdem wir genau die Bedeutung, welche man<lb break="yes"/>dem Ausdrucke der mittlern Temperatur geben muß, an-<lb break="no"/>gegeben haben, &#x017F;o ko&#x0364;nnen wir zur Zeichnung der <hi rendition="#g">I&#x017F;o-<lb break="no"/>therm-</hi> oder <hi rendition="#g">gleichwarmen Linien</hi> u&#x0364;ber gehen.<lb break="yes"/>Von kleinen auf geringe Orts-Verha&#x0364;ltni&#x017F;&#x017F;e be&#x017F;chra&#x0364;nkten<lb break="yes"/>Abweichungen muß man hier ab&#x017F;trahiren, wie z. E. die,<lb break="yes"/>welche man an den Ku&#x0364;&#x017F;ten des Mittelmeers zwi&#x017F;chen<lb break="yes"/>
+                    <hi rendition="#aq">Mar&#x017F;eille,</hi> Genua, Lucca und Rom beobachtet. Es<lb break="yes"/>
+                    <pb facs="#f0003"/>
+                    <cb n="855"/>
+                    <lb break="yes"/>wu&#x0364;rde recht gut &#x017F;eyn, wenn man &#x017F;ie mit in einzelnen<lb break="yes"/>Charten auf&#x017F;tellte.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Die Anwendung der Bezeichnung durch Linien,&#x201C;<lb break="yes" />&#x017F;agt Hr. <hi rendition="#aq">de H.,</hi> &#x201E;wird den Pha&#x0364;nomenen, welche &#x017F;o<lb break="yes"/>&#x017F;ehr wichtig fu&#x0364;r den Ackerbau und den ge&#x017F;ell&#x017F;chaftl. <choice>
+                        <sic>Zu-<lb break="no"/>&#x017F;taoder</sic>
+                        <corr type="editorial">Zu-<lb break="no"/>&#x017F;tand der</corr>
+                    </choice> Bewohner &#x017F;ind, vieles Licht geben. Wenn wir<lb break="yes" />&#x017F;tatt geographi&#x017F;cher Charten nichts als Tabellen der Coor-<lb break="no"/>donaten der Breite, der La&#x0364;nge und der Ho&#x0364;he ha&#x0364;tten, &#x017F;o<lb break="yes"/>wu&#x0364;rden &#x017F;ehr viele merkwu&#x0364;rdige Verha&#x0364;ltni&#x017F;&#x017F;e welche die<lb break="yes" />fe&#x017F;ten La&#x0364;nder in ihrer Bildung und ihrer ungleichen Fla&#x0364;-<lb break="no"/>che darbieten, auf immer unbekannt geblieben &#x017F;eyn.&#x201C;</p>
+                <lb break="yes"/>
+                <p>Will man I&#x017F;otherm-Linien ziehen, &#x017F;o muß man<lb break="yes"/>die Puncte des Erballs &#x017F;uchen, deren mittlere Tempera-<lb break="no"/>turen 0&#x00B0;, 5&#x00B0;, 10&#x00B0; oder 15&#x00B0; am na&#x0364;ch&#x017F;ten &#x017F;tehen. Man<lb break="yes"/>&#x017F;ieht gleich, ob die Linien von die&#x017F;em oder jenem Orte<lb break="yes"/>nach Su&#x0364;den oder Norden gehen; um genau zu be&#x017F;tim-<lb break="no"/>men, wie weit der Ab&#x017F;tand in der Breite betra&#x0364;gt, muß<lb break="yes"/>man die gewo&#x0364;hnlichen Interpolations-Methoden zu<lb break="yes"/>Hu&#x0364;lfe nehmen daß heißt, die Beobachtungs-Tabellen,<lb break="yes"/>wo man fu&#x0364;r ver&#x017F;chiedene Meridiane und nach der Mee-<lb break="no"/>res-Ho&#x0364;he &#x017F;ieht, wie die ja&#x0364;hrliche mittlere Temperatur je<lb break="yes" />weiter man von Su&#x0364;den nach Norden kommt, abnimmt.</p>
+                <lb break="yes"/>
+                <p>Auf 1&#x00B0; Abweichung in der ja&#x0364;hrlichen mittleren Tem-<lb break="no"/>peratur fallen in ver&#x017F;chiedenen Zonen, die Vera&#x0364;nderun-<lb break="no"/>gen der Breite folgendermaßen zu&#x017F;ammen.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell cols="2">In der neuen<lb break="yes"/>Welt<lb break="yes"/>durch die La&#x0364;ngen<lb break="yes"/>70&#x00B0; bis 80&#x00B0; We&#x017F;tl.</cell>
+                        <cell>In der alten<lb break="yes"/>Welt<lb break="yes"/>durch die La&#x0364;ngen<lb break="yes"/>2&#x00B0; bis 17&#x00B0; Oe&#x017F;tl.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zwi&#x017F;chen 30&#x00B0; und 40&#x00B0;</cell>
+                        <cell>1&#x00B0;, 24&#x2033; &#x2014;</cell>
+                        <cell>2&#x00B0;, 30&#x2032;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>N. Br.</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>40 &#x2014; 50 &#x2014;</cell>
+                        <cell>1&#x00B0;, 6&#x2032; &#x2014;</cell>
+                        <cell>1&#x00B0;, 24&#x2032;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>50 &#x2014; 60 &#x2014;</cell>
+                        <cell>1&#x00B0;, 18&#x2032; &#x2014;</cell>
+                        <cell>1&#x00B0;, 48&#x2032;</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Nach die&#x017F;en Daten findet Hr. <hi rendition="#aq">de H.</hi> bei den genaue&#x017F;ten<lb break="yes"/>mittleren Temperaturen die er hat erhalten ko&#x0364;nnen, (in<lb break="yes"/>der obigen Tabelle &#x017F;ind deren 30) und mit Beru&#x0364;ck&#x017F;ichti-<lb break="no"/>gung der Ho&#x0364;he der <choice>
+                        <sic>Orter</sic>
+                        <corr type="editorial">Oerter</corr>
+                    </choice>, wo die die Beobachtungen<lb break="yes"/>ange&#x017F;tellt worden, daß: 1) <hi rendition="#g">der I&#x017F;otherm-Strich</hi>
+                    <lb break="yes"/>von 0&#x00B0; (32 Fah.) geht durch 3&#x00B0; 54 &#x017F;u&#x0364;dlich von <hi rendition="#aq" >Nain</hi> in<lb break="yes"/>
+                    <hi rendition="#aq">Labrador</hi> (Tafelbay 54&#x00B0; N. B.); durch den Mittelpunct<lb break="yes"/>von Lappland; und durch 1&#x00B0; no&#x0364;rdlich v. <hi rendition="#aq">Ulea</hi> (66&#x00B0; 68&#x2032;<lb break="yes" />N. B.), durch <hi rendition="#aq">Soliskamsky.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>2) Der von 5&#x00B0; (41 F.) geht durch 0&#x00B0;, 5 no&#x0364;rdlich<lb break="yes"/>von Quebek und St. Georgsbay in Neufundland 48&#x00B0;<lb break="yes"/>N. B.; durch 1&#x00B0; no&#x0364;rdlich v. <hi rendition="#aq">Christiania;</hi> 0&#x00B0; 5 no&#x0364;rdlich<lb break="yes"/>v. <hi rendition="#aq">Upsala</hi> (60&#x00B0; N. B.), durch Petersburg und Moskau.</p>
+                <lb break="yes"/>
+                <p>3) Der v. 10&#x00B0; (50 F.) geht durch 42&#x00B0; 30&#x2032; in verein-<lb break="no"/>ten Staaten bey Bo&#x017F;ton; durch 1&#x00B0; &#x017F;u&#x0364;dlich von Dublin;<lb break="yes"/>0&#x00B0;,5 no&#x0364;rdlich v. Paris; 1&#x00B0;,5 &#x017F;u&#x0364;dlich v. <hi rendition="#aq">Franecker</hi>
+                    <lb break="yes"/>(51&#x00B0; N. B.); 0&#x00B0;,5 &#x017F;u&#x0364;dlich von Prag; 1&#x00B0;,5 no&#x0364;rdlich v.<lb break="yes"/>Ofen, 2&#x00B0; <formula notation="TeX">\frac{3}{4}</formula> no&#x0364;rdlich v. Peking.</p>
+                <lb break="yes"/>
+                <p>4) Der v. 15&#x00B0; (59&#x00B0; F.) geht durch 4&#x00B0;,5 no&#x0364;rdlich v.<lb break="yes"/>
+                    <hi rendition="#aq">Natchez;</hi> durch <hi rendition="#aq">Montpellier;</hi> 1&#x00B0; no&#x0364;rdlich v. Rom<lb break="yes"/>(43 N. B.) und 1&#x00B0;,5 no&#x0364;rdlich v. <hi rendition="#aq">Nangasaki</hi>
+                </p>
+                <lb break="yes"/>
+                <p>5) Der v. 20&#x00B0; geht 2&#x00B0;,5 &#x017F;u&#x0364;dlich v. <hi rendition="#aq" >Natchez,</hi> 50&#x2032;<lb break="yes"/>no&#x0364;rdlich v. <hi rendition="#aq">Funchal</hi> und, &#x017F;oviel man nach der vorhan-<lb break="no"/>denen Materialien urtheilen kann, durch 33&#x00B0;,5 der Breite<lb break="yes"/>unter dem Meridian v. <hi rendition="#aq">Cypern.</hi> (Man hat der mittle-<lb break="no"/>ren Temperaturen von <hi rendition="#aq">Algier</hi> und <hi rendition="#aq">Cairo,</hi> welche der &#x017F;ie<lb break="yes"/>
+                    <cb n="856"/>
+                    <lb break="yes"/>umgebende Sand, wie es &#x017F;cheint, auf 1&#x00B0; oder 2&#x00B0; zu<lb break="yes"/>hoch angegeben hat, &#x017F;ich nicht bedient.)</p>
+                <lb break="yes"/>
+                <p>Aus die&#x017F;en Daten ergiebt &#x017F;ich, daß die <hi rendition="#g" >Knoten</hi> der<lb break="yes"/>I&#x017F;otherm-Linien oder ihre Durch&#x017F;chneidungen mit den<lb break="yes"/>Parallelen des Aequators folgendermaaßen liegen.</p>
+                <lb break="yes"/>
+                <p>1) <hi rendition="#g">I&#x017F;oth.-Strich</hi> von <hi rendition="#aq">o:</hi> La&#x0364;nge 94&#x00B0;, W.; Breite<lb break="yes"/>54&#x00B0;, 12&#x2032;; &#x2014; La&#x0364;nge 63&#x00B0;, 40&#x2032; W.; Breite 53&#x00B0;, 15&#x2032;; &#x2014;<lb break="yes"/>La&#x0364;nge 18&#x00B0;, 30&#x2032; O.; Breite 65&#x00B0;, 13&#x2032;; &#x2014; La&#x0364;nge 23&#x00B0; O;<lb break="yes"/>Breite 66&#x00B0;, 20&#x2032;; &#x2014; La&#x0364;nge 56&#x00B0; O.; Breite 62&#x00B0;, 12&#x2032;.<lb break="yes"/>Ein Zweig geht la&#x0364;ngs den no&#x0364;rdl Ku&#x0364;&#x017F;ten durch die La&#x0364;nge<lb break="yes"/>18&#x00B0; O., Breite 70&#x00B0;, La&#x0364;nge 23&#x00B0;<formula notation="TeX" >\frac{1}{2}</formula>, Breite 71&#x00B0;.</p>
+                <lb break="yes"/>
+                <p>2) v. 5&#x00B0;: La&#x0364;nge 73&#x00B0;, 30&#x2032; W., Breite 47&#x00B0;, 20&#x2032; &#x2014;<lb break="yes"/>La&#x0364;nge 5&#x00B0;<formula notation="TeX">\frac{1}{2}</formula> W., Breite 62&#x00B0;. &#x2014; La&#x0364;nge 8&#x00B0;<formula notation="TeX" >\frac{1}{2}</formula> O., Breite<lb break="yes"/>61&#x00B0;, 15&#x2032;. &#x2014; La&#x0364;nge 15&#x00B0;, 18&#x2032; O., Breite 60&#x00B0;, 20&#x2032;. &#x2014;<lb break="yes"/>La&#x0364;nge 20&#x00B0; O., Breite 59&#x00B0;, 37&#x2032;. &#x2014; La&#x0364;nge 35&#x00B0;, 12&#x2032; O.,<lb break="yes"/>Breite 57&#x00B0;, 45&#x2032;.</p>
+                <lb break="yes"/>
+                <p>3) v. 10&#x00B0;: La&#x0364;nge 86&#x00B0;, 40&#x2032; W., Breite 41&#x00B0;, 20&#x2032; &#x2014;<lb break="yes"/>La&#x0364;nge 73&#x00B0;, 30&#x2032; W., Breite 42&#x00B0;, 45. &#x2014; La&#x0364;nge 8&#x00B0;, 40&#x2032;<lb break="yes"/>W., Breite 52&#x00B0;, 20&#x2032;. &#x2014; La&#x0364;nge 5&#x00B0; W., Breite 51&#x00B0;. &#x2014;<lb break="yes"/>La&#x0364;nge 3&#x00B0; W., Breite 52&#x00B0;. &#x2014; La&#x0364;nge 0&#x00B0;, Breite 51&#x00B0;; &#x2014;<lb break="yes"/>La&#x0364;nge 12&#x00B0; O., Breite 49&#x00B0;, 30&#x2032;. &#x2014; La&#x0364;nge 16&#x00B0;, 40&#x2032; O.,<lb break="yes"/>Breite 48&#x00B0;, 50&#x2032;. &#x2014; La&#x0364;nge 114&#x00B0; O., Breite 43&#x00B0;, 30&#x2032;.</p>
+                <lb break="yes"/>
+                <p>4) v. 15&#x00B0;. &#x2014; La&#x0364;nge 93&#x00B0; W., Breite 36&#x00B0;. &#x2014; La&#x0364;nge<lb break="yes"/>1&#x00B0; O., Breite 45&#x00B0;, 30&#x2032;. &#x2014; La&#x0364;nge 9&#x00B0; O., Breite 43&#x00B0;. &#x2014;<lb break="yes"/>La&#x0364;nge 127&#x00B0;, 30&#x2032; O., Breite 34&#x00B0;, 15&#x2032;.</p>
+                <lb break="yes"/>
+                <p>5) v. 20&#x00B0;; La&#x0364;nge 94&#x00B0; W., Breite 29&#x00B0;. &#x2014; La&#x0364;nge 19&#x00B0;,<lb break="yes"/>15&#x2032; W., Breite 33&#x00B0;, 40&#x2032;. &#x2014; La&#x0364;nge 28&#x00B0; O., Breite<lb break="yes"/>33&#x00B0;, 30&#x2032;.</p>
+                <lb break="yes"/>
+                <p>Wirft man einen Blick auf die 1te Figur der Kupfer-<lb break="no"/>Platte, &#x017F;o &#x017F;ieht man, wieviel der I&#x017F;otherm-Linien von<lb break="yes"/>den Erd-Parallelen abweichen. Ihre ho&#x0364;ch&#x017F;ten in Europa<lb break="yes"/>
+                    <choice>
+                        <sic>converen</sic>
+                        <corr type="editorial">convexen</corr>
+                    </choice> Puncte, liegen fa&#x017F;t unter dem&#x017F;elben Meridian.<lb break="yes"/>Von die&#x017F;en Puncten aus gegen We&#x017F;t, na&#x0364;hern die&#x017F;e Li-<lb break="no"/>nien &#x017F;ich dem Aequator, dem &#x017F;ie von den atlanti&#x017F;chen Ku&#x0364;-<lb break="no"/>&#x017F;ten der neuen Welt, bis zum O&#x017F;ten von Mi&#x017F;&#x017F;i&#x017F;&#x017F;ippi und<lb break="yes"/>Mi&#x017F;&#x017F;uri fa&#x017F;t parallel bleiben; ohne Zweifel entfernen &#x017F;ie<lb break="yes"/>&#x017F;ich wieder vom Aequator jen&#x017F;eits der Fel&#x017F;en-Gebirge<lb break="yes"/>an den entgegenge&#x017F;etzten Ku&#x0364;&#x017F;ten von A&#x017F;ien, zwi&#x017F;chen den<lb break="yes"/>35ten und 55ten Grad Breite. Bekanntlich wird la&#x0364;ngs<lb break="yes"/>dem Canal von <hi rendition="#aq">
+                        <choice>
+                            <sic>Sanba</sic>
+                            <corr type="editorial">Santa</corr>
+                        </choice>-Barbara</hi> in neu Californien<lb break="yes"/>der Oelbaum mit Glu&#x0364;ck angebaut, und zu <hi rendition="#aq">Noutka,</hi>
+                    <lb break="yes" />fa&#x017F;t in der Breite von <hi rendition="#aq">Labrador,</hi> frieren die klein&#x017F;ten<lb break="yes"/>Ba&#x0364;che vor dem Januar nicht zu.</p>
+                <lb break="yes"/>
+                <p>Auf nicht weniger auffallende Art beweißt die beige-<lb break="no"/>fu&#x0364;gte Tabelle, daß, von Europa nach O&#x017F;ten die I&#x017F;o-<lb break="no" />therm-Linien aufs neue &#x017F;ich dem Aequator na&#x0364;hern.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>mittlere<lb break="yes"/>Temper.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>St. Malo 48&#x00B0;, 39&#x2032;</cell>
+                        <cell>+ 12&#x00B0;, 5&#x2032;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Am&#x017F;terdam 52, 22</cell>
+                        <cell>+ 11, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neapel 40, 50</cell>
+                        <cell>+ 17, 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Copenhag. 55, 41</cell>
+                        <cell>+ 7, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Up&#x017F;ala 59, 51</cell>
+                        <cell>+ 5, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <cb/>
+                    <row>
+                        <cell/>
+                        <cell>mittlere<lb break="yes"/>Temper.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Wien 48&#x00B0;, 11&#x2032;</cell>
+                        <cell>+ 10&#x00B0;, 3&#x2032;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>War&#x017F;chau 52, 14</cell>
+                        <cell>+ 9, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pecking 39, 54</cell>
+                        <cell>+ 12, 7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Moscau 55, 45</cell>
+                        <cell>+ 4, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Petersb. 59, 56</cell>
+                        <cell>+ 3, 8</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>(Die Ho&#x0364;he von <hi rendition="#aq">Pecking</hi> i&#x017F;t unbetra&#x0364;chtl.; von Moskau<lb break="yes"/>i&#x017F;t &#x017F;ie 300 Meter.)</p>
+                <lb break="yes"/>
+                <p>Es wu&#x0364;rde unno&#x0364;thig &#x017F;eyn bei den <hi rendition="#g" >allgemeinen</hi>
+                    <lb break="yes"/>Folgerungen, die &#x017F;ich beim er&#x017F;ten Anblick der Charte er-<lb break="no"/>geben, &#x017F;tehen zu bleiben; wir wollen hier nur einige<lb break="yes"/>
+                    <pb facs="#f0004"/>
+                    <cb n="857"/>
+                    <lb break="yes"/>Re&#x017F;ultate anfu&#x0364;hren, die &#x017F;ich bei der Kleinheit der Skale<lb break="yes"/>nicht &#x017F;o leicht auffinden la&#x017F;&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>Zu der Bemerkung, die man &#x017F;chon vor mehr als ei-<lb break="no"/>nem Sa&#x0364;kulo gemacht hatte, daß die Temperaturen in<lb break="yes"/>der ganzen Ausdehnung einer jeden Erd-Parallele nicht<lb break="yes"/>gleich &#x017F;ind und daß, wenn man vom 70&#x00B0; der La&#x0364;nge Oe&#x017F;tl.<lb break="yes"/>oder We&#x017F;tlich vom Pari&#x017F;er Meridian geht das Clima<lb break="yes" />ka&#x0364;lter wird, muß man noch hinzu&#x017F;etzen: <hi rendition="#g">daß die Ver-<lb break="no"/>&#x017F;chiedenheiten zwi&#x017F;chen den Temperaturen<lb break="yes"/>der unter gleichen Parallelen <choice>
+                            <sic>belegenen</sic>
+                            <corr type="editorial">gelegenen</corr>
+                        </choice>
+                        <lb break="yes"/>Oerter, nicht in allen Breiten gleich groß<lb break="yes"/>&#x017F;ind.</hi>
+                </p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell>Mittl. Temper.<lb break="yes"/>im We&#x017F;ten<lb break="yes"/>der alten Welt</cell>
+                        <cell>Mittl. Temper.<lb break="yes"/>im O&#x017F;ten<lb break="yes"/>d. neuen Welt</cell>
+                        <cell>Unter&#x017F;chiede</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>30&#x00B0; N.</cell>
+                        <cell>21&#x00B0;,4 <hi rendition="#aq">Centigr.</hi>
+                        </cell>
+                        <cell>19&#x00B0;,4 (66, 8 F.)</cell>
+                        <cell>2&#x00B0;, 0 (3, 3 F.)</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>40&#x00B0;</cell>
+                        <cell>17&#x00B0;,3(63, 1 F.)</cell>
+                        <cell>12&#x00B0;,5(54, 5 F.)</cell>
+                        <cell>4&#x00B0;, 8 (8, 6 F.)</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>50&#x00B0;</cell>
+                        <cell>10&#x00B0;,5(50, 8 F.)</cell>
+                        <cell>3&#x00B0;,3(37, 9 F.)</cell>
+                        <cell>7&#x00B0;, 2 (12, 9 F.)</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>60&#x00B0;</cell>
+                        <cell>4&#x00B0;, 8(40, 0 F.)</cell>
+                        <cell>&#x2014;4&#x00B0;,6(24, 0 F.</cell>
+                        <cell>9&#x00B0;, 4 (16, 0 F.)</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Daß Ge&#x017F;etz der Abnahme der mittl. Temperaturen<lb break="yes"/>findet man in folgender Tabelle:</p>
+                <lb break="yes"/>
+                <p>Von 0&#x00B0; bis 20 Br. in</p>
+                <lb break="yes"/>
+                <list>
+                    <item>
+                        <space dim="horizontal"/>d. alt. Welt 2&#x00B0;(35, 6) in d. n. Welt 2&#x00B0;(35,6)</item>
+                    <lb break="yes"/>
+                    <item>&#x2014; 20 &#x2014; 30 &#x2014; &#x2014; 4&#x00B0;(39, 2) &#x2014; &#x2014; &#x2014; 6&#x00B0;(42,8)</item>
+                    <lb break="yes"/>
+                    <item>&#x2014; 30 &#x2014; 40 &#x2014; &#x2014; 4&#x00B0; &#x2014; &#x2014; &#x2014; &#x2014; 7&#x00B0;(44,6)</item>
+                    <lb break="yes"/>
+                    <item>&#x2014; 40 &#x2014; 50 &#x2014; &#x2014; 7&#x00B0;(44, 6) &#x2014; &#x2014; &#x2014; 9&#x00B0;(48,2)</item>
+                    <lb break="yes"/>
+                    <item>&#x2014; 50 &#x2014; 60 &#x2014; &#x2014; 5&#x00B0;,7(41, 8) &#x2014; &#x2014; &#x2014; 7&#x00B0;,9(45,1)</item>
+                </list>
+                <lb break="yes"/>
+                <p>In beiden Welten liegt die Zone, in welcher die<lb break="yes"/>mittl. Temperatur am &#x017F;chnell&#x017F;ten abnimmt, zwi&#x017F;chen den<lb break="yes" />Parallelen von 40&#x00B0; und 45&#x00B0;; die&#x017F;er Um&#x017F;tand muß einen<lb break="yes"/>gu&#x0364;n&#x017F;tigen Einfluß auf die Bildung und den Kun&#x017F;tfleiß der<lb break="yes"/>Vo&#x0364;lker haben, die die Nachbar-La&#x0364;nder der mittlern Pa-<lb break="no"/>rallele bewohnen. Es i&#x017F;t dieß der Punct, wo die Regio-<lb break="no"/>nen des Wein&#x017F;tocks an die des Oliven <choice>
+                        <sic>unb</sic>
+                        <corr type="editorial">und</corr>
+                    </choice> Citronbaums<lb break="yes"/>&#x017F;toßen. Nirgend anders auf der Erdkugel, von Nor-<lb break="no"/>den nach Su&#x0364;den vor &#x201E;findet man ein merklicheres Zu-<lb break="no"/>nehmen der Temperaturen; nirgend auch folgen die Er-<lb break="no"/>zeugni&#x017F;&#x017F;e des Pflanzenreichs und die mannichfaltigen Ge-<lb break="no"/>gen&#x017F;ta&#x0364;nde des Ackerbaus &#x017F;chneller auf einander. Eine<lb break="yes"/>große Ver&#x017F;chiedenheit in den Erzeugni&#x017F;&#x017F;en der Gra&#x0364;nzla&#x0364;n-<lb break="no" />der, belebt den Handel und vermehrt den Kun&#x017F;tfleiß der<lb break="yes" />Ackerbauenden Vo&#x0364;lker.&#x201C;</p>
+                <lb break="yes"/>
+                <p>Man wird indeß doch leicht bemerken daß in der<lb break="yes"/>heißen Zone niedriger als die Parallele von 30&#x00B0; die<lb break="yes"/>I&#x017F;otherm-Linien nach und nach unter einander und mit<lb break="yes"/>dem Erd-Aequator parallel werden, &#x017F;o daß die lange<lb break="yes"/>Zeit angenommene Meynung; die alte Welt &#x017F;ey wa&#x0364;r-<lb break="no"/>mer als die neue, &#x017F;elb&#x017F;t zwi&#x017F;chen den Wendezirkeln, gar<lb break="yes" />keinen Grund hat.</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Mittlere Temperatur.</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Senegambia</hi> (Breite 14&#x00B0;, 40&#x2032; No&#x0364;rdlich) &#x2014; 26&#x00B0;, 5</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Madras</hi> (Breite 13&#x00B0;, 5&#x2032; No&#x0364;rdlich) &#x2032; 26&#x00B0;, 9</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Batavia</hi> (Breite 6&#x00B0;, 12&#x2032; No&#x0364;rdlich) &#x2014; 26&#x00B0;, 9</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Manilla</hi> (Breite 14&#x00B0;, 36&#x2032; No&#x0364;rdlich) &#x2014; 25&#x00B0;, 6</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Cumana</hi> (Breite 10&#x00B0;, 28&#x2032; No&#x0364;rdlich) &#x2014; 27&#x00B0;, 7</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Antillen</hi> (Breite 16&#x00B0;, &#x2014; No&#x0364;rdlich) &#x2014; 27&#x00B0;, 5</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Vera-Crux</hi> (Breite 19&#x00B0;, 12&#x2032; No&#x0364;rdlich) &#x2014; 25&#x00B0;, 6</item>
+                    <lb break="yes"/>
+                    <item>
+                        <hi rendition="#aq">Havanna</hi> (Breite 23&#x00B0;. 9&#x2032; No&#x0364;rdlich) &#x2014; 25&#x00B0;, 6</item>
+                </list>
+                <lb break="yes"/>
+                <cb n="858"/>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell cols="2">
+                            <hi rendition="#aq">A.</hi> Hohle Scheitel in Amerika.</cell>
+                        <cell>Mittl. Temp. d. Jahrs</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Natchez, Br.</cell>
+                        <cell>31&#x00B0;, 28&#x2032; &#x2014;</cell>
+                        <cell>64, 8&#x00B0; F.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Williamsburg</cell>
+                        <cell>37, 18 &#x2014;</cell>
+                        <cell>58, 1 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cincinnati</cell>
+                        <cell>39, 0 &#x2014;</cell>
+                        <cell>53, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Philadelphia</cell>
+                        <cell>39, 56 &#x2014;</cell>
+                        <cell>53, 6 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neu-York</cell>
+                        <cell>40, 40 &#x2014;</cell>
+                        <cell>53, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cambridge</cell>
+                        <cell>42, 25 &#x2014;</cell>
+                        <cell>50, 4 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Quebek</cell>
+                        <cell>46, 47 &#x2014;</cell>
+                        <cell>41, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nain</cell>
+                        <cell>57, 0 &#x2014;</cell>
+                        <cell>26, 4 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">
+                            <hi rendition="#aq">B.</hi> Erhobene Scheitel in Europa.<lb break="yes"/>
+                            <hi rendition="#aq">a.</hi> Clima im Land.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rom</cell>
+                        <cell>41&#x00B0;, 53&#x2032; F.</cell>
+                        <cell>60, 4&#x00B0; F.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mailand</cell>
+                        <cell>45, 28 &#x2014;</cell>
+                        <cell>55, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Genf</cell>
+                        <cell>46, 12 &#x2014;</cell>
+                        <cell>49, 2 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ofen</cell>
+                        <cell>47, 29 &#x2014;</cell>
+                        <cell>60, 0 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris</cell>
+                        <cell>48, 50 &#x2014;</cell>
+                        <cell>60, 0 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Go&#x0364;ttingen</cell>
+                        <cell>51, 32 &#x2014;</cell>
+                        <cell>46, 7 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Up&#x017F;al</cell>
+                        <cell>59, 61 &#x2014;</cell>
+                        <cell>41, 9 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Petersburg</cell>
+                        <cell>59, 56 &#x2014;</cell>
+                        <cell>38, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Umea</cell>
+                        <cell>63, 50 &#x2014;</cell>
+                        <cell>33, 2 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ulea</cell>
+                        <cell>65, 0 &#x2014;</cell>
+                        <cell>35, 0 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Enontekies</cell>
+                        <cell>68, 30 &#x2014;</cell>
+                        <cell>27, 0 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">
+                            <hi rendition="#aq">b.</hi> Clima an der Ku&#x0364;&#x017F;te.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nantes</cell>
+                        <cell>47&#x00B0;, 13&#x2032; F.</cell>
+                        <cell>54, 6 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>London</cell>
+                        <cell>51, 30 &#x2014;</cell>
+                        <cell>51, 6 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dublin</cell>
+                        <cell>53, 21 &#x2014;</cell>
+                        <cell>48, 4 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Edimburg</cell>
+                        <cell>57, 57 &#x2014;</cell>
+                        <cell>47, 8 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nord-Cap</cell>
+                        <cell>71, 0 &#x2014;</cell>
+                        <cell>32, 0 &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="3">
+                            <hi rendition="#aq">B.</hi> Hohle Scheitel in A&#x017F;ien.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Peking</cell>
+                        <cell>39&#x00B0;, 54&#x2032; F.</cell>
+                        <cell>54, 8 F.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Nach der Erkla&#x0364;rung, die wir von den mittlern<lb break="yes"/>Temper. gegeben haben, i&#x017F;t es klar, daß eine gleiche<lb break="yes"/>Menge von ja&#x0364;hrlicher Wa&#x0364;rme an ver&#x017F;chiedenen Orten<lb break="yes" />&#x017F;ehr ungleich in die ver&#x017F;chiedenen Jahrszeiten vertheilt<lb break="yes"/>&#x017F;eyn kann. Die folgende Tabelle zeigt, wieviel die<lb break="yes"/>Winter und Sommer unter einander auf allen I&#x017F;o-<lb break="no"/>therm-Linien, vom 28&#x00B0; und 30&#x00B0; no&#x0364;rdl. Breite, bis zu<lb break="yes"/>den Parallelen von 55&#x00B0; und 60&#x00B0;, ver&#x017F;chieden &#x017F;ind; eben-<lb break="no"/>&#x017F;o wird man auch finden, daß in den beiden Strichen<lb break="yes"/>der alten und neuen Welt, welche zwey Sy&#x017F;teme ver-<lb break="no"/>&#x017F;chiedener Climaten bilden, die Vertheilung der ja&#x0364;hrli-<lb break="no"/>chen Wa&#x0364;rme zwi&#x017F;chen Winter und Sommer &#x017F;o ge&#x017F;chieht,<lb break="yes" />daß auf die I&#x017F;otherm-Linie von 0&#x00B0;, der Unter&#x017F;chied<lb break="yes"/>der beiden Jahrszeiten fa&#x017F;t das Doppelte betra&#x0364;gt von<lb break="yes"/>dem, der auf der I&#x017F;otherm-Linie von 20&#x00B0; bemerkt<lb break="yes"/>wird.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell rows="3" cols="2"/>
+                        <cell cols="2">Strich<lb break="yes"/>die&#x017F;&#x017F;eits des atl.<lb break="yes"/>Meers (La&#x0364;ng. 3&#x00B0;,<lb break="yes"/>We&#x017F;t. u. 15&#x00B0; O&#x017F;t)</cell>
+                        <cell/>
+                        <cell cols="2">Strich<lb break="yes"/>jen&#x017F;eit des atl.<lb break="yes" />Meers (La&#x0364;ng.<lb break="yes"/>60&#x00B0;&#x2014;74&#x00B0;, W&#x017F;tl.)</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2" rendition="#bottomBraced">Mittl. Temper.</cell>
+                        <cell rows="2" rendition="#v">Unter&#x017F;chied</cell>
+                        <cell cols="2" rendition="#bottomBraced">Mittl. Temper.</cell>
+                        <cell rows="2" rendition="#v">Unter&#x017F;chied</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>v.<lb break="yes"/>Wint.</cell>
+                        <cell>v.<lb break="yes"/>Somm.</cell>
+                        <cell>v.<lb break="yes"/>Wint.</cell>
+                        <cell>v.<lb break="yes"/>Somm.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="5" rendition="#rightBraced">I&#x017F;otherm-<lb break="no" />Linie<lb break="yes"/>von</cell>
+                        <cell>20&#x00B0;</cell>
+                        <cell>15&#x00B0;</cell>
+                        <cell>27&#x00B0;</cell>
+                        <cell>12&#x00B0;</cell>
+                        <cell>12&#x00B0;</cell>
+                        <cell>27&#x00B0;</cell>
+                        <cell>15&#x00B0;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15</cell>
+                        <cell>7</cell>
+                        <cell>23</cell>
+                        <cell>16</cell>
+                        <cell>4</cell>
+                        <cell>26</cell>
+                        <cell>22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10</cell>
+                        <cell>2</cell>
+                        <cell>20</cell>
+                        <cell>18</cell>
+                        <cell>&#x2014; 1</cell>
+                        <cell>22</cell>
+                        <cell>23</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>16</cell>
+                        <cell>20</cell>
+                        <cell>&#x2014; 10</cell>
+                        <cell>19</cell>
+                        <cell>29</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0</cell>
+                        <cell>&#x2014; 10</cell>
+                        <cell>12</cell>
+                        <cell>22</cell>
+                        <cell>&#x2014; 17</cell>
+                        <cell>13</cell>
+                        <cell>30</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Merk: Wobey nicht F. (Fahrenheit) &#x017F;teht, i&#x017F;t das hundertgradige Therm. gemeynt.</p>
+                <lb break="yes"/>
+                <pb facs="#f0005"/>
+                <cb n="859"/>
+                <lb break="yes"/>
+                <table xml:id="t1-1" next="#t1-2">
+                    <row>
+                        <cell cols="5">Cisatlanti&#x017F;che Linie, La&#x0364;nge</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="5">29&#x00B0; O&#x017F;tl. 20&#x00B0; W&#x017F;tl. nach Fahr.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Oerter.</cell>
+                        <cell>Breite</cell>
+                        <cell>Jahr</cell>
+                        <cell>Winter</cell>
+                        <cell>Sommer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">(Pondichery)</hi>
+                        </cell>
+                        <cell>11&#x00B0;, 35&#x2032;</cell>
+                        <cell>85, 4&#x00B0;</cell>
+                        <cell>77, 0&#x00B0;</cell>
+                        <cell>90, 8&#x00B0;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Kairo</cell>
+                        <cell>30, 2</cell>
+                        <cell>72, 6</cell>
+                        <cell>57, 6</cell>
+                        <cell>84, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Funchal</hi>
+                        </cell>
+                        <cell>32, 37</cell>
+                        <cell>68, 4</cell>
+                        <cell>63, 8</cell>
+                        <cell>72, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Rom</hi>
+                        </cell>
+                        <cell>41, 55</cell>
+                        <cell>60, 1</cell>
+                        <cell>45, 8</cell>
+                        <cell>75, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Bourdeaux</hi>
+                        </cell>
+                        <cell>44, 50</cell>
+                        <cell>56, 5</cell>
+                        <cell>42, 0</cell>
+                        <cell>70, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Paris</hi>
+                        </cell>
+                        <cell>48, 50</cell>
+                        <cell>51, 8</cell>
+                        <cell>38, 3</cell>
+                        <cell>66, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Kopenhagen</cell>
+                        <cell>55, 41</cell>
+                        <cell>45, 6</cell>
+                        <cell>31, 0</cell>
+                        <cell>62, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Stockholm</cell>
+                        <cell>59, 20</cell>
+                        <cell>42, 2</cell>
+                        <cell>26, 0</cell>
+                        <cell>61, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Drontheim</cell>
+                        <cell>63, 24</cell>
+                        <cell>39, 7</cell>
+                        <cell>24, 0</cell>
+                        <cell>61, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Umea</hi>
+                        </cell>
+                        <cell>63, 50</cell>
+                        <cell>31, 0</cell>
+                        <cell>13, 4</cell>
+                        <cell>54, 4</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Folgende Tabelle zeigt, wie die ja&#x0364;hrliche Wa&#x0364;rme<lb break="yes" />zwi&#x017F;chen dem Winter und dem Sommer in allen Thei-<lb break="no"/>len der gema&#x0364;ßigten Zone vertheilt i&#x017F;t. Die Beobach-<lb break="no" />tungen &#x017F;ind nach den I&#x017F;othermallinien von We&#x017F;t nach<lb break="yes"/>O&#x017F;t genommen und die &#x017F;ind vorgezogen, welche den ge-<lb break="no"/>kru&#x0364;mmte&#x017F;ten Theilen der Linie am na&#x0364;ch&#x017F;ten liegen. Die<lb break="yes"/>La&#x0364;nge von Paris. Therm. nach F.</p>
+                <lb break="yes"/>
+                <table xml:id="t2-1" next="#t2-2">
+                    <row>
+                        <cell cols="2">I&#x017F;othermallinien v. 32&#x00B0; bis 68&#x00B0;.</cell>
+                        <cell>mittlere<lb break="yes"/>Winter</cell>
+                        <cell>Temper.<lb break="yes"/>Somm.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="3">I&#x017F;oth.<lb break="yes"/>v. 68&#x00B0;</cell>
+                        <cell>L. 84&#x00B0;, 30&#x2032; W.; Br. 29&#x00B0;, 30&#x2032;<lb break="yes"/>
+                            <hi rendition="#aq">(Florida)</hi>
+                        </cell>
+                        <cell>53. 6</cell>
+                        <cell>80. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 19v, 19&#x2032; W.; Br. 32&#x00B0;, 37<lb break="yes"/>
+                            <hi rendition="#aq" >(Madeira)</hi>
+                        </cell>
+                        <cell>63. 6</cell>
+                        <cell>72. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 0&#x00B0;, 40&#x2032; O.; Br. 36&#x00B0;, 48<lb break="yes"/>(N. v. Africa)</cell>
+                        <cell>59, 0</cell>
+                        <cell>80. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2">I&#x017F;oth.<lb break="yes"/>v. 63. 5&#x00B0;</cell>
+                        <cell>L. 92&#x00B0; W.; Br. 32&#x00B0;, 30&#x2032;<lb break="yes"/>
+                            <hi rendition="#aq" >(Mi&#x017F;&#x017F;i&#x017F;&#x017F;ippi)</hi>
+                        </cell>
+                        <cell>46. 4 </cell>
+                        <cell>77. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 11&#x00B0;, 51&#x2032; O.; Br. 40&#x00B0;, 50&#x2032;<lb break="yes" />(Italien)</cell>
+                        <cell>50. 0</cell>
+                        <cell>77. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2">I&#x017F;oth.<lb break="yes"/>v. 59&#x00B0;</cell>
+                        <cell>L. 86&#x00B0;, 30&#x2032; W.; Br. 35&#x00B0;, 30&#x2032;<lb break="yes"/>(v. Ohio)</cell>
+                        <cell>39. 2</cell>
+                        <cell>78. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 1&#x00B0;, 2&#x2032; O; Br. 43&#x00B0;, 30&#x2032;<lb break="yes"/>(Su&#x0364;d. v. Frankreich) </cell>
+                        <cell>44. 6</cell>
+                        <cell>75. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="5">I&#x017F;oth.<lb break="yes"/>v. 54. 5</cell>
+                        <cell>L. 87&#x00B0; W.; Br. 38&#x00B0;, 30&#x2032; (Amer.<lb break="yes"/>W. der <hi rendition="#aq">Alleghanys</hi>)</cell>
+                        <cell>34. 7</cell>
+                        <cell>75. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 76&#x00B0;, 30&#x2032; W.; Br. 40&#x00B0; (Amer.<lb break="yes"/>O. der <hi rendition="#aq">Alleghanys</hi>)</cell>
+                        <cell>32. 7</cell>
+                        <cell>77. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 3&#x00B0;, 52&#x2032; W.; Br. 47&#x00B0;, 10&#x2032;<lb break="yes"/>(W. v. Frankreich)</cell>
+                        <cell>41. 0</cell>
+                        <cell>68. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 7&#x00B0; O.; Br. 45&#x00B0;, 30&#x2032; (Lon-<lb break="no"/>bardey)</cell>
+                        <cell>34. 7</cell>
+                        <cell>73. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 114&#x00B0; O.; Br. 40&#x00B0; (o&#x0364;&#x017F;tl.<lb break="yes" />A&#x017F;ien)</cell>
+                        <cell>26. 6</cell>
+                        <cell>82. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="7">I&#x017F;oth.<lb break="yes"/>v. 50&#x00B0;</cell>
+                        <cell>L. 86&#x00B0;, 40&#x2032; W.; Br. 41&#x00B0;, 20&#x2032;<lb break="yes"/>(Amer. W. d. <hi rendition="#aq">Alleghanys</hi>
+                        </cell>
+                        <cell>31. 1</cell>
+                        <cell>71. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 73&#x00B0;, 30&#x2032; W.; Br. 40&#x2032; (Amer.<lb break="yes"/>O. d. <hi rendition="#aq">Alleghanys</hi>)</cell>
+                        <cell>30. 2</cell>
+                        <cell>73. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 9&#x00B0; W.; Br. 52&#x00B0;, 30&#x2032; (Irland)</cell>
+                        <cell>39. 2</cell>
+                        <cell>59. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 3&#x00B0; W.; Br. 53&#x00B0;, 30&#x2032; (England)</cell>
+                        <cell>37. 4</cell>
+                        <cell>62. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 0; Br. 51&#x00B0; (Belgien)</cell>
+                        <cell>36. 5</cell>
+                        <cell>61. 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 16&#x00B0;, 40&#x2032; O.; Br. 47&#x00B0;, 30<lb break="yes"/>(Ungarn)</cell>
+                        <cell>31. 1</cell>
+                        <cell>69. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 114&#x00B0; O.; Br. 40&#x00B0; (o&#x0364;&#x017F;tl. A&#x017F;ien)</cell>
+                        <cell>23. 0</cell>
+                        <cell>78. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="4">I&#x017F;oth.<lb break="yes"/>v. 45. 5&#x00B0;</cell>
+                        <cell>L. 23&#x00B0;, 20&#x2032; W.; Br. 44&#x00B0;, 42&#x2032; Am.</cell>
+                        <cell>23. 9</cell>
+                        <cell>71. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 4&#x00B0;, 30&#x2032; W.; Br. 57&#x00B0; (Schottl.)</cell>
+                        <cell>36. 0</cell>
+                        <cell>56. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 10&#x00B0;, 15&#x2032; O.; Br. 55&#x00B0;, 40&#x2032;<lb break="yes" />(Da&#x0364;nemark)</cell>
+                        <cell>31. 3</cell>
+                        <cell>62. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 19&#x00B0; O.; Br. 53&#x00B0;, 5&#x2032; (Polen)</cell>
+                        <cell>28. 0</cell>
+                        <cell>66. 2</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <cb n="860"/>
+                <lb break="yes"/>
+                <table xml:id="t1-2" prev="#t1-1">
+                    <row>
+                        <cell cols="5">Transatlant. Linie, La&#x0364;nge</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="5">67&#x00B0; O&#x017F;t. 97&#x00B0; We&#x017F;t.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Oerter.</cell>
+                        <cell>Breite</cell>
+                        <cell>Jahr</cell>
+                        <cell>Winter</cell>
+                        <cell>Sommer</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Cumana</hi>
+                        </cell>
+                        <cell>10&#x00B0;, 27&#x2032;</cell>
+                        <cell>81, 6&#x00B0;</cell>
+                        <cell>81, 3&#x00B0; </cell>
+                        <cell>83, 3&#x00B0;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Havannah</hi>
+                        </cell>
+                        <cell>23, 10</cell>
+                        <cell>77, 7</cell>
+                        <cell>80, 4</cell>
+                        <cell>79, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Natchez</hi>
+                        </cell>
+                        <cell>31, 28</cell>
+                        <cell>64, 8</cell>
+                        <cell>48, 6</cell>
+                        <cell>79, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Cincinnati</hi>
+                        </cell>
+                        <cell>39, 6</cell>
+                        <cell>53, 6</cell>
+                        <cell>32, 9</cell>
+                        <cell>73, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Philadelphia</hi>
+                        </cell>
+                        <cell>39, 56</cell>
+                        <cell>53, 1</cell>
+                        <cell>32, 2</cell>
+                        <cell>73, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Neu-York</hi>
+                        </cell>
+                        <cell>40, 40</cell>
+                        <cell>53, 9</cell>
+                        <cell>30, 0</cell>
+                        <cell>79, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Cambridge</hi>
+                        </cell>
+                        <cell>42, 25</cell>
+                        <cell>50, 4</cell>
+                        <cell>34, 0</cell>
+                        <cell>70, 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Quebec</hi>
+                        </cell>
+                        <cell>46, 47</cell>
+                        <cell>41, 6</cell>
+                        <cell>15, 0</cell>
+                        <cell>68, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Nain</hi>
+                        </cell>
+                        <cell>57, 10</cell>
+                        <cell>26, 4</cell>
+                        <cell>0, 4</cell>
+                        <cell>48, 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">Fort-Churchill</hi>
+                        </cell>
+                        <cell>59, 2</cell>
+                        <cell>25, 5</cell>
+                        <cell>6, 8</cell>
+                        <cell>52, 0</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <table xml:id="t2-2" prev="#t2-1">
+                    <row>
+                        <cell cols="2"/>
+                        <cell>Winter</cell>
+                        <cell>Somm.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="5" rendition="#rightBraced">I&#x017F;oth.<lb break="yes"/>v. 41&#x00B0;</cell>
+                        <cell>L. 73&#x00B0;, 30&#x2032; W.; Br. 47&#x00B0; (Canada)</cell>
+                        <cell>14. 0</cell>
+                        <cell>68. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 7&#x00B0; O.; Br. 62&#x00B0;, 45&#x2032; (We&#x017F;tl.<lb break="yes" />Norwegen)</cell>
+                        <cell>24. 8</cell>
+                        <cell>62. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 15&#x00B0; O.; Br. 60&#x00B0;, 30&#x2032; (Schwed.)</cell>
+                        <cell>24. 8</cell>
+                        <cell>60. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 22&#x00B0; O.; Br. 60&#x00B0; (Finnland)</cell>
+                        <cell>23. 0</cell>
+                        <cell>63. 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 34&#x00B0; O.; Br. 58&#x00B0;, 30&#x2032; (Mit-<lb break="no"/>telpunct v. Rußland)</cell>
+                        <cell>13. 0</cell>
+                        <cell>68. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="3">I&#x017F;oth.<lb break="yes"/>v. 36. 5&#x00B0;</cell>
+                        <cell>L. 74&#x00B0; W.; Br. 50&#x00B0; (Canada)</cell>
+                        <cell>6. 8</cell>
+                        <cell>60. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 15&#x00B0; 45&#x2032; O.; Br. 62&#x00B0;, 30&#x2032; (W.<lb break="yes" />Ku&#x0364;&#x017F;te d. botni&#x017F;ch. Meerbu&#x017F;.)</cell>
+                        <cell>17. 6</cell>
+                        <cell>57. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 20&#x00B0; O.; Br. 62&#x00B0;, 50&#x2032; (O. Ku&#x0364;&#x017F;te<lb break="yes" />de&#x017F;&#x017F;elben)</cell>
+                        <cell>16. 7</cell>
+                        <cell>59. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="3">I&#x017F;oth.<lb break="yes"/>v. 32&#x00B0;</cell>
+                        <cell>L. 60&#x00B0; W.; Br. 53&#x00B0; (Labrador)</cell>
+                        <cell>3. 2</cell>
+                        <cell>51. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 17&#x00B0;, 30&#x2032; O.; Br. 65&#x00B0;<lb break="yes"/>(Schweden)</cell>
+                        <cell>11. 3</cell>
+                        <cell>53. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L. 23&#x00B0; O.; Br. 71&#x00B0; (no&#x0364;rdl.<lb break="yes"/>Theil v. Norwegen)</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>45 7</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Die Ungleichheit des Winters in derfelben I&#x017F;o-<lb break="no"/>thermlinie nimmt zu, wie die ja&#x0364;hrliche Wa&#x0364;rme &#x017F;ich<lb break="yes" />vermindert von Algier nach Holland, und von Flo-<lb break="no"/>rida nach Pen&#x017F;ylvanien.</p>
+                <lb break="yes"/>
+                <p>Wenn man, &#x017F;tatt wie oben die mittlern Tempera-<lb break="no"/>ren der Jahrszeiten zu beru&#x0364;ck&#x017F;ichtigen, die mittleren des<lb break="yes" />wa&#x0364;rm&#x017F;ten und des ka&#x0364;lte&#x017F;ten Monats nimmt, &#x017F;o werden<lb break="yes"/>die Unter&#x017F;chiede noch gro&#x0364;ßer als wir es eben gefunden<lb break="yes"/>haben.</p>
+                <lb break="yes"/>
+                <p>Die Unter&#x017F;chiede zwi&#x017F;chen den Jahrszeiten &#x017F;cheinen<lb break="yes"/>an die Ge&#x017F;talt der I&#x017F;otherm-Linie gebunden zu &#x017F;eyn;<lb break="yes"/>&#x017F;ie &#x017F;ind an den gewo&#x0364;lbten Gipfeln kleiner als in den<lb break="yes"/>hohlen, &#x017F;o daß die&#x017F;elbe Ur&#x017F;ache, welche die&#x017F;e Curven ge-<lb break="no"/>gen den Pol erho&#x0364;het, auch dahin &#x017F;trebt die Temperatu-<lb break="no"/>ren der Jahrszeiten gleichzu&#x017F;tellen. Da die mittlere<lb break="yes"/>Temperatur des Jahres dem Viertel der thermometri-<lb break="no"/>&#x017F;chen Summe der Winter-, Fru&#x0364;hlings-, Sommer- und<lb break="yes" />Herb&#x017F;t-Temperaturen gleicht, &#x017F;o haben wir z. E. auf<lb break="yes"/>der&#x017F;elben I&#x017F;otherm-Linie von 12&#x00B0;, dem hohlen Gipfel<lb break="yes"/>in America (77&#x00B0; La&#x0364;nge We&#x017F;tl. v. Paris)</p>
+                <lb break="yes"/>
+                <list>
+                    <item>
+                        <formula notation="TeX" >12^\circ=\frac{0^\circ+11^\circ,3+24^\circ,2+12^\circ,5}{4}</formula>;<lb break="yes"/>beym gewo&#x0364;lbten Gipfel in Europa, (im Meridian von<lb break="yes"/>Paris)<lb break="yes"/>
+                        <formula notation="TeX" >12^\circ=\frac{+4^\circ,5+11^\circ,0+20^\circ,2+12^\circ,3}{4}</formula>;<lb break="yes"/>Auf dem hohlen Gipfel in A&#x017F;ien (114&#x00B0;, Oe&#x017F;tliche La&#x0364;nge<lb break="yes"/>von Paris)<lb break="yes" />
+                        <formula notation="TeX" >12^\circ=\frac{-4^\circ+12^\circ,6+27^\circ+12^\circ,4}{4}</formula>.</item>
+                </list>
+                <lb break="yes"/>
+                <pb facs="#f0006"/>
+                <cb n="861"/>
+                <lb break="yes"/>
+                <p>Wenn man auf einer Charte &#x017F;tatt I&#x017F;otherm-Linien,<lb break="yes" />Linien der gleichen Winter-Temperatur zo&#x0364;ge <hi rendition="#aq" >(lignes<lb break="yes"/>isochimènes),</hi> &#x017F;o wu&#x0364;rde man bald bemerken, daß &#x017F;ie<lb break="yes"/>viel mehr von den Erd-Parallelen abgehen als die er-<lb break="no"/>&#x017F;ten. Im Sy&#x017F;teme der europa&#x0364;i&#x017F;chen Climate, ko&#x0364;nnen<lb break="yes"/>die geographi&#x017F;chen Breiten zweier gleiche ja&#x0364;hrliche Tem-<lb break="no"/>peratur habenden Gegenden nicht mehr als 4&#x00B0; bis 5&#x00B0;<lb break="yes"/>ver&#x017F;chieden &#x017F;eyn; da zwey Oerter von gleicher mittleren<lb break="yes"/>Winter-Temperatur in geographi&#x017F;cher Breite 9&#x00B0; bis 10&#x00B0;<lb break="yes"/>abweichen ko&#x0364;nnen; je mehr man nach O&#x017F;ten vorru&#x0364;ckt<lb break="yes"/>de&#x017F;to &#x017F;chneller wach&#x017F;en die&#x017F;e Unter&#x017F;chiede. In Nieder-<lb break="no"/>land (geographi&#x017F;che Breite 52&#x00B0;, I&#x017F;oth. Breite 51, 8&#x00B0;)<lb break="yes" />und &#x017F;elb&#x017F;t in Schottland (geographi&#x017F;che Breite 57&#x00B0;), &#x017F;ind<lb break="yes"/>die Winter milder als zu Mailand (geographi&#x017F;che Breite<lb break="yes"/>45&#x00B0;, 28&#x2032;, I&#x017F;oth. Breite 57&#x00B0;, 7&#x00B0;). Irland hat &#x017F;ehr milde<lb break="yes"/>Winter und kalte Sommer; die mitl. Temp. v. Ungarn<lb break="yes"/>fu&#x0364;r den Monat Augu&#x017F;t i&#x017F;t 71, 6&#x00B0;, wa&#x0364;hrend zu Dublin<lb break="yes"/>60, 8&#x00B0; i&#x017F;t, die Winterlinien weichen mithin viel mehr<lb break="yes"/>von den Erdparallelen ab als die Sommerlinien. In<lb break="yes"/>den europa&#x0364;i&#x017F;chen Climaten unter&#x017F;cheidet &#x017F;ich die Breite<lb break="yes"/>zweier Pla&#x0364;tze, welche die na&#x0364;mliche Jahrestemperatur<lb break="yes"/>haben, nie mehr als 8 oder 9&#x00B0;, wa&#x0364;hrend Pla&#x0364;tze die<lb break="yes"/>na&#x0364;mliche Wintertemperatur haben, und doch 18 oder<lb break="yes"/>19&#x00B0; von einander liegen ko&#x0364;nnen. &#x201E;Die Linien des glei-<lb break="no"/>chen Sommers <hi rendition="#aq">(courbes isotheres)</hi> folgen einer den<lb break="yes" />Winter-Curven ganz entgegenge&#x017F;etzten Richtung. Wir<lb break="yes" />finden die&#x017F;elbe Sommer-Temperatur zu Moskau im<lb break="yes" />Mittelpuncte von Rußland, und an der Mu&#x0364;ndung der<lb break="yes"/>
+                    <hi rendition="#aq">Loire,</hi> ungeachtet jenes 11&#x00B0; <note place="foot" n="*)" >In der Rechnung, worauf die&#x017F;er Satz &#x017F;ich bezieht<lb break="yes"/>hat man den Winter als ganz aus den Monaten<lb break="yes" />December und den beiden folgenden be&#x017F;tehend ange-<lb break="no" />nommen, den Sommer von 1&#x017F;ten Juny bis den letz-<lb break="no"/>ten Augu&#x017F;t.</note> no&#x0364;rdlicher liegt.</p>
+                <lb break="yes"/>
+                <p>Die &#x017F;u&#x0364;dliche Halbkugel i&#x017F;t betra&#x0364;chtlich ka&#x0364;lter als die<lb break="yes"/>no&#x0364;rdliche; man glaubt weil die Sonne ku&#x0364;rzere Zeit jen-<lb break="no"/>&#x017F;eits des Aequators weile, ha&#x0364;ngt aber wahr&#x017F;cheinlich<lb break="yes"/>von der gro&#x0364;ßern Wa&#x017F;&#x017F;erma&#x017F;&#x017F;e ab. Um den Aequator<lb break="yes" />&#x017F;cheint die Wa&#x0364;rme beyder&#x017F;eits gleich zu &#x017F;eyn; den Un-<lb break="no"/>ter&#x017F;chied fu&#x0364;hlt man aber im atlanti&#x017F;chen Meer auf 22&#x00B0;<lb break="yes"/>Br., und zwi&#x017F;chen der mittl. Temperat. von Riojaneiro<lb break="yes"/>und Havannah i&#x017F;t ein großer Unter&#x017F;chied, ob&#x017F;chon beyde<lb break="yes"/>gleich weit vom Aequator liegen; er&#x017F;tes hat 74, 5&#x00B0;,<lb break="yes"/>zweytes 76, 4&#x00B0; Wa&#x0364;rme. Auf der &#x017F;u&#x0364;dlichen Halbkugel<lb break="yes"/>findet man unter den i&#x017F;otheri&#x017F;chen Linien von 46&#x00B0; und<lb break="yes"/>50&#x00B0; Sommer, welche in un&#x017F;rer Halbkugel mit 35, 5&#x00B0;<lb break="yes"/>und 41&#x00B0; Wa&#x0364;rme zu&#x017F;ammentreffen. Wie &#x017F;ich die mittl.<lb break="yes" />Temperat. eines Platzes u&#x0364;ber 50&#x00B0; &#x017F;u&#x0364;dl. Br. verha&#x0364;lt,<lb break="yes"/>wi&#x017F;&#x017F;en wir nicht.</p>
+                <lb break="yes"/>
+                <p>Das Meerwa&#x017F;&#x017F;er &#x017F;oll am wa&#x0364;rm&#x017F;ten &#x017F;eyn zwi&#x017F;chen 5&#x00B0;,<lb break="yes"/>45&#x2032; no&#x0364;rdl. und 6&#x00B0;, 15&#x2032; &#x017F;u&#x0364;dl. Br., und zwar 82, 5&#x00B0; bis<lb break="yes"/>84, 5&#x00B0; Wa&#x0364;rme; die Temperat. des Meeres in die&#x017F;er<lb break="yes"/>Gegend i&#x017F;t 4 bis 5&#x00B0; ho&#x0364;her als die der Luft daru&#x0364;ber.<lb break="yes"/>
+                    <cb n="862"/>
+                    <lb break="yes"/>Gegen die Pole bleibt zwi&#x017F;chen der Temperatur des<lb break="yes"/>Wa&#x017F;&#x017F;ers und der Luft, kein be&#x017F;timmtes Verha&#x0364;ltniß.</p>
+                <lb break="yes"/>
+                <p>Statt alle die&#x017F;e Sy&#x017F;teme der Curven zu zeichnen,<lb break="yes" />deren vielfa&#x0364;ltige Durchflechtungen nur verrwirren wu&#x0364;r-<lb break="no"/>den, hat man &#x017F;ich begnu&#x0364;gt denen I&#x017F;otherm-Linien an<lb break="yes"/>ihren Gipfeln die mittleren Sommer- und Winter-<lb break="no"/>Temperaturen beizufu&#x0364;gen. So findet man, wenn man<lb break="yes"/>der Linie von 10&#x00B0; folgt in Amerika We&#x017F;tl. von <hi rendition="#aq">Boston</hi>
+                    <lb break="yes"/> angemerkt <formula notation="TeX" >\left(\frac{-1^\circ}{+23^\circ}\right)</formula> in Engeland <formula notation="TeX">\left(\frac{+3^\circ}{+17^\circ}\right)</formula>, in Ungarn<lb break="yes"/>(<formula notation="TeX" >\left(\frac{-0^\circ,5}{+21^\circ}\right)</formula>), in China <formula notation="TeX">\left(\frac{-5^\circ}{+26^\circ}\right )</formula>. </p>
+                <lb break="yes"/>
+                <p>Die vorhergehenden Einzelheiten beziehen &#x017F;ich nur<lb break="yes"/>auf die Vertheilung der Wa&#x0364;rme auf der Oberfla&#x0364;che des<lb break="yes" />Erdballs. Begreiflich i&#x017F;t es hinla&#x0364;nglich um unter einer<lb break="yes"/>jeden Parallele die mittlere Temperatur zu finden, Z. E.<lb break="yes"/>von 0&#x00B0;, u&#x0364;ber dem Horizonte einen hinla&#x0364;nglich hoch lie-<lb break="no"/>genden Ort auszu&#x017F;uchen. Die&#x017F;e Ho&#x0364;he wu&#x0364;rde &#x017F;ich mit<lb break="yes"/>der Breite vera&#x0364;ndern. Die Fla&#x0364;che, welche durch die<lb break="yes"/>Gipfel aller die&#x017F;er vertikalen Coordinaten ginge,<lb break="yes"/>wu&#x0364;rde die <hi rendition="#g">I&#x017F;otherm-Fla&#x0364;che von</hi> 0&#x00B0; heißen, und<lb break="yes"/>ihre Durch&#x017F;chneidung mit der Erdkugel wa&#x0364;re die corre-<lb break="no"/>&#x017F;pondierende I&#x017F;oth.-Linie.</p>
+                <lb break="yes"/>
+                <p>In der Fig. 2. &#x017F;ind die mit einem transatlanti&#x017F;chen<lb break="yes" />Meridian in ver&#x017F;chiedenen I&#x017F;otherm-Fla&#x0364;chen gemachten<lb break="yes"/>Ab&#x017F;chnitte vorge&#x017F;tellt. Die Puncte, wo die&#x017F;e Curven der<lb break="yes"/>Erdkugel begegnen mu&#x0364;&#x017F;&#x017F;en, &#x017F;ind aus dem vorhergehen-<lb break="no" />den bekannt; ihr Auslaufs-Punct am Aequator, ihre<lb break="yes" />Ho&#x0364;hen durch andere Breiten, gru&#x0364;nden &#x017F;ich auf Unter&#x017F;u-<lb break="no"/>chungen einer Menge theils auf dem Ru&#x0364;cken der Cordille-<lb break="no"/>ren zwi&#x017F;chen 10&#x00B0; &#x017F;u&#x0364;dl. und 10&#x00B0; no&#x0364;rdl. Breite, theils in un-<lb break="no" />&#x017F;ern Climaten ange&#x017F;tellter Beobachtungen.</p>
+                <lb break="yes"/>
+                <p> Hr. <hi rendition="#aq">de H.</hi> hat daraus folgende Re&#x017F;ultate gezogen. </p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Ho&#x0364;he</cell>
+                        <cell>Aequator-Zone<lb break="yes"/>von 0&#x00B0; bis 10&#x00B0; Br.</cell>
+                        <cell>Gema&#x0364;ßigte Zone<lb break="yes"/>v. 45&#x00B0; bis 47&#x00B0; Br.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0 Meter</cell>
+                        <cell>+ 27&#x00B0;, 5</cell>
+                        <cell>+ 12&#x00B0;, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>974</cell>
+                        <cell>+ 21&#x00B0;, 8</cell>
+                        <cell>+ 5&#x00B0;, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1949</cell>
+                        <cell>+ 18&#x00B0;, 4</cell>
+                        <cell>&#x2014; 0&#x00B0;, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2925</cell>
+                        <cell>+ 14&#x00B0;, 3</cell>
+                        <cell>&#x2014; 4&#x00B0;, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3900</cell>
+                        <cell>+ 7&#x00B0;, 0</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4872</cell>
+                        <cell>+ 1&#x00B0;, 5</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>In der Fig. <hi rendition="#aq">B.</hi> verha&#x0364;lt &#x017F;ich die Skale der Breiten zu<lb break="yes"/>der der Ho&#x0364;hen, wie 1 zu 1000.</p>
+                <lb break="yes"/>
+                <p>In folgender Tabelle &#x017F;ind die I&#x017F;othermal&#x017F;triche u&#x0364;ber<lb break="yes"/>eine große Menge von Pla&#x0364;tzen nach Fahrenh. Thermo-<lb break="no"/>meter angegeben, die La&#x0364;nge von Paris berechnet. De-<lb break="no"/>cember, Ja&#x0364;nner und Hornung, &#x017F;ind fu&#x0364;r die mittlere<lb break="yes"/>Temperatur des Winters angenommen. Das vorge&#x017F;etzte<lb break="yes"/>Sternchen bedeutet die Orte, deren mittlere Temperatur<lb break="yes"/>am genaue&#x017F;ten, mei&#x017F;t durch 8000 Beobachtungen be&#x017F;timmt<lb break="yes"/>i&#x017F;t. die&#x017F;e Thermalcurven haben in Europa einen con-<lb break="no"/>caven Scheitel und zwey convexe (gewo&#x0364;lbte), in A&#x017F;ien und<lb break="yes" />O&#x017F;tamerika.</p>
+                <lb break="yes"/>
+                <pb facs="#f0007"/>
+                <cb n="863"/>
+                <lb break="yes"/>
+                <cb n="864"/>
+                <lb break="yes"/>
+                <table xml:id="t3-1" next="#t3-2">
+                    <row>
+                        <cell rows="2">I&#x017F;othermal-<lb break="no"/>Strich</cell>
+                        <cell rows="2"> Namen<lb break="yes"/>der Oerter</cell>
+                        <cell cols="2">Lage nach</cell>
+                        <cell/>
+                        <cell/>
+                        <cell cols="4">Vortheil der Wa&#x0364;rme in ver&#x017F;chie-<lb break="no" />denen Jahres-Zeiten</cell>
+                        <cell cols="2">
+                            <hi rendition="#aq">Maximum</hi> und<lb break="yes"/>
+                            <hi rendition="#aq" >Minimum</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell> La&#x0364;nge</cell>
+                        <cell> Ho&#x0364;he<lb break="yes"/>nach<lb break="yes"/>Fuß</cell>
+                        <cell> Mittl.<lb break="yes"/>Temper.<lb break="yes"/>d. Jahrs</cell>
+                        <cell> mittl.<lb break="yes"/>Temp.<lb break="yes"/>Winter</cell>
+                        <cell> m. T.<lb break="yes"/>Fru&#x0364;h-<lb break="no"/>ling</cell>
+                        <cell> m. T.<lb break="yes"/>Som-<lb break="no"/>mer</cell>
+                        <cell> m. T.<lb break="yes"/>Herb&#x017F;t</cell>
+                        <cell> m. T. d.<lb break="yes"/>wa&#x0364;rm&#x017F;t.<lb break="yes" />Monate </cell>
+                        <cell> m. T. der<lb break="yes"/>ka&#x0364;lt&#x017F;ten<lb break="yes" />Monate</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Strich v. 32&#x00B0;<lb break="yes"/>bis 41&#x00B0;</cell>
+                        <cell> Nain</cell>
+                        <cell> 57&#x00B0;. 8&#x2032;</cell>
+                        <cell> 63&#x00B0;. 40&#x2032; W.</cell>
+                        <cell/>
+                        <cell>26. 8&#x00B0;</cell>
+                        <cell> 0. 4&#x00B0;</cell>
+                        <cell> 23. 7&#x00B0;</cell>
+                        <cell> 48. 4&#x00B0;</cell>
+                        <cell> 33. 4&#x00B0;</cell>
+                        <cell> 51. 8&#x00B0;</cell>
+                        <cell> 11. 2&#x00B0;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* <hi rendition="#aq">Enontekies</hi>
+                        </cell>
+                        <cell> 68. 30</cell>
+                        <cell> 18. 27 O.</cell>
+                        <cell> 1356</cell>
+                        <cell> 27. 0</cell>
+                        <cell> 0. 4</cell>
+                        <cell> 25. 0</cell>
+                        <cell> 54. 8</cell>
+                        <cell> 27. 4</cell>
+                        <cell> 59. 6</cell>
+                        <cell> 0. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Ho&#x017F;piz auf St.<lb break="yes"/>Gotthard</cell>
+                        <cell> 46. 30</cell>
+                        <cell> 6. 3 O.</cell>
+                        <cell> 6390 </cell>
+                        <cell> 30. 4</cell>
+                        <cell> 18. 4</cell>
+                        <cell> 26. 4</cell>
+                        <cell> 45. 0</cell>
+                        <cell> 31. 8</cell>
+                        <cell> 46. 2</cell>
+                        <cell> 15. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Nord-Cap</cell>
+                        <cell> 71. 0</cell>
+                        <cell> 23. 30 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 32. 0</cell>
+                        <cell> 23. 8</cell>
+                        <cell> 29. 4</cell>
+                        <cell> 43. 2</cell>
+                        <cell> 32. 2</cell>
+                        <cell> 50. 2</cell>
+                        <cell> 22. 1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Ulea</cell>
+                        <cell> 65. 3</cell>
+                        <cell> 23. 6 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 33. 0</cell>
+                        <cell> 11. 8</cell>
+                        <cell> 27. 2 </cell>
+                        <cell> 57. 8</cell>
+                        <cell> 36. 0</cell>
+                        <cell> 61. 6</cell>
+                        <cell> 7. 7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Umea</cell>
+                        <cell> 63. 50</cell>
+                        <cell> 17. 56 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 33. 2</cell>
+                        <cell> 13. 0</cell>
+                        <cell> 33. 8</cell>
+                        <cell> 54. 8</cell>
+                        <cell> 33. 4</cell>
+                        <cell> 62. 6</cell>
+                        <cell> 11. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Petersburg</cell>
+                        <cell> 59. 56</cell>
+                        <cell> 27. 59 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 38. 8</cell>
+                        <cell> 17. 0</cell>
+                        <cell> 38. 2</cell>
+                        <cell> 62. 0</cell>
+                        <cell> 38. 6</cell>
+                        <cell> 65. 6</cell>
+                        <cell> 8. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Drontheim</cell>
+                        <cell> 63. 24</cell>
+                        <cell> 8. 2 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 40. 0</cell>
+                        <cell> 23. 8</cell>
+                        <cell> 35. 2</cell>
+                        <cell> 61. 4</cell>
+                        <cell> 40. 1</cell>
+                        <cell> 65. 0</cell>
+                        <cell> 19. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Moskau</cell>
+                        <cell> 55. 45</cell>
+                        <cell> 35. 12 O.</cell>
+                        <cell> 970</cell>
+                        <cell> 40. 2</cell>
+                        <cell> 10. 8</cell>
+                        <cell> 44. 0</cell>
+                        <cell> 67. 1</cell>
+                        <cell> 38. 3</cell>
+                        <cell> 70. 6</cell>
+                        <cell> 6. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Abo</cell>
+                        <cell> 60. 27</cell>
+                        <cell> 19. 58 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 40. 4</cell>
+                        <cell> 20. 8</cell>
+                        <cell> 38. 3</cell>
+                        <cell> 61. 8</cell>
+                        <cell> 40. 6</cell>
+                        <cell> &#x2014;</cell>
+                        <cell> &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Strich v. 41&#x00B0;<lb break="yes"/>bis 50&#x00B0;</cell>
+                        <cell> * Up&#x017F;ala</cell>
+                        <cell> 59. 51</cell>
+                        <cell> 15. 18 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 42. 0</cell>
+                        <cell> 25. 0</cell>
+                        <cell> 40. 0</cell>
+                        <cell> 60. 2</cell>
+                        <cell> 42. 8</cell>
+                        <cell> 62. 4</cell>
+                        <cell> 22. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Stockholm</cell>
+                        <cell> 59. 20</cell>
+                        <cell> 15. 43 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 42. 2</cell>
+                        <cell> 25. 6</cell>
+                        <cell> 38. 3</cell>
+                        <cell> 61. 8</cell>
+                        <cell> 43. 2</cell>
+                        <cell> 64. 0</cell>
+                        <cell> 22. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Quebeck</cell>
+                        <cell> 46. 47</cell>
+                        <cell> 73. 30 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 41. 8</cell>
+                        <cell> 14. 2</cell>
+                        <cell> 38. 9</cell>
+                        <cell> 68. 0</cell>
+                        <cell> 46. 0</cell>
+                        <cell> 73. 4</cell>
+                        <cell> 13. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Chri&#x017F;tiania</cell>
+                        <cell> 59. 55</cell>
+                        <cell> 8. 28 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 42. 8</cell>
+                        <cell> 28. 8</cell>
+                        <cell> 40. 1</cell>
+                        <cell> 62. 6</cell>
+                        <cell> 41. 2</cell>
+                        <cell> 66. 8</cell>
+                        <cell> 28. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Klo&#x017F;ter Pey&#x017F;-<lb break="no"/>&#x017F;enburg</cell>
+                        <cell> 47. 47</cell>
+                        <cell> 8. 14 O.</cell>
+                        <cell> 3066</cell>
+                        <cell> 43. 0</cell>
+                        <cell> 28. 6</cell>
+                        <cell> 42. 0</cell>
+                        <cell> 58. 4</cell>
+                        <cell> 43. 0</cell>
+                        <cell> 59. 4</cell>
+                        <cell> 30. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Copenhagen</cell>
+                        <cell> 55. 41</cell>
+                        <cell> 10. 15 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 45. 6</cell>
+                        <cell> 30. 8</cell>
+                        <cell> 41. 2</cell>
+                        <cell> 62. 6</cell>
+                        <cell> 48. 4</cell>
+                        <cell> 65. 0</cell>
+                        <cell> 27. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Kindal</cell>
+                        <cell> 54. 17</cell>
+                        <cell> 5. 6 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 46. 2</cell>
+                        <cell> 36. 8</cell>
+                        <cell> 45. 2</cell>
+                        <cell> 56. 8</cell>
+                        <cell> 46. 2</cell>
+                        <cell> 58. 1</cell>
+                        <cell> 34. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Malwinen</cell>
+                        <cell> 51. 25</cell>
+                        <cell> 62. 19 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 47. 0</cell>
+                        <cell> 39. 6</cell>
+                        <cell> 46. 6</cell>
+                        <cell> 53. 0</cell>
+                        <cell> 48. 4</cell>
+                        <cell> 55. 8</cell>
+                        <cell> 37. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Prag</cell>
+                        <cell> 50. 5</cell>
+                        <cell> 12. 4 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 49. 4</cell>
+                        <cell> 31. 4</cell>
+                        <cell> 47. 6 </cell>
+                        <cell> 68. 9</cell>
+                        <cell> 50. 2</cell>
+                        <cell> &#x2014;</cell>
+                        <cell> &#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Go&#x0364;ttingen</cell>
+                        <cell> 51. 32</cell>
+                        <cell> 7. 33 O.</cell>
+                        <cell> 456</cell>
+                        <cell> 47. 0</cell>
+                        <cell> 30. 4</cell>
+                        <cell> 44. 2</cell>
+                        <cell> 64. 8</cell>
+                        <cell> 48. 6</cell>
+                        <cell> 66. 4</cell>
+                        <cell> 33. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Zu&#x0364;rich</cell>
+                        <cell> 47. 22</cell>
+                        <cell> 6. 12 O.</cell>
+                        <cell> 1350</cell>
+                        <cell> 47. 8</cell>
+                        <cell> 29. 6</cell>
+                        <cell> 48. 2</cell>
+                        <cell> 64. 0</cell>
+                        <cell> 48. 8</cell>
+                        <cell> 65. 7</cell>
+                        <cell> 26. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Edimburg</cell>
+                        <cell> 55. 57</cell>
+                        <cell> 5. 30 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 47. 8</cell>
+                        <cell> 38. 6</cell>
+                        <cell> 46. 4</cell>
+                        <cell> 58. 2</cell>
+                        <cell> 48. 4</cell>
+                        <cell> 59. 4</cell>
+                        <cell> 38. 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>War&#x017F;chau</cell>
+                        <cell> 52. 14</cell>
+                        <cell> 18. 42 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 48. 6</cell>
+                        <cell> 27. 8 </cell>
+                        <cell> 47. 4</cell>
+                        <cell> 69. 0</cell>
+                        <cell> 49. 4</cell>
+                        <cell> 70. 4</cell>
+                        <cell> 27. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Chur</cell>
+                        <cell> 46. 50</cell>
+                        <cell> 7. 10 O.</cell>
+                        <cell> 1876</cell>
+                        <cell> 49. 0</cell>
+                        <cell> 32. 4</cell>
+                        <cell> 55. 4</cell>
+                        <cell> 63. 4</cell>
+                        <cell> 50. 4</cell>
+                        <cell> 64. 6</cell>
+                        <cell> 29. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Dublin</cell>
+                        <cell> 53. 21</cell>
+                        <cell> 8. 39 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 49. 2</cell>
+                        <cell> 39. 2</cell>
+                        <cell> 47. 3 </cell>
+                        <cell> 59. 6</cell>
+                        <cell> 50. 0</cell>
+                        <cell> 61. 0</cell>
+                        <cell> 35. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Bern</cell>
+                        <cell> 46. 5</cell>
+                        <cell> 5. 6 W.</cell>
+                        <cell> 1650</cell>
+                        <cell> 49. 3</cell>
+                        <cell> 32. 0</cell>
+                        <cell> 49. 0 </cell>
+                        <cell> 66. 6</cell>
+                        <cell> 49. 8</cell>
+                        <cell> 67. 2</cell>
+                        <cell> 30. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Genf</cell>
+                        <cell> 46. 12</cell>
+                        <cell> 3. 48 O.</cell>
+                        <cell> 1080</cell>
+                        <cell> 49. 3</cell>
+                        <cell> 34. 9</cell>
+                        <cell> 47. 6</cell>
+                        <cell> 65. 0</cell>
+                        <cell> 50. 0</cell>
+                        <cell> 66. 6</cell>
+                        <cell> 34. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Manheim</cell>
+                        <cell> 49 29</cell>
+                        <cell> 6. 8 O.</cell>
+                        <cell> 432</cell>
+                        <cell> 50. 2</cell>
+                        <cell> 33. 8</cell>
+                        <cell> 49. 6</cell>
+                        <cell> 67. 1</cell>
+                        <cell> 49. 8</cell>
+                        <cell> 68. 8</cell>
+                        <cell> 33. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Wien</cell>
+                        <cell> 48 12</cell>
+                        <cell> 14. 2</cell>
+                        <cell> 420</cell>
+                        <cell> 50. 6</cell>
+                        <cell> 32. 8</cell>
+                        <cell> 51. 2</cell>
+                        <cell> 69. 2</cell>
+                        <cell> 50. 6</cell>
+                        <cell> 70. 6</cell>
+                        <cell> 26. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Strich v. 50&#x00B0;<lb break="yes"/>bis 59&#x00B0;</cell>
+                        <cell> * Clermont</cell>
+                        <cell> 45. 46</cell>
+                        <cell> 0. 45</cell>
+                        <cell> 1260</cell>
+                        <cell> 50. 0</cell>
+                        <cell> 34. 7</cell>
+                        <cell> 50. 6</cell>
+                        <cell> 64. 4</cell>
+                        <cell> 51. 2</cell>
+                        <cell> 66. 2</cell>
+                        <cell> 28. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Ofen</cell>
+                        <cell> 47. 29</cell>
+                        <cell> 16. 41</cell>
+                        <cell> 494</cell>
+                        <cell> 51. 0</cell>
+                        <cell> 31. 0</cell>
+                        <cell> 51. 0 </cell>
+                        <cell> 63. 2</cell>
+                        <cell> 52. 4</cell>
+                        <cell> 71. 6</cell>
+                        <cell> 27. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Cambridge<lb break="yes"/>(V. S.)</cell>
+                        <cell> 42. 25</cell>
+                        <cell> 73. 23 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 50. 4</cell>
+                        <cell> 34. 0</cell>
+                        <cell> 47. 6</cell>
+                        <cell> 64. 4</cell>
+                        <cell> 49. 8</cell>
+                        <cell> 72. 8</cell>
+                        <cell> 29. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Paris</cell>
+                        <cell> 48. 50</cell>
+                        <cell> 0. 0</cell>
+                        <cell> 222</cell>
+                        <cell> 51. 0</cell>
+                        <cell> 38. 6</cell>
+                        <cell> 49. 2 </cell>
+                        <cell> 64. 6</cell>
+                        <cell> 51. 4</cell>
+                        <cell> 65. 3</cell>
+                        <cell> 36. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* London</cell>
+                        <cell> 51. 30</cell>
+                        <cell> 2. 25 W.</cell>
+                        <cell> 0</cell>
+                        <cell> 50. 4</cell>
+                        <cell> 39. 6</cell>
+                        <cell> 48. 6</cell>
+                        <cell> 63. 2</cell>
+                        <cell> 50. 2</cell>
+                        <cell> 64. 4</cell>
+                        <cell> 37. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Du&#x0364;nkirchen</cell>
+                        <cell> 51. 2</cell>
+                        <cell> 0. 2 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 50. 6</cell>
+                        <cell> 38. 4 </cell>
+                        <cell> 48. 6</cell>
+                        <cell> 63. 8</cell>
+                        <cell> 50. 9</cell>
+                        <cell> 64. 8</cell>
+                        <cell> 37. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Am&#x017F;terdam</cell>
+                        <cell> 52. 22</cell>
+                        <cell> 2. 30 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 51. 6</cell>
+                        <cell> 36. 8 </cell>
+                        <cell> 51. 6</cell>
+                        <cell> 65. 8</cell>
+                        <cell> 51. 6</cell>
+                        <cell> 67. 0</cell>
+                        <cell> 35. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Bru&#x0364;&#x017F;&#x017F;el</cell>
+                        <cell> 50. 50</cell>
+                        <cell> 2. 2 O.</cell>
+                        <cell> 0</cell>
+                        <cell> 51. 8</cell>
+                        <cell> 36. 6</cell>
+                        <cell> 53. 3</cell>
+                        <cell> 66. 2</cell>
+                        <cell> 51. 0</cell>
+                        <cell> 67. 4</cell>
+                        <cell>35. 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Franecker</cell>
+                        <cell>52. 36</cell>
+                        <cell>4. 2 O.</cell>
+                        <cell>0</cell>
+                        <cell>51. 8</cell>
+                        <cell>36. 6</cell>
+                        <cell>51. 0</cell>
+                        <cell>67. 2</cell>
+                        <cell>54. 4</cell>
+                        <cell>69. 0</cell>
+                        <cell>32. 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Philadelphia</cell>
+                        <cell>39. 56</cell>
+                        <cell>77. 36 W.</cell>
+                        <cell>0</cell>
+                        <cell>53. 4</cell>
+                        <cell>32. 2</cell>
+                        <cell>51. 4</cell>
+                        <cell>74. 0</cell>
+                        <cell>56. 6</cell>
+                        <cell>77. 0</cell>
+                        <cell>32. 7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Neu-York</cell>
+                        <cell>40. 40</cell>
+                        <cell>76. 18 W.</cell>
+                        <cell>0</cell>
+                        <cell>53. 8</cell>
+                        <cell>29. 8</cell>
+                        <cell>51. 2</cell>
+                        <cell>79. 2</cell>
+                        <cell>54. 6</cell>
+                        <cell>80. 6</cell>
+                        <cell>25. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Cincinnati</cell>
+                        <cell>39. 6</cell>
+                        <cell>85. 0 W.</cell>
+                        <cell>510</cell>
+                        <cell>53. 8</cell>
+                        <cell>32. 9</cell>
+                        <cell>54. 4</cell>
+                        <cell>72. 8</cell>
+                        <cell>54. 4</cell>
+                        <cell>74. 3</cell>
+                        <cell>30. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>St. Malo</cell>
+                        <cell>48. 39</cell>
+                        <cell>4. 21 W.</cell>
+                        <cell>0</cell>
+                        <cell>54. 4</cell>
+                        <cell>42. 2</cell>
+                        <cell>52. 2</cell>
+                        <cell>66. 0</cell>
+                        <cell>55. 8</cell>
+                        <cell>67. 0</cell>
+                        <cell>41. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Nantes</cell>
+                        <cell>47. 13</cell>
+                        <cell>3. 52 W.</cell>
+                        <cell>0</cell>
+                        <cell>55. 0</cell>
+                        <cell>40. 4</cell>
+                        <cell>54. 5 </cell>
+                        <cell>68. 6</cell>
+                        <cell>55. 6</cell>
+                        <cell>70. 6</cell>
+                        <cell>38. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Peking</cell>
+                        <cell>39. 54</cell>
+                        <cell>114. 7 O.</cell>
+                        <cell>0</cell>
+                        <cell>55. 2</cell>
+                        <cell>26. 8</cell>
+                        <cell>56. 3</cell>
+                        <cell>82. 6</cell>
+                        <cell>54. 2</cell>
+                        <cell>84. 4</cell>
+                        <cell>39. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Mailand</cell>
+                        <cell>45. 28</cell>
+                        <cell>6. 51 O.</cell>
+                        <cell>390</cell>
+                        <cell>55. 8</cell>
+                        <cell>36. 4</cell>
+                        <cell>56. 1</cell>
+                        <cell>73. 0</cell>
+                        <cell>56. 8</cell>
+                        <cell>74. 6</cell>
+                        <cell>36. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Bourdeaux</cell>
+                        <cell>44. 50</cell>
+                        <cell>2. 54 W.</cell>
+                        <cell>0</cell>
+                        <cell>56. 4</cell>
+                        <cell>42. 0</cell>
+                        <cell>56. 8</cell>
+                        <cell>70. 8</cell>
+                        <cell>56. 3</cell>
+                        <cell>72. 8</cell>
+                        <cell>41. 0</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb facs="#f0008"/>
+                <cb n="865"/>
+                <lb break="yes"/>
+                <cb n="866"/>
+                <lb break="yes"/>
+                <table xml:id="t3-2" prev="#t3-1">
+                    <row>
+                        <cell rows="2">I&#x017F;othermal-<lb break="no"/>Strich</cell>
+                        <cell rows="2">Namen<lb break="yes"/>der Oerter</cell>
+                        <cell cols="2">Lage nach </cell>
+                        <cell/>
+                        <cell/>
+                        <cell cols="4">Vertheil. der Wa&#x0364;rme in ver&#x017F;chie-<lb break="no" />denen Jahres-Zeiten</cell>
+                        <cell cols="2">
+                            <hi rendition="#aq">Maximum</hi> und<lb break="yes"/>
+                            <hi rendition="#aq">Minimum</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Breite</cell>
+                        <cell>La&#x0364;nge</cell>
+                        <cell>Ho&#x0364;he<lb break="yes"/>nach<lb break="yes"/>Fuß</cell>
+                        <cell>Mittl.<lb break="yes"/>Temper.<lb break="yes"/>d. Jahrs</cell>
+                        <cell>mittl.<lb break="yes"/>Temp.<lb break="yes"/>Winter</cell>
+                        <cell>m. T.<lb break="yes"/>Fru&#x0364;h-<lb break="no"/>ling</cell>
+                        <cell>m. T.<lb break="yes"/>Som-<lb break="no"/>mer</cell>
+                        <cell>m. T.<lb break="yes"/>Herb&#x017F;t</cell>
+                        <cell>m. T. d.<lb break="yes"/>wa&#x0364;rm&#x017F;t.<lb break="yes" />Monat</cell>
+                        <cell>m. T. der<lb break="yes"/>ka&#x0364;lt&#x017F;ten<lb break="yes" />Monate</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Linie v. 59&#x00B0;<lb break="yes"/>bis 68&#x00B0;</cell>
+                        <cell>Mar&#x017F;eille</cell>
+                        <cell>43&#x00B0;. 17&#x2032;</cell>
+                        <cell>3&#x00B0;. 2&#x2032; O.</cell>
+                        <cell>0</cell>
+                        <cell>59. 0&#x00B0;</cell>
+                        <cell>45. 5&#x00B0;</cell>
+                        <cell>57. 6&#x00B0;</cell>
+                        <cell>72. 5&#x00B0;</cell>
+                        <cell>60. 0&#x00B0;</cell>
+                        <cell>74. 6&#x00B0;</cell>
+                        <cell>44. 4&#x00B0;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Montpellier</cell>
+                        <cell>43. 6</cell>
+                        <cell>1. 32 O.</cell>
+                        <cell>0</cell>
+                        <cell>59. 4</cell>
+                        <cell>44. 0</cell>
+                        <cell>57. 0</cell>
+                        <cell>75. 8</cell>
+                        <cell>61. 0</cell>
+                        <cell>78. 2</cell>
+                        <cell>42. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Rom</cell>
+                        <cell>41. 53</cell>
+                        <cell>10. 7 O.</cell>
+                        <cell>0</cell>
+                        <cell>60. 4</cell>
+                        <cell>45. 8</cell>
+                        <cell>57. 8 </cell>
+                        <cell>75. 2</cell>
+                        <cell>62. 8</cell>
+                        <cell>77. 0</cell>
+                        <cell>42. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Toulon</cell>
+                        <cell>43. 7</cell>
+                        <cell>3. 30 O.</cell>
+                        <cell>0</cell>
+                        <cell>62. 0</cell>
+                        <cell>48. 4</cell>
+                        <cell>60. 8 </cell>
+                        <cell>74. 8</cell>
+                        <cell>64. 4</cell>
+                        <cell>77. 0</cell>
+                        <cell>46. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Nanga&#x017F;aki</cell>
+                        <cell>32. 45</cell>
+                        <cell>127. 35 O.</cell>
+                        <cell>0</cell>
+                        <cell>60. 8</cell>
+                        <cell>39. 4</cell>
+                        <cell>57. 6</cell>
+                        <cell>83. 0</cell>
+                        <cell>64. 2</cell>
+                        <cell>86. 9</cell>
+                        <cell>37. 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Natchez</cell>
+                        <cell>31. 28</cell>
+                        <cell>93. 50 W.</cell>
+                        <cell>180</cell>
+                        <cell>64. 8</cell>
+                        <cell>48. 6</cell>
+                        <cell>65. 4</cell>
+                        <cell>79. 2</cell>
+                        <cell>65. 8</cell>
+                        <cell>79. 7</cell>
+                        <cell>47. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Linie v. 68&#x00B0;<lb break="yes"/>bis 77&#x00B0;</cell>
+                        <cell>* Funchal</cell>
+                        <cell>32. 37</cell>
+                        <cell>19. 16 W.</cell>
+                        <cell>0</cell>
+                        <cell>68. 6</cell>
+                        <cell>64. 8</cell>
+                        <cell>65. 8</cell>
+                        <cell>72. 5</cell>
+                        <cell>72. 4 </cell>
+                        <cell>75. 6</cell>
+                        <cell>64. 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>Algier</cell>
+                        <cell>36. 48</cell>
+                        <cell>0. 41 O.</cell>
+                        <cell>0</cell>
+                        <cell>70. 0</cell>
+                        <cell>61. 4</cell>
+                        <cell>65. 6 </cell>
+                        <cell>80. 2</cell>
+                        <cell>72. 5</cell>
+                        <cell>82. 8</cell>
+                        <cell>60. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>I&#x017F;othermal-<lb break="no"/>Linie v. 70&#x00B0;</cell>
+                        <cell>* Kairo</cell>
+                        <cell>30. 2</cell>
+                        <cell>28. 58 O.</cell>
+                        <cell>0</cell>
+                        <cell>72. 4</cell>
+                        <cell>58. 4</cell>
+                        <cell>73. 6</cell>
+                        <cell>85. 1</cell>
+                        <cell> 70. 5</cell>
+                        <cell>85. 8</cell>
+                        <cell>55. 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Veracrux</cell>
+                        <cell>19. 11</cell>
+                        <cell>98. 21 W.</cell>
+                        <cell>0</cell>
+                        <cell>77. 8</cell>
+                        <cell>72. 0</cell>
+                        <cell> 77. 9</cell>
+                        <cell>81. 5</cell>
+                        <cell>78. 6</cell>
+                        <cell>81. 5</cell>
+                        <cell>71. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Havannah</cell>
+                        <cell>23. 10</cell>
+                        <cell>84. 33 W.</cell>
+                        <cell>0</cell>
+                        <cell>78. 2</cell>
+                        <cell>71. 2</cell>
+                        <cell> 79. 0</cell>
+                        <cell>83. 3</cell>
+                        <cell>79. 0</cell>
+                        <cell>84. 0</cell>
+                        <cell>70. 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>* Cumana</cell>
+                        <cell>10. 27</cell>
+                        <cell>67. 35 W.</cell>
+                        <cell>0</cell>
+                        <cell>81. 8</cell>
+                        <cell>80. 2</cell>
+                        <cell> 83. 6</cell>
+                        <cell>82. 0</cell>
+                        <cell>79. 6</cell>
+                        <cell>84. 4</cell>
+                        <cell>79. 2</cell>
+                    </row>
+                </table>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

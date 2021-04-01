@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="126" facs="#f0001"/>
+            <div n="1" xml:lang="hun">
+                <head>
+                    <hi rendition="#b">
+                        <hi rendition="#i">
+                            <hi rendition="#g">AMERIKA.</hi>
+                        </hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <p>Humbold Sándor Úr Berlini Tudós megjárta Déli Amerikát, es-<lb break="no"/>ezen útazását leírván a&#x2019; 3-dik ré&#x017F;zben Mexicoról ezen Statistika jegy-<lb break="no"/>zést te&#x017F;zi, hogy új Spanyol Or&#x017F;zág, vagy is Mexico négy&#x017F;zerte na-<lb break="no"/>gyobb, mint Franczia Ország, és mégis az &#xE60C; népe&#x017F;sége tsak heted ré-<lb break="no"/>&#x017F;ze a&#x2019; Franczia Országi népe&#x017F;ségnek. Altaljában fel. o&#x017F;ztatik a) Bels&#xE60C;<lb break="yes"/>Tartományokra, b) és tulajdonképen való új Spanyol Or&#x017F;zágra. A-<lb break="no"/>maz magában foglal 67189 &#x25A1; mérföldet; mellyen a&#x2019;Lakosok 423200-ak,<lb break="yes"/>és így ré&#x017F;zeit egymásba vévén 1 &#x25A1; mföldre &#x017F;zámlálhatni 6 embert; noha<lb break="yes"/>egyenként vévén Cohahuilla, és Texasban tsak 2 ember esik 1 &#x25A1;<lb break="yes"/>mfre. Tulajdon Új Spanyol Ország té&#x017F;zen 51289 &#x25A1; mf&#xE60C;ldet. Lakosi<lb break="yes"/>5413900. Egy &#x25A1; mfre jut 105 ember; noha Guanaruato Tartományá-<lb break="no"/>ban 568 vagyon 1 &#x25A1; mfdön, Ó Kaliforniában 1; &#x016A;j Kaliforniában 7.<lb break="yes" />Ezt tekíntvén é&#x017F;zre vehetni, hogy a&#x2019; Népe&#x017F;ség igen arányatlan azon új<lb break="yes"/>Világ ré&#x017F;zeiben; mivel a&#x2019; Térít&#xE60C; egi Karikák közt 7 nyolczad ré&#x017F;ze<lb break="yes"/>lakik az egé&#x017F;z népességnek, a&#x2019;hol 300&#x2014;568-ig nevekedik a&#x2019;Lakosok-<lb break="no"/>nak 1. mf&#xE60C;ldre es&#xE60C; &#x017F;zámok: ellenben a&#x2019; mérsékelt égi övedzetek alatt<lb break="yes" />2&#x2014;6 jut 1 &#x25A1; mérföldre. Az egé&#x017F;z Népe&#x017F;ség a&#x2019; Térit&#xE60C; Karikák köztt<lb break="yes"/>té&#x017F;zen öt milliomot, és ezek köz&#x01D8;l 4 milliom a&#x2019; Cordilleri hegyeknek<lb break="yes"/>térségein lakik, olly magasan a&#x2019; Világ tengerének &#x017F;zíne felett, mint a<lb break="yes"/>Hospice (&#x017F;zállás) a&#x2019; Cenis hegyen.</p>
+                <lb break="yes"/>
+                <p>Hogy Mexicónak állapotját inkább &#x017F;zembetünte&#x017F;&#x017F;e, Humbold Úr<lb break="yes"/>Europáról és Ásiáról ezen Lajstromot raga&#x017F;ztja hozzá:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>1808 E&#x017F;ztend&#xE60C;ben<space dim="horizontal"/>Térsége &#x2014; Népessége &#x2014; 1 &#x25A1; mfdön</item>
+                    <lb break="yes"/>
+                    <item>Az Oro&#x017F;z Birodalom &#x2014; 942452 &#x2014; 40000000 &#x2014; 42</item>
+                    <lb break="yes"/>
+                    <item>1) Európai ré&#x017F;ze &#x2014; 215809 &#x2014; 36400000 &#x2014; 169</item>
+                    <lb break="yes"/>
+                    <item>2) Asiai ré&#x017F;ze = 726644 &#x2014; 359700 &#x2014; 5</item>
+                    <lb break="yes"/>
+                    <item>maga Irkutsk &#x2014; 35000 &#x2014; 680600 &#x2014; 2</item>
+                    <lb break="yes"/>
+                    <item>Tobol&#x017F;zk &#x2014; 200000 &#x2014; 72547 &#x2014; 1</item>
+                    <lb break="yes"/>
+                    <item>Egé&#x017F;z Europa &#x2014; &#x2014; 476111 &#x2014; 182599000 &#x2014; 383</item>
+                    <lb break="yes"/>
+                    <item>Éjszaki Amerikai Statusok</item>
+                    <lb break="yes"/>
+                    <item>1) Luizánával &#x2014; 260340 &#x2014; 6800000 &#x2014; 22</item>
+                    <lb break="yes"/>
+                    <item>2) Luiziana nélk&#x01D8;l 156240 &#x2014; 6715000 &#x2014; 43</item>
+                    <lb break="yes"/>
+                    <item>3) Luiziana és az Esti</item>
+                    <lb break="yes"/>
+                    <item>re&#x017F;z nélk&#x01D8;l &#x2014; 78120 &#x2014; 6655000 &#x2014; 85</item>
+                    <lb break="yes"/>
+                    <item>India a&#x2019; Gangesen innen &#x2014; 162827 &#x2014; &#x2014;<space dim="horizontal"/>&#x2014; &#x2014;</item>
+                    <lb break="yes"/>
+                    <item>1) Angeliai hatalom altatt 48299 &#x2014; 23806000 &#x2014; 493</item>
+                    <lb break="yes"/>
+                    <item>2) Frigyesek, és Adófi-<lb break="no"/>zerök &#x2014; 32647 &#x2014; 16900000 &#x2014; 518</item>
+                </list>
+                <lb break="yes"/>
+                <pb n="127" facs="#f0002"/>
+                <list>
+                    <item>Török Birodalom Afrikában Ásiában&#x2019;s </item>
+                    <lb break="yes"/>
+                    <item>Európában &#x2014; 136110 &#x2014; 25330000 &#x2014; 186</item>
+                    <lb break="yes"/>
+                    <item>Austriai Monarchia &#x2014; 32258 &#x2014; 2558800 &#x2014;769</item>
+                    <lb break="yes"/>
+                    <item>Franczía &#x2014; &#x2014; 32000 &#x2014; 35000000 &#x2014; 1094</item>
+                    <lb break="yes"/>
+                    <item>Spanyol &#x2014; &#x2014; 25147 &#x2014; 10409000 &#x2014; 413</item>
+                    <lb break="yes"/>
+                    <item>Új Spanyol Orfa&#x017A;g Ámerikában &#x2014;</item>
+                    <lb break="yes"/>
+                    <item>1) A&#x2019; belso Parto-<lb break="no"/>mány ekkal 118478 &#x2014; 5837100 &#x2014; 49</item>
+                    <lb break="yes"/>
+                    <item>2) Azok nélkul &#x2014; 51289 &#x2014; 5413900 &#x2014; 105</item>
+                </list>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

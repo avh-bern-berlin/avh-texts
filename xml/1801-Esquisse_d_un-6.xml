@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Geognostische Skizze von Südamerika von Alexander von Humboldt, mit erläuternden Bemerkungen des Herausgebers</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1801-Esquisse_d_un-3</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Geognostische Skizze von Südamerika von Alexander von Humboldt, mit erläuternden Bemerkungen des Herausgebers</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Halle</pubPlace>
+                        <date type="publication">1804</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Annalen der Physik</title>
+                        <biblScope unit="volume">16</biblScope>
+                        <biblScope unit="issue">4</biblScope>
+                        <biblScope unit="pages">394–449</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Fraktur</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="[394]" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">
+                        <hi rendition="#i">Geogno&#x017F;ti&#x017F;che Skizze von <placeName key="suedamerika">Südamerika</placeName>,</hi>
+                        <lb break="yes"/>von<lb break="yes"/>
+                        <hi rendition="#k">
+                            <persName key="humboldt_av">Alexander von Humboldt</persName>,</hi>
+                    </hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">mit erläuternden Bemerkungen des Herausgebers.</hi>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>[Ich &#x017F;chicke die&#x017F;em intere&#x017F;&#x017F;anten Auf&#x017F;atze, der,<lb break="yes"/>um ganz ver&#x017F;tändlich zu &#x017F;eyn und gehörig gewürdigt zu<lb break="yes"/>werden, mehrerer Erläuterungen bedarf, einige Data<lb break="yes"/>über die Rei&#x017F;en un&#x017F;ers vortrefflichen Landsmannes vor-<lb break="no"/>aus, die ich insge&#x017F;ammt aus &#x017F;einen eignen Briefen an<lb break="yes"/>den berühmten Botaniker <persName key="willdenow_kl">
+                        <hi rendition="#g">Wildenow</hi>
+                    </persName> in Berlin, an<lb break="yes"/>&#x017F;einen ältern Bruder, den Legationsrath <hi rendition="#g">
+                        <persName key="humboldt_wv">Karl Wil-<lb break="no"/>helm von Humboldt</persName>,</hi> jetzt in Rom, und an ver-<lb break="no" />&#x017F;chiedne A&#x017F;tronomen und Naturfor&#x017F;cher in Paris ent-<lb break="no"/>lehne, und bei denen ich voraus &#x017F;etze, daß der Le&#x017F;er<lb break="yes"/>eine Karte vom nördlichen Theile <placeName key="suedamerika">Südamerika&#x2019;s</placeName> vor<lb break="yes"/>Augen nehme. &#x2014; Ausgerü&#x017F;tet mit königlichen Empfeh-<lb break="no" />lungs&#x017F;chreiben an alle Vicekönige und Gouverneurs im<lb break="yes"/>
+                    <placeName key="spanischeskolonialreich">&#x017F;pani&#x017F;chen Amerika</placeName>, &#x017F;chiffte &#x017F;ich Herr <hi rendition="#g">von Hum-<lb break="no"/>boldt</hi> am 5ten Juni 1799 in <placeName key="acoruna">Corunna</placeName> ein. Viel Merk-<lb break="no"/>würdiges von &#x017F;einen frühern Planen und Rei&#x017F;en und von<lb break="yes" />&#x017F;einem Aufenthalte in Spanien findet man in einem Briefe<lb break="yes" />von ihm an <persName key="willdenow_kl">
+                        <hi rendition="#g">Wildenow,</hi>
+                    </persName> der in der <hi rendition="#i">neuen berlini&#x017F;chen<lb break="yes"/>Monats&#x017F;chrift von</hi>
+                    <persName key="biester_je">
+                        <hi rendition="#g">Bie&#x017F;ter,</hi>
+                    </persName> Jahr 1801, Augu&#x017F;t, S. 119,<lb break="yes"/>abgedruckt i&#x017F;t. Den 19ten Juni landete er in <hi rendition="#g">Santa<lb break="yes" />Cruz</hi> auf Teneriffa. Während &#x017F;eines Aufenthalts auf<lb break="yes"/>die&#x017F;er In&#x017F;el bis zum 25&#x017F;ten be&#x017F;tieg er den <hi rendition="#i">Pik,</hi> und<lb break="yes"/>wagte &#x017F;ich bis tief in den Krater. &#x201E;Hier,&#x201C; (&#x017F;chreibt er<lb break="yes" />&#x017F;einem Bruder,) &#x201E;brannten die Schwefeldämpfe Löcher<lb break="yes"/>
+                    <pb n="[395]" facs="#f0002"/> in un&#x017F;re Kleider, und doch er&#x017F;tarrten die Hände bei<lb break="yes"/>2° R. Welche Empfindung auf die&#x017F;er Höhe! (11500<lb break="yes"/>Fuß) die dunkelblaue Himmelsdecke über uns, alte<lb break="yes"/>Lava&#x017F;tröme zu un&#x017F;ern Füßen, umher ein Schauplatz<lb break="yes"/>der Verheerung (3 Quadratmeilen Bims&#x017F;tein,) um-<lb break="no"/>kränzt von Lorbeerwäldern, und tiefer hinab Weingär-<lb break="no"/>ten, zwi&#x017F;chen denen Pi&#x017F;angbü&#x017F;che &#x017F;ich bis ans Meer<lb break="yes"/>und zu den zierlichen Dörfern am Ufer er&#x017F;trecken. &#x2014;<lb break="yes"/>Der Krater, in dem wir waren, giebt nur Schwefeldäm-<lb break="no"/>pfe; die Erde i&#x017F;t 70° R. heiß. Die Laven brechen an<lb break="yes"/>den Seiten aus; auch &#x017F;ind dort die kleinen Krater, wie<lb break="yes"/>die, welche vor 2 Jahren die ganze In&#x017F;el erleuchteten.<lb break="yes"/>Man hörte damahls 2 Monate lang ein unterirdi&#x017F;ches Ka-<lb break="no"/>nonenfeuer, und häu&#x017F;ergroße Steine wurden 4000 Fuß<lb break="yes"/>hoch in die Luft ge&#x017F;chleudert. Der Pik i&#x017F;t ein Ba&#x017F;alt-<lb break="no"/>berg, auf welchem Prophyr&#x017F;chiefer und Ob&#x017F;idianpor-<lb break="no"/>phyr aufge&#x017F;etzt i&#x017F;t. In ihm wüthet Feuer und Wa&#x017F;&#x017F;er;<lb break="yes"/>überall &#x017F;ah ich Wa&#x017F;&#x017F;erdämpfe ausbrechen. Fa&#x017F;t alle La-<lb break="no"/>ven &#x017F;ind ge&#x017F;chmolzner Ba&#x017F;alt. Der Bims&#x017F;tein i&#x017F;t aus<lb break="yes"/>dem Ob&#x017F;idianporphyr ent&#x017F;tanden; ich habe Stücke, die<lb break="yes" />beides noch halb &#x017F;ind.&#x201C; (Vergl. <hi rendition="#i">Annalen,</hi> IV, 445.) &#x2014;<lb break="yes"/>Ein heftiger O&#x017F;twind be&#x017F;chleunigte von hier aus die<lb break="yes"/>Fahrt un&#x017F;ers Landsmannes; am 5ten und 6ten Juli ging<lb break="yes"/>es langs der bra&#x017F;iliani&#x017F;chen Kü&#x017F;te hin, am 14ten zwi-<lb break="no" />&#x017F;chen Tabago und Granada durch, und am 16ten Mor-<lb break="no"/>gens warf das Schiff im Hafen von <hi rendition="#g">Kumana</hi> die Anker.<lb break="yes"/>
+                    <hi rendition="#g">Kumana,</hi> an der Mündung des großen <hi rendition="#i" >Meerbu&#x017F;ens von</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Cariaco,</hi> die Haupt&#x017F;tadt der Provinz Kumana, liegt<lb break="yes"/>unter einem Amphitheater 5 bis 8 tau&#x017F;end Fuß hoher,<lb break="yes"/>dick mit Wald bewach&#x017F;ener Berge, welche zu der<lb break="yes"/>Hauptkette der Kü&#x017F;ten-Kordillere gehören. Das Erdbe-<lb break="no"/>ben von Quito im Jahre 1797 hatte auch Kumana betrof-<lb break="no"/>fen, und noch war die halbe Stadt in Schutt; auch Herr<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName key="humboldt_av">von Humboldt</persName>
+                    </hi> erlebte hier am 4ten Nov. 1799 ein<lb break="yes"/>ziemlich heftiges Erdbeben. Theils in Kumana, theils in<lb break="yes"/>
+                    <pb n="[396]" facs="#f0003"/> den benachbarten Gebirgen, (be&#x017F;onders in dem we&#x017F;t-<lb break="no"/>licher liegenden Theile der Kü&#x017F;ten Kordillere, welche<lb break="yes"/>&#x017F;ich in Paria, nördlich vor den Mündungen des Orino-<lb break="no"/>ko, der In&#x017F;el <hi rendition="#g">St. Trinidad</hi> gegen über, mit der <hi rendition="#g">Pun-<lb break="no"/>ta de Paria</hi> endigt,) verweilte &#x017F;ich Herr <hi rendition="#g">von Hum-<lb break="no"/>boldt</hi> über 4 Monate, und ging dann am 18ten Nov.<lb break="yes"/>1799 nach <hi rendition="#g">Guayra,</hi> dem Hafen von <hi rendition="#g">Karakas,</hi>
+                    <lb break="yes"/>(<hi rendition="#i">Annalen,</hi> VI, 193;) zu Wa&#x017F;&#x017F;er, eine Rei&#x017F;e von 2 Ta-<lb break="no"/>gen. Vom November bis in den Januar blieb er in Ka-<lb break="no"/>rakas, und be&#x017F;uchte die nahen Schneegebirge, welche<lb break="yes"/>die höch&#x017F;ten Spitzen der Kü&#x017F;ten-Kordillere bilden.<lb break="yes" />Auch die <hi rendition="#i">Annalen,</hi> (VII, 329,) haben Auszüge des<lb break="yes"/>Phy&#x017F;ikali&#x017F;ch-Merkwürdigen aus den Briefen enthal-<lb break="no"/>ten, die der unermüdliche Beobachter von hier aus an<lb break="yes"/>
+                    <persName key="lalande_jjlfd">
+                        <hi rendition="#g">Lalande</hi>
+                    </persName> und an <hi rendition="#g">
+                        <persName key="fourcroy_afd">Fourcroy</persName>
+                    </hi> nach Paris &#x017F;chrieb, an<lb break="yes"/>letztern am 25&#x017F;ten Januar 1800, als er eben im Begriff<lb break="yes"/>war, &#x017F;eine Abrei&#x017F;e über <hi rendition="#g">
+                        <placeName key="varinas">Varinas</placeName>
+                    </hi> und die <hi rendition="#i">Schneege-<lb break="no"/>birge von</hi>
+                    <hi rendition="#g">Merida,</hi> (&#x017F;üdlich vom großen <hi rendition="#i" >Meerbu&#x017F;en von</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Marecaybo,</hi>) nach dem Rio Negro und weiter land-<lb break="no"/>einwärts anzutreten.</p>
+                <lb break="yes"/>
+                <p>Hier das, was Herr <hi rendition="#g">
+                        <persName key="humboldt_av">von Humboldt</persName>
+                    </hi> in einem<lb break="yes"/>Briefe vom 21&#x017F;ten Sept. 1801, (<hi rendition="#i">neue berlini&#x017F;che Monats-<lb break="no" />&#x017F;chrift,</hi> 1802, Juni, S. 439,) &#x017F;einem Bruder von die-<lb break="no"/>&#x017F;er großen und kühnen Reife durch unbetretne Wild-<lb break="no"/>ni&#x017F;&#x017F;e &#x017F;chreibt, auf deren einen großen Theil der Materia-<lb break="no"/>lien zu dem geogno&#x017F;ti&#x017F;chen Auf&#x017F;atze, den ich den Le-<lb break="no"/>&#x017F;ern hier mittheile, ge&#x017F;ammelt hat<choice>
+                        <sic>,</sic>
+                        <corr type="editorial">.</corr>
+                    </choice> Das Eingeklam-<lb break="no"/>merte &#x017F;ind erläuternde Bemerkungen von mir. &#x2014; &#x2014;<lb break="yes"/>&#x201E;Von Karakas unternahmen wir im Januar die Rei&#x017F;e<lb break="yes"/>nach dem <placeName key="orinoco">Orinoko</placeName>. Wir kamen durch den <hi rendition="#g">
+                        <placeName key="apure">Apuré</placeName>,</hi>
+                    <lb break="yes"/>[der aus den Gebirgen &#x017F;üdlich von Merida dem Orinoko<lb break="yes"/>zu&#x017F;trömt,] in die&#x017F;en Strom, &#x017F;chifften ihn aufwärts, über<lb break="yes"/>die Katarakten hinweg, und dann in die kleinen Flü&#x017F;&#x017F;e<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName key="atabapo">Atabapo</placeName>, Tuamini</hi> und <hi rendition="#g">Temi.</hi> [Der <hi rendition="#g">
+                        <placeName key="atabapo">Atabapo</placeName>
+                    </hi>
+                    <lb break="yes"/>und der <hi rendition="#g">Guaiviari</hi> fallen beide zugleich unter 4°<lb break="yes"/>
+                    <pb n="[397]" facs="#f0004"/> nördlicher Breite bei <hi rendition="#g">
+                        <placeName key="sanfernandodeatabapo">St. Fernando de Atabapo</placeName>
+                    </hi>
+                    <lb break="yes"/>in den <placeName key="orinoco">Orinoko</placeName>, und nach <persName key="surville_l">
+                        <hi rendition="#g">Surville&#x2019;s</hi>
+                    </persName> Karte, (von<lb break="yes"/>der weiterhin um&#x017F;tändlicher die Rede &#x017F;eyn wird,)<lb break="yes"/>der <hi rendition="#g">Temi,</hi> vielleicht auch Tuamini genannt, in den<lb break="yes"/>
+                    <placeName key="atabapo">Atabapo</placeName>.] Von da trugen wir un&#x017F;er Canot 3 Tage<lb break="yes"/>lang bis <hi rendition="#g">Canno Pimichia</hi> am <hi rendition="#g">Rio Negro.</hi> [<hi rendition="#g">Pi-<lb break="no" />michia</hi> liegt nach <persName key="surville_l">
+                        <hi rendition="#g">Surville&#x2019;s</hi>
+                    </persName> Karte, in gerader Li-<lb break="no"/>nie etwa 6 Meilen vom Temi, am Einflu&#x017F;&#x017F;e des <hi rendition="#g">Itini-<lb break="no"/>vini</hi> in den Rio Negro, unter 2° nördlicher Breite.]<lb break="yes"/>Den Rio Negro &#x017F;chifften wir er&#x017F;t herab bis an die Grän-<lb break="no"/>zen von Groß-Para, [der nördlich&#x017F;ten <choice>
+                        <sic>Prorinz</sic>
+                        <corr type="editorial">Provinz</corr>
+                    </choice> von Bra-<lb break="no"/>&#x017F;ilien;] dann aufwärts bis zum <hi rendition="#g">Ca&#x017F;iquiari</hi> 12 Tage<lb break="yes"/>lang zwi&#x017F;chen &#x017F;o dick verwach&#x017F;enen Wäldern, daß<lb break="yes" />wir große Tieger auf den Bäumen erblickten, weil der<lb break="yes"/>zu üppige Pflanzenwuchs &#x017F;ie auf der Erde zu gehn<lb break="yes"/>verhinderte. [Der <hi rendition="#g">Ca&#x017F;iquiari</hi> i&#x017F;t nach <persName key="surville_l">
+                        <hi rendition="#g">Survil-<lb break="no"/>le&#x2019;s</hi>
+                    </persName> Karte der merkwürdige Arm des <placeName key="orinoco" >Orinoko</placeName>, der<lb break="yes"/>die&#x017F;en Strom mit dem Rio Negro, mit dem er unweit<lb break="yes"/>
+                    <hi rendition="#g">St. Carlos de Rio Negro</hi> zu&#x017F;ammen fließt, in<lb break="yes"/>ziemlich gerader Linie verbindet; ein Um&#x017F;tand, der al&#x017F;o<lb break="yes"/>&#x017F;chon 1779 nicht mehr zweifelhaft &#x017F;eyn konnte.] Aus<lb break="yes"/>dem Ca&#x017F;iquiari kamen wir wieder in den <placeName key="orinoco">Orinoko</placeName>, den<lb break="yes"/>wir nun weiter aufwärts, gegen O&#x017F;ten &#x017F;chiffend, bis<lb break="yes"/>über den feuer&#x017F;peienden Berg <hi rendition="#g">Duida</hi> hinaus verfolg-<lb break="no"/>ten, [welches indeß nach <persName key="surville_l">
+                        <hi rendition="#g">Surville&#x2019;s</hi>
+                    </persName> Karte nicht<lb break="yes"/>viel über 6 Meilen i&#x017F;t, als &#x017F;o weit die Kolonie <hi rendition="#g">Esme-<lb break="no"/>ralda</hi> über die Mündung des Ca&#x017F;iquiari am Orinoko<lb break="yes"/>hinauf liegt.] Noch weiter vorzudringen, verhinderte<lb break="yes"/>uns die Wildheit der men&#x017F;chenfre&#x017F;&#x017F;enden Guaikas; auch<lb break="yes"/>i&#x017F;t nie ein Weißer weiter ö&#x017F;tlich in das unbekannte Land<lb break="yes" />die&#x017F;er unabhängigen Indianer gekommen. &#x2014; &#x2014; Wir<lb break="yes"/>&#x017F;ind in den Wäldern zwi&#x017F;chen dem Rio Negro, Orino-<lb break="no"/>ko und <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;e</placeName>, 500 franzö&#x017F;i&#x017F;che Meilen tiefer<lb break="yes"/>landeinwärts, als <persName key="loeffler_01">
+                        <hi rendition="#g">Löffler</hi>
+                    </persName> gewe&#x017F;en. &#x2014; Von <hi rendition="#g">Duida</hi>
+                    <lb break="yes"/>&#x017F;chifften wir 500 franzö&#x017F;i&#x017F;che Meilen weit den <placeName key="orinoco">Orinoko</placeName>,<lb break="yes"/>
+                    <pb n="[398]" facs="#f0005"/> [in 26 Tagen, die Ra&#x017F;ttage ungerechnet,] wieder her-<lb break="no"/>ab, bis unweit &#x017F;einer Mündungen, nach <hi rendition="#g">
+                        <placeName key="angostura">St. Thomas<lb break="yes"/>de la Ango&#x017F;tura</placeName>,</hi> wo wir im Juli 1800 ankamen. Wir<lb break="yes"/>verweilten in die&#x017F;er Haupt&#x017F;tadt von Guayana einen Mo-<lb break="no"/>nat, während de&#x017F;&#x017F;en <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName> am Fieber litt, einer<lb break="yes"/>Folge der &#x017F;chrecklichen Miasmen in den na&#x017F;&#x017F;en Wäl-<lb break="no"/>dern des <placeName key="aequator">Aequators</placeName>. Dann gingen wir durch das Land,<lb break="yes"/>(oder die &#x017F;o genannte Mi&#x017F;&#x017F;ion,) der Karaiben und über<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName key="barcelona">Neu-Barcelona</placeName>,</hi> nach <hi rendition="#g">Kumana</hi> zurück, wo wir<lb break="yes"/>im September ankamen. Die Karaiben &#x017F;ind die größte<lb break="yes"/>und muskel&#x017F;tärk&#x017F;te Nation, welche ich je ge&#x017F;ehn habe;<lb break="yes"/>&#x017F;ie allein widerlegen &#x017F;chon <persName key="raynal_gtf">
+                        <hi rendition="#g">Raynal&#x2019;s</hi>
+                    </persName> und <persName key="pauw_cd">
+                        <hi rendition="#g">Paw&#x2019;s</hi>
+                    </persName>
+                    <lb break="yes"/>Träumereien über die Schwäche und Ausartung des<lb break="yes" />Men&#x017F;chenge&#x017F;chlechts in der <placeName key="amerika">neuen Welt</placeName>. Ein ausge-<lb break="no"/>wach&#x017F;ener Karaibe gleicht einem aus Erz gego&#x017F;&#x017F;enen<lb break="yes"/>
+                    <persName key="herakles">Herkules</persName>.&#x201C;</p>
+                <lb break="yes"/>
+                <p>&#x201E;Eigentlich habe ich,&#x201C; (&#x017F;chreibt Herr <hi rendition="#g">von Hum-<lb break="no"/>boldt</hi> von Kumana aus am 16ten October 1800 an<lb break="yes"/>
+                    <hi rendition="#g">
+                        <persName key="fourcroy_afd">Fourcroy</persName>,</hi>) &#x201E;während der 16 Monate meines Aufent-<lb break="no"/>halts im <placeName key="suedamerika" >&#x017F;üdlichen Amerika</placeName> 2 Rei&#x017F;en unternommen: die<lb break="yes"/>eine nach den Mi&#x017F;&#x017F;ionen der Chaymas-Indianer zu Pa-<lb break="no"/>ria, [während &#x017F;eines er&#x017F;ten Aufenthalts in Kumana,]<lb break="yes"/>die andere in das unermeßliche Land nordwärts des<lb break="yes"/>
+                    <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName>. Wir &#x017F;ind zweimahl vor den großen<lb break="yes"/>
+                    <hi rendition="#i">Wa&#x017F;&#x017F;erfällen des</hi>
+                    <hi rendition="#g">
+                        <placeName key="orinoco">Orinoko</placeName>,</hi> denen von <hi rendition="#g">
+                        <placeName key="atures">Atures</placeName>
+                    </hi> un-<lb break="no"/>ter 5° 39&#x2032; nördl. Breite und 4<hi rendition="#sup">St.</hi> 41&#x2032; 40&#x2033; we&#x017F;tl. Länge,<lb break="yes"/>und von [S. <hi rendition="#g">Jo&#x017F;eph de</hi>] <hi rendition="#g">Maypures</hi> unter 5° 12&#x2032;<lb break="yes"/>Br. und 4<hi rendition="#sup">St.</hi> 43&#x2032; we&#x017F;tl. Länge vorbei gekommen. &#x2014; &#x2014;<lb break="yes"/>Vom <hi rendition="#g">Tuamini</hi> gingen wir zu Fuß durch Wälder von<lb break="yes"/>
+                    <hi rendition="#g">Hevea, Cinchona</hi> und <persName key="wynter_w">
+                        <hi rendition="#g">Winterana-Canella</hi>
+                    </persName>
+                    <lb break="yes"/>nach dem Rio Negro, auf dem ich bis <hi rendition="#g">San Carlos</hi>
+                    <lb break="yes"/>herab fuhr, um die Länge die&#x017F;es Orts nach <persName key="berthoud_l">
+                        <hi rendition="#g">Berthoud&#x2019;s</hi>
+                    </persName>
+                    <lb break="yes"/>Chronometer, mit dem ich noch immer &#x017F;ehr zufrieden<lb break="yes"/>bin, zu be&#x017F;timmen. &#x2014; &#x2014; Wir über&#x017F;chicken Ihnen<lb break="yes"/>die Milch eines Baumes, den die Indianer die <hi rendition="#i">Kuh</hi> nen-<lb break="no"/>nen, weil &#x017F;ie die&#x017F;e &#x017F;ehr nährende und un&#x017F;chädliche<lb break="yes"/>
+                    <pb n="[399]" facs="#f0006"/> Milch trinken. &#x2014; &#x2014; Ich habe auch ver&#x017F;ucht, Ihnen<lb break="yes"/>das <hi rendition="#i">Cruare,</hi> das berüchtigte Gift der Indianer vom Rio<lb break="yes"/>Negro, in &#x017F;einer ganzen Reinheit zu ver&#x017F;chaffen. Um<lb break="yes"/>die Pflanze zu &#x017F;ehn, welche die&#x017F;es Gift giebt, machte<lb break="yes"/>ich ausdrücklich eine Rei&#x017F;e nach <hi rendition="#g">Esmeralda;</hi> &#x017F;ie<lb break="yes"/>&#x017F;tand aber leider nicht in der Blüthe. Ich über&#x017F;ende<lb break="yes"/>Ihnen einige Zweige die&#x017F;er Liana, (hier <hi rendition="#i">Maracury</hi> ge-<lb break="no"/>nannt,) welche in den Granitgebirgen &#x017F;par&#x017F;am wäch&#x017F;t.<lb break="yes"/>&#x2014; &#x2014; Ich füge die&#x017F;en noch das <hi rendition="#i">Dapiche</hi> und eine Art<lb break="yes"/>von Kaut&#x017F;chuk, das daraus bereitet wird, &#x2014; &#x2014; das<lb break="yes"/>
+                    <hi rendition="#i">Pendarenharz</hi> und die <hi rendition="#i">Erde der Otomaguen</hi> bei, welche<lb break="yes"/>3 Monate lang fa&#x017F;t die einzige Nahrung die&#x017F;er Nation<lb break="yes"/>i&#x017F;t.&#x201C; &#x2014; &#x2014; Manches Abenteuer von die&#x017F;er inländi-<lb break="no" />&#x017F;chen Rei&#x017F;e erzählt ein Brief un&#x017F;ers Landsmannes, der<lb break="yes"/>im <hi rendition="#i">Publici&#x017F;te</hi> bekannt gemacht wurde, und den man im<lb break="yes"/>
+                    <hi rendition="#i">Intelligenzbl. der allgem. deut&#x017F;chen Bibl.,</hi> B. 58, St. 1,<lb break="yes"/>S. 60, über&#x017F;etzt findet, den ich aber hier übergehe.<lb break="yes"/>Man vergleiche auch <hi rendition="#i">eben da&#x017F;elb&#x017F;t</hi> B. 61, St. 2, S. 352;<lb break="yes"/>B. 64, St. 1, S. 118; und die Spener&#x017F;che <hi rendition="#i">berliner Zeitung,</hi>
+                    <lb break="yes"/>1801, Juni, No. 86 und 87.</p>
+                <lb break="yes"/>
+                <p>Noch von Kumana aus über&#x017F;endete Herr v. <hi rendition="#g">Hum-<lb break="no"/>boldt</hi> den Directoren des naturhi&#x017F;tori&#x017F;chen Mu&#x017F;eums in<lb break="yes"/>Madrit eine geologi&#x017F;che Sammlung, als die Frucht &#x017F;einer<lb break="yes" />Rei&#x017F;en landeinwärts, und zur Erläuterung der&#x017F;elben ein<lb break="yes"/>&#x017F;pani&#x017F;ch ge&#x017F;chriebnes geologi&#x017F;ches Gemählde die&#x017F;es<lb break="yes"/>Theils von <placeName key="suedamerika" >Südamerika</placeName>. Einen Auszug aus die&#x017F;er Ab-<lb break="no" />handlung in franzö&#x017F;i&#x017F;cher Sprache &#x017F;chickte er an den<lb break="yes"/>Dr. <persName key="lametherie_jcd">
+                        <hi rendition="#g">Delamétherie</hi>
+                    </persName> in Paris, und &#x017F;o kam die&#x017F;es <hi rendition="#i">Ta-<lb break="no"/>bleau géologique de <placeName key="suedamerika" >l&#x2019;Amérique meridionale</placeName>,</hi> nach wel-<lb break="no" />chem gegenwärtige Skizze bearbeitet i&#x017F;t, in das <hi rendition="#i" >Jour-<lb break="no"/>nal de Phy&#x017F;ique,</hi> An 9, t. 53, p. 30 &#x2014; 60. Folgender<lb break="yes"/>Brief, datirt <hi rendition="#g" >Kumana</hi> den 15ten Nov. 1800, beglei-<lb break="no"/>tete die&#x017F;es <hi rendition="#i">Tableau,</hi> (<hi rendition="#i">Journ. de Phy&#x017F;.,</hi> t. 53, p. 61.)<lb break="yes"/>&#x201E;Ich über&#x017F;ende Ihnen hier ein geologi&#x017F;ches Tableau,<lb break="yes"/>das Sie intere&#x017F;&#x017F;iren wird. Aller Müh&#x017F;eligkeiten und<lb break="yes"/>Entbehrungen ungeachtet, denen wir in den Gegenden,<lb break="yes"/>
+                    <pb n="[400]" facs="#f0007"/> aus welchen wir eben zurück kommen, uns unterziehn<lb break="yes"/>mußten, lebten wir doch in Wonne, denn alles war<lb break="yes"/>dort neu, groß und maje&#x017F;täti&#x017F;ch. In drei Tagen wer-<lb break="no"/>den wir von hier nach der Havannah abrei&#x017F;en, um von<lb break="yes"/>da nach Mexico, den Philippinen und nach China zu<lb break="yes"/>gehn. Ich habe zu <hi rendition="#g">St. Carlos del Rio Negro</hi>
+                    <lb break="yes"/>unter 1° 35&#x2032; nördl. Breite die <hi rendition="#i" >magneti&#x017F;che Inclination,</hi>
+                    <lb break="yes"/>von der man bisher wähnte, &#x017F;ie &#x017F;ey unter dem <placeName key="aequator">Aequa-<lb break="no"/>tor</placeName> 0, mit meiner <persName key="borda_jcd">Bordai&#x017F;chen</persName> Bou&#x017F;&#x017F;ole 23° 20&#x2032; nach<lb break="yes"/>der neuen Cente&#x017F;imaleintheilung, [das i&#x017F;t, 20° 53&#x2032; nach<lb break="yes"/>der gewöhnlichen Eintheilung,] gefunden. In 1 Minute<lb break="yes"/>machte die Inclinationsnadel 21,6 Schwingungen. Die ge-<lb break="no"/>fundne <hi rendition="#i">Temperatur des innern Erdbodens</hi> betrug unter 10°<lb break="yes"/>30&#x2032; nördl. Breite, in einer Höhe von 505 Toi&#x017F;en über<lb break="yes"/>der Meeresfläche, 14,8° bis 15,2° R., und blieb die&#x017F;elbe,<lb break="yes"/>die Temperatur der Luft mochte auf 13° &#x017F;inken<choice>
+                        <sic>.</sic>
+                        <corr type="editorial"/>
+                    </choice> oder<lb break="yes"/>auf 19° &#x017F;teigen. Die mittlere Temperatur des <hi rendition="#i">Meerwa&#x017F;-<lb break="no"/>&#x017F;ers</hi> i&#x017F;t hier an der Oberfläche 21° R.&#x201C;</p>
+                <lb break="yes"/>
+                <p>Die mei&#x017F;ten Orte und Flü&#x017F;&#x017F;e, welche un&#x017F;er vor-<lb break="no"/>trefflicher Landsmann in der folgenden geogno&#x017F;ti&#x017F;chen<lb break="yes"/>Skizze nennt, finde ich auf der großen <hi rendition="#i">Mapa coro-gra-<lb break="no"/>fica de la Nueva-Andalucia, Provincias de Cumana y Gua-<lb break="no"/>yana, Vertinentes del Orinoco, &#x017F;u cierto origen, commu-<lb break="no" />nicacion con il de las <placeName key="amazonas">Amazonas</placeName>, &#x017F;ituacion de la Laguna<lb break="yes"/>Parime, y nuevas Poblaciones. Con&#x017F;truido &#x017F;obre las mejo-<lb break="no"/>res Ob&#x017F;ervaciones y po&#x017F;teriores Noticias, por D. <persName key="surville_l">
+                            <hi rendition="#g">Luis<lb break="yes"/>de Surville,</hi>
+                        </persName>
+                    </hi> [zweitem Archivar des Depart. von Indien,<lb break="yes"/>auf Befehl des Chefs die&#x017F;es Dep. <persName key="galvez_jd">
+                        <hi rendition="#i">D. <hi rendition="#g">Jo&#x017F;ef de Galvez,</hi>
+                        </hi>
+                    </persName>]<lb break="yes"/>1778. Sie, und des Fraters <persName key="caulin_a">
+                        <hi rendition="#g">Antonio Caulin</hi>
+                    </persName>
+                    <hi rendition="#i">Hi&#x017F;to-<lb break="no"/>ria coro-graphica natural, y evangelica de la Nueva An-<lb break="no"/>dalucia</hi> etc., 1779, fol., haben mir größten Theils den<lb break="yes"/>Stoff zu den geographi&#x017F;chen Erläuterungen gegeben,<lb break="yes"/>die man bei dem vorigen Briefe und bei dem folgenden<lb break="yes"/>Auf&#x017F;atze findet. <hi rendition="#i">d. H.</hi>]</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <pb n="[401]" facs="#f0008"/>
+                <p>&#x2014; &#x2014; <hi rendition="#in">I</hi>ch komme von einer Rei&#x017F;e landeinwärts<lb break="yes"/>von 1200 Lieues zurück, auf welcher ich ein Vier-<lb break="no"/>eck zwi&#x017F;chen Caripe, Portocabello, Pimichin und<lb break="yes"/>Esmeralde be&#x017F;chrieben habe <note place="foot" n="*)">
+                        <hi rendition="#g">Caripe,</hi> der Hauptort der Kapuziner-Mi&#x017F;&#x017F;ion<lb break="yes"/>unter den Chaimas und Karaiben, liegt gegen 10<lb break="yes"/>Meilen &#x017F;üdlich von Kumana, <hi rendition="#g">Pimichin</hi> am Rio<lb break="yes"/>Negro, <hi rendition="#g">Esmeralde</hi> am <placeName key="orinoco" >Orinoko</placeName>. Vergleiche<lb break="yes"/>S. 397. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> de&#x017F;&#x017F;en Inhalt mehr<lb break="yes"/>als 59000 Quadratlieues beträgt, &#x017F;o daß ich nun<lb break="yes"/>das Land kenne, vom Berge von Parca an bis Por-<lb break="no"/>tocabello und von der nördlichen Küfte bis an das<lb break="yes"/>Thal des Rio Negro, der in den <placeName key="amazonas" >Amazonenfluß</placeName>
+                    <lb break="yes"/>&#x017F;trömt. Je größer die&#x017F;er Erd&#x017F;trich i&#x017F;t, de&#x017F;to mehr<lb break="yes"/>werde ich mich in die&#x017F;er Skizze mit großen Zügen<lb break="yes"/>begnügen mü&#x017F;&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>&#x2014; &#x2014; Sollte ich &#x017F;o glücklich &#x017F;eyn, nach Euro-<lb break="no"/>pa zurück zu kehren, und meine geogno&#x017F;ti&#x017F;chen<lb break="yes"/>Manu&#x017F;cripte, die ich in Frankreich und Deut&#x017F;ch-<lb break="no"/>land gela&#x017F;&#x017F;en habe, nochmahls zu retouchiren, &#x017F;o<lb break="yes"/>darf ich hoffen, etwas Allgemeines über den <hi rendition="#i">Bau<lb break="yes"/>der Erde</hi> fe&#x017F;t zu &#x017F;tellen. Man wird dann durch<lb break="yes"/>überzeugende Erfahrungen meine frühere Behaup-<lb break="no"/>tung be&#x017F;tätigt finden, daß das <hi rendition="#i">Streichen</hi> und das<lb break="yes"/>
+                    <hi rendition="#i">Fallen</hi> der <hi rendition="#i">Urgebirgslager,</hi> oder der Winkel, den<lb break="yes"/>&#x017F;ie mit dem Meridiane des Orts und mit der Erd-<lb break="no"/>ach&#x017F;e machen, von der Richtung und den Abhän-<lb break="no"/>gen der Gebirgszüge <hi rendition="#i">unabhängig</hi> i&#x017F;t, und vielmehr<lb break="yes"/>Ge&#x017F;etze und einen allgemeinen Parallelismus befol-<lb break="no"/>
+                    <pb n="[402]" facs="#f0009"/> gen, die nur in der Anziehung und der Ach&#x017F;enum-<lb break="no"/>drehung der Erde gegründet &#x017F;eyn können. Man<lb break="yes"/>wird dann ferner &#x017F;ehn, daß die Folgen der <hi rendition="#i">Flötz-<lb break="no"/>lager,</hi> die man &#x017F;on&#x017F;t einzelnen &#x017F;ehr durchwühlten<lb break="yes"/>Provinzen, wie z. B. Thüringen und Derby&#x017F;hire,<lb break="yes"/>eigenthümlich glaubte, ein allgemeines Phänomen<lb break="yes"/>i&#x017F;t, (wie <hi rendition="#g">
+                        <persName key="freiesleben_jc">Freisleben</persName>, <persName key="buch_lv">von Buch</persName>
+                    </hi> und <hi rendition="#g">Gru-<lb break="no"/>ner</hi> das &#x017F;chon &#x017F;ehr gut durchgeführt haben,) und<lb break="yes"/>daß in die&#x017F;en Formationen eine <hi rendition="#i">Identität der Lager</hi>
+                    <lb break="yes"/>herr&#x017F;cht, welche darauf deutet, daß die&#x017F;elben Nie-<lb break="no"/>der&#x017F;chläge über dem ganzen Erdboden &#x017F;ich zu der-<lb break="no"/>&#x017F;elben Zeit abge&#x017F;etzt haben; Ideen, die nicht bloß<lb break="yes"/>für den Phy&#x017F;iker, &#x017F;ondern auch für den Bergmann,<lb break="yes"/>der nach Analogien urtheilen muß, von hohem In-<lb break="no"/>tere&#x017F;&#x017F;e &#x017F;eyn mü&#x017F;&#x017F;en, und uns zu einer <hi rendition="#i">zuverlä&#x017F;&#x017F;igen</hi>
+                    <lb break="yes"/>neuen Wi&#x017F;&#x017F;en&#x017F;chaft führen werden, die lediglich<lb break="yes"/>
+                    <hi rendition="#i">be&#x017F;chreibend</hi> feyn wird, und ein Gemählde der Erde<lb break="yes"/>
+                    <hi rendition="#i">wie &#x017F;ie i&#x017F;t,</hi> nicht ihrer Ent&#x017F;tehungsart auf&#x017F;tellen<lb break="yes"/>&#x017F;oll. &#x2014; &#x2014;</p>
+                <lb break="yes"/>
+                <p>Ueber der <hi rendition="#i">hohen Kordillere</hi>
+                    <note place="foot" n="*)">Der &#x017F;pani&#x017F;che Name für Gebirgskette. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <hi rendition="#i">der <placeName key="anden">Anden</placeName>,</hi> die ganz<lb break="yes"/>
+                    <placeName key="suedamerika">Südamerika</placeName> von <hi rendition="#g" >Zitara</hi>
+                    <note place="foot" n="**)">Oder vielmehr von der Landenge von Darien ab.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> bis <hi rendition="#g">Cap Pilar</hi>
+                    <note place="foot" n="***)">Eins der &#x017F;üdwe&#x017F;tlich&#x017F;ten Vorgebirge Südameri-<lb break="no"/>ka&#x2019;s in der Straße von Magellan. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>von <hi rendition="#i">Nord</hi> nach <hi rendition="#i" >Süd</hi> durchzieht, hat man fa&#x017F;t all-<lb break="no"/>gemein verge&#x017F;&#x017F;en, daß <placeName key="suedamerika">Südamerika</placeName> noch <hi rendition="#i">andere<lb break="yes"/>Kordilleren</hi> hat, die von <hi rendition="#i">We&#x017F;t</hi> nach <hi rendition="#i">O&#x017F;t,</hi> parallel mit<lb break="yes"/>
+                    <pb n="[403]" facs="#f0010"/> dem <placeName key="aequator">Aequator</placeName> &#x017F;treichen, und die wenig&#x017F;tens eben<lb break="yes"/>&#x017F;o hoch als die Karpathen, der Kauka&#x017F;us, die Al-<lb break="no"/>pen und die Pyrenäen &#x017F;ind. Gemeiniglich &#x017F;tellt<lb break="yes"/>man &#x017F;ich alles Land, das ö&#x017F;tlich von den <placeName key="anden">Anden</placeName>
+                    <lb break="yes"/>liegt, und nach den Kü&#x017F;ten von Guyana und Bra-<lb break="no"/>&#x017F;ilien zu &#x017F;ich verflächt, als niedrige Ebenen vor, die<lb break="yes"/>von den Strömen über&#x017F;chwemmt werden; und &#x017F;elb&#x017F;t<lb break="yes"/>die Bewohner der Kü&#x017F;te von Karakas meinen, die<lb break="yes"/>weiten Ebenen, (<hi rendition="#i" >Llanos</hi>) in die &#x017F;ie jen&#x017F;eits der<lb break="yes"/>Thäler von <placeName key="aragua">Aragua</placeName> kommen, gingen ununterbro-<lb break="no"/>chen bis zu den Pampas von Buenos-Ayres und bis<lb break="yes" />zu den Patagonen fort. Das i&#x017F;t aber keineswegs<lb break="yes"/>der Fall. Die &#x017F;üdamerikani&#x017F;chen <hi rendition="#i">Llanos</hi> hängen<lb break="yes"/>eben &#x017F;o wenig ununterbrochen zu&#x017F;ammen, und lie-<lb break="no"/>gen eben &#x017F;o wenig alle in gleichem Niveau, als die<lb break="yes"/>
+                    <placeName key="afrika">Wü&#x017F;ten Afrika&#x2019;s</placeName> und die Steppen der Tartarey, wel-<lb break="no"/>che weiter vom Meere ab höher liegende Terra&#x017F;&#x017F;en<lb break="yes"/>bilden.</p>
+                <lb break="yes"/>
+                <p>Die Hauptkordillere &#x017F;cheint vom Cap Pilar bis<lb break="yes"/>zu den von <persName key="stewart_01">
+                        <hi rendition="#g">Stewart</hi>
+                    </persName> 1792 auf &#x017F;einer Rei&#x017F;e zu den<lb break="yes"/>Quellen des Mi&#x017F;&#x017F;uri entdeckten <placeName key="allegheny" >Aleganhy-Gebirgen</placeName>
+                    <lb break="yes"/>über <hi rendition="#g">Nutka-</hi> und <hi rendition="#g" >Prinz-Williams-Sund</hi>
+                    <lb break="yes"/>hinaus zu&#x017F;ammen hängend fortzu&#x017F;treichen; und<lb break="yes"/>die&#x017F;e Gebirge, deren indiani&#x017F;che Bewohner fa&#x017F;t<lb break="yes"/>eben &#x017F;o kultivirt &#x017F;ind, als es die Peruaner im 15ten<lb break="yes"/>Jahrhundert waren, &#x017F;cheinen nichts anders als der<lb break="yes"/>nördlich&#x017F;te Theil der <placeName key="anden">Anden</placeName> zu &#x017F;eyn. <note place="foot" n="*)" xml:id="fn1-1" next="#fn1-2">Von ihr i&#x017F;t in die&#x017F;er Skizze, die Herr <hi rendition="#g">
+                            <persName key="humboldt_av">von<lb break="yes"/>Humboldt</persName>
+                        </hi> entwarf, ehe er die Kordillere der</note> Von den<lb break="yes"/>
+                    <pb n="[404]" facs="#f0011"/>
+                    <choice>
+                        <sic>Urgebigrsketten</sic>
+                        <corr type="editorial">Urgebirgsketten</corr>
+                    </choice>, die &#x017F;ich von der Kette der <placeName key="anden" >Anden</placeName>
+                    <lb break="yes"/>nach O&#x017F;ten abziehn, &#x017F;ind mir die im <placeName key="nordamerika">nördl. Amerika</placeName>
+                    <lb break="yes"/>nicht genau bekannt; doch &#x017F;cheinen dergleichen<lb break="yes"/>nach Canada unter 50°, ferner in 42° nördl. Breite,<lb break="yes"/>und in dem jetzt überflutheten Land&#x017F;triche, der den<lb break="yes"/>Golf von Mexico bildet, unter 19 und 22° Breite<lb break="yes" />abzugehn, (wie die Gebirge von Kuba und Domin-<lb break="no"/>go anzeigen.) Im <placeName key="suedamerika">&#x017F;üdlichen Amerika</placeName> giebt es drei<lb break="yes"/>mit dem <placeName key="aequator">Aequator</placeName> parallel &#x017F;treichende Ketten pri-<lb break="no"/>mitiver Gebirge: die <hi rendition="#i">Kü&#x017F;tenkette</hi> unter 9° und 10°;<lb break="yes"/>die Kette, in welcher die großen Wa&#x017F;&#x017F;erfälle von<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName key="atures">Atures</placeName>
+                    </hi> (5° 39&#x2032;) und <hi rendition="#g">Maypure</hi> (5° 12&#x2032; 58&#x2033;)<lb break="yes"/>liegen, welche zwi&#x017F;chen 3° bis 7° nördlicher Breite<lb break="yes"/>ö&#x017F;tlich &#x017F;treicht, und die ich die <hi rendition="#i">Kette der Katarakten</hi>
+                    <lb break="yes"/>oder die <hi rendition="#i">Kette der Parime</hi> nennen will; <note place="foot" n="*)">Wahr&#x017F;cheinlich nach der berüchtigten <hi rendition="#g">Laguna<lb break="yes"/>Parime</hi> oder dem See <hi rendition="#g">Dorado,</hi> der nach <persName key="surville_l">
+                            <hi rendition="#g">Sur-<lb break="no"/>ville&#x2019;s</hi>
+                        </persName> Karte &#x017F;üdlich von den Quellen des <hi rendition="#g" >Rio<lb break="yes"/>Esquibo</hi> unter 1° nördl. Breite liegt, und aus<lb break="yes"/>dem ein Flüßchen hervor kömmt, das &#x017F;ich in den<lb break="yes"/>
+                        <hi rendition="#g">Rio Parime</hi> oder <hi rendition="#g">de Aguas Blancas</hi> er-<lb break="no"/>gießt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> und<lb break="yes"/>endlich die <hi rendition="#i">Kette von Chiquitos</hi> unter 15° und 20°<lb break="yes"/>&#x017F;üdlicher Breite. Die&#x017F;e Ketten la&#x017F;&#x017F;en &#x017F;ich &#x017F;elb&#x017F;t bis<lb break="yes"/>in die <placeName key="altewelt">alte Welt</placeName> verfolgen. Die Urgebirgskette<lb break="yes"/>Bra&#x017F;iliens findet &#x017F;ich unter gleicher Breite in Congo<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn1-2" prev="#fn1-1">
+                        <placeName key="anden">Anden</placeName> &#x017F;elb&#x017F;t ge&#x017F;ehn hatte, nicht die Rede; dage-<lb break="no"/>gen be&#x017F;chäftigt &#x017F;ich der auf die&#x017F;en folgende Auf&#x017F;atz<lb break="yes" />aus&#x017F;chließlich mit ihren Merkwürdigkeiten, und<lb break="yes" />ergänzt in &#x017F;o fern gegenwärtige Skizze. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="[405]" facs="#f0012"/> wieder; die ungeheure Ebene des <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName>
+                    <lb break="yes"/>liegt den Ebenen Nieder-Guinea&#x2019;s, die Kordillere<lb break="yes"/>der Katarakten den Gebirgen Ober-Guinea&#x2019;s, und<lb break="yes"/>die Llanos des Mi&#x017F;&#x017F;ifippi, (die, als der Golf von<lb break="yes"/>Mexico ent&#x017F;tand, vom Meere ver&#x017F;chlungen wurden,)<lb break="yes"/>der Wü&#x017F;te Sarah gegen über. Dies darf uns nicht<lb break="yes"/>verwundern, da das <placeName key="atlantik" >atlanti&#x017F;che Meer</placeName> vermuthlich<lb break="yes"/>nichts anderes als ein in die Erdfläche durch einen<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;trom einge&#x017F;chnittnes Thal i&#x017F;t. Die&#x017F;es Wa&#x017F;-<lb break="no"/>&#x017F;er &#x017F;trömte, wie <hi rendition="#g">
+                        <persName key="forster_jr">Reinhold For&#x017F;ter</persName>
+                    </hi> &#x017F;ehr wahr-<lb break="no"/>&#x017F;cheinlich gemacht hat, von Süden nach Norden,<lb break="yes"/>wurde durch die Gebirge Bra&#x017F;iliens nach Guinea<lb break="yes"/>nordö&#x017F;tlich hinüber gedrängt, wo es den Meerbu-<lb break="no"/>&#x017F;en von Guinea aushöhlte; dann durch die Gebirge<lb break="yes"/>des obern Guinea&#x2019;s nach Nordwe&#x017F;t gewendet, wo<lb break="yes"/>es den Golf von Mexico eingrub, und &#x017F;trömte dann<lb break="yes"/>längs der jetzigen nordamerikani&#x017F;chen Kü&#x017F;te nach<lb break="yes"/>Nordo&#x017F;t. &#x2014; &#x2014;</p>
+                <lb break="yes"/>
+                <p>Die nördlich&#x017F;te der drei &#x017F;üdamerikani&#x017F;chen ö&#x017F;t-<lb break="no"/>lich &#x017F;treichenden Kordilleren, die <hi rendition="#i" >Kordillere der<lb break="yes"/>Kü&#x017F;te von</hi>
+                    <hi rendition="#g">Venezuela,</hi> i&#x017F;t die höch&#x017F;te, aber auch<lb break="yes"/>die &#x017F;chmäl&#x017F;te. Die wahre Kette der <placeName key="anden">Anden</placeName> &#x017F;treicht<lb break="yes"/>vom hohen Plateau von Quito ab durch die Pro-<lb break="no"/>vinzen von Popayan und Choco, an der We&#x017F;t&#x017F;eite<lb break="yes"/>des <placeName key="atrato">Rio Atrato</placeName>, (oder Rio San Juan,) hin, nach<lb break="yes"/>dem I&#x017F;thmus von Darien, wo &#x017F;ie am Ufer des Cha-<lb break="no"/>gré nur noch als ein 1200 bis 1800 Fuß hohes<lb break="yes"/>Bergland vorkömmt. An der O&#x017F;t&#x017F;eite des <placeName key="atrato">Rio Atra-<lb break="no" />to</placeName> &#x017F;ind höhere, doch in ihrer Gruppirung minder<lb break="yes"/>regelmäßige Bergzüge, die &#x017F;ich unter dem Namen<lb break="yes"/>
+                    <pb n="[406]" facs="#f0013"/> der <hi rendition="#g">Sierra de Abile</hi> und der <hi rendition="#i">Berge von</hi>
+                    <hi rendition="#g">Cau-<lb break="no"/>ca</hi> durch die hohen Savanen von <hi rendition="#g">Tola</hi> nach dem<lb break="yes"/>
+                    <hi rendition="#g">Rio Grande de la Magdalena</hi> und nach der<lb break="yes" />Provinz <hi rendition="#g">St. Martha</hi> hinziehn. Hier geht von<lb break="yes"/>ihnen die <hi rendition="#i">Kü&#x017F;ten-Kordillere</hi> ab, <note place="foot" n="*)" xml:id="fn2-1" next="#fn2-2">Herr <hi rendition="#g">
+                            <persName key="humboldt_av">von Humboldt</persName>
+                        </hi> rechnet die&#x017F;e Kette zwar<lb break="yes"/>&#x017F;chon zur Kü&#x017F;ten-Kordillere; nachdem er &#x017F;ie aber<lb break="yes" />&#x017F;elb&#x017F;t berei&#x017F;t hat, (vergl. den folg. Auf&#x017F;.,) &#x017F;ieht er<lb break="yes"/>&#x017F;ie als die Hauptkette der <placeName key="anden">Anden</placeName> an. Die <placeName key="anden" >Anden</placeName>
+                        <lb break="yes"/>theilen &#x017F;ich über Popayan in drei Ae&#x017F;te, von de-<lb break="no"/>nen die Sierra de Abile der mittel&#x017F;te, die Kor-<lb break="no"/>dillere, auf welcher Sta Fé liegt, der ö&#x017F;tlich&#x017F;te, und<lb break="yes"/>die nach Darien &#x017F;treichende Kette der we&#x017F;tlich&#x017F;te<lb break="yes" />i&#x017F;t. Hiernach habe ich den Ausdruck im Texte<lb break="yes" />geändert. Vielleicht, daß Hr. <hi rendition="#g">
+                            <persName key="humboldt_av">von Humboldt</persName>
+                        </hi>
+                        <lb break="yes"/>jetzt auch die nordnordö&#x017F;tlich &#x017F;treichenden Gebirge<lb break="yes"/>von St. Martha noch zu den <placeName key="anden">Anden</placeName> rechnen dürf-<lb break="no"/>te, da &#x017F;ie mit der ö&#x017F;tlich&#x017F;ten Kette, auf der Sta Fé<lb break="yes"/>liegt, unmittelbar zu&#x017F;ammen zu hängen &#x017F;cheinen.<lb break="yes"/>Hier ein paar Stellen aus <persName key="bouguer_p">
+                            <hi rendition="#g">Bouguer,</hi>
+                        </persName> der als Au-<lb break="no"/>genzeuge &#x017F;pricht, da er über Popayan und Honda<lb break="yes"/>den Magdalenenfluß herunter von Quito nach Euro-<lb break="no"/>pa zurück kehrte: &#x201E;Die <hi rendition="#i" >Kordillere der <placeName key="anden">Anden</placeName>
+                        </hi> i&#x017F;t bei<lb break="yes"/>Quito doppelt. Die Gipfel der ö&#x017F;tlichen Kette &#x017F;ind<lb break="yes"/>hier im Mittel 40 bis 45 Lieues von der Süd&#x017F;ee, und<lb break="yes"/>von ihnen die Gipfel der we&#x017F;tlichen Kette 7 bis 8<lb break="yes"/>Lieues, an einigen Stellen mehr, an andern weni-<lb break="no"/>ger, entfernt. Beide Ketten laufen durchgehends<lb break="yes"/>mit einander parallel und nahe in der Richtung<lb break="yes"/>des Meridians. Das Thal zwi&#x017F;chen ihnen, das<lb break="yes"/>mei&#x017F;t 5 bis 6 Lieues breit i&#x017F;t, liegt 1500 bis 1600<lb break="yes"/>Toi&#x017F;en über dem Meere, und nur, weil es von<lb break="yes"/>beiden Seiten mit noch weit höhern Bergzügen</note> die immer &#x017F;chmä-<lb break="no"/>
+                    <pb n="[407]" facs="#f0014"/> ler wird, je mehr &#x017F;ie &#x017F;ich dem Meerbu&#x017F;en von Me-<lb break="no"/>xico nach dem <hi rendition="#g">Cap de la Vela</hi> zu nähert, und<lb break="yes"/>ihre anfangs nordnordö&#x017F;tliche Richtung bald ganz<lb break="yes"/>in eine ö&#x017F;tliche ändert. In die&#x017F;er Richtung geht &#x017F;ie<lb break="yes" />bis zum Berge von <hi rendition="#g">Paria</hi> oder vielmehr bis zur<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn2-2" prev="#fn2-1" next="#fn2-3" >einge&#x017F;chlo&#x017F;&#x017F;en i&#x017F;t, deren Gipfel zum Theil mit ewi-<lb break="no"/>gem Schnee bedeckt &#x017F;ind, gilt es nicht &#x017F;elb&#x017F;t für<lb break="yes"/>ein Gebirge. So weit ich die Kordillere der An-<lb break="no"/>den ge&#x017F;ehen habe, das i&#x017F;t, von <hi rendition="#g">Cuen&#x00E7;a,</hi> (unter<lb break="yes"/>3° &#x017F;üdl. Breite,) bis <hi rendition="#g">Popayan,</hi> (unter 2<formula notation="TeX">\frac{1}{2}</formula>° nördl.<lb break="yes"/>Breite,) i&#x017F;t &#x017F;ie auf die&#x017F;e Art doppelt, und ich weiß,<lb break="yes"/>daß das noch weit nördlich über Popayan hinaus<lb break="yes"/>der Fall i&#x017F;t, ob&#x017F;chon &#x017F;ie allmählig niedriger, und<lb break="yes"/>das Thal deshalb minder reizend wird. Um Quito<lb break="yes"/>&#x017F;teht das Thermometer immer auf 14 oder 15° R.<lb break="yes"/>und es i&#x017F;t dort ein immerwährender Frühling,&#x201C;<lb break="yes"/>(<hi rendition="#i">Figure de la Terre,</hi> p. XXXII.) &#x2014; &#x201E;Unter 2°<lb break="yes"/>nördl. Br. i&#x017F;t die Kordillere kaum noch den vierten<lb break="yes"/>Theil &#x017F;o hoch als bei Quito; weiterhin erhebt &#x017F;ie &#x017F;ich<lb break="yes"/>plötzlich bei <hi rendition="#g">Popayan,</hi> welches 800 bis 900 Toi-<lb break="no"/>&#x017F;en über dem Niveau des Meeres liegt, da das Ba-<lb break="no"/>rometer dort auf 22&#x2033; 10<formula notation="TeX" >\frac{2}{3}</formula>&#x2034; &#x017F;teht, und höch&#x017F;tens<lb break="yes"/>um 1<formula notation="TeX">\frac{1}{2}</formula>&#x2034; variirt. Sie nimmt aber bald wieder an<lb break="yes"/>Höhe ab; <hi rendition="#i">nicht</hi> der ö&#x017F;tliche Theil, &#x017F;ondern die <hi rendition="#i">andre<lb break="yes"/>Kette,</hi> welche zunäch&#x017F;t der Süd&#x017F;ee i&#x017F;t; und nach-<lb break="no"/>dem von ihr ein Arm ö&#x017F;tlich des Golfs von Darien<lb break="yes" />abgegangen i&#x017F;t, &#x017F;ich we&#x017F;tlich über den I&#x017F;thmus von<lb break="yes"/>Panama, (indem &#x017F;ie das Choco vom übrigen Südame-<lb break="no"/>rika &#x017F;cheidet,) nach Mexico zieht. Die&#x017F;e <hi rendition="#i">we&#x017F;tliche</hi>
+                        <lb break="yes"/>Kordillere enthält viel Gold, &#x017F;o wie auch der Fuß<lb break="yes"/>der <hi rendition="#i">ö&#x017F;tlichen</hi> und der Fuß <hi rendition="#i">einer andern</hi> &#x017F;ehr langen<lb break="yes" />Gebirgskette, die &#x017F;ich etwas &#x017F;üdlich von Popayan<lb break="yes"/>trennt, und &#x017F;ich über <hi rendition="#g">Sta Fé de Bogota</hi> und</note>
+                    <lb break="yes"/>
+                    <pb n="[408]" facs="#f0015"/>
+                    <hi rendition="#g">Punta de la Galera</hi> auf der In&#x017F;el Trinidad. <note place="foot" n="*)">
+                        <hi rendition="#g">Punta de Paria</hi> oder <hi rendition="#g">de Megillones</hi> i&#x017F;t<lb break="yes"/>das äußer&#x017F;te nordö&#x017F;tliche Vorgebirge des I&#x017F;thmus<lb break="yes"/>von Paria, der &#x017F;ich nördlich von den Mündungen<lb break="yes"/>des <placeName key="orinoco">Orinoko</placeName> tief in das Meer zieht und den Golfo<lb break="yes"/>Tri&#x017F;te bildet. Mit die&#x017F;em Vorgebirge endigt &#x017F;ich<lb break="yes"/>die Kü&#x017F;ten-Kordillere auf dem fe&#x017F;ten Lande,<lb break="yes"/>&#x017F;cheint aber in der In&#x017F;el Trinidad noch fortzu-<lb break="no"/>gehn, de&#x017F;&#x017F;en &#x017F;üdö&#x017F;tlich&#x017F;te Spitze die <hi rendition="#g">Punta de<lb break="yes"/>la Galera</hi> i&#x017F;t. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>Die größte Höhe hat &#x017F;ie in den Theilen, die unter<lb break="yes"/>den Namen <hi rendition="#g">Sierra Nevada de St. Martha,</hi>
+                    <lb break="yes"/>(11° 2&#x2032; nördl. Br.,) und <hi rendition="#g">Sierra Nevada de<lb break="yes"/>Merida,</hi> (8° 30&#x2032; nördl. Br.,) bekannt &#x017F;ind. <note place="foot" n="**)">
+                        <hi rendition="#g">Sierra</hi> heißt auf &#x017F;pani&#x017F;ch ein Berg oder Gebirge,<lb break="yes"/>Sierra Nevada ein mit Schnee bedecktes Gebirge.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>Er&#x017F;terer i&#x017F;t ungefähr 5000, letzterer 5400 Varres,<lb break="yes"/>(nahe 2350 Toi&#x017F;en oder 14100 par. Fuß,) hoch.<lb break="yes"/>Die <hi rendition="#g">Paramo de la Ro&#x017F;a</hi> und <hi rendition="#g">de Mucu-<lb break="no"/>chi</hi>
+                    <note place="foot" n="***)">
+                        <hi rendition="#g">Paramo,</hi> (Wü&#x017F;ten,) nennt man in den Kor-<lb break="no"/>dilleren die Ebenen auf den Gipfeln der Gebirge,<lb break="yes"/>welche über die Gränze der Vegetation hinauf<lb break="yes" />liegen. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> und die <hi rendition="#i">Berge von</hi>
+                    <hi rendition="#g">Merida,</hi> die mit ewi-<lb break="no"/>gem Schnee bedeckt &#x017F;ind, und aus ihren Seiten<lb break="yes"/>&#x017F;iedendes, mit Schwefel-Wa&#x017F;&#x017F;er&#x017F;toff ge&#x017F;chwängertes<lb break="yes" />Wa&#x017F;&#x017F;er aus&#x017F;peien, &#x017F;ind höher als der Pik von Tene-<lb break="no"/>riffa, und geben vielleicht dem Montblanc an Höhe<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn2-3" prev="#fn2-2">
+                        <hi rendition="#g">Merida</hi> nach <hi rendition="#g">Karakas</hi> zieht, wo &#x017F;ie &#x017F;ich<lb break="yes"/>nördlich am Meere endigt.&#x201C; (p. LIX.) <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="[409]" facs="#f0016"/> nichts nach. Die Colo&#x017F;&#x017F;e von St. Martha &#x017F;tehn fa&#x017F;t<lb break="yes"/>i&#x017F;olirt, oder &#x017F;ind vielmehr nur von niedrigen Ber-<lb break="no"/>gen umgeben, indem &#x017F;ich we&#x017F;tlich von ihnen bis<lb break="yes"/>nach <hi rendition="#g">Sta Fé</hi> oder bis an die <hi rendition="#g">Sierra de Zuin-<lb break="no" />din</hi> kein mit Schnee bedeckter Gipfel zeigt, und<lb break="yes"/>die Sierra Nevada de Merida befindet &#x017F;ich &#x017F;elb&#x017F;t am<lb break="yes"/>Rande der <hi rendition="#g">Llano von Karakas,</hi> welche kei-<lb break="no"/>ne 240 Fuß über die Meeresfläche erhaben i&#x017F;t. Et-<lb break="no"/>was ähnliches findet &#x017F;ich beim Montblanc, mit dem<lb break="yes"/>&#x017F;ich die hohe Kette der <placeName key="alpen" >Alpen</placeName> &#x017F;chließt. Die höch-<lb break="no"/>&#x017F;ten Berge &#x017F;ind im Vergleiche mit der ganzen Erd-<lb break="no" />ma&#x017F;&#x017F;e &#x017F;o unendlich klein, daß &#x017F;ehr geringe örtli-<lb break="no"/>che Ur&#x017F;achen hinreichen konnten, an einer Stelle<lb break="yes"/>größere Anhäufungen als an andern zu bewirken.</p>
+                <lb break="yes"/>
+                <p>In den we&#x017F;tlich vom See Marecaybo gelegnen<lb break="yes"/>Theile der Kü&#x017F;ten-Kordillere, der &#x017F;ich unmittel-<lb break="no"/>bar an die <placeName key="anden">Anden</placeName> an&#x017F;chließt, <note place="foot" n="*)">Oder vielmehr noch zu den Ketten der <placeName key="anden">Anden</placeName>
+                        <lb break="yes"/>zu rechnen &#x017F;eyn dürfte. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> &#x017F;treichen die Thä-<lb break="no"/>ler von Süd nach Nord, und &#x017F;ind &#x017F;ehr lang, enge,<lb break="yes"/>und mit Wald bedeckt; &#x017F;o die großen Thäler des<lb break="yes"/>Magdalenen- und des Caucaflu&#x017F;&#x017F;es, des Sinu und<lb break="yes"/>des <placeName key="atrato">Atrato</placeName>. Vom Cap de la Vela bis zum <hi rendition="#g">Cap<lb break="yes"/>Coadera</hi>
+                    <note place="foot" n="**)">Ziemlich in der Mitte zwi&#x017F;chen Karakas und<lb break="yes"/>Kumana. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> be&#x017F;teht die Kü&#x017F;ten-Kordillere aus<lb break="yes"/>zwei parallel laufenden Bergketten, von denen die<lb break="yes"/>nördliche eine Fort&#x017F;etzung der Kette von St. Martha,<lb break="yes"/>die &#x017F;üdliche eine Fort&#x017F;etzung der Sierra Nevada de<lb break="yes"/>
+                    <pb n="[410]" facs="#f0017"/> Merida i&#x017F;t. Jene zieht &#x017F;ich über Burburuta, den<lb break="yes"/>Rincon del Diablo, die Sierras de Mariana, den<lb break="yes"/>Berg von Aguasnegras, den Berg von <placeName key="avila" >Avila</placeName> und<lb break="yes"/>die Silla de Karacas nach dem Cap Coadera; die&#x017F;e<lb break="yes"/>&#x017F;treicht 3 bis 4 Lieues &#x017F;üdlicher durch Guigui, la<lb break="yes"/>Palma, die hohen Gipfel von Guairaima, Tiara,<lb break="yes"/>Guiripa und die Savana de Ocumare bis zur Mün-<lb break="no"/>dung des Tuy. Die&#x017F;e beiden Ketten werden durch<lb break="yes"/>zwei Bergreihen verbunden, die von Nord nach<lb break="yes" />Süd gehn <note place="foot" n="*)">Zur we&#x017F;tlichen gehören die Berge von <hi rendition="#g">Carora,<lb break="yes"/>S. Maria, S. Philippe</hi> und <hi rendition="#g">
+                            <placeName key="aroa">Aroa</placeName>;</hi> zur ö&#x017F;tli-<lb break="no"/>chen die dürren Gip&#x017F;el <hi rendition="#g">de los Teques, la Co-<lb break="no"/>quiza, Buena Vi&#x017F;ta</hi> und <hi rendition="#g">
+                            <placeName key="altosdespedro">los Altos de S.<lb break="yes" />Pedro</placeName>.</hi>
+                        <hi rendition="#et">
+                            <hi rendition="#i">
+                                <persName key="humboldt_av">v. Humb.</persName>
+                            </hi>
+                        </hi>
+                    </note> und um&#x017F;chließen daher <hi rendition="#i">drei Thäler,</hi>
+                    <lb break="yes"/>die von We&#x017F;t nach O&#x017F;t &#x017F;treichen, und gleich Böh-<lb break="no"/>men oder dem Haßlithale in der Schweiz alle Spu-<lb break="no"/>ren tragen, daß &#x017F;ie <hi rendition="#i">ehemahls Seen</hi> waren: nämlich<lb break="yes"/>die <hi rendition="#i">Llano von</hi>
+                    <hi rendition="#g">Monai,</hi> die <hi rendition="#i">Thäler von</hi>
+                    <hi rendition="#g">
+                        <placeName key="aragua">Aragua</placeName>,</hi>
+                    <lb break="yes"/>und das <hi rendition="#i">Thal von</hi>
+                    <hi rendition="#g">Karakas.</hi> In Ab&#x017F;icht ihres<lb break="yes"/>Niveaus liegen die&#x017F;e drei Thäler wie Terra&#x017F;&#x017F;en ne-<lb break="no" />ben einander, und zwar i&#x017F;t das ö&#x017F;tlich&#x017F;te das höch-<lb break="no"/>&#x017F;te. Ich fand durch Barometerme&#x017F;&#x017F;ungen das Ni-<lb break="no"/>veau des Thals von Karakas 416, des Thals von<lb break="yes"/>
+                    <placeName key="aragua">Aragua</placeName> 212, und des we&#x017F;tlich&#x017F;ten, der Llanos de<lb break="yes"/>Monai, kaum 80 bis 100 Toi&#x017F;en über dem Meere. &#x2014;<lb break="yes"/>Schon die&#x017F;es i&#x017F;t ein offenbarer Beweis, daß &#x017F;ie zu<lb break="yes"/>einer ganz andern Zeit, als die Llanos entftanden<lb break="yes"/>&#x017F;eyn mü&#x017F;&#x017F;en, da die&#x017F;e, wie das ganze fe&#x017F;te Land<lb break="yes"/>
+                    <placeName key="suedamerika">Südamerika&#x2019;s</placeName> dies&#x017F;eits der <placeName key="anden">Anden</placeName>, von We&#x017F;t nach<lb break="yes"/>
+                    <pb n="[411]" facs="#f0018"/> Oft abfallen. Im Thale von Karakas &#x017F;cheint der<lb break="yes"/>ehemahlige See &#x017F;eine Ufer durchbrochen und &#x017F;ich<lb break="yes"/>Abflü&#x017F;&#x017F;e gebildet zu haben; das Becken von <placeName key="aragua">Aragua</placeName>
+                    <lb break="yes"/>&#x017F;cheint dagegen durch Verdun&#x017F;tung allmählig aus-<lb break="no"/>getrocknet zu &#x017F;eyn, da es noch jetzt im <hi rendition="#i">See von</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Valencia</hi> einen Ueberre&#x017F;t des ehemahligen Wa&#x017F;-<lb break="no"/>&#x017F;ers zeigt. Die&#x017F;er See, der eben &#x017F;o hoch als der<lb break="yes"/>Genfer über dem Meere liegt, und de&#x017F;&#x017F;en Wa&#x017F;&#x017F;er<lb break="yes"/>&#x017F;tark mit &#x017F;alz&#x017F;aurem Kalke ge&#x017F;chwängert i&#x017F;t, nimmt<lb break="yes"/>jährlich ab, und die Untiefen de&#x017F;&#x017F;elben kommen<lb break="yes"/>als In&#x017F;eln, (<hi rendition="#g">
+                        <placeName key="aparecidas">Aparecidas</placeName>,</hi>) immermehr zum <hi rendition="#g">Vor-</hi>
+                    <lb break="yes"/>&#x017F;cheine. &#x2014; Oe&#x017F;tlich vom Cap Coadera i&#x017F;t ein gro-<lb break="no"/>ßer Strich der Kü&#x017F;ten-Kordillere von der Fluth,<lb break="yes"/>welche den Golf von Mexico aushöhlte, zer&#x017F;tört<lb break="yes"/>und unter Wa&#x017F;&#x017F;er ge&#x017F;etzt worden. Die hohen Piks<lb break="yes"/>der In&#x017F;el <hi rendition="#g">Margarita</hi> und die Gebirge auf dem<lb break="yes" />I&#x017F;thmus von <hi rendition="#g">
+                        <placeName key="araya">Araya</placeName>
+                    </hi>
+                    <note place="foot" n="*)">Er &#x017F;chließt den großen <hi rendition="#i" >Meerbu&#x017F;en von</hi>
+                        <hi rendition="#g">Cariaco</hi>
+                        <lb break="yes"/>von Norden her ein. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> &#x017F;ind noch Ueberre&#x017F;te der-<lb break="no"/>&#x017F;elben. Ich habe &#x017F;ie &#x017F;orgfältig unter&#x017F;ucht; &#x017F;ie be-<lb break="no"/>&#x017F;tehn aus der&#x017F;elben Gebirgsart als die&#x017F;e Kordillere,<lb break="yes"/>(Glimmer&#x017F;chiefer,) und die Lager haben in beiden<lb break="yes"/>gleiches Streichen und Fallen.</p>
+                <lb break="yes"/>
+                <p>Die Höhe der Kordillere der Kü&#x017F;te i&#x017F;t mehren-<lb break="no"/>theils 3600 bis 4800 Fuß; die höch&#x017F;te Spitze der<lb break="yes"/>
+                    <hi rendition="#g">Sierra Nevada de Merida</hi> hat eine Höhe von<lb break="yes" />14100 Fuß, (2350 Toi&#x017F;en,) und der Gipfel der<lb break="yes"/>
+                    <hi rendition="#g">Silla de Karacas,</hi> den wir mit un&#x017F;ern In&#x017F;tru-<lb break="no"/>menten unter großer Be&#x017F;chwerde be&#x017F;tiegen haben,<lb break="yes"/>
+                    <pb n="[412]" facs="#f0019"/> i&#x017F;t 7896 pari&#x017F;er Fuß, (1316 Toi&#x017F;en,) hoch. <note place="foot" n="*)">
+                        <hi rendition="#g">Silla de Karakas</hi> i&#x017F;t, wie Herr <hi rendition="#g">
+                            <persName key="humboldt_av">von<lb break="yes"/>Humboldt</persName>
+                        </hi> weiterhin anführt, ein hoch geleg-<lb break="no"/>nes Thal zwi&#x017F;chen zwei Piks der <hi rendition="#g">Sierra de<lb break="yes"/>
+                            <placeName key="avila">Avila</placeName>.</hi>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> Oe&#x017F;t-<lb break="no"/>lich wird &#x017F;ie immer niedriger, das <hi rendition="#g">Cap Coade-<lb break="no"/>ra</hi> i&#x017F;t nur 1056 Fuß und der <hi rendition="#g">Macanao</hi> auf der<lb break="yes"/>In&#x017F;el <hi rendition="#g">Margarita,</hi> den ich trigonometri&#x017F;ch ge-<lb break="no"/>me&#x017F;&#x017F;en habe, 2052 Fuß hoch. Doch nehmen hier<lb break="yes"/>nur die uranfänglichen Gebirgsarten, der blättrige<lb break="yes"/>Granit, [Gneuß] und der Glimmer&#x017F;chiefer &#x017F;o bedeu-<lb break="no"/>tend an Höhe ab. Das <hi rendition="#i" >Flötz-Kalkgebirge,</hi> welches<lb break="yes"/>&#x017F;ich an die Süd&#x017F;eite der Kordillere anlehnt und bei<lb break="yes"/>der <hi rendition="#g">Villa de Cure</hi> noch &#x017F;ehr niedrig i&#x017F;t, erhebt<lb break="yes"/>&#x017F;ich hier bedeutend, und wird höher als die uran-<lb break="no"/>fängliche Kette. Im <hi rendition="#g">Cucurucho de Tomi-<lb break="no"/>quiri,</hi> dem höch&#x017F;ten Berge der Provinz Kumana,<lb break="yes"/>erreicht die&#x017F;es Kalkgebirge eine Höhe von 5850<lb break="yes"/>par. Fuß, (976 Toi&#x017F;en,) in dem Kegel von <hi rendition="#g">Gua-<lb break="no"/>charo</hi> von 4920, und im <hi rendition="#g">Bergantin</hi> von 4212<lb break="yes"/>par. Fuß. Vom <hi rendition="#g">Cap Unare</hi> an bildet es eine<lb break="yes" />abge&#x017F;onderte, mit der Kordillere parallel laufende<lb break="yes" />Bergkette, in der keine Urgebirgsart zu &#x017F;ehn i&#x017F;t,<lb break="yes" />und die mit der Kordillere aus Glimmer&#x017F;chiefer nur<lb break="yes" />durch einen nördlich laufenden Arm zu&#x017F;ammen<lb break="yes"/>hängt, dem <hi rendition="#g">Cerro de Meapire,</hi> der das Thal<lb break="yes"/>von Cariaco, (das ausgetrocknete Ende des Golfs<lb break="yes"/>von Cariaco,) vom Thale St. Bonifacio, (ehemahls<lb break="yes"/>einem Theile des Golfo Tri&#x017F;te,) trennt, und dem es<lb break="yes"/>
+                    <pb n="[413]" facs="#f0020"/> zuzu&#x017F;chreiben i&#x017F;t, daß die I&#x017F;thmen von <placeName key="araya">Araya</placeName> und<lb break="yes" />von Paria von der einbrechenden Fluth nicht zu<lb break="yes"/>einer In&#x017F;el gemacht worden. Die&#x017F;e Kalk&#x017F;teinfor-<lb break="no" />mation &#x017F;cheint, wie wir &#x017F;ehn werden, Ur&#x017F;ach zu<lb break="yes"/>&#x017F;eyn, daß der ö&#x017F;tliche Theil die&#x017F;er Kü&#x017F;te den Erd-<lb break="no"/>beben vorzüglich unterworfen i&#x017F;t. &#x2014; Die Kü&#x017F;ten-<lb break="maybe"/>Kordillere fällt nach Süden &#x017F;anfter als nach Norden<lb break="yes"/>ab, welches indeß nur eine &#x017F;cheinbare Ausnahme<lb break="yes"/>von der bei den mei&#x017F;ten uranfänglichen Gebirgszü-<lb break="no"/>gen wahrgenommenen Regel i&#x017F;t, daß &#x017F;ie nach Süden<lb break="yes"/>und We&#x017F;ten zu am &#x017F;teil&#x017F;ten abfallen. Denn wahr-<lb break="no"/>&#x017F;cheinlich hat die Fluth, welche den Golf von Me-<lb break="no"/>xico ein&#x017F;chnitt, den &#x017F;anftern nördlichen Abhang mit<lb break="yes"/>fortge&#x017F;pült, und die&#x017F;em i&#x017F;t es zuzu&#x017F;chreiben, daß<lb break="yes"/>die Kordillere überall nördlich &#x017F;ehr jäh abfällt.<lb break="yes"/>Schwerlich giebt es irgend wo, den Montblanc bei<lb break="yes"/>Courmayeur ausgenommen, einen &#x017F;chrecklichern<lb break="yes"/>Ab&#x017F;turz, als die 7800 Fuß hohe &#x017F;enkrechte Mauer<lb break="yes"/>der Silla de Karacas über Caravelledo.</p>
+                <lb break="yes"/>
+                <p>Die zweite uranfängliche Kordillere, welche<lb break="yes"/>ich die <hi rendition="#i">Kordillere der Katarakte des</hi>
+                    <hi rendition="#g">Orinoko</hi>
+                    <lb break="yes"/>oder die <hi rendition="#i">Kordillere der</hi>
+                    <hi rendition="#g">Parime</hi> oder des <hi rendition="#g">Dora-<lb break="no" />do</hi> nennen möchte, geht von den <placeName key="anden" >Anden</placeName> in Quito<lb break="yes"/>und Popayan unter 3 bis 6° nördl. Breite ab, und<lb break="yes"/>&#x017F;treicht von We&#x017F;t nach O&#x017F;t, von den Quellen des<lb break="yes"/>
+                    <hi rendition="#g">Guaviare</hi> an, längs der großen Ströme <hi rendition="#g" >Meta,<lb break="yes"/>Vichada, Zama, Guaviare</hi> und <hi rendition="#g">Ymiri-<lb break="no"/>da,</hi>
+                    <note place="foot" n="*)" xml:id="fn3-1" next="#fn3-2">Lauter Ströme, die dem Orinoko von O&#x017F;t her zu-<lb break="no"/>fließen, und &#x017F;ich in ihm nach der Ordnung, wie</note> und bildet die furchtbaren <hi rendition="#i">Wa&#x017F;&#x017F;erfälle von</hi>
+                    <lb break="yes"/>
+                    <pb n="[414]" facs="#f0021"/>
+                    <hi rendition="#g">
+                        <placeName key="atures">Aturès</placeName>
+                    </hi> und <hi rendition="#g">Maypuré,</hi> welche der einzige bis<lb break="yes" />jetzt offne Paß &#x017F;ind, um landwärts in das Thal<lb break="yes"/>des <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName> zu dringen. Unter 50° we&#x017F;tl.<lb break="yes"/>Länge <note place="foot" n="*)" >Das i&#x017F;t da, wo &#x017F;ie den Orinoko erreicht. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> fängt die&#x017F;e Kordillere an &#x017F;ehr an Höhe<lb break="yes"/>und Breite zuzunehmen, und nimmt alles Land zwi-<lb break="no"/>&#x017F;chen den Strömen von <hi rendition="#g">Caura, Erevato, Ca-<lb break="no"/>rony, Paraguamu&#x017F;i, Ventuari, Jao, Pa-<lb break="no"/>damo</hi> und <hi rendition="#g">Manariche</hi> ein, <note place="foot" n="**)">Die vier er&#x017F;ten die&#x017F;er Ströme fließen nördlich,<lb break="yes"/>die vier andern &#x017F;üdlich, und fallen insge&#x017F;ammt, (ei-<lb break="no" />nige, nachdem &#x017F;ie &#x017F;ich zuvor vereinigt haben,) in<lb break="yes"/>den Orinoko: er&#x017F;tere unterhalb der Wa&#x017F;&#x017F;erfälle,<lb break="yes"/>da wo die&#x017F;er Strom unter 8° nördl. Breite fa&#x017F;t ganz<lb break="yes"/>in ö&#x017F;tlicher Richtung dem Meere zufließt; letztere<lb break="yes"/>oberhalb der Wa&#x017F;&#x017F;erfälle, wo der Orinoko unter<lb break="yes"/>3° nördl. Breite von O&#x017F;t nach We&#x017F;t fließt. Die<lb break="yes" />Kordillere macht folglich hier die Wa&#x017F;&#x017F;er&#x017F;cheidung.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> und geht &#x017F;elb&#x017F;t<lb break="yes"/>&#x017F;üdlich bis zu den Quellen des <hi rendition="#g">Pa&#x017F;imona</hi> und<lb break="yes"/>
+                    <hi rendition="#g">Cababury</hi>
+                    <note place="foot" n="***)" xml:id="fn4-1" next="#fn4-2">Nach <persName key="surville_l">
+                            <hi rendition="#g">Surville&#x2019;s</hi>
+                        </persName> Karte fließt der <hi rendition="#g">Pa&#x017F;imo-<lb break="no" />na</hi> anfangs in o&#x017F;t&#x017F;üdö&#x017F;tlicher, dann in o&#x017F;tnordö&#x017F;tli-<lb break="no"/>cher Richtung dem Rio Negro zu, vereinigt &#x017F;ich<lb break="yes"/>aber, ehe er ihn erreicht, bei der Mi&#x017F;&#x017F;ion <hi rendition="#g">Pa&#x017F;i-<lb break="no" />mona</hi> mit dem Ca&#x017F;iquiari, der den <placeName key="orinoco" >Orinoko</placeName> mit<lb break="yes"/>dem Rio Negro verbindet, und unweit <hi rendition="#g">St. Car-</hi>
+                    </note> und bis an die Waldungen herab,<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn3-2" prev="#fn3-1">&#x017F;ie hier genannt &#x017F;ind, der <hi rendition="#g">Meta</hi> unterhalb, die<lb break="yes" />übrigen oberhalb der Wa&#x017F;&#x017F;erfälle ergießen; nur der<lb break="yes"/>
+                        <hi rendition="#g">Ymirida</hi> &#x017F;cheint &#x017F;ich mit dem Guaviari kurz vor<lb break="yes"/>de&#x017F;&#x017F;en Einflu&#x017F;&#x017F;e in den <placeName key="orinoco">Orinoko</placeName> zu vereinigen.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="[415]" facs="#f0022"/> wo die Portugie&#x017F;en auf &#x017F;pani&#x017F;chem Gebiete die kräf-<lb break="no"/>tig&#x017F;te <hi rendition="#i">Smilax Sa&#x017F;&#x017F;aparilla</hi> ein&#x017F;ammeln. In die&#x017F;en<lb break="yes"/>Gegenden i&#x017F;t die Kordillere der Parima über 120<lb break="yes"/>Lieues breit. Ihre Fort&#x017F;etzung weiter we&#x017F;tlich von<lb break="yes"/>48° bis 40° Länge i&#x017F;t wenig bekannt. Auf un&#x017F;rer<lb break="yes"/>Rei&#x017F;e nach dem <hi rendition="#g">Rio Negro</hi> und bis an die Grän-<lb break="no"/>zen von <hi rendition="#g" >Para</hi>
+                    <note place="foot" n="*)">Das Gränzgouvernement Bra&#x017F;iliens, welches den<lb break="yes"/>ganzen nördlichen vom <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;e</placeName> durch-<lb break="no" />&#x017F;trömten Theil Bra&#x017F;iliens umfaßt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> haben wir an mehr als 200 Or-<lb break="no"/>ten die&#x017F;e Kordillere durch&#x017F;chnitten, er&#x017F;t in &#x017F;üdli-<lb break="no"/>cher, dann, von der Mündung des Ventuari an, in<lb break="yes"/>ö&#x017F;tlicher Richtung, bis zum <hi rendition="#i">Vulkan von</hi>
+                    <hi rendition="#g">Duida,</hi>
+                    <lb break="yes"/>der nach meinen a&#x017F;tronomi&#x017F;chen Be&#x017F;timmungen un-<lb break="no"/>ter 3° 13&#x2032; 26&#x2033; nördlicher Breite und 48° 31&#x2032; 45&#x2033;<lb break="yes"/>we&#x017F;tlicher Länge liegt. Weiter ö&#x017F;tlich bin ich mit<lb break="yes"/>meinen a&#x017F;tronomi&#x017F;chen In&#x017F;trumenten nicht gekom-<lb break="no" />men, als bis an den <hi rendition="#g">Rio Guapo,</hi> (?) der &#x017F;ich<lb break="yes"/>unter 48° 33&#x2032; Länge in den <placeName key="orinoco" >Orinoko</placeName> ergießt. Ei-<lb break="no"/>nige Indianer aus der kleinen Mi&#x017F;&#x017F;ion <hi rendition="#g">l&#x2019;Esmeral-<lb break="no" />da</hi> &#x017F;ind zwar noch 15 Lieues weiter nach O&#x017F;ten<lb break="yes"/>vorgedrungen; keiner von ihnen und kein hie&#x017F;iger<lb break="yes"/>Europäer kennt aber die Quelle des <placeName key="orinoco" >Orinoko</placeName>, der<lb break="yes"/>hier den Namen <hi rendition="#g" >Canno Paragua</hi> führt, und<lb break="yes"/>nur noch 900 bis 1200 Fuß breit i&#x017F;t, indeß ich ihn<lb break="yes"/>bei der <placeName key="bocadeapure">Mündung des Apuré</placeName> unter 7° 32&#x2032; 20&#x2033; Brei-<lb break="no"/>
+                    <note place="foot" n="***)" xml:id="fn4-2" prev="#fn4-1">
+                        <hi rendition="#g">los</hi> in die&#x017F;en &#x017F;ich ergießt. Der <hi rendition="#g">Cababuri</hi>
+                        <lb break="yes"/>&#x017F;trömt &#x017F;üdlich dem Rio Negro zu, und fällt in ihn<lb break="yes"/>weit unterhalb St. Carlos, wie es &#x017F;cheint, &#x017F;chon<lb break="yes"/>innerhalb der Gränzen von Bra&#x017F;ilien. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="[416]" facs="#f0023"/> te ohne In&#x017F;eln 27792 Fuß breit fand. Da alle eu-<lb break="no"/>ropäi&#x017F;che Niederla&#x017F;&#x017F;ungen am obern Orinoko und<lb break="yes"/>am Rio Negro jetzt nicht mehr als 400 Familien<lb break="yes"/>Indianer enthalten, und der Weg von <hi rendition="#g" >l&#x2019;Esme-<lb break="no"/>ralda</hi> nach dem <hi rendition="#g" >Erevato</hi> und <hi rendition="#g">Caura</hi> &#x017F;ich<lb break="yes" />ganz verloren hat, <note place="foot" n="*)">Auf <persName key="surville_l">
+                            <hi rendition="#g">Surville&#x2019;s</hi>
+                        </persName> Karte i&#x017F;t er verzeichnet. Er<lb break="yes"/>ging von <hi rendition="#g">Esmeraldas</hi> über 5 andre neue Po-<lb break="no" />blaciones in nördlicher Richtung bis nach der <hi rendition="#g">Pa-<lb break="no"/>damo alto,</hi> unweit der Quellen des Padamo;<lb break="yes"/>dann we&#x017F;tnordwe&#x017F;tlich über 11 neue Poblaciones<lb break="yes"/>nach der <hi rendition="#g">Ventuari</hi> an den Quellen des gleichna-<lb break="no"/>migen Stroms, und von da in nördlicher Richtung<lb break="yes"/>nach <hi rendition="#g">St. Vicente</hi> am Aredato, (wahr&#x017F;cheinlich<lb break="yes"/>der&#x017F;elbe Strom, den Herr <hi rendition="#g">
+                            <persName key="humboldt_av">von Humboldt</persName>
+                        </hi> Ere-<lb break="no"/>vato nennt,) und nach <hi rendition="#g">St. Luis</hi> an der Mündung<lb break="yes"/>des Aredato in den Caura; ein Weg von mehr als<lb break="yes"/>100 Lieues. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> &#x017F;o hatten wir &#x017F;chon auf dem<lb break="yes"/>Wege bis hierher mit nicht weniger Schwierigkei-<lb break="no"/>ten als <persName key="lacondamine_cmd">
+                        <hi rendition="#g">Condamine</hi>
+                    </persName> auf &#x017F;einer Fahrt auf dem<lb break="yes"/>
+                    <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;e</placeName> zu kämpfen. Die bewunderns-<lb break="no"/>würdige Rei&#x017F;e, welche D. <persName key="santosdelapuente_adl">
+                        <hi rendition="#g">Antonio Santos</hi>
+                    </persName>
+                    <lb break="yes"/>nackend, und bald als Karaibe, bald als Macis be-<lb break="no" />mahlt, von der Mündung des Rio Caroni in den Ori-<lb break="no"/>noko <note place="foot" n="**)">Mitten zwi&#x017F;chen <hi rendition="#g">Nueva</hi> und <hi rendition="#g">Vieja Guyana,</hi>
+                        <lb break="yes"/>wo <hi rendition="#g">Caroni</hi> am Einflu&#x017F;&#x017F;e die&#x017F;es Stroms in den<lb break="yes"/>
+                        <placeName key="orinoco">Orinoko</placeName> liegt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> nach dem kleinen See Parime und von da<lb break="yes"/>nach dem <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;e</placeName> gemacht hat, hat uns in-<lb break="no"/>deß mit der Kordillere der Parime weiterhin bekannt<lb break="yes"/>
+                    <fw type="catch" place="bottom">ge-</fw>
+                    <lb break="yes"/>
+                    <pb n="[417]" facs="#f0024"/> gemacht. Unter 4° Breite und 43° Länge wird &#x017F;ie<lb break="yes"/>viel &#x017F;chmaler und i&#x017F;t kaum noch 60 Lieues breit.<lb break="yes"/>Sie macht die Wa&#x017F;&#x017F;er&#x017F;cheide <choice>
+                        <sic>zwi&#x017F;ohen</sic>
+                        <corr type="editorial">zwi&#x017F;chen</corr>
+                    </choice> den Strömen,<lb break="yes"/>die nördlich zum <placeName key="orinoco" >Orinoko</placeName>, Rio Esquibo und den<lb break="yes"/>Ocean, und &#x017F;üdlich in den <placeName key="amazonas">Amazonenfluß</placeName> fließen,<lb break="yes"/>(dem <hi rendition="#g">Rio Curaricana, Parime, Madari</hi>
+                    <lb break="yes"/>und <hi rendition="#g">Mao,</hi>) <note place="foot" n="*)">Der <hi rendition="#g">Rio Parime</hi> oder <hi rendition="#g">de Aguas Blancas</hi>
+                        <lb break="yes"/>nimmt, nach <persName key="surville_l">
+                            <hi rendition="#g">Surville&#x2019;s</hi>
+                        </persName> Karte, die andern hier<lb break="yes"/>genannten auf, und fällt &#x017F;elb&#x017F;t in 4 Armen in den<lb break="yes"/>Rio Negro, der &#x017F;ich nicht weit unterhalb in den<lb break="yes"/>
+                        <placeName key="amazonas">Amazonenfluß</placeName> ergießt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> und i&#x017F;t hier nur von geringer Höhe.<lb break="yes"/>Einige Grad weiter nach O&#x017F;ten erweitert &#x017F;ich die<lb break="yes"/>Kordillere wieder &#x017F;üdwärts, nach dem Canno Pi-<lb break="no"/>rara, <note place="foot" n="**)">Der Abfluß der Laguna Parime in den Mao.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> längs dem Mao hinab, und hier befin-<lb break="no"/>det &#x017F;ich der aus einem &#x017F;tark glänzenden Glimmer-<lb break="no"/>&#x017F;chiefer be&#x017F;tehende <hi rendition="#g">Cerro d&#x2019;Ucucamo,</hi> dem<lb break="yes"/>die Holländer den prächtigen Namen: <hi rendition="#g" >Goldberg,<lb break="yes"/>(Monte Dorado,)</hi> gegeben haben, wie denn<lb break="yes"/>auch die kleine <hi rendition="#g">In&#x017F;el Ypumucena</hi> in der <hi rendition="#g">La-<lb break="no"/>guna Parime</hi> die&#x017F;em glänzenden Glimmer&#x017F;chiefer<lb break="yes"/>ihren Ruf verdankt. Oe&#x017F;tlich von Rio Esquibo<lb break="yes"/>&#x017F;cheint die Richtung der Kordillere &#x017F;üdö&#x017F;tlich zu<lb break="yes"/>werden. Die Gränitgebirge im Süden des hollän-<lb break="no"/>di&#x017F;chen und franzö&#x017F;i&#x017F;chen Guyana, in denen die<lb break="yes"/>Ströme <hi rendition="#g">Berbice, Surinam, Maroni, Ap-<lb break="no"/>rouaque</hi> und <hi rendition="#g">Oyapock</hi> ent&#x017F;pringen, gehören<lb break="yes"/>
+                    <pb n="[418]" facs="#f0025"/> zu ihr, und die&#x017F;es Granitgebirge &#x017F;cheint &#x017F;ich &#x017F;ehr<lb break="yes"/>weit zu er&#x017F;trecken, da man den&#x017F;elben blättrigen<lb break="yes"/>Granit an der Mündung des <placeName key="orinoco">Orinoko</placeName> unter 8° 20&#x2032;,<lb break="yes"/>zwi&#x017F;chen dem Upatu und <placeName key="acquire">Acquire</placeName>, und in den Gebir-<lb break="no"/>gen von Maya nördlich vom <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;e</placeName>, unter<lb break="yes"/>2° 14&#x2032; Breite findet.</p>
+                <lb break="yes"/>
+                <p>Das i&#x017F;t alles, was wir von die&#x017F;er unermeßli-<lb break="no"/>chen Kordillere wi&#x017F;&#x017F;en, die von einer Menge wil-<lb break="no"/>der, noch unbezwungner und &#x017F;elb&#x017F;t unbekannter<lb break="yes"/>Nationen bewohnt wird. Ich bin hierbei lediglich<lb break="yes"/>meinen eignen Beobachtungen und den Nachrichten<lb break="yes"/>gefolgt, die ich von Indiern eingezogen, oder in Auf-<lb break="no"/>&#x017F;ätzen gefunden habe, welche D. <persName key="santosdelapuente_adl">
+                        <hi rendition="#g">Antonio Santos</hi>
+                    </persName>
+                    <lb break="yes"/>und einige &#x017F;einer Gefährten, Freunden in die Feder<lb break="yes"/>dictirt hatten. Alle Karten von die&#x017F;en Gegenden &#x017F;ind<lb break="yes"/>völlig unrichtig, und die bei der &#x017F;on&#x017F;t verdien&#x017F;tvol-<lb break="no"/>len Ge&#x017F;chichte des Orinoko vom Pater <persName key="caulin_a">
+                        <hi rendition="#g">Caulin,</hi>
+                    </persName> i&#x017F;t<lb break="yes"/>in der Lage der Orte nach un&#x017F;ern Beobachtungen um<lb break="yes"/>mehrere Grade unrichtiger, als die 30 Jahr früher<lb break="yes"/>gezeichnete Karte von <persName key="anville_jbbd">
+                        <hi rendition="#g">d&#x2019;Anville;</hi>
+                    </persName> auch &#x017F;ind darin<lb break="yes"/>alle indi&#x017F;che Namen ent&#x017F;tellt, und Berge und Flü&#x017F;&#x017F;e<lb break="yes"/>gezeichnet, wo es keine giebt; Fehler, die &#x017F;ehr<lb break="yes"/>verzeihlich &#x017F;ind, da der Verfa&#x017F;&#x017F;er nie jen&#x017F;eits der<lb break="yes"/>Wa&#x017F;&#x017F;erfälle des <placeName key="orinoco" >Orinoko</placeName> und noch weniger bis zum<lb break="yes"/>Rio Negro gekommen i&#x017F;t. <note place="foot" n="*)" xml:id="fn5-1" next="#fn5-2" >Die&#x017F;es Urtheil über <persName key="surville_l">
+                            <hi rendition="#g">Surville&#x2019;s</hi>
+                        </persName> Karte, von der<lb break="yes"/>hier Herr <hi rendition="#g">
+                            <persName key="humboldt_av">von Humboldt</persName>
+                        </hi> redet, (S. 400,)<lb break="yes"/>&#x017F;cheint mir nicht ganz billig zu &#x017F;eyn. Alle Orte<lb break="yes"/>und fa&#x017F;t alle Flü&#x017F;&#x017F;e, welche Herr <hi rendition="#g">von Hum-</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <pb n="[419]" facs="#f0026"/>
+                <p>Der höch&#x017F;te Gipfel die&#x017F;er ganzen Kordillere<lb break="yes" />&#x017F;cheint <hi rendition="#g">el Cerro de la Esmeralda</hi> oder der<lb break="yes"/>
+                    <hi rendition="#g">Berg von Duida</hi> zu &#x017F;eyn, de&#x017F;&#x017F;en Höhe über<lb break="yes"/>dem Meere ich trigonometri&#x017F;ch auf 7938 pari&#x017F;er<lb break="yes"/>Fuß, (1323 Toi&#x017F;en,) be&#x017F;timmt habe. Seine Lage<lb break="yes"/>mitten in einer lachenden mit Palmbäumen und Ana-<lb break="no"/>nas bedeckten Ebene; die ungeheure Ma&#x017F;&#x017F;e, in der<lb break="yes"/>er &#x017F;ich von der Mi&#x017F;&#x017F;ion aus zeigt; und die Flammen,<lb break="yes"/>die er zu Ende der Regenzeit auswirft, machen ihn<lb break="yes"/>gleich mahleri&#x017F;ch und maje&#x017F;täti&#x017F;ch. Bis jetzt hat<lb break="yes"/>ihn noch niemand er&#x017F;tiegen; es würden, bei dem<lb break="yes"/>jähen An&#x017F;teigen des Gipfels und der Stärke der Ve-<lb break="no"/>getation, dazu Wochen erfordert werden. Näch&#x017F;t<lb break="yes"/>ihm &#x017F;ind die höch&#x017F;ten Gipfel 6000 bis 6600 Fuß<lb break="yes"/>hoch. Die gewöhnliche Höhe der Kordillere be-<lb break="no" />trägt nur 3600 Fuß, und &#x017F;tellenwei&#x017F;e noch weniger,<lb break="yes"/>da der ganze Theil zwi&#x017F;chen dem linken Ufer des<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn5-2" prev="#fn5-1">
+                        <hi rendition="#g">boldt</hi> nennt, finden &#x017F;ich auf ihr, und mit dem<lb break="yes"/>was von ihnen ge&#x017F;agt wird, &#x017F;timmt die&#x017F;e Karte, aus<lb break="yes"/>der meine Erläuterungen entlehnt &#x017F;ind, aufs be&#x017F;te<lb break="yes"/>überein. Abweichungen von 1° in der Lage der<lb break="yes"/>Orte in einem &#x017F;olchen Lande bedeuten nicht viel;<lb break="yes"/>auch finde ich die Lage der mei&#x017F;ten der von un-<lb break="no"/>&#x017F;erm Landsmanne beobachteten Orte auf der Karte<lb break="yes"/>nicht &#x017F;o gar unrichtig. Nur St. Carlos des Rio<lb break="yes"/>Negro liegt um etwa 1° zu &#x017F;üdlich; dagegen i&#x017F;t die<lb break="yes"/>Breite von Esmeraldas völlig richtig, und die Länge<lb break="yes"/>nicht um <formula notation="TeX" >\frac{1}{3}</formula> Grad unrichtig. Auch beruht die Karte<lb break="yes"/>wohl nicht bloß auf des Paters <persName key="caulin_a">
+                            <hi rendition="#g">Caulin</hi>
+                        </persName> Angaben.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="[420]" facs="#f0027"/> Can&#x017F;iquiari, (eines Arms des <placeName key="orinoco">Orinoko</placeName>, der die&#x017F;en<lb break="yes"/>Strom mit dem Rio Negro und dem <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;e</placeName>
+                    <lb break="yes"/>verbindet,) und den Quellen des Ymirida, den Waf-<lb break="no" />&#x017F;erfällen und <hi rendition="#g">Piramena</hi> und zwi&#x017F;chen <hi rendition="#g">Cari-<lb break="no"/>chana</hi> und <hi rendition="#g" >Morocote</hi> zer&#x017F;tört i&#x017F;t, und nur i&#x017F;o-<lb break="no" />lirte Fel&#x017F;en auf einem ebnen Grunde enthält; eine<lb break="yes" />Zer&#x017F;törung, die durch den Abzug der Gewä&#x017F;&#x017F;er aus<lb break="yes"/>dem Ba&#x017F;&#x017F;in des <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;es</placeName> in das von Calabozo <note place="foot" n="*)">
+                        <hi rendition="#g">Calabozo</hi> liegt &#x017F;üdlich von <hi rendition="#g" >Karakas</hi> in Ve-<lb break="no"/>nezuela am <hi rendition="#g">Rio Guarico,</hi> der &#x017F;ich in den <placeName key="apure">Apu-<lb break="no"/>ré</placeName> ergießt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note>
+                    <lb break="yes"/>und vom untern <placeName key="orinoco">Orinoko</placeName>, de&#x017F;&#x017F;en Niveau 160 Toi-<lb break="no"/>&#x017F;en niedriger i&#x017F;t, als jenes, bewirkt zu &#x017F;eyn &#x017F;cheint.<lb break="yes" />Auf der geologi&#x017F;chen Karte, die ich von die&#x017F;en Ge-<lb break="no" />genden entworfen habe, zeigt &#x017F;ich ein ungeheures<lb break="yes"/>Thal, welches die Llanos des Rio Negro, Ca&#x017F;iqui-<lb break="no"/>ari und <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName> mit den Llanos der Pro-<lb break="no"/>vinzen Karakas, <placeName key="barcelona" >Barcelona</placeName> und Cumana verbindet.<lb break="yes"/>Die&#x017F;es Thal hat &#x017F;einen Abfall nach Norden, und i&#x017F;t<lb break="yes"/>mit einer Menge i&#x017F;olirter Fel&#x017F;en be&#x017F;etzt, die an den<lb break="yes"/>Ufern des Guaviare und Meta in der Provinz Ca&#x017F;&#x017F;e-<lb break="no"/>more noch jetzt die Richtung der alten Kordillere<lb break="yes"/>zeigen. Der ö&#x017F;tliche Rand die&#x017F;es Thals i&#x017F;t der nie-<lb break="no"/>drig&#x017F;te Theil de&#x017F;&#x017F;elben, weshalb der heutige Ori-<lb break="no"/>noko &#x017F;ich dort &#x017F;ein Bett eingegraben hat. Oder<lb break="yes" />&#x017F;ollte vielleicht das Meer &#x017F;elb&#x017F;t die&#x017F;es Thal bedeckt<lb break="yes"/>haben und den Theil von <placeName key="suedamerika" >Südamerika</placeName> zwi&#x017F;chen 2°<lb break="yes"/>und 8° Breite und von 55° bis 70° Länge ehemahls<lb break="yes"/>eine In&#x017F;el gewe&#x017F;en &#x017F;eyn? &#x2014; Noch hat die Kordillere<lb break="yes"/>
+                    <pb n="[421]" facs="#f0028"/> der Parime zwei Merkwürdigkeiten: Er&#x017F;tens i&#x017F;t ihr<lb break="yes"/>&#x017F;üdlicher Abhang weit &#x017F;teiler als der nördliche;<lb break="yes"/>alle hohe Gipfel, (der Duida, der Maraguaca, der<lb break="yes"/>Jao u. &#x017F;. w.,) &#x017F;tehn im Südtheile und &#x017F;ind nach<lb break="yes"/>Süden fa&#x017F;t &#x017F;enkrecht abge&#x017F;chnitten. Zweitens<lb break="yes"/>&#x017F;cheinen in ihr nirgends Flötzlagen, und mithin<lb break="yes"/>auch keine Spuren organi&#x017F;cher We&#x017F;en vorzukom-<lb break="no"/>men. In dem weiten Raume, in welchem wir &#x017F;ie<lb break="yes"/>berei&#x017F;t haben, bemerkten wir in ihr nur Granit,<lb break="yes"/>Gneuß, Glimmer&#x017F;chiefer und Hornblend&#x017F;chiefer,<lb break="yes"/>die nirgends mit Flötzlagen von Sand&#x017F;tein oder Kalk-<lb break="no"/>&#x017F;tein bedeckt waren, dergleichen &#x017F;ich im ö&#x017F;tlichen<lb break="yes"/>Theile der Kü&#x017F;ten-Kordillere bis zu Höhen von<lb break="yes"/>5856 Fuß erheben. Sollte die&#x017F;es mit der Nähe<lb break="yes"/>beim <placeName key="aequator" >Aequator</placeName> und mit der Ach&#x017F;enumdrehung in<lb break="yes" />Zu&#x017F;ammenhang &#x017F;tehn?</p>
+                <lb break="yes"/>
+                <p>Die dritte uranfängliche Gebirgskette, die <hi rendition="#i">Kor-<lb break="no" />dillere von</hi>
+                    <hi rendition="#g">Chiquitos,</hi> i&#x017F;t mir nur aus Nachrich-<lb break="no"/>ten bekannt, welche ich von einigen unterrichte-<lb break="no" />ten Männern eingezogen habe, die in Buenos-Ay-<lb break="no"/>res gewohnt und die Pampas durch&#x017F;trichen haben.<lb break="yes"/>Sie verbindet die <placeName key="anden">Andes</placeName> von Peru und Chili mit den<lb break="yes"/>Gebirgen Bra&#x017F;iliens und Paraguay&#x2019;s, indem &#x017F;ie &#x017F;ich<lb break="yes"/>von la Paz, Poto&#x017F;i und Tucuman, durch die Pro-<lb break="no"/>vinzen von Moxos, Chiquitos und Chaco nach dem<lb break="yes"/>Gouvernement der Minen und von St. Paul in Bra-<lb break="no" />&#x017F;ilien zieht. Die höch&#x017F;ten Spitzen &#x017F;cheinen zwi&#x017F;chen<lb break="yes"/>15° und 20° &#x017F;üdlicher Breite zu liegen, wo die Ge-<lb break="no"/>wä&#x017F;&#x017F;er &#x017F;ich theilen, und nördlich dem <placeName key="amazonas">Amazonen-<lb break="no" />flu&#x017F;&#x017F;e</placeName> &#x017F;üdlich dem Rio de la Plata zufließen.</p>
+                <lb break="yes"/>
+                <pb n="[422]" facs="#f0029"/>
+                <p>Zwi&#x017F;chen die&#x017F;en drei Kordilleren befinden &#x017F;ich<lb break="yes"/>drei &#x017F;ehr breite und tiefe Thäler: 1. das <hi rendition="#i">Thal des<lb break="yes"/>
+                        <placeName key="orinoco">Orinoko</placeName> und Aburé</hi> &#x017F;üdlich von der Kü&#x017F;ten-Kor-<lb break="no"/>dillere zwi&#x017F;chen 8° und 10° nördlicher Breite;<lb break="yes"/>2. das <hi rendition="#i">Thal des Rio Negro und des <placeName key="amazonas">Amazonen-<lb break="no" />flu&#x017F;&#x017F;es</placeName>,</hi> zwi&#x017F;chen den Kordilleren der Parime und<lb break="yes"/>von Chiquitos, zwi&#x017F;chen 3° nördlicher und 10°<lb break="yes"/>&#x017F;üdlicher Breite; und 3. <hi rendition="#i">das Thal der Pampas<lb break="yes"/>von Buenos-Ayres,</hi> das &#x017F;ich von St. Cruz de la<lb break="yes"/>Sierra bis zu den Patagonen und Cap Virgin von<lb break="yes"/>19° bis 52° &#x017F;üdlicher Breite herab zieht. Das<lb break="yes"/>zweite die&#x017F;er Thäler hängt einiger Maßen mit<lb break="yes"/>dem er&#x017F;tern durch den zer&#x017F;törten Theil der Kor-<lb break="no"/>dillere der Parime zu&#x017F;ammen. Ob auch eine &#x017F;ol-<lb break="no"/>che Verbindung zwi&#x017F;chen dem dritten und zweiten<lb break="yes"/>Statt findet, i&#x017F;t mir unbekannt; doch zweifle ich<lb break="yes"/>daran. &#x2014; Die&#x017F;e ungeheuren Thäler oder Ebenen<lb break="yes"/>&#x017F;ind alle nach O&#x017F;ten zu offen, wo &#x017F;ie &#x017F;ich an den<lb break="yes"/>niedrigen und &#x017F;andigen Kü&#x017F;ten endigen; nach We-<lb break="no"/>&#x017F;ten &#x017F;ind &#x017F;ie dagegen durch die Kette der hohen An-<lb break="no"/>des ge&#x017F;chlo&#x017F;&#x017F;en. Es &#x017F;ind gleich&#x017F;am Buchten, die<lb break="yes"/>von Oft nach We&#x017F;t, (in der Richtung von Strömun-<lb break="no"/>gen durch die Ach&#x017F;enumdrehung bewirkt,) in das<lb break="yes"/>Innere des Landes, und zwar defto tiefer hinein<lb break="yes"/>gehn, je breiter es i&#x017F;t, da &#x017F;ich das Thal des Ori-<lb break="no"/>noko und <placeName key="apure">Apuré</placeName> an der Gebirgskette, die von Pam-<lb break="no"/>plona nach Merida geht, in 73° L., das Thal der<lb break="yes"/>Pampas aber in 70° L. endigt. Sie haben insge-<lb break="no"/>&#x017F;ammt etwas Abdachung nach O&#x017F;ten zu, und &#x017F;chei-<lb break="no"/>nen mit den&#x017F;elben Flötzformationen bedeckt zu<lb break="yes"/>
+                    <pb n="[423]" facs="#f0030"/> &#x017F;eyn. &#x2014; &#x2014; Fa&#x017F;t noch merkwürdiger als &#x017F;elb&#x017F;t<lb break="yes"/>die Gebirge &#x017F;ind die&#x017F;e <hi rendition="#g">Llanos,</hi> die&#x017F;e Ebenen, die<lb break="yes"/>mehrere hundert Lieues von der Kü&#x017F;te entfernt und<lb break="yes"/>nahe bei Gebirgen von 18000 Fuß Höhe doch zum<lb break="yes" />Theil nicht mehr als 40 bis 50 Toi&#x017F;en über das<lb break="yes"/>jetzige Niveau des Meeres erhaben &#x017F;ind. Das <hi rendition="#i">am<lb break="yes" />höch&#x017F;ten liegende Llano,</hi> de&#x017F;&#x017F;en Höhe ich ge-<lb break="no"/>me&#x017F;&#x017F;en habe, das zwi&#x017F;chen den Flü&#x017F;&#x017F;en Ymirida,<lb break="yes"/>Temi, Pimichia; Ca&#x017F;iquiari und dem Rio Negro,<lb break="yes"/>i&#x017F;t 180 Toi&#x017F;en über das Meer erhaben, fällt aber<lb break="yes"/>&#x017F;o wohl nördlich nach <placeName key="atures">Aturès</placeName> als &#x017F;üdlich nach dem<lb break="yes"/>
+                    <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;e</placeName> ab. Das Thal des <placeName key="apure">Apuré</placeName> und Ori-<lb break="no"/>noko liegt viel niedriger als das des Ca&#x017F;iquiari;<lb break="yes"/>bei Calabozo im Mittelpunkte die&#x017F;es Llano, (8° 56&#x2032;<lb break="yes"/>56&#x2033; Br. und 4<hi rendition="#sup">St.</hi> 40&#x2032; 39&#x2033; we&#x017F;tl. Länge von Paris,)<lb break="yes"/>hat es nur eine Höhe von 30 Toifen, und bei<lb break="yes"/>
+                    <hi rendition="#g">
+                        <placeName key="angostura">l&#x2019;Ango&#x017F;tura</placeName>,</hi> (8° 8&#x2032; 24&#x2033; Breite und 4<hi rendition="#sup">St.</hi> 25&#x2032; 2&#x2033;<lb break="yes"/>Länge von Paris,) der Haupt&#x017F;tadt von Guyana,<lb break="yes"/>mehr als 80 Lieues we&#x017F;tlich von der Kü&#x017F;te, kaum ei-<lb break="no"/>ne Höhe von 8 Toi&#x017F;en über dem Niveau des Meeres.<lb break="yes"/>In Europa haben die Ebenen der Lombardei durch<lb break="yes"/>ihre geringe Höhe über dem Meere die mei&#x017F;te Aehn-<lb break="no"/>lichkeit mit den Llanos, de Pavia nach <persName key="pini_e">Pini</persName> nur 34,<lb break="yes"/>und Cremona nur 24 Toi&#x017F;en über dem Meere liegt.<lb break="yes"/>Die andern Ebenen in Europa liegen viel höher;<lb break="yes"/>die Niederdeut&#x017F;chlands 87 bis 120 Toi&#x017F;en, und<lb break="yes"/>die Baierns und Schwabens 230 bis 250 Toi&#x017F;en<lb break="yes"/>über dem Meere.</p>
+                <lb break="yes"/>
+                <p>Der Abhang der großen Llanos in <placeName key="amerika">Amerika</placeName> i&#x017F;t &#x017F;o<lb break="yes"/>&#x017F;anft, und die Ungleichheiten der&#x017F;elben &#x017F;ind &#x017F;o wenig<lb break="yes"/>
+                    <pb n="[424]" facs="#f0031"/> merklich, daß ein Nichts den Lauf eines großen<lb break="yes"/>Flu&#x017F;&#x017F;es zu be&#x017F;timmen &#x017F;cheint. Der <placeName key="orinoco">Orinoko</placeName>, der<lb break="yes"/>unter 50° we&#x017F;tlicher Länge &#x017F;ich nach Portocabello<lb break="yes"/>hin in das Meer ergießen zu wollen &#x017F;cheint, wen-<lb break="no"/>det &#x017F;ich bei <hi rendition="#g">Cabruta</hi>
+                    <note place="foot" n="*)">Im neuen Gouvernement von Cumana am Einflu&#x017F;&#x017F;e<lb break="yes"/>des Manapire in den <placeName key="orinoco">Orinoko</placeName> unter 7<formula notation="TeX" >\frac{1}{2}</formula>° Breite. <hi rendition="#i">d. H.</hi>
+                    </note> nach O&#x017F;ten, ohne daß man<lb break="yes"/>hier oder bei <hi rendition="#g">
+                        <placeName key="sanfernandodeatabapo">St. Fernando de Atabapo</placeName>,</hi>
+                    <lb break="yes"/>(3° 55&#x2032; 8&#x2033; Br.,) <note place="foot" n="**)">Wo der <placeName key="orinoco">Orinoko</placeName>, in welchen von We&#x017F;ten her<lb break="yes"/>der Guaiviari und von Süden her der <placeName key="atabapo">Atabapo</placeName>
+                        <lb break="yes"/>&#x017F;trömt, &#x017F;eine ö&#x017F;tliche Richtung plötzlich in eine<lb break="yes"/>nördliche, die ihm der <placeName key="atabapo">Atabapo</placeName> zu geben &#x017F;cheint,<lb break="yes"/>verwandelt. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> das gering&#x017F;te Hinderniß &#x017F;ieht,<lb break="yes"/>das &#x017F;einem Laufe entgegen ge&#x017F;tanden hätte. Im<lb break="yes"/>großen Thale des Rio Negro und des <placeName key="amazonas">Amazonen-<lb break="no" />flu&#x017F;&#x017F;es</placeName> liegt zwi&#x017F;chen den Strömen <placeName key="atabapo">Atabapo</placeName>, Ca&#x017F;i-<lb break="no" />quiari, Rio Negro und <placeName key="orinoco">Orinoko</placeName> ein Parallelogramm<lb break="yes"/>von 1600 Quadratlieues, (unter 2° oder 3° nördl.<lb break="yes"/>Breite,) in welchem die Gewä&#x017F;&#x017F;er der einander ge-<lb break="no"/>gen über &#x017F;tehenden Seiten gerade nach entgegen ge-<lb break="no"/>&#x017F;etzter Richtung fließen. <note place="foot" n="***)">Der <placeName key="atabapo">Atabapo</placeName> nördlich, der Ca&#x017F;iquiari &#x017F;üdlich;<lb break="yes"/>der Orinoko we&#x017F;tlich, der Rio Negro ö&#x017F;tlich.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> Ich fand, daß der<lb break="yes"/>Orinoko von der Mündung des Guaviare bis zu der<lb break="yes"/>des <placeName key="apure">Apuré</placeName> auf 70 Lieues 151 Toi&#x017F;en, von <placeName key="angostura">Ango-<lb break="no" />&#x017F;tura</placeName> bis zum Meere dagegen nur 8 Toi&#x017F;en Fall hat.<lb break="yes"/>Gerade da&#x017F;&#x017F;elbe fand <persName key="lacondamine_cmd">
+                        <hi rendition="#g">Condamine</hi>
+                    </persName> bei dem Ama-<lb break="no"/>zonenflu&#x017F;&#x017F;e, der von der Stromenge der Pauxis bis<lb break="yes"/>
+                    <pb n="[425]" facs="#f0032"/> Para auf 240 Lieues nur 14 Toi&#x017F;en Fall hat. &#x2014;<lb break="yes"/>Vielleicht exi&#x017F;tirte ein&#x017F;t nördlich von der Kü&#x017F;ten-<lb break="maybe"/>Kordillere ein Llano, das eben &#x017F;o viel unter dem<lb break="yes"/>des <placeName key="orinoco" >Orinoko</placeName> als die&#x017F;es unter dem Llano des Rio Ne-<lb break="no"/>gro lag, und daher jetzt von den Fluthen des Mee-<lb break="no" />res bedeckt i&#x017F;t.</p>
+                <lb break="yes"/>
+                <p>Das Thal der Mitte oder das Llano des Ama-<lb break="no" />zonenflu&#x017F;&#x017F;es unter&#x017F;cheidet &#x017F;ich &#x017F;ehr auffallend von<lb break="yes"/>dem nördlichen und von dem &#x017F;üdlichen Llano. Es<lb break="yes"/>i&#x017F;t mit undurchdringlichen Wäldern bedeckt, durch<lb break="yes"/>das allein die Flü&#x017F;&#x017F;e Wege zu bahnen vermochten,<lb break="yes"/>und &#x017F;cheint fa&#x017F;t nur für Thiere, die auf den Bäu-<lb break="no"/>men leben, bewohnbar zu &#x017F;eyn; die be&#x017F;tändigen<lb break="yes"/>Regen unter dem <placeName key="aequator" >Aequator</placeName> veranla&#x017F;&#x017F;en die&#x017F;e &#x017F;o üp-<lb break="no"/>pige Vegetation. Dagegen &#x017F;ind die Llanos des Ori-<lb break="no"/>noko und der Pampas mit Gras bedeckte Ebenen,<lb break="yes"/>
+                    <hi rendition="#i">Savannen,</hi> auf denen &#x017F;ich nur einzelne Palm-<lb break="no"/>bäume zeigen, und die die&#x017F;elbe Hitze, den&#x017F;elben<lb break="yes"/>Mangel an Wa&#x017F;&#x017F;er, und die&#x017F;elben Spiegelungen<lb break="yes"/>durch irdi&#x017F;che Strahlenbrechung, als die Wü&#x017F;ten<lb break="yes"/>
+                    <placeName key="afrika">Afrika&#x2019;s</placeName> und <placeName key="arabien" >Arabiens</placeName> darbieten. Sollte es aber<lb break="yes"/>wohl irgendwo anders &#x017F;o vollkommen ebne Flächen<lb break="yes"/>als hier geben, Flächen von 800 Quadratlieues,<lb break="yes"/>auf denen man keine auch nur 10 Zoll hohe Un-<lb break="no"/>gleichheit findet? Die Ebenen in Nieder-Ungarn,<lb break="yes"/>ö&#x017F;tlich von Presburg, nähern &#x017F;ich ihnen am mei-<lb break="no"/>&#x017F;ten; La Mancha, die Champagne, We&#x017F;tphalen,<lb break="yes"/>Brandenburg und Polen &#x017F;ind dagegen, im Vergleiche<lb break="yes"/>mit den Llanos <placeName key="suedamerika">Südamerika&#x2019;s</placeName>, bergige Länder.<lb break="yes"/>Nur Gewä&#x017F;&#x017F;er, die lange Zeit hier &#x017F;tanden, konn-<lb break="no"/>
+                    <pb n="[426]" facs="#f0033"/> ten, wie es &#x017F;cheint, einen &#x017F;o völlig horizontalen<lb break="yes"/>Boden hervor bringen. Von St. Borjo bis an die<lb break="yes"/>Mündung des Rio Negro &#x017F;ah <persName key="lacondamine_cmd">Condamine</persName> nicht ei-<lb break="no"/>nen Hügel, und eben &#x017F;o i&#x017F;t das Llano des Orinoko<lb break="yes"/>ohne In&#x017F;eln, indem die Morros de St. Juan noch<lb break="yes"/>zum &#x017F;üdlichen Abfalle der Kü&#x017F;ten-Kordillere gehö-<lb break="no"/>ren. Dagegen finden &#x017F;ich in den Llanos ganz völ-<lb break="no"/>lig ebene Striche von 200 bis 300 Quadratlieues,<lb break="yes"/>die um 2 bis 4 Fuß höher als der übrige Theil lie-<lb break="no"/>gen; man nennt &#x017F;ie <hi rendition="#i">Me&#x017F;as</hi> oder <hi rendition="#i">Bancos;</hi> ein Na-<lb break="no"/>me, der &#x017F;chon daran zu erinnern &#x017F;cheint, daß<lb break="yes"/>die&#x017F;es Untiefen in den alten Seen waren. Auch<lb break="yes"/>muß ich bemerken, daß im Llano des Orinoko die<lb break="yes" />Mitte der &#x017F;chön&#x017F;te und eben&#x017F;te Theil i&#x017F;t, (ich ver-<lb break="no"/>&#x017F;tehe hier das ganze Llano, und nicht das kleine<lb break="yes"/>Bett, welches der <placeName key="orinoco" >Orinoko</placeName> im Südtheile de&#x017F;&#x017F;elben<lb break="yes" />eingegraben hat.) Nach den Rändern zu erhebt<lb break="yes"/>&#x017F;ich der Boden die&#x017F;es weiten Ba&#x017F;&#x017F;ins und wird un-<lb break="no" />gleich, daher die Llanos, durch die man von Guy-<lb break="no"/>ana nach <placeName key="barcelona">Barcellona</placeName> kömmt, viel weniger voll-<lb break="no"/>kommen und eben, als die von Calabozo und Uri-<lb break="no"/>tucu &#x017F;ind. &#x2014; In dem nördlichen Llano, oder dem<lb break="yes"/>des <placeName key="orinoco">Orinoko</placeName>, &#x017F;ind die Urgebirgsarten überall mit<lb break="yes"/>dichtem Kalk&#x017F;tein, Gyps oder Sand&#x017F;tein bedeckt;<lb break="yes"/>im Llano des Rio Negro und des <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName>
+                    <lb break="yes"/>&#x017F;teht dagegen der Granit überall fa&#x017F;t zu Tage. Je<lb break="yes"/>mehr man &#x017F;ich dem <placeName key="aequator" >Aequator</placeName> nähert, de&#x017F;to dünner<lb break="yes"/>wird das Sandlager, (zer&#x017F;etzter Sand&#x017F;tein,) der die<lb break="yes" />uranfängliche Rinde des Erdballes bedeckt, und man<lb break="yes"/>findet hier mitten in den Waldungen Flecke von<lb break="yes"/>
+                    <pb n="[427]" facs="#f0034"/> 40000 Quadrattoi&#x017F;en, wo der Granit, ungeachtet<lb break="yes"/>der ausnehmend mächtigen Vegetation, doch kaum<lb break="yes"/>mit einigen Lichenes bedeckt i&#x017F;t, und nicht um 2<lb break="yes"/>Zoll über das Niveau des übrigen Llano hervor ragt.<lb break="yes"/>Ob auch etwas Aehnliches &#x017F;ich in <placeName key="afrika" >Afrika</placeName> finden<lb break="yes"/>wird, dem einzigen fe&#x017F;ten Lande außer <placeName key="amerika">Amerika</placeName>,<lb break="yes"/>das unter dem <placeName key="aequator">Aequator</placeName> liegt?</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>Ich komme nun zu einem noch wichtigern und<lb break="yes"/>noch weniger unter&#x017F;uchten Gegen&#x017F;tande, nämlich<lb break="yes"/>zu dem <hi rendition="#i">Streichen und Fallen der Urgebirgslager</hi> in<lb break="yes"/>dem Theile der <placeName key="amerika">neuen Welt</placeName>, den ich durch&#x017F;treift<lb break="yes"/>bin. Schon im Jahre 1792 wurde ich auf die Be-<lb break="no"/>merkung geführt, daß beides einem <hi rendition="#i" >allgemeinen<lb break="yes"/>Ge&#x017F;etze</hi> unterworfen &#x017F;ey, und daß, (abge&#x017F;ehn von<lb break="yes"/>den Ungleichheiten, die von kleinen Localur&#x017F;achen<lb break="yes"/>herrühren, be&#x017F;onders von Erzgängen und Erzla-<lb break="no"/>gern, oder von &#x017F;ehr alten Thälern,) die Lagen des<lb break="yes"/>ge&#x017F;chichteten grobkörnigen Granits, des blättrigen<lb break="yes"/>Granits, [Gneuß,] und ganz be&#x017F;onders des Glim-<lb break="no"/>mer&#x017F;chiefers und des Thon&#x017F;chiefers, insge&#x017F;ammt<lb break="yes"/>
+                    <hi rendition="#i">in Stunde</hi> 3<formula notation="TeX">\frac{1}{2}</formula>
+                    <hi rendition="#i">des bergmänni&#x017F;chen Kompa&#x017F;&#x017F;es &#x017F;trei-<lb break="no"/>chen,</hi> d. h., einen Winkel von 52<formula notation="TeX">\frac{1}{2}</formula>° Südwe&#x017F;t oder<lb break="yes"/>Nordo&#x017F;t mit dem Meridiane des Orts machen, und<lb break="yes"/>daß &#x017F;ie dabei <hi rendition="#i">nach Nordwe&#x017F;t einfallen.</hi> In dem<lb break="yes"/>Streichen i&#x017F;t hierbei mehr Be&#x017F;tändigkeit als in dem<lb break="yes"/>Fallen, be&#x017F;onders bei den einfachen Gebirgsarten,<lb break="yes"/>(Thon&#x017F;chiefer, Hornblend&#x017F;chiefer,) und bei den zu-<lb break="no"/>&#x017F;ammen ge&#x017F;etzten von minder kry&#x017F;tallini&#x017F;chem Kor-<lb break="no"/>
+                    <pb n="[428]" facs="#f0035"/> ne, wie dem Glimmer&#x017F;chiefer. In dem Granit,<lb break="yes"/>(den ich jedoch auch die&#x017F;em Ge&#x017F;etze gemäß in der<lb break="yes"/>Schneekoppe, im Och&#x017F;enkopfe, im Siebengebirge<lb break="yes"/>und in den Pyrenäen &#x017F;ehr regelmäßig ge&#x017F;chichtet<lb break="yes"/>gefunden habe,) und im Gneuß &#x017F;cheint die gegen-<lb break="no"/>&#x017F;eitige Anziehung der kry&#x017F;talli&#x017F;irten Theilchen oft<lb break="yes"/>eine regelmäßige Schichtung gehindert zu haben.<lb break="yes"/>In der Lagerung des Glimmer&#x017F;chiefers und Thon-<lb break="no"/>&#x017F;chiefers zeigt &#x017F;ich daher mehr Gleichförmigkeit;<lb break="yes"/>auch waren es die&#x017F;e Gebirgsarten, die mich zuer&#x017F;t<lb break="yes"/>während meines Aufenthalts im Fichtelgebirge und<lb break="yes"/>im Thüringer Walde auf die Idee die&#x017F;es Streichungs-<lb break="no"/>ge&#x017F;etzes geführt haben. Ich habe &#x017F;eitdem das<lb break="yes"/>Streichen und Fallen der Urgebirgslager in andern<lb break="yes"/>Theilen von Deut&#x017F;chland, in der Schweiz, in Ita-<lb break="no"/>lien, im &#x017F;üdlichen Frankreich, in den Pyrenäen,<lb break="yes"/>und zuletzt noch in Galicien mit Sorgfalt geme&#x017F;&#x017F;en.<lb break="yes"/>Herr <hi rendition="#g">
+                        <persName key="freiesleben_jc">Freisleben</persName>,</hi> von dem wir &#x017F;chon viele wich-<lb break="no"/>tige geologi&#x017F;che Arbeiten haben, hat mir bei eini-<lb break="no"/>gen die&#x017F;en Unter&#x017F;uchungen geholfen, und wir wa-<lb break="no"/>ren beide über die Gleichförmigkeit des Streichens<lb break="yes"/>und Fallens er&#x017F;taunt, die &#x017F;ich uns in einer der<lb break="yes"/>höch&#x017F;ten Kordilleren der Welt, den Savoyer;<lb break="yes"/>
+                    <placeName key="walliseralpen">Walli&#x017F;er</placeName> und <placeName key="mailaenderalpen">Mailänder Alpen</placeName>, auf jedem Schritte<lb break="yes"/>zeigte.</p>
+                <lb break="yes"/>
+                <p>Es war einer der Hauptzwecke, den ich mir<lb break="yes"/>bei meiner Rei&#x017F;e nach beiden Indien vorge&#x017F;etzt hat-<lb break="no"/>te, die&#x017F;em Phänomene und der Identität der Lager<lb break="yes"/>weiter nachzufor&#x017F;chen. Alle Me&#x017F;&#x017F;ungen, die ich<lb break="yes" />darüber bis jetzt in der Kü&#x017F;ten-Kordillere und in der<lb break="yes"/>
+                    <pb n="[429]" facs="#f0036"/> Kordillere der Parime ange&#x017F;tellt habe, geben mir<lb break="yes"/>völlig da&#x017F;&#x017F;elbe Re&#x017F;ultat, als meine Unter&#x017F;uchungen<lb break="yes"/>in Europa. In der ganzen Glimmer&#x017F;chieferkette<lb break="yes"/>von Cavaralleda bis zum Rio Mamon, &#x017F;o wohl in<lb break="yes"/>der Silla de Karakas in 1000 Toi&#x017F;en Höhe, als im<lb break="yes"/>Rincon del Diablo, dem Berge von Guigue, den In-<lb break="no"/>&#x017F;eln des reizenden Sees von Valencia, und dem gan-<lb break="no"/>zen I&#x017F;thmus von Maniquare; in dem Hornblend-<lb break="no"/>&#x017F;chiefer, der in den Straßen von Guayana zu Tage<lb break="yes"/>aus&#x017F;teht; &#x017F;elb&#x017F;t bei den Wa&#x017F;&#x017F;erfällen und im ge&#x017F;chich-<lb break="no"/>teten Granit am Fuße des Duida; &#x2014; <hi rendition="#i">&#x017F;treichen</hi> die<lb break="yes"/>Lager überall von Nordo&#x017F;t nach Südwe&#x017F;t unter einem<lb break="yes"/>Winkel von 50° mit dem Meridiane, (Stunde 3 bis<lb break="yes"/>4 der &#x017F;äch&#x017F;i&#x017F;chen Bou&#x017F;&#x017F;ole,) und <hi rendition="#i">fallen</hi> nach Nord-<lb break="no"/>we&#x017F;t unter einem Winkel von 60 bis 80°.</p>
+                <lb break="yes"/>
+                <p>Die&#x017F;e gänzliche Einförmigkeit der Lagerung der<lb break="yes" />Urgebirgsarten in der alten und in der <placeName key="amerika">neuen<lb break="yes"/>Welt</placeName> belehrt uns von einer höch&#x017F;t wichtigen geo-<lb break="no"/>logi&#x017F;chen That&#x017F;ache. Es läßt &#x017F;ich nun nicht ferner<lb break="yes"/>mehr wähnen, daß das Streichen der Lager von<lb break="yes"/>der Richtung der Gebirgskette abhänge, und daß<lb break="yes"/>das Fallen &#x017F;ich nach dem Abhange des Gebirges<lb break="yes"/>richte. Eine Menge Profile, und be&#x017F;onders ein<lb break="yes"/>Durch&#x017F;chnitt der Gebirge von Genua, durch die<lb break="yes"/>Bochetta und den St. Gotthard bis in Franken, die<lb break="yes"/>ich nach meiner Rückkunft bekannt zu machen den-<lb break="no" />ke, bewei&#x017F;en ganz das Gegentheil. Die Richtung<lb break="yes"/>und be&#x017F;onders der Abfall der Gebirgsketten, &#x017F;o wie<lb break="yes"/>die ganze Ge&#x017F;talt die&#x017F;er kleinen Ungleichheiten des<lb break="yes" />Erdkörpers, &#x017F;cheinen von neuern und kleinern<lb break="yes"/>
+                    <pb n="[430]" facs="#f0037"/> Phänomenen abzuhängen; eine Strömung von Ge-<lb break="no"/>wä&#x017F;&#x017F;ern hat ein Thal in die&#x017F;er oder jener Rich-<lb break="no"/>tung einge&#x017F;chnitten, und indem &#x017F;ie einen Theil des<lb break="yes"/>Gebirges mit fort&#x017F;chwemmte, das Gebirge &#x017F;o oder<lb break="yes"/>anders &#x017F;treichen gemacht. Die Urgebirgslager<lb break="yes"/>&#x017F;cheinen vor allen jenen Kataftrophen &#x017F;chon in ihrem<lb break="yes"/>jetzigen Streichen und Fallen vorhanden gewe&#x017F;en<lb break="yes"/>zu &#x017F;eyn, und kommen auf den Gipfeln der <placeName key="alpen">Alpen</placeName>
+                    <lb break="yes"/>und in der Tiefe un&#x017F;rer Bergwerke auf die&#x017F;e Art<lb break="yes"/>gleichmäßig vor. Wenn man 15 Lieues weit un-<lb break="no"/>unterbrochen durch Thon&#x017F;chiefergebirge gekom-<lb break="no"/>men i&#x017F;t, deren Schichten alle&#x017F;ammt parallel &#x017F;ind<lb break="yes"/>und unter 70° nach Nordwe&#x017F;t einfallen, &#x017F;o darf man<lb break="yes"/>nicht mehr glauben, daß dies ge&#x017F;türzte Lager &#x017F;ind,<lb break="yes"/>die vordem horizontal gelegen haben; das würde<lb break="yes"/>einen 15 Lieues hohen Berg voraus &#x017F;etzen. Und<lb break="yes"/>mit welcher Regelmäßigkeit müßte der nicht ein-<lb break="no"/>ge&#x017F;türzt &#x017F;eyn, und in welch einen ungeheuren<lb break="yes"/>Schlund! Und was &#x017F;oll man vollends zu den La-<lb break="no"/>gern auf der Höhe der Lanterne von Genua, oder<lb break="yes" />auf der Höhe der Bochetta, oder zu St. Mauritius<lb break="yes"/>&#x017F;agen, die genau parallel &#x017F;ind mit den Lagern im<lb break="yes"/>Fichtelgebirge, in Galicien, in der Sierra de Ka-<lb break="no"/>rakas auf dem I&#x017F;thmus von <placeName key="araya">Araya</placeName>, am Ca&#x017F;iquiari<lb break="yes"/>nahe beim <placeName key="aequator">Aequator</placeName>? &#x2014; &#x2014; &#x2014; Man muß ge-<lb break="no"/>&#x017F;tehn, daß die&#x017F;e Einförmigkeit eine &#x017F;ehr alte, &#x017F;ehr<lb break="yes" />allgemeine, und in den er&#x017F;ten Anziehungen der<lb break="yes"/>Materie gegründete Ur&#x017F;ache, als die&#x017F;e &#x017F;ich in pla-<lb break="no" />netari&#x017F;che Sphäroide zu&#x017F;ammen häufte, voraus<lb break="yes" />&#x017F;etzt. Die&#x017F;e große Ur&#x017F;ache &#x017F;chließt den Einfluß lo-<lb break="no"/>
+                    <pb n="[431]" facs="#f0038"/> caler Ur&#x017F;achen nicht aus, welche kleine Theile der<lb break="yes"/>Materie be&#x017F;timmt haben, &#x017F;ich &#x017F;o oder anders, den<lb break="yes"/>Ge&#x017F;etzen der Kry&#x017F;talli&#x017F;ation gemäß, zu&#x017F;ammen zu<lb break="yes"/>ordnen. <persName key="lametherie_jcd">
+                        <hi rendition="#g">Delamétherie</hi>
+                    </persName> hat die&#x017F;e Phänomene,<lb break="yes"/>die&#x017F;en Einfluß eines großen Berges als Kerns auf die<lb break="yes"/>benachbarten kleinern mit Scharf&#x017F;inn nachgewie&#x017F;en.<lb break="yes"/>Ueberhaupt darf man nie verge&#x017F;&#x017F;en, daß alle Ma-<lb break="no"/>terie nicht bloß nach dem Mittelpunkte getrieben<lb break="yes"/>wird, &#x017F;ondern auch &#x017F;ich gegen&#x017F;eitig anzieht. &#x2014;<lb break="yes"/>Auf die Fruchtbarkeit der Provinzen Karakas, Cu-<lb break="no"/>mana und <placeName key="barcelona" >Barcellona</placeName> hat die&#x017F;e Schichtung der Ur-<lb break="no" />gebirgslager in der Kü&#x017F;ten-Kordillere einen &#x017F;ehr<lb break="yes" />nachtheiligen Einfluß. Die Gewä&#x017F;&#x017F;er, welche die<lb break="yes" />Berghöhen ein&#x017F;augen, laufen in der Richtung die&#x017F;er<lb break="yes"/>Lagerung ab, daher es in den weiten Land&#x017F;trichen<lb break="yes"/>&#x017F;üdlich von der Kordillere an Wa&#x017F;&#x017F;er fehlt, indeß<lb break="yes"/>der nördliche Abhang der&#x017F;elben äußer&#x017F;t quellen-<lb break="maybe"/>und flußreich, aber auch wegen allzu großer Feuch-<lb break="no"/>tigkeit und zu dichter Waldungen eben &#x017F;o unge-<lb break="no"/>&#x017F;und als fruchtbar i&#x017F;t.</p>
+                <lb break="yes"/>
+                <p>Die <hi rendition="#i">Flötzgebirge,</hi> welche ich bis jetzt in der<lb break="yes"/>
+                    <placeName key="amerika">neuen Welt</placeName> ge&#x017F;ehen habe, &#x017F;ind fa&#x017F;t von der&#x017F;elben<lb break="yes"/>Be&#x017F;chaffenheit als die in Europa. Auf die älte&#x017F;ten<lb break="yes"/>Flötzformationen &#x017F;cheint noch die&#x017F;elbe Ur&#x017F;ache ge-<lb break="no"/>wirkt zu haben, welche die uranfänglichen Gebirgs-<lb break="no"/>lager be&#x017F;timmt hat, in Stunde 3 bis 4, (oder in N. 50<lb break="yes"/>O. nach dem Schiffskompa&#x017F;&#x017F;e,) zu &#x017F;treichen, und<lb break="yes"/>häufig fallen &#x017F;ie, wie auf den Berner, Walli&#x017F;er, Ty-<lb break="no"/>roler und Steyermärker <placeName key="alpen">Alpen</placeName>, &#x017F;üdö&#x017F;tlich ein. Die<lb break="yes"/>mei&#x017F;ten jedoch, und be&#x017F;onders die jüng&#x017F;ten Flötz-<lb break="no"/>
+                    <pb n="[432]" facs="#f0039"/> formationen, die in den von mir berei&#x017F;ten Di&#x017F;tri-<lb break="no"/>cten am häufig&#x017F;ten entblößt &#x017F;ind, befolgen kein<lb break="yes"/>Ge&#x017F;etz, da &#x017F;ie fa&#x017F;t horizontal gelagert &#x017F;ind, oder<lb break="yes"/>nach dem Rande der großen ausgetrockneten Ba&#x017F;-<lb break="no"/>&#x017F;ins, die man hier Llanos, und in <placeName key="afrika">Afrika</placeName>Wü&#x017F;ten<lb break="yes"/>nennt, etwas an&#x017F;teigen.</p>
+                <lb break="yes"/>
+                <p>
+                    <persName key="lacondamine_cmd">
+                        <hi rendition="#g">Condamine</hi>
+                    </persName> erzählte &#x017F;einen Freunden, er<lb break="yes"/>habe in Peru und Quito keine <hi rendition="#i">Ver&#x017F;teinerung</hi> gefun-<lb break="no" />den; und doch i&#x017F;t die Kordillere der <placeName key="anden" >Anden</placeName> kein<lb break="yes"/>bloßer Granit, &#x017F;ondern bei Cuen&#x00E7;a und weiter &#x017F;üd-<lb break="no"/>lich mit Gyps und Flötzkalk bedeckt. Ich habe<lb break="yes"/>der Ver&#x017F;teinerungen unendlich viel in einer For-<lb break="no"/>mation von kalkartigem Sand&#x017F;teine gefunden, der<lb break="yes"/>den nördlichen und &#x017F;üdlichen Abhang der Kü&#x017F;ten-<lb break="maybe"/>Kordillere von den Gipfeln St. Bernardin und <placeName key="altosdeconoma">los<lb break="yes"/>Altos de Conoma</placeName> an, bis an die Punta de Paria<lb break="yes"/>und das Endgebirge der In&#x017F;el Trinidad bedeckt,<lb break="yes"/>und die &#x017F;ich auch auf Tabago, auf Domingo, zu<lb break="yes"/>Guadeloupe auf Grandeterre, (Ba&#x017F;&#x017F;eterre be&#x017F;teht<lb break="yes"/>aus Granit,) und auf andern In&#x017F;eln wieder findet.<lb break="yes"/>Eine unzählbare Menge von Meer- und von Land-<lb break="no"/>mu&#x017F;cheln, (zwei Kla&#x017F;&#x017F;en, die man in Europa &#x017F;o &#x017F;el-<lb break="no" />ten vermengt findet,) Cellularia, Korallen, Ma-<lb break="no"/>dreporen, A&#x017F;troiten, &#x017F;ind in die&#x017F;em Sand&#x017F;teine mit<lb break="yes"/>eingekittet, und zwar alle zerbrochen. Ganze<lb break="yes" />Fel&#x017F;en be&#x017F;tehn aus die&#x017F;en, fa&#x017F;t zu einem Pulver<lb break="yes"/>zerkleinerten Bruch&#x017F;tücken. Mein Rei&#x017F;egefährte<lb break="yes"/>
+                    <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName> fand unter ihnen &#x017F;elb&#x017F;t <hi rendition="#i">Pinnas, Ve-<lb break="no"/>nusmu&#x017F;cheln</hi> und <hi rendition="#i" >Au&#x017F;tern,</hi> von denen die Originale<lb break="yes"/>
+                    <hi rendition="#i">noch jetzt an die&#x017F;er Kü&#x017F;te leben;</hi> eine für die Geo-<lb break="no"/>
+                    <fw type="catch" place="bottom">logie</fw>
+                    <lb break="yes"/>
+                    <pb n="[433]" facs="#f0040"/> logie &#x017F;ehr wichtige Beobachtung. Alles deutet dar-<lb break="no"/>auf hin, daß die&#x017F;e Formation, die ich nirgends<lb break="yes"/>über 9 bis 10 Lieues von der gegenwärtigen Kü&#x017F;te<lb break="yes"/>entfernt gefunden habe, &#x017F;ehr neu i&#x017F;t, und daß die<lb break="yes"/>Flü&#x017F;&#x017F;igkeit, in der &#x017F;ie gebildet worden, in heftiger<lb break="yes"/>Bewegung war. Auch habe ich &#x017F;ie nicht in Höhen<lb break="yes"/>bis über 30 oder 40 Toi&#x017F;en gefunden; dagegen<lb break="yes"/>&#x017F;cheint &#x017F;ie an mehrern Stellen den Boden des Golfs<lb break="yes"/>von Mexico auszumachen, z. B. am Cabo Blanco<lb break="yes"/>und an der Punta <placeName key="araya" >Araya</placeName>. Nimmt man die&#x017F;e neue<lb break="yes"/>Formation von Sand&#x017F;tein mit Kalkba&#x017F;is aus, &#x017F;o &#x017F;ind<lb break="yes"/>allerdings die Ver&#x017F;teinerungen in die&#x017F;en Gegenden<lb break="yes"/>nicht häufig; be&#x017F;onders i&#x017F;t mir nicht ein einziger<lb break="yes"/>
+                    <hi rendition="#i">Belemnit</hi> oder <hi rendition="#i">Ammonit</hi> vorgekommen, die doch<lb break="yes"/>fa&#x017F;t in allen europäi&#x017F;chen Flötzgebirgen zu Hau&#x017F;e<lb break="yes"/>&#x017F;ind. &#x2014; Das Llano des <placeName key="orinoco">Orinoko</placeName> und &#x017F;elb&#x017F;t das<lb break="yes"/>des Rio Negro i&#x017F;t mit einer <hi rendition="#i" >Breccie</hi> aus groben Kie-<lb break="no"/>&#x017F;eln (<hi rendition="#i" >Nagelfluch</hi>) bedeckt, die &#x017F;elb&#x017F;t keine Mu-<lb break="no" />&#x017F;cheln enthält, doch vielleicht andre mu&#x017F;chelhaltige<lb break="yes"/>Flötzlagen bedeckt, und in der &#x017F;ich Stämme <hi rendition="#i">ver&#x017F;tei-<lb break="no"/>nerten Holzes</hi> finden, die bis auf 6 Fuß lang und 2<lb break="yes"/>Fuß dick &#x017F;ind, und einer Art von <persName key="malpighi_m">
+                        <hi rendition="#i">Malpigia</hi>
+                    </persName> anzu-<lb break="no"/>gehören &#x017F;cheinen.</p>
+                <lb break="yes"/>
+                <p>Viel &#x017F;eltner, und in einer ganz andern Lage als<lb break="yes"/>in jenem kalkartigen Sand&#x017F;teine ganz neuer Forma-<lb break="no"/>tion finden &#x017F;ich die ver&#x017F;teinerten Mu&#x017F;cheln, die in<lb break="yes" />einer dichten Kalk&#x017F;teinformation vorkommen, wel-<lb break="no"/>che weit älter als der Sand&#x017F;tein und der Gyps i&#x017F;t.<lb break="yes" />Anomia, Terebratuliten, &#x2014; &#x2014; &#x2014; liegen da fa-<lb break="no" />milienwei&#x017F;e bei einander, wie im Salève bei Genf,<lb break="yes"/>
+                    <pb n="[434]" facs="#f0041"/> auf dem Göttinger Heinberge und bei Jena; ein<lb break="yes"/>Zeichen, daß &#x017F;ie an den Stellen &#x017F;elb&#x017F;t lebten, wo<lb break="yes"/>man &#x017F;ie jetzt ver&#x017F;teinert findet. Sie &#x017F;ind nicht durch<lb break="yes"/>die ganze Ma&#x017F;&#x017F;e des Ge&#x017F;teins verbreitet, &#x017F;ondern<lb break="yes"/>einigen Lagern eigenthümlich; in vielen Bergen<lb break="yes"/>finden &#x017F;ie &#x017F;ich gar nicht, wo &#x017F;ie aber vorkommen,<lb break="yes"/>da i&#x017F;t es immer in großer Zahl, dicht bei einander,<lb break="yes"/>und be&#x017F;onders immer in bedeutenden Höhen; Ei-<lb break="no"/>gen&#x017F;chaften, die &#x017F;ie mit den Mu&#x017F;cheln im Kalk&#x017F;teine<lb break="yes"/>der hohen <placeName key="alpen">&#x017F;chweizer und &#x017F;alzburger Alpen</placeName>, (der<lb break="yes"/>einerlei Formation mit dem thüringer Zech&#x017F;tein i&#x017F;t<lb break="yes"/>und auf Grauwacke oder &#x017F;ehr altem Sand&#x017F;teine auf-<lb break="no"/>liegt,) gemein haben.</p>
+                <lb break="yes"/>
+                <p>Im dichten Kalk&#x017F;teine habe ich Mu&#x017F;cheln nur<lb break="yes"/>bis auf eine Höhe von 800 Toi&#x017F;en angetroffen. In-<lb break="no"/>deß bewei&#x017F;en andre, ziemlich neue Monumente<lb break="yes"/>den Aufenthalt der Gewä&#x017F;&#x017F;er noch in weit größern<lb break="yes"/>Höhen. Abgerundete Kie&#x017F;el&#x017F;teine, die &#x017F;ich auf der<lb break="yes"/>
+                    <hi rendition="#g">Silla de Karakas</hi> in 1130 Toi&#x017F;en Höhe finden,<lb break="yes"/>bewei&#x017F;en, daß, (wie auf dem Bonhomme in Savo-<lb break="no"/>yen,) die Gewä&#x017F;&#x017F;er vor Zeiten die&#x017F;es Thal zwi-<lb break="no"/>&#x017F;chen den beiden Pics von <placeName key="avila" >Avila</placeName> ausgehöhlt haben;<lb break="yes"/>ein Durchbruch, der un&#x017F;treitig weit älter i&#x017F;t, als<lb break="yes"/>die jetzigen <hi rendition="#i">fünf Pä&#x017F;&#x017F;e</hi> der Kü&#x017F;ten-Kordillere, näm-<lb break="no"/>lich die Thäler des <hi rendition="#g">Rio Neveri,</hi> des <hi rendition="#g">Unare,</hi>
+                    <lb break="yes"/>des <hi rendition="#g">Tuy,</hi> des <hi rendition="#g" >Mamon</hi> und das Thal von<lb break="yes"/>
+                    <hi rendition="#g">Guyguaca.</hi>
+                    <note place="foot" n="*)" xml:id="fn6-1" next="#fn6-2">Einige &#x017F;ehr &#x017F;onderbare kreisförmige Thäler, die<lb break="yes"/>in den Gebirgen von Kumana vorkommen, (z. B.</note> In einer &#x017F;ehr entfernten Periode<lb break="yes"/>
+                    <pb n="[435]" facs="#f0042"/> &#x017F;cheint das einbrechende Meerwa&#x017F;&#x017F;er den <hi rendition="#i">Golf von</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Cariaco</hi> und den <hi rendition="#i">Gol&#x017F;o</hi>
+                    <hi rendition="#g">Tri&#x017F;te</hi> gebildet, die<lb break="yes" />In&#x017F;eln <hi rendition="#g">Trinidad</hi> und <hi rendition="#g" >Magarita</hi> vom fe&#x017F;ten<lb break="yes"/>Lande getrennt und die Kü&#x017F;te von Kumana zerri&#x017F;&#x017F;en<lb break="yes"/>zu haben, wo die In&#x017F;eln <hi rendition="#g">de la Boracha, Pi-<lb break="no"/>cua</hi> und <hi rendition="#g">Karakas</hi> nichts als einen Haufen von<lb break="yes" />Trümmern dar&#x017F;tellen. Jetzt zieht &#x017F;ich der Ocean<lb break="yes" />hier überall zurück. Die In&#x017F;eln <hi rendition="#g">Coche</hi>
+                    <note place="foot" n="*)">Zwi&#x017F;chen Margarita und dem I&#x017F;thmus von <placeName key="araya">Araya</placeName>.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> und<lb break="yes"/>
+                    <hi rendition="#g">Cuagua</hi> &#x017F;ind Untiefen, die aus dem Wa&#x017F;&#x017F;er her-<lb break="no"/>vor&#x017F;ehn, und die große Ebene, <hi rendition="#g">(le Salado,)</hi>
+                    <lb break="yes"/>worauf Kumana &#x017F;teht, und die keine 5<formula notation="TeX">\frac{1}{2}</formula> Toi&#x017F;en<lb break="yes"/>über die Meeresfläche erhaben i&#x017F;t, gehörte ehe-<lb break="no"/>mahls zum Meerbu&#x017F;en von Cariaco, wie die vielen<lb break="yes"/>fa&#x017F;t fri&#x017F;chen Mu&#x017F;cheln auf ihr bewei&#x017F;en. Auch be-<lb break="no" />merkt man hier und zu <placeName key="barcelona">Barcelona</placeName>, daß &#x017F;ich das<lb break="yes"/>
+                    <hi rendition="#i">Meer jährlich weiter zurück zieht.</hi> Bei dem letz-<lb break="no"/>tern Hafen i&#x017F;t es in 20 Jahren um 900 Toi&#x017F;en zu-<lb break="no"/>rück gewichen. Rührt die&#x017F;es von einer wirklichen<lb break="yes"/>Verminderung des Wa&#x017F;&#x017F;ers im Meerbu&#x017F;en von Me-<lb break="no"/>xico her? oder findet auch hier vielleicht das Statt,<lb break="yes"/>was man im mittelländi&#x017F;chen Meere bemerkt hat,<lb break="yes"/>daß nämlich das Wa&#x017F;&#x017F;er an andern Orten gewinnt,<lb break="yes"/>was es an einigen verliert?</p>
+                <lb break="yes"/>
+                <p>
+                    <note place="foot" n="*)" xml:id="fn6-2" prev="#fn6-1">das Thal von Cumanacoa und das von St. Augu&#x017F;tin<lb break="yes"/>in 507 Toi&#x017F;en Höhe, berühmt durch &#x017F;eine erqui-<lb break="no"/>ckende Fri&#x017F;che,) &#x017F;cheinen ausgetrocknete, viel-<lb break="no"/>leicht durch Erdfälle ent&#x017F;tandne Seen zu &#x017F;eyn.<lb break="yes"/>
+                        <hi rendition="#et">
+                            <hi rendition="#i">
+                                <persName key="humboldt_av">v. Humb.</persName>
+                            </hi>
+                        </hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <pb n="[436]" facs="#f0043"/>
+                <p>Eine hiermit nicht zu&#x017F;ammen hängende Er&#x017F;chei-<lb break="no"/>nung i&#x017F;t die <hi rendition="#i">Abnahme der &#x017F;üßen Gewä&#x017F;&#x017F;er, des Re-<lb break="no"/>gens und der Ströme</hi> in die&#x017F;em Welttheile. Der<lb break="yes"/>jetzige <placeName key="orinoco" >Orinoko</placeName> i&#x017F;t nur noch ein Schatten von dem,<lb break="yes"/>was er ehemahls, und vielleicht noch vor tau&#x017F;end<lb break="yes"/>Jahren war, wie die Spuren bewei&#x017F;en, die das<lb break="yes"/>Wa&#x017F;&#x017F;er an beiden Ufern bis auf eine Höhe von 70 bis<lb break="yes"/>80 Toi&#x017F;en zurück gela&#x017F;&#x017F;en hat, nämlich Höhlen und<lb break="yes"/>&#x017F;chwarze Striche durch das Reißblei bewirkt, wel-<lb break="no"/>che der Strom ab&#x017F;etzt. Auch haben die Indianer<lb break="yes"/>die Sage von einer Sündfluth, bei der &#x017F;ich mehrere<lb break="yes"/>Men&#x017F;chen auf Flößen von Agaveholz gerettet, und<lb break="yes"/>darauf die In&#x017F;chriften und Hieroglyphen &#x017F;ollen ein-<lb break="no"/>gegraben haben, die man in beträchtlichen Höhen<lb break="yes"/>im Granit bei <hi rendition="#g">Urnana, Incaramada</hi> und am<lb break="yes"/>Ufer des Ca&#x017F;iquiari findet, ob&#x017F;chon keine der jet-<lb break="no"/>zigen Nationen ein Alphabet be&#x017F;itzt.</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>Von den <hi rendition="#i">Gebirgsarten</hi> habe ich bis jetzt folgen-<lb break="no"/>de in dem Theile von <placeName key="suedamerika" >Südamerika</placeName>, den ich durch-<lb break="no"/>rei&#x017F;t bin, gefunden:</p>
+                <lb break="yes"/>
+                <p>1. <hi rendition="#i">Urgebirge: Granit.</hi> Die ganze Kordillere<lb break="yes" />der Parime, be&#x017F;onders in der Gegend des Vulkans<lb break="yes"/>von Duida, be&#x017F;teht aus einem Granit, der nicht in<lb break="yes"/>Gneiß übergeht. In der Kü&#x017F;ten-Kordillere i&#x017F;t der<lb break="yes"/>Granit fa&#x017F;t überall bedeckt und mit Gneiß und<lb break="yes" />Glimmer&#x017F;chiefer gemengt. Ich habe ihn &#x017F;üdlich<lb break="yes" />von <hi rendition="#g">Cambury</hi> zwi&#x017F;chen <hi rendition="#g" >Valencia</hi> und <hi rendition="#g">Por-<lb break="no"/>tocabello</hi> ge&#x017F;chichtet gefunden, in 2 bis 3 Fuß<lb break="yes"/>
+                    <pb n="[437]" facs="#f0044"/> dicken, &#x017F;ehr regelmäßig, (in Stunde 3 bis 4,) &#x017F;trei-<lb break="no"/>chenden Lagera, die nordwe&#x017F;tlich einfielen. Am<lb break="yes"/>
+                    <hi rendition="#g">Rincon del Diabolo,</hi> &#x017F;üdö&#x017F;tlich von Portoca-<lb break="no"/>bello, kommen in ihm große und &#x017F;chöne Feld&#x017F;path-<lb break="no"/>kry&#x017F;talle vor, die bis auf 1<formula notation="TeX">\frac{1}{2}</formula> Zoll &#x017F;tark &#x017F;ind, wie im<lb break="yes"/>grobkörnigen Granit des Fichtelbergs, zu Chamouny,<lb break="yes"/>in Schottland und zu Guadarama. Auf der <hi rendition="#g" >Silla<lb break="yes"/>de Karakas</hi> und an mehrern Stellen kömmt er<lb break="yes"/>durch regelmäßige Spalten in Prismen getheilt vor,<lb break="yes"/>wie ihn <persName key="karsten_dlg">
+                        <hi rendition="#g">Kar&#x017F;ten</hi>
+                    </persName> auf dem Schneeköpfe in Schle-<lb break="no"/>fien gefunden hat. Mehrere Granitberge bei Kara-<lb break="no"/>kas, bei Valencia und in der Sierra Nevada de Meri-<lb break="no"/>da enthalten, wie der St. Gotthard, förmliche Gang-<lb break="no"/>klüfte, die mit &#x017F;ehr großen und ziemlich &#x017F;chönen<lb break="yes"/>Quarzkry&#x017F;tallen tapezirt &#x017F;ind. In den beiden Lla-<lb break="no"/>nos, die ich ge&#x017F;ehen habe, findet man weder Gra-<lb break="no"/>nitge&#x017F;chiebe, dergleichen im nördlichen Deut&#x017F;ch-<lb break="no"/>land, (aber nicht in den Ebenen Frankens, Bai-<lb break="no"/>erns und Schwabens,) in ungeheuren Blöcken vor-<lb break="no"/>kommen, noch andre Kie&#x017F;el von Urgebirgsarten,<lb break="yes"/>In den Granitbergen bei Karakas, in denen zwi-<lb break="no" />&#x017F;chen Valencia und St. Carlos, und in der Sierra Ne-<lb break="no" />vada de Merida kommen, wie im St. Gotthard,<lb break="yes"/>offne Gänge vor, die mit &#x017F;ehr großen und ziemlich<lb break="yes"/>&#x017F;chönen Bergkry&#x017F;tallen be&#x017F;etzt &#x017F;ind.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Gneiß,</hi> (blättriger Granit,) und <hi rendition="#i" >Glimmer&#x017F;chie-<lb break="no"/>fer,</hi> welche den Granit be&#x017F;onders in der Kordil-<lb break="no"/>lere der Kü&#x017F;te von Venezuela bedecken. Der <hi rendition="#i">Gneiß</hi>
+                    <lb break="yes"/>herr&#x017F;cht vorzüglich vom Cap Chichibocoa bis zum<lb break="yes"/>Cap Coadera; (auch in den In&#x017F;eln des Sees von Va-<lb break="no"/>
+                    <pb n="[438]" facs="#f0045"/> lencia) bei Cap Blanc <note place="foot" n="*)" >Unweit Karakas. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> fand ich in ihm einen<lb break="yes"/>&#x017F;chwärzlichen Quarz, der in <persName key="werner_ag">
+                        <hi rendition="#g">Werner&#x2019;s</hi>
+                    </persName> Kie&#x017F;el-<lb break="no"/>&#x017F;chiefer übergeht. Der Macanao auf Margarita, und<lb break="yes"/>die ganze Kordillere des I&#x017F;thmus von Cariaco be-<lb break="no"/>&#x017F;teht aus Glimmer&#x017F;chiefer mit rothen Granaten.<lb break="yes"/>An einer Stelle fand ich darin etwas weniges Cya-<lb break="no"/>nit. Im Gneiß des Bergs von <placeName key="avila" >Avila</placeName> fand ich grüne<lb break="yes"/>Granaten, indeß der Glimmer&#x017F;chiefer da keine<lb break="yes"/>Granaten enthält; in Europa findet &#x017F;ich gewöhn-<lb break="no"/>lich das Gegentheil. An einem Orte am Ca&#x017F;iquiari<lb break="yes"/>&#x017F;ah ich im Gneiß, (&#x017F;o wie unweit Valencia im Gra-<lb break="no"/>nit,) runde Ma&#x017F;&#x017F;en von 3 bis 4 Zoll Durchme&#x017F;-<lb break="no"/>&#x017F;er, von feinkörnigem Granit, der aus gelbem Feld-<lb break="no"/>&#x017F;path, viel Quarz und fa&#x017F;t gar keinem Glimmer be-<lb break="no"/>&#x017F;tand. I&#x017F;t dies etwa ein älterer Granit, der in ei-<lb break="no"/>nem neuern vorkömmt? oder &#x017F;ind nicht vielmehr<lb break="yes"/>die&#x017F;e Ma&#x017F;&#x017F;en, die wie Kie&#x017F;el aus&#x017F;ehn, Wirkungen<lb break="yes"/>der Anziehung, die, als die ganze Steinma&#x017F;&#x017F;e &#x017F;ich<lb break="yes"/>bildete, einige Moleculen einander mehr wie an-<lb break="no"/>dere näherte? Auch in Schle&#x017F;ien, zu Wun&#x017F;iedel im<lb break="yes"/>Fichtelberge, zu Chamouni, am St. Bernard, beim<lb break="yes"/>Escurial und in Galicien findet man Granit, der an-<lb break="no"/>dern in &#x017F;ich zu enthalten &#x017F;cheint.</p>
+                <lb break="yes"/>
+                <p>An mehrern Orten der Kü&#x017F;ten-Kordillere geht<lb break="yes"/>der Glimmer&#x017F;chiefer in <hi rendition="#i">Talk&#x017F;chiefer</hi> über. In der<lb break="yes"/>Kordillere der Parime kommen große Ma&#x017F;&#x017F;en eines<lb break="yes"/>&#x017F;ehr glänzenden <hi rendition="#i">Talks</hi> vor, denen der Berg Dora-<lb break="no"/>do und die In&#x017F;el Ypumucena, (S. 417,) ihren Ruf<lb break="yes"/>
+                    <pb n="[439]" facs="#f0046"/> zu danken haben. Ich habe kleine Götzenbilder<lb break="yes"/>aus <hi rendition="#i">Nephrit</hi> oder feiner Jade ge&#x017F;ehn, die vom Ero-<lb break="no"/>vato herkamen. Vielleicht kommen da im Gneiß<lb break="yes"/>Fel&#x017F;en von <hi rendition="#i">Jade</hi> vor, dergleichen ich bei Ur&#x017F;ern<lb break="yes"/>am St. Gotthard gefunden habe. <persName key="lacondamine_cmd">
+                        <hi rendition="#g">Condamine</hi>
+                    </persName>
+                    <lb break="yes"/>fand die harte Art der Jade, die unter dem Na-<lb break="no" />men des <hi rendition="#i">Amazonen&#x017F;teins</hi> bekannt i&#x017F;t, am Ama-<lb break="no"/>zonenflu&#x017F;&#x017F;e.</p>
+                <lb break="yes"/>
+                <p>Im Granit, Gneiß und Glimmer&#x017F;chiefer kom-<lb break="no"/>men hier, wie in Europa, ver&#x017F;chiedne <hi rendition="#i">untergeord-<lb break="no"/>nete Lager</hi> vor: im Meere bei Cap Blanc, we&#x017F;tlich<lb break="yes"/>von Guayra <hi rendition="#i">Chlorit&#x017F;chiefer;</hi> in den Straßen von St.<lb break="yes"/>Thomas in Guayana, und &#x017F;üdlicher in der Kordillere<lb break="yes"/>der Parime &#x017F;ehr reiner und &#x017F;chöner <hi rendition="#i">Hornblend-<lb break="no"/>&#x017F;chiefer;</hi> in der Silla de Karakas zu <hi rendition="#i">Porzellänthon</hi>
+                    <lb break="yes"/>verwitterte Feld&#x017F;pathlager; im Ifthmus von Caria-<lb break="no"/>co und bei Guayra <hi rendition="#i">Quarzlager</hi> mit <hi rendition="#i">Titanium;</hi> bei<lb break="yes"/>Karakas Quarzlager mit <hi rendition="#i">magneti&#x017F;chem Ei&#x017F;en;</hi> zwi-<lb break="no" />&#x017F;chen Karakas und Guayra <hi rendition="#i">körnigblättriger Kalk-<lb break="no"/>&#x017F;tein</hi> ohne Tremolith, aber mit viel <hi rendition="#i">Schwe&#x017F;elkies</hi>
+                    <lb break="yes"/>und <hi rendition="#i">&#x017F;päthigem Ei&#x017F;en&#x017F;teine,</hi> indeß in der Kordillere<lb break="yes"/>der Parime Kalk&#x017F;tein gänzlich zu fehlen &#x017F;cheint, da<lb break="yes" />man ihn dort &#x017F;chon &#x017F;eit vielen Jahren um&#x017F;on&#x017F;t ge-<lb break="no"/>&#x017F;ucht hat; bei Chacao und im I&#x017F;thmus von Caria-<lb break="no"/>co <hi rendition="#i">Zeichen&#x017F;chiefer</hi> oder ziemlich reines <hi rendition="#i">Reißblei,</hi>
+                    <lb break="yes"/>und an andern Orten <hi rendition="#i">Quarzgänge,</hi> worin &#x017F;ich <hi rendition="#i">Kie&#x017F;e</hi>
+                    <lb break="yes"/>und <hi rendition="#i">Spießglanz,</hi> die goldhaltig &#x017F;ind, finden, <hi rendition="#i">ge-<lb break="no"/>diegenes Gold, Kupferfahlerz, Kupferla&#x017F;ur, Mala-<lb break="no"/>chit</hi> u. &#x017F;. w. Auf Kupfer &#x017F;teht jedoch nur das ein-<lb break="no"/>
+                    <pb n="[440]" facs="#f0047"/> zige Bergwerk von <hi rendition="#g">
+                        <placeName key="aroa">Aroa</placeName>
+                    </hi>
+                    <note place="foot" n="*)">
+                        <hi rendition="#g">
+                            <placeName key="aroa">Aroa</placeName>
+                        </hi> liegt we&#x017F;tlich von Portocabello. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> in Umtrieb, wo 60<lb break="yes"/>bis 70 Sklaven jährlich 1500 Zentner Garkupfer<lb break="yes"/>produciren, wovon der Zentner für 12 Pia&#x017F;ter ver-<lb break="no"/>kauft wird. Das Thal, worin die Gruben liegen,<lb break="yes"/>die auf ein Stockwerk, (oder eine Vereinigung vie-<lb break="no"/>ler Gänge,) zu bauen &#x017F;cheinen, i&#x017F;t minder unge-<lb break="no"/>&#x017F;und, als es die dem Meere näher liegenden Thäler<lb break="yes"/>&#x017F;ind, wo die Indier zu Urama, Maron und <placeName key="alpagoton">Alpa-<lb break="no"/>goto</placeName>
+                    <hi rendition="#i">Gold wa&#x017F;chen,</hi> und wo, wie in dem fruchtba-<lb break="no"/>ren Thale von Kavarinas, die Luft Gift zu &#x017F;eyn<lb break="yes"/>&#x017F;cheint; an die&#x017F;en unge&#x017F;undern Orten finden &#x017F;ich<lb break="yes"/>aber viel reichere Erzgänge. Das <hi rendition="#i">Gold</hi> i&#x017F;t dort<lb break="yes"/>durch die ganze Provinz verbreitet, vorzüglich in<lb break="yes"/>den Quarzlagern, be&#x017F;onders im Cerro de Chacao<lb break="yes"/>und Real de Santa Barbara bei St. Juan, dem einzi-<lb break="no"/>gen Orte in <placeName key="suedamerika" >Südamerika</placeName>, wo ich <hi rendition="#i">Schwer&#x017F;path</hi> ge-<lb break="no"/>funden habe. Alle Flü&#x017F;&#x017F;e in der Provinz Karakas<lb break="yes"/>führen Gold; doch i&#x017F;t das kein Beweis, daß &#x017F;ich in<lb break="yes"/>ihr reiche, noch unbekannte Goldadern finden. Das<lb break="yes"/>Gold könnte wohl durch die ganze Ma&#x017F;&#x017F;e des Gra-<lb break="no"/>nits zer&#x017F;treut &#x017F;eyn; wenig&#x017F;tens kenne ich weder in<lb break="yes"/>Europa noch hier irgend eine hohe aus Granit<lb break="yes"/>be&#x017F;tehende Kordillere, deren Flü&#x017F;&#x017F;e nicht Gold<lb break="yes"/>führten.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Thon&#x017F;chiefer</hi> i&#x017F;t ziemlich &#x017F;elten; doch kömmt<lb break="yes"/>über dem Glimmer&#x017F;chiefer am &#x017F;üdlichen Abhange<lb break="yes"/>der Kü&#x017F;ten-Kordillere, nahe beim Llano, an einigen<lb break="yes"/>Stellen blauer Thon&#x017F;chiefer mit Quarzgängen vor,<lb break="yes"/>
+                    <pb n="[441]" facs="#f0048"/> und an mehrern Stellen des I&#x017F;thmus von Cariaco<lb break="yes"/>Thon&#x017F;chiefer mit 2 bis 3 Fuß mächtigen Lagern<lb break="yes"/>
+                    <hi rendition="#i">Alaun&#x017F;chiefer,</hi> woraus <hi rendition="#i" >natürlicher Alaun,</hi> dem von<lb break="yes"/>Tolfa ähnlich, auswittert, womit die Indianer ei-<lb break="no"/>nen kleinen Handel treiben.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Serpentin&#x017F;tein</hi> kömmt auf dem Glimmer&#x017F;chiefer<lb break="yes"/>in einer Höhe von 245 Toi&#x017F;en liegend, auf dem<lb break="yes"/>Plateau der Villa de Cura in der Kü&#x017F;ten-Kordil-<lb break="no"/>lere vor. Er i&#x017F;t hier und da olivengrün, enthält<lb break="yes"/>Glimmer, aber weder Granaten noch Schiller&#x017F;path,<lb break="yes"/>noch Hornblende, dagegen Klüfte mit bläulichem<lb break="yes"/>Speck&#x017F;tein.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Urtrapp</hi> oder <persName key="werner_ag">
+                        <hi rendition="#g">Werner&#x2019;s</hi>
+                    </persName>
+                    <hi rendition="#i">Urgrün&#x017F;tein,</hi> der aus<lb break="yes"/>einer innigen Mengung von Hornblende und Feld-<lb break="no"/>&#x017F;path be&#x017F;teht, worin manchmahl Schwefelkies und<lb break="yes"/>Quarz einge&#x017F;prengt &#x017F;ind, (einerlei Formation mit<lb break="yes"/>dem Paterle&#x017F;tein (?) des Fichtelbergs,) der &#x017F;elb&#x017F;t<lb break="yes"/>in Europa wenig bekannt i&#x017F;t, und den man oft mit<lb break="yes"/>Ba&#x017F;alt verwech&#x017F;elt hat. Er findet &#x017F;ich an mehrern<lb break="yes"/>Stellen am nördlichen und &#x017F;üdlichen Abhange der<lb break="yes"/>Kü&#x017F;ten-Kordillere, des Berges von <placeName key="avila">Avila</placeName>, im Meere<lb break="yes"/>am Cap Blanc, &#x2014; &#x2014; in Lagen von 2 Toi&#x017F;en oder<lb break="yes"/>in Kugeln von 4 Fuß bis 3 Zoll Durchme&#x017F;&#x017F;er, die<lb break="yes"/>aus concentri&#x017F;chen Lagen be&#x017F;tehn, und durch Glim-<lb break="no" />mer&#x017F;chiefer und Urthon&#x017F;chiefer zu&#x017F;ammen gebacken<lb break="yes"/>&#x017F;ind, welches für das hohe Alter die&#x017F;er Gebirgsart<lb break="yes"/>zeugt; auch bei Karakas in einem wahren, die La-<lb break="no"/>gen des blättrigen Granits durch&#x017F;etzenden, doch<lb break="yes"/>in einem neuern Granit einge&#x017F;prengten Gange, und<lb break="yes"/>
+                    <pb n="[442]" facs="#f0049"/> hier enthält der Grün&#x017F;tein rothe Granaten, der-<lb break="no"/>gleichen ich in ihm in Europa nie gefunden habe.</p>
+                <lb break="yes"/>
+                <p>2. <persName key="werner_ag">
+                        <hi rendition="#g">Werner&#x2019;s</hi>
+                    </persName>
+                    <hi rendition="#i">Uebergangsformation.</hi> Sie fin-<lb break="no"/>det &#x017F;ich vorzüglich im nördlichen Theile der Kor-<lb break="no"/>dillere der Parime und in großer Ma&#x017F;&#x017F;e am &#x017F;üdli-<lb break="no"/>chen Abhange der Kü&#x017F;ten-Kordillere, zwi&#x017F;chen den<lb break="yes"/>Llanos und den Morros de St. Juan, zwi&#x017F;chen der<lb break="yes"/>Villa de Cura und Parapara, (9° 33&#x2032; und 9° 55&#x2032;<lb break="yes"/>Br.,) wo &#x017F;ie von 1800 Fuß Höhe über dem Meere<lb break="yes"/>bis 378 Fuß Höhe herab geht, und wo man &#x017F;ich<lb break="yes"/>in ein <hi rendition="#i" >Land von Ba&#x017F;alt</hi> ver&#x017F;etzt zu &#x017F;ehn glaubt. Al-<lb break="no"/>les erinnert hier an die Berge um <hi rendition="#g">Bilin</hi> in Böh-<lb break="no"/>men, oder um <hi rendition="#g">Vicenza</hi> in Italien. &#x2014; Der<lb break="yes"/>
+                    <hi rendition="#i">Ur&#x017F;erpentin</hi> an den Ufern des Tucutunemo, (der,<lb break="yes"/>gleich dem &#x017F;chle&#x017F;i&#x017F;chen, Kupfergänge enthält,) wird<lb break="yes"/>allmählig feld&#x017F;path- und hornblendhaltig und geht<lb break="yes"/>in den <hi rendition="#i">Trapp</hi> oder <hi rendition="#i">Grün&#x017F;tein</hi> über. Die&#x017F;er Trapp<lb break="yes"/>&#x017F;indet &#x017F;ich in Ma&#x017F;&#x017F;e, &#x017F;treichend in St. 7 und fal-<lb break="no"/>lend unter 70° nördlich, oder lagenwei&#x017F;e con-<lb break="no"/>centri&#x017F;ch in Kugeln, die bald in einem mit Magne&#x017F;ia<lb break="yes"/>gemengten Thone, der kleine koni&#x017F;che Berge bil-<lb break="no"/>det; bald in einem &#x017F;ehr &#x017F;chweren grünen Schiefer,<lb break="yes"/>der innig mit Hornblende und Thon&#x017F;chiefer ge-<lb break="no"/>mengt i&#x017F;t, (<persName key="werner_ag">
+                        <hi rendition="#g">Werner&#x2019;s</hi>
+                    </persName>
+                    <hi rendition="#i">Uebergangs-Thon&#x017F;chiefer,</hi>
+                    <lb break="yes"/>der an einer Stelle in den Thon&#x017F;chiefer, über wel-<lb break="no"/>chem er liegt, übergeht,) vorkommen. In die&#x017F;em<lb break="yes"/>Trapp oder Grün&#x017F;tein findet &#x017F;ich <hi rendition="#i">blättriger Olivin</hi>
+                    <lb break="yes"/>in vier&#x017F;eitigen Prismen kry&#x017F;talli&#x017F;irt, wie ihn <hi rendition="#g">
+                        <persName key="freiesleben_jc">Freis-<lb break="no"/>leben</persName>
+                    </hi> auf einer Rei&#x017F;e, die wir mit einander<lb break="yes"/>nach Böhmen machten, entdeckt hat; <hi rendition="#i">Augit</hi> mit<lb break="yes"/>
+                    <pb n="[443]" facs="#f0050"/> mu&#x017F;chlichem Bruch; <hi rendition="#i" >Leucit</hi>-Dodecaeder; und Höh-<lb break="no"/>lungen, die tapezirt &#x017F;ind, mit <hi rendition="#i">Grünerde,</hi> der von<lb break="yes" />Verona ähnlich, und mit einer Sub&#x017F;tanz von Per-<lb break="no" />lenmutterglanz, die ich für <hi rendition="#i">Zealith</hi> halte. Nach<lb break="yes"/>Parapara zu werden die&#x017F;er einge&#x017F;prengten Theils<lb break="yes"/>immer mehr, und hier bildet der Trapp wahren<lb break="yes"/>
+                    <hi rendition="#i">Mandel&#x017F;tein,</hi> auf welchem, nahe beim großen Tha-<lb break="no"/>le des <placeName key="orinoco">Orinoko</placeName>, die &#x017F;onderbare Gebirgsart aufliegt,<lb break="yes"/>welche <persName key="werner_ag">
+                        <hi rendition="#g">Werner</hi>
+                    </persName>
+                    <hi rendition="#i">Porphyr&#x017F;chiefer</hi> und <persName key="charpentier_jfwv">
+                        <hi rendition="#g">Charpen-<lb break="no"/>tier</hi>
+                    </persName>
+                    <hi rendition="#i">Horn&#x017F;chiefer</hi> nennen, und, gleich dem des bi-<lb break="no"/>liner Steins im böhmi&#x017F;chen Mittelgebirge aus einen<lb break="yes"/>grünen Ma&#x017F;&#x017F;e &#x017F;ehr harten fo&#x017F;&#x017F;ilen <hi rendition="#i">Kling&#x017F;teins</hi> be-<lb break="no"/>&#x017F;teht, der an den Kanten halb durch&#x017F;cheinend i&#x017F;t,<lb break="yes"/>Glas ritzt und Feuer &#x017F;chla&#x0304;gt, und worin &#x017F;ich Kry-<lb break="no"/>&#x017F;talle von <hi rendition="#i" >gla&#x017F;igem Feld&#x017F;path</hi> finden. Ich erwartete<lb break="yes" />nichts weniger als die&#x017F;e Gebirgsart in <placeName key="suedamerika" >Südamerika</placeName>
+                    <lb break="yes"/>wieder zu finden, wo &#x017F;ie indeß keine &#x017F;o grotesken<lb break="yes"/>Gruppen als in Böhmen und in den euganei&#x017F;chen<lb break="yes"/>Gebirgen bei Vicenza bildet, wo ich &#x017F;ie ebenfalls<lb break="yes"/>gefunden habe.</p>
+                <lb break="yes"/>
+                <p>3. <hi rendition="#i">Flötzgebirge.</hi> Sie &#x017F;ind von neuerer Bildung<lb break="yes"/>als die organi&#x017F;chen We&#x017F;en, und folgen hier, ihrem<lb break="yes"/>relativen Alter nach, in der&#x017F;elben Ordnung auf<lb break="yes"/>einander, wie man &#x017F;ie in den Ebenen Europa&#x2019;s fin-<lb break="no"/>det, und die der treffliche Mineralog Herr <persName key="buch_lv">
+                        <hi rendition="#g">von<lb break="yes"/>Buch</hi>
+                    </persName> in &#x017F;einer mineralogi&#x017F;chen Skizze der Graf-<lb break="no"/>&#x017F;chaft Glatz ge&#x017F;childert hat, (einem kleinen Werke<lb break="yes"/>voll großer An&#x017F;ichten und intere&#x017F;&#x017F;anten That&#x017F;a-<lb break="no"/>chen.) Ich habe hier <hi rendition="#i">zwei Formationen von dich-<lb break="no"/>tem Kalk&#x017F;teine</hi> bemerkt: die eine macht den Ueber-<lb break="no"/>
+                    <pb n="[444]" facs="#f0051"/> gang in den feinkörnigen und unmerkbar blättrigen<lb break="yes"/>Kalk&#x017F;tein, und i&#x017F;t mit dem Kalk&#x017F;teine der hohen<lb break="yes"/>
+                    <placeName key="alpen">Alpen</placeName> identi&#x017F;ch; die andere i&#x017F;t dicht, &#x017F;ehr homo-<lb break="no"/>gen, mit mehr Mu&#x017F;cheln vermengt, und gleicht<lb break="yes"/>dem Kalk&#x017F;teine vom Jura, von Pappenheim, Gi-<lb break="no"/>braltar, Verona, Dalmatien und Suez. Ferner ei-<lb break="no"/>ne Formation von <hi rendition="#i">blättrigem Gyps,</hi> und eine von<lb break="yes"/>
+                    <hi rendition="#i">Salzthon,</hi> dem be&#x017F;tändigen Begleiter des Stein&#x017F;alzes<lb break="yes"/>in Tyrol, Steiermark, Salzburg und in der Schweiz.<lb break="yes"/>
+                    <hi rendition="#i">Mergel&#x017F;chiefer,</hi> der in Lagern im Alpenkalk&#x017F;teine<lb break="yes"/>vorkömmt. Endlich <hi rendition="#i" >zwei Formationen von Sand-<lb break="no"/>&#x017F;tein,</hi> die eine älter und fa&#x017F;t ohne Mu&#x017F;cheln, bald<lb break="yes"/>klein-, bald gorbkörnig, (Sand&#x017F;tein der Llanos;)<lb break="yes"/>die andere, &#x017F;ehr neu und voller Trümmer von Meer-<lb break="no"/>thieren, geht in dichten Kalk&#x017F;tein über.</p>
+                <lb break="yes"/>
+                <p>Der <hi rendition="#i">blaue Alpenkalk</hi> mit Gängen von weißem<lb break="yes" />Kalk&#x017F;path liegt auf Glimmer&#x017F;chiefer in der Quebra-<lb break="no" />da Secca, nahe am Tuy, ö&#x017F;tlich von Punta Delga-<lb break="no"/>da, (Stunde 3, mit 70° &#x017F;üdö&#x017F;tl. Fallen,) zu Bordo-<lb break="no"/>nes, auf der In&#x017F;el Trinidad, und auf dem Berge<lb break="yes"/>von Paria. Sollte er nirgends auf todt liegendem<lb break="yes"/>ruhen? Wie in der Schweiz, &#x017F;o auch hier enthält<lb break="yes"/>die&#x017F;e Kalkformation <hi rendition="#i">drei untergeordnete Formatio-<lb break="no"/>nen. a.</hi> Mehrfache Lager von <hi rendition="#i">Mergel&#x017F;chiefer,</hi>
+                    <lb break="yes"/>(dem thuringi&#x017F;chen Kupfer&#x017F;chiefer,) die hier mit<lb break="yes"/>Schwefelkies und Erdharz vermengt &#x017F;ind. Die&#x017F;er<lb break="yes"/>Schiefer enthält Kohlen&#x017F;toff und zer&#x017F;etzt die atmo-<lb break="no"/>&#x017F;phäri&#x017F;che Luft, indem er das Sauer&#x017F;toffgas aus ihr<lb break="yes"/>einfaugt. <hi rendition="#i" >b.</hi> Lagen von <hi rendition="#i">Salzthon</hi> mit Stein&#x017F;alz und<lb break="yes"/>Gypskry&#x017F;tallen. In ihm befinden &#x017F;ich die Salinen<lb break="yes"/>
+                    <pb n="[445]" facs="#f0052"/> von <placeName key="araga">Araga</placeName>, die von Pozuelas de la Margarita. &#x2014; &#x2014;<lb break="yes"/>
+                    <hi rendition="#i">c.</hi> Ein Sand&#x017F;tein, der aus kleinen Quarzkörnern<lb break="yes"/>be&#x017F;teht, die in eine kalkartige Ma&#x017F;&#x017F;e eingemengt &#x017F;ind,<lb break="yes"/>fa&#x017F;t ohne ver&#x017F;teinerte Mu&#x017F;cheln i&#x017F;t, und immer<lb break="yes"/>Wa&#x017F;&#x017F;er, manchmahl auch kleine Lagen braunen<lb break="yes"/>Ei&#x017F;en&#x017F;teins enthält, von denen ich nicht gewiß bin,<lb break="yes"/>ob &#x017F;ie über oder unter dem Kalk&#x017F;teine liegen.</p>
+                <lb break="yes"/>
+                <p>Auf die&#x017F;em Kalk&#x017F;teine liegt der <hi rendition="#i">andere viel neuere,</hi>
+                    <lb break="yes"/>der &#x017F;ehr weiß, &#x017F;ehr dicht, &#x017F;ehr fo&#x017F;&#x017F;il, voller Höhlen,<lb break="yes"/>die von Millionen von Vögeln bewohnt &#x017F;ind, zuwei-<lb break="no"/>len auch porös wie der in Franken i&#x017F;t, und Fel&#x017F;en<lb break="yes"/>von grotesken Figuren bildet, (Morros de St. Juan,<lb break="yes"/>de S. Seba&#x017F;tian.) Er enthält Lagen von einem merk-<lb break="no"/>würdigen <hi rendition="#i" >&#x017F;chwarzen Horn&#x017F;tein,</hi> der in Kie&#x017F;el&#x017F;chie-<lb break="no"/>fer oder lydi&#x017F;chen Stein übergeht, <hi rendition="#i">ägypti&#x017F;chen<lb break="yes"/>Jaspis</hi> &#x2014; &#x2014; &#x2014; Auf die&#x017F;em dichten Kalk&#x017F;teine,<lb break="yes"/>der dem des Jura ähnlich i&#x017F;t, liegt bei Soro am<lb break="yes"/>Golfo Tri&#x017F;te ein &#x017F;ehr &#x017F;chöner <hi rendition="#i">Alaba&#x017F;ter</hi> in einer<lb break="yes"/>großen Ma&#x017F;&#x017F;e. Alle die&#x017F;e Gyp&#x017F;e enthalten Schwe-<lb break="no"/>fel, wie der zu Bex und zu Kretzetzow in den Kar-<lb break="no" />pathen. Die&#x017F;elbe Kalkformation mit &#x017F;chwarzem<lb break="yes" />Horn&#x017F;tein &#x017F;cheint <persName key="lacondamine_cmd">
+                        <hi rendition="#g">Condamine</hi>
+                    </persName> auch im Thale<lb break="yes"/>des <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;es</placeName> und des Rio Negro bemerkt<lb break="yes"/>zu haben.</p>
+                <lb break="yes"/>
+                <p>Er und der Gyps &#x017F;ind in den Thälern des Ori-<lb break="no"/>noko und des <placeName key="amazonas">Amazonenflu&#x017F;&#x017F;es</placeName> mit einem <hi rendition="#i">Conglo-<lb break="no"/>merat</hi> aus großen Kie&#x017F;eln, (Ge&#x017F;chieben von Kalk-<lb break="no"/>&#x017F;tein, Quarz und lydi&#x017F;chem Stein,) bedeckt, wel-<lb break="no"/>ches der <hi rendition="#i">Nagelfluch</hi> im Salzburgi&#x017F;chen, bei <placeName key="aranjuez">Aran-<lb break="no"/>juez</placeName>, &#x2014; &#x2014; &#x2014; ähnlich i&#x017F;t. Die&#x017F;es findet &#x017F;ich in<lb break="yes"/>
+                    <pb n="[446]" facs="#f0053"/> den Llanos über einen Raum von mehr als 18000<lb break="yes"/>Quadratlieues verbreitet. Es enthält kleinkörni-<lb break="no" />gere Lager und Spuren von braunem und rothem<lb break="yes" />Ei&#x017F;en&#x017F;tein. Ver&#x017F;teinerungen habe ich nie darin<lb break="yes"/>ge&#x017F;ehn.</p>
+                <lb break="yes"/>
+                <p>Neuer als die&#x017F;es Conglomerat und immer nur<lb break="yes"/>unweit der Kü&#x017F;te befindlich, i&#x017F;t der mu&#x017F;chel- und<lb break="yes" />korallenreiche <hi rendition="#i">Sand&#x017F;tein,</hi> der in Kalk&#x017F;tein über-<lb break="no"/>geht, doch immer, wenn man ihn genau unter-<lb break="no"/>&#x017F;ucht, Quarzkörner enthält, (&#x017F;. S. 432.)</p>
+                <lb break="yes"/>
+                <p>4. <hi rendition="#i">Vulkani&#x017F;che Produkte.</hi> Man wird erwarten,<lb break="yes"/>daß ich mit einer Aufzählung vulkani&#x017F;cher Stein-<lb break="no"/>arten die&#x017F;e geologi&#x017F;che Skizze eines Landes be-<lb break="no"/>&#x017F;chließe, de&#x017F;&#x017F;en unglückliche Bewohner den furcht-<lb break="no"/>bar&#x017F;ten Erdbeben ausge&#x017F;etzt &#x017F;ind, wo hohe Berg-<lb break="no"/>gipfel, (der Duida,) und &#x017F;eit kurzem &#x017F;elb&#x017F;t Höh-<lb break="no"/>len, (die Cueva del Cuchivano im eben erwähnten<lb break="yes"/>Flötzkalke,) Flammen aus&#x017F;peien, wo es vom Golfo<lb break="yes"/>Tri&#x017F;te bis zur Sierra Nevada de Merida &#x017F;iedend<lb break="yes"/>heiße Quellen giebt, (die Hitze der von Triache-<lb break="no"/>var fand ich auf 72,3° R.,) wo unweit Cumacator<lb break="yes"/>auf der Kü&#x017F;te von Paria ein Luftvulkan &#x017F;teht, de&#x017F;&#x017F;en<lb break="yes"/>Getö&#x017F;e man weithin hört, und wo man an mehrern<lb break="yes"/>Orten Schwefelgruben, der auf Guadeloupe ähn-<lb break="no"/>lich, findet; in einem Lande endlich, wo an Stellen,<lb break="yes"/>(Tierra Hueca de Cariaco,) der Boden in einer<lb break="yes" />Ausdehnung von einigen Quadratlieues hohl und<lb break="yes"/>unterminirt i&#x017F;t, wo 1766 nach eilf Monaten Erd-<lb break="no"/>beben der Boden &#x017F;ich aller Orten öffnete, um mit<lb break="yes"/>Erdharz vermengtes Schwefelwa&#x017F;&#x017F;er auszu&#x017F;peien,<lb break="yes"/>
+                    <pb n="[447]" facs="#f0054"/> und wo man aus der Erde, mitten in den trocken-<lb break="no"/>&#x017F;ten Ebenen, (in der Me&#x017F;a de Guanipa und von Ca-<lb break="no"/>ry,) Flammen hat hervor kommen &#x017F;ehn, welche<lb break="yes"/>das Volk für den Gei&#x017F;t des Tyrannen <persName key="aguirre_ld">Aguirre</persName>
+                    <lb break="yes"/>hielt.</p>
+                <lb break="yes"/>
+                <p>Allein die Natur &#x017F;elb&#x017F;t überhebt mich die&#x017F;er<lb break="yes" />Mühe. Die Wirkungen der Vulkane in die&#x017F;er<lb break="yes"/>
+                    <placeName key="amerika">neuen Welt</placeName> &#x017F;ind von denen in Europa ver&#x017F;chieden.<lb break="yes"/>So groß und &#x017F;chrecklich &#x017F;ie in ihren Wirkungen<lb break="yes"/>&#x017F;ind, &#x017F;o verändern &#x017F;ie hier doch nicht die Natur der<lb break="yes"/>Steinarten, auf welche &#x017F;ie ihre Kraft ausüben.<lb break="yes"/>Der ungeheure Ausbruch des Tonguragua, der<lb break="yes"/>Pelileo zer&#x017F;törte, <note place="foot" n="*)">
+                        <persName key="cavanilles_aj">
+                            <hi rendition="#g">Cavanilles</hi>
+                        </persName> Nachrichten von die&#x017F;em verwü-<lb break="no" />&#x017F;tenden Ausbruche eines der Vulkane der <placeName key="anden" >Anden</placeName>,<lb break="yes"/>&#x017F;üdlich von Quito, habe ich den Le&#x017F;ern der Anna-<lb break="no"/>len &#x017F;chon vor mehrern Jahren, (<hi rendition="#i">Annalen,</hi> VI, 67,)<lb break="yes"/>mit Erläuterungen und Bemerkungen mitgetheilt.<lb break="yes"/>Beides, die Nachricht und die Erläuterungen, ver-<lb break="no"/>dienen hierbei, und noch mehr bei dem folgenden<lb break="yes"/>Auf&#x017F;atze, nachgele&#x017F;en zu werden. <hi rendition="#et">
+                            <hi rendition="#i">d. H.</hi>
+                        </hi>
+                    </note> bedeckte den Boden nicht mit<lb break="yes"/>Laven, &#x017F;ondern mit einem lehmigen Kothe, der &#x017F;ich<lb break="yes"/>aus den &#x017F;chwefelwa&#x017F;&#x017F;er&#x017F;toffhaltigen Wa&#x017F;&#x017F;ern nie-<lb break="no"/>der&#x017F;chlug, welche die Erde aus&#x017F;peite. Zu die&#x017F;en<lb break="yes"/>vulkani&#x017F;chen Wirkungen &#x017F;cheinen die Haupt&#x017F;ache<lb break="yes"/>beizutragen: die &#x017F;chwefelhaltigen Gypsformatio-<lb break="no"/>nen; die allen Gebirgsarten und &#x017F;elb&#x017F;t dem Granit<lb break="yes"/>beigemengten Schwefelkie&#x017F;e; die oben be&#x017F;chriebne<lb break="yes" />bituminö&#x017F;e Salzthon-Formation; das Steinöhl oder<lb break="yes"/>der Asphalt, (<hi rendition="#i">brea, chapapote,</hi>) welche man auf<lb break="yes"/>
+                    <pb n="[448]" facs="#f0055"/> allen Wa&#x017F;&#x017F;ern &#x017F;chwimmen &#x017F;ieht, oder auf dem Ba-<lb break="no"/>den der&#x017F;elben findet; und endlich eine ungeheure<lb break="yes"/>Ma&#x017F;&#x017F;e von Regen- oder Meerwa&#x017F;&#x017F;er, die dann wahr-<lb break="no"/>&#x017F;cheinlich in den von der Sonne &#x017F;tark erhitzten Bo-<lb break="no"/>den eindringt, und darin theils in Dämpfe verwan-<lb break="no"/>delt, theils zer&#x017F;etzt wird, wobei &#x017F;ich überall<lb break="yes"/>Schwefelwa&#x017F;&#x017F;er&#x017F;toffgas entbindet. Die Schwefel-<lb break="no"/>gruben auf der Ba&#x017F;&#x017F;eterre von Guadeloupe, von de-<lb break="no"/>nen wir vor kurzem eine &#x017F;o intere&#x017F;&#x017F;ante Be&#x017F;chrei-<lb break="no"/>bung erhalten haben, vom Montmi&#x017F;ene, von St.<lb break="yes"/>Chri&#x017F;tophe de l&#x2019;Oualiban, von St. Lucie und von<lb break="yes"/>Mont&#x017F;erratte, &#x017F;tehn wahr&#x017F;cheinlich mit denen auf<lb break="yes"/>der Kü&#x017F;te von Paria in Verbindung.</p>
+                <lb break="yes"/>
+                <p>Doch die&#x017F;e Vulkane gehören mehr für die Phy-<lb break="no"/>lik als für die Mineralogie, und ich muß noch in<lb break="yes"/>mehrern Gegenden Beobachtungen &#x017F;ammeln, ehe<lb break="yes"/>ich über einen &#x017F;o mißlichen Gegen&#x017F;tand gehörig<lb break="yes"/>urtheilen kann. Gebe der Himmel, daß der ö&#x017F;tli-<lb break="no"/>che Theil von Neu-Andalu&#x017F;ien nicht einmahl eine<lb break="yes"/>ähnliche Kata&#x017F;trophe erfahre, als die, welche die<lb break="yes"/>Ebenen von Pelileo zer&#x017F;tört hat.</p>
+                <lb break="yes"/>
+                <p>Folgende Tabelle &#x017F;tellt das verhältnißmäßige<lb break="yes"/>Alter der Ur- und der Flötz-Formationen in den<lb break="yes"/>beiden Kordilleren von Venezuela und von der Pa-<lb break="no"/>rime, und in den beiden großen Thälern des Ori-<lb break="no"/>noko und des <placeName key="amazonas" >Amazonenflu&#x017F;&#x017F;es</placeName> dar, oder die Folge,<lb break="yes"/>in welcher &#x017F;ie über einander liegen:</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">
+                    <hi rendition="#g">Ur-</hi>
+                </fw>
+                <lb break="yes"/>
+                <pb n="[449]" facs="#f0056"/>
+                <cb/>
+                <table>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Urgebirgsarten.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#g">Flötzlager.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Prophyr&#x017F;chiefer.</cell>
+                        <cell>Sand&#x017F;tein mit Mu&#x017F;cheln der<lb break="yes"/>jetzigen Welt.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mandel&#x017F;tein mit Leuciten.</cell>
+                        <cell>Sand&#x017F;tein ohne Mu&#x017F;cheln,<lb break="yes" />(Conglomerat.)</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Urtrapp mit Olivin, (Grün-<lb break="no"/>&#x017F;tein.)</cell>
+                        <cell>Gyps, körniger und blättriger.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Uebergangs-Horn&#x017F;chiefer.</cell>
+                        <cell>Dichter Kalk&#x017F;tein m. Lagern<lb break="yes"/>lydi&#x017F;ch. Steins u. Horn&#x017F;teins.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ur-Thon&#x017F;chiefer mit Lagern<lb break="yes"/>natürlichen Alauns.</cell>
+                        <cell>Dichter Kalk&#x017F;tein, in den blätt-<lb break="no"/>rigen übergehend, mit Kalk-<lb break="no"/>&#x017F;pathgängen und Lagern<lb break="yes"/>Mergel&#x017F;chiefer.</cell>
+                    </row>
+                    <row>
+                        <cell cols="2">Glimmer&#x017F;chiefer mit Granaten und Lagern von<lb break="yes"/>Reißblei&#x017F;chiefer.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Blättriger Granit. Gneiß mit Lagern von Urkalk.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2">Granit in Ma&#x017F;&#x017F;e, oft gemengt mit Jade und Reißblei.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

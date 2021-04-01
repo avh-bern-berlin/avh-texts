@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="25" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>An&#x017F;ichten der Natur mit wi&#x017F;&#x017F;en&#x017F;chaftlichen Erläu-<lb break="no"/>terungen von Alexander von <persName key="humboldt_av" >Humboldt</persName>. Zwey<lb break="yes"/>Bände. Zweyte verbe&#x017F;&#x017F;erte und vermehrte Aus-<lb break="no"/>gabe. Stuttgart und Tübingen in der <persName key="cotta">J. G.<lb break="yes" />Cotta&#x2019;&#x017F;chen</persName> Buchhandlung. 1826. 12.</head>
+                <lb break="yes"/>
+                <p>Alexander von <persName key="humboldt_av">Humboldt</persName>, den man den Für&#x017F;ten<lb break="yes"/>unter den Naturfor&#x017F;chern nennen könnte, wie man wohl<lb break="yes"/>Goethe&#x2019;n den Für&#x017F;ten unter den Dichtern genannt hat,<lb break="yes"/>gibt uns hier zum zweyten Male &#x017F;ein unübertreffliches<lb break="yes"/>Bild der tropi&#x017F;chen Natur, und wir dürfen es als das<lb break="yes"/>Lieblingsgemälde die&#x017F;es großen Mei&#x017F;ters betrachten, denn<lb break="yes"/>er hat es nicht nur mit philo&#x017F;ophi&#x017F;chem Gei&#x017F;t und wi&#x017F;-<lb break="no" />&#x017F;en&#x017F;chaftlicher Strenge, &#x017F;ondern auch mit dichteri&#x017F;cher<lb break="yes"/>Wahl und Vorliebe und mit jener &#x017F;chönen Leiden&#x017F;chaft<lb break="yes"/>entworfen, die das Herz de&#x017F;&#x017F;en erfüllen mußte, der in<lb break="yes"/>einer innigern Nähe die große Mutter Natur erkannt<lb break="yes"/>und den Schleyer der I&#x017F;is gelüftet. Darum gehört die-<lb break="no"/>&#x017F;es Werk auch zu den &#x017F;eltenen, die gleich einem blumen-<lb break="no"/>reichen I&#x017F;thmus aus dem Lande der Wi&#x017F;&#x017F;en&#x017F;chaft hin-<lb break="no" />überreichen in die Poe&#x017F;ie, und Herz und Auge laben,<lb break="yes" />während &#x017F;ie den &#x017F;innigen Gei&#x017F;t mit mannigfachen neuen<lb break="yes"/>Kenntni&#x017F;&#x017F;en und Auf&#x017F;chlü&#x017F;&#x017F;en bereichern und erhellen.<lb break="yes"/>Man betrachte <persName key="linne_cv" >Linne&#x2019;s</persName>
+                    <hi rendition="#aq">Systema Vegetabilium,</hi> das große<lb break="yes" />trockene Regi&#x017F;ter von Wörtern und Zahlen, in deren tod-<lb break="no" />ten Formeln die ganze blühende Vegetation der Erde<lb break="yes" />eingetrocknet liegt, und nun auf der andern Seite Hum-<lb break="no"/>boldts An&#x017F;ichten der Natur, worin im lebendigen Pano-<lb break="no"/>rama die hohen Ve&#x017F;uve &#x017F;ich erheben über den ewigen<lb break="yes"/>Schnee der Cordilleren, und das unendliche Meer la-<lb break="no"/>chende &#x017F;onnenhelle Kü&#x017F;ten umarmt, und die&#x017F;e die wim-<lb break="no" />melnde Menge der tropi&#x017F;chen Pflanzen tragen, in einem<lb break="yes" />unauflöslichen ewig blühenden Blumenkranz, und man<lb break="yes"/>wird dem genialen Maler die Genugthuung nicht ver-<lb break="no"/>&#x017F;agen können, daß es etwas mehr heißt, die Natur gleich<lb break="yes"/>der meerent&#x017F;tiegenen Göttin in ihrer pla&#x017F;ti&#x017F;chen Vollen-<lb break="no"/>dung zu bilden, als ihre Reize nur anatomi&#x017F;ch zu zerlegen<lb break="yes"/>und die reizenden Glieder abgeri&#x017F;&#x017F;en im Spiritus der<lb break="yes"/>
+                    <cb/> Sy&#x017F;teme aufzuhängen. <persName key="humboldt_av" >Humboldt</persName> &#x017F;pricht die&#x017F;e An&#x017F;icht<lb break="yes"/>&#x017F;elber aus, vorzüglich in Bezug auf die Pflanzenwelt.<lb break="yes"/>Die nachfolgende Stelle &#x017F;eines Werkes wird auf die<lb break="yes"/>ganze Naturan&#x017F;icht des großen For&#x017F;chers ein helles Licht<lb break="yes"/>werfen und jede weitere Erklärung überflü&#x017F;&#x017F;ig machen.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Jede Zone hat außer den, ihr eigenen Vorzügen<lb break="yes"/>auch ihren eigenthümlichen Charakter. So wie man an<lb break="yes"/>einzelnen organi&#x017F;chen We&#x017F;en eine be&#x017F;timmte Phy&#x017F;iognomie<lb break="yes"/>erkennt; wie be&#x017F;chreibende Botanik und Zoologie, im<lb break="yes"/>engern Sinne des Worts, fa&#x017F;t nichts als Zergliederung<lb break="yes"/>der Thier- und Pflanzenformen i&#x017F;t: &#x017F;o gibt es auch eine<lb break="yes"/>gewi&#x017F;&#x017F;e Naturphy&#x017F;iognomie, welche jedem Himmelstriche<lb break="yes"/>aus&#x017F;chließlich zukommt.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Was der Maler mit den Ausdrücken &#x017F;chweizer Na-<lb break="no"/>tur, italieni&#x017F;cher Himmel bezeichnet, gründet &#x017F;ich auf das<lb break="yes"/>dunkle Gefühl die&#x017F;es lokalen Naturcharakters. Himmel-<lb break="no"/>bläue, Beleuchtung, Duft, der auf der Ferne ruht, Ge-<lb break="no"/>&#x017F;talt der Thiere, Saftfülle der Kräuter, Glanz des Lau-<lb break="no"/>bes, Umriß der Berge &#x2014; alle die&#x017F;e Elemente be&#x017F;timmen<lb break="yes"/>den Totaleindruck einer Gegend. Zwar bilden unter<lb break="yes"/>allen Zonen die&#x017F;elben Gebirgsarten Trachyt, Ba&#x017F;alt,<lb break="yes"/>Porphyr-Schiefer und Dolomit, Felsgruppen der&#x017F;elben<lb break="yes"/>Phy&#x017F;iognomie. Die Grün&#x017F;teinklippen in <placeName key="suedamerika">Süd-Amerika</placeName>
+                    <lb break="yes"/>und Mexiko gleichen denen des deut&#x017F;chen Fichtelgebirges,<lb break="yes"/>wie unter den Thieren die Form des Alco oder der ur-<lb break="no"/>&#x017F;prünglichen Hunderace des <placeName key="amerika">neuen Continents</placeName> mit der<lb break="yes" />europäi&#x017F;chen Race überein&#x017F;timmt. Denn die unorgani&#x017F;che<lb break="yes"/>Rinde der Erde i&#x017F;t gleich&#x017F;am unabhängig von klimati&#x017F;chen<lb break="yes"/>Einflü&#x017F;&#x017F;en; &#x017F;ey es, daß der Unter&#x017F;chied der Klimate neuer<lb break="yes"/>als das Ge&#x017F;tein i&#x017F;t; &#x017F;ey es, daß die erhärtende, wärme-<lb break="no"/>entbindende Erdma&#x017F;&#x017F;e &#x017F;ich &#x017F;elb&#x017F;t ihre Temperatur gab,<lb break="yes"/>&#x017F;tatt &#x017F;ie von außen zu empfangen. Alle Formationen<lb break="yes"/>&#x017F;ind daher allen Weltgegenden eigen, und in allen gleich<lb break="yes" />ge&#x017F;taltet. Ueberall bildet der Ba&#x017F;alt Zwillingsberge und<lb break="yes"/>abge&#x017F;tumpfte Kegel; überall er&#x017F;cheint der Trapp-Porphyr in<lb break="yes"/>grotesken Felsma&#x017F;&#x017F;en, der Granit in &#x017F;anftrundlichen<lb break="yes"/>Kuppen. Auch ähnliche Pflanzenformen, Tannen und<lb break="yes"/>Eichen bekränzen die Berghänge in Schweden, wie die<lb break="yes"/>des &#x017F;üdlich&#x017F;ten Theils von Mexiko. Und bey aller die&#x017F;er<lb break="yes"/>
+                    <pb n="26" facs="#f0002"/>
+                    <cb/> Ueberein&#x017F;timmung in den Ge&#x017F;talten, bey die&#x017F;er Gleichheit<lb break="yes"/>der einzelnen Umri&#x017F;&#x017F;e, nimmt die Gruppirung der&#x017F;elben<lb break="yes"/>zu einem Ganzen doch den ver&#x017F;chieden&#x017F;ten Charakter an.</p>
+                <lb break="yes"/>
+                <p>&#x201E;So wie die Kenntniß der Fo&#x017F;&#x017F;ilien &#x017F;ich von der Ge-<lb break="no"/>birgslehre unter&#x017F;cheidet, &#x017F;o i&#x017F;t von der individuellen Na-<lb break="no"/>turbe&#x017F;chreibung die allgemeine oder die Phy&#x017F;iognomik der<lb break="yes"/>Natur ver&#x017F;chieden. <persName key="forster_g">Georg For&#x017F;ter</persName> in &#x017F;einen Rei&#x017F;en und<lb break="yes"/>in &#x017F;einen kleinen Schriften; Goethe in den Natur&#x017F;childe-<lb break="no"/>rungen, welche &#x017F;o manche &#x017F;einer un&#x017F;terblichen Werke ent-<lb break="no"/>halten; Herder, <persName key="buffon_gllcd">Büffon</persName>, Bernardin de St. Pierre, und<lb break="yes"/>Chateaubriand haben mit unnachahmlicher Wahrheit den<lb break="yes"/>Charakter einzelner Himmels&#x017F;triche ge&#x017F;childert. Solche<lb break="yes"/>Schilderungen &#x017F;ind aber nicht bloß dazu geeignet, dem<lb break="yes"/>Gemüthe einen Genuß der edel&#x017F;ten Art zu ver&#x017F;chaffen;<lb break="yes"/>nein, die Kenntniß von dem Naturcharakter ver&#x017F;chiedener<lb break="yes"/>Weltgegenden i&#x017F;t mit der Ge&#x017F;chichte des Men&#x017F;chenge&#x017F;chlech-<lb break="no"/>tes und mit der &#x017F;einer Kultur auf&#x2019;s innig&#x017F;te verknüpft.<lb break="yes"/>Denn wenn auch der Anfang die&#x017F;er Kultur nicht durch<lb break="yes"/>phy&#x017F;i&#x017F;che Einflü&#x017F;&#x017F;e allein be&#x017F;timmt wird, &#x017F;o hängt doch<lb break="yes"/>die Richtung der&#x017F;elben, &#x017F;o hängen Volkscharakter, dü&#x017F;tere<lb break="yes" />oder heitere Stimmung der Men&#x017F;chheit größtentheils<lb break="yes"/>von klimati&#x017F;chen Verhältni&#x017F;&#x017F;en ab. Wie mächtig hat der<lb break="yes"/>griechi&#x017F;che Himmel auf &#x017F;eine Bewohner gewirkt! Wie<lb break="yes"/>&#x017F;ind nicht in dem &#x017F;chönen und glücklichen Erd&#x017F;triche zwi-<lb break="no"/>&#x017F;chen dem Orus, dem Tigris und dem ägei&#x017F;chen Meere<lb break="yes"/>die &#x017F;ich an&#x017F;iedelnden Völker zuer&#x017F;t zu &#x017F;ittlicher Anmuth<lb break="yes"/>und zarteren Gefühlen erwacht! Und haben nicht, als<lb break="yes"/>Europa in neue Barbarey ver&#x017F;ank, und religiö&#x017F;e Begei-<lb break="no"/>&#x017F;terung plötzlich den heiligen Orient öffnete, un&#x017F;ere Vor-<lb break="no"/>eltern aus jenen milden Thälern von Neuem mildere<lb break="yes"/>Sitten heimgebracht! Die Dichterwerke der Griechen<lb break="yes"/>und die rauheren Ge&#x017F;änge der nordi&#x017F;chen Urvölker ver-<lb break="no"/>dankten größtentheils ihren eigenthümlichen Charakter der<lb break="yes"/>Ge&#x017F;talt der Pflanzen und Thiere, den Gebirgsthälern,<lb break="yes"/>die den Dichter umgaben, und der Luft, die ihn um-<lb break="no"/>wehte. Wer fühlt &#x017F;ich nicht, um &#x017F;elb&#x017F;t nur an nahe Ge-<lb break="no"/>gen&#x017F;tände zu erinnern, anders ge&#x017F;timmt in dem dunkeln<lb break="yes"/>Schatten der Buchen, oder auf Hügeln, die mit einzeln<lb break="yes"/>&#x017F;tehenden Tannen bekränzt &#x017F;ind; oder auf der Grasflur,<lb break="yes"/>wo der Wind in dem zitternden Laube der Birken &#x017F;äu-<lb break="no"/>&#x017F;elt! Melancholi&#x017F;che, ern&#x017F;terhebende, oder fröhliche Bil-<lb break="no" />der rufen die&#x017F;e vaterländi&#x017F;chen Pflanzenge&#x017F;talten in uns<lb break="yes"/>hervor. Der Einfluß der phy&#x017F;i&#x017F;chen Welt auf die mora-<lb break="no"/>li&#x017F;che, dieß geheimnißvolle Ineinanderwirken des Sinn-<lb break="no"/>lichen und Außer&#x017F;innlichen, gibt dem Natur&#x017F;tudium,<lb break="yes"/>wenn man es zu höheren Ge&#x017F;ichtspunkten erhebt, einen<lb break="yes"/>eigenen, noch zu wenig gekannten Reiz.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Wenn aber auch der Charakter ver&#x017F;chiedener Welt-<lb break="no" />gegenden von allen äußeren Er&#x017F;cheinungen zugleich ab-<lb break="no" />hängt, wenn Umriß der Gebirge, Phy&#x017F;iognomie der Pflan-<lb break="no" />zen und Thiere, wenn Himmelbläue, Wolkenge&#x017F;talt und<lb break="yes"/>
+                    <cb/> Durch&#x017F;ichtigkeit des Luftkrei&#x017F;es den Totaleindruck bewir-<lb break="no"/>ken; &#x017F;o i&#x017F;t doch nicht zu läugnen, daß das Hauptbe&#x017F;tim-<lb break="no"/>mende die&#x017F;es Eindrucks die Pflanzendecke i&#x017F;t. Dem thie-<lb break="no"/>ri&#x017F;chen Organismus fehlt es an Ma&#x017F;&#x017F;e, und die Be-<lb break="no"/>weglichkeit der Individuen entzieht &#x017F;ie oft un&#x017F;ern Bli-<lb break="no"/>cken. Die Pflanzen&#x017F;chöpfung wirkt dagegen durch &#x017F;tetige<lb break="yes" />Größe auf un&#x017F;ere Einbildungskraft. Ihre Ma&#x017F;&#x017F;e be-<lb break="no"/>zeichnet ihr Alter, und in den Gewäch&#x017F;en allein i&#x017F;t Al-<lb break="no"/>ter und Ausdruck &#x017F;tets &#x017F;ich erneuernder Kraft mit ein-<lb break="no"/>ander gepaart. Der rie&#x017F;enförmige Drachenbaum, den ich<lb break="yes"/>auf den kanari&#x017F;chen In&#x017F;eln &#x017F;ah, und der &#x017F;echszehn Schuh<lb break="yes"/>im Durchme&#x017F;&#x017F;er hat, trägt noch immerdar (gleich&#x017F;am in<lb break="yes"/>ewiger Jugend) Blüthe und Frucht. Als franzö&#x017F;i&#x017F;che<lb break="yes"/>Abenteurer, die <persName key="betancourt">Bethencourts</persName>, im Anfang des fünfzehn-<lb break="no"/>ten Jahrhunderts die glücklichen In&#x017F;eln eroberten, war<lb break="yes"/>der Drachenbaum von Oratava (den Eingebornen heilig<lb break="yes"/>wie der Oelbaum in der Burg zu <placeName key="athen" >Athen</placeName>, oder die<lb break="yes"/>Ulme zu Ephe&#x017F;us) von eben der kolo&#x017F;&#x017F;alen Stärke als<lb break="yes"/>jezt. In den Tropen i&#x017F;t ein Wald von Hymeneen und<lb break="yes"/>Cä&#x017F;alpinien vielleicht das Denkmal von einem Jahr-<lb break="no"/>tau&#x017F;end.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Umfaßt man mit einem Blick die ver&#x017F;chiedenen<lb break="yes" />Pflanzenarten, welche bereits auf dem Erdboden entdeckt<lb break="yes" />&#x017F;ind, und deren Zahl nach <persName key="candolle_apd" >Decandolle&#x2019;s</persName> Schätzung über<lb break="yes"/>56,000 beträgt, &#x017F;o erkennt man in die&#x017F;er wundervollen<lb break="yes" />Menge wenige Hauptformen, auf welche &#x017F;ich alle andern<lb break="yes" />zurückführen la&#x017F;&#x017F;en. Zur Be&#x017F;timmung die&#x017F;er Formen,<lb break="yes"/>von deren individueller Schönheit, Vertheilung und<lb break="yes"/>Gruppirung die Phy&#x017F;iognomie der Vegetation eines Lan-<lb break="no"/>des abhängt, muß man nicht (wie in den botani&#x017F;chen<lb break="yes"/>Sy&#x017F;temen aus andern Beweggründen ge&#x017F;chieht) auf die<lb break="yes"/>klein&#x017F;ten Theile der Blüthen und Früchte, &#x017F;ondern nur<lb break="yes"/>auf das Rück&#x017F;icht nehmen, was durch Ma&#x017F;&#x017F;e den Total-<lb break="no"/>eindruck einer Gegend individuali&#x017F;irt. Unter den Haupt-<lb break="no"/>formen der Vegetation gibt es allerdings ganze Fami-<lb break="no"/>lien der &#x017F;ogenannten natürlichen Sy&#x017F;teme. Bananen-<lb break="no"/>gewäch&#x017F;e und Palmen werden auch in die&#x017F;en einzeln auf-<lb break="no"/>geführt. Aber der botani&#x017F;che Sy&#x017F;tematiker trennt eine<lb break="yes"/>Menge von Pflanzengruppen, welche der Phy&#x017F;iognomiker<lb break="yes"/>&#x017F;ich gezwungen &#x017F;ieht, mit einander zu verbinden. Wo<lb break="yes"/>die Gewäch&#x017F;e &#x017F;ich als Ma&#x017F;&#x017F;en dar&#x017F;tellen, fließen Umri&#x017F;&#x017F;e<lb break="yes"/>und Vertheilung der Blätter, Ge&#x017F;talt der Stämme und<lb break="yes"/>Zweige in einander. Der Maler (und gerade dem fei-<lb break="no"/>nen Naturgefühle des Kün&#x017F;tlers kommt hier der Aus-<lb break="no"/>&#x017F;pruch zu!) unter&#x017F;cheidet in dem Mittel- und Hinter-<lb break="no"/>grunde einer Land&#x017F;chaft Tannen- oder Palmengebü&#x017F;che<lb break="yes"/>von Buchen, nicht aber die&#x017F;e von andern Laubholzwäl-<lb break="no"/>dern!&#x201C;</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

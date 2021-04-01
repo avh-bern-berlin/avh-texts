@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="511" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">Particulars respecting the</hi>
+                    <hi rendition="#k">Volcanoes</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">in the</hi>
+                    <hi rendition="#k">
+                        <placeName key="anden">Andes</placeName>,</hi>
+                    <hi rendition="#i">and the Fishes thrown<lb break="yes"/>out by them. By M. Von <persName key="humboldt_av">Humboldt</persName>.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">T</hi>
+                    <hi rendition="#g">HE</hi> chain of the <placeName key="anden" >Andes</placeName>, extend-<lb break="no"/>ing more than 2000 leagues,<lb break="yes"/>from the Straits of Magellan to the<lb break="yes"/>northern shores which border on<lb break="yes"/>
+                    <placeName key="asien">Asia</placeName>, contains above fifty volcanoes<lb break="yes"/>still active, of which the phenomena<lb break="yes"/>are as various as their height and lo-<lb break="no"/>cal situation. A small number of<lb break="yes"/>the least elevated of these volcanoes<lb break="yes" />throw out running lava. I have seen,<lb break="yes"/>at the volcano of Zurullo, in Mexico,<lb break="yes"/>a basaltic cone that sprung from the<lb break="yes"/>earth the 15th of September 1759,<lb break="yes"/>and at present rising 1593&#x2154; feet<lb break="yes"/>above the surrounding plain. The<lb break="yes"/>volcanic ridges of Guatimala cast out<lb break="yes"/>a prodigious quantity of muriat of<lb break="yes"/>ammonia. Those of Popayan and the<lb break="yes"/>high plain of Pasto contain either<lb break="yes"/>
+                    <hi rendition="#i">solfatares,</hi> which exhale sulphure-<lb break="no"/>ous acid, or little craters filled<lb break="yes"/>with boiling water, and disengaging<lb break="yes"/>sulphurated hydrogen, which de-<lb break="no" />composes by contact with the oxy-<lb break="no"/>gen of the atmosphere. The volca-<lb break="no"/>noes of the kingdom of Quito throw<lb break="yes"/>out pumice stone, basaltes, and sco-<lb break="no"/>rified porphyries; and vomit enor-<lb break="no"/>mous quantities of water, carburet-<lb break="no"/>ted argil, and muddy matter, which<lb break="yes"/>spreads fertility from eight to ten<lb break="yes"/>leagues around. But since the period<lb break="yes"/>to which the traditions of the na-<lb break="no"/>tives ascend, they have never pro-<lb break="no"/>duced great masses of running melted<lb break="yes" />lava. The height of these colossal<lb break="yes"/>mountains, being five times greater<lb break="yes"/>than that of Vesuvius, and their in-<lb break="no" />land situation are, no doubt, the<lb break="yes"/>principal causes of these anomalies.<lb break="yes"/>The subterranean noise of Cotopaxi<lb break="yes" />during its great explosions, extends<lb break="yes"/>as far as the distance between Vesu-<lb break="no"/>vius and Dijon. But not withstand-<lb break="no" />ing this prodigious force, it is known,<lb break="yes"/>that if the volcanic fire was at a<lb break="yes"/>great depth, the melted lava could<lb break="yes" />neither raise itself to the edge of the<lb break="yes"/>
+                    <fw type="catch" place="bottom">crater,</fw>
+                    <lb break="yes"/>
+                    <pb n="512" facs="#f0002"/>
+                    <cb/> crater, nor pierce the flank of these<lb break="yes"/>mountains, which, to the height of<lb break="yes"/>8970 feet, are fortified by high sur-<lb break="no"/>rounding plains. It appears, there-<lb break="no"/>fore natural, that volcanoes so ele-<lb break="no"/>vated should discharge from their<lb break="yes"/>mouth only detached stones, volca-<lb break="no"/>nic cinders or ashes, flames, boiling<lb break="yes"/>water, and, above all, this carburet-<lb break="no"/>ted argil impregnated with sulphur,<lb break="yes" />that is called <hi rendition="#i">moga</hi> in the language of<lb break="yes" />the country.</p>
+                <lb break="yes"/>
+                <p>The mountains of the kingdom of<lb break="yes"/>Quito sometimes offer to the natura-<lb break="no"/>list another spectacle less alarming,<lb break="yes" />but not less curious. The great ex-<lb break="no"/>plosions are periodical, and some-<lb break="no"/>what rare. Cotopaxi, Tungurahua,<lb break="yes"/>and Sangay, sometimes do not pre-<lb break="no"/>sent one in twenty or thirty years.<lb break="yes"/>But during such intervals, even these<lb break="yes" />volcanoes will discharge enormous<lb break="yes"/>quantities of argillaceous mud; and,<lb break="yes"/>what is more extraordinary, an innu-<lb break="no" />merable quantity of fish. By acci-<lb break="no"/>dent, none of these volcanic inunda-<lb break="no"/>tions took place the year that I pas-<lb break="no" />sed the <placeName key="anden">Andes</placeName> of Quito; but the fish<lb break="yes"/>vomited from the volcanoes is a phe-<lb break="no"/>nomenon so common, and so gene-<lb break="no"/>rality known by all the inhabitants<lb break="yes"/>of that country, that there cannot<lb break="yes"/>remain the least doubt of its authen-<lb break="no"/>ticity. As there are in these regions<lb break="yes"/>several very well informed persons,<lb break="yes" />who have successfully devoted them-<lb break="no"/>selves to the physical sciences, I have<lb break="yes"/>had an opportunity of procuring exact<lb break="yes"/>information respecting these fishes.<lb break="yes"/>M. <persName key="larreayvillavicencio_j">de Larrae</persName>, at Quito, well versed<lb break="yes"/>in the study of chemistry, who has<lb break="yes" />formed a cabinet of the minerals of his<lb break="yes"/>country, has been particularly use-<lb break="no"/>ful to me in these researches. Exa-<lb break="no"/>mining the archives of several little<lb break="yes"/>towns in the neighbourhood of Co-<lb break="no"/>topaxi, in order to extract the e-<lb break="no"/>pochs of the great earthquakes, that<lb break="yes"/>fortunately have been preserved with<lb break="yes"/>care, I there found some notes on<lb break="yes"/>the fish ejected from the volcanoes.<lb break="yes"/>On the estates of the <persName key="montufarylarrea_jpd">Marquis of<lb break="yes"/>
+                        <cb/> Selvalegre</persName> the Cotopaxi had thrown<lb break="yes"/>a quantity so great, that their putre-<lb break="no"/>faction spread a fetid odour around.<lb break="yes"/>In 1691, the almost extinguished vol-<lb break="no" />cano of Imbaburu threw out thou-<lb break="no"/>sands on the fields in the environs of<lb break="yes"/>the city of Ibarra. The putrid fevers<lb break="yes" />which commenced at that period<lb break="yes"/>were attributed to the miasma which<lb break="yes"/>exhaled from these fish, heaped on<lb break="yes"/>the surface of the earth, and exposed<lb break="yes"/>to the rays of the sun. The last<lb break="yes"/>time that Imbaburu ejected fish, was<lb break="yes"/>on the 19th of June 1798, when the<lb break="yes"/>volcano of Corgneirazo sunk, and<lb break="yes"/>thousands of these animals, enveloped<lb break="yes"/>in argillaceous mud, were thrown<lb break="yes"/>over the crumbling borders.</p>
+                <lb break="yes"/>
+                <p>The Cotopaxi and Tungurahua<lb break="yes"/>throw out fish, sometimes by the<lb break="yes"/>crater which is at the top of these<lb break="yes"/>mountains, sometimes by lateral vents,<lb break="yes"/>but constantly at 15,000 or 16,000<lb break="yes"/>feet above the level of the sea: the<lb break="yes" />adjacent plains being 9000 feet high,<lb break="yes"/>we may conclude that these animals<lb break="yes"/>issue from a point which is 9000<lb break="yes" />feet higher than the plains on which<lb break="yes"/>they are thrown. Some Indians<lb break="yes"/>have assured me that the fish thrown<lb break="yes" />out by the volcanoes were sometimes<lb break="yes"/>still alive, as they descended along<lb break="yes"/>the flank of the mountain: but this<lb break="yes"/>fact does not appear to me sufficient-<lb break="no"/>ly proved: certain it is that among<lb break="yes"/>the thousands of dead fish that in a<lb break="yes"/>few hours are seen descending from<lb break="yes"/>Cotopaxi with great bodies of cold<lb break="yes"/>fresh water, there are very few that<lb break="yes"/>are so much disfigured that we can<lb break="yes" />believe them to have been exposed to<lb break="yes"/>the action of a strong heat. This<lb break="yes"/>fact becomes still more striking,<lb break="yes" />when we consider the soft flesh of<lb break="yes"/>these animals, and the thick smoke<lb break="yes"/>which the volcano exhales during<lb break="yes"/>the eruption. It appeared to me of<lb break="yes"/>very great importance to descriptive<lb break="yes"/>natural history to verify sufficiently<lb break="yes"/>the nature of these animals. All<lb break="yes"/>the inhabitants agree that they are<lb break="yes"/>the same with those which are found<lb break="yes"/>
+                    <fw type="catch" place="bottom">in</fw>
+                    <lb break="yes"/>
+                    <pb n="513" facs="#f0003"/>
+                    <cb/> in the rivulets at the foot of these<lb break="yes"/>volcanoes, and called prennadillas:<lb break="yes"/>they are even the only species of fish<lb break="yes"/>that is discovered at the height of<lb break="yes"/>above 7 500 toises, in the waters of<lb break="yes"/>the kingdom of Quito. M. <persName key="lacepede_bg">Lace-<lb break="no"/>pede</persName>, who has also examined it, ad-<lb break="no"/>vised me to place it in that division<lb break="yes"/>of Silurus, which, in the fifth volume<lb break="yes"/>of his natural history of fishes, he<lb break="yes"/>has described under the name of <hi rendition="#i">pi-<lb break="no"/>melodes.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>From the enormous quantity of<lb break="yes"/>Pimelodes the volcanoes of the king-<lb break="no"/>dom of Quito occasionally discharge,<lb break="yes"/>we cannot doubt, that this coun-<lb break="no"/>try contains great subterranean lakes<lb break="yes"/>which conceal these, for in the little<lb break="yes" />rivers around there are very few. A<lb break="yes"/>part of those rivers may communicate<lb break="yes"/>with the subterranean pits; it is also<lb break="yes"/>probable that the first pimelodes<lb break="yes"/>which have inhabited these pits have<lb break="yes"/>mounted there against the current.<lb break="yes"/>I have seen fish in the caverns of<lb break="yes"/>Derbyshire in England; and near<lb break="yes"/>Gailenreath, in Germany, where the<lb break="yes"/>fossil heads of bears and lions are<lb break="yes"/>found, there are living trouts in the<lb break="yes"/>grottoes, which at present are very<lb break="yes"/>distant from any rivulet, and greatly<lb break="yes" />elevated above the level of the neigh-<lb break="no"/>bouring waters. In the province of<lb break="yes"/>Quito, the subterraneous roarings<lb break="yes" />that accompany the earthquakes;<lb break="yes"/>the masses of rocks that we think<lb break="yes"/>we hear crumbling down below the<lb break="yes"/>earth we walk on; the immense<lb break="yes"/>quantity of water that issues from<lb break="yes"/>the earth during the volcanic explo-<lb break="no"/>sions, and numerous other phenome-<lb break="no"/>na, indicate that all the soil of this<lb break="yes"/>elevated plain is undermined. But,<lb break="yes"/>if it is easy to conceive that vast sub-<lb break="no"/>terranean basins may be filled, it is<lb break="yes"/>more difficult to explain how these<lb break="yes" />animals are attracted by volcanoes<lb break="yes"/>that ascend to the height of 9000<lb break="yes"/>feet, and discharged either by their<lb break="yes" />craters or by their lateral vents.<lb break="yes"/>Should we suppose that the pimelodes<lb break="yes"/>
+                    <cb/> exist in subterranean basins of the<lb break="yes"/>same height at which they are seen<lb break="yes"/>to issue? How conceive their origin<lb break="yes" />in a position so extraordinary; in<lb break="yes"/>the flank of a cone so often heated,<lb break="yes"/>and perhaps partly produced by vol-<lb break="no" />canic fire? Whatever may be the<lb break="yes"/>source from which they issue, the per-<lb break="no"/>fect state in which they are found<lb break="yes" />induces us to believe that those vol-<lb break="no"/>canoes, the most elevated and the<lb break="yes"/>most active in the world, experience<lb break="yes" />from time to time, convulsive move-<lb break="no"/>ments, during which the disengage-<lb break="no"/>ment of caloric appears less consi-<lb break="no" />derable than we should suppose it.<lb break="yes"/>Earthquakes do not always accom-<lb break="no"/>pany those phenomena.</p>
+                <lb break="yes"/>
+                <p>The corregidor of the city of Ibar-<lb break="no"/>ra, Don <persName key="pardo_jp">José Pose Pardo</persName>, has com-<lb break="no"/>municated to me an interesting ob-<lb break="no"/>servation on the pimelodes. <choice>
+                        <sic>It</sic>
+                        <corr type="editorial">&#x201E;It</corr>
+                    </choice> is<lb break="yes"/>known (says he in a letter which<lb break="yes"/>I have still preserved,) that the vol-<lb break="no"/>cano of Imbaburu, at the time of<lb break="yes"/>its great eruption on the side next<lb break="yes"/>our city, threw out an enormous<lb break="yes"/>quantity of prennadillas; it even<lb break="yes"/>continues still occasionally to do so,<lb break="yes" />especially after great rains. It<lb break="yes"/>is observed, that these fishes ac-<lb break="no"/>tually live in the interior of the<lb break="yes" />mountain, and that the Indians of<lb break="yes"/>St Pabla fish for them in a rivulet<lb break="yes"/>at the very place whence they issue<lb break="yes" />from the rock. The fishery does<lb break="yes"/>not succeed either in the day or in<lb break="yes"/>moonlight: a very dark night is<lb break="yes"/>therefore necessary, as the prenna-<lb break="no"/>dillas will not otherwise come out<lb break="yes"/>of the volcano, the interior of which<lb break="yes"/>is hollow.&#x201D; It appears then that<lb break="yes"/>the light is injurious to these sub-<lb break="no"/>terraneous fishes, which are not ac-<lb break="no" />customed to so strong a stimulus;<lb break="yes"/>an observation so much the more<lb break="yes"/>curious, that the pimelodes of the<lb break="yes"/>same species, which inhabit the<lb break="yes"/>brooks in the vicinity of the city of<lb break="yes"/>Quito, live exposed to the bright-<lb break="no"/>ness of the meridian sun.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

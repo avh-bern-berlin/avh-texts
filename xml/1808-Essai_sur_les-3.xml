@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="393" facs="#f0001"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">MÉMOIRE</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#i">
+                        <hi rendition="#g">
+                            <hi rendition="#k">Sur</hi>
+                        </hi> les Réfractions astronomiques dans la<lb break="yes"/>zone torride, correspondantes à des angles<lb break="yes"/>de hauteur plus petite que</hi> 10°.<lb break="yes"/>Par M. <hi rendition="#g">
+                        <hi rendition="#k">de <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                    </hi>
+                    <note place="foot" n="(1)">Cet article est extrait du <hi rendition="#i">Nouveau Bulletin des<lb break="yes"/>Sciences,</hi> n°. 9, tom. 1, p. 162.</note>.<lb break="yes"/>
+                    <hi rendition="#g">(<hi rendition="#i">EXTRAIT.</hi>)</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#g">
+                        <hi rendition="#k">
+                            <hi rendition="#in">O</hi>n</hi>
+                    </hi> sait que la réfraction d&#x2019;un astre observé<lb break="yes"/>à une hauteur assez grande au-dessus de l&#x2019;ho-<lb break="no"/>rizon, par exemple, à une hauteur qui sur-<lb break="no"/>passe 10°., est indépendante de la constitution<lb break="yes"/>de l&#x2019;atmosphère, et qu&#x2019;elle ne dépend que de<lb break="yes"/>l&#x2019;état du baromètre et du thermomètre, au lieu<lb break="yes"/>m&#x00EA;me de l&#x2019;observation. Les tables de réfrac-<lb break="no"/>tions, calculées pour ces hauteurs et pour<lb break="yes"/>toutes les températures et les densités de l&#x2019;air,<lb break="yes"/>peuvent donc &#x00EA;tre employées dans tous les<lb break="yes" />lieux de la terre, en prenant dans ces tables<lb break="yes"/>la réfraction relative à la température et à la<lb break="yes"/>densité de l&#x2019;air, indiquées par le thermomètre<lb break="yes"/>et le baromètre, à l&#x2019;instant de l&#x2019;observation.<lb break="yes"/>Mais il n&#x2019;en est pas de m&#x00EA;me des réfractions<lb break="yes"/>horizontales, ou presque horizontales: elles<lb break="yes"/>dépendent de l&#x2019;hypothèse que l&#x2019;on adopte sur<lb break="yes"/>la constitution de l&#x2019;atmosphère, par conséquent<lb break="yes"/>
+                    <pb n="394" facs="#f0002"/> elles seront différentes dans les différentes ré-<lb break="no"/>gions de la terre, si la constitution de l&#x2019;atmos-<lb break="no"/>phère n&#x2019;y est pas la m&#x00EA;me. M. de <persName key="humboldt_av">Humboldt</persName>
+                    <lb break="yes"/>s&#x2019;est proposé de comparer les réfractions qu&#x2019;il<lb break="yes"/>a observées dans la zone torride, à celles qui<lb break="yes"/>ont lieu dans la zone tempérée et vers les p&#x00F4;les.<lb break="yes"/>Cette comparaison intéresse non-seulement l&#x2019;as-<lb break="no"/>tronomie, mais encore la physique, en ce qu&#x2019;elle<lb break="yes"/>peut jeter un grand jour sur la constitution phy-<lb break="no"/>sique de l&#x2019;atmosphère; car parmi les causes qui<lb break="yes"/>la font varier, il en est qui peuvent influer sen-<lb break="no"/>siblement sur les réfractions: c&#x2019;est par une dis-<lb break="no"/>cussion détaillée de ces diverses causes, que<lb break="yes"/>M. de <persName key="humboldt_av">Humboldt</persName> commence son Mémoire.</p>
+                <lb break="yes"/>
+                <p>Le pouvoir réfringent du gaz oxygène étant<lb break="yes"/>moindre <choice>
+                        <sic>qne</sic>
+                        <corr type="editorial">que</corr>
+                    </choice> celui de l&#x2019;azote, un changement<lb break="yes"/>dans les proportions de ces deux gaz qui com-<lb break="no"/>posent l&#x2019;air en produirait un dans les réfrac-<lb break="no"/>tions; mais M. de <persName key="humboldt_av">Humboldt</persName> et d&#x2019;autres physi-<lb break="no"/>ciens ont reconnu que ces proportions sont<lb break="yes" />exactement les m&#x00EA;mes à l&#x2019;équateur et à notre<lb break="yes" />latitude. L&#x2019;air pris à une grande hauteur au-<lb break="maybe"/>dessus de la surface de la terre, et soumis aux<lb break="yes"/>moyens eudiométriques les plus précis, donne<lb break="yes"/>encore les m&#x00EA;mes proportions d&#x2019;oxygène et d&#x2019;a-<lb break="no"/>zote; et m&#x00EA;me M. <persName key="gaylussac_jl">Gay-Lussac</persName> a vérifié, dans sa<lb break="yes" />dernière ascension aérostatique, que les pe-<lb break="no"/>tites quantités d&#x2019;hydrogène et d&#x2019;acide carboni-<lb break="no"/>que que renferme l&#x2019;air, sont exactement les<lb break="yes"/>m&#x00EA;mes à la surface de la terre et dans les ré-<lb break="no"/>gions élevées de l&#x2019;atmosphère. Il para&#x00EE;t donc<lb break="yes"/>que la masse fluide qui enveloppe la terre est<lb break="yes"/>homogène dans toutes ses parties: on sait en<lb break="yes"/>effet que différens gaz mis en contact ne se<lb break="yes" />disposent pas, d&#x2019;après leurs pesanteurs spéci-<lb break="no"/>
+                    <pb n="395" facs="#f0003"/> fiques, comme feraient des fluides incompres-<lb break="no"/>sibles: ils parviennent au contraire, dans un<lb break="yes" />tems plus ou moins long, à se mélanger parfai-<lb break="no"/>tement et à former un tout homogène. Cet état<lb break="yes"/>subsiste indéfiniment, malgré la différence de<lb break="yes"/>densité, parce que le mélange parfait des flui-<lb break="no"/>des élastiques est le seul état où leur équilibre<lb break="yes"/>soit stable; tout autre arrangement que l&#x2019;on<lb break="yes"/>pourrait concevoir n&#x2019;offrirait qu&#x2019;un équilibre<lb break="yes"/>instantané, et la moindre agitation en écarte-<lb break="no" />rait les fluides, qui reviendraient toujours à<lb break="yes"/>l&#x2019;état d&#x2019;équilibre stable, c&#x2019;est-à-dire, à l&#x2019;état<lb break="yes" />de mélange parfait. Il n&#x2019;est donc pas nécessaire<lb break="yes" />d&#x2019;admettre l&#x2019;action d&#x2019;une affinité, ou un com-<lb break="no"/>mencement de combinaison chimique, entre les<lb break="yes" />différens fluides dont l&#x2019;atmosphère est compo-<lb break="no"/>sée, pour expliquer l&#x2019;identité de sa composi-<lb break="no"/>tion; il suffit pour cela d&#x2019;avoir égard à la sta-<lb break="no"/>bilité de leur équilibre. (<hi rendition="#i">Voyez</hi> sur ce point<lb break="yes"/>la troisième édition de l&#x2019;<hi rendition="#i">Exposition du Système<lb break="yes"/>du monde,</hi> livre 4, chap. 17.)</p>
+                <lb break="yes"/>
+                <p>Entre les tropiques, M. de <persName key="humboldt_av">Humboldt</persName> a ob-<lb break="no"/>servé que l&#x2019;hygromètre indique généralement<lb break="yes"/>une humidité plus grande que dans nos cli-<lb break="no"/>mats; mais l&#x2019;eau qui est suspendue dans l&#x2019;at-<lb break="no"/>mosphère, sans en troubler la transparence,<lb break="yes"/>n&#x2019;altère pas les réfractions; car si, d&#x2019;une part,<lb break="yes"/>le pouvoir réfringent de la vapeur d&#x2019;eau l&#x2019;em-<lb break="no"/>porte sur celui de l&#x2019;air, d&#x2019;un autre c&#x00F4;té, la<lb break="yes"/>densité de cette vapeur est moindre, à force<lb break="yes"/>élastique égale, que celle de l&#x2019;air; et il arrive<lb break="yes"/>que cette diminution de densité compense, à<lb break="yes"/>très-peu près, l&#x2019;augmentation de pouvoir ré-<lb break="no"/>fringent. Dans le dixième livre de la <hi rendition="#i" >Mécanique<lb break="yes"/>céleste,</hi> M. <persName key="laplace_ps" >Laplace</persName> avait déjà supposé cette<lb break="yes"/>
+                    <pb n="396" facs="#f0004"/> compensation; et depuis, M. <persName key="biot_jb" >Biot</persName> l&#x2019;a mise en-<lb break="no"/>tièrement hors de doute, par des expériences<lb break="yes"/>directes sur le pouvoir réfringent de l&#x2019;air, à<lb break="yes"/>différens degrés d&#x2019;humidité.</p>
+                <lb break="yes"/>
+                <p>La vapeur que l&#x2019;on appelle <hi rendition="#i">vésiculaire,</hi> et<lb break="yes"/>qui diffère à tant d&#x2019;égards de la vapeur trans-<lb break="no"/>parente, se comporte-t-elle comme celle-ci dans<lb break="yes" />les réfractions? L&#x2019;expérience laisse encore quel-<lb break="no"/>ques doutes sur ce point: des observations du<lb break="yes"/>soleil vu à travers un nuage, par M. de Hum-<lb break="no"/>boldt, dans le royaume de Quito, et par M. <persName key="arago_dfj">Ar-<lb break="no"/>rago</persName> à l&#x2019;Observatoire de Paris, paraissent indi-<lb break="no"/>quer que les réfractions ne sont point altérées<lb break="yes"/>par cette singulière modification de la vapeur<lb break="yes"/>d&#x2019;eau; mais d&#x2019;autres observation&#x015B; faites par<lb break="yes"/>M. <persName key="delambre_jbj" >Delambre</persName> à Bois-Commun (département du<lb break="yes"/>Loiret), pendant un brouillard fort épais,<lb break="yes"/>conduisent à un résultat contraire. Cependant<lb break="yes"/>M. de <persName key="humboldt_av" >Humboldt</persName> incline à penser que les ré-<lb break="no"/>fractions ne sont pas troublées par les vapeurs<lb break="yes"/>vésiculaires, et que les observations de M. <persName key="delambre_jbj">De-<lb break="no" />lambre</persName> doivent &#x00EA;tre regardées comme des ano-<lb break="no"/>malies dont il assigne plusieurs causes. Nous<lb break="yes" />n&#x2019;entrerons pas ici dans le détail des considé-<lb break="no"/>rations physiques sur lesquelles il appuie son<lb break="yes"/>opinion.</p>
+                <lb break="yes"/>
+                <p>La chaleur décro&#x00EE;t à mesure que l&#x2019;on s&#x2019;élève<lb break="yes" />dans l&#x2019;atmosphère; or la loi de ce décroisse-<lb break="no"/>ment influe sur les réfractions horizontales,<lb break="yes"/>parce qu&#x2019;elle influe sur le décroissement de la<lb break="yes"/>densité. (<hi rendition="#i" >Voyez</hi> les formules du dixième livre de<lb break="yes"/>la <hi rendition="#i">Mécanique céleste</hi>). Elles augmentent lors-<lb break="no" />que l&#x2019;on suppose que la chaleur décro&#x00EE;t moins<lb break="yes" />rapidement, et elles diminuent, quand ce dé-<lb break="no"/>
+                    <pb n="397" facs="#f0005"/> croissement devient plus rapide. Les observa-<lb break="no"/>tions du thermomètre que M. de <persName key="humboldt_av" >Humboldt</persName> a<lb break="yes"/>faites sur les montagnes du Pérou, lui ont<lb break="yes"/>donné, pour résultat moyen, un degré centi-<lb break="no"/>grade d&#x2019;abaissement pour 191 mètres d&#x2019;élé-<lb break="no"/>vation: celles que M. <persName key="gaylussac_jl" >Gay-Lussac</persName> a faites dans<lb break="yes"/>sa dernière ascension aérostatique, donnent<lb break="yes"/>1° pour 193 mètres. Le décroissement de la cha-<lb break="no"/>leur étant donc à très-peu près le m&#x00EA;me à l&#x2019;é-<lb break="no"/>quateur et dans nos climats, et cette cause<lb break="yes"/>étant la seule qui puisse influer sur les réfrac-<lb break="no" />tions, M. de <persName key="humboldt_av">Humboldt</persName> en conclut qu&#x2019;elles<lb break="yes"/>doivent &#x00EA;tre les m&#x00EA;mes à ces deux latitudes.<lb break="yes"/>Cette conclusion importante est contraire à<lb break="yes"/>l&#x2019;opinion de <persName key="bouguer_p" >Bouguer</persName>, qui les croyait plus fai-<lb break="no"/>bles à l&#x2019;équateur; mais elle est confirmée par<lb break="yes"/>les nombreuses observations que M. de Hum-<lb break="no"/>boldt a faites entre les tropiques, et par d&#x2019;au-<lb break="no"/>tres observations faites par <persName key="maskelyne_01">Maskeline</persName>, à la Bar-<lb break="no"/>bade. Les réfractions trouvées par ces deux ob-<lb break="no"/>servateurs, ne diffèrent pas sensiblement de<lb break="yes"/>celles des tables que le Bureau des longitudes<lb break="yes"/>a publiées et qui ont été calculées d&#x2019;après une<lb break="yes"/>longue suite d&#x2019;observations faites à Bourges<lb break="yes"/>par M. <persName key="delambre_jbj" >Delambre</persName>.</p>
+                <lb break="yes"/>
+                <p>Deux observations faites en Laponie, par<lb break="yes"/>M. <persName key="svanberg_01">Swanberg</persName>, à 13 et à 29 degrés au-dessous<lb break="yes"/>de zéro, donnent des réfractions, qui étant ra-<lb break="no" />menées à la température zéro, surpassent de<lb break="yes"/>beaucoup celles des tables de M. <persName key="delambre_jbj">Delambre</persName>. On<lb break="yes"/>ne peut attribuer ce résultat qu&#x2019;à un décroisse-<lb break="no"/>ment de chaleur plus lent au p&#x00F4;le qu&#x2019;à notre<lb break="yes"/>latitude; et en effet ce ralentissement est pré-<lb break="no" />sumable, puisque vers le p&#x00F4;le, la température<lb break="yes"/>à la surface de la terre est déjà plus basse que<lb break="yes"/>
+                    <pb n="398" facs="#f0006"/> celle qui a lieu, à notre latitude, dans des<lb break="yes"/>régions très-élevées de l&#x2019;atmosphère.</p>
+                <lb break="yes"/>
+                <p>En faisant le calcul, d&#x2019;après les formules ci-<lb break="no"/>tées plus haut, M. <persName key="mathieu_cl">Mathieu</persName> (secrétaire du Bu-<lb break="no"/>reau des longitudes) a trouvé que les réfrac-<lb break="no" />tions observées par M. <persName key="svanberg_01">Swanberg</persName>, supposent<lb break="yes"/>un décroissement de chaleur de 1° pour 244<lb break="yes"/>mètres d&#x2019;élévation, tandis qu&#x2019;à notre latitude<lb break="yes"/>ce décroissement s&#x2019;élève à 1° pour 193 mètres.</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

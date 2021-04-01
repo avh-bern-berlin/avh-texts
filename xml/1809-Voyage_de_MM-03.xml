@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="741" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt&#x2019;</hi>&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <head>1.<lb break="yes"/>
+                        <hi rendition="#g">Das alte und neue Mexiko.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Man i&#x017F;t &#x017F;chon &#x017F;o lange her daran gewo&#x0364;hnt, von der<lb break="yes"/>Haupt&#x017F;tadt Mexiko&#x2019;s als von einer mitten in einem See<lb break="yes"/>gebauten Stadt zu ho&#x0364;ren, welche nur durch Da&#x0364;mme mit<lb break="yes"/>dem fe&#x017F;ten Lande zu&#x017F;ammenha&#x0364;nge, und mag &#x017F;ich daher &#x017F;ehr<lb break="yes"/>wundern, den Mittelpunkt der heutigen Stadt in meinem<lb break="yes"/>mexikani&#x017F;chen Atlas um 4,500 Metern von dem See Tez-<lb break="no"/>cuco und von dem von Chalco u&#x0364;ber 9000 M. entfernt zu<lb break="yes"/>finden. Man wird deswegen entweder die Genauigkeit der<lb break="yes"/>in den Entdeckungsge&#x017F;chichten der <placeName key="amerika">neuen Welt</placeName> gegebenen<lb break="yes" />Be&#x017F;chreibungen in Zweifel ziehen, oder &#x017F;ich mit der Erkla&#x0364;-<lb break="no"/>rung helfen, daß die heutige Haupt&#x017F;tadt von Mexiko nicht<lb break="yes"/>auf den na&#x0364;mlichen Grund gebaut &#x017F;ey, auf welchem die alte<lb break="yes" />Re&#x017F;idenz von <persName key="montezuma_ii">Montezuma</persName> ge&#x017F;tanden habe. Allein es i&#x017F;t<lb break="yes"/>vo&#x0364;llig zuverla&#x0364;&#x017F;&#x017F;ig, daß die Stadt ihre Stelle nicht vera&#x0364;ndert<lb break="yes"/>hat. Die Domkirche von Mexiko &#x017F;teht genau auf dem&#x017F;elben<lb break="yes"/>Platze, wo &#x017F;ich der Tempel des <persName key="huitzilopochtli" >Huitzilopochtli</persName> befand; die<lb break="yes"/>heutige Straße Tacuba i&#x017F;t die alte Straße Tlacopan, durch<lb break="yes"/>welche <persName key="cortes_h">
+                            <hi rendition="#g">Cortez</hi>
+                        </persName> in der traurigen Nacht (zur Auszeichnung<lb break="yes"/>
+                        <hi rendition="#aq">la noche triste</hi> genannt) vom 1 Juli 1520 den beru&#x0364;hmten<lb break="yes"/>Ru&#x0364;ckzug gemacht hat, und die an&#x017F;cheinende Ver&#x017F;chiedenheit<lb break="yes"/>der Lage, wie &#x017F;ie auf den alten Karten und den meinigen<lb break="yes"/>angegeben i&#x017F;t, kommt blos von der Verminderung des<lb break="yes" />Wa&#x017F;&#x017F;ers im See von Tezcuco her.</p>
+                    <lb break="yes"/>
+                    <cb/>
+                    <p>Es wird nicht unnu&#x0364;tz &#x017F;eyn, hier eine Stelle aus einem<lb break="yes"/>unter dem 30 Okt. 1520 von <persName key="cortes_h">
+                            <hi rendition="#g">Cortez</hi>
+                        </persName> an Kai&#x017F;er <persName key="karlv">
+                            <hi rendition="#g">Karl</hi>
+                            <hi rendition="#aq">V</hi>
+                        </persName>
+                        <lb break="yes"/>erla&#x017F;&#x017F;enen Briefe anzufu&#x0364;hren, worin er ein Gema&#x0364;hlde von<lb break="yes"/>dem Thale von Mexiko entwirft. Es i&#x017F;t mit hoher Ein-<lb break="no"/>fachheit verfaßt, und &#x017F;childert zugleich die Polizey, welche<lb break="yes"/>in dem alten Tenochtitlan herr&#x017F;chte. &#x201E;Die Provinz, &#x017F;agt<lb break="yes"/>
+                        <persName key="cortes_h">
+                            <hi rendition="#g">Cortez,</hi>
+                        </persName> in welcher die Re&#x017F;idenz die&#x017F;es großen Fu&#x0364;r&#x017F;ten<lb break="yes"/>
+                        <persName key="montezuma_ii">Muteczuma</persName> liegt, i&#x017F;t rings von hohen und durch Abgru&#x0364;nde<lb break="yes"/>durch&#x017F;chnittenen Gebirgen umgeben. Die Ebene hat beynahe<lb break="yes"/>&#x017F;iebenzig Stunden im Umfange, und entha&#x0364;lt zwey Seen,<lb break="yes"/>welche fa&#x017F;t das ganze Thal ausfu&#x0364;llen, &#x017F;o daß die Einwoh-<lb break="no"/>ner von einem Umkrei&#x017F;e von mehr als funfzig Stunden<lb break="yes"/>in Ka&#x0364;hnen fahren.&#x201D; (Hiebey i&#x017F;t zu bemerken, daß <persName key="cortes_h">Cortez</persName>
+                        <lb break="yes"/>blos von zwey Seen &#x017F;pricht, weil er die von Zumpango und<lb break="yes"/>Xaltocan, zwi&#x017F;chen denen er auf &#x017F;einer Flucht von Mexiko<lb break="yes"/>nach Tlascallo vor der Schlacht von Otumba eilig&#x017F;t durch-<lb break="no"/>zog, nur unvollkommen kannte.) &#x201E;Von die&#x017F;en beyden gro&#x017F;-<lb break="no"/>&#x017F;en Seen im Thale von Mexiko entha&#x0364;lt der eine &#x017F;u&#x0364;ßes,<lb break="yes"/>und der andere ge&#x017F;alzenes Wa&#x017F;&#x017F;er. Sie &#x017F;ind blos durch<lb break="yes"/>einen kleinen Strich von Gebirgen (die koni&#x017F;chen und frey-<lb break="no"/>&#x017F;tehenden Hu&#x0364;gel bey Iztapalapan) von einander getrennt.<lb break="yes" />Die&#x017F;e Gebirge erheben &#x017F;ich mitten in der Ebene, und die<lb break="yes"/>Wa&#x017F;&#x017F;er des Sees vermi&#x017F;chen &#x017F;ich nur in einer &#x017F;chmalen<lb break="yes"/>Fuge, welche zwi&#x017F;chen den Hu&#x0364;geln und der hohen Cordillera<lb break="yes" />(wahr&#x017F;cheinlich auf der o&#x0364;&#x017F;tlichen Senkung von Cerros de<lb break="yes"/>Santa Fe) liegt. Die vielen Sta&#x0364;dte und Do&#x0364;rfer, die auf<lb break="yes"/>beyden Seen gebaut &#x017F;ind, treiben ihren Handel auf Ka&#x0364;hnen,<lb break="yes"/>und nicht u&#x0364;ber das fe&#x017F;te Land hin. Die große Stadt Te-<lb break="no"/>
+                        <pb n="742" facs="#f0002"/>
+                        <cb/> mixtitan (Tenochtitlan) &#x017F;teht mitten in dem Salz-See, der<lb break="yes"/>&#x017F;eine Ebben und Fluthen hat, gleich dem Meere. Von<lb break="yes"/>welcher Seite des Ufers man kommen mag, braucht<lb break="yes"/>man immer zwey Stunden, um &#x017F;ie zu erreichen. Vier<lb break="yes"/>Da&#x0364;mme fu&#x0364;hren nach die&#x017F;er Stadt. Sie &#x017F;ind das Werk der<lb break="yes"/>Men&#x017F;chenha&#x0364;nde, und immerhin zwey Lanzenla&#x0364;ngen breit.<lb break="yes"/>Die Stadt &#x017F;elb&#x017F;t i&#x017F;t &#x017F;o groß als Sevilla oder Cordoba.<lb break="yes"/>Die Straßen, das heißt die Haupt&#x017F;traßen, &#x017F;ind zum Theil<lb break="yes"/>&#x017F;ehr enge, zum Theil &#x017F;ehr weit; die einen halb trocken, die<lb break="yes"/>andern zur Ha&#x0364;lfte von &#x017F;chiffbaren Kana&#x0364;len durch&#x017F;chnitten,<lb break="yes" />welche mit hu&#x0364;b&#x017F;chgebauten ho&#x0364;lzernen und &#x017F;o gera&#x0364;umigen<lb break="yes"/>Bru&#x0364;cken ver&#x017F;ehen &#x017F;ind, daß zehen Reiter zugleich daru&#x0364;ber<lb break="yes" />&#x017F;etzen ko&#x0364;nnen. Der Markt i&#x017F;t doppelt &#x017F;o groß, als der von<lb break="yes"/>Sevilla, und mit einem ungeheuern Portikus umgeben,<lb break="yes"/>unter welchem alle Arten von Waaren, Lebensmitteln,<lb break="yes"/>Kleider&#x017F;chmuck von Gold, Silber, Bley, Kupfer, edeln<lb break="yes"/>Steinen, Knochen, Mu&#x017F;cheln und Federn, von Leder und<lb break="yes"/>Baumwollen&#x017F;toffen, zum Verkaufe ausge&#x017F;tellt &#x017F;ind. Auch<lb break="yes"/>findet man hier gehauene Steine, Ziegel und Zimmerholz.<lb break="yes"/>Einzelne Stellen &#x017F;ind fu&#x0364;r den Verkauf von Wildbret, andere<lb break="yes"/>von Gemu&#x0364;ßen und Gartenkra&#x0364;utern eingerichtet. Hier be-<lb break="no"/>finden &#x017F;ich auch eigene Ha&#x0364;u&#x017F;er, wo die Barbiere (mit Scher-<lb break="no"/>me&#x017F;&#x017F;ern von Ob&#x017F;idian) die Kopfhaare ra&#x017F;iren, und andere,<lb break="yes" />welche un&#x017F;ern Apothekerbuden gleichen, <choice>
+                            <sic>nnd</sic>
+                            <corr type="editorial">und</corr>
+                        </choice> wo &#x017F;chon vo&#x0364;llig<lb break="yes"/>zubereitete Arzneimittel, Salben und Pfla&#x017F;ter verkauft<lb break="yes"/>werden. In andern Ha&#x0364;u&#x017F;ern gibt man um&#x2019;s Geld zu e&#x017F;&#x017F;en<lb break="yes"/>und zu trinken, und man &#x017F;ieht u&#x0364;berhaupt &#x017F;o vielerley Dinge<lb break="yes"/>auf dem Markte, daß ich nicht im Stande bin, &#x017F;ie Ew.<lb break="yes"/>Hoheit alle aufzuza&#x0364;hlen. Um Verwirrung zu vermeiden,<lb break="yes"/>werden alle Waaren an abge&#x017F;onderten Orten verkauft. Alles<lb break="yes"/>wird nach der Elle geme&#x017F;&#x017F;en, und wir haben bis jetzt noch<lb break="yes"/>kein Gewicht brauchen &#x017F;ehen. Mitten auf dem großen Platze<lb break="yes"/>&#x017F;teht ein Haus, welches ich die Audiencia nennen mo&#x0364;chte,<lb break="yes"/>und wo immer zehn bis zwo&#x0364;lf Richter &#x017F;itzen, welche u&#x0364;ber<lb break="yes"/>die bey&#x2019;m Handel ent&#x017F;tandenen Streitigkeiten ent&#x017F;cheiden.<lb break="yes" />Eine andre Art o&#x0364;ffentlicher Per&#x017F;onen i&#x017F;t unaufho&#x0364;rlich im<lb break="yes"/>Gedra&#x0364;nge verbreitet, fu&#x0364;hrt die Auf&#x017F;icht daru&#x0364;ber, daß um<lb break="yes" />billige Prei&#x017F;e verkauft wird, und man hat bemerkt, wie &#x017F;ie<lb break="yes"/>die fal&#x017F;chen Maße, welche &#x017F;ie bey den Kaufleuten fanden,<lb break="yes"/>zerbrachen.&#x201D;</p>
+                </div>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <cb/>
+                <pb n="745" facs="#f0003"/>
+                <cb/>
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt&#x2019;</hi>&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <head>2.<lb break="yes"/>
+                        <hi rendition="#g">Das alte und neue Mexiko.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Mit einer Menge von Teocallis geziert, welche &#x017F;ich,<lb break="yes" />wie die Minarets, zum Himmel erhoben, umgeben von<lb break="yes" />Wa&#x017F;&#x017F;er und Da&#x0364;mmen, auf In&#x017F;eln gebaut, die mit Vege-<lb break="no"/>tation bedeckt waren, und bey der ewigen Bewegung meh-<lb break="no"/>rerer tau&#x017F;end Bo&#x0364;te, durch die der See belebt wurde, muß<lb break="yes"/>das alte Tenochtitlan, nach dem Berichte der er&#x017F;ten Erobe-<lb break="no"/>rer, Aehnlichkeit mit einigen Sta&#x0364;dten von Holland und<lb break="yes"/>China, oder mit dem Delta von <placeName key="aegypten">Nieder-Aegypten</placeName> gehabt<lb break="yes"/>haben. Die Haupt&#x017F;tadt, welche die Spanier auf dem&#x017F;elben<lb break="yes"/>Boden wieder aufbauten, gewa&#x0364;hrt vielleicht keinen &#x017F;o la-<lb break="no"/>chenden, aber einen de&#x017F;to impo&#x017F;antern, maje&#x017F;ta&#x0364;ti&#x017F;chern An-<lb break="no"/>blick. Mexiko geho&#x0364;rt zu den &#x017F;cho&#x0364;n&#x017F;ten Sta&#x0364;dten, welche die<lb break="yes" />Europa&#x0364;er in den beyden Hemi&#x017F;pha&#x0364;ren aufgefu&#x0364;hrt haben,<lb break="yes"/>und mit Ausnahme von Petersburg, Berlin, Philadelphia<lb break="yes"/>und einigen Quartieren von We&#x017F;tmin&#x017F;ter, gibt es vielleicht<lb break="yes"/>keine Stadt von dem&#x017F;elben Umfange, deren Boden &#x017F;o<lb break="yes" />gleichfo&#x0364;rmig wagerecht, deren Straßen &#x017F;o breit und regel-<lb break="no"/>ma&#x0364;ßig, und deren o&#x0364;ffentliche Pla&#x0364;tze &#x017F;o groß wa&#x0364;ren, wie all<lb break="yes"/>dies bey der Haupt&#x017F;tadt von Neu-Spanien der Fall i&#x017F;t.<lb break="yes"/>Die Architektur i&#x017F;t im Durch&#x017F;chnitte von ziemlich reinem<lb break="yes"/>Stil, und manche Geba&#x0364;ude nehmen &#x017F;ich wirklich &#x017F;ehr &#x017F;cho&#x0364;n<lb break="yes"/>aus. Das Aeußere der Ha&#x0364;u&#x017F;er i&#x017F;t nicht mit Ornamenten<lb break="yes"/>
+                        <cb/>u&#x0364;berladen, und die beyden Arten von Quader&#x017F;teinen, der<lb break="yes"/>poro&#x0364;&#x017F;e Mandel&#x017F;tein, Tetzontli genannt, und be&#x017F;onders ein<lb break="yes"/>Porphyr mit glasartigem Feld&#x017F;path ohne Quartz, geben den<lb break="yes"/>mexikani&#x017F;chen Bauten ein gewi&#x017F;&#x017F;es An&#x017F;ehen von Fe&#x017F;tigkeit<lb break="yes"/>und &#x017F;elb&#x017F;t von Pracht. Von den Balkons und Galerien,<lb break="yes"/>durch welche alle europa&#x0364;i&#x017F;che Sta&#x0364;dte beyder Indien &#x017F;o &#x017F;ehr<lb break="yes" />ent&#x017F;tellt werden, weiß man hier nichts. Die Gela&#x0364;nder und<lb break="yes"/>Gitter &#x017F;ind von biskayi&#x017F;chem Ei&#x017F;en mit Bronze-Verzierungen,<lb break="yes"/>und &#x017F;tatt der Da&#x0364;cher hat man, wie in Italien und allen<lb break="yes"/>&#x017F;u&#x0364;dlichen La&#x0364;ndern, Terra&#x017F;&#x017F;en auf den Ha&#x0364;u&#x017F;ern.</p>
+                    <lb break="yes"/>
+                    <p>Seit dem Aufenthalte des Abbé <persName key="chappedauteroche_j">
+                            <hi rendition="#g">Chappe</hi>
+                        </persName> im J. 1769<lb break="yes"/>i&#x017F;t Mexiko außerordentlich ver&#x017F;cho&#x0364;nert worden. Das fu&#x0364;r die<lb break="yes" />Berg&#x017F;chule be&#x017F;timmte Geba&#x0364;ude, zu welchem die reich&#x017F;ten<lb break="yes"/>Ma&#x0364;nner des Landes eine Summe von mehr als drey Mil-<lb break="no"/>lionen Franken beyge&#x017F;teuert haben, wu&#x0364;rde den er&#x017F;ten Pla&#x0364;tzen<lb break="yes"/>von Paris und London Ehre machen. Einige mexikani&#x017F;che<lb break="yes" />Architekten, welche in der Akademie der &#x017F;cho&#x0364;nen Ku&#x0364;n&#x017F;te in<lb break="yes"/>der Haupt&#x017F;tadt gebildet worden &#x017F;ind, haben vor Kurzem<lb break="yes"/>zwey große Hotels gebaut, von denen das eine in dem<lb break="yes"/>Quartier Tra&#x017F;pana gelegene in &#x017F;einem Hofe ein &#x017F;ehr &#x017F;cho&#x0364;nes<lb break="yes"/>Peri&#x017F;tyl von ovaler Form entha&#x0364;lt. Mit allem Rechte be-<lb break="no"/>wundern die Rei&#x017F;enden auf der <hi rendition="#aq">Plaza major</hi> von Mexiko,<lb break="yes"/>der Domkirche und dem Palla&#x017F;te der Vice-Ko&#x0364;nige gegenu&#x0364;ber,<lb break="yes"/>eine große, mit viereckigen Platten von Porphyr gepfla-<lb break="no"/>&#x017F;terte Einfa&#x017F;&#x017F;ung, deren Gitter reich mit Bronze verziert<lb break="yes"/>&#x017F;ind, und auf deren Mitte die Statue <persName key="karliv">
+                            <hi rendition="#g">Karl&#x2019;s</hi>
+                            <hi rendition="#aq">IV</hi>
+                        </persName> zu Pferde<lb break="yes"/>auf einem Piede&#x017F;tal von mexikani&#x017F;chem Marmor &#x017F;teht. Bey<lb break="yes"/>allen Fort&#x017F;chritten, welche die &#x017F;cho&#x0364;nen Ku&#x0364;n&#x017F;te &#x017F;eit dreißig<lb break="yes"/>
+                        <pb n="746" facs="#f0004"/>
+                        <cb/> Jahren in die&#x017F;em Lande gemacht haben, i&#x017F;t indeß unla&#x0364;ug-<lb break="no"/>bar, daß die Haupt&#x017F;tadt von Mexiko einem Europa&#x0364;er we-<lb break="no"/>niger wegen der Gro&#x0364;ße und Scho&#x0364;nheit ihrer o&#x0364;ffentlichen<lb break="yes"/>Denkmale, als wegen der Breite und Geradheit ihrer<lb break="yes"/>Straßen, weniger wegen ihrer einzelnen Geba&#x0364;ude, als we-<lb break="no"/>gen ihrer u&#x0364;berein&#x017F;timmenden Regelma&#x0364;ßigkeit, ihrer Ausdeh-<lb break="no"/>nung und Lage auffallen wird. Durch ein Zu&#x017F;ammentreffen<lb break="yes"/>ungewo&#x0364;hnlicher Um&#x017F;ta&#x0364;nde &#x017F;ah ich in &#x017F;ehr kurzer Zeit hinterein-<lb break="no"/>ander Lima, Mexiko, Philadelphia, Wa&#x017F;hington, Paris,<lb break="yes"/>Rom, Neapel und die gro&#x0364;ßten Sta&#x0364;dte von Deut&#x017F;chland.<lb break="yes" />Vergleicht man &#x017F;chnell auf einander folgende Eindru&#x0364;cke mit<lb break="yes"/>einander, &#x017F;o i&#x017F;t man oft im Stande, eine Meynung, der<lb break="yes"/>man &#x017F;ich zu unbedacht&#x017F;am u&#x0364;berla&#x017F;&#x017F;en hatte, zu berichtigen.<lb break="yes" />Allein trotz allen Vergleichungen, welche der Haupt&#x017F;tadt<lb break="yes"/>von Mexiko nicht durchga&#x0364;ngig gu&#x0364;n&#x017F;tig &#x017F;eyn ko&#x0364;nnten, hat &#x017F;ie<lb break="yes"/>eine Idee von Gro&#x0364;ße in meinem Geda&#x0364;chtni&#x017F;&#x017F;e zuru&#x0364;ckgela&#x017F;&#x017F;en,<lb break="yes"/>welche ich be&#x017F;onders dem impo&#x017F;anten Karakter ihrer Lage<lb break="yes" />und der &#x017F;ie umgebenden Natur zu&#x017F;chreiben muß.</p>
+                    <lb break="yes"/>
+                    <p>Wirklich i&#x017F;t auch das Gema&#x0364;hlde, welches das Thal an<lb break="yes"/>einem &#x017F;cho&#x0364;nen Sommermorgen, und bey dem wolkenlo&#x017F;en<lb break="yes"/>dunkelazurnen Himmel, welcher der trockenen und du&#x0364;nnen Luft<lb break="yes"/>hoher Gebirge eigen i&#x017F;t, von einem der Thu&#x0364;rme des Doms<lb break="yes"/>von Mexiko oder von dem Hu&#x0364;gel von Chapoltepec herab be-<lb break="no" />trachtet, dar&#x017F;tellt, von wunderbarem Reichthum, und &#x017F;el-<lb break="no"/>tener Mannigfaltigkeit. Eine &#x017F;cho&#x0364;ne Vegetation umgibt die-<lb break="no"/>&#x017F;en Hu&#x0364;gel. Alte Cypre&#x017F;&#x017F;en&#x017F;ta&#x0364;mme, von mehr als funfzehen<lb break="yes"/>bis &#x017F;echszehen Metern im Umfange, erheben ihre bla&#x0364;tterlo&#x017F;en<lb break="yes"/>Scheitel u&#x0364;ber die Spitzen der Schinus, deren Wuchs den<lb break="yes"/>orientali&#x017F;chen Thra&#x0364;nenweiden a&#x0364;hnlich i&#x017F;t. Von die&#x017F;er ein&#x017F;a-<lb break="no"/>men Stelle auf der Ho&#x0364;he des Porphyrfel&#x017F;en von <choice>
+                            <sic>Chaltopec</sic>
+                            <corr type="editorial">Chapoltepec</corr>
+                        </choice>
+                        <lb break="yes"/>herab beherr&#x017F;cht das Auge eine ungeheure Ebene, und die<lb break="yes"/>herrlich angebauten Gefilde, welche &#x017F;ich bis zu den kolo&#x017F;&#x017F;a-<lb break="no"/>len Gebirgen, auf welchen der ewige Schnee liegt, er-<lb break="no"/>&#x017F;trecken. Die Stadt &#x017F;cheint von dem See von Tezcuco ge-<lb break="no"/>netzt, de&#x017F;&#x017F;en Umgebungen von Do&#x0364;rfern und Weilern an die<lb break="yes"/>&#x017F;cho&#x0364;n&#x017F;ten Partien der Art in der Schweiz erinnern. Große<lb break="yes"/>Alleen von Ulmen und Pappeln fu&#x0364;hren auf allen Seiten nach<lb break="yes"/>der Stadt. Zwey Wa&#x017F;&#x017F;erleitungen durch&#x017F;chneiden auf &#x017F;ehr<lb break="yes"/>hohen Bogen die Ebene, und gewa&#x0364;hren einen eben &#x017F;o an-<lb break="no"/>genehmen, als merkwu&#x0364;rdigen Anblick. Gegen Norden zeigt<lb break="yes"/>&#x017F;ich das pra&#x0364;chtige Klo&#x017F;ter der lieben Frau von Guadelupe,<lb break="yes"/>wie es &#x017F;ich an die Gebirge Tepeyacac lehnt, zwi&#x017F;chen Schluch-<lb break="no"/>ten, welche Dattelpalmen und bauma&#x0364;hnliche Yuccas be-<lb break="no"/>herbergen. Gegen Su&#x0364;den i&#x017F;t das ganze Land zwi&#x017F;chen<lb break="yes"/>Sant-Angelo, Tacubaya und Sant-Ago&#x017F;tino de las<lb break="yes"/>Cuevas, einem ungeheuren Garten von Orangen, Pfir-<lb break="no"/>&#x017F;ichen, Aepfeln, Kir&#x017F;chen und andern europa&#x0364;i&#x017F;chen Ob&#x017F;tba&#x0364;u-<lb break="no" />men a&#x0364;hnlich. Die&#x017F;e herrliche Kultur macht einen großen<lb break="yes"/>Kontra&#x017F;t mit den kahlen Gebirgen, welche das Thal ein-<lb break="no"/>&#x017F;chließen, und unter denen &#x017F;ich die beru&#x0364;hmten Vulkane von<lb break="yes"/>Puebla, Popocatepetl und Iztaccihuatl auszeichnen. Der<lb break="yes"/>er&#x017F;te unter die&#x017F;en Bergen bildet einen ungeheuern Kegel,<lb break="yes"/>
+                        <cb/>de&#x017F;&#x017F;en Krater unaufho&#x0364;rlich in Flammen i&#x017F;t, und aus der<lb break="yes"/>Mitte des ewigen Schnees Rauch und A&#x017F;che auswirft.</p>
+                    <lb break="yes"/>
+                    <p>Auch die gute Polizey, welche in Mexiko herr&#x017F;cht, zeich-<lb break="no" />net die&#x017F;e Stadt ru&#x0364;hmlich aus. Die mei&#x017F;ten Straßen ha-<lb break="no"/>ben auf beyden Seiten &#x017F;ehr breite Trottoirs, &#x017F;ind &#x017F;ehr rein-<lb break="no"/>lich, und des Nachts durch Spiegellaternen mit platten<lb break="yes"/>Dochten in Ba&#x0364;nderform erleuchtet. Die&#x017F;e Vortheile ver-<lb break="no"/>dankt die Stadt der Tha&#x0364;tigkeit des Grafen <persName key="revillagigedo_jvgpdphyad">von <hi rendition="#g">Revil-<lb break="no"/>lagigedo,</hi>
+                        </persName> bey de&#x017F;&#x017F;en Ankunft noch die a&#x0364;ußer&#x017F;te Unrein-<lb break="no"/>lichkeit geherr&#x017F;cht hatte.</p>
+                    <lb break="yes"/>
+                    <p>In &#x017F;ehr geringer Tiefe findet man u&#x0364;berall auf dem Bo-<lb break="no"/>den von Mexiko Wa&#x017F;&#x017F;er; es i&#x017F;t aber ein wenig &#x017F;alzig, wie<lb break="yes"/>das vom See von Tezcuco. Die beyden Wa&#x017F;&#x017F;erleitungen,<lb break="yes"/>welche der Stadt &#x017F;u&#x0364;ßes Wa&#x017F;&#x017F;er zufu&#x0364;hren, &#x017F;ind von neuer<lb break="yes"/>Architektur, aber der Aufmerk&#x017F;amkeit jedes Rei&#x017F;enden wu&#x0364;r-<lb break="no"/>dig. Die Quellen von trinkbarem Wa&#x017F;&#x017F;er befinden &#x017F;ich o&#x0364;&#x017F;t-<lb break="no" />lich von der Stadt, die eine auf dem kleinen i&#x017F;olirten Berge<lb break="yes"/>von Chapoltepec, und die andre auf den Cerros de Santa<lb break="yes"/>Fe, bey der Cordillera, welche das Thal von Tenochtitlan<lb break="yes"/>von dem von Lerma und Toluca &#x017F;cheidet. Die Bogen der<lb break="yes"/>Wa&#x017F;&#x017F;erleitung von Chapoltepec dehnen &#x017F;ich in einer La&#x0364;nge<lb break="yes"/>von 3300 Metern. Ihr Wa&#x017F;&#x017F;er kommt auf der Su&#x0364;d&#x017F;eite<lb break="yes" />der Stadt, bey dem Salto del Agua herein, i&#x017F;t aber nicht<lb break="yes"/>&#x017F;ehr klar, und wird nur in den Vor&#x017F;ta&#x0364;dten von Mexiko ge-<lb break="no"/>trunken. Am wenig&#x017F;ten mit luft&#x017F;aurer Kalkerde ge&#x017F;chwa&#x0364;n-<lb break="no"/>gert i&#x017F;t das Wa&#x017F;&#x017F;er des Aqua&#x0364;dukt von Santa Fe, wel-<lb break="no"/>cher &#x017F;ich la&#x0364;ngs der <placeName key="alameda">Alameda</placeName> hinzieht, und u&#x0364;ber der Tra&#x017F;pana,<lb break="yes"/>an der Bru&#x0364;cke vor Marescala endigt. Die&#x017F;e Wa&#x017F;&#x017F;erleitung<lb break="yes" />hat beynahe 10200 Meter La&#x0364;nge; allein die Senkung des<lb break="yes"/>Bodens machte nur fu&#x0364;r ein Drittheil ihrer Ausdehnung Bo-<lb break="no"/>gen no&#x0364;thig. Eben &#x017F;o betra&#x0364;chtliche Wa&#x017F;&#x017F;erleitungen hatte<lb break="yes" />die alte Stadt Tenochtitlan. Bey&#x2019;m Anfange der Belage-<lb break="no"/>rung zer&#x017F;to&#x0364;rten die beyden Hauptleute <persName key="alvarado_pd">
+                            <hi rendition="#g">Alvarado</hi>
+                        </persName> und<lb break="yes"/>
+                        <persName key="olid_cd">
+                            <hi rendition="#g">Olid</hi>
+                        </persName> die von Chapoltepec. <persName key="cortes_h">
+                            <hi rendition="#g">Cortez</hi>
+                        </persName> redet, in &#x017F;einem er-<lb break="no"/>&#x017F;ten Brief an <persName key="karlv">
+                            <hi rendition="#g">
+                                <choice>
+                                    <sic>Karln</sic>
+                                    <corr type="editorial">Karl</corr>
+                                </choice>
+                            </hi>
+                            <hi rendition="#aq">V</hi>
+                        </persName>, auch von der Quelle von <placeName key="amilco" >Amilco</placeName>,<lb break="yes"/>bey Churubu&#x017F;co, deren Wa&#x017F;&#x017F;er in Ro&#x0364;hren von gebrannter<lb break="yes"/>Erde in die Stadt gefu&#x0364;hrt wurde. Die&#x017F;e Quelle befindet<lb break="yes"/>&#x017F;ich ganz nahe bey Santa Fe, und man erkennt die Re&#x017F;te<lb break="yes"/>die&#x017F;er großen Wa&#x017F;&#x017F;erleitung noch, welche doppelte Ro&#x0364;hren<lb break="yes"/>hatte, von denen die eine das Wa&#x017F;&#x017F;er nach der Stadt fu&#x0364;hrte,<lb break="yes"/>wa&#x0364;hrend die andre gereinigt wurde. Die&#x017F;es Wa&#x017F;&#x017F;er wurde<lb break="yes"/>in den Ka&#x0364;hnen verkauft, die in den Straßen von Tenoch-<lb break="no" />titlan herumfuhren. Die Quellen von Sant-Augo&#x017F;tino de<lb break="yes"/>las Cuevas &#x017F;ind indeß die &#x017F;cho&#x0364;n&#x017F;ten und klar&#x017F;ten. Auch<lb break="yes" />glaubte ich, auf dem Wege von die&#x017F;em &#x017F;cho&#x0364;nen Dorfe nach<lb break="yes"/>Mexiko Spuren einer alten Wa&#x017F;&#x017F;erleitung zu erkennen.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="767" facs="#f0005"/>
+                <cb/>
+                <cb/>
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt&#x2019;</hi>&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <head>3.<lb break="yes"/>
+                        <hi rendition="#g">Die alt-mexikani&#x017F;chen Tempel,<lb break="yes" />Teocalli</hi> genannt.</head>
+                    <lb break="yes"/>
+                    <p>Der er&#x017F;te Teocalli, um welchen die neue Stadt gebaut<lb break="yes" />wurde, war, wie der a&#x0364;lte&#x017F;te griechi&#x017F;che Tempel, der des<lb break="yes"/>
+                        <choice>
+                            <sic>Apello</sic>
+                            <corr type="editorial">Apollo</corr>
+                        </choice> zu Delphi, welchen <persName key="pausanias_p" >Pau&#x017F;anias</persName> be&#x017F;chrieben hat, von<lb break="yes"/>
+                        <pb n="768" facs="#f0006"/>
+                        <cb/>Holz. Das &#x017F;teinerne Geba&#x0364;ude hingegen, de&#x017F;&#x017F;en Archi-<lb break="no"/>tektur von <persName key="cortes_h">Cortez</persName> und <persName key="diazdelcastillo_b" >Bernal Diaz</persName> bewundert wurde,<lb break="yes"/>war von dem Ko&#x0364;nige <persName key="auitzotl">Ahuitzotl</persName> im Jahre 1486 auf der<lb break="yes"/>na&#x0364;mlichen Stelle aufgefu&#x0364;hrt worden. Es be&#x017F;tand in einer<lb break="yes"/>Pyramidalform von 37 Metern Ho&#x0364;he, und lag mitten auf<lb break="yes"/>einem großen, mit Mauern einge&#x017F;chlo&#x017F;&#x017F;enen Hofe. Man<lb break="yes" />unter&#x017F;chied daran fu&#x0364;nf Stockwerke, wie an ver&#x017F;chiedenen<lb break="yes"/>Pyramiden von Sacara, und be&#x017F;onders an der von Mehe-<lb break="no"/>dun. Der Teocalli von Tenochtitlan &#x017F;tand, gleich allen egyp-<lb break="no"/>ti&#x017F;chen, a&#x017F;iati&#x017F;chen und mexikani&#x017F;chen Pyramiden, in ge-<lb break="no"/>nauer Richtung gegen die Himmelsgegenden, hatte eine<lb break="yes"/>Ba&#x017F;is von 97 Metern, und war oben abge&#x017F;tumpft, &#x017F;o daß er<lb break="yes"/>in der Entfernung einem ungeheuern Cubus a&#x0364;hnlich &#x017F;ah,<lb break="yes"/>auf de&#x017F;&#x017F;en Spitze kleine, mit ho&#x0364;lzernen Kuppeln bedeckte,<lb break="yes"/>Alta&#x0364;re angebracht waren. Die End&#x017F;pitze die&#x017F;er Kuppeln er-<lb break="no"/>hob &#x017F;ich 54 Meter u&#x0364;ber die Ba&#x017F;is des Geba&#x0364;udes, oder u&#x0364;ber<lb break="yes"/>das Pfla&#x017F;ter &#x017F;einer Einfa&#x017F;&#x017F;ung. Die&#x017F;e Um&#x017F;ta&#x0364;nde bewei&#x017F;en<lb break="yes"/>die große Aehnlichkeit, welche der Teocalli mit jenem alten<lb break="yes"/>Denkmale von <placeName key="babylon">Babylon</placeName> hatte, das von <persName key="strabo" >Strabo</persName> das Mau-<lb break="no"/>&#x017F;oleum des Belus genannt wird, und nichts als eine dem<lb break="yes"/>Jupiter Belus geweihte Pyramide war. Weder der<lb break="yes"/>Teocalli, noch die&#x017F;es babyloni&#x017F;che Geba&#x0364;ude waren Tempel<lb break="yes"/>in dem Sinne, welchen wir nach den Ueberlieferungen der<lb break="yes"/>Griechen und Ro&#x0364;mer mit die&#x017F;em Ausdrucke verbinden.<lb break="yes" />Alle den mexikani&#x017F;chen Gottheiten geheiligten Geba&#x0364;ude wa-<lb break="no"/>ren abge&#x017F;tumpfte Pyramiden, wie das die großen bis auf<lb break="yes"/>den heutigen Tag erhaltenen Denkmale von Teotihuacan,<lb break="yes"/>Cholula und Papantla bewei&#x017F;en, und aus welchen wir &#x017F;chlie&#x017F;-<lb break="no"/>&#x017F;en ko&#x0364;nnen, wie die kleinern Tempel in den Sta&#x0364;dten Te-<lb break="no"/>nochtitlan und Tecuco be&#x017F;chaffen gewe&#x017F;en &#x017F;eyn mo&#x0364;gen. Be-<lb break="no"/>deckte Alta&#x0364;re &#x017F;tanden auf den Spitzen des Teocalli&#x2019;s, und<lb break="yes" />wir du&#x0364;rfen &#x017F;ie daher wol in die Kla&#x017F;&#x017F;e der Pyramidal-<lb break="maybe"/>Monumente von <placeName key="asien" >A&#x017F;ien</placeName> &#x017F;etzen, von denen man er&#x017F;t ku&#x0364;rz-<lb break="no"/>lich &#x017F;ogar Spuren in Arkadien gefunden hat; denn das ko-<lb break="no"/>ni&#x017F;che Mau&#x017F;oleum des <persName key="callisthus_01">Calli&#x017F;thus</persName>, ein wahrer <hi rendition="#g">Tumu-<lb break="no"/>lus,</hi> der mit Fruchtba&#x0364;umen be&#x017F;etzt war, machte die Ba&#x017F;is<lb break="yes"/>eines kleinen der <persName key="diana">Diana</persName> geweihten Tempels.</p>
+                    <lb break="yes"/>
+                    <p>Wir kennen die Materialien nicht, aus welchen der Teo-<lb break="no"/>calli von Tenochtitlan gebaut war; denn die Ge&#x017F;chicht&#x017F;chrei-<lb break="no"/>ber berichten blos, er &#x017F;ey mit einem harten polirten Steine<lb break="yes"/>u&#x0364;berzogen gewe&#x017F;en. Die ungeheuern Fragmente, welche man<lb break="yes"/>indeß von Zeit zu Zeit in der Gegend der heutigen Dom-<lb break="no"/>kirche entdeckt, &#x017F;ind von Porphyr, mit einem Grunde von<lb break="yes"/>Gru&#x0364;n&#x017F;tein, der voll Amphibolen und glasartigen Feld&#x017F;paths<lb break="yes"/>i&#x017F;t. Als man vor Kurzem den Platz um die Domkirche<lb break="yes"/>pfla&#x017F;terte, fand man in einer Tiefe von 10 bis 12 Metern<lb break="yes"/>Stu&#x0364;cke Bildhauerarbeit. Wenige Nationen haben wol<lb break="yes"/>gro&#x0364;ßere Ma&#x017F;&#x017F;en in Bewegung ge&#x017F;etzt, als die Mexikaner.<lb break="yes"/>Der Kalender- und Opfer&#x017F;tein, welche auf dem großen<lb break="yes"/>Platze &#x017F;tehen, haben 8 bis 10 Kubik-Meter. Die kolo&#x017F;&#x017F;ale<lb break="yes"/>Statue des <persName key="teoyaomiqui">Teoyaomiqui</persName>, die mit Hieroglyphen bedeckt i&#x017F;t,<lb break="yes"/>und auf einer Diele des Univer&#x017F;ita&#x0364;tsgeba&#x0364;udes liegt, i&#x017F;t<lb break="yes" />zwey Meter lang, und drey breit. Auch hat mich der<lb break="yes" />Kanonikus <persName key="gamboa_jj">Gamboa</persName> ver&#x017F;ichert, man &#x017F;ey bey einer Grabung<lb break="yes"/>in der Na&#x0364;he der Kapelle des <persName key="sagrasio_01">Sagra&#x017F;io</persName>, neben einer unge-<lb break="no"/>heuern Menge von Idolen, welche zum Teocalli geho&#x0364;rten,<lb break="yes"/>auch auf ein Stu&#x0364;ck Fel&#x017F;en mit Bildhauerarbeit ge&#x017F;toßen, das<lb break="yes" />&#x017F;ieben Meter La&#x0364;nge, &#x017F;echs Breite, und drey Ho&#x0364;he gehabt,<lb break="yes"/>und das man um&#x017F;on&#x017F;t herauszu&#x017F;chaffen ver&#x017F;ucht habe.</p>
+                    <lb break="yes"/>
+                    <cb/>
+                    <p>Einige Jahre nach der Belagerung von Tenochtitlan,<lb break="yes"/>welche &#x017F;ich, wie die von Troja, mit einer allgemeinen Zer&#x017F;to&#x0364;-<lb break="no"/>rung der Stadt endigte, lag der Teocalli &#x017F;chon in Tru&#x0364;m-<lb break="no"/>mern. Ich mo&#x0364;chte daher glauben, daß die Au&#x017F;&#x017F;en&#x017F;eite<lb break="yes"/>der abge&#x017F;tumpften Pyramide aus Thon be&#x017F;tanden, welcher<lb break="yes"/>mit dem poro&#x0364;&#x017F;en Mandel&#x017F;teine, Tetzontli genannt, u&#x0364;berzogen<lb break="yes" />war. Wirklich fing man auch kurz vor dem Baue die&#x017F;es<lb break="yes" />Tempels, unter der Regierung des Ko&#x0364;niges <persName key="auitzotl" >Ahuitzotl</persName>, an,<lb break="yes"/>die Bru&#x0364;che die&#x017F;es zellenfo&#x0364;rmigen, poro&#x0364;&#x017F;en Steins zu bear-<lb break="no"/>beiten. Nichts war daher leichter, als Geba&#x0364;ude zu zer-<lb break="no"/>&#x017F;to&#x0364;ren, welche aus &#x017F;o leichten, und &#x017F;o poro&#x0364;&#x017F;en Materialien,<lb break="yes"/>als der Bims&#x017F;tein i&#x017F;t, aufgefu&#x0364;hrt waren. Ueber die Di-<lb break="no"/>men&#x017F;ionen die&#x017F;es Teocalli &#x017F;timmen die mei&#x017F;ten Ge&#x017F;chicht-<lb break="no" />&#x017F;chreiber zwar miteinander u&#x0364;berein; indeß du&#x0364;rften &#x017F;ie doch<lb break="yes"/>wol u&#x0364;bertrieben &#x017F;eyn. Allein die Pyramidalform die&#x017F;es<lb break="yes"/>mexikani&#x017F;chen Geba&#x0364;udes, und &#x017F;eine große Aehnlichkeit mit<lb break="yes" />den a&#x0364;lte&#x017F;ten, a&#x017F;iati&#x017F;chen Denkmalen haben fu&#x0364;r uns weit<lb break="yes"/>mehr Merkwu&#x0364;rdigkeit, als &#x017F;eine Ma&#x017F;&#x017F;e und Gro&#x0364;ße.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="769" facs="#f0007"/>
+                <cb/>
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt&#x2019;</hi>&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <head>4.<lb break="yes"/>
+                        <hi rendition="#g">Andre mexikani&#x017F;che Alterthu&#x0364;mer</hi> u. dgI.</head>
+                    <lb break="yes"/>
+                    <p>Die einzigen alten Denkmale im Thale von Mexiko,<lb break="yes"/>welche einem Europa&#x0364;er durch ihre Gro&#x0364;ße und Ma&#x017F;&#x017F;e auffal-<lb break="no"/>len ko&#x0364;nnen, &#x017F;ind die Re&#x017F;te der beyden Pyramiden von San<lb break="yes"/>Juan de Teotihuacan, nordo&#x0364;&#x017F;tlich vom See von Tezcuco.<lb break="yes"/>Sie waren der Sonne und dem Monde geweiht, und wur-<lb break="no"/>den von den Eingebornen Tonatiuh Ytzaqual, Haus der<lb break="yes"/>Sonne, und Meztli Ytzaqual, Haus des Mondes, genannt.<lb break="yes"/>Nach den Me&#x017F;&#x017F;ungen, welche im Jahre 1803 von einem<lb break="yes" />jungen mexikani&#x017F;chen Gelehrten, dem Doktor <persName key="oteyza_jjd">
+                            <hi rendition="#g">Oteyza,</hi>
+                        </persName>
+                        <lb break="yes"/>ange&#x017F;tellt worden &#x017F;ind, hat die er&#x017F;te Pyramide, die am<lb break="yes"/>&#x017F;u&#x0364;dlich&#x017F;ten gelegene, in ihrem gegenwa&#x0364;rtigen Zu&#x017F;tande, eine<lb break="yes" />Ba&#x017F;is von 208 Metern (645 Fuß) La&#x0364;nge, und 55 Metern<lb break="yes"/>(66 mexikani&#x017F;che Varen oder 171 Fuß) perpendikula&#x0364;rer<lb break="yes"/>Ho&#x0364;he. Die zweyte, die Mondpyramide, i&#x017F;t um 11 Meter<lb break="yes"/>(30 Fuß) niedriger, und hat auch eine kleinere Ba&#x017F;is.<lb break="yes"/>Nach dem Berichte der fru&#x0364;h&#x017F;ten Rei&#x017F;enden und nach ihrer<lb break="yes" />heutigen Form &#x017F;elb&#x017F;t zu urtheilen, haben die&#x017F;e Denkmale<lb break="yes"/>den Azteki&#x017F;chen Teocallis zum Mu&#x017F;ter gedient. Die Vo&#x0364;lker,<lb break="yes"/>welche die&#x017F;es Land bey der Ankunft der Spanier bewohnten,<lb break="yes" />&#x017F;chrieben die Pyramiden von Teotihuacan der Tulteki&#x017F;chen<lb break="yes"/>Nation zu, und ihre Erbauung &#x017F;tiege demnach bis in&#x2019;s<lb break="yes"/>achte oder neunte Jahrhundert hinauf, indem Tollan&#x2019;s Reich<lb break="yes"/>
+                        <cb/>von 667 bis 1031 gedauert hat. Die Seiten die&#x017F;er Ge-<lb break="no"/>ba&#x0364;ude &#x017F;tehen, auf etwa 52&#x2032;, genau von Norden nach Su&#x0364;den<lb break="yes"/>und von O&#x017F;ten nach We&#x017F;ten. Ihr Inneres be&#x017F;teht aus Thon<lb break="yes"/>mit einer Mi&#x017F;chung von kleinen Steinen. Die&#x017F;er Kern i&#x017F;t<lb break="yes"/>mit einer dicken Mauer von poro&#x0364;&#x017F;em Mandel&#x017F;tein bedeckt,<lb break="yes"/>und man erkennt noch die Spuren einer Kalklage, womit<lb break="yes"/>die Steine (der Tetzontli) u&#x0364;berzogen waren. Einige<lb break="yes"/>Schrift&#x017F;teller des &#x017F;echzehnten Jahrhunderts behaupten, nach<lb break="yes"/>einer indiani&#x017F;chen Tradition, daß das Innere die&#x017F;er Pyra-<lb break="no"/>miden hohl &#x017F;ey. Indeß ver&#x017F;ichert der Chevalier <persName key="boturinibenaduci_l">Boturini</persName>,<lb break="yes" />daß der mexikani&#x017F;che Geometer, <persName key="siguenzaygongora_cd" >Siguenza</persName>, vergebens den<lb break="yes"/>Ver&#x017F;uch gemacht habe, die&#x017F;e Geba&#x0364;ude durch eine Galerie zu<lb break="yes"/>durchbrechen. Sie bildeten vier Terra&#x017F;&#x017F;en, von denen heut-<lb break="no"/>zutage indeß nur noch drey &#x017F;ich erkennen la&#x017F;&#x017F;en, indem die<lb break="yes"/>Zeit und die Vegetation der Cactus und Agaven &#x017F;ehr zer-<lb break="no" />&#x017F;to&#x0364;rend auf das Aeußere die&#x017F;er Denkmale gewirkt haben.<lb break="yes"/>Eine Treppe von großen Quadern fu&#x0364;hrte ehemals auf die<lb break="yes"/>Spitze, wo nach dem Berichte der fru&#x0364;he&#x017F;ten Rei&#x017F;enden Sta-<lb break="no"/>tuen aufge&#x017F;tellt waren, deren Ueberzug aus &#x017F;ehr du&#x0364;nnen<lb break="yes"/>Goldplatten be&#x017F;tand. Jede der vier Hauptterra&#x017F;&#x017F;en war in<lb break="yes"/>kleine Stufen von etwa einem Meter Ho&#x0364;he abgetheilt,<lb break="yes"/>deren Fugen man noch unter&#x017F;cheiden kann. Die&#x017F;e Stufen<lb break="yes"/>&#x017F;ind mit Stu&#x0364;cken von Ob&#x017F;idian bedeckt, welche ohne Zweifel<lb break="yes"/>Schneidein&#x017F;trumente waren, womit die Tulteki&#x017F;chen und<lb break="yes"/>Azteki&#x017F;chen Prie&#x017F;ter (Papahua Tlemacazque oder Teopixqui)<lb break="yes"/>in ihrem grau&#x017F;amen Go&#x0364;tterdien&#x017F;te den men&#x017F;chlichen Schlacht-<lb break="no"/>opfern die Bru&#x017F;t o&#x0364;ffneten. Es i&#x017F;t bekannt, daß der Ob&#x017F;i-<lb break="no"/>dian (Itztli) in großer Menge gebrochen wurde, und man<lb break="yes"/>&#x017F;ieht die Spuren &#x017F;olcher Bru&#x0364;che noch in vielen Brunnen<lb break="yes"/>
+                        <pb n="770" facs="#f0008"/>
+                        <cb/>zwi&#x017F;chen den Bergwerken von Moran und dem Dorfe Ato-<lb break="no"/>tonilco el Grande, in den Porphyrgebirgen von Oyamel und<lb break="yes"/>Jacal, einer Gegend, welche die Spanier das Me&#x017F;&#x017F;ergebirge,<lb break="yes"/>el Cerro de las Navajas, nennen.</p>
+                    <lb break="yes"/>
+                    <p>Man wu&#x0364;n&#x017F;chte wol die Frage aufgelo&#x0364;st, ob die&#x017F;e merk-<lb break="no"/>wu&#x0364;rdigen Geba&#x0364;ude, von denen das eine (der Tonatiuh Yt-<lb break="no"/>zaqual) nach den genauen Me&#x017F;&#x017F;ungen meines Freundes, Hrn.<lb break="yes"/>
+                        <persName key="oteyza_jjd">
+                            <hi rendition="#g">Oteyza,</hi>
+                        </persName> eine Ma&#x017F;&#x017F;e von 128,970 Kubiktoi&#x017F;en entha&#x0364;lt,<lb break="yes"/>ganz von Men&#x017F;chenha&#x0364;nden erbaut &#x017F;ind, oder ob die Tulteken<lb break="yes"/>blos irgend einen natu&#x0364;rlichen Hu&#x0364;gel benutzt, und mit Stei-<lb break="no"/>nen und Kalk u&#x0364;berzogen haben. Die&#x017F;e Frage i&#x017F;t neulich<lb break="yes"/>bey Gelegenheit mehrerer Pyramiden von Gize und Sacara<lb break="yes"/>in Anregung gekommen, und durch die fanta&#x017F;ti&#x017F;chen Hypo-<lb break="no"/>the&#x017F;en, welche Herr <persName key="witte_ss">
+                            <hi rendition="#g">Witte</hi>
+                        </persName> u&#x0364;ber den Ur&#x017F;prung der kolo&#x017F;-<lb break="no" />&#x017F;alen Monumente von <placeName key="aegypten">Egypten</placeName>, Per&#x017F;epolis und Palmyra<lb break="yes"/>gewagt hat, doppelt merkwu&#x0364;rdig geworden. Da weder die<lb break="yes"/>Pyramide von Cholula, von der wir in der Folge reden<lb break="yes"/>werden, noch die von Teotihuacan durchbrochen worden &#x017F;ind,<lb break="yes"/>&#x017F;o kann man unmo&#x0364;glich etwas Zuverla&#x0364;&#x017F;&#x017F;iges von ihrem In-<lb break="no"/>nern &#x017F;agen. Die indiani&#x017F;chen Traditionen, denen zufolge<lb break="yes"/>&#x017F;ie hohl &#x017F;eyn &#x017F;ollen, &#x017F;ind unbe&#x017F;timmt und wider&#x017F;prechend.<lb break="yes"/>Durch ihre Lage in Ebenen, wo &#x017F;ich &#x017F;on&#x017F;t kein Hu&#x0364;gel findet,<lb break="yes"/>wird es &#x017F;ogar &#x017F;ehr wahr&#x017F;cheinlich, daß kein natu&#x0364;rlicher Fels<lb break="yes"/>den Kern die&#x017F;er Denkmale ausmacht. Was indeß noch &#x017F;ehr<lb break="yes"/>bemerkenswerth i&#x017F;t (be&#x017F;onders wenn man &#x017F;ich an Pococke&#x2019;s<lb break="yes"/>Behauptungen u&#x0364;ber die &#x017F;ymmetri&#x017F;che Stellung der egypti&#x017F;chen<lb break="yes"/>Pyramiden erinnert), liegt in dem Um&#x017F;tande, daß man rings<lb break="yes"/>um die Ha&#x0364;u&#x017F;er der Sonne und des Mondes von Teotihuacan<lb break="yes"/>eine Gruppe, und ich mo&#x0364;chte &#x017F;agen, ein Sy&#x017F;tem von Pyra-<lb break="no" />miden findet, welche kaum 9 bis 10 Meter Ho&#x0364;he haben.<lb break="yes"/>Die&#x017F;e Denkmale, deren es mehrere hunderte &#x017F;ind, &#x017F;tehen in<lb break="yes"/>&#x017F;ehr breiten Straßen, welche genau der Richtung der Pa-<lb break="no"/>rallelen und Meridiane folgen, und &#x017F;ich auf die vier Seiten<lb break="yes"/>der zwey großen Pyramiden ero&#x0364;ffnen. Auf der Su&#x0364;d&#x017F;eite<lb break="yes" />des Mondstempels &#x017F;ind die&#x017F;e kleinen Pyramiden ha&#x0364;ufiger,<lb break="yes"/>als auf der des Sonnentempels; auch waren &#x017F;ie ja, nach<lb break="yes"/>der Tradition des Landes, den Sternen geweiht. Indeß<lb break="yes"/>&#x017F;cheint es gewiß, daß &#x017F;ie Gra&#x0364;ber der Stammha&#x0364;upter gewe&#x017F;en<lb break="yes"/>&#x017F;ind. Die&#x017F;e ganze Ebene, welche die Spanier, nach einem<lb break="yes"/>Worte aus der Sprache der In&#x017F;el Cuba, <hi rendition="#g">Llano de los<lb break="yes"/>Cues</hi> nennen, hatte ein&#x017F;t in den azteki&#x017F;chen und tulteki&#x017F;chen<lb break="yes"/>Sprachen den Namen <hi rendition="#g">Micaotl,</hi> Weg der Todten. Welche<lb break="yes"/>Aehnlichkeiten mit den Denkmalen des alten Kontinents!<lb break="yes"/>Woher hatte die&#x017F;es tulteki&#x017F;che Volk, welches, nach &#x017F;einer<lb break="yes"/>Ankunft auf dem Boden von Mexiko, im &#x017F;iebenten Jahr-<lb break="no"/>hunderte, nach einem gleichfo&#x0364;rmigen Plane mehrere die&#x017F;er<lb break="yes"/>Denkmale von kolo&#x017F;&#x017F;aler Form, die&#x017F;e abge&#x017F;tumpften und in<lb break="yes"/>ver&#x017F;chiedene Terra&#x017F;&#x017F;en, wie der Tempel des Belus in Ba-<lb break="no"/>bylon, abgetheilten Pyramiden erbaute, woher hatte es<lb break="yes"/>das Vorbild zu die&#x017F;en Geba&#x0364;uden erhalten? War es vom<lb break="yes"/>mongoli&#x017F;chen Stamme? Und war es von dem&#x017F;elben Ur&#x017F;prunge<lb break="yes"/>wie die Chine&#x017F;en, die Hiongunu&#x2019;s und die Japaner?</p>
+                    <lb break="yes"/>
+                    <cb/>
+                    <p>Ein anderes altes, der Aufmerk&#x017F;amkeit des Rei&#x017F;enden<lb break="yes"/>&#x017F;ehr wu&#x0364;rdiges Denkmal i&#x017F;t die milita&#x0364;ri&#x017F;che Ver&#x017F;chanzung<lb break="yes"/>von Xochicalco, welche &#x017F;u&#x0364;d-&#x017F;u&#x0364;d-we&#x017F;tlich von der Stadt Cuer-<lb break="no"/>navacas bey Tetlama liegt, und in&#x2019;s Kirch&#x017F;piel von Xo-<lb break="no"/>chitepeque geho&#x0364;rt. Sie be&#x017F;teht in einem i&#x017F;olirten Hu&#x0364;gel<lb break="yes"/>von 117 Metern Ho&#x0364;he, der mit Gra&#x0364;ben umgeben, und von<lb break="yes"/>Men&#x017F;chenha&#x0364;nden in fu&#x0364;nf, mit Mauerwerk u&#x0364;berkleidete,<lb break="yes"/>Terra&#x017F;&#x017F;en abgetheilt i&#x017F;t. Das Ganze bildet eine abge-<lb break="no" />&#x017F;tumpfte Pyramide, deren vier Seiten genau nach den vier<lb break="yes"/>Himmelsgegenden gerichtet &#x017F;ind. Die Steine von Porphyr,<lb break="yes"/>mit einer Ba&#x017F;altba&#x017F;is, &#x017F;ind &#x017F;ehr regelma&#x0364;ßig ge&#x017F;chnitten, und<lb break="yes"/>mit hieroglyphi&#x017F;chen Figuren geziert, unter denen man Kro-<lb break="no"/>kodile, welche Wa&#x017F;&#x017F;er aus&#x017F;pru&#x0364;tzen, und, was &#x017F;ehr merkwu&#x0364;r-<lb break="no"/>dig i&#x017F;t, Men&#x017F;chen, welche nach a&#x017F;iati&#x017F;cher Wei&#x017F;e auf den<lb break="yes" />unter&#x017F;chlagenen Beinen &#x017F;itzen, unter&#x017F;cheidet. Die Platt-<lb break="no"/>form die&#x017F;es außerordentlichen Denkmals hat etwa 9000<lb break="yes"/>Quadratmeter Inhalt, und entha&#x0364;lt die Ruinen eines klei-<lb break="no"/>nern Geba&#x0364;udes, welches wahr&#x017F;cheinlich zur letzten Zuflucht<lb break="yes"/>der Belagerten diente.</p>
+                    <lb break="yes"/>
+                    <p>Ich will die&#x017F;e flu&#x0364;chtige Ueber&#x017F;icht der azteki&#x017F;chen Alter-<lb break="no"/>thu&#x0364;mer mit der Bezeichnung einiger Orte &#x017F;chließen, welche<lb break="yes"/>man, wegen des Intere&#x017F;&#x017F;e, das &#x017F;ie fu&#x0364;r die Kenner der<lb break="yes"/>Ge&#x017F;chichte der Eroberung von Mexiko durch die Spanier<lb break="yes"/>haben, kla&#x017F;&#x017F;i&#x017F;ch nennen kann.</p>
+                    <lb break="yes"/>
+                    <p>Der Palla&#x017F;t des <persName key="montezuma_ii">Motezuma</persName> &#x017F;tand genau auf der&#x017F;elben<lb break="yes"/>Stelle, wo &#x017F;ich heutzutage das Hotel des Herzoges von<lb break="yes" />Monteleone, gewo&#x0364;hnlich Ca&#x017F;a del E&#x017F;tado genannt, befindet,<lb break="yes"/>na&#x0364;mlich auf der <hi rendition="#aq" >Plaza mayor,</hi> &#x017F;u&#x0364;dwe&#x017F;tlich von der Domkirche.<lb break="yes"/>Die&#x017F;er Palla&#x017F;t be&#x017F;tand, gleich den Palla&#x0364;&#x017F;ten der chine&#x017F;i&#x017F;chen<lb break="yes"/>Kai&#x017F;er, von welchen uns Sir <persName key="staunton_gl">George Staunton</persName> und Hr. <persName key="barrow_j">Barrow</persName>
+                        <lb break="yes"/>genaue Be&#x017F;chreibungen geliefert haben, aus einer großen Reihe<lb break="yes"/>gera&#x0364;umiger, aber &#x017F;ehr niedriger Ha&#x0364;u&#x017F;er. Sie nahmen den<lb break="yes"/>ganzen Raum zwi&#x017F;chen dem Empedradillo, der großen Straße<lb break="yes"/>von Tamba und dem Klo&#x017F;ter de la Profe&#x017F;&#x017F;a ein. Nachdem<lb break="yes"/>
+                        <persName key="cortes_h">Cortez</persName> die Stadt erobert hatte, nahm er &#x017F;eine Wohnung<lb break="yes"/>den Ruinen des Palla&#x017F;tes der Azteki&#x017F;chen Ko&#x0364;nige gegenu&#x0364;ber,<lb break="yes"/>wo heutzutage der Palla&#x017F;t der Viceko&#x0364;nige &#x017F;teht. Indeß fand<lb break="yes"/>man bald, daß <persName key="cortes_h" >Cortez</persName> Haus &#x017F;ich be&#x017F;&#x017F;er zu den Ver&#x017F;amm-<lb break="no"/>lungen der Audienzia &#x017F;chicke, und die Regierung ließ &#x017F;ich<lb break="yes"/>daher die Ca&#x017F;a del E&#x017F;tado, oder das alte Hotel von <persName key="cortes_h" >Cortez</persName>
+                        <lb break="yes"/>Familie, welche den Titel vom Marqui&#x017F;at des Valle de<lb break="yes"/>Oaxaca fu&#x0364;hrt, abtreten. Zur Ent&#x017F;cha&#x0364;digung gab man ihr<lb break="yes"/>dafu&#x0364;r den Platz des alten Palla&#x017F;tes von <persName key="montezuma_ii" >Motezuma</persName>, wo &#x017F;ie<lb break="yes"/>dann das &#x017F;cho&#x0364;ne Geba&#x0364;ude auffu&#x0364;hrte, in welchem &#x017F;ich die<lb break="yes"/>Staats-Archive befinden, und das, mit der ganzen Erb-<lb break="no"/>&#x017F;chaft, an den neapolitani&#x017F;chen Herzog von Monteleone ge-<lb break="no"/>kommen i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <p>Als <persName key="cortes_h">
+                            <hi rendition="#g">Cortez</hi>
+                        </persName> den 8 Nov. 1519 &#x017F;einen er&#x017F;ten Einzug in<lb break="yes"/>Tenochtitlan hielt, wurde ihm und &#x017F;einem kleinen Armee-<lb break="maybe"/>Korps nicht im Palla&#x017F;te des <persName key="montezuma_ii">Motezuma</persName>, &#x017F;ondern in einem<lb break="yes"/>Geba&#x0364;ude, welches ein&#x017F;t der Ko&#x0364;nig Axajacatl bewohnt hatte,<lb break="yes"/>Quartier angewie&#x017F;en. In die&#x017F;em Geba&#x0364;ude hielten die Spa-<lb break="no"/>
+                        <pb n="771" facs="#f0009"/>
+                        <cb/>nier und ihre Bundsgeno&#x017F;&#x017F;en, die Tlascalteken, den Sturm<lb break="yes"/>der Mexikaner aus; und hier &#x017F;tarb auch der unglückliche<lb break="yes"/>Ko&#x0364;nig <persName key="montezuma_ii" >Motezuma</persName> an den Folgen einer Wunde, die er, wa&#x0364;h-<lb break="no"/>rend er &#x017F;ein Volk haranguirte, erhalten hatte. Noch &#x017F;ieht<lb break="yes"/>man unbedeutende Re&#x017F;te die&#x017F;es Geba&#x0364;udes in den Mauerwerken<lb break="yes"/>hinter dem Klo&#x017F;ter von St. There&#x017F;a, am Ende der Straßen<lb break="yes" />von Tacuba und Indio tri&#x017F;te.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#c">(Die Fort&#x017F;etzung folgt.)</hi>
+                    </p>
+                </div>
+                <lb break="yes"/>
+                <pb n="774" facs="#f0010"/>
+                <cb/>
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt</hi>&#x2019;&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                        <lb break="yes"/>
+                        <lb break="yes"/>4.<lb break="yes"/>(Fort&#x017F;etzung.)</head>
+                    <lb break="yes"/>
+                    <p>Eine kleine Bru&#x0364;cke bey Bonavi&#x017F;ta hat ihren Namen,<lb break="yes"/>Sprung des <persName key="alvarado_pd">Alvarado</persName>
+                        <hi rendition="#aq">(Salto de <persName key="alvarado_pd" >Alvarado</persName>)</hi>, zum Andenken<lb break="yes"/>an den wundera&#x0364;hnlichen Sprung, welchen der tapfere <persName key="alvarado_pd">Petro<lb break="yes"/>de Alvarado</persName> machte, als &#x017F;ich die Spanier in der <hi rendition="#g">trauri-<lb break="no" />gen Nacht,</hi> da die Mexikaner bereits den Damm von<lb break="yes" />Tlacopan an mehrern Orten durch&#x017F;chnitten hatten, aus der<lb break="yes"/>Stadt nach den Gebirgen von Tepeyacac zuru&#x0364;ckzogen. In-<lb break="no"/>deß &#x017F;cheint es, daß man &#x017F;chon zu <persName key="cortes_h">Cortez</persName> Zeit &#x017F;ich u&#x0364;ber die<lb break="yes"/>hi&#x017F;tori&#x017F;che Wahrheit die&#x017F;es Ereigni&#x017F;&#x017F;es ge&#x017F;tritten habe, un-<lb break="no" />geachtet &#x017F;ich die Volkstradition unter allen Kla&#x017F;&#x017F;en von<lb break="yes"/>Mexiko&#x2019;s Bewohnern erhalten hat. <persName key="diazdelcastillo_b">Bernal Diaz</persName> betrachtet<lb break="yes" />die Ge&#x017F;chichte des Sprunges als eine bloße Auf&#x017F;chneiderey<lb break="yes"/>&#x017F;eines Waffenbruders, de&#x017F;&#x017F;en Muth und Gei&#x017F;tesgegenwart<lb break="yes"/>er u&#x0364;brigens mehrmals anru&#x0364;hmt, und ver&#x017F;ichert, daß der<lb break="yes"/>Graben zu breit gewe&#x017F;en &#x017F;ey, um daru&#x0364;ber wegzu&#x017F;pringen.<lb break="yes"/>Allein ich muß bemerken, daß die&#x017F;e Anekdote mit vieler Um-<lb break="no"/>&#x017F;ta&#x0364;ndlichkeit in der Hand&#x017F;chrift eines adeligen Metis aus<lb break="yes"/>der Republik von Tlascala, <persName key="munotcamargo_d">Diego Munoz Camargo</persName>, erza&#x0364;hlt<lb break="yes"/>wird. Ich habe die&#x017F;e Hand&#x017F;chrift, von welcher der Pater<lb break="yes"/>
+                        <persName key="torquemada_jd">Torquemada</persName> auch Kenntniß gehabt zu haben &#x017F;cheint, im<lb break="yes"/>Klo&#x017F;ter von San Felipe Neri nachge&#x017F;chlagen. Ihr Verfa&#x017F;-<lb break="no"/>&#x017F;er war ein Zeitgeno&#x017F;&#x017F;e von <persName key="cortes_h">Cortez</persName>, und er erza&#x0364;hlt die Ge-<lb break="no"/>&#x017F;chichte von <persName key="alvarado_pd">Alvarado&#x2019;s</persName> Sprunge mit vieler Einfachheit,<lb break="yes"/>ohne An&#x017F;chein von Uebertreibung, und ohne u&#x0364;ber die Breite<lb break="yes"/>des Grabens etwas Na&#x0364;heres zu &#x017F;agen. In &#x017F;einer naiven<lb break="yes" />Dar&#x017F;tellung glaubt man einen Helden des Alterthums zu<lb break="yes"/>erkennen, welcher, Arm und Schulter auf &#x017F;eine Lanze ge-<lb break="no"/>&#x017F;tu&#x0364;tzt, einen ungeheuern Sprung macht, um &#x017F;ich vor &#x017F;einen<lb break="yes"/>Feinden zu retten. <persName key="munotcamargo_d">Camargo</persName> &#x017F;etzt &#x017F;ogar noch hinzu, daß<lb break="yes"/>noch andre Spanier <persName key="alvarado_pd">Alvarado&#x2019;s</persName> Bey&#x017F;piel nachahmen wollten,<lb break="yes"/>aber, in Ermangelung gleicher Behendigkeit, in den Graben<lb break="yes"/>(Azequia) gefallen &#x017F;ind. Die Mexikaner, &#x017F;agt er, waren<lb break="yes"/>&#x017F;o er&#x017F;taunt u&#x0364;ber die Ge&#x017F;chicklichkeit die&#x017F;es Mannes, daß &#x017F;ie,<lb break="yes"/>als &#x017F;ie ihn gerettet &#x017F;ahen, die Erde aßen, (eine figu&#x0364;rliche Re-<lb break="no"/>densart, welche die&#x017F;er Tlascali&#x017F;che Schrift&#x017F;teller aus &#x017F;einer<lb break="yes" />Vater&#x017F;prache entlehnte, und die das Er&#x017F;taunen der Ver-<lb break="no"/>wunderung ausdru&#x0364;ckt). &#x201E;Die Kinder <persName key="alvarado_pd">Alvarado&#x2019;s</persName>, welcher<lb break="yes"/>
+                        <persName key="alvarado_pd">
+                            <hi rendition="#g">der Hauptmann vom Sprunge</hi>
+                        </persName> genannt wurde, be-<lb break="no"/>
+                        <cb/>wie&#x017F;en durch Zeugen und vor den Richtern von Tezcuco<lb break="yes"/>die&#x017F;e Heldenthat ihres Vaters. Ein Prozeß zwang &#x017F;ie hie-<lb break="no"/>zu, in welchem &#x017F;ie die Thaten von <persName key="alvarado_pd">
+                            <hi rendition="#g">Alvarado de el<lb break="yes"/>Salto,</hi>
+                        </persName> ihres Vaters, bey der Eroberung von Mexiko<lb break="yes" />dar&#x017F;tellten.&#x201C;</p>
+                    <lb break="yes"/>
+                    <p>Ferner zeigt man den Fremden die Bru&#x0364;cke von Clerigo,<lb break="yes" />bey der <hi rendition="#aq">Plaza major</hi> von Tlatelolco, als die denkwu&#x0364;rdige<lb break="yes"/>Stelle, wo der letzte azteki&#x017F;che Ko&#x0364;nig, <persName key="cuauhtemoc" >Quanhiemotzin</persName>,<lb break="yes"/>Neffe &#x017F;eines Vorga&#x0364;ngers, Ko&#x0364;niges <persName key="cuitlahuac" >Cuitlahuatzin</persName> und Schwie-<lb break="no"/>ger&#x017F;ohn des <persName key="montezuma_ii">Motezuma</persName>
+                        <hi rendition="#aq">II,</hi> gefangen genommen wurde. In-<lb break="no"/>deß erhellt aus den &#x017F;orgfa&#x0364;ltigen Nachfor&#x017F;chungen, welche ich<lb break="yes"/>mit dem Pater <persName key="pichardo_ja" >Pichardo</persName> ange&#x017F;tellt habe, daß die&#x017F;er junge<lb break="yes"/>Ko&#x0364;nig in einem großen Wa&#x017F;&#x017F;erbeha&#x0364;lter, der ein&#x017F;t zwi&#x017F;chen<lb break="yes"/>der Garita del Per&#x017F;alvillo, dem Platze von Santiago de<lb break="yes"/>Tlatelolco und der Bru&#x0364;cke von <placeName key="amarac">Amarac</placeName> war, in die Ha&#x0364;nde<lb break="yes" />des <persName key="garciaholguin_f">Garci Holguin</persName> gefallen i&#x017F;t. <persName key="cortes_h">Cortez</persName> befand &#x017F;ich auf der<lb break="yes"/>Terra&#x017F;&#x017F;e eines Hau&#x017F;es von Tlatelolco, als man ihm den<lb break="yes"/>ko&#x0364;niglichen Gefangenen vorfu&#x0364;hrte. &#x201E;Ich ließ ihn &#x017F;ich &#x017F;etzen,<lb break="yes"/>&#x017F;agt der Sieger &#x017F;elb&#x017F;t in &#x017F;einem dritten Briefe an Kai&#x017F;er<lb break="yes"/>
+                        <persName key="karlv">Karl <hi rendition="#aq">V,</hi>
+                        </persName> und behandelte ihn mit Zutrauen. Allein der<lb break="yes" />junge Men&#x017F;ch legte die Hand an einen Dolch, den ich am<lb break="yes"/>Gu&#x0364;rtel trug, und bat mich, ihn zu to&#x0364;dten, weil er, nach-<lb break="no"/>dem, was er &#x017F;ich &#x017F;elb&#x017F;t und &#x017F;einem Volke &#x017F;chuldig gewe&#x017F;en,<lb break="yes" />keinen andern Wun&#x017F;ch mehr habe, als zu &#x017F;terben.&#x201C; Die-<lb break="no"/>&#x017F;er Zug i&#x017F;t der &#x017F;cho&#x0364;n&#x017F;ten Zeit von Rom und Griechenland<lb break="yes" />werth; denn die Sprache &#x017F;tarker Seelen, die gegen das<lb break="yes"/>Unglu&#x0364;ck ka&#x0364;mpfen, i&#x017F;t unter allen Zonen, und welche Farbe<lb break="yes"/>die Men&#x017F;chen tragen, die&#x017F;elbe. Wir haben oben das tra-<lb break="no"/>gi&#x017F;che Ende die&#x017F;es unglu&#x0364;cklichen <persName key="cuauhtemoc" >Quauhtemotzin</persName> ge&#x017F;ehen!</p>
+                    <lb break="yes"/>
+                    <p>Nach der ga&#x0364;nzlichen Zer&#x017F;to&#x0364;rung des alten Tenochtitlan<lb break="yes"/>blieb <persName key="cortes_h" >Cortez</persName> noch vier oder fu&#x0364;nf Monate mit &#x017F;einen Leuten<lb break="yes"/>zu Colohuacan, einem Orte, fu&#x0364;r den er immer eine große<lb break="yes"/>Vorliebe gezeigt hat. Er war im Anfange unent&#x017F;chlo&#x017F;&#x017F;en,<lb break="yes"/>ob er die Haupt&#x017F;tadt nicht auf einer andern Stelle an dem<lb break="yes"/>See wieder aufbauen &#x017F;ollte. Indeß ent&#x017F;chied er &#x017F;ich endlich<lb break="yes"/>fu&#x0364;r die alte Lage, &#x201E;weil die Stadt Temixtitan einmal be-<lb break="no"/>ru&#x0364;hmt geworden war, weil ihre Lage wunderbarlich i&#x017F;t, und<lb break="yes"/>man &#x017F;ie von jeher als den Hauptort der mexikani&#x017F;chen Pro-<lb break="no"/>vinzen ange&#x017F;ehen hatte <hi rendition="#aq">(<hi rendition="#g">Como principal y sen-<lb break="no"/>nora de todas estas provincias</hi>).</hi>&#x201C; Uebrigens wa&#x0364;re<lb break="yes" />es, wegen der ha&#x0364;ufigen Ueber&#x017F;chwemmungen, welche das alte<lb break="yes"/>und das neue Mexiko erlitten, klu&#x0364;ger gewe&#x017F;en, die Stadt<lb break="yes"/>o&#x0364;&#x017F;tlich von Tezcuco, oder auf die Anho&#x0364;hen zwi&#x017F;chen Tacuba<lb break="yes" />und Tacubaya zu &#x017F;tellen. Wirklich &#x017F;ollte &#x017F;ie auch zur Zeit<lb break="yes"/>der großen Ueber&#x017F;chwemmung von 1607, nach einem fo&#x0364;rm-<lb break="no"/>lichen Befehle <persName key="philippiii" >Philipp&#x2019;s <hi rendition="#aq">III,</hi>
+                        </persName> auf die&#x017F;e Anho&#x0364;hen verpflanzt<lb break="yes" />werden; allein der Ajuntamiento, oder der Stadtmagi&#x017F;trat<lb break="yes"/>machte dem Hofe die Vor&#x017F;tellung, daß der Werth der Ha&#x0364;u-<lb break="no"/>&#x017F;er, welche auf die&#x017F;e Wei&#x017F;e zu Grunde gehen mu&#x0364;ßten, 105<lb break="yes"/>Millionen Franken betrage. Man &#x017F;chien damals in Ma-<lb break="no"/>drid nicht zu wi&#x017F;&#x017F;en, daß die Haupt&#x017F;tadt eines &#x017F;chon acht<lb break="yes"/>und achtzigja&#x0364;hrigen Ko&#x0364;nigreiches kein fliegendes Lager i&#x017F;t,<lb break="yes"/>
+                        <pb n="775" facs="#f0011"/>
+                        <cb/>welches man nach Gefallen von einem Orte zum andern<lb break="yes" />ru&#x0364;cken kann!</p>
+                    <lb break="yes"/>
+                    <p>Es i&#x017F;t unmo&#x0364;glich, die Zahl der Bewohner des alten<lb break="yes"/>Tenochtitlan mit einiger Gewißheit anzugeben. Nach dem<lb break="yes"/>Mauerwerke der zer&#x017F;to&#x0364;rten Ha&#x0364;u&#x017F;er, nach den Berichten der<lb break="yes"/>er&#x017F;ten Eroberer und be&#x017F;onders nach der Zahl der Streiter<lb break="yes"/>zu urtheilen, welche die Ko&#x0364;nige <persName key="cuitlahuac" >Cuitlahnatzin</persName> und <persName key="cuauhtemoc">Quauh-<lb break="no"/>timotzin</persName> den Tlascalteken und Spaniern entgegen&#x017F;tellten,<lb break="yes"/>&#x017F;cheint die Bevo&#x0364;lkerung von Tenochtitlan zum wenig&#x017F;ten<lb break="yes" />dreymal gro&#x0364;ßer gewe&#x017F;en zu &#x017F;eyn, als die des heutigen Me-<lb break="no"/>xiko i&#x017F;t. Nach der Ver&#x017F;icherung des <persName key="cortes_h">Cortez</persName> war das Zu-<lb break="no" />&#x017F;tro&#x0364;men der mexikani&#x017F;chen Handwerksleute, welche nach der<lb break="yes"/>Belagerung fu&#x0364;r die Spanier als Zimmerleute, Maurer,<lb break="yes"/>Weber, Metallgießer u. dgl. arbeiteten, &#x017F;o groß, daß die<lb break="yes"/>Stadt Mexiko im Jahre 1524 bereits 30,000 Einwohner<lb break="yes"/>za&#x0364;hlte. Die neuern Schrift&#x017F;teller haben aber die wider&#x017F;pre-<lb break="no" />chend&#x017F;ten Ideen u&#x0364;ber ihre Bevo&#x0364;lkerung aufge&#x017F;tellt, und der<lb break="yes"/>Abbé <persName key="clavigero_fs">Clavigero</persName> beweist in &#x017F;einem vortrefflichen Werke u&#x0364;ber<lb break="yes"/>die alte Ge&#x017F;chichte von Neu-Spanien, wie die&#x017F;e Angaben<lb break="yes"/>von 60,000 bis auf anderthalb Millionen von einander ab-<lb break="no"/>gehen. Die&#x017F;e Wider&#x017F;pru&#x0364;che du&#x0364;rfen uns aber nicht in Er-<lb break="no"/>&#x017F;taunen &#x017F;etzen, wenn wir nur bedenken wollen, wie neu noch<lb break="yes"/>&#x017F;tati&#x017F;ti&#x017F;che Unter&#x017F;uchungen &#x017F;elb&#x017F;t in den kultivirte&#x017F;ten Thei-<lb break="no"/>len von Europa &#x017F;ind.</p>
+                    <lb break="yes"/>
+                    <p>Nach den neue&#x017F;ten und am wenig&#x017F;ten verda&#x0364;chtigen An-<lb break="no"/>gaben &#x017F;cheint die gegenwa&#x0364;rtige Bevo&#x0364;lkerung der Haupt&#x017F;tadt<lb break="yes"/>von Mexiko (die Truppen mitgerechnet), von 135 &#x2014; <choice>
+                            <sic>40,000</sic>
+                            <corr type="editorial">140,000</corr>
+                        </choice>
+                        <lb break="yes"/>Seelen zu &#x017F;eyn. Die im Jahre 1790 auf Befehl des Gra-<lb break="no"/>fen <persName key="revillagigedo_jvgpdphyad" >von Revillagigedo</persName> ange&#x017F;tellte Za&#x0364;hlung, gab fu&#x0364;r die Stadt<lb break="yes"/>nicht mehr als 112,926 Men&#x017F;chen an; man weiß aber zu-<lb break="no"/>verla&#x0364;&#x017F;&#x017F;ig, daß die&#x017F;es Re&#x017F;ultat um ein Sechstheil zu klein<lb break="yes" />i&#x017F;t. Die regulirten Truppen und die in der Haupt&#x017F;tadt<lb break="yes"/>garni&#x017F;onirenden Milizen be&#x017F;tehen aus 5&#x2014;6000 Mann un-<lb break="no"/>ter den Waffen. Mit großer Wahr&#x017F;cheinlichkeit kann man<lb break="yes"/>die gegenwa&#x0364;rtige Bevo&#x0364;lkerung folgendermaßen be&#x017F;timmen:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>2,500 wei&#x017F;&#x017F;e Europa&#x0364;er.</item>
+                        <lb break="yes"/>
+                        <item>65,000 wei&#x017F;&#x017F;e Creolen.</item>
+                        <lb break="yes"/>
+                        <item>33,000 Eingeborne, (kupferfarbige Indianer).</item>
+                        <lb break="yes"/>
+                        <item>26,500 Metis, gemi&#x017F;cht von Wei&#x017F;&#x017F;en und Indianern.</item>
+                        <lb break="yes"/>
+                        <item rendition="#u">10,000 Mulatten.</item>
+                        <lb break="yes"/>
+                        <item>137,000 Einwohner.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>So &#x017F;ind demnach in Mexiko 69,500 farbige Men&#x017F;chen,<lb break="yes"/>
+                        <choice>
+                            <sic>uud</sic>
+                            <corr type="editorial">und</corr>
+                        </choice> 67,500 Wei&#x017F;&#x017F;e. Allein &#x017F;ehr viele Metis (Me&#x017F;tizos)<lb break="yes"/>&#x017F;ind beynahe eben &#x017F;o weiß, als die Europa&#x0364;er und die &#x017F;pa-<lb break="no" />ni&#x017F;chen Creolen.</p>
+                    <lb break="yes"/>
+                    <p>In den drey und zwanzig Klo&#x0364;&#x017F;tern, welche die Haupt-<lb break="no"/>&#x017F;tadt entha&#x0364;lt, befinden &#x017F;ich beynahe 1200 Individuen, von<lb break="yes"/>denen 580 Prie&#x017F;ter und Chori&#x017F;ten &#x017F;ind. Die funfzehn Frauen-<lb break="maybe" />Klo&#x0364;&#x017F;ter enthalten 2100 Nonnen, von denen etwa 900 Pro-<lb break="no"/>feß gethan haben.</p>
+                    <lb break="yes"/>
+                    <cb/>
+                    <p>Der Clerus von Mexiko i&#x017F;t &#x017F;ehr zahlreich, wiewol er im-<lb break="no"/>mer noch um ein Viertheil geringer i&#x017F;t, als der von Ma-<lb break="no"/>drid. Die Za&#x0364;hlung von 1790 gab an:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <hi rendition="#g">In den Mo&#x0364;nchsklo&#x0364;&#x017F;tern:</hi>
+                            </hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>Prie&#x017F;ter und Chori&#x017F;ten &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 573.</item>
+                        <lb break="yes"/>
+                        <item>Novizen &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 59.</item>
+                        <lb break="yes"/>
+                        <item>Dienende Bru&#x0364;der &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 235.</item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <hi rendition="#g">In den Nonnenklo&#x0364;&#x017F;tern:</hi>
+                            </hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>Nonnen, die Profeß gethan &#x2012; &#x2012; &#x2012; &#x2012; 888.</item>
+                        <lb break="yes"/>
+                        <item>Novizen &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 35.</item>
+                        <lb break="yes"/>
+                        <item>Pra&#x0364;bendirte &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 26.</item>
+                        <lb break="yes"/>
+                        <item>Pfarrer &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 16.</item>
+                        <lb break="yes"/>
+                        <item>Vikarien &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; 43.</item>
+                        <lb break="yes"/>
+                        <item>Weltgei&#x017F;tliche &#x2012; &#x2012; &#x2012; &#x2012; &#x2012; <hi rendition="#u">&#x2012; &#x2012; 517.</hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>Summe der Individuen &#x2012; &#x2012; 2,392.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>und, ohne die dienenden Bru&#x0364;der und Novizen, 2,063. Der<lb break="yes" />Clerus von Madrid be&#x017F;teht, nach dem vortrefflichen Werke<lb break="yes"/>des Hrn. von <hi rendition="#g">Laborde,</hi> aus 3,470 Per&#x017F;onen, &#x017F;o daß &#x017F;ich<lb break="yes"/>al&#x017F;o in Mexiko der Clerus zur ganzen Bevo&#x0364;lkerung wie<lb break="yes"/>1 1&#x222B;2 zu 100, und in Madrid wie 2 zu 100 verha&#x0364;lt.</p>
+                </div>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <pb n="778" facs="#f0012"/>
+                <cb/>
+                <cb/>
+                <div n="2">
+                    <head>Fragmente aus dem neue&#x017F;ten Hefte des v. <hi rendition="#g">Hum-<lb break="no"/>boldt&#x2019;</hi>&#x017F;chen Werkes <hi rendition="#g" >u&#x0364;ber den politi&#x017F;chen<lb break="yes"/>Zu&#x017F;tand des Ko&#x0364;nigreichs Neu-Spanien.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <head>5.<lb break="yes"/>
+                        <hi rendition="#g">Die &#x017F;chwimmenden Ga&#x0364;rten (Chinampas).</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Die &#x017F;ehr &#x017F;innreiche Erfindung der Chinampas &#x017F;cheint<lb break="yes"/>bis zum Ende des vierzehnten Jahrhunderts aufzu&#x017F;teigen.<lb break="yes"/>Sie i&#x017F;t in der außerordentlichen Lage eines Volkes gegru&#x0364;n-<lb break="no"/>det, das rings von Feinden umgeben, mitten auf einem<lb break="yes"/>an Fi&#x017F;chen nicht &#x017F;ehr reichen See zu leben geno&#x0364;thigt i&#x017F;t,<lb break="yes"/>und natu&#x0364;rlich auf alle mo&#x0364;gliche Mittel zu &#x017F;einem Lebens-<lb break="maybe" />Unterhalte &#x017F;innen muß. Wahr&#x017F;cheinlich hat die Natur &#x017F;elb&#x017F;t<lb break="yes"/>den Azteken die er&#x017F;te Idee zu die&#x017F;en &#x017F;chwimmenden Ga&#x0364;r-<lb break="no"/>ten gegeben. An den &#x017F;umpfigen Ufern der Seen von Xo-<lb break="no" />chimilco und Chalco reißt die &#x017F;tarke Bewegung des Wa&#x017F;&#x017F;ers,<lb break="yes"/>zur Zeit des hohen Standes de&#x017F;&#x017F;elben, Erd&#x017F;chollen ab, die<lb break="yes"/>mit Kra&#x0364;utern bedeckt und mit Wurzeln durchflochten &#x017F;ind.<lb break="yes"/>Die&#x017F;e Schollen treibt der Wind hin und her, bis &#x017F;ie &#x017F;ich<lb break="yes"/>zuweilen zu kleinen Flo&#x0364;ßen vereinigen. Ein Men&#x017F;chen-<lb break="no"/>&#x017F;tamm, welcher zu &#x017F;chwach war, um &#x017F;ich auf dem fe&#x017F;ten<lb break="yes" />Lande zu halten, glaubte die&#x017F;e Stu&#x0364;cke Boden benutzen zu<lb break="yes"/>mu&#x0364;&#x017F;&#x017F;en, den ihm der Zufall anbot, und de&#x017F;&#x017F;en Eigenthum<lb break="yes"/>ihm von keinem Feinde &#x017F;treitig gemacht wurde. Die a&#x0364;lte-<lb break="no"/>&#x017F;ten Chinampas waren daher nichts, als Stu&#x0364;cke Ra&#x017F;en, wel-<lb break="no"/>che von den Azteken ku&#x0364;n&#x017F;tlich waren zu&#x017F;ammengefu&#x0364;gt, alsdann<lb break="yes"/>aufgehackt und ange&#x017F;a&#x0364;et worden. Dergleichen &#x017F;chwimmende<lb break="yes"/>In&#x017F;eln bilden &#x017F;ich unter allen Zonen, und ich habe deren<lb break="yes"/>in dem Ko&#x0364;nigreiche Quito, auf dem Flu&#x017F;&#x017F;e <choice>
+                            <sic>Guayaquit</sic>
+                            <corr type="editorial">Guayaquil</corr>
+                        </choice> ge-<lb break="no"/>&#x017F;ehen, welche acht bis neun Meter lang waren, mitten<lb break="yes"/>auf dem Strome trieben, und junge Zweige von <hi rendition="#aq">Bambusa,<lb break="yes"/>Pistia stratiotes, Pontederia</hi> und eine Menge anderer Ve-<lb break="no"/>getabilien trugen, deren Wurzeln &#x017F;ich leicht in einander ver-<lb break="no" />flochten. Auch &#x017F;ah ich in Italien auf dem kleinen <hi rendition="#aq">
+                            <hi rendition="#g">Lago<lb break="yes"/>di aqua solfa,</hi>
+                        </hi> bey Tivoli, in der Na&#x0364;he der Thermen<lb break="yes"/>des <persName key="agrippa_01">Agrippa</persName>, &#x017F;olche kleine In&#x017F;eln, welche aus Schwefel,<lb break="yes"/>luft&#x017F;aurer Kalkerde und Bla&#x0364;ttern des <hi rendition="#aq">Ulva thermalis</hi> be&#x017F;tan-<lb break="no"/>den, und &#x017F;ich durch das lei&#x017F;e&#x017F;te Wehen des Windes in Be-<lb break="no"/>wegung &#x017F;etzten.</p>
+                    <lb break="yes"/>
+                    <p>Bloße Erd&#x017F;chollen, welche &#x017F;ich vom Ufer abri&#x017F;&#x017F;en, haben<lb break="yes"/>al&#x017F;o Anlaß zur Erfindung der Chinampas gegeben; allein<lb break="yes"/>
+                        <pb n="779" facs="#f0013"/>
+                        <cb/>die Indu&#x017F;trie der azteki&#x017F;chen Nation hat die&#x017F;es Sy&#x017F;tem vom<lb break="yes"/>Gartenbaue nach und nach vervollkommnet. Die &#x017F;chwimmenden<lb break="yes"/>Ga&#x0364;rten, welche die Spanier in großer Menge fanden, und<lb break="yes"/>von denen noch mehrere auf dem See von Chalco u&#x0364;brig &#x017F;ind,<lb break="yes"/>waren Flo&#x0364;ße von Schilf, (Totora), Ae&#x017F;ten, Wurzeln und<lb break="yes"/>Zweigen von Bu&#x017F;chwerk. Die&#x017F;e Be&#x017F;tandtheile, welche &#x017F;ehr<lb break="yes"/>leicht &#x017F;ind, und &#x017F;ich ganz in einander verwickeln, bedecken<lb break="yes"/>die Indianer mit einer &#x017F;chwarzen Erde, welche von Natur<lb break="yes" />mit Koch&#x017F;alz ge&#x017F;chwa&#x0364;ngert i&#x017F;t. Durch das Wa&#x017F;&#x017F;er, womit<lb break="yes"/>man die Erde aus dem See begießt, verflu&#x0364;chtigt &#x017F;ich die&#x017F;es<lb break="yes"/>Salz nach und nach, und je o&#x0364;fter man die&#x017F;e Auslaugung<lb break="yes"/>vornimmt, de&#x017F;to fruchtbarer wird der Boden. Man wen-<lb break="no"/>det die&#x017F;es &#x017F;elb&#x017F;t bey dem Salzwa&#x017F;&#x017F;er aus dem See von<lb break="yes"/>Tezcuco mit Vortheil an, indem die&#x017F;es Wa&#x017F;&#x017F;er, dem noch<lb break="yes"/>viel zu &#x017F;einer Saturation fehlt, wenn es durch den Boden<lb break="yes"/>filtrirt wird, das Salz vortrefflich auflo&#x0364;st. Oft enthalten<lb break="yes"/>die Chinampas &#x017F;ogar die Hu&#x0364;tte des Indianers, welcher<lb break="yes"/>eine &#x017F;olche Gruppe &#x017F;chwimmender Ga&#x0364;rten zu hu&#x0364;ten hat.<lb break="yes"/>Man &#x017F;to&#x0364;ßt &#x017F;ie mit langen Stangen weiter, oder ru&#x0364;ckt &#x017F;ie<lb break="yes"/>damit zu&#x017F;ammen, und treibt &#x017F;ie &#x017F;o nach Gefallen von einem<lb break="yes"/>Ufer zum andern.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <cb/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

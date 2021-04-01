@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="175" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#b">Des populations se nourrissant de terre glaise</hi>
+                    <note place="foot" n="(1)">Note de la dernière édition des <hi rendition="#i" >Tableaux de la<lb break="yes"/>Nature.</hi>
+                    </note>.</head>
+                <lb break="yes"/>
+                <p>D&#x2019;après une tradition très-répandue le long<lb break="yes"/>des c&#x00F4;tes de Cumana, de <placeName key="barcelona">la Nouvelle-Barce-<lb break="no"/>lone</placeName> et de Caracas, que visitèrent les moines<lb break="yes"/>franciscains de la Guyane à leur retour des<lb break="yes" />missions, il existe aux bords de l&#x2019;Orénoque des<lb break="yes"/>hommes qui se nourrissent de terre. Le 6<lb break="yes"/>juin 1800, en revenant du Rio-Negro, et après<lb break="yes"/>avoir descendu en trente-six jours le cours de<lb break="yes"/>l&#x2019;Orénoque, nous avons passé une journée<lb break="yes"/>dans la mission occupée par les <hi rendition="#i" >Olomaques,</hi>
+                    <lb break="yes"/>qui mangent en effet de la terre. Le village<lb break="yes" />dans lequel ils sont groupés, s&#x2019;appelle la <hi rendition="#i">Con-<lb break="no"/>ception de Uruana;</hi> il est situé, d&#x2019;une ma-<lb break="no"/>nière très-pittoresque, sur des rochers de gra-<lb break="no" />nit, par 7° 8&#x2032; 3&#x2033; de latitude nord, et, ainsi que<lb break="yes" />je m&#x2019;en suis assuré à l&#x2019;aide de déterminations<lb break="yes" />chronométriques, par 4° 38&#x2032; 38&#x2033; de longitude<lb break="yes" />accidentale, comptés à partir du méridien de<lb break="yes"/>Paris. La terre que mangent les Otomaques est<lb break="yes"/>une glaise grasse et onctueuse, véritable ar-<lb break="no"/>gile de potier; elle doit à un peu d&#x2019;oxyde de<lb break="yes"/>fer une couleur d&#x2019;un gris jaune. Les Otoma-<lb break="no"/>ques vont la chercher dans des bancs particu-<lb break="no" />liers sur les bords de l&#x2019;Orénoque ou du Meta,<lb break="yes"/>et la choisissent avec soin, car toute espèce<lb break="yes"/>de glaise ne leur est pas également agréable,<lb break="yes"/>et ils en distinguent très-bien au go&#x00FB;t les dif-<lb break="no"/>férentes sortes. Ils pétrissent cette terre en<lb break="yes"/>boules de 11 à 16 centimètres de diamètre et<lb break="yes"/>la font cuire extérieurement à un feu peu ar-<lb break="no" />dent, jusqu&#x2019;à ce que la surface devienne rouge.<lb break="yes"/>Avant de la manger, ils l&#x2019;humectent de nou-<lb break="no"/>veau. Les Indiens sont, pour la plupart, des<lb break="yes"/>hommes sauvages qui ont la culture en aver-<lb break="no"/>sion. Il existe en leur honneur un proverbe<lb break="yes"/>dépandu jusque chez les peuplades qui habi-<lb break="no"/>tent les bords les plus lointains de l&#x2019;Orénoque;<lb break="yes"/>à propos d&#x2019;une chère très-sale, on a coutume<lb break="yes"/>de dire: &#x00AB;Cela est si dégo&#x00FB;tant qu&#x2019;un Oto-<lb break="no"/>maque le mangerait.&#x00BB;</p>
+                <lb break="yes"/>
+                <p>Tant que les eaux de l&#x2019;Orénoque et du Meta<lb break="yes"/>ont basses, ces hommes vivent de poissons et<lb break="yes"/>de tortues. Ils attendent que les poissons pa-<lb break="no"/>raissent à la surface de l&#x2019;eau et les tuent à<lb break="yes"/>coups de pieux. Cette chasse ou cette p&#x00EA;che<lb break="yes"/>nous a souvent fourni l&#x2019;occasion d&#x2019;admirer<lb break="yes"/>adresse des Indiens. Elle cesse aux époques<lb break="yes" />périodiques où les fleuves débordent; car il<lb break="yes"/>e&#x017F;t aussi difficile de p&#x00EA;cher dans ces eaux pro-<lb break="no"/>fondes qu&#x2019;au milieu m&#x00EA;me de l&#x2019;Océan. C&#x2019;est<lb break="yes"/>dans ces intervalles, qui durent deux ou trois<lb break="yes"/>mois, que les Otomaques dévorent des quan-<lb break="no"/>tités énormes de terre. Nous en avons trouvé<lb break="yes"/>dans leurs huttes des provisions considérables.<lb break="yes"/>Les boules de terre étaient superposées en<lb break="yes" />forme de pyramides. Un homme fort intelli-<lb break="no"/>gent, natif de Madrid, qui a passé douze ans<lb break="yes"/>parmi ces Indiens, assure que chacun d&#x2019;eux<lb break="yes"/>
+                    <cb/> consomme en un jour les trois quarts ou les<lb break="yes"/>quatre cinquièmes d&#x2019;un demi-kilogramme de<lb break="yes"/>terre. De l&#x2019;avis m&#x00EA;me des Otomaques, cette<lb break="yes"/>terre est, à l&#x2019;époque des pluies, leur principale<lb break="yes"/>nourriture. De temps à autre cependant, ils<lb break="yes"/>mangent, quand ils peuvent se les procurer,<lb break="yes"/>un lézard, un petit poisson ou une racine de<lb break="yes"/>fougère. Mais la terre glaise a un tel app&#x00E2;t<lb break="yes"/>pour eux, que, m&#x00EA;me dans les temps secs, et<lb break="yes"/>lorsque la chair de poisson suffit à leur nour-<lb break="no" />riture, ils mangent tous les jours comme régal<lb break="yes"/>un peu de terre après leurs repas.</p>
+                <lb break="yes"/>
+                <p>Ces hommes sont d&#x2019;une couleur de cuivre<lb break="yes"/>foncée; leurs traits désagréables rappellent<lb break="yes"/>ceux des Tartares; ils sont gras sans obésité.<lb break="yes"/>Le moine de l&#x2019;ordre de Saint-Fran&#x00E7;ois qui vit<lb break="yes"/>parmi eux comme missionnaire, nous as-<lb break="no"/>sura qu&#x2019;il n&#x2019;avait remarqué aucun change-<lb break="no"/>ment dans leur économie générale, durant le<lb break="yes"/>temps où ils se nourrissent de terre. Ainsi,<lb break="yes" />pour résumer simplement les faits tels qu&#x2019;ils<lb break="yes"/>sont, il y a des Indiens qui mangent une<lb break="yes"/>grande quantité de terre glaise sans compro-<lb break="no"/>mettre leur santé, et qui considèrent la terre<lb break="yes"/>comme une substance nutritive; c&#x2019;est-à-dire<lb break="yes"/>qu&#x2019;après en avoir mangé, ils se sentent ras-<lb break="no"/>sasiés pour longtemps. Ils attribuent cette sa-<lb break="no" />tisfaction de leurs besoins à la terre glaise, et<lb break="yes"/>non pas à la nourriture chétive qu&#x2019;ils peuvent<lb break="yes"/>se procurer de temps à autre, indépendam-<lb break="no"/>ment de cette substance. Si l&#x2019;on interroge un<lb break="yes"/>Otomaque sur ses provisions d&#x2019;hiver (on a<lb break="yes"/>coutume d&#x2019;appeler <hi rendition="#i">hiver,</hi> dans les contrées<lb break="yes"/>br&#x00FB;lantes de <placeName key="amerika" >l&#x2019;Amérique du Sud</placeName>, la saison des<lb break="yes" />pluies), il vous montre la terre amassée dans<lb break="yes"/>sa cabane. Mais ces faits, ramenés ainsi à toute<lb break="yes"/>leur simplicité, ne décident pas encore les ques-<lb break="no"/>tions suivantes: La terre glaise peut-elle &#x00EA;tre<lb break="yes"/>vraiment un aliment? Est-elle susceptible de<lb break="yes"/>s&#x2019;assimiler, ou n&#x2019;est-elle au contraire qu&#x2019;un<lb break="yes"/>lest dans l&#x2019;estomac? Sert-elle à en distendre<lb break="yes"/>les parois, et apaise-t-elle la faim de cette ma-<lb break="no"/>nière? Ce sont autant de points que je ne<lb break="yes" />puis décider.</p>
+                <lb break="yes"/>
+                <p>Il est surprenant que le père <persName key="gumilla_j">Gumilla</persName>, quel-<lb break="no"/>les que soient d&#x2019;ailleurs sa légèreté et la fai-<lb break="no"/>blesse de sa critique, nie absolument que les<lb break="yes"/>Indiens mangent de la terre pour elle-m&#x00EA;me <note place="foot" n="(1)">
+                        <hi rendition="#i">Historia del Rio Orinoco,</hi> nueva impr., 1791,<lb break="yes"/>t. I, p. 179.</note>.<lb break="yes"/>Il affirme que les boules de terre sont m&#x00EA;lées<lb break="yes"/>intérieurement de farine de ma&#x00EF;s et de graisse<lb break="yes"/>de crocodile; mais le missionnaire Fray <persName key="bueno_r">Ra-<lb break="no"/>mon Bueno</persName> et le frère lai Fray <persName key="gonzalez_j">Juan Gon-<lb break="no"/>zalez</persName>, notre ami et notre compagnon de<lb break="yes"/>voyage, que la mer a englouti sur les <placeName key="afrika">c&#x00F4;tes<lb break="yes" />d&#x2019;Afrique</placeName>, avec une partie de nos collections,<lb break="yes"/>nous ont assuré tous deux que les Otomaques<lb break="yes"/>ne m&#x00EA;lent jamais de graisse de crocodile à la<lb break="yes"/>terre glaise. Quant à la farine que l&#x2019;on pétri-<lb break="no"/>rait avec la terre, nous n&#x2019;en avons jamais en-<lb break="no"/>tendu parler à Uruana.</p>
+                <lb break="yes"/>
+                <p>La terre que nous avons rapportée, et que<lb break="yes"/>
+                    <persName key="vauquelin_ln">Vauquelin</persName> a analysée chimiquement, est pure<lb break="yes"/>
+                    <pb n="176" facs="#f0002"/>
+                    <cb/> de tout mélange. <persName key="gumilla_j">Gumilla</persName> aurait-il done con-<lb break="no"/>fondu des faits distinets, et faut-il rapporter<lb break="yes"/>ce qu&#x2019;il dit à la préparation du pain fait avec<lb break="yes"/>les fèves allongées d&#x2019;une espèce d&#x2019;Inga. Il est<lb break="yes"/>certain que l&#x2019;on dépose ce fruit dans la terre,<lb break="yes"/>afin d&#x2019;en h&#x00E2;ter la décomposition. Ce qui m&#x2019;é-<lb break="no"/>tonne le plus dans tout cela, c&#x2019;est qu&#x2019;une aussi<lb break="yes"/>énorme consommation de terre n&#x2019;altère pas la<lb break="yes"/>santé des Otomaques. Est-ce donc que leur<lb break="yes" />estomac s&#x2019;est habitué à cette nourriture de-<lb break="no"/>puis un grand nombre de générations?</p>
+                <lb break="yes"/>
+                <p>Dans toutes les régions des tropiques, les<lb break="yes"/>hommes éprouvent le désir presque irrésistible<lb break="yes"/>de manger de la terre, non pas de la terre<lb break="yes"/>alcaline, c&#x2019;est-à-dire de la terre calcaire, qui<lb break="yes"/>pourrait neutraliser un peu les aigreurs de<lb break="yes"/>l&#x2019;estomac, mais de la glaise grasse, et qui<lb break="yes"/>exhale une forte odeur. Souvent il faut enfer-<lb break="no" />mer les enfants pour les emp&#x00EA;cher d&#x2019;aller cou-<lb break="no" />rir et de manger de la terre quand la pluie<lb break="yes"/>est fra&#x00EE;chement tombée. J&#x2019;ai vu avec étonne-<lb break="no"/>ment les femmes indiennes qui fa&#x00E7;onnent des<lb break="yes"/>pots de terre dans le village de <placeName key="banco">Banco</placeName>, sur les<lb break="yes" />bords du Rio-Magdalena, porter, en travail-<lb break="no"/>lant, des gros morceaux de terre à leur bou-<lb break="no"/>che. <persName key="gilij_fs" >Gilij</persName> fait la m&#x00EA;me remarque <note place="foot" n="(1)">
+                        <hi rendition="#i">Saggio di Storia americana,</hi> t. II, p. 311.</note>. Les loups<lb break="yes"/>mangent aussi de la terre dans l&#x2019;hiver, et par-<lb break="no"/>ticulièrement de la terre glaise. Il serait fort<lb break="yes"/>important d&#x2019;analyser les excréments des hom-<lb break="no"/>mes et des animaux qui font usage de cette<lb break="yes" />nourriture. Excepté les Otomaques, tous les<lb break="yes"/>individus qui, dans d&#x2019;autres peuplades, s&#x2019;aban-<lb break="no"/>donnent à ce singulier penchant, en ressen-<lb break="no"/>tent longtemps les effets pernicieux. Dans la<lb break="yes"/>mission de San-Borja, nous avons vu l&#x2019;enfant<lb break="yes"/>d&#x2019;une Indienne qui, d&#x2019;après ce que sa mère<lb break="yes"/>nous a dit, ne voulait absolument d&#x2019;autre<lb break="yes"/>nourriture que de la terre; il était déjà maigre<lb break="yes" />comme un squelette.</p>
+                <lb break="yes"/>
+                <p>Pourquoi, dans les zones tempérées ou froi-<lb break="no"/>des, ce go&#x00FB;t maladif est il si rare et borné à<lb break="yes"/>des enfants ou à des femmes grosses, tandis<lb break="yes"/>qu&#x2019;il est général au contraire dans les régions<lb break="yes"/>tropicales de tous les continents. En Guinée,<lb break="yes"/>les nègres mangent une terre jaun&#x00E2;tre qu&#x2019;ils<lb break="yes"/>nomment <hi rendition="#i">caouac.</hi> Emmenés en esclavage dans<lb break="yes"/>les Indes orientales, ils en cherchent de sem-<lb break="no"/>blable, et assurent que, dans leur patrie, ils<lb break="yes" />n&#x2019;en étaient nullement incommodés. Le <hi rendition="#i">caouac</hi>
+                    <lb break="yes"/>des &#x00EE;les américaines a au contraire sur la santé<lb break="yes"/>des esclaves une très-funeste influence. Aussi,<lb break="yes" />en a-t-on longtemps défendu l&#x2019;usage dans les<lb break="yes"/>
+                    <placeName key="antillen">Antilles</placeName>; ce qui n&#x2019;emp&#x00EA;chait pas qu&#x2019;en 1751,<lb break="yes"/>à la Martinique, on ne vendit en secret, sur<lb break="yes"/>le marché, un tuf d&#x2019;un rouge jaun&#x00E2;tre. &#x00AB;Les<lb break="yes"/>nègres de Guinée disent que dans leur pays ils<lb break="yes"/>mangent habituellement une certaine terre<lb break="yes" />dont le go&#x00FB;t leur pla&#x00EE;t, sans en &#x00EA;tre incommo-<lb break="no"/>dés. Ceux qui, dans l&#x2019;abus de manger du <hi rendition="#i">caouac,</hi>
+                    <lb break="yes"/>en sont si friands qu&#x2019;il n&#x2019;y a pas de ch&#x00E2;timent<lb break="yes"/>qui puisse les emp&#x00EA;cher de dévorer de la<lb break="yes"/>
+                    <cb/> terre <note place="foot" n="(1)">Thibault de Chauvalon, <hi rendition="#i" >Voyage à la Martini-<lb break="no"/>que,</hi> p. 85.</note>.&#x00BB; Dans l&#x2019;&#x00EE;le de Java, entre Sourabaya<lb break="yes"/>et Samarang, <persName key="labillardiere_jjd">Labillardière</persName> a vu vendre, dans<lb break="yes"/>des villages, des petits g&#x00E2;teaux rouges et car-<lb break="no"/>rés que les naturels nomment <hi rendition="#i" >tanah-ampo;</hi>
+                    <lb break="yes"/>or, <hi rendition="#i">tanah</hi> signifie <hi rendition="#i" >terre,</hi> dans la langue des<lb break="yes"/>Malais et des Javanais. En regardant de plus<lb break="yes"/>près, il reconnut que ces g&#x00E2;teaux étaient faits<lb break="yes"/>d&#x2019;une glaise rouge&#x00E2;tre et destinés à &#x00EA;tre man-<lb break="no"/>gés <note place="foot" n="(2)">
+                        <hi rendition="#i">Voyage à la recherche de <persName key="laperouse_jfdgcd" >la Pérouse</persName>,</hi> t. II, p. 322.</note>. On a tout récemment, en 1847, envoyé<lb break="yes"/>de Mohn&#x00EF;ke à Berlin de la glaise de Samarang,<lb break="yes"/>roulée sur elle-m&#x00EA;me en tuyaux semblables à<lb break="yes"/>ceux de la cannelle, pour y &#x00EA;tre analysée par<lb break="yes"/>Ehrenberg. C&#x2019;est une formation d&#x2019;eau douce<lb break="yes"/>déposée sur des couches de calcaire tertiaire et<lb break="yes"/>composée d&#x2019;infusoires polygastriques (Gallio-<lb break="no"/>nella, Novicula) et de Phytolitharies <note place="foot" n="(3)">
+                        <hi rendition="#i">Bericht über die Verhandlungen der Akademie<lb break="yes"/>der <choice>
+                                <sic>Veissenschafften</sic>
+                                <corr type="editorial">Wissenschafften</corr>
+                            </choice> zu Berlin,</hi> 1848, p. 222-225.</note>. Les<lb break="yes" />habitants de la Nouvelle-Écosse mangent, pour<lb break="yes"/>apaiser leur faim, des morceaux gros comme<lb break="yes"/>le poing de stéatite friable, dans laquelle <persName key="vauquelin_ln">Vau-<lb break="no"/>quelin</persName> a retrouvé encore une partie assez con-<lb break="no"/>sidérable de cuivre <note place="foot" n="(4)">
+                        <hi rendition="#i">Voyage à la recherche de <persName key="laperouse_jfdgcd" >la Pérouse</persName>,</hi> t. II, p.<lb break="yes" />205.</note>.</p>
+                <lb break="yes"/>
+                <p>A Popayan et dans plusieurs parties du Pé-<lb break="no"/>rou, on expose en vente, au milieu des rues,<lb break="yes"/>de la terre calcaire qui sert d&#x2019;aliment aux In-<lb break="no"/>diens. On m&#x00EA;le à cette chaux, pour la man-<lb break="no"/>ger, du <hi rendition="#i">coca,</hi> c&#x2019;est-à-dire des feuilles d&#x2019;<hi rendition="#i">Ery-<lb break="no" />throxylon peruvianum.</hi> Ainsi, nous trouvons<lb break="yes" />l&#x2019;habitude de manger de la terre répandue<lb break="yes"/>parmi toutes les races humaines en possession<lb break="yes"/>des plus belles et des plus fertiles contrées du<lb break="yes"/>monde. De m&#x00EA;me, dans les régions du Nord,<lb break="yes"/>à l&#x2019;extrémité de la Suède, d&#x2019;après les commu-<lb break="no"/>nications de Berzélius et de <persName key="retzius_aj">Retzius</persName>, les habi-<lb break="no"/>tants de la campagne mangent chaque année,<lb break="yes"/>en guise de pain, les uns par friandise et<lb break="yes"/>comme l&#x2019;on fume du tabac, les autres par né-<lb break="no"/>cessité, des quantités de terre extraite des dé-<lb break="no"/>p&#x00F4;ts d&#x2019;Infusoires, que l&#x2019;on peut évaluer à plu-<lb break="no"/>sieurs centaines de chariots. Dans certaines<lb break="yes"/>parties de la Finlande, on m&#x00EA;le cette m&#x00EA;me<lb break="yes"/>terre au pain. Elle est formée d&#x2019;enveloppes<lb break="yes"/>d&#x2019;animaux si petites et si peu consistantes,<lb break="yes"/>qu&#x2019;on ne les sent pas en rapprochant les dents<lb break="yes"/>les unes contre les autres, et remplit l&#x2019;estomac<lb break="yes"/>sans le nourrir. Les chroniques et les docu-<lb break="no" />ments conservés dans les archives mention-<lb break="no"/>nent souvent l&#x2019;usage fait en temps de guerre<lb break="yes"/>de la terre des Infusoires, sous le nom vague<lb break="yes"/>et général de <hi rendition="#i" >farine de montagne.</hi> Cette né-<lb break="no"/>cessité se présenta durant la guerre de Trente<lb break="yes"/>ans, en Poméranie, près de Camin; dans le<lb break="yes"/>pays de Lausits, près de Muskau; dans celui<lb break="yes"/>de Dessau, près de Klieken; et plus tard,<lb break="yes"/>en 1719 et 1733, dans la forteresse de Wit-<lb break="no"/>tenberg <note place="foot" n="(5)">
+                        <hi rendition="#i">Ehrenberg, über das <choice>
+                                <sic>unsichitbar</sic>
+                                <corr type="editorial">unsichtbar</corr>
+                            </choice> wirkende or-<lb break="no"/>ganische Leben,</hi> 1842, p. 41.</note>. <hi rendition="#et">
+                        <hi rendition="#k">Alexandre de <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                    </hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

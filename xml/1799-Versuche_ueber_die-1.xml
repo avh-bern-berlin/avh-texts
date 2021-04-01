@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Versuche über die chemische Zerlegung des Luftkreises</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1799-Versuche_ueber_die-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Versuche über die chemische Zerlegung des Luftkreises</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Halle</pubPlace>
+                        <date type="publication">1799</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Annalen der Physik</title>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope unit="issue">1</biblScope>
+                        <biblScope unit="pages">77–90</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.3.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.2.0" when="2018-10-03" who="#wernicke_nd">Markup. <note type="remarkRevision">Fehlende persName und placeName ergänzt.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="77" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">VERSUCHE<lb break="yes"/>
+                        <hi rendition="#i">über die chemi&#x017F;che Zerlegung des Luftkrei&#x017F;es</hi>,<lb break="yes"/>von<lb break="yes"/>
+                        <hi rendition="#k">Alex. von <persName key="humboldt_av"/>Humboldt.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>1. <hi rendition="#i">Be&#x017F;chreibung eines Kohlen&#x017F;äureme&#x017F;&#x017F;ers, (An-<lb break="no" />thracometer.)</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">D</hi>ie&#x017F;es In&#x017F;trument be&#x017F;teht aus einer 3 bis 5 Linien<lb break="yes"/>weiten, etwa 12 Zoll langen, &#x017F;ehr &#x017F;tarken Glasröhre,<lb break="yes"/>die &#x017F;ich unten in eine Kugel von 1,2 bis 1,3 Zoll<lb break="yes"/>Durchme&#x017F;&#x017F;er endigt. Die untern 3 Zoll der Röhre<lb break="yes"/>werden an der Lampe &#x017F;o umgebogen, daß die Ku-<lb break="no"/>gel nicht über 6,3 Zoll weit von der Röhre ab&#x017F;teht,<lb break="yes"/>um in ein enges Glas mit Wa&#x017F;&#x017F;er getaucht werden<lb break="yes"/>zu können. Die Röhre <hi rendition="#i">a b</hi>, (Fig. 7,) muß in ih-<lb break="no"/>rer ganzen Länge gleich weit &#x017F;eyn. Erweiterungen<lb break="yes"/>in <hi rendition="#i">c</hi> und <hi rendition="#i">d</hi> &#x017F;ind für den Gebrauch gleichgültig, nur<lb break="yes"/>muß zur Er&#x017F;parung der Reagentien die ganze Capa-<lb break="no"/>cität des In&#x017F;truments nicht über 2 bis 2,5 Kubik-<lb break="no"/>zoll betragen. Bei <hi rendition="#i" >e</hi> i&#x017F;t die Röhre &#x017F;o zer&#x017F;chnitten,<lb break="yes"/>daß der obere Theil 7 Zoll Länge behält; und durch<lb break="yes"/>Metallcylinder &#x017F;o verbunden, daß keine Flü&#x017F;&#x017F;igkeit<lb break="yes"/>durchdringen kann. Das obere Ende der Röhre i&#x017F;t<lb break="yes"/>in einen, etwa 6 Linien hohen, metallenen Cylinder<lb break="yes"/>
+                        <pb n="78" facs="#f0002"/> geküttet, der von außen etwa 9 &#x017F;ehr enge Schrau-<lb break="no"/>bengänge hat und an der Mündung kegelförmig<lb break="yes"/>ausgedreht i&#x017F;t. In die&#x017F;e Mündung paßt ein koni-<lb break="no"/>&#x017F;ches Mu&#x017F;chelventil von 1 bis 2 Linien Dicke. Ein<lb break="yes"/>zweiter Cylinder von Metall, <hi rendition="#i">h</hi>, der bei 5 Linien<lb break="yes"/>Höhe oben durch eine Platte ver&#x017F;chlo&#x017F;&#x017F;en und in-<lb break="no"/>wendig als Schraubenmutter ausgehöhlt i&#x017F;t, paßt<lb break="yes"/>als Deckel auf die Röhre. Um den Druck zu ver-<lb break="no"/>mehren, i&#x017F;t die Platte <hi rendition="#i">k l</hi> in der Mitte durchbohrt,<lb break="yes" />und eine zweite Schraube <hi rendition="#i">m</hi> preßt das Ventil auf<lb break="yes"/>die Mündung der Röhre. &#x2014; Der Gebrauch die&#x017F;es In-<lb break="no"/>&#x017F;truments i&#x017F;t &#x017F;ehr einfach. Man fülle es mit flü&#x017F;&#x017F;igem<lb break="yes"/>ätzenden Ammoniak; dann gieße man aus <hi rendition="#i">a e</hi> &#x017F;o<lb break="yes"/>viel heraus, als man Luft unter&#x017F;uchen will, und tra-<lb break="no"/>ge die Länge der Luft&#x017F;äule <hi rendition="#i">a b</hi> mit dem Zirkel auf<lb break="yes"/>einen Maaß&#x017F;tab; i&#x017F;t aber <hi rendition="#i">a e</hi> &#x017F;elb&#x017F;t eingetheilt, &#x017F;o<lb break="yes"/>merke man &#x017F;ich die Zahl der Grade. Man &#x017F;chließe<lb break="yes"/>das Ventil und la&#x017F;&#x017F;e die Luft in die Kugel gehen.<lb break="yes" />Hier befindet &#x017F;ie &#x017F;ich wegen der großen berüh-<lb break="no" />renden Fläche in einer vortheilhaften Lage, um ih-<lb break="no"/>re Kohlen&#x017F;äure an das Ammoniak abzutreten.<lb break="yes"/>Dadurch &#x017F;inkt das Ammoniak in der engen Röhre<lb break="yes"/>
+                        <hi rendition="#i">a e.</hi> Man öffnet das Ventil und füllt die Röhre ganz,<lb break="yes"/>&#x017F;o bald das Sinken aufhört. Man läßt die Luft&#x017F;äule<lb break="yes"/>aus der Kugel wieder in die Röhre. Da &#x017F;ie com-<lb break="no"/>primirt i&#x017F;t, &#x017F;chraubt man &#x017F;ie unter Wa&#x017F;&#x017F;er bei <hi rendition="#i">e</hi> ab,<lb break="yes"/>und &#x017F;enkt das obere Stück &#x017F;o weit unter, bis die<lb break="yes"/>Flü&#x017F;&#x017F;igkeit von innen und außen gleich hoch &#x017F;teht.<lb break="yes"/>Der Re&#x017F;t von der er&#x017F;tern Menge Luft abgezogen,<lb break="yes"/>zeigt die Menge der Kohlen&#x017F;äure. Man kann den<lb break="yes"/>
+                        <pb n="79" facs="#f0003"/> Stand des Barometers und Thermometers bei die-<lb break="no"/>&#x017F;em Ver&#x017F;uche als be&#x017F;tändig annehmen. Kalkwa&#x017F;&#x017F;er<lb break="yes"/>i&#x017F;t dem ätzenden Ammoniak noch wegen der grö-<lb break="no"/>ßern Leichtigkeit, es zu bereiten, vorzuziehen;<lb break="yes"/>doch wäre es wohl noch zu unter&#x017F;uchen, ob die vom<lb break="yes"/>Herrn v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt</hi> entdeckte Eigen&#x017F;chaft der<lb break="yes"/>Erden, Sauer&#x017F;toff zu binden, nicht hierbei einen<lb break="yes"/>&#x017F;chädlichen Einfluß haben könnte. Daß die&#x017F;es In-<lb break="no"/>&#x017F;trument auch als Sauer&#x017F;toffgas-Me&#x017F;&#x017F;er gebraucht<lb break="yes"/>werden könne, bedarf keiner Erinnerung.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>2. <hi rendition="#i">Ueber die Kohlen&#x017F;äure, welche im Dun&#x017F;tkrei&#x017F;e<lb break="yes"/>verbreitet i&#x017F;t, und über die Be&#x017F;chaffenheit des<lb break="yes"/>Luftkrei&#x017F;es der gemäßigten Zone.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">I</hi>n ältern phy&#x017F;ikali&#x017F;chen Schriften nahm man<lb break="yes"/>die gewöhnliche Menge der&#x017F;elben &#x017F;ehr groß an,<lb break="yes"/>nämlich 0,06. <note place="foot" n="*)">S. <bibl>
+                                <hi rendition="#g">
+                                    <persName key="gehler_jst" ref="http://d-nb.info/gnd/" >Gehler</persName>&#x2019;s</hi> phy&#x017F;. Wörterbuch, B. 2, S. 396</bibl>.</note>
+                        <hi rendition="#g">
+                            <persName key="girtanner_c">Girtanner</persName>
+                        </hi> &#x017F;chätzt &#x017F;ie auf 0,01,<lb break="yes"/>überhaupt fehlt es aber an &#x017F;ichern Erfahrungen,<lb break="yes"/>Nach zahlreichen Erfahrungen des Herrn v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Hum-<lb break="no"/>boldt</hi> i&#x017F;t die Mittelzahl für die gemäßigte Zone<lb break="yes"/>nahe an 0,015. Das Maximum, welches er fand,<lb break="yes"/>i&#x017F;t 0,018, (21&#x017F;ten Augu&#x017F;t 1797, 73° Hyg. <persName key="saussure_hbd" ref="http://d-nb.info/gnd/">Sau&#x017F;&#x017F;.</persName>,<lb break="yes"/>18°,5 <hi rendition="#i">R.</hi>;) das Minimum 0,005, (den 3ten Sept.<lb break="yes"/>bei einem Regen, bewölktem Himmel und 17° <hi rendition="#i">R.</hi>)<lb break="yes"/>Herr <persName key="saussure_hbd" ref="http://d-nb.info/gnd/">von <hi rendition="#g" >Sau&#x017F;&#x017F;üre</hi>
+                        </persName> fand auf dem Gipfel des <placeName key="montblanc">Mont-<lb break="no"/>blanc</placeName>
+                        <note place="foot" n="**)">
+                            <hi rendition="#i">Voy. dans les <placeName key="alpen" >Alpes</placeName>
+                            </hi>, T. 4, §. 2010, p. 200.</note> noch Kohlen&#x017F;äure, die wahr&#x017F;cheinlich<lb break="yes"/>
+                        <pb n="80" facs="#f0004"/> durch kohlen&#x017F;toffhaltige Flechten, (<hi rendition="#i">lichen &#x017F;ulphu-<lb break="no"/>reus</hi> und <hi rendition="#i">rupe&#x017F;tris</hi>,) &#x017F;o wie weiter unten durch<lb break="yes"/>Chloriterde und Hornblende hervorgebracht wird.<lb break="yes"/>In der Luft, die <persName key="garnerin_aj" ref="http://d-nb.info/gnd/">Garnerin</persName>
+                        <note place="foot" n="*)">Siehe den Zu&#x017F;atz.</note> aus einer Höhe von 650<lb break="yes"/>Toi&#x017F;en mitbrachte, war eben &#x017F;o viel Kohlen&#x017F;äure,<lb break="yes"/>wie damahls zu <placeName key="paris">Paris</placeName>. &#x2014; Nach die&#x017F;en Erfahrungen<lb break="yes"/>&#x017F;cheint die Kohlen&#x017F;äure kein zufälliger, &#x017F;ondern ein<lb break="yes"/>allgemein verbreiteter Be&#x017F;tandtheil der Atmo&#x017F;phäre<lb break="yes"/>zu &#x017F;eyn, vielleicht, daß wir auch noch Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="no"/>gas mit dem Stickgas in der&#x017F;elben verbunden ent-<lb break="no"/>decken. Das Regenwa&#x017F;&#x017F;er zeigte ihm keine Spur<lb break="yes"/>Kohlen&#x017F;äure. Lange wiederhohlte Vergleichung<lb break="yes"/>des Anthracometers mit dem Hygrometer haben<lb break="yes"/>zwar gezeigt, daß im Sommer im Ganzen etwas<lb break="yes"/>mehr Kohlen&#x017F;äure in der Atmo&#x017F;phäre i&#x017F;t, daß aber<lb break="yes"/>die&#x017F;er Unter&#x017F;chied keinesweges in den hygrometri-<lb break="no"/>&#x017F;chen Verhältni&#x017F;&#x017F;en des Luftkrei&#x017F;es gegründet i&#x017F;t.<lb break="yes"/>Aus die&#x017F;en Ver&#x017F;uchen geht ebenfalls hervor, daß<lb break="yes"/>wir die näch&#x017F;ten Ur&#x017F;achen des zunehmenden und<lb break="yes"/>abnehmenden Kohlen&#x017F;äuregehalts noch nicht zu<lb break="yes"/>be&#x017F;timmen im Stande &#x017F;ind.</p>
+                    <lb break="yes"/>
+                    <p>Die Ver&#x017F;uche des Hrn v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt</hi> über die<lb break="yes" />Be&#x017F;chaffenheit des Luftkrei&#x017F;es der gemäßigten Zone,<lb break="yes"/>die er mit dem Eudiometer, dem Barometer, Ther-<lb break="no"/>mometer, Electrometer, Anthracometer, dem <persName key="saussure_hbd" ref="http://d-nb.info/gnd/">Sau&#x017F;-<lb break="no"/>&#x017F;üri&#x017F;chen</persName> und <hi rendition="#g">
+                            <persName key="deluc_ja" ref="http://d-nb.info/gnd/">de Lüc</persName>&#x2019;s</hi> Hygrometer während 6<lb break="yes" />Monate, täglich mehrere Mahle ange&#x017F;tellt, können<lb break="yes" />hier nicht in ihrem Umfange, &#x017F;ondern nur in ihren<lb break="yes"/>
+                        <fw type="catch" place="bottom">Re&#x017F;ul-</fw>
+                        <lb break="yes"/>
+                        <pb n="81" facs="#f0005"/> Re&#x017F;ultaten mitgetheilt werden. Wer es weiß, wie<lb break="yes"/>wenig Genuß &#x017F;olche Ver&#x017F;uche gewähren, ehe eine ge-<lb break="no"/>nug&#x017F;ame Menge der&#x017F;elben ge&#x017F;ammelt, wie &#x017F;orgfältig<lb break="yes"/>man &#x017F;elb&#x017F;t alle vor&#x017F;chnelle Vermuthungen zurückhal-<lb break="no"/>ten muß, um nicht bei die&#x017F;er Beobachtung etwas zu-<lb break="no"/>zugeben, bei jener etwas wegzula&#x017F;&#x017F;en; der wird<lb break="yes"/>&#x017F;icher der unermüdeten Ausdauer des Herrn von<lb break="yes"/>
+                        <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldts</hi> &#x017F;eine Bewunderung nicht ver&#x017F;agen.</p>
+                    <lb break="yes"/>
+                    <p>Die wichtig&#x017F;ten Re&#x017F;ultate, welche er aus jenen<lb break="yes" />Ver&#x017F;uchen zieht, zeigen, daß, wenn bei trübem Wetter<lb break="yes" />die Dün&#x017F;te &#x017F;ich auflö&#x017F;en, die Wolken ver&#x017F;chwinden<lb break="yes"/>und &#x017F;ich des Himmels Gewölbe blau färbt, mei&#x017F;t<lb break="yes"/>die Sauer&#x017F;toffmenge des Luftkrei&#x017F;es zunehme.<lb break="yes"/>Sie nimmt dagegen mei&#x017F;t ab, wenn am blauen hei-<lb break="no"/>tern Himmel das Cyanometer vom 20° bis 7° über-<lb break="no"/>geht, und wenn Regen- oder Schneewolken &#x017F;ich bil-<lb break="no"/>den. Schlackiges Wetter, be&#x017F;onders Hagel mit Schnee<lb break="yes"/>gemi&#x017F;cht, kündigt die gering&#x017F;te Sauer&#x017F;toffmenge an.<lb break="yes"/>Beim Nebel mit &#x017F;tarker negativer Electricität, in-<lb break="no"/>dem die Wa&#x017F;&#x017F;erdün&#x017F;te &#x017F;ich auflö&#x017F;en, i&#x017F;t die Luft &#x017F;ehr<lb break="yes"/>reich an Oxygen. Das Schmelzen des Schnees,<lb break="yes"/>bisweilen &#x017F;elb&#x017F;t das Fallen eines großflockigen,<lb break="yes"/>leicht zergehenden Schnees, verbe&#x017F;&#x017F;ert den Luft-<lb break="no"/>kreis. Eine ähnliche Verbe&#x017F;&#x017F;erung wird häufig bei<lb break="yes"/>den im Frühjahre gewöhnlichen wohlriechenden<lb break="yes"/>Strichregen bemerkt, bei welchen die Electricität<lb break="yes"/>häufig aus der po&#x017F;itiven in die negative übergeht.<lb break="yes"/>Die Verminderung bei der Bildung des Regens<lb break="yes"/>leitet der Verfa&#x017F;&#x017F;er aus einem Ver&#x017F;chlucken<lb break="yes"/>de&#x017F;&#x017F;elben durch das gebildete Wa&#x017F;&#x017F;er her, oder<lb break="yes"/>
+                        <pb n="82" facs="#f0006"/> durch die Umhüllung der Dun&#x017F;tbläschen durch<lb break="yes"/>oxygenreichere Atmo&#x017F;phären. Das Maximum des<lb break="yes"/>Sauer&#x017F;toffgehalts fand der Verf. 0,290 und das<lb break="yes"/>Minimum 0,236; der mittlere Sauer&#x017F;toffgehalt war<lb break="yes"/>im November 0,256, im December 0,268, Januar<lb break="yes"/>0,275, Februar 0,272, März 0,269, April 0,272,<lb break="yes"/>und in allen &#x017F;echs Monaten 0,268. &#x2014; Die electri-<lb break="no"/>&#x017F;che Ladung des Luftkrei&#x017F;es fand er &#x017F;tets po&#x017F;itiv,<lb break="yes"/>(S. 174,) negativ war &#x017F;ie nur auf einzelne Minu-<lb break="no"/>ten. Es war mir dies eine willkommene Be&#x017F;tätigung<lb break="yes"/>de&#x017F;&#x017F;en, was ich in <bibl>meinem Ver&#x017F;uche über die Theo-<lb break="no"/>rie der electri&#x017F;chen Er&#x017F;cheinungen, S. 48</bibl>, darüber<lb break="yes"/>geäußert habe. Bei &#x017F;ehr tief ziehenden Wol-<lb break="no"/>ken war die <hi rendition="#i">E</hi> mei&#x017F;t 0. Beim Schneien aber be-<lb break="no"/>merkte der Verf. oft den&#x017F;elben Wech&#x017F;el zwi&#x017F;chen<lb break="yes"/>+ und &#x2014; <hi rendition="#i">E</hi>, welchen Herr <hi rendition="#g">
+                            <persName key="lampadius_01" ref="http://d-nb.info/gnd/" >Lampadius</persName>
+                        </hi> beim Ge-<lb break="no"/>witter wahrnahm. Am 5ten Februar war die <hi rendition="#i">E</hi>
+                        <lb break="yes"/>bei blauem wolkenfreien Himmel negativ. Am<lb break="yes" />&#x017F;tärk&#x017F;ten und am &#x017F;chnelle&#x017F;ten aus + in &#x2014;, wech&#x017F;elt<lb break="yes"/>&#x017F;ie im Nebel. Hagelwetter i&#x017F;t anhaltend negativ.</p>
+                    <lb break="yes"/>
+                    <p>Herr <hi rendition="#g">
+                            <persName key="buch_lv" ref="http://d-nb.info/gnd/">von Buch</persName>
+                        </hi> hatte den &#x017F;innreichen Gedan-<lb break="no"/>ken, den Stand des Thermometers im Schatten und<lb break="yes"/>im Lichte zu beobachten. Es i&#x017F;t merkwürdig, wie an<lb break="yes"/>gleich heitern Tagen bei gleicher Himmelsbläue die<lb break="yes"/>Sonnenkraft ungleich i&#x017F;t. Ungeachtet nicht ange-<lb break="no"/>zeigt wird, wie Herr <hi rendition="#g">von <persName key="humboldt_av"/>Humboldt</hi> die&#x017F;en<lb break="yes"/>Gedanken ausgeführt, &#x017F;o läßt es &#x017F;ich doch von ei-<lb break="no"/>nem &#x017F;o &#x017F;orgfältigen Experimentator erwarten, daß<lb break="yes"/>er einen Schatten wird gewählt haben, de&#x017F;&#x017F;en<lb break="yes"/>Dichtigkeit &#x017F;ich nach der Sonnenhöhe nicht verän-<lb break="no"/>
+                        <pb n="83" facs="#f0007"/> derte. Am leichte&#x017F;ten wäre wohl die&#x017F;er Gedanke<lb break="yes"/>auszuführen, wenn man zwei Thermometer neben<lb break="yes"/>einander der Sonne aus&#x017F;etzte, von denen die Kugel<lb break="yes"/>des einen weiß, die Kugel des andern &#x017F;chwarz<lb break="yes"/>überzogen wäre.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>3. <hi rendition="#i">Ueber die Entbindung des Lichts.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">M</hi>it Vergnügen werden die Phy&#x017F;iker die Reihe die-<lb break="no"/>&#x017F;er Ver&#x017F;uche, über das Leuchten des faulen Hol-<lb break="no"/>zes, unter ver&#x017F;chiedenen Um&#x017F;tänden über&#x017F;ehen,<lb break="yes"/>&#x017F;owohl wegen der Genauigkeit, als auch wegen der<lb break="yes"/>be&#x017F;timmten Re&#x017F;ultate. <note place="foot" n="*)">Nicht ganz vereinbar mit den Ver&#x017F;uchen des<lb break="yes"/>Herrn v. <hi rendition="#g">
+                                <persName key="humboldt_av"/>Humboldt&#x2019;s</hi> i&#x017F;t ein von <hi rendition="#g">
+                                <persName key="achard_fc">Achard</persName>
+                            </hi> in<lb break="yes"/>der bis 27<formula notation="TeX" >\frac{1}{4}</formula> Zoll geleerten Glocke der Lu&#x017F;tpumpe<lb break="yes"/>ange&#x017F;tellter Ver&#x017F;uch, in welcher das Holz noch ei-<lb break="no"/>nige Tage leuchtete. (<bibl>
+                                <hi rendition="#i">Mèm. de l&#x2019;Acad. de <placeName key="berlin" />Berlin</hi>,<lb break="yes"/>p. 1783, S. 99</bibl>.) Etwas kann man wohl auf die<lb break="yes"/>&#x017F;auer&#x017F;toffreichere Atmo&#x017F;phäre des Holzes rechnen,<lb break="yes"/>doch verdienen die&#x017F;e &#x017F;owohl, wie die übrigen Ver-<lb break="no" />&#x017F;uche da&#x017F;elb&#x017F;t, nicht verge&#x017F;&#x017F;en zu werden. <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note> Kohlen&#x017F;aures Gas, durch<lb break="yes"/>Phosphor des Sauer&#x017F;toffgas beraubt, verlö&#x017F;cht den<lb break="yes" />phosphori&#x017F;chen Schein; einige hineingela&#x017F;&#x017F;ene atmo-<lb break="no"/>&#x017F;phäri&#x017F;che Luft bringt den&#x017F;elben wieder hervor. In<lb break="yes"/>Sauer&#x017F;toffgas leuchtet das Holz nicht &#x017F;tärker; die Ab-<lb break="no" />&#x017F;orbtion i&#x017F;t nicht &#x017F;tark, aber bald bemerkt man Koh-<lb break="no"/>len&#x017F;äure darin. Im reinen Stickgas, &#x017F;o wie im reinen<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas, verli&#x017F;cht das Holz &#x017F;chnell; hineinge-<lb break="no" />la&#x017F;&#x017F;ene atmo&#x017F;phäri&#x017F;che Luft &#x017F;tellt das Leuchten wie-<lb break="no"/>der her. Die&#x017F;e Luftarten waren durch Phosphor ge-<lb break="no"/>
+                        <pb n="84" facs="#f0008"/> reinigt; damit man aber nicht die Schuld die&#x017F;es Ver-<lb break="no"/>lö&#x017F;chens der verdampften phosphori&#x017F;chen Säure ge-<lb break="no"/>ben könne, zeigte H. v. H., daß das Holz in atmo-<lb break="no"/>&#x017F;phäri&#x017F;cher Luft, die &#x017F;tark damit ange&#x017F;chwängert war,<lb break="yes"/>leuchte. Heiße Luft und heißes Wa&#x017F;&#x017F;er vernichten<lb break="yes"/>das Leuchten, (zwi&#x017F;chen 30 bis 32° <persName key="reaumur_rafd"/>Reaum. hört<lb break="yes"/>es auf zu leuchten,) im kalten Wa&#x017F;&#x017F;er leuchtet<lb break="yes"/>es lange. In alkali&#x017F;cher Auflö&#x017F;ung ver&#x017F;chwindet<lb break="yes"/>der Glanz; im Alkohol in 6 Minuten; in allen<lb break="yes"/>Säuren 9 bis 12 Minuten nach dem Eintauchen.<lb break="yes"/>Herr <hi rendition="#g">von <persName key="humboldt_av"/>Humboldt</hi> kann wohl keine concen-<lb break="no"/>trirte Schwefel&#x017F;äure angewendet haben, denn die&#x017F;e<lb break="yes"/>greift mit außerordentlicher Schnelligkeit leuchten-<lb break="no"/>des Holz an und färbt es &#x017F;chwarz, und die Stelle,<lb break="yes"/>worauf man es gießt, &#x017F;enkt &#x017F;ich &#x017F;ogleich; es wird<lb break="yes"/>dadurch als ein Hydro-Carbone mit großem Anthei-<lb break="no"/>le Wa&#x017F;&#x017F;er&#x017F;toff charakteri&#x017F;irt. Herr <hi rendition="#g">von <persName key="humboldt_av"/>Hum-<lb break="no"/>boldt</hi> hat bemerkt, daß das unterirdi&#x017F;che Gruben-<lb break="no"/>holz nie leuchte; er glaubt dies der Abwe&#x017F;enheit<lb break="yes"/>des Lichts zu&#x017F;chreiben zu können, und führt ein<lb break="yes"/>Bei&#x017F;piel an einem Bolzen an, de&#x017F;&#x017F;en oberer Theil<lb break="yes"/>nur &#x017F;o weit er dem Lichte ausge&#x017F;etzt war, leuchtete.<lb break="yes"/>Ich ge&#x017F;tehe aber, daß ich nie Holz, welches fort-<lb break="no"/>dauernd dem Lichte ausge&#x017F;etzt gewe&#x017F;en war, phos-<lb break="no" />phore&#x017F;ciren ge&#x017F;ehen habe, auch Herr <hi rendition="#g">
+                            <persName key="gaertner_j" ref="http://d-nb.info/gnd/" >Gärtner</persName>,</hi>
+                        <note place="foot" n="*)">
+                            <hi rendition="#g">
+                                <persName key="scherer_01">Scherer</persName>&#x2019;s</hi>
+                            <bibl>
+                                <hi rendition="#i">Journal der Chemie</hi>, III. Band, S. 5</bibl>.<lb break="yes"/>
+                            <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note>
+                        <lb break="yes"/>ein &#x017F;orgfältiger Beobachter die&#x017F;er Er&#x017F;cheinungen,<lb break="yes"/>fordert ausdrücklich Abwe&#x017F;enheit des Lichts. Nie<lb break="yes"/>
+                        <pb n="85" facs="#f0009"/> wird das äußerlich faule Holz leuchten; gemei-<lb break="no"/>niglich muß man bei den Hölzern ein Stück wohl-<lb break="no"/>erhaltenes Holz von dem leuchtenden abreißen,<lb break="yes" />und die&#x017F;es, durch das umgebende Holz von dem<lb break="yes" />Sauer&#x017F;toffgas der Atmo&#x017F;phäre ge&#x017F;ondert, kann &#x017F;o<lb break="yes"/>durch Fäulniß eine Mi&#x017F;chung erhalten, in der es<lb break="yes"/>ohne vorangehende Temperatur-Erhöhung ver-<lb break="no"/>brennt.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>4. <hi rendition="#i">Ver&#x017F;uche über das Salpetergas und &#x017F;eine Ver-<lb break="no"/>bindungen mit dem Sauer&#x017F;toffe.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">E</hi>s &#x017F;ey <hi rendition="#i">z</hi> der Summe des in der <persName key="fontana_af" ref="http://d-nb.info/gnd/" >Fontana&#x017F;chen</persName> Röhre<lb break="yes"/>zer&#x017F;etzten Sauer&#x017F;toffgas und Salpetergas gleich;<lb break="yes"/>nenne ich daher das vernichtete Salpetergas<lb break="yes"/>
+                        <hi rendition="#i">x</hi> und das ab&#x017F;orbirte Sauer&#x017F;toffgas <hi rendition="#i">y</hi>, &#x017F;o i&#x017F;t<lb break="yes"/>
+                        <hi rendition="#i">z</hi> = <hi rendition="#i">x</hi> + <hi rendition="#i" >y.</hi> Es &#x017F;ey <hi rendition="#i">m</hi> das Volumen des zur Sätti-<lb break="no"/>gung eines Theils Sauer&#x017F;toff nöthigen Salpetergas,<lb break="yes"/>&#x017F;o verhält &#x017F;ich <hi rendition="#i">x</hi> : <hi rendition="#i">y</hi> = <hi rendition="#i" >m</hi> : 1, folglich <hi rendition="#i">x</hi> + <hi rendition="#i" >y</hi> : <hi rendition="#i">y<lb break="yes"/>m</hi> + 1 : 1 und es wird <hi rendition="#i">y</hi> = <formula notation="TeX">\frac{z}{1 + m}</formula> oder <hi rendition="#i">m</hi> = <formula notation="TeX" >\frac{z}{y}</formula> &#x2014; 1.<lb break="yes"/>Alles kommt hier auf die Be&#x017F;timmung von <hi rendition="#i">m</hi> an,<lb break="yes"/>und die&#x017F;es i&#x017F;t bisher von den Phyfikern äußer&#x017F;t<lb break="yes"/>ver&#x017F;chieden angegeben worden. Von <hi rendition="#g">
+                            <persName key="lavoisier_ald"/>Lavoi&#x017F;ier</hi>
+                        <lb break="yes"/>zwi&#x017F;chen 1,725 und 1,830, von <hi rendition="#g">
+                            <persName key="priestley_j" ref="http://d-nb.info/gnd/" >Prie&#x017F;tley</persName>
+                        </hi> zu<lb break="yes"/>1,970, von andern bis 4,1.</p>
+                    <lb break="yes"/>
+                    <p>Herr <hi rendition="#g">von <persName key="humboldt_av"/>Humboldt</hi> nahm daher die Ar-<lb break="no"/>beit noch einmahl vor, und fing damit an, die Güte<lb break="yes"/>des Salpetergas durch &#x017F;chwefel&#x017F;aures Ei&#x017F;en und<lb break="yes"/>oxygenirt &#x017F;alzig&#x017F;aures Gas zu prüfen. In einer ge-<lb break="no"/>
+                        <pb n="86" facs="#f0010"/> mein&#x017F;chaftlich mit <hi rendition="#g">
+                            <persName key="vauquelin_ln">Vauquelin</persName>
+                        </hi> unternommenen Ar-<lb break="no"/>beit zeigte es &#x017F;ich, daß die &#x017F;chwefel&#x017F;aure Ei&#x017F;enauflö-<lb break="no"/>&#x017F;ung nach dem Ab&#x017F;orbiren aus &#x017F;alpeter&#x017F;aurem Ei&#x017F;en<lb break="yes"/>und &#x017F;chwefel&#x017F;aurem Ammoniak be&#x017F;tehe, we&#x017F;wegen<lb break="yes"/>&#x017F;ie hier eine Zer&#x017F;etzung des Wa&#x017F;&#x017F;ers annahmen. Zu<lb break="yes"/>bedauern i&#x017F;t es freilich, daß man hier annehmen<lb break="yes"/>und nicht voraus be&#x017F;timmen kann, und daß die&#x017F;er,<lb break="yes"/>wie &#x017F;o mancher andere Fall, wo Ammoniak &#x017F;ich<lb break="yes"/>bildet, noch einzeln da &#x017F;teht und keinen be&#x017F;timm-<lb break="no"/>ten Verwandt&#x017F;chaftsge&#x017F;etzen unterworfen i&#x017F;t. Durch<lb break="yes"/>die&#x017F;e Auflö&#x017F;ung wird alles Salpetergas ab&#x017F;orbirt;<lb break="yes"/>doch i&#x017F;t hierbei zu bemerken, daß, wenn man die<lb break="yes"/>Ei&#x017F;enauflö&#x017F;ung ge&#x017F;chüttelt hat, 0,02 bis 0,03 we-<lb break="no"/>gen des aus der Auflö&#x017F;ung aufgefangenen Gas ab-<lb break="no"/>zuziehen &#x017F;ind. &#x2014; Herr v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt</hi> bemerkte,<lb break="yes"/>daß der Phosphor in manchen Sorten Salpetergas<lb break="yes"/>leuchte; er zieht daraus den Schluß, daß &#x017F;ie Sauer-<lb break="no"/>&#x017F;toff eingemengt enthielten, welches nicht Zeit habe,<lb break="yes"/>&#x017F;ich mit dem Salpetergas zu verbinden, (S. 12.)<lb break="yes"/>Ich glaube, daß &#x017F;ich das einfacher, nicht den Ver-<lb break="no" />wandt&#x017F;chaftsge&#x017F;etzen wider&#x017F;prechend, auf eine ähn-<lb break="no"/>liche Art, wie <hi rendition="#g">
+                            <persName key="fourcroy_afd">Fourcroy</persName>
+                        </hi> die von <hi rendition="#g">
+                            <persName key="goettling_01" ref="http://d-nb.info/gnd/" >Göttling</persName>
+                        </hi>
+                        <lb break="yes"/>gemachten Beobachtungen erklärt. Es kann &#x017F;ich<lb break="yes"/>hier das in dem Salpetergas enthaltene Stickgas<lb break="yes"/>mit dem Phosphor verbinden, durch die&#x017F;e doppelte<lb break="yes"/>Wahlverwandt&#x017F;chaft das Salpetergas zer&#x017F;etzt, und<lb break="yes"/>oxydirtes Stickgas und Stick&#x017F;toff-Phosphor-Halb&#x017F;äu-<lb break="no"/>re erzeugt werden. Herr <hi rendition="#g">von <persName key="humboldt_av" />Humboldt</hi>
+                        <lb break="yes"/>nahm keine Raumverminderung bei die&#x017F;em Leuch-<lb break="no"/>ten wahr, welches &#x017F;ich &#x017F;ehr gut damit reimt, daß<lb break="yes"/>
+                        <pb n="87" facs="#f0011"/> eine Stick&#x017F;toff-Phosphor-Halb&#x017F;äure, nach &#x017F;einen<lb break="yes"/>eignen Beobachtungen in einer <bibl>andern Abhandlung,<lb break="yes"/>(S. 63 bis 81,)</bibl> &#x017F;ich gasförmig dar&#x017F;tellt. <note place="foot" n="*)">Herr <hi rendition="#g">von <persName key="humboldt_av"/>Humboldt</hi> bemerkt in die&#x017F;er Ab-<lb break="no"/>handlung, daß ein&#x017F;t eine &#x017F;ehr wa&#x017F;&#x017F;er&#x017F;toffreiche <choice>
+                                <sic>Lu&#x017F;t-<lb break="no"/>art</sic>
+                                <corr type="editorial">Luft-<lb break="no"/>art</corr>
+                            </choice> aus einer Grube beim Erkalten Ei&#x017F;en abge&#x017F;etzt,<lb break="yes"/>ein andermahl, (<bibl>über die unterirdi&#x017F;chen Wetter,<lb break="yes"/>S. 182.</bibl>,) daß er beim Abbrennen vom Wa&#x017F;&#x017F;er&#x017F;toff-<lb break="no" />gas Zinkkalk gefunden. Dies führt ihn auf die<lb break="yes" />Vermuthung, ob man nicht eben daher das Ei&#x017F;en<lb break="yes" />ableiten könne, das aus Feuerkugeln niederfällt.<lb break="yes"/>Eine Beobachtung, die den 12ten November die&#x017F;es<lb break="yes"/>Jahres hier von vielen gemacht wurde, (daß eine<lb break="yes"/>Feuerkugel &#x017F;ich plötzlich in einen breiten bren-<lb break="no"/>nenden Feuer&#x017F;treifen auflö&#x017F;te,) &#x017F;pricht &#x017F;ehr für luft-<lb break="no"/>artige, vielleicht nur mit einer Kru&#x017F;te Ei&#x017F;en umge-<lb break="no"/>bene Be&#x017F;tandtheile, in die&#x017F;en Meteoren. <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note> Ob<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;toffgas dem Salpetergas beigemengt &#x017F;ey, läßt<lb break="yes"/>&#x017F;ich nicht gut ausmachen. Das Salpetergas läßt<lb break="yes"/>&#x017F;ich &#x017F;ehr gut von gleicher Güte erhalten, wenn<lb break="yes"/>man die Salpeter&#x017F;äure von gleichem &#x017F;pecifi&#x017F;chen Ge-<lb break="no"/>wichte, nämlich zu 17 oder 21° des <persName key="baume_a" ref="http://d-nb.info/gnd/">Beaumé-<lb break="no" />&#x017F;chen</persName>
+                        <note place="foot" n="**)" xml:id="fn1-1" next="#fn1-2">Da &#x017F;ehr viele franzö&#x017F;i&#x017F;che Chemi&#x017F;ten &#x017F;ich noch<lb break="yes"/>immer die&#x017F;es Areometers bedienen, &#x017F;o glaube ich,<lb break="yes"/>daß es vielen willkommen &#x017F;eyn möchte, die Grade<lb break="yes"/>des <persName key="baume_a" ref="http://d-nb.info/gnd/">Beaumé&#x017F;chen</persName> Areometers auf die zugehörigen<lb break="yes"/>&#x017F;pecili&#x017F;chen Gewichte reduciren zu können. Fol-<lb break="no"/>gende Tabelle giebt zum Behufe die&#x017F;er Reduction</note> Areometers, (1,132 bis 1,170,) wählt;<lb break="yes"/>das Salpetergasgehalt enthält dann gewöhnlich 0,13<lb break="yes"/>bis 0,14 Azote. Aus den Ver&#x017F;uchen, die der Verf.<lb break="yes"/>
+                        <pb n="88" facs="#f0012"/> mit Sauer&#x017F;toffgas an&#x017F;tellte, erhielt er, nach nöthi-<lb break="no"/>ger Reduction, <hi rendition="#i" >m</hi> = 2,82, welches gar &#x017F;ehr von<lb break="yes"/>dem gewöhnlichen 1,72 abweicht. Er vermißte<lb break="yes" />inde&#x017F;&#x017F;en hier oft die &#x017F;chöne Ueberein&#x017F;timmung, an<lb break="yes"/>
+                        <note place="foot" n="**)" xml:id="fn1-2" prev="#fn1-1">
+                            <table>
+                                <head>
+                                    <hi rendition="#g">
+                                        <persName key="nicholson_01" ref="http://d-nb.info/gnd/" >Nichol&#x017F;on</persName>,</hi> in &#x017F;einem <hi rendition="#i">
+                                        <bibl>Journ. of natur. phil.</bibl>
+                                    </hi>,<lb break="yes"/>I, 39, zufolge einiger von ihm und von <hi rendition="#g">
+                                        <persName key="guytondemorveau_lbb" ref="http://d-nb.info/gnd/">Guy-<lb break="no" />ton</persName>
+                                    </hi> ange&#x017F;tellten Ver&#x017F;uche.<lb break="yes"/>
+                                </head>
+                                <row>
+                                    <cell cols="4">Bei 10° <persName key="baume_a"/>Beaum. oder 55° Fahr. ent&#x017F;prechen</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>Grade an<lb break="yes"/>
+                                        <hi rendition="#g">
+                                            <persName key="baume_a" ref="http://d-nb.info/gnd/" >Beaumé</persName>&#x2019;s</hi>
+                                        <lb break="yes"/>Areometer<lb break="yes"/>für<lb break="yes"/>Salze.</cell>
+                                    <cell>einem<lb break="yes"/>&#x017F;peci&#x017F;i&#x017F;chen<lb break="yes"/>Gewichte<lb break="yes"/>von</cell>
+                                    <cell>Grade an<lb break="yes"/>
+                                        <hi rendition="#g">
+                                            <persName key="baume_a" ref="http://d-nb.info/gnd/" >Beaumé</persName>&#x2019;s</hi>
+                                        <lb break="yes"/>Areometer für<lb break="yes" />gei&#x017F;tige Flü&#x017F;-<lb break="no" />&#x017F;igkeiten.</cell>
+                                    <cell>einem<lb break="yes"/>&#x017F;pecifi&#x017F;chen<lb break="yes"/>Gewichte<lb break="yes"/>von</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>0</cell>
+                                    <cell>1,000</cell>
+                                    <cell>10</cell>
+                                    <cell>1,000</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>3</cell>
+                                    <cell>1,020</cell>
+                                    <cell>11</cell>
+                                    <cell>0,990</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>6</cell>
+                                    <cell>1,040</cell>
+                                    <cell>12</cell>
+                                    <cell>0,985</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>9</cell>
+                                    <cell>1,064</cell>
+                                    <cell>13</cell>
+                                    <cell>0,977</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>12</cell>
+                                    <cell>1,089</cell>
+                                    <cell>14</cell>
+                                    <cell>0 970</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>15</cell>
+                                    <cell>1,114</cell>
+                                    <cell>15</cell>
+                                    <cell>0,963</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>18</cell>
+                                    <cell>1,140</cell>
+                                    <cell>16</cell>
+                                    <cell>0,955</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>21</cell>
+                                    <cell>1,170</cell>
+                                    <cell>17</cell>
+                                    <cell>0,949</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>24</cell>
+                                    <cell>1,200</cell>
+                                    <cell>18</cell>
+                                    <cell>0,942</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>27</cell>
+                                    <cell>1,230</cell>
+                                    <cell>19</cell>
+                                    <cell>0,935</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>30</cell>
+                                    <cell>1,261</cell>
+                                    <cell>20</cell>
+                                    <cell>0,928</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>33</cell>
+                                    <cell>1,295</cell>
+                                    <cell>21</cell>
+                                    <cell>0,922</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>36</cell>
+                                    <cell>1,333</cell>
+                                    <cell>22</cell>
+                                    <cell>0,915</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>39</cell>
+                                    <cell>1,373</cell>
+                                    <cell>23</cell>
+                                    <cell>0,909</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>42</cell>
+                                    <cell>1,414</cell>
+                                    <cell>24</cell>
+                                    <cell>0,903</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>45</cell>
+                                    <cell>1,455</cell>
+                                    <cell>26</cell>
+                                    <cell>0,892</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>48</cell>
+                                    <cell>1,500</cell>
+                                    <cell>28</cell>
+                                    <cell>0,880</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>51</cell>
+                                    <cell>1,547</cell>
+                                    <cell>30</cell>
+                                    <cell>0,867</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>54</cell>
+                                    <cell>1,594</cell>
+                                    <cell>32</cell>
+                                    <cell>0,856</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>57</cell>
+                                    <cell>1,659</cell>
+                                    <cell>34</cell>
+                                    <cell>0,847</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>60</cell>
+                                    <cell>1,717</cell>
+                                    <cell>36</cell>
+                                    <cell>0,837</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>63</cell>
+                                    <cell>1,779</cell>
+                                    <cell>38</cell>
+                                    <cell>0,827</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>66</cell>
+                                    <cell>1,848</cell>
+                                    <cell>40</cell>
+                                    <cell>0,817</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>69</cell>
+                                    <cell>1,920</cell>
+                                    <cell/>
+                                    <cell/>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>72</cell>
+                                    <cell>2,000</cell>
+                                    <cell/>
+                                    <cell/>
+                                </row>
+                            </table>
+                            <lb break="yes"/>
+                            <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="89" facs="#f0013"/> die er &#x017F;on&#x017F;t bei der atmo&#x017F;phäri&#x017F;chen Luft gewöhnt<lb break="yes"/>war; er &#x017F;ah auch, daß kün&#x017F;tliche Luftgemi&#x017F;che,<lb break="yes" />mit gleichem Antheile Sauer&#x017F;toff, &#x017F;ich ganz anders<lb break="yes"/>verhielten, wie atmo&#x017F;phäri&#x017F;che Luft. Dies veran-<lb break="no"/>laßte ihn, eine zweite Ver&#x017F;uchsreihe mit atmo&#x017F;phäri-<lb break="no"/>&#x017F;cher Luft zu machen, wobei <hi rendition="#i">m</hi> zwi&#x017F;chen 2,5 und<lb break="yes"/>2,6 &#x017F;chwankte. Daraus folgt, daß 2,55 Salpeter-<lb break="no"/>gas dazu gehören, um 1,00 <note place="foot" n="*)">Im Originale &#x017F;teht 0,01, &#x017F;o wie überhaupt &#x017F;ehr<lb break="yes"/>viele Zahlen und Nahmen, ja, ganze Perioden, ver-<lb break="no"/>wirrt &#x017F;ind. <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note> Sauer&#x017F;toffgas zu ab-<lb break="no"/>&#x017F;orbiren. Nach die&#x017F;em Werthe von <hi rendition="#i">m</hi> und nach<lb break="yes" />der Formel <hi rendition="#i">y</hi> = <formula notation="TeX">\frac{z}{1 + m}</formula> i&#x017F;t die folgende Tabelle<lb break="yes" />berechnet, die &#x017F;icher jedem willkommen &#x017F;eyn wird,<lb break="yes"/>der das Eudiometer braucht.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Ab&#x017F;orbirtes<lb break="yes"/>Volumen = <hi rendition="#i" >z.</hi>
+                            </cell>
+                            <cell>Sauer&#x017F;toff<lb break="yes"/>= <hi rendition="#i">y.</hi>
+                            </cell>
+                            <cell>Rück&#x017F;tand.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>109°</cell>
+                            <cell>0,307</cell>
+                            <cell>91</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>108</cell>
+                            <cell>0,304</cell>
+                            <cell>92</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>107</cell>
+                            <cell>0,301</cell>
+                            <cell>93</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>106</cell>
+                            <cell>0,298</cell>
+                            <cell>94</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>105</cell>
+                            <cell>0,295</cell>
+                            <cell>95</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>104</cell>
+                            <cell>0,293</cell>
+                            <cell>96</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>103</cell>
+                            <cell>0,290</cell>
+                            <cell>97</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102</cell>
+                            <cell>0,287</cell>
+                            <cell>98</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101</cell>
+                            <cell>0,284</cell>
+                            <cell>99</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>0,281</cell>
+                            <cell>100</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>99</cell>
+                            <cell>0,278</cell>
+                            <cell>101</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>98</cell>
+                            <cell>0,276</cell>
+                            <cell>102</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>97</cell>
+                            <cell>0,274 <note place="foot" n="**)">0,273. <hi rendition="#et">
+                                        <hi rendition="#i">
+                                            <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                        </hi>
+                                    </hi>
+                                </note>
+                            </cell>
+                            <cell>103</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>96</cell>
+                            <cell>0,270</cell>
+                            <cell>104</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>95</cell>
+                            <cell>0,267</cell>
+                            <cell>105</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>94</cell>
+                            <cell>0,264</cell>
+                            <cell>106</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="90" facs="#f0014"/>
+                    <table>
+                        <row>
+                            <cell>Ab&#x017F;orbirtes<lb break="yes"/>Volumen = <hi rendition="#i" >z.</hi>
+                            </cell>
+                            <cell>Sauer&#x017F;toff<lb break="yes"/>= <hi rendition="#i">y.</hi>
+                            </cell>
+                            <cell>Rück&#x017F;tand.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>93</cell>
+                            <cell>0,261</cell>
+                            <cell>107</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>92</cell>
+                            <cell>0,259</cell>
+                            <cell>108</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>91</cell>
+                            <cell>0,256</cell>
+                            <cell>109</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>90</cell>
+                            <cell>0,253</cell>
+                            <cell>110</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>89</cell>
+                            <cell>0,250</cell>
+                            <cell>111</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>88</cell>
+                            <cell>0,247</cell>
+                            <cell>112</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>87</cell>
+                            <cell>0,245</cell>
+                            <cell>113</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>86</cell>
+                            <cell>0,242</cell>
+                            <cell>114</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>85</cell>
+                            <cell>0,239</cell>
+                            <cell>115</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>84</cell>
+                            <cell>0,236</cell>
+                            <cell>116</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Der Le&#x017F;er empfängt hier den Be&#x017F;chluß meines<lb break="yes" />Auszugs der &#x017F;chönen Abhandlungen <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldts</hi>
+                        <lb break="yes"/>
+                        <bibl>über die Zerlegung des Luftkrei&#x017F;es</bibl>, die vor<lb break="yes"/>einiger Zeit in <placeName key="braunschweig"> Braun&#x017F;chweig</placeName> er&#x017F;chienen &#x017F;ind,<lb break="yes"/>zum Theil aber &#x017F;chon Auzugswei&#x017F;e früher be-<lb break="no"/>kannt wurden. Die dahin gehörigen Abhand-<lb break="no"/>lungen finden &#x017F;ich im <bibl>er&#x017F;ten Bande der Annalen,<lb break="yes"/>S. 457 bis 458</bibl>, ferner <bibl>S. 501 bis 514</bibl>; im <bibl>zweiten<lb break="yes"/>Bande, S. 221 bis 224</bibl>; hier endlich die dem Phy-<lb break="no"/>&#x017F;iker intere&#x017F;&#x017F;ante&#x017F;ten Re&#x017F;ultate aus den übrigen Ab-<lb break="no"/>handlungen. Jede Wi&#x017F;&#x017F;en&#x017F;chaft hat ihren eignen<lb break="yes"/>Standpunkt, von wo aus &#x017F;ie die Wichtigkeit der<lb break="yes"/>Unter&#x017F;uchung beurtheilt: aber der Einzelne hat<lb break="yes"/>auch wiederum &#x017F;einen eignen Standpunkt; ein Aus-<lb break="no"/>zug für eine be&#x017F;ondere Wi&#x017F;&#x017F;en&#x017F;chaft kann daher we-<lb break="no"/>der vollkommen &#x017F;eyn, noch vollkommen beurtheilt<lb break="yes"/>werden, ungeachtet jeder das Bedürfniß de&#x017F;&#x017F;el-<lb break="no"/>ben fühlt. <hi rendition="#et">
+                            <hi rendition="#i">
+                                <persName key="arnim_lav" ref="http://d-nb.info/gnd/">L. A. v. <hi rendition="#g">
+                                        <persName key="arnim_lav">Arnim</persName>.</hi>
+                                </persName>
+                            </hi>
+                        </hi>
+                    </p>
+                </div>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <pb n="91" facs="#f0015"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">NACHTRAG<lb break="yes"/>
+                            <hi rendition="#i">zu den vorhergehenden Abhandlungen</hi>
+                            <lb break="yes"/>des<lb break="yes"/>Herrn von <hi rendition="#k">
+                                <persName key="humboldt_av"/>Humboldt&#x2019;s.</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">Ueber einige bisher nicht beachtete Ur-<lb break="no" />&#x017F;achen des Irrthums bei Ver&#x017F;uchen<lb break="yes" />mit dem Eudiometer</hi>,<lb break="yes"/>von<lb break="yes"/>
+                            <persName key="arnim_lav" ref="http://d-nb.info/gnd/">L. A. v. <hi rendition="#k">
+                                    <persName key="arnim_lav">Arnim</persName>.</hi>
+                            </persName>
+                        </hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#in">D</hi>ie Luft in <placeName key="paris" >Paris</placeName>, &#x017F;o wie die von <hi rendition="#g">
+                            <persName key="garnerin_aj" ref="http://d-nb.info/gnd/" >Garnerin</persName>
+                        </hi>
+                        <lb break="yes"/>mitgebrachte, enthielt, nach des Herrn <hi rendition="#g" >von <persName key="humboldt_av"/>Hum-<lb break="no" />boldt&#x2019;s</hi> Unter&#x017F;uchung, 0,008 bis 0,01 kohlen&#x017F;au-<lb break="no"/>res Gas, die er&#x017F;tere 0,276, die letztere nur 0,259<lb break="yes"/>Sauer&#x017F;toffgas. Herr v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt</hi> macht auf<lb break="yes" />die&#x017F;en großen Unter&#x017F;chied in Rück&#x017F;icht des Sauer-<lb break="no"/>&#x017F;toffgehalts und auf die Menge Kohlen&#x017F;äure be&#x017F;on-<lb break="no"/>ders aufmerk&#x017F;am; <note place="foot" n="*)">A. a. O., <bibl>S. 256</bibl>.</note> aber er vergißt hier, wenn<lb break="yes"/>ich nicht irre, wie alle, die &#x017F;ich bisher mit eudio-<lb break="no"/>metri&#x017F;chen Unter&#x017F;uchungen be&#x017F;chäftigten, einen<lb break="yes"/>Um&#x017F;tand von Wichtigkeit, nämlich die Temperatur-<lb break="maybe"/>Ver&#x017F;chiedenheit der Luft an dem Orte, wo die Luft<lb break="yes"/>einge&#x017F;ammelt worden, und ihre Expan&#x017F;ions-Ver-<lb break="no"/>&#x017F;chiedenheit eben da&#x017F;elb&#x017F;t. Ich muß hier an die<lb break="yes"/>
+                        <pb n="92" facs="#f0016"/>
+                        <persName key="prieur_01" ref="http://d-nb.info/gnd/" >Prieur&#x017F;chen</persName> Ver&#x017F;uche, (<bibl>
+                            <hi rendition="#i">Journ. polytechn.</hi> C. II</bibl>,) <note place="foot" n="*)">
+                            <bibl>
+                                <hi rendition="#g">
+                                    <persName key="prony_gcfmrbd" ref="http://d-nb.info/gnd/" >Prony</persName>
+                                </hi>
+                                <hi rendition="#i">architecture hydraulique</hi>, à Paris 1796,<lb break="yes"/>T. II, p. 152 &#x2014; 196</bibl>.</note>
+                        <lb break="yes"/>über die eigenthümliche Ausdehnung der ver&#x017F;chie-<lb break="no"/>denen Gasarten bei gleichen Graden der Wärme, und<lb break="yes"/>be&#x017F;onders an die ausgezeichnet große Ausdehnung<lb break="yes"/>des Stickgas erinnern. Das Stickgas hat, nach<lb break="yes"/>die&#x017F;en Ver&#x017F;uchen, in Verhältniß zu der atmo&#x017F;phäri-<lb break="no"/>&#x017F;chen Luft, die es mit dem Sauer&#x017F;toffgas haupt-<lb break="no"/>&#x017F;ächlich zu&#x017F;ammen&#x017F;etzt, eine größere Ausdehnungs-<lb break="no" />fähigkeit durch die Wärme, als die&#x017F;es. Im Eudio-<lb break="no" />meter erhalten wir auf ver&#x017F;chiedenen Wegen Stick-<lb break="no" />gas; das Sauer&#x017F;toffgas wird zer&#x017F;etzt; ge&#x017F;chieht da-<lb break="no"/>her die Unter&#x017F;uchung einer Luftart nicht bei der&#x017F;el-<lb break="no"/>ben Temperatur, wo &#x017F;ie einge&#x017F;ammelt, &#x017F;ondern in<lb break="yes"/>einer wärmern, &#x017F;o werden alle Unter&#x017F;uchungen zu<lb break="yes"/>viel Stickgas in Verhältniß zum Sauer&#x017F;toffgas ange-<lb break="no"/>ben. Es i&#x017F;t die&#x017F;e Bemerkung in mehrerer Rück-<lb break="no" />&#x017F;icht von <choice>
+                            <sic>Ein&#x017F;luß</sic>
+                            <corr type="editorial">Einfluß</corr>
+                        </choice>. Zuer&#x017F;t für die Eudiometrie &#x017F;elb&#x017F;t;<lb break="yes"/>nicht etwa bloß wegen der <persName key="garnerin_aj" ref="http://d-nb.info/gnd/">Garnerin&#x017F;chen</persName> Luftun-<lb break="no"/>ter&#x017F;uchung allein, die in der wärmern <placeName key="paris">Pari&#x017F;er</placeName> At-<lb break="no" />mo&#x017F;phäre vorgenommen wurde, &#x017F;ondern überhaupt<lb break="yes" />in Rück&#x017F;icht aller Eudiometer-Ver&#x017F;uche im Win-<lb break="no" />ter, die in der warmen Stube ange&#x017F;tellt werden.<lb break="yes"/>Ich weiß nicht, wie Herr <hi rendition="#g">von <persName key="humboldt_av" />Humboldt</hi> &#x017F;eine<lb break="yes"/>trefflichen <placeName key="salzburg">&#x017F;alzburger</placeName> meteorologi&#x017F;chen Unter&#x017F;uchun-<lb break="no"/>gen ange&#x017F;tellt hat, es &#x017F;ollte mir aber &#x017F;ehr leid thun,<lb break="yes"/>wenn die&#x017F;er Schatz von Beobachtungen dadurch an<lb break="yes"/>
+                        <pb n="93" facs="#f0017"/> Richtigkeit verlöre. &#x2014; Für die Meteorologie über-<lb break="no"/>haupt i&#x017F;t ferner jene Bemerkung von <choice>
+                            <sic>Ein&#x017F;luß</sic>
+                            <corr type="editorial">Einfluß</corr>
+                        </choice>, in-<lb break="no"/>dem, nach der&#x017F;elben, wenn anderweitige Um&#x017F;tände<lb break="yes"/>es nicht hinderten, durch erhöhte Temperatur der<lb break="yes"/>Atmo&#x017F;phäre ihr Sauer&#x017F;toffgehalt vermindert er&#x017F;chei-<lb break="no"/>nen müßte. Wenn man deswegen die <persName key="humboldt_av"/>Humboldt-<lb break="no"/>&#x017F;chen Beobachtungen durch&#x017F;ieht, &#x017F;o findet man un-<lb break="no" />gefähr eben &#x017F;o viele, wo dies der Fall war, als wo<lb break="yes" />der entgegenge&#x017F;etzte eintrat. Dem Meteorologen<lb break="yes" />bleibt daher die Unter&#x017F;uchung, durch welchen Pro-<lb break="no" />zeß in den entgegenge&#x017F;etzten Fällen das Sauer&#x017F;toff-<lb break="no"/>gas vermehrt wurde. &#x2014; Der Luftdruck kommt bei<lb break="yes"/>Eudiometer-Ver&#x017F;uchen, insbe&#x017F;ondere bei &#x017F;olchen,<lb break="yes"/>wie die <persName key="humboldt_av" />Humboldt&#x017F;chen über eine Luft, in der das<lb break="yes"/>Barometer 4 Zoll niedriger als in <placeName key="paris">Paris</placeName> &#x017F;tand, und<lb break="yes"/>wegen der ungleichen Zu&#x017F;ammendrückung der Luft-<lb break="no"/>arten durch gleiche drückende La&#x017F;ten, in Betracht.<lb break="yes"/>Zwar haben wir nur Ver&#x017F;uche, die die&#x017F;e Ver&#x017F;chie-<lb break="no"/>denheit bewei&#x017F;en, ohne Ver&#x017F;uche zu haben, die<lb break="yes" />die&#x017F;en Unter&#x017F;chied be&#x017F;timmen; &#x017F;o viel i&#x017F;t aber ge-<lb break="no"/>wiß, daß, je nachdem das Stickgas, welches im Eu-<lb break="no"/>diometer abge&#x017F;chieden wird, in Verhältniß zu der<lb break="yes"/>atmo&#x017F;phäri&#x017F;chen Luft eine größere oder geringere<lb break="yes"/>Compre&#x017F;&#x017F;ibilität hat, durch den größern Luftdruck<lb break="yes"/>zu <placeName key="paris" >Paris</placeName> der Sauer&#x017F;toffgehalt größer oder geringer<lb break="yes"/>angegeben wird. &#x2014; Die Rechnung des Herrn <hi rendition="#g">von<lb break="yes"/>
+                            <persName key="humboldt_av"/>Humboldt,</hi> (<bibl>S. 163</bibl>,) nach welcher der mittle-<lb break="no"/>re Sauer&#x017F;toffgehalt der Luft im December viel ge-<lb break="no"/>ringer als im April i&#x017F;t, wider&#x017F;pricht der Meinung<lb break="yes"/>einiger Phy&#x017F;iker, die den größern Reiz der Win-<lb break="no"/>
+                        <pb n="94" facs="#f0018"/> terluft auf die Lungen von größerm Sauer&#x017F;toffgehalte<lb break="yes"/>der&#x017F;elben herleiten. Vielleicht, wenn ich nicht<lb break="yes"/>irre, &#x017F;o wird der Fehleran&#x017F;chlag für die Eudiome-<lb break="no"/>ter im Winter ihre Meinung wenig&#x017F;tens in die&#x017F;er<lb break="yes"/>Rück&#x017F;icht rechtfertigen. Auch dem A&#x017F;tronomen<lb break="yes"/>kann jene Bemerkung über Hrn. v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt&#x2019;s</hi>
+                        <lb break="yes"/>Unter&#x017F;uchung nicht gleichgültig &#x017F;eyn, da, nach Hrn.<lb break="yes"/>
+                        <hi rendition="#g">
+                            <persName key="kramp_01" ref="http://d-nb.info/gnd/" >Kramp</persName>,</hi> (in &#x017F;einer <bibl>
+                            <hi rendition="#i">Analy&#x017F;e des réfractions a&#x017F;tro-<lb break="no"/>nomiques</hi>, <placeName key="leipzig"/>Leipz. 99, S. 29</bibl>,) die be&#x017F;te Tafel über<lb break="yes"/>die Strahlenbrechung von <hi rendition="#g">
+                            <persName key="bradley_j" ref="http://d-nb.info/gnd/">Bradley</persName>
+                        </hi> mit der An-<lb break="no"/>nahme einer be&#x017F;tändigen &#x017F;pecifi&#x017F;chen Ela&#x017F;ticität, wie<lb break="yes"/>er &#x017F;ie nennt, der Luft in jeder Höhe am be&#x017F;ten über-<lb break="no"/>ein&#x017F;timmt, nach der Analy&#x017F;e des Herrn <hi rendition="#g">von <persName key="humboldt_av"/>Hum-<lb break="no" />boldt&#x2019;s</hi> hingegen, die&#x017F;e durchaus nicht hätte be&#x017F;te-<lb break="no"/>hen können. Da die Oxyanthrakometrie mit allem<lb break="yes"/>Fug einen Platz in der Eudiometrie behauptet, &#x017F;o i&#x017F;t<lb break="yes"/>es wohl nicht am unrechten Orte, auf einen Ver&#x017F;uch<lb break="yes"/>aufmerk&#x017F;am zu machen, wodurch die Vermuthung<lb break="yes"/>des Hrn. v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt&#x2019;s,</hi> (<bibl>über die unterirdi&#x017F;chen<lb break="yes"/>Gasarten, S. 169</bibl>,) daß es eine über&#x017F;aure, oder<lb break="yes"/>vollkommne Kohlen&#x017F;äure gebe, geprüft werden<lb break="yes"/>könnte. Man wäge nämlich die Menge von Kalk-<lb break="no"/>erde, die aus dem Kalkwa&#x017F;&#x017F;er durch gleiche Vo-<lb break="no"/>lumina von ver&#x017F;chiednen Sorten Kohlen&#x017F;äu-<lb break="no"/>re niederge&#x017F;chlagen wird; denn Säuren, die<lb break="yes"/>man auf ein gleiches &#x017F;pecifi&#x017F;ches Gewicht ge-<lb break="no"/>bracht, la&#x017F;&#x017F;en &#x017F;ich am be&#x017F;ten durch die Menge<lb break="yes"/>des zu ihrer Sättigung nöthigen Stoffs unter-<lb break="no"/>&#x017F;cheiden.</p>
+                    <lb break="yes"/>
+                    <pb n="95" facs="#f0019"/>
+                    <p>Sollte der Ver&#x017F;uch einen Unter&#x017F;chied zeigen, &#x017F;o<lb break="yes"/>wäre das <persName key="lichtenberg_gc" >Lichtenbergi&#x017F;che</persName>
+                        <note place="foot" n="*)">Ich <choice>
+                                <sic>glauhe</sic>
+                                <corr type="editorial">glaube</corr>
+                            </choice> immer, daß &#x017F;ich Experimental-Phy-<lb break="no" />&#x017F;ik am be&#x017F;ten nach einem &#x017F;olchen Verzeichni&#x017F;&#x017F;e<lb break="yes"/>von Metern entwickeln ließe. <hi rendition="#et">
+                                <hi rendition="#i">
+                                    <persName key="arnim_lav" ref="http://d-nb.info/gnd/" >A.</persName>
+                                </hi>
+                            </hi>
+                        </note> Verzeichniß der auf<lb break="yes"/>Meter oder Me&#x017F;&#x017F;er &#x017F;ich endigenden Namen um<lb break="yes"/>einen vermehrt, um einen Kohlen&#x017F;äure-Güte-<lb break="maybe" />Prüfungs-Me&#x017F;&#x017F;er. Ein nothwendigeres Werkzeug<lb break="yes" />zur <choice>
+                            <sic>Lu&#x017F;tprüfung</sic>
+                            <corr type="editorial">Luftprüfung</corr>
+                        </choice> wäre wohl ein Feuchtigkeitsme&#x017F;&#x017F;er<lb break="yes" />der Luft, da die gewöhnlichen Hygrometer, aus be-<lb break="no"/>kannten Gründen, aller von <persName key="saussure_hbd" ref="http://d-nb.info/gnd/" >Sau&#x017F;&#x017F;üre</persName> angewendeten<lb break="yes"/>Mühe ungeachtet, dies nicht lei&#x017F;ten können. Herrn<lb break="yes"/>v. <hi rendition="#g">
+                            <persName key="humboldt_av"/>Humboldt&#x2019;s</hi> Vor&#x017F;chlag, die Fla&#x017F;chen zu er-<lb break="no"/>wärmen und dann &#x017F;chnell zu erkälten, (<bibl>über <choice>
+                                <sic>un-<lb break="no"/>terirdi&#x017F;ohe</sic>
+                                <corr type="editorial">un-<lb break="no"/>terirdi&#x017F;che</corr>
+                            </choice> Gasarten, S. 148</bibl>,) lei&#x017F;tet, wenn ich nicht<lb break="yes"/>irre, nicht viel mehr, da auch aus der kälte&#x017F;ten<lb break="yes"/>Luft durch Entbindung der Gasarten, (z. B. Fluß-<lb break="no"/>&#x017F;äure, &#x017F;alzige Säure,) die des Wa&#x017F;&#x017F;ers zu ihrer Dar-<lb break="no"/>&#x017F;tellung in tropfbar-flü&#x017F;&#x017F;iger Ge&#x017F;talt bedürfen, Wa&#x017F;-<lb break="no"/>&#x017F;er abge&#x017F;chieden wird. Die&#x017F;e Luftarten würde ich<lb break="yes"/>aber am tauglich&#x017F;ten zu die&#x017F;em Ge&#x017F;chäfte der Wa&#x017F;-<lb break="no"/>&#x017F;erab&#x017F;cheidung finden; gleiche Volumina der zu<lb break="yes"/>prüfenden und der prüfenden Luft in dem mit<lb break="yes"/>Queck&#x017F;ilber gefüllten <persName key="humboldt_av"/>Humboldt&#x017F;chen Eudiometer<lb break="yes" />vermi&#x017F;chen; die Vermi&#x017F;chung bis zu einem be&#x017F;timm-<lb break="no"/>ten Punkte erkälten; und aus der Verminderung des<lb break="yes"/>Volumens, nach den dazu nöthigen Erfahrungen,<lb break="yes"/>auf den Wa&#x017F;&#x017F;ergehalt &#x017F;chließen.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

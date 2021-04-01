@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="475" facs="#f0001"/>
+            <lb break="yes"/>
+            <p xml:lang="fra">
+                <hi rendition="#k">Nota.</hi> En attendant que M. <persName key="humboldt_av">de Humboldt</persName> qui vient d&#x2019;arriver à Paris, veuille<lb break="yes" />bien nous donner quelques détails plus étendus sur son voyage, nous pensons<lb break="yes"/>qu&#x2019;on lira avec plaisir la traduction d&#x2019;une lettre qu&#x2019;il avoit écrite en espagnol à<lb break="yes"/>M. <persName key="cavanilles_aj" ref="http://d-nb.info/gnd/">Cavanilles</persName>, et que celui-ci a publiée dans le 18.° n.° de l&#x2019;ouvrage intitulé:<lb break="yes"/>
+                <hi rendition="#i">Anales de ciencias naturales.</hi>
+            </p>
+            <lb break="yes"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#i">Lettre de M. <persName key="humboldt_av">A. de Humboldt</persName> à D. <persName key="cavanilles_aj" ref="http://d-nb.info/gnd/">J. A. Cavanilles</persName>.</hi>
+                </head>
+                <lb break="yes"/>
+                <opener>
+                    <dateline>
+                        <hi rendition="#et">Mexico, <date>22 avril 1803</date>.</hi>
+                    </dateline>
+                    <lb break="yes"/>
+                    <salute>M.</salute>
+                    <lb break="yes"/>
+                </opener>
+                <p>Nous ne faisons que d&#x2019;arriver dans cette grande et magnifique ville de Mexico,<lb break="yes"/>je m&#x2019;empresse de vous écrire, espérant que cette lettre aura une meilleure des-<lb break="no"/>tinée que mes précédentes. Mon ami <persName key="bonpland_ajag" ref="http://d-nb.info/gnd/" >Bompland</persName> et moi nous avons toujours con-<lb break="no"/>servé une santé robuste, malgré le défaut d&#x2019;abri et la faim que nous avons<lb break="yes"/>éprouvée dans les déserts, et quoique nous ayons beaucoup souffert par le chan-<lb break="no"/>gement de température et par la fatigue dans nos voyages, sur-tout dans le<lb break="yes"/>dernier de Loxa à Jaen-de Bracamoros; dans celui sur les bords du fleuve des<lb break="yes"/>Amazones, dont les environs sont couverts de bougainvillea d&#x2019;andira et de go-<lb break="no"/>doya, et dans le district que nous avons traversé pour arriver à Lima.</p>
+                <lb break="yes"/>
+                <p>Plusieurs européens ont exagéré l&#x2019;influence de ces climats sur l&#x2019;esprit; ils ont<lb break="yes"/>soutenu qu&#x2019;on ne pouvoit s&#x2019;y livrer à des travaux scientifiques; nous pouvons<lb break="yes" />assurer le contraire. Nous n&#x2019;avons jamais été doués de plus de force de t&#x00EA;te qu&#x2019;en<lb break="yes"/>contemplant dans ces pays la magnificence de la nature. La vue de ses pro-<lb break="no"/>ductions innombrables et nouvelles pour nous, nous électrisoit; elle nous trans-<lb break="no"/>portoit de joie, et nous rendoit pour ainsi dire invulnérables. C&#x2019;est ainsi que<lb break="yes"/>nous travaillions exposés trois heures de suite au soleil br&#x00FB;lant d&#x2019;<placeName key="acapulco" >Acapulco</placeName> et de<lb break="yes"/>Guayaquil, sans en &#x00EA;tre sensiblemet incommodés; c&#x2019;est ainsi que nous foulions<lb break="yes"/>les neiges glacées des Andes, que nous traversions des déserts, que nous par-<lb break="no"/>courions des bois épais ou des marais bourbeux, sans que notre courage en<lb break="yes"/>f&#x00FB;t affoibli, sans m&#x00EA;me que notre gaité en fut altérée.</p>
+                <lb break="yes"/>
+                <p>Nous sort&#x00EE;mes de Lima le 25 décembre 1802; nous nous arr&#x00EA;t&#x00E2;mes un<lb break="yes"/>
+                    <pb n="476" facs="#f0002"/> mois à Guayaquil où nous e&#x00FB;mes la satifaction d&#x2019;herboriser avec deux bota-<lb break="no"/>nistes distingués, MM. <persName key="tafalla_jj" ref="http://d-nb.info/gnd/">Tafalla</persName> et <persName key="manzanilla_ja" ref="http://d-nb.info/gnd/" >Manzanilla</persName>, et nous arriv&#x00E2;mes à <placeName key="acapulco" >Acapulco</placeName>,<lb break="yes"/>le 22 mars, après avoir éprouvé une horrible temp&#x00EA;te, vis-à-vis du golfe<lb break="yes"/>de Nicoya.</p>
+                <lb break="yes"/>
+                <p>Le volcan de Cotopaxi sur lequel j&#x2019;avois marché tranquillement l&#x2019;année<lb break="yes"/>précédente, fit, le 5 janvier, une explosion si terrible, que naviguant à soixante<lb break="yes"/>lieues de distance, nous en entend&#x00EE;mes le fracas. Il a vomi des torrens de flammes<lb break="yes" />et des nuées de cendres, et la neige s&#x2019;est entièrement détachée de son sommet.<lb break="yes"/>Il ne paro&#x00EE;t pas qu&#x2019;il ait jusqu&#x2019;à présent causé le moindre dommage, mais<lb break="yes"/>comme il n&#x2019;est point éteint, l&#x2019;alarme est continuelle dans la province de Quito.</p>
+                <lb break="yes"/>
+                <p>Vous connoissez l&#x2019;ardeur et l&#x2019;enthousiasme de mon ami et compagnon <persName key="bonpland_ajag" ref="http://d-nb.info/gnd/">Bom-<lb break="no" />pland</persName>, et vous pouvez juger combien nous avons recueilli de richesses en par-<lb break="no"/>courant des pays qui n&#x2019;ont été visités par aucun botaniste, et où la nature s&#x2019;est<lb break="yes"/>plue à multiplier des végétaux dont la forme et la fructification est toute diffé-<lb break="no"/>rente de celle des végétaux connus. Notre collection excède 4200 plantes, parmi<lb break="yes"/>lesquelles sont beaucoup de genres nouveaux et un grand nombre de gramens<lb break="yes"/>et de palmiers. Nous avons dans notre herbier plus de cent mélastomes, quoi-<lb break="no"/>que nous n&#x2019;ayons pas toutes celles de <persName key="linne_cv" ref="http://d-nb.info/gnd/" >Linné</persName>. Nous avons fait la description<lb break="yes"/>des 4200 plantes, et nous en avons dessiné un très-grand nombre d&#x2019;après les<lb break="yes"/>originaux vivans. Nous ne pouvons fixer aujourd&#x2019;hui le nombre de celles qui<lb break="yes"/>sont nouvelles; il faut pour cela que nous soyons de retour en Europe, et que<lb break="yes"/>nous les comparions avec celles qui ont été publiées: mais nous espérons avoir<lb break="yes"/>recueilli assez de matériaux pour former un ouvrage digne de l&#x2019;attention des<lb break="yes"/>naturalistes. L&#x2019;anatomie comparée a été, ainsi que la botanique, une partie ac-<lb break="no"/>cessoire à l&#x2019;objet principal de notre voyage; nous nous en sommes occupés, et<lb break="yes"/>nous rapportons beaucoup de pièces préparées par mon compagnon <persName key="bonpland_ajag" ref="http://d-nb.info/gnd/">Bompland</persName>.<lb break="yes"/>J&#x2019;ai dessiné plusjeurs profils ou cartes géographiques, avec des échelles hygro-<lb break="no"/>matiques, eudiométriques, etc. pour déterminer les qualités physiques qui ont<lb break="yes"/>tant d&#x2019;influence dans la physiologie végétale, de manière que je puis indiquer<lb break="yes"/>en toises à quelle élévation au-dessus du niveau de la mer se trouve chaque<lb break="yes"/>espèce d&#x2019;arbre sous les tropiques.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai vu avec peine ce qu&#x2019;on a écrit sur les quinquinas, parce que les sciences<lb break="yes"/>ne gagnent rien lorsqu&#x2019;on m&#x00EA;le des personnalités aux discussions; et j&#x2019;ai été<lb break="yes"/>vraiment affligé de la manière dont on a traité le vénérable <persName key="mutis_jc" ref="http://d-nb.info/gnd/">Mutis</persName>. On a ré-<lb break="no"/>pandu en Europe les idées les plus fausses sur le caractère de cet homme célèbre.<lb break="yes"/>Il nous traita à Santa-Fé avec cette franchise qui paroissoit le caractère parli-<lb break="no"/>culier de <persName key="banks_j" ref="http://d-nb.info/gnd/">Banks</persName>. Il nous communiqua sans réserve toutes ses richesses en bota-<lb break="no"/>
+                    <pb n="477" facs="#f0003"/> nique, en zoologie et en physique; il compara ses plantes aux n&#x00F4;tres, et il<lb break="yes"/>nous permit de prendre toutes les notes que nous désirions sur les genres nou-<lb break="no"/>veaux de la flora de Santa-Fé. Il est déjà vieux, et cependant on est étonné<lb break="yes" />des travaux qu&#x2019;il a faits et de ceux qu&#x2019;il prépare pour la postérité; on admire<lb break="yes"/>qu&#x2019;un seul homme ait été capable de concevoir et d&#x2019;exécuter un si vaste plan.</p>
+                <lb break="yes"/>
+                <p>M. <persName key="lopezruiz_sj" ref="http://d-nb.info/gnd/">Lopez</persName> me communiqua son Mémoire sur le quinquina avant de l&#x2019;impri-<lb break="no" />mer, et je lui dis que ce Mémoire m&#x00EA;me prouvoit évidemment que M. <persName key="mutis_jc" ref="http://d-nb.info/gnd/">Mutis</persName>
+                    <lb break="yes"/>avoit découvert le quinquina dans les montagnes de Tena en 1772, et que lui<lb break="yes"/>
+                    <persName key="lopezruiz_sj" ref="http://d-nb.info/gnd/">Lopez</persName> l&#x2019;avoit vu près de Honda, en 1774.</p>
+                <lb break="yes"/>
+                <p>Quant à l&#x2019;arbre qui donne le quinquina fin de Loxa, nous l&#x2019;avons examiné<lb break="yes"/>dans son pays natal, et nous croyons qu&#x2019;il n&#x2019;est pas m&#x00EA;me décrit. Nous l&#x2019;avons<lb break="yes"/>comparé avec le <hi rendition="#i">cinchona</hi> que nous avons vu dans les provinces de Santa-Fé,<lb break="yes"/>de Popayan, du Pérou et de Jaen. Par ses feuilles, il se rapproche du <hi rendition="#i">cinchona<lb break="yes"/>glandulifera</hi> de la flora du Pérou, mais il en diffère par ses fleurs.</p>
+                <lb break="yes"/>
+                <p>Nous avons envoyé en France une collection de quinquinas de la Nouvelle-<lb break="no"/>Grenade, qui consistoit en écorces choisies, en beaux échantillons en fleurs et<lb break="yes"/>en fruits, et en magnifiques dessins enluminés dont le généreux <persName key="mutis_jc" ref="http://d-nb.info/gnd/" >Mutis</persName> nous avoit<lb break="yes"/>fait présent: nous y avons ajouté quelques os fossiles d&#x2019;éléphans trouvés sur la<lb break="yes" />Cordillière des Andes, à 1400 toises de hauteur. <note place="foot" n="(1)" >Ces objets sont actuellement déposés au Muséum.</note>
+                </p>
+                <lb break="yes"/>
+                <p>Je vous fais mes remerc&#x00EE;mens des éloges peu mérités dont on m&#x2019;a comblé dans<lb break="yes"/>le n.° 15 de vos Annales. Je leur ai cette obligation que dans un des numéros<lb break="yes"/>suivans on avertit que dans la carte gravée à Madrid, les hauteurs ont toujours<lb break="yes"/>40 à 70 toises de plus qu&#x2019;elles ne devroient. Une telle différence, dans des obser-<lb break="no"/>vations de cette nature doit sans doute &#x00EA;tre rectifiée. Ma facilité à communiquer<lb break="yes"/>à tout le monde en Amérique mes cartes fondées sur des observations astrono-<lb break="no"/>miques, ainsi que mes remarques sur la géographie des plantes et les mesures<lb break="yes" />géodésiques, a sans doute été cause qu&#x2019;il en est parvenu des copies en Europe<lb break="yes"/>où elles se sont multipliées par le zèle de ceux qui prenoient intér&#x00EA;t à cette partie<lb break="yes"/>de la géologie: mais ces copies faites à la h&#x00E2;te et sur des Mémoires auxquels je<lb break="yes" />n&#x2019;avois pas mis la dernière main, sont très-différentes de celle que j&#x2019;ai et que<lb break="yes"/>je publierai dans mon ouvrage sur la construction du globe.</p>
+                <lb break="yes"/>
+                <p>Si la franchise avec laquelle j&#x2019;ai communiqué mes plantes, mes animaux,<lb break="yes"/>mes cartes géographiques et mes observations, en consentant que chacun copi&#x00E2;t<lb break="yes"/>ce qu&#x2019;il désiroit, a donné lieu aux équivoques qu&#x2019;on a remarquées, elle m&#x2019;a<lb break="yes"/>
+                    <pb n="478" facs="#f0004"/> fourni l&#x2019;occasion de rectifier la localité de plusieurs points importans, d&#x2019;apres<lb break="yes"/>les renseignemens qui m&#x2019;ont été donnés par des hommes habiles. Je voudrois<lb break="yes" />qu&#x2019;on n&#x2019;imprim&#x00E2;t que ce que j&#x2019;écris moi-m&#x00EA;me dans mes lettres ou Mémoires:<lb break="yes"/>les premières idées ne sont qu&#x2019;un esquisse qu&#x2019;il faut terminer, et les calculs et les<lb break="yes"/>mesures exigent un examen ultérieur qui ne pent se faire qu&#x2019;avec du temps<lb break="yes"/>et de la tranquillité. Les savans <persName key="lacondamine_cmd" ref="http://d-nb.info/gnd/" >Lacondamine</persName> et <persName key="bouguer_p" ref="http://d-nb.info/gnd/">Bouguer</persName>, nous ont donné<lb break="yes"/>une preuve de cette vérité; regardant leurs opérations comme exactes et ter-<lb break="no"/>minées, ils firent graver sur une pierre du collége des Jésuites, en sortant de<lb break="yes"/>Quito, la longitude de cette ville, et cette longitude diffère d&#x2019;un dégré de<lb break="yes"/>celle qu&#x2019;ils ont depuis adoptée en Europe.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai lu avec beaucoup de plaisir vos observations sur les fougères: vos principes<lb break="yes"/>me paroissent vraiment physiologiques et indispensables pour établir des genres<lb break="yes"/>avec solidité.</p>
+                <lb break="yes"/>
+                <p>Vous vous souvenez sans doute de cette substance siliceuse, ressemblante à<lb break="yes"/>l&#x2019;opale que M. <persName key="smithson_j" ref="http://d-nb.info/gnd/">Macie</persName> analysa en Angleterre. Nous l&#x2019;avons découverte à l&#x2019;ouest<lb break="yes"/>du volcan de Pichincha, dans les bambous ou gros roseaux appelés <hi rendition="#i" >guaduas</hi>
+                    <lb break="yes"/>dans le royaume de Santa-Fé. J&#x2019;ai fait des expériences chimiques sur le suc de<lb break="yes"/>cette graminée colossale, avant que la substance siliceuse se f&#x00FB;t déposée, et j&#x2019;y<lb break="yes"/>ai remarqué des phénomènes très-curieux; il est susceptible d&#x2019;une putréfaction<lb break="yes"/>animale, et paro&#x00EE;t annoncer une certaine combinaison d&#x2019;une terre simple avec<lb break="yes"/>l&#x2019;azote.</p>
+                <lb break="yes"/>
+                <p>Nous avons vu aussi que cette plante doit former un genre nouveau très-dif-<lb break="no"/>férent de l&#x2019;Arundo de <hi rendition="#i">
+                        <persName key="linne_cv" ref="http://d-nb.info/gnd/" >Linn&#x00E6;us</persName>
+                    </hi> et du Bambusa de <persName key="schreber_jcdev" ref="http://d-nb.info/gnd/">Schreber</persName>. Nous avons eu<lb break="yes"/>bien de la peine à trouver ses fleurs, parce qu&#x2019;elle fleurit si rarement que quoi-<lb break="no"/>que plusieurs botanistes ayent observé la plante pendant trente ans, dans les<lb break="yes"/>vastes pays où elle est abondante, ils n&#x2019;ont jamais pu les rencontrer, et que les<lb break="yes"/>Indiens nient leur existence. Nous avons été plus heureux, et nous les avons vues<lb break="yes"/>dans le coin du monde le plus reculé. C&#x2019;est sur la rivière de Casiquiare qui<lb break="yes"/>forme la communication de l&#x2019;Orénoque avec le Maragnon, et ensuite dans la<lb break="yes"/>vallée de Cauca, située dans la province de Popayan où je la dessinai. Nous en<lb break="yes"/>avons des échantillons pour vous.</p>
+                <lb break="yes"/>
+                <p>Je vous prie de publier notre reconnoissance pour l&#x2019;accueil que nous ont fait,<lb break="yes"/>et les services que nous ont rendus les Espagnols dans toutes les parties de l&#x2019;Amé-<lb break="no"/>rique que nous avons visitées. Nous ne pouvons donner assez d&#x2019;éloges à la géné-<lb break="no" />rosité de votre nation et de votre gouvernement.</p>
+                <lb break="yes"/>
+                <closer>
+                    <salute>
+                        <hi rendition="#et">J&#x2019;ai l&#x2019;honneur d&#x2019;&#x00EA;tre, etc.</hi>
+                    </salute>
+                </closer>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

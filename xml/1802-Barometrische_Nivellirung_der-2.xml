@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="231" facs="#f0001"/>
+            <div n="1" xml:lang="spa">
+                <head>NIVELACION BAROMÉTRICA<lb break="yes"/>
+                    <hi rendition="#i">hecha por el Baron <persName key="humboldt_av">de Humboldt</persName> en 1801 desde<lb break="yes"/>Cartagena de Indias hasta Santa Fe de Bo-<lb break="no"/>gotá.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">D</hi>esde que el célebre <persName key="humboldt_av" >Humboldt</persName> empezó á comuni-<lb break="no"/>carnos relaciones de su viage, nos hicimos una espe-<lb break="no"/>cie de obligacion de insertarlas en estos Anales, no<lb break="yes"/>tanto porque las hacia en los dominios espan&#x0303;oles, quan-<lb break="no"/>to por ser ellas del mayor interes para las ciencias que<lb break="yes"/>ha sabido reunir y cultivar con esmero este hombre<lb break="yes"/>privilegiado. Acaba de recorrer últimamente las 130<lb break="yes"/>leguas marinas que hay en línea recta desde Cartage-<lb break="no"/>na hasta Santa Fe de Bogotá, y ha determinado en<lb break="yes" />su curso varias alturas sobre el nivel del mar indica-<lb break="no"/>das en la estampa adjunta. Tambien ha ex&#x00E2;minado la<lb break="yes"/>posicion y naturaleza de las montan&#x0303;as, y ha determi-<lb break="no"/>nado varias latitudes.</p>
+                <lb break="yes"/>
+                <p>Segun sus observaciones la latitud</p>
+                <lb break="yes"/>
+                <list>
+                    <item>de<list rendition="#leftBraced">
+                            <item>Cartagena de Indias es de.... 10°. 25&#x2032;. 37&#x2033;</item>
+                            <lb break="yes"/>
+                            <item>La villa de Mompox............ 9. 14. 38</item>
+                            <lb break="yes"/>
+                            <item>La <placeName key="angostura">angostura</placeName> de Carare....... 6. 13. 40</item>
+                            <lb break="yes"/>
+                            <item>La villa de Honda................ 5. 12. 50</item>
+                            <lb break="yes"/>
+                            <item>El valle de Guaduas............ 5. 5. 2</item>
+                            <lb break="yes"/>
+                            <item>Santa Fe.................................. 4. 36. 00</item>
+                        </list>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>La naturaleza de las montan&#x0303;as es de roca caliza<lb break="yes" />secundaria (<hi rendition="#i">aa</hi>) desde Cartagena hasta mas allá del<lb break="yes"/>rio de la Madalena. Empieza luego la arenisca anti-<lb break="no"/>gua (<hi rendition="#i">bbb</hi>) aumentando de altura, y continúa hasta<lb break="yes"/>Cune, donde apoya sobre pizarra arcillosa y graniti-<lb break="no"/>no (<hi rendition="#i">ccc</hi>). Este sale á descubierto hasta las cercanías<lb break="yes"/>del <placeName key="altodelroble">alto del Roble</placeName>, y allí empieza á correr oculto has-<lb break="no"/>ta Guadalupe entre dos sustancias, de las quales la<lb break="yes"/>exterior ó techo es de arenisca, yeso y roca caliza se-<lb break="no"/>
+                    <pb n="232" facs="#f0002"/> cundaria (<hi rendition="#i">ddd</hi>), y la inferior ó lecho de granito (<hi rendition="#i">e</hi>),<lb break="yes"/>el qual forma la masa de la montan&#x0303;a colosal en cuya<lb break="yes"/>cumbre está el páramo de Chinguasa.</p>
+                <lb break="yes"/>
+                <p>Previene <persName key="humboldt_av">Humboldt</persName> que el barómetro se supone<lb break="yes"/>al nivel del mar de 338,9 lín. conforme á las observa-<lb break="no"/>ciones del Caballero <persName key="shuckburghevelyn_g">Shuck-burgh</persName> y del C. <persName key="fleuriaubellevue_01">Fleurieu<lb break="yes"/>Delleu</persName>; y que rectificó el cálculo por la temperatu-<lb break="no"/>ra, segun el método de <persName key="trembley_j">Trembley</persName>. Advierte que la<lb break="yes"/>cumbre del páramo de Chinguasa se supone de 2100<lb break="yes" />toesas; y que ha tomado arbitrariamente las distancias<lb break="yes"/>de los puntos observados, á fin de que se viesen sus<lb break="yes"/>alturas sin la confusion que por fuerza resultaria si las<lb break="yes"/>distancias se hubiesen explicado en la proporcion de-<lb break="no"/>bida á las alturas ó elevaciones.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>
+                            <hi rendition="#u">Números correspondientes<lb break="yes"/>á la estampa.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">Elevaciones en<lb break="yes"/>toesas.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1 Cartagena de Indias...........</cell>
+                        <cell>0.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2 Turbaco.............................</cell>
+                        <cell>163.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3 Mompox...........................</cell>
+                        <cell>148.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4 Morales................................</cell>
+                        <cell>172.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5 <placeName key="angostura">Angostura</placeName> de Carare..........</cell>
+                        <cell>231.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>6 La villa de Honda...............</cell>
+                        <cell>290.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>7 Las Cruces..........................</cell>
+                        <cell>489.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>8 Salto del Frayle..................</cell>
+                        <cell>778.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>9 Cima del Sargento...............</cell>
+                        <cell>860.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 Valle de Guáduas...............</cell>
+                        <cell>647.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>11 Cune..................................</cell>
+                        <cell>679.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12 Valle de Villeta..................</cell>
+                        <cell>583.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>13 Mave.....................................</cell>
+                        <cell>803.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>14 El Guayaval.........................</cell>
+                        <cell>902.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15 <placeName key="altodegascas">Alto de Gascas</placeName>...................</cell>
+                        <cell>935.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>16 <placeName key="aseradero">El Aserradero</placeName>.....................</cell>
+                        <cell>1249.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>17 <placeName key="altodelroble">Alto del Roble</placeName>...................</cell>
+                        <cell>1486.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>18 Santa Fe, casa de D. <persName key="mutis_jc">Jo-<lb break="no"/>
+                                <pb n="233" facs="#f0003"/> seph Celestino Mutis</persName>.......</cell>
+                        <cell>1370.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>19 Monserrate..........................</cell>
+                        <cell>1660.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>20 Guadalupe............................</cell>
+                        <cell>1706.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>21 Páramo de Chinguasa.........</cell>
+                        <cell>2100.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Tales son las alturas que encontró <persName key="humboldt_av" >Humboldt</persName> en<lb break="yes"/>el largo trecho que recorrió para ilustrar este ramo de<lb break="yes"/>ciencias naturales, y con el mismo fin an&#x0303;adió otras de<lb break="yes"/>ambos continentes, como se sigue.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Caracas.....................................</cell>
+                        <cell>460.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Silla de Caracas..........................</cell>
+                        <cell>1316.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Quito..........................................</cell>
+                        <cell>1462.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Chimborazo..............................</cell>
+                        <cell>3220.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Boca del rio Meta.....................</cell>
+                        <cell>50.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pico de Tenerife.......................</cell>
+                        <cell>1917.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Canigu en los Pirineos..............</cell>
+                        <cell>1442.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Monblanc en Saboya................</cell>
+                        <cell>2426.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Siendo muy útil el conocer las alturas del globo,<lb break="yes"/>nos ha parecido conveniente anotar aquí las siguientes.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Sierra nevada de Mérida de Ma-<lb break="no" />racaybo..................................</cell>
+                        <cell>2350.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Sierra nevada de Santa Marta...</cell>
+                        <cell>1242.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Palacio Real de S. Ildefonso......</cell>
+                        <cell>593.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Puerto de Navacerrada.............</cell>
+                        <cell>943.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pen&#x0303;alara cerca de S. Ildefonso...</cell>
+                        <cell>1213.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La ciudad de Granada..............</cell>
+                        <cell>318.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Picacho de la veleta en la Sierra<lb break="yes"/>nevada de Granada...............</cell>
+                        <cell>1154.</cell>
+                    </row>
+                </table>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

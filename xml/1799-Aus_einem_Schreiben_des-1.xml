@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Aus einem Schreiben des Ober-Bergraths A. von Humboldt</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1054159246">
+                        <surname>Fetscher</surname>
+                        <forename>Justus</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1799-Aus_einem_Schreiben_des-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Aus einem Schreiben des Ober-Bergraths A. von Humboldt</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Weimar</pubPlace>
+                        <date type="publication">1799</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Allgemeine Geographische Ephemeriden</title>
+                        <biblScope unit="volume">4</biblScope>
+                        <biblScope unit="pages">146–161</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.3.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.2.0" when="2018-10-03" who="#wernicke_nd">Markup. <note type="remarkRevision">Fehlende persName und placeName ergänzt.</note>
+                </change>
+                <change n="1.1.0" when="2018-03-18" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="146" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>Aus einem Schreiben des Ober-Bergraths<lb break="yes"/>
+                    <hi rendition="#i">A. von <persName key="humboldt_av"/>Humboldt.</hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <hi rendition="#et">
+                        <hi rendition="#i">
+                            <placeName key="madrid">Madrid</placeName>, 23 Floreal Jahr VII.</hi>
+                    </hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>..... Ich fange mit meinen Beobachtungen über Inclina-<lb break="no"/>tion der Magnet-Nadel an. Das In&#x017F;trument, de&#x017F;&#x017F;en ich mich<lb break="yes"/>bediene, i&#x017F;t der Inclinations-Compaß, den <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi> angegeben<lb break="yes"/>und <hi rendition="#i">
+                        <persName key="lenoir_e" ref="http://d-nb.info/gnd/">Le Noir</persName>
+                    </hi> für das <hi rendition="#i">Bureau des Longitudes</hi> in <placeName key="paris">Paris</placeName> ausgeführt<lb break="yes"/>hat. Das Bureau hat die Gefälligkeit gehabt, es mir bey meiner<lb break="yes"/>Abrei&#x017F;e von <placeName key="paris">Paris</placeName> abzutreten. Der Azimuthal-Zirkel hat<lb break="yes"/>0,5 Métre im Durchme&#x017F;&#x017F;er, die Nadel 0,3 Métre Länge. <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">betrach-</fw>
+                    <lb break="yes"/>
+                    <pb n="147" facs="#f0002"/> betrachtete dieß In&#x017F;trument als das er&#x017F;te, das uns &#x017F;ichere Incli-<lb break="no"/>nationen angeben würde, da alle übrige, die uns &#x017F;o viele irrige<lb break="yes"/>Zahlen geliefert haben, nie in die wahre Ebene des magneti-<lb break="no"/>&#x017F;chen Meridians ge&#x017F;tellt werden konnten.</p>
+                <lb break="yes"/>
+                <p>Ich weiß nicht, ob <hi rendition="#i">
+                        <persName key="nouet_na" ref="http://d-nb.info/gnd/">Nouet</persName>,</hi> der auch <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/" >Borda</persName>&#x2019;</hi>s Inclinations-<lb break="maybe"/>Compaß be&#x017F;itzt, mir zuvorgekommen i&#x017F;t, und &#x017F;eine magneti-<lb break="no"/>&#x017F;chen Beobachtungen aus <placeName key="aegypten" >Aegypten</placeName> einge&#x017F;endet hat. Hätten<lb break="yes"/>die Begebenheiten in der Barbarey, der Schiffbruch einer<lb break="yes" />Schwedi&#x017F;chen Fregatte, <hi rendition="#i">des Jeremias,</hi> die ich in <placeName key="marseille">Mar&#x017F;eille</placeName> zwey<lb break="yes" />Monate lang erwartete, und die vom Dey in <placeName key="tripolis" >Tripolis</placeName> unter-<lb break="no"/>&#x017F;agte Abrei&#x017F;e der Karavane, mit der ich nach <placeName key="kairo">Cairo</placeName> zu gehen<lb break="yes"/>gedachte, mich nicht genöthiget, meinen Vor&#x017F;atz, eine Rei&#x017F;e<lb break="yes"/>durch <placeName key="afrika" >Afrika</placeName> zu machen, aufzugeben, &#x017F;o würden wir in we-<lb break="no"/>niger als acht Monaten die Stärke der magneti&#x017F;chen Kraft von<lb break="yes"/>der Meer-Enge von <placeName key="gibraltar" >Gibraltar</placeName> bis zur Land-Enge von <placeName key="suez" >Suez</placeName>
+                    <lb break="yes"/>kennen gelernt haben. Ich würde die we&#x017F;tlichen Inclinatio-<lb break="no"/>nen beobachtet haben, während die A&#x017F;tronomen in <placeName key="aegypten">Aegypten</placeName>
+                    <lb break="yes"/>die ö&#x017F;tlichen be&#x017F;timmten: Beobachtungen, die mit In&#x017F;trumen-<lb break="no"/>ten wären ange&#x017F;tellt worden, die der&#x017F;elbe Kün&#x017F;tler nach einer-<lb break="no"/>ley Grund&#x017F;ätzen verfertiget hat. Die&#x017F;e Hoffnungen, mit de-<lb break="no"/>nen ich lange mich wiegte, waren zu &#x017F;chön, als daß &#x017F;ie hät-<lb break="no"/>ten in Erfüllung gehen &#x017F;ollen.</p>
+                <lb break="yes"/>
+                <p>Meinem Vorhaben treu, die heiße Zone zu be&#x017F;uchen,<lb break="yes"/>habe ich mich nach <placeName key="spanien">Spanien</placeName> gewandt, und eben erhalte ich<lb break="yes"/>von der hie&#x017F;igen Regierung die Erlaubni&#x017F;, <hi rendition="#i">
+                        <placeName key="mexiko">Mexiko</placeName>, <placeName key="peru" >Peru</placeName>,<lb break="yes"/>
+                        <placeName key="chile">Chili</placeName>
+                    </hi> und die <hi rendition="#i">
+                        <placeName key="philippinen">Philippinen</placeName>
+                    </hi> durchrei&#x017F;en zu dürfen. Ehe ich Ih-<lb break="no"/>nen daher aus der andern Halbkugel Beobachtungen &#x017F;enden<lb break="yes"/>kann, erlauben Sie mir, Ihnen diejenigen zu &#x017F;chicken, welche<lb break="yes"/>ich im mittäglichen <placeName key="frankreich">Frankreich</placeName> und im ö&#x017F;tlichen <placeName key="spanien">Spanien</placeName> an-<lb break="no" />ge&#x017F;tellt habe.</p>
+                <lb break="yes"/>
+                <p>Es gibt ver&#x017F;chiedene Methoden, den &#x017F;enkrechten Zirkel<lb break="yes"/>des <persName key="borda_jcd" ref="http://d-nb.info/gnd/" >Borda</persName>&#x2019;i&#x017F;chen Compa&#x017F;&#x017F;es in die Ebene des magneti&#x017F;chen<lb break="yes"/>Meridians zu &#x017F;tellen. 1) Indem man durch Hülfe einer mit<lb break="yes"/>zwey Dioptern ver&#x017F;ehenen Magnetnadel zwey genau in der<lb break="yes"/>Axe des magneti&#x017F;chen Meridians liegende Gegen&#x017F;tände auf&#x017F;ucht.<lb break="yes"/>Andere Dioptern auf dem Ka&#x017F;ten, welcher den verticalen Zir-<lb break="no"/>
+                    <fw type="catch" place="bottom">kel</fw>
+                    <lb break="yes"/>
+                    <pb n="148" facs="#f0003"/> kel enthält, dienen, die&#x017F;en in die magneti&#x017F;che Meridian-Ebene<lb break="yes"/>zu bringen. I&#x017F;t der Meridian &#x017F;chon gezogen und die magne-<lb break="no"/>ti&#x017F;che Abweichung bekannt, &#x017F;o kann man &#x017F;ich die nöthigen<lb break="yes" />Signale mit Hülfe des Sextanten auf&#x017F;tellen. Oder 2) da die<lb break="yes"/>Cotangante der Inclination wäch&#x017F;t, wie der Co&#x017F;inus des Win-<lb break="no"/>kels, den eine vertical durch die Nadel gehende Ebene mit<lb break="yes"/>der magneti&#x017F;chen Meridian-Ebene macht, &#x017F;o kann der, an dem<lb break="yes"/>
+                    <persName key="borda_jcd" ref="http://d-nb.info/gnd/" >Borda</persName>&#x2019;i&#x017F;chen Compaß angebrachte Azimuthal-Zirkel dazu die-<lb break="no"/>nen, corre&#x017F;pondirende Inclinations-Höhen zu nehmen. Man<lb break="yes"/>findet die Abweichungs-Ebene, indem man mehrere, &#x017F;ich gleiche<lb break="yes"/>Inclinationen gegen O&#x017F;ten und We&#x017F;ten des Magnet-Meridians<lb break="yes"/>beobachtet. Oder 3) man &#x017F;ucht die klein&#x017F;te Inclination, indem<lb break="yes"/>man nach und nach das In&#x017F;trument um den Azimuthal-Zirkel<lb break="yes"/>dreht. Oder 4) man &#x017F;ucht den Punct, in welchem die Nadel genau<lb break="yes" />vertical &#x017F;teht. Wenn man zu die&#x017F;em auf dem Azimuthal-<lb break="maybe"/>Zirkel 100 Grad addirt, &#x017F;o ergibt &#x017F;ich daraus der Magnet-Me-<lb break="no"/>ridian. Gibt die&#x017F;e letzte Methode nicht den&#x017F;elben Magnet-Me-<lb break="no"/>ridian, als die er&#x017F;te oder die dritte, &#x017F;o kann man überzeugt<lb break="yes"/>&#x017F;eyn, daß entweder der Compaß nicht genau horizontal ge-<lb break="no"/>&#x017F;tellt i&#x017F;t, oder daß beyde Enden der Nadel von ungleicher<lb break="yes"/>Schwere &#x017F;ind. Ich habe bey meinen Beobachtungen mehrere<lb break="yes" />die&#x017F;er Methoden zu verbinden ge&#x017F;ucht, und mit Vergnügen<lb break="yes"/>ge&#x017F;ehen, daß meine Nadel &#x017F;o genau centrirt i&#x017F;t, daß ich im-<lb break="no"/>mer einerley Re&#x017F;ultate erhalte, ich mag die dritte oder die<lb break="yes"/>vierte der angegebenen Methoden wählen. Die Theilung des<lb break="yes"/>Zirkels gibt, mit Hülfe der Loupe, eine Gewißheit von<lb break="yes"/>fünf Decimal-Minuten.</p>
+                <lb break="yes"/>
+                <p>Zu <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> fand ich mit <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi> am Anfang des Vendemiaire<lb break="yes"/>die Inclination 77° 15&#x2032;. <hi rendition="#i">
+                        <persName key="lenoir_e" ref="http://d-nb.info/gnd/">Le Noir</persName>
+                    </hi> glaubte &#x017F;ie am 25 Vendem.<lb break="yes"/>77° 20&#x2032; gefunden zu haben. Mit dem &#x017F;ehr mittelmäßigen In-<lb break="no"/>clinations-Compaß auf der National-Sternwarte fand <hi rendition="#i">
+                        <persName key="bouvard_a" ref="http://d-nb.info/gnd/">Bouvard</persName>
+                    </hi>
+                    <lb break="yes"/>die Inclination am 26 Vendem. 70° 10&#x2032; der alten Eintheilung<lb break="yes"/>(77° 96&#x2032;). Zu <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 72° 14&#x2032;. Die Inclination veränderte<lb break="yes"/>&#x017F;ich durchaus nicht vom 10 Brumaire bis zum 7 Frimaire,<lb break="yes"/>obgleich das In&#x017F;trument &#x017F;ehr oft auf der Sternwarte der Marine<lb break="yes" />von <hi rendition="#i">
+                        <placeName key="thulis">Thulis</placeName>
+                    </hi> und <hi rendition="#i">
+                        <placeName key="blancplain">Blancplain</placeName>
+                    </hi> beobachtet wurde. Zu <hi rendition="#i">
+                        <placeName key="nismes">Nismes</placeName>
+                    </hi>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">72°</fw>
+                    <lb break="yes"/>
+                    <pb n="149" facs="#f0004"/> 72° 65&#x2032; den 1 Nivo&#x017F;e. Zu <hi rendition="#i">
+                        <placeName key="montpellier">Montpellier</placeName>
+                    </hi> den 4 Nivo&#x017F;e 73° 20<choice>
+                        <sic>&#x2032;</sic>
+                        <corr type="editorial">&#x2019;.</corr>
+                    </choice>
+                    <lb break="yes"/>Zu <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> den 15 Nivo&#x017F;e 72° 55<choice>
+                        <sic>&#x2032;</sic>
+                        <corr type="editorial">&#x2019;.</corr>
+                    </choice> Trägt etwa die Nähe<lb break="yes"/>der <placeName key="pyrenaeen" >Pyrenäen</placeName> dazu bey, daß hier die Inclination &#x017F;tärker i&#x017F;t,<lb break="yes"/>als &#x017F;ie nach der &#x017F;üdlichen und we&#x017F;tlichen Lage des Ortes er-<lb break="no"/>wartet werden könnte? Zu <hi rendition="#i">
+                        <placeName key="girona">Gironne</placeName>
+                    </hi> in den <placeName key="pyrenaeen">Pyrenäen</placeName> von<lb break="yes"/>
+                    <placeName key="katalonien">Catalonien</placeName> am 18 Nivo&#x017F;e nur 71° 75&#x2032;. Der Ort &#x017F;cheint nach<lb break="yes"/>Barometer-Beobachtungen 132 Toi&#x017F;en über der Fläche des<lb break="yes"/>
+                    <placeName key="mittelmeer">Mittell. Meeres</placeName> zu liegen. Zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> am 7 Pluvio&#x017F;e 71° 80<choice>
+                        <sic>&#x2032;</sic>
+                        <corr type="editorial">&#x2019;.</corr>
+                    </choice>
+                    <lb break="yes"/>Zu <hi rendition="#i">
+                        <placeName key="cambrils">Cambrils</placeName>
+                    </hi> den 11 Pluvio&#x017F;e 71° 75&#x2032;. Zu <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> den 20 Plu-<lb break="no"/>vio&#x017F;e 70° 70&#x2032;. Zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> 75° 20&#x2032; nach einer großen Zahl<lb break="yes"/>Beobachtungen gemein&#x017F;chaftlich mit <hi rendition="#i">
+                        <persName key="megnie_pb" ref="http://d-nb.info/gnd/" >Megnié</persName>.</hi> Die Berge<lb break="yes"/>von <placeName key="guadarama">Guadarama</placeName> enthalten viel magneti&#x017F;ches Ei&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>Um die Stärke der magneti&#x017F;chen Kraft, das heißt, ihre<lb break="yes" />Inten&#x017F;ität zu me&#x017F;&#x017F;en, bediente ich mich ehedem des <persName key="saussure_hbd" ref="http://d-nb.info/gnd/" >Saus&#x017F;ure</persName>&#x2019;-<lb break="no"/>&#x017F;chen Magnetometers, eines in Hin&#x017F;icht des Transports äu-<lb break="no" />ßer&#x017F;t zarten In&#x017F;truments. <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi> hatte mir gerathen, mich der<lb break="yes"/>Oscillationen der Neigungs-Nadel als eines Magnetometers zu<lb break="yes"/>bedienen. Er war &#x017F;ehr neugierig, die Ge&#x017F;chwindigkeiten die-<lb break="no" />&#x017F;er Oscillationen in ver&#x017F;chiedenen Breiten zu wi&#x017F;&#x017F;en, für die<lb break="yes"/>Beobachtungen, die er während der <persName key="entrecasteau_jbd">
+                        <hi rendition="#i">Entrecasteau</hi>&#x2019;i&#x017F;chen</persName> See-<lb break="maybe"/>Rei&#x017F;e zu machen gerathen hatte, die ihm nie zu Ge&#x017F;icht gekom-<lb break="no"/>men waren. Ich habe mit großer Sorgfalt die Oscillationen<lb break="yes"/>der in den Magnet-Meridian ge&#x017F;tellten Nadel mit dem Gange<lb break="yes"/>eines <hi rendition="#i">
+                        <persName key="berthoud_l" ref="http://d-nb.info/gnd/">Berthoud</persName>
+                    </hi>&#x2019;i&#x017F;chen Chronometers verglichen. Die&#x017F;e Oscil-<lb break="no"/>lations-Ge&#x017F;chwindigkeiten &#x017F;ind &#x017F;o gleichförmig, daß, wenn<lb break="yes"/>beyde Per&#x017F;onen, deren eine die Nadel, die andere den Chro-<lb break="no"/>nometer beobachtet, genau &#x017F;ind, &#x017F;ie nicht um 0,2 von einan-<lb break="no"/>der abweichen. Die Zahl die&#x017F;er Oscillationen war in 10 Mi-<lb break="no"/>nuten zu <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> 245, zu <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 240, zu <hi rendition="#i">
+                        <placeName key="nismes">Nismes</placeName>
+                    </hi> 240, zu<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="montpellier">Montpellier</placeName>
+                    </hi> 245, zu <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> 248, zu <hi rendition="#i">
+                        <placeName key="girona">Gironne</placeName>
+                    </hi> 232 (!) (eine<lb break="yes"/>&#x017F;ehr oft wiederholte Beobachtung), zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> 245, zu<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="cambrils">Cambrils</placeName>
+                    </hi> 241, zu <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> 235. Wie viel werde ich wol un-<lb break="no"/>ter dem <placeName key="aequator">Aequator</placeName> finden? Eben beobachte ich auch, daß eine<lb break="yes"/>&#x017F;ehr horizontal ge&#x017F;tellte Nadel von 0,3 Métre Länge zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi>
+                    <lb break="yes"/>in der Minute regelmäßig acht Oscillationen macht. Ich<lb break="yes"/>wäre neugierig zu wi&#x017F;&#x017F;en, wie viel &#x017F;ie zu <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> macht. Ich<lb break="yes"/>
+                    <fw type="catch" place="bottom">habe</fw>
+                    <lb break="yes"/>
+                    <pb n="150" facs="#f0005"/> habe mir vorgenommen, hierüber durch Hülfe der <hi rendition="#i">
+                        <persName key="coulomb_cad" ref="http://d-nb.info/gnd/">Colomb</persName>
+                    </hi>&#x2019;i-<lb break="no"/>&#x017F;chen Aufhängung-Methode genaue Ver&#x017F;uche zu <hi rendition="#i">
+                        <placeName key="quito">Quito</placeName>
+                    </hi> und in<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="mexiko">Mexiko</placeName>
+                    </hi> anzu&#x017F;tellen; ver&#x017F;teht &#x017F;ich mit einer Nadel von gleicher<lb break="yes"/>Länge und Schwere.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Ort der Beob-<lb break="no"/>achtung Vend.<lb break="yes"/>Germ. VII</cell>
+                        <cell>Breite.</cell>
+                        <cell>Länge.</cell>
+                        <cell>Inclination<lb break="yes"/>der Magnet-<lb break="no"/>nadel (nach<lb break="yes"/>der neuen<lb break="yes"/>Einth.)</cell>
+                        <cell>Magneti&#x017F;che<lb break="yes"/>Kraft durch<lb break="yes"/>die Oscilla-<lb break="no"/>tionsmenge<lb break="yes"/>in 10 Minuten<lb break="yes"/>ausgedrückt.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="paris">Paris</placeName>
+                        </cell>
+                        <cell>48° 50&#x2032; 15&#x2033;</cell>
+                        <cell>0° 0&#x2032; 0&#x2033;</cell>
+                        <cell>77° 15&#x2032;</cell>
+                        <cell>245</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="nismes">Nismes</placeName>
+                        </cell>
+                        <cell>43 50 12</cell>
+                        <cell>7 55 O.</cell>
+                        <cell>72 65</cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="montpellier">Montpellier</placeName>
+                        </cell>
+                        <cell>43 36 29</cell>
+                        <cell>6 10</cell>
+                        <cell>73 20</cell>
+                        <cell>245</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="marseille">Mar&#x017F;eille</placeName>
+                        </cell>
+                        <cell>43 17 49</cell>
+                        <cell>12 14</cell>
+                        <cell>72 40</cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="perpignan">Perpignan</placeName>
+                        </cell>
+                        <cell>42 41 53</cell>
+                        <cell>2 14</cell>
+                        <cell>72 55</cell>
+                        <cell>248</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="girona">Gironne</placeName>
+                        </cell>
+                        <cell/>
+                        <cell/>
+                        <cell>71 75</cell>
+                        <cell>232</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="barcelona">Barcelona</placeName>
+                        </cell>
+                        <cell>41 23 8</cell>
+                        <cell>0 33 W.</cell>
+                        <cell>71 80</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="cambrils">Cambrils</placeName>
+                        </cell>
+                        <cell/>
+                        <cell/>
+                        <cell>71 75</cell>
+                        <cell>241</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="madrid">Madrid</placeName>
+                        </cell>
+                        <cell>40 25 18</cell>
+                        <cell>24 8</cell>
+                        <cell>75 20</cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="valencia">Valenzia</placeName>
+                        </cell>
+                        <cell>39 28 55</cell>
+                        <cell>10 4</cell>
+                        <cell>70 70</cell>
+                        <cell>235</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Wären die magneti&#x017F;chen und die Erdpole die&#x017F;elben, &#x017F;o wird<lb break="yes"/>wahr&#x017F;cheinlich die Inclination die&#x017F;elbe unter einerley Breite,<lb break="yes"/>und &#x017F;ie würde nur mit der Breite &#x017F;ich verändern, ohne Rück-<lb break="no"/>&#x017F;icht auf die Länge. Wenn die Inclinationen J und &#x03B9; den Brei-<lb break="no"/>ten L und &#x03BB; zukommen, &#x017F;o wäre auf dem ganzen Erdball<lb break="yes"/>
+                    <formula notation="TeX">\frac{J}{L}=\frac{\iota}{\lambda}</formula>, und die Kenntniß einer Inclination in bekannter Breite<lb break="yes"/>zöge unmittelbar die Kenntniß aller nach &#x017F;ich. Da aber die<lb break="yes"/>Magnet-Axe von der Erd-Axe ver&#x017F;chieden i&#x017F;t, &#x017F;o hat die<lb break="yes" />Länge auf die magneti&#x017F;che Inclination beträchtlichen Einfluß.<lb break="yes"/>Wenn A und B zwey, unter der nämlichen geographi&#x017F;chen<lb break="yes"/>Breite liegende Orte &#x017F;ind, davon B in O&#x017F;ten von A liegt, &#x017F;o<lb break="yes"/>kann die Inclination in B nicht &#x017F;o groß &#x017F;eyn, als die in A,<lb break="yes"/>da jener Ort, &#x017F;enkrecht auf den magneti&#x017F;chen Meridian bezo-<lb break="no"/>gen, in eine magneti&#x017F;che Breite zu liegen kommt, die &#x017F;üdli-<lb break="no" />cher, als die magneti&#x017F;che Breite des Orts A &#x017F;eyn wird.</p>
+                <lb break="yes"/>
+                <p>Auch &#x017F;ehen wir in der vor&#x017F;tehenden Tafel, in welcher<lb break="yes" />die Orte nach ihrer Breite geordnet &#x017F;ind, daß einige von <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi>
+                    <lb break="yes"/>gegen We&#x017F;ten liegende Orte, bey gleicher Breite, größere<lb break="yes"/>Inclinationen gegeben haben, als Orte, die o&#x017F;twärts von <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi>
+                    <lb break="yes"/>liegen. <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> liegt 35&#x2032; 36&#x2033; nordwärts von <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>,</hi>
+                    <lb break="yes"/>und doch i&#x017F;t die Inclination dort 0° 15&#x2032; geringer, und &#x017F;o in<lb break="yes"/>
+                    <fw type="catch" place="bottom">
+                        <hi rendition="#i">Nis-</hi>
+                    </fw>
+                    <lb break="yes"/>
+                    <pb n="151" facs="#f0006"/>
+                    <hi rendition="#i">
+                        <placeName key="nismes">Nismes</placeName>
+                    </hi> und <hi rendition="#i">
+                        <placeName key="montpellier">Montpellier</placeName>.</hi> Die&#x017F;elbe Tafel zeigt aber doch auch,<lb break="yes"/>daß die magneti&#x017F;chen Anziehungs-Kräfte &#x017F;onderbar durch Ur-<lb break="no"/>&#x017F;achen verändert &#x017F;ind, die wahr&#x017F;cheinlich nur local &#x017F;ind.</p>
+                <lb break="yes"/>
+                <p>Ich habe den Werth <formula notation="TeX">\frac{J}{L}</formula> berechnet, um zu &#x017F;ehen, ob der<lb break="yes"/>Quotient größer wird für die Orte, welche mehr gegen<lb break="yes"/>We&#x017F;ten liegen, oder ob &#x017F;ie lang&#x017F;amer zunehmen, je mehr &#x017F;ie<lb break="yes"/>gegen Norden rücken. Die&#x017F;e Zahlen zeigen bis jetzt keine<lb break="yes"/>Spur von Regelmäßigkeit. Denn, wenn man die Orte nach<lb break="yes"/>ihrer abnehmenden Breite ordnet, &#x017F;o erhält man für <formula notation="TeX" >\frac{J}{L}</formula> für<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> 2,63, für <hi rendition="#i">
+                        <placeName key="nismes">Nismes</placeName>
+                    </hi> 2,76, <hi rendition="#i">
+                        <placeName key="montpellier">Montpellier</placeName>
+                    </hi> 2,79, <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 2,78,<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> 2,84, <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> 2,49, <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> 2,98. Wenn man<lb break="yes"/>&#x017F;ie ordnet, wie &#x017F;ie von O&#x017F;t nach We&#x017F;t folgen, &#x017F;o wird die<lb break="yes"/>Reihe <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 2,78, <hi rendition="#i">
+                        <placeName key="nismes">Nismes</placeName>
+                    </hi> 2,76, <hi rendition="#i">
+                        <placeName key="montpellier">Montpellier</placeName>
+                    </hi> 2,79, <hi rendition="#i">
+                        <placeName key="perpignan">Perpig-<lb break="no"/>nan</placeName>
+                    </hi> 2,84, <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> 2,63, <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> 2,49, <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> 2,98. Es i&#x017F;t<lb break="yes"/>der Klugheit gemäß, &#x017F;ich bis jetzt alles Calculs zu enthalten<lb break="yes"/>und eine größere Beobachtungs-Zahl abzuwarten. Doch ver-<lb break="no"/>dient das Problem, durch Inclinations-Beobachtungen den<lb break="yes"/>Winkel der Magnet-Axe mit der Erd-Axe zu &#x017F;inden, immer<lb break="yes"/>bearbeitet zu werden. Folgende Betrachtungen bieten &#x017F;ich<lb break="yes"/>hierüber bey dem er&#x017F;ten Anblicke dar. Wenn man auf dem<lb break="yes"/>Meere (da auf dem &#x017F;e&#x017F;ten Lande Berge und andere Local-Um-<lb break="no" />&#x017F;tände Irrungen hervorbringen) mehrere Orte fände, die ge-<lb break="no"/>nau gleiche Inclination zeigten, &#x017F;o könnte man leicht einen<lb break="yes"/>magneti&#x017F;chen Parallel-Kreis verzeichnen, und hätte eben da-<lb break="no"/>durch die Magnet-Axe be&#x017F;timmt. Je größer die&#x017F;er ge&#x017F;uch-<lb break="no"/>te Winkel i&#x017F;t, um &#x017F;o größer wird die Inclinations-Differenz<lb break="yes"/>unter einerley Breite &#x017F;eyn. Durch Hülfe vieler Beobachtun-<lb break="no"/>gen wäre die&#x017F;er Winkel zu finden, und durch mehrere Suppo-<lb break="no" />&#x017F;itionen, beynahe auf die&#x017F;elbe Art, deren man &#x017F;ich bedient,<lb break="yes"/>um die Länge eines Orts aus <placeName key="mond" >Monds</placeName>-Höhen zu be&#x017F;timmen.</p>
+                <lb break="yes"/>
+                <p>Die durch Zahl der O&#x017F;cillationen be&#x017F;timmte magneti&#x017F;che<lb break="yes"/>Kraft &#x017F;cheint abzunehmen gegen Süden hin. I&#x017F;t es etwa die<lb break="yes"/>Nähe der <placeName key="pyrenaeen" >Pyrenäen</placeName>, die &#x017F;ie in <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> &#x017F;o ver&#x017F;tärkt? Die<lb break="yes"/>Höhe von <hi rendition="#i">
+                        <placeName key="girona">Gironne</placeName>
+                    </hi> über der Meeresfläche i&#x017F;t &#x017F;o wenig beträcht-<lb break="no"/>
+                    <fw type="catch" place="bottom">lich</fw>
+                    <lb break="yes"/>
+                    <pb n="152" facs="#f0007"/> lich und doch die magneti&#x017F;che Kraft dort &#x017F;o klein. Wie viele<lb break="yes"/>intere&#x017F;&#x017F;ante Beobachtungen hätte ich nicht an&#x017F;tellen können,<lb break="yes"/>hätte ich das Magnetometer vor zwey Jahren gekannt, als<lb break="yes"/>ich den gewaltigen aus magneti&#x017F;chen Serpentin be&#x017F;tehenden<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="heidberg">Heidberg</placeName>
+                    </hi> auffand, de&#x017F;&#x017F;en magneti&#x017F;che Atmo&#x017F;phäre acht Métres<lb break="yes"/>davon noch wirk&#x017F;am i&#x017F;t, und die Polarität ohne Spur von<lb break="yes"/>Anziehung zeigt.</p>
+                <lb break="yes"/>
+                <p>Ich habe bey meiner Ankunft zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> den <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi>&#x2019;i&#x017F;chen<lb break="yes"/>Compaß durch <hi rendition="#i">
+                        <persName key="megnie_pb" ref="http://d-nb.info/gnd/">Megnié</persName>
+                    </hi> unter&#x017F;uchen la&#x017F;&#x017F;en. Er hat gefunden,<lb break="yes" />daß er &#x017F;ich gar nicht verändert hatte. Er i&#x017F;t eben be&#x017F;chäf-<lb break="no"/>tigt, kleine Veränderungen daran zu machen, um &#x017F;eine Trag-<lb break="no"/>barkeit dadurch zu vermehren. Denn die Schwierigkeit des<lb break="yes"/>Auspackens hat mich bis jetzt verhindert, es noch öfter zu<lb break="yes"/>gebrauchen.</p>
+                <lb break="yes"/>
+                <p>Die Abweichung der Magnet-Nadel war am 20 Brumairs<lb break="yes"/>in <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 20° 55&#x2032; 30&#x2033; der alten Eintheilung. <hi rendition="#i">
+                        <placeName key="thulis">Thulis</placeName>
+                    </hi> fand<lb break="yes"/>mit &#x017F;einem In&#x017F;trument 20° 55&#x2032;; eine Ueberein&#x017F;timmung, wel-<lb break="no"/>che die&#x017F;er Beobachtung einen hohen Grad von Gewißheit gibt.<lb break="yes"/>Zu <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> war zur Zeit meiner Abrei&#x017F;e die Abweichung um<lb break="yes" />12&#x2032; zweifelhaft. Man hatte &#x017F;ie nämlich im Vendemiaire VII<lb break="yes"/>zwi&#x017F;chen 22° 8&#x2032; und 22° 20&#x2032; ge&#x017F;unden. <hi rendition="#i">
+                        <persName key="bouvard_a">Bouvard</persName>,</hi> der &#x017F;ich<lb break="yes"/>viele Mühe gab, die&#x017F;e Zweifel zu heben, hielt 22° 15&#x2032; für<lb break="yes"/>die wahr&#x017F;cheinlich&#x017F;te Angabe.</p>
+                <lb break="yes"/>
+                <p>Obgleich die Gegenden, die ich bis jetzt durchrei&#x017F;te, für<lb break="yes" />a&#x017F;tronomi&#x017F;che Geographie nicht viel Merkwürdigkeiten dar-<lb break="no"/>bieten, &#x017F;o glaube ich doch, Ihnen einen kleinen Auszug mei-<lb break="no"/>ner Arbeiten liefern zu können. Ich habe die <placeName key="sonne">Sonne</placeName> und die<lb break="yes"/>Sterne er&#x017F;ter Größe &#x017F;o oft beobachtet, als die Um&#x017F;tände mir<lb break="yes"/>es haben erlauben wollen, mehr als 28mahl von meiner Ab-<lb break="no" />rei&#x017F;e von <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> vom 20 Nivo&#x017F;e bis zum 21 Pluvio&#x017F;e, als<lb break="yes"/>ich <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> verließ. Im Königreiche <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> habe ich viel<lb break="yes"/>vom Auszi&#x017F;chen des Pöbels leiden mü&#x017F;&#x017F;en, da ich dazumal<lb break="yes"/>noch die Erlaubniß der Regierung nicht in Händen hatte, die<lb break="yes"/>man mir jetzt in &#x017F;ehr großer Ausdehnung ausgefertiget hat. Oft<lb break="yes"/>habe ich den Schmerz gehabt, die <placeName key="sonne">Sonne</placeName> culminiren zu &#x017F;e-<lb break="no"/>hen, ohne meine In&#x017F;trumente auspacken <choice>
+                        <sic>au</sic>
+                        <corr type="editorial">zu</corr>
+                    </choice> dürfen. Ich war<lb break="yes"/>
+                    <fw type="catch" place="bottom">genö-</fw>
+                    <lb break="yes"/>
+                    <pb n="153" facs="#f0008"/> genöthigt, die Stille der Nacht zu erwarten, um mich mit<lb break="yes"/>einem Sterne zweyter Größe zu begnügen, der &#x017F;ich traurig in<lb break="yes"/>einem kün&#x017F;tlichen Horizonte dar&#x017F;tellt. Meine Hülfsmittel zu<lb break="yes"/>die&#x017F;en Beobachtungen &#x017F;ind zwey Chronometer, einer von<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="berthoud_l" ref="http://d-nb.info/gnd/">Louis Berthoud</persName>,</hi> der andere von <hi rendition="#i">
+                        <persName key="seyffert_jh" ref="http://d-nb.info/gnd/">Seyffert</persName>
+                    </hi> in <placeName key="dresden">Dresden</placeName>, ein acht-<lb break="no" />zolliger Theodolit von <hi rendition="#i">
+                        <persName key="huxterethaas" ref="http://d-nb.info/gnd/">
+                            <choice>
+                                <sic>Huxter</sic>
+                                <corr type="editorial">Hurter</corr>
+                            </choice> et Haas</persName>,</hi> ein Reflections-Zirkel<lb break="yes" />von <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>,</hi> zwey Sextanten von <hi rendition="#i">
+                        <persName key="ramsden_j" ref="http://d-nb.info/gnd/">Ramsden</persName>
+                    </hi> und <hi rendition="#i">
+                        <persName key="troughton_e" ref="http://d-nb.info/gnd/" >Troughton</persName>,</hi>
+                    <lb break="yes"/>ein Quadrant von <hi rendition="#i">
+                        <persName key="bird_j" ref="http://d-nb.info/gnd/">Bird</persName>,</hi> ein <hi rendition="#i">
+                        <persName key="dolland_p" ref="http://d-nb.info/gnd/">Dollond</persName>
+                    </hi>&#x2019;i&#x017F;ches 94 bis 114mahl ver-<lb break="no"/>größerndes Fernrohr, und ein anderes von <hi rendition="#i">
+                        <persName key="caroche_ns" ref="http://d-nb.info/gnd/" >Carroché</persName>.</hi> Der<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="berthoud_l" ref="http://d-nb.info/gnd/">Berthoud</persName>
+                    </hi>&#x2019;i&#x017F;che Zeithalter i&#x017F;t äußer&#x017F;t genau. Er i&#x017F;t, als er mit<lb break="yes"/>den Sternen im Pa&#x017F;&#x017F;agen-In&#x017F;trumente von <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> verglichen<lb break="yes"/>ward, vorgeeilt:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell> vom</cell>
+                        <cell>13</cell>
+                        <cell>bis</cell>
+                        <cell>14</cell>
+                        <cell>Brumaire</cell>
+                        <cell>1,&#x2033;5 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>14</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>15</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>1, 5 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>15</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>16</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>2 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>16</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>20</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>1, 4 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>20</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>23</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>1, 8 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>23</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>24</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>2 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>24</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>25</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>1, 5 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>25</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>26</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>2 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>26</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>27</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>2, 2 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>27</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>4</cell>
+                        <cell>Frimaire</cell>
+                        <cell>1, 2 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>4</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>7</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>0, 7 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>7</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>10</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>0, 7 </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> &#x2013;</cell>
+                        <cell>10</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>19</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>1, 3 </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Seit dem Ende Nivo&#x017F;e, oder &#x017F;eit der Hitze von <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi>
+                    <lb break="yes"/>hat er angefangen, zurückzubleiben, aber nicht weniger re-<lb break="no"/>gelmäßig. Die mittlere Vorrückung über die mittlere Zeit<lb break="yes"/>i&#x017F;t daher 1,&#x2033;5. Der Chronometer i&#x017F;t während die&#x017F;er Zeit ge-<lb break="no"/>tragen worden, und die Temperatur hat 15&#x00B0; R. variirt.<lb break="yes"/>Ohnerachtet der Stöße der Diligence habe ich die Länge von<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi> 12&#x2032; 25,&#x2033;4 be&#x017F;timmt, da <hi rendition="#i">
+                        <persName key="mechain_01">Mechain</persName>
+                    </hi> &#x017F;ie 12&#x2032; 14&#x2033; gefun-<lb break="no"/>den hat. Der&#x017F;elbe Chronometer hat mir den Längen-Unter-<lb break="no" />&#x017F;chied von <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> und <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> zu 2&#x2032; 34&#x2033; angegeben.<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="mechain_01">Mechain</persName>
+                    </hi> gibt <hi rendition="#i">
+                        <placeName key="perpignan">Perpignan</placeName>
+                    </hi> 2&#x2032; 14&#x2033; O. <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> 0&#x2032; 33&#x2033; W. an;<lb break="yes"/>der Unter&#x017F;chied i&#x017F;t daher 2&#x2032; 47&#x2033;. Aber zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> war ich<lb break="yes"/>auch um 2 oder 3&#x2033; in der Zeit ungewiß. Ich führe Ihnen<lb break="yes"/>die&#x017F;e Beobachtungen nicht an, um durch meine kleinen Be-<lb break="no"/>mühungen <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Mechain</persName>
+                    </hi>&#x2019;s Arbeiten be&#x017F;tätigen zu wollen, &#x017F;ondern<lb break="yes"/>nur um Ihnen etwas Vertrauen gegen meine In&#x017F;trumente ein-<lb break="no"/>zuflößen. Mein <hi rendition="#i">
+                        <persName key="seyffert_jh" ref="http://d-nb.info/gnd/">Seyffert</persName>
+                    </hi>&#x2019;&#x017F;cher Chronometer, der nur zur Hälf-<lb break="no"/>te auf Diamanten geht, i&#x017F;t bis auf 4 bis 5&#x2033; täglich genau.<lb break="yes"/>
+                    <fw type="catch" place="bottom">Er</fw>
+                    <lb break="yes"/>
+                    <pb n="154" facs="#f0009"/> Er kann mir daher freylich nicht zu Längen-Be&#x017F;timmungen<lb break="yes"/>dienen; aber doch um die Zeit vom Mittag bis zur näch&#x017F;ten<lb break="yes"/>Nacht überzutragen. Wenn man ihn nicht bewegt, &#x017F;o va-<lb break="no"/>riirt er oft um keine 2&#x2033; in drey bis vier Tagen.</p>
+                <lb break="yes"/>
+                <p>Von meinen Reflexions-In&#x017F;trumenten i&#x017F;t der zehnzollige<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="ramsden_j" ref="http://d-nb.info/gnd/">Ramsden</persName>
+                    </hi>&#x2019;&#x017F;che Sextant das &#x017F;chön&#x017F;te. Er hat einen &#x017F;ilbernen<lb break="yes"/>Limbus, de&#x017F;&#x017F;en Nonius unmittelbar 15&#x2033; gibt. Man erreicht<lb break="yes"/>noch vollkommen 5&#x2033;, die wegen des kün&#x017F;tlichen Horizonts<lb break="yes"/>noch auf die Hälfte 2,&#x2033;5 gebracht werden. Ich habe für die-<lb break="no" />&#x017F;es &#x017F;chöne In&#x017F;trument und für den <hi rendition="#i">
+                        <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    </hi>&#x2019;i&#x017F;chen Reflexions-Zir-<lb break="no"/>kel, de&#x017F;&#x017F;en ich mich zu &#x017F;einer Controllirung bediene, ein<lb break="yes"/>16mahl vergrößerndes Fernrohr von <hi rendition="#i">
+                        <persName key="caroche_ns" ref="http://d-nb.info/gnd/" >Carroché</persName>.</hi> Mein kün&#x017F;t-<lb break="no"/>licher Horizont i&#x017F;t auch von <hi rendition="#i">
+                        <persName key="caroche_ns" ref="http://d-nb.info/gnd/">Carroché</persName>
+                    </hi> verfertiget. <hi rendition="#i">
+                        <persName key="tralles_01" ref="http://d-nb.info/gnd/">Tralles</persName>
+                    </hi> hat<lb break="yes"/>ihn &#x017F;ehr genau unter&#x017F;ucht und das Maximum &#x017F;einer Irrung<lb break="yes"/>am Rande 6&#x2033; gefunden. Das Niveau, mit dem ich den Ho-<lb break="no"/>rizont &#x017F;telle, zeigt 2,&#x2033;5 Erhebung. Durch ein Jahr lange Er-<lb break="no"/>fahrung habe ich gefunden, daß, wenn ich mich nicht des<lb break="yes"/>
+                    <persName key="bird_j" ref="http://d-nb.info/gnd/">
+                        <hi rendition="#i">Bird</hi>&#x2019;i&#x017F;chen</persName> Quadranten bediene, den ich wegen der großen<lb break="yes"/>Sonnenhöhe in den Tropen-Ländern gekauft habe, ich unter<lb break="yes"/>&#x017F;on&#x017F;t gün&#x017F;tigen Um&#x017F;tänden die Breite bis 12&#x2033; genau be&#x017F;timmen<lb break="yes"/>kann; die wahre Zeit durch etwa 15 corre&#x017F;pondirende Son-<lb break="no"/>nenhöhen bis 2&#x2033;, und durch corre&#x017F;pondirende <placeName key="sirius">Sirius</placeName>- oder<lb break="yes"/>
+                    <placeName key="rigel">Rigel</placeName>-Höhen bis 5&#x2033;. Ich habe geglaubt, die&#x017F;e Gränzen mei-<lb break="no"/>ner Irrthümer an Orten be&#x017F;timmen zu mü&#x017F;&#x017F;en, deren Breite<lb break="yes"/>und Zeit genau bekannt war, um &#x017F;odann unter&#x017F;cheiden zu<lb break="yes"/>können, was man dem Zu&#x017F;alle oder der Sorgfalt bey der<lb break="yes"/>Beobachtung &#x017F;chuldig i&#x017F;t. Der <hi rendition="#i">
+                        <persName key="hurter_jhv" ref="http://d-nb.info/gnd/">Hurter</persName>
+                    </hi>&#x2019;&#x017F;che Theodolit, der<lb break="yes"/>wegen der vielen Correctionen, die er täglich erfordert, un-<lb break="no"/>bequem i&#x017F;t, gibt nur bis auf 35&#x2033; Gewißheit. Aber er hat<lb break="yes"/>den Vortheil einer 30 bis 40mahligen Vergrößerung, und ich<lb break="yes"/>habe mit <hi rendition="#i">
+                        <persName key="thulis" ref="http://d-nb.info/gnd/">Thulis</persName>
+                    </hi> ge&#x017F;ehen, daß er uns durch &#x03B2; des Wallfi&#x017F;ches<lb break="yes"/>und oft durch noch kleinere Sterne die Breite von <hi rendition="#i">
+                        <placeName key="marseille">Mar&#x017F;eille</placeName>
+                    </hi>
+                    <lb break="yes"/>zwi&#x017F;chen 43° 17&#x2032; 23&#x2033; und 52&#x2033; das i&#x017F;t ohngefähr zu 26&#x2033; an-<lb break="no"/>gab. Zu <hi rendition="#i">
+                        <placeName key="paris">Paris</placeName>
+                    </hi> hat er nur durch eine große Beobachtungs-<lb break="maybe"/>Zahl die Breite meiner Wohnung (mai&#x017F;on Bo&#x017F;ton, rue du<lb break="yes" />Colombier) zu 48° 51&#x2032; 20&#x2033; gegeben, das &#x017F;cheint ziemlich<lb break="yes"/>
+                    <fw type="catch" place="bottom">richtig;</fw>
+                    <lb break="yes"/>
+                    <pb n="155" facs="#f0010"/> richtig; die Breite der <placeName key="marseille">
+                        <hi rendition="#i">Mar&#x017F;eiller</hi> Sternwarte</placeName> i&#x017F;t nicht, wie<lb break="yes"/>in <bibl>Connoi&#x017F;&#x017F;. des temps VII S. 461</bibl> &#x017F;teht 43° 17&#x2032; 43&#x2033;, &#x017F;ondern<lb break="yes"/>49&#x2033;. Zwey Beobachtungen des er&#x017F;ten und zweyten <placeName key="jupiter">Jupiters</placeName>-<lb break="maybe"/>Trabanten haben mir die Länge 12&#x2032; 39&#x2033;, &#x017F;elb&#x017F;t 13&#x2032; 22&#x2033; ge-<lb break="no"/>geben; aber ich war damahls in die&#x017F;er Art Beobachtungen<lb break="yes"/>viel zu wenig geübt.</p>
+                <lb break="yes"/>
+                <p>Ich kam am 19 Nivo&#x017F;e zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> an, und durfte &#x017F;chon<lb break="yes"/>am &#x017F;olgenden Tage Beobachtungen an&#x017F;tellen; auf der&#x017F;elben<lb break="yes" />Terra&#x017F;&#x017F;e des goldenen Brunnen, wo <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> &#x017F;o lange gear-<lb break="no"/>beitet hat. Ich fand mit der kleinen 8mahligen Vergrö-<lb break="no"/>ßerung die Breite 41° 23&#x2032; 28&#x2033;, ein andermahl 41° 22&#x2032; 59&#x2033;.<lb break="yes"/>Am 22 Nivo&#x017F;e nahm ich corre&#x017F;pondirende Sonnen-Höhen<lb break="yes"/>und fand Länge 0&#x2032; 20&#x2033;. Unglücklicher Wei&#x017F;e ließ ich am<lb break="yes"/>23 Nivo&#x017F;e den Chronom. &#x017F;tehen. Ich hoffte, die Bedeckung<lb break="yes"/>des &#x2643; durch den <placeName key="mond">Mond</placeName> am 26 Niv. zu &#x017F;ehen, und es war<lb break="yes"/>nothwendig, am 25 durch Auf&#x017F;uchung der wahren Zeit &#x017F;ich<lb break="yes"/>darauf vorzubereiten. Die Morgen-Beobachtungen waren<lb break="yes"/>&#x017F;ehr gut, aber am Nachmittage war die <placeName key="sonne">Sonne</placeName> &#x017F;o blaß, daß<lb break="yes"/>man den Zeitpunct der Berührung der Ränder errathen mußte.<lb break="yes"/>Die Bedeckung <placeName key="jupiter" >Jupiters</placeName> durch den <placeName key="mond">Mond</placeName> war unglücklicher<lb break="yes"/>Wei&#x017F;e zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> nicht &#x017F;ichtbar. Ich verfolgte den Planeten,<lb break="yes"/>bis er auf vier Minuten (im Bogen) vom <placeName key="mond">Monde</placeName> entfernt<lb break="yes"/>war, als auf einmahl die <placeName key="nanos" >Berge des <hi rendition="#i">h. <persName key="hieronymus" >Hieronymus</persName>
+                        </hi>
+                    </placeName> mir den An-<lb break="no"/>blick des <placeName key="mond" >Mondes</placeName> entzogen.</p>
+                <lb break="yes"/>
+                <p>Während meines Aufenthalts zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> verglich ich<lb break="yes"/>oft den Horizont des Meeres mit einem Thurme, der davor-<lb break="no"/>&#x017F;tand. Ich war erflaunt, daß der Depre&#x017F;&#x017F;ionswinkel &#x017F;ich wäh-<lb break="no"/>rend zwey gleich heiteren Tagen veränderte, da doch ein Re-<lb break="no"/>gentag auf ihn gar nicht wirkte. Das Maximum die&#x017F;er Verän-<lb break="no"/>derung war 35&#x2033;. Sollte Ihnen das <bibl>Journal de Phy&#x017F;ique</bibl> in die<lb break="yes"/>Hände fallen, &#x017F;o bitte ich Sie, einen Blick auf den Auszug<lb break="yes"/>aus <bibl>meinen Arbeiten über die Zu&#x017F;ammen&#x017F;etzung der Atmo-<lb break="no"/>&#x017F;phäre</bibl> zu werfen, den ich <hi rendition="#i">
+                        <persName key="lametherie_jcd">Delametherie</persName>
+                    </hi> mitgetheilt habe. Sie<lb break="yes"/>werden That&#x017F;achen finden, die Sie durch ihren Einfluß auf<lb break="yes"/>die Phänomene der Strahlen-Brechung intere&#x017F;&#x017F;iren werden.<lb break="yes"/>Es fehlt viel daran, daß die Atmo&#x017F;phäre &#x017F;tets 0,27 &#x2013; 0,28<lb break="yes"/>
+                    <fw type="catch" place="bottom">Theile</fw>
+                    <lb break="yes"/>
+                    <pb n="156" facs="#f0011"/> Theile Oxygen enthalten &#x017F;olle, wie man es bis itzt immer be-<lb break="no"/>hauptet hat. Ich habe von 0,236 bis 0,284 gefunden, durch<lb break="yes"/>eine Methode, die eine Gewißheit von 0,003 Oxygen gibt.<lb break="yes"/>Mit meinem Anthrakometer (einem In&#x017F;trumente, den Gehalt<lb break="yes"/>an Kohlen&#x017F;äure zu me&#x017F;&#x017F;en, einem Stoffe, der &#x017F;o viel Einfluß<lb break="yes"/>auf Refraction bey dem Scirocco hat) durch Vereinigung von<lb break="yes"/>Thermometer, Hygrometer, Barometer, Elektrometer, Cya-<lb break="no"/>nometer könnte man eine &#x017F;chöne Arbeit über die Wege des<lb break="yes"/>Lichts in die Atmo&#x017F;phäre unternehmen. Könnte ich doch<lb break="yes"/>A&#x017F;tronomen in <hi rendition="#i">
+                        <placeName key="quito">Quito</placeName>
+                    </hi> ankommen &#x017F;ehen, um mit ihnen ver-<lb break="no"/>eint die&#x017F;e zugleich a&#x017F;tronomi&#x017F;che und chymi&#x017F;che Arbeit zu un-<lb break="no"/>ternehmen. Der Grad in <placeName key="suedamerika" >Südamerika</placeName> verdiente wol aufs<lb break="yes"/>neue geme&#x017F;&#x017F;en zu werden, und wie viel Zwecke könnte man<lb break="yes" />dann nicht zugleich während dem Laufe einer Unternehmung<lb break="yes" />erreichen, die ungleich weniger ko&#x017F;tbar und doch weit nütz-<lb break="no"/>licher i&#x017F;t, als eine Rei&#x017F;e um die <placeName key="erde">Welt</placeName>.</p>
+                <lb break="yes"/>
+                <p>Ich habe vom 29 Niv. bis 6 Pluv. eine kleine Rei&#x017F;e nach<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="monserrat">Mon&#x017F;errat</placeName>
+                    </hi> gemacht. Ich beobachtete <placeName key="sonne">Sonne</placeName>, <placeName key="mond">Mond</placeName> und <placeName key="sirius" >Sirius</placeName>
+                    <lb break="yes"/>zu <hi rendition="#i">
+                        <placeName key="mattorel">Mattorel</placeName>, <placeName key="colbaton" >Colbaton</placeName>
+                    </hi> und im Klo&#x017F;ter. Auch habe ich über<lb break="yes"/>die Atmo&#x017F;phäre dort Beobachtungen ange&#x017F;tellt. Aber ich theile<lb break="yes"/>Ihnen nur diejenigen mit, die Einfluß auf A&#x017F;tronomie haben.<lb break="yes"/>Oft habe ich nur ab&#x017F;olute Stern-Höhen genommen, wenn<lb break="yes"/>ich nicht Zeit hatte, die Culmination zu erwarten. Ein&#x017F;t<lb break="yes"/>werden die&#x017F;e Beobachtungen dienen können, die Länge des Or-<lb break="no"/>tes zu finden, indem ich die Zeit &#x017F;ehr genau von einem Orte zum<lb break="yes"/>andern übertrage, wenn andere Beobachter die Breite werden<lb break="yes"/>be&#x017F;timmt haben. Und &#x017F;o glaube ich die geographi&#x017F;che Kennt-<lb break="no"/>niß eines Ortes vorzubereiten. Zu <hi rendition="#i">
+                        <placeName key="mattorel">Mattorel</placeName>
+                    </hi> beobachtete ich<lb break="yes"/>auf freyer Straße von etwa 30 Zu&#x017F;chauern umgeben, die &#x017F;ich<lb break="yes"/>zu&#x017F;chrien, daß ich den <placeName key="mond">Mond</placeName> anbetete. Doch war man &#x017F;on&#x017F;t<lb break="yes"/>ruhig. Ich nahm Sonnen-Höhen nahe am Mittage zwi&#x017F;chen<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="colbaton">Colbaton</placeName>
+                    </hi> und der Süd&#x017F;eite des Berges von <hi rendition="#i">
+                        <placeName key="monserrat">Mon&#x017F;errat</placeName>
+                    </hi> bey dem<lb break="yes"/>er&#x017F;ten Weingarten, Breite 41° 34&#x2032; 30&#x2033;. Im Klo&#x017F;ter &#x017F;elb&#x017F;t<lb break="yes"/>konnte ich nur eine einzige Nacht, den 4 Pluv. arbeiten. An<lb break="yes"/>den übrigen hörten Regen und Schnee nicht auf. Ich theilte<lb break="yes"/>meine Beobachtungen <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi> mit, der mit <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> an dem<lb break="yes"/>
+                    <fw type="catch" place="bottom">Me-</fw>
+                    <lb break="yes"/>
+                    <pb n="157" facs="#f0012"/> Meridian durch <placeName key="katalonien" >Catalonien</placeName> gearbeitet hat. Gewiß konnten<lb break="yes"/>mir damahls <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi>&#x2019;s Be&#x017F;timmungen der Breite und Länge<lb break="yes"/>des Klo&#x017F;ters nicht bekannt &#x017F;eyn. Wie groß war daher meine<lb break="yes"/>Freude, als ich &#x017F;eine Beobachtungen von <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi> erhielt, die<lb break="yes"/>von den meinigen in Breite und Länge nur 10&#x2013;12&#x2033; abwei-<lb break="no"/>chen. Und doch hatte ich nur Sterne in einem wenig hellen,<lb break="yes"/>kün&#x017F;tlichen Horizonte beobachtet. Da mein Chron. am 26<lb break="yes"/>Niv. unter der mittleren Zeit von <placeName key="barcelona">Barcelona</placeName> 5&#x2032; 42,&#x2033;5 zurück-<lb break="no"/>blieb, daher am 1 Pluv. 5&#x2032; 52&#x2033;, &#x017F;o fand ich durch corre&#x017F;pon-<lb break="no"/>dirende Höhen die Culmination des <placeName key="sirius">Sirius</placeName> 1&#x2032; 45&#x2033; die Länge<lb break="yes"/>des Klo&#x017F;ters. <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> hat mir durch <hi rendition="#i">
+                        <persName key="pommard_01" ref="http://d-nb.info/gnd/">Pommard</persName>
+                    </hi> die Länge 2&#x2032; 45&#x2033;<lb break="yes"/>ge&#x017F;chickt; die&#x017F;e Beobachtung aber i&#x017F;t in der kleinen Kapelle<lb break="yes" />U. I. F. ange&#x017F;tellt worden. Ich habe die Breite des Klo&#x017F;ters<lb break="yes"/>gefunden: 41° 35&#x2032; 4&#x2033;; 49&#x2033;; 51&#x2033;; im Mittel 41° 35&#x2032; 34&#x2033;. <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi>
+                    <lb break="yes"/>hat mir für das Klo&#x017F;ter mitgetheilt: 41° 35&#x2032; 30&#x2033;; <hi rendition="#i">
+                        <persName key="pommard_01">Pommard</persName>
+                    </hi>
+                    <lb break="yes"/>die Kapelle U. I. F. 41° 36&#x2032; 15&#x2033;. Mir &#x017F;cheint die&#x017F;e Genauig-<lb break="no"/>keit groß genug, da <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> mit einem großen Krei&#x017F;e arbei-<lb break="no"/>tete; ich aber mit einem dreyzolligen <hi rendition="#i">
+                        <persName key="ramsden_j" ref="http://d-nb.info/gnd/">Ramsden</persName>
+                    </hi>&#x2019;&#x017F;chen Sextanten<lb break="yes"/>beobachte.</p>
+                <lb break="yes"/>
+                <p>Ich habe am <hi rendition="#i">
+                        <placeName key="monserrat">Mon&#x017F;errat</placeName>
+                    </hi> in ver&#x017F;chiedenen Höhen Wa&#x017F;&#x017F;er<lb break="yes"/>kochen la&#x017F;&#x017F;en, um <hi rendition="#i">
+                        <persName key="rhue_01" ref="http://d-nb.info/gnd/">Rhue</persName>
+                    </hi>&#x2019;s Formel zu berichtigen. Noch habe<lb break="yes"/>ich nicht Zeit ge&#x017F;unden, alle Beobachtungen zu berechnen;<lb break="yes"/>aber diejenigen, die ich mit dem Ebulloir in der <placeName key="hieronymuskirche" >Einfiedeley<lb break="yes"/>des hl. <hi rendition="#i">
+                            <persName key="hieronymus">Hieronymus</persName>
+                        </hi>
+                    </placeName> gemacht habe, &#x017F;timmen gut mit den<lb break="yes"/>634,4 Toi&#x017F;en zu&#x017F;ammen, die <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> für die Kapelle &#x017F;indet.<lb break="yes"/>Der&#x017F;elbe Gelehrte gibt durch Nivellement die Höhe des <hi rendition="#i">
+                        <placeName key="monjouy">Mon-<lb break="no"/>jouy</placeName>
+                    </hi> auf 104 Toi&#x017F;en an. Ich finde barometri&#x017F;ch den Gipfel des<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="monjouy">Monjouy</placeName>
+                    </hi> über dem <placeName key="barcelona">Barceloner Stadtpfla&#x017F;ter bey dem goldnen<lb break="yes"/>Brunnen</placeName> 96 Toi&#x017F;en. Auch rechnet <hi rendition="#i">
+                        <persName key="mechain_01" ref="http://d-nb.info/gnd/">Méchain</persName>
+                    </hi> die Zinne um den<lb break="yes"/> Thurm des Forts.</p>
+                <lb break="yes"/>
+                <p>Indem ich von <placeName key="barcelona">Barcelona</placeName> nach <placeName key="valencia">Valenzia</placeName> rei&#x017F;te, habe ich<lb break="yes"/>
+                    <placeName key="sonne">Sonne</placeName>, <placeName key="jupiter" >Jupiter</placeName>, <placeName key="prokyon">Procyon</placeName>, <placeName key="sirius">Sirius</placeName> und <placeName key="rigel" >Rigel</placeName> beobachtet; den<lb break="yes"/>9 zu <hi rendition="#i">
+                        <placeName key="ventadelionet">la Venta de Lionet</placeName>,</hi> den 10 zu <hi rendition="#i">
+                        <placeName key="losmunjos">los Munjos</placeName>,</hi> den 11 zu<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="figueretta">Figueretta</placeName>
+                    </hi> und <hi rendition="#i">
+                        <placeName key="cambrils">Cabrils</placeName>,</hi> den 12 auf dem <hi rendition="#i">
+                        <placeName key="balaguet">Col de Balaguet</placeName>
+                    </hi>
+                    <lb break="yes"/>(während der Commandant des Forts mich einzu&#x017F;perren<lb break="yes"/>drohte) den 14 zu <hi rendition="#i">
+                        <placeName key="ventadellasienita">la Venta della Sienita</placeName>.</hi> Da die Ventas ein-<lb break="no"/>
+                    <fw type="catch" place="bottom">zelne</fw>
+                    <lb break="yes"/>
+                    <pb n="158" facs="#f0013"/> zelne Häu&#x017F;er find, in Wü&#x017F;ten von 30 bis 40 Quadrat-Meilen<lb break="yes"/>Größe, die Pi&#x017F;tazien und Palmettenbäume bedecken, &#x017F;o i&#x017F;t ihre<lb break="yes"/>
+                    <choice>
+                        <sic>a&#x017F;tronomi&#x017F;ehe</sic>
+                        <corr type="editorial">a&#x017F;tronomi&#x017F;che</corr>
+                    </choice> Be&#x017F;timmung für die <placeName key="spanien"/>Spani&#x017F;che Geographie un-<lb break="no"/>gemein wichtig. Es &#x017F;ind eben &#x017F;o viele fe&#x017F;te Puncte in unge-<lb break="no"/>heuren Ebenen, in denen man wie auf dem Ocean rei&#x017F;t.</p>
+                <lb break="yes"/>
+                <p>Zu <hi rendition="#i">
+                        <placeName key="losmunjos">los Munjos</placeName>
+                    </hi> fand ich die Breite, indem ich in einem<lb break="yes"/>Walde beobachtete, 41° 13&#x2032; 13&#x2033;; Länge von <placeName key="paris">Paris</placeName> 2&#x2032; 23&#x2033;,<lb break="yes"/>wenn man annimmt, daß <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> 33&#x2033; w. liegt. Da die<lb break="yes"/>Sonnen-Höhen 20&#x2033; vom Mittage genommen wurden, &#x017F;o i&#x017F;t<lb break="yes"/>20&#x2033; Ungewißheit in der Länge.</p>
+                <lb break="yes"/>
+                <p>Da ich immer am Meerufer fortrei&#x017F;te, &#x017F;o be&#x017F;timmte ich<lb break="yes"/>jeden Morgen genau den Zeitpunct, wenn die <placeName key="sonne">Sonne</placeName> &#x017F;ich vom<lb break="yes"/>Meer-Horizont ablö&#x017F;ete. Zu <hi rendition="#i">
+                        <placeName key="figueretta">Figueretta</placeName>
+                    </hi> drey Meilen vor <placeName key="tarragona">Tar-<lb break="no" />ragona</placeName> &#x017F;ahe ich am 10 Pluv. zwi&#x017F;chen 7 und 8 Uhr des Abends<lb break="yes"/>ein weißliches, pyramidales Licht gegen Südwe&#x017F;t. Es &#x017F;tieg<lb break="yes"/>gegen 25&#x2033; bis zum Orion in die Höhe. Sein Glanz fiel &#x017F;elb&#x017F;t<lb break="yes"/>den Maule&#x017F;eltreibern auf. Es ver&#x017F;chwand plötzlich um 8U<lb break="yes" />50&#x2032;, und obgleich die folgenden Nächte &#x017F;ehr hell waren, &#x017F;o<lb break="yes"/>&#x017F;ahe ich es doch nur er&#x017F;t am 14 Vent&#x00F4;&#x017F;e zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> wieder,<lb break="yes"/>wo &#x017F;eine Pyramidal-Form viel auffallender war. Ich zweifle<lb break="yes"/>keinesweges, daß es das Zodiacal-Licht gewe&#x017F;en &#x017F;ey, das nur<lb break="yes"/>bey außerordentlicher, wahr&#x017F;cheinlich von chemi&#x017F;chen Zu-<lb break="no" />&#x017F;ammen&#x017F;etzungen abhängender Durch&#x017F;ichtigkeit der Atmo-<lb break="no"/>&#x017F;phäre &#x017F;ichtbar i&#x017F;t. Doch &#x017F;cheint es immer merkwürdig, daß<lb break="yes"/>&#x017F;chon im Anfange Pluv. das Zodiacal-Licht &#x017F;o &#x017F;chön er&#x017F;cheint.<lb break="yes"/>
+                    <hi rendition="#i">
+                        <persName key="delaflauzeres_01" ref="http://d-nb.info/gnd/">De la Flauzeres</persName>
+                    </hi> &#x017F;ahe es auch &#x017F;chon &#x017F;eit dem Januar: <bibl>
+                        <hi rendition="#i">
+                            <persName key="lalande_jjlfd" ref="http://d-nb.info/gnd/">La Lande</persName>&#x2019;s<lb break="yes"/>A&#x017F;tronomie</hi> §. 846</bibl>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="balaguet">Col de Balaguet</placeName>
+                    </hi> am Fuß, <formula notation="TeX">\frac{1}{8}</formula> Meile Nordnordo&#x017F;t vom <placeName key="fortstphilipp">Fort<lb break="yes"/>
+                        <hi rendition="#i">S. Philipp,</hi>
+                    </placeName> Breite 40° 59&#x2032; 21&#x2033;, Länge 5&#x2032; 15&#x2033;. <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi> gibt die<lb break="yes"/>Breite an zu 40° 59&#x2032; 30&#x2033;, Länge 5&#x2032; 24&#x2033;. Eine &#x017F;ehr genug-<lb break="no"/>thuende Ueberein&#x017F;timmung.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="ventadellasienita">Venta della Sienita</placeName>,</hi> fünf Meilen nordwärts von <hi rendition="#i">
+                        <placeName key="alcaladellaserba">Alcala<lb break="yes"/>della Serba</placeName>
+                    </hi> in der Mitte der großen Wü&#x017F;te, die <placeName key="valencia" >Valenzia</placeName> von<lb break="yes"/>
+                    <placeName key="katalonien">Catalonien</placeName> &#x017F;cheidet, Breite durch <placeName key="rigel">Rigel</placeName> 40° 8&#x2032; 34&#x2033;, durch<lb break="yes"/>
+                    <placeName key="sirius">Sirius</placeName> 40° 8&#x2032; 37&#x2033;. Länge von <placeName key="paris">Paris</placeName> ohngefähr 7&#x2032; 50&#x2033;.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">Wenn</fw>
+                <lb break="yes"/>
+                <pb n="159" facs="#f0014"/>
+                <p>Wenn einige die&#x017F;er Beobachtungen Ihnen nicht genau ge-<lb break="no"/>nug &#x017F;cheinen, &#x017F;o bitte ich Sie, nicht zu verge&#x017F;&#x017F;en, daß &#x017F;ie in<lb break="yes"/>&#x017F;ehr übler Lage, und in &#x017F;teter Furcht, entdeckt zu werden,<lb break="yes"/>gemacht &#x017F;ind. Die Ermüdung durch eine ununterbrochene<lb break="yes"/>Rei&#x017F;e &#x017F;chwächt überdieß das Ge&#x017F;icht.</p>
+                <lb break="yes"/>
+                <p>Die Beobachtungen, welche mir das größte Vergnügen<lb break="yes"/>gemacht haben, &#x017F;ind die, welche ich mit äußer&#x017F;ter Sorgfalt<lb break="yes"/>vom 17 bis 21 Pluvio&#x017F;e über die Lage von <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> und vom<lb break="yes"/>alten <hi rendition="#i">
+                        <placeName key="sagunt">Sagunt</placeName>
+                    </hi> ange&#x017F;tellt habe. Würden Sie wol glauben, daß<lb break="yes"/>eine Stadt von mehr als 80000 Einwohnern noch um 2&#x2032; in<lb break="yes"/>den <placeName key="spanien"/>Spani&#x017F;chen Karten umherirrt?</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>:</hi> der Je&#x017F;uit <hi rendition="#i">
+                        <persName key="cassans_j" ref="http://d-nb.info/gnd/" >Ca&#x017F;&#x017F;ans</persName>
+                    </hi> in &#x017F;einer &#x017F;chönen Karte des<lb break="yes"/>Königreichs <placeName key="valencia">Valenzia</placeName> gibt ihre Breite 39° 29&#x2032;. <hi rendition="#i">
+                        <persName key="tosca_01" ref="http://d-nb.info/gnd/" >To&#x017F;ca</persName>,</hi> &#x017F;ein<lb break="yes"/>Nachfolger, dem <hi rendition="#i">
+                        <persName key="villanova_01">Villanova</persName>
+                    </hi> in dem Werke gefolgt i&#x017F;t: <hi rendition="#i">
+                        <bibl>Cur&#x017F;o<lb break="yes"/>del nuevo planeta Her&#x017F;el</bibl>,</hi> das 1785 unter dem angenommenen<lb break="yes" />Namen <hi rendition="#i">
+                        <persName key="munnozdevigastro_m" ref="http://d-nb.info/gnd/">Manuel Munnoz de Viga&#x017F;tro</persName>
+                    </hi> herauskam, 39° 34&#x2032;. Man<lb break="yes"/>glaubt in <placeName key="valencia">Valenzia</placeName>, daß <hi rendition="#i">
+                        <persName key="cassans_j" ref="http://d-nb.info/gnd/" >Ca&#x017F;&#x017F;ans</persName>
+                    </hi> und <hi rendition="#i">
+                        <persName key="tosca_01" ref="http://d-nb.info/gnd/">To&#x017F;ca</persName>
+                    </hi> gerathen haben.<lb break="yes"/>ohne &#x017F;elb&#x017F;t zu beobachten. <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi> in &#x017F;einem <bibl>See-Atlas</bibl>, in<lb break="yes"/>der <bibl>Karte de la Co&#x017F;ta <choice>
+                            <sic>desda</sic>
+                            <corr type="editorial">desde</corr>
+                        </choice> Cabo de Gata ha&#x017F;ta Cabo de Oro-<lb break="no" />pe&#x017F;a</bibl>, be&#x017F;timmt die&#x017F;e Breite auf 39° 26&#x2032; 45&#x2033;. Auf einmahl &#x017F;ieht<lb break="yes"/>man daher die&#x017F;e Stadt 7&#x2032; 15&#x2033; weiter &#x017F;üdlich ver&#x017F;etzt! Ich<lb break="yes"/>habe meine Beobachtungen mit der größten Sorgfalt berech-<lb break="no"/>net; unter 20 geben 15 die Breite für die Mitte der Stadt bey<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="santatecla">Santa Tecla</placeName>,</hi> wo ich beobachtete, zwi&#x017F;chen 39° 28&#x2032; 40&#x2033; und<lb break="yes"/>39° 29&#x2032; 5&#x2033;. Die &#x017F;chlechte&#x017F;ten be&#x017F;timmen &#x017F;ie immer noch zu<lb break="yes"/>39° 28&#x2032; 30&#x2033; und 15&#x2033;. Der <hi rendition="#i">
+                        <persName key="cassans_j" ref="http://d-nb.info/gnd/">P. Ca&#x017F;&#x017F;ans</persName>
+                    </hi> hat am be&#x017F;ten gera-<lb break="no"/>then.</p>
+                <lb break="yes"/>
+                <p>Es &#x017F;cheint &#x017F;ehr außerordentlich, wie ein &#x017F;o ge&#x017F;chickter<lb break="yes"/>A&#x017F;tronom, als <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/" >Tofino</persName>,</hi> &#x017F;ich um zwey Minuten hat irren kön-<lb break="no"/>nen, da er doch mit großen Quadranten arbeitete. Doch ha-<lb break="no"/>be ich einen <choice>
+                        <sic>ähnlichan</sic>
+                        <corr type="editorial">ähnlichen</corr>
+                    </choice> Fall in <hi rendition="#i">
+                        <placeName key="salzburg">Salzburg</placeName>
+                    </hi> ge&#x017F;ehen, wo ein Qua-<lb break="no"/>drant &#x017F;eit langer Zeit die durch die Karten be&#x017F;timmte Breite<lb break="yes"/>47° 46&#x2032; angab, da ich &#x017F;ie doch mit dem Sextanten &#x017F;tets zu<lb break="yes" />47° 48&#x2032; 2&#x2033; fand, eine Angabe, die &#x017F;eitdem völlig be&#x017F;tä-<lb break="no"/>tigt worden i&#x017F;t. Die <choice>
+                        <sic>Uebrrein&#x017F;timmung</sic>
+                        <corr type="editorial">Ueberein&#x017F;timmung</corr>
+                    </choice> zwi&#x017F;chen den Si-<lb break="no"/>rius- und Sonnen-Beobachtungen läßt mich nicht fürchten,<lb break="yes"/>
+                    <fw type="catch" place="bottom">daß</fw>
+                    <lb break="yes"/>
+                    <pb n="160" facs="#f0015"/> daß der Irrthum auf meiner Seite &#x017F;eyn möge. Hätte ich den<lb break="yes"/>kün&#x017F;tlichen Horizont nicht gut ge&#x017F;tellt, und ein Irrthum von<lb break="yes"/>4&#x2032; bey einem Niveau, das 2,&#x2033;5 Veränderung anzeigt, i&#x017F;t hier<lb break="yes"/>fa&#x017F;t unmöglich, &#x017F;o würde doch auch keine Ueberein&#x017F;timmung<lb break="yes"/>in den Beobachtungen mehrerer Tage Statt finden. Hätte<lb break="yes"/>&#x017F;ich die Fläche des Spiegels verändert, warum fand ich zu<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>,</hi> zu <hi rendition="#i">
+                        <placeName key="monserrat">Mon&#x017F;errat</placeName>,</hi> zu <hi rendition="#i">
+                        <placeName key="balaguet">Balaguet</placeName>
+                    </hi> und &#x017F;eitdem am 14<lb break="yes"/>Vento&#x017F;e zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> die Breite genau, wie &#x017F;ie die berühmte-<lb break="no"/>&#x017F;ten A&#x017F;tronomen be&#x017F;timmt haben? Ein In&#x017F;trument kann in<lb break="yes"/>Unordnung gerathen, aber vermag es, &#x017F;ich von &#x017F;elb&#x017F;t wieder<lb break="yes"/>zu verbe&#x017F;&#x017F;ern? Auch war der Collimations-Fehler zu <hi rendition="#i">
+                        <placeName key="valencia">Valen-<lb break="no"/>cia</placeName>
+                    </hi> + 10&#x2033;, zu <hi rendition="#i">
+                        <placeName key="barcelona">Barcelona</placeName>
+                    </hi> + 2&#x2033;, zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> + 8&#x2033;; ein Beweis,<lb break="yes"/>daß der Sextant nicht einmahl durch die Stöße des Wagens<lb break="yes"/>gelitten hatte.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <persName key="espinosa_01" ref="http://d-nb.info/gnd/" >Espino&#x017F;a</persName>,</hi> der mit <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi> gearbeitet hat, und dem man<lb break="yes"/>&#x017F;ehr &#x017F;chätzbare Beobachtungen während &#x017F;einer Rei&#x017F;e um die<lb break="yes"/>
+                    <placeName key="erde">Welt</placeName> &#x017F;chuldig i&#x017F;t, ver&#x017F;icherte mich, daß <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi> in <placeName key="valencia">Valenzia</placeName>
+                    <lb break="yes"/>&#x017F;elb&#x017F;t nicht beobachtete, &#x017F;ondern &#x017F;eine Lage nur aus einigen,<lb break="yes"/>im Innern des Landes geworfenen Triangeln ge&#x017F;chlo&#x017F;&#x017F;en habe.<lb break="yes"/>Mein Chronometer hat mir die Länge von <hi rendition="#i">
+                        <placeName key="valencia">Valenzia</placeName>
+                    </hi> zu 11&#x2032; 12&#x2033;<lb break="yes"/>durch die <placeName key="sonne" >Sonne</placeName> gegeben, und 11&#x2032; 7&#x2033; durch <placeName key="sirius">Sirius</placeName>. <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi>
+                    <lb break="yes"/>be&#x017F;timmt die Länge 10&#x2032; 42&#x2033;.</p>
+                <lb break="yes"/>
+                <p>Das er&#x017F;temahl, als ich die Ruinen des alten <hi rendition="#i">
+                        <placeName key="sagunt">Sagunt</placeName>,</hi> das<lb break="yes"/>Schloß von <hi rendition="#i">
+                        <placeName key="murviedro">Murviedro,</placeName>
+                    </hi> be&#x017F;uchte, verhinderten mich Wolken,<lb break="yes"/>Beob. anzu&#x017F;tellen. Ich kehrte am 12 Pluv. dahin zurück, und<lb break="yes" />&#x017F;etzte meinen Horizont ungefähr 200 Métres &#x017F;üdwärts vom<lb break="yes"/>Amphitheater auf die Ruinen des Dianen-Tempels, und fand<lb break="yes"/>die Breite von <hi rendition="#i">
+                        <placeName key="murviedro">Murviedro</placeName>
+                    </hi> oder <hi rendition="#i">
+                        <placeName key="sagunt">Sagunt</placeName>
+                    </hi> 39° 40&#x2032; 40&#x2033;. <hi rendition="#i">
+                        <persName key="tofino_01" ref="http://d-nb.info/gnd/">Tofino</persName>
+                    </hi>
+                    <lb break="yes"/>hat &#x017F;ie 39° 40&#x2032; 10&#x2033;<choice>
+                        <sic>,</sic>
+                        <corr type="editorial">.</corr>
+                    </choice> Die Länge i&#x017F;t 10&#x2032; 14&#x2033; we&#x017F;tl.</p>
+                <lb break="yes"/>
+                <p>Am 14 Vento&#x017F;e fing ich meine Beob. zu <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> an, in dem<lb break="yes"/> Palla&#x017F;t des Herzogs von Infantado, 200 Toi&#x017F;en &#x017F;üdwärts von der<lb break="yes"/> Plaza major. Meine er&#x017F;ten Beob. gaben mir die Breite im Mittel<lb break="yes"/>40° 24&#x2032; 42&#x2033;. Eine größere Zahl anderer Beob. läßt mich ver-<lb break="no"/>muthen, daß die Breite von <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi> wol etwas unter 40° 25&#x2032;<lb break="yes"/>18&#x2033; &#x017F;eyn möge. <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi> wird die&#x017F;e Ungewißheit bald heben,<lb break="yes"/>da ihm die Regierung den Auftrag gegeben hat, die Länge<lb break="yes"/>
+                    <fw type="catch" place="bottom">und</fw>
+                    <lb break="yes"/>
+                    <pb n="161" facs="#f0016"/> und Breite der Haupt&#x017F;tadt auf das &#x017F;chärf&#x017F;te zu be&#x017F;timmen.<lb break="yes"/>Mein Chronometer hat mir die Länge gegeben 24&#x2032; 34&#x2033;. Die<lb break="yes"/>
+                    <bibl>Conn. d. temps</bibl> hat 24&#x2032; 8&#x2033;.</p>
+                <lb break="yes"/>
+                <p>Bey meinem letzten Au&#x017F;enthalt in <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>
+                    </hi> glaubte ich<lb break="yes"/>die Länge die&#x017F;es Orts &#x017F;ehr genau be&#x017F;timmen zu mü&#x017F;&#x017F;en, da<lb break="yes"/>die Karten &#x017F;ie &#x017F;o unrichtig angeben, unerachtet der Nähe der<lb break="yes" />Haupt&#x017F;tadt. Ich fand dort die Zeit auf 6 bis 8&#x2033; genau; <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi>
+                    <lb break="yes"/>gab mir die <placeName key="madrid">Madrider</placeName> Zeit, die bis auf 0,&#x2033;2 genau war, da-<lb break="no"/>mit ergab &#x017F;ich Mittags-Unter&#x017F;chied zwi&#x017F;chen <placeName key="madrid" >Madrid</placeName> und<lb break="yes"/>
+                    <placeName key="aranjuez">Aranjuez</placeName> 23,&#x2033;8. Da ferner <placeName key="madrid">Madrid</placeName> und <placeName key="paris" >Paris</placeName> = 24&#x2032; 8&#x2033;, &#x017F;o i&#x017F;t<lb break="yes"/>die Länge von <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>
+                    </hi> 23&#x2032; 44&#x2033; von <placeName key="paris">Paris</placeName>. Die Breite von<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>
+                    </hi> i&#x017F;t beynahe bis auf 45&#x2033; un&#x017F;icher geblieben, da in<lb break="yes"/>die&#x017F;en Gegenden die <placeName key="sonne" >Sonne</placeName> im Mittag zu hoch &#x017F;teht, um &#x017F;ie<lb break="yes"/>mit dem Sextanten beobachten zu können. Einzelne ab&#x017F;olute<lb break="yes"/>Höhen der <placeName key="sonne" >Sonne</placeName>, die ich mit <hi rendition="#i">
+                        <persName key="chaix_j" ref="http://d-nb.info/gnd/">Chaix</persName>
+                    </hi> berechnet habe, geben,<lb break="yes"/>daß die Breite von <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>
+                    </hi> wahr&#x017F;cheinlich 40° 0&#x2032; 0&#x2033; &#x017F;eyn<lb break="yes" />möge.</p>
+                <lb break="yes"/>
+                <p>Durch Azimuthal-Beobachtungen habe ich die Abwei-<lb break="no"/>chung der Magnet-Nadel im Floreal gefunden für <hi rendition="#i">
+                        <placeName key="madrid">Madrid</placeName>
+                    </hi>
+                    <lb break="yes"/>22,<hi rendition="#sup">G</hi> 2, für <hi rendition="#i">
+                        <placeName key="aranjuez">Aranjuez</placeName>
+                    </hi> 21,<hi rendition="#sup">G</hi> 58.</p>
+                <lb break="yes"/>
+                <p>Das i&#x017F;t das Wenige, was ich Ihnen in die&#x017F;em Augenblicke<lb break="yes"/>&#x017F;chicken kann. Ich rei&#x017F;e in drey Tagen für die <hi rendition="#i">
+                        <placeName key="havanna">Havana</placeName>
+                    </hi> und<lb break="yes"/>
+                    <hi rendition="#i">
+                        <placeName key="mexiko">Mexiko</placeName>
+                    </hi> ab, und werde dort fleißig mit meinen <persName key="bird_j" ref="http://d-nb.info/gnd/">Bird&#x2019;i&#x017F;chen</persName>
+                    <lb break="yes"/>Quadranten beobachten. Nehmen Sie das Wenige mit Nach-<lb break="no"/>&#x017F;icht auf, und mit der Erinnerung, daß ich noch andere<lb break="yes"/>Zwecke als A&#x017F;tronomie zu verfolgen habe....</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

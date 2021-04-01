@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb facs="#f0001"/>
+            <lb break="yes"/>
+            <cb n="321"/>
+            <lb break="yes"/>
+            <div n="1" xml:lang="deu">
+                <head>Be&#x017F;chreibung eines Ausbruches des Vulkanes<lb break="yes"/>Jorullo in Mexico (155).<lb break="yes"/>Vom Baron Alexander v. <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Oe&#x017F;tlich vom Pik des Sancitaro ent&#x017F;tand der Vul-<lb break="no"/>kan Jorullo (Xorullo oder Juruyo) in der Nacht des<lb break="yes"/>29. Septembers 1759. Herr <persName key="bonpland_ajag">
+                        <hi rendition="#g">Bonpland</hi>
+                    </persName> und ich<lb break="yes"/>erreichten den Crater die&#x017F;es Vulkans am 19. Septem-<lb break="no"/>ber 1803. Die große Cata&#x017F;trophe, bei welcher &#x017F;ich die-<lb break="no"/>&#x017F;er Berg aus der Erde erhob, und durch welche eine<lb break="yes"/>große Strecke Landes ihr Aus&#x017F;ehn ga&#x0364;nzlich vera&#x0364;nderte,<lb break="yes"/>i&#x017F;t vielleicht eine der außerordentlich&#x017F;ten phy&#x017F;i&#x017F;chen Re-<lb break="no" />volutionen in den Ge&#x017F;chichtsannalen un&#x017F;eres Planeten.<lb break="yes"/>Die Geologie kennt kein Bei&#x017F;piel, daß aus der Mitte<lb break="yes"/>von 1000 kleinen brennenden Kegeln ein Berg aus<lb break="yes" />Schlacken und A&#x017F;che und 517 Metres oder 1695 Fuß<lb break="yes"/>hoch (na&#x0364;mlich mit dem Niveau der alten benachbarten<lb break="yes"/>Ebenen verglichen) &#x017F;ich erhoben habe; und dies im In-<lb break="no"/>nern eines Fe&#x017F;tlandes, 36 Leguas entfernt von der Mee-<lb break="no" />resku&#x0364;&#x017F;te und mehr als 42 Leguas von jedem andern<lb break="yes" />brennenden Vulkan entfernt.</p>
+                <lb break="yes"/>
+                <p>Eine große Ebene breitet &#x017F;ich von den Bergen<lb break="yes"/>
+                    <placeName key="aguasarco">Agua&#x017F;arco&#x2019;s</placeName> bis an die Do&#x0364;rfer Teipa und Petatlan aus,<lb break="yes"/>die beide wegen ihrer &#x017F;cho&#x0364;nen Baumwollenpflanzungen<lb break="yes"/>gleich beru&#x0364;hmt &#x017F;ind. Die&#x017F;e Ebene zwi&#x017F;chen dem Pica-<lb break="no"/>chos del Mortero und dem Cerros de las Cuevas y de<lb break="yes"/>Cuiche liegt 750 bis 800 Meters oder 2460 bis 2624<lb break="yes"/>Fuß u&#x0364;ber dem Meeres&#x017F;piegel. In der Mitte eines<lb break="yes"/>Land&#x017F;triches, in welchem Porphyr mit einer Ba&#x017F;is von<lb break="yes"/>Gru&#x0364;n&#x017F;tein vorherr&#x017F;cht, er&#x017F;cheinen ba&#x017F;alti&#x017F;che Kegel, deren<lb break="yes"/>Spitzen mit immergru&#x0364;nenden Eichen, mit einer Belau-<lb break="no"/>bung wie Lorbeer- und Olivenba&#x0364;ume gekro&#x0364;nt und mit<lb break="yes"/>kleinen Palmen, mit fa&#x0364;cherfo&#x0364;rmigen Bla&#x0364;ttern, untermi&#x017F;cht<lb break="yes"/>&#x017F;ind. Die&#x017F;e &#x017F;cho&#x0364;ne Vegetation bildet mit der unfrucht-<lb break="no"/>baren Ebene, deren Vegetation durch vulkani&#x017F;ches Feuer<lb break="yes" />verwu&#x0364;&#x017F;tet wurde, einen merkwu&#x0364;rdigen Contra&#x017F;t.</p>
+                <lb break="yes"/>
+                <p>Bis gegen die Mitte des 18. Jahrhunderts war<lb break="yes"/>das Land zwi&#x017F;chen den beiden Ba&#x0364;chen Cuitamba und<lb break="yes"/>
+                    <cb n="322"/>
+                    <lb break="yes"/>San Pedro mit Zuckerrohr und Indigo bebaut. Die<lb break="yes" />urbaren Felder wurden von Ba&#x017F;altgebirgen einge&#x017F;chlo&#x017F;&#x017F;en,<lb break="yes"/>deren Struktur anzuzeigen &#x017F;cheint, daß die&#x017F;es ganze Land<lb break="yes"/>in &#x017F;ehr alten Zeiten &#x017F;chon mehrmals vulkani&#x017F;che Con-<lb break="no"/>vul&#x017F;ionen erlitten habe. Die&#x017F;e Felder waren durch<lb break="yes"/>Kun&#x017F;t bewa&#x0364;&#x017F;&#x017F;ert und geho&#x0364;rten zum Gebiete des San<lb break="yes"/>Pedro de Jorullo, eines der ma&#x0364;chtig&#x017F;ten und reich-<lb break="no"/>&#x017F;ten Ma&#x0364;nner des Landes. Im Monat Juni 1759<lb break="yes"/>wurde ein unterirdi&#x017F;ches Geto&#x0364;&#x017F;e vernommen. Die&#x017F;er<lb break="yes"/>dumpfe a&#x0364;ußer&#x017F;t beunruhigende Donner <hi rendition="#aq">(bramidos)</hi> war<lb break="yes"/>von ha&#x0364;ufigem Erdbeben begleitet, welches zur gro&#x0364;ßten<lb break="yes"/>Be&#x017F;tu&#x0364;rzung der Bewohner der Pflanzung 50 bis 60<lb break="yes"/>Tage lang ununterbrochen fortdauerte. Mit dem An-<lb break="no"/>fange des Septembers &#x017F;chien alles die vo&#x0364;llige Wieder-<lb break="no"/>her&#x017F;tellung der Ruhe anzudeuten, als in der Nacht zwi-<lb break="no"/>&#x017F;chen dem 28. und 29. das &#x017F;chreckliche unterirdi&#x017F;che Ge-<lb break="no"/>to&#x0364;&#x017F;e wieder begann. Die er&#x017F;chrocknen Indianer flu&#x0364;ch-<lb break="no" />teten &#x017F;ich auf die Gebirge von <placeName key="aguasarco" >Agua&#x017F;arco</placeName>. Ein Lan-<lb break="no"/>des&#x017F;trich von 3 bis 4 &#x25A1; Meilen Umfang, welcher den<lb break="yes"/>Namen Malpays fu&#x0364;hrte, erhob &#x017F;ich in Ge&#x017F;talt einer<lb break="yes" />Bla&#x017F;e. Die Gra&#x0364;nzen die&#x017F;er Convul&#x017F;ion &#x017F;ind noch immer<lb break="yes"/>an den zerbrochenen Gebirgs&#x017F;chichten erkennbar. Der<lb break="yes"/>Malpays i&#x017F;t an &#x017F;einem Rande nur 39 Fuß hoch u&#x0364;ber<lb break="yes"/>das alte Niveau der Ebene, Playas de Jorullo genannt,<lb break="yes"/>empor gehoben worden, aber die Convexita&#x0364;t &#x017F;eines Bo-<lb break="no"/>dens nimmt gegen den Mittelpunkt hin bis zu einer<lb break="yes"/>Ho&#x0364;he von 524 Fuß zu.</p>
+                <lb break="yes"/>
+                <p>Diejenigen, welche die&#x017F;er großen Cata&#x017F;trophe vom<lb break="yes" />Gipfel des <placeName key="aguasarco">Agua&#x017F;arco</placeName> mit zuge&#x017F;ehen haben, ver&#x017F;ichern,<lb break="yes"/>daß, in dem Umfang von mehr als <formula notation="TeX">\frac{1}{2}</formula> &#x25A1; Meile, Flam-<lb break="no"/>men ausgebrochen, daß glu&#x0364;hende Fels&#x017F;tu&#x0364;cken in er-<lb break="no"/>&#x017F;taunliche Ho&#x0364;he empor ge&#x017F;chleudert worden &#x017F;eyen, und<lb break="yes"/>daß man durch die dicke A&#x017F;chenwolke, welche durch das<lb break="yes" />vulkani&#x017F;che Feuer erleuchtet wurde, die erweichte Ober-<lb break="no" />fla&#x0364;che der Erde, gleich der erregten See wallen &#x017F;ah.<lb break="yes"/>Die Flu&#x0364;ßchen Cuitamba <choice>
+                        <sic>uud</sic>
+                        <corr type="editorial">und</corr>
+                    </choice> San Pedro ergo&#x017F;&#x017F;en &#x017F;ich<lb break="yes"/>in die brennenden Schlu&#x0364;nde. Die Zer&#x017F;etzung des Wa&#x017F;-<lb break="no" />&#x017F;ers trug noch zur Ver&#x017F;ta&#x0364;rkung der Flammen bei, welche<lb break="yes"/>in der Stadt Pascuaro ge&#x017F;ehen werden konnten, obgleich<lb break="yes"/>
+                    <pb facs="#f0002"/>
+                    <cb n="323"/>
+                    <lb break="yes"/>die&#x017F;e Stadt auf einer &#x017F;ehr ausgebreiteten Fla&#x0364;che liegt,<lb break="yes"/>1400 Meters oder 4592 Fuß u&#x0364;ber der Ebene von las<lb break="yes"/>Playas de Jorullo. Die Auswu&#x0364;rfe von Schlamm und<lb break="yes"/>be&#x017F;onders von Thon, welche Kugeln von zer&#x017F;etzten<lb break="yes"/>Ba&#x017F;alten in concentri&#x017F;chen Schichten einhu&#x0364;llten, &#x017F;cheinen<lb break="yes"/>anzuzeigen, daß unterirdi&#x017F;che Gewa&#x0364;&#x017F;&#x017F;er keinen kleinen<lb break="yes"/>Antheil an der Hervorbringung die&#x017F;er außerordentlichen<lb break="yes"/>Revolution gehabt haben mo&#x0364;gen. Tau&#x017F;ende kleiner Ke-<lb break="no"/>gel von 2 bis 3 Meter (6,5 bis 9,8 Fuß Ho&#x0364;he), von<lb break="yes"/>den Eingebornen <hi rendition="#aq" >hornitos</hi> (Oefen) genannt, ragten auf<lb break="yes"/>dem Malpays hervor; wiewohl &#x017F;eit den letzten 15 Jah-<lb break="no"/>ren, nach dem Zeugniß der Indianer, die Hitze die&#x017F;er<lb break="yes" />vulkani&#x017F;chen Oefen eine große Abnahme erfahren hatte,<lb break="yes" />&#x017F;o &#x017F;ah ich doch das Thermometer bis auf 202° F. &#x017F;tei-<lb break="no"/>gen, wenn es in die Spalten ge&#x017F;enkt wurde, welche einen<lb break="yes"/>wa&#x0364;&#x017F;&#x017F;erigen Dun&#x017F;t aushauchten. Jeder kleine Kegel i&#x017F;t<lb break="yes"/>eine E&#x017F;&#x017F;e, aus welcher ein dicker Dampf 10 bis<lb break="yes"/>15 Meter hoch auf&#x017F;teigt. In vielen der&#x017F;elben ho&#x0364;rt man<lb break="yes"/>ein unterirdi&#x017F;ches Geto&#x0364;&#x017F;e, welches die Na&#x0364;he einer kochen-<lb break="no"/>den Flu&#x0364;&#x017F;&#x017F;igkeit verku&#x0364;ndigt.</p>
+                <lb break="yes"/>
+                <p>Mitten unter die&#x017F;en Oefen erheben &#x017F;ich aus einem<lb break="yes" />Schlunde, de&#x017F;&#x017F;en Richtung von N. N. O. nach S. S. W.<lb break="yes"/>geht, 6 große Ma&#x017F;&#x017F;en, jede 4 bis 500 Meters hoch<lb break="yes"/>u&#x0364;ber das alte Niveau der Ebenen. Dies i&#x017F;t eine Er-<lb break="no"/>&#x017F;cheinung des Montenovo zu Neapel, nur mehrmals<lb break="yes"/>wiederholt in einer Reihe von vulkani&#x017F;chen Bergen.<lb break="yes"/>Die ho&#x0364;ch&#x017F;te die&#x017F;er ungeheuren Ma&#x017F;&#x017F;en, welche einige<lb break="yes"/>Aehnlichkeit mit dem Pays de l&#x2019;<placeName key="auvergne">Auvergne</placeName> hat, i&#x017F;t<lb break="yes"/>der große Vulkan Jorullo. Er brennt be&#x017F;ta&#x0364;ndig und<lb break="yes"/>hat an der Nord&#x017F;eite eine unermeßliche Quantita&#x0364;t ver-<lb break="no"/>&#x017F;chlackter und ba&#x017F;alti&#x017F;cher Laven, welche Bruch&#x017F;tu&#x0364;cke von<lb break="yes"/>Urgebirgsarten enthalten, ausgeworfen. Die&#x017F;e großen<lb break="yes"/>Ausbru&#x0364;che des mittlern Vulkans dauerten bis zum Jahr<lb break="yes"/>1760. In den folgenden Jahren wurden &#x017F;ie allma&#x0364;hlich<lb break="yes"/>weniger ha&#x0364;ufig. Die Indianer fu&#x0364;rchteten &#x017F;ich vor dem<lb break="yes"/>&#x017F;chrecklichen Geto&#x0364;&#x017F;e des neuen Vulkans und verließen<lb break="yes"/>anfangs alle Do&#x0364;rfer im Umfang und bis auf eine Ent-<lb break="no"/>fernung von 7 bis 8 Leguas von den Playas de Jorullo.<lb break="yes"/>Sie wurden inde&#x017F;&#x017F;en mit die&#x017F;em &#x017F;chrecklichen Schau&#x017F;piel<lb break="yes"/>allma&#x0364;hlich durch die Gewohnheit vertraut, und nachdem<lb break="yes"/>&#x017F;ie in ihre Hu&#x0364;tten zuru&#x0364;ckgekehrt waren, begaben &#x017F;ie &#x017F;ich<lb break="yes"/>auf die Berge <placeName key="aguasarco">Agua&#x017F;arco</placeName> und Santa Ines, um die Feuer-<lb break="no"/>&#x017F;tro&#x0364;me zu bewundern, welche aus einer unendlichen<lb break="yes"/>Menge großer und kleiner vulkani&#x017F;cher Oeffnungen aus-<lb break="no"/>geworfen wurden. Die Da&#x0364;cher der Ha&#x0364;u&#x017F;er von Quere-<lb break="no"/>taro wurden in einer geraden Entfernung von mehr als<lb break="yes"/>48 Leguas vom Schauplatze der Explo&#x017F;ion mit A&#x017F;che be-<lb break="no"/>deckt. Obgleich jetzt das unterirdi&#x017F;che Feuer nicht mehr<lb break="yes"/>heftig zu &#x017F;eyn &#x017F;cheint <note place="foot" n="*)">Wir fanden auf dem Boden des Kraters 116, 130 und<lb break="yes"/>139° F. Wir gingen u&#x0364;ber Spalten, aus <choice>
+                            <sic>welchem</sic>
+                            <corr type="editorial">welchen</corr>
+                        </choice> Schwefel-<lb break="no"/>dun&#x017F;t hervortrat und in welchen das Thermometer bis auf<lb break="yes"/>185° F. &#x017F;tieg. Der Weg u&#x0364;ber die&#x017F;e Spalten und u&#x0364;ber die<lb break="yes" />Schlackenhaufen, welche bedeutende Schluchten verdecken, macht<lb break="yes"/>das Hinab&#x017F;teigen in den Krater &#x017F;ehr gefa&#x0364;hrlich.</note>, und &#x017F;owohl der Malpays, als<lb break="yes"/>der große Vulkan &#x017F;ich mit Pflanzen zu bedecken anfan-<lb break="no"/>gen, fanden wir doch die umgebende Luft durch die&#x017F;e<lb break="yes"/>
+                    <cb n="324"/>
+                    <lb break="yes"/>kleinen Oefen <hi rendition="#aq">(hornitos)</hi> &#x017F;o &#x017F;ehr erhitzt, daß das Ther-<lb break="no"/>mometer in großem Ab&#x017F;tande von der Oberfla&#x0364;che und<lb break="yes"/>im Schatten auf 109° F. &#x017F;tieg. Die&#x017F;er Um&#x017F;tand &#x017F;cheint<lb break="yes" />zu bewei&#x017F;en, daß die Erza&#x0364;hlungen einiger alten India-<lb break="no"/>ner nicht u&#x0364;bertrieben &#x017F;ind, wenn &#x017F;ie ver&#x017F;ichern, daß vor<lb break="yes"/>vielen Jahren, nach dem er&#x017F;ten Ausbruch, die Ebenen<lb break="yes"/>von Jorullo &#x017F;elb&#x017F;t in großer Entfernung vom Schau-<lb break="no"/>platze der Explo&#x017F;ion, wegen der außerordentlichen Hitze,<lb break="yes"/>die in ihnen herr&#x017F;chte, unbewohnbar waren.</p>
+                <lb break="yes"/>
+                <p>Dem Rei&#x017F;enden werden noch immer bei Cerro de<lb break="yes"/>Santa Ines, die Flu&#x0364;&#x017F;&#x017F;e Cuitamba und San Pedro ge-<lb break="no" />zeigt, deren klare Gewa&#x0364;&#x017F;&#x017F;er &#x017F;on&#x017F;t die Zuckerrohr-Pflan-<lb break="no"/>zung des Don <persName key="pimantel_a" >Andr<hi rendition="#aq">é</hi> Pimentel</persName> befeuchteten. Die&#x017F;e<lb break="yes"/>Flu&#x0364;&#x017F;&#x017F;e ver&#x017F;chwanden in der Nacht des 29. Septembers<lb break="yes"/>1759; aber in einer Entfernung von 2000 Meters<lb break="yes"/>(6561 Fuß) weiter nach We&#x017F;ten und in dem Striche,<lb break="yes"/>welcher der Schauplatz der Convul&#x017F;ion war, &#x017F;ieht man<lb break="yes"/>jetzt durch das thonige Gewo&#x0364;lbe der <hi rendition="#aq">hornitos</hi> zwei<lb break="yes" />Flu&#x0364;&#x017F;&#x017F;e hervorbrechen, die das Aus&#x017F;ehen von Mineral-<lb break="no"/>wa&#x0364;&#x017F;&#x017F;ern haben und in welchen das Thermometer auf<lb break="yes"/>126°,8 F. &#x017F;tieg. Die Indianer legen ihnen noch immer<lb break="yes"/>die Namen San Pedro und Cuitamba bei, weil man<lb break="yes"/>in ver&#x017F;chiedenen Theilen des Malpays ho&#x0364;ren kann, daß<lb break="yes"/>große Wa&#x017F;&#x017F;erma&#x017F;&#x017F;en in der Richtung von O&#x017F;ten nach<lb break="yes"/>We&#x017F;ten von den Gebirgen Santa Ines nach der Pflan-<lb break="no"/>zung de la Pre&#x017F;entacion &#x017F;ich fortwa&#x0364;lzen. In der Na&#x0364;he<lb break="yes"/>die&#x017F;es Wohn&#x017F;itzes befindet &#x017F;ich ein Bach, welcher Schwe-<lb break="no" />felwa&#x017F;&#x017F;er&#x017F;toff ausgiebt. Er i&#x017F;t u&#x0364;ber 27 Fuß breit und<lb break="yes"/>die &#x017F;ta&#x0364;rk&#x017F;te &#x017F;chwefelhaltige Quelle, welche ich jemals ge-<lb break="no"/>&#x017F;ehen habe.</p>
+                <lb break="yes"/>
+                <p>Die Lage des neuen Vulkans Jorullo giebt zu<lb break="yes"/>einer &#x017F;ehr intere&#x017F;&#x017F;anten geologi&#x017F;chen Bemerkung Veran-<lb break="no" />la&#x017F;&#x017F;ung. In Neu-Spanien giebt es eine Parallelreihe<lb break="yes"/>&#x017F;ehr großer Ho&#x0364;hen oder eine &#x017F;chmale Zone zwi&#x017F;chen 18°<lb break="yes"/>59&#x2032; und 19° 12&#x2032; der Breite, in welcher alle Berg-<lb break="no"/>&#x017F;pitzen von <placeName key="anahuac" >Anahuac</placeName> liegen, welche u&#x0364;ber die Region des<lb break="yes"/>ewigen Schnee&#x2019;s hinausreichen. Die&#x017F;e Berg&#x017F;pitzen &#x017F;ind<lb break="yes"/>entweder Vulkane, welche noch immer brennen, oder<lb break="yes"/>Berge, welche wegen ihrer Ge&#x017F;talt, wie auch wegen ihrer<lb break="yes"/>geologi&#x017F;chen Be&#x017F;chaffenheit aller Wahr&#x017F;cheinlichkeit nach &#x017F;on&#x017F;t<lb break="yes" />unterirdi&#x017F;che Feuer enthalten haben. Wenn man von der<lb break="yes" />Ku&#x0364;&#x017F;te des <placeName key="atlantik">Atlanti&#x017F;chen Meeres</placeName> landeinwa&#x0364;rts &#x017F;chreitet, fin-<lb break="no" />det man in der Richtung von O&#x017F;ten nach We&#x017F;ten den<lb break="yes" />Pik von Orizaba, die zwei Vulkane von La Puebla, den<lb break="yes"/>Nevada de Toluca, den Pik von Tancitaro und den<lb break="yes"/>Vulkan von Colima. Statt daß die&#x017F;e hohen Berg&#x017F;piz-<lb break="no"/>zen den Kamm der Cordilleren von <placeName key="anahuac">Anahuac</placeName> bilden und<lb break="yes"/>ihrer Richtung, na&#x0364;mlich von Su&#x0364;do&#x017F;t nach Nordwe&#x017F;t,<lb break="yes"/>folgen &#x017F;ollten, liegen &#x017F;ie vielmehr in einer Linie, welche<lb break="yes"/>&#x017F;enkrecht auf der Axe der großen Gebirgskette &#x017F;teht.<lb break="yes"/>Es verdient ohne Zweifel bemerkt zu werden, daß im<lb break="yes"/>Jahr 1759 der neue Vulkan Jorullo in die Fort-<lb break="no"/>&#x017F;etzung der&#x017F;elben Linie und in die na&#x0364;mliche Parallelreihe<lb break="yes"/>mit den alten mexikani&#x017F;chen Vulkanen fiel. Sechs große<lb break="yes" />Ma&#x017F;&#x017F;en &#x017F;ind aus der Erde hervorge&#x017F;tiegen und zwar in einer<lb break="yes"/>Linie, welche durch die Ebene von Cerro de las Cuevas nach<lb break="yes"/>
+                    <pb facs="#f0003"/>
+                    <cb n="325"/>
+                    <lb break="yes"/>dem Picacho del Mortero la&#x0364;uft. So liegen auch die<lb break="yes"/>
+                    <hi rendition="#aq">bocche nove</hi> des Ve&#x017F;uvs, na&#x0364;mlich la&#x0364;ngs der Fort&#x017F;etzung<lb break="yes"/>der Kluft. Berechtigen uns die&#x017F;e Analogien nicht, anzu-<lb break="no"/>nehmen, daß in die&#x017F;em Theile von Mexiko in großer<lb break="yes"/>Tiefe im Innern der Erde eine Kluft exi&#x017F;tire, in der<lb break="yes"/>Richtung von O. nach W. und in der La&#x0364;nge von 137<lb break="yes"/>Leguas, la&#x0364;ngs welcher das vulkani&#x017F;che Feuer, durch die<lb break="yes"/>innere Rinde der Porphyrlager durchbrechend, zu ver-<lb break="no"/>&#x017F;chiedenen Epochen vom mexikani&#x017F;chen Meerbu&#x017F;en bis<lb break="yes"/>zum &#x017F;tillen Meer hin zum Vor&#x017F;chein gekommen i&#x017F;t?<lb break="yes" />Er&#x017F;treckt &#x017F;ich vielleicht die&#x017F;e Kluft bis zu der kleinen In-<lb break="no"/>&#x017F;elgruppe, welche Herr <persName key="collnet_j">
+                        <hi rendition="#g">Collnet</hi>
+                    </persName> den <placeName key="archipelderevillagigedo">Archipel von Re-<lb break="no"/>villagagedo</placeName> genannt hat, und um welchen herum in<lb break="yes"/>dem&#x017F;elben Parallelkreis mit den mexikani&#x017F;chen Vulkanen<lb break="yes"/>&#x017F;chwimmender Bim&#x017F;tein angetroffen worden i&#x017F;t? Die-<lb break="no"/>jenigen Naturfor&#x017F;cher, welche einen Unter&#x017F;chied machen<lb break="yes" />zwi&#x017F;chen den That&#x017F;achen, welche uns von der be&#x017F;chreiben-<lb break="no"/>den Geologie geliefert werden, und zwi&#x017F;chen den theore-<lb break="no"/>ti&#x017F;chen Tra&#x0364;umereien u&#x0364;ber den primitiven Zu&#x017F;tand un&#x017F;eres<lb break="yes" />Planeten, werden uns die&#x017F;e allgemeinen Bemerkungen<lb break="yes" />u&#x0364;ber die allgemeine Fla&#x0364;che von Neu-Spanien ver-<lb break="no" />zeihen. Außerdem befinden &#x017F;ich vom See Cui&#x017F;eo, welcher<lb break="yes"/>mit &#x017F;alz&#x017F;aurem Natron ge&#x017F;a&#x0364;ttigt i&#x017F;t, und Schwefelwa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;toffgas aushaucht, bis zur Stadt Valladolid auf einer<lb break="yes"/>Fla&#x0364;che von 48 &#x25A1; Leguas eine große Menge heißer Quel-<lb break="no"/>len, welche gemeiniglich nur Salz&#x017F;a&#x0364;ure, ohne eine Spur<lb break="yes"/>von &#x017F;chwefel&#x017F;auren Erden oder Metall&#x017F;alzen enthalten.<lb break="yes"/>Dahin geho&#x0364;ren die Mineralwa&#x0364;&#x017F;&#x017F;er von Chucandiro,<lb break="yes"/>Cuinche, San Seba&#x017F;tian und San Juan Tararamco.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Lettre du baron de Humboldt (de Berlin), à Jerôme Lalande</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1799-Lettre_du_baron-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Lettre du baron de Humboldt (de Berlin), à Jerôme Lalande</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">1799</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Magasin encyclopédique, ou Journal des Sciences, des Lettres et des Arts</title>
+                        <biblScope unit="volume">5</biblScope>
+                        <biblScope unit="issue">6</biblScope>
+                        <biblScope unit="pages">376–391</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="376" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">
+                        <hi rendition="#k">Lettre</hi> du baron de <hi rendition="#k">
+                            <persName key="humboldt_av"/>Humboldt</hi> (de<lb break="yes"/>
+                        <placeName key="berlin">Berlin</placeName>), à <persName key="lalande_jjlfd" ref="http://d-nb.info/gnd/">Jér&#x00F4;me <hi rendition="#k" >Lalande.</hi>
+                        </persName>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <hi rendition="#et">De <placeName key="caracas">Caraccas</placeName>, <placeName key="suedamerika">Amérique méridionale</placeName>, 23 frimaire an 8 de<lb break="yes"/>la <placeName key="frankreich">république</placeName> (14 décembre 1799).</hi>
+                </dateline>
+                <lb break="yes"/>
+                <p>Peu de semaines après mon arrivée sur le continent<lb break="yes"/>de l&#x2019;<placeName key="amerika">Amérique</placeName>, j&#x2019;ai envoyé un extrait de mes obser-<lb break="no"/>vations astronomiques au C. <persName key="delambre_jbj" ref="http://d-nb.info/gnd/">Delambre</persName>, croyant qu&#x2019;il<lb break="yes"/>
+                    <pb n="377" facs="#f0002"/> y en auroit quelques-unes qui pourroient intéresser<lb break="yes"/>le bureau des longitudes. J&#x2019;ai appris que le brick au-<lb break="no"/>quel je confiai cet extrait s&#x2019;est perdu dans son pas-<lb break="no"/>sage par la <placeName key="guadalupe" >Guadeloupe</placeName>, lors du grand ouragan qui<lb break="yes"/>vient de ravager cette z&#x00F4;ne tropique. Permettez que<lb break="yes"/>je m&#x2019;adresse aujourd&#x2019;hui à vous, citoyen, pour vous<lb break="yes" />entretenir de mes travaux.</p>
+                <lb break="yes"/>
+                <p>Vous avez marqué un grand intér&#x00EA;t pour le voyage<lb break="yes" />d&#x2019;<placeName key="afrika">Afrique</placeName>, que je comptois entreprendre en ven-<lb break="no"/>démiaire; mais les circonstances m&#x2019;ont conduit en<lb break="yes"/>
+                    <placeName key="amerika">Amérique</placeName>. Le gouvernement espagnol m&#x2019;ayant donné<lb break="yes"/>toutes les facilités imaginables pour bien observer,<lb break="yes"/>je compte parcourir successivement la Terre-Ferme,<lb break="yes"/>le <placeName key="mexiko">Mexique</placeName>, les <placeName key="philippinen">Philippines</placeName>.</p>
+                <lb break="yes"/>
+                <p>Je viens de finir un voyage infiniment intéressant<lb break="yes"/>dans l&#x2019;intérieur du <placeName key="paria">Paria</placeName>, dans la <placeName key="kordilleren"/>Cordillière de Co-<lb break="no"/>colar, <placeName key="tumeri">Tumeri</placeName>, <placeName key="guiri" >Guiri</placeName>; j&#x2019;ai eu deux ou trois mules<lb break="yes" />chargées d&#x2019;instrumens, de plantes sèches, etc. Nous<lb break="yes" />avons pénétré dans les missions des capucins, qui n&#x2019;a-<lb break="no" />voient été visitées par aucun naturaliste; nous avons<lb break="yes" />découvert un grand nombre de végétaux, princi-<lb break="no"/>palement de nouveaux genres de palmiers, et nous<lb break="yes"/>sommes sur le point de partir pour l&#x2019;<placeName key="orinoco">Oronoco</placeName>, pour<lb break="yes"/>nous enfoncer de là peut-&#x00EA;tre jusqu&#x2019;à <placeName key="sancarlosderionegro">S. Carlos du<lb break="yes" />Rio-Negro</placeName>, au-delà de l&#x2019;<placeName key="aequator" >équateur</placeName>. Un voyage en-<lb break="no"/>trepris aux dépens d&#x2019;un particulier qui n&#x2019;est pas très-<lb break="maybe"/>riche, et exécuté par deux personnes zélées, mais<lb break="yes"/>très-jeunes, ne doit pas promettre les m&#x00EA;mes fruits<lb break="yes"/>
+                    <pb n="378" facs="#f0003"/> que les voyages d&#x2019;une société de savans du premier<lb break="yes"/>ordre, qui seroient envoyés aux dépens d&#x2019;un gouver-<lb break="no"/>nement; mais vous savez que mon but principal est la<lb break="yes"/>physique du <placeName key="erde">monde</placeName>, la composition du globe, l&#x2019;a-<lb break="no"/>nalyse de l&#x2019;air, la physiologie des animaux et des<lb break="yes"/>plantes, enfin les rapports généraux qui lient les<lb break="yes"/>&#x00EA;tres organisés à la nature inanimée, ces études me<lb break="yes"/>forcent d&#x2019;embrasser beaucoup d&#x2019;objets à la fois.</p>
+                <lb break="yes"/>
+                <p>Le C. <hi rendition="#k">
+                        <persName key="bonpland_ajag" ref="http://d-nb.info/gnd/" >Bonpland</persName>,</hi> élève du musée national, très-<lb break="maybe"/>versé dans la botanique, l&#x2019;anatomie comparée, et<lb break="yes"/>autres branches de l&#x2019;histoire naturelle, me seconde<lb break="yes"/>par ses lumières avec un zèle infatigable. Nous avons<lb break="yes"/>séché plus de 1600 plantes, et décrit plus de 500,<lb break="yes"/>ramassé des coquilles et des insectes; j&#x2019;ai fait une<lb break="yes"/>cinquantaine de dessins. Je crois qu&#x2019;en considérant<lb break="yes"/>les chaleurs br&#x00FB;lantes de cette z&#x00F4;ne, vous penserez<lb break="yes"/>que nous avons beaucoup travaillé en quatre mois de<lb break="yes"/>temps. Les jours ont été consacrés à la physique et<lb break="yes"/>à l&#x2019;histoire naturelle, les nuits à l&#x2019;astronomie. Je<lb break="yes"/>vous donne l&#x2019;esquisse de nos occupations, non pour<lb break="yes"/>me glorifier de ce que nous avons fait, mais pour ob-<lb break="no"/>tenir votre indulgence, et celle de notre ami le C.<lb break="yes"/>
+                    <persName key="delambre_jbj" ref="http://d-nb.info/gnd/">Delambre</persName>, pour ce que nous n&#x2019;avons pas fait. Les<lb break="yes"/>instrumens astronomiques que je possède sont un<lb break="yes"/>quart de cercle de <persName key="bird_j" ref="http://d-nb.info/gnd/">Bird</persName>, des sectans de <persName key="ramsden_j" ref="http://d-nb.info/gnd/" >Ramsdem</persName>
+                    <lb break="yes"/>et de <persName key="troughton_e" ref="http://d-nb.info/gnd/" >Througthon</persName>, des lunettes, des micromètres ...<lb break="yes"/>Je devrois avoir fait plus: mais vous savez que l&#x2019;as-<lb break="no" />tronomie pour laquelle MM. <persName key="zach_fxv" ref="http://d-nb.info/gnd/">Zach</persName> et <persName key="koehler_jg" >Kohler</persName> m&#x2019;ont<lb break="yes"/>
+                    <pb n="379" facs="#f0004"/> inspiré tant de go&#x00FB;t, est un peu éloignée de mon<lb break="yes"/>but principal, et qu&#x2019;à 10° de latitude on ne travaille<lb break="yes"/>pas comme à 49. J&#x2019;ai donc mieux aimé faire peu d&#x2019;ob-<lb break="no"/>servations, mais avec toute l&#x2019;exactitude dont je suis<lb break="yes"/>capable, que beaucoup de médiocres. J&#x2019;ai consigné<lb break="yes"/>dans mes manuscrits jusqu&#x2019;aux plus petits détails de<lb break="yes"/>mes observations; les hauteurs correspondantes, les<lb break="yes"/>rectifications des instrumens, afin que dans le cas<lb break="yes"/>assez probable où je périrois dans cette expédition,<lb break="yes"/>ceux qui les calculeront puissent juger du degré de<lb break="yes"/>confiance que chaque résultat doit comporter.</p>
+                <lb break="yes"/>
+                <p>Embarqués le 17 prairial an 7, sur la frégate le<lb break="yes"/>
+                    <persName key="pizzaro_f" ref="http://d-nb.info/gnd/">
+                        <choice>
+                            <sic>Pizaro</sic>
+                            <corr type="editorial">Pizarro</corr>
+                        </choice>
+                    </persName>, nous avons traversé l&#x2019;océan heureusement,<lb break="yes"/>jusqu&#x2019;au 28 messidor, où nous arriv&#x00E2;mes sur les c&#x00F4;tes<lb break="yes"/>de <placeName key="paria">Paria</placeName>. Mon plan primitif étoit de me rendre di-<lb break="no"/>rectement à la <placeName key="havanna">Havane</placeName>, et de là au <placeName key="mexiko">Mexique</placeName>; mais<lb break="yes"/>je n&#x2019;ai pu résister au desir de voir les merveilles de<lb break="yes"/>l&#x2019;<placeName key="orinoco">Oronoco</placeName> et la haute Cordelière qui, du plateau de<lb break="yes"/>
+                    <placeName key="quito">Quito</placeName>, s&#x2019;étend vers les rives du <placeName key="guarapeche">Guarapèche</placeName> et d&#x2019;<placeName key="arco">Arco</placeName>.<lb break="yes"/>Tous mes instrumens, jusqu&#x2019;aux plus délicats, sont<lb break="yes"/>heureusement arrivés, et ont été ici et pendant la<lb break="yes"/>navigation continuellement en action. Les officiers<lb break="yes"/>espagnols ont tellement favorisé nos desseins, qu&#x2019;au<lb break="yes"/>milieu de l&#x2019;océan j&#x2019;ai pu préparer des gaz, et analyser<lb break="yes"/>l&#x2019;atmosphère sur la frégate comme au milieu d&#x2019;une<lb break="yes"/>ville. Les m&#x00EA;mes facilités m&#x2019;ont été données sur le<lb break="yes"/>continent; par-tout les ordres du roi et de son pre-<lb break="no"/>mier secrétaire d&#x2019;état, M. d&#x2019;<persName key="urquijo_mld" ref="http://d-nb.info/gnd/" >Urquijo</persName>, qui protège<lb break="yes"/>
+                    <pb n="380" facs="#f0005"/> les arts, sont exécutés avec zèle et promptitude. Je<lb break="yes"/>serois bien ingrat si je ne faisois le plus grand éloge<lb break="yes"/>de la manière dont je suis traité dans les <placeName key="spanischeskolonialreich">colonies<lb break="yes" />espagnoles</placeName>.</p>
+                <lb break="yes"/>
+                <p>Dans les <bibl>deux mémoires</bibl> que j&#x2019;ai envoyés au C. <persName key="delambre_jbj" ref="http://d-nb.info/gnd/">De-<lb break="no" />lambre</persName>, quand j&#x2019;étois en Espagne, j&#x2019;ai consigné les<lb break="yes"/>premières observations faites avec le nouvel incli-<lb break="no"/>natoire de <persName key="borda_jcd" ref="http://d-nb.info/gnd/" >Borda</persName>, dans l&#x2019;<placeName key="suedeuropa">Europe méridionale</placeName>; j&#x2019;y<lb break="yes"/>ai observé que sur le continent, des localités in-<lb break="no"/>fluent plus encore sur l&#x2019;inclinaison que sur la décli-<lb break="no"/>naison magnétique. On ne voit point de correspon-<lb break="no"/>dance entre les positions géographiques des lieux et<lb break="yes"/>les degrés d&#x2019;inclinaison. J&#x2019;ai observé la m&#x00EA;me chose<lb break="yes"/>dans ce <placeName key="amerika" >nouveau monde</placeName>, en transportant la boussole<lb break="yes"/>de <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName> dans l&#x2019;intérieur de la nouvelle Anda-<lb break="no"/>lousie. Les observations que le C. <persName key="nouet_na" ref="http://d-nb.info/gnd/">Nouet</persName> vous aura<lb break="yes"/>envoyées d<placeName key="aegypten" >&#x2019;&#x00C6;gypte</placeName>, prouveront probablement la<lb break="yes"/>m&#x00EA;me chose.</p>
+                <lb break="yes"/>
+                <p>Les déclinaisons sont affectées aussi par les loca-<lb break="no"/>lités, mais j&#x2019;ose dire <hi rendition="#i">beaucoup moins;</hi> sur mer elles<lb break="yes"/>sont plus régulières et uniformes dans la marche. Je<lb break="yes"/>ne vous donne ici que les observations certaines à<lb break="yes"/>15 minutes, avec la suspension que le C. <persName key="megnie_pb" ref="http://d-nb.info/gnd/">Mégnié</persName>
+                    <lb break="yes"/>m&#x2019;a faite pour la boussole de <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>; j&#x2019;ai m&#x00EA;me eu<lb break="yes"/>une exactitude plus grande <hi rendition="#i">en temps de calme.</hi> C&#x2019;est<lb break="yes"/>dans ce temps aussi que l&#x2019;on peut bien compter le<lb break="yes"/>nombre des oscillations. Si en les comptant cinq ou<lb break="yes"/>six fois les nombres sont toujours les m&#x00EA;mes, s&#x2019;ils<lb break="yes"/>
+                    <pb n="381" facs="#f0006"/> continuent, quoique l&#x2019;on change l&#x2019;instrument de<lb break="yes"/>place, je crois qu&#x2019;alors on peut avoir de la con-<lb break="no"/>fiance dans les résultats. Quoique les calmes ne soient<lb break="yes"/>pas rares sous les tropiques, je n&#x2019;ai pu faire en qua-<lb break="no"/>rante jours que dix observations bien exactes.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Lieux d&#x2019;observa-<lb break="no"/>tions, an 8.</cell>
+                        <cell>Latitude.</cell>
+                        <cell>Longitude<lb break="yes"/>depuis <placeName key="paris" >Paris</placeName>, en<lb break="yes"/>temps.</cell>
+                        <cell>Inclinaison<lb break="yes"/>magnétique;<lb break="yes"/>nouvelle<lb break="yes"/>division.</cell>
+                        <cell>Force magné-<lb break="no"/>tique, exprimée<lb break="yes"/>par le nombre<lb break="yes"/>d&#x2019;oscillations,<lb break="yes"/>en dix minutes<lb break="yes"/>de temps.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="paris">Paris</placeName> ............ </cell>
+                        <cell>48° 50&#x2032; 15&#x2033; ... </cell>
+                        <cell>0<hi rendition="#sup">h</hi> 0&#x2032; 0&#x2033; .... </cell>
+                        <cell>77° 15 ...... </cell>
+                        <cell>245</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>N&#x00EE;mes........... </cell>
+                        <cell>43 50 12 ... </cell>
+                        <cell>7 55 or. ... </cell>
+                        <cell>72 65 ...... </cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="montpellier">Montpellier</placeName> ....... </cell>
+                        <cell>43 36 29 ... </cell>
+                        <cell>6 10 or. ... </cell>
+                        <cell>73 20 ...... </cell>
+                        <cell>245</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="marseille">Marseille</placeName> ......... </cell>
+                        <cell>42 17 49 ... </cell>
+                        <cell>12 14 .... </cell>
+                        <cell>72 40 ...... </cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="perpignan">Perpignan</placeName> ......... </cell>
+                        <cell>42 41 53 ... </cell>
+                        <cell>2 14 .... </cell>
+                        <cell>72 55 ...... </cell>
+                        <cell>248</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="barcelona">Barcelone</placeName> ........ </cell>
+                        <cell>41 23 8 ... </cell>
+                        <cell>0 33 oc. ... </cell>
+                        <cell>71 80 ...... </cell>
+                        <cell>245</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="madrid">Madrid</placeName> .......... </cell>
+                        <cell>40 25 18 ... </cell>
+                        <cell>24 8 .... </cell>
+                        <cell>75 20 ...... </cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Valence .......... </cell>
+                        <cell>39 28 55 ... </cell>
+                        <cell>0 10 4 .... </cell>
+                        <cell>70 70 ...... </cell>
+                        <cell>235</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="medinadelcampo">Medina del Campo</placeName> .........</cell>
+                        <cell>..........</cell>
+                        <cell>........ </cell>
+                        <cell>73 50 ...... </cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="guadarama">Guadarama</placeName> ...........</cell>
+                        <cell>............</cell>
+                        <cell>.......... </cell>
+                        <cell>73 50 ...... </cell>
+                        <cell>240</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="ferrol">Ferrol</placeName> ........... </cell>
+                        <cell>43 29 0 ... </cell>
+                        <cell>42&#x2032; 22&#x2033; .... </cell>
+                        <cell>76 15 ...... </cell>
+                        <cell>237</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="13" rendition="#rightBraced">
+                            <placeName key="atlantik">Océan Atlantique</placeName>,<lb break="yes" />entre l&#x2019;<placeName key="europa">Europe</placeName>,<lb break="yes"/>l&#x2019;<placeName key="amerika">Amérique</placeName>
+                            <lb break="yes"/>et l&#x2019;<placeName key="afrika" >Afrique</placeName>.</cell>
+                        <cell cols="4">en degrés.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>38 52 15 .. </cell>
+                        <cell>16° 20&#x2032; ....... </cell>
+                        <cell>75 18 ...... </cell>
+                        <cell>242</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>37 14 10 .. </cell>
+                        <cell>16° 30&#x2032; 15&#x2033; .... </cell>
+                        <cell>74 90 ...... </cell>
+                        <cell>242</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>32 15 54 .. </cell>
+                        <cell>17 7 30 .... </cell>
+                        <cell>71 50 ......</cell>
+                        <cell>...</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>25 15 0 .. </cell>
+                        <cell>20 36 0 .... </cell>
+                        <cell>67 00 ...... </cell>
+                        <cell>239</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>21 36 0 .. </cell>
+                        <cell>25 39 0 .... </cell>
+                        <cell>64 20 ...... </cell>
+                        <cell>237</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>20 8 0 .. </cell>
+                        <cell>28 33 45 .... </cell>
+                        <cell>63 00 ...... </cell>
+                        <cell>236</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>14 20 0 .. </cell>
+                        <cell>48 3 0 .... </cell>
+                        <cell>58 80 ...... </cell>
+                        <cell>239</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">en temps.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12 34 0 .. </cell>
+                        <cell>3<hi rendition="#sup">h</hi> 32&#x2032; 57&#x2033; .... </cell>
+                        <cell>50 15 ...... </cell>
+                        <cell>234</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">en arc.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 46 0 .. </cell>
+                        <cell>61° 23&#x2032; 45&#x2033; .... </cell>
+                        <cell>46 40 ...... </cell>
+                        <cell>229</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 59 30 .. </cell>
+                        <cell>64 31 30 .... </cell>
+                        <cell>46 50 ...... </cell>
+                        <cell>237</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="5">Vous vous souvenez que <persName key="cavallo_t" ref="http://d-nb.info/gnd/">Cavallo</persName> donne pour 1776, ancienne division.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Latitude</cell>
+                        <cell>24° 24&#x2032; longit.</cell>
+                        <cell>18° 11&#x2032; inclin.</cell>
+                        <cell>59° 0&#x2032;</cell>
+                        <cell> </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> </cell>
+                        <cell>10 0</cell>
+                        <cell>22 52 ....</cell>
+                        <cell>44 12</cell>
+                        <cell> </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> </cell>
+                        <cell>.. 0</cell>
+                        <cell>37 38</cell>
+                        <cell>..... 30 3</cell>
+                        <cell> </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="382" facs="#f0007"/>
+                <p>Depuis que les CC. <persName key="coulomb_cad" ref="http://d-nb.info/gnd/" >Coulomb</persName> et <persName key="cassini_jd" ref="http://d-nb.info/gnd/">Cassini</persName> ne s&#x2019;oc-<lb break="no" />cupent plus des déclinaisons, je ne connois pas deux<lb break="yes"/>endroits sur la terre où l&#x2019;on puisse dire, tel jour la<lb break="yes"/>variation étoit de 10 secondes de plus ou de moins,<lb break="yes"/>pas dix endroits où l&#x2019;on soit s&#x00FB;r d&#x2019;une minute de<lb break="yes"/>variation. Dans quelles incertitudes ne sommes-nous<lb break="yes"/>pas sur la déclinaison magnétique de <placeName key="paris">Paris</placeName>, à en<lb break="yes" />juger par le <bibl>journal de <persName key="lametherie_jcd" ref="http://d-nb.info/gnd/">Lamétherie</persName>
+                    </bibl>! Je me flatte que<lb break="yes"/>les dix points de l&#x2019;océan que je vous indique pour-<lb break="no"/>ront servir <hi rendition="#i">dans la suite des temps,</hi> pour voir si les<lb break="yes"/>inclinaisons changent rapidement. Les latitudes<lb break="yes"/>et longitudes en ont été déterminées à la m&#x00EA;me<lb break="yes"/>heure avec beaucoup d&#x2019;exactitude par un sectant de<lb break="yes"/>
+                    <persName key="ramsden_j" ref="http://d-nb.info/gnd/">Ramsden</persName>, divisé de 15 en 15 secondes, et par le<lb break="yes"/>garde-temps du C. <persName key="berthoud_l" ref="http://d-nb.info/gnd/">Louis Berthoud</persName>. Vous verrez<lb break="yes"/>avec intér&#x00EA;t que depuis 37° de latitude, les inclinai-<lb break="no"/>sons diminuent avec une rapidité extraordinaire;<lb break="yes"/>qu&#x2019;entre 37° et 48° de latitude, elles augmentent<lb break="yes"/>moins vers l&#x2019;est que vers l&#x2019;ouest ... Je crois que dans<lb break="yes"/>la haute cha&#x00EE;ne des montagnes calcaires de cette pro-<lb break="no"/>vince, de petites élévations au dessus du niveau de<lb break="yes"/>la mer altèrent près de l&#x2019;<placeName key="aequator" >équateur les inclinaisons</placeName>,<lb break="yes"/>beaucoup plus que les hautes montagnes dans les<lb break="yes"/>
+                    <placeName key="pyrenaeen">Pyrénées</placeName> et la vieille Castille. Je prends pour<lb break="yes"/>exemple quatre points placés, presque nord et sud,<lb break="yes"/>(dans un arc de 24 minutes,) dont les hauteurs sont<lb break="yes"/>peu considérables.</p>
+                <lb break="yes"/>
+                <table xml:id="t1-1" next="#t1-2">
+                    <row>
+                        <cell> </cell>
+                        <cell>Toises.</cell>
+                        <cell>Inclinaisons.</cell>
+                        <cell>Oscillations.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="cumana">Cumana</placeName> ....... </cell>
+                        <cell>4 ..... </cell>
+                        <cell>44° 20 ...... </cell>
+                        <cell>229</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="cerroquetepe">Zueteppe</placeName> ...... </cell>
+                        <cell>185, 2 ..... </cell>
+                        <cell>43 30 ...... </cell>
+                        <cell>229</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="383" facs="#f0008"/>
+                <table xml:id="t1-2" prev="#t1-1">
+                    <row>
+                        <cell>
+                            <placeName key="impossibile">Impossibile</placeName> .... </cell>
+                        <cell>245 ...... </cell>
+                        <cell>43 15 ...... </cell>
+                        <cell>233</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="cumanacoa">Cumanacoa</placeName> .... </cell>
+                        <cell>106 ..... </cell>
+                        <cell>43 20 ...... </cell>
+                        <cell>228</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="cocollar">Cocollar</placeName> ...... </cell>
+                        <cell>392 ..... </cell>
+                        <cell>42 60 ...... </cell>
+                        <cell>229</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>
+                    <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName> croyoit, comme on le voit dans les ques-<lb break="no"/>tions de l&#x2019;académie à <persName key="laperouse_jfdgcd" ref="http://d-nb.info/gnd/">la Pérouse</persName>, que l&#x2019;intensité<lb break="yes"/>de la force magnétique étoit la m&#x00EA;me sur tout le<lb break="yes"/>globe; il attribuoit le peu de différence qu&#x2019;il avoit<lb break="yes"/>aper&#x00E7;u à <placeName key="cadiz">Cadix</placeName>, à <placeName key="teneriffa" >Ténériffe</placeName> et à <placeName key="brest">Brest</placeName> à l&#x2019;imper-<lb break="no"/>fection de la boussole. Il m&#x2019;engagea à fixer mon at-<lb break="no"/>tention sur cet objet. Vous voyez que la force ne<lb break="yes"/>diminue pas avec le degré d&#x2019;inclinaison, <hi rendition="#i">mais qu&#x2019;elle<lb break="yes"/>varie depuis</hi> 245 <hi rendition="#i">oscillations</hi> en dix minutes de temps<lb break="yes"/>à <placeName key="paris">Paris</placeName>, jusqu&#x2019;à 229 (à <placeName key="cumana">Cumana</placeName>). Il est certain que<lb break="yes"/>ce changement ne vient d&#x2019;aucune cause accidentelle.<lb break="yes"/>La m&#x00EA;me boussole faisoit à <placeName key="paris">Paris</placeName> 245 oscillations,<lb break="yes"/>à <placeName key="girona">Gironne</placeName> 232, à <placeName key="barcelona">Barcelone</placeName> 245, et à Valence 235.<lb break="yes"/>Elle donna, après un voyage de plusieurs mois, le<lb break="yes"/>m&#x00EA;me nombre qu&#x2019;avant de partir. Ce nombre est le<lb break="yes"/>m&#x00EA;me en plein champ, dans un appartement ou dans<lb break="yes"/>une cave. La force magnétique est dans un m&#x00EA;me<lb break="yes"/>lieu partout, et pendant longtemps la m&#x00EA;me; elle<lb break="yes"/>paro&#x00EE;t constante comme les attractions ou la cause<lb break="yes"/>de la gravité. J&#x2019;ai eu le chagrin de n&#x2019;avoir pu faire<lb break="yes"/>en mer des observations de déclinaisons magnéti-<lb break="no"/>ques bien exactes. Malgré tous mes soins je n&#x2019;ai pu<lb break="yes"/>acheter un instrument qui me donn&#x00E2;t seulement 40&#x2032;<lb break="yes"/>d&#x2019;exactitude; c'est pour cela que je ne vous parle pas<lb break="yes"/>de déclinaisons sur mer. Cependant, il est certain<lb break="yes"/>
+                    <pb n="384" facs="#f0009"/> que le point de la variation nulle est déja beaucoup<lb break="yes"/>plus avancé vers l&#x2019;ouest que sur la <bibl>carte</bibl> de <persName key="lambert_jh" ref="http://d-nb.info/gnd/" >Lambert</persName>,<lb break="yes"/>(<bibl>Ephémérides de <placeName key="berlin">Berlin</placeName>, 1779</bibl>). Une très-bonne<lb break="yes"/>observation est celle de 1775, du vaisseau anglais <choice>
+                        <sic>le</sic>
+                        <corr type="editorial">de</corr>
+                    </choice>
+                    <lb break="yes"/>
+                    <placeName key="liverpool">Liverpool</placeName>, qui la trouva nulle à 66° 40&#x2032; de longi-<lb break="no"/>tude occcidentale, et 29° de latitude septentrionale.<lb break="yes"/>Il y a deux points sur cette c&#x00F4;te où j&#x2019;ai observé la<lb break="yes"/>déclinaison avec beaucoup de soin par une boussole<lb break="yes"/>de <persName key="lenoir_e" ref="http://d-nb.info/gnd/">Lenoir</persName>, par la méthode de <persName key="prony_gcfmrbd" ref="http://d-nb.info/gnd/">Prony</persName> et de <persName key="zach_fxv" ref="http://d-nb.info/gnd/">Zach</persName>,<lb break="yes"/>en suspendant une aiguille à un fil, en visant par<lb break="yes"/>des mires, et en mesurant avec le sextant l&#x2019;azimut<lb break="yes"/>d&#x2019;un signal. <placeName key="cumana">Cumana</placeName>, 4° 13&#x2032; 45&#x2033; à l&#x2019;est, en vendé-<lb break="no"/>miaire, à midi, et une vingtaine de lieues plus à<lb break="yes"/>l&#x2019;est; à <hi rendition="#i">
+                        <placeName key="caripe">Caripe</placeName>
+                    </hi>, (capitale des missions des capucins,<lb break="yes"/>habitée par les indiens Chaimas et Carives), 3° 15&#x2032;<lb break="yes"/>à l&#x2019;est.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;intér&#x00EA;t que vous prenez, citoyen, à tout ce qui<lb break="yes"/>a rapport à la navigation, me fait croire que les ob-<lb break="no"/>servations suivantes vous seront agréables. J&#x2019;ai exa-<lb break="no"/>miné avec beaucoup de soin les assertions de <persName key="franklin_b" ref="http://d-nb.info/gnd/">Fran-<lb break="no"/>klin</persName> et du cap. <persName key="williams_jon" ref="http://d-nb.info/gnd/">Jonathan Williams</persName>, (<bibl>
+                        <hi rendition="#i">Transact. of the<lb break="yes"/>
+                            <placeName key="amerika">american</placeName> society,</hi> vol. 3, pag. 32</bibl>), sur l&#x2019;usage du<lb break="yes"/>thermomètre pour découvrir les bas-fonds. J&#x2019;ai été<lb break="yes"/>étonné de voir comment l&#x2019;eau se refroidit à mesure<lb break="yes"/>qu&#x2019;elle perd de sa profondeur; comment les bas-<lb break="maybe"/>fonds, les c&#x00F4;tes, s&#x2019;annoncent d&#x2019;avance. Le plus mau-<lb break="no"/>vais thermomètre d&#x2019;esprit de vin, pourvu qu&#x2019;il soit<lb break="yes"/>bien sensible par la forme de la boule, ou plut&#x00F4;t sa<lb break="yes"/>
+                    <fw type="catch" place="bottom">proportion</fw>
+                    <lb break="yes"/>
+                    <pb n="385" facs="#f0010"/> proportion au tube, peut devenir au milieu de la<lb break="yes"/>temp&#x00EA;te, la nuit, ou lorsqu&#x2019;on a de la difficulté de<lb break="yes"/>sonder, lorsque le bas-fond s&#x2019;approche insensiblement,<lb break="yes"/>un instrument bienfaisant dans la main du plus igno-<lb break="no"/>rant pilote. Je ne puis assez inviter le bureau des lon-<lb break="no"/>gitudes à fixer son attention sur cet objet si impor-<lb break="no"/>tant. Tout l&#x2019;équipage de notre frégate a été étonné<lb break="yes"/>de voir baisser rapidement le thermomètre à l&#x2019;ap-<lb break="no"/>proche du grand banc qui va de <placeName key="tobago" >Tabago</placeName> à la Gre-<lb break="no"/>nade, et de celui qui est à l&#x2019;est de la <placeName key="marguerite">Marguerite</placeName>.<lb break="yes"/>L&#x2019;observation est d&#x2019;autant plus facile à faire, que la<lb break="yes"/>température de l&#x2019;eau de la mer est (jour et nuit) dans<lb break="yes"/>des espaces de 12000 lieues carrées, la m&#x00EA;me, telle-<lb break="no"/>ment la m&#x00EA;me, qu&#x2019;en quatre et six jours de naviga-<lb break="no"/>tion vous ne voyez pas changer le thermomètre le plus<lb break="yes"/>sensible de 0°, 3; l&#x2019;eau se rafra&#x00EE;chit dans le voisinage<lb break="yes"/>de bas-fonds, de deux ou trois degrés, et m&#x00EA;me da-<lb break="no"/>vantage. Cette idée de <persName key="franklin_b" ref="http://d-nb.info/gnd/">Franklin</persName>, oubliée jusqu&#x2019;à pré-<lb break="no"/>sent, peut un jour devenir très-utile à la navigation,<lb break="yes"/>en faisant multiplier les observations. Vous sentez<lb break="yes"/>bien que je ne dis pas que l&#x2019;on doive se fier au ther-<lb break="no"/>momètre seul, et ne plus sonder; ce seroit une folie;<lb break="yes"/>mais je puis assurer, en me fondant sur ma propre ex-<lb break="no"/>périence, que le thermomètre annonce le danger long-<lb break="no"/>temps avant la sonde, (l&#x2019;eau cherchant un équilibre<lb break="yes"/>de température, et se refroidissant dans la proximité<lb break="yes"/>de la basse c&#x00F4;te). Je puis assurer que ce nouveau<lb break="yes"/>moyen n&#x2019;est pas plus incertain qu&#x2019;un loc emporté par<lb break="yes"/>
+                    <pb n="386" facs="#f0011"/> des courans, et d&#x2019;autres méthodes pour trouver <choice>
+                        <sic>lapo<lb break="yes"/>sition</sic>
+                        <corr type="editorial">la po-<lb break="no"/>sition</corr>
+                    </choice> des vaisseaux. On ne doit pas croire qu&#x2019;il n&#x2019;y a<lb break="yes"/>point de bas-fonds si le thermomètre ne baisse pas;<lb break="yes"/>mais on doit &#x00EA;tre sur ses gardes lorsqu&#x2019;il baisse tout<lb break="yes"/>d&#x2019;un coup. Un pareil avis est bien précieux, plus pré-<lb break="no"/>cieux que les petites croix dont fourmillent nos cartes<lb break="yes"/>marines, et dont la plupart annoncent des bas-fonds<lb break="yes"/>qui n&#x2019;existent pas, ou sont mal placés, comme les<lb break="yes"/>huit roches à fleur d&#x2019;eau près de <placeName key="madeira">Madère</placeName>. Voyez la<lb break="yes"/>carte de l&#x2019;<placeName key="atlantik">Océan atlantique</placeName>, 1792. Le moyen de<lb break="yes"/>mettre un thermomètre dans un <choice>
+                        <sic>seeau</sic>
+                        <corr type="editorial">seau</corr>
+                    </choice> d&#x2019;eau, est bien<lb break="yes"/>simple.</p>
+                <lb break="yes"/>
+                <p>Avec une balance de <persName key="dolland_p" ref="http://d-nb.info/gnd/" >Dollond</persName>, et des thermomètres<lb break="yes"/>enfermés dans les sondes munies de soupapes, j&#x2019;ai<lb break="yes"/>mesuré la densité et la température de l&#x2019;eau de mer,<lb break="yes"/>à la surface et à une certaine profondeur; si je ne<lb break="yes"/>me trompe, vous vous &#x00EA;tes déja occupé de ce pro-<lb break="no"/>bl&#x00EA;me, journal des Savans, avril 1774. Comme mes<lb break="yes"/>balances ont été comparées à celles du C. <persName key="hassenfratz_jh" ref="http://d-nb.info/gnd/">Hassen-<lb break="no"/>fratz</persName>, voyez son nouveau travail hydrostatique dans<lb break="yes"/>les Annales de chymie an 7, mes thermometres à<lb break="yes"/>ceux de l&#x2019;observatoire national, et que j&#x2019;ai été plus s&#x00FB;r<lb break="yes"/>des longitudes qu&#x2019;on ne l&#x2019;est généralement, <bibl>la petite<lb break="yes"/>carte</bibl> que je construirai un jour sur la densité et la<lb break="yes"/>température de l&#x2019;eau de mer, sera assez curieuse. A<lb break="yes"/>17 et 18° de latitude septentrionale, entre l&#x2019;<placeName key="afrika">Afrique</placeName>
+                    <lb break="yes"/>et les <placeName key="ostindien">Indes occidentales</placeName>, il y a une bande (sans<lb break="yes"/>courant extraordinaire) où l&#x2019;eau est plus dense qu&#x2019;à<lb break="yes"/>
+                    <pb n="387" facs="#f0012"/> une plus petite latitude. Voici quelques données sur<lb break="yes"/>la température de l&#x2019;eau, dans l&#x2019;Océan, entre l&#x2019;Eu-<lb break="no"/>rope, l&#x2019;<placeName key="afrika" >Afrique</placeName> et l&#x2019;<placeName key="amerika" >Amérique</placeName>.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Latitude. Nord.</cell>
+                        <cell>Longitude du méridien<lb break="yes"/>de <placeName key="paris" >Paris</placeName>.</cell>
+                        <cell>A la surface<lb break="yes"/>de la mer.</cell>
+                        <cell>A l&#x2019;air libre.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>43° .. 29&#x2032; .. </cell>
+                        <cell>.... 10° .. 31&#x2032; .. </cell>
+                        <cell>.... 12° .. .. </cell>
+                        <cell>18</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>39 .. 10 .. </cell>
+                        <cell>.... 16 .. 18 .. 30 </cell>
+                        <cell>.... 12 .. .. </cell>
+                        <cell>13</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>36 .. 3 .. </cell>
+                        <cell>.... 17 .. 3 .. 0 </cell>
+                        <cell>.... 12 .. .. </cell>
+                        <cell>14</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>35 .. 8 .. </cell>
+                        <cell>.... 17 .. 45 .. 0 </cell>
+                        <cell>.... 13 .. .. </cell>
+                        <cell>16 ... 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>32 .. 15 .. </cell>
+                        <cell>.... 17 .. 7 .. 30 </cell>
+                        <cell>.... 14 .. 2 .. </cell>
+                        <cell>13 ... 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>30 .. 35 .. </cell>
+                        <cell>.... 16 .. 54 .. 0 </cell>
+                        <cell>.... 15 .. .. </cell>
+                        <cell>16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>28 .. 55 .. </cell>
+                        <cell>.... 17 .. 22 .. 30 </cell>
+                        <cell>.... 15 .. .. </cell>
+                        <cell>17</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>26 .. 51 .. </cell>
+                        <cell>.... 19 .. 13 .. </cell>
+                        <cell>.... 16 .. .. </cell>
+                        <cell>15</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>20 .. 8 .. </cell>
+                        <cell>.... 28 .. 33 .. </cell>
+                        <cell>.... 17 .. .. </cell>
+                        <cell>16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>18 .. 53 .. 20 </cell>
+                        <cell>.... 30 ... 5 .. </cell>
+                        <cell>.... 17 .. 4 .. </cell>
+                        <cell>17</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>18 .. 8 .. </cell>
+                        <cell>.... 33 .. 2 .. </cell>
+                        <cell>.... 17 .. 9 .. </cell>
+                        <cell>19</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>17 .. 26 .. </cell>
+                        <cell>.... 35 .. 26 .. </cell>
+                        <cell>.... 18 .. .. </cell>
+                        <cell>16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15 .. 22 .. </cell>
+                        <cell>.... 22 .. 49 .. 15 </cell>
+                        <cell>.... 18 .. 5 .. </cell>
+                        <cell>20</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>14 .. 57 .. </cell>
+                        <cell>.... 44 .. 40 .. </cell>
+                        <cell>.... 19 .. .. </cell>
+                        <cell>17</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>13 .. 51 .. </cell>
+                        <cell>.... 50 .. 2 .. 30 </cell>
+                        <cell>.... 19 .. 8 .. </cell>
+                        <cell>18 ... 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 .. 46 .. </cell>
+                        <cell>.... 61 .. 23 .. 45 </cell>
+                        <cell>.... 20 .. 7 .. </cell>
+                        <cell>20 ... 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 .. 28 .. </cell>
+                        <cell>.... 66 .. 31 .. 0 </cell>
+                        <cell>.... 21 .. .. de </cell>
+                        <cell>17 à 27</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10 .. 29 .. </cell>
+                        <cell>.... 66 .. 35 .. </cell>
+                        <cell>.... 17 .. 8 .. </cell>
+                        <cell>23</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">
+                            <hi rendition="#et">Sur les bas fonds ....</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Cette lettre étoit commencée à <placeName key="cumana">Cumana</placeName>; j&#x2019;ai été<lb break="yes"/>trompé dans l&#x2019;espérance que j&#x2019;avois de la faire partir<lb break="yes"/>d&#x2019;une manière très-s&#x00FB;re par la voie des <placeName key="vsa">Etats-Unis</placeName>.<lb break="yes"/>Je l&#x2019;ai tra&#x00EE;née avec moi dans cette grande capitale<lb break="yes"/>de <placeName key="caracas">Caraccas</placeName>, qui, située à 400 toises de hauteur, dans<lb break="yes"/>une vallée fertile en cacao, coton et café, offre le<lb break="yes"/>climat d&#x2019;<placeName key="europa">Europe</placeName>.</p>
+                <lb break="yes"/>
+                <p>Le thermomètre descend la nuit jusqu&#x2019;à 11°, et ne<lb break="yes"/>monte le jour que jusqu&#x2019;à 17 ou 18°. La voie par la-<lb break="no"/>quelle cette lettre doit partir étant très-peu s&#x00FB;re,<lb break="yes"/>
+                    <pb n="388" facs="#f0013"/> je ne puis me résoudre à continuer les extraits que<lb break="yes"/>je comptois faire de mes cahiers. Je joins simple-<lb break="no"/>ment les résultats de quelques travaux dont je me<lb break="yes" />suis occupé avec beaucoup de soin.</p>
+                <lb break="yes"/>
+                <p>Je crois avoir eu une très-bonne observation de<lb break="yes"/>la fin de l&#x2019;éclipse de soleil du 6 brumaire an 8. A<lb break="yes"/>
+                    <placeName key="cumana">Cumana</placeName>, j&#x2019;ai vérifié le temps pendant huit jours,<lb break="yes"/>opération souvent pénible dans ces contrées, à cause<lb break="yes"/>des orages qui arrivent après le passage du soleil, et<lb break="yes"/>qui font manquer les hauteurs correspondantes du<lb break="yes"/>soir. J&#x2019;ai eu des hauteurs de soleil d&#x2019;accord à la se-<lb break="no"/>conde, le jour de l&#x2019;éclipse: la fin a été eu temps<lb break="yes"/>moyen de <placeName key="cumana">Cumana</placeName>, à 2<hi rendition="#sup">h</hi> 14&#x2032; 22&#x2033;.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai observé la distance des cornes par le passage<lb break="yes"/>aux fils dans le quart de cercle de <persName key="dolland_p" ref="http://d-nb.info/gnd/">Dollond</persName>, grossissant<lb break="yes" />108 fois. Je pourrai vous envoyer les observations<lb break="yes"/>depuis la <placeName key="havanna">Havane</placeName>. Le 16 brumaire, j&#x2019;ai eu une bonne<lb break="yes"/>immersion du second satellite de <placeName key="jupiter">Jupiter</placeName> à <placeName key="cumana" >Cumana</placeName>,<lb break="yes"/>en temps vrai, à 11<hi rendition="#sup" >h</hi> 41&#x2032; 18&#x2033;; j&#x2019;espère que cette im-<lb break="no" />mersion aura été observée à <placeName key="paris">Paris</placeName>. Les orages qui ont<lb break="yes"/>suivi le tremblement de terre que nous avons essuyé<lb break="yes"/>à <placeName key="cumana">Cumana</placeName>, m&#x2019;ont fait perdre les immersions des 11<lb break="yes"/>et 18 brumaire.</p>
+                <lb break="yes"/>
+                <p>Voici des longitudes déterminées par mon chrono-<lb break="no"/>mètre de <persName key="berthoud_l" ref="http://d-nb.info/gnd/">Louis Berthoud</persName>, et par le calcul des angles<lb break="yes"/>horaires. J&#x2019;ai aussi dans mes manuscrits beaucoup<lb break="yes"/>de distances de la <placeName key="mond">lune</placeName> au soleil, et aux astres; mais<lb break="yes"/>comment calculer quand on a tant de choses <choice>
+                        <sic>àfaire</sic>
+                        <corr type="editorial">à faire</corr>
+                    </choice>?</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="cumana">Cumana</placeName>,</hi> ch&#x00E2;teau St.-Antoine, longitude depuis<lb break="yes"/>le méridien de <placeName key="paris" >Paris</placeName>, en suposant <placeName key="madrid">Madrid</placeName> à 24&#x2032; 8&#x2033;,<lb break="yes"/>4<hi rendition="#sup">h</hi> 26&#x2032; 4&#x2033; latitude 10° 27&#x2032; 37&#x2033;.</p>
+                <lb break="yes"/>
+                <pb n="389" facs="#f0014"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="portofspain">Puerto Espana</placeName>,</hi> dans l&#x2019;&#x00EE;le de la <hi rendition="#i">
+                        <placeName key="trinidad">Trinité</placeName>
+                    </hi>, longitude<lb break="yes" />4<hi rendition="#sup">h</hi> 15&#x2032; 18&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="tobago">Tabago</placeName>,</hi> cap à l&#x2019;est, longitude 4<hi rendition="#sup">h</hi> 11&#x2032; 10&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="macanao">Macanao</placeName>,</hi> partie occidentale de l&#x2019;&#x00EE;le de la Mar-<lb break="no"/>guerite, longitude 4<hi rendition="#sup">h</hi> 26&#x2032; 22&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="puntaaraya">Punta Araya</placeName>,</hi> dans la <placeName key="nauandalusien">nouvelle Andalousie</placeName>, 4<hi rendition="#sup" >h</hi>
+                    <lb break="yes"/>26&#x2032; 22&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="coche">Coche</placeName>,</hi> &#x00EE;le, cap à l&#x2019;est, longitude 4<hi rendition="#sup">h</hi> 24&#x2032; 48&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="boccadedrago">Bocca de Drago</placeName>,</hi> longitude 4<hi rendition="#sup">h</hi> 17&#x2032; 32&#x2033;. Moins s&#x00FB;r.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="cabodetrespuntas">Cabo de tres Puntas</placeName>,</hi> longitude 4<hi rendition="#sup">h</hi> 19&#x2032; 38&#x2033;.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName key="caracas">Caraccas</placeName>,</hi> à la <hi rendition="#i">
+                        <placeName key="trinidad">Trinité</placeName>,</hi> latitude 10° 31&#x2032; 4&#x2033;. Bonnes.</p>
+                <lb break="yes"/>
+                <p>Je me flatte que ces positions intéresseront le bu-<lb break="no"/>reau des longitudes, parce que les cartes sont très-<lb break="maybe"/>mauvaises en cette partie. Les observations de <persName key="borda_jcd" ref="http://d-nb.info/gnd/">Borda</persName>
+                    <lb break="yes"/>et <persName key="chabertdecogolin_jb" ref="http://d-nb.info/gnd/">Chabert</persName>, à <placeName key="teneriffa" >Teneriffe</placeName> et à la pointe de sable de<lb break="yes"/>
+                    <placeName key="tobago">Tabago</placeName>, me font croire que mon chronomètre est<lb break="yes"/>excellent. Je n&#x2019;ai différé de ces navigateurs que de<lb break="yes"/>2 à 5 secondes.</p>
+                <lb break="yes"/>
+                <p>Pendant le tremblement de terre que nous avons<lb break="yes"/>essuyé le 4 novembre 1799, à <placeName key="cumana">Cumana</placeName>, l&#x2019;inclinaison<lb break="yes"/>et non la déclinaison magnétique a changé; avant le<lb break="yes"/>tremblement, l&#x2019;inclinaison étoit 44° 20&#x2032;, nouvelles<lb break="yes"/>divisions; après les secousses, elle s&#x2019;est conservée<lb break="yes"/>43° 35&#x2032;. Le nombre des oscillations est resté tel qu&#x2019;il<lb break="yes"/>étoit, 229 en 10 minutes; et d&#x2019;autres expériences<lb break="yes"/>paroissent prouver que c&#x2019;est cette petite partie du<lb break="yes"/>globe, et non l&#x2019;aiguille, qui a changé. Car, dans les<lb break="yes"/>endroits éloignés où le tremblement de terre ne se<lb break="yes"/>ressent jamais, dans la cha&#x00EE;ne primitive de granit<lb break="yes"/>feuilleté, l&#x2019;inclinaison est restée aussi <choice>
+                        <sic>forte</sic>
+                        <corr type="editorial">forte.</corr>
+                    </choice>
+                </p>
+                <lb break="yes"/>
+                <pb n="390" facs="#f0015"/>
+                <p>Cette lettre n&#x2019;est déja que trop longue pour &#x00EA;tre<lb break="yes" />perdue. J&#x2019;ose vous supplier de me rappeler à la mé-<lb break="no" />moire des membres de l&#x2019;Institut national qui m&#x2019;ont<lb break="yes"/>honoré de tant d&#x2019;indulgence pendant mon dernier sé-<lb break="no"/>jour à <placeName key="paris">Paris</placeName>. J&#x2019;aime que ce corps respectable sache<lb break="yes"/>que je ne suis pas devenu inactif si près de <placeName key="aequator">l&#x2019;équa-<lb break="no" />teur</placeName>.</p>
+                <lb break="yes"/>
+                <p>Dans un mois je serai aux cataractes de <placeName key="rionegro" >Rio-Negro</placeName>,<lb break="yes"/>où je verrai une nature aussi grande que sauvage,<lb break="yes"/>parmi des Indiens qui se nourrissent d&#x2019;une terre ar-<lb break="no"/>gilleuse mélée avec la graisse des crocodiles. J&#x2019;y mène<lb break="yes"/>trois mules chargées d&#x2019;instrumens. C&#x2019;est du fond de<lb break="yes"/>cette solitude que je ferai des v&#x0153;ux!</p>
+                <lb break="yes"/>
+                <p>La beauté des nuits du tropique m&#x2019;a engagé<lb break="yes"/>à commencer un travail sur la lumière des étoiles<lb break="yes"/>du sud. Je vois que plusieurs, (dans la Grue, l&#x2019;Autel,<lb break="yes"/>le Toucan, les pieds du Centaure), paroissent avoir<lb break="yes"/>changé depuis <persName key="lacaille_nld" ref="http://d-nb.info/gnd/">Lacaille</persName>. Je vous entretiendrai une<lb break="yes"/>autre fois de cet objet. Je me sers de la méthode in-<lb break="no"/>diquée par <persName key="herschel_w" ref="http://d-nb.info/gnd/">Herschel</persName>, et des diaphragmes comme<lb break="yes"/>pour les satellites. J&#x2019;ai trouvé que si <placeName key="prokyon">Procyon</placeName> est à<lb break="yes"/>
+                    <placeName key="sirius">Sirius</placeName> comme 88 est à 100, on doit mettre la va-<lb break="no"/>leur de la lumière</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell> </cell>
+                        <cell>De <placeName key="canopus">Canopus</placeName> ........</cell>
+                        <cell>98</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="alphacentauri">&#x03B1;</placeName>
+                        </cell>
+                        <cell>Centaure .........</cell>
+                        <cell>96</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> </cell>
+                        <cell>
+                            <placeName key="achernar">Achernar</placeName> .........</cell>
+                        <cell>94</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="alphaindi">&#x03B1;</placeName>
+                        </cell>
+                        <cell>Indien ...........</cell>
+                        <cell>50</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="betaindi">&#x03B2;</placeName>
+                        </cell>
+                        <cell> </cell>
+                        <cell>47</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="alphaphoenicis">&#x03B1;</placeName>
+                        </cell>
+                        <cell>Ph&#x0153;nix ..........</cell>
+                        <cell>65</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell> </cell>
+                        <cell>
+                            <placeName key="alphapavonis">Du Paon</placeName> .........</cell>
+                        <cell>78</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <pb n="391" facs="#f0016"/>
+                    <row>
+                        <cell>
+                            <placeName key="alphagruis">&#x03B1;</placeName>
+                        </cell>
+                        <cell>De la <choice>
+                                <sic>Gru.e</sic>
+                                <corr type="editorial">Grue</corr>
+                            </choice> ......</cell>
+                        <cell>81</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="betagruis">&#x03B2;</placeName>
+                        </cell>
+                        <cell> </cell>
+                        <cell>75</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="gammagruis">&#x03B3;</placeName>
+                        </cell>
+                        <cell> </cell>
+                        <cell>58</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="alphatucanae">&#x03B1;</placeName>
+                        </cell>
+                        <cell>Toucan .........</cell>
+                        <cell>70</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Les observations ne deviennent utiles que par la<lb break="yes"/>communication; je vous prie donc de communiquer<lb break="yes"/>à notre digne ami <persName key="lametherie_jcd" ref="http://d-nb.info/gnd/">Lamétherie</persName> celles des inclinai-<lb break="no"/>sons magnétiques, et de mettre les autres dans quel-<lb break="no"/>ques papiers publics, pour donner avis de mon exis-<lb break="no"/>tence: il m&#x2019;est impossible d&#x2019;écrire à tous mes amis.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai lu dans les Transactions de la société du Ben-<lb break="no"/>gale, que le baromètre y monte et descend réguliè-<lb break="no"/>rement en 24<hi rendition="#sup">h</hi>. Ici, dans l&#x2019;<placeName key="suedamerika" >Amérique méridionale</placeName>,<lb break="yes"/>cette marche est des plus étonnantes: j&#x2019;ai des cen-<lb break="no"/>taines d&#x2019;observations là-dessus. Il y a quatre marées<lb break="yes"/>atmosphériques en 24 heures, qui ne dépendent que<lb break="yes"/>du soleil. Le mercure descend depuis neuf heures du<lb break="yes"/>matin jusqu&#x2019;à quatre heures du soir; il monte de-<lb break="no"/>puis quatre heures jusqu&#x2019;à onze heures; il descend<lb break="yes"/>depuis onze heures jusqu&#x2019;à 4<hi rendition="#sup">h</hi> 30&#x2032; du matin; il re-<lb break="no"/>monte depuis 4<hi rendition="#sup">h</hi> 30&#x2032; jusqu&#x2019;à 9 heures. Les vents, l&#x2019;o-<lb break="no"/>rage, les tremblemens de terre, n&#x2019;ont aucune in-<lb break="no"/>fluence sur cette marche. Le C. <persName key="richard_lc" ref="http://d-nb.info/gnd/">Richard</persName> dit qu&#x2019;à<lb break="yes"/>
+                    <placeName key="surinam">Surinam</placeName> il y a une variation pareille de 2 lignes.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

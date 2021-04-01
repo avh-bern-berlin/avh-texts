@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="478" facs="#f0001"/>
+            <cb/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Die <hi rendition="#aq">Aracacha.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <p>Wir Teut&#x017F;chen haben den Fehler &#x2014; oder ich<lb break="yes"/>will es milder <hi rendition="#g">Schwa&#x0364;che</hi> nennen, &#x2014; daß wir<lb break="yes"/>alles Neue, was uns Ausla&#x0364;nder, be&#x017F;onders die<lb break="yes"/>
+                    <fw type="catch" place="bottom">Eng-</fw>
+                    <lb break="yes"/>
+                    <pb n="479" facs="#f0002"/>
+                    <cb/> Engla&#x0364;nder, verku&#x0364;ndigen und empfehlen, &#x017F;ehr leicht<lb break="yes"/>glauben, und fu&#x0364;r &#x017F;ehr wichtig und intere&#x017F;&#x017F;ant<lb break="yes"/>halten. Wenn einmal ein Rarita&#x0364;tenkra&#x0364;mer, be-<lb break="no"/>&#x017F;onders im Fache der Landwirth&#x017F;chaft und des<lb break="yes"/>Gartenwe&#x017F;ens, in einer Zeitung oder in Journa-<lb break="no"/>len &#x2014; (in welche &#x017F;ich jetzt un&#x017F;er ganzes Wi&#x017F;&#x017F;en<lb break="yes"/>auflo&#x0364;&#x017F;t, und zum Papierkrame wird) mit einer<lb break="yes"/>neuen Rarita&#x0364;t auftritt, und nach einem Trompe-<lb break="no"/>ten&#x017F;toße ausruft: &#x201E;Schauen&#x2019;s meine Herren! Eine<lb break="yes"/>neue &#x017F;tupende Rarita&#x0364;t; eine Entdeckung, die ich<lb break="yes"/>machte! Eine Erfindung, die ich allein be&#x017F;itze! &#x2014;<lb break="yes"/>
+                    <hi rendition="#aq">Allons</hi> wer kauft&#x201C;! &#x2014; Da wird gleich getrieben und<lb break="yes"/>ge&#x017F;chrieben, und ein Project u&#x0364;ber das andere ins<lb break="yes"/>Blaue hinaus gemacht, bis die Rarita&#x0364;t &#x2014; wenn<lb break="yes"/>ein ver&#x017F;ta&#x0364;ndiger, wi&#x017F;&#x017F;en&#x017F;chaftlicher Mann daru&#x0364;ber<lb break="yes" />kommt, und &#x017F;ie na&#x0364;her beleuchtet &#x2014; entweder wie<lb break="yes"/>ein Ge&#x017F;pen&#x017F;t ganz ver&#x017F;chwindet, oder zu einem<lb break="yes"/>ganz allta&#x0364;glichen Dinge herab&#x017F;inkt, und der Markt-<lb break="no"/>&#x017F;chreier be&#x017F;cha&#x0364;mt &#x2014; nein, das kann kein Markt-<lb break="no"/>&#x017F;chreier werden! &#x2014; oder fluchend, daß ihm der<lb break="yes"/>Markt verdorben worden i&#x017F;t, hinter den Vorhang<lb break="yes"/>ent&#x017F;chlu&#x0364;pft.</p>
+                <lb break="yes"/>
+                <p>So gieng&#x2019;s uns ohngefa&#x0364;hr vor ein Paar Mo-<lb break="no"/>naten mit der famo&#x0364;&#x017F;en <hi rendition="#aq">Aracacha.</hi> Die Engla&#x0364;n-<lb break="no"/>der verku&#x0364;ndigten &#x017F;ie uns als eine neuentdeckte<lb break="yes"/>a&#x0364;ußer&#x017F;t wichtige, und fu&#x0364;r die Men&#x017F;chheit wohltha&#x0364;-<lb break="no"/>tige Wunderpflanze aus Su&#x0364;damerika; und &#x017F;etzten<lb break="yes" />&#x017F;ie neben, oder &#x017F;elb&#x017F;t noch u&#x0364;ber die Allerna&#x0364;hrerin,<lb break="yes"/>die <hi rendition="#g">Kartoffel</hi> &#x2014; der man in jedem Parke ei-<lb break="no"/>nen Altar, wie die alten Aegypter der Zwiebel &#x2014;<lb break="yes"/>bauen &#x017F;ollte. Nachdem die neue Ma&#x0364;hr nun alle<lb break="yes"/>Zeitungsbuden durchlaufen hatte, &#x017F;o traten ein<lb break="yes"/>Paar kluge Ma&#x0364;nner, ein <persName key="humboldt_av">A. v. <hi rendition="#g">Humbold</hi>
+                    </persName> in Ber-<lb break="no"/>lin, und Lict. <hi rendition="#g" >Nemnich</hi> in Hamburg auf, und<lb break="yes"/>
+                    <cb/> &#x017F;agten ihre Meinung u&#x0364;ber die Rarita&#x0364;t; und nun<lb break="yes"/>i&#x017F;t die Sache abgethan. Es i&#x017F;t aber doch werth, das<lb break="yes"/>&#x017F;cha&#x0364;tzbare Gutachten Beider im teut&#x017F;chen Garten-<lb break="maybe"/>Magazine &#x2014; das, wie es mir &#x017F;cheint, allen Markt-<lb break="no"/>&#x017F;chreiereien im Gartenwe&#x017F;en ohnedies nicht hold i&#x017F;t<lb break="yes"/>&#x2014; auf zubewahren. Hier folgen &#x017F;ie.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#et">
+                        <hi rendition="#g">Pilopatris.</hi>
+                    </hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+            <div n="1">
+                <head>Hrn. <hi rendition="#g">Al. v. <persName key="humboldt_av" >Humboldt</persName>&#x2019;s</hi> Erkla&#x0364;rung u&#x0364;ber die<lb break="yes"/>
+                    <hi rendition="#aq">Aracacha</hi> im Hamburger Corre&#x017F;pondenten<lb break="yes"/>Nr. 168. v. Jahr 1807.</head>
+                <lb break="yes"/>
+                <p>Da mein Name zufa&#x0364;llig bei Gelegenheit die&#x017F;er<lb break="yes" />Pflanze genannt worden i&#x017F;t, &#x017F;o glaube ich, um das<lb break="yes" />Mißver&#x017F;ta&#x0364;ndniß zu verhu&#x0364;ten, als zweiflelte ich an der<lb break="yes"/>Nu&#x0364;tzlichkeit, oder gar an der Exi&#x017F;tenz die&#x017F;er Pflanze,<lb break="yes"/>folgende Erla&#x0364;uterung dem Publicum &#x017F;chuldig zu<lb break="yes"/>&#x017F;eyn. Wir erinnern uns mehrmals eine pa&#x017F;tinak-<lb break="maybe"/>a&#x0364;hnliche Wurzel ge&#x017F;ehen zu haben, welche man <hi rendition="#aq">Ara-<lb break="no"/>cacha</hi> nennte. Da wir aber nie Gelegenheit hat-<lb break="no"/>ten die&#x017F;e Gartenpflanze blu&#x0364;hen zu &#x017F;ehen, oder bota-<lb break="no"/>ni&#x017F;ch zu unter&#x017F;uchen, &#x017F;o wi&#x017F;&#x017F;en wir nicht, zu wel-<lb break="no"/>chem Ge&#x017F;chlechte &#x017F;ie geho&#x0364;rt. Ihre Cultur in Europa<lb break="yes"/>mag allerdings nu&#x0364;tzlich &#x017F;eyn. Daß die&#x017F;elbe aber je<lb break="yes"/>&#x017F;o wichtig &#x017F;eyn ko&#x0364;nne, als die Cultur der Kartoffeln,<lb break="yes"/>der Batatten oder Dio&#x017F;koreen, i&#x017F;t mir &#x017F;ehr unwahr-<lb break="no" />&#x017F;cheinlich. Der Pater <persName key="gilij_fs">
+                        <hi rendition="#g">Gili</hi>
+                    </persName> erwa&#x0364;hnt der <hi rendition="#aq">Aracacha</hi>
+                    <lb break="yes"/>als einer Gartenpflanze, und leitet den Namen aus<lb break="yes"/>der <hi rendition="#aq">Inka-</hi> oder <hi rendition="#aq" >Quichua-</hi>Sprache her. <hi rendition="#aq">(Saggio<lb break="yes"/>di Storia americana. T. IV.)</hi>
+                </p>
+                <lb break="yes"/>
+                <closer>
+                    <salute>
+                        <hi rendition="#et">
+                            <persName key="humboldt_av">A. v. <hi rendition="#g">Humbold.</hi>
+                            </persName>
+                        </hi>
+                    </salute>
+                </closer>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

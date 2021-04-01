@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. Rename.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe. Unbenennung gemäss neuer Nomenklatur.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="315" facs="#f0001"/>
+            <p xml:lang="deu">Ueber die <hi rendition="#i">Moya,</hi> das merkwürdigste Produkt der<lb break="yes"/>Vulkane des <placeName key="amerika">neuen Welttheils</placeName>, findet sich in <persName key="klaproth_mh">
+                    <hi rendition="#k">Klap-<lb break="no"/>roth</hi>s</persName> Beiträgen, IV. 289. folgende, von <hi rendition="#k">
+                    <persName key="humboldt_av">Humboldt</persName>
+                </hi>
+                <lb break="yes"/>mitgetheilte Nachricht, woraus hervorgeht, wie sehr<lb break="yes" />die Vulkane der <placeName key="amerika">neuen Welt</placeName> in ihren Phänomenen,<lb break="yes"/>Wirkungen und Erzeugnissen sich von denen unter-<lb break="no"/>scheiden, die wir in Europa kennen.</p>
+            <lb break="yes"/>
+            <p>Der gebirgigte Theil des Königreichs Quito, ein<lb break="yes"/>Plateau von 400 Quadratmeilen, und 8 bis 9000 Fuß<lb break="yes"/>Höhe, ist gleichsam als ein einziger Vulkan zu be-<lb break="no"/>trachten, dessen einzelne Spizen mit besonderen Na-<lb break="no"/>men bezeichnet werden. Was man den Vulkan von<lb break="yes"/>
+                <hi rendition="#i">Tungurahua,</hi> oder <hi rendition="#i">Cotopaxi,</hi> oder <hi rendition="#i">Pichinga,</hi> nennt,<lb break="yes"/>sind wahrscheinlich nur einzelne Oeffnungen eines<lb break="yes"/>und desselben ungeheuren Feuerschlundes, über wel-<lb break="no"/>chem viele hundert blühende Städte und Dörfer ge-<lb break="no"/>baut sind. Daher die Erschütterungen mit furchtba-<lb break="no" />rem unterirdischen Donner begleitet, welche man<lb break="yes"/>überall bemerkt. Daher öffnen sich, fern von den<lb break="yes"/>einzelnen Kegelbergen, die man gemeinhin als die ei-<lb break="no"/>gentlichen Vulkane von Quito betrachtet, Erdspalten,<lb break="yes"/>welche dieselben Produkte ausspeien, die aus ihren<lb break="yes"/>Vulkanen selbst hervorbrechen. Diese Produkte sind<lb break="yes"/>in dem Erdstriche, welcher zwischen dem 4 Grad<lb break="yes" />nördlicher, und dem 12 Grad südlicher Breite liegt,<lb break="yes"/>(vielleicht den isolirt liegenden Vulkan <hi rendition="#i">Sangay</hi> abge-<lb break="no" />rechnet,) gegenwärtig nicht Lava in Strömen, son-<lb break="no"/>dern ausgeworfene Schlacken, Asche, Bimsstein, und<lb break="yes"/>eine große Menge erdiger breiartiger Massen, welche<lb break="yes"/>
+                <pb n="316" facs="#f0002"/> die spanischen Einwohner Koth, <hi rendition="#i" >Lodo,</hi> die Indianer<lb break="yes"/>
+                <hi rendition="#i">Muya,</hi> oder <hi rendition="#i">Moya,</hi> nennen, und in welchen oft<lb break="yes"/>zahllose Fischchen, die <hi rendition="#i" >Prennadillas,</hi> eingehüllt sind.<lb break="yes"/>Daher hört man bei vulkanischen Eruptionen in Quito<lb break="yes"/>nur immer von Ueberschwemmungen, von Einhül-<lb break="no"/>len in lettigen Koth, von Vergraben werden, und<lb break="yes"/>nicht von eigentlichen Feuerwirkungen. Die große<lb break="yes" />Höhe der Cordilleren, und deren mächtige Schnee-<lb break="no"/>decken, begründen hauptsächlich die Verschiedenheit<lb break="yes"/>der Amerikanischen und Europäischen Vulkane. Selbst<lb break="yes"/>in diesen kommt selten Lava aus den Cratern. Wie<lb break="yes"/>hoch müßte diese nicht in dem Königreiche Quito<lb break="yes"/>gehoben werden? Der <hi rendition="#i">
+                    <placeName key="aetna">Aetna</placeName>,</hi> der <hi rendition="#i" >Vesuv,</hi> der <hi rendition="#i">Pic</hi> von<lb break="yes"/>
+                <hi rendition="#i">Teneriffa,</hi> spalten sich gewöhnlich nahe an ihrem<lb break="yes"/>Fuße, und schieben dort Lavaströme hervor. Die<lb break="yes" />Vulkane der <placeName key="anden">Andes</placeName> liegen in der Gebirsgkette, nicht<lb break="yes"/>isolirt im flachen Lande. Sie sind oft bis zu 9000 Fuß<lb break="yes"/>Höhe von weiten Gebirgsebenen umgeben, nur ihre<lb break="yes" />Spize ist frei und isolirt. Kann nun die geschmol-<lb break="no"/>zene Masse nicht ausbrechen, so müssen Erdbeben<lb break="yes"/>desto häufiger seyn; dieselben Materien müssen unauf-<lb break="no"/>hörlich von neuem bearbeitet und zermalmet werden.<lb break="yes"/>Die großen Weitungen, die in allen Vulkanen ge-<lb break="no"/>funden werden, füllen sich allmählig mit geschmol-<lb break="no" />zenem Schneewasser an. Es entstehen unterirdische<lb break="yes"/>Seen, die, fern vom vulkanischen Feuersize zahllose<lb break="yes"/>Fische nähren. Bei den Erdbeben brechen diese Seen<lb break="yes"/>aus, mit ihnen Fische, Wasser, und jene breiartige<lb break="yes"/>räthselhafte Masse <hi rendition="#i">Moya,</hi> die man nicht mit dem<lb break="yes"/>
+                <pb n="317" facs="#f0003"/> vulkanischen Tuff verwechseln muß. Ob übrigens<lb break="yes"/>die ungeheure Wassermenge, welche in der Provinz<lb break="yes" />Quito, selbst fern von den Vulkanen, fast überall zu<lb break="yes"/>gewissen Zeiten beim Erdbeben ausfließt, bloß vom<lb break="yes"/>geschmolzenen Schnee herrührt, oder ob die Natur<lb break="yes"/>das Wasser auf andern Wegen erzeugt, oder ob sie<lb break="yes"/>dasselbe bloß hebt, kann man wohl nicht zu entschei-<lb break="no"/>den wagen: da kein Physiker noch Augenzeuge der<lb break="yes" />großen Ausbrüche der Vulkane von Quito, die kaum<lb break="yes"/>alle 40 Jahre statt finden, gewesen ist. Als der Vul-<lb break="no"/>kan <hi rendition="#i">
+                    <choice>
+                        <sic>Curguairazo,</sic>
+                        <corr type="editorial">Carguairazo,</corr>
+                    </choice>
+                </hi> der dem <hi rendition="#i">Chimborazo</hi> am nächsten<lb break="yes"/>liegt, in der Nacht vom 19. Juli 1698 gänzlich zu-<lb break="no"/>sammenstürzte, überschwemmte er eine Gegend von<lb break="yes"/>15 bis 18 Quadratmeilen umher mit breiartigem Schlam-<lb break="no"/>me. Die Zahl der umgekommenen Menschen war so<lb break="yes"/>groß, daß man in <hi rendition="#i">Tacunga</hi> und <hi rendition="#i">Hambeto,</hi> die Leich-<lb break="no"/>name in Gräben zusammenhäufen mußte. Bei dem<lb break="yes"/>großen Erdbeben vom 4. Febr. 1797, haben 40,000<lb break="yes"/>Menschen, theils lebendig verschüttet, theils im Was-<lb break="no"/>ser und vulkanischem Koth, ihren Untergang ge-<lb break="no" />funden.</p>
+            <lb break="yes"/>
+            <p>Die Moya bricht gewöhnlich auf ebenen, etwas<lb break="yes"/>feuchten, grün bewachsenen Fluren aus. Ob die,<lb break="yes"/>welche im Jahr 1797 sich bei <hi rendition="#i">Riobamba</hi> in fortschrei-<lb break="no"/>tenden kleinen Kegeln heraushob, chemisch von der<lb break="yes"/>Moya von <hi rendition="#i">Pelileo</hi> verschieden ist, ist nicht bekannt.<lb break="yes"/>Die Moya, welche das Dorf <hi rendition="#i">Pelileo,</hi> d. 4. Febr. 1797<lb break="yes"/>zerstörte, brach in 1250 Toisen Höhe, am Fuß eines<lb break="yes"/>Trapp-Porphyr-Felsens aus (eines graulichgrünen<lb break="yes"/>
+                <pb n="318" facs="#f0004"/> thonartigen Porphyrs, mit vielem glasigem Feldspath<lb break="yes"/>und Hornblende, ohne allen Quarz). Die Masse war<lb break="yes" />flüssig als sie hervordrang, ein wahrer sich fortwäl-<lb break="no"/>zender Brei, die Moya erhärtete bald, und ist jezt<lb break="yes"/>erdig, von geringem Zusammenhalte und braunlich-<lb break="maybe"/>schwarz. Man erkennet darin sehr deutliche Spuren<lb break="yes"/>von glasigem Feldspath. Andere eingewachsene Theile<lb break="yes"/>sind faserig wie Bimsstein. Durch das Mikroskop<lb break="yes"/>siehet man weder Schwefel, noch Schwefelkies, darin.<lb break="yes" />Das Ganze ist ein veränderter Porphyr. Viele Stücke<lb break="yes"/>färben schwarz ab. Sie brennt wie schlechter Torf,<lb break="yes"/>oder wie Lohkuchen, ohne Flamme.</p>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

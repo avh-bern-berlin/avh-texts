@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ueber die allgemeinen Gesetze der stündlichen Schwankungen des Barometers</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1014897157">
+                        <surname>Wernicke</surname>
+                        <forename>Norbert</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1828-Ueber_die_allgemeinen-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Ueber die allgemeinen Gesetze der stündlichen Schwankungen des Barometers</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date type="publication">1828</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Annalen der Physik und Chemie</title>
+                        <biblScope unit="volume">12</biblScope>
+                        <biblScope unit="issue"/>
+                        <biblScope unit="pages">299–307</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="299" facs="#f0001"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#i">Ueber die allgemeinen Gesetze der stünd-<lb break="no" />lichen Schwankungen des Barometers; von<lb break="yes"/>
+                        <hi rendition="#g">Alexander von Humboldt.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <list>
+                    <item>(Die Abhandlung über die stündlichen Barometeroscillationen, wel-<lb break="no"/>che Hr. v. <hi rendition="#g">Humboldt</hi> in einem der letzten Theile seines Rei-<lb break="no"/>sewerks <note place="foot" n="*)">
+                            <bibl>
+                                <hi rendition="#i">Voyage aux régions équinoxiales du nouveau continent etc.<lb break="yes"/>Tom. X. p.</hi> 330. der Ausgabe in Octav</bibl>.</note> bekannt gemacht hat, ist von so mannigfaltigem In-<lb break="no"/>teresse, daß ich schon längst den Wunsch gehegt habe, sie den<lb break="yes"/>Lesern mittheilen zu können. Da indeß der Raum die Mitthei-<lb break="no"/>lung des Ganzen leider nicht gestattet, so beschränke ich mich gegen-<lb break="no"/>wärtig darauf, nur die Uebersicht zu geben, worin der Hr. <persName ref="http://d-nb.info/gnd/" >Ver-<lb break="no"/>fasser</persName> am Schlusse der Abhandlung die Hauptzüge dieses merkwür-<lb break="no"/>digen Phänomenes zusammenstellt. Eine solche Zusammenstel-<lb break="no"/>lung von dem, was unmittelbares Ergebniß der Beobachtung ist,<lb break="yes"/>dürfte um so weniger überflüssig seyn, als sie vielleicht am ein-<lb break="no" />leuchtendsten zeigt, wie wenig die Mehrzahl der bisherigen Beob-<lb break="no"/>achtungen, besonders der auf Reisen angestellten, zu jenem höheren<lb break="yes"/>Calcule geeignet ist, durch welchen neuerlich einer unserer aus-<lb break="no"/>gezeichnetsten Physiker <note place="foot" n="**)">
+                            <bibl>
+                                <persName ref="http://d-nb.info/gnd/">Hällström</persName> in dies. Ann. Bd. 84. S. 131. 299. 443. u. Bd. 87</bibl>.<lb break="yes"/>S. 251.</note> versucht hat, schärfere Resultate zu<lb break="yes" />erlangen. <hi rendition="#i">
+                            <persName ref="http://d-nb.info/gnd/">P.</persName>
+                        </hi>)</item>
+                </list>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">D</hi>ie Hauptresultate der bisherigen Beobachtungen über<lb break="yes"/>die stündlichen Oscillationen des Barometers lassen sich<lb break="yes"/>in folgenden Sätzen zusammenfassen.</p>
+                <lb break="yes"/>
+                <p>1. Die stündlichen Oscillationen des Barometers zei-<lb break="no"/>gen sich überall auf der Erde, in der heißen Zone wie<lb break="yes"/>in der gemäßigten und kalten, am Spiegel des Meeres<lb break="yes"/>wie in Höhen von mehr als 2000 Toisen. Diese Oscil-<lb break="no"/>lationen sind periodisch, und bestehen überall aus einem<lb break="yes"/>zweimaligen Steigen und Fallen. Die beiden atmosphä-<lb break="no"/>rischen Fluthen sind im Allgemeinen nicht von gleicher<lb break="yes"/>Dauer. Vergleicht man die, freilich an Genauigkeit sehr<lb break="yes"/>
+                    <pb n="300" facs="#f0002"/> ungleichen Resultate, welche von dreißig Beobachtern<lb break="yes"/>zwischen 25° südlicher Breite und 55° nördlicher Breite<lb break="yes"/>erhalten worden sind, so findet man zwischen den Zeiten<lb break="yes"/>der Maxima und Minima Unterschiede von zwei Stun-<lb break="no"/>den, und schließt man nur 5 Resultate aus, so fällt das<lb break="yes"/>vormittägige <hi rendition="#i">Maximum</hi> zwischen 8<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula> und 10<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula>, das nach-<lb break="no" />mittägige <hi rendition="#i">Minimum</hi> zwischen 3<hi rendition="#sup" >h</hi> und 5<hi rendition="#sup">h</hi>, das vormitter-<lb break="no" />nächtliche <hi rendition="#i">Maximum</hi> zwischen 9<hi rendition="#sup" >h</hi> und 11<hi rendition="#sup">h</hi>, und das nach-<lb break="no" />mitternächtliche <hi rendition="#i">Minimum</hi> zwischen 3<hi rendition="#sup">h</hi> und 5<hi rendition="#sup">h</hi>. Voraus-<lb break="no"/>zusehen ist, daß diese Gränzen sich weit näher kommen<lb break="yes"/>werden, sobald man für die verschiedenen Zonen eine<lb break="yes"/>größere Anzahl von Beobachtungen gleicher Genauigkeit<lb break="yes"/>haben wird. Vorläufig kann man für die Maxima und<lb break="yes"/>Minima als allgemeine Regel annehmen, in der heißen<lb break="yes"/>Zone: +21<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{4}</formula>; &#x2014;16<hi rendition="#sup" >h</hi>; +10<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula>; &#x2014;16<hi rendition="#sup" >h</hi>, und in der ge-<lb break="no"/>mäßigten Zone: +20<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula>; &#x2014;3<hi rendition="#sup" >h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula>; +9<hi rendition="#sup">h</hi>
+                    <formula notation="TeX">\frac{1}{2}</formula>; &#x2014;17<hi rendition="#sup" >h</hi>, nach<lb break="yes"/>astronomischer, vom Mittage gezählter Zeit.</p>
+                <lb break="yes"/>
+                <p>2. In der gemäßigten Zone liegen die Zeiten des<lb break="yes"/>vormittägigen Maximums und des nachmittägigen Mini-<lb break="no"/>mums dem Mittage ein oder zwei Stunden näher, im<lb break="yes"/>Winter wie im Sommer; aber im Sommer scheint sich<lb break="yes"/>das Verhalten mehr dem zwischen den Wendekreisen<lb break="yes"/>beobachteten zu nähern. Es fehlt noch besonders für<lb break="yes"/>das nach Mitternacht eintretende <hi rendition="#i" >Minimum</hi> an Beobach-<lb break="no"/>tungen, und es ist zu wünschen, daß man untersuche,<lb break="yes"/>welchen Einfluß die veränderliche Zeit des Sonnenauf-<lb break="no"/>gangs auf die Zeit dieses morgendlichen Minimums ausübt.</p>
+                <lb break="yes"/>
+                <p>3. In der heißen Zone sind die Wendestunden, d. h.<lb break="yes"/>die Zeitpunkte, in denen die Oscillationen ihr Maximum<lb break="yes"/>oder Minimum erreichen, dieselben am Spiegel des Mee-<lb break="no"/>res, wie auch Hochebenen 1300 bis 1400 Toisen über<lb break="yes"/>dem Meere. Diese Gleichzeitigkeit soll sich in einigen<lb break="yes"/>Theilen der gemäßigten Zone nicht zeigen, und so z. B.<lb break="yes"/>das Barometer im Kloster auf dem <placeName>großen St. Bernhard</placeName>
+                    <lb break="yes"/>zu denselben Stunden sinken, zu welchen es in <placeName>Genf</placeName> sich<lb break="yes"/>hebt. Ist dieß Phänomen allgemein in <placeName>Europa</placeName>, so bleibt<lb break="yes"/>
+                    <pb n="301" facs="#f0003"/> zu untersuchen, ob es sich auf großen Plateaux ebenfalls<lb break="yes"/>zeige wie in Pässen oder engen Schluchten <note place="foot" n="*)" xml:id="fn1-1" next="#fn1-2">Einige Beobachtungen, die man in <placeName>Europa</placeName> in Pässen und am<lb break="yes" />Abhange von Gebirgen gemacht hat, und die Annahme von einer<lb break="yes" />Verschiebung der über einander gelagerten Luftschichten, hatten<lb break="yes"/>mehrere Physiker zu der Meinung bewogen, daß die Maxima<lb break="yes"/>und Minima an Orten, wie <placeName>Guayra</placeName> und <placeName>Caracas</placeName>, an den Küsten<lb break="yes"/>der <placeName>Südsee</placeName> (zu <placeName>Payta</placeName> z. B.) und zu <placeName>Popayan</placeName> oder <placeName>Bogota</placeName>, zu<lb break="yes"/>
+                        <placeName>Vera Cruz</placeName> und zu <placeName>Mexico</placeName>, an der Küste von <placeName>Malabar</placeName>, wo <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Hors-<lb break="no" />burgh</persName>
+                        </hi> beobachtete, und auf den Hochebenen von <placeName>Mysore</placeName> und<lb break="yes"/>
+                        <placeName>Nepaul</placeName>, nicht gleichzeitig eintreten könnten. Die Tafel am<lb break="yes"/>Schlusse dieses Aufsatzes wird zeigen, daß diese Zweifel, in<lb break="yes"/>Betreff der zwischen den Wendekreisen liegenden Hochebenen,<lb break="yes"/>durchaus ungegründet sind. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Ramond&#x2019;s</persName>
+                        </hi> Beobachtungen zu <placeName>Cler-<lb break="no" />mont-Ferrand</placeName>, in einer Höhe von 210 Toisen, berechtigen uns<lb break="yes"/>der Analogie nach anzunehmen, daß man auf den bis zu 320<lb break="yes"/>Toisen aufsteigenden Hochebenen von <placeName>La Mancha</placeName> in <placeName>Spanien</placeName>,<lb break="yes" />das Barometer zu denselben Stunden steigen sehen würde, wie<lb break="yes" />in <placeName>Valencia</placeName> und <placeName>Cadix</placeName>. Auf dem <placeName>St. Bernhard</placeName> und in <placeName>Genf</placeName>
+                        <lb break="yes"/>beobachtet man zu Tageszeiten, die für die Kenntniß der Baro-<lb break="no"/>meteroscillationen am unzweckmäßigsten sind, nämlich zur ver-<lb break="no"/>änderlichen Zeit des Sonnenaufgangs und um 2 Uhr Nachmit-<lb break="no"/>tags. Diese Zeiten gehen dem Eintritt der Maxima und Minima<lb break="yes"/>ungleichmäßig voran. Nach den Beobachtungen zu <placeName>Genf</placeName> steht<lb break="yes"/>daselbst das Barometer, sowohl im Winter wie im Sommer,<lb break="yes"/>ein wenig höher als um zwei Uhr Nachmittags; aber auf dem<lb break="yes"/>
+                        <placeName>St. Bernhard</placeName> waren im J. 1824 unter den 12 monatlichen Mit-<lb break="no"/>teln zur Zeit des Sonnenaufgangs 5 kleiner (Januar, April, Juni,<lb break="yes"/>August, October) und 3 größer (Februar, Mai, Juli) als die<lb break="yes"/>Mittel um 2 Uhr, und 4 denselben gleich <hi rendition="#i">(<bibl>
+                                <hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/">Bouguer</persName>,</hi> Figure<lb break="yes"/>de la Terre, p.</bibl>
+                        </hi> 39. <bibl>
+                            <hi rendition="#i">
+                                <hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/">Deluc</persName>,</hi> Recherches sur les modif. de<lb break="yes"/>l&#x2019;atm.</hi> §. 528. 530. <hi rendition="#i">u.</hi> 596.</bibl>
+                        <bibl>
+                            <hi rendition="#i">Biblioth. univers. p.</hi> 1820 <hi rendition="#i" >Juni,<lb break="yes"/>p.</hi> 190.</bibl>
+                        <bibl>
+                            <hi rendition="#i">Tom. X. p.</hi> 20.</bibl>
+                        <bibl>
+                            <hi rendition="#i">
+                                <hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/" >D&#x2019;Aubuisson</persName>,</hi> Journ. de phys.<lb break="yes"/>Tom LXXI. p.</hi> 24.</bibl>
+                        <hi rendition="#i">).</hi> Bei dem schleunigen Sinken des Baro-<lb break="no"/>meters am 2. Febr. 1823 trat das Maximum des Fallens auf dem<lb break="yes"/>
+                        <placeName>St. Bernhard</placeName> und in <placeName>Genf</placeName> zu derselben Stunde ein <bibl>
+                            <hi rendition="#i">(Biblioth.<lb break="yes"/>T. XXII. p.</hi> 111.<hi rendition="#i">).</hi>
+                        </bibl> Diese Ungewißheiten über die Gleichzei-<lb break="no"/>tigkeit der Oscillationen werden nur dann gehoben werden, wenn<lb break="yes"/>man von <placeName>Genf</placeName> und vom <placeName>St. Bernhard</placeName>, von <placeName>Mailand</placeName> und dem<lb break="yes"/>Dorfe auf dem <placeName>Simplon</placeName>, von <placeName>Trento</placeName> und <placeName>Inspruck</placeName> mittlere Beob-</note>.</p>
+                <lb break="yes"/>
+                <p>4. Man sieht überall (wie es sich auch vorausse-<lb break="no"/>hen läßt), daß die Aenderungen nahe bei den concaven<lb break="yes"/>
+                    <pb n="302" facs="#f0004"/> und convexen Scheiteln der Curve, durch welche sie sich<lb break="yes"/>darstellen lassen, langsamer werden, d. h. dann, wenn<lb break="yes"/>die Barometerstände ihr Maximum oder Minimum errei-<lb break="no"/>chen; an einigen Orten der Erde scheint der Barometer<lb break="yes"/>während einer sehr beträchtlichen Zeit still zu stehen.<lb break="yes"/>Diese Zeit schwankt zwischen 15&#x2032; und 2<hi rendition="#sup">h</hi>; bestimmt man<lb break="yes"/>die halbe Dauer dieses stationären Zustandes mit Genauig-<lb break="no"/>keit, so muß man den Augenblick des wahren Maximums<lb break="yes"/>von dem unterscheiden, worin für unsere Sinne das Ba-<lb break="no"/>rometer aufhört zu steigen oder zu fallen.</p>
+                <lb break="yes"/>
+                <p>5. Im Allgemeinen wird in der heißen Zone, zwi-<lb break="no"/>schen dem Aequator und den Parallelkreisen, 15° nörd-<lb break="no"/>lich und südlich von demselben, durch die stärksten Winde,<lb break="yes"/>durch Gewitter und Erdbeben, durch die plötzlichsten Aen-<lb break="no"/>derungen in der Temperatur und Feuchtigkeit, die Perio-<lb break="no"/>dicität der Barometervariationen nicht unterbrochen noch<lb break="yes"/>abgeändert. Um so mehr Aufmerksamkeit verdient es,<lb break="yes"/>daß in einigen Theilen von <placeName>Südasien</placeName>, wo die Moussons<lb break="yes"/>mit Heftigkeit wehen (z. B. in <placeName>Indien</placeName>), die Regenzeit<lb break="yes"/>fast gänzlich den Charakter der stündlichen Variationen<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn1-2" prev="#fn1-1">achtungen hat, die zu den Wendestunden selbst angestellt sind.<lb break="yes"/>Es kann übrigens seyn, daß Passe, die auf dem Kamm der<lb break="yes"/>Alpen liegen und von hohen Gipfeln umgeben sind, die Zei-<lb break="no"/>ten der Maxima und Minima verzögern und abändern, und daß<lb break="yes"/>diese örtlichen Einflüsse sich auf Hochebenen von großer Aus-<lb break="no"/>dehnung nicht mehr zeigen. Um zu wissen, ob selbst in der<lb break="yes"/>heißen Zone die Gleichzeitigkeit unter gewissen Umständen weg-<lb break="no"/>falle, habe ich neuerlich die HH. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Boussingault</persName>
+                        </hi> und <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Rivero</persName>
+                        </hi>
+                        <lb break="yes"/>aufgefordert, ihre Barometer zu <placeName>Santa Fe de Bogota</placeName> und zur<lb break="yes"/>Kapelle <placeName>Notre Dame de Guadalupe</placeName> zu beobachten, welche letz-<lb break="no" />tere, gleichsam angeklebt an einem Felsen, sich fast senkrecht<lb break="yes"/>über der Stadt befindet, in einer Höhe von 322 Toisen. Hr.<lb break="yes"/>
+                        <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Daniell</persName>
+                        </hi>
+                        <bibl>
+                            <hi rendition="#i">(Meteor. Essais</hi> 1823, <hi rendition="#i">p.</hi> 260.<hi rendition="#i">)</hi>
+                        </bibl> hat geglaubt, aus den<lb break="yes"/>Beobachtungen, welche auf der letzten Nordpol-Expedition, be-<lb break="no"/>sonders auf der <placeName>Melville&#x2019;s-Insel</placeName>, und bei den <placeName>Rocky-Mountains</placeName>
+                        <lb break="yes"/>angestellt worden sind, zu ersehen, daß das Barometer unter dem<lb break="yes"/>74° der Breite zu Zeiten steigt, zu welchen es unter dem 41° sinkt.<lb break="yes"/>Dieser Gelehrte scheint das Phänomen Strömungen zuzuschreiben,<lb break="yes"/>deren Daseyn nicht leicht zu erweisen ist.</note>
+                    <lb break="yes"/>
+                    <pb n="303" facs="#f0005"/> verdeckt <note place="foot" n="*)">Dieß ist namentlich zu <placeName>Bombay</placeName> von Hrn. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Horsburgh</persName>
+                        </hi> beob-<lb break="no"/>achtet worden. So wie aber das Wetter nur auf einige Stun-<lb break="no"/>den heiter wird, zeigt sich bei dem Barometergange wieder ein<lb break="yes"/>Streben zur Regelmäßigkeit. Auch die Hochlande, welche die<lb break="yes"/>Meerenge von <placeName>Sincapore</placeName> einfassen, sind nach Hrn. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Horsburg</persName>
+                        </hi>
+                        <lb break="yes"/>hinreichend, um daselbst die Regelmäßigkeit der Oscillationen zu<lb break="yes"/>verdecken <bibl>
+                            <hi rendition="#i">(<hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/">Nicholson</persName>,</hi> Journ. Vol. XIII. p.</hi> 20.</bibl>
+                        <hi rendition="#i">).</hi>Dagegen<lb break="yes"/>zeigen sich, nach Hrn. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Colebrooke</persName>,</hi> im Innern von <placeName>Indien</placeName> die<lb break="yes"/>
+                        <choice>
+                            <sic>Oscillationenwiederum</sic>
+                            <corr type="editorial">Oscillationen wiederum</corr>
+                        </choice> unabhängig von den Temperaturvariationen<lb break="yes"/>und den Jahreszeiten. <bibl>
+                            <hi rendition="#i">Asiatic. Research. Vol. XII. p.</hi> 266.</bibl>
+                    </note>, und daß zu derselben Zeit, wo diese Varia-<lb break="no"/>tionen im Innern des Continents, an den Küsten und in<lb break="yes"/>den Meerengen fast unmerklich sind, sie sich unter der-<lb break="no"/>selben Breite im offnen Meere ohne Störung zeigen.</p>
+                <lb break="yes"/>
+                <p>6. Zwischen den Wendekreisen sind ein Tag und<lb break="yes"/>eine Nacht hinlänglich um die Wendestunden und die<lb break="yes"/>Dauer der kleinen Ebben und Fluthen in der Atmosphäre<lb break="yes"/>kennen zu lernen; in der gemäßigten Zone, unter der<lb break="yes"/>Breite von 44° und 48°, zeigt sich Periodicität des Phä-<lb break="no"/>nomens in allen Jahreszeiten in den Mitteln von 15 bis<lb break="yes"/>20 Tagen mit vieler Deutlichkeit.</p>
+                <lb break="yes"/>
+                <p>7. Die ungleiche Größe der täglichen Variationen<lb break="yes"/>bewirkt, in der heißen Zone, zu denselben Stunden, in<lb break="yes"/>verschiedenen Monaten, mehr oder weniger beträchtliche<lb break="yes"/>Unterschiede in den Barometerständen. Die Größe der<lb break="yes"/>Oscillationen nimmt ab, so wie die Breite und die zu-<lb break="no"/>fälligen Störungen zunehmen. Die Maxima am Abend<lb break="yes"/>sind gewöhnlich ein wenig größer als die Maxima am<lb break="yes"/>Morgen. Beschränkt man sich auf die Beobachtungen,<lb break="yes"/>die genau und zahlreich genug sind, um glaubwürdige<lb break="yes"/>Mittelwerthe zu geben; so findet man, daß die Größe<lb break="yes"/>der Oscillation von 9<hi rendition="#sup">h</hi> Morgens bis 4<hi rendition="#sup">h</hi> Nachmittags, zwi-<lb break="no"/>schen dem Aequator und dem Parallelkreise von 10°,<lb break="yes"/>in den Ebenen 2<hi rendition="#sup">mm</hi>,6 bis 3<hi rendition="#sup">mm</hi>,5, und auf dem <placeName>Plateau<lb break="yes"/>von Bogota</placeName> (1365 Toisen Höhe) 2<hi rendition="#sup">mm</hi>,3 beträgt, dagegen<lb break="yes"/>2 Millimeter in den Ebenen an der südlichen Gränze<lb break="yes"/>der heißen Zone. Im ganzen Jahre gehen die täglichen<lb break="yes"/>
+                    <pb n="304" facs="#f0006"/> Oscillationen zu <placeName>Bogota</placeName> von 0<hi rendition="#sup">mm</hi>,63 bis 3<hi rendition="#sup">mm</hi>,64; die monat-<lb break="no"/>lichen Mittel schwanken daselbst von 1<hi rendition="#sup">mm</hi>,5 bis 2<hi rendition="#sup">mm</hi>,7. Die<lb break="yes"/>Größe der Oscillation von 9<hi rendition="#sup">h</hi> Morgens bis 4<hi rendition="#sup">h</hi> Nachmittags<lb break="yes"/>steht zu der von 4<hi rendition="#sup">h</hi> Nachmittags bis 11<hi rendition="#sup">h</hi> Nachts, unter<lb break="yes"/>den Tropen, in dem Verhältnisse 5:4 oder 5:3. Zwi-<lb break="no"/>schen 0° und 10° Breite schwanken die täglich Mittel<lb break="yes"/>in den Ebenen um 3<hi rendition="#sup">mm</hi>,8, und auf dem <placeName>Plateau von<lb break="yes"/>Bogota</placeName> um 3 Millimeter. Ein Höhenunterschied von 1400<lb break="yes"/>Toisen hat also wenig Einfluß auf die Mittelwerthe der<lb break="yes"/>täglichen Oscillationen und die Extreme dieser Oscillatio-<lb break="no"/>nen. Der mittlere Barometerstand am Mittage ist zwi-<lb break="no"/>schen den Wendekreisen beständig etwas (einige Zehn-<lb break="no"/>tel eines Millimeters) höher, als das Mittel aus den Stän-<lb break="no"/>den am Maximum um 9<hi rendition="#sup">h</hi> Morgens und am Minimum um<lb break="yes"/>4<hi rendition="#sup">h</hi> Nachmittags. Begiebt man sich vom <choice><sic>Aequatur</sic><corr type="editorial">Aequator</corr></choice> nach<lb break="yes"/>den Polarregionen, so findet man folgende Unterschiede<lb break="yes"/>zwischen den Barometerständen um 9<hi rendition="#sup">h</hi> Morgens und 4<hi rendition="#sup">h</hi>
+                    <lb break="yes"/>Nachmittags: zwischen 0° und 10° Breite 2<hi rendition="#sup" >mm</hi>,5 bis 3<hi rendition="#sup">mm</hi>,0;<lb break="yes"/>zwischen 28° und 30° Breite 1<hi rendition="#sup">mm</hi>,5; zwischen 43° und<lb break="yes" />45° Breite 1<hi rendition="#sup">mm</hi>,0; zwischen 48° und 49° Breite 0<hi rendition="#sup">mm</hi>,8;<lb break="yes"/>unter 55° Breite 0<hi rendition="#sup">mm</hi>,2.</p>
+                <lb break="yes"/>
+                <p>8. Die monatlichen Mittel der Barometerstände wei-<lb break="no"/>chen folgendermaßen von einander ab: zwischen den Wen-<lb break="no"/>dekreisen, um 1<hi rendition="#sup">mm</hi>,2 bis 1<hi rendition="#sup">mm</hi>,5; zu <placeName>Havannah</placeName>, <placeName>Macao</placeName> und<lb break="yes"/>
+                    <placeName>Rio Janeiro</placeName>, nahe an den beiden Wendekreisen, um 7<lb break="yes"/>bis 8 Millimeter, wie in der gemäßigten Zone. Die Un-<lb break="no"/>terschiede zwischen den Extremen zu denselben Stunden<lb break="yes"/>im Laufe des Jahres gehen von 4 bis 4<formula notation="TeX" >\frac{1}{2}</formula> Millimeter; an der<lb break="yes"/>Gränze der heißen Zone, am Wendekreis des Steinbocks<lb break="yes"/>steigen sie zuweilen auf 21<hi rendition="#sup">mm</hi>, und am Wendekreis des<lb break="yes" />Krebses bis 25 und 30 Millimeter. Im gemäßigten <placeName>Eu-<lb break="no" />ropa</placeName> liegen die Gränzen der äußersten monatlichen Oscil-<lb break="no"/>lationen, bei der aufsteigenden Bewegung, um die Hälfte<lb break="yes"/>näher an einander, als unter dem Wendekreis des Kreb-<lb break="no"/>ses; bei den Gränzen der niedersteigenden Oscillationen<lb break="yes"/>ist dieser Unterschied zwischen beiden Zonen weit unbe-<lb break="no"/>
+                    <lb break="yes"/>
+                    <pb n="305" facs="#f0007"/> trächtlicher. Nahe am Wendekreis des Krebses, im <placeName>Golf<lb break="yes"/>von Mexico</placeName>, dient die Unterbrechung der stündlichen Os-<lb break="no"/>cillationen als Vorbote herannahender Stürme. Auf der<lb break="yes"/>
+                    <placeName>Hochebene von Bogota</placeName> und selbst in der südlichen Halb-<lb break="no"/>kugel, an den Küsten bei <placeName>Rio Janeiro</placeName>, nehmen die monat-<lb break="no"/>lichen Mittel der Barometerstände vom Juli bis zum Decem-<lb break="no"/>ber und Januar regelmäßig ab. An der nördlichen Gränze<lb break="yes"/>der heißen Zone steigen, durch die Nordwinde, die monat-<lb break="no"/>lichen Mittel vom December und Januar über die vom<lb break="yes"/>Juli und August.</p>
+                <lb break="yes"/>
+                <p>9. Vergleicht man, zwischen den Wendekreisen<lb break="yes"/>und in der gemäßigten Zone, die monatlichen Extreme<lb break="yes"/>mit einander, so findet man, daß die Gränzen der auf-<lb break="no"/>steigenden Oscillationen 2 bis 3 Mal näher an einan-<lb break="no"/>der liegen, als die Gränzen der niedersteigenden Oscilla-<lb break="no"/>tionen <note place="foot" n="*)">In <hi rendition="#i">
+                            <placeName>Havannah</placeName>
+                        </hi> waren nach dem (handschriftlichen) meteorologi-<lb break="no"/>schen Journale des Hrn. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Don Antonio Robredo</persName>,</hi> im J. 1801,<lb break="yes"/>die Extreme, bei den <hi rendition="#i">Maximis</hi> 30&#x2033;,16 und 30&#x2033;,41, und bei den<lb break="yes"/>
+                        <hi rendition="#i">Minimis</hi> 29&#x2033;,52 und 30&#x2033;,58 (engl. Maaß). Der Unterschied<lb break="yes"/>zwischen den Maximis betrug also 5<hi rendition="#sup">mm</hi>,28, und der zwischen<lb break="yes"/>den Minimis 18<hi rendition="#sup">mm</hi>,20. Zu <hi rendition="#i">
+                            <placeName>Paris</placeName>
+                        </hi> und <hi rendition="#i">
+                            <placeName>Strasburg</placeName>
+                        </hi> schwanken in<lb break="yes"/>den verschiedenen Monaten die Extreme zwischen den Maximis<lb break="yes"/>unter sich nur um 10 bis 12 Millimeter, die Extreme der Mini-<lb break="no"/>mis dagegen um 20 bis 30 Millimeter.</note>.</p>
+                <lb break="yes"/>
+                <p>10. Die bis jetzt gesammelten Beobachtungen zei-<lb break="no"/>gen nicht, daß der Mond einen merklichen Einfluß auf<lb break="yes"/>die Oscillationen der Atmosphäre habe <note place="foot" n="**)" xml:id="fn2-1" next="#fn2-2">
+                        <bibl>
+                            <hi rendition="#i">
+                                <hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/">Laplace</persName>,</hi> Essai phil. sur les probabilités,</hi> 1825, <hi rendition="#i" >p.</hi> 119.<lb break="yes"/>123. 274</bibl>. <bibl>
+                            <hi rendition="#i">Connaiss. des temps,</hi> 1825. <hi rendition="#i" >p.</hi> 312</bibl>. Der Einfluß<lb break="yes"/>der Mondesanziehung würde zwischen den Wendekreisen, wo<lb break="yes"/>die stündlichen Variationen so wenig durch die zufälligen Stö-<lb break="no"/>rungen verdeckt sind, am leichtesten wahrzunehmen seyn. Ich<lb break="yes"/>habe indeß, obgleich ich mehrere Nächte hindurch beobachtete,<lb break="yes" />nichts Genügendes in dieser Hinsicht bemerken können; allein<lb break="yes"/>Hr. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Mutis</persName>
+                        </hi> versicherte mich, gefunden zu haben, daß zu <placeName>Bogota</placeName>
+                        <lb break="yes"/>das Barometer in den Quadraturen höher steige und tiefer falle,<lb break="yes"/>als zu den Zeiten der Oppositionen und Conjunctionen, wo die<lb break="yes"/>Unterschiede zwischen den Ständen um 11 Uhr Abends und 3<formula notation="TeX">\frac{1}{2}</formula>
+                    </note>. Diese Oscil-<lb break="no"/>
+                    <pb n="306" facs="#f0008"/> lationen scheinen von der Sonne hervorgebracht zu wer-<lb break="no"/>den, aber nicht durch ihre Anziehung, sondern durch ihre<lb break="yes"/>Wärmewirkung. Wenn die Sonne die periodischen Oscil-<lb break="no"/>lationen in der Atmosphäre durch Abänderung der Tem-<lb break="no"/>peratur hervorbringt, so bleibt noch zu erklären, wes-<lb break="no"/>halb die beiden barometrischen <hi rendition="#i">Minima</hi> fast genau mit<lb break="yes"/>den Zeitpunkten der größten Wärme am Tage und der<lb break="yes"/>kleinsten in der Nacht zusammenfallen.</p>
+                <lb break="yes"/>
+                <p>Was sich aus den zwischen 25° südlicher und 55°<lb break="yes"/>nördlicher Breite, und dem Meeresspiegel bis zur Höhe<lb break="yes"/>von 1400 Toisen bisher angestellten Beobachtungen direct<lb break="yes"/>über die täglichen Barometervariationen ergiebt, zeigt<lb break="yes"/>folgende Tafel.</p>
+                <lb break="yes"/>
+                <p>
+                    <note place="foot" n="**)" xml:id="fn2-2" prev="#fn2-1">Uhr Morgens auffallend klein werden. Hr. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Caldas</persName>
+                        </hi>
+                        <bibl>
+                            <hi rendition="#i">(<persName ref="http://d-nb.info/gnd/">Semana-<lb break="no"/>rio</persName>, T. I. p.</hi> 55.<hi rendition="#i">)</hi>
+                        </bibl> spricht auch von dieser Beobachtung sei-<lb break="no"/>nes Lehrers. Hr. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Boussingault</persName>
+                        </hi> hat seitdem diese Untersu-<lb break="no"/>chung wieder vorgenommen (man findet sie in dies. <bibl>Ann. Bd. 85.<lb break="yes"/>S. 148.</bibl>), aber kein entscheidendes Resultat zur Bestätigung dieser<lb break="yes" />Angaben erhalten können. Der mittlere Barometerstand zur Zeit<lb break="yes"/>der Syzygien weicht nach dessen Beobachtungen nur um 0<hi rendition="#sup">mm</hi>,16<lb break="yes"/>von dem zur Zeit der Quadraturen ab. <hi rendition="#g">
+                            <persName ref="http://d-nb.info/gnd/">Toaldo</persName>
+                        </hi> glaubte aus<lb break="yes"/>den mittleren Ständen von 40 Jahren, freilich bei Anwendung<lb break="yes"/>einer eben nicht genauen Methode, gefunden zu haben, daß in<lb break="yes"/>Italien das Barometer während der Quadraturen höher stehe als<lb break="yes"/>während der Syzygien, und höher beim Apoge als im Perigeo.<lb break="yes"/>
+                        <bibl>
+                            <hi rendition="#i">(De la Infl. degli astri,</hi> 1781, <hi rendition="#i">p.</hi> 122</bibl>. <bibl>
+                            <hi rendition="#i">
+                                <hi rendition="#g">
+                                    <persName ref="http://d-nb.info/gnd/">Lambert</persName>
+                                </hi> Act. Helv.<lb break="yes"/>T. IV. p.</hi> 123.</bibl>
+                        <bibl>
+                            <hi rendition="#i">Journ. de phys.,</hi> 1779, <hi rendition="#i">Juin. p.</hi> 270</bibl>.<hi rendition="#i">).</hi> [Meh-<lb break="no" />reres über diesen Gegenstand im folgenden Aufsatz. <hi rendition="#i">
+                            <persName ref="http://d-nb.info/gnd/">P.</persName>
+                        </hi>]</note>
+                </p>
+                <lb break="yes"/>
+                <pb n="307" facs="#f0009"/>
+                <table>
+                    <row>
+                        <cell rows="2">
+                            <hi rendition="#g">Beobachter.</hi>
+                        </cell>
+                        <cell cols="4">
+                            <hi rendition="#g">Wendestunden.</hi>
+                        </cell>
+                        <cell rows="2">Größe<lb break="yes"/>d. Oscil-<lb break="no"/>lation in<lb break="yes"/>Millim.</cell>
+                        <cell rows="2">
+                            <hi rendition="#g">Beobachtungsorte.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Minim.<lb break="yes"/>nach<lb break="yes"/>Mittern.</cell>
+                        <cell>Maxim.<lb break="yes"/>am<lb break="yes"/>Morgen.</cell>
+                        <cell>Minim.<lb break="yes"/>nach<lb break="yes"/>Mittag.</cell>
+                        <cell>Maxim.<lb break="yes"/>am<lb break="yes"/>Abend.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Lamanon</persName> und <persName ref="http://d-nb.info/gnd/">Mongès</persName> .</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Atlantischer Ocean</placeName> am Aequator.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Humboldt und <persName ref="http://d-nb.info/gnd/">Bonpland</persName>
+                        </cell>
+                        <cell>&#x2014; 4<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{4}</formula>
+                        </cell>
+                        <cell>&#x2014; 4<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 11</cell>
+                        <cell>2,55</cell>
+                        <cell>Tropisches <placeName>America</placeName>, zwischen 23° NB. u. 12 SB., n. 0° t<lb break="yes"/>bis 1500 t Höhe.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Duperrey</persName> ........</cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 11<formula notation="TeX">\frac{1}{4}</formula>
+                        </cell>
+                        <cell>3,40</cell>
+                        <cell>
+                            <placeName>Páyta</placeName>, Küste von <placeName>Peru</placeName>, 5°6&#x2032; SB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2">
+                            <table>
+                                <row>
+                                    <cell>
+                                        <persName ref="http://d-nb.info/gnd/" >Boussingault</persName>
+                                        <lb break="yes"/>und <persName ref="http://d-nb.info/gnd/" >Rivero</persName>
+                                    </cell>
+                                    <cell rendition="#leftBraced">......<lb break="yes" />......</cell>
+                                </row>
+                            </table>
+                        </cell>
+                        <cell>&#x2014;</cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 10</cell>
+                        <cell>2,44</cell>
+                        <cell>
+                            <placeName>La Guayra</placeName>, 10°36&#x2032; NB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10</cell>
+                        <cell>2,29</cell>
+                        <cell>
+                            <placeName>Bogota</placeName>, 4°35&#x2032; NB. u. 1366 t Höhe.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Horsburgh</persName> ........</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 8<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 11</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Indisches u. afrikan. Meer</placeName>, 10° NB., 25 SB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Langsdorf</persName> und <persName ref="http://d-nb.info/gnd/">Horner</persName> ..</cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 9<formula notation="TeX">\frac{3}{4}</formula>
+                        </cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Südsee</placeName> zwischen den Tropen.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Sabine</persName> ..........</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{3}{4}</formula>
+                        </cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Sierra Leona</placeName>, 8°30&#x2032; N.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Kater</persName> ...........</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 10<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Hocheb. v. Mysore</persName>, 14° 11&#x2032; NB. u. 400 t Höhe Regenzeit.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Simonoff</persName> .........</cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 9<formula notation="TeX">\frac{3}{4}</formula>
+                        </cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Südsee</placeName>, 24°30&#x2032; NB. bis 25°0&#x2032; SB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Richelet</persName> .........</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Macao</placeName>, 22°12&#x2032; NB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Balfour</persName> ..........</cell>
+                        <cell>&#x2014; 6</cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{4}</formula>
+                        </cell>
+                        <cell>&#x2014; 6</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>
+                            <placeName>Calcutta</placeName>, 22°34&#x2032; NB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Dorta</persName>, <persName ref="http://d-nb.info/gnd/">Freycinet</persName>, <persName ref="http://d-nb.info/gnd/">Eschwege</persName>
+                        </cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{4}</formula>
+                        </cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 11</cell>
+                        <cell>2,34</cell>
+                        <cell>
+                            <placeName>Brasilien</placeName>, zu <placeName>Rio Janeiro</placeName> 22°54&#x2032; SB. und bei den<lb break="yes"/>Missionen der Coroatos-Indier.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Hamilton</persName> .........</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>Hochebene von <placeName>Katmandu</placeName> in <placeName>Indien</placeName>, 27°48&#x2032; NB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Leopold von Buch</persName> ...</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 11</cell>
+                        <cell>1,10</cell>
+                        <cell>
+                            <placeName>Las Palmas</placeName> auf <placeName>Gran Canaria</placeName>, 28°8&#x2032; NB.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Coutelle</persName> .........</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 10<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>1,75</cell>
+                        <cell>
+                            <placeName>Cairo</placeName>, 30°3&#x2032;.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2" rendition="#rightBraced">
+                            <persName ref="http://d-nb.info/gnd/">Marqué-Victor</persName> .....</cell>
+                        <cell>Sommer</cell>
+                        <cell>+ 8<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 5<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell rows="2" rendition="#leftBraced">+ 11</cell>
+                        <cell rows="2">1,20</cell>
+                        <cell rows="2">
+                            <placeName>Toulouse</placeName>, 43°34&#x2032;. Mittel aus 5 Jahren.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Winter</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014; 2<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2" rendition="#rightBraced">
+                            <persName ref="http://d-nb.info/gnd/">Billiet</persName> ..........</cell>
+                        <cell>Sommer</cell>
+                        <cell>+ 7<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell rows="2">&#x2014;</cell>
+                        <cell rows="2">1,00</cell>
+                        <cell rows="2">
+                            <placeName>Chambery</placeName>, 35°34&#x2032; NB. 137 t Höhe.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Winter</cell>
+                        <cell>+ 10</cell>
+                        <cell>&#x2014; 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="2" rendition="#rightBraced">
+                            <persName ref="http://d-nb.info/gnd/">Ramond</persName> .........</cell>
+                        <cell>Sommer</cell>
+                        <cell>+ 8</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>+ 10</cell>
+                        <cell/>
+                        <cell rows="2">
+                            <placeName>Clermont-Ferrand</placeName>, 45°46&#x2032; NB. 210 t. Höhe.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Winter</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell>+ 9</cell>
+                        <cell>0,94</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Herrenschneider</persName> ....</cell>
+                        <cell>&#x2014; 5</cell>
+                        <cell>+ 8<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 3<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 9<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>0,80</cell>
+                        <cell>
+                            <placeName>Strasburg</placeName>, 48°34&#x2032;. Mittel aus 6 Jahren.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Arago</persName> ..........</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>0,72</cell>
+                        <cell>
+                            <placeName>Paris</placeName>, 48°50&#x2032; NB. 8jährige sehr genaue Beobacht.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Nell de Bréautté</persName> ....</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>+ 9</cell>
+                        <cell>&#x2014; 3</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>0,36</cell>
+                        <cell>
+                            <placeName>La Chapelle</placeName> bei <placeName>Dieppe</placeName>, 49°55&#x2032;.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <persName ref="http://d-nb.info/gnd/">Sommer</persName> und <persName ref="http://d-nb.info/gnd/">Bessel</persName> ..</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>+ 8<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>&#x2014; 2<formula notation="TeX">\frac{1}{2}</formula>
+                        </cell>
+                        <cell>+ 10</cell>
+                        <cell>0,20</cell>
+                        <cell>
+                            <placeName>Königsberg</placeName>, 54°42&#x2032; NB. 8 Jahr.</cell>
+                    </row>
+                </table>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

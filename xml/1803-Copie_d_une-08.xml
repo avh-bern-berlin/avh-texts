@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="970" facs="#f0001"/>
+            <cb/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Schreiben <persName key="humboldt_av">Alexanders v. Humbold</persName>, an den B. <persName key="delambre_jbj">De-<lb break="no"/>lambre</persName>, immerwa&#x0364;hrenden Sekreta&#x0364;r des Natio-<lb break="no"/>nal-In&#x017F;tituts, Lima, vom 25 Nov.</hi> 1802. (Aus dem<lb break="yes"/>
+                    <hi rendition="#aq">Moniteur.</hi>)</head>
+                <lb break="yes"/>
+                <p>Ich komme &#x017F;o eben aus dem Innern des Landes, mein ach-<lb break="no" />tungswu&#x0364;rdiger Freund, wo ich in einer gro&#x017F;en Ebene Ver&#x017F;uche<lb break="yes"/>
+                    <pb n="971" facs="#f0002"/>
+                    <cb/> u&#x0364;ber die &#x017F;tu&#x0364;ndlichen Abweichungen der Magnetnadel ange&#x017F;tellt ha-<lb break="no"/>be, und erfahre mit Verdruß, daß die Fregatte <hi rendition="#g">A&#x017F;tigarraga,</hi>
+                    <lb break="yes"/>die er&#x017F;t in 14 Tagen nach Cadiz ab&#x017F;egeln &#x017F;ollte, ihre Abrei&#x017F;e be-<lb break="no"/>&#x017F;chleunigt hat, und heute Nacht unter Segel gegangen i&#x017F;t. Die-<lb break="no"/>&#x017F;es war &#x017F;eit 5 Monaten die er&#x017F;te Gelegenheit, die &#x017F;ich uns in der<lb break="yes"/>Ein&#x017F;amkeit des Su&#x0364;dmeers nach Europa anbot, und der Mangel<lb break="yes"/>an Zeit verbietet mir, dem National-In&#x017F;titut, welches mir &#x017F;o<lb break="yes"/>eben &#x017F;o ru&#x0364;hrende Bewei&#x017F;e &#x017F;einer Theilnahme und &#x017F;eines Wohlwol-<lb break="no"/>lens gibt, wie es meine Pflicht wa&#x0364;re, zu &#x017F;chreiben. Wenig Tage<lb break="yes"/>vor meiner Abrei&#x017F;e von Quito nach <hi rendition="#g">Jaen</hi> und dem Amazonen-<lb break="no"/>fluß empfieng ich das Schreiben vom 2 Pluvio&#x017F;e Jahr 9, das mir<lb break="yes" />die&#x017F;e beru&#x0364;hmte Ge&#x017F;ell&#x017F;chaft durch Sie zukommen ließ. Es blieb<lb break="yes"/>2 Jahre unterwegs, ehe es mich in der <hi rendition="#g">Kordillera</hi> der <hi rendition="#g">An-<lb break="no" />den</hi> traf. Ich empfieng es den Tag nach einer zweiten Wande-<lb break="no"/>rung, die ich nach dem Krater des Vulkans von <hi rendition="#g" >Pichincha</hi>
+                    <lb break="yes"/>machte, um einen Elektrometer von <persName key="volta_agv" >Volta</persName> dahin zu bringen, und<lb break="yes"/>&#x017F;einen Durchme&#x017F;&#x017F;er zu me&#x017F;&#x017F;en. Ich fand ihn 752 Toi&#x017F;en, da der<lb break="yes"/>des Ve&#x017F;uvs nur 312 betra&#x0364;gt. Die&#x017F;es erinnert mich, daß <persName key="lacondamine_cmd">
+                        <hi rendition="#g">La Con-<lb break="no"/>damine</hi>
+                    </persName> und <persName key="bouguer_p">
+                        <hi rendition="#g">Bouguer</hi>
+                    </persName> auf dem Gipfel des <hi rendition="#g">Guaguapi-<lb break="no" />chincha,</hi> wo ich oft war, (und den ich als kla&#x017F;&#x017F;i&#x017F;chen Boden liebe),<lb break="yes"/>ihre er&#x017F;ten Briefe von der ehemaligen Akademie erhielten, und ich<lb break="yes"/>bilde mir ein, daß der <hi rendition="#g">Pichincha,</hi>
+                    <hi rendition="#aq">si magna licet componere<lb break="yes"/>parvis,</hi> den Phy&#x017F;ikern Glu&#x0364;k bringt.</p>
+                <lb break="yes"/>
+                <p>Wie &#x017F;oll ich Ihnen ausdru&#x0364;ken, mit welchem Genuß ich die&#x017F;en<lb break="yes"/>Brief des In&#x017F;tituts, und die wiederholte Ver&#x017F;icherung Ihres An-<lb break="no"/>denkens gele&#x017F;en habe! Wie &#x017F;u&#x0364;ß i&#x017F;t die Ueberzeugung, daß man in<lb break="yes"/>der Erinnerung derer lebt, welche ohne Unterlaß bemu&#x0364;ht &#x017F;ind, die<lb break="yes"/>Fort&#x017F;chritte des men&#x017F;chlichen Gei&#x017F;tes zu befo&#x0364;rdern! In den Eino&#x0364;-<lb break="no"/>den der Ebenen des <hi rendition="#g">Apure,</hi> in den dichten Wa&#x0364;ldern von <hi rendition="#g">Ca-<lb break="no"/>&#x017F;iguian</hi> und des Oronoko&#x2019;s, allenthalben waren mir Ihre Na-<lb break="no"/>men gegenwa&#x0364;rtig, und indem ich die ver&#x017F;chiedenen Zeitpunkte mei-<lb break="no"/>nes umher&#x017F;chweifenden Lebens u&#x0364;berdachte, verweilte ich mit Ver-<lb break="no"/>gnu&#x0364;gen bei den Jahren 6 und 7, wo ich unter Ihnen wohnte<lb break="yes"/>und wo <persName key="laplace_ps" >Laplace</persName>, <persName key="fourcroy_afd">Fourcroix</persName>, <persName key="vauquelin_ln">Vauquelin</persName>, <persName key="halle_jn">
+                        <choice>
+                            <sic>Halle&#x2019;</sic>
+                            <corr type="editorial">Hallé</corr>
+                        </choice>
+                    </persName>, <persName key="lalande_jjlfd">Lalande</persName>, <persName key="guytondemorveau_lbb">Guy-<lb break="no"/>ton</persName>, <persName key="chaptal_jac">Chaptal</persName>, <persName key="jussieu_ald" >Ju&#x017F;&#x017F;ieu</persName>, <persName key="desfontaines_rl" >Desfontaines</persName>, <persName key="prony_gcfmrbd">Prony</persName>, und be&#x017F;onders<lb break="yes"/>Sie, großmu&#x0364;thiger, gefu&#x0364;hlvoller Mann, mich in den Ebenen von<lb break="yes"/>
+                    <hi rendition="#g">Lieur&#x017F;aint</hi> mit Gu&#x0364;te u&#x0364;berha&#x0364;uften; empfangen Sie alle den<lb break="yes"/>Zoll meiner za&#x0364;rtlichen Ergebenheit, meines unabla&#x0364;&#x017F;igen Dankes.</p>
+                <lb break="yes"/>
+                <p>Lange, ehe ich den von Ihnen als Sekreta&#x0364;r des In&#x017F;tituts ge-<lb break="no"/>&#x017F;chriebenen Brief erhielt, &#x017F;chikte ich nacheinander drei Briefe an<lb break="yes"/>die Kla&#x017F;&#x017F;e der Phy&#x017F;ik und Mathematik, zwei von <hi rendition="#g">Santa <choice>
+                            <sic>Fe</sic>
+                            <corr type="editorial">Fé</corr>
+                        </choice>-<lb break="no"/>de Bogota,</hi> welche einen Auf&#x017F;az u&#x0364;ber das Ge&#x017F;chlecht der <hi rendition="#g">Chin-<lb break="no" />kona</hi> enthielten, (das heißt, Proben von der Rinde von &#x017F;iebe-<lb break="no"/>nerlei Arten, kolorirte Zeichnungen, welche die&#x017F;e Pflanzen mit der<lb break="yes"/>Zergliederung der Blume, die in der La&#x0364;nge der Staubfa&#x0364;den &#x017F;o &#x017F;ehr<lb break="yes" />voneinander abweicht, dar&#x017F;tellten, und &#x017F;org&#x017F;am getroknete Gerippe<lb break="yes"/>der&#x017F;elben). Der <hi rendition="#aq">D.</hi>
+                    <hi rendition="#g">Mutis,</hi> der mir tau&#x017F;end Gefa&#x0364;lligkeiten er-<lb break="no"/>zeigt hat, und dem zu Gefallen ich den Magdalenenfluß in 40 Ta-<lb break="no"/>gen herauf &#x017F;chifte, der <hi rendition="#aq">D.</hi>
+                    <hi rendition="#g">Mutis</hi> hat mir u&#x0364;ber hundert pra&#x0364;ch-<lb break="no"/>tige Zeichnungen in groß Folio ge&#x017F;chenkt, welche die neuen Ge-<lb break="no"/>&#x017F;chlechter und Arten &#x017F;einer Flora von <hi rendition="#g">Bogota,</hi> die nur in der<lb break="yes" />Hand&#x017F;chrift vorhanden i&#x017F;t, vor&#x017F;tellen. Ich habe gemeint, daß die&#x017F;e<lb break="yes"/>Sammlung, die eben &#x017F;o intere&#x017F;&#x017F;ant fu&#x0364;r die Botanik, als merk-<lb break="no" />wu&#x0364;rdig wegen der &#x017F;cho&#x0364;nen Farbengebung i&#x017F;t, &#x017F;ich in keinen be&#x017F;&#x017F;ern<lb break="yes"/>Ha&#x0364;nden befinden ko&#x0364;nnte, als in denen von <hi rendition="#g">
+                        <persName key="jussieu_ald">Ju&#x017F;&#x017F;ieu</persName>, <persName key="lamarck_jbpadmd">Lamarck</persName>
+                    </hi>
+                    <lb break="yes"/>
+                    <cb/> und <persName key="desfontaines_rl">
+                        <hi rendition="#g">Desfontaines,</hi>
+                    </persName> und habe &#x017F;ie al&#x017F;o als einen geringen Be-<lb break="no" />weis meiner Ergebenheit dem National-In&#x017F;titut vorgelegt. Die&#x017F;e<lb break="yes"/>Sammlung und die <hi rendition="#g" >Chinkonas</hi> &#x017F;ind gegen den Junius die&#x017F;es<lb break="yes" />Jahrs nach dem indi&#x017F;chen Karthagena abgegangen, und H. Mutis<lb break="yes"/>
+                    <hi rendition="#g">&#x017F;elb&#x017F;t</hi> hat es auf &#x017F;ich genommen, &#x017F;ie nach Paris zu befo&#x0364;rdern.<lb break="yes"/>Ein dritter Brief an das In&#x017F;titut gieng von Quito ab, mit einer<lb break="yes" />geologi&#x017F;chen Sammlung der Produkte des <hi rendition="#g">Pichincha, Coto-<lb break="no"/>paxi</hi> und <hi rendition="#g" >Chimbora&#x017F;&#x017F;o</hi>. Wie traurig i&#x017F;t die Ungewißheit u&#x0364;ber<lb break="yes"/>die Ankunft die&#x017F;er Dinge, wie auch der &#x017F;eltenen Sa&#x0364;mereien, wel-<lb break="no"/>che wir &#x017F;eit drei Jahren nach dem botani&#x017F;chen Garten zu Paris<lb break="yes" />abge&#x017F;chikt haben!</p>
+                <lb break="yes"/>
+                <p>Die wenige Muße, welche mir heute vergo&#x0364;nnt i&#x017F;t, erlaubt<lb break="yes"/>mir nicht, Ihnen einen Abriß meiner Rei&#x017F;en und Be&#x017F;cha&#x0364;ftigungen<lb break="yes"/>&#x017F;eit un&#x017F;rer Ru&#x0364;kkehr von Rio Negro zu geben. Sie wi&#x017F;&#x017F;en, daß<lb break="yes"/>es in der Havannah war, wo uns die fal&#x017F;che Nachricht von der<lb break="yes"/>Abrei&#x017F;e des Kapita&#x0364;n <persName key="baudin_tn">
+                        <hi rendition="#g">Baudin</hi>
+                    </persName> nach Buenos Ayres zu Ohren<lb break="yes"/>kam. Meinem Ver&#x017F;prechen, zu ihm zu &#x017F;to&#x017F;&#x017F;en, wo es mir mo&#x0364;g-<lb break="no"/>lich &#x017F;eyn wu&#x0364;rde, getreu, und u&#x0364;berzeugt, den Wi&#x017F;&#x017F;en&#x017F;chaften nu&#x0364;z-<lb break="no"/>licher zu &#x017F;eyn, wenn ich meine Bemu&#x0364;hungen mit denen der Na-<lb break="no"/>turfor&#x017F;cher des Kapit. <persName key="baudin_tn">
+                        <hi rendition="#g">Baudin</hi>
+                    </persName> verba&#x0364;nde, &#x017F;tand ich keinen Au-<lb break="no"/>genblik an, den kleinen Triumph, mein eigenes Unternehmen zu<lb break="yes"/>beendigen, aufzuopfern, und ru&#x0364;&#x017F;tete &#x017F;ogleich in <placeName key="batabano">Batabano</placeName> ein klei-<lb break="no"/>nes Fahrzeug aus, um mich nach dem indi&#x017F;chen Karthagena zu<lb break="yes"/>begeben. Stu&#x0364;rme verla&#x0364;ngerten die&#x017F;en kleinen Weg u&#x0364;ber einen<lb break="yes"/>Monat, die Winde der Su&#x0364;d&#x017F;ee, wo ich den Kapit. <persName key="baudin_tn">Baudin</persName> zu<lb break="yes" />&#x017F;uchen meinte, waren vorbei, und ich betrat den be&#x017F;chwerlichen<lb break="yes"/>Weg von Honda, Ibague, von den Gebu&#x0364;rgen von Quindiu,<lb break="yes"/>Popayan und Pa&#x017F;ta nach Quito. Meine Ge&#x017F;undheit fuhr fort,<lb break="yes"/>auf eine wunderbare Wei&#x017F;e den Abwech&#x017F;elungen der Temperatur<lb break="yes"/>zu trozen, denen man auf die&#x017F;em Wege ausge&#x017F;ezt i&#x017F;t. Ta&#x0364;glich<lb break="yes"/>&#x017F;teigt man von Schneeho&#x0364;hen von 2,460 Toi&#x017F;en in Tha&#x0364;ler herab,<lb break="yes"/>wo Reaumu&#x0364;rs Thermometer nie unter 24 bis 26° &#x017F;teht. Mein<lb break="yes"/>Begleiter, B. <persName key="bonpland_ajag">Bompland</persName>, de&#x017F;&#x017F;en Kenntni&#x017F;&#x017F;e, Muth und unbe-<lb break="no"/>begreifliche Tha&#x0364;tigkeit mir in den Unter&#x017F;uchungen fu&#x0364;r Botanik und<lb break="yes"/>vergleichende Anatomie von dem gro&#x0364;ßten Nuzen waren, hat zwei<lb break="yes"/>Monate am dreita&#x0364;gigen Fieber gelitten. Die Regenzeit u&#x0364;berfiel<lb break="yes"/>uns auf dem gefa&#x0364;hrlich&#x017F;ten Theil un&#x017F;ers Wegs, auf dem hohen<lb break="yes"/>Ru&#x0364;ken der Pa&#x017F;ta&#x2019;s. Nach einer Rei&#x017F;e von 8 Monaten kamen wir<lb break="yes"/>in Quito an, wo wir erfuhren, daß der Kapit. <persName key="baudin_tn">Baudin</persName> &#x017F;einen<lb break="yes"/>Weg von We&#x017F;ten nach O&#x017F;ten auf das Vorgebu&#x0364;rge der guten Hof-<lb break="no"/>nung genommen ha&#x0364;tte. Der Unfa&#x0364;lle gewohnt, tro&#x0364;&#x017F;teten wir uns<lb break="yes"/>mit dem Gedanken, &#x017F;o gro&#x017F;e Opfer gebracht zu haben, um das<lb break="yes"/>Gute zu befo&#x0364;rdern. Wenn wir den Blik auf un&#x017F;re getroknete<lb break="yes"/>Pflanzen, auf un&#x017F;re barometri&#x017F;chen und geode&#x017F;i&#x017F;chen Ausme&#x017F;&#x017F;un-<lb break="no"/>gen, auf un&#x017F;re Zeichnungen, auf un&#x017F;re Ver&#x017F;uche u&#x0364;ber die Luft<lb break="yes"/>auf den Kordilleras warfen, konnten wir es uns nicht leid &#x017F;eyn<lb break="yes" />la&#x017F;&#x017F;en, La&#x0364;nder durchreist zu haben, deren gro&#x0364;ßter Theil vor uns<lb break="yes"/>noch kein Naturfor&#x017F;cher be&#x017F;uchte. Wir fu&#x0364;hlten lebhaft, daß der<lb break="yes" />Men&#x017F;ch auf nichts rechnen &#x017F;oll, als auf das, was &#x017F;eine eigene<lb break="yes"/>innere Kraft hervorbringt. Die Provinz Quito, der ho&#x0364;ch&#x017F;te Punkt<lb break="yes"/>der Welt, welcher durch die gro&#x017F;e Kata&#x017F;trophe des 4 Febr. 1797<lb break="yes" />zerri&#x017F;&#x017F;en i&#x017F;t, bot uns ein weites Feld fu&#x0364;r phy&#x017F;i&#x017F;che Beobachtungen<lb break="yes"/>dar. Solche ungeheure Vulkane, deren Flammen auf die Ho&#x0364;he<lb break="yes"/>von 1,000 Metern &#x017F;teigen, haben nie einen Tropfen flu&#x0364;&#x017F;&#x017F;iger Lava<lb break="yes"/>hervorgebracht; &#x017F;ie werfen kochendes Wa&#x017F;&#x017F;er aus, &#x017F;chwefel&#x017F;auren<lb break="yes" />Wa&#x017F;&#x017F;er&#x017F;toff, Schlamm und gekohlte Thonerde, (<hi rendition="#aq">argile carbo-</hi>
+                    <lb break="yes"/>
+                    <pb n="972" facs="#f0003"/>
+                    <cb/>
+                    <hi rendition="#aq">né?</hi>). Seit 1797 i&#x017F;t die&#x017F;er ganze Welttheil in Aufruhr.<lb break="yes"/>Jeden Augenblik empfinden wir furchtbare Er&#x017F;chu&#x0364;tterungen, und<lb break="yes"/>in den Ebenen von <hi rendition="#g">Riobomba</hi> gleicht das unterirdi&#x017F;che Ge-<lb break="no"/>to&#x0364;&#x017F;e einem Berg, der unter un&#x017F;ern Fu&#x0364;&#x017F;&#x017F;en ein&#x017F;tu&#x0364;rzte. Die at-<lb break="no" />mospha&#x0364;ri&#x017F;che Luft, und der durchna&#x0364;ßte Boden, (alle die&#x017F;e Vul-<lb break="no"/>kane befinden &#x017F;ich in einem au&#x017F;gelo&#x0364;sten Porphir), &#x017F;cheinen die<lb break="yes" />gro&#x017F;en Triebfedern die&#x017F;er Entzu&#x0364;ndung und unterirdi&#x017F;chen Ga&#x0364;h-<lb break="no"/>rung.... Bis jezt glaubte man in Quito, 2,470 Toi&#x017F;en &#x017F;ey<lb break="yes"/>die a&#x0364;u&#x017F;&#x017F;er&#x017F;te Ho&#x0364;he, in welcher der Men&#x017F;ch die Du&#x0364;nne der Luft er-<lb break="no"/>tragen ko&#x0364;nnte. Im Monat Ma&#x0364;rz 1802 brachten wir einige Mo-<lb break="no" />nate in der gro&#x017F;en Ebene zu, welche den Vulkan <placeName key="antisana">Anti&#x017F;ana</placeName> in der<lb break="yes" />Ho&#x0364;he von 2,107 Toi&#x017F;en umgibt, wo den Och&#x017F;en, wenn man &#x017F;ie<lb break="yes"/>jagt, oft Blut aus dem Maule &#x017F;tu&#x0364;rzt. Den 16 Ma&#x0364;rz entdekten<lb break="yes"/>wir einen Weg auf dem Schnee, einen &#x017F;anften Abhang, wo wir<lb break="yes"/>bis zu 2,773 Toi&#x017F;en aufwa&#x0364;rts &#x017F;tiegen. Die Luft enthielt 0,008<lb break="yes"/>Kohlen&#x017F;a&#x0364;ure, 0,218 Sauer&#x017F;tof, und 0,774 Stik&#x017F;tof. Der Ther-<lb break="no"/>mometer von Reaumu&#x0364;r zeigte nur auf 15°, und es war gar nicht<lb break="yes"/>kalt, dennoch drang uns das Blut aus den Augen und den Lip-<lb break="no"/>pen. Das Lokale erlaubte uns nicht, die Ver&#x017F;uche von <persName key="borda_jcd">Bordas</persName>
+                    <lb break="yes"/>Kompaß anderswo, als in einer Ho&#x0364;hle tiefer unten, auf 2,467<lb break="yes"/>Toi&#x017F;en, zu machen. Die Inten&#x017F;ita&#x0364;t der magneti&#x017F;chen Kra&#x0364;fte<lb break="yes" />war in die&#x017F;er Ho&#x0364;he gro&#x0364;&#x017F;er, als in Quito, in dem Verha&#x0364;ltniß von<lb break="yes"/>230 zu 218; man muß aber nicht verge&#x017F;&#x017F;en, daß oft die Zahl der<lb break="yes"/>Schwingungen zunimmt, wenn die Inklination abnimmt, und<lb break="yes"/>daß die&#x017F;e Inten&#x017F;ita&#x0364;t durch die Gebu&#x0364;rgsma&#x017F;&#x017F;e vermehrt wird, de-<lb break="no"/>ren Porphyre auf den Magnet wu&#x0364;rken. Bei der Expedition, die<lb break="yes"/>ich am 23 Jun. 1802 auf dem Chimbora&#x017F;&#x017F;o machte, hatten wir<lb break="yes"/>erfahren, daß man, wenn man Geduld hat, eine noch gro&#x0364;&#x017F;ere<lb break="yes" />Du&#x0364;nne der Luft ertragen kan. Wir gelangten 500 Toi&#x017F;en ho&#x0364;her,<lb break="yes"/>wie <persName key="lacondamine_cmd">La Condamine</persName>, (auf den <hi rendition="#g">Corazon</hi>), und nahmen auf dem<lb break="yes"/>Chimbora&#x017F;&#x017F;o bis auf 3,031 Toi&#x017F;en In&#x017F;trumente mit. Wie der<lb break="yes"/>Merkur im Barometer auf 18 Zoll 11,2 Linien fiel; der Thermo-<lb break="no"/>meter 1°3&#x2032; unter Null &#x017F;tand, drang uns noch das Blut aus den<lb break="yes"/>Lippen. Un&#x017F;re Indianer verlie&#x017F;&#x017F;en uns, wie &#x017F;ie zu thun pflegten;<lb break="yes"/>der B. <persName key="bonpland_ajag" >Bompland</persName>, H. <persName key="montufarylarrea_c" >Montu&#x017F;on</persName>, Sohn des Marquis von Sel-<lb break="no" />valegre aus Quito, waren die einzigen, die es aushielten; wir<lb break="yes" />empfanden alle ein Unbehagen, eine Schwa&#x0364;che, eine Neigung<lb break="yes"/>zum Erbrechen, die gewiß weit mehr dem Mangel an Sauer&#x017F;tof<lb break="yes"/>in die&#x017F;er Region zuzu&#x017F;chreiben i&#x017F;t, als der Du&#x0364;nne der Luft. Eine<lb break="yes"/>furchtbare Erd&#x017F;palte verhinderte uns, den Gipfel des Chimbora&#x017F;&#x017F;o<lb break="yes"/>&#x017F;elb&#x017F;t zu erklimmen; es fehlten uns bis dorthin noch 206 Toi&#x017F;en.<lb break="yes"/>Sie wi&#x017F;&#x017F;en, daß u&#x0364;ber die Ho&#x0364;he die&#x017F;es Kolo&#x017F;&#x017F;en noch eine gro&#x017F;e<lb break="yes"/>Ungewißheit herr&#x017F;cht; <persName key="lacondamine_cmd">La Condamine</persName>, der ihn &#x017F;ehr von weitem maß,<lb break="yes"/>gab ihm ungefa&#x0364;hr 3,220 Toi&#x017F;en, indeß ihn Don <persName key="juanysantacilia_j">George Juan</persName> auf<lb break="yes"/>3,380 Toi&#x017F;en &#x017F;cha&#x0364;zt, ohne daß die&#x017F;e Ver&#x017F;chiedenheit aus der ver-<lb break="no"/>&#x017F;chiedenen Ho&#x0364;he ent&#x017F;teht, welche die&#x017F;e A&#x017F;tronomen fu&#x0364;r die Ho&#x0364;he<lb break="yes"/>des Signals von Carabouron annehmen. Ich maß in der Ebene<lb break="yes"/>von Tapia eine Ba&#x017F;is von 1,702 Metern &#x2014; (verzeihen Sie mir,<lb break="yes" />daß ich bald von Toi&#x017F;en, bald von Metern &#x017F;preche, je wie es die<lb break="yes"/>Natur meiner In&#x017F;trumente mit &#x017F;ich bringt; Sie begreifen leicht,<lb break="yes"/>daß ich alles, ehe ich meine Unternehmungen bekannt mache, auf<lb break="yes"/>den Meter und den centigraden Thermometer berechnen werde);<lb break="yes"/>&#x2014; zwei geode&#x017F;i&#x017F;che Operationen be&#x017F;timmten mir den Chimbora&#x017F;&#x017F;o<lb break="yes"/>zu 3,267 Toi&#x017F;en u&#x0364;ber dem Meer, allein man muß die&#x017F;e Berech-<lb break="no"/>
+                    <cb/> nung nach der Entfernung des Sektanten vom ku&#x0364;n&#x017F;tlichen Hori-<lb break="no"/>zont berichtigen. Der Vulkan <hi rendition="#g" >Tongouragoa</hi> hat &#x017F;eit <persName key="lacondamine_cmd">La Con-<lb break="no"/>damine&#x2019;s</persName> Zeit &#x017F;ehr abgenommen. Statt 2,620 Toi&#x017F;en finde ich<lb break="yes"/>ihn nur noch 2,531, und ich darf glauben, daß die&#x017F;er Unter&#x017F;chied,<lb break="yes"/>nicht aus einem Irthum in der Unter&#x017F;uchung ent&#x017F;teht, denn bei<lb break="yes" />meiner Me&#x017F;&#x017F;ung des <hi rendition="#g">Cayambo, <placeName key="antisana">Anti&#x017F;ana</placeName>, Cotopaxi,<lb break="yes" />Iliniga</hi> weiche ich oft um keine 10 Grade von den Re&#x017F;ultaten<lb break="yes"/>
+                    <persName key="lacondamine_cmd">La Condamine&#x2019;s</persName> und <persName key="bouguer_p">Bouguer&#x2019;s</persName> ab. Auch &#x017F;agen alle Einwohner<lb break="yes"/>die&#x017F;er unglu&#x0364;k&#x017F;eligen Gegend, daß der <hi rendition="#g">Tongouragoa</hi> augen-<lb break="no" />&#x017F;cheinlich ge&#x017F;unken &#x017F;ey. Der <hi rendition="#g" >Cotopaxi</hi> hingegen, der &#x017F;o heftige<lb break="yes" />Ausbru&#x0364;che erlitt, i&#x017F;t jezt noch eben &#x017F;o hoch, wie 1744, &#x017F;elb&#x017F;t noch<lb break="yes"/>etwas ho&#x0364;her, welches aber vielleicht einem Irthum von meiner<lb break="yes"/>Seite zuzu&#x017F;chreiben i&#x017F;t. Allein der &#x017F;teinigte Gipfel des Cotopaxi<lb break="yes" />beweist wu&#x0364;rklich auch, daß es ein Rauchfang i&#x017F;t, der wider&#x017F;teht,<lb break="yes"/>und &#x017F;eine Ge&#x017F;talt immer beibeha&#x0364;lt. Die Beobachtungen, welche<lb break="yes"/>wir vom Januar bis Julius in den Anden von Quito an&#x017F;tellten,<lb break="yes"/>gaben den Einwohnern die traurige Nachricht, daß der Krater<lb break="yes"/>von Pichincha, welchen <persName key="lacondamine_cmd">La Condamine</persName> mit Schnee angefu&#x0364;llt fand,<lb break="yes"/>wieder brennt, und daß der Chimbora&#x017F;&#x017F;o, den man fu&#x0364;r &#x017F;o friedlich<lb break="yes"/>und harmlos hielt, ein Vulkan war, und vielleicht es wieder wer-<lb break="no"/>den kan. Wir fanden bis zu der Ho&#x0364;he von 3,031 Toi&#x017F;en ver-<lb break="no"/>brannte Fel&#x017F;en und Bims&#x017F;teine. Wehe dem Men&#x017F;chenge&#x017F;chlecht,<lb break="yes"/>wenn das vulkani&#x017F;che Feuer &#x2014; (denn man kan &#x017F;agen, daß die<lb break="yes"/>ganze Bergebene von Quito ein einziger Vulkan mit mehreren<lb break="yes"/>Gipfeln i&#x017F;t) &#x2014; &#x017F;ich durch den Chimbora&#x017F;&#x017F;o Luft macht. Es i&#x017F;t oft<lb break="yes"/>gedrukt worden, daß die&#x017F;er Berg von Granit &#x017F;ey, allein man fin-<lb break="no"/>det keine Spur davon. Er be&#x017F;teht aus hie und da in Sa&#x0364;ulen<lb break="yes"/>gebildeten Porphyr, welcher verglasten Feld&#x017F;pat, Horn&#x017F;tein<lb break="yes"/>und Olivin ein&#x017F;chließt. Die&#x017F;e Porphyrlage hat eine Dike von<lb break="yes"/>1,900 Toi&#x017F;en. Ich ko&#x0364;nnte bei die&#x017F;er Gelegenheit eines pola-<lb break="no" />ri&#x017F;irenden Porphyrs erwa&#x0364;hnen, den wir in <hi rendition="#g" >Vai&#x017F;aco</hi> bei<lb break="yes"/>
+                    <hi rendition="#g">Pa&#x017F;ta</hi> entdekt haben, und der gleich dem Serpentin&#x017F;tein,<lb break="yes"/>den ich in dem <hi rendition="#aq" >Journal de Physique</hi> be&#x017F;chrieb, Pole ohne An-<lb break="no" />ziehungskraft be&#x017F;izt. Ich ko&#x0364;nnte Ihnen andre That&#x017F;achen in Ru&#x0364;k-<lb break="no"/>&#x017F;icht des gro&#x017F;en Ge&#x017F;ezes der Erd&#x017F;chichten und ihrer ungeheuern<lb break="yes"/>Dike in der Gegend der Mittagslinie mittheilen, aber das wa&#x0364;re<lb break="yes"/>fu&#x0364;r einen Brief, der vielleicht verloren geht, zu viel; ich komme<lb break="yes"/>ein andermal darauf zuru&#x0364;k. Nur das will ich noch hinzufu&#x0364;gen,<lb break="yes"/>daß wir dem B. <persName key="cuvier_g">Cuvier</persName> au&#x017F;&#x017F;er den Elephantenza&#x0364;hnen, die wir ihm<lb break="yes" />von der Berg-Ebene Santa <choice>
+                        <sic>Fe&#x2019;</sic>
+                        <corr type="editorial">Fé</corr>
+                    </choice>, von einer Ho&#x0364;he von 1,350 Toi-<lb break="no"/>&#x017F;en, &#x017F;chikten, noch andre &#x017F;cho&#x0364;nere aufbewahren, theils von dem<lb break="yes"/>flei&#x017F;chfre&#x017F;&#x017F;enden Elephanten, theils von einer, von der afrikani-<lb break="no"/>&#x017F;chen etwas ver&#x017F;chiedenen, Gattung, aus dem Thale Timana,<lb break="yes"/>aus der Stadt Ibarra, und aus Chili. Das Da&#x017F;eyn die&#x017F;es flei&#x017F;ch-<lb break="no"/>fre&#x017F;&#x017F;enden Ungeheuers von dem Ohio, 50° no&#x0364;rdlicher, bis zu<lb break="yes"/>35° o&#x0364;&#x017F;tlicher Breite, i&#x017F;t al&#x017F;o erwie&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">(<hi rendition="#g">Die Fort&#x017F;ezung folgt</hi>.)</hi>
+                </p>
+                <lb break="yes"/>
+                <pb n="975" facs="#f0004"/>
+                <cb/>
+                <cb/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#g">Schreiben <persName key="humboldt_av">Alexanders v. Humbold</persName>, an den B. <persName key="delambre_jbj">De-<lb break="no"/>lambre</persName>, immerwa&#x0364;hrenden Sekreta&#x0364;r des Natio-<lb break="no"/>nal-In&#x017F;tituts, Lima, vom 25 Nov.</hi> 1802. (Aus dem<lb break="yes"/>
+                        <hi rendition="#aq">Moniteur.</hi>)<lb break="yes"/>(<hi rendition="#g" >Fort&#x017F;ezung.</hi>)</head>
+                    <lb break="yes"/>
+                    <p>In Quito brachte ich &#x017F;ehr angenehme Augenblike zu. Der<lb break="yes" />Pra&#x0364;&#x017F;ident der Audienzen, Baron <persName key="carondelet_flhd">v. Corundeles</persName>, hat uns mit<lb break="yes"/>Gu&#x0364;te u&#x0364;berha&#x0364;uft, und &#x017F;eit 3 Jahren habe ich mich nicht einen ein-<lb break="no"/>zigen Tag u&#x0364;ber die Agenten der &#x017F;pani&#x017F;chen Regierung zu beklagen<lb break="yes"/>gehabt; &#x017F;ie haben mich allenthalben mit einer Delikate&#x017F;&#x017F;e, einer<lb break="yes"/>Auszeichnung behandelt, die meine ewige Dankbarkeit verdient.<lb break="yes"/>Ich habe mich viel mit den Pyramiden und ihrer Grundlage be-<lb break="no"/>&#x017F;cha&#x0364;ftigt, und halte &#x017F;ie, was die Ek&#x017F;teine betrift, gar nicht fu&#x0364;r<lb break="yes"/>verru&#x0364;kt. Ein grosmu&#x0364;thiger Privatmann, ein Freund der Wi&#x017F;&#x017F;en-<lb break="no" />&#x017F;chaften und der Ma&#x0364;nner, welche &#x017F;ie befo&#x0364;rderten, wie La Conda-<lb break="no"/>mine, <persName key="godin_l">Godin</persName> und <persName key="bouguer_p" >Bouguer</persName>, der <persName key="montufarylarrea_jpd">Marquis von Selvalegre</persName> in<lb break="yes"/>Quito, gedenkt &#x017F;ie wiederher&#x017F;tellen zu la&#x017F;&#x017F;en; doch das fu&#x0364;hrt mich<lb break="yes"/>zu weit.</p>
+                    <lb break="yes"/>
+                    <p>Nachdem wir u&#x0364;ber A&#x017F;&#x017F;ouay und Cuen<hi rendition="#aq" >&#x00E7;</hi>a, (wo man Stierge-<lb break="no"/>fechte gab), gekommen waren, nahmen wir den Weg von Loxa,<lb break="yes"/>um un&#x017F;re Arbeit u&#x0364;ber den <hi rendition="#g">Cinchona</hi> zu vollenden. Von da<lb break="yes"/>brachten wir einen Monat in den Provinzen <hi rendition="#g">Taen, Braca-<lb break="no"/>moros,</hi> und in den Pongos des Amazonenflu&#x017F;&#x017F;es zu, de&#x017F;&#x017F;en<lb break="yes" />Ufer mit <persName key="jussieu_ald" >Ju&#x017F;&#x017F;ieu&#x2019;s</persName>
+                        <hi rendition="#g">Andira</hi> und <persName key="bougainville_lad">
+                            <hi rendition="#g">Bougainvillea</hi>
+                        </persName> geziert &#x017F;ind.<lb break="yes"/>Es &#x017F;chien mir intere&#x017F;&#x017F;ant, die La&#x0364;nge von Tomependa und Chu-<lb break="no"/>changa, wo die Karte von <persName key="lacondamine_cmd">La Condamine</persName> anfa&#x0364;ngt, zu be&#x017F;timmen,<lb break="yes"/>und die&#x017F;e Punkte mit der Ku&#x0364;&#x017F;te zu verbinden. <persName key="lacondamine_cmd">La Condamine</persName> hat<lb break="yes"/>nur die La&#x0364;nge der Mu&#x0364;ndung des Napo be&#x017F;timmen ko&#x0364;nnen,<lb break="yes"/>die Zeitbeobachter kannte man noch nicht, &#x017F;o daß die La&#x0364;ngenma&#x017F;&#x017F;e<lb break="yes"/>die&#x017F;er Gegend noch viel Vera&#x0364;nderung bedu&#x0364;rfen. Mein Chronome-<lb break="no"/>ter von <persName key="berthoud_l">Louis Berthoud</persName> thut Wunder, wie ich mich u&#x0364;berzeuge,<lb break="yes"/>indem ich mich von Zeit zu Zeit durch den er&#x017F;ten Trabanten des<lb break="yes"/>Jupiters orientire, und meine Ver&#x017F;chiedenheiten der Mittagsho&#x0364;-<lb break="no"/>hen Punkt fu&#x0364;r Punkt mit denen vergleiche, welche H. <hi rendition="#g">
+                            <persName key="fidalgo_jfd">Fidalga</persName>
+                        </hi>
+                        <lb break="yes"/>bei &#x017F;einen Operationen fand, als er auf Befehl des Ko&#x0364;nigs tri-<lb break="no"/>gonometri&#x017F;che Operationen von Cumana bis Karthagena gemacht<lb break="yes"/>
+                        <pb n="976" facs="#f0005"/>
+                        <cb/> hat. Von dem Amazonenfluß giengen wir durch die Bergwerke<lb break="yes"/>von Haalgayac, (welche ja&#x0364;hrlich eine Million Pia&#x017F;ter einbringen,<lb break="yes"/>und wo das graue, &#x017F;ilberhaltige Kupfererz &#x017F;ich zu 2,065 Toi&#x017F;en<lb break="yes"/>befindet), u&#x0364;ber die Anden. Wir &#x017F;tiegen &#x017F;ie bei Truxilla herab,<lb break="yes"/>u&#x0364;ber Cascamarca, wo ich in <persName key="atahualpa">Atahualpas</persName> Palla&#x017F;t die peruviani&#x017F;chen<lb break="yes"/>Bo&#x0364;gen und Gewo&#x0364;lbe zeichnete. Von da durchzogen wir die Ein-<lb break="no"/>o&#x0364;den an der Ku&#x0364;&#x017F;te vom Su&#x0364;dmeer bis Lima, wo die Ha&#x0364;lfte des<lb break="yes"/>Jahres der Himmel mit diken Du&#x0364;n&#x017F;ten bedekt i&#x017F;t. Ich eilte, bis<lb break="yes"/>dahin zu gelangen, um den 9 Nov. 1802 den Durchgang des<lb break="yes"/>Merkurs zu beobachten. (Hier folgen zwei Seiten a&#x017F;tronomi&#x017F;cher<lb break="yes" />Berechnungen.)</p>
+                    <lb break="yes"/>
+                    <p>Un&#x017F;re Sammlungen von Pflanzen und von Zeichnungen zur<lb break="yes" />Zergliederung der Ge&#x017F;chlechter, nach den Ideen, die mir der B.<lb break="yes"/>
+                        <persName key="jussieu_ald">Ju&#x017F;&#x017F;ieu</persName> bei un&#x017F;ern Unterredungen in der naturhi&#x017F;tori&#x017F;chen Ge&#x017F;ell-<lb break="no"/>&#x017F;chaft an die Hand gegeben hatte, &#x017F;ind durch die Reichthu&#x0364;mer,<lb break="yes"/>die wir in Quito, Loxa, am Amazonenfluß, und auf den Kor-<lb break="no"/>dilleras von Peru gefunden haben, &#x017F;ehr vermehrt worden. Wir<lb break="yes"/>haben viele Pflanzen, die <persName key="jussieu_jd">Jo&#x017F;eph Ju&#x017F;&#x017F;ieu</persName> &#x017F;ah, gefunden, zum<lb break="yes"/>Bei&#x017F;piel den <hi rendition="#g">Llogue <hi rendition="#aq">affinis Guillajac,</hi>
+                        </hi> und andere. Wir<lb break="yes"/>haben eine neue Art von <hi rendition="#g">He&#x017F;peris,</hi> die allerlieb&#x017F;t i&#x017F;t, einige<lb break="yes"/>
+                        <hi rendition="#g">Collatix,</hi> ver&#x017F;chiedene <hi rendition="#g" >Pa&#x017F;&#x017F;ifloras</hi> und <hi rendition="#aq">
+                            <hi rendition="#g">Loranthus,</hi>
+                        </hi>
+                        <lb break="yes"/>als Ba&#x0364;ume von 60 Schuh. Be&#x017F;onders &#x017F;ind wir an Palmen und<lb break="yes"/>grasartigen Pflanzen &#x017F;ehr reich, woru&#x0364;ber der B. <persName key="bonpland_ajag" >Bompland</persName> eine<lb break="yes"/>ausfu&#x0364;hrliche Abhandlung ge&#x017F;chrieben hat. Wir haben jezt 3,784<lb break="yes" />&#x017F;ehr voll&#x017F;ta&#x0364;ndige lateini&#x017F;che Be&#x017F;chreibungen, und beinahe ein Drit-<lb break="no"/>theil Pflanzen in den Herbarien, die wir nicht Zeit hatten, zu<lb break="yes" />be&#x017F;chreiben. Es gibt keine Pflanze, von der wir nicht den Fel&#x017F;en<lb break="yes"/>nennen ko&#x0364;nnten, wo &#x017F;ie wuchs, und nach Toi&#x017F;en geme&#x017F;&#x017F;en, die<lb break="yes" />Ho&#x0364;he, auf welcher &#x017F;ie &#x017F;ich befindet, &#x017F;o daß die Geographie der<lb break="yes"/>Pflanzen in un&#x017F;ern Hand&#x017F;chriften &#x017F;ehr genaue Materialien findet.<lb break="yes" />Um un&#x017F;re Sache recht gut zu machen, haben der B. <persName key="bonpland_ajag">Bompland</persName>
+                        <lb break="yes"/>und ich, jeder fu&#x0364;r &#x017F;ich, die&#x017F;elbe Pflanze be&#x017F;chrieben; allein zwei<lb break="yes"/>Drittheile und mehr von den Be&#x017F;chreibungen verdankt man ein-<lb break="no"/>zig dem Fleiß des B. <persName key="bonpland_ajag">Bompland</persName>, de&#x017F;&#x017F;en Eifer und Ergebenheit<lb break="yes"/>fu&#x0364;r den Fortgang der Wi&#x017F;&#x017F;en&#x017F;chaften nicht genug zu bewundern<lb break="yes"/>i&#x017F;t. <persName key="jussieu_ald" >Ju&#x017F;&#x017F;ieu</persName>, <persName key="desfontaines_rl" >Desfontaines</persName> und <persName key="lamarck_jbpadmd" >Lamark</persName> haben einen Schu&#x0364;ler in<lb break="yes"/>ihm gebildet, der &#x017F;ich &#x017F;ehr auszeichnen wird.</p>
+                    <lb break="yes"/>
+                    <p>Wir haben un&#x017F;re Herbarien mit denen des H. Mutis vergli-<lb break="no" />chen, und viele Bu&#x0364;cher in der ungeheuern Bibliothek die&#x017F;es gro&#x017F;en<lb break="yes"/>Mannes zu Rathe gezogen. Wir &#x017F;ind u&#x0364;berzeugt, viele neue Ge-<lb break="no"/>&#x017F;chlechter und Arten zu haben. Allein es wird viel Zeit und Mu&#x0364;he<lb break="yes" />ko&#x017F;ten, um zu ent&#x017F;cheiden, was wu&#x0364;rklich neu i&#x017F;t. Wir bringen<lb break="yes"/>auch eine &#x017F;chotenartige Sub&#x017F;tanz mit; &#x017F;ie gleicht dem o&#x017F;tindi&#x017F;chen<lb break="yes"/>
+                        <hi rendition="#g">Tabaxir,</hi> welchen H. Mutis analy&#x017F;irt hat. Sie findet &#x017F;ich in<lb break="yes"/>den A&#x017F;tknoten einer rie&#x017F;enma&#x0364;&#x017F;igen Grasart, die man mit dem<lb break="yes" />Bambus verwech&#x017F;elt, de&#x017F;&#x017F;en Blume aber von <persName key="schreber_jcdev">Schrebers</persName>
+                        <hi rendition="#g">Bam-<lb break="no"/>bu&#x017F;a</hi> abweicht. Ich weiß nicht, ob der B. <persName key="fourcroy_afd">Fourcroix</persName> die Milch<lb break="yes"/>der Kuhpflanze, wie die Indier die&#x017F;en Baum nennen, erhalten<lb break="yes"/>hat. Es i&#x017F;t eine Milch, welche mir durch Hu&#x0364;lfe der Salpeter-<lb break="no"/>&#x017F;a&#x0364;ure einen bal&#x017F;ami&#x017F;ch riechenden Caoutchouk gegeben hat, die<lb break="yes"/>aber, &#x017F;tatt fre&#x017F;&#x017F;end und &#x017F;cha&#x0364;dlich zu &#x017F;eyn, wie alle andre Pflan-<lb break="no" />zenmilch, nahrhaft und angenehm zu trinken i&#x017F;t. Wir fanden<lb break="yes"/>&#x017F;ie auf dem Wege nach dem Oronoko in einer Pflanzung, wo<lb break="yes"/>&#x017F;ie die Neger viel trinken. Ich habe auch an den B. Four-<lb break="no"/>croix u&#x0364;ber Guadeloupe, und an Sir <persName key="banks_j">Jo&#x017F;eph Banks</persName> u&#x0364;ber die Tri-<lb break="no"/>nidad, un&#x017F;er <hi rendition="#g" >Dapi&#x017F;che,</hi> oder den wei&#x017F;&#x017F;en oxygenirten Caout-<lb break="no"/>
+                        <cb/> chouk ge&#x017F;chikt, welchen ein Baum in den Wa&#x0364;ldern von <hi rendition="#g">Pimi-<lb break="no"/>chin,</hi> in dem entfernte&#x017F;ten Winkel der Welt, bei den Quellen des<lb break="yes" />Rio Negro, durch &#x017F;eine Wurzeln aus&#x017F;chwizt.</p>
+                    <lb break="yes"/>
+                    <p>Endlich nach dreija&#x0364;hrigem Warten i&#x017F;t uns der himmli&#x017F;che Me-<lb break="no"/>chanismus von <persName key="laplace_ps" >Laplace</persName> im November 1802 zugekommen. Ich<lb break="yes" />habe mich mit grenzenlo&#x017F;em Heißhunger daru&#x0364;ber her gewor-<lb break="no"/>fen.......</p>
+                    <lb break="yes"/>
+                    <p>Die&#x017F;es Buch hat mich aufs neue vermocht, meine Unter&#x017F;u-<lb break="no"/>chungen u&#x0364;ber die atmospha&#x0364;ri&#x017F;che Ebbe und Fluth, woru&#x0364;ber ich<lb break="yes"/>im Jahre 1799 zu Cumana eine Menge Beobachtungen an&#x017F;tellte,<lb break="yes"/>wieder fortzu&#x017F;ezen; ich &#x017F;prach davon in meinem Brief an den B.<lb break="yes"/>
+                        <persName key="lalande_jjlfd">Lalande</persName>. <persName key="godin_l" >Godin</persName> hat etwas davon gewußt, ohne die Ur&#x017F;ache anzu-<lb break="no"/>geben. <persName key="mosely_01">
+                            <hi rendition="#g">Mo&#x017F;ely</hi>
+                        </persName> &#x017F;agt fa&#x0364;l&#x017F;chlich in einer Abhandlung u&#x0364;ber die<lb break="yes"/>Krankheiten unter den Wendezirkeln, daß der Barometer alsdann<lb break="yes"/>das Maximum erreicht, wenn die Sonne in der Mittagsho&#x0364;he<lb break="yes"/>&#x017F;teht, das i&#x017F;t &#x017F;ehr fal&#x017F;ch; das Maximum findet &#x017F;tatt in der 21 und<lb break="yes"/>der 11 Stunde, das Minimum um 4 Uhr und 15 1&#x222B;2 Uhr. Der<lb break="yes"/>Mond &#x017F;cheint nicht &#x017F;owohl die Epochen als die Quantita&#x0364;t der<lb break="yes"/>Ho&#x0364;hen zu vera&#x0364;ndern. Ich beobachte jezt vorzu&#x0364;glich die Tage der<lb break="yes"/>Oppo&#x017F;ition und Konjunktion, und da mein Barometer die Zwan-<lb break="no"/>zigtheile einer Linie angibt, &#x017F;o zweifle ich nicht, daß der B. <persName key="laplace_ps">La-<lb break="no" />place</persName>, de&#x017F;&#x017F;en Genie die Ebbe und Fluth des Meers geba&#x0364;ndigt<lb break="yes"/>hat, nicht auch die Ge&#x017F;eze der Ebbe und Fluth der Luft entdeken<lb break="yes"/>werde, &#x017F;o bald ich ihm nur einige tau&#x017F;end Beobachtungen werde<lb break="yes" />vorgelegt haben.</p>
+                    <lb break="yes"/>
+                    <p>Sehen Sie &#x017F;elb&#x017F;t, wie merkwu&#x0364;rdig die Er&#x017F;cheinung i&#x017F;t.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell cols="3"/>
+                            <cell>
+                                <hi rendition="#aq">p.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#aq">lig.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>24 November</cell>
+                            <cell>10 Uhr</cell>
+                            <cell>Morgens</cell>
+                            <cell>27 .</cell>
+                            <cell>5 . 75</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>12 . 45</cell>
+                            <cell cols="2">M. . . .</cell>
+                            <cell>5 . 45</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>2 . 0</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 25</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>3 . 30</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 10</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>4 . 45</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>5 . 30</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 10</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>7 . 0</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 60</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>8 . 0</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 60</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>9 . 0</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 65</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>&#x2014; &#x2014; &#x2014; &#x2014; &#x2014;</cell>
+                            <cell>10 . 30</cell>
+                            <cell cols="2">. . . .</cell>
+                            <cell>5 . 65</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Zugleich beobachte ich den Hygrometer und Thermometer. Mein<lb break="yes" />Barometer i&#x017F;t ein engli&#x017F;cher.</p>
+                    <lb break="yes"/>
+                    <p>Ich gehe aber zu weit. Ich wollte meinem lieben Freund<lb break="yes"/>
+                        <persName key="pommard_01">Pommard</persName> &#x017F;chreiben; die Zeit fehlt mir, er liebt mich und wird<lb break="yes"/>mich ent&#x017F;chuldigen.</p>
+                    <lb break="yes"/>
+                    <p>Ich gehe nicht nach den Philippinen. Ich gehe u&#x0364;ber <placeName key="acapulco">Akapulko</placeName>,<lb break="yes"/>Mexiko, Havannah, nach Europa, wo ich Sie, wie ich hoffe, im<lb break="yes"/>September oder Oktober 1803 zu Paris umarmen werde. Im<lb break="yes"/>Februar werde ich in Mexiko &#x017F;eyn, im Julius in Havannah, denn<lb break="yes"/>ich denke an nichts als an die Manu&#x017F;cripte, die ich be&#x017F;ize, und<lb break="yes"/>dem Publikum mittheilen will. O wie wu&#x0364;n&#x017F;che ich in Paris zu<lb break="yes"/>&#x017F;eyn!</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

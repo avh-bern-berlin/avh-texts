@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/132876787">
+                        <surname>Welge</surname>
+                        <forename>Jobst</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.3.2" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.2.2" when="2018-09-11" who="#wernicke_nd">Preparation for printed edition: added @break to lb-element. <note type="remarkRevision">Bei n="1.1.0" vergessen.</note>
+                </change>
+                <change n="1.1.2" when="2018-08-31" who="#wernicke_nd">Text constitution. <note type="remarkRevision">Nachführen der neutranskribierten Lücken abgeschlossen.</note>
+                </change>
+                <change n="1.1.1" when="2018-08-30" who="#baertschi_s">Text constitution. <note type="remarkRevision">Nachführen der neutranskribierten Lücken.</note>
+                </change>
+                <change n="1.1.1" when="2018-10-10" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung für Verlag.</note>
+                </change>
+                <change n="1.1.0" when="2018-08-14" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="3" facs="#f0001"/>
+            <lb break="yes"/>
+            <div n="1">
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">Prefacion del Editor.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Mr. <hi rendition="#i">Peltier</hi> en el N. 262 del <hi rendition="#i" >Ambigú</hi> que<lb break="yes"/>publíca en Londres ha insertado un extrac-<lb break="no"/>to del <hi rendition="#i">Quadro físico de las regiones equa-<lb break="no"/>toriales del célebre Humboldt.</hi> El objeto de<lb break="yes"/>esta obra son nuestras cosas, y somos noso-<lb break="no"/>tros mismos. El interez es grande, y tanto ma-<lb break="no" />yor quanto pasarán muchos años antes que po-<lb break="no"/>damos ver los originales. Esperamos que nues-<lb break="no"/>tros subscriptores leeran con placer los juicios<lb break="yes"/>que formó de nuestros paises, de nuestras pro-<lb break="no"/>ducciones, y de nuestra ilustracion ese <choice>
+                            <sic>Viagero</sic>
+                            <corr type="editorial">Viagero.</corr>
+                        </choice>
+                    </p>
+                    <lb break="yes"/>
+                    <p>El extracto de Mr. <hi rendition="#i">Peltier</hi> es bastan-<lb break="no" />te largo, y no cabe en la extencion que he-<lb break="no"/>mos dado à las Memorias del Semanario. <choice>
+                            <sic>Por.</sic>
+                            <corr type="editorial">Por</corr>
+                        </choice>
+                        <lb break="yes"/>esto lo hemos dividido en dos partes: la pri-<lb break="no" />mera abraza desde su salida de Francia has-<lb break="no"/>ta Lima: la segunda desde esta Capital del<lb break="yes"/>Perú hasta su regreso à Europa.</p>
+                    <lb break="yes"/>
+                    <p>Hemos añadido algunas notas y algu-<lb break="no"/>nas observaciones que son el fruto de nues-<lb break="no"/>tros viages à la Provincia de Quito. En nin-<lb break="no"/>guna parte están mejor situadas que en pa-<lb break="no"/>ralelo con las de Humboldt. Las medidas in-<lb break="no" />glesas, y grados del Termómetro de <choice>
+                            <sic>Farene-<lb break="no"/>heit</sic>
+                            <corr type="editorial">Fahren-<lb break="no"/>heit</corr>
+                        </choice> las hemos reducido à la vara de Burgos,<lb break="yes"/>y al Termómetro centrígrado que es el que<lb break="yes"/>hoy se usa como mas acomodado al cálculo.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="4" facs="#f0002"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">Quadro físico<choice>
+                                <sic>.</sic>
+                                <corr type="editorial"/>
+                            </choice>
+                        </hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">de las regiones equatoriales</hi>
+                        <lb break="yes"/>(<hi rendition="#i">
+                            <hi rendition="#k">Extracto</hi>
+                        </hi> 1°.)</head>
+                    <lb break="yes"/>
+                    <p>Ningun nombre hay mas célebre que el de<lb break="yes"/>
+                        <hi rendition="#i">Humboldt</hi> entre los sabios que cultiban las<lb break="yes"/>Ciencias fisicas y geográficas. Visitando este<lb break="yes"/>Viagero ilustrado las regiones del Nuevo Mun-<lb break="no" />do que estan situadas dentro de los Trópi-<lb break="no"/>cos ha manifestado un valor y una constan-<lb break="no"/>cia à que jamás ha llegado ninguno de los que<lb break="yes"/>le han precedido. Pocos han reunido como<lb break="yes"/>él las qualidades propias para empresas tan<lb break="yes"/>difíciles. Sabio fisico, profundo químico, pe-<lb break="no"/>netrado del ardiente deseo de los descubri-<lb break="no" />mientos, y dotado de todos los medios de<lb break="yes"/>satisfacer esta noble emulacion, aspirando à<lb break="yes"/>hacer, glorioso su nombre por los exfuer-<lb break="no"/>zos mas útiles y mas generosos, ha lle-<lb break="no"/>vado sus indagaciones à todos los ramos<lb break="yes"/>del orden fisico y del orden social. La ma-<lb break="no"/>za de muestras curiosas que ha recogido,<lb break="yes"/>y las colecciones magníficas que ha traido<lb break="yes"/>para servir à los progresos de la Ciencia exê-<lb break="no"/>den a todos los resuldados de quantos han<lb break="yes" />emprendido la misma carrera. Humboldt ha<lb break="yes"/>derramado nuevas luces sobre la historia de<lb break="yes"/>nuestra especie, ensanchando los límites de la<lb break="yes"/>
+                        <pb n="5" facs="#f0003"/> Geografía matemática, y ha añadido una infini-<lb break="no"/>dad de objetos nuevos á los tesoros de la Botáni-<lb break="no"/>ca, de la Zoología y de la Mineralogía. Estas ad-<lb break="no"/>quisiciones preciosas, clacificadas en los reynos<lb break="yes"/>à que pertenecen, se presentarán al público en<lb break="yes"/>una obra que reuna á todo el luxo typográ-<lb break="no" />fico el del diseño. Pero la impasiencia de aquel<lb break="yes"/>antisipa los progresos tardíos del Gravador y<lb break="yes"/>del Impresor. Algunos fracmentos de esta<lb break="yes"/>grande composicion han aparecido ya; pero<lb break="yes"/>sin orden y sin manifestar las relaciones que<lb break="yes"/>tienen entre sí. Aun no se ha comenzado la<lb break="yes" />impresion de la relacion de viage que debe<lb break="yes"/>ocupar cinco volúmenes en quarto. Tres años<lb break="yes"/>se han gastado en completar lo que tenemos<lb break="yes"/>à la vista, y tal vez se necesitarán otros tan-<lb break="no"/>tos para publicar lo que resta.</p>
+                    <lb break="yes"/>
+                    <p>Humboldt nació en Prusia en donde tie-<lb break="no"/>ne vastas propiedades, y cuyas rentas ha des-<lb break="no"/>tinado à los descubrimientos útiles para las<lb break="yes"/>Ciencias y para la humanidad. A los 21 años<lb break="yes"/>comenzó sus viages por Europa, <choice>
+                            <sic>y los</sic>
+                            <corr type="editorial">y a los</corr>
+                        </choice> 27<lb break="yes"/>habia visitado ya la Alémania, Polonia, Fran-<lb break="no"/>cia, la Suisa, una parte de la Inglaterra, la<lb break="yes"/>Italia, la Hungría, y la <choice>
+                            <sic>España</sic>
+                            <corr type="editorial">España.</corr>
+                        </choice>
+                        <choice>
+                            <sic>Restitituido</sic>
+                            <corr type="editorial">Restituido</corr>
+                        </choice>
+                        <lb break="yes"/>à Paris en 1784 <note place="foot" n="(a)">
+                            <hi rendition="#i">El original dice</hi> 1748: <hi rendition="#i">en esta época no<lb break="yes"/>habia nacido Humboldt, y creemos sea</hi> 1784.</note> fué invitado por los Di-<lb break="no"/>
+                        <pb n="6" facs="#f0004"/>rectores del Museo de Historia Natural à<lb break="yes"/>acompañar al Capitan Baudin en su viage<lb break="yes" />alrededor del Mundo. Pero este proyecto se<lb break="yes"/>abandonó con motivo de la renovacion de las<lb break="yes"/>hostilidades con la Austria.</p>
+                    <lb break="yes"/>
+                    <p>Humboldt pensó entonces sériamente<lb break="yes"/>en executar el plan que habia formado mu-<lb break="no"/>cho antes de vicitar el Oriente como filóso-<lb break="no"/>fo. Deseaba para esto reunirse à la expedi-<lb break="no"/>cion que habia partido para Egyto, de donde<lb break="yes" />se prometía penetrar en la Arabia y atrave-<lb break="no"/>sando el golfo Pérsico y recorrer los estable-<lb break="no"/>simientos ingléses de la India. Pero la situa-<lb break="no"/>cion de la Francia despues de la batalla del<lb break="yes"/>Nilo era cada dia mas crítica. Las poten-<lb break="no"/>cias berberiscas le hacian entonces la guer-<lb break="no" />ra y la navegacion del Mediterraneo era muy<lb break="yes"/>peligrosa. Humboldt permaneció dos meses<lb break="yes"/>en Marcella con la esperanza de obtener pa-<lb break="no"/>so à bordo de una fragata sueca que debia con-<lb break="no"/>ducir à Argel à un Consul de aquella nacion.<lb break="yes"/>Su pasiencia se agotó, y penso en restituirse<lb break="yes"/>à España creyendo encontrar aquí los medios<lb break="yes" />de pasar prontamente à Berbería. Llevaba<lb break="yes"/>consigo una coleccion conciderable de instru-<lb break="no"/>mentos de Física y de Astronomía que ha-<lb break="no"/>bia comprado en Inglaterra y en Francia.</p>
+                    <lb break="yes"/>
+                    <p>Una <choice>
+                            <sic>prespectiva</sic>
+                            <corr type="editorial">perspectiva</corr>
+                        </choice> mas grande se abrió<lb break="yes"/>
+                        <pb n="7" facs="#f0005"/> bien pronto à sus ojos. Despues de recidir<lb break="yes"/>algunos meses en Madrid obtubo de esta Cor-<lb break="no" />te, del modo mas lisongero y liberal, el permi-<lb break="no"/>so de visitar sus colonias del Nuevo Mundo.<lb break="yes"/>Al instante Ilamó de Paris à su amigo Bom-<lb break="no"/>pland, infatigable en la carrera de los descu-<lb break="no"/>brimientos, y dotado de conocimientos pro-<lb break="no"/>fundos en la Botánica y en la <choice>
+                            <sic>Zoología</sic>
+                            <corr type="editorial">Zoología.</corr>
+                        </choice> Sin<lb break="yes"/>pérdida de tiempo se embarcaron en la Co-<lb break="no"/>ruña, y despues de haber tocado en las Islas<lb break="yes" />Canarias, en donde escalaron el Pico de Teyde<lb break="yes"/>
+                        <note place="foot" n="(b)">
+                            <hi rendition="#i">Humboldt midió este Pico célebre y<lb break="yes" />será agradable à los lectores ver el resulta-<lb break="no"/>do de esta medida y compararlo con los que<lb break="yes"/>obtubieron antes otros Viageros y observadores.</hi>
+                            <lb break="yes"/>
+                            <list>
+                                <item>
+                                    <hi rendition="#i">Segun el P. Feuillee el Pico tiene</hi> .. 5163 <hi rendition="#i">vrs.</hi>
+                                </item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Hernandez</hi> ........... 6202</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Heberdeen</hi> ............ 5474</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Casini</hi> ............... 6122</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Bouguer</hi> .............. 4808</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Verdum primera</hi> ...... 4064</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Verdum segunda</hi> ...... 4442</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">Humboldt</hi> ........... 4473</item>
+                            </list>
+                        </note>, para visitar su crater, continuaron su<lb break="yes"/>viage y arrivaron por el mes de Julio à Cu-<lb break="no"/>maná en América Meridional. El resto del año<lb break="yes"/>lo emplearon en recorrer la costa de Paria,<lb break="yes"/>
+                        <pb n="8" facs="#f0006"/> las Misiones de los Chaymas, y las Provin-<lb break="no"/>cias de la Nueva Andalucía, nueva Barcelo-<lb break="no" />na, Venezuela, y la Guayana <choice>
+                            <sic>española</sic>
+                            <corr type="editorial">española.</corr>
+                        </choice> De-<lb break="no"/>xando à Caracas en 1800, Humboldt y Bom-<lb break="no"/>pand internaron en los valles deliciosos de<lb break="yes" />Aragua; visitaron el gran lago de Valereya,<lb break="yes"/>cuya vista recordó à los Viageros el de Gine-<lb break="no"/>bra; pero con sus orillas hermoseadas con la<lb break="yes"/>pomposa vegetacion que embellese los pai-<lb break="no"/>ses situados dentro de los Trópicos. En Cu-<lb break="no"/>ra, una de las pequeñas islas que se hallan<lb break="yes" />sobre el lago, hallaron que se cultiva una es-<lb break="no"/>pecie de <hi rendition="#i">Solomens</hi>
+                        <note place="foot" n="(c)">¿<hi rendition="#i">Serà alguna especie de</hi> Soulamea?</note> que produce un fru-<lb break="no"/>to sano y agradable. Despues atravesaron los<lb break="yes"/>famosos Llanos, ese inmenso número de de-<lb break="no"/>siertos que se succeden unos à otros, en donde<lb break="yes"/>se recorren 200 millas sobre un terreno es-<lb break="no" />teril, enteramente destituido de fuentes, de<lb break="yes"/>atroyos, y cubierto de una yerba seca. Mu-<lb break="no"/>chos dias viajaron sobre este pais desolado sin<lb break="yes"/>hallar un solo arbusto, ni una sola cabaña,<lb break="yes"/>sufriendo un calor de 43,3 à 46,1 gr. del Ter-<lb break="no"/>mómetro centígrado. De San Fernando, si-<lb break="no"/>tuado en las orillas del Apure, entraron en el<lb break="yes"/>Orinoco por los 7 gr. de latitud septentrio-<lb break="no" />nal, y navegando sobre su vasto lecho pasa-<lb break="no"/>
+                        <pb n="9" facs="#f0007"/> ron cerca de las cataratas de Marpurés y de<lb break="yes"/>Aturés, llegaron à la confluencia del Guaviari<lb break="yes"/>desde donde subieron los pequeños rios de<lb break="yes" />Atapo, Jaumine, y Temi<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice> De las Misiones de<lb break="yes"/>Sarita pasaron por tierra à las fuentes del fa-<lb break="no"/>moso Rio-Negro, en donde encontraron cer-<lb break="no"/>ca de treinta Indios ocupados en trasportar<lb break="yes" />canoas al traves de la selva y conducirlas al<lb break="yes"/>embarcadero de Pemichin. Nuestros Viageros<lb break="yes"/>descendieron despues al fuerte de San Carlos<lb break="yes"/>siguiendo las corrientes del Rio-Negro<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice> De<lb break="yes"/>este punto regresaron al Orinoco por el Casi-<lb break="no"/>quiari, y de aquí à la Mision de Esmeraldas.<lb break="yes"/>Los Guaycos, y las tribus dispersas de Indios<lb break="yes"/>que encontraron les impidieron tocar en las<lb break="yes" />cabeceras del Orinoco. Estos Guaycos tienen<lb break="yes"/>la tez clara, estatura pequeña y unas incli-<lb break="no"/>naciones sanguinarias y guerreras. Comen-<lb break="no"/>zaron à baxar este rio, con una navegacion<lb break="yes"/>penosa y desagradable. De dia sufrian la<lb break="yes"/>falta de proviciones y por la noche los<lb break="yes" />torrentes de lluvia que caian sin interrup-<lb break="no"/>cion. Obligados à buscar abrigo y un ali-<lb break="no"/>mento miserable en las selvas, no hallaban<lb break="yes"/>otra cosa que nubes de insectos, sin atreverse<lb break="yes"/>à solicitar un alibio baxo de las aguas por que<lb break="yes"/>por todas partes los aguardaban los Crocodilos<lb break="yes"/>para devoralos. Despues de haber escapado<lb break="yes"/>
+                        <pb n="10" facs="#f0008"/> de tantos peligros, de tantos sufrimientos, y<lb break="yes"/>tambien de las exhalaciones mortíferas que<lb break="yes" />producen los rayos ardientes del Sol, volvie-<lb break="no"/>ron à Cumaná por la llanura de Cari y por<lb break="yes"/>la Mision de los Caribes. Esta es una raza de<lb break="yes"/>hombres, que puede ser la que mas se acerque à<lb break="yes"/>la de los Patagones que es la mas gigantesca y<lb break="yes"/>la mas fuerte del Mundo conocido.</p>
+                    <lb break="yes"/>
+                    <p>Pasados algunos dias, que les fúeron ne-<lb break="no"/>cesarios para recuperar sus fuerzas debilita-<lb break="no"/>das, estos Viageros se dirigieron à la Isla de<lb break="yes"/>Cuba corriendo todos los peligros y todos<lb break="yes"/>los horrores de un naufragio en esta travesia.<lb break="yes"/>Alli permanecieron tres meses. Humboldt de-<lb break="no" />terminó la longitud de Havana <note place="foot" n="(d)">
+                            <hi rendition="#i">Humboldt sitúa à la Havana en los</hi>
+                            <lb break="yes"/>84° 4′ 45″ <hi rendition="#i">al Occidente del Observatoria<lb break="yes"/>de Paris.</hi>
+                        </note>, y enseñó<lb break="yes"/>à los cultivadores de la Caña de Azucar à<lb break="yes"/>construir los hornos mas económicos para su<lb break="yes"/>preparacion<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice> Humboldt pensaba entonces pa-<lb break="no"/>sar á Vera-Cruz y marchar de aquí por Mé-<lb break="no"/>xico y Acapulco à las islas Filipinas con el fin<lb break="yes"/>de arrivar, si era posible, por Combay y Alep<lb break="yes"/>à <choice>
+                            <sic>Costantipla</sic>
+                            <corr type="editorial">Costantipla.</corr>
+                        </choice> Pero un falso rumor, en or-<lb break="no"/>den à la salida del Capitan Baudin, le obligó<lb break="yes"/>à mudar de ruta, y para evitar qualqier peli-<lb break="no"/>
+                        <pb n="11" facs="#f0009"/> gro, embió directamente à Europa sus colec-<lb break="no"/>ciones y manuscritos. En Marzo de 1801<lb break="yes"/>fletó un Buque pequeño y se hizo à la vela<lb break="yes"/>para Cartagena. Las Contínuas cálmas y las<lb break="yes"/>corrientes contrarias lo detubieron demacia-<lb break="no"/>do tiempo en el mar. La estacion estaba muy<lb break="yes"/>avansada para permitirle dirigirse à Panamá,<lb break="yes" />y por aquí à Guayaquíl ò Lima en donde<lb break="yes"/>se prometia encontrar al navegante frances.<lb break="yes"/>Este plan fué abandonado, y por otra parte<lb break="yes"/>deseando Humboldt conocer à Mutis célebre<lb break="yes"/>Naturalista Americáno, y exâminar su colec-<lb break="no" />cion sobervia, resolvió encaminarse al lugar<lb break="yes"/>de su residencia. Nuestros Viageros se inter-<lb break="no"/>naron en los bosques de Turbaco y nave-<lb break="no"/>gando el hermoso rio de la Magdalena llega-<lb break="no"/>ron à la Villa de Honda, de donde prosigien-<lb break="no"/>do su marcha por entre selvas de Melásto-<lb break="no" />mas, de Cinchonas entraron en Santafé de <choice>
+                            <sic>Bo-<lb break="no"/>gotá</sic>
+                            <corr type="editorial">Bo-<lb break="no"/>gotá,</corr>
+                        </choice> Capital del N. R. de Granada. Esta<lb break="yes"/>Ciudad está situada al pie de dos montañas<lb break="yes"/>en una bella explanada y à la elevacion de<lb break="yes"/>3143 varas castellanas <note place="foot" n="(e)" xml:id="fn1-1" next="#fn1-2">
+                            <hi rendition="#i">Una série inmensa de observaciones<lb break="yes" />barométricas hechas con el instrumento mas<lb break="yes"/>bien montado que ha visto jamas esta Ca-<lb break="no"/>pital, nos ha enseñado que Santafé está à</hi>
+                        </note> sobre el nivel del mar.<lb break="yes"/>
+                        <pb n="12" facs="#f0010"/> Estos lugares parecen haber sido formados<lb break="yes"/>para lisongear el gusto, y exâltar la imagina-<lb break="no"/>cion. Las minas de Mariquita y de Sta. Ana,<lb break="yes" />las de Zipaquirá &amp;c. situadas en sus inme-<lb break="no"/>diaciones: el puente natural de Incononso,<lb break="yes"/>compuesto de 3 fracmentos de róca que un<lb break="yes"/>temblor de tierra presipitó, es un objeto bien<lb break="yes"/>notable: y la cascada magnífica de Tequen-<lb break="no"/>dáma que se presipita de una altura de 212<lb break="yes" />varas <note place="foot" n="(f)" xml:id="fn2-1" next="#fn2-2">
+                            <hi rendition="#i">Tenemos muchas descripciones de la ca-<lb break="no" />tarata de Tequendama; pero casi todas exâ-<lb break="no"/>geradas. He aquí lo que nosotros hemos es-<lb break="no"/>crito en la</hi> Relacion de nuestros viages den-<lb break="no"/>tro del Reyno. „<hi rendition="#i">El Bogotá, despues de ha-<lb break="no"/>„ber recorrido con paso lento y perezoso la es-<lb break="no"/>„paciosa llanura de su nombre, vuelve de re-<lb break="no"/>„pente su curso hácia Occidente y comien-<lb break="no"/>„za à atravesar por entre el cordon de <choice>
+                                    <sic>mon-<lb break="no"/>„ñas</sic>
+                                    <corr type="editorial">mon-<lb break="no"/>„tañas</corr>
+                                </choice> que están al Sudeste de Santafé. Aquí<lb break="yes" />„dexando esa lentitud melancólica accelera<lb break="yes"/>„su páso, forma ólas, murmúllo, espumas.<lb break="yes"/>„Rodándo sobre un plano inclinado, au-</hi>
+                        </note> presenta uno de los espectáculos<lb break="yes"/>
+                        <note place="foot" n="(e)" xml:id="fn1-2" prev="#fn1-1">3216,6 <hi rendition="#i">varas de Burgos sobre el mar. Vease<lb break="yes" />el Semanario del N. R. de Granada para</hi>
+                            <lb break="yes"/>1809. <hi rendition="#i">N.</hi> 47.</note>
+                        <lb break="yes"/>
+                        <pb n="13" facs="#f0011"/> mas grandes de la Naturaleza.</p>
+                    <lb break="yes"/>
+                    <p>Aunque la estacion de las lluvias prose-<lb break="no"/>
+                        <note place="foot" n="(f)" xml:id="fn2-2" prev="#fn2-1" next="#fn2-3">
+                            <hi rendition="#i">„menta por momentos su velosidad. Cor-<lb break="no" />„rientes impetuosas, golpes contra las rócas,<lb break="yes" />„saltos, ruido magestuoso, suceden al si-<lb break="no"/>„lencio, y à la <choice>
+                                    <sic>trnquilidad</sic>
+                                    <corr type="editorial">tranquilidad</corr>
+                                </choice>. En la orilla<lb break="yes"/>„del pricipicio todo el Bogotá se lanza<lb break="yes"/>„en maza sobre un banco de piedra; aquí<lb break="yes"/>„se estrella, aquí dá golpes <choice>
+                                    <sic>horrorsos</sic>
+                                    <corr type="editorial">horrorosos</corr>
+                                </choice>, aquí<lb break="yes"/>„forma herbores, borbotones, y se arroja en<lb break="yes"/>„forma de plumas divergentes, mas blancas<lb break="yes"/>„que la nieve, en el abysmo que lo espera.<lb break="yes"/>„En su fondo el golpe es terrible, y no se<lb break="yes"/>„puede ver sin horror. Estas plumas vis-<lb break="no"/>„tosas que formaban las aguas en el ayre,<lb break="yes"/>„se convierten de repente en lluvia, y en<lb break="yes"/>„columnas de nuves que se levantan à los<lb break="yes"/>„cielos. Parece que el Bogotá, acostumbra-<lb break="no"/>„do recorrer las regiones elevadas de los<lb break="yes"/>„Andes, ha descendido à pesar suyo à esta<lb break="yes"/>„profundidad, y quiere orgulloso elevarse<lb break="yes"/>„otra vez en forma de vapores.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">Las margenes del Bogotá, desde<lb break="yes"/>„que entra en la garganta de Tequenda-<lb break="no"/>„ma, están hermoseadas con arbustos y<lb break="yes" />„tambien con árboles corpulentos. Las vis-<lb break="no" />„tosas</hi> Beffarias resinosa <hi rendition="#i">y</hi> urens, <hi rendition="#i">la Melas-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="14" facs="#f0012"/> gia. <choice>
+                            <sic>Huboldt</sic>
+                            <corr type="editorial">Humboldt</corr>
+                        </choice> y <choice>
+                            <sic>Bomplad</sic>
+                            <corr type="editorial">Bompland</corr>
+                        </choice> salieron para Quito en<lb break="yes"/>Setiembre de 1801. Atravesaron los Andes de<lb break="yes"/>
+                        <note place="foot" n="(f)" xml:id="fn2-3" prev="#fn2-2" next="#fn2-4">
+                            <hi rendition="#i">„tomas, la Cuphea.... esmaltan esos luga-<lb break="no"/>„res deliciosos que ponen à la sombra el<lb break="yes"/>„Roble, las Aralias y otros <choice>
+                                    <sic>muchos</sic>
+                                    <corr type="editorial">muchos.</corr>
+                                </choice> El pun-<lb break="no"/>„to mas alto de la catarata, aquel de don-<lb break="no"/>„de se presipitan las aguas, está</hi> 312 <hi rendition="#i">varas<lb break="yes"/>„mas baxo que el nivel de la explanada de<lb break="yes"/>„Bogotá y esto basta para comenzar à sen-<lb break="no"/>„tir la mas dulce temperatura. A la de-<lb break="no"/>„recha y à la izquierda se ven grandes ban-<lb break="no"/>„cos horizontáles de piedra tajados á plomo<lb break="yes"/>„y coronados de una selva espesa. Quan-<lb break="no"/>„do los dias son cerenos, y el Sol llega<lb break="yes"/>„de los</hi> 45 <hi rendition="#i">à los</hi> 60 <hi rendition="#i">grados de altura sobre<lb break="yes"/>„el horizonte, del lado del Oriente, el ojo del<lb break="yes" />„espectador queda colocado entre este as-<lb break="no"/>„tro y la lluvia que forman las aguas al<lb break="yes"/>„caer. Entonces percibe muchos iris con-<lb break="no"/>„centricos baxo de sus pies, que mudan de<lb break="yes"/>„lugar conforme se va levantando el astro<lb break="yes"/>„del dia.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">La cascada no se puede ver de<lb break="yes"/>„frente, y es preciso contentarse con obser-<lb break="no"/>„varla de arriba à baxo. Por el lado del<lb break="yes"/>„Norte ofrece el terreno un acceso mas fácil<lb break="yes"/>„y mas cómodo. Aqui hay un peque-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="15" facs="#f0013"/> Quindío, que no son otra cosa que una cadena<lb break="yes"/>
+                        <note place="foot" n="(f)" xml:id="fn2-4" prev="#fn2-3" next="#fn2-5">
+                            <hi rendition="#i">„ño plano horizontal de piedra al nivel mis-<lb break="no"/>„mo del punto en que presipitan las aguas,<lb break="yes"/>„y desde este lugar es que los curiosos y<lb break="yes"/>„observadores han visto esta célebre cata-<lb break="no"/>„rata.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">Quando se mira por la primera vez la<lb break="yes"/>„cascàda de Tequendáma hace la mas pro-<lb break="no"/>„funda impresion sobre el espíritu del ob-<lb break="no"/>„servador. Todos quedan sorprendidos y<lb break="yes"/>„como atónitos. Los ojos fixos, los párpados<lb break="yes"/>„extendidos, arrugado el entre cejo, y una<lb break="yes"/>„ligéra sonrríza manifiestan claramente<lb break="yes"/>„las sensaciones del alma.„ El placer y el<lb break="yes"/>horror se pintan sin equivocacion sobre to-<lb break="no"/>dos los semblantes. Parece que la Natura-<lb break="no"/>leza se ha complacido en mezclar la ma-<lb break="no"/>gestad y la belleza con el espanto y con el<lb break="yes"/>miedo en esta obra maestra de sus manos.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">Nosotros no estamos acostumbrados<lb break="yes"/>„à ver hácia abajo de alturas eminentes<lb break="yes"/>„è incurrimos, sin pensarlo, en una ilucion.<lb break="yes"/>„Siempre nos parecen mayores las eleva-<lb break="no"/>„ciones quando vemos para abaxo, que quan-<lb break="no"/>„do las miramos alrevez. Una torre, por<lb break="yes"/>„exemplo, nos parece de</hi> 30 <hi rendition="#i" >ò</hi> 40 <hi rendition="#i">varas quan-<lb break="no"/>„do la miramos desde su base; pero si su-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="16" facs="#f0014"/> de montañas cubiertas en parte de nieves, y en<lb break="yes"/>
+                        <note place="foot" n="(f)" xml:id="fn2-5" prev="#fn2-4" next="#fn2-6">
+                            <hi rendition="#i">„bimos à su parte. superior nos creemos á</hi>
+                            <lb break="yes"/>„60 <hi rendition="#i">ò à</hi> 80 <hi rendition="#i" >varas de altura. Esta ilucion<lb break="yes"/>„nace de los mismos principios que el au-<lb break="no"/>„mento aparente del diametro de la Luna<lb break="yes"/>„y del Sol quando están inmediatos al ho-<lb break="no"/>„rizonte. El profundo Malebranche ha de-<lb break="no"/>„mostrado las causas, y nosotros creemos<lb break="yes"/>„que exîsten las mismas en el caso de la<lb break="yes"/>„catarata de Temquendama. Este es el<lb break="yes"/>„<choice>
+                                    <sic>origun</sic>
+                                    <corr type="editorial">origen</corr>
+                                </choice> de tantas exâgeraciones sobre su<lb break="yes"/>„altura. No ha faltado escritor que le dé</hi>
+                            <lb break="yes"/>„media legua <hi rendition="#i">de elevacion; pero, como dice<lb break="yes"/>„Bouger, es preciso ser muy circunspecto<lb break="yes"/>„en el uso de la palabra</hi> legua <hi rendition="#i">quando se<lb break="yes"/>„trata de <choice>
+                                    <sic>alturaas</sic>
+                                    <corr type="editorial">alturas</corr>
+                                </choice>. Si se repiten las visi-<lb break="no"/>„tas á Tequendama, si se mira esta pro-<lb break="no"/>„fundidad por intervalos y con un ánimo<lb break="yes"/>„cereno la ilucion vá poco à poco de-<lb break="no"/>„sapareciendo, y las leguas se convier-<lb break="no"/>„ten en varas. Las palmas colosales que<lb break="yes"/>„se habian visto en el fondo del abysmo ya<lb break="yes"/>„no son sino</hi> Helechos arboreos (<hi rendition="#i">Polipodios</hi>)<lb break="yes"/>
+                            <hi rendition="#i">„de</hi> 2 <hi rendition="#i">brazos de altura. Los clímas con-<lb break="no"/>„fundidos, los frutos de los países ardientes à<lb break="yes"/>„la vista de la cebada y de la Papa: el Mono,<lb break="yes"/>el Tigre en la base y el Oso y el Ciervo en la</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="17" facs="#f0015"/> donde se hallan con profucion el Estoraque,<lb break="yes"/>
+                        <note place="foot" n="(f)" xml:id="fn2-6" prev="#fn2-5" next="#fn2-7">
+                            <hi rendition="#i">„parte superior no son otra cosa que con-<lb break="no"/>„seqüencias de la primera ilucion. ¿Cómo</hi>
+                            <lb break="yes"/>„200 <hi rendition="#i">varas de altura perpendicular habian<lb break="yes"/>„de hacer variar la temperatura, la vege-<lb break="no"/>„tacion y los animales? Los rasgos que se<lb break="yes"/>„han publicado hasta aquí son hijos de una<lb break="yes"/>„imaginacion acalorada, y del deseo de em-<lb break="no"/>„bellecer las descripciones.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">Algunos han medido la altura de<lb break="yes"/>„esta cascada. El primero, que yo sepa,<lb break="yes"/>„fue el célebre Mutis. Entre los M. SS.<lb break="yes"/>„que se entregaron por el Gobierno al Ob-<lb break="no"/>„servatorio astronómico he hallado las ope-<lb break="no"/>„raciones y los resultados que obtubo este<lb break="yes"/>„Botánico. Pocos años despues de su llega-<lb break="no"/>„da à este Reyno hizo un viage de muchos<lb break="yes"/>„dias y emprendió subir, rodeado de pe-<lb break="no"/>„ligros, desde la Meza de Juan Diaz has-<lb break="no"/>„ta la base de la catarata. Las corrientes,<lb break="yes"/>„y les precipicios lo detubieron en la embo-<lb break="no"/>„cadura de la quebrada de Pobaza que está<lb break="yes"/>„poco distante de este punto. Aquí hizo una<lb break="yes"/>„observacion del Barómetro, y estimó el<lb break="yes"/>„descenso del Bogota en este corto espacio<lb break="yes"/>„de</hi> 30 <hi rendition="#i">varas. Despues se trasportó con sus<lb break="yes"/>„instrumentos à la parte superior, è hizo</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="18" facs="#f0016"/> las <choice>
+                            <sic>flrores</sic>
+                            <corr type="editorial">flores</corr>
+                        </choice> de la Pasion (Passifloras) el Bam-<lb break="no"/>
+                        <note place="foot" n="(f)" xml:id="fn2-7" prev="#fn2-6" next="#fn2-8">
+                            <hi rendition="#i">„otra observacion semejante. Con estos datos<lb break="yes"/>„deduxo que la catarata tenia</hi> 255 <hi rendition="#i">varas<lb break="yes"/>„de altura perpendicular. Es verdad que<lb break="yes"/>„Mutis no corrigié las columnas mercuria-<lb break="no"/>„les del efecto del calor, y que no tubo atencion<lb break="yes"/>„à la latitud y pesantez. Ya se vé, en esa epoca<lb break="yes"/>„no habian escrito todavía, De Luc, Trem-<lb break="no"/>„bley, Saussure, ni la Place. Mutis des-<lb break="no"/>„montaba su Barómetro à cada <choice>
+                                    <sic>aboserva-<lb break="no"/>„cion</sic>
+                                    <corr type="editorial">observa-<lb break="no"/>„cion</corr>
+                                </choice>, y lo volvia à llenar para verificar otra<lb break="yes" />„nueva: no hervia el mercurio, y lo que es mas<lb break="yes" />„notable, se contentaba con cerrar la ex-<lb break="no"/>„tremidad superior del tubo con lacre. To-<lb break="no"/>„do esto reunido debe haber producido erro-<lb break="no"/>„res en los resultados. Pero haciendo jus-<lb break="no"/>„ticia, admiramos como se acercó tanto à<lb break="yes"/>„la verdad en medio de tantas inexâctitu-<lb break="no"/>„des.</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">„Por los años de</hi> 1790 <hi rendition="#i">D. Domingo<lb break="yes"/>„Ezquiaqui Comandante de Artilleria hi-<lb break="no"/>„zo medidas mas sérias por orden del Vi-<lb break="no"/>„rey <choice>
+                                    <sic>Ezpeleta</sic>
+                                    <corr type="editorial">Ezpeleta.</corr>
+                                </choice> Esta medida se publicó en<lb break="yes"/>„el número</hi> 88 <hi rendition="#i">del antiguo</hi> Papel periódico<lb break="yes" />„de Santafé de Bogotá. <hi rendition="#i">Se dice que fué<lb break="yes"/>„hecha con zondaleza, y por consiguiente de<lb break="yes"/>„la mayor confianza. La altura perpendi-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="19" facs="#f0017"/> buc (Guadua). Trece dias se vieron obliga-<lb break="no"/>
+                        <note place="foot" n="(f)" xml:id="fn2-8" prev="#fn2-7" next="#fn2-9">
+                            <hi rendition="#i">„cular de esta catarata se halló entonces<lb break="yes"/>„de</hi> 264,5 <hi rendition="#i">varas. La profundidad del abys-<lb break="no"/>„mo <choice>
+                                    <sic>qùe</sic>
+                                    <corr type="editorial">que</corr>
+                                </choice> las aguas han excabado en la roca<lb break="yes"/>„era de</hi> 46 <hi rendition="#i">varas. Por lo demás, la medi-<lb break="no"/>„da barométrica de este Oficial de Arti-<lb break="no"/>„lleria es de todo punto monstrusa y no me-<lb break="no"/>„rece referirse.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">En</hi> 1801 <hi rendition="#i">el Baron de Humboldt,<lb break="yes"/>„que visitó estas regiones midió tambien la<lb break="yes"/>„cascada de Tequendama. Este Viagero usó<lb break="yes"/>„del descenso de los graves, y deduxo que<lb break="yes"/>„tenía</hi> 212 <hi rendition="#i">varas de altura perpendicular.<lb break="yes"/>„Este resultado lo hemos visto en los apunta-<lb break="no"/>„mientos <choice>
+                                    <sic>mauscritos</sic>
+                                    <corr type="editorial">manuscritos</corr>
+                                </choice> que dexó Humboldt à<lb break="yes"/>„varios curiosos del Reyno. Los</hi> 600 <hi rendition="#i">pies<lb break="yes" />„ingléses hacen</hi> 220 <hi rendition="#i">varas castellanas.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">En</hi> 1807 <hi rendition="#i" >quise yo tambien hacer mis<lb break="yes"/>„tentativas con esta célebre catarata.<lb break="yes"/>„Usé, como Humboldt, de descenso de los<lb break="yes"/>„graves, y hallé constantemente que estos<lb break="yes"/>„gastaban</hi> 6 <hi rendition="#i">instantes de tiempo en baxar.<lb break="yes"/>„De aquí deduxe que la cascada tenía</hi>
+                            <lb break="yes"/>„219,9 <hi rendition="#i">varas de altura.</hi>
+                            <lb break="yes"/>„<hi rendition="#i">El método de los graves incluye er-<lb break="no"/>„rores, y es de los mas delicados. Con un<lb break="yes"/>„quarto de instante que se dé de mas ò de</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="20" facs="#f0018"/> dos à marchar sobre fangos sin hallar ningun<lb break="yes"/>camino traficado. Despues de haber tocado<lb break="yes" />en Cartago, en el hermoso Valle del Cauca,<lb break="yes"/>pasaron por las cercanias del Chocó encon-<lb break="no"/>trando en su ruta mazas redondas de basalto,<lb break="yes"/>de piedra verde, y de madera focíl. De Bu-<lb break="no"/>ga se dirigieron à Popayan, Ciudad Episco-<lb break="no"/>
+                        <note place="foot" n="(f)" xml:id="fn2-9" prev="#fn2-8">
+                            <hi rendition="#i">„menos, lo <choice>
+                                    <sic>qus</sic>
+                                    <corr type="editorial">que</corr>
+                                </choice> es muy fàcil, la medida re-<lb break="no"/>„sulta monstruosamente errada. A mas<lb break="yes"/>„esto, en Tequendama no se puede asegu-<lb break="no"/>„rar el observador del momento preciso en<lb break="yes"/>„que el grave toca la parte inferior de la<lb break="yes"/>„cascada. La lluvia, las nieblas continuas<lb break="yes"/>„que se levantan impiden el que se haga por<lb break="yes"/>„este médio una medida exâcta. En con-<lb break="no"/>„cideracion à todo nos atenemos à la de<lb break="yes"/>„Esquiaqui por ser hecha con zondaleza, has-<lb break="no"/>„ta que otras la contradigan ò confirmen.</hi>
+                            <lb break="yes"/>
+                            <list>
+                                <item>
+                                    <hi rendition="#i">„Las medidas reunidas son:</hi>
+                                </item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">„Mutis</hi> .......... 255,0 <hi rendition="#i">var.</hi>
+                                </item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">„Esquiaqui</hi> ....... 264,5</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">„Humboldt. MSS</hi> .. 212,0</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">„Humboldt; Ambigú</hi> 220,0</item>
+                                <lb break="yes"/>
+                                <item>
+                                    <hi rendition="#i">„Caldas</hi> ......... <choice>
+                                        <sic>219,9</sic>
+                                        <corr type="editorial">219,9.“</corr>
+                                    </choice>
+                                </item>
+                            </list>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="21" facs="#f0019"/> pal, y cabeza de la Provincia de este nom-<lb break="no"/>bre. Está situada en una posicion agradable<lb break="yes" />y pintoresca al pie de una montaña de pór-<lb break="no"/>fido cerca de los volcanes de Puracé y Zo-<lb break="no"/>tara y en donde se disfrata de una tempera-<lb break="no"/>tura deliciosa<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice>
+                        <note place="foot" n="(*)" xml:id="fn3-1" next="#fn3-2">
+                            <hi rendition="#i">En Carta dirigida al Sr. Mutis de<lb break="yes" />Popayan con fecha 20 de Noviembre</hi> 1801<lb break="yes"/>
+                            <hi rendition="#i">dice Humboldt lo siguiente. „La situacion<lb break="yes"/>„de Popayan es deliciosa. <choice>
+                                    <sic>Uua</sic>
+                                    <corr type="editorial">Una</corr>
+                                </choice> campiña<lb break="yes"/>„risueña y variada, una bella vegetacion,<lb break="yes"/>„un clima templado, el trueno mas mages-<lb break="no"/>„tuoso que jamàs se ha oido, las pro-<lb break="no"/>„ducciones de los Trópicos á la frente<lb break="yes"/>„de las címas nevadas de los Andes, y<lb break="yes"/>„de bocas que vomitan humo y aguas su-<lb break="no"/>„furosas: esta mezela de grande y de bello,<lb break="yes"/>„estos contrastes tan diversificados, que<lb break="yes"/>„la mano del Todo Poderoso ha sabido co-<lb break="no"/>„locar en la mas perfecta armonía, llenan<lb break="yes"/>„el alma de imagenes las mas grandes y<lb break="yes"/>„las mas interesantes. Los habitantes de<lb break="yes"/>„esta Ciudad tienen una cultura mu-<lb break="no" />„cho mayor de lo que se podia esperar;<lb break="yes"/>„pero mucho menor de lo que ellos se <choice>
+                                    <sic>ima-<lb break="no"/>„ginan,</sic>
+                                    <corr type="editorial">ima-<lb break="no"/>„ginan.</corr>
+                                </choice> Aquí todos recetan por que han</hi>
+                        </note> De aquí avansaron al tra-<lb break="no"/>vez de los presipicios de Almaguer para evi-<lb break="no"/>
+                        <pb n="22" facs="#f0020"/> tar el Valle deletereo de los Patias y lle-<lb break="no"/>
+                        <note place="foot" n="(*)" xml:id="fn3-2" prev="#fn3-1" next="#fn3-3">
+                            <hi rendition="#i">„leido al</hi> Tissot, <hi rendition="#i">todos saben Física y Quí-<lb break="no"/>„mica por que han visto al</hi> Espectáculo de<lb break="yes"/>„la Naturaleza. <hi rendition="#i">Yo estoy seguro que cono-<lb break="no"/>„ces</hi> ...... <note place="foot" n="(*)">
+                                <hi rendition="#i">Suprimimos este lugar por que nos hace<lb break="yes"/>honor.</hi>
+                            </note>
+                            <hi rendition="#i">Por lo demas el amor de<lb break="yes"/>„las ciencias, de que tanto se lisongéan es-<lb break="no"/>„tos habitantes, es muy <choice>
+                                    <sic>debil</sic>
+                                    <corr type="editorial">debil.</corr>
+                                </choice> Ninguno ha<lb break="yes"/>„querido acompañarnos en nuestras ex-<lb break="no"/>„curciones fíciles, ni nos ha preguntade<lb break="yes"/>„el nombre de una planta, ni de una pie-<lb break="no"/>„dra. Ninguno ha exâminado las mara-<lb break="no"/>„villas que tiene alrededor de sí, tales co-<lb break="no"/>„mo las bocas del Volcan, su altura, su<lb break="yes"/>„situacion; bien que esta reprencion se le pue-<lb break="no"/>„de hacer à toda la América. A pesar de<lb break="yes"/>„esto, yo me lisongéo de ver aquí unas bue-<lb break="no"/>„nas disposiciones, una efervescencia inte-<lb break="no"/>„lectual que no era conocida en</hi> 1760, <hi rendition="#i">un<lb break="yes"/>„deseo de poseer libros y de conocer los<lb break="yes"/>„nombres de los hombres célebres, una con-<lb break="no"/>„versacion que rueda sobre objetos mas in-<lb break="no"/>„teresantes que los del nacimiento de <choice>
+                                    <sic>qua-<lb break="no"/>„lidadad</sic>
+                                    <corr type="editorial">qua-<lb break="no"/>„lidad</corr>
+                                </choice> ... Todo esto forma un buen ague-<lb break="no"/>„ro; pero yo temo mucho que no pasen de</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="23" facs="#f0021"/> garon à la <choice>
+                            <sic>Cindad</sic>
+                            <corr type="editorial">Ciudad</corr>
+                        </choice> de Pasto situada en un<lb break="yes"/>
+                        <note place="foot" n="(*)" xml:id="fn3-3" prev="#fn3-2" next="#fn3-4">
+                            <hi rendition="#i">„aquí, sinó se muda enteramente el plan<lb break="yes"/>„de educacion, sinó se les hace entender<lb break="yes"/>„que no se puede aprender todo en</hi> 2 <hi rendition="#i">dias,<lb break="yes"/>„y que vale mas saber poco como se sepa<lb break="yes"/>„bien. Nuestro espíritu es como el agua que<lb break="yes"/>„pierde de <choice>
+                                    <sic>profundidadad</sic>
+                                    <corr type="editorial">profundidad</corr>
+                                </choice> à proporcion que<lb break="yes"/>„se extiende sobre el terreno. Por lo demás,<lb break="yes"/>„la Física, las Ciencias que faltan à todos<lb break="yes"/>„los Américanos no pueden hechar raices<lb break="yes"/>„profundas sinó en una generacion robus-<lb break="no"/>„ta y enérgica. ¿Qué se puede esperar de<lb break="yes"/>„unos jovenes rodeados y servidos de escla-<lb break="no"/>„vos, que temen los rayos del Sol, y las gotas<lb break="yes"/>„del rosío, que huyen del trabajo, que cuen-<lb break="no"/>„tan siempre con el dia de mañana y que<lb break="yes"/>„la mas ligera incomodidad los aterra?<lb break="yes"/>„Estos jovenes no pueden dar sinó una<lb break="yes"/>„raza afeminada è incapaz de los sacri-<lb break="no"/>„ficios que piden las Ciencias y la Sociedad</hi>„<lb break="yes"/>¡<hi rendition="#i">Quantas verdades interesantes en tan<lb break="yes"/>pocas lineas! ¡Oxalà mi Patria y la Amé-<lb break="no"/>rica ábra los ojos, y oyga estas reprencio-<lb break="no"/>ciones desinterezadas, y sàbias! En todo esto<lb break="yes"/>hay un fondo de verdad que nos humilla.<lb break="yes"/>No lo podemos negar: nuestra educacion fí-<lb break="no"/>sica y literaria es mala en todos sus pun-<lb break="no"/>tos ¿Quando pensarémos en mejorarla?</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="24" facs="#f0022"/> bello plan, y en las inmediaciones de un<lb break="yes"/>volcan cubierto algunas veces de nieve.<lb break="yes"/>
+                        <note place="foot" n="(*)" xml:id="fn3-4" prev="#fn3-3" next="#fn3-5">
+                            <hi rendition="#i">Solo añado que la reprension que ha-<lb break="no" />ce Humboldt à los habitantes de Popayan<lb break="yes"/>por no haber exâminado las bocas de su<lb break="yes"/>volcan, altura, situacion &amp;c no es <choice>
+                                    <sic>justa</sic>
+                                    <corr type="editorial">justa.</corr>
+                                </choice> El ig-<lb break="no"/>noraba entonces que D. Antonio Arboleda, D.<lb break="yes"/>Juan Josef Hurtado, y yó habiamos esca-<lb break="no"/>lado el año anterior esta montaña, que ha-<lb break="no"/>biamos subido instrumentos, analisado sus<lb break="yes"/>aguas minerales, y recogido y descrito lo mas<lb break="yes"/>bello de su vegetacion. Quando él vió nu-<lb break="no"/>estros MSS. se arrepintió de haber hechado<lb break="yes"/>en cara á Popayan su pereza y su debili-<lb break="no"/>dad. Pero à pezar de esto, tres individuos<lb break="yes"/>no hacen ley, y nosotros creemos demacia-<lb break="no"/>do justa la censura de Humboldt. ¿Quien<lb break="yes"/>ha recorrido este bello pais que nos ha to-<lb break="no"/>cado en suerte? ¿Quien ha medido sus mon-<lb break="no"/>tañas? ¿Quien ha levantado su Carta? Pe-<lb break="no"/>ro que!!! no conocemos ni aun el plano de la<lb break="yes"/>explanada preciosa sobre que vivimos! Ver-<lb break="no"/>dades grandes y humilladdores. Antisipé-<lb break="no"/>monos à reprendernos antes que nos reprenda<lb break="yes"/>otro Europeo ilustrado, que nos visite. Si<lb break="yes"/>Humboldt hubiera conocido nuestro Observa-<lb break="no"/>torio astronomico habría hecho seguramente</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="25" facs="#f0023"/> Atravesaron despues el Guáytara por en-<lb break="no"/>cima de un puente construido sobre una pro-<lb break="no" />fundidad que tiene mas de media milla de<lb break="yes"/>altura perpendicular <note place="foot" n="(j)">
+                            <hi rendition="#i">El puente de Guáytara no està sobre<lb break="yes" />una elevacion de media <choice>
+                                    <sic>milla</sic>
+                                    <corr type="editorial">milla.</corr>
+                                </choice> El córte de<lb break="yes"/>Guáytara tendrá esto; pero el puente no es-<lb break="no"/>ta á 10 varas sobre el rio Peltier ha ex-<lb break="no"/>tracctado mal en este lugar à Humboldt.</hi>
+                        </note> y que ofrece uno de<lb break="yes"/>
+                        <note place="foot" n="(*)" xml:id="fn3-5" prev="#fn3-4">
+                            <hi rendition="#i">mas felices agüeros; pero ¿quantas censuras<lb break="yes"/>habrían partido de su pluma filosófica con-<lb break="no"/>tra nuestra ignorancia si hubiera sabido que<lb break="yes"/>se míra este establesimiento con tédio, que<lb break="yes"/>se murmuran los designios de su sábio fun-<lb break="no"/>dador, y que se desea su demolicion? ¿Quan-<lb break="no"/>tas veces se habría burlado de nosotros,<lb break="yes"/>de nosotros que no <choice>
+                                    <sic>conscemos</sic>
+                                    <corr type="editorial">conoscemos</corr>
+                                </choice> ni las fuen-<lb break="no"/>tes dela gloria, ni las de la utilidad? Pero nos<lb break="yes"/>consolamos: no faltan entre nosotros hombres<lb break="yes"/>que penetren la importancia de un Obser-<lb break="no"/>vatorio, y todas sus relaciones con la Tàc-<lb break="no"/>tica, Economía, Política, Navegacion, cami-<lb break="no"/>nos &amp;c no faltan quienes, mas elevados que<lb break="yes"/>el comun, vean objetos mas sublimes, dig-<lb break="no"/>nos de filósofo y los únicos que conducen à un<lb break="yes"/>pueblo al colmo de su gloria.</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="26" facs="#f0024"/>los sitios mas variados y magníficos de es-<lb break="no"/>tas montañas. Despues viajaron sobre un pla-<lb break="no" />no fértil en granos de Europa aunque ele-<lb break="no"/>vado à 3395 varas sobre el mar, y llega-<lb break="no"/>ron al Pueblo de Tulcan situado cerca de<lb break="yes"/>un Castillo de los Incas y de la roca de Ru-<lb break="no"/>mi-chaca <note place="foot" n="(k)">
+                            <hi rendition="#i">Rumi-chaca, quiere decir</hi> Paente de<lb break="yes"/>piedra <hi rendition="#i">como en efecto lo és. Aquí no hay<lb break="yes"/>roca llamada</hi> Rumi-chaca. <hi rendition="#i">Nos parece que<lb break="yes"/>Peltier extracta tambien mal aquí.</hi>
+                        </note>. Descendieron de aquí al Valle<lb break="yes"/>de Chota que tiene dos millas de longitud y<lb break="yes"/>una de profundidad, y al de Guayllabamba<lb break="yes"/>que tiene media milla de profundidad, en los<lb break="yes"/>que sufrieron un calor insoportable <note place="foot" n="(m)">
+                            <hi rendition="#i">En varias épocas hemos residido en<lb break="yes" />Guayllabamba, y nuestro Termómetro solo<lb break="yes"/>nos ha indicado de</hi> 20, <hi rendition="#i">à</hi> 22 <hi rendition="#i" >del Termómetro<lb break="yes"/>centígrado.</hi>
+                        </note> y lle-<lb break="no"/>garon por fin á la famosa Ciudad de Quito<lb break="yes"/>en Enero de 1802. Aquí pudieron respirar<lb break="yes" />despues de tantas fatigas, y gozar de los pla-<lb break="no"/>ceres de la hospitalidad, y de la confianza<lb break="yes"/>en médio de las mas grandes producciones<lb break="yes"/>de la Naturaleza.</p>
+                    <lb break="yes"/>
+                    <p>Ocho meses permanecieron en la Pro-<lb break="no"/>vincia de Quito haciendo excurciones à los<lb break="yes"/>Volcanes vesinos y á las cimas mas eleva-<lb break="no"/>
+                        <pb n="27" facs="#f0025"/> das de los Andes. Despues de tres tentati-<lb break="no"/>vas diferentes, Humboldt llegó dos veces á la<lb break="yes" />cima del Volcan de Pitchincha, con peligro de<lb break="yes"/>su vida, llevando consigo los instrumentos<lb break="yes"/>de fisica necesarios, a una altura de 5718 va-<lb break="no"/>ras sobre el mar. Inmediatamente pasó à vi-<lb break="no"/>sitar la montaña de pórfido de Antisana cuyo<lb break="yes"/>crater exîste en medio de nieves eternas à la al-<lb break="no"/>tura de 7117 varas sobre el mar.</p>
+                    <lb break="yes"/>
+                    <p>En este tiempo fue que nuestros Via-<lb break="no"/>geros acompañados del hijo del Marquez de<lb break="yes"/>Selva-Alegre (D. Carlos Montufar), quien<lb break="yes"/>por amor à las ciencias no los habia abando-<lb break="no"/>nado desde su llegada à Quito, se resolvieron<lb break="yes" />à una empresa mas dificil. En la mitad del es-<lb break="no"/>tio partieron para el Volcan de Tunguragua<lb break="yes"/>y montaña nevada de <choice>
+                            <sic>Chimborazo</sic>
+                            <corr type="editorial">Chimborazo.</corr>
+                        </choice> Ellos atra-<lb break="no"/>vesaron las ruinas deplorables de Riobamba<lb break="yes"/>y de otros pueblos arruinados el 7 de Febre-<lb break="no"/>ro de 1797 por un temblor de tierra que en un<lb break="yes" />momento se tragó 40 mil personas <note place="foot" n="(n)">
+                            <hi rendition="#i">Cálculos bien aproxîmados solo dan</hi> 22<lb break="yes"/>
+                            <hi rendition="#i">mil almas tragadas en esa catàstrofe.</hi>
+                        </note>. Des-<lb break="no"/>pues de haber pasado cerca de un grupo mag-<lb break="no"/>nífico de columnas de pórfido, atravesaron el<lb break="yes" />Puela sobre un puente de cuerdas y subieron<lb break="yes"/>à lo alto de Chuchilla y de Guandisava, que<lb break="yes"/>
+                        <pb n="28" facs="#f0026"/> es una cadena de rocas calsinadas que antes de<lb break="yes"/>aquella convulcion espantosa estaban cubier-<lb break="no" />tas de una frodosa selva de cedros olorosos.<lb break="yes"/>Calcularon desde aquí que el Tunguragua se<lb break="yes"/>eleva sobre el mar 5022 varas. A costa de ex-<lb break="no"/>fuerzos increibles subieron por fin sobre las<lb break="yes"/>faldas orientales del Chimborazo y colocaron<lb break="yes"/>sus instrumentos sobre el borde estrecho de<lb break="yes" />una roca de pórfido que salia fuera del inmen-<lb break="no"/>so espacio cubierto de una nieve inpenetra-<lb break="no"/>ble. Una roca de 500 pies de ancho <choice>
+                            <sic>im pidió</sic>
+                            <corr type="editorial">impidió</corr>
+                        </choice>
+                        <lb break="yes"/>sus progresos <choice>
+                            <sic>ulteriores</sic>
+                            <corr type="editorial">ulteriores.</corr>
+                        </choice> La densidad del ayre<lb break="yes"/>se halla reducida à la mitad: sentian un frio pe-<lb break="no"/>netrante: su respiracion era penosa: la sangre<lb break="yes"/>corria de sus ojos, de sus encias y de sus labios.<lb break="yes"/>Aquí se hallaban sobre el punto mas alto à<lb break="yes"/>que jamas ha llegado ningun mortal. La altu-<lb break="no" />ra era de 7114 varas, es decír, 1264 varas<lb break="yes"/>mas arriva del punto à que llegó la Condami-<lb break="no"/>ne en 1745 <note place="foot" n="(o)">
+                            <hi rendition="#i">Esia célebre observacion se hizo en<lb break="yes" />Julio de</hi> 1738 <hi rendition="#i">por Bouguer, y de la Con-<lb break="no"/>damine.</hi>
+                        </note>. Allí descubrieron por una ope-<lb break="no"/>racion geométrica que la cima del Chimborazo<lb break="yes"/>distaba aun 780 varas del punto en que se<lb break="yes"/>
+                        <choice>
+                            <sic>hallaban</sic>
+                            <corr type="editorial">hallaban.</corr>
+                        </choice>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Terminadas estas observaciones impor-<lb break="no"/>tantes nuestros Viageros descendieron a las<lb break="yes"/>
+                        <pb n="29" facs="#f0027"/> regiones de la vegetacion, y recoriendo la ca-<lb break="no"/>dena de los Andes, seguidos de 20 mulas que con-<lb break="no"/>ducian sus bagages y colecciones. Despues de<lb break="yes" />haber pasado las llanuras de Teocaxas avan-<lb break="no"/>saron hasta Sitzan, y atravesaron el peligroso<lb break="yes"/>desierto del <choice>
+                            <sic>Asuay</sic>
+                            <corr type="editorial">Asuay.</corr>
+                        </choice> En el camino para Cuen-<lb break="no"/>ca vieron las ruinas de los palacios de los<lb break="yes"/>Incas, y de otros monumentos de la antigua<lb break="yes"/>
+                        <choice>
+                            <sic>gradeza</sic>
+                            <corr type="editorial">grandeza</corr>
+                        </choice> peruana. Continuaron su ruta por<lb break="yes"/>Cumbe cerca del gran páramo de Sarar, en el<lb break="yes"/>que la <hi rendition="#i" >Melastoma</hi> y el <hi rendition="#i">Embotrium</hi> crecen à<lb break="yes"/>una elevacion de 4380 varas. Llegaron à la be-<lb break="no"/>lla cascada de Uduchapa: descendieron media<lb break="yes" />milla por un camino casi perpendicular: atrave-<lb break="no"/>saron el valle de Zaraguru que ofrece una de<lb break="yes"/>las escenas mas hermosas de los Andes y en-<lb break="no"/>traron en Loxa Ciudad célebre por el comer-<lb break="no"/>cio dè las Quinas. Los árboles que la produ-<lb break="no"/>cen crecen a espaldas de las montañas à 5474<lb break="yes" />varas <note place="foot" n="(p)">
+                            <hi rendition="#i">Creemos que Peltier equivóca esta<lb break="yes" />altura. El pone 15000 pies ingleses, que hacen</hi>
+                            <lb break="yes"/>2346 <hi rendition="#i">toesas y</hi> 5474 <hi rendition="#i">varas. Humboldt (Geo-<lb break="no"/>gráfia de las plantas) asigna el término<lb break="yes"/>superior de la Quina á</hi> 1500 <hi rendition="#i">toesas. Vease<lb break="yes"/>el Semanario para</hi> 1809 <hi rendition="#i">N.</hi> 19 <hi rendition="#i">y</hi> 22.</note> sobre el mar, y á una temperatura de<lb break="yes"/>15 à 21 grados del Termómetro centígrado<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice>
+                        <lb break="yes"/>
+                        <pb n="30" facs="#f0028"/>Adelantaban en su viage por en medio de una<lb break="yes"/>serie de pueblos habitados por los naturales<lb break="yes" />del pais rodeados de bosques de Chyrimoyos,<lb break="yes"/>Limoneras silvestres, y al frente de las ruinas<lb break="yes"/>de los palacios peruanos esparcidas por todas<lb break="yes"/>partes. Baxáron al lecho de Lutaco en un va-<lb break="no"/>lle estrecho de 1533 varas de profundidad.<lb break="yes"/>Pasaron al travez de plantios de caña de Azu-<lb break="no"/>car, y atravesaron la selva de Chusucanas en<lb break="yes"/>donde se hallan las ruinas inmensas de los ba-<lb break="no"/>ños de los Incas, y pasaron cerca de la gran<lb break="yes" />calzada que estos Principes habian <choice>
+                            <sic>contruido</sic>
+                            <corr type="editorial">construido</corr>
+                        </choice>
+                        <lb break="yes"/>sobre los Andes à 2 millas de elevacion sobre<lb break="yes"/>el mar. Llegaron à S. Felipe, salvando con<lb break="yes"/>
+                        <choice>
+                            <sic>dificultadad</sic>
+                            <corr type="editorial">dificultad</corr>
+                        </choice> sus instrumentos y sus coleccio-<lb break="no"/>nes, pues se vieron obligados à pasar à vado<lb break="yes"/>tres dias consecutivos el Guacabamba. Des-<lb break="no"/>pues de un descenso rapido y casi perpendi-<lb break="no"/>cular de una milla caminando baxo de una sel-<lb break="no"/>va de Limoneras llegaron à un <choice>
+                            <sic>plueblo</sic>
+                            <corr type="editorial">pueblo</corr>
+                        </choice> de In-<lb break="no"/>dios en donde se embarcaion en el Chayma,<lb break="yes"/>y arrivaron à la provincia de Jaen, y a las ca-<lb break="no"/>taratas de Rentema, sobré la orilla izquierda<lb break="yes" />del Amazonas, à 450 varas solamente sobre el<lb break="yes"/>nivel del mar.</p>
+                    <lb break="yes"/>
+                    <p>Humboldt y sus compañeros se embar-<lb break="no"/>caron sobre este grande rio, y subieron hasta<lb break="yes"/>la catarata de Tomependa. De aquí varian-<lb break="no"/>
+                        <pb n="31" facs="#f0029"/> do de rumbo al Sudeste, vieron las famosas mi-<lb break="no"/>nas de Chota situadas sobre la Cordillera,<lb break="yes"/>y entraron en Caxabamba que està fundada<lb break="yes"/>en una llanura abundante en Cebada, y á la<lb break="yes"/>altura de 996 varas. Baxando despues las fal-<lb break="no"/>das occidentales de la Cordillera, vieron con<lb break="yes"/>placer el Oceáno Pacífico, y costeando en<lb break="yes"/>Octubre sus riveras desnudas y estériles, con<lb break="yes"/>la temperatura del ayre a 16,1 gr. y la del<lb break="yes" />agua à 21 gr. del Termómetro centígrado,<lb break="yes"/>llegaron à Lima Capital del Perú.</p>
+                    <lb break="yes"/>
+                    <p>Aquí permaneció Humboldt algun tiem-<lb break="no"/>po admitando la vivacidad è inteligencia de<lb break="yes"/>sus moradores. En el Callado tubo la felici-<lb break="no"/>dad de observar la emercion del paso Mer-<lb break="no"/>curio sobre el disco del Sol. <note place="foot" n="(i)" xml:id="fn4-1" next="#fn4-2">
+                            <hi rendition="#i">Yo tambien tube la felicidad de obser-<lb break="no" />var la salida de Mercurio en el paso del</hi>
+                            <lb break="yes"/>9 <hi rendition="#i">de Noviembre de</hi> 1802. <hi rendition="#i">Me hallaba en<lb break="yes"/>esa época en el Corregimiento de Otabalo co-<lb break="no"/>lectando la vegetacion de ese bello pais, y<lb break="yes"/>visitando sus Volcanes inmediatos<choice>
+                                    <sic/>
+                                    <corr type="editorial">.</corr>
+                                </choice> Tambien<lb break="yes"/>me ocupaba en la obervacion del Cielo con<lb break="yes"/>el fin de mejorar ò corregir la Carta de la<lb break="yes"/>Provincia de Quito. Tenia un Péndulo as-<lb break="no"/>tronómico bien reglado por alturas corres-<lb break="no"/>pondientes, un acromático de 2 pies, y un<lb break="yes"/>quarto de circulo de J. Bird. Con estos ins-</hi>
+                        </note>. (<hi rendition="#i">Se con-<lb break="no"/>tinuará</hi>)</p>
+                    <lb break="yes"/>
+                    <pb n="32" facs="#f0030"/>
+                    <note place="foot" n="(i)" xml:id="fn4-2" prev="#fn4-1" next="#fn4-3">
+                        <hi rendition="#i">trumentos observaba alturas meridianas del<lb break="yes" />Sol, y estrellas para las latitudes, las in-<lb break="no"/>mersiones, y emersiones de los Satelites de<lb break="yes"/>Júpiter para las <choice>
+                                <sic>longitudes</sic>
+                                <corr type="editorial">longitudes.</corr>
+                            </choice> En este esta-<lb break="no"/>do y justamente la antevíspera del paso de<lb break="yes"/>Mercurio</hi> (<hi rendition="#i">el 7, de Noviembre</hi>) <hi rendition="#i">recibí una<lb break="yes"/>Carta de Humboldt fecha en Truxillo à</hi> 30<lb break="yes"/>
+                        <hi rendition="#i">de Septiembre de</hi> 1802, <hi rendition="#i">en que me avisa-<lb break="no"/>ba las circunstancias de este paso y me ex-<lb break="no"/>hortaba à observarlo. Poco trabajo tube en<lb break="yes"/>los <choice>
+                                <sic>preparatibos.</sic>
+                                <corr type="editorial">preparatibos</corr>
+                            </choice> pues estaban <choice>
+                                <sic>hechos.</sic>
+                                <corr type="editorial">hechos</corr>
+                            </choice> y solo<lb break="yes"/>continue en tomar altunas correspondientes<lb break="yes"/>el</hi> 7, 8, 9, 10, <hi rendition="#i">&amp;c. para fixar irrevocable-<lb break="no"/>mente el clemento del <choice>
+                                <sic>tiempo</sic>
+                                <corr type="editorial">tiempo.</corr>
+                            </choice>
+                            <lb break="yes"/>El dia asignado llego: yo estaba des-<lb break="no"/>de la aurora con mi acromatico prepar ado es-<lb break="no"/>perando que el Sol se presentase sobre el ho-<lb break="no"/>rizonte de Otabalo, que está por todas par-<lb break="no"/>tes herizado de montañas <choice>
+                                <sic>elevadas</sic>
+                                <corr type="editorial">elevadas.</corr>
+                            </choice> El Cie-<lb break="no"/>lo estaba sin una nube y prometía el mejor<lb break="yes"/>suceso en esta observacion <choice>
+                                <sic>interezante</sic>
+                                <corr type="editorial">interezante.</corr>
+                            </choice> Para<lb break="yes"/>no dividir mi atencion contaba los instantes<lb break="yes"/>del Pendulo D<choice>
+                                <sic/>
+                                <corr type="editorial">.</corr>
+                            </choice> Marcos de <choice>
+                                <sic>Alar on</sic>
+                                <corr type="editorial">Alarcon</corr>
+                            </choice>, ves-<lb break="no"/>no de este asiento, y joven de las mejores<lb break="yes"/>dispositiones para la Astronomía. Tenia una<lb break="yes"/>larga practica en este género, pues él habia<lb break="yes"/>querido ayudarme en todas las numerosas ob-<lb break="no"/>servaciones que habia practicado en Otabalo.</hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="33" facs="#f0031"/>
+                    <note place="foot" n="(i)" xml:id="fn4-3" prev="#fn4-2">
+                        <hi rendition="#i">Quando el Sol se presentó sobre las<lb break="yes" />faldas meridionales de Imbabura, Mercu-<lb break="no"/>rio habia recorrido ya los tres quartos del<lb break="yes"/>disco solar, y estaba próxîmo à su salida.<lb break="yes"/>Yo le seguí cuydadosamente, y ví sin ningu-<lb break="no"/>na duda el contacto interior á</hi> 18 <hi rendition="#i">h.</hi> 44′. 44,″<lb break="yes"/>76 <hi rendition="#i" >tiempo verdadero y cuenta astronómica.<lb break="yes"/>La salida total de Mercurio à</hi> 18 <hi rendition="#i">h.</hi> 46′ 03,″<lb break="yes" />76. <hi rendition="#i">En esta última determinacion puede<lb break="yes" />haber de</hi> 1″ <hi rendition="#i">á</hi> 2″ <hi rendition="#i">de insertidumbre, por las<lb break="yes"/>freqüentes undulaciones que ocacionaban los<lb break="yes"/>vapores del horizonte.</hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">Puede interesar mucho à los Astró-<lb break="no"/>nomos la publicacion de esta observacion.<lb break="yes"/>Nostros no hemos visto la de Humboldt, ni<lb break="yes"/>la de ningun otro observador. Consignamos<lb break="yes"/>esta en nuestro Semanario y <choice>
+                                <sic>espermos</sic>
+                                <corr type="editorial">esperamos</corr>
+                            </choice> que<lb break="yes"/>sea bien recibida por los Profesores.</hi>
+                        <lb break="yes"/>
+                        <hi rendition="#i">Otabalo está, por muchas alturas me-<lb break="no" />ridianas del Sol y estrellas, tomadas con el<lb break="yes"/>bello Quarto de círculo de J. Bird, à O.</hi>
+                        <lb break="yes"/>13′ 33″ <hi rendition="#i">de latitud boreal, y à O.</hi> 14′ 45″<lb break="yes"/>
+                        <hi rendition="#i">al Este de Quito. Como ésta Ciudad se halla,<lb break="yes"/>segun nuestras observaciones, à</hi> 80.° 48′ 31″<lb break="yes"/>
+                        <hi rendition="#i">al Occidente de Paris,</hi>
+                        <note place="foot" n="(*)">
+                            <hi rendition="#i">Semanario del N. R. de Granada,<lb break="yes" />Memoria 7a. para</hi> 1810.</note>
+                        <hi rendition="#i">Otabalo estarà á</hi>
+                        <lb break="yes"/>80 33′ 46″ <hi rendition="#i">al Occidente del mismo meridiano.</hi>
+                    </note>
+                </div>
+                <lb break="yes"/>
+                <pb n="34" facs="#f0032"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">PATRIOTISMO.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>El Real Consulado de Cartagena, que mira<lb break="yes"/>con particular interez todos los objetos de<lb break="yes"/>utilidad pública, me dirigió un oficio con fecha<lb break="yes"/>29 de Agosto de 1810 en que, despues de<lb break="yes"/>varias reflexîones, propone el prémio siguien-<lb break="no"/>te para la introduccion de las Vicuñas en el<lb break="yes" />Reyno.</p>
+                    <lb break="yes"/>
+                    <p>„Este Consulado, dice, ofrece el prémio<lb break="yes"/>„de dos mil pesos al que introduzca de su<lb break="yes"/>„propia cuenta en todo el año próxîmo de<lb break="yes"/>„1811, (y si nó hubiere concurrentes se pror-<lb break="no"/>„rogará al de 1812) el número de 400 Vi-<lb break="no" />„cuñas, las siete partes hembras, y la octa-<lb break="no"/>„va parte de machos, todas sanas, y nuevas<lb break="yes"/>„y las presente en dicho estado y entrege<lb break="yes"/>„à sus Diputados: A saver: 100 al de San-<lb break="no"/>„ta Marta: 50 al de Pamplona: 150,<lb break="yes" />„al de Santafé: 50 al de Honda: y 50 al<lb break="yes"/>„del Chocó: para que se hagan poner libres<lb break="yes"/>„con su conocimiento y autoridad en las mas<lb break="yes"/>„elevadas y rígidas montañas de su partido,<lb break="yes"/>„señaladamente en aquellas en que hay nievo<lb break="yes" />„permanente, prohiviendose con graves pe-<lb break="no"/>„nas el darles muerte, como con tanta sabidu-<lb break="no"/>„ria lo hicieron los Incas en su Gobierno.</p>
+                    <lb break="yes"/>
+                    <p>„En el cáso que hubiese dos ò mas con-<lb break="no"/>
+                        <pb n="35" facs="#f0033"/>„currentes al prémio, y el número de Vi-<lb break="no"/>„cuñas introducidas por todos excedan de las<lb break="yes" />„400 indicadas, se prorratearà aquel con pro-<lb break="no"/>„porcion al número de cada uno: y sinó<lb break="yes"/>„se llegase à completarlo se le pagará al<lb break="yes"/>„introductor ò introductores el prémio de 5<lb break="yes"/>„pesos por cada una de las que entreguen<lb break="yes" />„en la forma y proporcion antes dicha con<lb break="yes"/>„los avisos de sus Diputados respectiva-<lb break="no"/>„mente de su recibo.„</p>
+                    <lb break="yes"/>
+                    <p>El Sr. Prior del Consulado D. José<lb break="yes"/>Ignacio Pombo añadió: „Yo el Prior, en ob-<lb break="no"/>„sequio de mi Patria, ofrezco 500 pesos al<lb break="yes"/>„que entregue en Popayan à la disposicion<lb break="yes"/>„de los SS. Dr. Manuel Maria y D. Antonio<lb break="yes" />„Arboleda el número de 100 Vicuñas con<lb break="yes"/>„la proporcion de machos y hembras, y de-<lb break="no"/>„mas calidades expresadas, para que se pon-<lb break="no"/>„gan en libertad, 50 en el monte de Coco-<lb break="no"/>„nuco, y 50 en el Alto del Rey con prohi-<lb break="no" />„vicion de matarlas. Cartagena, y Agosto<lb break="yes"/>„29 de 1810. &#x2014; José Ignacio Pombo: Teodo-<lb break="no"/>ro Maria Escovar: Joaquin de Lecuna y<lb break="yes"/>Márques.<choice>
+                            <sic/>
+                            <corr type="editorial">“</corr>
+                        </choice>
+                    </p>
+                    <lb break="yes"/>
+                    <p>El ilustrado y genoroso D. Pedro Aba-<lb break="no"/>dia con fecha de Lima 23 de Agosto de 1810<lb break="yes"/>me dice lo signiente: “Hemos leido con el<lb break="yes"/>„gusto que siempre la Memoria sobre la trans-<lb break="no"/>
+                        <pb n="36" facs="#f0034"/> „migracion de las Vicuñas. Tal vez faltan<lb break="yes"/>„à V. noticias y datos pues sin ir al Potosí ni à<lb break="yes"/>„la Paz <hi rendition="#i">las hay con abundancia en las in-<lb break="no"/>„mediaciones de Chachapoyas y Lambayeque</hi>
+                        <lb break="yes"/>„y ya V. vé qué diferencia tan notable con,<lb break="yes" />„respecto à su conduccion à Guayaquíl. <hi rendition="#i">Cla-<lb break="no"/>„ma ne cesses,</hi> decia Ganganeli à Còncina, y<lb break="yes"/>„yo repito á V. que sea infatigable en la<lb break="yes" />„vasta carrera que ha emprendido.“</p>
+                    <lb break="yes"/>
+                    <p>Esta sola noticia de un Peruano tan<lb break="yes"/>ilustado como Abadia hace subir de punto<lb break="yes"/>el valor del premio del Consulado, pues de-<lb break="no"/>saparecen las tres quartas partes de las difi-<lb break="no"/>cultades. Puede ser que Quito, que respira ya<lb break="yes" />la dulce aurora de la libertad, piense en ha-<lb break="no"/>cerlas pasar à sus montañas, y que el ilus-<lb break="no"/>tre Selva-Alegre execute esta empresa dig-<lb break="no"/>na de él y de su patriotismo.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="3" facs="#f0035"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">QUADRO FÍCICO<lb break="yes"/>de las regiones equatoriales.</hi>
+                        <lb break="yes"/>(<hi rendition="#i">
+                            <hi rendition="#k">Extracto</hi>
+                        </hi> 2°.)</head>
+                    <lb break="yes"/>
+                    <p>
+                        <choice>
+                            <sic>Nuesos</sic>
+                            <corr type="editorial">Nuestros</corr>
+                        </choice> viageros se embarcaron para Gua-<lb break="no"/>yaquil y de aqui se dirigieron à Acapulco<lb break="yes"/>en la N<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice> España. Hallaron a los habitantes de<lb break="yes"/>estas regiones enfermos y desgraciados baxo<lb break="yes"/>de un clima ardiente y malsano. Diferentes ra-<lb break="no"/>zones los obligaron á permanecer en esta<lb break="yes"/>parte de la América el espacio de un año.<lb break="yes"/>En Abril de 1803 hicieron una excurcion<lb break="yes"/>de Acapulco à Tasco en donde están las fa-<lb break="no"/>mosas minas, en un terreno cubierto de En-<lb break="no"/>cinas, de Pinos de Fresnos, y que produce<lb break="yes"/>la Cebada, y el Trigo con abundancia á<lb break="yes"/>una altura de 2189 varas castellanas. Po-<lb break="no" />cos dias despues llegaron á la opulenta Ciu-<lb break="no"/>dad de México, fundada en el lugar que<lb break="yes"/>ocupó la antigua <hi rendition="#i" >Tenochticlan,</hi> entre los<lb break="yes"/>lagos de Texcuco y Xoquemilco. Estos se<lb break="yes"/>han disminuido conciderablemente desde que<lb break="yes"/>los Españoles desecaron el pais y abrieron<lb break="yes"/>el canal de Huchuetoca. México está<lb break="yes"/>rodeada de alamedas y de Pueblos de In-<lb break="no"/>dios. A poca distancia estan dos monta-<lb break="no"/>ñas volcánicas cubiertas de nieves eternas.<lb break="yes"/>
+                        <pb n="4" facs="#f0036"/> Esta Ciudad, situada á 2728 varas <note place="foot" n="(a)">
+                            <hi rendition="#i">En la Memoria</hi> 1. <hi rendition="#i">del</hi> Semanario <hi rendition="#i">para</hi>
+                            <lb break="yes"/>1810 <hi rendition="#i">pag.</hi> 9 <hi rendition="#i" >hemos dicho „Hasta hoy<lb break="yes"/>„ignoramos la altúra del Barómetro en<lb break="yes"/>„la Capital de Imperio de Montezuma<lb break="yes"/>„apesar de haber estado allí Alzate, Doz,<lb break="yes"/>„Medína, y Chappe. Esperamos que el in-<lb break="no"/>„fatigable Humboldt nos disipe estas du-<lb break="no"/>„das y nos fixe sobre la altura de Mé-<lb break="no" />„xico“ ... Nuestros deseos se han cumpli-<lb break="no"/>do: Peltier extracta</hi> 7475 <hi rendition="#i">pues Ingleses,<lb break="yes"/>que hacen</hi> 728 <hi rendition="#i">varas castellanas. En los<lb break="yes"/>MSS que traxo y me franqueó D<choice>
+                                    <sic/>
+                                    <corr type="editorial">.</corr>
+                                </choice> Carlos Mon-<lb break="no"/>tufar veo que Humboldt dà à México</hi>
+                            <lb break="yes"/>1131 <hi rendition="#i">toesas que son</hi> 2635 <hi rendition="#i">varas. No sa-<lb break="no"/>bemos de donde provenga esta diferencia<lb break="yes"/>tan considerable.</hi>
+                        </note> sobre el<lb break="yes"/>nivel del mar, goza de clima templado, y el<lb break="yes"/>Termómetro centígrado solo sube á 16, 6.</p>
+                    <lb break="yes"/>
+                    <p>Nuestros Viageros visitaron las minas<lb break="yes"/>de Moran y Oyamel en donde los Mexi-<lb break="no"/>canos preparaban las piedras que debian<lb break="yes"/>servir para fabricar los cuchillos y las ha-<lb break="no" />chas. Prosiguiendo su marcha, vieron el <hi rendition="#i">Po-<lb break="no"/>zo de la Virgen</hi> que es una caberna de don-<lb break="no"/>de sale el rio Capula. Despues se encami-<lb break="no" />naron por Quieretaro y Salamanca atravesan-<lb break="no"/>
+                        <pb n="5" facs="#f0037"/> do llanuras fértiles hasta la Ciudad de Gua-<lb break="no"/>paxuato, célebre por sus minas que son las<lb break="yes" />mas ricas del mundo conocido. Solo la <hi rendition="#i">Va-<lb break="no" />lenciana</hi> produce anualmente unos 2200000<lb break="yes"/>pesos y dá á los propietarios una renta de<lb break="yes"/>562 500 pesos. Al regreso de Guanaxuato<lb break="yes"/>nuestros viageros atravesaron el valle que<lb break="yes"/>conduce de Santiago à Valladolid Capital<lb break="yes"/>de Mechoacán, la provincia mas fértil y mas<lb break="yes"/>deliciosa del N. México. De aquí se dirigieron<lb break="yes"/>de Puescuara à la llanura de Malpais, inme-<lb break="no"/>diata à las Costas del Océano Pacífico, y<lb break="yes"/>tuvieron el valor de descender casi al fondo del<lb break="yes"/>volcán de Jorallo, y de tomar algunos produc-<lb break="no" />tos <choice>
+                            <sic>volcánicos</sic>
+                            <corr type="editorial">volcánicos.</corr>
+                        </choice> Quando volvieron á México<lb break="yes"/>por la llanura de Tolna vieron el tronco del<lb break="yes"/>famoso <hi rendition="#i">Chierostemon platanoides,</hi> árbol úni-<lb break="no"/>co de esta especie en toda la N España. El es<lb break="yes"/>de la antigüedad mas remota, y tiene de<lb break="yes"/>circunferencia cerca de 6 y media varas. Su-<lb break="no"/>bieron hasta la címa de la montaña inmediata,<lb break="yes"/>y la hallaron de 5532 varas sobre el mar.<lb break="yes" />Su crater se ha transformado en un lago<lb break="yes"/>à una altura de 4380 varas del que sale un<lb break="yes"/>rio, cuyas aguas se hállan a la temperatura de<lb break="yes"/>9 grados del Termómetro centigrado.</p>
+                    <lb break="yes"/>
+                    <p>Los trabajos de Humboldt y de sus<lb break="yes"/>compañeros comenzaban à acercarse à su fin.<lb break="yes"/>
+                        <pb n="6" facs="#f0038"/> En el mes de Enero y de Febrero de 1804,<lb break="yes"/>llevaron sus excurciones hasta el <hi rendition="#i" >Nevado</hi>
+                        <lb break="yes"/>(Montaña de Nieve) cuya címa está 5733<lb break="yes" />varas sobre el mar. De aquí pasaron á Cho-<lb break="no"/>lula, Ciudad situada al pie de su famosa pirà-<lb break="no"/>mide: de Cholula à la llanura de Tetimpa en<lb break="yes"/>donde se aseguraron que el crater de la mon-<lb break="no"/>taña que huméa está à 6473 varas de altura.<lb break="yes"/>Llegaron à Xalapa en un clima delicioso,<lb break="yes"/>y en una situacion verdaderamente roman-<lb break="no"/>sesca. Cerca de esta Ciudad se eleva à 6349<lb break="yes"/>varas sobre el mar el pico de Orizaba, lla-<lb break="no"/>mado en México <hi rendition="#i">montana de la estrella,</hi>
+                        <lb break="yes"/>por que las llamas que se escapan de su címa<lb break="yes" />parecen una estrella en el horizonte. De aquí<lb break="yes"/>partieron para Vera-Cruz, y se embarcaron<lb break="yes"/>para Havana. En Julio se dieron à la vela<lb break="yes"/>para Filadelfia. Aquí permanecieron algun<lb break="yes"/>tiempo, y atravesando el Atlántico, llega-<lb break="no"/>ron sanos y salvos à Francia, despues de<lb break="yes" />seis años llenos de los trabajos mas útiles, y<lb break="yes"/>mas satisfactorios; pero señalados con las fa-<lb break="no"/>tigas, con los peligros y con las inquietudes.</p>
+                    <lb break="yes"/>
+                    <p>Esta relacion antisipada è imperfecta<lb break="yes"/>de la de Humboldt se ha formado con el<lb break="yes"/>designio de hacer mas inteligibles los resul-<lb break="no"/>tados de estos viages memorables. He aquí<lb break="yes"/>los mas generales sacados de sus obras.</p>
+                    <lb break="yes"/>
+                    <p>1. El continente de América defiere<lb break="yes"/>
+                        <pb n="7" facs="#f0039"/> notablemente en su aspecto general del con-<lb break="no"/>tinente antiguo. Sus rios magestuosos y sus<lb break="yes" />cortes naturales parese que le destinan à ser<lb break="yes"/>el teatro del comercio del Universo. Tal vez<lb break="yes"/>vendrá un dia en que este pais cubierto de una<lb break="yes"/>poblacion industriosa y activa se mejore con<lb break="yes"/>el poder creador de las artes y que abra<lb break="yes"/>la comunicacion entre los Océanos Pacífico<lb break="yes" />y Atlàntico. Humboldt indica nueve puntos,<lb break="yes"/>por donde se puede tentar esta reunion con es-<lb break="no"/>peranza de un suceso felíz <note place="foot" n="(b)">
+                            <hi rendition="#i">Vease lo que hemos dicho en el N.</hi> 2.<lb break="yes"/>
+                            <hi rendition="#i">del Semanario para</hi> 1808, <hi rendition="#i" >pag.</hi> 13 <hi rendition="#i">sobre este<lb break="yes"/>punto interesante.</hi>
+                        </note>. Pero¿ quien cre-<lb break="no"/>erá que una comunicacion tan importante ha si-<lb break="no"/>do ya executada, en pequeño en 1788, por<lb break="yes"/>simple religioso, Cura de la Ciudad de Nóvita?<lb break="yes"/>Este hombre inteligente y activo hizo abrir<lb break="yes" />por las manos de sus feligreses un pequeño<lb break="yes"/>canal en el torrente de Rapadura, que une<lb break="yes"/>al rio de S. Juan con el de Quito, que es<lb break="yes"/>un ramo del Atrrato? Canoas llenas de Ca-<lb break="no"/>cao, en el tiempo de las lluvias, han atrave-<lb break="no" />sado el continente americano, y pasado<lb break="yes"/>de un mar à otro recorriendo 250 millas. <note place="foot" n="(c)">
+                            <hi rendition="#i">Sentimos ignorar el nombre de este<lb break="yes" />Religioso para presentarlo al reconocimien-<lb break="no"/>to no solo del Reyno, sinó de toda la América.</hi>
+                        </note>
+                    </p>
+                    <lb break="yes"/>
+                    <pb n="8" facs="#f0040"/>
+                    <p>2. ° Humboldt ha rectificado por las<lb break="yes"/>operaciones mas exâtas, los errores cometi-<lb break="no"/>dos en la posicion geogràfica de la mayor<lb break="yes"/>parte de los pantos del N. Mundo.</p>
+                    <lb break="yes"/>
+                    <p>3. ° La alta cadena de los Andes, que<lb break="yes"/>corre à lo largo de la costa Occidental de<lb break="yes"/>la América, se extiende á uno y otro lado<lb break="yes"/>del Equador hasta el trigésimo grado de <choice>
+                            <sic>la-<lb break="no"/>ticnd</sic>
+                            <corr type="editorial">la-<lb break="no"/>titud</corr>
+                        </choice>
+                        <note place="foot" n="(d)" xml:id="fn5-1" next="#fn5-2">
+                            <hi rendition="#i">Creemos que Peltier extracta mal à<lb break="yes" />Humboldt sobre la extencion de los Andes<lb break="yes"/>à uno y à otro lado del Equador. No po-<lb break="no"/>demos persuadirnos que Humboldt haya in-<lb break="no"/>currido en un error tan grocero. Es un he-<lb break="no"/>cho, fuera de toda duda, que la Cadena de<lb break="yes"/>los Andes comienza en el cabo de Hornos<lb break="yes"/>por los</hi> 55 <hi rendition="#i">grados de latitud austral, que</hi>
+                        </note> Es de altura desigual: unas veces<lb break="yes"/>se abate à 220 varas sobre el mar, otras<lb break="yes"/>se lanza en las nuves á una distancia de<lb break="yes"/>cerca de 4 millas. El colósal Chimborazo<lb break="yes"/>levanta su <choice>
+                            <sic>frenre</sic>
+                            <corr type="editorial">frente</corr>
+                        </choice> cubierta de nieve à una<lb break="yes"/>elevacion que iguala a la del Pic de Teyde<lb break="yes"/>colocado sobre el Etna. El grueso de esta cadena<lb break="yes"/>es de 20 leguas en Quito, y de 50, ò 60<lb break="yes"/>en México, y en otras partes del Perú. Esta<lb break="yes" />cadena prodigiosa está cortada con hendi-<lb break="no"/>duras de una profundidad espantosa. Pero al<lb break="yes"/>Norte del istmo de Panamá se suavisa por<lb break="yes"/>
+                        <pb n="9" facs="#f0041"/> grados y forma la llanura elevada de Mé-<lb break="no"/>xico. En las dos primeras (Perú, y N. Gra-<lb break="no" />nada) grados y forma la llanura elevada de Mé-<lb break="no"/>xico. En las dos primeras (Perú, y N. Gra-<lb break="no"/>nada) los habitantes se ven obligados à via-<lb break="no"/>jar à pié, à caballo, y aun à espaldas de los<lb break="yes"/>Indios, quando la N. España se puede atra-<lb break="no"/>vesar por todos sus puntos en ruedas, y<lb break="yes" />transportarse así de la Capital de ese Impe-<lb break="no"/>rio hasta Santafé <note place="foot" n="(e)">
+                            <hi rendition="#i">No es Santafé de Bogotà, sino Santa-<lb break="no" />tafé del N. México, situada à</hi> 36 <hi rendition="#i" >grados</hi>
+                            <lb break="yes"/>30 <hi rendition="#i">minutos de latitud boreal.</hi>
+                        </note> en un camino de 1500 mi-<lb break="no"/>llas, ò de 500 leguas.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <note place="foot" n="(d)" xml:id="fn5-2" prev="#fn5-1">
+                            <hi rendition="#i">paralela à las Costas del Pacífico atraviesa<lb break="yes"/>de Norte á Sur la Patagonia, Chile, Perú,<lb break="yes"/>Quito, que cerca de Popayan se ramifica y<lb break="yes"/>arroja un ramo al Nordeste, que pasa por San-<lb break="no"/>tafé, Mérida, y va à terminar hàcia Caracas;<lb break="yes"/>que el mas occidental divide el Chocó del Valle<lb break="yes"/>de Cauca, que atraviesa el istmo de Panamà,<lb break="yes"/>recore las provincias de Veraguas, Costarrica<lb break="yes"/>Nicaragua, Guatemala, Guaxaca, México,<lb break="yes"/>N. México, y que se pierde en los países incul-<lb break="no"/>tos y bárbaros del Norte de la Amèrica. Si Pel-<lb break="no"/>tier dixera que por el Sur se extiende hasta<lb break="yes"/>los 55 grados y por el Norte hasta los 72 de<lb break="yes"/>latitud se habría acercado á la verdad.</hi>
+                        </note>
+                    </p>
+                    <lb break="yes"/>
+                    <pb n="10" facs="#f0042"/>
+                    <p>4. Lo que debe embarazar à los <choice>
+                            <sic>gélogos</sic>
+                            <corr type="editorial">géologos</corr>
+                        </choice> es<lb break="yes"/>el hecho singular, notado por Humboldt, de<lb break="yes"/>que las formaciones secundarias en el N.<lb break="yes" />Mundo tienen un grueso y una elevacion<lb break="yes"/>prodigiosa. En las cercanias de Santafé se ha-<lb break="no"/>llan capas de carbon à 3091 varas sobre el<lb break="yes"/>mar, y las del Huanuco en el Perú están à<lb break="yes"/>5352 varas de altura. Los fosiles que en el<lb break="yes" />antiguo continente no han sido hallados sinó<lb break="yes"/>à una elevacion como la de los Pirineos, es<lb break="yes"/>decir, à 4270 varas, se encuentran en el Perú<lb break="yes"/>à 4669, varas, y aun à 5144, mas altos que el<lb break="yes"/>nivel del mar. El basalto de Pitchincha, cerca<lb break="yes"/>de Quito, se halla à una elevación de 5648 va-<lb break="no"/>ras, quando la mayor elevacion à que se ha-<lb break="no" />lla en el antiguo mundo es de 1542 varas.<lb break="yes"/>Por otra parte el granito, que en Europa co-<lb break="no"/>rona las montañas mas altas, no se halla en el<lb break="yes"/>continente americano sinó à 4197 varas. Las<lb break="yes"/>címas glaciales de Chimborazo, de Cayam-<lb break="no"/>be, y de Antisana estàn enteramente com-<lb break="no" />puestas de pórfido, que en los flancos de los<lb break="yes"/>Andes, forma una maza de 3600 à 3800 va-<lb break="no"/>ras. La enorme maza de quarzo que está al<lb break="yes"/>Occidente de Caxamarca tiene 3327 varas<lb break="yes"/>de altura <choice>
+                            <sic>perendicular</sic>
+                            <corr type="editorial">perpendicular</corr>
+                        </choice>.</p>
+                    <lb break="yes"/>
+                    <p>5. Los Andes centrales son inmensamente<lb break="yes"/>ricos en metales de toda especie, á ex-<lb break="no"/>
+                        <pb n="11" facs="#f0043"/> cepcion del plomo. Uno de los mas cu-<lb break="no"/>riosos es el <hi rendition="#i">Pacor,</hi> que es un compuesto<lb break="yes"/>de arcilla, de oxîdo de hierro y de mu-<lb break="no"/>riate de plata. Las minas de México y del<lb break="yes" />Perú, lejos de agotarse, ofrecen mayores<lb break="yes"/>productos baxo la influencia de un sistema<lb break="yes"/>liberal, y perfecto. La naturaleza ha reu-<lb break="no"/>nido aquí los tesoros con los gérmenes<lb break="yes" />mas activos de destruccion. Toda la ca-<lb break="no"/>dena de los Andes está sujeta à terribles<lb break="yes"/>terremotos. Desde Cotopaxî hasta la mar<lb break="yes"/>del Sur exîsten 40 Volcanes que arden<lb break="yes" />sin intermicion <note place="foot" n="(f)">
+                            <hi rendition="#i">Entre Cotopaxî y las costas del Pacífico,<lb break="yes"/>no exîste ningun Volcan. Seguramente Hum-<lb break="no"/>bolt cuenta los númerosos que hay à lo largo<lb break="yes"/>de la Cordillera, desde el Cabo de Hornos<lb break="yes"/>hasta el N. México.</hi>
+                        </note>. Los mas baxos arrojan<lb break="yes"/>lava, otros muriate de amoniaco, basalto<lb break="yes"/>y pórfido calcinados, cantidades enormes<lb break="yes"/>de agua, y mas que todo, <hi rendition="#i" >Moya</hi> ó arcilla<lb break="yes"/>mezclada con materias sulfurozas, y car-<lb break="no"/>bonadas. Nieves eternas rodean sus flancos<lb break="yes"/>y forman una barrera inpenetrable a los<lb break="yes" />reynos animal y vegetal. En los confines<lb break="yes"/>la extincion de los seres vegetantes está<lb break="yes"/>señalada por desiertos extériles.</p>
+                    <lb break="yes"/>
+                    <pb n="12" facs="#f0044"/>
+                    <p>6 En esas vastas soledades es que<lb break="yes"/>fixa su triste residencia el <hi rendition="#i">Condor</hi>
+                        <note place="foot" n="(g)">
+                            <hi rendition="#i">El</hi> Condor <hi rendition="#i">es el Vuytre de los Andes de<lb break="yes"/>N<choice>
+                                    <sic/>
+                                    <corr type="editorial">.</corr>
+                                </choice> R. de Granada. No fixa, como dice<lb break="yes" />Humboldt, su residencia entre los extre-<lb break="no"/>mos de la vegetacion y término inferior de la<lb break="yes"/>nieve. Esta ave téme el frio, y si sube à esas<lb break="yes"/>alturas prodigiosas es por un momento, és<lb break="yes"/>en las horas de calma y de cerenidad.<lb break="yes"/>Las cuevas que hacen en las rocas escarpa-<lb break="no"/>das se hallan en los lugares ardientes y tem-<lb break="no"/>plados. No las hemos visto mas arriba de</hi>
+                            <lb break="yes"/>3500 <hi rendition="#i">varas sobre el mar.</hi>
+                        </note>, ave<lb break="yes"/>de presa fuerte y valerosa. Su corpulencia<lb break="yes"/>se ha exâgerado demasiado. Si creemos á<lb break="yes" />Humboldt, el Condor no es mayor que<lb break="yes"/>el Voytre de los Alpes en Europa. Su lon-<lb break="no"/>gitud es de vara y tercia, y la <choice>
+                            <sic>distanci-</sic>
+                            <corr type="editorial">distancia</corr>
+                        </choice>
+                        <lb break="yes"/>entre las extremidades de las álas extendidas<lb break="yes"/> es de tres varas y diez y ocho pulgadas. El<lb break="yes" />Condor persigue á los pequeños Gamos de<lb break="yes"/>los Andes y hace los mayores destrosos<lb break="yes"/> en los Corderos y Vecerros. Les arranca<lb break="yes"/>los ojos y la lengua, y dexa después que<lb break="yes"/>expire esta victima desgraciada para saciarse<lb break="yes"/>con sus despojos. El Condor se mantiene<lb break="yes" />horas enteras posado á la altura de quatro<lb break="yes"/>
+                        <pb n="13" facs="#f0045"/> millas. La fuerza de sus àlas debe ser<lb break="yes"/>prodigiosa, y grande la perfeccion de sus<lb break="yes" />òrganos, pues en un instante se lanza de<lb break="yes"/>las mayores elevaciones sobre las costas<lb break="yes"/>del Océano, en donde vé su presa desde<lb break="yes"/>la region de las nubes. Los Indios ca-<lb break="no"/>zan al Condor por medio de un lazo cor-<lb break="no" />redizo, en el mismo momento en que in-<lb break="no"/>troduce su cuello con placer en las entra-<lb break="no"/>ñas de un Caballo ó de una Vaca, cuyos<lb break="yes"/>
+                        <choice>
+                            <sic>frarmentos</sic>
+                            <corr type="editorial">fragmentos</corr>
+                        </choice> trasporta a los lugares mas re-<lb break="no"/>tirados <note place="foot" n="(h)" xml:id="fn6-1" next="#fn6-2">
+                            <hi rendition="#i">En el Reyno hay otros modos de<lb break="yes"/>cazar al Condor. En unas partes colocan<lb break="yes"/>el cadaver de un Caballo, de una Va-<lb break="no"/>ca &amp;c. en las inmediaciones de un bosque<lb break="yes"/>en donde se ocultan cuidadosamente los ca-<lb break="no"/>zadores, observando una quietud perfecta y<lb break="yes"/>el mas profundo silencio. El Condor tiene<lb break="yes"/>sentidos exquisitos, y la mas pequeña im-<lb break="no"/>prudencia frustraría los fines que se habían<lb break="yes"/>propuesto. A pocas horas comienzan á verse<lb break="yes"/>estas aves colosales dar vueltas repetidas<lb break="yes"/>en el ayre, y caer sobre su presa. Quando<lb break="yes"/>se hallan mas encarnizadas, el cazador apun-<lb break="no"/>ta, y lanza por medio de sarbatanas dar-</hi>
+                        </note>
+                    </p>
+                    <lb break="yes"/>
+                    <p>7. Lo que mas distingue al continente<lb break="yes"/>
+                        <pb n="14" facs="#f0046"/> americano es la prodigiosa elevacion del ter-<lb break="no"/>
+                        <note place="foot" n="(h)" xml:id="fn6-2" prev="#fn6-1" next="#fn6-3">
+                            <hi rendition="#i">dos agudisimos empapados en</hi> Curare. <hi rendition="#i">Co-<lb break="no"/>mo esta arma no hace ruido solo un indi-<lb break="no"/>viduo siente el golpe y todos los terribles<lb break="yes"/>efectos de aquel veneno. A pocos instantes<lb break="yes"/>se le ve vasilar sobre sus pies, entrar en con-<lb break="no"/>vulciones y expirar. Entre tanto los demas<lb break="yes"/>siguen con alegria saciando su innata vora-<lb break="no"/>cidad, para sufrir por su turno la suerte<lb break="yes"/>desgraciada del primero De este modo ma-<lb break="no"/>tan quantos quieren sin exfuerzos y sin pe-<lb break="no"/>ligro. Se ha observado que el Curare obra<lb break="yes"/>con mayor velocidad sobre los animales car-<lb break="no"/>nivoros que sobre los herbívoros. Quando<lb break="yes"/>hace expirar al Tigre, al Lobo, al Perro<lb break="yes"/>en un momento, da algunas tréguas al Buey<lb break="yes"/>y á la Oveja. Se dice que sobre el Caballo no<lb break="yes"/>
+                                <choice>
+                                    <sic>hahace</sic>
+                                    <corr type="editorial">hace</corr>
+                                </choice> otros efectos que exîtar convulciones y<lb break="yes" />promover el sudor mas <choice>
+                                    <sic>copioso</sic>
+                                    <corr type="editorial">copioso.</corr>
+                                </choice>
+                                <lb break="yes"/> Si este método es silencioso y està lleno de<lb break="yes"/>ardid y de traicion, el que sigue tiene apara-<lb break="no"/>tos, estrépito marsial y cierta franqueza gene-<lb break="no"/>rosa. El cebo se coloca en <choice>
+                                    <sic>modio</sic>
+                                    <corr type="editorial">medio</corr>
+                                </choice> de una llanu-<lb break="no"/>ra despejada y limpia de toda maleza. Se de-<lb break="no"/>xa que los Condores coman hasta el punto de<lb break="yes"/>avandonar por sí mismos la presa. Esta ave<lb break="yes"/>es glotona hasta la voracidad, y traga quan- </hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="15" facs="#f0047"/> reno. En Europa las altas porciones de ter-<lb break="no"/>
+                        <note place="foot" n="(h)" xml:id="fn6-3" prev="#fn6-2" next="#fn6-4">
+                            <hi rendition="#i">to puede recibir la capacidad de su buche.<lb break="yes"/>Quando se advierte que ya se separan<lb break="yes" />del cadaver à paso lento y que se ponen en<lb break="yes"/>quietud à digerir la gran cantidad de ma-<lb break="no"/>teria que ha engullido, entonces un gran nú-<lb break="no"/>mero de cazadores se presenta sobre el cam-<lb break="no"/>po de batalla. Los unos armados con palos,<lb break="yes"/>los otros con lauzas, y otros en fin á Ca-<lb break="no"/>ballo con lazos preparados, atacan por to-<lb break="no"/>das partes a los glotones Condores, que in-<lb break="no"/>capaces de elevarse à los ayres, a penas pue-<lb break="no"/>den arrastrarse pesadamente sobre la tierra.<lb break="yes"/>Es preciso no perder un solo momento y obrar<lb break="yes"/>con la mayor velosidad, por que el Condor<lb break="yes"/>asi que se ve atacado, introduce en su gar-<lb break="no"/>ganta una de sus garras, exîta el vómito,<lb break="yes"/>se descarga de un peso que le lleva a la muer-<lb break="no"/>te, se eleva y salva la vida. De este mo-<lb break="no"/>do se hacen sobre los Condores carnicerias tan<lb break="yes"/>terribles, como las que ellos exetan sobre<lb break="yes"/>la Oveja, sobre el Vecerro, y sobre la Ca-<lb break="no"/>bra de los Andes.</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#i">El cazador solo aprobecha la pluma y<lb break="yes" />alguna carne. Se cree casi generalmente en<lb break="yes"/>el Reyno que la carne del Condor es un ex-<lb break="no"/>celente remedio para la pluresia, ò do-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="16" facs="#f0048"/> reno cultivado apenas se elevan à 730 va-<lb break="no"/>ras sobre el mar, quando en el Perú hay ex-<lb break="no" />planadas à 3052 varas <note place="foot" n="(i)" xml:id="fn7-1" prev="#fn7-2">
+                            <hi rendition="#i">La explanada de Santafé está à</hi> 3 200<lb break="yes"/>
+                            <hi rendition="#i">varas sobre el mar: el Valle en que estan<lb break="yes"/>las Ciudades de Quito y de Riobamba à</hi>
+                            <lb break="yes"/>3800 <hi rendition="#i">y el gran plano sobre que están los</hi>
+                        </note> y las tres quin-<lb break="no"/>tas partes del Reyno de México, conrando<lb break="yes"/>con las provincias interiores solamente, pre-<lb break="no"/>sentan una superficie à 2190 à 2920 varas<lb break="yes"/>de elevacion comun. Estas alturas igualan à<lb break="yes" />los pasos célebres del Monte-Cenizo, de S.<lb break="yes"/>Gotard ò del gran San Bernardo. Humboldt<lb break="yes"/>ha adoptado un médio muy ingenioso, è in-<lb break="no"/>fininitamente superior à toda descripcion, para<lb break="yes"/>mostrar baxo de un punto de vista todos<lb break="yes"/>los resultados de sus observaciones topográ-<lb break="no" />ficas y mineralógicas. El presenta perfiles ò<lb break="yes"/>cortes verticales de todos los paises que ha<lb break="yes"/>
+                        <note place="foot" n="(h)" xml:id="fn6-4" prev="#fn6-3">
+                            <hi rendition="#i">lor de costado, principalmente para extin-<lb break="no"/>guir esta enfermedad en aquellos que tie-<lb break="no"/>nen una triste propencion à ella, y que de<lb break="yes"/>quando en quando se ven en las orillas del<lb break="yes"/>sepulcro. Pero el objeto principal de estas car-<lb break="no"/>nicerías es disminuir el número de estos ene-<lb break="no"/>migos poderosos de los rebaños. </hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="17" facs="#f0049"/> visitado tales como los de Acapulco à Mé-<lb break="no"/>xico, de México à Vera-Cruz, de México à<lb break="yes" />Guanaxuato y Volcan de Jorallo, y en fin<lb break="yes"/>de Mèxico à Valladolid.</p>
+                    <lb break="yes"/>
+                    <p>8. ... Los cultivadores de la N. España<lb break="yes"/>distinguen la parte cultivada del pais en tres<lb break="yes"/>zonas. <note place="foot" n="(j)">
+                            <hi rendition="#i">El N. Reyno de Granada se hace<lb break="yes"/>la misma distinción de zonas y de tempera-<lb break="no"/>turas que las que hace el Mexicano.</hi>
+                        </note> 1. Los <hi rendition="#i">terrenos càlidos,</hi> que no<lb break="yes"/>pasan de 360 varas de varas de altura, y que pro-<lb break="no"/>ducen Añil, Azucar, Algodon, Plátano, y Ba-<lb break="no" />nanas (Batatas) en abundancia. Los <hi rendition="#i">terre-<lb break="no" />nos templados</hi>, que estan sobre las faldas de<lb break="yes"/>la gran cadena, y que à una altura de 1800<lb break="yes"/>varas gozan de una eterna primavera, no va-<lb break="no"/>riando jamás el Termómetro mas allá de<lb break="yes"/>10 grados. 3. Los <hi rendition="#i">terrenos fríos</hi>, que à una<lb break="yes"/>altura de 2900 varas comprenden las llanu-<lb break="no"/>ras elevadas, ò las plataformas, tales como<lb break="yes"/>áquella en que está México, y cuya tempe-<lb break="no" />ratura varía entre 17 y 24 del Termómetro<lb break="yes"/>centígrado.</p>
+                    <lb break="yes"/>
+                    <p>
+                        <note place="foot" n="(i)" xml:id="fn7-2" prev="#fn7-1">21 <hi rendition="#i">pueblos de la Provincia de los Pastos, à</hi>
+                            <lb break="yes"/>3400 <hi rendition="#i">varas, todos cultivados y fértiles en<lb break="yes"/>granos, raices y hortalizas, así de Europa<lb break="yes"/> como de América.</hi>
+                        </note>
+                    </p>
+                    <lb break="yes"/>
+                    <pb n="18" facs="#f0050"/>
+                    <p>9 En la Zona Tórrida el firmamen-<lb break="no"/>to es de un azul mas solido. Las noches<lb break="yes"/>son resplandecientes y la bóveda celeste<lb break="yes"/>aparece sembrada de estrellas fixas, que,<lb break="yes" />como los Planetas, brillan con una luz<lb break="yes"/>viva y fixa<note place="foot" n="(k)" xml:id="fn8-1" next="#fn8-2">
+                            <hi rendition="#i">Jamas subscribirémos à este resul-<lb break="no" />tado de las observaciones de Humboldt. Las<lb break="yes" />estrellas fixas brillan en la Zona Tórrida con<lb break="yes"/>una luz centelleante è inquieta como en las<lb break="yes"/>Zonas templadas. Basta dirigir una mira-<lb break="no"/>da al cielo en las noches serenas para asegurarse de esta verdad. Mil veces ha<lb break="yes"/>sido esta materia objeto de nuestras obser-<lb break="no"/>vaciones. En Lalande habiamos leido que<lb break="yes"/>exísten paises en que el centelleo de las fixas<lb break="yes"/>es malo, y que en Bagdad no pasa de los 45<lb break="yes"/>grados de altura sobre el horizonte. Yo he ha-</hi>
+                        </note>. El ayre en estos clímas es<lb break="yes"/>tan transparente que en las montañas de<lb break="yes"/>Quito se puede distinguir à ojo desnudo<lb break="yes"/>la ropa blanca de una persona de à ca-<lb break="no"/>ballo à 17 millas de distancia.</p>
+                    <lb break="yes"/>
+                    <p>10 Se hallan en América Meridional<lb break="yes"/>llanuras de una extencion <choice>
+                            <sic>inmensa</sic>
+                            <corr>inmensa.</corr>
+                        </choice> Los<lb break="yes"/>Llanos ó Savánas que se encuentran en las<lb break="yes"/>orillas del Orinoco, vistas à distancia, se<lb break="yes" />asemejan à la superficie tranquila del Ocea-<lb break="no"/>
+                        <pb n="19" facs="#f0051"/> no cubiertas de una capa ligera de tierra que<lb break="yes"/>humedece el rosío, ò que inundan las lluvias pe-<lb break="no"/>riódicas, aunque sin árboles y sin fuentes pro-<lb break="no"/>ducen en abundancia una yerba alta y esponjo-<lb break="no" />sa que alimenta tropas inmensas de animales<lb break="yes"/>que desde el tiempo de la conquista de Amé-<lb break="no"/>rica, se han reducido al estado salvaje, y<lb break="yes"/>
+                        <note place="foot" n="(k)" xml:id="fn8-2" prev="#fn8-1" next="#fn8-3">
+                            <hi rendition="#i">llado en Quito, en Cuenca, Loxa, Popayan,<lb break="yes"/>Santafé, en las altas explanadas de los<lb break="yes"/>Pastos, y Malvasà, en los valles ardientes<lb break="yes"/>del Cauca y Magdalena que el centelleo de<lb break="yes"/>las estrellas es vivo en las cercanias del<lb break="yes"/>horizonte, que disminuye en razon de la<lb break="yes"/>altura, y que es poco sensible, aunque exîs-<lb break="no"/>te, en el zenit. Aquí, no termina como en<lb break="yes"/>Bagdad, à los 45° de altura. Las fre-<lb break="no" />qüentes ocasiones de observar à el Sol, y à<lb break="yes" />Júpiter, que nos presenta nuestra profesion,<lb break="yes"/>nos ha hecho notar que los Planetas mismos<lb break="yes"/>centellean de un modo particular. En aque-<lb break="no"/>llos dias en que la atmósfera se presenta<lb break="yes"/>limpia de toda nube, y que el Sol brilla con<lb break="yes"/>toda su fuerza, se vee su disco, no termi-<lb break="no"/>nado por una linea circular, sino por una<lb break="yes"/>linea tortuosa, que ondea con la mayor <choice>
+                                    <sic>ve-<lb break="no"/>locidad</sic>
+                                    <corr>ve-<lb break="no"/>locidad.</corr>
+                                </choice> Este efecto de los vapores que se<lb break="yes"/>levantan es un obstáculo á la precision de</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="20" facs="#f0052"/> que viven en una entera independencia<lb break="yes"/>y <choice>
+                            <sic>libertad</sic>
+                            <corr>libertad.</corr>
+                        </choice> Las Pampas de Buenos-Ayres<lb break="yes"/>son de la misma especie y tienen mas ex-<lb break="no"/>tension. Entre la yerba espesa viven ma-<lb break="no"/>nadas de Perros, que han recebrado tam-<lb break="no"/>bien el estado de libertad, en cuevas de<lb break="yes"/>donde se lanzan contra el viagero fatiga-<lb break="no"/>do. Aquí, baxo de estos climas afortuna-<lb break="no"/>dos y dichosos, es que la Naturaleza ha<lb break="yes"/>multiplicado las producciones vegetales con<lb break="yes" />tanta variedad como explendor. Aquí reyna<lb break="yes"/>una primavera eterna, y los frutos se succe-<lb break="no"/>den sin interrupcion sobre àrboles siem-<lb break="no"/>pre verdes. Nada iguala à la belleza y<lb break="yes"/>magnitud de los bosques de la Zona Tórri-<lb break="no"/>
+                        <note place="foot" n="(k)" xml:id="fn8-3" prev="#fn8-2">
+                            <hi rendition="#i">las observaciones. El disminuye, como el<lb break="yes"/>centelleo de las estrellas, en razon de la<lb break="yes"/>altura; pero hay dias en que es bien sen-<lb break="no"/>sible en el zenit <choice>
+                                    <sic>mismo</sic>
+                                    <corr>mismo.</corr>
+                                </choice> En Júpiter es tan<lb break="yes"/>fuerte, en ocasiones, que le hace perder y<lb break="yes"/>recobrar su figura circular à cada instante<lb break="yes"/>y fastidia en las observaciones de los Sa-<lb break="no"/>télites. El mismo fenómeno se observa en<lb break="yes"/>Venus, Luna, y en todos los Planetas. De<lb break="yes"/>este modo se puede decir: que en la Zona<lb break="yes"/>Tórrida no solo centelléan las estrellas, sinó que<lb break="yes"/>ondea el limbo de todos los Planetas.</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="21" facs="#f0053"/> da Estos se extienden à una distancia de<lb break="yes"/>1550 millas, sin ninguna otra interrupcion<lb break="yes" />que la de las aguas de los rios, desde las<lb break="yes"/>orillas del Orinoco hasta las del Amazonas.</p>
+                    <lb break="yes"/>
+                    <p>11. Las regiones elevadas de la Amé-<lb break="no"/>rica, sujetas a todos los grados de tempera-<lb break="no"/>tura posibles, concentran todas las diversas<lb break="yes"/>especies de vegetales. Desde las costas del<lb break="yes"/>Atlántico hasta la cima de los Andes todas<lb break="yes" />las diferentes especies de plantas estan<lb break="yes"/>colocadas unas en pos de otras, en una<lb break="yes"/>succesion regular, y cada especie ocupa<lb break="yes"/>su destino <choice>
+                            <sic>separado</sic>
+                            <corr>separado.</corr>
+                        </choice> La Vid tiene un es-<lb break="no"/>pacio estrecho hacia el Norte en una lati-<lb break="no"/>tud de 30 grados. Los Castaños crecen baxo<lb break="yes"/>del mismo paralelo. Viene despues la en-<lb break="no" />cina que se extiende hasta los 60 grados<lb break="yes"/>de latitud. En esta zona templada es que<lb break="yes"/>se cultiva el Trigo y la Cevada. La Ave-<lb break="no"/>na penetra á un clima mas frio; pero rara<lb break="yes"/>vez prospera mas allá de los 63 grados de<lb break="yes" />latitud <note place="foot" n="(m)" xml:id="fn9-1" next="#fn9-2">
+                            <hi rendition="#i">Parece que Peltier en este resultado<lb break="yes" />general de las observaciones de Humboldt<lb break="yes"/>confunde las ideas. Comienza extractando</hi>
+                        </note>.</p>
+                    <lb break="yes"/>
+                    <p>Los rios y los lagos de las Provin-<lb break="no"/>cias baxas de Venezuela y de Caracas es-<lb break="no"/>
+                        <pb n="22" facs="#f0054"/> tán llenos de <hi rendition="#i">Anguilas eléctricas</hi> llamadas por<lb break="yes"/>los Españoles <hi rendition="#i">Tembladores,</hi> y <hi rendition="#i">Anguilas que<lb break="yes"/>tiemblan</hi> por los colonos franceses de Gua-<lb break="no"/>yana. Estas Anguilas tienen la facultad asom-<lb break="no" />brosa de atacar à su enemigo, ò à su presa<lb break="yes"/>por una descarga eléctrica. Se las encuen-<lb break="no"/>
+                        <note place="foot" n="(m)" xml:id="fn9-2" prev="#fn9-1">
+                            <hi rendition="#i">los diversos niveles a que nacen las plantas<lb break="yes"/>sobre los Andes, y concluye citando los exem-<lb break="no"/>plos tomados de la Vid, Castaño, Encina y<lb break="yes"/>Avena, no con relacion à la altura, sino à<lb break="yes"/>la <choice>
+                                    <sic>latitnd</sic>
+                                    <corr>latitud</corr>
+                                </choice>. De este modo los términos se-<lb break="no"/>ñalados à esos vegetales no comprueban la<lb break="yes"/>asercion</hi>: todas las diferentes especies de plan-<lb break="no"/>tas están colocadas unas en pos de otras &amp;c.<lb break="yes"/>
+                            <hi rendition="#i">Nosotros hemos dicho en varios lugares del<lb break="yes"/>Semanario</hi>: <hi rendition="#i">que</hi> en la vecindad de la Linea la<lb break="yes"/>latitud no tiene ningun influxo sobre la ve-<lb break="no"/>getacion, y que la distribucion de las plan-<lb break="no"/>tas depende únicamente de la altura, y por<lb break="yes"/>consiguiente de la presion atmosférica, tempe-<lb break="no"/>ratura &amp;c. <hi rendition="#i">Esta es una verdad tan notoria<lb break="yes"/>que basta tener ojos para percibirla. No ig-<lb break="no"/>noramos que algunos de nuestros literatos tie-<lb break="no"/>nen dudas; pero nos proponemos aclarar<lb break="yes"/>este punto interesante en una Memoria que<lb break="yes"/>tiene por título</hi>: Nivelacion de las plantas de<lb break="yes"/>la vecindad del Equador.</note>
+                        <lb break="yes"/>
+                        <pb n="23" facs="#f0055"/> tra tambien en los lagos pequeños que se<lb break="yes"/>ven dispersos sobre las vastas llanuras que<lb break="yes" />se extienden desde el Orinoco hasta el Apu-<lb break="no"/>re. El antiguo camino de Uriticá se aban-<lb break="no"/>donó por el peligro que se corría al atra-<lb break="no"/>vesar estas aguas estancadas. Era freqüente ver<lb break="yes"/>à las Mulas de transporte heridas de una con-<lb break="no" />cusion invisible, paralisarse y perecer. Los<lb break="yes"/>mismos pescadores reciben golpes eléctricos<lb break="yes"/>sirviendoles de conductor la vara de que de-<lb break="no"/>pende el anzuelo.</p>
+                    <lb break="yes"/>
+                    <p>Las Anguilas eléctricas tienen por lo<lb break="yes"/>ordinario dos varas y una tercia de longi-<lb break="no"/>tud. Se ha descrito con cuidado la estructura<lb break="yes"/>de su sistema nervioso; pero todo lo que<lb break="yes"/>se ha dicho sobre los receptáculos celula-<lb break="no" />res es puramente imaginario. La sensa-<lb break="no"/>cion que exîtan las Anguilas es extremada-<lb break="no"/>mente dolorosa y las entorpece las partes afec-<lb break="no"/>tas. Se asemeja mas bien a un golpe violento<lb break="yes"/>en la cabeza que á la conmocion que se produce<lb break="yes"/>el fluido eléctrico ordinario. Los Indios temen<lb break="yes"/>tanto à las Anguilas y manifiestan tal repug-<lb break="no" />nancia, que Humboldt tuvo la mayor dificul-<lb break="no"/>tad para conseguirlas, y executar sus experien-<lb break="no"/>cias. Muchos dias permaneció cerca del Apu-<lb break="no"/>re en la Mision del Calabozo, con objeto de<lb break="yes"/>conseguir algunas; pero sabiendo que las habia <lb break="yes"/>
+                        <pb n="24" facs="#f0056"/> en las inmediaciones en gran número, resolvió<lb break="yes"/>pasar à los mismos lugares en que habitan<lb break="yes" />estas Anguilas. Nuestros viageros presencia-<lb break="no"/>ron entonces un espectáculo tan extraordi-<lb break="no"/>nario como nuevo. Cerca de 30 Mulas y<lb break="yes"/>Caballos recogidos con velocidad en las<lb break="yes"/>savanas vecinas, en donde viven en un estado<lb break="yes" />cási silvestre, y en tanta abundancia que cada<lb break="yes"/>uno de estos animales no vale mas que de 11<lb break="yes"/>à 12 reales de nuestra moneda, quando lle-<lb break="no"/>ga à conocerse el propietario. Los Indios exî-<lb break="no"/>tandolos por todas partes, los obligaron à arro-<lb break="no"/>jarse en el agua, impidiendo su retirada con<lb break="yes" />harpones clavados en las extremidades de<lb break="yes"/>largas Guaduas, y dando gritos terribles. Las<lb break="yes"/>Anguilas (<hi rendition="#i" >Gymnoti</hi>), despertadas con este<lb break="yes"/>tumulto y con este ruido, suben de repente<lb break="yes"/>á la superficie del agua nadando como otras<lb break="yes"/>tantas serpientes lìvidas, atacan à los Caballos<lb break="yes"/>y à las Mulas, y deslisandose baxo del vien-<lb break="no"/>tre de aquellos, les comunican las mas vio-<lb break="no" />lentas conmociones. Los Caballos horroriza-<lb break="no"/>dos, agonizantes, con la crin herizada, los ojos<lb break="yes"/>saltados, por los dolores violentos que su-<lb break="no"/>frían, hacen vanos esfuerzos para escapar. <lb break="yes"/>En menos de cinco minutos 2 de ellos sobre-<lb break="no"/>nadan, y se ahogan. La victoria parece que<lb break="yes"/>se declara por las Anguillas eléctricas; pero <lb break="yes"/>
+                        <pb n="25" facs="#f0057"/> su actividad comienza à debilitarse. Fa-<lb break="no"/>tigadas por los esfuerzos repetidos de su ner-<lb break="no" />viosa energía, lanzan ya con menos freqüen-<lb break="no"/>cia y con menor efecto el fluido eléctrico.<lb break="yes"/>Los Caballos que habian sobrevivido à este<lb break="yes"/>combate, recobraron poco à poco sus fuer-<lb break="no"/>zas, y en un quarto de hora las Anguilas<lb break="yes"/>se retiraron en tal estado de debilidad y<lb break="yes" />agotamiento que se las podia conducir a la ori-<lb break="no"/>lla por médio de harpones atados à cordeles.</p>
+                    <p>13. Las observaciones de Humboldt dan<lb break="yes"/>mucha luz sobre la constitucion y hábitos de<lb break="yes"/>los naturales del pais. Los Indios de las re-<lb break="no"/>giones templadas de la N<choice>
+                            <sic/>
+                            <corr type="editorial">.</corr>
+                        </choice> España son en gene-<lb break="no"/>ral de un color mas subido que los que habitan un<lb break="yes"/>clima mas ardiente. Esta raza sin vigor y sobre<lb break="yes"/>todo los Mexicanos encorvados baxo de una<lb break="yes"/>larga opresion parecen inferiores en sus qua-<lb break="no" />lidades morales è intelectuales al Africano mis-<lb break="no"/>mo. <note place="foot" n="(n)" xml:id="fn10-1" next="#fn10-2">
+                            <hi rendition="#i">La degradacion del Indio hasta el<lb break="yes" />punto en que la vemos es obra del Gobier-<lb break="no"/>no opresor que nos ha embrutecido por el<lb break="yes"/>espacio de tres siglos consecutivos. El In-<lb break="no"/>dio era hombre en México, en el Perú, y en la<lb break="yes"/>Cundinamarca: tenia artes, edificios, leyes,<lb break="yes"/>vivia en sociedad, conocia el arte de la guer-</hi>
+                        </note> La misma apatía de caracter parece <lb break="yes"/>
+                        <pb n="26" facs="#f0058"/> pertenecer à los individuos que habitan estas<lb break="yes"/>regiones ardientes, en donde el hombre halla<lb break="yes" />sin trabajo quanto necesita para satisfacer sus necesidades. Aunque el capricho lo arrastre<lb break="yes"/>alguna vez, el cebo de la ganancia no basta<lb break="yes"/>para sacarlos de su pereza habitual. Quando<lb break="yes"/>nuestros Viageros visitaron la Havana vieron<lb break="yes" />la Palma Real cubierta de flores mas blan-<lb break="no"/>cas que la nieve, y desearon vivamente re-<lb break="no"/>conocer su floracion. Para esto, ofrecieron à<lb break="yes"/>los negros de las cercanias 2 pesos fuertes<lb break="yes"/>por cada ramo cubierto de flores, que po-<lb break="no"/>dian tomar con la mayor facilidad; pero nin-<lb break="no" />guno se atrevió a dar un paso.</p>
+                    <note place="foot" n="(n)" xml:id="fn10-2" prev="#fn10-1" next="#fn10-3">
+                        <hi rendition="#i">ra, y conocian tambien su dignidad. Hoy<lb break="yes" />embrutecido no sabe sino temer à sus tiranos<lb break="yes"/>y satisfacer groseramente las mas urgentes<lb break="yes"/>necesidades de la vida. Estas escenas ver-<lb break="no"/>gonzosas para la humanidad se han repetido<lb break="yes"/>muchas veces. El Pueblo que produxo a Pla-<lb break="no"/>ton, Archímedes, à Demóstenes y à Homero<lb break="yes"/>no puede presentar hoy sino estúpidos y es-<lb break="no"/>clavos baxo la opresion del Turco. Es necesa-<lb break="no"/>sario descender un espacio infinito para lle-<lb break="no"/>gar desde los héroes de Marathon y Salami-<lb break="no" />na à los imbeciles y voluptuosos Baxaes. El<lb break="yes"/>Indio de México, del Perú y de Cundina-</hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="27" facs="#f0059"/>
+                    <p>En las vastas regiones de la América<lb break="yes"/>se hallan varias tribus errantes, de caracter y<lb break="yes"/>aspecto bien opuestos. Viven en un estado de<lb break="yes"/>degradacion brutal, y en una independencia<lb break="yes"/>feroz. En las orillas del Meta y del Orinoco<lb break="yes" />viven los Otomacos, raza abominable, que<lb break="yes"/>con una disposicion à la grosura, ofrecen todos<lb break="yes"/>los rasgos groseros y bien caracterizados de<lb break="yes"/>los Tártaros. La mayor parte del año viven<lb break="yes"/>de pescado que matan con dardos en los rios.<lb break="yes"/>En la estacion de las lluvias y quando los rios <note place="foot" n="(n)" xml:id="fn10-3" prev="#fn10-2" next="#fn10-4">
+                            <hi rendition="#i">marca todavia à médio civilizar pasó ràpi-<lb break="no"/>damente à la opresion que ha sufrido por<lb break="yes"/>tres siglos ¿Que hay que admirar si lo ha-<lb break="no"/>llamos mas estúpido que el Africano? El gé-<lb break="no"/>nio es como el Elefante, no produce en la escla-<lb break="no"/>vitud. Quiera el Cielo mejorar la suerte des-<lb break="no"/>graciada del Indio baxo de la libertad que<lb break="yes"/>nos ha ayudado á conquistar. Quiera el Cielo<lb break="yes"/>que se mejore la parte física, intelectual y mo-<lb break="no"/>ral de esta raza envilecida y degradada.<lb break="yes"/>Quiera el Cielo que nosotros mismos nos ilus-<lb break="no"/>tremos, y que con buenos establecimientos,<lb break="yes"/>con un buen</hi> Plan de Educacion, <hi rendition="#i">con un amor<lb break="yes"/>indefenso al estudio venguemos 300 años de<lb break="yes"/>tinieblas y de ignorancia. Sin</hi> Educacion fí-<lb break="no"/>sica <hi rendition="#i">no hay constituciones robustas, ni ener-</hi>
+                        </note>
+                        <lb break="yes"/>
+                        <pb n="28" facs="#f0060"/> inundan las llanuras estos salvages se alimen-<lb break="no"/>tan con una especie de tierra grasa y untuosa,<lb break="yes"/>que no es otra cosa que una mezcla de arci-<lb break="no" />lla y de oxîdo de hierro. Los Otomacos la<lb break="yes"/>recogen con cuidado y la distinguen al gusto.<lb break="yes"/>Forman bolas de 4 à 5 pulgadas de diametro,<lb break="yes"/>las que cocen lentamente. Se halla gran can-<lb break="no"/>tidad de ellas en sus chosas. Estas bolas se<lb break="yes"/>deslien en agua antes de hacer uso, y cada in-<lb break="no"/>dividuo se come cerca de una libra diaria.<lb break="yes" />Lo unico que suelen añadir à este alimento<lb break="yes"/>extraordinario es algun pescado, lagartos ó<lb break="yes"/>raices desecadas. La gran cantidad de tierra<lb break="yes"/>que consumen los Otomacos y la ánsia con que<lb break="yes"/>la comen, parece probar, por increíble que<lb break="yes"/>parezca, que hace un efecto bien diferente de<lb break="yes"/>el de relaxar el estómago, y que el poder de la<lb break="yes"/>digestion asimila à la substancia animal las<lb break="yes" />partes menos groseras.</p>
+                    <note place="foot" n="(n)" xml:id="fn10-4" prev="#fn10-3" next="#fn10-5">
+                        <hi rendition="#i">gia en las razas diferentes que componen<lb break="yes" />el estado. Sin</hi> Educacion literaria <hi rendition="#i">no hay Po-<lb break="no"/>líticos que nos ilustren, no hay Magistrados<lb break="yes"/>que administren la Justicia a los pueblos, no<lb break="yes"/>hay Marinos que hagan respetar nuestro pa-<lb break="no"/>bellon, no hay Matemáticos, Astrónomos,<lb break="yes" />Geografos, Químicos, Físicos, Botanicos....<lb break="yes"/>que lleven a todas partes la antorcha del</hi>
+                    </note>
+                    <lb break="yes"/>
+                    <pb n="29" facs="#f0061"/>
+                    <p>A medida que el estío se avanza las<lb break="yes"/>llanuras baxas de América comienzan a de-<lb break="no"/>secarse por medio de un calor executivo. Las<lb break="yes"/>yerbas se secan hasta la raiz, y el suelo se en-<lb break="no"/>durece con el calor. Los animales envueltos<lb break="yes" />durante el dia, en nubes de polvo, huyen de-<lb break="no"/>vorados por la sed. El Mulo mejor guiado<lb break="yes"/>por su instinto, descubre con sus pies las raices<lb break="yes"/>de Zandía y chupa una bebida que lo refres-<lb break="no"/>ca. Bien pronto se oyen los gritos penetran-<lb break="no"/>tes de los Monos mas grandes anunciar la cer-<lb break="no" />canía de las lluvias. Entonces torrentes de<lb break="yes"/>agua inundan las llanuras. El Cocodrilo (Cay-<lb break="no"/>man), y el Buio (tambien Boa), largo tiempo<lb break="yes"/>entorpecidos bajo del cieno, levantan sus horri-<lb break="no"/>bles cabezas y dexan sus sepulcros con un rui-<lb break="no"/>do formidable. Bien pronto los rios salen de<lb break="yes" />la madre, é inundan el terreno. Una capa de<lb break="yes"/>agua de poca profundidad cubre la super- <note place="foot" n="(n)" xml:id="fn10-5" prev="#fn10-4" next="#fn10-6">
+                        <hi rendition="#i">càlculo y de la observacion; no hay tam-<lb break="no"/>poco prosperidad ni gloria. Sin</hi> Educacion<lb break="yes"/>moral,  <hi rendition="#i">no hay costumbres, y sin costumbres<lb break="yes"/>no hay leyes</hi> ¿Quid leges sine moribus? <hi rendition="#i">La</hi>
+                            <lb break="yes"/>moral, <hi rendition="#i">dice un Político,</hi>
+                            <note place="foot" n="(o)">
+                                <hi rendition="#i">Moreau.</hi> Principes de morale politique.</note> es la ley fun-<lb break="no"/>damental de los estados. Con ella se ele-<lb break="no"/>van y prosperan: sin ella se corrompen y </note>
+                        <lb break="yes"/>
+                        <pb n="30" facs="#f0062"/> ficie de todo el <hi rendition="#i">Delta</hi> del Orinoco. En mé-<lb break="no"/>dio de estas escenas aquaticas vive en paz<lb break="yes"/>y en libertad la nacion Guarana que habita<lb break="yes"/>sobre la copa de la palma llamada <hi rendition="#i" >Maricia</hi>
+                        <lb break="yes"/>que tiene las ojas en forma de abanico. Esta<lb break="yes" />Nacion hace sus hamacas de las fibras de aque-<lb break="no"/>lla palma, y las reviste de tierra arcillosa.<lb break="yes"/>Sobre estos frágiles pavimentos es que las<lb break="yes"/>mugeres hacen fuego y cocen sus alimentos.<lb break="yes"/>La palma à la que está suspendida cada fa-<lb break="no"/>milia, le suministra todos los alimentos El meo-<lb break="no"/>llo de la Maricia, que se parece al Sagú, está<lb break="yes"/>en forma de panales, y sus frutos escamosos<lb break="yes" />les presentan un alimento sano y agradable <note place="foot" n="(n)" xml:id="fn10-6" prev="#fn10-5">perecen sin recurso. La inmoralidad y la in-<lb break="no"/>justicia es el azote de los que mandan y<lb break="yes"/>la ruina de los que obedecen. <hi rendition="#i">Yo termino es<lb break="no"/>ta nota haciendo al Ser Supremo los mis-<lb break="no"/>mos votos que hizo un filósofo en su testa-<lb break="no"/>mento</hi>
+                            <note place="foot" n="(p)">
+                                <hi rendition="#i">De la Harpe</hi>: en el fin de su testamento.</note> (p). Suplico, dice, á la Divina Provi-<lb break="no"/>dencia que oyga la súplica que voy a hacer<lb break="yes"/>para la felicidad de mi pais. Que las santas<lb break="yes"/>máxîmas del Evangelio sean generalmente ob-<lb break="no"/>servadas, por que ellas solas pueden hacer<lb break="yes"/>la felicidad de la Sociedad.</note>
+                        <lb break="yes"/>
+                        <pb n="31" facs="#f0063"/> en todos los grados de sazon y de incre-<lb break="no"/>mento. El vino de la palma es una bebida<lb break="yes" />fresca y produce aquel estado de embria-<lb break="no"/>guez que constituye la felicidad suprema del<lb break="yes"/>salvage.</p>
+                    <lb break="yes"/>
+                    <p>Si los miembros de esta Republica aérea<lb break="yes"/>gozan de un reposo inalterable, no es así en-<lb break="no"/>tre las demas tribus salvages de esta parte<lb break="yes"/>de la América. Estos, agitados por las pa-<lb break="no"/>siones mas abominables siempre están pron-<lb break="no" />tos a bañarse en la sangre de sus semejan-<lb break="no"/>tes. Estos desgraciados no se complacen sino<lb break="yes"/>con el homicidio y con el robo. Quando una<lb break="yes"/>tribu mas débil se atreve à atravesar las lla-<lb break="no"/>nuras del Orinoco, sus individuos toman la<lb break="yes"/>precaucion de borrar las huellas para no ser<lb break="yes" />sorprehendidos y asesinados. Las producciones<lb break="yes"/>del pais parece que favorecen à las incli-<lb break="no"/>naciones feroces de los salvages. Aquí se ha-<lb break="no"/>llan los venenos mas activos baxo de un cli-<lb break="no"/>ma abrasador. Los dardos y las flechas que<lb break="yes"/>estàn empapados en él llevan à todas par-<lb break="no" />tes una muerte inevitable<choice><sic></sic><corr type="editorial">.</corr></choice> Quando estas ar-<lb break="no"/>mas faltan à los salvages, su industria feroz<lb break="yes"/>halla médios de suplirlas. El terrible Oto-<lb break="no"/>maco tiene la costumbre de empapar la uña<lb break="yes"/>del pulgar en <hi rendition="#i">Curare</hi>, veneno activo, y que<lb break="yes"/>se extrae de una especie de <hi rendition="#i" >Phillanthus</hi>. La <lb break="yes"/>
+                        <pb n="32" facs="#f0064"/> mas pequeña laceracion hecha con esta uña<lb break="yes"/>produce la muerte sin remedio. El vordade-<lb break="no"/>ro salvage es un animal friamente cruel, tay-<lb break="no"/>mado, sospechoso y astuto. Los hombres no<lb break="yes"/>son generosos sino a proporcion que se ci-<lb break="no"/>vilizan<choice><sic></sic><corr type="editorial">.</corr></choice></p>
+                    <p>
+                        <hi rendition="#c">
+                            <hi rendition="#k">FIN.</hi>
+                        </hi>
+                    </p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

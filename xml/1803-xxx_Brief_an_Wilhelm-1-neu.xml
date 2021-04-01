@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="309" facs="#f0001"/>
+            <p xml:lang="deu">Um Ihnen, lieber Freund, noch einen Beweis<lb break="yes"/>mehr zu geben, daß meine Schilderung der Ein&#x017F;ied-<lb break="no"/>ler des Mont&#x017F;errats wirklich der Natur ent&#x017F;pricht,<lb break="yes"/>will ich Ihnen aus einem Briefe meines Bruders eine<lb break="yes"/>Anekdote ab&#x017F;chreiben, die er, als er ein Jahr vor<lb break="yes"/>mir den Mont&#x017F;errat be&#x017F;uchte, dort erlebte.</p>
+            <lb break="yes"/>
+            <p>&#x201E;Ich befand mich,&#x201C; &#x017F;o lautet &#x017F;eine Erzählung,<lb break="yes"/>&#x201E;bey dem Ein&#x017F;iedler von Santiago und &#x017F;uchte Kräu-<lb break="no"/>&#x201E;ter in der Nachbar&#x017F;chaft &#x017F;einer Ein&#x017F;iedeley. Der<lb break="yes"/>&#x201E;Eremit hörte im Walde rufen, wurde unruhig,<lb break="yes"/>
+                <fw type="catch" place="bottom">&#x201E;öffnete</fw>
+                <lb break="yes"/>
+                <pb n="310" facs="#f0002"/> &#x201E;öffnete alle Fen&#x017F;ter &#x017F;einer Warte, und wollte &#x017F;chon<lb break="yes"/>&#x201E;zu Hülfe eilen. In dem&#x017F;elben Augenblicke &#x017F;türzte<lb break="yes"/>&#x201E;ein junger Maulthiertreiber weinend und außer<lb break="yes"/>&#x201E;Athem herzu. Er &#x017F;chrie: &#x017F;ein <hi rendition="#i">macho</hi> (ein Wort<lb break="yes"/>&#x201E;das, von ma&#x017F;culus ab&#x017F;tammend, eigentlich alles<lb break="yes" />&#x201E;Männliche der Thiere bedeutet, aber vorzugswei&#x017F;e<lb break="yes" />&#x201E;für Maulthiere gebraucht wird) &#x017F;ein armer, lieber<lb break="yes" />&#x201E;macho &#x017F;ey in den Abgrund ge&#x017F;türzt. Er weinte,<lb break="yes" />&#x201E;wie ein Kind, und rief tau&#x017F;endmal die Mutter Got-<lb break="no" />&#x201E;tes und alle Heilige an. Der Ein&#x017F;iedler &#x017F;chleppte<lb break="yes"/>&#x201E;ihn ha&#x017F;tig in &#x017F;ein Zimmer und hieng ihm einen Ro-<lb break="no"/>&#x201E;&#x017F;enkranz um. Ich fürchtete &#x017F;chon, dies &#x017F;ey die<lb break="yes"/>&#x201E;ganze Hülfe. Allein es war nur, um den er&#x017F;ten<lb break="yes"/>&#x201E;Schmerz zu lindern. Er &#x017F;türzte &#x017F;ich &#x017F;odann, ohne<lb break="yes"/>&#x201E;dem Wege zu folgen, die Felswände hinab bis zu<lb break="yes"/>&#x201E;dem Orte, wo das Maulthier lag. Der Treiber<lb break="yes"/>&#x201E;und ich konnten er&#x017F;t &#x017F;päter nachkommen. Das<lb break="yes"/>&#x201E;Thier hieng nur noch an Einem Beine, das &#x017F;ich um<lb break="yes"/>&#x201E;einen Baum ge&#x017F;chlungen hatte, mit dem Kopfe<lb break="yes"/>&#x201E;nach unten zu, &#x017F;o &#x017F;chräg über dem Abgrunde, daß<lb break="yes"/>&#x201E;es, &#x017F;ich &#x017F;elb&#x017F;t überla&#x017F;&#x017F;en, nothwendig hätte hinun-<lb break="no"/>&#x201E;ter &#x017F;türzen mü&#x017F;&#x017F;en. Der Treiber heulte unent-<lb break="no" />&#x201E;&#x017F;chlo&#x017F;&#x017F;en, küßte das arme Thier, und &#x017F;etzte ver-<lb break="no"/>&#x201E;bindliche Anreden an alle Heiligen hinzu, welche<lb break="yes"/>&#x201E;dem Viehe für nützlich erachtet werden. Der Ein-<lb break="no"/>&#x201E;&#x017F;iedler &#x017F;chalt &#x017F;eine unthätige Zagheit, hier &#x017F;ey der<lb break="yes"/>&#x201E;Moment zum Handeln. Er &#x017F;tellte &#x017F;ich &#x017F;tämmig<lb break="yes"/>&#x201E;unter das Thier, um dem Kopfe eine Richtung zu<lb break="yes"/>&#x201E;geben. Ein wirklich &#x017F;chauerlicher Anblick! denn<lb break="yes"/>&#x201E;fiel das Thier zu &#x017F;chnell, &#x017F;o zog es ihn, ohne Ret-<lb break="no"/>&#x201E;tung, mit in den Abgrund hinab. Aber der Ein-<lb break="no"/>&#x201E;&#x017F;iedler lächelte der Gefahr, ließ einen Strick um<lb break="yes"/>&#x201E;den Fuß des Thieres &#x017F;chlingen, und wälzte es &#x017F;o,<lb break="yes"/>
+                <fw type="catch" place="bottom">&#x201E;den</fw>
+                <lb break="yes"/>
+                <pb n="311" facs="#f0003"/> &#x201E;den Kopf lenkend, glücklich in die Höhe. Nun<lb break="yes"/>&#x201E;folgte eine lange Strafpredigt über den Mangel an<lb break="yes"/>&#x201E;Ent&#x017F;chlo&#x017F;&#x017F;enheit. Leider war der Ro&#x017F;enkranz bey<lb break="yes"/>&#x201E;der Arbeit verloren gegangen. Aber der Ein&#x017F;iedler<lb break="yes"/>&#x201E;&#x017F;uchte ihn nicht äng&#x017F;tlich; es war ihm leicht, &#x017F;ich<lb break="yes"/>&#x201E;einen andern zu drech&#x017F;eln.&#x201C;</p>
+            <lb break="yes"/>
+            <p>Es i&#x017F;t Ihnen vielleicht nicht unlieb, wenn ich<lb break="yes"/>Ihnen aus dem&#x017F;elben Briefe meines Bruders etwas<lb break="yes"/>über die mineralogi&#x017F;che Be&#x017F;chaffenheit die&#x017F;es Berges<lb break="yes" />ab&#x017F;chreibe.</p>
+            <lb break="yes"/>
+            <p>&#x201E;Die ganze <placeName key="llanodebarcelona">Ebene von Barcelona</placeName> be&#x017F;teht aus<lb break="yes"/>&#x201E;Sand&#x017F;tein, nämlich &#x017F;o daß immer das grobkörnige<lb break="yes"/>&#x201E;Conglomerat mit feinkörnigem Sand&#x017F;tein abwech-<lb break="no"/>&#x201E;&#x017F;elt. Unter die&#x017F;em Sand&#x017F;teine kommt hier und da<lb break="yes"/>&#x201E;Kalk&#x017F;tein, und unter die&#x017F;em, aber von unregel-<lb break="no"/>&#x201E;mäßigem Falle, um Colbaton, Thon&#x017F;chiefer mit<lb break="yes"/>&#x201E;Quarzgängen durchtrümmert vor. Der Mont&#x017F;errat<lb break="yes"/>&#x201E;&#x017F;elb&#x017F;t be&#x017F;teht vom Fuße bis zum Gipfel aus einem<lb break="yes" />&#x201E;Conglomerat, das mei&#x017F;t &#x017F;ehr grobkörnig i&#x017F;t; zwar<lb break="yes"/>&#x201E;&#x017F;ind gegen den Gipfel zu feinkörnige Sand&#x017F;tein-<lb break="no"/>&#x201E;&#x017F;chichten häufiger, doch bilden &#x017F;ie kaum <formula notation="TeX">\frac{1}{7}</formula> des<lb break="yes" />&#x201E;Ganzen. Die Ge&#x017F;chiebe &#x017F;ind zum Theil 14 Zoll<lb break="yes" />&#x201E;dick, große und kleine gemengt, mei&#x017F;tentheils<lb break="yes" />&#x201E;graulich weißer Kalk&#x017F;tein; doch kommt auch etwas<lb break="yes" />&#x201E;gelber und &#x017F;chwarzer, der leicht mit Lydi&#x017F;chem<lb break="yes"/>&#x201E;Stein zu verwech&#x017F;eln i&#x017F;t, darin vor. Die Crête des<lb break="yes"/>&#x201E;Berges &#x017F;treicht St. 8. Im Conglomerat i&#x017F;t etwas<lb break="yes"/>&#x201E;weißer Quarz, als Ge&#x017F;chiebe. Die Schichten &#x017F;ind<lb break="yes"/>&#x201E;alle mei&#x017F;t &#x017F;eiger mit 80 &#x2014; 90° und mei&#x017F;t St. 3 &#x2014; 4.<lb break="yes"/>&#x201E;Daher i&#x017F;t das Serratum (die Ein&#x017F;chnitte) eine Folge<lb break="yes" />&#x201E;der Schichtung. Die Bänke haben &#x017F;ich abgelö&#x017F;t,<lb break="yes"/>
+                <fw type="catch" place="bottom">&#x201E;und</fw>
+                <lb break="yes"/>
+                <pb n="312" facs="#f0004"/> &#x201E;und da der Sand&#x017F;tein dazu leicht verwitterbar i&#x017F;t,<lb break="yes"/>&#x201E;&#x017F;o haben &#x017F;ich Kegel gebildet, von denen immer<lb break="yes"/>&#x201E;5 &#x2014; 6 zu den &#x017F;onderbar&#x017F;ten Gruppen zu&#x017F;ammenge-<lb break="no"/>&#x201E;häuft &#x017F;ind.&#x201C;</p>
+        </body>
+        <back/>
+    </text>
+</TEI> 

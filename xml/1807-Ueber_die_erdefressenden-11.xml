@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="248" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>SUR LES PEUPLES QUI MANGENT<lb break="yes"/>DE LA TERRE;<lb break="yes"/>
+                    <hi rendition="#i">Par M. <hi rendition="#k">de <persName key="humboldt_av" >Humboldt</persName>;</hi> tiré de ses</hi> Tableaux de<lb break="yes"/>la Nature <hi rendition="#i">(Ansichten der Natur), premier<lb break="yes"/>vol., pag.</hi> 142.</head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <hi rendition="#in">S</hi>ur</hi> les c&#x00F4;tes de Cumana, de la Nouvelle-Bar-<lb break="no"/>celonne et de Caracas, nous trouv&#x00E2;mes la tradi-<lb break="no"/>tion sur une nation qui mange de la terre,<lb break="yes"/>généralement répandue par les moines francis-<lb break="no" />cains de la Guyane qui, à leur retour des mis-<lb break="no"/>sions, visitent ces provinces. Ce fut le 6 juin<lb break="yes"/>1800, pendant notre retour de Rio-Negro et<lb break="yes"/>notre navigation de trente-six jours sur l&#x2019;Oré-<lb break="no"/>noque, que nous pass&#x00E2;mes une journée entière<lb break="yes"/>dans la mission établie parmi les <hi rendition="#i" >Otomaques,</hi>
+                    <lb break="yes"/>peuplade qui mange de la terre. Le village ou<lb break="yes" />plut&#x00F4;t le hameau s&#x2019;appelle <hi rendition="#i">Concepcion di<lb break="yes"/>Uruana,</hi> et s&#x2019;appuie d&#x2019;une manière très-pitto-<lb break="no"/>resque à un rocher de granite. Je trouvai sa<lb break="yes"/>position géographique à 7 degr. 8 minutes 3 se-<lb break="no" />condes, latitude nord; et 4 heures 38 min. 38<lb break="yes"/>sec. Long. ouest de Paris.</p>
+                <lb break="yes"/>
+                <p>La terre que mangent les Otomaques est une<lb break="yes"/>véritable argile glaise ou terre à potier, grasse,<lb break="yes"/>douce et colorée en jaune gris, au moyen d&#x2019;une<lb break="yes"/>
+                    <pb n="249" facs="#f0002"/> petite quantité d&#x2019;oxide de fer. Ils la choisissent<lb break="yes"/>avec soin, et la cherchent dans des bancs à part<lb break="yes"/>sur les bords de l&#x2019;Orénoque et de la Meta. Ils<lb break="yes"/>distinguent une espèce de terre de l&#x2019;autre par<lb break="yes"/>la dégustation, et ne mangent pas indifférem-<lb break="no" />ment toutes sortes d&#x2019;argiles. Ils pétrissent cette<lb break="yes" />terre en boules de 4 à 6 pouces de diamètre et<lb break="yes"/>les br&#x00FB;lent extérieurement à petit feu, jusqu&#x2019;à<lb break="yes"/>ce que la oro&#x00FB;te devienne rouge&#x00E2;tre. Avant de<lb break="yes"/>manger ces boules, ils les humectent de nouveau.</p>
+                <lb break="yes"/>
+                <p>Ces Indiens sont, généralement parlant, très-<lb break="maybe"/>sauvages et ont en horreur la culture des végé-<lb break="no"/>taux. Les peuplades les plus éloignées sur l&#x2019;Oré-<lb break="no"/>noque, lorsqu&#x2019;elles veulent désigner quelque<lb break="yes"/>chose de très-malpropre, disent en forme de<lb break="yes"/>proverbe: C&#x2019;est si sale qu&#x2019;un Otomaque le man-<lb break="no"/>geroit. Aussi <choice>
+                        <sic>l&#x2019;ong-temps</sic>
+                        <corr type="editorial">long-temps</corr>
+                    </choice> que durent les basses<lb break="yes"/>eaux de l&#x2019;Orénoque et de la Meta, les Oto-<lb break="no"/>maques se nourrissent de poissons et de tor-<lb break="no"/>tues. Les poissons sont tués à coups de flèches au<lb break="yes"/>moment où ils s&#x2019;élèvent sur la surface de l&#x2019;eau;<lb break="yes"/>espèce de chasse dans laquelle nous avons sou-<lb break="no"/>vent admiré l&#x2019;adresse des Indiens. Les rivières<lb break="yes"/>éprouvent-elles leur crue périodique, aussit&#x00F4;t<lb break="yes"/>la p&#x00EA;che cesse. Dans cette saison, qu&#x00EE; dure deux<lb break="yes"/>ou trois mois, les Otomaques dévorent une<lb break="yes"/>quantité incroyable de terre glaise. Nous en<lb break="yes"/>avons trouvé de grandes provisions dans leurs<lb break="yes" />cabanes; nous y v&#x00EE;mes les boules d&#x2019;argile rangées<lb break="yes"/>
+                    <pb n="250" facs="#f0003"/> en tas pyramidaux. Un Indien en dévore, par<lb break="yes"/>jour, de trois quarts de livre à une livre et un<lb break="yes" />quart, selon ce que nous assura un moine très-<lb break="maybe"/>intelligent, <hi rendition="#i">
+                        <persName key="bueno_r" ref="http://d-nb.info/gnd/">Fray Ramon Bueno</persName>,</hi> qui a vécu<lb break="yes"/>douze ans parmi ces peuples. Les Otomaques<lb break="yes"/>eux-m&#x00EA;mes nous ont dit que cette argile étoit<lb break="yes"/>leur principale nourriture, pendant la saison plu-<lb break="no"/>vieuse. Cependant, si l&#x2019;occasion se présente, ils y<lb break="yes"/>ajoutent de temps à autre un lézard, un petit<lb break="yes"/>poisson et une racine de fougère. Ils trouvent<lb break="yes" />cette nourriture si délicieuse, que m&#x00EA;me dans<lb break="yes"/>la saison sèche, ayant assez de poissons, ils<lb break="yes"/>mangent, en guise de dessert, quelques boules<lb break="yes"/>d&#x2019;argile. Ces hommes sont d&#x2019;un teint cuivré<lb break="yes"/>brun&#x00E2;tre; leurs traits difformes ressemblent à<lb break="yes"/>ceux des Tartares; ils ont de la corpulence sans<lb break="yes"/>&#x00EA;tre ventrus.</p>
+                <lb break="yes"/>
+                <p>Le missionnaire franciscain qui vit parmi<lb break="yes"/>eux, nous assura que, pendant l&#x2019;époque où ils<lb break="yes"/>mangent de la terre, leur santé n&#x2019;éprouve au-<lb break="no"/>cune altération. Voilà sans doute des <hi rendition="#i">faits.</hi> Ces<lb break="yes"/>Indiens mangent une grande quantité d&#x2019;argile<lb break="yes"/>sans nuire à leur santé; ils considèrent cette<lb break="yes"/>terre comme une excellente nourriture; ils en<lb break="yes"/>font leur provision pour l&#x2019;hiver ou la saison<lb break="yes"/>pluvieuse. Mais ces simples faits ne suffisent<lb break="yes" />point pour décider les questions: Si l&#x2019;argile peut<lb break="yes" />offrir une substance alimentaire? Si les terres<lb break="yes"/>peuvent s&#x2019;assimiler aux sucs de notre estomac?<lb break="yes"/>
+                    <pb n="251" facs="#f0004"/> Ou si elles ne lui servent que comme lest? Leur<lb break="yes"/>effet se borne-t-il à étendre les parois du ven-<lb break="no" />tre, et faire par-là disparo&#x00EE;tre le besoin de nour-<lb break="no" />riture? Je n&#x2019;ose décider aucune de ces questions.</p>
+                <lb break="yes"/>
+                <p>Il est remarquable que le <persName key="gumilla_j" ref="http://d-nb.info/gnd/" >père Gumilla</persName>, au-<lb break="no"/>teur d&#x2019;ailleurs si crédule et si dépourvu de cri-<lb break="no"/>tique, a jugé à propos de nier que les Otoma-<lb break="no"/>ques mangent de la terre pure <note place="foot" n="(1)">
+                        <hi rendition="#i">Histoire de l&#x2019;Orénoque,</hi> t. I, p. 283.</note>. Il prétend<lb break="yes"/>que les boules d&#x2019;argile sont m&#x00EA;lées de farine de<lb break="yes"/>ma&#x00EF;s, et pénétrées de <hi rendition="#i" >graisse de crocodile.</hi> Mais<lb break="yes"/>le missionnaire <persName key="bueno_r" ref="http://d-nb.info/gnd/">Fray Ramon Bueno</persName>, ainsi que<lb break="yes"/>notre ami et compagnon de voyages, le frère<lb break="yes"/>lai <persName key="gonzalez_j" ref="http://d-nb.info/gnd/">Fray Juan Gonzalez</persName>, nous ont tous les deux<lb break="yes"/>assuré que les Otomaques ne mettoient jamais<lb break="yes"/>de graisse de crocodile sur ces boules; quant au<lb break="yes"/>mélange de la farine de ma&#x00EF;s, nous n&#x2019;en avons<lb break="yes"/>jamais entendu parler à Uruana. La terre que<lb break="yes"/>nous avons apportée, et dont M. <persName key="vauquelin_ln" ref="http://d-nb.info/gnd/">Vauquelin</persName> a<lb break="yes"/>fait l&#x2019;analyse chimique, s&#x2019;est trouvée pure et<lb break="yes"/>sans aucun mélange. Peut-&#x00EA;tre le <persName key="gumilla_j" ref="http://d-nb.info/gnd/">père Gumilla</persName>,<lb break="yes"/>en confondant deux faits d&#x2019;une nature différente,<lb break="yes"/>a-t-il fait allusion à la manière dont les Indiens<lb break="yes"/>préparent du pain avec les cosses d&#x2019;une espèce<lb break="yes"/>d&#x2019;<hi rendition="#i">Inga:</hi> ils ensevelissent ce fruit dans la terre,<lb break="yes"/>afin d&#x2019;accélérer le moment où sa décomposition<lb break="yes"/>le rend propre à leur usage.</p>
+                <lb break="yes"/>
+                <p>Il est encore bien remarquable que les Oto-<lb break="no"/>maques, en mangeant une si grande quantité<lb break="yes"/>
+                    <pb n="252" facs="#f0005"/> de terre, n&#x2019;en éprouvent aucune incommodité.<lb break="yes"/>S&#x2019;en sont-ils, pendant une longue série de géné-<lb break="no"/>rations, formé une seconde nature? Il est vrai<lb break="yes"/>que, dans tous les pays entre les tropiques,<lb break="yes" />l&#x2019;homme éprouve un desir merveilleux et pres-<lb break="no"/>que irrésistible de dévorer de la terre, et non<lb break="yes"/>pas de la terre alcaline ou calcaire qui pourroit<lb break="yes"/>servir à neutraliser des acides, mais des bols<lb break="yes"/>gras et d&#x2019;une odeur forte. On est souvent obli-<lb break="no"/>gé, après une pluie, de renfermer les enfans<lb break="yes"/>pour emp&#x00EA;cher qu&#x2019;ils n&#x2019;aillent manger de la<lb break="yes"/>terre. Les femmes indiennes du village de<lb break="yes" />Banco, sur les bords de la <hi rendition="#i">Madeleina,</hi> qui s&#x2019;oc-<lb break="no"/>cupent à tourner des pots de terre, mettent sou-<lb break="no"/>vent un morceau de terre dans la bouche,<lb break="yes" />comme je l&#x2019;ai moi-m&#x00EA;me vu avec étonnement<note place="foot" n="(1)">La m&#x00EA;me chose avoit été observée par <hi rendition="#i">
+                            <persName key="gilij_fs" ref="http://d-nb.info/gnd/">Gily</persName>. Saggio<lb break="yes"/>di Storia Americana,</hi> t. II, p. 311. Les loups mangent<lb break="yes"/>pendant l&#x2019;hiver de la terre, surtout de l&#x2019;argile glaise.</note>.<lb break="yes"/>Mais, à l&#x2019;exception des Otomaques, tous les in-<lb break="no"/>dividus des autres tribus deviennent malades,<lb break="yes"/>dès qu&#x2019;ils cèdent à ce singulier penchant pour<lb break="yes"/>l&#x2019;argile. Dans la mission de San Boria, nous<lb break="yes"/>trouv&#x00E2;mes un enfant indien qui, au dire de sa<lb break="yes"/>mère, ne vouloit prendre d&#x2019;autre nourriture<lb break="yes"/>que de la terre; mais aussi il étoit desséché<lb break="yes" />comme un squelette.</p>
+                <lb break="yes"/>
+                <p>Pourquoi, dans les climats tempérés et froids,<lb break="yes"/>ce penchant irrégulier à manger de la terre,<lb break="yes"/>
+                    <pb n="253" facs="#f0006"/> est-il si rare et presque circonscrit dans la classe<lb break="yes"/>des enfans et dans celle des femmes grosses?</p>
+                <lb break="yes"/>
+                <p>On peut, en quelque sorte, considérer l&#x2019;usage<lb break="yes"/>de manger de la terre comme généralement<lb break="yes"/>adopté dans tous les pays entre les tropiques.</p>
+                <lb break="yes"/>
+                <p>Les nègres de Guinée mangent habituelle-<lb break="no"/>ment une terre jaun&#x00E2;tre qu&#x2019;ils appellent <hi rendition="#i">cahouac.</hi>
+                    <lb break="yes"/>Ceux d&#x2019;entre eux qui sont amenés, comme es-<lb break="no"/>claves, dans les Indes occidentales, cherchent<lb break="yes"/>à s&#x2019;y procurer une terre semblable. Ils assurent<lb break="yes"/>que l&#x2019;usage de cette nourriture n&#x2019;est accompa-<lb break="no"/>gné, en Afrique, d&#x2019;aucun danger: dans les<lb break="yes"/>&#x00EE;les, le <hi rendition="#i">cahouac</hi> rend les esclaves malades. Aussi<lb break="yes" />il y étoit défendu de manger de la terre, quoi-<lb break="no"/>qu&#x2019;à la Martinique, en 1751, on vend&#x00EE;t secré-<lb break="no"/>tement, dans les marchés, une espèce de tuf<lb break="yes"/>rouge jaun&#x00E2;tre. &#x00AB;Les nègres, dit un auteur<lb break="yes"/>&#x00AB;fran&#x00E7;ais <note place="foot" n="(1)">
+                        <hi rendition="#i">
+                            <persName key="chanvalon_jbtd" ref="http://d-nb.info/gnd/">Thibault de Chanvalon</persName>,</hi> p. 85.</note>, en sont si friands, qu&#x2019;il n&#x2019;y a<lb break="yes"/>&#x00AB;aucun ch&#x00E2;timent qui puisse les emp&#x00EA;cher<lb break="yes"/>&#x00AB;d&#x2019;en dévorer.&#x00BB;</p>
+                <lb break="yes"/>
+                <p>Dans l&#x2019;&#x00EE;le de Java, entre Sourabaya et Sama-<lb break="no"/>rang, M. <persName key="labillardiere_jjd" ref="http://d-nb.info/gnd/" >Labillardière</persName> vit vendre, dans les<lb break="yes"/>villages, de petits g&#x00E2;teaux carrés et rouge&#x00E2;tres.<lb break="yes"/>Les indigènes les nommoient <hi rendition="#i">tanaampo.</hi> En les<lb break="yes" />examinant, il trouva que c&#x2019;étoient des g&#x00E2;teaux<lb break="yes" />d&#x2019;argile qu&#x2019;on mangeoit <note place="foot" n="(2)">Voyage à la recherche de <persName key="laperouse_jfdgcd">La Pérouse</persName>, t. II, p. 322.</note>. Les habitans de la<lb break="yes"/>Nouvelle-Calédonie appaisent la faim en dévo-<lb break="no"/>
+                    <pb n="254" facs="#f0007"/> rant des morceaux, gros comme un poing,<lb break="yes"/>d&#x2019;une espèce de talc friable, dans laquelle<lb break="yes"/>M. <persName key="vauquelin_ln" ref="http://d-nb.info/gnd/" >Vauquelin</persName> a trouvé du cuivre en assez<lb break="yes"/>grande proportion <note place="foot" n="(1)">
+                        <hi rendition="#i">Ibid</hi> p. 205.</note>. A Popayan et dans<lb break="yes"/>plusieurs parties du Pérou, la terre calcaire se<lb break="yes" />vend, dans les marchés, comme une denrée à<lb break="yes"/>l&#x2019;usage des Indiens qui la mangent avec le <hi rendition="#i">coca</hi>
+                    <lb break="yes"/>ou les feuilles de l&#x2019;<hi rendition="#i">érythroxylon peruvianum.</hi>
+                    <lb break="yes"/>Ainsi, l&#x2019;usage de se nourrir de terre, usage au-<lb break="no"/>quel la nature sembloit n&#x2019;inviter que les habi-<lb break="no"/>tans du Nord stérile, règne dans toute la zone<lb break="yes" />torride, chez les races paresseuses qui occupent<lb break="yes"/>les plus belles et les plus fertiles contrées de<lb break="yes"/>l&#x2019;univers.</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

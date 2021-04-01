@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="3" facs="#f0001"/>
+            <p xml:lang="deu">Herr von <persName key="humboldt_av">Humboldt</persName> hat zu Bordeaux in Betreff<lb break="yes"/>eines in den Zeitungen befindlichen Artikels von Bal-<lb break="no"/>timore folgendes bekannt gemacht: &#x201C;Der Verfa&#x017F;&#x017F;er<lb break="yes"/>des Briefes von <placeName key="baltimore">Baltimore</placeName> &#x017F;pricht von meinen Ar-<lb break="no"/>beiten auf eine zu vortheilhafte Art, um ihm <hi rendition="#g" >nicht</hi>
+                <lb break="yes"/>ein wenig <choice>
+                    <sic>Pariheylichkeit</sic>
+                    <corr type="editorial">Partheylichkeit</corr>
+                </choice> für meine Per&#x017F;on Schuld<lb break="yes"/>geben zu mü&#x017F;&#x017F;en. In Betreff der That&#x017F;achen muß<lb break="yes"/>ich einen Irrthum aufdecken, der &#x017F;ich in andre Zei-<lb break="no"/>
+                <pb facs="#f0002"/> tungen verbreiten könnte. Ich bin nicht bis zum<lb break="yes" />Gipfel des Chimborazo gekommen; aber durch glück-<lb break="no"/>liche Um&#x017F;tände &#x017F;tiegen wir bis zu einer Höhe von<lb break="yes"/>3031 Kla&#x017F;tern, al&#x017F;o fa&#x017F;t 3000 Fuß höhen, als man<lb break="yes" />jemals In&#x017F;trumente auf die Gebürge gebracht hat.<lb break="yes"/>Der Artikel von <placeName key="baltimore">Baltimore</placeName> &#x017F;agt auch, daß ich bis<lb break="yes"/>zu dem Wendezirkel gekommen &#x017F;ey, und den Erleich-<lb break="no"/>terungen, welche mir meine eignen Glückum&#x017F;tände<lb break="yes"/>ver&#x017F;chafften, &#x017F;o wie auch den Begün&#x017F;tigungen ent-<lb break="no"/>&#x017F;agt hätte, womit mich das Spani&#x017F;che Gouverne-<lb break="no"/>ment verzüglich beehrte. Die&#x017F;e Ausdrücke fuhren<lb break="yes"/>zu unrichtigen Begriffen. Es i&#x017F;t bekannt, daß ich<lb break="yes"/>im Jahr 1799 nur deshalb nach Madrid kam, um<lb break="yes" />mir die Erlaubniß des Hofes auszubitten, auf meine<lb break="yes"/>eigne Ko&#x017F;ten Nach&#x017F;uchungen in den weitläuftigen<lb break="yes" />Spani&#x017F;chen Colonien anzu&#x017F;tellen. Die&#x017F;e Erlaubniß<lb break="yes"/>i&#x017F;t mir mit den liberalen Ideen bewilligt, welche un-<lb break="no"/>&#x017F;er Jahrhundert auszeichnen, und denen man den<lb break="yes" />&#x017F;chleunigen Fortgang der men&#x017F;chlichen Kenntni&#x017F;&#x017F;e zu<lb break="yes"/>danken hat. Se. Kathol. Maj, welche an dem guten<lb break="yes" />Fortgange meiner Rei&#x017F;e Antheil nahmen, geruhten,<lb break="yes"/>mich mit dem großmüthig&#x017F;ten Schutz zu beehren, und<lb break="yes"/>indem ich von die&#x017F;er, von dem Könige fortge&#x017F;ezt-<lb break="no"/>ten Gun&#x017F;t Gebrauch machte, habe ich in einem Zeit-<lb break="no"/>raum von 5 Jahren, die ich in dem <placeName key="spanischeskolonialreich">Spani&#x017F;chen<lb break="yes" />America</placeName> herumgerei&#x017F;et bin, Bemerkungen machen<lb break="yes"/>können, von welchen einige vielleicht die Aufmerk-<lb break="no" />&#x017F;amkeit der Naturkündiger verdienen.&#x201D;</p>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

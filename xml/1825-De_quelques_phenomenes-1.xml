@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1014897157">
+                        <surname>Wernicke</surname>
+                        <forename>Norbert</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="225" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#i">De quelques phénomènes physiques et géologiques qu&#x2019;of-<lb break="no"/>frent les C<placeName>ordillères des Andes de Quito</placeName> et la partie<lb break="yes"/>occidentale de l&#x2019;<placeName>Himalaya</placeName>;</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Par M. Alexandre de Humboldt.</hi>
+                    <lb break="yes"/>(Lu à l&#x2019;Académie des Sciences, séances des <date>7 et 14 mars 1825.</date>)</head>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Première partie.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#k">J&#x2019;ai</hi> exposé, dans le dernier Mémoire que j&#x2019;ai eu<lb break="yes"/>l&#x2019;honneur de soumettre à l&#x2019;Académie, les procédés<lb break="yes"/>géométriques d&#x2019;après lesquels on trace les sections ver-<lb break="no"/>ticales qui représentent une grande étendue de pays. J&#x2019;ai<lb break="yes"/>rappelé qu&#x2019;en exprimant, par projection, la position re-<lb break="no"/>lative des points dont les divers systèmes déterminent la<lb break="yes"/>forme polyédrique de la surface de la terre, on peut ou<lb break="yes"/>projeter ces points sur un m&#x00EA;me plan, ou les répartir<lb break="yes"/>en plusieurs profils partiels qui sont orientés selon la<lb break="yes"/>direction des routes qu&#x2019;a suivies le voyageur. Ces métho-<lb break="no"/>des graphiques, ces <hi rendition="#i">sections verticales</hi> d&#x2019;un pays d&#x2019;une<lb break="yes"/>vaste étendue, dont je crois avoir donné le premier<lb break="yes"/>exemple dans <bibl>mon <hi rendition="#i">Atlas du Mexique,</hi>
+                        </bibl> complètent les<lb break="yes"/>notions anciennement acquises sur le <hi rendition="#i">figuré géométrique<lb break="yes"/>du terrain.</hi> Fondées sur des procédés extr&#x00EA;mement sim-<lb break="no"/>ples, elles exigent à la fois la connaissance des courbes<lb break="yes"/>de niveau et l&#x2019;emploi des instrumens propres à fixer as-<lb break="no"/>tronomiquement, en longitude et en latitude, les inter-<lb break="no"/>sections des profils partiels qui servent d&#x2019;<hi rendition="#i">axes de rota-<lb break="no"/>tion</hi>, et qui indiquent autant de points dans lesquels a<lb break="yes"/>changé la direction de la route parcourue.</p>
+                    <lb break="yes"/>
+                    <p>J&#x2019;ai publié une suite de sections verticales qui, toutes<lb break="yes"/>tracées dans l&#x2019;esprit d&#x2019;une m&#x00EA;me méthode, ont néces-<lb break="no"/>
+                        <pb n="226" facs="#f0002"/> sairement aussi la m&#x00EA;me conformité d&#x2019;aspect que pré-<lb break="no" />sentent les cartes trop exclusivement appelées géogra-<lb break="no" />phiques, celles qui figurent la situation respective des<lb break="yes" />lieux projetés sur un plan horizontal. Dans ces der-<lb break="no" />nières, le rapport entre les échelles de latitude et de<lb break="yes" />longitude, entre les divisions des méridiens et des pa-<lb break="no" />rallèles, est invariablement déterminé par la nature de<lb break="yes"/>la projection que l&#x2019;on a choisie. Au contraire, dans les<lb break="yes" />coupes géographiques ou sections verticales, le rapport<lb break="yes" />des échelles de distance et de hauteur est variable. Les<lb break="yes" />dimensions auxquelles est assujetti le tracé, permettent<lb break="yes" />rarement de donner la m&#x00EA;me valeur aux deux échelles,<lb break="yes" />et de représenter les inclinaisons des pentes comme elles<lb break="yes" />existent dans la nature. La plupart des profils défigurent<lb break="yes" />les contours, mais elles les défigurent également dans<lb break="yes" />toutes leurs parties, avantage que n&#x2019;offre guère la pro-<lb break="no"/>jection de Mercator dans les cartes géographiques. Les<lb break="yes"/>coupes, tout en indiquant numériquement le rapport<lb break="yes"/>des échelles de hauteur et de distance, offrent des<lb break="yes"/>données précises d&#x2019;après lesquelles on peut calculer l&#x2019;in-<lb break="no"/>clinaison réelle des pentes. Il résulte de ces considéra-<lb break="no"/>tions, que l&#x2019;aspect plus ou moins agréable que présente<lb break="yes"/>le tracé de la section verticale d&#x2019;un vaste pays, dépend<lb break="yes"/>entièrement du rapport entre les deux échelles de hau-<lb break="no"/>teur et de distance.</p>
+                    <lb break="yes"/>
+                    <p>J&#x2019;ai cru devoir rappeler, dans l&#x2019;introduction de ce<lb break="yes"/>Mémoire, les fondemens principaux d&#x2019;une méthode<lb break="yes"/>graphique, qui, à l&#x2019;imitation de mes <hi rendition="#i">profils mexicains</hi>
+                        <lb break="yes"/>et du <hi rendition="#i">tableau de la géographie des plantes équinoxia-<lb break="no"/>les</hi>, a été appliquée successivement à la <placeName>cha&#x00EE;ne du Cau-<lb break="no"/>case</placeName>, par MM. <persName ref="http://d-nb.info/gnd/">Parrot</persName> et <persName ref="http://d-nb.info/gnd/">d&#x2019;Engelhardt</persName>; aux <placeName>Alpes de la<lb break="yes"/>Suisse</placeName> et aux <placeName>Carpathes</placeName>, par M. <persName ref="http://d-nb.info/gnd/">Wahlenberg</persName>; aux mon-<lb break="no"/>
+                        <pb n="227" facs="#f0003"/> tagnes de l&#x2019;<placeName>Allemagne</placeName>, par MM. <persName ref="http://d-nb.info/gnd/">Schübler</persName> et <persName ref="http://d-nb.info/gnd/">Hofmann</persName>; à<lb break="yes"/>celles de la <placeName>France</placeName>, par MM. d&#x2019;<persName ref="http://d-nb.info/gnd/">Oeynhausen</persName> et <persName ref="http://d-nb.info/gnd/">Dechen</persName>; à<lb break="yes"/>la <placeName>Capitania de Minas Geraes</placeName>, par M. <persName ref="http://d-nb.info/gnd/">d&#x2019;Eschwege</persName>; et au<lb break="yes"/>
+                        <placeName>plateau du Mysore</placeName> et aux <placeName>Gates de Malabar</placeName>
+                        <note place="foot" n="(1)">Cette coupe du <placeName>plateau de Mysore</placeName> dont le savant naturaliste,<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/">Leschenault</persName>, a rapporté une copie manuscrite, s&#x2019;étend depuis l&#x2019;em-<lb break="no"/>bouchure de la rivière <placeName>Palaur</placeName> par Velore, les <hi rendition="#i">
+                                <placeName>Gates de Coromandel</placeName>,</hi>
+                            <lb break="yes" />
+                            <placeName>Mysore</placeName> (au sud de <placeName>Seringapatam</placeName>), jusqu&#x2019;aux <hi rendition="#i">
+                                <placeName>Gates du Malabar</placeName>
+                            </hi> et au<lb break="yes"/>
+                            <placeName>mont Dily</placeName> par les parallèles de 12° 1&#x2032; à 12° 50&#x2032; de latitude et 72° 53&#x2032; à<lb break="yes"/>77° 9<hi rendition="#sup">1</hi> de longitude à l&#x2019;est de <placeName>Paris</placeName>. Le <placeName>plateau de Mysore</placeName> a une hau-<lb break="no"/>teur moyenne de 420 à 460 toises au-dessus du niveau de la mer, et<lb break="yes"/>est par conséquent de près de 100 toises plus élevé que le <placeName>plateau de<lb break="yes"/>l&#x2019;Espagne</placeName> entre <placeName>Almansa</placeName> et <placeName>Astorga</placeName>; mais la longueur de ce dernier<lb break="yes"/>est deux fois plus grande. Pour se former une idée précise de la hau-<lb break="no"/>teur moyenne des continens européens, je consigne ici les données<lb break="yes"/>suivantes: basses plaines de l&#x2019;intérieur de la <placeName>France</placeName> et de la <placeName>Lombardie</placeName>,<lb break="yes"/>80 toises; <placeName>plateau de la Russie</placeName> centrale autour de <placeName>Moscou</placeName>, 145 toises;<lb break="yes"/>de la <placeName>Souabe</placeName>, 150 toises; de l&#x2019;<placeName>Auvergne</placeName>, 174 toises; de la <placeName>Suisse</placeName>, 220<lb break="yes"/>toises; de la <placeName>Bavière</placeName>, 260 toises; du <placeName>Tyrol</placeName> (bassin d&#x2019;<placeName>Inspruck</placeName>), 307<lb break="yes" />toises; de l&#x2019;<placeName>Espagne</placeName>, 350 toises. <hi rendition="#et">(<hi rendition="#i">Note de M. de Humboldt.</hi>)</hi>
+                        </note>, par les<lb break="yes"/>officiers ingénieurs attachés à la triangulation du major<lb break="yes" />
+                        <placeName>Lambton</placeName>, dans l&#x2019;<placeName>Inde</placeName>. Les élémens de cette méthode<lb break="yes"/>graphique sont les résultats d&#x2019;un nivellement baro-<lb break="no"/>métrique ou géodésique, la connaissance précise des<lb break="yes"/>distances, la détermination astronomique des points<lb break="yes"/>d&#x2019;intersection ou <hi rendition="#i">axes de rotation</hi> des profils partiels,<lb break="yes"/>enfin l&#x2019;orientation de <hi rendition="#i">plans sécans</hi>, c&#x2019;est-à-dire l&#x2019;angle<lb break="yes"/>que chaque plan de projection fait avec le méridien.<lb break="yes"/>De m&#x00EA;me que les cartes topographiques proprement<lb break="yes"/>dites peuvent embrasser une surface plus ou moins<lb break="yes"/>grande en projection horizontale, de m&#x00EA;me aussi le<lb break="yes"/>figuré du terrain en profil offre un tableau physique<lb break="yes"/>général ou spécial. C&#x2019;est à cette dernière classe qu&#x2019;ap-<lb break="no"/>partient le travail que j&#x2019;ai l&#x2019;honneur de présenter à<lb break="yes"/>
+                        <pb n="228" facs="#f0004"/> l&#x2019;Académie, et dont ce Mémoire n&#x2019;est qu&#x2019;une analyse<lb break="yes"/>très-succincte.</p>
+                    <lb break="yes"/>
+                    <p>Dans la partie la plus occidentale de l&#x2019;<placeName>Amérique du<lb break="yes"/>sud</placeName>, entre les parallèles de 1° &#x2014; 2° de latitude aus-<lb break="no"/>trale, s&#x2019;élèvent les plus hautes cimes des <placeName>Andes</placeName>. Les<lb break="yes"/>plateaux de <placeName>Quito</placeName> et d&#x2019;<placeName>Hambato</placeName>, qu&#x2019;on peut appeler<lb break="yes"/>le <placeName>Thibet du Nouveau-Monde</placeName>, et que couvrent de<lb break="yes"/>nombreux troupeaux de llamas, anciennenement ap-<lb break="no"/>pelés <hi rendition="#i">brebis du <placeName>Pérou</placeName>
+                        </hi>, se prolongent du nord au<lb break="yes"/>sud entre le <hi rendition="#i" >n&#x0153;ud des montagnes</hi> de l&#x2019;<placeName>Affuay</placeName> et celui<lb break="yes"/>de Chisinche. Ces plateaux ont plus de trois mille<lb break="yes"/>mètres de hauteur au-dessus du niveau de l&#x2019;Océan.<lb break="yes"/>Des deux cha&#x00EE;nons qui les limitent, j&#x2019;appelle celui<lb break="yes"/>de l&#x2019;est le <hi rendition="#i">
+                            <placeName>Cha&#x00EE;non du Cotopaxi</placeName>
+                        </hi>, celui de l&#x2019;ouest le<lb break="yes" />
+                        <hi rendition="#i">
+                            <placeName>Cha&#x00EE;non du Chimborazo</placeName>.</hi> La section verticale présente<lb break="yes"/>dans ces véritables dimensions, le <placeName>plateau d&#x2019;Hambato</placeName>
+                        <lb break="yes"/>et de <placeName>Calpi</placeName>, la position de quelques lacs alpins; et<lb break="yes"/>tout le cha&#x00EE;non occidental jusqu&#x2019;au rivage de la <placeName>Mer<lb break="yes"/>du Sud</placeName>. Ce n&#x2019;est pas la représentation d&#x2019;un pays en-<lb break="no"/>tier, comme dans <bibl>mon <hi rendition="#i">Profil de la Péninsule espa-<lb break="no" />gnole</hi>,</bibl> c&#x2019;est le figuré géométrique d&#x2019;une région de peu<lb break="yes"/>d&#x2019;étendue, représentation qui n&#x2019;a de commun avec ma<lb break="yes"/>coupe idéale de l&#x2019;<placeName>Amérique équinoxiale</placeName>, publiée à la<lb break="yes"/>suite de la <bibl>
+                            <hi rendition="#i">Géographie des plantes</hi> de 1805</bibl>, que l&#x2019;iden-<lb break="no"/>tité de la méthode graphique. Les cartes spéciales et les<lb break="yes" />tableaux physiques d&#x2019;une seule province ont l&#x2019;avantage<lb break="yes"/>de préciser les idées, et de présenter les phénomènes<lb break="yes"/>tels qu&#x2019;ils sont modifiés par les localités. Avant de s&#x2019;éle-<lb break="no"/>ver à des aper&#x00E7;us généraux, il faut, dans toutes les<lb break="yes"/>branches des sciences, rassembler un grand nombre de<lb break="yes"/>faits particuliers, et les considérer dans leurs rapports<lb break="yes"/>les plus individuels. Les plantes inscrites sur le profil<lb break="yes"/>
+                        <pb n="229" facs="#f0005"/> ne sont pas celles qui végètent daus toute la région<lb break="yes"/>équinoxiale des <placeName>Andes</placeName>; ce sont les plantes pro-<lb break="no" />pres à la flore de <placeName>Quito</placeName>, que nous avons recueillies,<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> et moi, pendant l&#x2019;espace de dix mois, de-<lb break="no"/>puis le niveau de la <placeName>Mer du Sud</placeName> jusqu&#x2019;à la hauteur de<lb break="yes"/>5600 mètres. Le seul aspect du profil suffit pour rappe-<lb break="no"/>ler simultanément la position astronomique des lieux,<lb break="yes"/>la configuration du terrain, la distribution de la végé-<lb break="no"/>tation selon la diversité des familles naturelles, la limite<lb break="yes"/>des neiges, le décroissement du calorique, la diminution<lb break="yes"/>de la pression de l&#x2019;atmosphère, enfin la comparaison<lb break="yes"/>des plus hautes cimes des <placeName>Andes</placeName> avec celles de l&#x2019;<placeName>Hima-<lb break="no"/>laya</placeName>. C&#x2019;est le grand avantage des méthodes graphiques<lb break="yes" />appliquées aux différens objets de la philosophie natu-<lb break="no" />relle, de porter dans l&#x2019;esprit cette conviction intime qui<lb break="yes"/>accompagne toujours les notions que nous recevons im-<lb break="no"/>médiatement par les sens.</p>
+                    <lb break="yes"/>
+                    <p>D&#x2019;après l&#x2019;ensemble de ces considérations, il serait<lb break="yes"/>superflu de développer ici ce que la vue seule de mon<lb break="yes"/>dessin fait suffisamment conna&#x00EE;tre: je me bornerai à un<lb break="yes"/>petit nombre de remarques relatives à des objets qui<lb break="yes"/>n&#x2019;ont point encore été suffisamment discutés. Les <hi rendition="#i">sec-<lb break="no"/>tions verticales</hi> d&#x2019;un pays, comme les cartes en projec-<lb break="no"/>tion horizontale, ne peuvent inspirer de la confiance<lb break="yes"/>qu&#x2019;autant qu&#x2019;elles sont accompagnées d&#x2019;un mémoire jus-<lb break="no" />tificatif.</p>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Comparaison de la ligne de fa&#x00EE;te des <placeName>Andes</placeName> et de<lb break="yes" />l&#x2019;<placeName>Himalaya</placeName>.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Personne ne voudrait révoquer en doute aujourd&#x2019;hui,<lb break="yes" />que la partie de la cha&#x00EE;ne de l&#x2019;<placeName>Himalaya</placeName>, comprise<lb break="yes" />entre les rivières <placeName>Gundhuk</placeName> et le <placeName>Sutledge</placeName>, ne soit de<lb break="yes"/>
+                            <pb n="230" facs="#f0006"/> beaucoup plus élevée que les plus hauts sommets de la<lb break="yes"/>
+                            <placeName>Cordillère des Andes</placeName>. Les premiers relèvemens du<lb break="yes" />colonel <persName ref="http://d-nb.info/gnd/">Crawford</persName>, du lieutenant <persName ref="http://d-nb.info/gnd/">Webb</persName>, et de l&#x2019;ingé-<lb break="no"/>nieur en chef M. <persName ref="http://d-nb.info/gnd/">Colebrook</persName>, frère de l&#x2019;orientaliste cé-<lb break="no"/>lèbre de ce nom, avaient déjà rendu ce fait très-proba-<lb break="no"/>ble: mais, encore cinq ans après mon retour de <placeName>Quito</placeName>,<lb break="yes"/>dans le onzième volume des <hi rendition="#i">Recherches asiatiques</hi>, on<lb break="yes"/>croyait devoir s&#x2019;arr&#x00EA;ter à la simple conclusion &#x00AB;que quel-<lb break="no"/>ques cimes de l&#x2019;<placeName>Himalaya</placeName> égalaient pour le moins la hau-<lb break="no"/>teur du <placeName>Chimborazo</placeName>.&#x00BB; On manquait à cette époque d&#x2019;une<lb break="yes"/>mesure barométrique précise, propre à déterminer l&#x2019;é-<lb break="no"/>lévation du plateau dans lequel la base et les angles<lb break="yes"/>avaient été mesurés; on craignait surtout l&#x2019;influence va-<lb break="no"/>riable des réfractions terrestres sur des angles de hauteur<lb break="yes"/>de 2° à 3°. Ces doutes furent singulièrement exagérés en<lb break="yes" />
+                            <placeName>Europe</placeName> par des personnes qui n&#x2019;étaient aucunement ver-<lb break="no"/>sées dans la théorie des mesures géodésiques. J&#x2019;ai examiné,<lb break="yes"/>dans deux <hi rendition="#i">
+                                <bibl>Mémoires sur les montagnes de l&#x2019;Inde</bibl>
+                            </hi>
+                            <note place="foot" n="(1)">
+                                <bibl>Voyez <hi rendition="#i">Annales de Chimie et de Physique,</hi> tom. 3, pag. 297</bibl>
+                                <lb break="yes"/>et <bibl>tom. 14, pag. 5.</bibl>
+                            </note>, les<lb break="yes"/>limites des erreurs qui peuvent avoir affecté les premières<lb break="yes"/>mesures de M. <persName ref="http://d-nb.info/gnd/">Webb</persName>, et j&#x2019;ai démontré que pour croire<lb break="yes"/>les <hi rendition="#i">maxima de la ligne de faite</hi> de l&#x2019;<placeName>Himalaya</placeName>, infé-<lb break="no"/>rieurs aux <hi rendition="#i">points culminans</hi> de la <placeName>Cordillère des Andes</placeName>,<lb break="yes"/>le coefficient de la réfraction aurait d&#x00FB; &#x00EA;tre de <formula notation="TeX">\frac{3}{10}</formula>, pres-<lb break="no"/>que de <formula notation="TeX">\frac{1}{3}</formula> au lieu de <formula notation="TeX">\frac{1}{12}</formula> et de <formula notation="TeX">\frac{1}{18}</formula>, qui résultent, pour des<lb break="yes"/>latitudes si méridionales et pour des plateaux si élevés,<lb break="yes"/>des opérations très-précises du colonel <persName ref="http://d-nb.info/gnd/">Lambton</persName>.</p>
+                        <lb break="yes"/>
+                        <p>Depuis l&#x2019;année 1815, dans laquelle la <placeName>province du<lb break="yes"/>Nepaul</placeName> a été ajoutée à l&#x2019;<placeName>empire Britannique</placeName> dans l&#x2019;<placeName>Inde</placeName>,<lb break="yes"/>le capitaine <persName ref="http://d-nb.info/gnd/">Hodgson</persName> et le lieutenant <persName ref="http://d-nb.info/gnd/">Herbert</persName> ont fait<lb break="yes"/>une triangulation qui embrasse toute l&#x2019;extrémité occi-<lb break="no"/>
+                            <pb n="231" facs="#f0007"/> dentale de l&#x2019;<placeName>Himalaya</placeName>: les coefficiens de réfraction ont<lb break="yes"/>été déterminés par des observations réciproques; les an-<lb break="no"/>gles de hauteur ont été mesurés à différentes heures du<lb break="yes"/>jour, et l&#x2019;élévation des bases au-dessus du niveau de la<lb break="yes"/>mer a été déterminée en employant plusieurs baromètres<lb break="yes"/>comparés entre eux et un grand nombre d&#x2019;observations<lb break="yes"/>correspondantes, faites aux m&#x00EA;mes heures, à <placeName>Calcutta</placeName>
+                            <lb break="yes"/>et à <placeName>Seharampoor</placeName>. Tous les doutes sur la hauteur pro-<lb break="no"/>digieuse des montagnes de l&#x2019;Inde ont été levés; mais d&#x2019;a-<lb break="no"/>près les divers Mémoires publiés à <placeName>Calcutta</placeName> et en <placeName>Angle-<lb break="no"/>terre</placeName>, d&#x2019;après les indications contradictoires des cartes<lb break="yes" />les plus modernes, sans en excepter celle qui vient d&#x2019;&#x00EA;tre<lb break="yes"/>publiée sous les auspices du colonel <persName ref="http://d-nb.info/gnd/">Blacker</persName>, directeur-<lb break="maybe"/>général des opérations géodésiques dans l&#x2019;<placeName>Indostan</placeName>, on<lb break="yes"/>restait encore incertain sur les questions suivantes: quelle<lb break="yes"/>est la cime de l&#x2019;<placeName>Himalaya</placeName> qui atteint le <hi rendition="#i">maximum</hi> de<lb break="yes"/>hauteur? Quel nom doit-on donner à cette cime? Parmi<lb break="yes"/>les sommets qui se présentent en premier rang, dans<lb break="yes"/>les méridiens de <placeName>Bénarès</placeName> et d&#x2019;<placeName>Almora</placeName>, le plus élevé<lb break="yes" />est-il mesuré avec la m&#x00EA;me précision que le sommet<lb break="yes"/>qui le suit immédiatement? Ces incertitudes ont rap-<lb break="no"/>port, non à des quantités peu considérables, mais à<lb break="yes"/>plus de 1200 mètres de hauteur. De plus, les cartes<lb break="yes"/>géographiques et les journaux qui paraissent en <placeName>An-<lb break="no"/>gleterre</placeName>, en <placeName>France</placeName> et en <placeName>Allemagne</placeName>, augmentent jour-<lb break="no" />nellement la confusion des résultats numériques. Les<lb break="yes" />observateurs ont assigné, à diverses époques, diffé-<lb break="no" />rentes hauteurs à la m&#x00EA;me montagne. Souvent on a<lb break="yes" />pris les élévations au-dessus du <placeName>plateau de Gorukpoor</placeName>,<lb break="yes"/>pour des élévations au-dessus du niveau de la mer;<lb break="yes"/>souvent on s&#x2019;est trompé dans la réduction des mesures<lb break="yes"/>anglaises en mesures fran&#x00E7;aises; enfin on a confondu<lb break="yes"/>
+                            <pb n="232" facs="#f0008"/> les unes avec les autres, des montagnes qui n&#x2019;étaient<lb break="yes"/>désignées que par des numéros, ou, ce qui est pire<lb break="yes"/>encore, par le nom des stations d&#x2019;où leur azimuth avait<lb break="yes"/>été déterminé. Forcé par la méthode graphique que<lb break="yes"/>j&#x2019;emploie dans le figuré du terrain, de m&#x2019;arr&#x00EA;ter à des<lb break="yes"/>données précises, j&#x2019;ai rassemblé tous les matériaux qui<lb break="yes" />ont rapport à la mesure des différentes parties de l&#x2019;<placeName>Hima-<lb break="no"/>laya</placeName>, depuis le <placeName>Hindou-Khoo</placeName> jusqu&#x2019;à la <placeName>vallée du Bou-<lb break="no"/>rampooter</placeName>. J&#x2019;ai comparé ces mesures entre elles, et j&#x2019;ai<lb break="yes"/>consulté sur les résultats de ces comparaisons, un sa-<lb break="no"/>vant illustre que son séjour dans l&#x2019;<placeName>Inde</placeName>, ses occupations<lb break="yes" />géodésiques, et sa vaste érudition dans la géographie<lb break="yes" />moderne et ancienne de l&#x2019;<placeName>Asie</placeName>, ont le plus familiarisé<lb break="yes"/>avec l&#x2019;objet que je voulais traiter. Voici les données les<lb break="yes"/>plus positives auxquelles je me suis arr&#x00EA;té conjointement<lb break="yes"/>avec M. <persName ref="http://d-nb.info/gnd/">Colebrook</persName>, dans un Mémoire que je prépare<lb break="yes"/>pour la Société asiatique.</p>
+                        <lb break="yes"/>
+                        <p>Il faut distinguer entre les sommets dont la hau-<lb break="no"/>teur a été déterminée par des opérations trigonomé-<lb break="no"/>triques qui ne laissent rien à désirer, et quelques<lb break="yes"/>sommets plus élevés encore, dont la mesure ne se<lb break="yes"/>fonde que sur des angles de hauteur, et des relève-<lb break="no"/>mens pris dans des lieux dont la position astronomi-<lb break="no"/>que, et par conséquent la différence en latitude et en<lb break="yes"/>longitude paraissaient suffisamment connues <note place="foot" n="(1)">MM. <persName ref="http://d-nb.info/gnd/">Herbert</persName> et <persName ref="http://d-nb.info/gnd/">Hodgson</persName> s&#x2019;expriment avec beaucoup de pré-<lb break="no"/>cision sur cette difference entre la certitude des mesures du <placeName>Iawahir</placeName>
+                                <lb break="yes"/>et de <placeName>Dhawalagiri</placeName>: &#x00AB;On ne conna&#x00EE;t, disent-ils, aucune hauteur des<lb break="yes"/>Pics plus au sud-est de lat. 29° 49&#x2032; 43&#x2033;, et long. 81° 2&#x2032; à l&#x2019;est de <placeName>Green-<lb break="no" />wich</placeName>.&#x00BB; (<bibl>
+                                    <hi rendition="#i">Asiat. Res.</hi>, tom. 14, p. 189</bibl>). Ces habiles observateurs ex-<lb break="no"/>cluent par conséquent les mesures trigonométriques qui ne sont pas<lb break="yes"/>fondées sur des bases directement mesurées.</note>. A la pre-<lb break="no"/>
+                            <pb n="233" facs="#f0009"/> mière classe appartient le <hi rendition="#i">
+                                <placeName>Jawahir</placeName>
+                            </hi>, situé par les 30°<lb break="yes"/>22&#x2032; 19&#x2033; de latitude au sud-ouest du lac sacré de <placeName>Ma-<lb break="no"/>nassarowar</placeName>; à la seconde classe le <hi rendition="#i" >
+                                <placeName>Dhawalagiri</placeName>
+                            </hi> ou<lb break="yes" />
+                            <placeName>Mont-Blanc</placeName> (car en sanscrit <hi rendition="#i">dhawala</hi> signifie blanc,<lb break="yes"/>et <hi rendition="#i">giri</hi> montagne), au sud-est du lac sacré par les 28°<lb break="yes"/>40&#x2032; de latitude. Le <hi rendition="#i" >
+                                <placeName>Jawahir</placeName>
+                            </hi> a 7848 mètres (4026<lb break="yes"/>toises), le <hi rendition="#i" >
+                                <placeName>Dhawalagiri</placeName>
+                            </hi> 8556 mètres (4390 toises) de<lb break="yes"/>hauteur. En adoptant le résultat de ma mesure du<lb break="yes"/>
+                            <placeName>Chimborazo</placeName> (6530 mètres), on trouve que le som-<lb break="no"/>met de l&#x2019;<placeName>Himalaya</placeName>, mesuré avec le plus de précision,<lb break="yes"/>est de 1318 mètres; le sommet mesuré par approxi-<lb break="no"/>mation de 2026 mètres, plus élevé que le <placeName>Chimborazo</placeName>.<lb break="yes"/>Dans la mesure du <hi rendition="#i">
+                                <placeName>Jawahir</placeName>
+                            </hi> (qui est le <hi rendition="#i">Pic A. n°</hi> 2,<lb break="yes"/>relevé de la plate-forme du temple de <placeName>Surkandra</placeName>,<lb break="yes"/>et le <hi rendition="#i">Pic n°</hi> 14 du tableau de hauteurs publié par<lb break="yes"/>le capitaine <persName ref="http://d-nb.info/gnd/">Webb</persName>) <note place="foot" n="(1)">Le capitaine <persName ref="http://d-nb.info/gnd/" >Webb</persName> donne à ce Pic, n° 14, la hauteur de<lb break="yes"/>25,669 pieds anglais, en le pla&#x00E7;ant lat. 30° 21&#x2032; 51&#x2033;, long. 79° 48&#x2032;<lb break="yes" />31&#x2033; à l&#x2019;est de <placeName>Greenwich</placeName>. (<bibl>
+                                    <hi rendition="#i">Asiat. Res.</hi>, vol. 13, p. 306</bibl>). MM. <persName ref="http://d-nb.info/gnd/" >Herbert</persName>
+                                <lb break="yes"/>et <persName ref="http://d-nb.info/gnd/">Hodgson</persName> le font lat. 30° 22&#x2032; 19&#x2033;, long. 79° 57&#x2032; 22&#x2033;. On lui attribuait<lb break="yes"/>d&#x2019;abord 25,589 pieds anglais. (<bibl>
+                                    <hi rendition="#i">Asiat. Res.</hi>, tom. 14, p. 311-316</bibl>),<lb break="yes"/>et puis 25,749 pieds anglais<choice><sic>.</sic><corr type="editorial"></corr></choice> = 4026 toises parce que la hauteur du<lb break="yes" />
+                                <placeName>plateau de Belville</placeName> fut d&#x2019;abord supposée de 853 pieds, et par des obser-<lb break="no"/>vations barométriques plus exactes de 1013 pieds au-dessus du niveau<lb break="yes"/>de la mer. Il y a trois Pics d&#x2019;une hauteur prodigieuse qui se suivent<lb break="yes"/>dans la direction du sud-ouest au nord-est que l&#x2019;on voit de la plate-<lb break="no"/>forme du temple de <placeName>Surkandra</placeName>. Ces Pics sont désignés dans la carte de<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/">Herbert</persName>, par les noms de <hi rendition="#i">
+                                    <placeName>Jawahir Peaks</placeName>
+                                </hi> A n° 1, A n° 2 et A<lb break="yes"/>n° 3 ou P. C&#x2019;est le Pic intermédiaire qui est le plus élevé de tous.<lb break="yes"/>Plus au nord-ouest paraissent les montagnes colossales de <placeName>Kedarnath</placeName>
+                                <lb break="yes"/>et de <placeName>Iamnautri</placeName>.</note>, les résultats obtenus par<lb break="yes"/>MM. <persName ref="http://d-nb.info/gnd/" >Hodgson</persName> et <persName ref="http://d-nb.info/gnd/" >Herbert</persName> ne changeraient encore<lb break="yes"/>que de 136 mètres, si la réfraction oscillait dans<lb break="yes"/>les limites extrèmes de <formula notation="TeX">\frac{1}{11}</formula> et <formula notation="TeX">\frac{1}{20}</formula>, tandis que des obser-<lb break="no"/>
+                            <pb n="234" facs="#f0010"/> vations directes ont prouvé que, sous cette z&#x00F4;ne et à<lb break="yes"/>cette hauteur, elles se soutiennent assez généralement<lb break="yes"/>entre <formula notation="TeX">\frac{1}{16}</formula> à <formula notation="TeX" >\frac{1}{18}</formula>. La hauteur du <placeName>Dhawalagiri</placeName> est dépen-<lb break="no"/>dante d&#x2019;un plus grand nombre d&#x2019;élémens incertains,<lb break="yes"/>de la position astronomique des lieux en longitude et<lb break="yes"/>en latitude, des azimuths et de la réfraction; cepen-<lb break="no"/>dant deux mesures successives des capitaines <persName ref="http://d-nb.info/gnd/">Webb</persName> et<lb break="yes"/>Blake dont nous possédons tous les détails, offrent à peine<lb break="yes"/>une différence de 150 mètres.</p>
+                        <lb break="yes"/>
+                        <p>Le <placeName>Dhawalagiri</placeName>, appelé aussi par corruption <placeName>Dhoula-<lb break="no"/>gir</placeName> ou <placeName>Gasakoti</placeName>, donne naissance, sur sa pente méridio-<lb break="no"/>nale, à la rivière <placeName>Ghandaki</placeName>
+                            <note place="foot" n="(1)">
+                                <bibl>
+                                    <hi rendition="#i">Asiat. Res.</hi>, vol. 12, p. 266.</bibl>
+                                <bibl>&#x2014; <hi rendition="#i">Journ. of the Royal Inst.</hi>, vol.<lb break="yes"/>11, p. 240.</bibl> La longitude du <placeName>Dhawalagiri</placeName> est de 83° 20&#x2032; à l&#x2019;est de<lb break="yes"/>
+                                <placeName>Greenwich</placeName>; sa hauteur est de 28,077 pieds anglais = 8556 mètres =<lb break="yes" />4390 toises. Les premiers relèvemens avaient donné, dans les hypo-<lb break="no"/>thèses de distance et de réfraction les plus défavorables, un <hi rendition="#i">minimum</hi>
+                                <lb break="yes" />de 26,862 pieds anglais.</note>. C&#x2019;est sur les bords de<lb break="yes"/>cette rivière qu&#x2019;on recueillit dans un schiste de transition,<lb break="yes"/>les fameuses cornes d&#x2019;<placeName>Ammon (salagrana)</placeName> que les<lb break="yes"/>croyans parmi les Hindous regardent comme des images<lb break="yes"/>de l&#x2019;incarnation de <persName ref="http://d-nb.info/gnd/">Vishnou</persName> pendant le <hi rendition="#i">cataclysme des<lb break="yes"/>grandes eaux.</hi> En pla&#x00E7;ant le <placeName>Puy-de-D&#x00F4;me</placeName> sur le <placeName>Chim-<lb break="no"/>borazo</placeName> on aura la hauteur du <placeName>Jawahir</placeName>; en placant le<lb break="yes" />
+                            <placeName>Saint-Gothard</placeName> sur le <placeName>Chimborazo</placeName> on aura la hauteur du<lb break="yes"/>
+                            <placeName>Dhawalagiri</placeName>. En contemplant du fond des plaines et des<lb break="yes"/>sillons que couvrent nos cultures, les sommets des <placeName>Alpes</placeName>
+                            <lb break="yes" />et des <placeName>Cordillères</placeName>, nous sommes d&#x2019;abord frappés de la dif-<lb break="no"/>férence prodigieuse qu&#x2019;offre la hauteur des montagnes;<lb break="yes"/>nous oublions qu&#x2019;une planète voisine dont le nivellement<lb break="yes"/>du sol a été entreprise dans toute la surface visible<lb break="yes"/>aux habitans de la terre, présente ces m&#x00EA;mes mer-<lb break="no"/>veilles et de plus grandes encore. Fondés sur des ana-<lb break="no"/>
+                            <pb n="235" facs="#f0011"/> logies qui ne sont qu&#x2019;apparentes, nous nous formons une<lb break="yes"/>idée vague du <hi rendition="#i" >maximum</hi> de hauteur que les cimes de<lb break="yes"/>notre globe peuvent atteindre, comme s&#x2019;il nous était<lb break="yes" />donné de mesurer les forces élastiques qui ont soulevé<lb break="yes" />la cro&#x00FB;te oxidée de notre planète; comme si l&#x2019;action qui<lb break="yes"/>a produit, sur des crevasses, ces murs rocheux que nous<lb break="yes"/>appelons les <placeName>Alpes</placeName> et les <placeName>Pyrénées</placeName>, avait limité les forces<lb break="yes"/>qui ont agi sous la chaine des <placeName>Andes</placeName> et de l&#x2019;<placeName>Himalaya</placeName>,<lb break="yes"/>sous <placeName>Mowna-Roa</placeName> et le <placeName>Pic de Ténériffe</placeName>. Pourquoi ne<lb break="yes"/>découvrirait-on pas un jour, au nord de l&#x2019;<placeName>Himalaya</placeName>,<lb break="yes"/>entre cette cha&#x00EE;ne et <placeName>celle du Zungling</placeName> ou entre la <placeName>cha&#x00EE;ne<lb break="yes"/>du Zungling</placeName> et <placeName>celle de Thianschan</placeName> ou <hi rendition="#i">Montagnes cé-<lb break="no"/>lestes</hi>, des sommets qui seraient supérieurs au <placeName>Dhawa-<lb break="no"/>lagiri</placeName> comme celui-ci l&#x2019;est au <placeName>Chimborazo</placeName>, et le <placeName>Chim-<lb break="no"/>borazo</placeName> au <placeName>Mont-Blanc</placeName>? M&#x00EA;me les &#x00EA;tres organisés nous<lb break="yes"/>offrent cette variété prodigieuse de grandeur. Lorsque je<lb break="yes"/>fis conna&#x00EE;tre la fleur de <hi rendition="#i">l&#x2019;Aristolochia cordiflora</hi> de 18<lb break="yes"/>pouces de diamètre, on ne se doutait pas de l&#x2019;exis-<lb break="no"/>tence du <hi rendition="#i" >Rafflesia</hi> dont la fleur a 3 pieds d&#x2019;ouverture.<lb break="yes"/>Aux yeux du géologue qui ne perd pas de vue les masses<lb break="yes"/>et la configuration générale du sphéro&#x00EF;de terrestre, la<lb break="yes"/>hauteur des montagnes est un phénomène peu impor-<lb break="no"/>tant: il ne voit dans les <hi rendition="#i">maxima</hi> de fa&#x00EE;tes des <placeName>Pyrénées</placeName>,<lb break="yes"/>des <placeName>Alpes</placeName>, des <placeName>Cordillères</placeName> et de l&#x2019;<placeName>Himalaya</placeName>, qu&#x2019;une série<lb break="yes"/>de termes qui croissent comme les nombres 1. 1 <formula notation="TeX">\frac{1}{2}</formula>.<lb break="yes"/>2 et 2 <formula notation="TeX">\frac{1}{2}</formula>.</p>
+                        <lb break="yes"/>
+                        <p>Je m&#x2019;arr&#x00EA;te aux <hi rendition="#i">points culminans</hi> de chaque système,<lb break="yes"/>car la <hi rendition="#i">hauteur moyenne des lignes de fa&#x00EE;tes,</hi> déterminée<lb break="yes" />par la hauteur moyenne des cols et des passages, est<lb break="yes" />une idée abstraite, et m&#x00EA;me assez vague lorsqu&#x2019;il y a<lb break="yes"/>groupement de montagnes et non une cha&#x00EE;ne continue.<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/" >Ramond</persName>, qui, dans toutes les branches des sciences<lb break="yes"/>
+                            <pb n="236" facs="#f0012"/> physiques qu&#x2019;il a traitées, s&#x2019;est toujours élevé à des vues<lb break="yes" />générales, avait déjà observé que le fa&#x00EE;te des <placeName>Pyrénées</placeName>
+                            <lb break="yes"/>n&#x2019;est guère plus bas que la hauteur moyenne des <placeName>Alpes</placeName>,<lb break="yes"/>et que ce qui caractérise cette dernière cha&#x00EE;ne est la<lb break="yes"/>grande élévation relative de ses sommets, c&#x2019;est-à-dire<lb break="yes"/>le rapport de ces sommets à la hauteur moyenne de la<lb break="yes"/>ligne de fa&#x00EE;te. D&#x2019;après mes recherches cette hauteur<lb break="yes"/>moyenne égale dans les <placeName>Andes</placeName> les points culminans des<lb break="yes"/>
+                            <placeName>Pyrénées</placeName>; dans l&#x2019;<placeName>Himalaya</placeName>, les points culminans des<lb break="yes"/>
+                            <placeName>Alpes</placeName>.</p>
+                        <lb break="yes"/>
+                        <p>La géognosie a ses <hi rendition="#i">élémens numériques</hi> comme toutes<lb break="yes"/>les sciences qui traitent de la configuration et de l&#x2019;éten-<lb break="no"/>due des cha&#x00EE;nes de montagnes et des bassins, de la dis-<lb break="no"/>tribution des &#x00EA;tres organisés, des causes qui modifient<lb break="yes"/>les inflexions des lignes isothermes. Dans un Mémoire<lb break="yes"/>géologique, que j&#x2019;aurai bient&#x00F4;t l&#x2019;honneur de présenter à<lb break="yes"/>l&#x2019;Académie, j&#x2019;exposerai quelques propriétés remarqua-<lb break="no"/>bles de ces élémens numériques, relatives aux points cul-<lb break="no"/>minans et à l&#x2019;aire de la section horizontale des cha&#x00EE;nes.<lb break="yes"/>Il suffit d&#x2019;annoncer ici que le rapport de la hauteur<lb break="yes" />moyenne des cr&#x00EA;tes est à celle des cimes les plus élevées<lb break="yes"/>dans les <placeName>Pyrénées</placeName> comme 1:1 <formula notation="TeX">\frac{1}{2}</formula>, dans les <placeName>Alpes</placeName> = 1 : 2,<lb break="yes"/>dans les <placeName>Andes</placeName> et l&#x2019;<placeName>Himalaya</placeName> = 1:1 <formula notation="TeX">\frac{8}{10}</formula>. En <placeName>Amé-<lb break="no"/>rique</placeName> un seul système de montagnes, celui des <placeName>An-<lb break="no"/>des</placeName>, réunit dans une z&#x00F4;ne étroite et longue de trois<lb break="yes"/>mille lieues, tous les sommets qui ont plus de 2700<lb break="yes"/>mètres de hauteur, tandis qu&#x2019;en <placeName>Europe</placeName>, m&#x00EA;me en con-<lb break="no"/>sidérant (d&#x2019;après des vues trop systématiques) les <placeName>Alpes</placeName>
+                            <lb break="yes"/>et les <placeName>Pyrénées</placeName> comme une seule ligne de fa&#x00EE;te, on<lb break="yes"/>trouve encore sporadiquement bien loin de cette ligne<lb break="yes"/>ou arète principale (dans la <placeName>Sierra-Nevada de Grenade</placeName>,<lb break="yes"/>en <placeName>Sicile</placeName>, en <placeName>Grèce</placeName>, dans les <placeName>Apennins</placeName>, peut-&#x00EA;tre aussi<lb break="yes"/>
+                            <pb n="237" facs="#f0013"/> en <placeName>Portugal</placeName>), des cimes de 1900 et 3500 mètres de hau-<lb break="no"/>teur. Cette distribution inégale des <hi rendition="#i">points culminans</hi>,<lb break="yes"/>tant&#x00F4;t isolés ou sporadiques au milieu des bassins des<lb break="yes"/>mers et des plaines continentales, tant&#x00F4;t réunis en groupes<lb break="yes"/>ou alignés par files, a des rapports avec la forme et la<lb break="yes"/>masse des terres qui (en les comparant au fond de l&#x2019;O-<lb break="no"/>céan) ne sont elles-m&#x00EA;mes que de vastes plateaux.</p>
+                        <lb break="yes"/>
+                        <p>Si la hauteur des pics offre peu d&#x2019;intér&#x00EA;t au géologue,<lb break="yes"/>il n&#x2019;en est pas de m&#x00EA;me des évaluations du volume des<lb break="yes"/>ar&#x00EA;tes comparé à l&#x2019;étendue de la surface des basses<lb break="yes"/>régions. Cette partie de l&#x2019;Orographie, sur laquelle<lb break="yes"/>mes <hi rendition="#i" >sections verticales</hi> jettent quelque jour, est m&#x00EA;me<lb break="yes"/>de beaucoup d&#x2019;importance dans les recherches de la Mé-<lb break="no"/>canique céleste. M. <persName ref="http://d-nb.info/gnd/">de Laplace</persName> a fait voir récemment<lb break="yes"/>&#x00AB;que l&#x2019;harmonie qu&#x2019;offrent les expériences du pendule<lb break="yes"/>avec l&#x2019;aplatissement donné par les mesures des degrés ter-<lb break="no"/>restres et les inégalités lunaires, prouve que la surface serait<lb break="yes"/>à peu près celle de l&#x2019;équilibre, si cette surface devenait<lb break="yes"/>fluide. Il suit de cette concordance des résultats que la pe-<lb break="no"/>tite profondeur moyenne des mers doit &#x00EA;tre du m&#x00EA;me ordre<lb break="yes" />que la hauteur moyenne des continens et des &#x00EE;les <note place="foot" n="(1)">
+                                <bibl>
+                                    <hi rendition="#i">Mécanique celeste</hi>, tom. V., p. 14</bibl>.</note>.&#x00BB;<lb break="yes"/>Or cette hauteur moyenne dépend bien moins de ces cha&#x00EE;-<lb break="no"/>nons ou ar&#x00EA;tes longitudinales de peu de largeur, de ces<lb break="yes"/>points culminans ou d&#x00F4;mes qui attirent la curiosité du<lb break="yes"/>vulgaire, que de la configuration générale des plateaux,<lb break="yes"/>de ces plaines doucement ondulées et à pentes alterna-<lb break="no"/>tives, qui influent, par leur étendue et leur masse, sur<lb break="yes"/>la position d&#x2019;une <hi rendition="#i">surface moyenne</hi>, c&#x2019;est-à-dire sur la<lb break="yes"/>hauteur d&#x2019;un plan placé de manière que la somme des<lb break="yes"/>ordonnées positives soit égale à la somme des ordonnées<lb break="yes"/>
+                            <pb n="238" facs="#f0014"/> négatives. La géographie physique, de m&#x00EA;me que la mé-<lb break="no"/>téorologie et la connaissance des climats, ne peuvent faire<lb break="yes"/>des progrès qu&#x2019;à mesure que l&#x2019;on considère les phéno-<lb break="no"/>mènes dans leur ensemble, et que l&#x2019;on se déshabitue<lb break="yes" />d&#x2019;attacher trop d&#x2019;importance soit aux <hi rendition="#i" >points culminans</hi>
+                            <lb break="yes"/>qui se trouvent isolés sur une ligne de fa&#x00EE;tes, soit à ces<lb break="yes"/>
+                            <hi rendition="#i">extr&#x00EA;mes</hi> de <hi rendition="#i" >température</hi> qu&#x2019;atteint le thermomètre pen-<lb break="no"/>dant un seul jour de l&#x2019;année.</p>
+                    </div>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Seconde partie.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>J&#x2019;ai exposé dans la première partie de ce Mémoire les<lb break="yes" />avantages que présente la méthode graphique des sec-<lb break="no"/>tions verticales lorsqu&#x2019;on l&#x2019;applique à une grande étendue<lb break="yes"/>de pays; j&#x2019;ai rappelé que ce genre de projection seul,<lb break="yes"/>trop long-temps négligé, peut fournir une connaissance<lb break="yes"/>précise de la hauteur moyenne des continens et des &#x00EE;les,<lb break="yes"/>élément qui n&#x2019;est pas sans intér&#x00EA;t pour la Mécanique<lb break="yes"/>céleste, et que les observations du pendule semblent lier<lb break="yes"/>à la connaissance du <hi rendition="#i">maximum</hi> de la profondeur de la<lb break="yes" />mer. J&#x2019;ai fait voir en m&#x00EA;me temps:</p>
+                    <lb break="yes"/>
+                    <p>1°. Que cette hauteur moyenne des continens, d&#x2019;a-<lb break="no"/>près les recherches que j&#x2019;ai pu faire jusqu&#x2019;aujourd&#x2019;hui,<lb break="yes"/>a pour <hi rendition="#i">nombres limites</hi> 120 et 160 mètres;</p>
+                    <lb break="yes"/>
+                    <p>2°. Que les opérations géodésiques faites sur le <placeName>pla-<lb break="no"/>teau du Seharanpoor</placeName> prouvent indubitablement qu&#x2019;un<lb break="yes"/>des sommets de la ligne de fa&#x00EE;te de l&#x2019;<placeName>Himalaya</placeName> (le pic <placeName>Ja-<lb break="no"/>wahir</placeName>), situé à l&#x2019;ouest du <placeName>Lac Manassarowar</placeName>, surpasse<lb break="yes"/>de 676 toises le point culminant des <placeName>Andes</placeName>;</p>
+                    <lb break="yes"/>
+                    <p>3°. Qu&#x2019;il existe dans la m&#x00EA;me cha&#x00EE;ne de l&#x2019;<placeName>Himalaya</placeName>,<lb break="yes"/>mais au sud-est du <placeName>Lac Manassarowar</placeName>, un autre sommet,<lb break="yes"/>appelé par les indigènes la <placeName>Montagne-Blanche</placeName> (<placeName>Dhawa-<lb break="no" />lagiri</placeName>), qui est plus élevé encore que le Jawahir</p>
+                    <lb break="yes"/>
+                    <pb n="239" facs="#f0015"/>
+                    <p>4°. Que deux mesures de ce <hi rendition="#i">
+                            <placeName>Mont-Blanc de l&#x2019;Inde</placeName>,</hi>
+                        <lb break="yes"/>faites en différentes stations et à diverses époques, ont<lb break="yes"/>donné, à 12 toises près, la m&#x00EA;me hauteur prodigieuse<lb break="yes"/>de 4390 toises; mais que, malgré cette concordance,<lb break="yes"/>sans doute accidentelle, le <placeName>Dhawalagiri</placeName> n&#x2019;est pas mesuré<lb break="yes"/>avec la m&#x00EA;me précision que le <placeName>Jawahir</placeName>, la longueur de la<lb break="yes"/>base à laquelle s&#x2019;appuyaient les angles, n&#x2019;ayant été déter-<lb break="no"/>minée que par des moyens astronomiques;</p>
+                    <lb break="yes"/>
+                    <p>5°. Que pour croire que le <placeName>Jawahir</placeName> ne surpasse pas le<lb break="yes"/>
+                        <placeName>Chimborazo</placeName> en hauteur, on est forcé d&#x2019;admettre un<lb break="yes"/>coefficient de réfraction terrestre qu&#x2019;il serait absurde<lb break="yes"/>de supposer m&#x00EA;me dans le <placeName>nord de l&#x2019;Europe</placeName>;</p>
+                    <lb break="yes"/>
+                    <p>6°. Que dans plusieurs parties de l&#x2019;Inde la valeur<lb break="yes"/>du coefficient de réfraction a été déterminée par des<lb break="yes" />observations réciproques; que ce coefficient, dans les<lb break="yes" />basses latitudes et sur les <placeName>plateaux du Nepaul</placeName>, est gé-<lb break="no"/>néralement de <formula notation="TeX" >\frac{1}{15}</formula> à <formula notation="TeX" >\frac{1}{18}</formula>, et qu&#x2019;en supposant les li-<lb break="no" />mites extr&#x00EA;mes de <formula notation="TeX">\frac{1}{12}</formula> et de <formula notation="TeX">\frac{1}{20}</formula>, la hauteur du <placeName>Pic Ja-<lb break="no"/>wahir</placeName> ne changerait encore que de 136 mètres, c&#x2019;est-à-<lb break="no"/>dire de <formula notation="TeX">\frac{1}{70}</formula> de la hauteur totale, erreur qu&#x2019;on ne peut<lb break="yes"/>considérer comme très-considérable, si l&#x2019;on se rappelle<lb break="yes"/>que les opérations faites par des astronomes justement<lb break="yes"/>célèbres à différentes époques et à différentes distances,<lb break="yes"/>pour déterminer la hauteur du <placeName>Mont-Rose</placeName>, varient<lb break="yes"/>de <formula notation="TeX">\frac{1}{35}</formula> de la hauteur <note place="foot" n="(1)">
+                            <bibl>
+                                <hi rendition="#i">Welden, Monographie des Mont-Rosa,</hi> 1824, pag. 20</bibl>.</note> mesurée, et s&#x2019;éloignent par con-<lb break="no"/>séquent de beaucoup, malgré l&#x2019;habileté des observateurs,<lb break="yes"/>de la grande concordance trouvée récemment pour le<lb break="yes"/>
+                        <placeName>Mont-Blanc</placeName> entre les observations de MM. <persName ref="http://d-nb.info/gnd/" >Tralles</persName>, <persName ref="http://d-nb.info/gnd/">Car-<lb break="no"/>lini</persName>, <persName ref="http://d-nb.info/gnd/" >Corab&#x0153;uf</persName> et <persName ref="http://d-nb.info/gnd/" >L&#x2019;Ostende</persName>.</p>
+                    <lb break="yes"/>
+                    <p>7°. Que toute mesure géodésique d&#x2019;une chaine de<lb break="yes"/>
+                        <pb n="240" facs="#f0016"/> montagnes située dans l&#x2019;intérieur d&#x2019;un continent, étant<lb break="yes"/>par sa nature en partie géométrique, en partie baromé-<lb break="no"/>trique, il est important de conna&#x00EE;tre le rapport de ces<lb break="yes"/>deux élémens, qui varie généralement avec la petitesse<lb break="yes"/>des angles de hauteur; mais que dans la détermination<lb break="yes"/>des sommets de l&#x2019;<placeName>Himalaya</placeName>, la mesure barométrique,<lb break="yes"/>fondée sur l&#x2019;emploi simultané de six baromètres et d&#x2019;un<lb break="yes"/>grand nombre d&#x2019;observations correspondantes (à <placeName>Seha-<lb break="no"/>ranpoor</placeName> et à <placeName>Calcutta</placeName>), ne porte que sur une hauteur<lb break="yes"/>de 300 mètres.</p>
+                    <lb break="yes"/>
+                    <p>8°. Que les points culminans ou les <hi rendition="#i">maxima</hi> des lignes<lb break="yes"/>de fa&#x00EE;te des principales cha&#x00EE;nes de montagnes en <placeName>Eu-<lb break="no"/>rope</placeName>, en <placeName>Amérique</placeName> et en <placeName>Asie</placeName>, sont comme les nombres<lb break="yes"/>10, 14, 18, 24, c&#x2019;est-à-dire qu&#x2019;ils suivent à peu près une<lb break="yes"/>progression par différences dont la raison est un demi,<lb break="yes"/>mais que dans les sept cha&#x00EE;nes des <placeName>Alpes</placeName>, des <placeName>Andes</placeName>, de<lb break="yes" />l&#x2019;<placeName>Himalaya</placeName>, du <placeName>Caucase</placeName>, des <placeName>Alleghanis</placeName> et de <placeName>Venezuela</placeName>,<lb break="yes"/>le rapport des cr&#x00EA;tes aux sommets, c&#x2019;est-à-dire le rap-<lb break="no"/>port entre la hauteur moyenne des fa&#x00EE;tes et les points<lb break="yes" />culminans, est très-régulièrement comme 1 à 1 <formula notation="TeX" >\frac{8}{10}</formula> ou<lb break="yes"/>comme <hi rendition="#i" >un</hi> à <hi rendition="#i">deux.</hi> La masse des <placeName>Hautes-Pyrénées</placeName> est<lb break="yes"/>généralement plus élevée que celle des <placeName>Hautes-Alpes</placeName>,<lb break="yes"/>quoique la hauteur des pics dont les <placeName>Pyrénées</placeName> sont do-<lb break="no"/>minées soit de beaucoup inférieure. En calculant la hau-<lb break="no"/>teur moyenne de vingt-trois passages mesurés avec beau-<lb break="no"/>coup de précision, j&#x2019;ai trouvé pour les <placeName>Pyrénées</placeName> 1217<lb break="yes"/>toises, pour les <placeName>Alpes</placeName> seulement 1168 toises ou 49 toises<lb break="yes"/>de moins. Les <hi rendition="#i" >passages</hi> ou <hi rendition="#i">cols</hi> appelés <hi rendition="#i">ports</hi> ou <hi rendition="#i">hour-<lb break="no" />ques</hi> dans les <placeName>Pyrénées</placeName>, sont de faibles échancrures ou<lb break="yes"/>dépressions locales des fa&#x00EE;tes. Ils donnent un <hi rendition="#i">nombre<lb break="yes"/>limite</hi>, un <hi rendition="#i">minimum</hi> de la hauteur du fa&#x00EE;te; tandis que<lb break="yes"/>la ligne des neiges éternelles qui n&#x2019;atteint pas la hauteur<lb break="yes"/>
+                        <pb n="241" facs="#f0017"/> moyenne de la cr&#x00EA;te, fournit un autre <hi rendition="#i">nombre limite</hi> pour<lb break="yes"/>le <hi rendition="#i">maximum.</hi> La hauteur moyenne des fa&#x00EE;tes est par con-<lb break="no"/>séquent contenue entre ces deux extr&#x00EA;mes. Or les som-<lb break="no"/>mets des <placeName>Pyrénées</placeName> sont si peu élevés que le rapport des<lb break="yes"/>cr&#x00EA;tes à ces sommets y est de 1 à 1 <formula notation="TeX">\frac{1}{2}</formula>, au lieu de 1 à 2,<lb break="yes" />comme donnent six autres cha&#x00EE;nes principales des deux<lb break="yes"/>continens. Il est presque superflu d&#x2019;ajouter que les rap-<lb break="no"/>ports numériques que nous venons d&#x2019;annoncer ne seront<lb break="yes"/>plus les m&#x00EA;mes, si le niveau des mers venait à changer,<lb break="yes"/>ou si on comparait les sommets des courbes au centre de<lb break="yes"/>la terre. Après avoir rappelé ces résultats généraux qui<lb break="yes"/>ne sont pas sans intér&#x00EA;t pour la géographie physique, je<lb break="yes"/>vais passer à la seconde partie de ce Mémoire qui peut<lb break="yes"/>&#x00EA;tre considéré comme un Mémoire justificatif de la nou-<lb break="no"/>velle carte en section verticale que j&#x2019;ai eu l&#x2019;honneur de<lb break="yes"/>présenter à l&#x2019;Académie dans sa dernière séance.</p>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Constitution géognostique.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>La cha&#x00EE;ne de l&#x2019;<placeName>Himalaya</placeName> sur laquelle le capitaine<lb break="yes"/>
+                            <persName ref="http://d-nb.info/gnd/" >Gérard</persName> s&#x2019;est élevé à la m&#x00EA;me hauteur (près de 5900<lb break="yes"/>mètres) à laquelle MM. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, <persName ref="http://d-nb.info/gnd/">Carlos Montufar</persName> et<lb break="yes"/>moi, nous sommes parvenus à la pente du <placeName>Chimborazo</placeName>,<lb break="yes"/>est composée, autant qu&#x2019;on a pu l&#x2019;examiner jusqu&#x2019;ici,<lb break="yes"/>non de roches porphyriques, comme le <placeName>Caucase</placeName>, mais<lb break="yes"/>de granite, de gneiss, de micaschiste avec disthène, et de<lb break="yes"/>ces amphibolites que l&#x2019;on désigne vulgairement sous le<lb break="yes" />nom de diorites ou <hi rendition="#i">grunstein primitif.</hi> Les mesures des<lb break="yes"/>montagnes de l&#x2019;Inde dont les plus précises ne datent que<lb break="yes"/>de l&#x2019;année 1816, ont restitué par conséquent les points<lb break="yes"/>culminans de la surface du globe au domaine des<lb break="yes"/>formations primitives, et ceux parmi les géognostes qui<lb break="yes"/>regardent les <placeName>Cordillères</placeName> comme soulevées par des forces<lb break="yes"/>
+                            <pb n="242" facs="#f0018"/> élastiques à travers des crevasses ou sillons ouverts plus<lb break="yes"/>ou moins ramifiés, croient trouver dans la prodigieuse<lb break="yes"/>hauteur des montagnes de l&#x2019;<placeName>Inde</placeName>, une preuve de l&#x2019;as-<lb break="no"/>sertion que les premiers ou plus anciens soulèvemens<lb break="yes"/>de la cro&#x00FB;te oxidée de notre planète, ont été les plus<lb break="yes"/>considérables et les plus violens. Lorsqu&#x2019;on examine la<lb break="yes"/>constitution géognostique de l&#x2019;<placeName>Himalaya</placeName> entre les méri-<lb break="no"/>diens du <placeName>Lac Manasarowar</placeName> et le glacier des sources du<lb break="yes" />
+                            <placeName>Gange</placeName>, on est frappé de la ressemblance parfaite qu&#x2019;elle<lb break="yes"/>offre avec la constitution géognostique des <placeName>Alpes</placeName>, dans<lb break="yes"/>les environs du <placeName>Saint-Gothard</placeName>. Au contraire, la partie<lb break="yes"/>des <placeName>Andes de Quito</placeName>, dont j&#x2019;ai tracé la section verticale,<lb break="yes"/>est presque entièrement composée de trachyte. C&#x2019;est une<lb break="yes"/>éruption de trachytes qui, sur la <placeName>pente occidentale des<lb break="yes"/>Andes</placeName>, atteint une épaisseur de plus de 6500 mètres, à<lb break="yes"/>travers des formations de micaschiste et de gneiss, de-<lb break="no"/>venu talqueux.</p>
+                        <lb break="yes"/>
+                        <p>J&#x2019;ai déterminé avec soin, en appuyant les angles de<lb break="yes" />position à une base mesurée dans la plaine de <placeName>Riobamba-<lb break="maybe"/>Nuevo</placeName>, le volume du <placeName>Chimborazo</placeName>, et j&#x2019;ai trouvé le dia-<lb break="no"/>mètre du d&#x00F4;me de trachyte, là où commencent les<lb break="yes"/>neiges perpétuelles de 6700 mètres, et à la grande hau-<lb break="no"/>teur de 5900 mètres, par conséquent près du sommet<lb break="yes"/>encore de 1300 mètres. Il serait à désirer que l&#x2019;on e&#x00FB;t<lb break="yes"/>déterminé d&#x2019;une manière analogue le volume du <placeName>Mont-<lb break="maybe" />Blanc</placeName> et de quelques pics de l&#x2019;<placeName>Himalaya</placeName>. Lorsque des<lb break="yes" />for&#x00EA;ts de <placeName>Cinchona</placeName> qui avoisinent la ville de <placeName>Loxa</placeName>, on<lb break="yes"/>avance vers le nord, on franchit d&#x2019;abord le n&#x0153;ud des<lb break="yes" />montagnes de l&#x2019;<placeName>Assnay</placeName>, groupe de roches trachytiques,<lb break="yes"/>qui offre un passage des <placeName>Andes</placeName> très-fréquenté. J&#x2019;ai trouvé<lb break="yes"/>le point culminant du col à 2428 toises de hauteur:<lb break="yes"/>c&#x2019;est une échancrure, une dépression du fa&#x00EE;te des <placeName>Andes</placeName>
+                            <lb break="yes"/>
+                            <pb n="243" facs="#f0019"/> dont le fond égale à peu près la hauteur du sommet du<lb break="yes"/>
+                            <placeName>Mont-Blanc</placeName>. A ce n&#x0153;ud succède le passage de la <placeName>Cor-<lb break="no" />dillère</placeName>, devenu célèbre par les travaux des académiciens<lb break="yes"/>fran&#x00E7;ais, qui ont placé leurs signaux tant&#x00F4;t sur l&#x2019;un,<lb break="yes"/>tant&#x00F4;t sur l&#x2019;autre des deux cha&#x00EE;nons. L&#x2019;occidental est le<lb break="yes"/>cha&#x00EE;non du <placeName>Chimborazo</placeName>, du <placeName>Carguairazo</placeName> et d&#x2019;<placeName>Iliniza</placeName>;<lb break="yes" />l&#x2019;oriental, le cha&#x00EE;non du volcan de <placeName>Sangay</placeName>, des <placeName>Col-<lb break="no" />lanes</placeName> et du <placeName>Tungurahua</placeName>. Le dernier est brisé par le <placeName>Rio<lb break="yes" />Pastaza</placeName>, car en dépit des dogmes surannés des géogra-<lb break="no"/>phes, les plus hautes Cordillères du monde, l&#x2019;<placeName>Himalaya</placeName>
+                            <lb break="yes"/>et les <placeName>Andes</placeName>, donnent passage à des rivières. Le bassin<lb break="yes"/>que limitent les cha&#x00EE;nons du <placeName>Chimborazo</placeName> et du <placeName>Tungu-<lb break="no"/>rahua</placeName> est fermé vers le nord par le n&#x0153;ud de montagnes<lb break="yes"/>de <placeName>Chisinche</placeName>, espèce de digue trachytique de peu de<lb break="yes"/>hauteur, qui divise les eaux entre l&#x2019;<placeName>Océan Atlantique</placeName>
+                            <lb break="yes"/>et la <placeName>Mer du Sud</placeName>.</p>
+                        <lb break="yes"/>
+                        <p>Dans cette région le système des roches trachytiques<lb break="yes"/>est entièrement séparé du système des roches basalti-<lb break="no"/>ques. Celui-ci est très-rare dans la province de <placeName>Quito</placeName>,<lb break="yes"/>et ne se trouve qu&#x2019;à son extrémité septentrionale; il est<lb break="yes" />caractérisé par la présence de l&#x2019;olivine qui manque en-<lb break="no"/>tièrement dans les trachytes des <placeName>Andes</placeName>, riches à la fois<lb break="yes"/>en cristaux allongés et fendillés de feldspath vitreux,<lb break="yes" />d&#x2019;amphibole et de pyroxène. Les trachytes sont sou-<lb break="no"/>vent très-régulièrement stratifiés, par exemple au <placeName>Chim-<lb break="no"/>borazo</placeName> et à l&#x2019;<placeName>Assuay</placeName>, mais ils varient par groupes dans<lb break="yes"/>la direction et dans l&#x2019;inclinaison de leurs couches, comme<lb break="yes"/>font les phonolites du système basaltique. C&#x2019;est à la<lb break="yes"/>pente orientale du <placeName>Chimborazo</placeName> que la structure colon-<lb break="no"/>naire des trachytes est la plus commune; j&#x2019;y ai vu à 2180<lb break="yes"/>toises de hauteur des prismes pentagones et heptagones,<lb break="yes"/>de trachytes gris-verd&#x00E2;tres extr&#x00EA;mement minces, et de<lb break="yes"/>
+                            <pb n="244" facs="#f0020"/> 50 pieds de longueur. Ces trachytes donnaient des mar-<lb break="no"/>ques très-sensibles de polarité, l&#x2019;axe magnétique étant<lb break="yes"/>perpendiculaire à l&#x2019;axe longitudinal des prismes.</p>
+                        <lb break="yes"/>
+                        <p>Dans les <placeName>Andes</placeName> comme dans l&#x2019;ancien continent, chaque<lb break="yes"/>c&#x00F4;ne ou d&#x00F4;me trachytique offre des roches différentes<lb break="yes"/>dans leur composition, selon que l&#x2019;un des élémens pré-<lb break="no"/>domine sur les autres. Le mica noir est le plus commun<lb break="yes"/>dans les trachytes du <placeName>Cotopaxi</placeName> qui abondent en m&#x00EA;me<lb break="yes"/>temps en masses semi-vitreuses et en obsidiennes: l&#x2019;am-<lb break="no"/>phibole domine dans les trachytes d&#x2019;<placeName>Antisana</placeName>; le pyroxène<lb break="yes"/>dans les régions moyenne et inférieure du <placeName>Chimborazo</placeName>.<lb break="yes"/>Les trachytes de cette dernière montagne renferment<lb break="yes"/>en m&#x00EA;me temps des pyrites, un peu de quarz, deux va-<lb break="no"/>riétés de feldspath, le vitreux et le commun, et ce qui<lb break="yes"/>est très-remarquable, des grenats. J&#x2019;ai recueilli ces grenats<lb break="yes"/>près de la bouche latérale du <placeName>Yanaurcu</placeName>, colline que j&#x2019;ai<lb break="yes"/>figurée sur mon profil, et qui, d&#x2019;après un mythe local<lb break="yes"/>très-répandu parmi les montagnards de race indienne, a<lb break="yes"/>été enflammée par la chute d&#x2019;un aérolithe. M. <persName ref="http://d-nb.info/gnd/" >Beudant</persName>
+                            <lb break="yes"/>a également trouvé des grenats, non dans les trachytes,<lb break="yes"/>mais au milieu des brèches trachytiques de la <placeName>Hongrie</placeName>.<lb break="yes"/>Une roche dans laquelle le feldspath compacte atteint<lb break="yes"/>le <hi rendition="#i">maximum</hi> de son développement, la phonolithe, se<lb break="yes"/>montre au milieu des trachytes du <placeName>Chimborazo</placeName>: car il<lb break="yes"/>y a des phonolites de trachyte, comme il y a des phono-<lb break="no"/>lithes du terrain basaltique. Les derniers forment les<lb break="yes"/>plus grandes masses dans les deux continens, et ils sont<lb break="yes" />toujours superposés aux basaltes.</p>
+                        <lb break="yes"/>
+                        <p>Une partie du cha&#x00EE;non qui est opposé au cha&#x00EE;non tra-<lb break="no"/>chytique du <placeName>Chimborazo</placeName> présente une formation de<lb break="yes"/>gneiss-micaschiste, traversée par de riches filons d&#x2019;argent<lb break="yes"/>rouge et d&#x2019;argent sulfuré. En montant sur le volcan<lb break="yes"/>
+                            <pb n="245" facs="#f0021"/> constamment enflammé du <placeName>Tungurahua</placeName>, j&#x2019;ai m&#x00EA;me vu<lb break="yes"/>apposés, sinon superposés, des trachytes noirs et semi-<lb break="no"/>vitreux à un micaschiste verd&#x00E2;tre à surface striée et<lb break="yes"/>soyeuse, renfermant des grenats. Ce micaschiste repose<lb break="yes"/>sur un granite stéatiteux composé de feldspath lamelleux<lb break="yes"/>verd&#x00E2;tre et à gros grains, de peu de quarz blanc, de<lb break="yes"/>tables hexagones de mica noir et de quelques cristaux<lb break="yes"/>effilés d&#x2019;amphibole. C&#x2019;est sur ce point seul que l&#x2019;on voit<lb break="yes"/>des trachytes percer les roches vulgairement appelées<lb break="yes" />primitives.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Décroissement du calorique. Température des différentes<lb break="yes"/>z&#x00F4;nes superposées.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>L&#x2019;échelle climatérique placée à gauche du profil des<lb break="yes"/>
+                            <placeName>Andes de Quito</placeName> diffère entièrement de celle que pré-<lb break="no"/>sente le tableau physique qui accompagne l&#x2019;<hi rendition="#i">
+                                <bibl>Essai sur la<lb break="yes"/>Géographie des Plantes.</bibl>
+                            </hi> Il se fonde sur l&#x2019;ensemble des<lb break="yes"/>observations que j&#x2019;ai faites à différentes hauteurs <note place="foot" n="(1)">Température moyenne: au niveau de la mer du sud 27°,5<lb break="yes"/>therm. cent.; à 500 toises de hauteur 21°,8; à 1000 toises 18°; à 1500<lb break="yes"/>toises 14°,3; à 2000 toises 7°; à 2500 toises 1°,5. Ce dernier resultat<lb break="yes"/>ne se fonde que sur un petit nombre d&#x2019;observations.</note> de-<lb break="no"/>puis les c&#x00F4;tes de la <placeName>Mer du Sud</placeName> jusqu&#x2019;à 2550 toises. J&#x2019;ai<lb break="yes"/>indiqué les températures moyennes et les variations de<lb break="yes"/>température du jour et de la nuit. Ce tableau prouve,<lb break="yes"/>comme M. Oriani l&#x2019;avait soup&#x00E7;onné depuis long-temps,<lb break="yes"/>que dans l&#x2019;état moyen de l&#x2019;atmosphère, la température ne<lb break="yes"/>décroit pas uniformément en progression arithmétique.<lb break="yes"/>J&#x2019;ai fait voir dans un autre endroit (dans le <hi rendition="#i">
+                                <bibl>Mémoire sur<lb break="yes" />les lignes isothermes</bibl>
+                            </hi>), que le décroissement de la chaleur<lb break="yes"/>(et ce fait est bien digne d&#x2019;attention) se rallentit entre 1000<lb break="yes"/>
+                            <pb n="246" facs="#f0022"/> et 3000 mètres, surtout entre 1000 et 2500 mètres de<lb break="yes"/>hauteur, là où est placée la première couche de nuages,<lb break="yes"/>et qu&#x2019;ensuite il s&#x2019;accélère de nouveau. Le <persName ref="http://d-nb.info/gnd/">Docteur Young</persName>
+                            <lb break="yes"/>a récemment examiné les influences de cette accélération<lb break="yes"/>sur les réfractions atmosphériques <note place="foot" n="(1)">
+                                <bibl>
+                                    <hi rendition="#i">Journ. of the Royal Inst.</hi>, vol. XI, p. 360</bibl>.</note>. Malheureusement<lb break="yes"/>toutes les observations de température que l&#x2019;on peut<lb break="yes"/>employer dans ce genre de calcul, ont été faites sur la<lb break="yes"/>pente m&#x00EA;me des <placeName>Andes</placeName> ou de l&#x2019;<placeName>Himalaya</placeName>, et non dans<lb break="yes" />des aérostats. Elles sont modifiées localement par les<lb break="yes" />effets de la radiation du sol dont l&#x2019;influence est difficile<lb break="yes"/>à apprécier.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Positions astronomiques propres à fixer les limites ex-<lb break="no"/>tr&#x00EA;mes de la section verticale.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>Ces limites extr&#x00EA;mes sont le village indien de <placeName>Calpi</placeName>
+                            <lb break="yes"/>et l&#x2019;<placeName>ile de la Punà</placeName>
+                            <note place="foot" n="(2)">La position de cette &#x00EE;le est d&#x2019;après les cartes du <bibl>
+                                    <hi rendition="#i">Deposito hidro-<lb break="no"/>grafico de Madrid,</hi> 82° 35&#x2032; 0&#x2033;</bibl>; d&#x2019;après mon chronomètre (<bibl>
+                                    <hi rendition="#i">Rec. d&#x2019;obs.<lb break="yes" />astr.</hi>, tom. II, p. 439</bibl>), 82° 37&#x2032; 44&#x2033;; d&#x2019;après le capitaine <persName ref="http://d-nb.info/gnd/">Basil-Hall</persName>
+                                <lb break="yes" />(<bibl>
+                                    <hi rendition="#i">Extracts from a journal written on the coasts of Chili, Peru</hi>, etc.,<lb break="yes" />tom. II, p. 379</bibl>), 82° 34&#x2032; 48&#x2033; à l&#x2019;occident du méridien de <placeName>Paris</placeName>
+                                <lb break="yes"/>(maximum des différences 12&#x2033; en temps).</note> sur les c&#x00F4;tes de la <placeName> Mer du Sud</placeName>
+                            <lb break="yes"/>près de <placeName>Guayaquil</placeName>. J&#x2019;ai lié <placeName>Calpi</placeName> par le transport du<lb break="yes" />temps à la ville de <placeName>Quito</placeName>, dont la longitude, avant<lb break="yes"/>mon voyage, était indiquée, sur toutes les cartes et<lb break="yes"/>dans tous les tableaux de positions géographiques, trop<lb break="yes"/>à l&#x2019;est de près d&#x2019;un degré. La position de <placeName>Guayaquil</placeName> se<lb break="yes" />fonde sur deux occultations d&#x2019;étoiles et sur mon obser-<lb break="no"/>vation du passage de mercure sur le disque du soleil,<lb break="yes"/>faite au <placeName>Callao de Lima</placeName>, en supposant la différence de<lb break="yes"/>la longitude entre le <placeName>Callao</placeName> et l&#x2019;<placeName>&#x00EE;le Santa-Clara</placeName> (au S. S.<lb break="yes"/>O. du <placeName>port de Guayaquil</placeName>) telle qu&#x2019;elle a été déterminée<lb break="yes"/>
+                            <pb n="247" facs="#f0023"/> chronométriquement par l&#x2019;expédition de <placeName>Malaspina</placeName>, par<lb break="yes"/>moi et récemment par le capitaine <persName ref="http://d-nb.info/gnd/">Basil Hall</persName>. Un tableau<lb break="yes"/>de positions que ce navigateur a ajouté à son intéressant<lb break="yes"/>voyage aux c&#x00F4;tes du <placeName>Chili</placeName> et du <placeName>Mexique</placeName>, semblait jeter<lb break="yes"/>de nouveau quelques doutes sur les longitudes du <placeName>Callao</placeName>
+                            <lb break="yes"/>et de <placeName>Valparaiso</placeName>. Ces doutes devaient d&#x2019;autant plus fixer<lb break="yes"/>l&#x2019;attention des géographes, que M. <persName ref="http://d-nb.info/gnd/" >Givry</persName>, ingénieur<lb break="yes"/>hydrographe de la marine royale, dans une lumineuse<lb break="yes"/>discussion insérée dans la <bibl>
+                                <hi rendition="#i">Connaissance des temps pour<lb break="yes"/>l&#x2019;année</hi> 1827</bibl>, avait confirmé le résultat de mon obser-<lb break="no"/>vation du passage de mercure par des nombreuses séries<lb break="yes"/>de distances lunaires, et qu&#x2019;il avait réduit <placeName>Valparaiso</placeName>,<lb break="yes"/>
+                            <placeName>Arica</placeName> et les points principaux de la c&#x00F4;te de l&#x2019;<placeName>Océan<lb break="yes" />Pacifique</placeName>, à la longitude de <placeName>Callao</placeName>
+                            <note place="foot" n="(1)">L&#x2019;ensemble de ces distances lunaires orientales et occidentales<lb break="yes"/>prises par M. <persName ref="http://d-nb.info/gnd/">Lartigue</persName>, enseigne de vaisseau, donne au Callao 79° 29&#x2032;;<lb break="yes"/>mon passage de Mercure 79° 34&#x2032; 30&#x2033;. (<bibl>
+                                    <hi rendition="#i">Conn. des temps pour</hi> 1827, p. 257.</bibl>)</note>......</p>
+                        <lb break="yes"/>
+                        <p>(L&#x2019;auteur a cru devoir supprimer ici des développe-<lb break="no" />mens qui n&#x2019;auraient eu de l&#x2019;intér&#x00EA;t que pour un très-petit<lb break="yes"/>nombre de lecteurs de ce Journal.)</p>
+                        <lb break="yes"/>
+                        <p>La géographie astronomique d&#x2019;une grande partie des<lb break="yes" />c&#x00F4;tes de l&#x2019;<placeName>Amérique du sud</placeName> est aujourd&#x2019;hui tellement<lb break="yes"/>avancée (la limite des erreurs étant au-dessous de 4&#x2032; à 5&#x2032;<lb break="yes"/>en arc), que dans les points les plus importans elle ne<lb break="yes" />peut &#x00EA;tre que faiblement perfectionnée par des détermi-<lb break="no"/>nations chronométriques, ou par des distances lunaires<lb break="yes"/>prises avec des instrumens de petites dimensions, mais<lb break="yes"/>qu&#x2019;elle exige, pour ne pas rester stationnaire, des obser-<lb break="no"/>vations nombreuses d&#x2019;occultations d&#x2019;étoiles, d&#x2019;éclipses<lb break="yes" />du soleil, de passages de planètes et d&#x2019;immersions ou d&#x2019;é-<lb break="no"/>mersions des deux premiers satellites du Jupiter.</p>
+                    </div>
+                    <lb break="yes"/>
+                    <pb n="248" facs="#f0024"/>
+                    <div n="3">
+                        <head>
+                            <hi rendition="#i">Végétation de la <placeName>province de Quito</placeName>.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <p>La coupe dont je donne une description succincte offre<lb break="yes" />l&#x2019;esquisse de la géographie des plantes dans les <placeName>Andes<lb break="yes"/>de Quito</placeName>, depuis l&#x2019;équateur jusqu&#x2019;à 4° de latitude aus-<lb break="no" />trale. C&#x2019;est une <hi rendition="#i">carte spéciale</hi> dans laquelle j&#x2019;ai inscrit<lb break="yes"/>les noms des espèces les plus remarquables d&#x2019;après la<lb break="yes"/>hauteur à laquelle nous les avons recueillies, M. <persName ref="http://d-nb.info/gnd/" >Bon-<lb break="no"/>pland</persName> et moi. Nous n&#x2019;avons pu herboriser avec soin que<lb break="yes"/>dans les parties tempérées et froides de cette région des<lb break="yes" />Tropiques. Depuis les recherches laborieuses faites au<lb break="yes" />
+                            <placeName>Brésil</placeName> par M. <persName ref="http://d-nb.info/gnd/">Auguste de Saint-Hilaire</persName>, nos herbiers<lb break="yes"/>ne renferment peut-&#x00EA;tre pas le plus grand nombre d&#x2019;es-<lb break="no"/>pèces équinoxiales qu&#x2019;on ait rapporté en <placeName>Europe</placeName>; mais<lb break="yes"/>le travail immense de M. <persName ref="http://d-nb.info/gnd/" >Kunth</persName> entièrement terminé<lb break="yes" />aujourd&#x2019;hui et formant sept volumes des <hi rendition="#i" >
+                                <bibl>Nova Genera</bibl>
+                            </hi>,<lb break="yes"/>présente non-seulement la plus grande masse de plantes<lb break="yes"/>tropicales qu&#x2019;on ait jamais publiées ou illustrées par l&#x2019;a-<lb break="no"/>nalyse des parties de la fructification; cet ouvrage est<lb break="yes"/>aussi le seul dans lequel la Géographie des plantes ait<lb break="yes"/>été fixée par des mesures précises relativement à la sta-<lb break="no"/>tion de quatre mille cinq cents espèces phanérogames.</p>
+                        <lb break="yes"/>
+                        <p>Dans mon traité <hi rendition="#i">de <bibl>Distributione geographic&#x00E2; planta-<lb break="no"/>rum, secundùm c&#x0153;li temperiem et altitudinem montium</bibl>
+                            </hi>,<lb break="yes"/>je n&#x2019;ai pu me servir que de résultats approximatifs: c&#x2019;est<lb break="yes"/>depuis que M. <persName ref="http://d-nb.info/gnd/" >Kunth</persName> a terminé les <hi rendition="#i">
+                                <bibl>Nova Genera</bibl>
+                            </hi>, avec<lb break="yes"/>cette supériorité de talent dont les grands ma&#x00EE;tres de<lb break="yes"/>l&#x2019;art lui ont rendu les témoignages les plus honorables,<lb break="yes"/>que nous avons pu concevoir le projet d&#x2019;employer un si<lb break="yes" />grand nombre de matériaux entièrement nouveaux, pour<lb break="yes" />trouver les coefficiens <note place="foot" n="(1)" xml:id="fn1-1" next="#fn1-2">M. de Humboldt a développé le phénomène singulier de la <hi rendition="#i">cons-</hi>
+                            </note> numériques de chaque groupe,<lb break="yes"/>
+                            <pb n="249" facs="#f0025"/> pour diviser les plantes par flores, qui se succèdent<lb break="yes"/>comme par étages les unes aux autres, pour les con-<lb break="no"/>signer dans des cartes spéciales, et pour publier en-<lb break="no"/>semble, dans le courant de cette année m&#x00EA;me, un ou-<lb break="no"/>vrage général sur la <hi rendition="#i">G<bibl>éographie des plantes dans les<lb break="yes" />deux continens</bibl>
+                            </hi>. Ce traité sera précédé par mon <hi rendition="#i">
+                                <bibl>Essai<lb break="yes"/>sur les climats, considérés dans leurs rapports avec les<lb break="yes" />inflexions des lignes isothermes</bibl>.</hi> La Géographie des<lb break="yes"/>plantes est, pour ainsi dire, une science mixte. Placée<lb break="yes"/>
+                            <note place="foot" n="(1)" xml:id="fn1-2" prev="#fn1-1">
+                                <hi rendition="#i">tance des rapports numériques,</hi> dans un <bibl>mémoire inséré dans le dix-<lb break="maybe"/>huitième volume du Dictionnaire des Sciences Naturelles, ayant pour<lb break="yes"/>titre: <hi rendition="#i">Nouvelles recherches sur les lois que l&#x2019;on observe dans la distri-<lb break="no"/>bution des formes végétales.</hi>
+                                </bibl> &#xAB; Les formes des &#x00EA;tres organisés, dit-il, se<lb break="yes"/>trouvent dans une dépendance mutuelle. L&#x2019;unité de la nature est telle,<lb break="yes"/>que les formes se sont limitées les unes les autres d&#x2019;après des lois cons-<lb break="no"/>tantes et immuables. Lorsqu&#x2019;on conna&#x00EE;t sur un point quelconque du<lb break="yes"/>globe, le nombre d&#x2019;espèces qu&#x2019;offre une grande famille (p. ex., celle<lb break="yes"/>des Glumacées, des Composées ou des Légumineuses), on peut évaluer<lb break="yes"/>avec beaucoup de probabilité, et le nombre total des plantes phané-<lb break="no" />rogames, et le nombre des espèces qui composent les autres familles<lb break="yes"/>végétales. C&#x2019;est ainsi qu&#x2019;en connaissant, sous la z&#x00F4;ne tempérée, le<lb break="yes"/>nombre des Cypéracées ou des Composées, on peut deviner celui des<lb break="yes"/>Graminées ou des Légumineuses. Ces évaluations nous font voir dans<lb break="yes"/>quelles tribus de végétaux les Flores d&#x2019;un pays sont encore incom-<lb break="no"/>plètes: elles sont d&#x2019;autant moins incertaines que l&#x2019;on évite de confondre<lb break="yes"/>des <hi rendition="#i">quotiens</hi> qui appartiennent à différens <hi rendition="#i">systemes de végétation</hi>. Le tra-<lb break="no"/>vail que j&#x2019;ai tenté sur les plantes, sera sans doute appliqué un jour avec<lb break="yes"/>succès aux différentes classes des animaux vertébrés. Dans les z&#x00F4;nes<lb break="yes"/>tempérées, par exemple, il y a près de cinq fois autant d&#x2019;oiseaux que<lb break="yes"/>de mammifères, et ceux-ci augmentent beaucoup moins en avan&#x00E7;ant<lb break="yes" />vers l&#x2019;équateur, que les oiseaux et les reptiles. Nous concevons com-<lb break="no"/>ment, <choice>
+                                    <sic>surun</sic>
+                                    <corr type="editorial">sur un</corr>
+                                </choice> espace de terrain donné, les <hi rendition="#i" >individus</hi> appartenant à diffé-<lb break="no"/>rentes tribus de plantes et d&#x2019;animaux peuvent se <hi rendition="#i" >limiter numériquement;</hi>
+                                <lb break="yes"/>comment, après une lutte opini&#x00E2;tre et après de longues oscillations,<lb break="yes"/>il s&#x2019;établit un état d&#x2019;équilibre qui résulte des besoins de la nourriture<lb break="yes"/>et des habitudes de la vie; mais les causes qui ont <hi rendition="#i" >limité les formes</hi> sont<lb break="yes"/>cachées sous ce voile impénétrable qui dérobe à nos yeux tout ce qui<lb break="yes" />tient à l&#x2019;origine des choses, au premier développement de la vie or-<lb break="no"/>ganique.&#x00BB; <hi rendition="#et">(<hi rendition="#i">Note des Rédacteurs.</hi>)</hi>
+                            </note>
+                            <lb break="yes"/>
+                            <pb n="250" facs="#f0026"/> sur la limite de la botanique descriptive et de la clima-<lb break="no"/>tologie, elle emprunte des secours à chacune de ces deux<lb break="yes"/>branches des sciences physiques.</p>
+                        <lb break="yes"/>
+                        <p>Les bornes de ce Mémoire ne me permettent pas d&#x2019;en-<lb break="no" />trer dans le détail des considérations que fait na&#x00EE;tre le<lb break="yes"/>tableau de la végétation sur la pente occidentale des <placeName>Cor-<lb break="no"/>dillères de Quito</placeName>. Il suffit de rappeler ici que les neiges<lb break="yes"/>éternelles y commencent à la hauteur du <placeName>Mont-Blanc</placeName>,<lb break="yes"/>c&#x2019;est-à-dire à 2460 toises, tandis que sur la pente bo-<lb break="no"/>réale de l&#x2019;<placeName>Himalaya</placeName>, sous le 30° à 31° de latitude, elles<lb break="yes"/>se trouvent 140 toises plus haut. Cette circonstance rend<lb break="yes"/>habitable, à un grand nombre de peuples de races tar-<lb break="no"/>tare et mongole, de vastes pays qui, sans l&#x2019;heureux ef-<lb break="no"/>fet du rayonnement de la chaleur dans les <placeName>plateaux d&#x2019;A-<lb break="no" />sie</placeName>, seraient ensevelis, m&#x00EA;me pendant l&#x2019;été, sous une<lb break="yes"/>couche épaisse de glaces et de neiges. M. <persName ref="http://d-nb.info/gnd/">Colbrooke</persName> a<lb break="yes"/>re&#x00E7;u très-récemment de l&#x2019;<placeName>Inde</placeName>, de nouvelles mesures<lb break="yes"/>géodésiques qui confirment ce que j&#x2019;ai exposé ailleurs,<lb break="yes"/>sur la différence de hauteur à laquelle se soutiennent les<lb break="yes"/>neiges sur les pentes méridionales et septentrionales<lb break="yes"/>de l&#x2019;<placeName>Himalaya</placeName>.</p>
+                        <lb break="yes"/>
+                        <p>Quoique dans le plateau des <placeName>Cordillères de Quito</placeName> on<lb break="yes"/>trouve la m&#x00EA;me température annuelle que dans les hautes<lb break="yes"/>latitudes, il ne faut pas trop généraliser ces analogies<lb break="yes"/>entre les climats tempérés des montagnes équatoriales,<lb break="yes"/>et ceux des basses régions de la z&#x00F4;ne circompolaire. Ces<lb break="yes"/>analogies sont modifiées par l&#x2019;influence de la distribu-<lb break="no"/>tion partielle de la chaleur dans les différentes parties<lb break="yes"/>de l&#x2019;année. Considérées en masse, les formes des<lb break="yes" />plantes alpines du <placeName>Chimborazo</placeName> et de l&#x2019;<placeName>Antisana</placeName> ont<lb break="yes"/>une physionomie que l&#x2019;on pourrait appeler européenne.<lb break="yes" />Je ne citerai que les genres <hi rendition="#i">Plantago, Geranium, Are-<lb break="no"/>naria, Banunculus</hi> et les Saxifrages. Les Malvacées, les<lb break="yes"/>
+                            <pb n="251" facs="#f0027"/> Rubiacées et les Labiées diminuent, tandis que les Com-<lb break="no"/>posées, les Ombellifères et les Crucifères augmentent.<lb break="yes"/>Dans les <placeName>Andes de la Nouvelle-Grenade</placeName> et de <placeName>Quito</placeName>, le<lb break="yes"/>peuple reconna&#x00EE;t la proximité de la région des neiges<lb break="yes" />éternelles, par des touffes éparses de deux plantes à<lb break="yes" />feuilles cotonneuses de la famille des Composées. C&#x2019;est<lb break="yes"/>le <hi rendition="#i">Fraylejon</hi> appartenant aux deux genres <hi rendition="#i">Culcitium</hi> et<lb break="yes"/>
+                            <hi rendition="#i">Espeletia</hi>. Très-près des neiges végètent les <hi rendition="#i">Stereocaulon<lb break="yes"/>botryoides, Bryum argenteum, Polytrichum juniperinum,<lb break="yes"/>Eudema rupestris, Gentiana rupestris, Culcitium nivale,<lb break="yes" />Culcitium rufescens, Lysipomia reniformis, Ranunculus<lb break="yes"/>Gusmanni, Geranium acaule, Sida pichinchensis, Eu-<lb break="no"/>dema nubigena, Cenomyce vermicularis, Stellaria ser-<lb break="no"/>pyllifolia, Festuca dasyantha, Deyeuxia rigida,</hi> etc.<lb break="yes"/>Parmi les plantes que nous avons recueillies dans la ré-<lb break="no"/>gion froide du volcan d&#x2019;<placeName>Antisana</placeName>, M. <persName ref="http://d-nb.info/gnd/">Kunth</persName> a reconnu<lb break="yes"/>le <hi rendition="#i">Montia fontana</hi> que l&#x2019;on trouve dans toute l&#x2019;<placeName>Europe</placeName>
+                            <lb break="yes"/>tempérée.</p>
+                        <lb break="yes"/>
+                        <p>C&#x2019;est la réunion des phénomènes physiques et des<lb break="yes" />productions végétales qu&#x2019;offre le dessin que j&#x2019;ai l&#x2019;hon-<lb break="no"/>neur de soumettre à l&#x2019;Académie. L&#x2019;encha&#x00EE;nement des<lb break="yes"/>causes et des effets est tel, qu&#x2019;aucun phénomène ne peut<lb break="yes"/>&#x00EA;tre considéré isolément. L&#x2019;équilibre général qui règne<lb break="yes" />au milieu des perturbations et d&#x2019;un trouble apparent,<lb break="yes"/>est le résultat d&#x2019;une infinité de forces mécaniques et<lb break="yes"/>d&#x2019;attractions chimiques qui se balancent les unes les au-<lb break="no"/>tres <note place="foot" n="(1)">
+                                <bibl>Humboldt et <persName ref="http://d-nb.info/gnd/" >Bonpland</persName>, <hi rendition="#i">Essai sur la Géographie des Plantes<lb break="yes"/>équinoxiales</hi>, 1807, pag. 43</bibl>.</note>, et s&#x2019;il est utile d&#x2019;envisager séparément chaque<lb break="yes"/>série des faits pour y reconna&#x00EE;tre une loi particulière,<lb break="yes" />l&#x2019;étude de la nature, qui est le grand problème de la<lb break="yes"/>Physique générale, ne peut se perfectionner que par la<lb break="yes"/>
+                            <pb n="252" facs="#f0028"/> réunion de toutes les connaissances qui ont rapport aux<lb break="yes"/>modifications de la matière.</p>
+                        <lb break="yes"/>
+                        <milestone unit="section" rendition="#hr"/>
+                        <lb break="yes"/>
+                        <p>La coupe de la partie occidentale des <placeName>Andes de Quito</placeName>
+                            <lb break="yes"/>qui accompagne ce Mémoire, ne pouvant &#x00EA;tre réduite aux<lb break="yes"/>petites dimensions de <bibl>notre Atlas</bibl>, nous nous sommes<lb break="yes"/>bornés à ajouter au travail de M. de Humboldt, la section<lb break="yes" />verticale qui représente le rapport des cr&#x00EA;tes et des som-<lb break="no"/>mets dans les <placeName>Pyrénées</placeName>, les <placeName>Alpes</placeName>, les <placeName>Andes</placeName> et l&#x2019;<placeName>Hima-<lb break="no"/>laya</placeName>. Voici les données numériques sur lesquelles se<lb break="yes"/>fonde le dessin de M. de Humboldt.</p>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table>
+                            <head>
+                                <placeName>PYRÉNÉES</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Passages.</cell>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Rat</placeName>. ....</cell>
+                                <cell>1169</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de la Couillade</placeName>..</cell>
+                                <cell>1016</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de la Vieillat</placeName>...</cell>
+                                <cell>1286</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de la Picade</placeName>...</cell>
+                                <cell>1243</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Benasque</placeName>...</cell>
+                                <cell>1235</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de la Glère</placeName>...</cell>
+                                <cell>1192</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Plan</placeName>....</cell>
+                                <cell>1151</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Vieil</placeName> ....</cell>
+                                <cell>1314</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Pinède</placeName>....</cell>
+                                <cell>1280</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de Piméné</placeName>....</cell>
+                                <cell>1291</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Gavarnie</placeName>...</cell>
+                                <cell>1190</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Port de Campbiel</placeName>...</cell>
+                                <cell>1333</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de Tourmalet</placeName>...</cell>
+                                <cell>
+                                    <hi rendition="#u">1126</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Hauteur moyenne des<lb break="yes"/>passages.....</cell>
+                                <cell>1217</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Point culminant (<hi rendition="#i">m</hi>)..</cell>
+                                <cell>1787</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te (<hi rendition="#i">n</hi>)......</cell>
+                                <cell>1250</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 1,4.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table>
+                            <head>
+                                <placeName>ALPES</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Passages.</cell>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de Seigne</placeName>....</cell>
+                                <cell>1263</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de Terret</placeName>....</cell>
+                                <cell>1191</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Mont-Cenis</placeName>.....</cell>
+                                <cell>1060</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Petit Saint-Bernard</placeName>..</cell>
+                                <cell>1125</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Grand Saint-Bernard</placeName>..</cell>
+                                <cell>1246</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Simplon</placeName>......</cell>
+                                <cell>1129</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Saint-Gothard</placeName>....</cell>
+                                <cell>1065</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Col de la Fourche</placeName>...</cell>
+                                <cell>1250</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Grimsel</placeName>......</cell>
+                                <cell>1314</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Julier-pass</placeName>.....</cell>
+                                <cell>
+                                    <hi rendition="#u">1138</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Hauteur moyenne des<lb break="yes"/>Passages .....</cell>
+                                <cell>1178</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Point culminant (m)..</cell>
+                                <cell>2462</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te (n)......</cell>
+                                <cell>1200</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 2.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table xml:id="t1-1" next="#t1-2">
+                            <head>
+                                <placeName>ANDES</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Passages.</cell>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Quindiu</placeName>......</cell>
+                                <cell>1798</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Guanacas</placeName>......</cell>
+                                <cell>2300</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Guamani</placeName>......</cell>
+                                <cell>1713</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Micuipampa</placeName>.....</cell>
+                                <cell>1817</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Montan</placeName>......</cell>
+                                <cell>1780</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>De <placeName>Mendoza</placeName> à <placeName>Valpa-<lb break="no"/>raiso</placeName>......</cell>
+                                <cell>
+                                    <hi rendition="#u">1987</hi>
+                                </cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table xml:id="t2-1" next="#t2-2">
+                            <head>
+                                <placeName>HIMALAYA</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Passages.</cell>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Bamsaru</placeName>......</cell>
+                                <cell>2416</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Nitce Gbaut</placeName>.....</cell>
+                                <cell>2629</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Rol-Ghati</placeName>......</cell>
+                                <cell>2345</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Gunass</placeName>.......</cell>
+                                <cell>2413</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Baspa</placeName>.......</cell>
+                                <cell>
+                                    <hi rendition="#u">2360</hi>
+                                </cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Hauteur moyenne des<lb break="yes"/>Passages......</cell>
+                                <cell>2432</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <pb n="253" facs="#f0029"/>
+                        <cb/>
+                        <table xml:id="t1-2" prev="#t1-1">
+                            <row>
+                                <cell>Hauteur moyenne (sans<lb break="yes" />
+                                    <placeName>Guanacas</placeName>).....</cell>
+                                <cell>1819</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Point culminant (m)..</cell>
+                                <cell>3350</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te (n)......</cell>
+                                <cell>1850</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 1,8.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table xml:id="t2-2" prev="#t2-1">
+                            <row>
+                                <cell>Point culminant....</cell>
+                                <cell>4390?</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te.......</cell>
+                                <cell>2432</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m = 1 : 1,8.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table>
+                            <head>
+                                <placeName>CHAINE DE VENEZUELA</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell/>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Maximum: <placeName>
+                                        <hi rendition="#i">Silla</hi> de Ca-<lb break="no"/>racas</placeName>.......</cell>
+                                <cell> 1350</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te.......</cell>
+                                <cell>750</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 1,8.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <table>
+                            <head>
+                                <placeName>CAUCASE</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Maximum: <hi rendition="#i" >
+                                        <placeName>Elburz</placeName>
+                                    </hi>...</cell>
+                                <cell>2785</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te.......</cell>
+                                <cell>1330</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 2.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <cb/>
+                        <table>
+                            <head>
+                                <placeName>ALLEGHANIS</placeName>.</head>
+                            <lb break="yes"/>
+                            <row>
+                                <cell/>
+                                <cell>Toises.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Maximum: M<hi rendition="#sup">t</hi>. <placeName>Washington</placeName>.</cell>
+                                <cell>1040</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Cr&#x00EA;te.......</cell>
+                                <cell>560</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell cols="2">n : m : : 1 : 1,8.</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell>
+                                    <placeName>Pyrénées</placeName>......</cell>
+                                <cell>1 : 1,5</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Alpes</placeName>.......</cell>
+                                <cell>1 : 2</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Andes</placeName>.......</cell>
+                                <cell>1 : 1,8</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Venezuela</placeName>.....</cell>
+                                <cell>1 : 1,8</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Alleghanis</placeName>.....</cell>
+                                <cell>1 : 1,8</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Caucase</placeName>......</cell>
+                                <cell>1 : 2</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <placeName>Himalaya</placeName>.....</cell>
+                                <cell>1 : 1,8</cell>
+                            </row>
+                        </table>
+                        <lb break="yes"/>
+                        <table>
+                            <row>
+                                <cell>
+                                    <placeName>PYRÉNÉES</placeName>.</cell>
+                                <cell>
+                                    <placeName>ALPES</placeName>.</cell>
+                                <cell>
+                                    <placeName>ANDES</placeName>.</cell>
+                                <cell>
+                                    <placeName>HIMALAYA</placeName>.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>Sommets.. 1,0</cell>
+                                <cell>1,4</cell>
+                                <cell>1,8</cell>
+                                <cell>2,4</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>A peu près. 1</cell>
+                                <cell>1 1/2</cell>
+                                <cell>2</cell>
+                                <cell>2 1/2</cell>
+                            </row>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

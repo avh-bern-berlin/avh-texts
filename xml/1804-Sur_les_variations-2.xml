@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="248" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#i">On the Variations of the Terrestrial Magnetism<lb break="yes" />in different Latitudes. By Messieurs</hi>
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi>
+                    <hi rendition="#i">and</hi>
+                    <lb break="yes"/>
+                    <persName key="biot_jb">
+                        <hi rendition="#k">Biot.</hi>
+                    </persName>
+                    <hi rendition="#i">Read by M.</hi>
+                    <persName key="biot_jb">
+                        <hi rendition="#k">Biot,</hi>
+                    </persName>
+                    <hi rendition="#i">in the Mathematical and<lb break="yes"/>Physical Class of the French National Institute</hi> 26<hi rendition="#i">th<lb break="yes" />Frimaire, An</hi> 13<note place="foot" n="*">From the <hi rendition="#i" >Journal de Physique</hi>, Frimaire, An 13.</note>. (17<hi rendition="#i">th December</hi> 1804.)</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <hi rendition="#in">A</hi>n</hi> inquiry into the laws of terrestrial magnetism is no<lb break="yes"/>doubt one of the most important questions that philoso-<lb break="no"/>phers can propose. The observations already made on this<lb break="yes"/>subject have discovered ph&#x00E6;nomena so curious, that one<lb break="yes"/>cannot help endeavouring to solve the difficulties they pre-<lb break="no"/>sent; but notwithstanding the efforts hitherto employed, it<lb break="yes"/>must be confessed that we are absolutely unacquainted with<lb break="yes"/>the causes of them.</p>
+                <lb break="yes"/>
+                <p>It was difficult to obtain on this point any precise know-<lb break="no"/>ledge at a time when the construction of the compass<lb break="yes"/>was still imperfect; and so little time has elapsed since<lb break="yes"/>the discoveries of M. <persName key="coulomb_cad">Coulomb</persName> have taught us to render<lb break="yes"/>them completely exact, it needs excite no astonishment that<lb break="yes"/>so few facts in the observations of travellers have been<lb break="yes"/>found worthy of confidence.</p>
+                <lb break="yes"/>
+                <p>The expedition which M. <persName key="humboldt_av">Humboldt</persName> has terminated has<lb break="yes"/>procured for this part of philosophy a collection no less<lb break="yes"/>valuable than those with which he has enriched the other<lb break="yes"/>branches of human knowledge. Furnished with an excel-<lb break="no"/>lent dipping-needle, constructed by <persName key="lenoir_e">Le Noir</persName> on the princi-<lb break="no"/>ples of <persName key="borda_jcd">Berda</persName>, M. <persName key="humboldt_av" >Humboldt</persName> has made more than three<lb break="yes"/>hundred observations on the inclination of the magnet, and<lb break="yes"/>on the intensity of the magnetic force in that part of Ame-<lb break="no"/>rica which he traversed. By adding to these results those<lb break="yes"/>which he had already obtained in Europe before his de-<lb break="no"/>parture, we shall have for the first time a series of correct<lb break="yes"/>facts on the variation of the magnetic forces in the northern<lb break="yes"/>part of the globe, and in some points of its southern<lb break="yes"/>part.</p>
+                <lb break="yes"/>
+                <p>The friendship which M. <persName key="humboldt_av">Humboldt</persName> has testified for me<lb break="yes"/>since his return having given me an opportunity of commu-<lb break="no"/>nicating to him some experiments on this subject, which<lb break="yes"/>I made this year in the <placeName key="alpen" >Alps</placeName>, he immediately offered to<lb break="yes"/>unite his to mine in a memoir. But if friendship and a<lb break="yes"/>desire of making known new facts induced me to accept<lb break="yes"/>this offer of M. <persName key="humboldt_av">Humboldt</persName>, justice forbids me to take ad-<lb break="no"/>vantage of it to his prejudice; and I must here declare, that<lb break="yes"/>a very small part of it belongs to me.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">To</fw>
+                <lb break="yes"/>
+                <pb n="249" facs="#f0002"/>
+                <p>To place in order the facts and consequences which may<lb break="yes"/>be deduced from them, it is necessary to consider the ac-<lb break="no"/>tion of terrestrial magnetism under different points of view,<lb break="yes" />corresponding to the different classes of the ph&#x00E6;nomena<lb break="yes" />which it produces.</p>
+                <lb break="yes"/>
+                <p>If we consider it first in general, we find that it acts on<lb break="yes"/>the whole surface of the globe, and that it extends beyond<lb break="yes"/>it. This last fact, which was doubted, has been lately<lb break="yes"/>proved by one of us, and particularly by our friend M. <persName key="gaylussac_jl">Gay-<lb break="maybe"/>Lussac</persName>, during his two a&#x00EB;rostatic voyages. And if these<lb break="yes"/>observations, made with all the care possible, have not<lb break="yes"/>shown the least sensible diminution in the intensity of the<lb break="yes"/>magnetic force, at the greatest height to which man can<lb break="yes"/>attain, we have a right to conclude that this force extends<lb break="yes"/>to an indefinite distance from the earth, where it decreases,<lb break="yes"/>perhaps, in a very rapid manner, but which at present is<lb break="yes"/>unknown to us.</p>
+                <lb break="yes"/>
+                <p>If we now consider magnetism at the surface even of the<lb break="yes"/>earth, we shall find three grand classes of ph&#x00E6;nomena,<lb break="yes"/>which it is necessary to study separately, in order to have a<lb break="yes"/>complete knowledge of its mode of action. These ph&#x00E6;no-<lb break="no"/>mena are; the declination of the magnetic needle, its incli-<lb break="no"/>nation, and the intensity of the magnetic force, considered<lb break="yes"/>either comparatively in different places or in themselves,<lb break="yes"/>paying attention to the variations which they experience.<lb break="yes"/>It is thus that, after having discovered the action of gravity<lb break="yes"/>as a central force, its variation, resulting from the figure of<lb break="yes"/>the earth, was afterwards ascertained in different lati-<lb break="no"/>tudes.</p>
+                <lb break="yes"/>
+                <p>The declination of the magnetic needle appears to be<lb break="yes"/>that ph&#x00E6;nomenon which hitherto has more particularly<lb break="yes"/>fixed the attention of philosophers, on account, no doubt,<lb break="yes"/>of the assistance which they hoped to derive from it in de-<lb break="no"/>termining the longitude; but when it was known that the<lb break="yes"/>declination changes in the same place, in the course of<lb break="yes"/>time, when its diurnal variations were remarked, and its<lb break="yes"/>irregular traversing, occasioned by different meteors; in a<lb break="yes"/>word, the difficulty of observing it at sea, within one de-<lb break="no"/>gree nearly, it was necessary to abandon that hope, and to<lb break="yes"/>consider the cause of these ph&#x00E6;nomena as much more com-<lb break="no"/>plex and abstruse than had been at first imagined.</p>
+                <lb break="yes"/>
+                <p>In regard to the intensity of the magnetic force in diffe-<lb break="no"/>rent parts of the earth, it has never yet been measured in a<lb break="yes" />comparative manner. The observations of M. <persName key="humboldt_av" >Humboldt</persName>
+                    <lb break="yes"/>on this subject have discovered a very remarkable ph&#x00E6;no-<lb break="no"/>menon; it is the variation of the intensity in different lati-<lb break="no"/>
+                    <fw type="catch" place="bottom">tudes,</fw>
+                    <lb break="yes"/>
+                    <pb n="250" facs="#f0003"/> tudes, and its increase proceeding from the <placeName key="aequator">equator</placeName> to the<lb break="yes" />poles.</p>
+                <lb break="yes"/>
+                <p>The compass, indeed, which at the departure of M.<lb break="yes"/>
+                    <persName key="humboldt_av">Humboldt</persName> gave at Paris 245 oscillations in 10 minutes,<lb break="yes"/>gave no more in Peru than 211, and it constantly varied in<lb break="yes"/>the same direction; that is to say, the number of the oscil-<lb break="no"/>lations always decreased in approaching the <placeName key="aequator">equator</placeName>, and<lb break="yes"/>always increased in advancing towards the north.</p>
+                <lb break="yes"/>
+                <p>These differences cannot be ascribed to a diminution of<lb break="yes"/>force in the magnetism of the compass, nor can we sup-<lb break="no"/>pose that it is weakened by the effect of time and of heat;<lb break="yes"/>for, after three years&#x2019; residence in the warmest countries of<lb break="yes"/>the earth, the same compass gave again in Mexico oscilla-<lb break="no"/>tions as rapid as at Paris.</p>
+                <lb break="yes"/>
+                <p>There is no reason, either, to doubt the justness of M.<lb break="yes"/>
+                    <persName key="humboldt_av">Humboldt</persName>&#x2019;s observations, for he often observed the oscilla-<lb break="no"/>tions in the vertical plane perpendicular to that meridian;<lb break="yes"/>but by decomposing the magnetic force in the latter plane,<lb break="yes"/>and comparing it with its total action, which is exercised in<lb break="yes"/>the former, we may from these data calculate its direction,<lb break="yes"/>and consequently the direction of the needle<note place="foot" n="*">Let HOC (plate V. fig. 1.) be the plane of the magnetic meridian pass-<lb break="no"/>ing through the vertical OC; let OL be the direction of the needle situated in<lb break="yes"/>that plane, and OH a horizontal. The angle LOH will be the inclination<lb break="yes" />of the needle, which we shall denote by I. If F represent the total mag-<lb break="no"/>netic force which acts in the direction OL, the part of this force, which acts<lb break="yes"/>according to OC, will be F sine of I: but the magnetic forces which deter-<lb break="no"/>mine the oscillations of the needle in any plane, are to each other as the<lb break="yes"/>squares of the oscillations made in the same time. If we denote then by M,<lb break="yes"/>the number of the oscillations made in 10&#x2032; of time in the magnetic meridian,<lb break="yes"/>and by P, the number of oscillations made also in 10&#x2032;, in the perpendicular<lb break="yes" />plane, we shall have the following proportion.<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX">\frac{{{\text{F sin. I}}}}{{\text{F}}}=\frac{{{\text{P}^2}}}{{\text{M}^2}}</formula>
+                        </hi>
+                        <lb break="yes"/>from which we deduce<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX">\text{Sin. I}=\frac{{{\text{P}}^2}}{{\text{M}^2}}</formula>
+                        </hi>
+                        <lb break="yes"/>The inclination then may be calculated by this formula, when we have<lb break="yes"/>oscillations made in the two planes.<lb break="yes"/>In like manner, by making a needle oscillate successively in several vertical<lb break="yes"/>planes, we might determine the direction of the magnetic meridian.</note>. This in-<lb break="no"/>clination, thus calculated, is found always conformable to<lb break="yes"/>that which M. <persName key="humboldt_av">Humboldt</persName> observed directly. When he<lb break="yes"/>made his experiments, however, he could not foresee that<lb break="yes"/>they would be subjected to this proof by which M. <persName key="laplace_ps">La<lb break="yes"/>Place</persName> verified them.</p>
+                <lb break="yes"/>
+                <p>As the justness of these observations cannot be contested,<lb break="yes"/>we must allow also the truth of the result which they indi-<lb break="no"/>
+                    <fw type="catch" place="bottom">cate,</fw>
+                    <lb break="yes"/>
+                    <pb n="251" facs="#f0004"/> cate, and which is the increase of the magnetic force pro-<lb break="no"/>ceeding from the <placeName key="aequator" >equator</placeName> to the poles.</p>
+                <lb break="yes"/>
+                <p>To follow these results with more facility it will be proper<lb break="yes"/>to set out from a fixed term, and it appears natural to make<lb break="yes"/>choice for that purpose of the points where the inclination<lb break="yes"/>of the magnetic needle is null, because they seem to indi-<lb break="no"/>cate the places where the opposite action of the two terres-<lb break="no"/>trial hemispheres is equal. The series of these points forms<lb break="yes"/>on the surface of the earth a curved line which differs very<lb break="yes"/>sensibly from the <placeName key="aequator">terrestrial equator</placeName>, from which it deviates<lb break="yes"/>to the south in the <placeName key="atlantik" >Atlantic Ocean</placeName> and to the north in the<lb break="yes"/>South Sea. This curve has been called the <hi rendition="#i">
+                        <placeName key="magnetaequator">magnetic equa-<lb break="no" />tor</placeName>
+                    </hi>, from its analogy to the <placeName key="aequator">terrestrial equator</placeName>, though it is<lb break="yes"/>not yet known whether it forms exactly a great circle of the<lb break="yes"/>earth. We shall examine this question hereafter; at pre-<lb break="no"/>sent it will be sufficient to say, that M. <persName key="humboldt_av">Humboldt</persName> found<lb break="yes" />this <placeName key="aequator">equator</placeName> in Peru about 7&#x00B7;7963° (7° 1&#x2032;) of south latitude,<lb break="yes"/>which places it, for that part of the earth, nearly in the<lb break="yes"/>spot where <persName key="wilke_jc">Wilke</persName> and <persName key="lemonnier_pc" >Lemonnier</persName> had fixed it.</p>
+                <lb break="yes"/>
+                <p>The places situated to the north of that point may be di-<lb break="no"/>vided into four zones; the three first of which, being nearer<lb break="yes"/>the <placeName key="aequator">equator</placeName>, are about 4&#x00B7;5° (4°) of breadth in latitude;<lb break="yes"/>while the latter, more extensive and more variable, is 16°<lb break="yes"/>(14°). So that the system of these zones extends in Ame-<lb break="no"/>rica from the <placeName key="magnetaequator" >magnetic equator</placeName> to 25&#x00B7;5556° (23°) of north<lb break="yes"/>latitude, and comprehends in longitude an interval of about<lb break="yes"/>56° (50°).</p>
+                <lb break="yes"/>
+                <p>The first zone extends from 7&#x00B7;7963° (7° 1&#x2033;) of south latitude<lb break="yes"/>to 3&#x00B7;22° (2° 54&#x2032;). The mean number of the oscillations of<lb break="yes"/>the needle in the magnetic meridian in 10&#x2032; of time is there,<lb break="yes"/>211&#x00B7;9: no observation gives less than 211, or more than<lb break="yes"/>214. From M. <persName key="humboldt_av">Humboldt</persName>&#x2019;s observations one might form<lb break="yes"/>a similar zone on the south side of the <placeName key="magnetaequator">magnetic equator</placeName>,<lb break="yes"/>which would give the same results.</p>
+                <lb break="yes"/>
+                <p>The second zone extends from 2&#x00B7;4630° (2° 13&#x2032;) of south<lb break="yes"/>latitude to 3&#x00B7;61° (3° 15&#x2032;) of north latitude. The mean term<lb break="yes"/>of the oscillations is there, 217&#x00B7;9: they are never below<lb break="yes"/>220, or above 226.</p>
+                <lb break="yes"/>
+                <p>The fourth zone, broader than the other two, extends<lb break="yes"/>from 10&#x00B7;2778° (9° 15&#x2032;) to 25&#x00B7;7037° (23° 8&#x2032;) of north lati-<lb break="no"/>tude. Its mean term is 237: it never presents any ob-<lb break="no"/>servation below 229, or above 240.</p>
+                <lb break="yes"/>
+                <p>We are unacquainted, in regard to this part of the earth,<lb break="yes"/>with the intensity of the magnetic force beyond the latitude<lb break="yes"/>of 26° (23°) north; and on the other hand, in Europe,<lb break="yes"/>where we have observations made in high latitudes, we<lb break="yes"/>
+                    <fw type="catch" place="bottom">have</fw>
+                    <lb break="yes"/>
+                    <pb n="252" facs="#f0005"/> have none in the neighbourhood of the <placeName key="aequator">equator</placeName>: but we<lb break="yes"/>will not venture to compare these two classes of observa-<lb break="no"/>tions, which may belong to different systems of forces, as<lb break="yes"/>will be mentioned hereafter.</p>
+                <lb break="yes"/>
+                <p>However, the only comparison of results, collected in<lb break="yes"/>
+                    <placeName key="amerika">America</placeName> by M. <persName key="humboldt_av" >Humboldt</persName>, appears to us to establish with<lb break="yes" />certainty the increase of the magnetic force from the <placeName key="aequator">equa-<lb break="no"/>tor</placeName> to the poles; and, without wishing to connect them<lb break="yes"/>too closely with the experiments made in Europe, we must<lb break="yes"/>remark, that the latter accord so far also with the preceding<lb break="yes"/>as to indicate the ph&#x00E6;nomenon.</p>
+                <lb break="yes"/>
+                <p>If we have thus divided the observations into zones pa-<lb break="no"/>rallel to the equator, it is in order that we may more easily<lb break="yes"/>show the truth of the fact which results from them, and<lb break="yes"/>in particular to render the demonstration independent of<lb break="yes"/>those small anomalies which are inevitably mixed with<lb break="yes"/>these results.</p>
+                <lb break="yes"/>
+                <p>Though these anomalies are very trifling, they are, how-<lb break="no"/>ever, so sensible, and so frequently occur, that they cannot<lb break="yes"/>be ascribed entirely to errors in the observations. It ap-<lb break="no"/>pears more natural to ascribe them to the influence of local<lb break="yes"/>circumstances, and the particular attractions exercised by<lb break="yes"/>collections of ferrugineous matters, chains of mountains,<lb break="yes"/>or by the large masses of the continents.</p>
+                <lb break="yes"/>
+                <p>One of us, indeed, having this summer carried to the<lb break="yes"/>
+                    <placeName key="alpen">Alps</placeName> the magnetic needle employed in one of his late aërial<lb break="yes"/>excursions, he found that its tendency to return to the<lb break="yes"/>magnetic meridian was constantly stronger in these moun-<lb break="no"/>tains than it was at Paris before his departure, and than it<lb break="yes"/>has been found since his return. This needle, which made<lb break="yes"/>at Paris 83&#x00B7;9° in 10 minutes of time, has varied in the fol-<lb break="no"/>lowing manner in the different places to which it was car-<lb break="no"/>ried:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell role="label">Places of observation.</cell>
+                        <cell role="label">Number of oscillations in<lb break="yes"/>ten minutes of time.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris before his departure &#x2012;</cell>
+                        <cell>83&#x00B7;9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Turin &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>87&#x00B7;2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>On Mount Gen&#x00EA;vre &#x2012;</cell>
+                        <cell>88&#x00B7;2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Grenoble &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>87&#x00B7;4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lyons &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>87&#x00B7;3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Geneva &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>86&#x00B7;5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dijon &#x2012; &#x2012; &#x2012;</cell>
+                        <cell>84&#x00B7;5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris, on his return &#x2012;</cell>
+                        <cell>83&#x00B7;9</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>These experiments were made with the greatest care, con-<lb break="no"/>jointly with excellent observers, and always employing the<lb break="yes"/>same watch verified by small pendulums, and taking the<lb break="yes"/>
+                    <fw type="catch" place="bottom">mean</fw>
+                    <lb break="yes"/>
+                    <pb n="253" facs="#f0006"/> mean terms between several serieses of observations, which<lb break="yes"/>always differed very little from each other. It appears<lb break="yes"/>thence to result that the action of the <placeName key="alpen">Alps</placeName> has a sensible<lb break="yes"/>influence on the intensity of the magnetic force. M. Hum-<lb break="no"/>boldt observed analogous effects at the bottom of the Py-<lb break="no"/>renees; for example, at Perpignan. It is not improbable<lb break="yes"/>that they arose from the mass of these mountains, or the<lb break="yes"/>ferrugineous matters contained in them; but whatever may<lb break="yes"/>be the cause, it is seen by these examples that the general<lb break="yes"/>action of terrestrial magnetism is sensibly modified by local<lb break="yes"/>circumstances, the differences of which may be perceived<lb break="yes"/>in places very little distant from each other. This truth<lb break="yes"/>will be further confirmed by the rest of this memoir.</p>
+                <lb break="yes"/>
+                <p>It is to causes of this kind, no doubt, that we must<lb break="yes"/>ascribe the diminution of the magnetic forces observed in<lb break="yes"/>some mountains; a diminution which, on the first view,<lb break="yes"/>might appear contrary to the results obtained during the last<lb break="yes"/>a&#x00EB;rial voyages. This conjecture is supported by several ob-<lb break="no"/>servations of M. <persName key="humboldt_av">Humboldt</persName>. By making his needle to oscil-<lb break="no"/>late on the mountain of Guadaloupe, which rises 676 metres<lb break="yes"/>(338 toises) above Santa-Fé, he found it in 10 minutes of<lb break="yes"/>time give two oscillations less than in the plain. At Silla, near<lb break="yes"/>Caracas, at the height of 2632 metres (1316 toises) above<lb break="yes"/>the coast, the diminution went so far as five oscillations;<lb break="yes"/>and, on the other hand, on the volcano of <placeName key="antisana">Antisana</placeName>, at the<lb break="yes" />height of 4934 metres (2467 toises), the number of oscilla-<lb break="no" />tions in 10 minutes was 230; though at Quito it was only<lb break="yes"/>218: which indicates an increase of intensity. I observed,<lb break="yes"/>indeed, a similar effect on the summit of Mount Gen&#x00EA;vre,<lb break="yes"/>at the height of 1600 or 1800 metres (8 or 900 toises), as<lb break="yes"/>may be seen by the numbers which I have already given;<lb break="yes"/>and it was on this mountain that I found the greatest in-<lb break="no"/>tensity of the magnetic force. I saw on the hill of La Su-<lb break="no"/>perga, in the neighbourhood of Turin, an example of these<lb break="yes"/>variations equally striking. Observing, with <persName key="vassallieandi_ad">Vassali</persName>, on<lb break="yes"/>this hill, at the elevation of about 600 metres (300 toises),<lb break="yes"/>we found 87 oscillations in 10 minutes of time. On the<lb break="yes"/>side of the hill we had 88&#x00B7;8 oscillations; and at the bot-<lb break="no"/>tom, on the bank of the Po, we obtained 87&#x00B7;3. Though<lb break="yes"/>these results approach very near to each other, their differ-<lb break="no"/>ence is, however, sensible, and fully shows that their small<lb break="yes"/>variations must be considered as slight anomalies produced<lb break="yes"/>by local circumstances.</p>
+                <lb break="yes"/>
+                <p>This examination leads us to consider the intensity of<lb break="yes"/>magnetism on the different points of the surface of the<lb break="yes"/>globe, as subject to two sorts of differences. One kind are<lb break="yes"/>
+                    <fw type="catch" place="bottom">general:</fw>
+                    <lb break="yes"/>
+                    <pb n="254" facs="#f0007"/> general: they depend merely on the situation of the places<lb break="yes"/>in regard to the <placeName key="magnetaequator" >magnetic equator</placeName>, and belong to a general<lb break="yes" />ph&#x00E6;nomenon, which is the increase of the intensity of the<lb break="yes"/>magnetic forces in proportion as we remove from the <placeName key="aequator">equa-<lb break="no"/>tor</placeName>: the other kind of variations, which are much smaller<lb break="yes"/>and altogether irregular, seem to depend entirely on local cir-<lb break="no"/>cumstances, and modify either more or less the general results.</p>
+                <lb break="yes"/>
+                <p>If we consider terrestrial magnetism as the effect of an<lb break="yes" />attractive force inherent in all the material particles of the<lb break="yes" />globe, or only in some of these particles, which we are far<lb break="yes" />from determining, the general law will be, the total result<lb break="yes"/>of the system of attraction of all the particles, and the small<lb break="yes" />anomalies will be produced by the particular attractions of<lb break="yes" />the partial systems of the magnetic molecul&#x00E6; diffused irre-<lb break="no"/>gularly around each point; attractions rendered more sen-<lb break="no"/>sible by the diminution of distance.</p>
+                <lb break="yes"/>
+                <p>It now remains to consider the inclination of the mag-<lb break="no"/>netic needle in regard to the horizontal plane. It has long<lb break="yes"/>been known that this inclination is not every where the<lb break="yes"/>same: in the northern hemisphere the needle inclines to-<lb break="no"/>wards the north; in the southern towards the south; the places<lb break="yes"/>where it becomes horizontal form the <placeName key="magnetaequator">magnetic equator</placeName>; and<lb break="yes"/>those where the inclination is equal, but not null, form on<lb break="yes"/>each side of that <placeName key="aequator">equator</placeName> curved lines, to which the name of<lb break="yes"/>magnetic parallels has been given from their analogy to<lb break="yes"/>the terrestrial parallels. One may see in several works, and<lb break="yes"/>particularly in that of <persName key="lemonnier_pc" >Lemonnier</persName>, entitled <hi rendition="#i">Lois du Mag-<lb break="no"/>netism</hi>, the figure of these parallels and their disposition on<lb break="yes"/>the face of the earth.</p>
+                <lb break="yes"/>
+                <p>It evidently results from this disposition that the inclina-<lb break="no"/>tion increases in proportion as we recede from the magnetic<lb break="yes"/>
+                    <placeName key="aequator">equator</placeName>; but the law which it follows in its increase has<lb break="yes"/>not yet, as far as appears to us, been given. To ascertain<lb break="yes"/>this law, however, would be of great utility; for the in-<lb break="no"/>clination seems to be the most constant of all the magnetic<lb break="yes"/>ph&#x00E6;nomena, and it exhibits much fewer anomalies than the<lb break="yes"/>intensity. Besides, if any rule, well confirmed, could be dis-<lb break="no"/>covered on this subject, it might be employed with advan-<lb break="no"/>tage at sea to determine the latitude when the weather does<lb break="yes"/>not admit an observation of the sun; which is the case in<lb break="yes"/>various places during the greater part of the year. We<lb break="yes"/>have some reason to expect this application when we<lb break="yes"/>see the delicacy of that indication in the observations of<lb break="yes"/>M. <persName key="humboldt_av">Humboldt</persName>, where we find 0&#x00B7;65° (35&#x2032; 6&#x2033;) of difference<lb break="yes"/>between two towns so near each other as Nismes and Mont-<lb break="no"/>pellier. These motives have induced us to study with great<lb break="yes"/>
+                    <fw type="catch" place="bottom">interest</fw>
+                    <lb break="yes"/>
+                    <pb n="255" facs="#f0008"/> interest the series of observations made by M. <persName key="humboldt_av">Humboldt</persName>
+                    <lb break="yes"/>in regard to the inclination; and it appears to us that they<lb break="yes"/>may be represented very exactly by a mathematical hypo-<lb break="no"/>thesis; to which we are far from attaching any reality in<lb break="yes"/>itself, but which we offer merely as a commodious and sure<lb break="yes"/>mode of connecting the results.</p>
+                <lb break="yes"/>
+                <p>To discover this law, we must first exactly determine the<lb break="yes" />position of the <placeName key="magnetaequator">magnetic equator</placeName>, which is as an interme-<lb break="no"/>diate line between the northern and the southern inclina-<lb break="no"/>tions. For this purpose we have the advantage of being<lb break="yes"/>able to compare two direct observations; one of <persName key="laperouse_jfdgcd">Lapey-<lb break="no"/>rouse</persName>, and the other of M. <persName key="humboldt_av">Humboldt</persName>. The former found<lb break="yes"/>the <placeName key="magnetaequator">magnetic equator</placeName> on the coasts of Brasil at 12&#x00B7;1666°<lb break="yes"/>(10° 57&#x2032;) of south latitude, and 28&#x00B7;2407° (25° 25&#x2032;) of west<lb break="yes"/>longitude, counted from the meridian of Paris. The latter<lb break="yes"/>found the same <placeName key="aequator" >equator</placeName> in Peru at 7&#x00B7;7963° (7° 1&#x2032;) of south<lb break="yes"/>latitude, and 89&#x00B7;6481° (80° 41&#x2032;) of west longitude, also<lb break="yes"/>reckoned from the same meridian. These data are suffi-<lb break="no"/>cient to calculate the position of the <placeName key="magnetaequator">magnetic equator</placeName>, sup-<lb break="no" />posing it to be a great circle of the terrestrial sphere; an<lb break="yes" />hypothesis which appears to be conformable to observa-<lb break="no"/>tions. The inclination of this plane to the <placeName key="aequator">terrestrial equator</placeName>
+                    <lb break="yes"/>is thus found to be equal to 11&#x00B7;0247° (10° 58&#x2032; 56&#x2033;), and<lb break="yes"/>its occidental node on that <placeName key="aequator">equator</placeName> is at 133&#x00B7;3719° (120°<lb break="yes"/>2&#x2032; 5&#x2033;) west from Paris, which places it a little beyond the<lb break="yes"/>continent of <placeName key="amerika" >America</placeName>, near the Gallipagos, in the South<lb break="yes"/>Sea; the other node is at 66&#x00B7;6281° (59° 57&#x2032; 55&#x2033;) to the<lb break="yes"/>east of Paris, which places it in the Indian Seas<note place="foot" n="*)" xml:id="fn1-1" next="#fn1-2">To calculate this position let NEE&#x2032; (Plate V. fig. 2.) be the <placeName key="aequator" >terrestrial<lb break="yes"/>equator</placeName>; NHL the <placeName key="magnetaequator">magnetic equator</placeName>, supposed also to be a great circle;<lb break="yes"/>and HL the two points of that <placeName key="aequator">equator</placeName>, observed by Messrs. <persName key="humboldt_av">Humboldt</persName> and<lb break="yes"/>
+                        <persName key="laperouse_jfdgcd">Lapeyrouse</persName>. The latitudes HE, LE&#x2032;, and the arc EE&#x2032;, which is the diffe-<lb break="no"/>rence of longitude of these two points, is known: consequently, if we sup-<lb break="no"/>pose HE = <hi rendition="#i">b</hi>, LE&#x2032; = <hi rendition="#i">b&#x2032;</hi>, EE&#x2032; = <hi rendition="#i">v</hi>, EN = <hi rendition="#i">x</hi>, and the angle ENH = <hi rendition="#i" >y</hi>, we<lb break="yes"/>shall have two spherical triangles NEH, NE&#x2032;L, which will give the two<lb break="yes"/>following equations:<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX" >\text{Sin.}\;x=\frac{{\text{tang.}\;b\;\text{cot}\;y}}{R}\;\text{sin.}(x+v)=\frac{{\text{tang.}\;b'\;\text{cot.}\;y}}{R}</formula>
+                        </hi>
+                        <lb break="yes"/>from which we deduce<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX" >\text{Sin.}\frac{(x+v)}{\text{sin.}\;x}=\frac{\text{tang.}\;b'}{\text{tang.}\;b}</formula>
+                        </hi>
+                        <lb break="yes"/>and developing<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX" >\text{cot.}\;x=\frac{\text{tang.}\;b'}{\text{tang.}\;b\;\text{sin.}\;v}-\frac{\text{cos.}\;v}{\text{sin.}\;v}</formula>
+                        </hi>
+                        <lb break="yes"/>Let us now take an auxiliary angle &#x03C6;, so that we may have<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX" >\text{tang.}\;\phi=\frac{\text{tang.}\;b\;\text{sin.}\;v}{\text{tang.}\;b'}</formula>
+                        </hi>
+                        <lb break="yes"/>
+                        <fw type="catch" place="bottom">and</fw>
+                    </note>.</p>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">We</fw>
+                <lb break="yes"/>
+                <pb n="256" facs="#f0009"/>
+                <p>We do not give this determination as rigorously exact:<lb break="yes"/>some corrections might no doubt be made to it, had we<lb break="yes"/>a greater number of observations equally precise; but<lb break="yes"/>we are of opinion that these corrections would be very<lb break="yes"/>small; and it will be seen hereafter that, independently of<lb break="yes"/>the confidence which the two observations we have em-<lb break="no"/>ployed deserve, we have other reasons for entertaining<lb break="yes"/>this opinion<note place="foot" n="*">Since this memoir was read, we have collected new information which<lb break="yes" />confirms these first results. <persName key="laperouse_jfdgcd" >Lapeyrouse</persName>, after having doubled Cape Horn,<lb break="yes" />fell in a second time with the <placeName key="magnetaequator">magnetic equator</placeName> in 18&#x2032; north lat. and 119° 7&#x2032;<lb break="yes"/>of longitude west from Paris. He was therefore very near the node of the<lb break="yes"/>
+                        <placeName key="magnetaequator">magnetic equator</placeName>, such as we have deduced it from observations. This<lb break="yes"/>fact establishes in a positive manner two important consequences: first, that<lb break="yes" />the preceding determinations require only very slight corrections; and the<lb break="yes"/>second, that the <placeName key="magnetaequator" >magnetic equator</placeName> is really a great circle of the earth, if not<lb break="yes"/>exactly at least very nearly.&#x2014;<hi rendition="#i">Note of the Authors.</hi>
+                    </note>.</p>
+                <lb break="yes"/>
+                <p>It is very remarkable that this determination of the <placeName key="magnetaequator">mag-<lb break="no"/>netic equator</placeName> agrees almost perfectly with that given long<lb break="yes"/>ago by <persName key="wilke_jc">Wilke</persName> and <persName key="lemonnier_pc" >Lemonnier</persName>. The latter in particular,<lb break="yes"/>who for want of direct observations had discussed a great<lb break="yes"/>number of corresponding observations, indicates the <placeName key="magnetaequator" >mag-<lb break="no"/>netic equator</placeName> in Peru towards 7°<formula notation="TeX">\frac{1}{3}</formula> of south latitude; and<lb break="yes"/>M. <persName key="humboldt_av">Humboldt</persName> found it in the same place at 7&#x00B7;7963° (7° 1&#x2032;);<lb break="yes"/>besides, <persName key="lemonnier_pc">Lemonnier&#x2019;s</persName> chart, as well as that of M. <persName key="wilke_jc">Wilke</persName>,<lb break="yes"/>indicates for the inclination of the magnetic meridian 12&#x00B7;22°<lb break="yes" />(about 11°), and they place the node about 155° 56&#x2032; (140°)<lb break="yes"/>of west longitude, reckoned from the meridian of Paris.</p>
+                <lb break="yes"/>
+                <p>Can it be by chance, then, that these elements, found<lb break="yes"/>more than 40 years ago, should accord so well with ours<lb break="yes"/>founded on recent observations? or does the inclination of<lb break="yes"/>the <placeName key="magnetaequator">magnetic equator</placeName> experience only very small variations,<lb break="yes"/>while all the other symptoms of terrestrial magnetism<lb break="yes"/>change so rapidly? We should not be far from admitting<lb break="yes"/>the latter opinion, when we consider that the inclination of<lb break="yes"/>the magnetic needle has changed at Paris 3° during 60 years<lb break="yes"/>since it has been observed; and that at London, according<lb break="yes"/>to the observations of Mr. <persName key="graham_g">Graham</persName>, it has not changed 2°<lb break="yes"/>in 200 years; while the declination has varied more than<lb break="yes"/>20° in the same interval, and has passed from east to west:<lb break="yes"/>but, on the other hand, the observation of the inclination is<lb break="yes"/>so difficult to be made with exactness, and it is so short a<lb break="yes"/>time since the art of measuring it with precision was known,<lb break="yes"/>
+                    <note place="foot" n="*)" xml:id="fn1-2" prev="#fn1-1">and we shall have<lb break="yes"/>
+                        <hi rendition="#c">
+                            <formula notation="TeX" >\text{tang.}\;x=\frac{\text{sin.}\;v\;\text{sin.}\;\phi}{\text{sin.}\;(v-\phi)}</formula>.</hi>
+                        <lb break="yes"/>By these equations we may find <hi rendition="#i">x</hi>, and then <hi rendition="#i">y</hi>, by any of the first two.</note>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">that</fw>
+                    <lb break="yes"/>
+                    <pb n="257" facs="#f0010"/> that it is perhaps more prudent to abstain from any prema-<lb break="no"/>ture opinion on ph&#x00E6;nomena the cause of which is totally<lb break="yes"/>unknown to us.</p>
+                <lb break="yes"/>
+                <p>To employ the other observations of M. <persName key="humboldt_av" >Humboldt</persName> in re-<lb break="no"/>gard to the inclination, I first reduced the terrestrial latitudes<lb break="yes"/>and longitudes reckoned from the <placeName key="magnetaequator">magnetic equator</placeName>. The<lb break="yes"/>latter, being reckoned from the node of that <placeName key="aequator">equator</placeName> in the<lb break="yes"/>South Sea, I could first perceive by these calculations that<lb break="yes"/>the position of that plane determined by our preceding re-<lb break="no"/>searches was pretty exact; for some of the places, such as<lb break="yes"/>Santa-Fé and Javita, where M. <persName key="humboldt_av">Humboldt</persName> observed incli-<lb break="no"/>nations almost equal, were found nearly on the magnetic<lb break="yes"/>parallel, though distant from each other more than 6&#x00B7;6666°<lb break="yes"/>(6°) in longitude<note place="foot" n="*" >This confirms what we have already said, that the <placeName key="magnetaequator">magnetic equator</placeName> is<lb break="yes" />sensibly a great circle of the earth.&#x2014;<hi rendition="#i">Note of the Authors.</hi>
+                    </note>.</p>
+                <lb break="yes"/>
+                <p>When these reductions were made, I endeavoured to re-<lb break="no"/>present the signs of the inclinations observed, and to leave as<lb break="yes"/>little to chance as possible. I first tried a mathematical<lb break="yes"/>hypothesis conformable enough to the idea which has hi-<lb break="no"/>therto been entertained in regard to terrestrial magnetism.</p>
+                <lb break="yes"/>
+                <p>I have supposed in the axis of the <placeName key="magnetaequator">magnetic equator</placeName>, and<lb break="yes"/>at an equal distance from the centre of the earth, two cen-<lb break="no"/>tres of attractive forces, the one austral and the other boreal,<lb break="yes"/>in such a manner as to represent the two opposite magnetic<lb break="yes"/>poles of the earth: I then calculated the effect which ought<lb break="yes"/>to result from the action of these centres in any point of the<lb break="yes"/>surface of the earth, making their attractive force recipro-<lb break="no"/>cally vary as the square of the distance; and in this manner<lb break="yes"/>I obtained the direction of the result of their forces, which<lb break="yes"/>ought to be that also of the magnetic needle in that latitude.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">[To be continued.]</hi>
+                </p>
+                <lb break="yes"/>
+                <pb n="299" facs="#f0011"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">On the Variations of the Terrestrial Magnetism<lb break="yes"/>in different Latitudes. By Messrs.</hi>
+                        <hi rendition="#k">
+                            <persName key="humboldt_av">Humboldt</persName>
+                        </hi>
+                        <hi rendition="#i">and</hi>
+                        <lb break="yes"/>
+                        <persName key="biot_jb">
+                            <hi rendition="#k">Biot.</hi>
+                        </persName>
+                        <hi rendition="#i">Read by M.</hi>
+                        <persName key="biot_jb">
+                            <hi rendition="#k">Biot</hi>
+                        </persName>
+                        <hi rendition="#i">in the Mathematical and<lb break="yes"/>Physical Class of the French National Institute</hi> 26<hi rendition="#i">th<lb break="yes"/>Frimaire, An</hi> 13. (17<hi rendition="#i">th December</hi> 1804.)<lb break="yes"/>[Concluded from p. 257.]</head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#k">
+                            <hi rendition="#in">T</hi>he</hi> calculation is as follows:&#x2014;I suppose that the point B<lb break="yes"/>(fig. 3.) is the north magnetic pole of the earth, and that<lb break="yes"/>the point A is the south magnetic pole: I suppose also that<lb break="yes"/>there is in the point M, at the surface of the earth, a mo-<lb break="no"/>lecula of the austral fluid which is attracted by B and re-<lb break="no"/>pelled by A in the inverse ratio of the square of the di-<lb break="no"/>stance; and I require what will be the direction of the<lb break="yes"/>power resulting from these two forces acting on that mole-<lb break="no"/>cula. It is evident that this direction will be that also<lb break="yes"/>which would be assumed in the point M by the needle of<lb break="yes"/>a compass freely suspended: for, in consequence of the<lb break="yes"/>smallness of the needle in comparison of the radius of the<lb break="yes"/>earth, the lines drawn from its points to one centre, B or A,<lb break="yes"/>may be considered as parallel, especially if the points A<lb break="yes"/>and B are near the centre of the earth; which is the case<lb break="yes"/>with nature, as may be seen.</p>
+                    <lb break="yes"/>
+                    <p>I shall first suppose that the earth has a spherical figure,<lb break="yes" />and that the two poles A and B are equal in force; I shall<lb break="yes" />then examine how far the latter supposition agrees with the<lb break="yes" />results observed.</p>
+                    <lb break="yes"/>
+                    <p>Let AM then = D&#x2032;, BM = D, CP = <hi rendition="#i">x</hi>; PM = <hi rendition="#i">y</hi>,<lb break="yes"/>the angle MCP = <hi rendition="#i">u</hi>, CA = CB = <hi rendition="#i">a</hi>, and I shall make<lb break="yes"/>
+                        <hi rendition="#i">a</hi> = K<hi rendition="#i">r</hi>; <hi rendition="#i" >r</hi> being equal to the radius of the earth, and K a<lb break="yes" />constant but indeterminate quantity.</p>
+                    <lb break="yes"/>
+                    <p>Let X, Y, also be the forces which attract M in a direc-<lb break="no"/>tion parallel to the axes of the co-ordinates, and &#x03B2; the angle<lb break="yes"/>which the resulting force makes with the axis ABC.</p>
+                    <lb break="yes"/>
+                    <p>We shall first have the following equations, in which<lb break="yes"/>F is the magnetic force, at a distance equal to unity.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <formula notation="TeX">\text{X}=\frac{\text{F}}{\text{D}^2}\;\text{cos. M B D}-\frac{\text{F}}{\text{D}'^{2}}\text{ cos. M A D}</formula>;</item>
+                        <lb break="yes"/>
+                        <item>
+                            <formula notation="TeX" >\text{D}'^2=y^2+(x+a)^2=r^2+2\;\text{axis}\;+a^2</formula>
+                        </item>
+                        <lb break="yes"/>
+                        <item>
+                            <formula notation="TeX">\text{Y}=\frac{\text{F}}{\text{D}^2}\;\text{sin. M B D}\;-\frac{\text{F}}{\text{D}'^2}\;\text{sin. M A D}</formula>;</item>
+                        <lb break="yes"/>
+                        <item>
+                            <formula notation="TeX" >\text{D}^2=y^2+(x-a)^2=r^2-2\;\text{axis}\;+a^2</formula>,</item>
+                    </list>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">or</fw>
+                    <lb break="yes"/>
+                    <pb n="300" facs="#f0012"/>
+                    <p>or by putting for the cosines their values:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <formula notation="TeX" >\text{X}=\frac{\text{F}(x-a)}{\text{D}^3}-\frac{\text{F}(x+a)}{\text{D}'^{\text{3}}}</formula>
+                        </item>
+                        <lb break="yes"/>
+                        <item>
+                            <formula notation="TeX" >\text{Y}=\frac{\text{F}y}{\text{D}^{\text{3}}}-\frac{\text{F}y}{\text{D}'^{\text{3}}}</formula>;</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>and as we have</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\text{tang.}\;\beta =\frac{Y}{X}</formula>,</hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>we shall have also</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <formula notation="TeX" >\text{tang.}\;\beta=\frac{{\frac{y}{\text{D}^3}-\frac{y}{\text{D}'^3}}}{{\frac{x-a}{\text{D}^3}-\frac{x-a}{\text{D}'^3}}}=\frac{{y(\text{D}'^3-\text{D}^3)}}{{x(\text{D}'^3-\text{D}^3)-a\text{(D}'^3\text{+D}^3)}}</formula>; </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>and putting for <hi rendition="#i">x</hi>, <hi rendition="#i">y</hi>, and <hi rendition="#i">a</hi>, their values, <hi rendition="#i">r</hi> cos. <hi rendition="#i">u</hi>; <hi rendition="#i">r</hi> sin. <hi rendition="#i" >u</hi>;<lb break="yes"/>K<hi rendition="#i">r</hi>;</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{tang.}\;\beta=\frac{{\text{sin.}\;u}}{\text{cos.}\;u-\text{K}\left(\frac{\text{D}'^3+\text{D}^3}{\text{D}'^3-\text{D}^3}\right)}</formula>;</hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\text{D}'^2=r^2(1+2\;\text{K cos.}\;u+\;\text{K}^2)</formula>;</hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\text{D}^2=r^2(1-2\;\text{K cos.}\;u+\;\text{K}^2)</formula>;</hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>which gives the system of the two equations,</item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{tang.}\;\beta=\frac{{\text{sin.}\;u}}{{\text{cos.}\;u-\text{K}\left(\frac{\text{D}'^3+\text{D}^3}{\text{D}'^3-\text{D}^3}\right)}}</formula>
+                            </hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{K}\left(\frac{{\text{D}'^3+\text{D}^3}}{{\text{D}'^3-\text{D}^3}} \right )=\frac{{{(1+2\text{K cos.}}\;u+\text{K}^2)^\frac{3}{2}+{(1-2\text{K cos.}}\;u+\text{K}^2)^\frac{3}{2}}}{{(1 + 2\text{K cos.}\;u+\text{K}^2)^\frac{3}{2}-(1-2\text{K cos.}\;u+\text{K}})^\frac{3}{2}}\text{K}</formula>.</hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>These equations determine the direction of the magnetic<lb break="yes" />needle in regard to each point M, the distance of which<lb break="yes" />from the <placeName key="magnetaequator">magnetic equator</placeName> is known; but it is seen that<lb break="yes"/>this direction depends on the quantity K, which represents<lb break="yes"/>the distance of the magnetic centres from the centre of the<lb break="yes"/>earth: this distance being expressed in parts of the terres-<lb break="no"/>trial radius, we must therefore first determine this quantity<lb break="yes"/>from observations.</p>
+                    <lb break="yes"/>
+                    <p>To do it in the manner of approximation, and thus ac-<lb break="no"/>quire a first idea of the value of K, I have chosen an obser-<lb break="no"/>vation made by M. <persName key="humboldt_av">Humboldt</persName> at Carichana in 7&#x00B7;2978° (6°<lb break="yes"/>34&#x2032; 5&#x2033;) of north latitude counted from the <placeName key="aequator">terrestrial equa-<lb break="no" />tor</placeName>, and 78&#x00B7;111° (70° 18&#x2032;) west longitude reckoned from<lb break="yes"/>
+                        <fw type="catch" place="bottom">the</fw>
+                        <lb break="yes"/>
+                        <pb n="301" facs="#f0013"/> the meridian of Paris; which gives 16&#x00B7;526° (14° 52&#x2032; 25&#x2033;)<lb break="yes"/>of latitude counted from the <placeName key="magnetaequator">magnetic equator</placeName>, and 53&#x00B7;7390°<lb break="yes"/>(48° 21&#x2032; 53&#x2033;) of west longitude proceeding from the node<lb break="yes" />formed by that <placeName key="aequator">equator</placeName> with the <placeName key="aequator">equator of the earth</placeName>. The<lb break="yes"/>inclination of the magnetic needle was observed in that<lb break="yes"/>place by M. <persName key="humboldt_av">Humboldt</persName> in the month of Messidor, year 8,<lb break="yes"/>and found to be equal to 33&#x00B7;78° of the centigrade division<note place="foot" n="*">All the measures of inclination which I have given in this memoir will<lb break="yes"/>be expressed, like those of M. <persName key="humboldt_av">Humboldt</persName>, in decimal parts of a quadrant.</note>.<lb break="yes"/>A comparison of this result, with the other observations<lb break="yes"/>of M. <persName key="humboldt_av" >Humboldt</persName>, shows that it may be indeed considered<lb break="yes"/>as agreeing to that latitude.</p>
+                    <lb break="yes"/>
+                    <p>To make use of it I have successively given to K different<lb break="yes" />values in the formula: I have calculated the inclinations<lb break="yes" />resulting from that latitude; and, comparing these results<lb break="yes" />with that which M. <persName key="humboldt_av">Humboldt</persName> really observed, the progress<lb break="yes"/>of the errors naturally led me to the most proper supposi-<lb break="no"/>tion. The following is a table of these trials:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell role="label">Values of K.</cell>
+                            <cell role="label">Inclinations of the Needle.</cell>
+                            <cell role="label">Errors.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;1</cell>
+                            <cell>7&#x00B7;73°</cell>
+                            <cell>26&#x00B7;04°</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;6</cell>
+                            <cell>18&#x00B7;80</cell>
+                            <cell>14&#x00B7;97</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;5</cell>
+                            <cell>22&#x00B7;04</cell>
+                            <cell>11&#x00B7;73</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;2</cell>
+                            <cell>29&#x00B7;38</cell>
+                            <cell>4&#x00B7;39</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;1</cell>
+                            <cell>30&#x00B7;64</cell>
+                            <cell>3&#x00B7;13</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;01</cell>
+                            <cell>31&#x00B7;04</cell>
+                            <cell>2&#x00B7;73</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>K&#xff1d;0&#x00B7;001</cell>
+                            <cell>31&#x00B7;07</cell>
+                            <cell>2&#x00B7;7</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>The first value of K would place the centre of the mag-<lb break="no"/>netic forces at the surface of the earth and the poles of the<lb break="yes"/>
+                        <placeName key="magnetaequator">magnetic equator</placeName>. It is seen that this supposition cannot<lb break="yes"/>be admitted, because it would give an increase of inclina-<lb break="no"/>tion much less rapid than that indicated by observations.<lb break="yes"/>The case is the same with the following results, which<lb break="yes"/>place the centres of action on the terrestrial radius at<lb break="yes"/>different distances from the centre of the earth: but it is<lb break="yes"/>seen also, in general, that they approach more and more to<lb break="yes"/>the truth in proportion as this distance becomes less; which<lb break="yes"/>evidently shows that the two centres of action of the mag-<lb break="no"/>netic forces are situated near the centre of the earth. All<lb break="yes"/>the other observations of M. <persName key="humboldt_av">Humboldt</persName> would also lead to<lb break="yes"/>the same consequence.</p>
+                    <lb break="yes"/>
+                    <p>The most proper supposition would be to make K null,<lb break="yes"/>or so small that it would be needless to pay attention to it;<lb break="yes" />which amounts to the same thing as to consider the two<lb break="yes" />centres of action placed, as we may say, in the same mo-<lb break="no" />lecula. The result, indeed, obtained in this manner is the<lb break="yes" />most exact of all; it is equal to 31&#x00B7;0843°: this value is still<lb break="yes"/>
+                        <fw type="catch" place="bottom">a little</fw>
+                        <lb break="yes"/>
+                        <pb n="302" facs="#f0014"/> a little less than that which M. <persName key="humboldt_av">Humboldt</persName> observed, and<lb break="yes"/>the difference is equal to 2&#x00B7;69; but it must be considered<lb break="yes" />also that the formula from which we derive these values<lb break="yes" />supposes the position of the <placeName key="magnetaequator">magnetic equator</placeName> to be per-<lb break="no"/>fectly determined; but it may not be so with the utmost<lb break="yes"/>exactness, according to the only two observations of <persName key="laperouse_jfdgcd">Lapey-<lb break="no"/>rouse</persName> and <persName key="humboldt_av" >Humboldt</persName>, which we have employed. It is there-<lb break="no" />fore by studying the progress of the formula, and comparing<lb break="yes" />it with the observations, that we are able to appreciate it<lb break="yes" />justly; after which we may think of remedying the small<lb break="yes" />errors with which it may be accompanied.</p>
+                    <lb break="yes"/>
+                    <p>To obtain the result I have here mentioned, and which<lb break="yes"/>is, as it were, the limit of all those which may be obtained<lb break="yes"/>by giving to K different values, it is to be remarked that<lb break="yes"/>the quantity</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{K}\left(\frac{\text{D}'^3+\text{D}^3}{\text{D}'^3-\text{D}^3}\right)</formula>
+                            </hi>
+                        </item>
+                        <lb break="yes"/>
+                        <item>or</item>
+                        <lb break="yes"/>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\text{K}\frac{(1 + 2\;\text{K cos.}\;u+\text{K}^2)^\frac{3}{2}+(1-2\;\text{K cos.}\;u+\text{K}^2)^\frac{3}{2}}{(1+2\;\text{K cos.}\;u+\text{K}^2)^\frac{3}{2}-(1 - 2\;\text{K cos.}\;u+\text{K}^2)^\frac{3}{2}}</formula>
+                            </hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>becomes <formula notation="TeX">\frac{0}{0}</formula> when K is null, but by applying to it the<lb break="yes"/>methods of known quantities it will be found that its value<lb break="yes"/>in this supposition is really determinate and equal to <formula notation="TeX" >\frac{1}{3\;\text{cos.}\;u}</formula>.<lb break="yes"/>By substituting this in the formula we shall have</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{tang.}\;\beta=\frac{\text{sin.}\;u}{{{\text{cos.}}\;u-\frac{1}{3\;\text{cos.}\;u}}}</formula>
+                            </hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>an equation which may be reduced to this form:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX" >\text{tang.}\;\beta=\frac{{\text{sin.}\;2u}}{{\text{cos.}\;2u+\frac{1}{3}}}</formula>;</hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>which will easily give the value of &#x03B2;: and when this value<lb break="yes"/>is known we shall have the inclination I, by the following<lb break="yes"/>formula:</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>
+                            <hi rendition="#c">
+                                <formula notation="TeX">\text{I} = 100+u-\beta</formula>,</hi>
+                        </item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>which will serve throughout the whole extent of the two<lb break="yes" />hemispheres.</p>
+                    <lb break="yes"/>
+                    <p>From the progress I have traced out it is seen that the<lb break="yes" />preceding formula is not merely an empyric construction of<lb break="yes" />observations; on the contrary, it is totally independent, and<lb break="yes"/>only supposes the inclination of the magnetic needle to be<lb break="yes"/>
+                        <fw type="catch" place="bottom">produced</fw>
+                        <lb break="yes"/>
+                        <pb n="303" facs="#f0015"/> produced by a magnet, infinitely small, placed in the centre<lb break="yes"/>of the terrestrial surface; but by calculating from this for-<lb break="no"/>mula the inclination for the different latitudes, I have found<lb break="yes"/>precisely the same numbers as M. <persName key="humboldt_av">Humboldt</persName> observed either<lb break="yes"/>in Europe or in <placeName key="amerika" >America</placeName>: and it is not his observations only<lb break="yes" />that are represented in this manner; but those which have<lb break="yes" />been made in Russia, and at Kola in Lapland, during the<lb break="yes" />last transit of Venus, are also comprehended under the same<lb break="yes" />law. This is proved by the table annexed to this memoir,<lb break="yes" />in which I have calculated the observations of <persName key="mallet_01" >Mallet</persName> and<lb break="yes"/>
+                        <persName key="pictet_ma">Pictet</persName>, with a part of those of M. <persName key="humboldt_av">Humboldt</persName>, which I took<lb break="yes"/>at random, but, however, in such a manner as to include all<lb break="yes"/>the rest in the intervals.</p>
+                    <lb break="yes"/>
+                    <p>It is seen that the results of the formula deviate very little<lb break="yes" />from the observations; but these differences may be rendered<lb break="yes"/>still smaller. By examining, indeed, the progress of the<lb break="yes"/>errors, it is seen that the numbers given by calculation are a<lb break="yes"/>little too small in <placeName key="amerika" >America</placeName> for the low latitudes, and a little<lb break="yes" />too great for the high latitudes; which shows that the whole<lb break="yes"/>may be allowed, with some slight modifications, either by<lb break="yes"/>changing, however little, the node and inclination of the<lb break="yes"/>
+                        <placeName key="magnetaequator">magnetic equator</placeName>, which two observations cannot determine<lb break="yes"/>with the utmost exactness, or by displacing ever so little<lb break="yes"/>our small magnet, leaving, however, its centre in the plane<lb break="yes"/>of the <placeName key="aequator">magnetic equator</placeName>, and placing it in such a manner<lb break="yes"/>that it shall be a little nearer <placeName key="amerika">America</placeName> than Europe. It is<lb break="yes"/>by the observations themselves, when we shall have a greater<lb break="yes" />number, that we must be guided in these small correc-<lb break="no" />tions.</p>
+                    <lb break="yes"/>
+                    <p>In a word, it must not be expected that we can represent<lb break="yes"/>in a rigorous manner, by a mathematical law, all the in-<lb break="no" />clinations observed; for the ph&#x00E6;nomenon of the inclination,<lb break="yes"/>though more regular than the other magnetic effects, is not<lb break="yes"/>free from some anomalies: this may be easily seen on con-<lb break="no"/>structing the curve given by the observations themselves.<lb break="yes"/>Thus, for example, the inclination observed at Popayan is<lb break="yes"/>0° 10&#x2032; greater than at St. Carlos del Rio Negro, though<lb break="yes"/>the magnetic latitude of the latter is 0&#x00B7;6852° (3° 7&#x2032;) greater.<lb break="yes"/>The case is the same with observations made at Javita and<lb break="yes"/>Santa-Fé. Other anomalies are discovered in the compara-<lb break="no"/>tive progress of the observations and formula. This is the<lb break="yes"/>case in regard to Carichana, St. Thomas de la Guyane, and<lb break="yes"/>Carthagena. The increase of the inclination from the first<lb break="yes"/>to the second of these points is by no means in harmony<lb break="yes"/>with the increase from the second to the third; and if we<lb break="yes"/>
+                        <fw type="catch" place="bottom">compare</fw>
+                        <lb break="yes"/>
+                        <pb n="304" facs="#f0016"/> compare together the intensities observed in these dif-<lb break="no"/>ferent places, the anomalies they exhibit announce in<lb break="yes"/>some measure those which the inclination ought to ex-<lb break="no"/>perience.</p>
+                    <lb break="yes"/>
+                    <p>The cause of these anomalies becomes evident from what<lb break="yes"/>has been already remarked; they are merely the effect of<lb break="yes"/>local circumstances, and arise from the small systems of<lb break="yes" />attraction by which the general ph&#x00E6;nomena are modified.<lb break="yes"/>This must be sensible in particular for that part of <placeName key="amerika">America</placeName>
+                        <lb break="yes"/>which M. <persName key="humboldt_av">Humboldt</persName> travelled over, and which is traversed<lb break="yes"/>throughout its whole length by the grand chain of the cor-<lb break="no"/>dillera of the <placeName key="anden">Andes</placeName>. It is also in these places that the<lb break="yes"/>most considerable differences exist. Popayan, for example,<lb break="yes"/>is situated near the volcanoes of Sotara and Pourace; it is<lb break="yes"/>joined to basaltic mountains abounding with magnetic iron.<lb break="yes"/>Near Sulumito, to the east of Popayan, these basaltic co-<lb break="no"/>lumns have very striking poles: in like manner Mexico is<lb break="yes"/>situated at the height of 1160 toises on the ridge of the<lb break="yes"/>grand cordillera of Lenschtitlan: the ground there is co-<lb break="no"/>vered with porous basaltes and amygdaloids, which are<lb break="yes"/>almost all charged with magnetic iron. Must not all these<lb break="yes"/>causes have a sensible influence on the inclination of the<lb break="yes"/>magnetic needle; and must not the different dispositions of<lb break="yes"/>the ferruginous masses, or their change of state, in conse-<lb break="no"/>quence of the action of nature, produce also variations?<lb break="yes"/>M. <persName key="humboldt_av" >Humboldt</persName> made on this point a decisive observation:<lb break="yes"/>the earthquake of the 4th of November 1799 changed at<lb break="yes"/>Cumana the inclination of the needle. On the 1st of No-<lb break="no"/>vember it was 43° 65&#x2032;; on the 7th it was only 42° 75&#x2032;; and<lb break="yes"/>ten months after it returned to 42° 85&#x2032;: but it did not re-<lb break="no"/>gain its former value; the intensity of the magnetic force<lb break="yes"/>was not changed by the effect of this earthquake.</p>
+                    <lb break="yes"/>
+                    <p>It is proved, then, by these observations, that local cir-<lb break="no" />cumstances may have on the inclination a sensible influ-<lb break="no" />ence; and this influence is remarked in the countries tra-<lb break="no" />versed by M. <persName key="humboldt_av">Humboldt</persName>
+                        <note place="foot" n="*">We can observe that the anomalies are sensible in particular in the<lb break="yes"/>islands.&#x2014;<hi rendition="#i" >Note by the Authors of the Memoir.</hi>
+                        </note>.</p>
+                    <lb break="yes"/>
+                    <p>It appears, therefore, that the mathematical hypothesis<lb break="yes"/>which we have employed really expresses the law of nature<lb break="yes"/>at least to the north of the <placeName key="aequator">magnetic equator</placeName>; for, though the<lb break="yes"/>first results observed towards the south seem to bend to it also,<lb break="yes"/>the uncertainty under which we are in regard to the true<lb break="yes"/>cause of these ph&#x00E6;nomena must stop our conjectures, and<lb break="yes"/>
+                        <fw type="catch" place="bottom">prevent</fw>
+                        <lb break="yes"/>
+                        <pb n="305" facs="#f0017"/> prevent us from extending too far the consequences of the<lb break="yes"/>laws which we observe<note place="foot" n="*">Since this memoir was read, we can advance something more positive.<lb break="yes"/>Observations made at the Cape of Good Hope, Cape Horn, and New Hol-<lb break="no"/>land, by different navigators, are very exactly represented by our formula;<lb break="yes" />and it follows, that it extends also to the austral hemisphere. We hope<lb break="yes"/>soon to have numerous and very exact observations on the inclination of<lb break="yes"/>the needle in that part of the earth. But we have thought it our duty to<lb break="yes" />add to our table such results as relate to it, and which we have been able<lb break="yes"/>to procure. We have inserted also two observations on the intensity, made<lb break="yes"/>with great care by M. <persName key="rossel_eped">Rossel</persName>, during the expedition of d&#x2019;<persName key="entrecasteau_jbd">Entrecasteaux</persName>, which<lb break="yes"/>are very important, as they prove that the terrestrial magnetic force in-<lb break="no"/>creases also in the austral hemisphere in proportion as one removes from the<lb break="yes"/>
+                            <placeName key="aequator">equator</placeName>.&#x2014;<hi rendition="#i" >Note by the Authors of the Memoir.</hi>
+                        </note>.</p>
+                    <lb break="yes"/>
+                    <p>From the preceding results, we may calculate the points<lb break="yes"/>where the axis of the <placeName key="magnetaequator">magnetic equator</placeName> pierces the terres-<lb break="no"/>trial surface; for their latitudes are equal to the comple-<lb break="no"/>ments of the obliquity of that <placeName key="aequator">equator</placeName>, and their meridian is<lb break="yes"/>at 100° of longitude from its nodes. The north magnetic<lb break="yes"/>pole is found also at 97&#x00B7;7975° (79° 1&#x2032; 4&#x2033;) of north latitude,<lb break="yes"/>and at 33&#x00B7;3719° (30° 2&#x2032; 5&#x2033;) of longitude west from Paris,<lb break="yes"/>which places it to the north of <placeName key="amerika">America</placeName>. The other mag-<lb break="no"/>netic pole, symmetric to the preceding, is situated in the<lb break="yes"/>same latitude south, and at 66&#x00B7;6281° (149° 67&#x2032; 55&#x2033;) of lon-<lb break="no"/>gitude east from Paris, which places it amidst the eternal<lb break="yes"/>ice: indications entirely analogous to those of <persName key="wilke_jc">Wilke</persName> and<lb break="yes"/>
+                        <persName key="lemonnier_pc">Lemonnier</persName>.</p>
+                    <lb break="yes"/>
+                    <p>If we could reach these poles, the compass would be seen<lb break="yes" />vertical; but if any confidence can be placed in the law<lb break="yes" />which we have discovered, this would be the only difference<lb break="yes" />which would be observed in regard to the inclination, and<lb break="yes" />we should be still as far distant as in Europe from the real<lb break="yes"/>centres which produce it. This result might appear to be<lb break="yes"/>of such a nature as to diminish the interest one might have<lb break="yes"/>in visiting these horrid regions, had we not also the hope of<lb break="yes"/>discovering there new ph&#x00E6;nomena in regard to the inten-<lb break="no"/>sity of the magnetic force, and the influence of meteors.</p>
+                    <lb break="yes"/>
+                    <p>These consequences do not entirely accord with the<lb break="yes"/>opinion pretty generally received, and which ascribes the<lb break="yes"/>increase of the magnetic effects towards the north to the<lb break="yes"/>great quantity of iron dispersed throughout these regions;<lb break="yes"/>but it appears to us that this opinion is not agreeable to the<lb break="yes" />truth. The cordillera of the <placeName key="anden">Andes</placeName> contains an enormous<lb break="yes"/>quantity of magnetic iron: the native iron of Chaco, that<lb break="yes"/>problematic mass analogous to that of Pallas, and those of<lb break="yes"/>Xacateras in Mexico, is found even under the tropics<note place="foot" n="&#x2020;">We may now add to the preceding considerations this decisive fact, that<lb break="yes"/>the intensity also increases when one approaches the south pole.&#x2014;<hi rendition="#i">Note by<lb break="yes"/>the Authors of the Memoir.</hi>
+                        </note>.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">On</fw>
+                    <lb break="yes"/>
+                    <pb n="306" facs="#f0018"/>
+                    <p>On seeing the inclinations of the compass so exactly re-<lb break="no" />presented in our hypothesis, we endeavoured to discover<lb break="yes" />whether it could he applied also to the intensities observed<lb break="yes"/>by M. <persName key="humboldt_av">Humboldt</persName>; but we found that it did not apply. It<lb break="yes"/>gives, indeed, an increase of the magnetic forces from<lb break="yes"/>the <placeName key="aequator">equator</placeName> to the pole; but this increase, which at first<lb break="yes"/>is too slow, becomes afterwards too rapid: I have not yet<lb break="yes"/>been able to try whether the small displacement of the ter-<lb break="no"/>restrial magnet will contribute towards representing them<lb break="yes"/>better: but it must be remarked, that the series of the in-<lb break="no"/>tensities is extremely whimsical, and contains an infinite<lb break="yes"/>number of anomalies; so that local ph&#x00E6;nomena may have<lb break="yes"/>on this ph&#x00E6;nomenon a much more sensible influence than<lb break="yes"/>on the inclination.</p>
+                    <lb break="yes"/>
+                    <p>On reviewing the results which we have given in this<lb break="yes"/>memoir, it is seen that we have first determined the posi-<lb break="no"/>tion of the <placeName key="magnetaequator">magnetic equator</placeName> by direct observations, which<lb break="yes"/>had never been done before; we have then proved that the<lb break="yes"/>magnetic force increases in proceeding from that <placeName key="aequator">equator</placeName> to<lb break="yes"/>the poles: in the last place, we have given a mathematical<lb break="yes" />hypothesis, which when reduced to a formula satisfies all the<lb break="yes"/>inclinations hitherto observed.</p>
+                    <lb break="yes"/>
+                    <p>Supposing, as we have done in this formula, the small<lb break="yes" />corrections of which it is susceptible, its utility becomes<lb break="yes" />evident, either for making known, in the course of time, the<lb break="yes"/>variations which may take place in the action of the terres-<lb break="no"/>trial magnetism, or to ascertain or even foresee the value of<lb break="yes"/>the inclination, which in a great many cases is of great im-<lb break="no"/>portance.</p>
+                    <lb break="yes"/>
+                    <p>For example, near the <placeName key="magnetaequator">magnetic equator</placeName>, the increase or<lb break="yes"/>diminution of the inclination will indicate to a vessel on a<lb break="yes"/>voyage whether she has gained or lost in latitude by cur-<lb break="no"/>rents. This knowledge of the latitude is sometimes as im-<lb break="no"/>portant as that of longitude. On the coasts of Peru, for<lb break="yes"/>example, the currents tend from Chiloé to the north and<lb break="yes"/>north-east with such force, that one may go from Lima to<lb break="yes"/>Guayaquil in three or four days, and two, three, and some-<lb break="no"/>times five months are necessary to return. It is conse-<lb break="no"/>quently of the greatest importance for vessels coming from<lb break="yes"/>Chili which stretch along the coast of Peru, to know their<lb break="yes"/>latitude. If they go beyond the port to which they are<lb break="yes"/>bound they must work to the southward, and every day&#x2019;s<lb break="yes"/>progress requires often a month of return. Unfortunately,<lb break="yes"/>the fogs which prevail during four or five months on the<lb break="yes"/>coasts of Peru prevent navigators from distinguishing the<lb break="yes"/>form of the coast: nothing is seen but the summits of the<lb break="yes"/>
+                        <fw type="catch" place="bottom">
+                            <placeName key="anden">Andes</placeName>,</fw>
+                        <lb break="yes"/>
+                        <pb n="307" facs="#f0019"/>
+                        <placeName key="anden">Andes</placeName>, and that of the peaks which rise above that stratum<lb break="yes"/>of vapours; but the figure of it is so uniform that pilots<lb break="yes"/>fall into mistakes. They often remain twelve or fifteen days<lb break="yes"/>without seeing the sun or the stars, and during that interval<lb break="yes"/>they come to anchor, being afraid of overshooting their port:<lb break="yes"/>but if we suppose that the inclination of the magnetic<lb break="yes"/>needle in the ports to the south of Lima is known, for<lb break="yes"/>example at Chancay, Huaura, and Santa, the dipping needle<lb break="yes"/>will show whether it be, in regard to Lima, to the south or<lb break="yes"/>the north. It will show at the same time opposite what<lb break="yes"/>point of the coast a vessel is; and this indication will be<lb break="yes"/>attended with more exactness than one could hope for, be-<lb break="no"/>cause in these seas the inclination varies with extraordinary<lb break="yes"/>rapidity. M. <persName key="humboldt_av">Humboldt</persName>, to whom we are indebted for<lb break="yes"/>these remarks, observed in these seas the following values:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell role="label">Places.</cell>
+                            <cell role="label"> </cell>
+                            <cell role="label">South Latitudes.</cell>
+                            <cell role="label"> </cell>
+                            <cell role="label">Inclinations.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Huancey</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>10° 4&#x2032;</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>6,80°</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Huaura</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>11 3</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>9,00</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Chancay</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>11 33</cell>
+                            <cell>&#x2012;</cell>
+                            <cell>10,35</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>These observations prove that the error of three or four<lb break="yes" />degrees in the inclination in these seas would produce but a<lb break="yes"/>degree of error in latitude; and, on account of the tranquil-<lb break="no"/>lity of the Pacific Ocean, the inclination may be observed<lb break="yes"/>to within a degree nearly. Frequent instances of such re-<lb break="no"/>sults may be seen in books of voyages. In like manner, if<lb break="yes"/>one knew exactly the inclination at the mouth of the Rio de<lb break="yes"/>la Plata, it would be very useful to navigators, who, when<lb break="yes"/>the Pamperos blow, remain fifteen or eighteen days without<lb break="yes"/>seeing the heavenly bodies, and go on different tacks for<lb break="yes"/>fear of losing the parallel of the mouth of that river.</p>
+                    <lb break="yes"/>
+                    <p>In a word, the inclination may indicate also the longi-<lb break="no"/>tude in these seas: and this method may be employed when<lb break="yes"/>others fail. A vessel which sails there in the direction of<lb break="yes"/>a parallel could not find its longitude either by a chrono-<lb break="no" />meter or the declination of <persName key="halley_e">Halley</persName>, unless a star could be<lb break="yes"/>seen in order to take an horary angle or the magnetic azi-<lb break="no"/>muth. The dipping needle, then, throws light on the lon-<lb break="no"/>gitude amidst the thickest fogs. We point out this method<lb break="yes"/>as one of those which have only a local application; but<lb break="yes"/>hitherto little attention has been paid to it. These ideas<lb break="yes"/>may be extended and rectified by able navigators.</p>
+                    <lb break="yes"/>
+                    <p>In general, if the inclination of the needle, and the law<lb break="yes"/>we have tried to establish, could be depended on, to observe<lb break="yes" />the inclination and the terrestrial latitude would be suffi-<lb break="no" />cient to determine also the longitude: but we have not yet<lb break="yes" />examined the extent of the errors of which this method may<lb break="yes"/>
+                        <fw type="catch" place="bottom">be</fw>
+                        <lb break="yes"/>
+                        <pb n="308" facs="#f0020"/> be susceptible, and consequently we confine ourselves to a<lb break="yes"/>mere indication of it.</p>
+                    <lb break="yes"/>
+                    <p>The ph&#x00E6;nomenon of the inclination has in maritime ob-<lb break="no" />servations a particular and very remarkable advantage,<lb break="yes" />namely, that of not being subject to those great progressive<lb break="yes"/>variations which affect the declination. Without repeating<lb break="yes"/>what we have already said above on the supposed constancy<lb break="yes"/>of this ph&#x00E6;nomenon, it may be remarked that our formula<lb break="yes"/>even affords a new proof that it may comprehend in the<lb break="yes"/>same law the observations made thirty-six years ago in<lb break="yes"/>Lapland, those which <persName key="lacaille_nld">Lacaille</persName> brought back in 1751 from<lb break="yes"/>the Cape of Good Hope, and those which M. <persName key="humboldt_av">Humboldt</persName>
+                        <lb break="yes"/>has lately made in <placeName key="amerika" >America</placeName>.</p>
+                    <lb break="yes"/>
+                    <p>In short, when we tried to represent the inclinations in<lb break="yes" />different latitudes by the supposition of a magnet infinitely<lb break="yes"/>small, very near the centre of the earth and perpendicular<lb break="yes"/>to the <placeName key="aequator">magnetic equator</placeName>, we did not pretend to consider<lb break="yes"/>that hypothesis as any thing real, but only as a mathema-<lb break="no"/>tical abstraction useful to connect the results, and proper to<lb break="yes" />ascertain in future whether any changes exist. In regard<lb break="yes" />to the declination and intensity, we freely confess that we<lb break="yes" />are entirely unacquainted with their laws or their causes;<lb break="yes" />and if any philosopher is so fortunate as to bring them to<lb break="yes" />one principle, which explains at the same time the varia-<lb break="no" />tions of the inclination, it will no doubt be one of the<lb break="yes" />greatest discoveries ever made. But this research, exceed-<lb break="no" />ingly difficult, requires perhaps before it be attempted more<lb break="yes"/>observations, and in particular more precise observations<lb break="yes"/>than have hitherto been collected. For this reason we<lb break="yes"/>thought we might present to the class the preceding re-<lb break="no"/>searches, imperfect as they are, begging it to receive them<lb break="yes"/>with indulgence. Should we be so happy as to find that<lb break="yes"/>our results appear of any utility, we propose to unite all the<lb break="yes"/>exact observations which have been made on this subject,<lb break="yes"/>in order to give the utmost degree of precision to the law<lb break="yes"/>we have discovered.</p>
+                    <lb break="yes"/>
+                    <pb n="To face Page 308" facs="#f0021"/>
+                    <p>
+                        <hi rendition="#et">[<hi rendition="#i">To face Page</hi> 308.</hi>
+                    </p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <table>
+                        <head>NORTHERN MAGNETIC HEMISPHERE.</head>
+                        <lb break="yes"/>
+                        <row>
+                            <cell role="label">Names of the<lb break="yes"/>Observers.</cell>
+                            <cell role="label">Places of<lb break="yes"/>Observation.</cell>
+                            <cell role="label">Latitudes reck-<lb break="no"/>oned from the<lb break="yes"/>
+                                <placeName key="aequator">Terrestrial<lb break="yes" />Equator</placeName>.</cell>
+                            <cell role="label">Longitudes<lb break="yes"/>reckoned from<lb break="yes"/>the Meridian<lb break="yes"/>of Paris.</cell>
+                            <cell role="label">Latitudes reck-<lb break="no"/>oned from the<lb break="yes"/>
+                                <placeName key="magnetaequator">Magnetic<lb break="yes" />Equator</placeName>.</cell>
+                            <cell role="label">East Longitudes<lb break="yes"/>reckoned from<lb break="yes"/>the Node of the<lb break="yes"/>
+                                <placeName key="magnetaequator">Magnetic Equa-<lb break="no" />tor</placeName> in the South<lb break="yes"/>Sea.</cell>
+                            <cell role="label">Number<lb break="yes"/>of Oscilla-<lb break="no" />tions in 10&#x2032;<lb break="yes"/>of Time.</cell>
+                            <cell role="label">Inclinations<lb break="yes"/>given by Theory</cell>
+                            <cell role="label">Inclinations<lb break="yes"/>given by direct<lb break="yes"/>Observation.</cell>
+                            <cell role="label">Differences in<lb break="yes"/>Degrees of the<lb break="yes"/>Centesimal<lb break="yes"/>Division.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell> </cell>
+                            <cell> </cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell> </cell>
+                            <cell>Centig. Division.</cell>
+                            <cell>Centig. Division.</cell>
+                            <cell> </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">
+                                <persName key="humboldt_av">Humboldt</persName> &#x2012;</cell>
+                            <cell>
+                                <placeName key="magnetaequator">Magnetic equator</placeName>
+                                <lb break="yes"/>in Peru &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">7° 1&#x2032; 0&#x2033; S</cell>
+                            <cell>80° 41&#x2032; 0&#x2033; W</cell>
+                            <cell>0° 0&#x2032; 0&#x2033;</cell>
+                            <cell>40° 17&#x2032; 56&#x2033;</cell>
+                            <cell>211</cell>
+                            <cell>0,000</cell>
+                            <cell>0,00</cell>
+                            <cell>0,00°</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">
+                                <persName key="laperouse_jfdgcd">Lapeyrouse</persName>
+                            </cell>
+                            <cell>
+                                <placeName key="magnetaequator">Magnetic equator</placeName>
+                                <lb break="yes"/>at sea between<lb break="yes"/>Brazil and the<lb break="yes"/>
+                                <placeName key="ascension">Island of Ascen-<lb break="no" />sion</placeName> &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">10 57 0</cell>
+                            <cell>25 25 0</cell>
+                            <cell>0 0 0</cell>
+                            <cell>95 33 56</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                            <cell>0,000</cell>
+                            <cell>0,00</cell>
+                            <cell>0,00</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="humboldt_av">Humboldt</persName> &#x2012;</cell>
+                            <cell>Tompenda &#x2012; &#x2012;</cell>
+                            <cell>5 31 4</cell>
+                            <cell>80 27 0</cell>
+                            <cell>1 30 54</cell>
+                            <cell>39 52 51</cell>
+                            <cell>213</cell>
+                            <cell>3,3642</cell>
+                            <cell>3,55</cell>
+                            <cell>0,1858</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Loxa &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>4 0 0</cell>
+                            <cell>81 12 0</cell>
+                            <cell>2 54 27</cell>
+                            <cell>38 55 0</cell>
+                            <cell>212</cell>
+                            <cell>6,440</cell>
+                            <cell>6,00</cell>
+                            <cell>+ 0,44</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Cuen&#x00E7;a &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>2 54 9</cell>
+                            <cell>80 43 0</cell>
+                            <cell>4 3 44</cell>
+                            <cell>39 13 52</cell>
+                            <cell>214</cell>
+                            <cell>8,97</cell>
+                            <cell>9,35</cell>
+                            <cell>&#x2014; 0,38</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Quito &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>3 13 17</cell>
+                            <cell>80 15 0</cell>
+                            <cell>6 46 59</cell>
+                            <cell>39 17 52</cell>
+                            <cell>218</cell>
+                            <cell>14,87</cell>
+                            <cell>14,85</cell>
+                            <cell>+ 0,02</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>St. Antonio &#x2012; &#x2012;</cell>
+                            <cell>0 0 0</cell>
+                            <cell>80 12 0</cell>
+                            <cell>7 0 53</cell>
+                            <cell>39 18 52</cell>
+                            <cell>220</cell>
+                            <cell>15,29</cell>
+                            <cell>16,02</cell>
+                            <cell>&#x2014; 0,73</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Popayan &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>2 24 33 N</cell>
+                            <cell>78 45 0</cell>
+                            <cell>9 36 16</cell>
+                            <cell>40 24 27</cell>
+                            <cell>223</cell>
+                            <cell>&#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>23,20</cell>
+                            <cell>&#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">The same &#x2012;</cell>
+                            <cell>St. Carlos del Rio<lb break="yes"/>Negro &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">1 52 4</cell>
+                            <cell>70 10 0</cell>
+                            <cell>10 13 14</cell>
+                            <cell>49 6 35</cell>
+                            <cell>216</cell>
+                            <cell>22,0278</cell>
+                            <cell>23,10</cell>
+                            <cell>&#x2014; 1,0722</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Javita &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>2 49 0</cell>
+                            <cell>70 30 0</cell>
+                            <cell>11 7 40</cell>
+                            <cell>48 39 6</cell>
+                            <cell>218</cell>
+                            <cell>23,87</cell>
+                            <cell>27,00</cell>
+                            <cell>&#x2014; 3,13</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Esmeralda &#x2012; &#x2012;</cell>
+                            <cell>3 13 26</cell>
+                            <cell>68 38 0</cell>
+                            <cell>11 45 45</cell>
+                            <cell>50 29 15</cell>
+                            <cell>217</cell>
+                            <cell>&#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>28,85</cell>
+                            <cell>&#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Santa Fe di Bagota</cell>
+                            <cell>4 36 5</cell>
+                            <cell>76 37 0</cell>
+                            <cell>12 5 13</cell>
+                            <cell>42 17 13</cell>
+                            <cell>226</cell>
+                            <cell>25,76</cell>
+                            <cell>26,97</cell>
+                            <cell>&#x2014; 1,21</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Carichana &#x2012; &#x2012;</cell>
+                            <cell>6 34 5</cell>
+                            <cell>70 18 0</cell>
+                            <cell>14 52 25</cell>
+                            <cell>48 21 53</cell>
+                            <cell>227</cell>
+                            <cell>31,08</cell>
+                            <cell>33,77</cell>
+                            <cell>&#x2014; 2,69</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">The same &#x2012;</cell>
+                            <cell>St. Thomas of<lb break="yes"/>Guyana &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">8 8 24</cell>
+                            <cell>66 26 0</cell>
+                            <cell>16 54 18</cell>
+                            <cell>52 7 26</cell>
+                            <cell>222</cell>
+                            <cell>34,77</cell>
+                            <cell>39,00</cell>
+                            <cell>&#x2014; 4,23</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Carthagena &#x2012; &#x2012;</cell>
+                            <cell>10 25 57</cell>
+                            <cell>78 2 0</cell>
+                            <cell>17 38 43</cell>
+                            <cell>39 55 13</cell>
+                            <cell>240</cell>
+                            <cell>36,07</cell>
+                            <cell>39,17</cell>
+                            <cell>&#x2014; 3,10</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Mexico &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>19 26 2</cell>
+                            <cell>101 22 0</cell>
+                            <cell>22 35 14</cell>
+                            <cell>14 36 41</cell>
+                            <cell>242</cell>
+                            <cell>44,87</cell>
+                            <cell>46,85</cell>
+                            <cell>&#x2014; 1,98</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="rossel_eped">De Rossel</persName> in<lb break="yes" />1791<lb break="yes"/>
+                                <persName key="humboldt_av">Humboldt</persName> in<lb break="yes" />1799</cell>
+                            <cell rendition="#rightBraced">St. Croix in Tene-<lb break="no"/>riffe &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#rightBraced">28 28 30</cell>
+                            <cell>18 37 0</cell>
+                            <cell>39 12 40</cell>
+                            <cell>72 0 26</cell>
+                            <cell>238</cell>
+                            <cell>64,9975</cell>
+                            <cell>69,85</cell>
+                            <cell>&#x2014; 4,35</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>
+                                <placeName key="atlantik">Atlantic Ocean</placeName> &#x2012;</cell>
+                            <cell>38 52 0</cell>
+                            <cell>16 20 0</cell>
+                            <cell>49 28 22</cell>
+                            <cell>106 30 10</cell>
+                            <cell>242</cell>
+                            <cell>74,29</cell>
+                            <cell>75,76</cell>
+                            <cell>&#x2014; 1,47</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>The same &#x2012;</cell>
+                            <cell>Paris &#x2012; &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>48 50 15</cell>
+                            <cell>0 0 0</cell>
+                            <cell>57 57 0</cell>
+                            <cell>128 22 47</cell>
+                            <cell>245</cell>
+                            <cell>80,69</cell>
+                            <cell>77,62</cell>
+                            <cell>+ 3,07</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">
+                                <persName key="euler_ja">Euler junior</persName>
+                            </cell>
+                            <cell>Petersburgh in<lb break="yes"/>1755 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">59 56 23</cell>
+                            <cell>27 58 0 E</cell>
+                            <cell>64 41 0</cell>
+                            <cell>173 30 25</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                            <cell>85,21</cell>
+                            <cell>81,67</cell>
+                            <cell>+ 3,54</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">
+                                <persName key="mallet_01">Mallet</persName> &#x2012; &#x2012;</cell>
+                            <cell>Kola, in Lapland,<lb break="yes"/>in 1769 &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">68 52 30</cell>
+                            <cell>30 40 30 E</cell>
+                            <cell>71 44 36</cell>
+                            <cell>179 9 29</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                            <cell>89,59</cell>
+                            <cell>86,39</cell>
+                            <cell>+ 3,20</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">Lord <persName key="mulgrave_cjp">Mul-<lb break="no"/>grave</persName>
+                            </cell>
+                            <cell>In an island near<lb break="yes"/>Spitzbergen in<lb break="yes" />1773 &#x2012; &#x2012; &#x2012;</cell>
+                            <cell rendition="#leftBraced">79 50 00</cell>
+                            <cell>7 38 00 E</cell>
+                            <cell>83 9 50</cell>
+                            <cell>127 40 5</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                            <cell>96,1882</cell>
+                            <cell>91,1111</cell>
+                            <cell>+ 5,0771</cell>
+                        </row>
+                    </table>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <table>
+                        <head>SOUTHERN MAGNETIC HEMISPHERE.</head>
+                        <lb break="yes"/>
+                        <row>
+                            <cell role="label">Names of the<lb break="yes"/>Observers.</cell>
+                            <cell role="label">Places of<lb break="yes"/>Observation.</cell>
+                            <cell role="label">Latitudes reck-<lb break="no"/>oned from the<lb break="yes"/>
+                                <placeName key="aequator">Terrestrial<lb break="yes" />Equator</placeName>.</cell>
+                            <cell role="label">Longitudes<lb break="yes"/>reckoned from<lb break="yes"/>the Meridian<lb break="yes"/>of Paris.</cell>
+                            <cell role="label">South Latitudes<lb break="yes"/>reckoned from<lb break="yes"/>the <placeName key="magnetaequator">Magnetic<lb break="yes"/>Equator</placeName>.</cell>
+                            <cell role="label">East Longitudes<lb break="yes"/>reckoned from<lb break="yes"/>the Node of the<lb break="yes"/>
+                                <placeName key="magnetaequator">Magnetic Equa-<lb break="no" />tor</placeName> in the South<lb break="yes"/>Sea.</cell>
+                            <cell role="label">Inclinations<lb break="yes"/>given by Theory</cell>
+                            <cell role="label">Inclinations<lb break="yes"/>given by direct<lb break="yes"/>Observation.</cell>
+                            <cell role="label">Differences in<lb break="yes"/>Degrees of the<lb break="yes"/>Centesimal<lb break="yes"/>Division.</cell>
+                            <cell role="label">Number of<lb break="yes"/>Oscillations<lb break="yes" />in 10&#x2032; of<lb break="yes"/>Time.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell> </cell>
+                            <cell> </cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell>Old Division.</cell>
+                            <cell>Centig. Division.</cell>
+                            <cell>Centig. Division.</cell>
+                            <cell> </cell>
+                            <cell> </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="humboldt_av">Humboldt</persName> &#x2012;</cell>
+                            <cell>Lima &#x2012; &#x2012; &#x2012;</cell>
+                            <cell>12° 2&#x2032; 31&#x2033; S</cell>
+                            <cell>79° 33&#x2032; 0&#x2033; W</cell>
+                            <cell>4° 48&#x2032; 36&#x2033; S</cell>
+                            <cell>41° 42&#x2032; 51&#x2033;</cell>
+                            <cell>10,6145</cell>
+                            <cell>11,10</cell>
+                            <cell>0,4855°</cell>
+                            <cell>219</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="rossel_eped">Derossel</persName>, ex-<lb break="no" />pedition of<lb break="yes"/>
+                                <persName key="entrecasteau_jbd">Entrecasteaux</persName>
+                            </cell>
+                            <cell rendition="#leftBraced">Sourabaya in the<lb break="yes"/>Isle of Java &#x2012;</cell>
+                            <cell rendition="#leftBraced">7 14 23</cell>
+                            <cell>110 21 28 E</cell>
+                            <cell>15 37 22</cell>
+                            <cell>228 56 50</cell>
+                            <cell>32,4660</cell>
+                            <cell>28,5185</cell>
+                            <cell>+ 3,9475</cell>
+                            <cell>204</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="bayly_w">Bayli</persName> in 1775</cell>
+                            <cell>Cape of Good Hope</cell>
+                            <cell>33 55 30</cell>
+                            <cell>16 10 0 E</cell>
+                            <cell>26 15 34</cell>
+                            <cell>131 38 53</cell>
+                            <cell>49,58</cell>
+                            <cell>47,78</cell>
+                            <cell>+ 1,8</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="laperouse_jfdgcd">Lapeyrouse</persName>
+                            </cell>
+                            <cell>Bay of Talcaguara</cell>
+                            <cell>36 42 0</cell>
+                            <cell>75 53 0 W</cell>
+                            <cell>28 42 14</cell>
+                            <cell>49 0 5</cell>
+                            <cell>52,8889</cell>
+                            <cell>55,555</cell>
+                            <cell>&#x2014; 2,6667</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rendition="#rightBraced">The same &#x2012;</cell>
+                            <cell>In sight of the Isle<lb break="yes"/>of Patagonians</cell>
+                            <cell rendition="#leftBraced">52 21 26</cell>
+                            <cell>69 38 0 W</cell>
+                            <cell>44 30 3</cell>
+                            <cell>57 13 52</cell>
+                            <cell>70,04</cell>
+                            <cell>68,89</cell>
+                            <cell>+ 1,15</cell>
+                            <cell>&#x2012; &#x2012; &#x2012;</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>
+                                <persName key="rossel_eped">Derossel</persName>, ex-<lb break="no" />pedition of<lb break="yes"/>
+                                <persName key="entrecasteau_jbd">Entrecasteaux</persName>
+                            </cell>
+                            <cell rendition="#leftBraced">New Holland &#x2012;</cell>
+                            <cell rendition="#leftBraced">43 34 30</cell>
+                            <cell>144 36 33 W</cell>
+                            <cell>54 12 43</cell>
+                            <cell>263 21 18</cell>
+                            <cell>78,7037</cell>
+                            <cell>77,9667</cell>
+                            <cell>&#x2014; 0,737</cell>
+                            <cell>265</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>The results comprehended in this table extend from 38° 55&#x2032; to 263° 21&#x2032; 18&#x2033; east longitude, reckoned from the node of the <placeName key="magnetaequator">magnetic equator</placeName> in the South Sea:<lb break="yes"/>consequently, they comprehend more than 224°, and their agreement shows that in this extent the <placeName key="magnetaequator">magnetic equator</placeName> is sensibly a great circle of the earth. We have<lb break="yes"/>not yet calculated the observations for the 36 degrees of longitude which would complete the contour of that <placeName key="aequator">equator</placeName>.&#x2014;For the southern hemisphere we have given<lb break="yes"/>the observations, made with great care, by M. <persName key="rossel_eped">Derossel</persName>, during the expedition of <persName key="entrecasteau_jbd" >d&#x2019;Entrecasteaux</persName>. It results from them that the intensity of the terrestrial magnetism<lb break="yes"/>increases also in that hemisphere, when one removes from the <placeName key="magnetaequator" >magnetic equator</placeName>. The inclination observed by M. <persName key="rossel_eped">Derossel</persName> at Teneriffe being exactly the same as that<lb break="yes"/>observed by M. <persName key="humboldt_av" >Humboldt</persName> eight years after, this agreement has allowed us to render comparable the results obtained by these philosophers in regard to the intensity:<lb break="yes"/>for this purpose we have multiplied the results of M. <persName key="rossel_eped">Derossel</persName>, by giving the numbers which he and M. <persName key="humboldt_av">Humboldt</persName> observed at Teneriffe. The result of this calcula-<lb break="no"/>tion will be found in the column of oscillations. It is there again seen that this ph&#x00E6;nomenon is very much modified by local circumstances, and incomparably more<lb break="yes"/>than the inclination. The increase of the intensity deduced from the observations of M. <persName key="humboldt_av" >Humboldt</persName> is less than that which would result from our hypothesis; and<lb break="yes"/>that given by the observations of M. <persName key="rossel_eped">Derossel</persName> is too great: which proves that nothing can be determined in regard to the law of this increase. The influence of<lb break="yes"/>local circumstances on the inclination is particularly sensible in the isles. The declination and intensity of the magnetic forces experience there also sensible anoma-<lb break="no"/>lies. This fact is indicated by several observations, and in particular by those which M. <persName key="rossel_eped">Derossel</persName> made at Sourabaya in the Island of Java. In a word, by comparing<lb break="yes"/>the results of our formula with the observations of different navigators, the latter must be examined with critical accuracy, and must not be admitted but when<lb break="yes"/>they agree with each other and with those of other navigators: without this precaution we should every moment fall into great errors, occasioned by the inco-<lb break="no"/>herency of the results: besides, we present the preceding only as a first approximation.</p>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

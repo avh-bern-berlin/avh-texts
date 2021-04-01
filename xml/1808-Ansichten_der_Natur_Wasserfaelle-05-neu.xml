@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="83" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Die Knochenhöhle von <placeName key="ataruipe" >Ataruipe</placeName>
+                        <lb break="yes"/>in Amerika.</hi>
+                    <lb break="yes"/>(Aus <hi rendition="#g">Alexander von <persName key="humboldt_av">Humboldt</persName>&#x2019;s</hi> neue&#x017F;ten Schriften.)</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">A</hi>m &#x017F;üdlichen Eingange des Raudals von Atu-<lb break="no"/>res, am rechten Ufer des Flu&#x017F;&#x017F;es, liegt die, unter den<lb break="yes"/>Indianern weit berufene Höhle von <placeName key="ataruipe">Ataruipe</placeName>. Die<lb break="yes"/>Gegend umher hat einen großen und ern&#x017F;ten Natur-<lb break="no"/>character, der &#x017F;ie gleich&#x017F;am zu einem Nationalbegräb-<lb break="no"/>ni&#x017F;&#x017F;e eignet. Man erklimmt müh&#x017F;am, &#x017F;elb&#x017F;t nicht ohne<lb break="yes"/>Gefahr herabzurollen, eine &#x017F;teile, völlig nackte Granit-<lb break="no"/>wand. Es würde kaum möglich &#x017F;eyn, auf der glatten<lb break="yes"/>Fläche fe&#x017F;ten Fuß zu fa&#x017F;&#x017F;en, träten nicht große Feld-<lb break="no"/>&#x017F;pathkri&#x017F;talle, der Verwitterung trotzend, zolllang aus<lb break="yes"/>dem Ge&#x017F;teine hervor.</p>
+                <lb break="yes"/>
+                <p>Kaum i&#x017F;t die Kuppe erreicht, &#x017F;o wird man durch<lb break="yes"/>eine weite Aus&#x017F;icht über die umliegende Gegend über-<lb break="no" />ra&#x017F;cht. Aus dem &#x017F;chäumenden Flußbette erheben &#x017F;ich<lb break="yes"/>mit Wald ge&#x017F;chmückte Hügel. Jen&#x017F;eit des Stromes,<lb break="yes"/>über das we&#x017F;tliche Ufer hinweg, ruht der Blick auf<lb break="yes"/>der unermeßlichen Grasflur des Meta. Am Horizont<lb break="yes"/>er&#x017F;cheint wie drohend aufziehendes Gewölk das Gebirge<lb break="yes"/>Uniama. So die Ferne; aber nahe umher i&#x017F;t alles<lb break="yes"/>öde und eng. Im tiefgefurchten Thale &#x017F;chweben ein-<lb break="no"/>&#x017F;am der Geier und die krächzende Caprimulge. An<lb break="yes"/>der nackten Felswand &#x017F;chleicht ihr &#x017F;chwindender Schat-<lb break="no"/>ten hin.</p>
+                <lb break="yes"/>
+                <p>Die&#x017F;er Ke&#x017F;&#x017F;el i&#x017F;t von Bergen begränzt, deren ab-<lb break="no"/>gerundete Gipfel ungeheure Granitkugeln tragen.<lb break="yes" />Der Durchme&#x017F;&#x017F;er die&#x017F;er Kugeln beträgt 40 bis 50<lb break="yes"/>Fuß. Sie &#x017F;cheinen die Unterlage nur in einem einzigen<lb break="yes"/>Punkte zu berühren, eben, als müßten &#x017F;ie, bei dem<lb break="yes"/>&#x017F;chwäch&#x017F;ten Erd&#x017F;toße, herabrollen.</p>
+                <lb break="yes"/>
+                <p>Der hintere Theil des Felsthals i&#x017F;t mit dichtem<lb break="yes"/>Laubholze bedeckt. An die&#x017F;em &#x017F;chattigen Orte öffnet<lb break="yes" />&#x017F;ich die Höhle von <placeName key="ataruipe">Ataruipe</placeName>; eigentlich nicht eine<lb break="yes"/>Höhle, &#x017F;ondern ein Gewölbe, eine weit überhängende<lb break="yes"/>Klippe, eine Bucht, welche die Wa&#x017F;&#x017F;er, als &#x017F;ie ein&#x017F;t<lb break="yes"/>die&#x017F;e Höhe erreichten, ausgewa&#x017F;chen haben. Die&#x017F;er<lb break="yes"/>Ort i&#x017F;t die Gruft eines vertilgten Völker&#x017F;tammes.<lb break="yes"/>Wir zählten ohngefähr 600 wohlerhaltene Skelette, in<lb break="yes"/>eben &#x017F;o vielen Körben, welche von den Stielen des<lb break="yes"/>Palmenlaubes geflochten &#x017F;ind. Die&#x017F;e Körper, die die<lb break="yes"/>Indianer Mapires nennen, bilden eine Art viereckiger<lb break="yes"/>Säcke, die nach dem Alter des Ver&#x017F;torbenen von ver-<lb break="no"/>&#x017F;chiedener Größe &#x017F;ind. Selb&#x017F;t neugeborene Kinder ha-<lb break="no"/>ben ihre eigene Mapire. Ihre Skelette &#x017F;ind &#x017F;o voll-<lb break="no"/>&#x017F;tändig, daß keine Rippe, keine Phalange fehlt.</p>
+                <lb break="yes"/>
+                <p>Die Knochen &#x017F;ind auf dreierlei Wei&#x017F;e zubereitet;<lb break="yes" />theils gebleicht, theils mit Onoto, dem Pigment der<lb break="yes"/>Bixa Orellana, rothgefärbt, theils mumienartig zwi-<lb break="no"/>&#x017F;chen wohlriechendem Harze in Pi&#x017F;angblätter einge-<lb break="no"/>knetet.</p>
+                <lb break="yes"/>
+                <cb/>
+                <p>Die Indianer ver&#x017F;ichern, man grabe den fri&#x017F;chen<lb break="yes" />Leichnam auf einige Monate in feuchte Erde, welche<lb break="yes"/>das Muskelflei&#x017F;ch allmählig verzehre; dann &#x017F;charre man<lb break="yes" />ihn aus, und &#x017F;chabe mit &#x017F;charfen Steinen den Re&#x017F;t<lb break="yes"/>des Flei&#x017F;ches von den Knochen ab. Dies &#x017F;ey noch<lb break="yes"/>der Gebrauch mancher Horden der Guayana. Neben<lb break="yes"/>den Mapires oder Körben findet man auch Urnen von<lb break="yes"/>halbgebranntem Thone, welche die Knochen von gan-<lb break="no" />zen Familien zu enthalten &#x017F;cheinen.</p>
+                <lb break="yes"/>
+                <p>Die größern die&#x017F;er Urnen &#x017F;ind 3 Fuß hoch und<lb break="yes" />5&#x00BD; Fuß lang, von angenehmer ovaler Form, grün-<lb break="no"/>lich, mit Henkeln in Ge&#x017F;talt von Krokodilen und<lb break="yes"/>Schlangen, an dem obern Rande mit Meandern und<lb break="yes"/>Labyrinthen ge&#x017F;chmückt. Die&#x017F;e Verzierungen &#x017F;ind ganz<lb break="yes"/>denen ähnlich, welche die Wände des mexikani&#x017F;chen<lb break="yes"/>Palla&#x017F;tes bei Mitla bedecken. Man findet &#x017F;ie unter<lb break="yes"/>allen Zonen, auf den ver&#x017F;chieden&#x017F;ten Stuffen men&#x017F;ch-<lb break="no"/>licher Kultur; unter Griechen und Römern, am &#x017F;oge-<lb break="no"/>nannten Tempel des <hi rendition="#aq">Deus rediculus</hi> bei Rom, wie<lb break="yes"/>auf den Schildern der Otahaiter; überall, wo rythmi-<lb break="no"/>&#x017F;che Wiederholung regelmäßiger Formen dem Auge<lb break="yes"/>&#x017F;chmeichelte. Die Ur&#x017F;achen die&#x017F;er Aehnlichkeiten beru-<lb break="no"/>hen, wie ich an einem andern Orte entwickelt habe,<lb break="yes"/>mehr auf p&#x017F;ychi&#x017F;chen Gründen, auf der innern Natur<lb break="yes" />un&#x017F;erer Gei&#x017F;tesanlagen, als &#x017F;ie Gleichheit der Ab&#x017F;tam-<lb break="no"/>mung und altes Verkehr der Völker bewei&#x017F;en.</p>
+                <lb break="yes"/>
+                <p>Un&#x017F;ere Dolmet&#x017F;cher konnten keine &#x017F;ichere Auskunft<lb break="yes"/>über das Alter die&#x017F;er Gefäße geben. Die mehr&#x017F;ten<lb break="yes"/>Skelette &#x017F;chienen indeß nicht über hundert Jahr alt<lb break="yes"/>zu &#x017F;eyn. Es geht die Sage unter den Guareken-In-<lb break="no"/>dianern, die tapferen Aturer haben &#x017F;ich, von men&#x017F;chen-<lb break="no"/>fre&#x017F;&#x017F;enden Kariben bedrängt, auf die Klippen der Ka-<lb break="no"/>tarakten gerettet; ein trauriger Wohn&#x017F;itz, in welchem<lb break="yes"/>der bedrängte Völker&#x017F;tamm und mit ihm &#x017F;eine Sprache<lb break="yes"/>unterging. In dem unzugänglich&#x017F;ten Theile des Rau-<lb break="no"/>dals befinden &#x017F;ich ähnliche Grüfte; ja es i&#x017F;t wahr-<lb break="no"/>&#x017F;cheinlich, daß die letzte Familie der Aturer er&#x017F;t<lb break="yes"/>&#x017F;pät ausge&#x017F;torben &#x017F;ey. Denn in Maypures (ein &#x017F;on-<lb break="no" />derbares Factum) lebt noch ein alter Papagei, von<lb break="yes"/>dem die Eingebornen behaupten, daß man ihn darum<lb break="yes"/>nicht ver&#x017F;tehe, weil er die Sprache der Aturer rede.</p>
+                <lb break="yes"/>
+                <p>Wir verließen die Höhle bei einbrechender Nacht,<lb break="yes"/>nachdem wir mehrere Schädel und das voll&#x017F;tändige<lb break="yes"/>Skelett eines bejahrten Mannes, zum größten Aer-<lb break="no"/>gerniß un&#x017F;erer indiani&#x017F;chen Führer, ge&#x017F;ammelt hatten.<lb break="yes"/>Einer die&#x017F;er Schädel i&#x017F;t von Herrn <persName key="blumenbach_jf" >Blumenbach</persName> in<lb break="yes"/>&#x017F;einem vortrefflichen kraniologi&#x017F;chen Werke abgebildet<lb break="yes"/>worden. Das Skelett &#x017F;elb&#x017F;t i&#x017F;t, wie ein großer Theil<lb break="yes" />un&#x017F;erer Sammlungen, in einem Schiffbruch unterge-<lb break="no" />gangen, der an der <placeName key="afrika">afrikani&#x017F;chen Kü&#x017F;te</placeName> un&#x017F;erm Freunde<lb break="yes"/>und ehemaligen Rei&#x017F;egefährten, dem jungen Franzis-<lb break="no"/>kanermönch, <persName key="gonzalez_j">Juan Gonzalez</persName>, das Leben ko&#x017F;tete.</p>
+                <lb break="yes"/>
+                <p>Wie im Vorgefühl die&#x017F;es &#x017F;chmerzhaften Verlu&#x017F;tes,<lb break="yes"/>in ern&#x017F;ter Stimmung entfernten wir uns von der<lb break="yes"/>
+                    <pb n="84" facs="#f0002"/> Gruft eines untergegangenen Völker&#x017F;tammes. Es war<lb break="yes"/>einer der heitern und kühlen Nächte, die unter den<lb break="yes"/>Wendekrei&#x017F;en &#x017F;o gewöhnlich &#x017F;ind. Mit farbigen Rin-<lb break="no"/>gen umgeben, &#x017F;tand die Mon&#x017F;cheibe hoch im Zenith.<lb break="yes"/>Sie erleuchtete den Saum des Nebels, der in &#x017F;charfen<lb break="yes"/>Umri&#x017F;&#x017F;en, wolkenartig den &#x017F;chäumenden Fluß bedeckte.<lb break="yes"/>Zahllo&#x017F;e In&#x017F;ekten go&#x017F;&#x017F;en ihr röthliches Phosphorlicht<lb break="yes" />über die krautbedeckte Erde. Von lebendigem Feuer<lb break="yes"/>glühte der Boden, als habe die &#x017F;ternvolle Himmels-<lb break="no"/>decke &#x017F;ich auf die Grasflur niederge&#x017F;enkt. Rankende<lb break="yes"/>Bignonien, duftende Vanille, und gelbblühende Ba-<lb break="no"/>ni&#x017F;terien &#x017F;chmücken den Eingang der Höhle. Ueber<lb break="yes"/>dem Grabe rau&#x017F;chen die Gipfel der Palmen.</p>
+                <lb break="yes"/>
+                <p>So &#x017F;terben dahin die Ge&#x017F;chlechter der Men&#x017F;chen.<lb break="yes"/>Es verhallt die rühmliche Kunde der Völker. Doch<lb break="yes" />wenn jede Blüthe des Gei&#x017F;tes welkt, wenn im Sturm<lb break="yes"/>der Zeiten die Werke &#x017F;chaffender Kun&#x017F;t zer&#x017F;tieben, &#x017F;o<lb break="yes"/>ent&#x017F;prießt ewig neues Leben aus dem Schooße der<lb break="yes"/>Erde. Ra&#x017F;tlos entfaltet ihre Knospen die zeugende<lb break="yes"/>Natur &#x2014; unbekümmert ob der frevelnde Men&#x017F;ch (ein<lb break="yes"/>nie ver&#x017F;öhntes Ge&#x017F;chlecht) die reifende Frucht zertritt.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

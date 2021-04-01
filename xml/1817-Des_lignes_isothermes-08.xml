@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ueber die isothermischen Linien</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/132876787">
+                        <surname>Welge</surname>
+                        <forename>Jobst</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1817-Des_lignes_isothermes-6</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Ueber die isothermischen Linien</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Nürnberg</pubPlace>
+                        <date type="publication">1819</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Neues Journal für Chemie und Physik</title>
+                        <biblScope unit="volume">25</biblScope>
+                        <biblScope unit="issue">3</biblScope>
+                        <biblScope unit="pages">254–268</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.1" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.1" when="2018-10-10" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung für Verlag.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-11" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="254" facs="#f0001"/>
+            <lb break="yes"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#g">Ueber die<lb break="yes"/>isothermischen Linien,<lb break="yes"/>von<lb break="yes"/>
+                        <hi rendition="#i">Alexander von Humboldt.</hi>
+                    </hi>
+                    <lb break="yes"/>(Nach dem Auszuge in den Annales de Chimie et de Physi-<lb break="no"/>que T. V. S. 102 übersetzt vom Dr. <hi rendition="#i" >Fahri,</hi> Sekretär der<lb break="yes"/>physikalischen Gesellschaft von Studierenden in Erlangen.)</head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">D</hi>er Leser wird am Ende des Heftes eine Karte fin-<lb break="no"/>den, die wir dem Herrn <hi rendition="#i">von Humboldt</hi> verdanken,<lb break="yes"/>auf welcher er durch Zeichnung einige seiner merk-<lb break="no"/>würdigen Resultate über die Gestalt und Lage der<lb break="yes"/>isothermischen Linien, oder der Linien von gleicher<lb break="yes"/>Wärme, dargestellt hat. Um die Einsicht darüber zu<lb break="yes"/>erleichtern, werden wir einen kurzen Auszug des Auf-<lb break="no"/>satzes beifügen, welchen dieser berühmte Reisende in<lb break="yes"/>einen Band der Memoires von Arcueil, der so eben<lb break="yes" />erschienen ist, hat einrücken lassen.</p>
+                <lb break="yes"/>
+                <p>Der Gegenstand, womit uns Hr. von <hi rendition="#i">Humboldt</hi>
+                    <lb break="yes"/>näher bekannt macht, nicht theoretisch sondern ge-<lb break="no"/>mäß den neuesten Beobachtungen, ist die Vertheilung<lb break="yes"/>der Wärme auf dem Erdball. Zu dem Ende prüft er<lb break="yes" />anfangs die verschiedenen Methoden, denen die Phy-<lb break="no"/>siker bei der Bestimmung der <hi rendition="#i">mittlern Temperatur</hi>
+                    <lb break="yes"/>gefolgt sind.</p>
+                <lb break="yes"/>
+                <pb n="255" facs="#f0002"/>
+                <p>Die <hi rendition="#i">mittlere Temperatur eines Tages</hi> ist, mathe-<lb break="no"/>matisch diesen Ausdruck genommen, das Mittel der<lb break="yes" />correspondirenden Temperaturen aus allen Zeitabschnit-<lb break="no"/>ten, aus denen ein Tag zusammengesetzt ist.</p>
+                <lb break="yes"/>
+                <p>Wenn man eine <hi rendition="#i">Minute</hi> für die Dauer eines die-<lb break="no"/>ser Zeitabschnitte annähme, so würde man durch 1440<lb break="yes"/>= 24 × 60 die Summe der 1440 thermometrischen<lb break="yes" />Beobachtungen, die von Minute zu Minute unternom-<lb break="no"/>men wurden, dividiren, und man erhielte so die ge-<lb break="no"/>suchte Zahl: die Summe aller dieser einzelnen Resul-<lb break="no"/>tate, durch 365 dividirt, würde die <hi rendition="#i">mittlere Tempera-<lb break="no"/>tur des Jahrs</hi> geben.</p>
+                <lb break="yes"/>
+                <p>Da aber im Allgemeinen die größten Unterschiede<lb break="yes"/>thermometrischer Veränderungen an einem Tage sich<lb break="yes"/>sehr nahe kommen, so sieht man ein, daß die nämli-<lb break="no"/>chen Wärmegrade einer großen Anzahl von Zeitab-<lb break="no"/>schnitten zukommen werden, deren jeder auf das zu<lb break="yes"/>entscheidende Mittel nach Maaßgabe seines Werthes<lb break="yes"/>und seiner Dauer Einfluß hat. Demnach kann man<lb break="yes" />jene Mittelzahl mit Genauigkeit erhalten, selbst wenn<lb break="yes"/>die Zeit zwischen den einzelnen Beobachtungen viel<lb break="yes"/>länger ist, als wir so eben hier angenommen haben.</p>
+                <lb break="yes"/>
+                <p>Hr. <hi rendition="#i">von Humboldt</hi> hat aus diesem Gesichtspunkt<lb break="yes"/>mehrere Reihen von thermometrischen Beobachtungen,<lb break="yes"/>die von Stunde zu Stunde und zu verschiedenen Jah-<lb break="no"/>reszeiten unter dem Aequator und zu Paris vorgenom-<lb break="no"/>men wurden, genau untersucht. Er verglich die nach<lb break="yes"/>der vorhergehenden Methode berechneten Mittelzahlen,<lb break="yes"/>wobei die Dauer jeder einzelnen Temperatur in Rech-<lb break="no"/>nung kam, mit denen, welche auf die sonst gewöhn-<lb break="no" />liche Weise erhalten werden. Es ging daraus her-<lb break="no"/>vor, daß die halbe Summe der höchsten und niedrig-<lb break="no"/>sten Temperatur eines jeden Tages (nämlich die um<lb break="yes"/>
+                    <pb n="256" facs="#f0003"/> 2 Uhr Nachmittags und die beim Aufgang der Sonne)<lb break="yes"/>im Allgemeinen nur um einige Zehntelsgrade von der<lb break="yes"/>strengberechneten Mittelzahl abweicht, und an deren<lb break="yes"/>Stelle gesetzt werden kann.</p>
+                <lb break="yes"/>
+                <p>Indem Herr von <hi rendition="#i">Humboldt</hi> eine große Menge<lb break="yes" />von Beobachtungen, die er zwischen den 46° und 48°<lb break="yes"/>der Breite machte, zusammenrechnete, hat er gefun-<lb break="no"/>den, daß der einzige Zeitraum beim Niedergang der<lb break="yes"/>Sonne eine mittlere Temperatur giebt, welche nur um<lb break="yes"/>einige Zehntelsgrade von derjenigen verschieden ist,<lb break="yes"/>welche aus den Beobachtungen beim Aufgang der<lb break="yes"/>Sonne und den um 2 Uhr Nachmittags abgeleitet<lb break="yes"/>wurde.</p>
+                <lb break="yes"/>
+                <p>Da es selten ist, daß Reisende an jedem Orte<lb break="yes"/>Gelegenheit haben, Beobachtungen in hinreichender<lb break="yes"/>Anzahl zu sammeln, um daraus die mittlere Tempera-<lb break="no"/>tur des Jahres ableiten zu können, so war es wichtig<lb break="yes"/>nachzusuchen, welche Monate sie uns unmittelbar ver-<lb break="no"/>schaffen können. Die folgende Tafel zeigt, daß bis<lb break="yes"/>selbst zu großen Breitengraden, die Monate April<lb break="yes" />und October, aber vorzüglich der letztere, diese Ei-<lb break="no"/>genheit haben.</p>
+                <lb break="yes"/>
+                <pb n="257" facs="#f0004"/>
+                <table rendition="#v">
+                    <row>
+                        <cell rows="2">
+                            <hi rendition="#g">Orte.</hi>
+                        </cell>
+                        <cell cols="3" rendition="#bottomBraced">
+                            <hi rendition="#i">Mittlere Temperatur.</hi>
+                        </cell>
+                        <cell rows="2">
+                            <hi rendition="#g">Orte.</hi>
+                        </cell>
+                        <cell cols="3" rendition="#bottomBraced">
+                            <hi rendition="#i">Mittlere Temperatur</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>des<lb break="yes"/>Jahres</cell>
+                        <cell>des<lb break="yes"/>Octo-<lb break="no"/>bers</cell>
+                        <cell>des<lb break="yes"/>Aprils</cell>
+                        <cell>des<lb break="yes"/>Jahres</cell>
+                        <cell>des<lb break="yes"/>Octo-<lb break="no"/>bers</cell>
+                        <cell>des<lb break="yes"/>Aprils</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cairo ...</cell>
+                        <cell>22°, 4</cell>
+                        <cell>22°, 4</cell>
+                        <cell>25°, 5</cell>
+                        <cell>Göttingen .</cell>
+                        <cell>8°, 3</cell>
+                        <cell>8°, 4</cell>
+                        <cell>6°, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Algier ..</cell>
+                        <cell>21, 0</cell>
+                        <cell>22, 3</cell>
+                        <cell>17, 0</cell>
+                        <cell>Franneker .</cell>
+                        <cell>11, 3</cell>
+                        <cell>12, 7</cell>
+                        <cell>10, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Natchez ..</cell>
+                        <cell>18, 9</cell>
+                        <cell>20, 2</cell>
+                        <cell>19, 1</cell>
+                        <cell>Copenhagen</cell>
+                        <cell>7, 6</cell>
+                        <cell>9, 3</cell>
+                        <cell>5, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rom ...</cell>
+                        <cell>15, 8</cell>
+                        <cell>16, 7</cell>
+                        <cell>13, 0</cell>
+                        <cell>Stockholm .</cell>
+                        <cell>5, 7</cell>
+                        <cell>5, 8</cell>
+                        <cell>3, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Mailand ..</cell>
+                        <cell>13, 2</cell>
+                        <cell>14, 5</cell>
+                        <cell>13, 1</cell>
+                        <cell>Christiania .</cell>
+                        <cell>5, 9</cell>
+                        <cell>4, 0</cell>
+                        <cell>5, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cincinnati .</cell>
+                        <cell>12, 0</cell>
+                        <cell>12, 7</cell>
+                        <cell>13, 8</cell>
+                        <cell>Upsala ...</cell>
+                        <cell>5, 4</cell>
+                        <cell>6, 3</cell>
+                        <cell>4, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Philadelphia</cell>
+                        <cell>11, 9</cell>
+                        <cell>12, 2</cell>
+                        <cell>12, 0</cell>
+                        <cell>Quebec ..</cell>
+                        <cell>5, 5</cell>
+                        <cell>6, 0</cell>
+                        <cell>4, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neu York</cell>
+                        <cell>12, 1</cell>
+                        <cell>12, 5</cell>
+                        <cell>9, 5</cell>
+                        <cell>Petersburg .</cell>
+                        <cell>3, 8</cell>
+                        <cell>3, 9</cell>
+                        <cell>2, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pekin ...</cell>
+                        <cell>12, 6</cell>
+                        <cell>13, 0</cell>
+                        <cell>13, 9</cell>
+                        <cell>Abo ....</cell>
+                        <cell>5, 2</cell>
+                        <cell>5, 0</cell>
+                        <cell>4, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ofen ...</cell>
+                        <cell>10, 6</cell>
+                        <cell>11, 3</cell>
+                        <cell>9, 5</cell>
+                        <cell>Drontheim .</cell>
+                        <cell>4, 4</cell>
+                        <cell>4, 0</cell>
+                        <cell>1, 3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>London ..</cell>
+                        <cell>11, 0</cell>
+                        <cell>11, 3</cell>
+                        <cell>8, 9</cell>
+                        <cell>Uléo ....</cell>
+                        <cell>0, 6</cell>
+                        <cell>3, 3</cell>
+                        <cell>1, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris ...</cell>
+                        <cell>10, 6</cell>
+                        <cell>10, 7</cell>
+                        <cell>9, 0</cell>
+                        <cell>Uméo ...</cell>
+                        <cell>0, 7</cell>
+                        <cell>3, 2</cell>
+                        <cell>1, 1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Genf ...</cell>
+                        <cell>9, 6</cell>
+                        <cell>9, 6</cell>
+                        <cell>7, 6</cell>
+                        <cell>Cap Nord. .</cell>
+                        <cell>0, 0</cell>
+                        <cell>0, 0</cell>
+                        <cell>&#x2014; 1, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Dublin ..</cell>
+                        <cell>9, 2</cell>
+                        <cell>9, 3</cell>
+                        <cell>7, 4</cell>
+                        <cell>Enontekies</cell>
+                        <cell>&#x2014;2, 8</cell>
+                        <cell>&#x2014;2, 5</cell>
+                        <cell>&#x2014;3, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Edinburg.</cell>
+                        <cell>8, 8</cell>
+                        <cell>9, 0</cell>
+                        <cell>8, 3</cell>
+                        <cell>Nain ....</cell>
+                        <cell>&#x2014;3, 1</cell>
+                        <cell>+ 0,6</cell>
+                        <cell>&#x2014; 2, 5</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Die mittlern Temperaturen der Jahre sind viel<lb break="yes"/>gleicher als man nach dem Zeugniß unserer Sinne<lb break="yes"/>und der verschiedenen Ergiebigkeit der Ernten an-<lb break="no"/>nehmen möchte. Die größten Abweichungen betragen<lb break="yes"/>kaum 2° der hunderttheiligen Scale.</p>
+                <lb break="yes"/>
+                <pb n="258" facs="#f0005"/>
+                <p>In Paris waren die mittlern Temperaturen der<lb break="yes"/>Jahre 1803 bis 1816: +10°, 6 ... 11°, 1 ... 9°, 7.<lb break="yes"/>.. 11°, 9 ... 10°, 8 ... 10°, 3 ... 10°, 5 ... 10°, 5<lb break="yes"/>... 11°, 5 ... 9°, 9 ... 9°, 9 ... 9°, 7 ... 10°, 5<lb break="yes"/>... 9°, 4.</p>
+                <lb break="yes"/>
+                <p>Zu Genf war in den Jahren 1803&#x2014;1815 die<lb break="yes"/>mittlere Temperatur: + 10°, 2 ... 10°, 6 ... 8°, 8 .<lb break="yes"/>.. 10°, 8 ... 9°, 6 ... 8°, 3 ... 9°, 4 ... 10°, 6 .<lb break="yes"/>.. 10°, 9 ... 8°, 8 ... 9°, 2 ... 9°, 0 ... 10°, 0.</p>
+                <lb break="yes"/>
+                <p>Die Differenzen zwischen den Mittelzahlen des<lb break="yes"/>Monats Januar steigen bis 7°, die des Monats August<lb break="yes"/>erreichen selten 4°.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#i">Von der Zeichnung isothermischer Linien.</hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>Nachdem wir mit Genauigkeit den Sinn, der<lb break="yes"/>mit dem Ausdrucke mittlere Temperatur zu verbinden<lb break="yes"/>ist, angezeigt haben, können wir uns mit der Zeich-<lb break="no"/>nung der <hi rendition="#i">isothermischen Linien,</hi> oder der Linien glei-<lb break="no"/>cher Wärme, beschäftigen. Man wird von einigen an<lb break="yes"/>kleine Oertlichkeiten gebundenen Unregelmäßigkeiten<lb break="yes"/>absehen, wie z. B. denjenigen, welche man auf den<lb break="yes"/>Küsten des mittelländischen Meeres zwischen Marseille,<lb break="yes"/>Genua, Lucca und Rom bemerkt. Es wird späterhin<lb break="yes"/>von Nutzen seyn, sie in detaillirten Karten zusammen-<lb break="no"/>zufassen. „Die Zeichnung dieser Mittellinien, sagt<lb break="yes"/>Herr <hi rendition="#i">von Humboldt,</hi> wird viel Licht über Erscheinun-<lb break="no"/>gen verbreiten, die für den Ackerbau und für den ge-<lb break="no"/>sellschaftlichen Zustand der Einwohner von hoher<lb break="yes"/>Wichtigkeit sind. Wenn wir anstatt der geographi-<lb break="no" />schen Karten nur Tafeln besäßen, welche die Coordi-<lb break="no"/>naten der Breite, der Länge und der Höhe enthiel-<lb break="no"/>ten, so wäre eine große Anzahl merkwürdiger Ver-<lb break="no"/>
+                    <pb n="259" facs="#f0006"/> hältnisse, welche das feste Land in seiner Gestaltung<lb break="yes"/>und den Ungleichheiten seiner Oberfläche darstellt,<lb break="yes"/>für immer unbekannt.“</p>
+                <lb break="yes"/>
+                <p>Um die isothermischen Linien zu ziehen, muß<lb break="yes"/>man die Orte auf dem Globus suchen, deren mittlere<lb break="yes"/>Temperaturen sich am meisten 0°, 5°, 10°, oder 15°.<lb break="yes"/>nähern. Man wird bei dem ersten Anfang schon ge-<lb break="no"/>wahr, ob die Linien von Süden nach Norden an die-<lb break="no"/>sem oder jenem Orte sich hinziehen; um aber solches<lb break="yes"/>genau nach den Graden der Breite zu bestimmen,<lb break="yes" />muß man die gewöhnlichen Interpolations-Methoden<lb break="yes"/>zu Hülfe nehmen, mit Hülfe der nach Beobachtungen<lb break="yes"/>entworfenen Tafeln, woraus für verschiedene Meridia-<lb break="no"/>ne, einerlei Höhe über der Meeresfläche vorausgesetzt,<lb break="yes"/>sich ergiebt, in welcher Art die jährliche mittlere<lb break="yes"/>Temperatur von Süden gegen Norden hin abnimmt.</p>
+                <lb break="yes"/>
+                <p>Einem Gradunterschied in der mittlern jährlichen<lb break="yes"/>Temperatur entsprechen in verschiedenen Zonen fol-<lb break="no"/>gende Breitengrade:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell cols="3"/>
+                        <cell>In der neuen<lb break="yes"/>Welt <hi rendition="#g">in-<lb break="no" />nerhalb</hi>
+                            <lb break="yes"/>den Län-<lb break="no"/>gen von<lb break="yes"/>70° bis 80°<lb break="yes"/>östlich.</cell>
+                        <cell>In der alten<lb break="yes"/>Welt <hi rendition="#g">in-<lb break="no" />nerhalb</hi>
+                            <lb break="yes"/>den Län-<lb break="no"/>gen von<lb break="yes"/>2° bis 17°<lb break="yes"/>westlich.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zwischen</cell>
+                        <cell>30° und 40°</cell>
+                        <cell>nördli-<lb break="no"/>cher Brei-<lb break="no"/>te ....</cell>
+                        <cell>1°, 24′</cell>
+                        <cell>2°, 30′</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014;</cell>
+                        <cell>40° &#x2014; 50°</cell>
+                        <cell>&#x2014; &#x2014;</cell>
+                        <cell>1°, 6′</cell>
+                        <cell>1°, 24′</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014; &#x2014;</cell>
+                        <cell>50° &#x2014; 60°</cell>
+                        <cell>&#x2014; &#x2014;</cell>
+                        <cell>1°, 18′</cell>
+                        <cell>1°, 48′</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Gemäß diesen Daten und den genausten Mittel-<lb break="no"/>zahlen, die zu erhalten waren (deren 30 auf der Tafel<lb break="yes"/>
+                    <pb n="260" facs="#f0007"/> S. 257 angeführt sind) endlich auch mit Rücksicht<lb break="yes"/>auf die Höhe der Orte, wo die Beobachtungen vorge-<lb break="no"/>nommen wurden, fand Hr. <hi rendition="#i">von Humboldt,</hi> daß</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">die isothermische Linie von</hi> 0° aus 3°, 54′ süd-<lb break="no"/>lich von Nain in Labrador durch das Centrum von<lb break="yes" />Lappland und 1° nördlich von Uléo durch Solis-<lb break="no"/>kamsky geht.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Die isothermische Linie von</hi> 5° geht 0°, 5 nörd-<lb break="no"/>lich von Quebec; 1° nördlich von Christiania; 0°,5<lb break="yes"/>nördlich von Upsala; durch Petersburg und Moscau.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Die isothermische Linie von</hi> 10° geht durch 42°<formula notation="TeX">\frac{1}{4}</formula>
+                    <lb break="yes"/>in den vereinigten Staaten; 1° südlich von Dublin; 0°,5<lb break="yes"/>nördlich von Paris; 1°,5 südlich von Franecker;<lb break="yes" />0°,5 südlich von Prag; 1°,5 nördlich von Ofen;<lb break="yes"/>2°<formula notation="TeX">\frac{1}{4}</formula> nördlich von Peking.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Die isothermische Linie von</hi> 15° geht 4°,5 nörd-<lb break="no"/>lich von Natchez durch Montpellier; 1° nördlich von<lb break="yes"/>Rom; und 1°, 5 nördlich von Nangasacki.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Die isothermische Linie von</hi> 20° geht 2°,5 süd-<lb break="no"/>lich von Natchez; 50′ nördlich von Funchal; und so<lb break="yes"/>viel man aus den Materialien, welche wir besitzen,<lb break="yes"/>schließen kann, durch den 33°,5 der Breite unter<lb break="yes" />dem Meridian von Cypern. Wir haben von den mitt-<lb break="no"/>lern Temperaturen zu Algier und Cairo keinen Ge-<lb break="no"/>brauch gemacht, weil der Sand, von dem sie umgeben<lb break="yes"/>sind, sie um 1° oder 2°, wie es uns vorkommt, er-<lb break="no"/>höht.</p>
+                <lb break="yes"/>
+                <p>Aus diesen Daten geht hervor, daß die <hi rendition="#i">Knoten</hi>
+                    <lb break="yes"/>der isothermischen Linien, oder ihre Durchschnitte<lb break="yes"/>mit den Parallelen des Aequators, folgende Lage ha-<lb break="no"/>ben:</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Isothermischer Streifen von</hi> 0°: Länge 94° W.;<lb break="yes"/>Breite 54°,12′; &#x2014; Länge 63°,40′ W.; Br. 53°,15′<lb break="yes"/>
+                    <pb n="261" facs="#f0008"/> &#x2014; Länge 18° 30′ O.; Br. 65° 15′; &#x2014; L. 23° O.; Br.<lb break="yes"/>66° 20′; &#x2014; L. 56° O.; Br. 62° 12′. Ein Zweig geht<lb break="yes"/>längs der nördlichen Küsten durch die Länge 18° O.,<lb break="yes"/>Br. 70°, L. 23°<formula notation="TeX">\frac{1}{2}</formula>, Br. 71°.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Isothermischer Streifen von</hi> 5°: L. 73°,30′ W.;<lb break="yes"/>Br. 47°,20′ &#x2014; L. 5°<formula notation="TeX" >\frac{1}{2}</formula> W. Br. 62° &#x2014; L. 8°<formula notation="TeX" >\frac{1}{2}</formula> O. Br.<lb break="yes"/>61°, 15′ &#x2014; L. 15°,18′ O. Br. 60°,20′ &#x2014; L. 20° O.<lb break="yes"/>Br. 59°,37′; &#x2014; L. 35°,12′ O. Br. 57°,45′.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Isothermischer Streifen von</hi> 10° L. 86°,40′ O.,<lb break="yes"/>Br. 41°,20′ &#x2014; L. 73°,30′ W. Br. 42°,45′ &#x2014; L.<lb break="yes"/>8°,40′ W. Br. 52°,20′ &#x2014; L. 5° W. Br. 51° L.<lb break="yes"/>3° W. Br. 52° &#x2014; L. 0°. Br. 51° &#x2014; L. 12° O. Br.<lb break="yes"/>49°,30′ &#x2014; L. 16°,40′ O. Br. 48°,50′ &#x2014; L. 114°<lb break="yes"/>O. Br. 43°,30′.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Isothermischer Streifen von</hi> 15° L. 93° W. Br.<lb break="yes"/>36° &#x2014; L. 1° O. Br. 43°,30′ &#x2014; L. 9° O. Br. 43°<lb break="yes"/>&#x2014; L. 127°,30′ O. Br. 34°,15′.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">Isothermischer Streifen von</hi> 20° L. 94° W. Br.<lb break="yes"/>29° &#x2014; L. 19°,15′ W. Br. 33°,40′ &#x2014; L. 28° O. Br.<lb break="yes"/>33°,30′.</p>
+                <lb break="yes"/>
+                <p>Wirft man einen Blick auf die Fig. 1. der Kup-<lb break="no"/>fertafel, so sieht man, wie die isothermischen Linien<lb break="yes"/>von den Parallelkreisen der Erde abweichen. Ihre<lb break="yes"/>convexen Gipfel in Europa befinden sich beinahe un-<lb break="no"/>ter dem nämlichen Meridian.</p>
+                <lb break="yes"/>
+                <p>Diese Linien in westlicher Richtung von jenen<lb break="yes"/>Punkten aus neigen sich gegen den Aequator, mit<lb break="yes"/>welchem sie beinahe, bis an die atlantischen Küsten<lb break="yes"/>der neuen Welt, und bis gegen Osten des Mississipi und<lb break="yes"/>des Missouri, parallel bleiben; ohne Zweifel erheben<lb break="yes"/>sie sich alsdann wieder jenseits der Felsenberge auf<lb break="yes"/>den entgegengesetzten Küsten von Asien, zwischen dem<lb break="yes"/>35 und 55 Grad der Breite. Man weiß in der That,<lb break="yes"/>
+                    <pb n="262" facs="#f0009"/> daß man längs dem Kanal von St. Barbara, in Neu-<lb break="maybe"/>Californien, den Oelbaum mit Erfolg cultivirt, und<lb break="yes"/>daß zu Noutka, beinahe in der nämlichen Breite von<lb break="yes"/>Labrador, vor dem Monat Januar auch die kleinsten<lb break="yes"/>Flüsse nicht einfrieren.</p>
+                <lb break="yes"/>
+                <p>Die hier beigefügte Tafel thut auf eine nicht we-<lb break="no"/>niger auffallende Art dar, daß, von Europa nach<lb break="yes"/>Osten hin, die isothermischen Linien sich von neuem<lb break="yes"/>senken.</p>
+                <lb break="yes"/>
+                <cb/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>Br.</cell>
+                        <cell>Mittlere Temp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Sanct Malo,</cell>
+                        <cell>48°,39′</cell>
+                        <cell>+ 12°,5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Amsterdam,</cell>
+                        <cell>52, 22</cell>
+                        <cell>+ 11, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Neapel,</cell>
+                        <cell>40, 50</cell>
+                        <cell>+ 17, 4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Copenhagen</cell>
+                        <cell>55, 41</cell>
+                        <cell>+ 7, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Upsala,</cell>
+                        <cell>59, 51</cell>
+                        <cell>+ 5, 5</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <cb/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>Br.</cell>
+                        <cell>Mittl. Temp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Wien</cell>
+                        <cell>48°, 11′</cell>
+                        <cell>+ 10°,3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Warschau</cell>
+                        <cell>52, 14</cell>
+                        <cell>+ 9, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pekin</cell>
+                        <cell>39, 54</cell>
+                        <cell>+ 12, 7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Moscau</cell>
+                        <cell>55, 45</cell>
+                        <cell>+ 4, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Petersb.</cell>
+                        <cell>59, 56</cell>
+                        <cell>+ 3, 8</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>(Die Höhe von Pekin ist wenig beträchtlich. Die<lb break="yes"/>von Moscau beträgt 300 Meter.)</p>
+                <lb break="yes"/>
+                <p>Es wäre unnütz, bei allgemeinen Folgerungen<lb break="yes"/>zu verweilen, welche beim ersten Anblick der Karte<lb break="yes"/>sich ergeben; wir wollen jetzt nur einige Resultate<lb break="yes"/>erwähnen, welche die Kleinheit des Maaßstabes<lb break="yes"/>nicht leicht aufzufinden erlaubt. &#x2014; Zu der Bemer-<lb break="no"/>kung, welche man schon seit mehr als einem Jahrhun-<lb break="no"/>dert machte, daß die Temperaturen in der ganzen<lb break="yes" />Ausdehnung einer jeden Erdparallele nicht gleich sind,<lb break="yes"/>und, daß 70° der Länge östlich oder westlich vom Pariser<lb break="yes"/>Meridian entfernt, das Klima viel kälter wird, kann man<lb break="yes"/>noch hinzufügen, <hi rendition="#i">daß die Unterschiede zwischen den<lb break="yes" />Temperaturen der Oerter, die unter den nämlichen<lb break="yes" />Parallelkreisen liegen, nicht in allen Breiten gleich be-<lb break="no" />trächtlich sind.</hi>
+                </p>
+                <lb break="yes"/>
+                <pb n="263" facs="#f0010"/>
+                <table>
+                    <row>
+                        <cell>Br.</cell>
+                        <cell>Mittl. Temp. im<lb break="yes"/>Westen der<lb break="yes"/>alten Welt.<lb break="yes"/>in</cell>
+                        <cell>Mittl. Temp. im<lb break="yes"/>Osten der<lb break="yes"/>neuen Welt</cell>
+                        <cell>Unterschiede.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>30° N.</cell>
+                        <cell>21°,4 Hundertth.<lb break="yes"/>Sc.</cell>
+                        <cell>19°,4 Hundertth.<lb break="yes"/>Sc.</cell>
+                        <cell>2°, 0 Hun-<lb break="no"/>dertth. Sc.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>40°</cell>
+                        <cell>17, 3</cell>
+                        <cell>12, 5</cell>
+                        <cell>4,8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>50°</cell>
+                        <cell>10, 5</cell>
+                        <cell>3, 3</cell>
+                        <cell>7,2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>60°</cell>
+                        <cell>4, 8</cell>
+                        <cell>-4, 6</cell>
+                        <cell>9,4</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Man wird das Gesetz der Abnahme der mittleren<lb break="yes"/>Temperaturen in folgender Tafel finden:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Von</cell>
+                        <cell>0° &#x2014; 20°</cell>
+                        <cell>Br. in d. alt. Welt</cell>
+                        <cell>2°;</cell>
+                        <cell rows="5">
+                            <milestone rendition="#vr" unit="section"/>
+                        </cell>
+                        <cell>in d. neuen</cell>
+                        <cell>2°</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014;</cell>
+                        <cell>20° &#x2014; 30°</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>4°;</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>6°</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014;</cell>
+                        <cell>30° &#x2014; 40°</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>4°;</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>7°</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014;</cell>
+                        <cell>40° &#x2014; 50°</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>7°;</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>9°</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>&#x2014;</cell>
+                        <cell>50° &#x2014; 60°</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>5°,7</cell>
+                        <cell>‒ ‒ ‒ ‒ ‒</cell>
+                        <cell>7°,9</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Die Zone in den beiden Welten, wo die Abnah-<lb break="no"/>me der mittleren Temperaturen am schnellsten ist, be-<lb break="no"/>findet sich zwischen den Parallelkreisen des 40 und<lb break="yes"/>45ten Grades. „Dieser Umstand, sagt Hr. <hi rendition="#i">von Hum-<lb break="no"/>„boldt,</hi> muß einen günstigen Einfluß auf Cultur<lb break="yes"/>„und Kunstfleis derjenigen Völker, welche die jenem<lb break="yes"/>„mittlern Parallelkreis benachbarten Länder bewoh-<lb break="no"/>„nen, haben. Es ist der Punkt, wo die Gegenden<lb break="yes" />„des Weinstocks, die der Oliven- und Citronenbäume<lb break="yes"/>„berühren. Nirgends außerdem auf der Erdkugel,<lb break="yes"/>„von Norden nach Süden hin, sieht man die Tempe-<lb break="no"/>„raturen merklicher zunehmen. Nirgends folgen auch<lb break="yes"/>„die verschiedenen Erzeugnisse des Pflanzenreichs,<lb break="yes"/>„und die mancherlei Gegenstände des Ackerbaues ra-<lb break="no"/>„scher auf einander. Daher belebt der große Unter-<lb break="no"/>„schied der Erzeugnisse aus den Ländern der benach-<lb break="no"/>„barten Himmelsstriche den Handel, und vermehrt<lb break="yes" />„die Industrie der Ackerbau treibenden Völker.“</p>
+                <lb break="yes"/>
+                <pb n="264" facs="#f0011"/>
+                <p>Der Leser wird leicht bemerken, daß in der heis-<lb break="no"/>sen Zone unter dem Parallelkreis von 30°, die iso-<lb break="no"/>thermischen Linien nach und nach unter einander und<lb break="yes"/>mit dem Aequator der Erde parallel werden, so daß<lb break="yes"/>die schon seit langer Zeit angenommene Meinung: die<lb break="yes"/>alte Welt sey wärmer als die neue, selbst unter den<lb break="yes"/>Tropen, keinen Grund hat.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>
+                            <space dim="vertical"/>
+                        </cell>
+                        <cell>
+                            <space dim="vertical"/>
+                        </cell>
+                        <cell>Mittlere Temp.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Senegambia</cell>
+                        <cell>(Br. 14°,41′ N.)</cell>
+                        <cell>26°, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Madras</cell>
+                        <cell>(Br. 13°,5′ N.)</cell>
+                        <cell>26°, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Batavia</cell>
+                        <cell>(Br. 6°,12′ S.)</cell>
+                        <cell>26°, 9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Manilla</cell>
+                        <cell>(Br. 14°,36′ N.)</cell>
+                        <cell>25°, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cumana</cell>
+                        <cell>(Br. 10°,28′ N.)</cell>
+                        <cell>27°, 7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Antillen</cell>
+                        <cell>(Br. 16° N.)</cell>
+                        <cell>27°, 5</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Vera Cruz</cell>
+                        <cell>(Br. 19°,12′ N.)</cell>
+                        <cell>25°, 6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Havanna</cell>
+                        <cell>(Br. 23°,9′)</cell>
+                        <cell>25°, 6</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Nach der Erklärung, welche wir von mittlerer<lb break="yes"/>Temperatur gegeben haben, ist es klar, daß eine<lb break="yes"/>Quantität von jährlicher Wärme an unterschiedenen<lb break="yes"/>Orten sehr ungleich unter die verschiedenen Jahreszei-<lb break="no"/>ten vertheilt seyn kann. Die folgende Tafel zeigt,<lb break="yes"/>wie die Winter und Sommer unter einander auf allen<lb break="yes"/>isothermischen Linien von dem 28° und 30° nördli-<lb break="no" />cher Breite bis zu den Parallelkreisen des 55° und<lb break="yes"/>60° verschieden sind. Man wird auch bemerken, daß<lb break="yes"/>in den beiden Streifen der alten und neuen Welt, wel-<lb break="no"/>che zwei verschiedene Systeme von Klimaten bilden,<lb break="yes"/>die Vertheilung der jährlichen Wärme zwischen Som-<lb break="no"/>mer und Winter dergestalt geschieht, daß auf der iso-<lb break="no"/>thermischen Linie von 0° der Unterschied der zwei<lb break="yes"/>Jahreszeiten beinahe das Doppelte von demjenigen ist,<lb break="yes"/>den man auf der isothermischen von 20° bemerkt.</p>
+                <lb break="yes"/>
+                <pb n="265" facs="#f0012"/>
+                <table>
+                    <row>
+                        <cell rows="3" cols="2"/>
+                        <cell cols="3">
+                            <hi rendition="#g">Strich</hi>
+                            <lb break="yes"/>diesseits des atlan-<lb break="no"/>tischen Meeres<lb break="yes"/>Länge 30° westl.<lb break="yes"/>und 15° östl.</cell>
+                        <cell cols="3">
+                            <hi rendition="#g">Strich</hi>
+                            <lb break="yes"/>jenseits des atlanti-<lb break="no"/>schen Meeres<lb break="yes"/>Länge 60 &#x2014; 74°<lb break="yes"/>westl.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="2" rendition="#bottomBraced">Mittlere Tem-<lb break="no" />peratur</cell>
+                        <cell rows="2">Un-<lb break="no"/>ter-<lb break="no"/>schied</cell>
+                        <cell cols="2" rendition="#bottomBraced">Mittlere Tempe-<lb break="no" />ratur</cell>
+                        <cell rows="2">Un-<lb break="no"/>ter-<lb break="no"/>schied</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>des<lb break="yes"/>Win-<lb break="no"/>ters</cell>
+                        <cell>des<lb break="yes"/>Som-<lb break="no"/>mers</cell>
+                        <cell>des<lb break="yes"/>Win-<lb break="no"/>ters</cell>
+                        <cell>des<lb break="yes"/>Som-<lb break="no"/>mers</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rows="5" rendition="#rightBraced">Isother-<lb break="no"/>
+                            <choice>
+                                <sic>misehe</sic>
+                                <corr type="editorial">mische</corr>
+                            </choice>
+                            <lb break="yes"/>Linie</cell>
+                        <cell>20°</cell>
+                        <cell>15°</cell>
+                        <cell>27°</cell>
+                        <cell>12°</cell>
+                        <cell>12°</cell>
+                        <cell>27°</cell>
+                        <cell>15°</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15</cell>
+                        <cell>7</cell>
+                        <cell>23</cell>
+                        <cell>16</cell>
+                        <cell>4</cell>
+                        <cell>26</cell>
+                        <cell>22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10</cell>
+                        <cell>2</cell>
+                        <cell>20</cell>
+                        <cell>18</cell>
+                        <cell>&#x2014; 1</cell>
+                        <cell>22</cell>
+                        <cell>23</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5</cell>
+                        <cell>&#x2014; 4</cell>
+                        <cell>16</cell>
+                        <cell>20</cell>
+                        <cell>&#x2014;10</cell>
+                        <cell>19</cell>
+                        <cell>29</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0</cell>
+                        <cell>&#x2014;10</cell>
+                        <cell>12</cell>
+                        <cell>22</cell>
+                        <cell>&#x2014;17</cell>
+                        <cell>13</cell>
+                        <cell>30</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Wenn man anstatt, wie hier oben, die mittleren<lb break="yes"/>Temperaturen des Jahreszeiten zu betrachten, die mitt-<lb break="no"/>leren Temperaturen des kältesten und wärmsten Mo-<lb break="no"/>nates nimmt, so ist das Zunehmen der Unterschiede<lb break="yes"/>noch viel größer, als wir so eben gefunden haben.</p>
+                <lb break="yes"/>
+                <p>Die Unterschiede zwischen den Jahreszeiten schei-<lb break="no"/>nen an die Gestalt der isothermischen Linien gebun-<lb break="no"/>den zu seyn; sie sind weniger groß bei den convexen<lb break="yes"/>Gipfeln als bei den concaven Gipfeln, so daß die näm-<lb break="no"/>liche Ursache, welche die Kurven gegen die Pole er-<lb break="no"/>hebt, auch die Temperaturen der Jahreszeiten auszu-<lb break="no"/>gleichen strebt. Da die mittlere Wärme des Jahres<lb break="yes"/>dem Viertel der thermometrischen Summe der Winter-,<lb break="yes"/>Frühlings-, Sommer- und Herbst-Temperaturen gleich<lb break="yes"/>ist, so haben wir z. B. auf der nämlichen isothermi-<lb break="no"/>schen Linie von 12° am concaven Gipfel in Amerika<lb break="yes" />(77° Länge westlich von Paris):</p>
+                <lb break="yes"/>
+                <pb n="266" facs="#f0013"/>
+                <list>
+                    <item>
+                        <formula notation="TeX" >12^\circ=\frac{0^\circ+11^\circ,3+24^\circ,2+12^\circ,5;}{4}</formula>
+                    </item>
+                    <lb break="yes"/>
+                    <item>nahe an dem convexen Gipfel in Europa (im Meri-<lb break="no"/>dian von Paris):</item>
+                    <lb break="yes"/>
+                    <item>
+                        <formula notation="TeX" >12^\circ=\frac{+4^\circ,5+11^\circ,0+20^\circ,2+12^\circ,3;}{4}</formula>
+                    </item>
+                    <lb break="yes"/>
+                    <item>an dem concaven Gipfel in Asien (114° östliche Län-<lb break="no"/>ge in Paris):</item>
+                    <lb break="yes"/>
+                    <item>
+                        <formula notation="TeX" >12^\circ=\frac{-4^\circ+12^\circ,6+27^\circ+12^\circ,4;}{4}</formula>
+                    </item>
+                </list>
+                <lb break="yes"/>
+                <p>Wenn man, anstatt auf einer Karte die isother-<lb break="no"/>mischen Linien aufzutragen, daselbst die Linien der<lb break="yes"/>
+                    <hi rendition="#i">gleichen Wintertemperatur</hi> zöge, (isochimenische Li-<lb break="no"/>nien), so würde man sogleich bemerken, daß sie sich<lb break="yes"/>vielmehr von den Parallelkreisen der Erde als die er-<lb break="no"/>steren, entfernen. „In dem System der europäischen<lb break="yes"/>Klimate, sagt Hr. <hi rendition="#i">von Humboldt,</hi> können die geogra-<lb break="no"/>phischen Breiten zweier Oerter, welche die nämliche<lb break="yes"/>jährliche Temperatur haben, nur um 4° bis 5° ver-<lb break="no"/>schieden seyn, während zwei Oerter, deren mittlere<lb break="yes"/>Temperatur im Winter die nämliche ist, in der geo-<lb break="no"/>graphischen Breite um 9° bis 10° verschieden seyn<lb break="yes" />können; je mehr man gegen Osten vorrückt, desto<lb break="yes"/>schneller nehmen diese Unterschiede zu.“</p>
+                <lb break="yes"/>
+                <p>„Die <hi rendition="#i">Linien des gleichen Sommers</hi> (isotherische<lb break="yes"/>Linien), folgen einer ganz entgegengesetzten Rich-<lb break="no"/>tung, als der, der isochimenischen Kurven. Wir fin-<lb break="no"/>den die nämliche Sommertemperatur zu Moscau, im<lb break="yes" />Mittelpunkt von Rußland, und gegen die Mündung<lb break="yes"/>der Loire, ohngeachtet des Unterschiedes von 11 Brei-<lb break="no"/>tegraden.“</p>
+                <lb break="yes"/>
+                <p>Anstatt auf der Karte alle diese Systeme der<lb break="yes"/>Krümmungen zu ziehen, deren vielfache Durchschlin-<lb break="no"/>
+                    <pb n="267" facs="#f0014"/> gungen nur Verwirrungen hervorbringen würden, hat<lb break="yes"/>man sich begnügt, den isothermischen Linien, nahe<lb break="yes"/>an ihren Gipfeln, die mittlere Sommer- und Winter-<lb break="maybe"/>Temperatur beizufügen. So wird man, indem man<lb break="yes" />der Linie von 10° folgt, in Amerika westlich von Boston angemerkt finden, <formula notation="TeX">\left(\frac{-1^\circ}{+23^\circ}\right)</formula>; in England<lb break="yes"/>
+                    <formula notation="TeX">\left(\frac{+3^\circ}{+17^\circ}\right)</formula>; in Ungarn <formula notation="TeX" >\left(\frac{-0^\circ,5}{+21^\circ}\right)</formula> und in China<lb break="yes"/>
+                    <formula notation="TeX">\left(\frac{-5^\circ}{+26^\circ}\right)</formula>
+                </p>
+                <lb break="yes"/>
+                <p>Die vorhergehenden Einzelnheiten haben nur Be-<lb break="no"/>zug auf die Vertheilung der Hitze an der Fläche der<lb break="yes"/>Erdkugel. Man sieht übrigens ein, daß um unter einem<lb break="yes"/>jeden Parallelkreise die mittlere Temperatur z. B. von<lb break="yes"/>0° zu finden, es hinreicht, einen hinlänglich über den<lb break="yes"/>Horizont erhabenen Ort auszuwählen. Die Größe der<lb break="yes"/>Höhe ändert sich mit der Breite. Die Fläche, wel-<lb break="no"/>che über die Gipfel aller dieser verticalen Coordinaten<lb break="yes"/>gienge, würde man die <hi rendition="#i">isothermische Fläche von</hi> 0°<lb break="yes"/>
+                    <hi rendition="#i">heißen,</hi> und ihr Durchschnitt mit der Erdkugel wäre<lb break="yes"/>die correspondirende isothermische Linie.</p>
+                <lb break="yes"/>
+                <p>In der Figur 2 sind die Einschnitte, welche ein<lb break="yes"/>transatlantischer Meridian in die verschiedenen isother-<lb break="no"/>mischen Flächen macht, dargestellt. Die Punkte, wo<lb break="yes"/>diese Kurven der Erdkugel begegnen müssen, sind<lb break="yes"/>durch die vorhergehenden Untersuchungen bekannt;<lb break="yes"/>die Punkte, wo sie vom Aequator ausgehen, ihre Hö-<lb break="no"/>hen durch andere Breitengrade gründen sich auf die<lb break="yes"/>genaue Untersuchung einer großen Menge von Beob-<lb break="no" />achtungen, welche sowohl auf dem Rücken der Cor-<lb break="no"/>dilleren zwischen dem 10° südlicher und dem 10° nörd-<lb break="no"/>
+                    <pb n="268" facs="#f0015"/> licher Breite, als auch in unsern Klimaten, vorgenom-<lb break="no"/>men wurden.</p>
+                <lb break="yes"/>
+                <p>Herr <hi rendition="#i">von Humboldt</hi> hat daraus folgende Resulta-<lb break="no"/>te abgeleitet.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Höhe.</hi>
+                        </cell>
+                        <cell>Aequatorealzone<lb break="yes"/>von 0° &#x2014; 10° Breite.</cell>
+                        <cell>Gemäßigte Zone<lb break="yes"/>von 45° &#x2014; 47° Breite.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>0 Meter</cell>
+                        <cell>+ 27°, 5</cell>
+                        <cell>+ 12°.0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>974</cell>
+                        <cell>+ 21, 8</cell>
+                        <cell>+ 5, 0</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1949</cell>
+                        <cell>+ 18, 4</cell>
+                        <cell>&#x2014; 0, 2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2923</cell>
+                        <cell>+ 14, 3</cell>
+                        <cell>&#x2014; 4, 8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3900</cell>
+                        <cell>+ 7, 0</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4872</cell>
+                        <cell>+ 1, 5</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>In der zweiten Figur verhält sich der Maaßstab<lb break="yes"/>der Breiten zu dem der Höhen wie 1 zu 1000.</p>
+                <lb break="yes"/>
+                <p>In einem der folgenden Hefte werden wir aus der<lb break="yes"/>nämlichen Abhandlung die merkwürdigen Resultate,<lb break="yes"/>die sie über die vergleichbaren Temperaturen der Erde<lb break="yes"/>und Luft unter verschiedenen Breiten enthält, aus-<lb break="no"/>ziehen <note place="foot" n="*)">Aus derselben Abhandlung ist die Tafel genommen, wel-<lb break="no" />che der Leser am Ende des Heftes findet.</note>, und die physikalische Erklärung beifügen,<lb break="yes"/>welche uns Hr. <hi rendition="#i">von Humboldt</hi> über das Wiederempor-<lb break="no"/>steigen der isothermischen Linien an den westlichen<lb break="yes"/>Küsten der alten und neuen Welt gegeben hat.</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

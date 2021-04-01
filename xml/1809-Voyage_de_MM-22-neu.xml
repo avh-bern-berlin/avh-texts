@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="2" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="eng">
+                <head>BRIEF DESCRIPTION OF THE CITY OF<lb break="yes"/>MEXICO.</head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Extract from <persName key="humboldt_av" >Humboldt</persName>&#x2019;s New Spain.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Mexico has been very much embel-<lb break="no"/>lished since the residence of the Abbe<lb break="yes"/>
+                        <persName key="chappedauteroche_j">Chappe</persName> there in 1769. The edifice des-<lb break="no"/>tined to the school of mines, for which the<lb break="yes"/>richest individuals of the country furnish-<lb break="no" />ed a sum of more than three millions<lb break="yes"/>francs, <note place="foot" n="*">124,800<hi rendition="#i">l.</hi> sterling. <hi rendition="#i">Trans.</hi> See chap. VII.</note> would adorn the principal places<lb break="yes"/>of Paris or London. Two great palaces<lb break="yes"/>[hotels] were recently constructed by<lb break="yes" />Mexican artists, pupils of the academy of<lb break="yes"/>Fine Arts of the capital. One of these<lb break="yes"/>palaces, in the quarter <hi rendition="#i">della Traspana,</hi>
+                        <lb break="yes"/>exhibits in the interior of the court a very<lb break="yes" />beautiful oval perystyle, of coupled col-<lb break="no"/>umns. The traveller justly admires a<lb break="yes"/>vast circumference paved with porphyry<lb break="yes"/>flags, and enclosed with an iron railing,<lb break="yes"/>richly ornamented with bronze, contain-<lb break="no"/>ing an equestrian statue<note place="foot" n="&#x2020;">This colossal statue was executed at the<lb break="yes"/>expence of the Marquis de Branciforte, for-<lb break="no"/>merly viceroy of Mexico, brother-in-law to the<lb break="yes"/>Prince of Peace. It weighs 450 quintals, and<lb break="yes"/>was modelled, founded and placed by the<lb break="yes" />same artist, M. Tolsa, whose name deserves a<lb break="yes" />distinguished place in the history of Spanish<lb break="yes" />sculpture. The merits of this man of genius<lb break="yes"/>can only be appreciated by those <choice>
+                                <sic>whose</sic>
+                                <corr type="editorial">who</corr>
+                            </choice> know<lb break="yes"/>the difficulties with which the execution of<lb break="yes"/>these great works of art are attended even in<lb break="yes"/>civilized Europe.</note> of King <persName key="karliv" >Charles<lb break="yes"/>the Fourth</persName>, placed on a pedestal of Mexi-<lb break="no"/>can marble, in the midst of the <hi rendition="#i" >Plaza Ma-<lb break="no"/>jor</hi> of Mexico, opposite the cathedral and<lb break="yes"/>the viceroy&#x2019;s palace. However, it must<lb break="yes"/>be agreed, that notwithstanding the pro-<lb break="no" />gress of the arts within these last thirty<lb break="yes"/>years, it is much less from the grandeur<lb break="yes"/>and beauty of the monuments, than from<lb break="yes"/>the breadth &#x0026; straightness of the streets,<lb break="yes"/>and much less from its edifices than from<lb break="yes"/>its uniform regularity, its extent and po-<lb break="no" />sition, that the capital of New Spain at-<lb break="no"/>tracts the admiration of Europeans. From<lb break="yes"/>a singular concurrence of circumstances,<lb break="yes"/>I have seen successivly, within a very<lb break="yes"/>short space of time, Lima, Mexico, Phi-<lb break="no" />ladelphia, <choice>
+                            <sic>Washington,</sic>
+                            <corr type="editorial">Washington,<note place="foot" n="&#x2021;" xml:id="fn1-1" next="#fn1-1">From the plan of the City of Washington,<lb break="yes"/>and from the magnificence of its capitol, of<lb break="yes"/>which I only saw a part completed, the <hi rendition="#i">Federal<lb break="yes"/>City</hi> will undoubtedly one day be a much finer<lb break="yes"/>city than Mexico. Philadelphia has also the<lb break="yes"/>same mode of construction. The alleys of<lb break="yes"/>platanus, acacia, and populous heterophylla,<lb break="yes"/>which adorn its streets, almost give it a rural<lb break="yes"/>beauty. The vegetation of the banks of the<lb break="yes"/>Potomac and Delaware is also richer than what<lb break="yes"/>we find 2,800 metres (7,500 feet) of elevation<lb break="yes"/>on the ridge of the Mexican Cordilleras. But<lb break="yes"/>Washington and Philadelphia will always look<lb break="yes"/>like European cities. They will not strike the<lb break="yes"/>eyes of the traveller with that peculiar. I may<lb break="yes"/>say, that exotic character which belongs to Mexi-<lb break="no"/>co, Santa Fe de Bogata, Quito, and all the tro-<lb break="no"/>pical capitals, constructed at an elevation as<lb break="yes"/>high or higher than the passage of the great<lb break="yes"/>St. Bernard.</note>
+                            </corr>
+                        </choice> Paris, Rome, Na-<lb break="no"/>ples, and the largest cities of Germany.<lb break="yes"/>By comparing together impressions<lb break="yes"/>which follow in rapid succession, we are<lb break="yes" />enabled to rectify any opinion, which we<lb break="yes"/>may have too easily adopted. Notwith-<lb break="no"/>standing such unavoidable comparisons,<lb break="yes"/>of which several, one would think, must<lb break="yes"/>have proved disadvantageous to the ca-<lb break="no"/>pital of Mexico, it has left in me a re-<lb break="no"/>collection of grandeur which I principal-<lb break="no"/>ly attribute to the majestic character of<lb break="yes"/>its situation and the surrounding scenery.</p>
+                    <lb break="yes"/>
+                    <p>In fact, nothing can present a more<lb break="yes"/>rich and varied appearance than the val-<lb break="no"/>ley, when, in a fine summer morning,<lb break="yes"/>the sky without a cloud, and of that<lb break="yes"/>deep azure which is peculiar to the dry<lb break="yes"/>and rarefied air of high mountains, we<lb break="yes"/>transport ourselves to the top of one of<lb break="yes"/>the towers of the cathedral of Mexico, or<lb break="yes"/>ascend the hill of Chapoltepec. A beauti-<lb break="no"/>ful vegetation surrounds this hill. Old<lb break="yes" />cypress trunks<note place="foot" n="§">Los Ahuahuetes. Cupressus disticha <persName key="linne_cv">Lin.</persName>
+                        </note> of more than 15 and 16<lb break="yes"/>metres<note place="foot" n="||">49 and 52 feet. <hi rendition="#i">Trans.</hi>
+                        </note> in circumference, raise their na-<lb break="no"/>ked head above those of the Schinus,<lb break="yes"/>which resemble in their appearance the<lb break="yes"/>weeping willows of the east. From the<lb break="yes" />centre of this solitude, the summit of the<lb break="yes"/>porphyritical rock of Chapoltepec, the<lb break="yes"/>eye sweeps over a vast plain of carefully<lb break="yes"/>cultivated fields, which extend to the<lb break="yes"/>very feet of the colossal mountains cov-<lb break="no" />ered with perpetual snow. The city ap-<lb break="no"/>pears as if washed by the waters of the<lb break="yes"/>lake of Tezcuco, whose basin, surround-<lb break="no"/>ed with villages and hamlets, brings to<lb break="yes"/>mind the most beautiful lakes of the<lb break="yes" />mountains of Switzerland. Large avenues<lb break="yes"/>of elms and poplars lead in every direc-<lb break="no"/>tion to the capital; and two aqueducts<lb break="yes"/>constructed over arches of very great ele-<lb break="no"/>vation, cross the plain and exhibit an ap-<lb break="no" />pearance equally agreeable and interest-<lb break="no"/>ing. The magnificent convent of Nues-<lb break="no"/>tra Sonora de Guadaloupe, appears joined<lb break="yes"/>to the mountains of Tepeyacac, among<lb break="yes"/>ravines, which shelter a few date and<lb break="yes"/>young yucca trees. Towards the south,<lb break="yes"/>the whole tract between San Angel, Ta-<lb break="no"/>cabaya, and San Augustin de las Cuevas,<lb break="yes"/>appears an immense garden of orange,<lb break="yes"/>peach, apple, cherry, and other European<lb break="yes"/>fruit trees. This beautiful cultivation<lb break="yes"/>forms a singular contrast with the wild<lb break="yes"/>appearance of the naked mountains which<lb break="yes"/>enclose the valley, among which the fa-<lb break="no"/>mous volcanoes of La Puebla, Popocate-<lb break="no"/>petl, and Iztaccihuatl are the most distin-<lb break="no"/>guished. The first of these forms an e-<lb break="no"/>normous cone, of which the crater, con-<lb break="no" />tinually inflamed and throwing up smoke<lb break="yes"/>and ashes, opens in the midst of eternal<lb break="yes"/>snows.</p>
+                </div>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI> 

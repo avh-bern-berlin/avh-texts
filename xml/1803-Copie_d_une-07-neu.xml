@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="256" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#i">Kurzer Auszug aus Hrn. <persName key="humboldt_av">Alexand. v. <hi rendition="#k">Humboldt&#x2019;s</hi>
+                        </persName>
+                        <lb break="yes"/>Brief</hi> (aus Lima vom 25 Nov. 1802) <hi rendition="#i" >an B. <persName key="delambre_jbj">De-<lb break="no"/>lambre</persName> zu Paris.</hi>
+                    <lb break="yes"/>Nachtrag zu der Korre&#x017F;pondenz-Nachricht oben S. 239. <note place="foot" n="*)">Während des Drucks die&#x017F;es Bogens i&#x017F;t uns die&#x017F;er Brief<lb break="yes"/>durch un&#x017F;ern Pari&#x017F;er Korre&#x017F;pondenten zugekommen;<lb break="yes"/>wir eilen, hier einige Auszüge daraus un&#x017F;eren Le&#x017F;ern<lb break="yes"/>mitzutheilen; da der Brief mehr phy&#x017F;ikali&#x017F;chen, als<lb break="yes" />geographi&#x017F;chen Inhalts i&#x017F;t, &#x017F;o wird eine voll&#x017F;tändige<lb break="yes"/>Ueber&#x017F;etzung de&#x017F;&#x017F;elben in <persName key="voigt_fs">
+                            <hi rendition="#i">Voigt&#x2019;s</hi>
+                        </persName> Magazin der Natur-<lb break="no"/>kunde eingerückt. <hi rendition="#et">
+                            <hi rendition="#i">A. d. H.</hi>
+                        </hi>
+                    </note>
+                </head>
+                <lb break="yes"/>
+                <p>&#x2014; &#x201E;Ich habe den Durchme&#x017F;&#x017F;er des Kraters von dem<lb break="yes"/>Vulkan <hi rendition="#i">Pichincha</hi> geme&#x017F;&#x017F;en, und ihn zu 752 Toi&#x017F;en ge-<lb break="no"/>funden. Der Krater des Ve&#x017F;uvs hat deren nur 312. &#x2014;<lb break="yes"/>Die Provinz <hi rendition="#i">Quito,</hi> die&#x017F;es höch&#x017F;te Hochland der Erde,<lb break="yes"/>das durch die Kata&#x017F;trophe vom 4ten Februar 1797 &#x017F;o<lb break="yes"/>&#x017F;ehr zerrüttet worden i&#x017F;t, hat uns ein weites Feld zu<lb break="yes"/>phy&#x017F;ikali&#x017F;chen Beobachtungen angeboten. So ungeheure<lb break="yes"/>Vulkane, deren Flamme &#x017F;ich oft bis auf 500 Toi&#x017F;en in die<lb break="yes"/>Höhe hinaufwirbelt, haben noch nie einen Tropfen flü&#x017F;&#x017F;i-<lb break="no"/>ger Lawa hervorbringen können; &#x017F;ie werfen nur Wa&#x017F;&#x017F;er,<lb break="yes"/>hydrogenes Schwefelgas, Koth und kohlenartigen Lehm<lb break="yes"/>aus. Seit 1797 i&#x017F;t die&#x017F;er Theil der Erde in be&#x017F;tändiger Be-<lb break="no" />wegung. Jeden Augenblick empfinden wir die heftig&#x017F;ten<lb break="yes" />Er&#x017F;chütterungen, und das unterirdi&#x017F;che Getö&#x017F;e, das man<lb break="yes"/>in der Ebene von <hi rendition="#i">Rio-Bamba</hi> vernimmt, gleich dem To-<lb break="no"/>&#x017F;en eines unter un&#x017F;eren Füßen ein&#x017F;türzenden Berges. Die<lb break="yes"/>atmo&#x017F;phäri&#x017F;che Luft und die durchnäßte Erde &#x017F;cheinen<lb break="yes"/>die er&#x017F;ten Veranla&#x017F;&#x017F;ungen der Brände und Gährungen die&#x017F;er<lb break="yes"/>Berge zu &#x017F;eyn, die alle aus verwittertem Porphyr be&#x017F;te-<lb break="no"/>hen. &#x2014; Man glaubte bisher zu <hi rendition="#i">Quito,</hi> daß man wegen<lb break="yes"/>Verdünnung der Luft nur bis auf 2470 Toi&#x017F;en eine Höhe<lb break="yes"/>er&#x017F;teigen könne; wir brachten am 23 Jun 1802 auf dem<lb break="yes"/>
+                    <hi rendition="#i">Chimborazo</hi> un&#x017F;re In&#x017F;trumente bis auf eine Höhe von 3031<lb break="yes"/>Toi&#x017F;en. Wir konnten es aber nicht lange da&#x017F;elb&#x017F;t aushal-<lb break="no"/>ten; doch würden wir bis auf den Gipfel die&#x017F;es Kolo&#x017F;&#x017F;en<lb break="yes"/>ge&#x017F;tiegen &#x017F;eyn, hätte uns nicht eine ungeheure Kluft, den<lb break="yes"/>
+                    <fw type="catch" place="bottom">Weg</fw>
+                    <lb break="yes"/>
+                    <pb n="257" facs="#f0002"/> Weg ver&#x017F;perret; wir hatten nur noch 236 Toi&#x017F;. zu er&#x017F;tei-<lb break="no"/>gen. Nach meinen Me&#x017F;&#x017F;ungen i&#x017F;t der <hi rendition="#i">Chimborazo</hi> 3267 Toi&#x017F;.<lb break="yes"/>über die Meeresfläche erhaben. &#x2014; Der Vulkan <hi rendition="#i">Tunguragua</hi>
+                    <lb break="yes"/>i&#x017F;t &#x017F;eit <persName key="lacondamine_cmd">
+                        <hi rendition="#i">Condamine&#x2019;s</hi>
+                    </persName> Zeiten von 2620 Toi&#x017F;en auf 2531 einge-<lb break="no" />&#x017F;unken. &#x2014; Wir &#x017F;ind bey den Bergwerken von <hi rendition="#i">Hualgayok</hi>
+                    <lb break="yes"/>vorbeygekommen, welche jährlich eine Million Pia&#x017F;ter ab-<lb break="no"/>werfen. Wir &#x017F;tiegen nach <hi rendition="#i" >Cascamasca</hi> hinab, wo ich in<lb break="yes"/>
+                    <persName key="atahualpa">
+                        <hi rendition="#i">Atahualpa&#x2019;s</hi>
+                    </persName> vormaligem Palla&#x017F;te die Bogen der peruani&#x017F;chen<lb break="yes"/>Gewölbe abzeichnete. Von da rei&#x017F;ten wir nach <hi rendition="#i">Lima,</hi> wo<lb break="yes"/>die Hälfte des Jahrs der Himmel mit dicken Dün&#x017F;ten be-<lb break="no"/>deckt i&#x017F;t; ich eilte dahin, um den Durchgang des Merkurs<lb break="yes"/>zu beobachten. &#x2014; Wir haben eine neue vegetabili&#x017F;che<lb break="yes"/>Milch entdeckt; die Neger&#x017F;klaven trinken &#x017F;ie. &#x2014; &#x2014; &#x2014;</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

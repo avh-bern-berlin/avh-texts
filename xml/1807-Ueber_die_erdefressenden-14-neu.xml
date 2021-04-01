@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="4" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>AN ACCOUNT OF<lb break="yes"/>
+                    <hi rendition="#i">The Ottamans, who eat clay.</hi>
+                    <lb break="yes"/>(From <persName key="humboldt_av">Humboldt</persName>&#x2019;s Tableux de la Nature, vol 1.)</head>
+                <lb break="yes"/>
+                <p>On the coa&#x017F;t of Cumana, of <placeName key="barcelona">New Barce-<lb break="no"/>lona</placeName>, and of Caraccas, vi&#x017F;ited by the Fran-<lb break="no"/>ci&#x017F;can monks of Guyana in returning from<lb break="yes"/>their mi&#x017F;&#x017F;ions, there was a tradition preva-<lb break="no"/>lent, that tribes inhabiting the banks of the<lb break="yes" />Orinoco, eat earth.</p>
+                <lb break="yes"/>
+                <p>On the 6th of June 1803, we &#x017F;pent a day<lb break="yes"/>in a mi&#x017F;&#x017F;ion, inhabited by the Ottamacs,<lb break="yes"/>who eat earth. The village called La Con-<lb break="no"/>ception of Uruana is &#x017F;ituated in a very pic-<lb break="no"/>ture&#x017F;que manner, upon the declivity of a<lb break="yes"/>rock of granite. Its latitude I determined<lb break="yes"/>to be 7° 8&#x2032; 3&#x2033; north, and its longitude 4°<lb break="yes"/>38&#x2032; 38&#x2033; we&#x017F;t of Paris. The earth which<lb break="yes"/>the Ottamacs eat is a fat and unctous clay,<lb break="yes"/>a real potters earth, of a greyi&#x017F;h yellow tint,<lb break="yes"/>coloured <choice>
+                        <sic>by by</sic>
+                        <corr type="editorial">by</corr>
+                    </choice> a little oxide of iron. They<lb break="yes"/>&#x017F;elect it with much care, and gather it on<lb break="yes"/>particular banks on the &#x017F;ides of the Orinoco,<lb break="yes"/>and of the Meta. They di&#x017F;tingui&#x017F;h by the<lb break="yes"/>ta&#x017F;te, one kind of earth from another, for<lb break="yes"/>all kinds of clay are not agreeable to their<lb break="yes" />palates. They knead this earth into balls,<lb break="yes"/>of from four to &#x017F;ix inches in diameter, and<lb break="yes"/>bake it at a &#x017F;low fire, till its outer &#x017F;urface<lb break="yes"/>becomes reddi&#x017F;h. Before they eat the&#x017F;e balls,<lb break="yes"/>they moi&#x017F;ten them anew. The&#x017F;e Ottamacs<lb break="yes"/>are for the mo&#x017F;t part a very &#x017F;avage race, and<lb break="yes"/>have an aver&#x017F;ion to improvement. The na-<lb break="no"/>tions on the Orinoco, that are farthe&#x017F;t from<lb break="yes"/>that canton, &#x017F;ay proverbially, when they<lb break="yes" />wi&#x017F;h to &#x017F;peak of any thing very filthy, &#x201C;It<lb break="yes"/>is di&#x017F;gu&#x017F;ting for an Ottamac to eat it.&#x201D; When<lb break="yes"/>the waters of the Orinoco and Meta are<lb break="yes" />low, the Ottamacs &#x017F;upport them&#x017F;elves on<lb break="yes" />fi&#x017F;h and tortoi&#x017F;es. When the fi&#x017F;h appear at<lb break="yes"/>the &#x017F;urface of the water, they kill them by<lb break="yes"/>means of darts, with a dexterity which we<lb break="yes"/>have often admired. When the rivers ex-<lb break="no"/>perience their periodical overflow the fi&#x017F;hing<lb break="yes"/>cea&#x017F;es, for it is as difficult to fi&#x017F;h in rivers<lb break="yes"/>become too deep, as in the open &#x017F;ea. During<lb break="yes"/>this inundation, which la&#x017F;ts two or three<lb break="yes"/>months, the Ottamacs &#x017F;wallow prodigious<lb break="yes"/>quantities of earth. We have found in their<lb break="yes" />huts immen&#x017F;e &#x017F;tores of it, heaped up in py-<lb break="no" />ramids. Each individual con&#x017F;umes daily<lb break="yes"/>three fourths or four fifths of a pound of<lb break="yes"/>earth, according to the account which Fray<lb break="yes"/>
+                    <persName key="bueno_r">Ramon Bueno</persName>, a very intelligent monk, a<lb break="yes"/>native of Madrid, who has lived twelve<lb break="yes"/>years among the&#x017F;e Indians, gave us. The<lb break="yes"/>Ottamacs them&#x017F;elves &#x017F;ay, that, in the rainy<lb break="yes" />&#x017F;ea&#x017F;on, this earth is their principal food. In<lb break="yes" />addition, they eat little fi&#x017F;hes, lizards, and<lb break="yes"/>fern roots, when they can procure them.<lb break="yes"/>They are &#x017F;o fond of this earth, that every<lb break="yes"/>day they eat a little of it after their repa&#x017F;t,<lb break="yes"/>to regale themfelves, even in the dry &#x017F;ea&#x017F;ons,<lb break="yes"/>and when they have abundance of fi&#x017F;h.<lb break="yes"/>The&#x017F;e people are of a very dark copper<lb break="yes"/>colour. Their features are as ugly as tho&#x017F;e<lb break="yes"/>of the Tartars. They are fat, but they<lb break="yes"/>have not a large body. The Mi&#x017F;&#x017F;ionary who<lb break="yes"/>re&#x017F;ides among them a&#x017F;&#x017F;ured us, that he has re-<lb break="no"/>marked no difference in the health of the&#x017F;e<lb break="yes"/>&#x017F;avages, during the time that they eat this<lb break="yes"/>earth.</p>
+                <lb break="yes"/>
+                <p>Such is the &#x017F;imple narration of the facts.<lb break="yes"/>The Indians eat great quantities of earth,<lb break="yes"/>without the health &#x017F;uffering from it. They<lb break="yes"/>con&#x017F;ider it as a nouri&#x017F;hing kind of food; that<lb break="yes"/>is to &#x017F;ay, they find that this food &#x017F;atisfies<lb break="yes"/>them for &#x017F;ome time. They attribute this<lb break="yes"/>&#x017F;atiety to the earth, and not to the other<lb break="yes"/>very bad articles of diet which they are en-<lb break="no" />abled to add to it.</p>
+                <lb break="yes"/>
+                <p>It may be a&#x017F;&#x017F;erted, that, in all the regions<lb break="yes"/>of the torrid zone, this de&#x017F;ire for earth has<lb break="yes"/>been ob&#x017F;erved. In Guinea, the negroes eat<lb break="yes"/>a yellowi&#x017F;h earth which they call <hi rendition="#i">caouac.</hi>
+                    <lb break="yes"/>The &#x017F;laves which are brought into <placeName key="amerika">America</placeName>,<lb break="yes"/>endeavour to procure a &#x017F;imilar gratification,<lb break="yes"/>but it is always to the detriment of their<lb break="yes"/>health; but the Ottamacs do not &#x017F;uffer in<lb break="yes"/>the lea&#x017F;t from the practice.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

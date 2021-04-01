@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="168" facs="#f0001"/>
+            <lb break="yes"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">Stati&#x017F;ti&#x017F;che Notizen u&#x0364;ber Mexico.</hi>
+                    <lb break="yes"/>In dem neulich er&#x017F;chienenen dritten Theil von Alexander<lb break="yes"/>v. <persName key="humboldt_av" >Humboldt</persName>s Rei&#x017F;e findet &#x017F;ich nach&#x017F;tehende &#x017F;tati&#x017F;ti&#x017F;che Ueber&#x017F;icht<lb break="yes"/>des <hi rendition="#g">Vizeko&#x0364;nigreichs Neu-Spanien oder Mexico.</hi>
+                </head>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Territorialeintheilung.</cell>
+                        <cell>Fla&#x0364;chenin-<lb break="no"/>halt nach<lb break="yes" />Quadrat-<lb break="no"/>lieues zu<lb break="yes"/>25 auf<lb break="yes"/>den<lb break="yes"/>Grad.</cell>
+                        <cell>Bevo&#x0364;lkerung<lb break="yes"/>im Jahr<lb break="yes" />1803.</cell>
+                        <cell>Ein-<lb break="no"/>woh-<lb break="no"/>ner-<lb break="no"/>zahl<lb break="yes"/>auf 1<lb break="yes"/>Qua-<lb break="no"/>drat-<lb break="no"/>lieue.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Ganz Neu-Spanien</hi> (mit<lb break="yes" />Aus&#x017F;chluß des Ko&#x0364;nigreichs Gua-<lb break="no"/>timala) ........</cell>
+                        <cell>118,478</cell>
+                        <cell>5,837,100 </cell>
+                        <cell>49</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">A.</hi>
+                            <hi rendition="#g">Innere Provinzen</hi> ..</cell>
+                        <cell>67,189</cell>
+                        <cell>423,200</cell>
+                        <cell>6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">a.</hi> Unmittelbar unter dem Vize-<lb break="no" />ko&#x0364;nig &#x017F;tehend <hi rendition="#aq">(Provincias in-<lb break="no"/>ternas del Vireynato)</hi> ..</cell>
+                        <cell>7,814</cell>
+                        <cell>64,000</cell>
+                        <cell>8<lb break="yes"/>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. <hi rendition="#aq">Nuevo Reyno de Leon</hi> .</cell>
+                        <cell> 2,621</cell>
+                        <cell>29,000</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. <hi rendition="#aq">Nuevo Santander</hi> ..</cell>
+                        <cell>5,193</cell>
+                        <cell>38,000</cell>
+                        <cell>7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">b.</hi> Unter dem Gouverneur von<lb break="yes" />Chihuahua. <hi rendition="#aq">(Provincias in-<lb break="no"/>ternas de la comandancia ge-<lb break="no"/>neral)</hi> .......</cell>
+                        <cell>59,375</cell>
+                        <cell>359,200</cell>
+                        <cell>6<lb break="yes"/>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. <hi rendition="#aq">Intendencia de la Nueva<lb break="yes"/>Biscaya o Durango</hi> ..</cell>
+                        <cell>16,873</cell>
+                        <cell>159,700</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. <hi rendition="#aq">Intendencia de la Sonora</hi>
+                        </cell>
+                        <cell>19,143</cell>
+                        <cell>121,400</cell>
+                        <cell>6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. <hi rendition="#aq">Cohahuila</hi> .....</cell>
+                        <cell>6,702</cell>
+                        <cell>16,900</cell>
+                        <cell>2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4. <hi rendition="#aq">Texas</hi> ......</cell>
+                        <cell>10,948</cell>
+                        <cell>21,000</cell>
+                        <cell>2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5. <hi rendition="#aq">Nuevo Mexico</hi> ...</cell>
+                        <cell>5,709</cell>
+                        <cell>40,200</cell>
+                        <cell>7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#aq">B.</hi>
+                            <hi rendition="#g">Neu-Spanien im ei-<lb break="no"/>gentlichen Ver&#x017F;tande,</hi>
+                            <lb break="yes"/>unmittelbar unter dem Vize-<lb break="no" />ko&#x0364;nig &#x017F;tehend, und die Ko&#x0364;nig-<lb break="no" />reiche Mexico, Mechoacan y<lb break="yes"/>Nueva Galicia, und beide Ka-<lb break="no"/>lifornien begreifend: ...</cell>
+                        <cell>51,289 </cell>
+                        <cell>5,413,900</cell>
+                        <cell>105<lb break="yes"/>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Intendant&#x017F;chaft Mexico .</cell>
+                        <cell>5,927</cell>
+                        <cell>1,511,900</cell>
+                        <cell>255</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. Intendant&#x017F;chaft Puebla .</cell>
+                        <cell>2,696</cell>
+                        <cell>813,300</cell>
+                        <cell>301</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. Intendant&#x017F;chaft Veracruz .</cell>
+                        <cell>4,141</cell>
+                        <cell>156,000</cell>
+                        <cell>38</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4. Intendant&#x017F;chaft Oaxaca .</cell>
+                        <cell>4,447</cell>
+                        <cell>534,800</cell>
+                        <cell>120</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5. Intendant&#x017F;chaft Merida oder<lb break="yes"/>Jucatan ......</cell>
+                        <cell>5,977 </cell>
+                        <cell>465,800</cell>
+                        <cell>81</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>6. Intendant&#x017F;chaft Valladolid</cell>
+                        <cell>3,446</cell>
+                        <cell>476,400</cell>
+                        <cell>273</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>7. Intendant&#x017F;chaft Guadala-<lb break="no"/>xara ........</cell>
+                        <cell>9,612</cell>
+                        <cell>630,500</cell>
+                        <cell>66</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>8. Intendant&#x017F;chaft Zacatecas .</cell>
+                        <cell>2,355</cell>
+                        <cell>153,300</cell>
+                        <cell>65</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>9. Intendant&#x017F;chaft Guanaxuato</cell>
+                        <cell>911</cell>
+                        <cell>517,300</cell>
+                        <cell>568</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10. Intendant&#x017F;chaft San Luis<lb break="yes"/>Poto&#x017F;i. (Mit Aus&#x017F;chluß von<lb break="yes"/>Neu-St. Ander, Texas,<lb break="yes"/>Cohahuila und dem Ko&#x0364;nig-<lb break="no"/>reich Leon.) .....</cell>
+                        <cell>2,357</cell>
+                        <cell>230,000</cell>
+                        <cell>98</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>11. <placeName key="altkalifornien">Alt-Kalifornien</placeName> ....</cell>
+                        <cell>7,295</cell>
+                        <cell>9,000</cell>
+                        <cell>1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12. <placeName key="neukalifornien">Neu-Kalifornien</placeName> ...</cell>
+                        <cell>2,125</cell>
+                        <cell>15,600</cell>
+                        <cell>7</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <cb/>
+                <p>Im Jahre 1807 i&#x017F;t jedoch mit dem Milita&#x0364;rgouvernement der<lb break="yes"/>innern Provinzen eine Vera&#x0364;nderung vorgegangen. Sie &#x017F;tehen<lb break="yes"/>nicht mehr insge&#x017F;ammt unter dem Gouverneur von Chihuahua,<lb break="yes"/>&#x017F;ondern zerfallen in zwei Gouvernements. <hi rendition="#aq">a.</hi>
+                    <hi rendition="#g">We&#x017F;tliche Pro-<lb break="no"/>vinzen:</hi> Sonora, Durango o Nueva Biscaya, Nuevo<lb break="yes"/>Mexico, beide <placeName key="kalifornien">Kalifornien</placeName>. <hi rendition="#aq">b.</hi>
+                    <hi rendition="#g">Oe&#x017F;tliche Provinzen:</hi> Coha-<lb break="no"/>huila, Texas, Colonia del Nuevo Santander, Nuevo Reyno<lb break="yes"/>de Leon. &#x2014; Im Allgemeinen dringt &#x017F;ich beim Anblik der obigen<lb break="yes" />Tabelle die Bemerkung auf, daß in wenigen La&#x0364;ndern un&#x017F;rer Erd-<lb break="no"/>kugel die Bevo&#x0364;lkerung &#x017F;o ungleich vertheilt i&#x017F;t. Sieben Achttheile<lb break="yes"/>der Men&#x017F;chen wohnen innerhalb der Wendekrei&#x017F;e, wo manche<lb break="yes"/>Provinzen u&#x0364;ber 300, ja bis 568 Seelen auf der Quadratlieue<lb break="yes" />za&#x0364;hlen, wa&#x0364;hrend die ungeheuer gro&#x017F;en und &#x017F;ehr fruchtbaren Pro-<lb break="no"/>vinzen in der gema&#x0364;&#x017F;igten Zone zum Theil kaum 2 bis 6 Men-<lb break="no"/>&#x017F;chen auf der Quadratlieue na&#x0364;hren. Und von den fu&#x0364;nf Millio-<lb break="no"/>nen Men&#x017F;chen, welche innerhalb des Wendezirkels leben, woh-<lb break="no" />nen wiederum vier Fu&#x0364;nftheile auf dem Ru&#x0364;ken der Cordilleren,<lb break="yes"/>oder auf Bergebenen, die u&#x0364;ber dem Ozean wenig&#x017F;tens &#x017F;o hoch<lb break="yes"/>erhaben &#x017F;ind, als das Ho&#x017F;piz auf dem Montcenis.</p>
+                <lb break="yes"/>
+                <p>Herr v. <persName key="humboldt_av">Humboldt</persName> fu&#x0364;gt noch folgende Ueber&#x017F;icht des Fla&#x0364;chen-<lb break="no"/>inhalts und der Bevo&#x0364;lkerung der gro&#x0364;ßten politi&#x017F;chen Ge&#x017F;ell&#x017F;chaf-<lb break="no"/>ten in Europa und <placeName key="asien">A&#x017F;ien</placeName> bei, welche intere&#x017F;&#x017F;ante Vergleichungen<lb break="yes"/>mit dem gegenwa&#x0364;rtigen Zu&#x017F;tande von Mexico darbietet:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Im Jahre 1808</cell>
+                        <cell>Fla&#x0364;chenin-<lb break="no"/>halt in<lb break="yes"/>Quadrat-<lb break="no"/>lieues zu<lb break="yes"/>25 auf den<lb break="yes" />Grad.</cell>
+                        <cell>Bevo&#x0364;lke-<lb break="no"/>rung.</cell>
+                        <cell> Ein-<lb break="no"/>woh-<lb break="no"/>ner<lb break="yes"/>auf<lb break="yes"/>einer<lb break="yes"/>Qua-<lb break="no"/>drat-<lb break="no"/>lieue.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Ru&#x017F;&#x017F;i&#x017F;ches Reich</hi> ....</cell>
+                        <cell>942,452</cell>
+                        <cell>40,000,000</cell>
+                        <cell>42<lb break="yes"/>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Europa&#x0364;i&#x017F;cher Theil ...</cell>
+                        <cell>215,809</cell>
+                        <cell> 36,400,000</cell>
+                        <cell>169</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. A&#x017F;iati&#x017F;cher Theil ....</cell>
+                        <cell>726,644</cell>
+                        <cell>3,597,000 </cell>
+                        <cell>5<lb break="yes"/>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Das Gouvernement Irkuzk<lb break="yes"/>allein .......</cell>
+                        <cell>350,000</cell>
+                        <cell> 680,600</cell>
+                        <cell>2</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Das Gouvernement Tobolsk<lb break="yes"/>allein .......</cell>
+                        <cell>200,000</cell>
+                        <cell>72,547</cell>
+                        <cell>1</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Ganz Europa</hi> .....</cell>
+                        <cell>476,111</cell>
+                        <cell>182,599,000</cell>
+                        <cell> 383</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">
+                            <hi rendition="#g">Vereinigte Staaten von<lb break="yes"/>
+                                <placeName key="nordamerika">Nordamerika</placeName>.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Mit Loui&#x017F;iana ....</cell>
+                        <cell>260,340</cell>
+                        <cell>6,800,000</cell>
+                        <cell> 22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. Ohne Loui&#x017F;iana ....</cell>
+                        <cell>156,240</cell>
+                        <cell>6,715,000</cell>
+                        <cell> 43</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. Ohne Loui&#x017F;iana und das we&#x017F;t-<lb break="no"/>liche Gebiet .....</cell>
+                        <cell>78,120</cell>
+                        <cell>6,655,000</cell>
+                        <cell>85</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Hindo&#x017F;tan di&#x017F;&#x017F;eits des<lb break="yes"/>Ganges</hi> .......</cell>
+                        <cell>162,827</cell>
+                        <cell>&#x2014;</cell>
+                        <cell>&#x2014;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Unter unmittelbarer Souve-<lb break="no"/>raineta&#x0364;t der engli&#x017F;ch-o&#x017F;tin-<lb break="no"/>di&#x017F;chen Kompagnie ..</cell>
+                        <cell> 48,299</cell>
+                        <cell>23,806,000</cell>
+                        <cell>493</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bundsgeno&#x017F;&#x017F;en und tribut-<lb break="no"/>bare Fu&#x0364;r&#x017F;ten der Kompagnie</cell>
+                        <cell>32,647</cell>
+                        <cell>16,900,000</cell>
+                        <cell> 518</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Tu&#x0364;rki&#x017F;ches Reich</hi> in Europa,<lb break="yes"/>
+                            <placeName key="asien">A&#x017F;ien</placeName> und<placeName key="afrika">Afrika</placeName>....</cell>
+                        <cell>136,110</cell>
+                        <cell>25,330,000</cell>
+                        <cell> 186</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Oe&#x017F;treichi&#x017F;che Monarchie</hi>
+                        </cell>
+                        <cell>33,258 </cell>
+                        <cell>25,588 000</cell>
+                        <cell>769</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Frankreich</hi> .......</cell>
+                        <cell>32,000</cell>
+                        <cell>35,000 000</cell>
+                        <cell> 1,094</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Spanien</hi> .......</cell>
+                        <cell>25,147</cell>
+                        <cell>10,409,000</cell>
+                        <cell> 413</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="4">
+                            <hi rendition="#g">Neu-Spanien.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Mit den innern Provinzen</cell>
+                        <cell>118,478</cell>
+                        <cell>5,837,100</cell>
+                        <cell> 49</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. Ohne die&#x017F;elben ....</cell>
+                        <cell>51,289</cell>
+                        <cell>5,413 900</cell>
+                        <cell> 105</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Neu-Spanien i&#x017F;t al&#x017F;o beinahe viermal &#x017F;o groß, als Frankreich,<lb break="yes"/>und hat dagegen nur den &#x017F;iebenten Theil von de&#x017F;&#x017F;en Bevo&#x0364;lkerung.<lb break="yes"/>Eine bemerkenswerthe Aehnlichkeit hat es dafu&#x0364;r mit den ver-<lb break="no" />einigten Frei&#x017F;taaten von <placeName key="nordamerika" >Nordamerika</placeName>, be&#x017F;onders wenn man<lb break="yes" />Loui&#x017F;iana und das we&#x017F;tliche Gebiet als die <hi rendition="#aq" >Provincias internas</hi>
+                    <lb break="yes"/>des gro&#x017F;en atlanti&#x017F;ch-amerikani&#x017F;chen Staatenvereins an&#x017F;ieht.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

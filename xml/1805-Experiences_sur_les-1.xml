@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="129" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">EXPÉRIENCES<lb break="yes"/>SUR LES MOYENS EUDIOMÉTRIQUES,<lb break="yes"/>ET SUR LA PROPORTION DES PRINCIPES<lb break="yes" />CONSTITUANS DE L&#x2019;ATMOSPHÈRE<lb break="yes"/>
+                        <hi rendition="#k">Par</hi> MM. A. HUMBOLT ET J.-F. GAY-LUSSAC</hi>
+                    <lb break="yes"/>Lues à la première classe de l&#x2019;Institut National, le 1<hi rendition="#sup">er</hi> pluviose an 13.</head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <hi rendition="#in">S</hi>i</hi> les physiciens et les chimistes sont aujourd&#x2019;hui d&#x2019;accord sur<lb break="yes"/>la nature des principes constituans de l&#x2019;atmosphère, ils ne le sont<lb break="yes"/>point encore sur leur quantité absolue. Depuis <persName key="scheele_01">Sheele</persName> et <persName key="lavoisier_ald">Lavoisier</persName>
+                    <lb break="yes"/>qui avoient trouvé 0,27 d&#x2019;oxigène dans l&#x2019;air, des expériences<lb break="yes"/>nombreuses que l&#x2019;on doit à MM. Cavendish, <persName key="marti_01">Marti</persName>, <persName key="berthollet_cl" >Berthollet</persName>,<lb break="yes"/>
+                    <persName key="fourcroy_afd">Fourcroy</persName> et <persName key="davy_h" >Davy</persName>, ont beaucoup modifié cette proportion, en<lb break="yes" />la fixant entre 0,20 et 0,23. On ne peut disconvenir néanmoins<lb break="yes" />que ces limites ne soient encore très-éloignées et beaucoup au-<lb break="maybe"/>delà du degré d&#x2019;exactitude que comportent nos connoissances<lb break="yes"/>actuelles; ou, si ces limites sont bien établies, il faut en con-<lb break="no"/>clure que l&#x2019;atmosphère éprouve des oscillations considérables<lb break="yes"/>dans sa composition. Quoique pour la plupart des phénomènes<lb break="yes"/>chimiques il ne soit pas nécessaire de conno&#x00EE;tre rigoureusement<lb break="yes"/>la quantité absolue de ses principes, cette connoissance n&#x2019;est pas<lb break="yes"/>moins intéressante par elle-m&#x00EA;me qu&#x2019;importante pour l&#x2019;histoire<lb break="yes"/>de notre globe. Si tous les faits géologiques tendent à prouver<lb break="yes"/>que la terre n&#x2019;est plus ce qu&#x2019;elle a été autrefois; que les eaux ont<lb break="yes"/>couvert des montagnes très élevées, et que le Nord nourrissoit<lb break="yes"/>des animaux qui n&#x2019;appartiennent plus qu&#x2019;aux tropiques, ces<lb break="yes" />m&#x00EA;mes changemens prouvent combien il seroit utile pour les<lb break="yes"/>siècles futurs de bien constater aujourd&#x2019;hui l&#x2019;état physique du<lb break="yes"/>globe; et lors m&#x00EA;me que les grandes catastrophes qu&#x2019;il a éprou-<lb break="no"/>vées ne se renouvelleroient plus, il est possible qu&#x2019;il subisse des<lb break="yes"/>
+                    <pb n="130" facs="#f0002"/> modifications lentes que l&#x2019;homme ne pourroit point apprécier<lb break="yes"/>par lui m&#x00EA;me, s&#x2019;il n&#x2019;en trouvoit des preuves incontestables dans<lb break="yes"/>les annales des sciences. Il seroit donc de la plus haute impor-<lb break="no"/>tance de fixer authentiquement les grands phénomènes de la na-<lb break="no"/>ture qu&#x2019;on peut supposer variables, tels que l&#x2019;intensité des forces<lb break="yes" />magnétiques, la hauteur du baromètre au niveau de la mer, celle<lb break="yes" />de la mer m&#x00EA;me, la température moyenne de chaque climat, et<lb break="yes"/>la proportion des principes constituans de l&#x2019;atmosphère. Nous<lb break="yes"/>avons porté notre attention sur la dernière question, et quoique<lb break="yes"/>nous ne l&#x2019;ayons pas encore résolue d&#x2019;une manière qui puisse nous<lb break="yes"/>satisfaire entièrement nous-m&#x00EA;mes, nous hasardons de faire con-<lb break="no"/>no&#x00EE;tre le commencement du travail que nous avons entrepris sur<lb break="yes"/>cet objet, et les recherches auxquelles il nous a conduits.</p>
+                <lb break="yes"/>
+                <p>Mais les moyens eudiométriques qui doivent servir à détermi-<lb break="no"/>ner la proportion des principes constituans de l&#x2019;air ne sont pas<lb break="yes"/>tous susceptibles d&#x2019;une égale précision, et quelques chimistes<lb break="yes"/>distingués donnent la préférence à un moyen qui est exclu par<lb break="yes"/>d&#x2019;autres. Il nous étoit parconséquent indispensable de soumettre<lb break="yes"/>à l&#x2019;épreuve les méthodes eudiométriques connues pour bien les<lb break="yes"/>apprécier; car nous sommes convaincus que l&#x2019;exactitude dans les<lb break="yes"/>expériences provient moins de l&#x2019;observation fidèle des divisions<lb break="yes"/>d&#x2019;un instrument que de l&#x2019;exactitude m&#x00EA;me de la méthode. Quoi-<lb break="no"/>qu&#x2019;en effet le gaz nitreux paroisse au premier abord le moyen<lb break="yes"/>eudiométrique le plus incertain que l&#x2019;on puisse choisir, nous<lb break="yes"/>nous sommes assurés qu&#x2019;en combinant son action avec celle du<lb break="yes"/>sulfate de fer ou de l&#x2019;acide muriatique oxigéné et de la potasse,<lb break="yes"/>il peut indiquer avec beaucoup de précision la quantité d&#x2019;oxigène<lb break="yes"/>contenue dans l&#x2019;air. Tous les moyens eudiométriques donne-<lb break="no"/>roient les m&#x00EA;mes résultats si on les connoissoit tous également,<lb break="yes"/>et ce n&#x2019;est que parcequ&#x2019;il est très-difficile de faire toutes les cor-<lb break="no"/>rections qu&#x2019;ils comportent, qu&#x2019;on donne naturellement la préfé-<lb break="no"/>rence à ceux qui en présentent moins, quoiqu&#x2019;ils ne soient pas<lb break="yes"/>toujours les plus simples dans leur emploi. Nous commencerons<lb break="yes"/>donc par faire conno&#x00EE;tre les recherches eudiométriques dont<lb break="yes"/>nous nous sommes occupés, et nous les appliquerons ensuite<lb break="yes"/>à l&#x2019;analyse de l&#x2019;air atmosphérique et à celle de différens gaz<lb break="yes"/>retirés de l&#x2019;eau dans diverses circonstances, ou mis en contact<lb break="yes"/>avec elle. Nous croyons devoir rappeler encore que nous ne trai-<lb break="no" />terons pas la question que nous nous sommes proposée avec l&#x2019;é-<lb break="no"/>tendue qu&#x2019;elle mérite. Forcés d&#x2019;interrompre nos recherches<lb break="yes"/>avant d&#x2019;avoir pu les terminer, nous n&#x2019;avons pour but que d&#x2019;en<lb break="yes"/>faire conno&#x00EE;tre les principaux résultats. Depuis près de deux mois<lb break="yes"/>
+                    <pb n="131" facs="#f0003"/> que nous les avons commencées dans un des laboratoires de l&#x2019;Ecole<lb break="yes"/>Polytechnique, nous nous y sommes livrés avec d&#x2019;autant plus<lb break="yes"/>d&#x2019;assiduité, malgré le froid très-désagréable pour ce genre d&#x2019;ex-<lb break="no"/>périences, que M. <persName key="humboldt_av">Humboldt</persName> y mettoit un intér&#x00EA;t particulier. En<lb break="yes"/>l&#x2019;an 6 il avoit présenté à l&#x2019;Institut deux Mémoires sur l&#x2019;analyse de<lb break="yes" />l&#x2019;air, qui renferment un grand nombre d&#x2019;expériences qu&#x2019;il regarde<lb break="yes"/>aujourd&#x2019;hui (c&#x2019;est lui m&#x00EA;me qui le déclare) non-seulement<lb break="yes"/>comme très-inexactes, mais encore comme justement combat-<lb break="no"/>tues par M. Davy et par un chimiste qui nous honore tous deux<lb break="yes"/>d&#x2019;une bonté particulière, par M. <persName key="berthollet_cl">Berthollet</persName>. Zélé pour le progrès<lb break="yes"/>de la science, M. <persName key="humboldt_av" >Humboldt</persName> a voulu remplacer ce travail de sa<lb break="yes" />première jeunesse par un autre fondé sur des bases plus solides;<lb break="yes"/>lorsqu&#x2019;il a commencé ses recherches, il a desiré m&#x2019;y associer, et<lb break="yes"/>j&#x2019;ai d&#x00FB; me sentir d&#x2019;autant plus honoré de cette proposition, que<lb break="yes"/>depuis le retour de son voyage aux tropiques nous sommes liés<lb break="yes"/>de l&#x2019;amitié la plus étroite.</p>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Observations sur quelques moyens eudiométriques</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Nous ne nous proposons pas d&#x2019;exposer dans ce Mémoire toutes<lb break="yes"/>les recherches que nous avons entreprises sur divers moyens eu-<lb break="no"/>diométriques, la plupart sont encore trop incomplètes; mais<lb break="yes"/>nous étant occupés plus particulièrement des sulfures alkalins et<lb break="yes"/>surtout du gaz hydrogène, nous exposerons en ce moment le<lb break="yes"/>résultat de nos observations sur ces deux moyens eudiométriques.</p>
+                    <lb break="yes"/>
+                    <p>Quoique les sulfures alkalins aient, en général, pour l&#x2019;analyse<lb break="yes"/>de l&#x2019;air une action assez constante, et qui leur avoit fait accorder<lb break="yes"/>avec raison la préférence sur les autres moyens eudiométriques,<lb break="yes"/>ils présentent cependant quelques causes d&#x2019;incertitude qu&#x2019;il est<lb break="yes"/>indispensable de bien conno&#x00EE;tre si l&#x2019;on veut ajouter une entière<lb break="yes"/>confiance à leurs résultats. On a cru pendant long-temps qu&#x2019;ils<lb break="yes"/>n&#x2019;avoient aucune action sur l&#x2019;azote, et quoique M. <persName key="marti_01">Marti</persName> e&#x00FB;t an-<lb break="no"/>noncé dès 1790 qu&#x2019;ils absorboient ce gaz, on n&#x2019;avoit plus fait de-<lb break="no"/>puis attention à cette propriété. Il est vrai que M. <persName key="marti_01">Marti</persName> avoit en<lb break="yes"/>m&#x00EA;me temps annoncé qu&#x2019;en les saturant d&#x2019;azote, on pouvoit les<lb break="yes"/>employer avantageusement à l&#x2019;analyse de l&#x2019;air, et obtenir cons-<lb break="no"/>tamment pour l&#x2019;oxigène une proportion comprise entre 0.21 et<lb break="yes" />0.23. D&#x2019;un autre c&#x00F4;té, ce chimiste n&#x2019;ayant pas indiqué avec assez<lb break="yes"/>de précision les détails de son expérience, M. <persName key="berthollet_cl">Berthollet</persName> qui l&#x2019;a-<lb break="no"/>voit répétée dans des circonstances différentes, avoit annoncé<lb break="yes"/>dans sa statique chimique qu&#x2019;il n&#x2019;avoit point observé que les sul-<lb break="no"/>
+                        <pb n="132" facs="#f0004"/> fures alkalins eussent la propriété d&#x2019;absorber l&#x2019;azote, et il avoit<lb break="yes"/>par là rassuré les chimistes sur leur emploi dans l&#x2019;analyse de<lb break="yes" />l&#x2019;air. Lorsque nous avons commencé à nous servir de ce moyen,<lb break="yes"/>nous lui accordions une grande confiance, et nous n&#x2019;avions à lui<lb break="yes"/>opposer que la longueur du temps qu&#x2019;il exige, et qui avoit fait de-<lb break="no"/>sirer depuis long-temps, malgré son exactitude, qu&#x2019;on p&#x00FB;t lui en<lb break="yes"/>substituer un autre qui n&#x2019;e&#x00FB;t point les m&#x00EA;mes inconvéniens; mais<lb break="yes"/>nous avons bient&#x00F4;t reconnu qu&#x2019;il n&#x2019;agissoit pas toujours d&#x2019;une ma-<lb break="no"/>nière uniforme, et en cela le hasard nous a favorisés.</p>
+                    <lb break="yes"/>
+                    <p>Ayant mis 100 parties d&#x2019;air atmosphérique en contact avec<lb break="yes"/>une dissolution de sulfure de potasse faite à chaud, dans trois<lb break="yes"/>vases d&#x2019;inégale capacité, nous avons observé au bout de huit<lb break="yes"/>jours, que l&#x2019;air avoit perdu 23 parties de son volume dans un<lb break="yes"/>des vases, et 23,6; 26,0 dans les deux autres. Cette grande iné-<lb break="no"/>galité nous a d&#x2019;abord beaucoup surpris; mais ayant remarqué<lb break="yes"/>que l&#x2019;absorption avoit été la plus forte dans le plus grand flacon,<lb break="yes"/>nous avons soup&#x00E7;onné qu&#x2019;il s&#x2019;étoit absorbé de l&#x2019;azote, et pour<lb break="yes"/>mieux nous confirmer dans notre soup&#x00E7;on, nous avons répété la<lb break="yes"/>m&#x00EA;me expérience en employant deux vases plus inégaux en ca-<lb break="no" />pacité, et d&#x2019;ailleurs, dans les m&#x00EA;mes circonstances: au bout<lb break="yes"/>de dix jours, nous avons trouvé que dans le petit flacon l&#x2019;ab-<lb break="no"/>sorption n&#x2019;avoit été que de 22,5 parties, tandis que dans le grand<lb break="yes"/>elle étoit de 30,6. Mais l&#x2019;expérience la plus concluante que nous<lb break="yes"/>avons faite à cet égard, a été de mettre une dissolution de sul-<lb break="no"/>fure de potasse qui avoit été chauffée jusqu&#x2019;à l&#x2019;ébullition, en con-<lb break="no"/>tact avec de l&#x2019;azote dans des vases inégaux, et de reconnoitre<lb break="yes"/>que l&#x2019;absorption étoit proportionnelle à leur capacité. Il seroit<lb break="yes"/>donc possible de faire absorber une quantité déterminée d&#x2019;air<lb break="yes" />atmosphérique par une dissolution de sulfure alkalin, et de le<lb break="yes"/>faire regarder comme de l&#x2019;oxigène pur, si on supposoit que<lb break="yes"/>toute la diminution de volume est due au gaz oxigène. Mais si<lb break="yes"/>au lieu d&#x2019;employer une dissolution de sulfure faite à chaud, on<lb break="yes"/>en emploie une faite à froid, comme l&#x2019;a toujours pratiqué<lb break="yes"/>M. <persName key="berthollet_cl">Berthollet</persName>, la dissolution de l&#x2019;azote n&#x2019;a plus lieu, au moins<lb break="yes"/>d&#x2019;une manière sensible, et les résultats de l&#x2019;analyse de l&#x2019;air faite<lb break="yes"/>par ce moyen, deviennent alors beaucoup plus comparables. Cette<lb break="yes"/>action variable des sulfures alkalins dissous à diverses tempéra-<lb break="no"/>tures, a besoin d&#x2019;&#x00EA;tre mieux éclaircie, et nous allons le faire en<lb break="yes"/>citant des phénomènes analogues, mais plus aisés à concevoir.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;eau contenant toujours en dissolution une certaine quanti-<lb break="no"/>té d&#x2019;air dont la proportion d&#x2019;oxigène est plus forte que celle de l&#x2019;air<lb break="yes"/>
+                        <pb n="133" facs="#f0005"/> atmosphérique, il arrive qu&#x2019;en la chauffant ou en y dissolvant un<lb break="yes"/>sel, elle laisse dégager une partie de son air et en conserve une<lb break="yes"/>autre qu&#x2019;on peut lui enlever par une plus forte chaleur. Si donc<lb break="yes"/>on met cette eau qui a perdu son air par ce dernier moyen, en<lb break="yes"/>contact avec de l&#x2019;air atmosphérique, elle en absorbera en reve-<lb break="no" />nant à sa première température une quantité égale à celle qu&#x2019;elle<lb break="yes"/>a perdue, et si on n&#x2019;est pas prévenu de cette absorption et qu&#x2019;on<lb break="yes"/>s&#x2019;en tienne aux apparences, on supposera que l&#x2019;eau seule ou<lb break="yes" />chargée de sel, a fait l&#x2019;analyse de l&#x2019;air. C&#x2019;est ainsi que M. <persName key="heller_01">Heller</persName>
+                        <lb break="yes"/>a annoncé tout récemment qu&#x2019;une dissolution de muriate de<lb break="yes"/>soude absorboit tout l&#x2019;oxigène de l&#x2019;air, quoique, en répétant<lb break="yes"/>l&#x2019;expérience avec une dissolution du m&#x00EA;me sel très-chargée,<lb break="yes"/>mais faite à froid, nous n&#x2019;ayons pas trouvé la plus légère<lb break="yes" />différence entre l&#x2019;air atmosphérique ordinaire et celui qui avoit<lb break="yes"/>été en contact avec la dissolution de muriate de soude pendant<lb break="yes"/>un mois et demi.</p>
+                    <lb break="yes"/>
+                    <p>Il arrive précisément la m&#x00EA;me chose avec un sulfure qu&#x2019;avec<lb break="yes"/>un sel. Au moment de sa dissolution dans l&#x2019;eau il y a une partie<lb break="yes"/>d&#x2019;air expulsée et il s&#x2019;établit un équilibre de saturation entre l&#x2019;eau,<lb break="yes"/>le sulfure et l&#x2019;air qu&#x2019;elle tient en dissolution, ensorte que si les<lb break="yes"/>circonstances ne changent pas, il n&#x2019;y a pas de raison pour qu&#x2019;elle<lb break="yes"/>absorbe maintenant de nouvel air; mais si l&#x2019;on fait chauffer la<lb break="yes"/>dissolution, il s&#x2019;en dégage une partie du gaz qu&#x2019;elle contenoit,<lb break="yes"/>et il faut bien qu&#x2019;en revenant à sa première température elle ab-<lb break="no"/>sorbe ce qu&#x2019;elle avoit perdu, afin que l&#x2019;équilibre se rétablisse <note place="foot" n="(1)" >L&#x2019;absorption dont nous entendons parler ici est indépendante de celle<lb break="yes"/>de l&#x2019;oxigène par le sulfure qui se convertit par là en sulfate. Mais comme<lb break="yes"/>le sulfure absorbe l&#x2019;oxigène que l&#x2019;eau tient en dissolution, il arrivera très-<lb break="maybe"/>probablement que l&#x2019;eau pourra absorber une plus grande quantité d&#x2019;azote;<lb break="yes" />ensorte qu&#x2019;en se servant d&#x2019;une dissolution faite à froid, mais très-récente,<lb break="yes"/>il y auroit encore une plus grande diminution de volume que celle due à<lb break="yes" />l&#x2019;absorption de l&#x2019;oxigène. Nous disons très-probablement; car nous n&#x2019;avons pas<lb break="yes"/>encore fait l&#x2019;expérience.</note>.<lb break="yes"/>Nous croyons donc pouvoir expliquer la différence des résultats<lb break="yes"/>de MM. <persName key="marti_01">Marti</persName> et <persName key="berthollet_cl">Berthollet</persName> par la différence m&#x00EA;me des circons-<lb break="no"/>tances où ils ont opéré; mais il nous paro&#x00EE;t que M. <persName key="marti_01">Marti</persName> a cru<lb break="yes"/>que le sulfure absorboit par sa nature de l&#x2019;azote, tandis qu&#x2019;il<lb break="yes"/>n&#x2019;en absorbe pas du tout, et qu&#x2019;il emp&#x00EA;che plut&#x00F4;t l&#x2019;eau avec la-<lb break="no"/>quelle on l&#x2019;a fait bouillir d&#x2019;en absorber autant qu&#x2019;elle le feroit sans<lb break="yes"/>lui.</p>
+                    <lb break="yes"/>
+                    <p>Ainsi avec l&#x2019;attention de dissoudre à froid les sulfures, et de les<lb break="yes"/>
+                        <pb n="134" facs="#f0006"/> laisser quelque temps en contact avec de l&#x2019;azote ou avec de l&#x2019;air,<lb break="yes"/>on peut les employer avec avantage à l&#x2019;analyse de l&#x2019;atmosphère.<lb break="yes" />Nous observerons cependant qu&#x2019;ayant l&#x2019;inconvénient d&#x2019;exiger<lb break="yes"/>beaucoup de temps pour que leur action soit complète, il en<lb break="yes"/>résulte qu&#x2019;on est obligé d&#x2019;avoir recours aux corrections du ther-<lb break="no"/>momètre et du baromètre qui sont souvent très-incertaines. La<lb break="yes"/>meilleure manière de remédier à cet inconvénient est sans doute<lb break="yes"/>de suivre la méthode de MM. <persName key="berthollet_cl">Berthollet</persName> et <persName key="marti_01">Marti</persName>, qui consiste à<lb break="yes" />mettre en comparaison sur l&#x2019;eau une quantité déterminée d&#x2019;air,<lb break="yes"/>pour en conclure d&#x2019;après ses variations de volume, celle de l&#x2019;air<lb break="yes"/>qu&#x2019;on analyse; mais cette méthode ne nous a pas paru avoir<lb break="yes"/>dans la pratique tout l&#x2019;avantage qu&#x2019;elle semble promettre.</p>
+                    <lb break="yes"/>
+                    <p>Nous ferons remarquer encore à l&#x2019;égard de tous les moyens eu-<lb break="no"/>diométriques où la substance absorbante est solide ou liquide, que<lb break="yes"/>si l&#x2019;on commet une erreur, soit en observant les divisions de<lb break="yes"/>l&#x2019;instrument, soit dans l&#x2019;appréciation des incertitudes de la mé-<lb break="no"/>thode, cette erreur porte nécessairement en entier sur la quan-<lb break="no"/>tité d&#x2019;oxigène; et comme avec toute l&#x2019;exactitude possible on ne<lb break="yes"/>peut pas répondre de beaucoup moins d&#x2019;un centième, il en résul-<lb break="no"/>teroit qu&#x2019;on ne pourroit pas déterminer la proportion d&#x2019;oxigène<lb break="yes"/>contenue dans l&#x2019;air au-delà de cette quantité. On remarque, en<lb break="yes"/>effet, que les chimistes en se servant de moyens semblables<lb break="yes"/>ont trouvé des variations assez considérables dans la quantité<lb break="yes" />d&#x2019;oxigène de l&#x2019;air; et M. <persName key="marti_01" >Marti</persName> lui-m&#x00EA;me, qui paro&#x00EE;t avoir fait<lb break="yes"/>un très-grand nombre d&#x2019;expériences avec les sulfures alkalins,<lb break="yes"/>et après avoir reconnu les précautions qu&#x2019;ils exigent, la fixe entre<lb break="yes"/>0,21 et 0,23. Nous verrons plus bas que les moyens eudiométri-<lb break="no"/>ques dans lesquels la substance qui se combine avec l&#x2019;oxigène<lb break="yes" />est gazeuse, peuvent donner une plus grande précision.</p>
+                    <lb break="yes"/>
+                    <p>Comme nous nous étions proposé dès le commencement de<lb break="yes"/>notre travail de nous assurer si l&#x2019;eudiomètre de <persName key="volta_agv" >Volta</persName> pouvoit<lb break="yes"/>&#x00EA;tre employé à l&#x2019;analyse de l&#x2019;air, nous avons fixé principalement<lb break="yes"/>notre attention sur lui. On avoit accusé cet instrument d&#x2019;&#x00EA;tre<lb break="yes"/>infidèle, d&#x2019;indiquer dans l&#x2019;air de trop petites quantités d&#x2019;oxigène;<lb break="yes" />mais il nous avoit paru qu&#x2019;en supposant qu&#x2019;il exige&#x00E2;t des cor-<lb break="no"/>rections, on pouvoit en les appréciant, ainsi que la loi de leurs<lb break="yes"/>variations, le rendre très exact et très-commode; en conséquence<lb break="yes"/>nous nous sommes proposé les questions suivantes:</p>
+                    <lb break="yes"/>
+                    <p>1°. Lorsqu&#x2019;on enflamme un mélange de gaz hydrogène et<lb break="yes" />de gaz oxigène dans l&#x2019;eudiomètre de <persName key="volta_agv" >Volta</persName>, l&#x2019;absorption d&#x2019;un des<lb break="yes" />gaz peut-elle &#x00EA;tre complète?</p>
+                    <lb break="yes"/>
+                    <pb n="135" facs="#f0007"/>
+                    <p>2°. Le produit de leur combinaison est-il de nature cons-<lb break="no" />tante?</p>
+                    <lb break="yes"/>
+                    <p>3°. Quelle est la proportion exacte des deux gaz pour former<lb break="yes" />de l&#x2019;eau?</p>
+                    <lb break="yes"/>
+                    <p>4°. Quelles sont les limites d&#x2019;erreur que comporte l&#x2019;eudio-<lb break="no"/>mètre de <persName key="volta_agv">Volta</persName>?</p>
+                    <lb break="yes"/>
+                    <p>Nous devons examiner successivement ces quatre questions:<lb break="yes" />mais avant nous croyons essentiel de dire comment nous avons<lb break="yes"/>préparé les gaz qui ont servi à nos expériences.</p>
+                    <lb break="yes"/>
+                    <p>Nous avons retiré le gaz oxigène du muriate sur-oxigéné de<lb break="yes" />potasse. Pour l&#x2019;obtenir nous nous sommes servis d&#x2019;une cornue<lb break="yes"/>de verre, à laquelle avoit été soudé à la lampe le tube recourbé<lb break="yes"/>par lequel devoit s&#x2019;échapper le gaz, et, pour l&#x2019;avoir aussi exempt<lb break="yes"/>d&#x2019;azote qu&#x2019;il est possible, nous avons rempli la cornue d&#x2019;eau<lb break="yes"/>environ jusqu&#x2019;au quart de sa capacité. Cette eau se réduisant<lb break="yes"/>toute en vapeurs avant que le sel se décompose, a bient&#x00F4;t ex-<lb break="no"/>pulsé tout l&#x2019;air de la cornue; mais pour prévenir l&#x2019;absorp-<lb break="no"/>tion qui auroit lieu avant le dégagement du gaz oxigéne, nous<lb break="yes"/>faisons plonger l&#x2019;extrémité du tube dans une soucoupe remplie<lb break="yes" />de mercure que nous enlevons aussit&#x00F4;t que le gaz commence à<lb break="yes"/>se dégager. Pour éviter que l&#x2019;oxigène, en traversant l&#x2019;eau, en<lb break="yes"/>chasse de l&#x2019;azote, nous le portons directement au haut du<lb break="yes"/>récipient qui doit le recevoir au moyen d&#x2019;un tube recourbé<lb break="yes"/>à angle droit qui monte d&#x2019;une part jusqu&#x2019;au haut du réci-<lb break="no"/>pient, et qui de l&#x2019;autre s&#x2019;adapte au premier tube au moyen<lb break="yes" />d&#x2019;un bouchon de liége commun aux deux. Ce procédé très-<lb break="maybe"/>simple dans son emploi, est surtout très-avantageux pour les<lb break="yes"/>gaz solubles dans l&#x2019;eau, tels que le gaz acide carbonique, le gaz<lb break="yes"/>oxide d&#x2019;azote, etc. Nous avons obtenu notre gaz hydrogène en<lb break="yes"/>décomposant l&#x2019;eau par le moyen du zinc et de l&#x2019;acide muriatique ou<lb break="yes"/>de l&#x2019;acide sulfurique étendu d&#x2019;environ six parties d&#x2019;eau; nous avons<lb break="yes"/>eu l&#x2019;attention de remplir exactement d&#x2019;acide le vase d&#x2019;où devoit<lb break="yes"/>se dégager le gaz, et de ne point lui faire traverser l&#x2019;eau; mais mal-<lb break="no" />gré toutes ces précautions, notre oxigène a laissé avec le sulfure<lb break="yes"/>quatre millièmes d&#x2019;azote, et l&#x2019;hydrogène, analysé par d&#x2019;autres<lb break="yes"/>moyens, en a manifesté six millièmes. Après ces éclaircisse-<lb break="no"/>mens nous allons passer aux questions que nous nous sommes<lb break="yes"/>proposé de résoudre, en commen&#x00E7;ant par celle-ci:</p>
+                    <lb break="yes"/>
+                    <p>Lorsqu&#x2019;on enflamme un mélange de gaz oxigène et de gaz hy-<lb break="no"/>
+                        <pb n="136" facs="#f0008"/> drogène dans l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>, l&#x2019;absorption d&#x2019;un des gaz<lb break="yes"/>peut-elle &#x00EA;tre complète?</p>
+                    <lb break="yes"/>
+                    <p>Pour nous assurer si tout l&#x2019;oxigène ou tout l&#x2019;hydrogène pou-<lb break="no"/>voient &#x00EA;tre entièrement détruits, nous avons pensé que si les<lb break="yes"/>deux gaz étoient parfaitement purs, ou qu&#x2019;on conn&#x00FB;t leur de-<lb break="no"/>gré de pureté, et que leur absorption d&#x00FB;t &#x00EA;tre complète, on<lb break="yes"/>devoit trouver la m&#x00EA;me proportion pour les principes de l&#x2019;eau,<lb break="yes"/>soit que l&#x2019;hydrogène domin&#x00E2;t, soit que ce f&#x00FB;t l&#x2019;oxigène. Effec-<lb break="no"/>tivement, en faisant détoner des mélanges de 300 d&#x2019;hydro-<lb break="no"/>gène, 100 d&#x2019;oxigène; et de 200 du premier, 200 du second,<lb break="yes"/>dans lesquels l&#x2019;hydrogène et l&#x2019;oxigène dominent alternativement,<lb break="yes"/>et en faisant la correction due à l&#x2019;impureté des gaz, nous<lb break="yes"/>avons obtenu à très-peu près la m&#x00EA;me proportion. Quoique l&#x2019;ab-<lb break="no"/>sorption des deux gaz p&#x00FB;t &#x00EA;tre complète, il seroit cependant<lb break="yes" />possible que les proportions obtenues, en les faisant dominer<lb break="yes"/>alternativement, ne fussent pas identiques, et cela auroit lieu<lb break="yes"/>si, suivant la prédominence de l&#x2019;un des gaz, il se formoit une<lb break="yes"/>eau oxigénée ou hydrogénée; mais puisque les proportions<lb break="yes"/>sont devenues identiques, il faut nécessairement en conclure<lb break="yes"/>que l&#x2019;hydrogène et l&#x2019;oxigène ont été entièrement absorbés.<lb break="yes"/>Mais quoique l&#x2019;absorption des deux gaz puisse &#x00EA;tre complète<lb break="yes" />dans quelques circonstances, il ne faut pas croire qu&#x2019;elle le<lb break="yes"/>soit avec des quantités quelconques; non-seulement il est des<lb break="yes"/>proportions telles d&#x2019;hydrogène et d&#x2019;oxigène, ou de leur mélange<lb break="yes"/>avec l&#x2019;azote, ou m&#x00EA;me avec tout autre gaz, qu&#x2019;il est impossible<lb break="yes" />de les allumer par le moyen de l&#x2019;étincelle électrique; mais il<lb break="yes"/>en est encore d&#x2019;autres avec lesquelles l&#x2019;inflammation ayant été<lb break="yes"/>commencée, elle s&#x2019;arr&#x00EA;te avant que la combustion soit ache-<lb break="no" />vée. Nous allons citer à cet égard des expériences qui nous<lb break="yes" />paroissent très-concluantes.</p>
+                    <lb break="yes"/>
+                    <p>Nous avons m&#x00EA;lé 100 parties d&#x2019;hydrogène avec 200, 300, ...<lb break="yes"/>900 d&#x2019;oxigène, et nous les avons enflammées par l&#x2019;étincelle élec-<lb break="no"/>trique: avec ces diverses proportions, l&#x2019;absorption a été cons-<lb break="no"/>tamment de 146 parties; mais avec 1000 d&#x2019;oxigène, elle a été<lb break="yes"/>réduite tout-à-coup à 55; avec 1200 et 1400 elle a été réduite à<lb break="yes"/>24 et 14, et avec 1600 elle a été réduite à zéro; c&#x2019;est-à-dire<lb break="yes"/>qu&#x2019;il n&#x2019;y a pas eu d&#x2019;inflammation. Voici le tableau de ces divers<lb break="yes"/>résultats.</p>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">Hydrogène.</fw>
+                    <lb break="yes"/>
+                    <pb n="137" facs="#f0009"/>
+                    <table>
+                        <row>
+                            <cell>
+                                <hi rendition="#g">HYDROGÈNE.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#g">OXIGÈNE.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#g">ABSORPTION.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>200</cell>
+                            <cell>146</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>300</cell>
+                            <cell>146</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>600</cell>
+                            <cell>146</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>900</cell>
+                            <cell>146</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>950</cell>
+                            <cell>68</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>1000</cell>
+                            <cell>55</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>1200</cell>
+                            <cell>24</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>1400</cell>
+                            <cell>14</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100</cell>
+                            <cell>1600</cell>
+                            <cell>0 <note place="foot" n="(1)">Les absorptions 68,55<choice>
+                                        <sic/>
+                                        <corr type="editorial">,</corr>
+                                    </choice> 24 et 14, ne sont peut-&#x00EA;tre pas exactes à 2 ou 3 cen-<lb break="no"/>tièmes, parceque nos instrumens étant trop petits pour les proportions cor-<lb break="no"/>respondantes, nous avons été obligés de mesurer plusieurs fois; mais cela ne fait<lb break="yes"/>rien pour le phénomène en général.</note>
+                            </cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Ce qu&#x2019;il y a de frappant dans ces diverses expériences, c&#x2019;est de<lb break="yes"/>voir, 1°. une absorption constante avec des proportions très-<lb break="maybe"/>différentes se changer subitement en une absorption décrois-<lb break="no"/>sante; 2°. la combustion commencée du gaz hydrogène s&#x2019;ar-<lb break="no"/>r&#x00EA;ter avant d&#x2019;&#x00EA;tre achevée; 3°. qu&#x2019;il y a des proportions d&#x2019;oxigène<lb break="yes"/>et d&#x2019;hydrogène, telles qu&#x2019;il n&#x2019;est pas possible de les enflammer.<lb break="yes"/>Ces divers phénomènes seront un peu éclaircis par la suite; mais<lb break="yes" />en attendant remarquons qu&#x2019;il est des proportions m&#x00EA;me assez<lb break="yes"/>étendues avec lesquelles la combustion du gaz hydrogène peut<lb break="yes"/>&#x00EA;tre complète.</p>
+                    <lb break="yes"/>
+                    <p>Les phénomènes précédens ne sont pas particuliers aux gaz<lb break="yes" />hydrogène et oxigène m&#x00EA;lés, dans les circonstances dont nous<lb break="yes"/>venons de parler; ils ont encore lieu lorsqu&#x2019;on enflamme 100<lb break="yes"/>parties d&#x2019;oxigène avec 200, 300, .... 1000, etc. d&#x2019;hydrogène;<lb break="yes"/>il arrive seulement alors que le terme où l&#x2019;absorption cesse d&#x2019;&#x00EA;tre<lb break="yes" />constante est plus éloigné, et, pour en sentir la raison, il suffit<lb break="yes"/>d&#x2019;observer que dans ce cas il disparo&#x00EE;t environ 300 parties par<lb break="yes"/>l&#x2019;inflammation, tandis qu&#x2019;il n&#x2019;en a disparu que la moitié dans les<lb break="yes" />expériences précédentes.</p>
+                    <lb break="yes"/>
+                    <p>Le gaz azote et le gaze acide carbonique présentent aussi des<lb break="yes" />résultats analogues. Si l&#x2019;on enflamme, par exemple, un mélange<lb break="yes"/>de 900 parties d&#x2019;azote, 100 d&#x2019;hydrogène, et 100 d&#x2019;oxigène, l&#x2019;ab-<lb break="no"/>sorption qui devroit &#x00EA;tre de 146 parties si la combustion étoit<lb break="yes"/>
+                        <pb n="138" facs="#f0010"/> complète, n&#x2019;a été dans une expérience, qui est celle que nous<lb break="yes"/>prenons pour exemple, que de 50 parties, quoique dans d&#x2019;autres<lb break="yes"/>nous l&#x2019;ayons vue un peu au-dessus ou au-dessous de cette quan-<lb break="no"/>tité. Avec des proportions inférieures d&#x2019;azote nous avons eu<lb break="yes" />constamment la m&#x00EA;me absorption de 146. Quoique l&#x2019;azote pa-<lb break="no"/>roisse se comporter ici comme l&#x2019;oxigène, puisque avec 100 d&#x2019;hy-<lb break="no"/>drogène et 1000 d&#x2019;oxigène nous avons eu à-peu-près le m&#x00EA;me<lb break="yes" />résultat qu&#x2019;avec 100 d&#x2019;hydrogène, 100 d&#x2019;oxigène et 900 d&#x2019;azote,<lb break="yes"/>nous n&#x2019;en tirerons aucune conséquence, parceque nous n&#x2019;a-<lb break="no"/>vons pas encore assez multiplié et varié nos expériences. Néan-<lb break="no"/>moins celles que nous avons faites tendent à prouver que lors-<lb break="no"/>que des portions déterminées de gaz oxigène et de gaz hydro-<lb break="no"/>gène sont m&#x00EA;lées avec différens gaz, l&#x2019;absorption peut &#x00EA;tre cons-<lb break="no"/>tante jusqu&#x2019;à un certain point, passé lequel elle décro&#x00EE;t très-v&#x00EE;te.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;absorption de l&#x2019;oxigène et de l&#x2019;hydrogène étant complète<lb break="yes"/>dans des proportions déterminées, et ne l&#x2019;étant pas dans d&#x2019;au-<lb break="no"/>tres, il sera donc toujours possible étant donné un mélange<lb break="yes"/>gazeux, qui seul ne pourroit pas s&#x2019;enflammer, de le ramener<lb break="yes"/>à un autre avec lequel l&#x2019;absorption d&#x2019;un des gaz seroit totale,<lb break="yes"/>en lui ajoutant de l&#x2019;oxigène ou de l&#x2019;hydrogène, ou m&#x00EA;me des<lb break="yes"/>deux ensemble.</p>
+                    <lb break="yes"/>
+                    <p>La combustion des 100 parties d&#x2019;hydrogène dans l&#x2019;expérience<lb break="yes"/>précédente n&#x2019;ayant pas été complète, nous avons analysé le<lb break="yes"/>résidu. 100 parties mises avec du phosphore ont diminué de 7<lb break="yes"/>en quatre heures de temps, preuve manifeste que le résidu con-<lb break="no"/>tenoit de l&#x2019;oxigène. Pour nous assurer s&#x2019;il avoit retenu de l&#x2019;hy-<lb break="no"/>drogène, nous avons enflammé dans l&#x2019;eudiomètre de <persName key="volta_agv" >Volta</persName> un<lb break="yes"/>mélange de ........ <table>
+                            <row>
+                                <cell>200</cell>
+                                <cell>du résidu précédent.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>200</cell>
+                                <cell>de gaz oxigène.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>
+                                    <hi rendition="#u">200</hi>
+                                </cell>
+                                <cell>de gaz hydrogène.</cell>
+                            </row>
+                            <lb break="yes"/>
+                            <row>
+                                <cell>600</cell>
+                                <cell/>
+                            </row>
+                        </table>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Après l&#x2019;inflammation il avoit disparu 312 parties; et comme<lb break="yes"/>d&#x2019;après des expériences que nous rapporterons plus bas, 100<lb break="yes"/>d&#x2019;oxigène pur exigent pour se saturer 200 de gaz hydrogène,<lb break="yes"/>l&#x2019;absorption qui avec le gaz hydrogène que nous avons <choice>
+                            <sic>em-<lb break="no"/>plové</sic>
+                            <corr type="editorial">em-<lb break="no"/>ployé</corr>
+                        </choice> ici, n&#x2019;e&#x00FB;t d&#x00FB; &#x00EA;tre que de 292 parties, ayant été de 312,<lb break="yes"/>il faut nécessairement que le résidu en ait fourni assez pour<lb break="yes"/>porter l&#x2019;absorption de 292 à 312, c&#x2019;est-à-dire qu&#x2019;il faut qu&#x2019;il en<lb break="yes"/>
+                        <pb n="139" facs="#f0011"/> cont&#x00EE;nt 13.3 parties. Or le calcul indique qu&#x2019;il devoit en<lb break="yes"/>contenir 12; il est donc prouvé clairement que, quoique l&#x2019;in-<lb break="no"/>flammation ait eu lieu, la combustion n&#x2019;a pas été complète,<lb break="yes"/>et que tout l&#x2019;hydrogène n&#x2019;étoit point entré en combinaison,<lb break="yes" />puisque nous avons retrouvé celui qui n&#x2019;avoit pas été absorbé<lb break="yes"/>dans le résidu. Nous observerons que dans tous les cas où l&#x2019;ab-<lb break="no"/>sorption n&#x2019;a pas été complète, l&#x2019;inflammation a été peu vive.</p>
+                    <lb break="yes"/>
+                    <p>En comparant dans l&#x2019;inflammation des gaz hydrogène et<lb break="yes" />oxigène, les effets de l&#x2019;électricité à ceux d&#x2019;une haute tempé-<lb break="no"/>rature, nous avons été conduits à penser que l&#x2019;inflammation<lb break="yes"/>par le choc électrique pourroit bien &#x00EA;tre due à la chaleur<lb break="yes"/>produite par la compression instantanée qu&#x2019;exerce l&#x2019;étincelle<lb break="yes" />électrique dans son passage. Nous savions en effet, d&#x2019;après notre<lb break="yes"/>propre expérience, que l&#x2019;inflammation d&#x2019;un mélange de gaz<lb break="yes"/>hydrogène et de gaz oxigène dépend uniquement de la tempé-<lb break="no"/>rature lorsque cette inflammation est produite par la chaleur.<lb break="yes"/>Car si l&#x2019;on fait passer très-lentement ce mélange par un tube<lb break="yes"/>chauffé très-graduellement depuis son extrémité jusqu&#x2019;à son cen-<lb break="no"/>tre, sans qu&#x2019;on s&#x2019;oppose à la dilatation libre des gaz, l&#x2019;inflammation<lb break="yes"/>aura lieu aussit&#x00F4;t que la température sera assez élevée. Cela<lb break="yes"/>posé comme un fait, que l&#x2019;inflammation des gaz oxigène et hydro-<lb break="no"/>gène n&#x2019;a lieu qu&#x2019;à une certaine température, voyons ce qui se<lb break="yes"/>passe dans leur inflammation par l&#x2019;étincelle électrique. Lorsque<lb break="yes"/>celle-ci traverse un mélange d&#x2019;oxigène et d&#x2019;hydrogène, elle le<lb break="yes"/>déplace par son passage rapide, qui ne permet pas aux molé-<lb break="no"/>cules gazeuses de se communiquer le mouvement aussi v&#x00EE;te<lb break="yes" />qu&#x2019;elles l&#x2019;ont re&#x00E7;u; il en résulte une compression instantanée<lb break="yes"/>très-forte, qui produit une élévation de température supérieure<lb break="yes"/>à celle nécessaire à la combinaison des gaz, et dès-lors l&#x2019;inflam-<lb break="no"/>mation étant commencée, elle doit se propager bien v&#x00EE;te.</p>
+                    <lb break="yes"/>
+                    <p>D&#x2019;après cette manière de concevoir les effets de l&#x2019;électricité,<lb break="yes"/>nous avions pensé que lorsqu&#x2019;une foible étincelle ne produit<lb break="yes"/>qu&#x2019;une combustion incomplète dans un mélange de gaz hydro-<lb break="no"/>gène et de gaz oxigène, une étincelle plus forte produiroit une<lb break="yes" />combustion plus avancée; mais soit que nous n&#x2019;ayons pas em-<lb break="no"/>ployé une électricité assez vive, soit que nous n&#x2019;ayons pas assez<lb break="yes"/>multiplié nos expériences, nous n&#x2019;avons pas obtenu de diffé-<lb break="no"/>rences sensibles en employant l&#x2019;étincelle d&#x2019;un électrophore de 3<lb break="yes" />décimètres de diamètre ou le choc d&#x2019;une bouteille de Leyde très-<lb break="maybe"/>chargée; mais la construction de notre eudiomètre ne nous a<lb break="yes"/>pas permis d&#x2019;y tirer de très-vives étincelles, et nous attendrons,<lb break="yes"/>pour prononcer sur l&#x2019;influence de la force de l&#x2019;électricité dans<lb break="yes"/>
+                        <pb n="140" facs="#f0012"/> l&#x2019;inflammation de l&#x2019;hydrogène et de l&#x2019;oxigène, que nous ayons<lb break="yes"/>fait de nouvelles recherches.</p>
+                    <lb break="yes"/>
+                    <p>Dans l&#x2019;expérience que nous avons rapportée sur l&#x2019;inflamma-<lb break="no"/>tion d&#x2019;un mélange de 900 parties d&#x2019;azote, 100 d&#x2019;oxigène et 100<lb break="yes"/>d&#x2019;hydrogène, l&#x2019;absorption n&#x2019;a pas été aussi forte qu&#x2019;elle auroit<lb break="yes"/>d&#x00FB; l&#x2019;&#x00EA;tre, et nous avons prouvé que le résidu devoit contenir<lb break="yes"/>ce qui avoit échappé à la combustion, c&#x2019;est-à-dire, qu&#x2019;il devoit<lb break="yes"/>&#x00EA;tre composé, sur 100 parties, de 6 d&#x2019;hydrogène, de 8 d&#x2019;oxi-<lb break="no"/>gène et 86 d&#x2019;azote. Donc, puisque la combustion a été inter-<lb break="no"/>rompue lorsque ces proportions ont eu lieu, on peut conclure<lb break="yes"/>qu&#x2019;une nouvelle étincelle électrique ne pourroit plus enflammer<lb break="yes"/>ce mélange. Donc, dans l&#x2019;atmosphère, où il y a beaucoup moins<lb break="yes"/>de 6 centièmes d&#x2019;hydrogène, l&#x2019;étincelle électrique ne pourra pas<lb break="yes"/>l&#x2019;enflammer, ou si elle le fait dans l&#x2019;endroit de son passage, à<lb break="yes"/>cause de sa grande force, l&#x2019;inflammation ne pourra pas se pro-<lb break="no"/>pager, et elle sera pour ainsi dire particulière aux endroits que<lb break="yes"/>traverse l&#x2019;étincelle. Donc, enfin, on ne peut pas expliquer par<lb break="yes" />l&#x2019;inflammation du gaz hydrogène, par la foudre, et à plus forte<lb break="yes"/>raison par des charges plus foibles d&#x2019;électricité, les phénomènes<lb break="yes"/>météoriques ignés; ou si ces phénomènes sont effectivement le<lb break="yes"/>résultat de l&#x2019;inflammation du gaz hydrogène, il faudroit con-<lb break="no"/>clure qu&#x2019;il devroit s&#x2019;en trouver plus de 6 centièmes dans l&#x2019;air<lb break="yes"/>au moment où ils sont produits; ce qui est contre toute vrai-<lb break="no" />semblance, surtout quand on se rappelle que de l&#x2019;air pris à une<lb break="yes"/>très-grande hauteur n&#x2019;a pas présenté d&#x2019;hydrogène appréciable en<lb break="yes"/>le comparant à l&#x2019;air atmosphérique pris à la surface de la terre.</p>
+                    <lb break="yes"/>
+                    <p>Mais si à chaque fois que l&#x2019;on tire une étincelle électrique<lb break="yes"/>dans un mélange d&#x2019;hydrogène et d&#x2019;oxigène, ou d&#x2019;azote, d&#x2019;hy-<lb break="no"/>drogène et d&#x2019;oxigène, qui ne peut pas s&#x2019;enflammer, il y a effec-<lb break="no"/>tivement une chaleur locale et instantanée due à la compression<lb break="yes"/>exercée par l&#x2019;étincelle dans son passage, il seroit possible qu&#x2019;en<lb break="yes"/>tirant une suite d&#x2019;étincelles dans un des mélanges dont nous<lb break="yes"/>venons de parler, il y e&#x00FB;t à chaque choc une petite inflamma-<lb break="no"/>tion locale sur le passage de l&#x2019;étincelle, et qu&#x2019;ainsi il f&#x00FB;t possible<lb break="yes" />de détruire une quantité déterminée d&#x2019;hydrogène noyée dans<lb break="yes"/>beaucoup d&#x2019;azote et d&#x2019;oxigène, ou dans de l&#x2019;oxigène seulement.<lb break="yes"/>Ce qui pourroit confirmer ce soup&#x00E7;on, c&#x2019;est qu&#x2019;il est connu que<lb break="yes" />l&#x2019;éther et l&#x2019;ammoniaque qui sont décomposés par la chaleur,<lb break="yes"/>lorsqu&#x2019;on les fait passer en vapeurs à travers un tube rouge,<lb break="yes"/>le sont également par des chocs électriques réitérés. Il seroit<lb break="yes"/>aussi très-intéressant de savoir si on pourroit enflammer par l&#x2019;étin-<lb break="no"/>
+                        <pb n="141" facs="#f0013"/> celle électrique un mélange convenable d&#x2019;oxigène et d&#x2019;hydrogène<lb break="yes"/>après l&#x2019;avoir dilaté par le moyen de la machine pneumatique.<lb break="yes"/>Si en effet son inflammation par l&#x2019;étincelle électrique dépend de<lb break="yes" />la chaleur que celle-ci produit par la compression, il seroit natu-<lb break="no"/>rel de penser que lorsque les gaz sont dilatés, la compression par<lb break="yes"/>l&#x2019;étincelle étant moins forte, la chaleur qui lui est due doit &#x00EA;tre<lb break="yes"/>aussi beaucoup plus foible, et qu&#x2019;il peut y avoir un degré de dila-<lb break="no"/>tion des gaz tel que l&#x2019;inflammation ne puisse pas avoir lieu.<lb break="yes"/>Nous n&#x2019;avons pas encore eu le temps de tenter ces diverses expé-<lb break="no"/>riences; mais nous n&#x2019;abandonnons point le projet de nous y<lb break="yes"/>livrer, et nous espérons m&#x00EA;me pouvoir le faire bient&#x00F4;t.</p>
+                    <lb break="yes"/>
+                    <p>Pour résumer, il est des proportions telles d&#x2019;hydrogène et<lb break="yes"/>d&#x2019;oxigène, ou de ces deux gaz avec l&#x2019;azote, que la combustion<lb break="yes"/>peut &#x00EA;tre complète. Il en est d&#x2019;autres avec lesquelles elle s&#x2019;arr&#x00EA;te<lb break="yes" />d&#x2019;elle-m&#x00EA;me avant d&#x2019;&#x00EA;tre achevée; d&#x2019;autres enfin avec lesquelles<lb break="yes"/>elle ne peut avoir lieu du tout. Le gaz hydrogène qui échappe à<lb break="yes"/>la combustion, se retrouve en entier dans le résidu. Quand on<lb break="yes"/>ne peut produire par l&#x2019;étincelle électrique une inflammation<lb break="yes" />complète du gaz hydrogène, ou m&#x00EA;me la commencer, il suffit<lb break="yes"/>d&#x2019;augmenter les proportions d&#x2019;oxigène ou d&#x2019;hydrogène. Les phé-<lb break="no"/>nomènes météoriques ignés ne peuvent &#x00EA;tre le résultat de l&#x2019;in-<lb break="no"/>flammation du gaz hydrogène, parceque dans les régions où<lb break="yes"/>l&#x2019;on suppose que se passent les principaux, tels que les averses<lb break="yes" />abondantes et subites qui ont lieu quelquefois après un coup de<lb break="yes"/>tonnerre, il faudroit qu&#x2019;il s&#x2019;y trouv&#x00E2;t alors plus de 6 centièmes<lb break="yes"/>d&#x2019;hydrogène, sans quoi l&#x2019;inflammation ne pourroit pas avoir lieu,<lb break="yes" />encore n&#x2019;y auroit-il que l&#x2019;excédant de cette proportion qui p&#x00FB;t<lb break="yes"/>s&#x2019;enflammer.</p>
+                    <lb break="yes"/>
+                    <p>On peut expliquer les cas où la combustion n&#x2019;a pas été com-<lb break="no"/>plète d&#x2019;après les lois des affinités, en disant que lorsqu&#x2019;un des<lb break="yes"/>gaz devient très-prédominant, il peut défendre l&#x2019;autre par son<lb break="yes"/>affinité et le soustraire en partie à la combustion. Quoique<lb break="yes"/>cette affinité puisse &#x00EA;tre très-foible, on con&#x00E7;oit avec M. <persName key="berthollet_cl">Ber-<lb break="no"/>thollet</persName> comment la quantité du gaz peut y suppléer, et s&#x2019;il y a<lb break="yes"/>une propriété particulière dans les divers gaz pour arr&#x00EA;ter plut&#x00F4;t<lb break="yes"/>ou plus tard la combustion, on l&#x2019;expliqueroit par leur nature dif-<lb break="no"/>férente. Mais en raisonnant dans le cas où l&#x2019;hydrogène se trouve<lb break="yes" />m&#x00EA;lé avec l&#x2019;oxigène seulement, et en faisant dépendre de l&#x2019;af-<lb break="no"/>finité les phénomènes de sa combustion avec diverses propor-<lb break="no"/>tions d&#x2019;oxigène, comment expliquer le passage subit d&#x2019;une<lb break="yes"/>absorption constante à une absorption décroissante, quand on<lb break="yes"/>
+                        <pb n="142" facs="#f0014"/>convient que si l&#x2019;hydrogène peut &#x00EA;tre soustrait à la combinaison<lb break="yes"/>par l&#x2019;oxigène, l&#x2019;effet de ce dernier doit suivre une loi régulière?<lb break="yes" />Comment concevoir que ces deux gaz, après s&#x2019;&#x00EA;tre trouvés dans<lb break="yes"/>des circonstances favorables à leur combinaison, puissent par<lb break="yes"/>leur affinité se maintenir à l&#x2019;état élastique, quand ils pourroient<lb break="yes"/>former une combinaison beaucoup plus dense, l&#x2019;eau? Comment<lb break="yes"/>concevoir enfin qu&#x2019;une affinité qui produit une condensation et une<lb break="yes" />saturation très-grandes, puisse &#x00EA;tre inférieure à une affinité qui<lb break="yes"/>ne produit aucun changement dans les dimensions des deux gaz,<lb break="yes"/>aucune saturation? L&#x2019;hydrogène et l&#x2019;oxigène, dans quelque état<lb break="yes"/>qu&#x2019;ils soient, ont le m&#x00EA;me degré d&#x2019;affinité, puisque cette affi-<lb break="no"/>nité se mesure par leur capacité de saturation; seulement l&#x2019;état<lb break="yes"/>où ils se trouvent peut &#x00EA;tre plus ou moins favorable à leur com-<lb break="no"/>binaison. Or dire que l&#x2019;hydrogène et l&#x2019;oxigène ont une plus<lb break="yes"/>grande affinité à l&#x2019;état de gaz qu&#x2019;à l&#x2019;état liquide, c&#x2019;est dire que<lb break="yes"/>leurs molécules s&#x2019;attirent plus lorsqu&#x2019;elles sont très-éloignées<lb break="yes"/>que lorsqu&#x2019;elles sont très-proches. Ces objections contre une<lb break="yes"/>explication fondée uniquement sur les affinités nous ayant paru<lb break="yes"/>de quelque poids, nous avons essayé d&#x2019;en présenter une autre<lb break="yes"/>qui, suivant nous, ne f&#x00FB;t pas sujette aux m&#x00EA;mes difficultés.</p>
+                    <lb break="yes"/>
+                    <p>Tous les corps combustibles exigent en général une certaine<lb break="yes" />élévation de température pour se combiner avec l&#x2019;ogixène. Le<lb break="yes"/>charbon par exemple ne se convertit en acide carbonique que<lb break="yes"/>lorsqu&#x2019;il est rouge, et ce m&#x00EA;me corps qui à une haute tempé-<lb break="no"/>rature peut continuer à br&#x00FB;ler quand il est frappé par un cou-<lb break="no"/>rant de vapeur aqueuse, s&#x2019;éteint aussit&#x00F4;t qu&#x2019;on le plonge dans<lb break="yes" />l&#x2019;eau. Ce principe, que les corps exigent en général une certaine<lb break="yes"/>élévation de température pour br&#x00FB;ler, étant une fois admis, sup-<lb break="no"/>posons que l&#x2019;on ait un corps qui br&#x00FB;le dans un volume donné d&#x2019;air<lb break="yes" />atmosphérique, et que la température nécessaire à la combus-<lb break="no" />tion soit maintenue uniquement par la chaleur due à l&#x2019;absorp-<lb break="no"/>tion de l&#x2019;oxigène; admettons encore qu&#x2019;au commencement de<lb break="yes"/>la combustion la chaleur due à la fixation de l&#x2019;oxigène contenu<lb break="yes"/>dans un centimètre cube d&#x2019;air soit égale à 1, et que la chaleur<lb break="yes"/>perdue pendant cette fixation, soit en calorique rayonnant,<lb break="yes"/>soit par l&#x2019;absorption qu&#x2019;en fait le gaz azote, ou d&#x2019;autres corps,<lb break="yes"/>égale <formula notation="TeX" >\frac{1}{2}</formula>, en négligeant ici la loi suivant laquelle elle décro&#x00EE;t.<lb break="yes"/>D&#x2019;après cela on con&#x00E7;oit que dans les premiers momens de la<lb break="yes"/>combustion, la température du corps devra s&#x2019;élever; mais à<lb break="yes"/>mesure que la quantité d&#x2019;oxigène diminuera, et que celle de<lb break="yes" />l&#x2019;azote augmentera proportionnellement, la chaleur communi-<lb break="no"/>quée diminuera aussi. Il arrivera donc un point où la chaleur<lb break="yes"/>
+                        <pb n="143" facs="#f0015"/> perdue sera égale à la chaleur communiquée, et au-dessous<lb break="yes"/>duquel la température étant trop basse, la combustion devra<lb break="yes"/>cesser: ce qui prouve bien que ce n&#x2019;est que parceque la tempé-<lb break="no"/>rature est trop basse que la combustion s&#x2019;arr&#x00EA;te, c&#x2019;est que si<lb break="yes" />l&#x2019;on maintient artificiellement la température assez élevée, le<lb break="yes"/>corps continuera à br&#x00FB;ler.</p>
+                    <lb break="yes"/>
+                    <p>Maintenant cette explication subsistera toujours quand au<lb break="yes" />lieu d&#x2019;azote, ce sera le gaz sulfureux, le gaz hydrogène, le gaz<lb break="yes"/>acide carbonique, ou tout autre gaz qui se trouvera m&#x00EA;lé avec<lb break="yes"/>l&#x2019;oxigène; seulement la combustion pourra cesser plut&#x00F4;t ou plus<lb break="yes"/>tard qu&#x2019;avec le gaz azote. On con&#x00E7;oit en effet que si le gaz sul-<lb break="no" />fureux ou le gaz acide carbonique avoient une capacité de calo-<lb break="no"/>rique beaucoup plus grande que celle de l&#x2019;azote, en les sup-<lb break="no"/>posant m&#x00EA;lés avec l&#x2019;oxigène dans les m&#x00EA;mes proportions que lui,<lb break="yes"/>la perte de la chaleur seroit beaucoup plus grande, et parcon-<lb break="no"/>séquent la cessation de la combustion devroit avoir lieu plut&#x00F4;t.<lb break="yes"/>Mais si les gaz avoient des capacités égales pour le calorique, ils<lb break="yes" />devroient tous arr&#x00EA;ter la combustion à la m&#x00EA;me époque, comme<lb break="yes"/>nous avons vu que l&#x2019;on fait à-peu-près l&#x2019;oxigène et l&#x2019;azote avec<lb break="yes"/>l&#x2019;hydrogène, et par là se résoudroit peut-&#x00EA;tre la question im-<lb break="no" />portante si les gaz ont des capacités égales ou différentes.</p>
+                    <lb break="yes"/>
+                    <p>D&#x2019;après cela un corps combustible, du soufre par exemple,<lb break="yes"/>cesseroit de br&#x00FB;ler dans un volume déterminé d&#x2019;air, non<lb break="yes"/>parceque l&#x2019;affinité pour l&#x2019;oxigène qu&#x2019;ont l&#x2019;azote ou les gaz pro-<lb break="no" />duits seroit plus forte que celle du corps combustible; mais<lb break="yes"/>parceque la chaleur absorbée par ces gaz qui tendent à se met-<lb break="no"/>tre en équilibre de température avec le corps qui br&#x00FB;le, seroit<lb break="yes"/>plus grande que la chaleur due à la fixation de l&#x2019;oxigène, d&#x2019;où il<lb break="yes"/>résulteroit que la température seroit bient&#x00F4;t ramenée au-dessous<lb break="yes"/>de celle nécessaire à la combustion. On sait en effet que le<lb break="yes" />soufre peut continuer à br&#x00FB;ler dans un air où il s&#x2019;étoit éteint, si<lb break="yes"/>on élève suffisamment la température.</p>
+                    <lb break="yes"/>
+                    <p>Ce qui a lieu dans la combustion instantanée de l&#x2019;hydro-<lb break="no" />gène dans l&#x2019;eudiomètre de <persName key="volta_agv" >Volta</persName>, est absolument analogue<lb break="yes"/>à ce qui passe dans sa combustion successive, dans un<lb break="yes"/>volume donné d&#x2019;air, ou dans celle de tout autre corps. Si l&#x2019;on<lb break="yes"/>place une lampe à gaz hydrogène sous une cloche remplie de<lb break="yes"/>gaz oxigène, la flamme sera petite, vive et légérement colorée.<lb break="yes"/>Qu&#x2019;on remplace l&#x2019;oxigène par l&#x2019;air atmosphérique, la flamme<lb break="yes"/>sera plus étendue, moins vive et plus colorée. A mesure surtout<lb break="yes"/>que la proportion d&#x2019;oxigène ira en diminuant, la flamme prendra<lb break="yes"/>
+                        <pb n="144" facs="#f0016"/> un nouvel accroissement, parceque l&#x2019;hydrogène sera obligé<lb break="yes"/>d&#x2019;aller chercher plus loin l&#x2019;oxigène, et la flamme après s&#x2019;&#x00EA;tre<lb break="yes"/>colorée en verd-bleu&#x00E2;tre très-léger, s&#x2019;éteindra bient&#x00F4;t quoiqu&#x2019;il<lb break="yes"/>reste dans l&#x2019;air plusieurs centièmes d&#x2019;oxigène. Les phénomènes<lb break="yes"/>ne sont pas différens dans l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>. Quand les<lb break="yes"/>proportions d&#x2019;oxigène et d&#x2019;hydrogène ne s&#x2019;écartent pas beau-<lb break="no"/>coup de celles qui constituent l&#x2019;eau, la flamme est encore très-<lb break="maybe"/>vive malgré sa dilatation; mais si on m&#x00EA;le par exemple 1000 d&#x2019;oxi-<lb break="no"/>gène avec 100 d&#x2019;hydrogène, alors la flamme est foible, colorée<lb break="yes"/>en verd-bleu&#x00E2;tre, et la combustion de l&#x2019;hydrogène n&#x2019;est pas à<lb break="yes"/>beaucoup près complète, puisqu&#x2019;on en trouve encore près des<lb break="yes"/>deux tiers dans le résidu. Ce qui prouve encore que c&#x2019;est<lb break="yes"/>parceque la température n&#x2019;étoit pas assez élevée, que la com-<lb break="no"/>bustion n&#x2019;a pas été complète, c&#x2019;est que si on fait passer le ré-<lb break="no"/>sidu, comme nous l&#x2019;avons fait, à travers un tube de porcelaine<lb break="yes"/>rouge, l&#x2019;on verra que tout l&#x2019;hydrogène sera absorbé.</p>
+                    <lb break="yes"/>
+                    <p>Nous observerons que dans la combinaison des gaz hydro-<lb break="no"/>gène et oxigène, il se présente un phénomène bien singulier qui<lb break="yes"/>a fixé depuis long-temps l&#x2019;attention de M. <persName key="monge_g" >Monge</persName>.</p>
+                    <lb break="yes"/>
+                    <p>Comment se fait-il, dit ce célèbre physicien, qu&#x2019;en élevant<lb break="yes"/>la température des deux gaz, c&#x2019;est-à-dire qu&#x2019;en augmentant la<lb break="yes"/>dose du dissolvant, on diminue l&#x2019;adhérence qu&#x2019;il avoit pour ses<lb break="yes"/>bases? Bien éloignés de croire que dans l&#x2019;état actuel de nos<lb break="yes" />connoissances on puisse en donner une explication satisfai-<lb break="no" />sante, nous le rappelons au contraire à l&#x2019;attention des physi-<lb break="no"/>ciens. En effet, d&#x2019;après l&#x2019;idée qu&#x2019;on peut se former de la force<lb break="yes"/>qui produit les combinaisons et de celles qui lui sont opposées,<lb break="yes"/>l&#x2019;état élastique annonce que la force de cohésion est détruite, et<lb break="yes"/>que deux corps dans cet état sont dans la condition la plus<lb break="yes"/>favorable à la combinaison; ensorte que maintenant que la<lb break="yes"/>force attractive de leurs molécules a été changée en une force<lb break="yes" />répulsive, toute cause qui favorisera la dernière, sera opposée<lb break="yes"/>à la première. Il arrive cependant qu&#x2019;en élevant la température<lb break="yes"/>des deux gaz, c&#x2019;est-à-dire qu&#x2019;en augmentant leur force répul-<lb break="no"/>sive, on favorise leur force attractive. On ne peut pas croire que<lb break="yes"/>la chaleur ne fait qu&#x2019;écarter leurs molécules: car dans ce cas<lb break="yes" />pourquoi un mélange de gaz hydrogène et de gaz oxigène ne<lb break="yes" />s&#x2019;enflammeroit-il pas sous le récipient d&#x2019;une machine pneuma-<lb break="no"/>matique, où on peut le dilater indéfiniment? On ne peut pas<lb break="yes"/>croire encore que la chaleur en agissant instantanément, puisse<lb break="yes"/>produire une compression qui favorise la combinaison des deux<lb break="yes"/>
+                        <fw type="catch" place="bottom">gaz</fw>
+                        <lb break="yes"/>
+                        <pb n="145" facs="#f0017"/> gaz en rapprochant leurs molécules; car il est facile de s&#x2019;assu-<lb break="no"/>rer qu&#x2019;un mélange de gaz oxigène et de gaz hydrogène, qu&#x2019;on<lb break="yes"/>chauffera très-graduellement, sans s&#x2019;opposer à sa dilatation,<lb break="yes" />s&#x2019;enflammera cependant lorsque la température sera assez<lb break="yes"/>élevée.</p>
+                    <lb break="yes"/>
+                    <p>Maintenant que nous avons prouvé que dans des circons-<lb break="no"/>tances déterminées, la combustion de l&#x2019;hydrogène et de l&#x2019;oxi-<lb break="no"/>gène peut &#x00EA;tre complète, nous allons examiner si les produits<lb break="yes"/>en sont constans.</p>
+                    <lb break="yes"/>
+                    <p>D&#x2019;après toutes les expériences qu&#x2019;on a faites sur la compo-<lb break="no"/>sition de l&#x2019;eau, on a regardé généralement le résultat comme<lb break="yes"/>uniforme. On a cependant obtenu quelquefois une très-petite<lb break="yes"/>quantité d&#x2019;acide nitrique; mais on a reconnu que cet acide<lb break="yes"/>n&#x2019;étoit point un produit constant de la combustion de l&#x2019;hy-<lb break="no"/>drogène, et qu&#x2019;il lui étoit au contraire très-accidentel. Cavendish<lb break="yes"/>qui le premier a apper&#x00E7;u cette formation de l&#x2019;acide nitrique,<lb break="yes"/>et MM. <persName key="fourcroy_afd" >Fourcroy</persName>, <persName key="seguin_01">Seguin</persName> et <persName key="vauquelin_ln">Vauquelin</persName>, nous ont appris com-<lb break="no"/>ment on pouvoit l&#x2019;éviter et obtenir une eau qui ne f&#x00FB;t pas<lb break="yes"/>acide. Il est vrai qu&#x2019;il n&#x2019;est point démontré que l&#x2019;on n&#x2019;ait formé<lb break="yes"/>des eaux oxigénées ou hydrogénées, parceque dans toutes<lb break="yes"/>les expériences exactes qu&#x2019;on a faites, on a toujours opéré la<lb break="yes"/>combustion du gaz hydrogène de la m&#x00EA;me manière, et il seroit<lb break="yes"/>tout au plus prouvé que celles qu&#x2019;on a obtenues sont cons-<lb break="no"/>tantes dans les m&#x00EA;mes circonstances. Si l&#x2019;on comparoit la<lb break="yes" />combustion du gaz hydrogène à celle du gaz nitreux, dont les<lb break="yes"/>produits sont si variables, on seroit encore plus fondé à penser,<lb break="yes"/>que puisque l&#x2019;oxigène a toujours dominé dans les expériences<lb break="yes"/>qu&#x2019;on a faites, il peut s&#x2019;&#x00EA;tre formé une eau oxigénée; tandis que<lb break="yes"/>si l&#x2019;hydrogène e&#x00FB;t dominé, il se seroit formé une eau hydrogénée.<lb break="yes"/>Admettons donc qu&#x2019;il puisse se former une eau oxigénée; par<lb break="yes"/>exemple, si on l&#x2019;obtient dans toutes les circonstances et qu&#x2019;elle<lb break="yes"/>soit constante, cela sera indifférent pour la proportion de<lb break="yes"/>ses principes, qui doit servir à l&#x2019;analyse de l&#x2019;air; mais si elle<lb break="yes"/>n&#x2019;est ainsi que parceque l&#x2019;oxigène a dominé, il est bien mani-<lb break="no"/>feste que l&#x2019;on n&#x2019;obtiendra plus les m&#x00EA;mes proportions en<lb break="yes"/>faisant dominer alternativement l&#x2019;un ou l&#x2019;autre gaz. Or nous<lb break="yes" />avons fait un grand nombre d&#x2019;expériences qui prouvent qu&#x2019;en<lb break="yes"/>les mettant réciproquement en excès, on obtient constam-<lb break="no"/>ment les m&#x00EA;mes proportions; le résultat de la combustion du<lb break="yes"/>gaz hydrogène est donc de nature uniforme. Les <choice>
+                            <sic>phéno</sic>
+                            <corr type="editorial">phéno-</corr>
+                        </choice>
+                        <lb break="yes"/>
+                        <pb n="146" facs="#f0018"/> mènes <persName key="galvani_la" >galvaniques</persName> de la décomposition de l&#x2019;eau, paroissent<lb break="yes"/>prouver cependant que l&#x2019;eau est susceptible de s&#x2019;oxigéner ou<lb break="yes"/>de s&#x2019;hydrogéner; et c&#x2019;est d&#x2019;après cette supposition que MM. La-<lb break="no" />place et <persName key="berthollet_cl">Berthollet</persName> ont expliqué l&#x2019;expérience singulière de la<lb break="yes"/>décomposition de l&#x2019;eau par deux fils métalliques, qui plongent<lb break="yes" />d&#x2019;un c&#x00F4;té dans ce liquide, et qui communiquent de l&#x2019;autre aux<lb break="yes"/>deux p&#x00F4;les d&#x2019;une pile <persName key="galvani_la">galvanique</persName>. Mais sans vouloir rien oppo-<lb break="no"/>ser à cette explication qui nous paro&#x00EE;t la plus satisfaisante qu&#x2019;on<lb break="yes"/>ait proposée jusqu&#x2019;à présent, nous observerons que l&#x2019;absorp-<lb break="no"/>tion complète de l&#x2019;hydrogène à un des fils, et de l&#x2019;oxigène à<lb break="yes" />l&#x2019;autre, prouve que l&#x2019;eau ne devient point oxigénée ou hydro-<lb break="no"/>génée, parceque pour le devenir il faudroit qu&#x2019;elle absorb&#x00E2;t l&#x2019;un<lb break="yes"/>des gaz dans une proportion plus grande que celle de la com-<lb break="no"/>position de l&#x2019;eau. Si donc elle absorbe de l&#x2019;oxigène et de l&#x2019;hy-<lb break="no"/>drogène dans des proportions exactes pour former de l&#x2019;eau,<lb break="yes"/>on doit concevoir que les propriétés de l&#x2019;un des gaz seront neu-<lb break="no"/>tralisées par celles de l&#x2019;autre. Ainsi dans les circonstances dont<lb break="yes"/>il s&#x2019;agit, l&#x2019;eau pourroit s&#x2019;oxigéner instantanément à l&#x2019;un des<lb break="yes"/>fils, et s&#x2019;hydrogéner à l&#x2019;autre; mais les deux gaz se trouvant<lb break="yes"/>privés d&#x2019;élasticité et dans des proportions exactes, doivent bient&#x00F4;t<lb break="yes"/>rentrer en combinaison.</p>
+                    <lb break="yes"/>
+                    <p>S&#x2019;il est bien prouvé que dans des circonstances données,<lb break="yes"/>l&#x2019;hydrogène ou l&#x2019;oxigène peuvent &#x00EA;tre absorbés complètement;<lb break="yes"/>et s&#x2019;il l&#x2019;est également, que le produit de leur combinaison est<lb break="yes"/>constant, il ne s&#x2019;agit plus maintenant pour résoudre la troisième<lb break="yes"/>question que nous nous sommes proposée, que de déterminer<lb break="yes"/>les proportions de l&#x2019;oxigène et de l&#x2019;hydrogène qui constituent<lb break="yes"/>l&#x2019;eau. C&#x2019;est vers cette détermination que sont dirigées les expé-<lb break="no"/>riences suivantes.</p>
+                    <lb break="yes"/>
+                    <p>A 100 parties de gaz oxigène nous avons ajouté 300 parties<lb break="yes"/>de gaz hydrogène, et après les avoir enflammées par l&#x2019;étincelle<lb break="yes"/>électrique, nous avons obtenu dans douze expériences les ré-<lb break="no"/>sidus suivans:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>100.8</cell>
+                            <cell>101.0</cell>
+                            <cell>102.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101.4</cell>
+                            <cell>101.7</cell>
+                            <cell>102.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>100.5</cell>
+                            <cell>102.0</cell>
+                            <cell>101.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101.0</cell>
+                            <cell>101.5</cell>
+                            <cell>101.5</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell cols="2">dont le terme moyen est de.......</cell>
+                            <cell>101.3</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="147" facs="#f0019"/>
+                    <p>Ainsi 100 d&#x2019;oxigène supposé très-pur, auroient exigé 98.7<lb break="yes"/>d&#x2019;hydrogène: mais en mettant notre gaz oxigène avec du sul-<lb break="no"/>fure, nous avons trouvé qu&#x2019;il avoit été tout absorbé à 0.004<lb break="yes"/>près; il suit donc de là que 99.6 d&#x2019;oxigène ont absorbé 199.1<lb break="yes"/>d&#x2019;hydrogène, ou que 100 en ont absorbé 199.89, ou enfin, en<lb break="yes"/>nombres ronds, que 100 d&#x2019;oxigène demandent pour se saturer<lb break="yes"/>200 d&#x2019;hydrogène.</p>
+                    <lb break="yes"/>
+                    <p>Dans les expériences précédentes c&#x2019;est l&#x2019;oxigène qui a dis-<lb break="no"/>paru. Faisons maintenant l&#x2019;inverse en enflammant un mélange<lb break="yes"/>de 200 parties de chaque gaz; les résidus de diverses inflam-<lb break="no"/>mations seront les suivans:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>101.5</cell>
+                            <cell>102.0</cell>
+                            <cell>101.5</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>101.3</cell>
+                            <cell>102.0</cell>
+                            <cell>102.3</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102.2</cell>
+                            <cell>101.0</cell>
+                            <cell>102.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>102.0</cell>
+                            <cell>101.0</cell>
+                            <cell>102.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Terme moyen.....</cell>
+                            <cell>101.7</cell>
+                            <cell/>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Absorption moy....</cell>
+                            <cell>298.3</cell>
+                            <cell/>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>200 parties d&#x2019;hydrogène supposé pur en exigeroient donc<lb break="yes" />98.3 d&#x2019;oxigène, tandis que d&#x2019;après la proportion que nous<lb break="yes"/>venons d&#x2019;établir, il leur en faudroit 100. Mais si nous admet-<lb break="no"/>tons que cette m&#x00EA;me proportion soit exacte, dans les 298.3<lb break="yes"/>d&#x2019;absorption, il ne se trouveroit que 198.8 d&#x2019;hydrogène, ce<lb break="yes"/>qui indiqueroit 0.006 d&#x2019;azote dans ce gaz.</p>
+                    <lb break="yes"/>
+                    <p>En supposant m&#x00EA;me que l&#x2019;hydrogène f&#x00FB;t parfaitement pur, les<lb break="yes"/>deux proportions obtenues en faisant dominer l&#x2019;oxigène ou l&#x2019;hy-<lb break="no"/>drogène, s&#x2019;accordent assez entr&#x2019;elles pour confirmer tout ce<lb break="yes"/>que nous avons dit dans le courant de ce Mémoire: pour les<lb break="yes"/>rendre identiques il suffit d&#x2019;admettre 0,006 millièmes d&#x2019;azote<lb break="yes"/>dans l&#x2019;hydrogène, et en effet nous pouvons y démontrer sa pré-<lb break="no"/>sence.</p>
+                    <lb break="yes"/>
+                    <p>Nous venons de voir par les expériences précédentes que<lb break="yes"/>200 d&#x2019;hydrogène, sans faire aucune correction, ont absorbé<lb break="yes" />98.3 d&#x2019;oxigène. Prenons donc les résidus 101.0 et 101.5 pro-<lb break="no"/>venant de la combustion de 100 d&#x2019;oxigène et de 300 d&#x2019;hydro-<lb break="no"/>gène, et faisons-les détoner avec 200 de gaz oxigène. Dans<lb break="yes"/>ces deux résidus il doit se trouver 0,008 d&#x2019;azote dus aux<lb break="yes"/>200 parties de gaz oxigène, et si le reste 201.7 étoit de l&#x2019;hy-<lb break="no"/>drogène pur, il devroit absorber 99.1 d&#x2019;oxigène, et parconsé-<lb break="no"/>
+                        <pb n="148" facs="#f0020"/> quent il auroit d&#x00FB; disparo&#x00EE;tre par l&#x2019;inflammation 300.8 parties;<lb break="yes"/>mais il n&#x2019;en a disparu que 295.0: il faut donc que le résidu<lb break="yes"/>201.7 ne f&#x00FB;t pas de l&#x2019;hydrogène pur, et que d&#x2019;après la pro-<lb break="no"/>portion de 100 d&#x2019;oxigène à 200 d&#x2019;hydrogène, il cont&#x00EE;nt<lb break="yes"/>5.0 d&#x2019;azote provenant de 600 d&#x2019;hydrogène, c&#x2019;est-à-dire que<lb break="yes"/>ce dernier gaz contiendroit 0,008 d&#x2019;azote.</p>
+                    <lb break="yes"/>
+                    <p>Ainsi il nous paro&#x00EE;t prouvé que 100 parties en volume de<lb break="yes"/>gaz oxigène, exigent à très-peu-près 200 parties de gaz hydro-<lb break="no"/>gène pour se saturer. D&#x2019;après l&#x2019;expérience de MM. <persName key="fourcroy_afd" >Fourcroy</persName>,<lb break="yes"/>
+                        <persName key="vauquelin_ln">Vauquelin</persName> et <persName key="seguin_01">Séguin</persName>, 100 parties du premier en demanderoient<lb break="yes"/>205 du second; mais nous remarquons qu&#x2019;en adoptant l&#x2019;une<lb break="yes"/>ou l&#x2019;autre proportion, on peut se tromper tout au plus de 0,0035<lb break="yes"/>sur la quantité absolue de l&#x2019;oxigène de l&#x2019;air, et que lorsqu&#x2019;il<lb break="yes"/>s&#x2019;agit de quantités relatives, l&#x2019;erreur est beaucoup plus petite.</p>
+                    <lb break="yes"/>
+                    <p>Nous nous sommes assurés que la proportion ne varie pas par<lb break="yes" />les changemens de température. Il est évident qu&#x2019;il devoit en<lb break="yes"/>&#x00EA;tre ainsi, puisque la chaleur dilatant également les deux gaz,<lb break="yes"/>et leur faisant dissoudre d&#x2019;égales quantités d&#x2019;eau, les poids réels<lb break="yes"/>d&#x2019;oxigène et d&#x2019;hydrogène contenus dans des volumes égaux,<lb break="yes" />conservent toujours entr&#x2019;eux le m&#x00EA;me rapport. Il seroit donc<lb break="yes"/>plus exact de dire, en supposant que notre proportion par les<lb break="yes"/>volumes soit bien établie, que 100 parties d&#x2019;oxigène en deman-<lb break="no"/>dent 200 d&#x2019;hydrogène, que d&#x2019;énoncer les proportions de l&#x2019;eau<lb break="yes"/>par les poids. Si l&#x2019;oxigène et l&#x2019;hydrogène qu&#x2019;on a fait servir à la<lb break="yes"/>composition de l&#x2019;eau eussent été parfaitement secs, ou si on<lb break="yes"/>e&#x00FB;t fait la correction due à l&#x2019;humidité qu&#x2019;ils pouvoient contenir,<lb break="yes"/>il seroit indifférent d&#x2019;énoncer le rapport de ses principes d&#x2019;après<lb break="yes"/>les volumes ou d&#x2019;après les poids; mais puisque l&#x2019;hydrogène<lb break="yes"/>se combine avec l&#x2019;oxigène en volume double de ce dernier,<lb break="yes"/>et qu&#x2019;ils dissolvent l&#x2019;un et l&#x2019;autre la m&#x00EA;me proportion d&#x2019;eau;<lb break="yes"/>il est évident qu&#x2019;ils ne portent pas dans la combinaison des<lb break="yes"/>quantités d&#x2019;eau qui soient entr&#x2019;elles dans le m&#x00EA;me rapport<lb break="yes"/>que les quantités pondérales d&#x2019;oxigène et d&#x2019;hydrogène, et que<lb break="yes"/>parconséquent la proportion des principes de l&#x2019;eau doit en &#x00EA;tre<lb break="yes"/>altérée. Ainsi le rapport d&#x2019;après les volumes, a la propriété de<lb break="yes"/>rester constant malgré les changemens de température et d&#x2019;hu-<lb break="no"/>midité, tandis que celui d&#x2019;après les poids est variable dans les<lb break="yes" />m&#x00EA;mes circonstances. Et qu&#x2019;on ne croie pas que cette considé-<lb break="no"/>ration soit d&#x2019;un si foible intér&#x00EA;t: car il est bien facile de faire<lb break="yes"/>voir qu&#x2019;elle influe considérablement sur le rapport des principes<lb break="yes"/>de l&#x2019;eau. D&#x2019;après l&#x2019;expérience de MM. <persName key="fourcroy_afd">Fourcroy</persName>, <persName key="vauquelin_ln">Vauquelin</persName> et<lb break="yes"/>
+                        <pb n="149" facs="#f0021"/>
+                        <persName key="seguin_01">Séguin</persName>, la plus exacte qu&#x2019;on ait faite jusqu&#x2019;à ce jour sur cet objet,<lb break="yes"/>l&#x2019;eau contient en poids 85.662 d&#x2019;oxigène, et 14.338 d&#x2019;hydro-<lb break="no"/>gène. Mais l&#x2019;expérience ayant été faite à la température de 14°<lb break="yes"/>environ, et la correction due à l&#x2019;eau tenue en dissolution par les<lb break="yes"/>gaz n&#x2019;ayant pas été faite, il en résulte qu&#x2019;en adoptant leur<lb break="yes" />pesanteur spécifique du gaz oxigène et du gaz hydrogène, ainsi<lb break="yes"/>que le rapport de leurs volumes dans leur combinaison,<lb break="yes"/>et en admettant de plus avec <persName key="saussure_hbd" >Saussure</persName> qu&#x2019;un pied cube d&#x2019;air à<lb break="yes"/>la température de 14°, contient à très-peu-près 10 grains d&#x2019;eau<lb break="yes"/>en dissolution, le rapport pondéral de l&#x2019;oxigène à l&#x2019;hydrogène,<lb break="yes"/>au lieu d&#x2019;&#x00EA;tre de 85,662 à 14,338, seroit de 87,41 à 12,59; diffé-<lb break="no"/>rence bien remarquable et qui doit avoir surtout une grande<lb break="yes"/>influence dans les analyses où il s&#x2019;agit de déterminer le poids<lb break="yes"/>réel de l&#x2019;hydrogène. La m&#x00EA;me considération s&#x2019;applique aussi à<lb break="yes"/>la pesanteur spécifique des gaz, et principalement à celle de<lb break="yes" />l&#x2019;hydrogène dont environ la sixième partie est due à l&#x2019;eau qu&#x2019;il<lb break="yes"/>tient en dissolution, lorsque la température, comme nous le<lb break="yes"/>supposons ici, est de 14° du thermomètre de <persName key="reaumur_rafd">Réaumur</persName>. Nous<lb break="yes"/>ne doutons donc pas que si on avoit du gaz hydrogène par-<lb break="no"/>faitement sec et privé du gaz azote qui paro&#x00EE;t l&#x2019;accompagner<lb break="yes"/>très-souvent, on ne trouv&#x00E2;t sa légéreté spécifique 15 fois au moins<lb break="yes"/>plus forte que celle de l&#x2019;air atmosphérique.</p>
+                    <lb break="yes"/>
+                    <p>Il nous reste encore pour répondre à la dernière question<lb break="yes"/>que nous nous sommes proposée, à faire voir quelles sont les<lb break="yes" />limites d&#x2019;erreur de l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>, et ensuite quelles<lb break="yes" />sont les plus petites quantités d&#x2019;oxigène ou d&#x2019;hydrogène, qu&#x2019;on<lb break="yes"/>peut évaluer par son moyen.</p>
+                    <lb break="yes"/>
+                    <p>Les effets qu&#x2019;on obtient avec cet instrument étant instan-<lb break="no"/>tanés, sont indépendans du thermomètre et du baromètre. Sous<lb break="yes"/>ce rapport il a l&#x2019;avantage très-marqué sur le phosphore et les<lb break="yes"/>sulfures alkalins, de donner des résultats très-comparables;<lb break="yes"/>mais ce n&#x2019;est pas le seul, il a encore celui des moyens eudio-<lb break="no"/>métriques qui donnent des multiples de la quantité à évaluer.<lb break="yes"/>Comme dans cet instrument chaque centième d&#x2019;oxigène est<lb break="yes" />représenté par une absorption trois fois plus forte, l&#x2019;erreur<lb break="yes"/>qu&#x2019;on peut commettre ne porte que pour un tiers sur ce<lb break="yes"/>gaz, et maintenant surtout que nous avons des instrumens<lb break="yes"/>très-exacts qui divisent la mesure en trois cents parties, on<lb break="yes"/>voit qu&#x2019;en nous trompant m&#x00EA;me d&#x2019;une division, l&#x2019;exactitude<lb break="yes"/>pour la quantité d&#x2019;oxigène, peut &#x00EA;tre portée à près d&#x2019;un mil-<lb break="no"/>lième de la quantité d&#x2019;air analysé.</p>
+                    <lb break="yes"/>
+                    <pb n="150" facs="#f0022"/>
+                    <p>Si donc les résultats de la combustion du gaz hydrogène<lb break="yes"/>sont si comparables et compris dans des limites d&#x2019;erreur si<lb break="yes" />rapprochées, il est évident que l&#x2019;on peut non-seulement trouver<lb break="yes"/>les légères différences qu&#x2019;il y a entre deux airs atmosphériques,<lb break="yes"/>mais encore déterminer moins de trois millièmes d&#x2019;oxigène<lb break="yes"/>qui se trouveroient perdus dans de l&#x2019;azote ou du gaz hydro-<lb break="no"/>gène: mais dans ce cas, pour que l&#x2019;inflammation p&#x00FB;t avoir<lb break="yes"/>lieu, il faudroit ajouter une quantité donnée d&#x2019;oxigène, dont<lb break="yes" />on auroit déterminé l&#x2019;absorption avec le gaz hydrogène par<lb break="yes"/>des expériences préliminaires, et alors l&#x2019;excédant de la pre-<lb break="no"/>mière absorption sur la deuxième seroit attribué pour un tiers<lb break="yes"/>au gaz oxigène contenu dans l&#x2019;air qu&#x2019;on analyse.</p>
+                    <lb break="yes"/>
+                    <p>Réciproquement, pour déterminer si un hydrogène est plus<lb break="yes"/>pur que tel autre, ou s&#x2019;il s&#x2019;en trouve de très-petites quan-<lb break="no"/>tités dans un gaz ou dans l&#x2019;air atmosphérique, il faudroit pour<lb break="yes"/>le premier cas m&#x00EA;ler 100 parties de gaz hydrogène avec 100 d&#x2019;oxi-<lb break="no"/>gène; les quantités d&#x2019;hydrogène réel seroient en raison directe<lb break="yes"/>des absorptions. Mais si la proportion d&#x2019;hydrogène étoit très-<lb break="maybe"/>petite, comme d&#x2019;un demi-centième, il faudroit pour déterminer<lb break="yes"/>sa combustion, ajouter 100 parties de ce gaz à 200 de l&#x2019;air<lb break="yes"/>qu&#x2019;on veut analyser, et faire détoner le mélange avec une pro-<lb break="no"/>portion suffisante d&#x2019;oxigène. Par ce moyen, et avec l&#x2019;habitude<lb break="yes" />que nous avons acquise maintenant, nous avons pu retrouver<lb break="yes" />trois millièmes de gaz hydrogène que nous avions m&#x00EA;lés avec<lb break="yes"/>de l&#x2019;air atmosphérique.</p>
+                    <lb break="yes"/>
+                    <p>On pourroit objecter contre l&#x2019;eudiomètre de <persName key="volta_agv" >Volta</persName> que le gaz<lb break="yes"/>hydrogène n&#x2019;étant pas toujours identique, on peut &#x00EA;tre induit<lb break="yes"/>dans des erreurs difficiles à évaluer. Nous observerons d&#x2019;abord<lb break="yes" />qu&#x2019;il est indifférent qu&#x2019;il contienne de l&#x2019;azote; mais s&#x2019;il conte-<lb break="no"/>noit de l&#x2019;oxigène, sa quantité se confondant avec celle qu&#x2019;on<lb break="yes"/>veut évaluer altéreroit les résultats. Pour éviter cet inconvé-<lb break="no"/>nient, on peut commencer par faire détoner séparément<lb break="yes"/>500 parties d&#x2019;hydrogène avec 100 d&#x2019;oxigène; par ce moyen son<lb break="yes"/>oxigène sera détruit, et on pourra dès-lors l&#x2019;employer à l&#x2019;analyse<lb break="yes"/>de l&#x2019;air. Avec cette précaution on pourra se servir d&#x2019;un gaz<lb break="yes"/>fait aussi inexactement qu&#x2019;il soit possible. Il suffit qu&#x2019;il soit<lb break="yes"/>retiré de l&#x2019;eau par le moyen du zinc et de l&#x2019;acide sulfurique,<lb break="yes"/>ou de l&#x2019;acide muriatique; car on sait que si on se sert d&#x2019;un<lb break="yes"/>autre métal tel que le fer, il n&#x2019;est plus identique.</p>
+                    <lb break="yes"/>
+                    <p>D&#x2019;après toutes les expériences que nous avons rapportées,<lb break="yes"/>
+                        <pb n="151" facs="#f0023"/> nous pouvions bien conclure que l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName> devoit<lb break="yes"/>accuser tout l&#x2019;oxigène contenu dans l&#x2019;air atmosphérique; mais<lb break="yes"/>nous avons voulu nous en assurer directement. Nous avons<lb break="yes"/>analysé un air composé de 20 d&#x2019;oxigène très-pur, et de 80 d&#x2019;azote<lb break="yes"/>retiré de la décomposition de l&#x2019;ammoniaque par l&#x2019;acide mu-<lb break="no" />riatique oxigéné, en prenant toutes les précautions possibles<lb break="yes"/>pour qu&#x2019;il ne f&#x00FB;t pas m&#x00EA;lé d&#x2019;air atmosphérique. 200 parties<lb break="yes"/>de cet air enflammées avec 200 de gaz hydrogène, ont donné<lb break="yes"/>cinq absorptions, ne différant de la plus petite à la plus<lb break="yes"/>grande que de 5 millièmes, et dont la moyenne a été de<lb break="yes"/>124,9. Ces 124,9 parties indiquent 41,6 d&#x2019;oxigène, dont la<lb break="yes" />moitié 20.8 correspond à 100 de notre air factice. Nous trou-<lb break="no"/>vons donc 0,008 d&#x2019;oxigène de plus que nous n&#x2019;en avions mis;<lb break="yes"/>ce qui sembleroit indiquer que le rapport de 100 d&#x2019;oxigène<lb break="yes"/>à 200 d&#x2019;hydrogène est un peu trop grand; mais nous obser-<lb break="no"/>verons que notre azote quoique fait avec soin, luisoit encore<lb break="yes"/>avec le phosphore, et que pour expliquer notre résultat, il<lb break="yes"/>suffit de supposer que l&#x2019;azote contient un centième d&#x2019;oxigène,<lb break="yes"/>ce qui est assez probable si on fait attention que l&#x2019;acide mu-<lb break="no" />riatique oxigéné se décompose très-promptement à la lu-<lb break="no" />mière.</p>
+                    <lb break="yes"/>
+                    <p>On voit par ce que nous venons de dire que les résultats<lb break="yes"/>que donne l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName> sont très-comparables, et<lb break="yes"/>que la limite de leurs différences peut-&#x00EA;tre réduite pour l&#x2019;oxi-<lb break="no"/>gène à près d&#x2019;un millième de l&#x2019;air analysé. On voit encore<lb break="yes" />que par son moyen on peut évaluer de très-petites diffé-<lb break="no" />rences entre deux airs ou de très-petites quantités d&#x2019;hy-<lb break="no"/>drogène m&#x00EA;lées dans l&#x2019;air atmosphérique. Indépendamment de<lb break="yes"/>la propriété qu&#x2019;a cet instrument d&#x2019;accuser toute la quantité<lb break="yes"/>d&#x2019;oxigène contenue dans un air, il est le seul avec lequel on<lb break="yes"/>puisse évaluer la proportion d&#x2019;hydrogène d&#x2019;un mélange ga-<lb break="no"/>zeux, et sous ce rapport, il auroit encore pu fixer l&#x2019;attention<lb break="yes"/>et engager à étudier sa manière d&#x2019;agir.</p>
+                    <lb break="yes"/>
+                    <p>Ainsi l&#x2019;illustre physicien <persName key="volta_agv">Volta</persName> qui a enrichi la physique<lb break="yes"/>des plus belles découvertes, auroit encore la gloire d&#x2019;avoir<lb break="yes"/>donné à la chimie l&#x2019;instrument le plus exact et le plus pré-<lb break="no"/>cieux pour ses analyses.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="152" facs="#f0024"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">Analyse de l&#x2019;air atmosphérique par l&#x2019;eudiomètre de<lb break="yes"/>
+                            <persName key="volta_agv">Volta</persName>
+                        </hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>A présent que nous avons prouvé que l&#x2019;eudiomètre de<lb break="yes"/>
+                        <persName key="volta_agv">Volta</persName> donne des résultats très-comparables, qu&#x2019;il peut ac-<lb break="no"/>cuser toute la quantité d&#x2019;oxigène contenue dans l&#x2019;air, et qu&#x2019;il<lb break="yes"/>a sur les autres moyens eudiométriques où la substance ab-<lb break="no"/>sorbante est solide ou liquide, l&#x2019;avantage de donner des<lb break="yes"/>multiples de la quantité d&#x2019;oxigène à évaluer, nous allons<lb break="yes"/>en faire l&#x2019;application à l&#x2019;analyse de l&#x2019;air. Si la proportion<lb break="yes"/>de 100 d&#x2019;oxigène à 200 d&#x2019;hydrogène que nous avons éta-<lb break="no" />blie, est rigoureuse, nous obtiendrons exactement le rap-<lb break="no" />port de l&#x2019;oxigène à l&#x2019;azote; mais en supposant m&#x00EA;me que la<lb break="yes"/>quantité d&#x2019;hydrogène f&#x00FB;t trop grande ou trop petite de cinq<lb break="yes"/>unités, l&#x2019;erreur n&#x2019;iroit pas à plus de 3 millièmes de l&#x2019;air ana-<lb break="no"/>lysé, et nous aurions encore l&#x2019;avantage d&#x2019;avoir une plus<lb break="yes" />grande précision qu&#x2019;avec les autres moyens eudiométriques<lb break="yes"/>connus.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;air atmosphérique que nous avons analysé a été pris sur<lb break="yes"/>le milieu de la Seine par des temps froids, tempérés et plu-<lb break="no"/>vieux, et par des vents différens. Pour mettre une plus grande<lb break="yes"/>parité dans les circonstances et mieux apprécier des diffé-<lb break="no"/>rences dans la nature de l&#x2019;air s&#x2019;il devoit s&#x2019;en trouver, nous<lb break="yes"/>avons analysé le m&#x00EA;me jour les diverses portions d&#x2019;air que<lb break="yes"/>nous avions recueillies à des temps différens, et que nous<lb break="yes"/>avions conservées dans des vases de verre bien fermés et ren-<lb break="no"/>versés sur l&#x2019;eau. Pour abréger, nous avons rassemblé dans le<lb break="yes" />tableau qui est à la fin de ce Mémoire, les absorptions pro-<lb break="no" />venant de l&#x2019;inflammation de 200 d&#x2019;air et 200 de gaz hydro-<lb break="no"/>gène, et nous avons en m&#x00EA;me temps indiqué les quantités<lb break="yes"/>d&#x2019;oxigène correspondantes.</p>
+                    <lb break="yes"/>
+                    <p>On y voit que toutes nos expériences prouvent d&#x2019;abord qu&#x2019;il<lb break="yes"/>n&#x2019;y a pas de variations de plus d&#x2019;un millième dans la quan-<lb break="no"/>tité d&#x2019;oxigène de l&#x2019;air, quoique celui que nous avons analysé<lb break="yes"/>ayant été recueilli par des vents différens, prov&#x00EE;nt de pays<lb break="yes"/>très-éloignés; et en second lieu, que le rapport en volume de<lb break="yes"/>l&#x2019;oxigène aux autres gaz qui se trouvent dans l&#x2019;air, est de<lb break="yes"/>21 à 79. Le premier résultat que l&#x2019;air ne varie pas dans sa<lb break="yes"/>composition, est rigoureusement exact, parcequ&#x2019;il est indé-<lb break="no"/>
+                        <fw type="catch" place="bottom">pendant</fw>
+                        <lb break="yes"/>
+                        <pb n="153" facs="#f0025"/> pendant de la proportion du gaz hydrogène et du gaz oxi-<lb break="no"/>gène qui constitue l&#x2019;eau; mais le deuxième résultat que l&#x2019;air<lb break="yes"/>atmosphérique contient 21 centièmes d&#x2019;oxigène, doit aussi<lb break="yes"/>s&#x2019;écarter très-peu de la réalité, parcequ&#x2019;en supposant que la<lb break="yes" />quantité d&#x2019;hydrogène nécessaire pour saturer 100 parties<lb break="yes"/>d&#x2019;oxigène, f&#x00FB;t de 5 parties plus grande ou plus petite que<lb break="yes"/>celle que nous avons assignée (et nous avons lieu de croire<lb break="yes"/>qu&#x2019;elle est exacte à beaucoup moins), l&#x2019;erreur sur la propor-<lb break="no"/>tion d&#x2019;oxigène que nous avons trouvée dans l&#x2019;air, n&#x2019;iroit pas,<lb break="yes"/>comme nous l&#x2019;avons déjà observé, à plus de 3 millièmes de<lb break="yes" />l&#x2019;air analysé.</p>
+                    <lb break="yes"/>
+                    <p>Mais beaucoup de phénomènes météoriques pouvant &#x00EA;tre<lb break="yes" />rapportés à des inflammations de gaz hydrogène, on a cher-<lb break="no" />ché à les expliquer en admettant l&#x2019;existence de ce gaz dans<lb break="yes"/>l&#x2019;atmosphère. Nous avons donc cru très-intéressant de re-<lb break="no"/>chercher si effectivement l&#x2019;air contenoit du gaz hydrogène;<lb break="yes"/>et pour le découvrir plus aisément, nous avons fait un mé-<lb break="no"/>lange gazeux, dans lequel nous étions s&#x00FB;rs qu&#x2019;il n&#x2019;y en avoit<lb break="yes"/>point, et nous avons analysé les deux airs comparativement.<lb break="yes"/>Nous avons donc fait un mélange de 20 parties d&#x2019;oxigène, et<lb break="yes"/>de 80 parties d&#x2019;azote, retiré de l&#x2019;ammoniaque par le moyen<lb break="yes"/>de l&#x2019;acide muriatique oxigéné, et nous avons fait détoner<lb break="yes"/>300 parties de chacun des deux airs, avec 100 d&#x2019;hydrogène;<lb break="yes"/>mais le résultat de six expériences faites avec l&#x2019;air atmosphé-<lb break="no"/>rique, a été exactement le m&#x00EA;me que celui de six autres faites<lb break="yes"/>avec l&#x2019;air factice. Et comme nous avons fait voir que nous<lb break="yes"/>pouvions apprécier moins de 3 millièmes d&#x2019;hydrogène, il<lb break="yes"/>faut conclure que l&#x2019;atmosphère ne contient pas de ce gaz,<lb break="yes" />ou que si elle en contient, sa quantité ne peut aller à 3 mil-<lb break="no"/>lièmes. On ne peut cependant douter qu&#x2019;il n&#x2019;y ait un peu<lb break="yes"/>d&#x2019;hydrogène dans l&#x2019;air; il s&#x2019;en dégage tous les jours des ma-<lb break="no"/>rais: mais la quantité peut en &#x00EA;tre assez petite, (comme d&#x2019;un<lb break="yes" />millième) pour échapper à tous nos moyens. La proportion<lb break="yes" />d&#x2019;acide carbonique qui s&#x2019;y trouve, devroit &#x00EA;tre beaucoup plus<lb break="yes"/>forte si l&#x2019;on considère l&#x2019;abondance des sources qui le fournis-<lb break="no"/>sent, <choice>
+                            <sic>etcependant</sic>
+                            <corr type="editorial">et cependant</corr>
+                        </choice> s&#x2019;il ne fermoit des combinaisons insolubles<lb break="yes" />avec la chaux ou la baryte, on seroit peut-&#x00EA;tre encore à savoir<lb break="yes"/>par la détermination de son volume s&#x2019;il s&#x2019;en trouve dans l&#x2019;air.<lb break="yes"/>L&#x2019;acide carbonique, il est vrai, ne peut pas s&#x2019;accumuler dans<lb break="yes" />l&#x2019;atmosphère, parceque la végétation le décompose: mais est il<lb break="yes"/>prouvé qu&#x2019;il n&#x2019;y ait pas de causes qui rendent l&#x2019;hydrogène à<lb break="yes"/>la terre, et l&#x2019;emp&#x00EA;chent par là de s&#x2019;accumuler dans l&#x2019;air.</p>
+                    <lb break="yes"/>
+                    <pb n="154" facs="#f0026"/>
+                    <p>Pour tirer une conclusion des expériences précédentes,<lb break="yes"/>nous dirons, 1°. que l&#x2019;atmosphère ne varie pas générale-<lb break="no" />ment dans sa composition; 2°. que la quantité d&#x2019;oxigène<lb break="yes"/>qu&#x2019;elle contient est de 21 centièmes; 3°. Enfin qu&#x2019;elle ne<lb break="yes"/>contient pas d&#x2019;hydrogène que nous puissions apprécier.</p>
+                    <lb break="yes"/>
+                    <p>Cette identité de composition dans laquelle se maintien-<lb break="no"/>nent constamment les principes de l&#x2019;atmosphère, et cette<lb break="yes" />absence de l&#x2019;hydrogène qui suit de nos expériences, doivent<lb break="yes"/>rassurer le géomètre sur la théorie des réfractions. La force<lb break="yes"/>réfractive des différens gaz étant différente, et celle de l&#x2019;hy-<lb break="no"/>drogène étant plus forte que celle de l&#x2019;oxigène et de l&#x2019;azote,<lb break="yes"/>la théorie des réfractions qui ne se fonde que sur les varia-<lb break="no"/>tions du baromètre et du thermomètre, seroit très impar-<lb break="no"/>faite si l&#x2019;atmosphère changeoit dans ses principes constituans;<lb break="yes" />mais heureusement il est facile de prouver que ces change-<lb break="no" />mens n&#x2019;ont pas lieu d&#x2019;une manière sensible, et que le gaz<lb break="yes"/>hydrogène dont la force réfractive est très-puissante, ne s&#x2019;y<lb break="yes"/>trouve pas au-delà de 0,003, du moins jusques aux plus<lb break="yes"/>grandes hauteurs auxquelles on soit parvenu. Le géomètre<lb break="yes"/>n&#x2019;aura donc à considérer dans la Théorie des Réfractions,<lb break="yes"/>que le baromètre, le thermomètre et l&#x2019;hygromètre.</p>
+                    <lb break="yes"/>
+                    <p>Un peu de réflexion suffit en effet pour nous convaincre<lb break="yes"/>que l&#x2019;atmosphère ne doit pas varier sensiblement dans l&#x2019;es-<lb break="no"/>pace de quelques années, et à plus forte raison de quelques<lb break="yes"/>jours, à moins qu&#x2019;on ne veuille parler de quelques variations<lb break="yes"/>locales très-particulières. Car si elle varioit ainsi en si peu de<lb break="yes"/>temps, par quel prodige le feroit-elle et reviendroit-elle su-<lb break="no"/>bitement à son premier état? Comment concevoir une cause<lb break="yes"/>assez puissante pour changer d&#x2019;un jour à l&#x2019;autre la propor-<lb break="no"/>tion d&#x2019;oxigène d&#x2019;un millième seulement, à moins que de sup-<lb break="no"/>poser qu&#x2019;il y ait un pouvoir électrique ou magnétique, ou<lb break="yes"/>tout autre aussi imaginaire, qui puisse changer par des modi-<lb break="no"/>fications inconnues, l&#x2019;oxigène en azote, et réciproquement?<lb break="yes"/>Il est possible que l&#x2019;atmosphère varie très-lentement soit<lb break="yes"/>dans la proportion de ses principes, soit dans son poids;<lb break="yes"/>mais ces variations, pour &#x00EA;tre si insensibles, ne doivent pas<lb break="yes" />moins en fixer l&#x2019;attention des physiciens.</p>
+                    <lb break="yes"/>
+                    <p>S&#x2019;il est bien prouvé maintenant qu&#x2019;en général l&#x2019;atmosphère<lb break="yes"/>ne varie pas dans sa composition, il faut chercher la raison des<lb break="yes"/>différences qu&#x2019;on a cru y appercevoir dans les circonstances lo-<lb break="no"/>
+                        <pb n="155" facs="#f0027"/> cales où on l&#x2019;a analysée. Des volcans sur les hautes montagnes,<lb break="yes"/>des fermentations particulières, les eaux croupissantes d&#x2019;un ma-<lb break="no"/>rais ou d&#x2019;un lac, pourroient peut-&#x00EA;tre altérer un peu la pureté<lb break="yes"/>de l&#x2019;atmosphère qui les touche, soit en lui enlevant de l&#x2019;oxi-<lb break="no"/>gène, soit en laissant dégager dans son sein des fluides élasti-<lb break="no"/>ques non-respirables; mais combien cette diminution de la pro-<lb break="no"/>portion d&#x2019;oxigène ne doit-elle pas &#x00EA;tre petite dans une si grande<lb break="yes"/>masse d&#x2019;air continuellement agité, quand on considère que dans<lb break="yes"/>des lieux où est rassemblé un grand nombre d&#x2019;individus, ou dans<lb break="yes" />ceux où il semble qu&#x2019;il y ait un foyer d&#x2019;infection, l&#x2019;air n&#x2019;éprouve<lb break="yes"/>encore que de très-petites variations. Nous avons analysé deux<lb break="yes"/>portions d&#x2019;air, dont l&#x2019;une avoit été prise au milieu du parterre du<lb break="yes" />Thé&#x00E2;tre fran&#x00E7;ais, un instant avant qu&#x2019;on lev&#x00E2;t la toile pour jouer<lb break="yes"/>la deuxième pièce, trois heures et demie après la réunion d&#x2019;un<lb break="yes"/>grand nombre de spectateurs, et dont l&#x2019;autre avoit été prise<lb break="yes"/>trois minutes après la fin du spectacle, dans la partie la plus<lb break="yes"/>élevée de la salle. Ces deux portions ont à peine troublé l&#x2019;eau<lb break="yes"/>de chaux; l&#x2019;air atmosphérique indiquant 0,210 d&#x2019;oxigène, l&#x2019;air<lb break="yes"/>du parterre en a indiqué seulement 0,202, et celui du haut de<lb break="yes"/>la salle 0,204.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>
+                                <hi rendition="#g">ANALYSE</hi>
+                                <lb break="yes"/>de l&#x2019;air atmosphérique.</cell>
+                            <cell>
+                                <hi rendition="#g">ANALYSE</hi>
+                                <lb break="yes"/>de l&#x2019;air du parterre.</cell>
+                            <cell>
+                                <hi rendition="#g">ANALYSE</hi>
+                                <lb break="yes"/>de l&#x2019;air du haut de la salle.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>200 air atmosphér.<lb break="yes"/>200 &#x2014; hyd.</cell>
+                            <cell>200 air.<lb break="yes"/>200 &#x2014; hyd.</cell>
+                            <cell>200 air.<lb break="yes"/>200 hyd.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126 &#x2014; absorbé.<lb break="yes"/>21 &#x2014; oxigène.</cell>
+                            <cell>121,5 abs.<lb break="yes"/>20,2 oxig.</cell>
+                            <cell>122,5 abs.<lb break="yes"/>20,4 oxig.</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>M. <persName key="seguin_01">Séguin</persName> a aussi analysé l&#x2019;air des salles d&#x2019;h&#x00F4;pitaux, qu&#x2019;il avoit<lb break="yes"/>fait tenir exactement fermées pendant 12 heures, et il l&#x2019;a trouvé<lb break="yes"/>à-peu-près aussi pur que l&#x2019;air atmosphérique, quoiqu&#x2019;il e&#x00FB;t une<lb break="yes"/>odeur infecte insupportable.</p>
+                    <lb break="yes"/>
+                    <p>Si donc, m&#x00EA;me dans les circonstances les plus favorables pour<lb break="yes"/>l&#x2019;absorption de l&#x2019;oxigène, l&#x2019;air n&#x2019;en perd pas un centième, on<lb break="yes"/>ne peut expliquer par là les anxiétés qu&#x2019;on éprouve dans des<lb break="yes"/>lieux fermés et remplis d&#x2019;individus, ou les maladies qui sont<lb break="yes" />particulières aux lacs et aux marais, ou à certains pays. Dans<lb break="yes"/>quelques circonstances elles seront produites par des émanations<lb break="yes"/>qui échappent à tous nos moyens eudiométriques, et qui agis-<lb break="no"/>
+                        <pb n="156" facs="#f0028"/> sent d&#x2019;une manière particulière sur notre corps. C&#x2019;est ainsi<lb break="yes"/>qu&#x2019;une bulle de gaz hydrogène sulfuré, de gaz muriatique oxi-<lb break="no"/>géné, une émanation putride, une fleur m&#x00EA;me, peuvent par<lb break="yes"/>leur odeur remplir un espace immense, et étonner notre ima-<lb break="no"/>gination par leur extr&#x00EA;me subtilité, alors m&#x00EA;me que nous som-<lb break="no" />mes pr&#x00EA;ts à succomber à leur action. Les miasmes pestilentiels<lb break="yes"/>peuvent &#x00EA;tre aussi subtils sans en &#x00EA;tre moins mortels, et échap-<lb break="no"/>per également à tous nos moyens d&#x2019;analyse. Heureusement si<lb break="yes"/>nous ne pouvons pas saisir ces &#x00EA;tres atomiques et en détermi-<lb break="no"/>ner la nature, nous pouvons au moins, d&#x2019;après les travaux de<lb break="yes"/>M. <persName key="guytondemorveau_lbb">Guyton</persName>, qui ont été si bienfaisans pour l&#x2019;humanité, détruire<lb break="yes"/>leur action. Mais dans d&#x2019;autres circonstances, les maladies peu-<lb break="no"/>vent &#x00EA;tre dues à l&#x2019;humidité de l&#x2019;air, à sa température, à son<lb break="yes"/>état électrique, ou en général à l&#x2019;état de l&#x2019;atmosphère relative-<lb break="no"/>ment aux dispositions où on se trouve; et dans ces cas qui<lb break="yes"/>peuvent &#x00EA;tre très-fréquens, la maladie peut faire de grands rava-<lb break="no"/>ges, sans qu&#x2019;on puisse en arr&#x00EA;ter les progrès; il seroit donc<lb break="yes"/>illusoire d&#x2019;attribuer tout à une cause, quand l&#x2019;état de santé de<lb break="yes"/>l&#x2019;homme dépend du concours de toutes les circonstances dans<lb break="yes"/>lesquelles il se trouve.</p>
+                    <lb break="yes"/>
+                    <p>Mais résumons maintenant les principaux faits contenus dans<lb break="yes" />cette première partie de notre Mémoire, et rappelons quelques-<lb break="maybe"/>unes des explications que nous avons présentées, si toutefois il<lb break="yes"/>nous est permis de les regarder comme l&#x2019;expression de la<lb break="yes"/>vérité.</p>
+                    <lb break="yes"/>
+                    <p>La dissolution d&#x2019;un sulfure alkalin, lorsqu&#x2019;elle est faite à froid,<lb break="yes"/>n&#x2019;absorbe point l&#x2019;azote, et elle peut &#x00EA;tre employée avantageuse-<lb break="no"/>ment à l&#x2019;analyse de l&#x2019;air: lorsqu&#x2019;elle est faite à chaud elle l&#x2019;ab-<lb break="no"/>sorbe et indique dans l&#x2019;air une plus grande diminution de vo-<lb break="no"/>lume que celle qui est due à l&#x2019;absorption de l&#x2019;oxigène. C&#x2019;est à<lb break="yes" />l&#x2019;eau seule et non au sulfure qu&#x2019;il faut attribuer cette pro-<lb break="no"/>priété.</p>
+                    <lb break="yes"/>
+                    <p>Il y a des proportions d&#x2019;oxigène et d&#x2019;hydrogène telles que la<lb break="yes"/>combustion produite par l&#x2019;étincelle électrique peut &#x00EA;tre com-<lb break="no"/>plète; il en est d&#x2019;autres avec lesquelles la combustion s&#x2019;arr&#x00EA;te<lb break="yes"/>avant d&#x2019;&#x00EA;tre achevée; d&#x2019;autres enfin avec lesquelles elle ne peut<lb break="yes"/>pas avoir lieu du tout. Ces derniers phénomènes paroissent tenir<lb break="yes"/>à ce que la température nécessaire à la combustion n&#x2019;est pas<lb break="yes"/>assez élevée, et non à l&#x2019;affinité mutuelle des gaz: car dans tous<lb break="yes"/>les cas où la combustion n&#x2019;est pas complète, il suffit d&#x2019;élever<lb break="yes"/>artificiellement la température pour qu&#x2019;elle le devienne. Lorsque<lb break="yes"/>
+                        <pb n="157" facs="#f0029"/> l&#x2019;hydrogène et l&#x2019;oxigène ne sont pas entièrement absorbés, on<lb break="yes"/>les retrouve dans les résidus, et on prouve qu&#x2019;ils n&#x2019;ont pas formé<lb break="yes"/>de nouvelles combinaisons.</p>
+                    <lb break="yes"/>
+                    <p>Quand on ne peut enflammer un mélange gazeux où se<lb break="yes"/>trouvent l&#x2019;oxigène et l&#x2019;hydrogène, il suffit d&#x2019;augmenter la pro-<lb break="no"/>portion de ces deux gaz. Les phénomènes météoriques ne peu-<lb break="no"/>vent &#x00EA;tre le résultat de l&#x2019;inflammation du gaz hydrogène, puisque<lb break="yes"/>m&#x00EA;me dans un air qui ne seroit que d&#x2019;oxigène pur, il en faudroit<lb break="yes"/>plus de 6 centièmes pour que la combustion e&#x00FB;t lieu, et encore<lb break="yes" />ne seroit elle que partielle. L&#x2019;électricité paro&#x00EE;t agir dans l&#x2019;inflam-<lb break="no"/>mation du gaz oxigène et du gaz hydrogène par la chaleur due<lb break="yes"/>à la compression qu&#x2019;elle exerce en traversant leur mélange. Ces<lb break="yes"/>deux gaz en se combinant forment de l&#x2019;eau qui est de nature<lb break="yes" />constante. Si les phénomènes <persName key="galvani_la" >galvaniques</persName> paroissent prouver que<lb break="yes" />l&#x2019;eau est susceptible de s&#x2019;oxigéner et de s&#x2019;hydrogéner, ils peu-<lb break="no"/>vent s&#x2019;expliquer également sans cette hypothèse.</p>
+                    <lb break="yes"/>
+                    <p>100 parties en volume d&#x2019;oxigène demandent pour se saturer,<lb break="yes"/>200 parties d&#x2019;hydrogène. Cette proportion est indépendante des<lb break="yes"/>changemens de température et d&#x2019;humidité, tandis que celle<lb break="yes"/>conclue par les poids varie dans les m&#x00EA;mes circonstances, parce-<lb break="maybe"/>que les deux gaz ne portent pas dans la combinaison des quan-<lb break="no"/>tités d&#x2019;eau qui soient dans le m&#x00EA;me rapport que leurs quantités<lb break="yes"/>pondérales; d&#x2019;où il résulte que les proportions de l&#x2019;eau qu&#x2019;on a<lb break="yes"/>établies, doivent &#x00EA;tre modifiées. L&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName> peut<lb break="yes"/>accuser toute la quantité d&#x2019;oxigène contenue dans un volume<lb break="yes"/>déterminé d&#x2019;air à un millième près de ce volume, et ses résul-<lb break="no"/>tats sont très-comparables. Dans l&#x2019;état actuel de nos connois-<lb break="no"/>sances, il est le moyen eudiométrique le plus exact: non-seu-<lb break="no"/>lement il peut accuser de très-petites quantités d&#x2019;oxigène ou<lb break="yes" />d&#x2019;hydrogène, et faire conno&#x00EE;tre la pureté de ce dernier gaz;<lb break="yes"/>mais il a encore l&#x2019;avantage de donner des multiples de la quan-<lb break="no"/>tité à évaluer. Il a donc sous tous ces rapports, un avantage<lb break="yes"/>très-marqué sur les autres moyens eudiométriques. L&#x2019;atmos-<lb break="no"/>phère ne contient que 0,21 en volume d&#x2019;oxigène, et elle ne<lb break="yes"/>varie pas dans sa composition. Elle ne contient pas d&#x2019;hydro-<lb break="no"/>gène, ou si elle en contient, sa quantité ne peut aller à 0,003.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="158" facs="#f0030"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">De la nature de l&#x2019;air retiré de l&#x2019;eau, et de l&#x2019;action de<lb break="yes"/>l&#x2019;eau sur les gaz purs et mélangés.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>
+                        <hi rendition="#k">Nous</hi> avons examiné jusqu&#x2019;ici les moyens eudiométriques<lb break="yes"/>qui conduisent à l&#x2019;analyse exacte de l&#x2019;air atmosphérique.<lb break="yes"/>Nous nous bornerions sans doute à avoir énoncé les faits<lb break="yes"/>principaux auxquels le commencement de notre travail nous<lb break="yes"/>a conduits, si nous ne nous étions pas apper&#x00E7;us dans le cou-<lb break="no"/>rant de ces expériences, et surtout dans celles sur les sul-<lb break="no"/>fures, que l&#x2019;eau et d&#x2019;autres liquides exercent une action sur<lb break="yes"/>l&#x2019;air, qui souvent peut devenir une cause d&#x2019;erreur d&#x2019;autant<lb break="yes"/>plus importante qu&#x2019;elle a été peu appréciée jusqu&#x2019;à ce jour.<lb break="yes" />Nous devrions donc craindre de laisser notre travail plus im-<lb break="no"/>parfait encore qu&#x2019;il ne l&#x2019;est déjà, si nous n&#x2019;eussions dirigé<lb break="yes"/>nos recherches vers cette action de l&#x2019;eau sur les gaz purs et<lb break="yes"/>mélangés qu&#x2019;on lui présente. C&#x2019;est par les expériences faites<lb break="yes"/>sous ce point de vue, que nous allons terminer ce Mé-<lb break="no"/>moire.</p>
+                    <lb break="yes"/>
+                    <p>Il est généralement connu que l&#x2019;eau peut tenir de l&#x2019;air en<lb break="yes"/>dissolution. <persName key="boyle_r">Boyle</persName>, <persName key="huygens_c">Huygens</persName> et <persName key="mairan_01">Mairan</persName> ont discuté ce fait;<lb break="yes" />mais ils n&#x2019;avoient pas de moyens de reconno&#x00EE;tre que cet air<lb break="yes"/>dissout, diffère chimiquement de l&#x2019;air atmosphérique. C&#x2019;est<lb break="yes"/>le célèbre <persName key="priestley_j">Priestley</persName> qui, le premier, a observé que l&#x2019;air retiré<lb break="yes"/>des eaux, contient plus d&#x2019;oxigène que l&#x2019;air commun. M. <persName key="hassenfratz_jh">Has-<lb break="no"/>senfratz</persName> a annoncé depuis que l&#x2019;eau de pluie dégageoit un<lb break="yes"/>air dans lequel il se trouvoit près de 40 centièmes d&#x2019;oxigène,<lb break="yes"/>et MM. <persName key="ingenhousz_j">Ingenhouss</persName> et Breda dans leurs expériences sur le<lb break="yes"/>gaz nitreux, avoient été conduits à des résultats analogues.</p>
+                    <lb break="yes"/>
+                    <p>Mais s&#x2019;il est connu déjà que l&#x2019;air contenu dans l&#x2019;eau est plus<lb break="yes"/>pur que l&#x2019;air atmosphérique, on a annoncé aussi que l&#x2019;eau<lb break="yes"/>absorbe plus abondamment et plus facilement le gaz oxigène<lb break="yes"/>que l&#x2019;azote. M. <persName key="fourcroy_afd">Fourcroy</persName> cite m&#x00EA;me le fait curieux, mais qu&#x2019;il<lb break="yes"/>croit lui-m&#x00EA;me ne pas &#x00EA;tre suffisamment vérifié, que l&#x2019;eau<lb break="yes"/>chargée de gaz oxigène absorbe le gaz hydrogène, sur lequel<lb break="yes"/>l&#x2019;eau ordinaire n&#x2019;a presque aucune action. Nous verrons plus<lb break="yes" />bas que celle qu&#x2019;elle exerce sur tel ou tel gaz, est modi-<lb break="no"/>fiée par la nature de l&#x2019;air qu&#x2019;elle tient déjà en dissolution.</p>
+                    <lb break="yes"/>
+                    <p>M. <persName key="henry_01">Henry</persName>, dans un Mémoire récemment publié en Angle-<lb break="no"/>
+                        <pb n="159" facs="#f0031"/> terre, a examiné l&#x2019;absorption de différens gaz par l&#x2019;eau privée<lb break="yes"/>d&#x2019;air. Il a opéré ces absorptions sous la pression de deux ou<lb break="yes"/>trois atmosphères; mais il n&#x2019;a pas traité du mélange de dif-<lb break="no" />férens gaz et de l&#x2019;affinité qu&#x2019;a l&#x2019;eau pour ce mélange; il se<lb break="yes"/>borne à examiner la quantité absorbée selon la différence de<lb break="yes"/>température et de pression barométrique, sans avoir dirigé<lb break="yes"/>ses recherches sur l&#x2019;action de l&#x2019;eau déjà saturée d&#x2019;autres gaz.</p>
+                    <lb break="yes"/>
+                    <p>Nous avons cru ne pas devoir négliger un objet aussi in-<lb break="no" />timement lié aux travaux eudiométriques, et dont les chi-<lb break="no" />mistes paroissent s&#x2019;&#x00EA;tre peu occupés, jusqu&#x2019;à ce jour. Nous<lb break="yes"/>avons examiné le degré d&#x2019;affinité par lequel l&#x2019;oxigène dissout<lb break="yes"/>dans l&#x2019;eau, y est retenu en raison de la température et des sels<lb break="yes" />qu&#x2019;elle peut contenir. Nous avons mis en contact avec l&#x2019;eau<lb break="yes"/>d&#x2019;égales quantités de gaz seuls et mélangés, et nous<lb break="yes"/>avons observé les changemens qu&#x2019;éprouvent ces mélanges<lb break="yes"/>dans leur composition chimique. Enfin nous avons com-<lb break="no"/>mencé à examiner un probl&#x00EA;me très-important pour la<lb break="yes"/>météorologie, savoir, si les eaux de pluie tiennent de l&#x2019;hy-<lb break="no"/>drogène en dissolution.</p>
+                    <lb break="yes"/>
+                    <p>Toutes ces recherches auxquelles nous continuerons de<lb break="yes"/>nous livrer pendant le cours de cette année, et surtout sur<lb break="yes"/>les montagnes que nous allons parcourir, ne sont point encore<lb break="yes" />très-avancées, et nous nous bornerons à présenter quelques<lb break="yes" />faits principaux qui, nous nous flattons, ne sont pas dépourvus<lb break="yes"/>de tout intér&#x00EA;t pour les physiciens.</p>
+                    <lb break="yes"/>
+                    <p>En m&#x00EA;lant toute la masse d&#x2019;air que donne l&#x2019;eau par<lb break="yes"/>l&#x2019;ébullition, sans séparer les portions qui se dégagent les pre-<lb break="no"/>mières de celles qu&#x2019;elle abandonne à la fin de l&#x2019;opération,<lb break="yes"/>nous avons trouvé par l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>, que l&#x2019;eau dis-<lb break="no"/>tillée qui a repris de l&#x2019;air atmosphérique, donne un air qui<lb break="yes"/>contient............. 32,8 d&#x2019;oxigène sur 100 part.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;eau de la Seine....... 31,9</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;eau de pluie........ 31,0</p>
+                    <lb break="yes"/>
+                    <p>Il résulte de ces expériences que de ces trois eaux on peut<lb break="yes" />retirer un air à-peu-près également riche en oxigène, et de<lb break="yes" />10 centièmes plus pur que l&#x2019;air atmosphérique. Cette quan-<lb break="no"/>tité d&#x2019;oxigène est plus variable dans les eaux de puits, qui<lb break="yes"/>dans l&#x2019;intérieur de la terre se trouvent en contact avec des<lb break="yes"/>substances qui exercent de l&#x2019;affinité sur l&#x2019;oxigène. L&#x2019;eau de<lb break="yes"/>
+                        <pb n="160" facs="#f0032"/> la Seine recueillie à une autre époque, ne nous a fourni<lb break="yes"/>qu&#x2019;un air à 29,1 d&#x2019;oxigène, air un peu moins pur que celui<lb break="yes"/>de l&#x2019;eau de pluie.</p>
+                    <lb break="yes"/>
+                    <p>Si l&#x2019;eau distillée qui a repris de l&#x2019;air, l&#x2019;eau de pluie et celle<lb break="yes"/>des rivières dégagent un air dont la totalité est de beaucoup<lb break="yes"/>plus pure que l&#x2019;air atmosphérique, il est plus intéressant en-<lb break="no"/>core d&#x2019;examiner la nature des mélanges gazeux que donne<lb break="yes"/>l&#x2019;eau en l&#x2019;échauffant graduellement. Ce sont là des expé-<lb break="no" />riences dans lesquelles la grande affinité de l&#x2019;oxigène pour<lb break="yes"/>ce liquide se montre dans tout son jour. Nous avons échauffé<lb break="yes"/>graduellement l&#x2019;eau de la Seine jusqu&#x2019;au terme de l&#x2019;ébulli-<lb break="no"/>tion, et nous avons recueilli l&#x2019;air qui se dégage par por-<lb break="no"/>tions successives, mais inégales. Nous avons pris 200 parties<lb break="yes"/>de chacune de ces portions, et les ayant fait détoner avec<lb break="yes"/>200 parties de gaz hydrogène, elles nous ont donné les ré-<lb break="no" />sultats suivans:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>
+                                <hi rendition="#g">PORTIONS D&#x2019;AIR</hi>
+                                <lb break="yes"/>selon l&#x2019;ordre de leur déga-<lb break="no" />gement.</cell>
+                            <cell>
+                                <hi rendition="#g">ABSORPTION.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#g">GAZ OXIGENE</hi>
+                                <lb break="yes"/>contenu dans 100 part.<lb break="yes"/>de l&#x2019;air dégagé.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Première......</cell>
+                            <cell>142,0</cell>
+                            <cell>23,7</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Deuxième.....</cell>
+                            <cell>164,5</cell>
+                            <cell>27,4</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Troisième.....</cell>
+                            <cell>185,0</cell>
+                            <cell>30,2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Quatrième.....</cell>
+                            <cell>195,0</cell>
+                            <cell>32,5</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Ces expériences répétées plusieurs fois prouvent que l&#x2019;eau<lb break="yes"/>n&#x2019;abandonne d&#x2019;abord qu&#x2019;un air, dont la pureté est un peu<lb break="yes"/>au-dessus de celle de l&#x2019;air atmosphérique; puis la pureté<lb break="yes"/>de cet air, ou le dégagement de l&#x2019;oxigène va en croissant,<lb break="yes"/>et les dernières portions gazeuses que sépare la chaleur,<lb break="yes"/>sont les plus riches en oxigène. En répétant cette expérience<lb break="yes"/>sur de l&#x2019;eau de neige, les premières portions d&#x2019;air ont été à<lb break="yes"/>24,0; les dernières à 34,8 d&#x2019;oxigène. Peut-&#x00EA;tre qu&#x2019;en chauffant<lb break="yes"/>la masse d&#x2019;eau plus lentement encore, et qu&#x2019;en séparant bien<lb break="yes"/>soigneusement la petite portion d&#x2019;air qui passe la première,<lb break="yes"/>on auroit au commencement de l&#x2019;opération un air moins pur<lb break="yes"/>encore que celui que nous avons obtenu.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;eau n&#x2019;exerce donc pas une action uniforme sur l&#x2019;oxigène<lb break="yes"/>et sur l&#x2019;azote, et l&#x2019;élévation de la température affoiblit moins<lb break="yes"/>
+                        <fw type="catch" place="bottom">la</fw>
+                        <lb break="yes"/>
+                        <pb n="161" facs="#f0033"/> la première de ces actions que la dernière. Il est m&#x00EA;me pro-<lb break="no"/>bable que la portion d&#x2019;air qui se dégage vers la fin de l&#x2019;o-<lb break="no"/>pération seroit plus pure qu&#x2019;à 32 ou 34 pour cent d&#x2019;oxigène,<lb break="yes"/>si l&#x2019;eau contenue dans le vase qui re&#x00E7;oit le mélange gazeux<lb break="yes"/>ne commen&#x00E7;oit pas à s&#x2019;échauffer, et à dégager son air qui<lb break="yes"/>dès-lors n&#x2019;est qu&#x2019;à 23 pour cent d&#x2019;oxigène. Ce dégagement a<lb break="yes"/>surtout lieu lorsque la vapeur aqueuse commence à passer,<lb break="yes"/>et c&#x2019;est cette diminution de la pureté de l&#x2019;air expulsé le der-<lb break="no"/>nier, et l&#x2019;inégalité de volume des quatre portions séparées,<lb break="yes" />qui expliquent comment toute la masse d&#x2019;air retiré à-la-fois<lb break="yes"/>contient jusqu&#x2019;à 31 centièmes d&#x2019;oxigène.</p>
+                    <lb break="yes"/>
+                    <p>Cette action inégale de l&#x2019;eau sur l&#x2019;oxigène et sur l&#x2019;azote se<lb break="yes"/>manifeste encore dans la dissolution des sels. Nous avions<lb break="yes"/>observé que l&#x2019;eau de la Seine pure donnoit par l&#x2019;ébullition près<lb break="yes"/>de la moitié de l&#x2019;air de plus que cette m&#x00EA;me eau chargée de<lb break="yes" />muriate de soude. La cause de cette diminution consiste<lb break="yes" />dans la quantité d&#x2019;air très-considérable qui se dégage déjà<lb break="yes"/>à froid pendant que s&#x2019;opère la dissolution du sel. Cet air<lb break="yes"/>exactement analysé ne manifestoit que 0,225 d&#x2019;oxigène, tandis<lb break="yes"/>que l&#x2019;air retiré par l&#x2019;ébullition de l&#x2019;eau chargée de muriate de<lb break="yes" />soude, en contenoit 0,305. Il en résulte que l&#x2019;eau en dissol-<lb break="no"/>vant le sel abandonne une partie de l&#x2019;air qu&#x2019;elle tient en<lb break="yes"/>dissolution, mais que cette partie contient de l&#x2019;oxigène dans<lb break="yes"/>une moindre proportion que celle qu&#x2019;elle retient.</p>
+                    <lb break="yes"/>
+                    <p>La condensation qu&#x2019;éprouve l&#x2019;eau en passant de l&#x2019;état li-<lb break="no"/>quide à l&#x2019;état solide, nous présente une troisième classe de<lb break="yes"/>phénomènes analogues à ceux que nous venons d&#x2019;énoncer.<lb break="yes"/>La glace fondue ne donne qu&#x2019;environ la moitié de l&#x2019;air que<lb break="yes"/>l&#x2019;on retire de l&#x2019;eau ordinaire, et il est à remarquer qu&#x2019;elle<lb break="yes"/>ne commence à laisser dégager son air que quand sa tem-<lb break="no"/>pérature est déjà montée au-delà du soixantième degré du<lb break="yes"/>thermomètre centigrade. L&#x2019;air obtenu, divisé en deux por-<lb break="no"/>tions inégales, a manifesté dans l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName> 27,5<lb break="yes"/>et 33,5 d&#x2019;oxigène. L&#x2019;air le plus pur a donc encore été dégagé<lb break="yes"/>le dernier.</p>
+                    <lb break="yes"/>
+                    <p>La petite quantité et la grande pureté de l&#x2019;air dégagé de<lb break="yes"/>la glace fondue, prouvent que l&#x2019;eau en passant à l&#x2019;état solide,<lb break="yes"/>abandonne une grande partie de son air, et que cette partie<lb break="yes"/>dégagée pendant la congélation, est un air beaucoup moins<lb break="yes"/>pur que celui qu&#x2019;elle retient. C&#x2019;est ainsi que trois phéno-<lb break="no"/>mènes qui paroissent différens au premier coup-d&#x2019;&#x0153;il, l&#x2019;eau<lb break="yes"/>
+                        <pb n="162" facs="#f0034"/> élevée à une température de 35 à 40° centigrades, l&#x2019;eau dis-<lb break="no"/>solvant des sels à froid, et l&#x2019;eau pure se condensant en glace,<lb break="yes"/>présentent des résultats entièrement semblables dans leur<lb break="yes"/>action sur l&#x2019;oxigène et sur l&#x2019;azote. Une température médiocre<lb break="yes"/>agit comme la dissolution d&#x2019;un sel, et celle-ci comme le<lb break="yes"/>passage de l&#x2019;état liquide à l&#x2019;état solide. L&#x2019;eau en ces trois<lb break="yes"/>états dégage un air plus impur que celui qu&#x2019;elle tient en<lb break="yes"/>dissolution.</p>
+                    <lb break="yes"/>
+                    <p>C&#x2019;est un phénomène bien frappant que la condensation de<lb break="yes" />l&#x2019;eau à l&#x2019;état de neige, en chasse moins d&#x2019;air que la formation<lb break="yes"/>de la glace. Nous avons fait fondre de la neige fra&#x00EE;chement<lb break="yes"/>tombée, et l&#x2019;échauffant graduellement, nous avons obtenu un<lb break="yes"/>volume d&#x2019;air presque double de celui que fournit la glace<lb break="yes"/>fondue. L&#x2019;air retiré de l&#x2019;eau de neige a été m&#x00EA;me presque<lb break="yes"/>aussi abondant que celui dégagé de l&#x2019;eau de Seine. Car cette<lb break="yes"/>dernière eau a donné par l&#x2019;ébullition 1940 mesures d&#x2019;air,<lb break="yes"/>quand le m&#x00EA;me volume d&#x2019;eau de neige en a fourni 1892.<lb break="yes"/>Ces 1892 parties recueillies en 5 portions, selon l&#x2019;époque à<lb break="yes"/>laquelle la chaleur les a expulsées, ont manifesté successive-<lb break="no"/>ment dans l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>,</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Première portion...........</cell>
+                            <cell>24,0 d&#x2019;oxigène.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Deuxième...............</cell>
+                            <cell>26,8</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Troisième...............</cell>
+                            <cell>29,6</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Quatrième...............</cell>
+                            <cell>32,0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Cinquième...............</cell>
+                            <cell>34,8</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Cette dernière portion est l&#x2019;air le plus pur que nous ayons<lb break="yes"/>jamais retiré d&#x2019;aucune eau.</p>
+                    <lb break="yes"/>
+                    <p>Les volumes de chaque portion étant connus, le calcul<lb break="yes"/>donne pour la pureté de l&#x2019;air considéré en sa totalité,<lb break="yes" />28,7 d&#x2019;oxigène. L&#x2019;eau de la Seine fournissait le m&#x00EA;me jour<lb break="yes"/>un air qui était de <formula notation="TeX" >\frac{4}{1000}</formula> plus impur. D&#x2019;ailleurs les deux<lb break="yes"/>eaux, celle de la neige fondue et celle de la rivière, donnent<lb break="yes"/>un volume d&#x2019;air qui est égal à-peu-près à <formula notation="TeX">\frac{1}{25}</formula> du leur.</p>
+                    <lb break="yes"/>
+                    <p>Ces expériences sur l&#x2019;eau de neige et sur la glace fondue<lb break="yes"/>que nous comptons varier beaucoup dans la suite, offrent<lb break="yes"/>des considérations assez frappantes pour l&#x2019;étude de la mé-<lb break="no"/>téorologie. La neige n&#x2019;est qu&#x2019;un agrégat de petits cristaux de<lb break="yes"/>glace qui se forment dans les hautes régions de l&#x2019;atmosphère,<lb break="yes"/>
+                        <pb n="163" facs="#f0035"/> et cependant ces petits cristaux fondus donnent un volume<lb break="yes"/>d&#x2019;air presque double de celui que donne la glace qui s&#x2019;est<lb break="yes"/>formée sur nos rivières. Il faudroit en conclure que lorsque<lb break="yes"/>l&#x2019;eau dissoute dans l&#x2019;air se condense en neige, elle n&#x2019;expulse<lb break="yes"/>pas cette grande portion d&#x2019;air qu&#x2019;elle dégage en se congelant à<lb break="yes"/>la surface de la terre, s&#x2019;il n&#x2019;étoit permis de soup&#x00E7;onner que<lb break="yes"/>la neige retient entre ses petits cristaux une certaine quantité<lb break="yes"/>d&#x2019;air qu&#x2019;elle absorbe en se fondant; car il paroit que c&#x2019;est<lb break="yes" />principalement au moment de sa congélation que l&#x2019;eau<lb break="yes" />abandonne la plus grande partie de son air.</p>
+                    <lb break="yes"/>
+                    <p>La belle végétation qui entoure les glaciers, le développe-<lb break="no" />ment rapide des plantes lorsque la neige se fond au printemps,<lb break="yes"/>et plusieurs phénomènes que l&#x2019;on a cru observer dans l&#x2019;agri-<lb break="no"/>culture et le blanch&#x00EE;ment, ont fait soup&#x00E7;onner que les eaux<lb break="yes"/>de glace, de neige et de pluie, produisoient des effets parti-<lb break="no"/>culiers par une grande quantité d&#x2019;oxigène dissout qu&#x2019;elles dé-<lb break="no" />gageoient. Les expériences que nous avons faites jusqu&#x2019;ici<lb break="yes"/>ne paroissent pas favorables à ces conjectures. Il existe sans<lb break="yes"/>doute des puits dont l&#x2019;eau contient un air inférieur en pu-<lb break="no"/>reté à celle de l&#x2019;air atmosphérique, et nous ne doutons pas<lb break="yes"/>que ces eaux de puits, chargées en outre de sels et d&#x2019;acide<lb break="yes"/>carbonique, doivent influer sur la végétation et le blanch&#x00EE;-<lb break="no"/>ment d&#x2019;une manière très-différente de celle de l&#x2019;eau de neige.<lb break="yes" />Mais les différences que produit l&#x2019;eau distillée exposée à l&#x2019;air,<lb break="yes"/>l&#x2019;eau de pluie, l&#x2019;eau de neige et l&#x2019;eau de la Seine, s&#x2019;expli-<lb break="no"/>quent difficilement par l&#x2019;oxigène dissout, quand on se<lb break="yes" />rappelle que toutes ces eaux contiennent un air à-peu-près<lb break="yes" />également pur, et qu&#x2019;elles le contiennent presque en égale<lb break="yes"/>abondance. Les phénomènes de la végétation, comme ceux de<lb break="yes"/>la météorologie, sont si compliqués; ils dépendent de la réu-<lb break="no"/>nion d&#x2019;un si grand nombre de causes à-la-fois qu&#x2019;il faut bien<lb break="yes"/>se garder d&#x2019;attribuer à une seule ce qui est l&#x2019;effet de plusieurs.</p>
+                    <lb break="yes"/>
+                    <p>Les expériences que nous avons rapportées sur la force avec<lb break="yes" />laquelle les dernières parties d&#x2019;oxigène dissout, sont retenues<lb break="yes"/>dans l&#x2019;eau, mettent dans un plus grand jour l&#x2019;état dans lequel<lb break="yes"/>se trouve l&#x2019;air dans les liquides. La pesanteur spécifique de<lb break="yes"/>l&#x2019;eau distillée et de celle qui est chargée d&#x2019;air étant sensible-<lb break="no"/>ment la m&#x00EA;me, <persName key="mairan_01">Mairan</persName> en avoit conclu avec raison que cet<lb break="yes"/>air ne pouvoit pas &#x00EA;tre logé dans les fluides en état élas-<lb break="no"/>tique. Les phénomènes chimiques viennent à l&#x2019;appui de<lb break="yes"/>cette conclusion. Si l&#x2019;eau dépourvue de son air par la distil-<lb break="no"/>
+                        <pb n="164" facs="#f0036"/> lation ou la pompe pneumatique pouvoit &#x00EA;tre considérée<lb break="yes"/>comme une éponge dont les pores sont vides, comment ces<lb break="yes"/>pores ne se rempliroient-ils pas au premier contact avec<lb break="yes"/>l&#x2019;air? Mais cette dissolution de l&#x2019;air dans l&#x2019;eau ne peut &#x00EA;tre<lb break="yes"/>envisagée que comme l&#x2019;effet d&#x2019;une affinité chimique. Pour-<lb break="no" />quoi en effet sans cette affinité l&#x2019;absorption des gaz par l&#x2019;eau<lb break="yes"/>dépourvue d&#x2019;air seroit-elle si lente, et pourquoi surtout l&#x2019;eau<lb break="yes"/>dissoudroit-elle plut&#x00F4;t un gaz qu&#x2019;un autre? Pourquoi, comme<lb break="yes" />nous le verrons plus bas, une eau chargée d&#x2019;un air en aban-<lb break="no"/>donneroit-elle une partie pour en recevoir une autre d&#x2019;une<lb break="yes"/>nature différente?</p>
+                    <lb break="yes"/>
+                    <p>Après avoir examiné l&#x2019;air qu&#x2019;on peut retirer de l&#x2019;eau,<lb break="yes"/>dans diverses circonstances, nous finirons notre Mémoire en<lb break="yes"/>énon&#x00E7;ant les expériences que nous avons faites en mettant<lb break="yes"/>des gaz seuls ou mélangés, en contact avec l&#x2019;eau. Il est connu<lb break="yes"/>depuis long-temps que le gaz oxigène laissé sur l&#x2019;eau de-<lb break="no"/>vient impur; mais il s&#x2019;agissoit d&#x2019;examiner l&#x2019;ensemble des<lb break="yes"/>phénomènes que présentent les différens gaz dans leur<lb break="yes"/>action sur l&#x2019;eau. Les gaz que nous avons employés étoient<lb break="yes"/>exactement du m&#x00EA;me volume, et la quantité d&#x2019;eau de Seine<lb break="yes"/>filtrée étoit à-peu-près égale. Après un espace de 6 à 8 jours,<lb break="yes"/>nous n&#x2019;avons pas seulement mesuré la quantité des volumes<lb break="yes"/>absorbés, mais aussi nous avons analysé les résidus. Cette<lb break="yes"/>analyse étoit d&#x2019;autant plus nécessaire que souvent on pour-<lb break="no"/>roit &#x00EA;tre tenté de conclure d&#x2019;un très-petit changement dans<lb break="yes"/>le volume du gaz mis en contact avec l&#x2019;eau, que celle-ci n&#x2019;a pas<lb break="yes"/>eu d&#x2019;action sensible sur lui, quand la nature du résidu annonce<lb break="yes"/>que cette action a été très-forte, mais masquée par la quantité<lb break="yes"/>d&#x2019;air sortie de l&#x2019;eau en échange de celui qui a été absorbé.</p>
+                    <lb break="yes"/>
+                    <p>De tous les gaz l&#x2019;oxigène est celui dont l&#x2019;absorption par<lb break="yes"/>l&#x2019;eau de la Seine est la plus considérable. En mettant en<lb break="yes"/>contact avec cette eau déjà chargée d&#x2019;air, 100 parties de gaz<lb break="yes"/>oxigène, 100 d&#x2019;azote et 100 d&#x2019;hydrogène, le gaz oxigène a<lb break="yes"/>diminué de 40 parties quand les deux autres n&#x2019;ont perdu<lb break="yes"/>que 5 et 3 parties. Mais l&#x2019;absorption réelle du gaz oxigène<lb break="yes"/>est bien plus considérable encore que ne l&#x2019;indique sa dimi-<lb break="no"/>nution apparente. Les 60 parties de résidu au lieu d&#x2019;&#x00EA;tre<lb break="yes"/>de l&#x2019;oxigène pur contenoient 37 parties d&#x2019;azote, et seulement<lb break="yes"/>24 d&#x2019;oxigène; desorte que les 100 parties de gaz oxigène em-<lb break="no"/>ployé, avoient perdu sur l&#x2019;eau de la Seine 77 parties qui<lb break="yes"/>avoient expulsé 37 parties d&#x2019;azote. C&#x2019;est ainsi qu&#x2019;une eau de<lb break="yes"/>
+                        <pb n="165" facs="#f0037"/> rivière exposée long-temps à l&#x2019;atmosphère, et que l&#x2019;on devroit<lb break="yes"/>pouvoir regarder comme saturée d&#x2019;air, absorbe une grande<lb break="yes" />quantité d&#x2019;oxigène pur lorsqu&#x2019;on la lui présente. Elle le prend<lb break="yes"/>sans abandonner une portion d&#x2019;azote égale en volume à<lb break="yes"/>l&#x2019;oxigène absorbé.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;action de l&#x2019;eau sur le volume du gaz hydrogène paro&#x00EE;t<lb break="yes"/>presque nulle. L&#x2019;inégalité des résultats que nous avons ob-<lb break="no"/>tenus, nous emp&#x00EA;che de prononcer sur les petits change-<lb break="no"/>mens qu&#x2019;il peut subir pendant ce contact.</p>
+                    <lb break="yes"/>
+                    <p>Le volume du gaz azote pur diminue sur l&#x2019;eau de 2 à 3 cen-<lb break="no"/>tièmes; mais le résidu n&#x2019;est plus de l&#x2019;azote pur: nous y avons<lb break="yes"/>découvert 11 parties d&#x2019;oxigène qui ont été déplacées de l&#x2019;eau<lb break="yes"/>par 14 parties d&#x2019;azote. Donc l&#x2019;azote déloge l&#x2019;oxigène de l&#x2019;eau,<lb break="yes"/>comme l&#x2019;oxigène déloge l&#x2019;azote. L&#x2019;action est analogue, mais<lb break="yes"/>les quantités absorbées et délogées sont différentes.</p>
+                    <lb break="yes"/>
+                    <p>Le contact de l&#x2019;eau de la rivière avec un mélange de gaz<lb break="yes"/>hydrogène et oxigène, a été examiné sous diverses circons-<lb break="no"/>tances. Tant&#x00F4;t nous avons m&#x00EA;lé les deux gaz à parties égales,<lb break="yes"/>tant&#x00F4;t nous avons fait prédominer l&#x2019;un des deux. La dimi-<lb break="no"/>nution du volume des gaz est plus grande quand l&#x2019;oxigène<lb break="yes"/>domine, c&#x2019;est-à-dire en exposant à l&#x2019;eau un mélange de<lb break="yes" />200 parties d&#x2019;oxigène et de 100 parties d&#x2019;hydrogène. Dans<lb break="yes"/>toutes ces expériences, l&#x2019;azote est encore délogé de l&#x2019;eau. En<lb break="yes"/>analysant le résidu d&#x2019;un mélange de parties égales d&#x2019;oxigène<lb break="yes"/>et d&#x2019;hydrogène, nous y avons reconnu sur 100 parties,<lb break="yes"/>20 parties d&#x2019;azote, 50 d&#x2019;hydrogène, et 30 d&#x2019;oxigène. Plus<lb break="yes" />l&#x2019;absorption de l&#x2019;oxigène a été grande, et plus nous avons<lb break="yes"/>trouvé d&#x2019;azote délogé. En m&#x00EA;lant 400 parties d&#x2019;oxigène à<lb break="yes"/>200 p. d&#x2019;hydrogène, ce volume a été réduit sur l&#x2019;eau de Seine,<lb break="yes"/>en 10 jours de temps, de 600 parties à 562. Si ce résidu n&#x2019;a-<lb break="no"/>voit éprouvé aucun changement chimique dans ses propor-<lb break="no"/>tions; si aucun autre gaz n&#x2019;avoit été délogé, il devroit contenir<lb break="yes"/>375 parties d&#x2019;oxigène, et 187 d&#x2019;hydrogène: mais l&#x2019;analyse<lb break="yes"/>nous y a fait reconno&#x00EE;tre 246 parties d&#x2019;azote, 142 d&#x2019;hydro-<lb break="no"/>gène, et 174 part. d&#x2019;oxigène.</p>
+                    <lb break="yes"/>
+                    <p>Ces expériences prouvent que l&#x2019;hydrogène qui, seul en<lb break="yes" />contact avec l&#x2019;eau, n&#x2019;en est pas sensiblement absorbé, y est<lb break="yes"/>dissout, et m&#x00EA;me dans une proportion assez considérable,<lb break="yes"/>lorsqu&#x2019;on le m&#x00EA;le avec de l&#x2019;oxigène. Il se présente à ce sujet<lb break="yes"/>une question très-importante pour la physique, savoir, si cet<lb break="yes"/>hydrogène absorbé par l&#x2019;eau y existe comme hydrogène, ou<lb break="yes"/>
+                        <pb n="166" facs="#f0038"/> s&#x2019;il s&#x2019;y combine avec l&#x2019;oxigène dissout pour former de l&#x2019;eau.<lb break="yes"/>Nous avons tenté de résoudre cette question, en laissant un<lb break="yes" />mélange d&#x2019;hydrogène et d&#x2019;oxigène en contact avec de l&#x2019;eau,<lb break="yes"/>que l&#x2019;ébullition avoit récemment dépourvu de tout air. Après<lb break="yes"/>12 jours de temps, nous avons distillé cette eau, et analysant<lb break="yes"/>l&#x2019;air qu&#x2019;elle dégageoit, nous y avons reconnu l&#x2019;hydrogène<lb break="yes"/>en telle abondance, que nous avons été en état de l&#x2019;enflam-<lb break="no"/>mer dans l&#x2019;eudiomètre de <persName key="volta_agv">Volta</persName>, sans y ajouter aucun autre<lb break="yes"/>gaz. Cette expérience prouve sans doute que l&#x2019;hydrogène<lb break="yes"/>absorbé se retrouve dans l&#x2019;eau; mais cette eau en rendroit-<lb break="maybe"/>elle la m&#x00EA;me quantité qu&#x2019;elle a absorbée? Cet hydrogène dis-<lb break="no"/>sout dans l&#x2019;eau ne s&#x2019;y uniroit-il point à l&#x2019;oxigène, si on<lb break="yes"/>l&#x2019;y laissoit logé pendant plusieurs mois? Nous nous som-<lb break="no"/>mes proposés de faire une longue suite d&#x2019;expériences sur cet<lb break="yes"/>objet. Si l&#x2019;hydrogène et l&#x2019;oxigène contenus dans l&#x2019;eau pou-<lb break="no"/>voient s&#x2019;y combiner, on concevroit plus aisément comment<lb break="yes"/>le gaz hydrogène qui s&#x2019;élève de la surface de la terre<lb break="yes"/>ne se découvre ni dans l&#x2019;air qui nous entoure, ni dans<lb break="yes"/>les hautes régions de l&#x2019;atmosphère auxquelles nous nous<lb break="yes"/>sommes élevés. Nous devons rappeler à ce sujet qu&#x2019;ayant exa-<lb break="no"/>miné soigneusement l&#x2019;eau de pluie pour y découvrir de l&#x2019;hy-<lb break="no"/>drogène, nous nous sommes assurés que l&#x2019;air dégagé de cette<lb break="yes"/>eau, n&#x2019;en contenoit pas, du moins une quantité qui p&#x00FB;t<lb break="yes"/>aller à <formula notation="TeX" >\frac{3}{1000}</formula>. Nous répéterons ces expériences sur les pluies<lb break="yes"/>de différentes saisons, surtout sur celle des orages.</p>
+                    <lb break="yes"/>
+                    <p>L&#x2019;eau de la rivière en contact avec des mélanges de gaz, a gé-<lb break="no"/>néralement moins agi sur les mélanges de l&#x2019;oxigène et de<lb break="yes"/>l&#x2019;azote, que sur ceux de l&#x2019;oxigène et de l&#x2019;hydrogène. Ce résul-<lb break="no"/>tat est moins surprenant si l&#x2019;on jette un coup-d&#x2019;&#x0153;il sur l&#x2019;en-<lb break="no" />semble de ces phénomènes.</p>
+                    <lb break="yes"/>
+                    <p>On y découvre que l&#x2019;eau a une tendance continuelle à se<lb break="yes" />mettre en état d&#x2019;équilibre avec les gaz qu&#x2019;on lui présente. Si<lb break="yes"/>on lui offre de l&#x2019;oxigène, elle abandonne de l&#x2019;azote. La met-<lb break="maybe"/>on en contact avec de l&#x2019;azote, elle dégage de l&#x2019;oxigène. Lui<lb break="yes" />présente-t-on un mélange d&#x2019;oxigène et d&#x2019;hydrogène, elle ab-<lb break="no"/>sorbe une partie de ces deux gaz, et les remplace par de<lb break="yes"/>l&#x2019;azote. Partout elle tend à modifier les proportions de l&#x2019;air<lb break="yes"/>qu&#x2019;elle tient en dissolution d&#x2019;après la nature du gaz qu&#x2019;on<lb break="yes"/>lui présente. Or l&#x2019;eau de la Seine étant déjà chargée d&#x2019;un mé-<lb break="no"/>lange d&#x2019;azote et d&#x2019;oxigène, il paro&#x00EE;t naturel qu&#x2019;elle ait plus<lb break="yes"/>d&#x2019;action sur un mélange d&#x2019;hydrogène et d&#x2019;oxigène que sur<lb break="yes"/>
+                        <pb n="167" facs="#f0039"/> celui de l&#x2019;azote et de l&#x2019;oxigène, qui est analogue à l&#x2019;air<lb break="yes"/>qu&#x2019;elle tient en dissolution. Pour bien juger de ces phéno-<lb break="no"/>mènes, nous ferons des expériences avec de l&#x2019;eau récemment<lb break="yes"/>privée d&#x2019;air, en la chargeant de différens gaz seuls et mélan-<lb break="no" />gés, et en examinant l&#x2019;action de cette eau après un long espace<lb break="yes"/>de temps: car souvent ce n&#x2019;est que dans un long repos que<lb break="yes"/>la nature peut vaincre les obstacles qui s&#x2019;opposent au jeu<lb break="yes"/>des affinités.</p>
+                    <lb break="yes"/>
+                    <p>C&#x2019;est ici que nous nous arr&#x00EA;tons dans l&#x2019;exposé des recherches<lb break="yes"/>dont nous nous sommes occupés dans ces derniers mois.<lb break="yes"/>Plus étendu est le champ que nous nous proposons de par-<lb break="no"/>courir, et plus nous sentons combien est imparfait le travail<lb break="yes"/>que nous présentons aujourd&#x2019;hui: mais ce sentiment, loin de<lb break="yes"/>nous décourager, ne fera que redoubler notre zèle pour in-<lb break="no"/>terroger la nature, et perfectionner les recherches que nous<lb break="yes"/>venons de présenter.</p>
+                </div>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <pb n="168" facs="#f0040"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#i">
+                            <hi rendition="#g">TABLEAU</hi> présentant les résultats de l&#x2019;Analyse<lb break="yes"/>de l&#x2019;Air</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell cols="2">
+                                <hi rendition="#g">JOURS</hi>
+                                <lb break="yes"/>auxquels l&#x2019;air<lb break="yes"/>a été<lb break="yes"/>recueilli.</cell>
+                            <cell>Températu-<lb break="no"/>re exprimée<lb break="yes"/>en degrés du<lb break="yes"/>thermomèt.<lb break="yes"/>centigrade.</cell>
+                            <cell>
+                                <hi rendition="#g">ÉTAT DE L&#x2019;ATMOSPHÈRE.</hi>
+                            </cell>
+                            <cell>Absorption<lb break="yes"/>provenant<lb break="yes"/>de l&#x2019;inflam-<lb break="no"/>mation de<lb break="yes"/>200 d&#x2019;air et<lb break="yes"/>200 d&#x2019;hy-<lb break="no" />drogène.</cell>
+                            <cell>Quantité<lb break="yes"/>d&#x2019;oxi-<lb break="no"/>gène<lb break="yes"/>contenue<lb break="yes"/>dans<lb break="yes"/>100 d&#x2019;air.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="10" rendition="#rightBraced">Brumaire.</cell>
+                            <cell rows="2">26</cell>
+                            <cell rows="2">7°.3</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel couvert; vent d&#x2019;est.........</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">27</cell>
+                            <cell rows="2">4.5</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel couvert; vent est-sud-est......</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">28</cell>
+                            <cell rows="2">4.7</cell>
+                            <cell rows="2" rendition="#rightBraced">Pluie fine; vent sud-ouest très-fort...</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">29</cell>
+                            <cell rows="2">10.0</cell>
+                            <cell rows="2" rendition="#rightBraced">Pluie fine; vent sud...........</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.5</cell>
+                            <cell>21.1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">30</cell>
+                            <cell rows="2">12.5</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel couvert; vent sud-ouest......</cell>
+                            <cell>126.8</cell>
+                            <cell>21.2</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="18" rendition="#rightBraced">Frimaire.</cell>
+                            <cell rows="2">1</cell>
+                            <cell rows="2">6.7</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel nuageux, petite pluie; vent sud-ouest.</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">2</cell>
+                            <cell rows="2">1.5</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel nuageux; vent ouest........</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">3</cell>
+                            <cell rows="2">8.5</cell>
+                            <cell rows="2" rendition="#rightBraced">Pluie; vent sud.............</cell>
+                            <cell>126.3</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.5</cell>
+                            <cell>21.1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">4</cell>
+                            <cell rows="2">10.6</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel couvert; vent sud-ouest.....,</cell>
+                            <cell>126.2</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.5</cell>
+                            <cell>21.1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell rows="2">5</cell>
+                            <cell rows="2">3.3</cell>
+                            <cell rows="2" rendition="#rightBraced">Ciel nuageux; vent est.........</cell>
+                            <cell>126.5</cell>
+                            <cell>21.1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>6</cell>
+                            <cell>&#x2014; 1.6</cell>
+                            <cell>Gelée blanche; vent nord........</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>7</cell>
+                            <cell>&#x2014; 1.3</cell>
+                            <cell>Neige; vent nord............</cell>
+                            <cell>126.5</cell>
+                            <cell>21.1</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>10</cell>
+                            <cell>&#x2014; 4.1</cell>
+                            <cell>Brouillard; vent nord-nord-est.....</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>12</cell>
+                            <cell>&#x2014; 2.3</cell>
+                            <cell>Ciel nuageux, vapeurs; vent est....</cell>
+                            <cell>136.5</cell>
+                            <cell>20.9</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>14</cell>
+                            <cell>4.2</cell>
+                            <cell>Pluie; vent sud.............</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>16</cell>
+                            <cell>3.1</cell>
+                            <cell>Brouillard épais.............</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>22</cell>
+                            <cell>9.6</cell>
+                            <cell>Pluie; vent sud-sud-ouest........</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>28</cell>
+                            <cell>&#x2014; 2.2</cell>
+                            <cell>Ciel couvert; vent nord-est.......</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Nivose.</cell>
+                            <cell>2</cell>
+                            <cell>1.0</cell>
+                            <cell>Verglas, brouillard épais; vent sud-est.</cell>
+                            <cell>126.0</cell>
+                            <cell>21.0</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                </div>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI> 

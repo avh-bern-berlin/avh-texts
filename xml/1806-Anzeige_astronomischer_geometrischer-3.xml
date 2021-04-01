@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-02" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="362" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#g">ANZEIGE<lb break="yes"/>
+                        <hi rendition="#i">a&#x017F;tronomi&#x017F;cher, geometri&#x017F;cher und phy-<lb break="no"/>&#x017F;ikali&#x017F;cher In&#x017F;trumente.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">U</hi>nter den mannigfaltigen Ur&#x017F;achen, welche im nörd-<lb break="no"/>lichen Deut&#x017F;chland den Fort&#x017F;chritten des ausübenden<lb break="yes"/>Theils mathemati&#x017F;cher Wi&#x017F;&#x017F;en&#x017F;chaften entgegen &#x017F;tehen,<lb break="yes" />i&#x017F;t eine der größten die Schwierigkeit, &#x017F;ich genaue<lb break="yes"/>a&#x017F;tronomi&#x017F;che und geometri&#x017F;che In&#x017F;trumente zu ver-<lb break="no"/>&#x017F;chaffen. Ich &#x017F;chmeichle mir in die&#x017F;er Hin&#x017F;icht, dem<lb break="yes"/>arbeitenden Theile des &#x017F;cientifi&#x017F;chen Publicums einen<lb break="yes"/>nicht unangenehmen Dien&#x017F;t zu erwei&#x017F;en, wenn ich dem-<lb break="no"/>&#x017F;elben anzeige, daß &#x017F;ich ein vortrefflicher Kün&#x017F;tler, der<lb break="yes" />in London und Paris &#x017F;ich unter vorzüglichen Mei&#x017F;tern<lb break="yes"/>gebildet, Herr <persName key="mendelssohn_n">
+                        <hi rendition="#g">Nathan Mendels&#x017F;ohn,</hi>
+                    </persName> (Sohn des<lb break="yes"/>berühmten <persName key="mendelssohn_m">
+                        <hi rendition="#g">Mo&#x017F;es Mendels&#x017F;ohn,</hi>
+                    </persName>) in Berlin nie-<lb break="no"/>dergela&#x017F;&#x017F;en hat. Seine Arbeiten bedürfen meiner Em-<lb break="no"/>pfehlung nicht, und ich begnüge mich, in die&#x017F;er Anzei-<lb break="no"/>ge nur die Gegen&#x017F;tände zu nennen, auf welche die&#x017F;er<lb break="yes"/>junge Kün&#x017F;tler bereits in dem gegenwärtigen Zu&#x017F;tande<lb break="yes"/>&#x017F;einer Werk&#x017F;tatt Be&#x017F;tellungen annehmen kann.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">a.</hi>
+                    <persName key="borda_jcd">Bordai&#x017F;che</persName> Multiplicationskrei&#x017F;e von 4 bis 8 Zoll,<lb break="yes"/>mit achromati&#x017F;chen Fernröhren, nach Art derer, wel-<lb break="no"/>che zur franzö&#x017F;i&#x017F;chen, &#x017F;chwedi&#x017F;chen und thüringi&#x017F;chen<lb break="yes"/>Gradme&#x017F;&#x017F;ung gedient haben. Vierzöllige Krei&#x017F;e ohne<lb break="yes"/>Vernier&#x017F;chrauben ko&#x017F;ten mit Stativ 15 Friedrichsd&#x2019;or, mit<lb break="yes"/>den Vernier&#x017F;chrauben 20 Friedrichsd&#x2019;or; die&#x017F;elben mit<lb break="yes"/>&#x017F;ilbernem Limbus von 30&#x2033; zu 30&#x2033; getheilt 24<formula notation="TeX">\frac{1}{2}</formula> Frie-<lb break="no" />drichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">b.</hi> Teodolite von 4 bis 8 Zoll Durchme&#x017F;&#x017F;er ko&#x017F;ten<lb break="yes"/>von 15 bis 40 Friedrichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <pb n="363" facs="#f0002"/>
+                <p>
+                    <hi rendition="#i">c.</hi> Niveaus mit achromati&#x017F;chen Fernröhren, den<lb break="yes"/>engli&#x017F;chen ähnlich, doch mit einigen Verbe&#x017F;&#x017F;erungen,<lb break="yes"/>nach Ver&#x017F;chiedenheit der Größe und Vollkommenheit<lb break="yes"/>von 15 bis 40 Friedrichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">d.</hi> Inclinationsbou&#x017F;&#x017F;olen nach <persName key="borda_jcd">
+                        <hi rendition="#g">Borda&#x2019;s</hi>
+                    </persName> Methode,<lb break="yes"/>ganz denen ähnlich, die auf der <persName key="entrecasteau_jbd">Entreca&#x017F;teau&#x2019;&#x017F;chen</persName> und<lb break="yes"/>auf meiner Rei&#x017F;e gebraucht worden &#x017F;ind, zu 25 Frie-<lb break="no"/>drichsd&#x2019;or. Ein mikro&#x017F;kopi&#x017F;cher Mikrometerapparat<lb break="yes"/>kann be&#x017F;onders hinzu gefügt werden.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">e.</hi> Declinations- und Variationsbou&#x017F;&#x017F;olen mit Di-<lb break="no"/>optern oder Fernröhren.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">f.</hi> Der <persName key="coulomb_cad" >Coulomb&#x2019;&#x017F;che</persName> Apparat, die Inten&#x017F;ität der<lb break="yes"/>magneti&#x017F;chen Kraft durch Schwingungen zu me&#x017F;&#x017F;en,<lb break="yes"/>7 Thaler.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">g.</hi> Der von <persName key="prony_gcfmrbd">
+                        <hi rendition="#g">Prony</hi>
+                    </persName> im <hi rendition="#i">Journal de Phy&#x017F;ique</hi> be-<lb break="no"/>&#x017F;chriebene Apparat, vermittel&#x017F;t eines an einem Faden<lb break="yes"/>aufgehängten und durch einen Magnet&#x017F;tab bewegten<lb break="yes"/>Fernrohrs die &#x017F;tündlichen Veränderungen der Magnet-<lb break="no"/>abweichung opti&#x017F;ch zu me&#x017F;&#x017F;en, 6 Friedrichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">h.</hi> Kleine Ta&#x017F;chen- oder Grubenkompa&#x017F;&#x017F;e, welche<lb break="yes"/>zugleich die Neigung, (das Fallen,) angeben, von 5 bis<lb break="yes"/>10 Thaler; auch völlige Mark&#x017F;cheide-In&#x017F;trumente nach<lb break="yes"/>freiberger Art.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">i.</hi> Wagen, &#x017F;ehr empfindliche, für Phy&#x017F;iker und<lb break="yes"/>Chemiker, (nach einer neuen Angabe des Herrn Pro-<lb break="no"/>fe&#x017F;&#x017F;ors <persName key="tralles_01">
+                        <hi rendition="#g">Tralles,</hi>
+                    </persName>) nach Ver&#x017F;chiedenheit der Größe und<lb break="yes"/>Feinheit von 10 bis 35 Friedrichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">k.</hi> Luftpumpen mit glä&#x017F;ernen Cylindern und Tellern,<lb break="yes"/>nach Herrn <persName key="mendelssohn_n">
+                        <hi rendition="#g">Mendels&#x017F;ohn&#x2019;s</hi>
+                    </persName> eigner Angabe, die er<lb break="yes"/>in <persName key="nicholson_01">
+                        <hi rendition="#g">Nichol&#x017F;on&#x2019;s</hi>
+                    </persName>
+                    <hi rendition="#i">engli&#x017F;chem Journale</hi> be&#x017F;chrieben hat.<lb break="yes"/>(Siehe <persName key="gilbert_lw">
+                        <hi rendition="#g">Gilbert&#x2019;s</hi>
+                    </persName>
+                    <hi rendition="#i">Annalen der Phy&#x017F;ik,</hi> 1806, St. 1,<lb break="yes" />S. 96.)</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">l.</hi>
+                    <persName key="volta_agv">Voltai&#x017F;che</persName> Wa&#x017F;&#x017F;er&#x017F;toffgas-Eudiometer zu 3 Frie-<lb break="no" />drichsd&#x2019;or.</p>
+                <lb break="yes"/>
+                <pb n="364" facs="#f0003"/>
+                <p>Es ver&#x017F;teht &#x017F;ich von &#x017F;elb&#x017F;t, daß Herr <persName key="mendelssohn_n">
+                        <hi rendition="#g">Mendels-<lb break="no"/>&#x017F;ohn</hi>
+                    </persName> an jedem In&#x017F;trumente die ausdrücklich verlang-<lb break="no" />ten Abänderungen anbringen wird. Seine Addre&#x017F;&#x017F;e<lb break="yes" />i&#x017F;t: an den Mechanikus <persName key="mendelssohn_n">
+                        <hi rendition="#g">Nathan Mendels&#x017F;ohn</hi>
+                    </persName> zu<lb break="yes"/>Berlin, in der Behren&#x017F;traße, No. 60. Auf Verfertigung<lb break="yes"/>aus&#x017F;chließlich &#x017F;o genannter meteorologi&#x017F;cher In&#x017F;tru-<lb break="no"/>mente, (Barometer, Thermometer und Hygrometer,)<lb break="yes"/>wird er &#x017F;ich nicht einla&#x017F;&#x017F;en, um &#x017F;o weniger, als ein all-<lb break="no" />gemein ge&#x017F;chätzter hie&#x017F;iger Kün&#x017F;tler, Herr <persName key="fuchs_jj">
+                        <hi rendition="#g">Renard,</hi>
+                    </persName>
+                    <lb break="yes"/>die&#x017F;elben von vorzüglicher Güte liefert. Auch Be&#x017F;tellun-<lb break="no"/>gen von phy&#x017F;ikali&#x017F;chen Apparaten, z. B. Electri&#x017F;irma-<lb break="no"/>&#x017F;chinen, können nur dann angenommen werden, wenn<lb break="yes"/>die&#x017F;elben von beträchtlicher Größe und von vorzügli-<lb break="no"/>cher Genauigkeit gewün&#x017F;cht werden. Durch die Kun&#x017F;t<lb break="yes"/>und Wi&#x017F;&#x017F;en&#x017F;chaft belebende Liberalität des Staatsmini-<lb break="no"/>&#x017F;ters, Freiherrn <persName key="stein_kvuz">
+                        <hi rendition="#g">von Stein,</hi>
+                    </persName> i&#x017F;t Hr. <persName key="mendelssohn_n">
+                        <hi rendition="#g">Mendels&#x017F;ohn</hi>
+                    </persName>
+                    <lb break="yes"/>vermittel&#x017F;t königlicher Unter&#x017F;tützung in den Stand ge-<lb break="no"/>&#x017F;etzt worden, eine große <persName key="ramsden_j">Ramsden&#x2019;&#x017F;che</persName> Theilma&#x017F;chine<lb break="yes"/>auszuführen. So bald die&#x017F;e ganz vollendet i&#x017F;t, wird er<lb break="yes"/>dem Publicum a&#x017F;tronomi&#x017F;che In&#x017F;trumente von beträchtli-<lb break="no" />cherm Durchme&#x017F;&#x017F;er und auch <hi rendition="#i">Sextanten</hi> anbieten kön-<lb break="no"/>nen, durch deren Verbreitung auf dem Continent un-<lb break="no"/>&#x017F;er großer vaterländi&#x017F;cher A&#x017F;tronom, der Freiherr <persName key="zach_fxv">
+                        <hi rendition="#g">von<lb break="yes"/>Zach,</hi>
+                    </persName> die Länderkunde &#x017F;o bewundernswürdig ver-<lb break="no" />vollkommnet hat.</p>
+                <closer>
+                    <dateline>
+                        <hi rendition="#et">Berlin <date>1806 im Julius</date>.</hi>
+                    </dateline>
+                    <lb break="yes"/>
+                    <signed>
+                        <hi rendition="#et">
+                            <hi rendition="#i">Alexander von <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                        </hi>
+                    </signed>
+                </closer>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

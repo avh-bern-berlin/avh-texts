@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Nouvelles recherches sur les lois que l’on observe dans la distribution des formes végétales. Par M. Alex. de Humboldt. (Extrait d’un mémoire lu à l’Académie des Sciences le 19 février 1821)</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1014897157">
+                        <surname>Wernicke</surname>
+                        <forename>Norbert</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1821-Nouvelles_recherches_sur-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Nouvelles recherches sur les lois que l’on observe dans la distribution des formes végétales. Par M. Alex. de Humboldt. (Extrait d’un mémoire lu à l’Académie des Sciences le 19 février 1821)</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">1821</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Annales de Chimie et de Physique</title>
+                        <biblScope unit="volume">16</biblScope>
+                        <biblScope unit="issue"/>
+                        <biblScope unit="pages">267–296</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="267" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#k">Nouvelles Recherches</hi>
+                    <hi rendition="#i">sur les lois que l&#x2019;on observe<lb break="yes"/>dans la distribution des formes végétales.</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Par M. Alex. de Humboldt.</hi>
+                    <lb break="yes"/>(Extrait d&#x2019;un Mémoire lu à l&#x2019;Académie des Sciences <date when="1821-02-19">le 19 février 1821.</date>)</head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Il</hi> y a quatre ans que, dans un Mémoire présenté à<lb break="yes"/>l&#x2019;Institut <note place="foot" n="(1)">Voyez <hi rendition="#i">Annales de Chimie et de Physique,</hi> année 1816,<lb break="yes"/>t. 1, p. 225.</note>, j&#x2019;ai fixé l&#x2019;attention des botanistes sur les<lb break="yes"/>rapports numériques des formes végétales. La discussion<lb break="yes"/>des matériaux qui ont servi à ce travail se trouve con-<lb break="no"/>signée dans un ouvrage que j&#x2019;ai publié à la m&#x00EA;me époque,<lb break="yes"/>sous le titre de <hi rendition="#i" >Prolegomena de distributione geogra-<lb break="no"/>phic&#x00E2; plantarum, secundùm c&#x0153;li temperiem et altitu-<lb break="no"/>dinem montium.</hi> Il en est de la distribution des &#x00EA;tres or-<lb break="no"/>ganisés comme de tous les autres phénomènes du monde<lb break="yes"/>physique. Au milieu du désordre apparent qui semble<lb break="yes"/>na&#x00EE;tre de l&#x2019;influence d&#x2019;une multitude de causes locales,<lb break="yes"/>on reconna&#x00EE;t les lois immuables de la nature dès qu&#x2019;on<lb break="yes"/>fixe les yeux sur une grande étendue de pays, ou qu&#x2019;on<lb break="yes"/>emploie une masse de faits dans laquelle se compeusent<lb break="yes"/>mutuellement les perturbations partielles. J&#x2019;ai eu la satis-<lb break="no"/>faction de voir ce travail soumis à un examen détaillé,<lb break="yes"/>en Allemagne, en Angleterre, en Italie, et récemment<lb break="yes"/>en Danemarck. Un des plus grands botanistes de notre<lb break="yes"/>temps et de tous les siècles, M. Robert Brown, a com-<lb break="no"/>paré chaque résultat numérique à ceux qu&#x2019;offrent les<lb break="yes"/>riches herbiers qu&#x2019;il a pu consulter. Beaucoup de nombres<lb break="yes"/>
+                    <pb n="268" facs="#f0002"/> ont été rectifiés, d&#x2019;autres se sont trouvés dans un accord<lb break="yes"/>presqu&#x2019;inattendu. La masse des faits s&#x2019;est accrue par là<lb break="yes"/>m&#x00EA;me qu&#x2019;on a voulu infirmer ou appuyer les résultats<lb break="yes"/>auxquels je m&#x2019;étais arr&#x00EA;té. C&#x2019;est ainsi que, dans la marche<lb break="yes"/>des sciences physiques, des idées générales qui d&#x2019;abord<lb break="yes" />n&#x2019;ont été déduites que d&#x2019;un petit nombre de faits forcent<lb break="yes"/>les observateurs à multiplier les données partielles. Enri-<lb break="no"/>chi de ces matériaux, profitant toujours de ce que la cri-<lb break="no"/>tique la plus sévère de mes ouvrages renferme de vrai<lb break="yes"/>et d&#x2019;utile, j&#x2019;ai pu donner aux résultats numériques dont<lb break="yes"/>se compose le tableau des formes végétales, un degré<lb break="yes"/>d&#x2019;exactitude que je n&#x2019;avais pu atteindre jusqu&#x2019;alors. Il est<lb break="yes"/>de la nature de ces recherches de ne pouvoir rectifier les<lb break="yes"/>
+                    <hi rendition="#i">coefficiens</hi> que progressivement, à mesure que les obser-<lb break="no"/>vations se multiplient. Je ne m&#x2019;arrèterai ici qu&#x2019;au déve-<lb break="no"/>loppement général des principes. Comme cette espèce<lb break="yes"/>d&#x2019;<hi rendition="#i">arithmétique botanique</hi> exige des discussions minu-<lb break="no"/>tieuses sur les rapports de chaque famille de plantes à<lb break="yes"/>toute la masse des phanérogames, j&#x2019;ai réuni ces discussions<lb break="yes"/>dans des notes que j&#x2019;ai publiées séparément <note place="foot" n="(1)">Voyez <hi rendition="#i">Dictionnaire des Sciences naturelles,</hi> rédigé<lb break="yes"/>par le Professeur du Jardin des Plantes, tome <hi rendition="#k">xviii,</hi> p. 432-<lb break="no"/>436.</note>.</p>
+                <lb break="yes"/>
+                <p>Il est à prévoir que le travail que j&#x2019;ai fait sur les fa-<lb break="no" />milles des plantes s&#x2019;appliquera un jour avec succès à plu-<lb break="no"/>sieurs classes d&#x2019;animaux vertébrés. Les immenses col-<lb break="no"/>lections qui se trouvent à Paris, au Musée d&#x2019;Histoire<lb break="yes"/>naturelle, font voir que déjà l&#x2019;on conna&#x00EE;t sur le globe<lb break="yes"/>entier près de 56,000 espèces de <hi rendition="#i" >plantes</hi> cryptogames<lb break="yes"/>et phanérogames, 44,000 <hi rendition="#i">insectes,</hi> 2500 <hi rendition="#i">poissons,</hi>
+                    <lb break="yes"/>700 <hi rendition="#i">reptiles,</hi> 4000 <hi rendition="#i" >oiseaux</hi> et 500 espèces de <hi rendition="#i">mammiferes.</hi>
+                    <lb break="yes"/>
+                    <pb n="269" facs="#f0003"/> D&#x2019;après des recherches que nous avons faites, M. Valen-<lb break="no"/>ciennes et moi, il existe dans l&#x2019;Europe seule à-peu-<lb break="maybe"/>près 80 mammifères, 400 oiseaux et 30 reptiles: il y a<lb break="yes"/>par conséquent, sous cette zone tempérée boréale, cinq<lb break="yes"/>fois autant d&#x2019;espèces d&#x2019;oiseaux que de mammifères, comme<lb break="yes"/>il y a (en Europe) cinq fois autant de composées que<lb break="yes"/>d&#x2019;amentacées et de conifères, cinq fois autant de légumi-<lb break="no"/>neuses que d&#x2019;orchidées et d&#x2019;euphorbiacées. Les belles col-<lb break="no"/>lections rapportées récemment du Cap de Bonne-Espérance<lb break="yes"/>par M. Delalande prouvent (si on les compare aux ouvra-<lb break="no"/>ges de MM. Temmink et Levaillant), que, dans cette partie<lb break="yes"/>de la zone tempérée australe, les mammifères sont aussi<lb break="yes"/>aux oiseaux = 1:4,3. Une telle concordance entre deux<lb break="yes"/>zones opposées est assez frappante. Les oiseaux, et surtout<lb break="yes"/>les reptiles, augmentent beaucoup plus vers la zone équa-<lb break="no"/>toriale que les mammifères. D&#x2019;après les découvertes de<lb break="yes"/>M. Cuvier sur les ossemens fossiles, on pourrait croire<lb break="yes"/>que ces rapports n&#x2019;ont pas été les m&#x00EA;mes de tous les temps,<lb break="yes"/>et qu&#x2019;il a disparu, dans les anciennes catastrophes de<lb break="yes"/>notre planète, beaucoup plus de mammifères que d&#x2019;oi-<lb break="no"/>seaux. M. Latreille, dans un excellent Mémoire sur la dis-<lb break="no"/>tribution géographique des insectes, n&#x2019;a pas comparé le<lb break="yes"/>nombre des animaux articulés au nombre des plantes et à<lb break="yes"/>celui des différentes classes d&#x2019;animaux vertébrés qui habi-<lb break="no"/>tent les m&#x00EA;mes climats; mais il a fait voir d&#x2019;une manière inté-<lb break="no"/>ressante quels groupes d&#x2019;insectes augmentent ou dimi-<lb break="no"/>nuent, en avan&#x00E7;ant du pole vers l&#x2019;équateur. Je passe sous<lb break="yes" />silence les laborieuses recherches de M. Illiger sur la Géo-<lb break="no" />graphie des oiseaux <note place="foot" n="(1)">
+                        <hi rendition="#i">Mémoires de l&#x2019;Academie de Berlin,</hi> pour les an-<lb break="no"/>nées 1812 et 1813, p. 221-237.</note>. L&#x2019;auteur a discuté l&#x2019;<hi rendition="#i">habitation</hi> de<lb break="yes"/>
+                    <pb n="270" facs="#f0004"/> plus de 3800 espèces; mais il s&#x2019;est contenté de les envisager<lb break="yes"/>d&#x2019;après leur distribution entre les cinq parties du monde:<lb break="yes"/>méthode peu philosophique et tout-à-fait impropre à recon-<lb break="no"/>na&#x00EE;tre l&#x2019;influence des climats sur le développement des &#x00EA;tres<lb break="yes"/>organisés. Tous les continens, à l&#x2019;exception de l&#x2019;Europe,<lb break="yes" />s&#x2019;étendent de la zone tempérée dans la zone équatoriale;<lb break="yes" />les lois de la nature ne peuvent donc pas se manifester<lb break="yes" />lorsqu&#x2019;on groupe les phénomènes d&#x2019;après des divisions ar-<lb break="no"/>bitraires et qui ne dépendent, pour ainsi dire, que de la<lb break="yes"/>seule différence des méridiens. Il ne m&#x2019;appartient pas de<lb break="yes"/>pousser plus loin ces considérations sur les rapports nu-<lb break="no"/>mériques entre les animaux de différentes classes. Il me<lb break="yes"/>suffit d&#x2019;avoir rappelé l&#x2019;attention des savans sur une branche<lb break="yes"/>de la philosophie naturelle, qui me para&#x00EE;t bien digne<lb break="yes"/>d&#x2019;&#x00EA;tre étudiée. Nous concevons comment, sur un espace<lb break="yes"/>de terrain donné, les <hi rendition="#i">individus</hi> appartenant à différentes<lb break="yes" />tribus de plantes et d&#x2019;animaux peuvent se <hi rendition="#i">limiter numé-<lb break="no"/>riquement;</hi> comment, après une lutte opini&#x00E2;tre et après<lb break="yes"/>de longues oscillations, il s&#x2019;établit un état d&#x2019;équilibre qui<lb break="yes"/>résulte des besoins de la nourriture et des habitudes de la<lb break="yes"/>vie; mais les causes qui ont <hi rendition="#i">limité les formes</hi> sont ca-<lb break="no" />chées sous ce voile impénétrable qui dérobe à nos yeux<lb break="yes"/>tout ce qui tient à l&#x2019;origine des choses, au premier déve-<lb break="no" />loppement de la vie organique.</p>
+                <lb break="yes"/>
+                <p>Les rapports numériques des formes végétales peuvent<lb break="yes"/>&#x00EA;tre considérées de deux manières très-distinctes. Si l&#x2019;on<lb break="yes" />étudie les plantes, groupées par familles naturelles, sans<lb break="yes" />avoir égard à leur distribution géographique, on demande<lb break="yes"/>quels sont les types d&#x2019;organisation d&#x2019;après lesquels le plus<lb break="yes"/>grand nombre d&#x2019;espèces sont formées? Y a-t-il plus de<lb break="yes"/>glumacées que de composées sur le globe? ces deux tribus<lb break="yes"/>
+                    <pb n="271" facs="#f0005"/> de végétaux font-elles ensemble le quart des phanéro-<lb break="no"/>games? quel est le rapport des monocotylédonées aux di-<lb break="no"/>cotylédonées? Ce sont là des questions de Phytologie<lb break="yes"/>générale, de la science qui examine l&#x2019; <choice>
+                        <sic>oganisation</sic>
+                        <corr type="editorial">organisation</corr>
+                    </choice> des vé-<lb break="no"/>gétaux et leur encha&#x00EE;nement mutuel. Si l&#x2019;on envisage les<lb break="yes"/>espèces qu&#x2019;on a réunies d&#x2019;après l&#x2019;analogie de leur forme,<lb break="yes"/>non d&#x2019;une manière abstraite, mais selon leurs rapports<lb break="yes"/>climatériques ou leur distribution sur la surface du globe,<lb break="yes"/>les questions que l&#x2019;on se propose offrent un intér&#x00EA;t beau-<lb break="no"/>coup plus varié. Quelles sont les familles de plantes qui<lb break="yes"/>dominent sur les autres phanérogames plus dans la zone<lb break="yes"/>torride que sous le cercle polaire? les composées sont-elles<lb break="yes"/>plus nombreuses, soit à la m&#x00EA;me latitude géographique,<lb break="yes"/>soit sur une m&#x00EA;me bande isotherme, dans le nouveau con-<lb break="no"/>tinent que dans l&#x2019;ancien? Les types qui dominent moins<lb break="yes"/>en avan&#x00E7;ant de l&#x2019;équateur au pole, suivent-ils la m&#x00EA;me loi<lb break="yes"/>de décroissement à mesure qu&#x2019;on s&#x2019;élève vers le sommet<lb break="yes" />des montagnes équatoriales? Les rapports des familles<lb break="yes"/>entre elles ne varient-ils pas sur des lignes isothermes de<lb break="yes" />m&#x00EA;me dénomination, dans les zones tempérées au nord et<lb break="yes" />au sud de l&#x2019;équateur? Ces questions appartiennent à la<lb break="yes" />Géographie des végétaux proprement dite; elles se lient<lb break="yes"/>aux probl&#x00EA;mes les plus importans qu&#x2019;offrent la Météoro-<lb break="no" />logie et la Physique du globe en général. De la prépondé-<lb break="no"/>rance de certaines familles de plantes dépend aussi le<lb break="yes"/>caractère du paysage, l&#x2019;aspect d&#x2019;une nature riante ou ma-<lb break="no" />jestueuse. L&#x2019;abondance des graminées qui forment de<lb break="yes" />vastes savannes, celle des palmiers ou des conifères, ont<lb break="yes" />influé puissamment sur l&#x2019;état social des peuples, sur leurs<lb break="yes"/>m&#x0153;urs et le développement plus ou moins lent des arts<lb break="yes"/>industriels.</p>
+                <lb break="yes"/>
+                <pb n="272" facs="#f0006"/>
+                <p>En étudiant la distribution géographique des formes,<lb break="yes"/>on peut s&#x2019;arr&#x00EA;ter aux espèces, aux genres et aux familles<lb break="yes" />naturelles (Humboldt, <hi rendition="#i">Prolog. in Nov. Gen.,</hi> tom. 1,<lb break="yes"/>pag. 13, 51 et 33). Souvent une seule espèce de plantes,<lb break="yes"/>surtout parmi celles que j&#x2019;ai appelées <hi rendition="#i">sociales,</hi> couvre<lb break="yes"/>une vaste étendue de pays. Telles sont, dans le nord, les<lb break="yes"/>bruyères et les for&#x00EA;ts de pins; dans l&#x2019;Amérique équinoxiale,<lb break="yes"/>les réunions de cactus, de croton, de bambusa et de bra-<lb break="no"/>thys de la m&#x00EA;me espèce. Il est curieux d&#x2019;examiner ces rap-<lb break="no" />ports de multiplication et de développement organique:<lb break="yes"/>on peut demander quelle espèce, sous une zone donnée,<lb break="yes"/>produit le plus d&#x2019;<hi rendition="#i">individus;</hi> on peut indiquer les familles<lb break="yes"/>auxquelles, sous différens climats, appartiennent les es-<lb break="no"/>pèces qui dominent sur les autres. Notre imagination est<lb break="yes"/>singulièrement frappée de la prépondérance de certaines<lb break="yes"/>plantes qu&#x2019;à cause de leur facile reproduction, et du<lb break="yes"/>grand nombre d&#x2019;<hi rendition="#i">individus</hi> qui offrent les m&#x00EA;mes caractères<lb break="yes"/>spécifiques, on considère comme les plantes les plus<lb break="yes"/>vulgaires de telle ou telle zone. Dans une région boréale,<lb break="yes"/>où les composées et les fougères sont aux phanérogames<lb break="yes"/>dans les rapports de 1:13 et de 1:25 (c&#x2019;est-à-dire, où<lb break="yes"/>l&#x2019;on trouve ces rapports en divisant le nombre total des<lb break="yes"/>phanérogames par le nombre des espèces de composées<lb break="yes"/>et de fougères), une seule espèce de fougère peut oc-<lb break="no"/>cuper dix fois autant de terrain que toutes les espèces de<lb break="yes"/>composées ensemble. Dans ce cas, les fougères dominent<lb break="yes"/>sur les composées par la <hi rendition="#i" >masse,</hi> par le nombre des <hi rendition="#i">individus</hi>
+                    <lb break="yes"/>appartenant aux m&#x00EA;mes espèces de pteris ou de polypo-<lb break="no"/>dium; mais elles ne dominent pas, si l&#x2019;on compare à la<lb break="yes"/>somme totale des espèces de phanérogames les formes dif-<lb break="no"/>férentes qu&#x2019;offrent les deux groupes de fougères et de com-<lb break="no"/>
+                    <pb n="273" facs="#f0007"/> posées. Comme la multiplication de toutes les espèces ne<lb break="yes"/>suit pas les m&#x00EA;mes lois, comme toutes ne produisent pas<lb break="yes"/>le m&#x00EA;me nombre d&#x2019;<hi rendition="#i" >individus,</hi> les quotiens obtenus en di-<lb break="no"/>visant le nombre total des phanérogames par le nombre<lb break="yes"/>des espèces des différentes familles ne décident pas seuls<lb break="yes"/>de l&#x2019;aspect, je dirais presque du genre de monotonie de la<lb break="yes"/>nature dans les différentes régions du globe. D&#x2019;un autre<lb break="yes"/>c&#x00F4;té, si le voyageur est frappé de la répétition fréquente des<lb break="yes"/>m&#x00EA;mes espèces, de la vue de celles qui dominent par leur<lb break="yes"/>masse, il ne l&#x2019;est pas moins de la rareté des <hi rendition="#i">individus</hi> de<lb break="yes"/>quelques autres espèces utiles à la société humaine. Dans<lb break="yes"/>les régions où les rubiacées, les légumineuses ou les téré-<lb break="no"/>binthacées composent des for&#x00EA;ts, on est supris de voir<lb break="yes"/>combien sont rares les troncs de certaines tribus de cin-<lb break="no"/>chona, d&#x2019;h&#x00E6;matoxylum et de baumiers.</p>
+                <lb break="yes"/>
+                <p>En s&#x2019;arr&#x00EA;tant aux <hi rendition="#i">espèces</hi>, on peut, sans avoir égard<lb break="yes"/>à leur multiplication et au nombre plus ou moins grand<lb break="yes"/>des individus, comparer, sous chaque zone, <hi rendition="#i">d&#x2019;une ma-<lb break="no"/>nière absolue,</hi> les espèces qui appartiennent à diffé-<lb break="no"/>rentes familles. Cette comparaison intéressante a été faite<lb break="yes"/>dans le grand ouvrage de M. de Candolle (<hi rendition="#i">Regni vege-<lb break="no"/>tabilis Systema Natur&#x00E6;,</hi> t. 1, p. 128, 396, 439, 464,<lb break="yes"/>510). M. Kunth l&#x2019;a tentée sur plus de 3300 composées<lb break="yes"/>déjà connues jusqu&#x2019;à ce jour. (<hi rendition="#i">Nov. gen.,</hi> t. <hi rendition="#k">iv,</hi> p. 238).<lb break="yes"/>Elle n&#x2019;indique pas quelle famille domine au m&#x00EA;me degré<lb break="yes"/>sur les autres phanérogames indigènes, soit par la masse<lb break="yes"/>des individus, soit par le nombre des espèces; mais elle<lb break="yes"/>offre les rapports numériques entre les espèces d&#x2019;une<lb break="yes"/>m&#x00EA;me famille appartenant à différens pays. Les résultats<lb break="yes"/>de cette méthode sont généralement plus précis, parce<lb break="yes"/>qu&#x2019;on les obtient sans évaluer la masse totale des phané-<lb break="no"/>
+                    <pb n="274" facs="#f0008"/> rogames, après s&#x2019;&#x00EA;tre livré avec soin à l&#x2019;étude de quelques<lb break="yes"/>familles isolées. Les formes les plus variées des fougères,<lb break="yes"/>par exemple, se trouvent sous les tropiques; c&#x2019;est dans<lb break="yes"/>les régions montueuses, tempérées, humides et ombragées<lb break="yes"/>de la zone équatoriale, que la famile des fougères ren-<lb break="no"/>ferme le plus d&#x2019;espèces. Sous la zone tempérée, il y en<lb break="yes"/>a moins que sous les tropiques; leur nombre absolu di-<lb break="no"/>minue encore en avan&#x00E7;ant vers le pole: mais comme la<lb break="yes"/>région froide, par exemple, la Laponie, nourrit des es-<lb break="no"/>pèces de fougères qui résistent plus au froid que la grande<lb break="yes"/>masse des phanérogames, les fougères, par le nombre<lb break="yes"/>des espèces, dominent plus sur les autres plantes en La-<lb break="no"/>ponie qu&#x2019;en France et en Allemagne. Les <hi rendition="#i">rapports numé-<lb break="no"/>riques</hi> qu&#x2019;offre le tableau que j&#x2019;ai publié dans mes <hi rendition="#i">Prole-<lb break="no" />gomena de distributione geographic&#x00E2; plantarum,</hi> et qui<lb break="yes"/>repara&#x00EE;t ici perfectionné par les grands travaux de M. Ro-<lb break="no"/>bert Brown, diffèrent entièrement des rapports que donne<lb break="yes"/>la <hi rendition="#i">comparaison absolue</hi> des espèces qui végètent sous les<lb break="yes"/>zones diverses. La variation qu&#x2019;on observe en se portant<lb break="yes"/>de l&#x2019;équateur aux poles, n&#x2019;est par conséquent pas la m&#x00EA;me<lb break="yes"/>dans les résultats des deux méthodes. Dans celle des frac-<lb break="no"/>tions que nous suivons, M. Brown et moi, il y a deux<lb break="yes"/>variables, puisqu&#x2019;en changeant de latitude, ou plut&#x00F4;t de<lb break="yes"/>zone isotherme, on ne voit pas varier le nombre total des<lb break="yes" />phanérogames dans le m&#x00EA;me rapport que le nombre des<lb break="yes" />espèces qui constituent une m&#x00EA;me famille.</p>
+                <lb break="yes"/>
+                <p>Lorsque des <hi rendition="#i">espèces</hi> ou des <hi rendition="#i" >individus</hi> de m&#x00EA;me forme qui<lb break="yes"/>se reproduisent d&#x2019;après des lois constantes, on passe à ces<lb break="yes"/>divisions de la <hi rendition="#i">méthode naturelle</hi> qui ne sont que des <hi rendition="#i">ab-<lb break="no"/>stractions diversement graduées,</hi> on peut s&#x2019;arr&#x00EA;ter aux gen-<lb break="no"/>res, aux familles, ou à des sections plus générales encore. Il<lb break="yes"/>
+                    <pb n="275" facs="#f0009"/> y a quelques genres et quelques familles qui appartiennent<lb break="yes"/>exclusivement à de certaines zones, à une réunion par-<lb break="no"/>ticulière de conditions climatériques; mais il y a un plus<lb break="yes"/>grand nombre de genres et de familles qui ont des repré-<lb break="no"/>sentans sous toutes les zones et à toutes les hauteurs. Les<lb break="yes"/>premières recherches qui ont été tentées sur la distribu-<lb break="no"/>tion géographique des formes, celles de M. Treviranus,<lb break="yes"/>publiées dans son ingénieux <choice>
+                        <sic>ouvrags</sic>
+                        <corr type="editorial">ouvrages</corr>
+                    </choice> de <hi rendition="#i">Biologie</hi> (t. <hi rendition="#k">ii</hi>,<lb break="yes"/>p. 47, 63, 83, 129), ont eu pour objet la répartition des<lb break="yes"/>genres sur le globe. Cette méthode est moins propre à<lb break="yes"/>présenter des résultats généraux que celle qui compare le<lb break="yes"/>nombre des espèces de chaque famille ou les groupes<lb break="yes"/>principaux d&#x2019;une m&#x00EA;me famille à la masse totale des pha-<lb break="no"/>nérogames. Dans la zone glaciale, la variété des formes<lb break="yes"/>génériques ne diminue pas au m&#x00EA;me degré que la variété<lb break="yes"/>des espèces: on y trouve plus de genres dans un moindre<lb break="yes"/>nombre d&#x2019;espèces. (De Candolle, <hi rendition="#i">Théorie élém.</hi>, p. 190;<lb break="yes"/>Humboldt, <hi rendition="#i">Nova gen.,</hi> t. <hi rendition="#k">i</hi>, p. 17 et 50.) Il en est presque<lb break="yes"/>de m&#x00EA;me sur le sommet des hautes montagnes qui re&#x00E7;oivent<lb break="yes"/>des colons d&#x2019;un grand nombre de genres que nous croyons<lb break="yes"/>appartenir exclusivement à la végétation des plaines.</p>
+                <lb break="yes"/>
+                <p>J&#x2019;ai cru devoir indiquer les points de vue différens sous<lb break="yes" />lesquels on peut envisager les lois de la distribution des<lb break="yes" />végétaux. C&#x2019;est en les confondant que l&#x2019;on croit trouver des<lb break="yes"/>contradictions qui ne sont qu&#x2019;apparentes, et que l&#x2019;on at-<lb break="no"/>tribue à tort à l&#x2019;incertitude des observations. (<hi rendition="#i">Berliner<lb break="yes"/>Jahrbücher der Gew&#462;chskunde, Bd.,</hi> t. <hi rendition="#k">i</hi>, p. 18, 21, 30.)<lb break="yes"/>Lorsqu&#x2019;on se sert des expressions suivantes: &#x00AB;cette forme<lb break="yes"/>&#x00AB;ou cette famille se perd vers la zone glaciale; elle a<lb break="yes"/>&#x00AB;sa véritable patrie sous tel ou tel parallèle; c&#x2019;est une<lb break="yes"/>&#x00AB;forme australe; elle abonde dans la zone tempérée,&#x00BB;<lb break="yes"/>
+                    <pb n="276" facs="#f0010"/> il faut énoncer expressément si l&#x2019;on considère le nombre<lb break="yes"/>absolu des espèces, leur fréquence absolue croissante ou<lb break="yes"/>décroissante avec les latitudes, ou si l&#x2019;on parle des fa-<lb break="no"/>milles qui dominent, au m&#x00EA;me degré, sur le reste des<lb break="yes"/>plantes phanérogames. Ces expressions sont justes; elles<lb break="yes"/>offrent un sens précis, si l&#x2019;on distingue les différentes<lb break="yes"/>méthodes d&#x2019;après lesquelles on peut étudier la variété des<lb break="yes"/>formes. L&#x2019;&#x00EE;le de Cuba (pour citer un exemple analogue<lb break="yes"/>et tiré de l&#x2019;économie politique) renferme beaucoup plus<lb break="yes"/>d&#x2019;individus de race africaine que l&#x2019;&#x00EE;le de la Martinique;<lb break="yes"/>et cependant la masse de ces individus domine bien plus<lb break="yes"/>sur le nombre des blancs dans cette dernière &#x00EE;le que dans<lb break="yes"/>celle de Cuba.</p>
+                <lb break="yes"/>
+                <p>Les progrès rapides qu&#x2019;a faits la géographie des plantes<lb break="yes" />depuis douze ans, par les travaux réunis de MM. Brown,<lb break="yes" />Wahlenberg, De Candolle, Léopold de Buch, Parrot,<lb break="yes"/>Ramond, Schouw et Hornemann, sont dus en grande<lb break="yes"/>partie aux avantages de la méthode naturelle de M. de<lb break="yes"/>Jussieu. En suivant, je ne dirai pas les classifications ar-<lb break="no"/>tificielles du système sexuel, mais des familles établies<lb break="yes"/>d&#x2019;après des principes vagues et erronés (<hi rendition="#i">Dumos&#230;, Coryda-<lb break="no"/>les, Olerace&#x00E6;</hi>), on ne reconna&#x00EE;t plus les grandes lois phy-<lb break="no"/>siques dans la distribution des végétaux sur le globe. C&#x2019;est<lb break="yes"/>M. Robert Brown qui, dans un Mémoire célèbre sur la<lb break="yes"/>végétation de la Nouvelle-Hollande, a fait conna&#x00EE;tre le<lb break="yes"/>premier les véritables rapports entre les grandes divisions<lb break="yes"/>du règne végétal, les acotylédonées, les monocotylédo-<lb break="no"/>nées et les dicotylédonées (Brown, dans <hi rendition="#i">Flinder&#x2019;s Voyage<lb break="yes"/>to Terra australis,</hi> tom. <hi rendition="#k">ii</hi>, p. 538; et <hi rendition="#i">Observ. syst.<lb break="yes"/>and geographical on the herbal of the Congo,</hi> p. 3.). J&#x2019;ai<lb break="yes"/>essayé, en 1815, de suivre ce genre de recherches, en<lb break="yes"/>
+                    <pb n="277" facs="#f0011"/> l&#x2019;étendant aux différens ordres ou familles naturelles. La<lb break="yes"/>physique du globe a ses <hi rendition="#i" >élémens numériques,</hi> comme le<lb break="yes"/>système du monde, et l&#x2019;on ne parviendra que par les<lb break="yes"/>travaux réunis des botanistes voyageurs, à reconna&#x00EE;tre les<lb break="yes"/>véritables lois de la distribution des végétaux. Il ne s&#x2019;agit<lb break="yes"/>pas seulement de grouper les faits; il faut, pour obtenir<lb break="yes"/>des approximations plus précises (et nous ne prétendons<lb break="yes"/>donner que des approximations), discuter les circon-<lb break="no"/>stances diverses sous lesquelles les observations ont été<lb break="yes"/>faites. Je pense, comme M. Brown, qu&#x2019;on doit préférer<lb break="yes"/>en général, aux calculs faits sur les inventaires incom-<lb break="no"/>plets de toutes les plantes publiées, les exemples tirés de<lb break="yes"/>pays considérablement étendus, et dont la Flore est bien<lb break="yes"/>connue, tels que la France, l&#x2019;Angleterre, l&#x2019;Allemagne et<lb break="yes"/>la Laponie. Il serait à desirer qu&#x2019;on e&#x00FB;t déjà une Flore<lb break="yes"/>complète de deux terrains de 20,000 lieues carrées, dé-<lb break="no"/>pourvus de hautes montagnes et de plateaux, et situés<lb break="yes"/>entre les tropiques dans l&#x2019;ancien et le nouveau Monde.<lb break="yes"/>Jusqu&#x2019;à l&#x2019;époque où ce v&#x0153;u sera accompli, il faut se con-<lb break="no"/>tenter des grands herbiers formés par des voyageurs qui ont<lb break="yes"/>séjourné dans les deux hémisphères. Les <hi rendition="#i">habitations</hi> des<lb break="yes"/>plantes sont si vaguement et si incorrectement indiquées<lb break="yes"/>dans les vastes compilations connues sous les noms de<lb break="yes"/>
+                    <hi rendition="#i">Systema vegetabilium</hi> et de <hi rendition="#i">Species plantarum,</hi> qu&#x2019;il<lb break="yes"/>serait très-dangereux de s&#x2019;en servir d&#x2019;une manière ex-<lb break="no"/>clusive. Je n&#x2019;ai employé ces inventaires que subsidiai-<lb break="no"/>rement, pour contr&#x00F4;ler et modifier un peu les résultats<lb break="yes"/>obtenus par les Flores et les herbiers partiels. Le nombre<lb break="yes"/>des plantes équinoxiales que nous avons rapportées en<lb break="yes"/>Europe, M. Bonpland et moi, et dont notre savant col-<lb break="no"/>laborateur, M. Kunth, aura bient&#x00F4;t terminé la publication,<lb break="yes"/>
+                    <pb n="278" facs="#f0012"/> est peut-&#x00EA;tre numériquement plus grand qu&#x2019;aucun des her-<lb break="no"/>biers formés entre les tropiques; mais il se compose de<lb break="yes"/>végétaux des plaines et des plateaux élevés des Andes. Les<lb break="yes"/>végétaux alpins y sont m&#x00EA;me beaucoup plus considérables<lb break="yes"/>que dans les Flores de la France, de l&#x2019;Angleterre et des In-<lb break="no"/>des, qui réunissent aussi les productions de différens cli-<lb break="no"/>mats appartenant à une m&#x00EA;me latitude. En France, le nom-<lb break="no"/>bre des espèces qui végètent exclusivement au-dessus de<lb break="yes"/>500 toises de hauteur, ne para&#x00EE;t &#x00EA;tre que <formula notation="TeX">\frac{1}{9}</formula> de la masse<lb break="yes"/>entière des phanérogames. (De Candolle, dans les <hi rendition="#i">Mé-<lb break="no"/>moires de la Société d&#x2019;Arcueil,</hi> tom. <hi rendition="#k">iii</hi>, pag. 295).</p>
+                <lb break="yes"/>
+                <p>Il sera utile de considérer un jour la végétation des<lb break="yes"/>tropiques et celle de la région tempérée, entre les paral-<lb break="no"/>lèles de 40° et de 50°, d&#x2019;après deux méthodes différentes,<lb break="yes"/>soit en cherchant les rapports numériques dans l&#x2019;en-<lb break="no"/>semble des plaines et des montagnes qu&#x2019;offre la nature<lb break="yes"/>sur une grande étendue de pays, soit en déterminant ces<lb break="yes"/>rapports exclusivement dans les plaines de la zone tem-<lb break="no"/>pérée et de la zone torride. Comme nos herbiers sont les<lb break="yes"/>seuls qui font conna&#x00EE;tre, d&#x2019;après un nivellement baro-<lb break="no"/>métrique, pour plus de 4000 plantes de la région équi-<lb break="no"/>noxiale, la hauteur de chaque station au-dessus du ni-<lb break="no"/>veau de la mer, on pourra, lorsque notre ouvrage des<lb break="yes"/>
+                    <hi rendition="#i">Nova Genera</hi> sera terminé, rectifier les rapports numé-<lb break="no"/>riques du tableau que je publie aujourd&#x2019;hui, en défal-<lb break="no"/>quant des 4000 phanérogames que M. Kunth a employés<lb break="yes"/>à ce travail (<hi rendition="#i">Prolegom.,</hi> pag. 16) les plantes qui crois-<lb break="no"/>sent au-dessus de 1000 toises, et en divisant le nombre<lb break="yes"/>total des plantes non alpines par celui des espèces de<lb break="yes"/>chaque famille qui végètent, entre les tropiques, au-des-<lb break="no"/>sous de 1000 toises de hauteur. Cette manière d&#x2019;opérer<lb break="yes"/>
+                    <pb n="279" facs="#f0013"/> doit affecter le plus, comme nous le verrons tant&#x00F4;t,<lb break="yes"/>les familles qui ont des espèces alpines très-nombreuses,<lb break="yes"/>par exemple, les graminées et les composées. A 1000<lb break="yes"/>toises d&#x2019;élévation, la température moyenne de l&#x2019;air est<lb break="yes"/>encore, sur le dos des Andes équatoriales, de 17° cent.,<lb break="yes"/>égale à celle du mois de juillet à Paris. Quoique dans les<lb break="yes"/>plateaux des Cordillières, on trouve la m&#x00EA;me température<lb break="yes"/>annuelle que dans les hautes latitudes (parce que la <hi rendition="#i">ligne<lb break="yes"/>isotherme</hi> de 17°, par exemple, est la trace marquée dans<lb break="yes"/>les plaines par l&#x2019;intersection de la <hi rendition="#i">surface isotherme</hi> de<lb break="yes"/>17° avec la surface du sphéro&#x00EF;de terrestre), il ne faut<lb break="yes"/>pas trop généraliser ces analogies des climats tempérés<lb break="yes"/>dans les montagnes équatoriales et les basses régions de<lb break="yes"/>la zone circompolaire. Ces analogies sont moins grandes<lb break="yes"/>qu&#x2019;on ne le pense; elles sont modifiées par l&#x2019;influence<lb break="yes"/>de la distribution partielle de la chaleur dans les diffé-<lb break="no"/>rentes parties de l&#x2019;année. (<hi rendition="#i">Proleg.,</hi> p. 54, et mon <hi rendition="#i">Mé-<lb break="no"/>moire sur les lignes isothermes,</hi> p. 137). Les <hi rendition="#i">quotiens</hi> ne<lb break="yes"/>changent pas toujours en montant de la plaine vers les<lb break="yes"/>sommets arides des montagnes, de la m&#x00EA;me manière qu&#x2019;ils<lb break="yes"/>changent en approchant du pole: c&#x2019;est le cas des mono-<lb break="no"/>cotylédonées considérées en général; c&#x2019;est le cas des fou-<lb break="no"/>gères et des composées. (<hi rendition="#i">Proleg.,</hi> p. 51 et 52; Brown,<lb break="yes"/>
+                    <hi rendition="#i">on Congo,</hi> pag. 5.).</p>
+                <lb break="yes"/>
+                <p>On peut d&#x2019;ailleurs remarquer que le développement des<lb break="yes" />végétaux de différentes familles et la distribution des formes<lb break="yes" />ne dépendent ni des latitudes géographiques seules, ni m&#x00EA;me<lb break="yes"/>des seules latitudes isothermes; mais que les quotiens<lb break="yes"/>ne sont pas toujours semblables sur une m&#x00EA;me ligne iso-<lb break="no"/>therme de la zone tempérée, dans les plaines de l&#x2019;Amé-<lb break="no"/>rique et dans celles de l&#x2019;ancien continent. Il existe sous les<lb break="yes"/>
+                    <pb n="280" facs="#f0014"/> tropiques une différence très-remarquable entre l&#x2019;Améri-<lb break="no"/>que, l&#x2019;Inde et les c&#x00F4;tes occidentales de l&#x2019;Afrique. La distri-<lb break="no"/>bution des &#x00EA;tres organisés sur le globe dépend non-seu-<lb break="no"/>lement de circonstances climatériques très-compliquées,<lb break="yes"/>mais aussi de causes géologiques qui nous sont entière-<lb break="no"/>ment inconnues, parce qu&#x2019;elles ont rapport au premier<lb break="yes"/>état de notre planète. Les grands animaux pachydermes<lb break="yes"/>manquent aujourd&#x2019;hui dans le Nouveau-Monde, quand<lb break="yes"/>nous les trouvons encore abondamment sous des climats<lb break="yes"/>analogues, en Afrique et en Asie. Dans la zone équinoxiale<lb break="yes"/>de l&#x2019;Afrique, la famille des palmiers est bien peu nom-<lb break="no"/>breuse, comparée au grand nombre d&#x2019;espèces de l&#x2019;Amé-<lb break="no"/>rique méridionale. Ces différences, loin de nous détour-<lb break="no"/>ner de la recherche des lois de la nature, doivent nous<lb break="yes"/>exciter à étudier ces lois dans toutes leurs complications.<lb break="yes"/>Les lignes d&#x2019;égale chaleur ne suivent pas les parallèles à<lb break="yes"/>l&#x2019;équateur; elles ont, comme j&#x2019;ai t&#x00E2;ché de le prouver ail-<lb break="no"/>leurs, des <hi rendition="#i">sommets convexes</hi> et des <hi rendition="#i">sommets concaves,</hi>
+                    <lb break="yes"/>qui sont distribués très-régulièrement sur le globe, et<lb break="yes"/>forment différens systèmes le long des c&#x00F4;tes orientales et<lb break="yes"/>occidentales des deux Mondes, au centre des continens,<lb break="yes"/>et dans la proximité des grands bassins des mers. Il est<lb break="yes"/>probable que, lorsque des physiciens-botanistes auront<lb break="yes"/>parcouru une plus vaste étendue du globe, on trouvera<lb break="yes"/>que souvent les lignes des <hi rendition="#i">maxima d&#x2019;agroupement</hi> (les<lb break="yes"/>lignes tirées par les points où les fractions sont ré-<lb break="no"/>duites au dénominateur le plus petit) dévient des lignes<lb break="yes"/>isothermes. En divisant le globe par bandes longitudi-<lb break="no"/>nales comprises entre deux méridiens, et en en compa-<lb break="no"/>rant les rapports numériques sous les m&#x00EA;mes latitudes<lb break="yes"/>isothermes, on reconna&#x00EE;tra l&#x2019;existence de différens <hi rendition="#i">sys-</hi>
+                    <lb break="yes"/>
+                    <pb n="281" facs="#f0015"/>
+                    <hi rendition="#i">tèmes d&#x2019;agroupement.</hi> Déjà, dans l&#x2019;état actuel de nos<lb break="yes"/>connaissances, nous pouvons distinguer quatre systèmes<lb break="yes"/>de végétation, ceux du Nouveau-Continent, de l&#x2019;Afrique<lb break="yes"/>occidentale, de l&#x2019;Inde et de la Nouvelle-Hollande. De<lb break="yes"/>m&#x00EA;me que, malgré l&#x2019;accroissement régulier de la chaleur<lb break="yes"/>moyenne du pole à l&#x2019;équateur, le <hi rendition="#i">maximum</hi> de chaleur<lb break="yes" />n&#x2019;est pas identique dans les différentes régions par diffé-<lb break="no"/>rens degrés de longitude, il existe aussi des lieux où<lb break="yes"/>certaines familles atteignent un développement plus grand<lb break="yes"/>que par-tout ailleurs. C&#x2019;est le cas de la famille des Com-<lb break="no"/>posées dans la région tempérée de l&#x2019;Amérique du nord,<lb break="yes"/>et surtout à l&#x2019;extrémité australe de l&#x2019;Afrique. Ces accu-<lb break="no"/>mulations partielles déterminent la physionomie de la<lb break="yes"/>végétation; elles sont ce que l&#x2019;on appelle vaguement les<lb break="yes"/>traits caractéristiques du paysage.</p>
+                <lb break="yes"/>
+                <p>Il résulte de mes recherches que, dans toute la zone<lb break="yes"/>tempérée, les glumacées et les composées font ensemble<lb break="yes"/>plus d&#x2019;un quart des phanérogames, et que les formes des<lb break="yes"/>&#x00EA;tres organisés se trouvent dans une dépendance mu-<lb break="no"/>tuelle. L&#x2019;unité de la nature est telle, que les formes se<lb break="yes"/>sont limitées les unes les autres d&#x2019;après des lois con-<lb break="no"/>stantes et immuables. Lorsqu&#x2019;on conna&#x00EE;t sur un point<lb break="yes" />quelconque du globe le nombre d&#x2019;espèces qu&#x2019;offre une<lb break="yes"/>grande famille (par exemple, celle des glumacées, des<lb break="yes"/>composées ou des légumineuses), on peut évaluer avec<lb break="yes"/>beaucoup de probabilité, et le nombre total des plantes<lb break="yes"/>phanérogames, et le nombre des espèces qui composent<lb break="yes"/>les autres familles végétales. C&#x2019;est ainsi qu&#x2019;en connais-<lb break="no"/>sant, sous la zone tempérée, le nombre des cypéracées<lb break="yes"/>ou des composées, on peut deviner celui des graminées<lb break="yes"/>ou des légumineuses. Ces évaluations nous font voir aussi<lb break="yes"/>
+                    <pb n="282" facs="#f0016"/> dans quelles tribus de végétaux les Flores d&#x2019;un pays sont<lb break="yes"/>encore incomplètes: elles sont d&#x2019;autant moins incer-<lb break="no"/>taines que l&#x2019;on évite de confondre les <hi rendition="#i">quotiens</hi> qui ap-<lb break="no" />partiennent à différens <hi rendition="#i">systèmes de végétation.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>La géographie des plantes peut &#x00EA;tre considérée comme<lb break="yes"/>une partie de la <hi rendition="#i">Physique du globe.</hi> Si les lois qu&#x2019;a sui-<lb break="no"/>vies la nature dans la distribution des formes végétales<lb break="yes"/>étaient beaucoup plus compliquées encore qu&#x2019;elles ne<lb break="yes"/>le paraissent au premier abord, il ne faudrait pas moins<lb break="yes"/>les soumettre à des recherches exactes. On n&#x2019;a pas aban-<lb break="no"/>donné le tracé des cartes lorsqu&#x2019;on s&#x2019;est aper&#x00E7;u des sinuo-<lb break="no"/>sités des fleuves et de la forme irrégulière des c&#x00F4;tes. Les<lb break="yes"/>lois du magnétisme se sont manifestées à l&#x2019;homme dès<lb break="yes"/>que l&#x2019;on a commencé à tracer des lignes d&#x2019;égale décli-<lb break="no"/>naison et d&#x2019;égale inclinaison, et que l&#x2019;on a comparé un<lb break="yes" />grand nombre d&#x2019;observations qui paraissaient d&#x2019;abord<lb break="yes"/>contradictoires. Ce serait oublier la marche par laquelle<lb break="yes"/>les sciences physiques se sont élevées progressive-<lb break="no"/>ment à des résultats certains, que de croire qu&#x2019;il<lb break="yes"/>n&#x2019;est pas encore temps de chercher les <hi rendition="#i">élémens nu-<lb break="no"/>mériques</hi> de la géographie des plantes. Dans l&#x2019;étude d&#x2019;un<lb break="yes"/>phénomène compliqué, on commence toujours par un<lb break="yes"/>aper&#x00E7;u général des conditions qui déterminent ou modi-<lb break="no"/>fient le phénomène. Après avoir découvert un certain<lb break="yes"/>nombre de rapports, on s&#x2019;aper&#x00E7;oit que les premiers ré-<lb break="no"/>sultats auxquels on s&#x2019;est arr&#x00EA;té ne sont pas assez déga-<lb break="no"/>gés des influences locales. C&#x2019;est alors qu&#x2019;on corrige les<lb break="yes"/>
+                    <hi rendition="#i">élémens numériques,</hi> et qu&#x2019;on reconna&#x00EE;t de la régula-<lb break="no"/>rité dans les effets m&#x00EA;mes des perturbations partielles.<lb break="yes"/>La critique s&#x2019;exerce sur tout ce qui a été annoncé pré-<lb break="no"/>maturément comme un résultat général, et l&#x2019;esprit de<lb break="yes"/>
+                    <pb n="283" facs="#f0017"/> critique, une fois excité, favorise la recherche de la vé-<lb break="no"/>rité, et accélère le progrès des sciences physiques.</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#g">
+                            <hi rendition="#k">notes.</hi>
+                        </hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>1°. En comparant les différens <hi rendition="#i">systèmes d&#x2019;agroupe-<lb break="no"/>ment</hi> dans les deux Mondes, on trouve en général,<lb break="yes"/>dans le nouveau, sous la zone équatoriale, moins de<lb break="yes"/>cypéracées et de rubiacées, et plus de composées; sous<lb break="yes"/>la zone tempérée, moins de joncacées, de labiées, d&#x2019;om-<lb break="no"/>bellifères et de crucifères, et plus de composées, d&#x2019;éri-<lb break="no"/>cinées et d&#x2019;amentacées, que dans les zones correspondantes<lb break="yes"/>de l&#x2019;ancien Monde. Les familles qui augmentent de l&#x2019;é-<lb break="no"/>quateur vers le pole (selon la <hi rendition="#i">méthode des fractions</hi>)<lb break="yes"/>sont les glumacées, les éricinées et les amentacées; les<lb break="yes"/>familles qui diminuent du pole vers l&#x2019;équateur sont les<lb break="yes"/>légumineuses, les rubiacées, les euphorbiacées et les mal-<lb break="no"/>vacées; les familles qui semblent atteindre le <hi rendition="#i">maximum</hi>
+                    <lb break="yes"/>sous la zone tempérée sont les composées, les labiées,<lb break="yes"/>les ombellifères et les crucifères.</p>
+                <lb break="yes"/>
+                <p>2°. Quoique les résultats principaux de mon nouveau<lb break="yes"/>travail aient été réunis dans un seul tableau, j&#x2019;engage<lb break="yes"/>pourtant les physiciens à recourir aux éclaircissemens sur<lb break="yes"/>les diverses familles, chaque fois que les nombres par-<lb break="no"/>tiels leur paraissent douteux. Les <hi rendition="#i">quotiens</hi> des tropiques<lb break="yes"/>sont modifiés de telle manière qu&#x2019;ils ont rapport aux<lb break="yes"/>régions dont la température moyenne est de 28° à 20°<lb break="yes"/>(de 0 à 750 toises de hauteur). Les quotiens de la zone<lb break="yes"/>tempérée sont adaptés à la partie centrale de cette zone,<lb break="yes"/>entre 13° et 10° de température moyenne. Dans la zone<lb break="yes"/>glaciale, la température moyenne est de 0° ou 1°. A ce ta-<lb break="no"/>
+                    <pb n="284" facs="#f0018"/> bleau des quotiens ou des fractions, qui indique les rap-<lb break="no"/>ports de chaque famille à la masse totale des phané-<lb break="no"/>rogames, on pourrait ajouter un tableau dans lequel<lb break="yes"/>seraient comparés entre eux les <hi rendition="#i">nombres absolus</hi> des<lb break="yes"/>espèces. Nous en donnerons ici un fragment qui n&#x2019;em-<lb break="no"/>brasse que les zones tempérée et glaciale.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>France.</cell>
+                        <cell>Amérique boréale.</cell>
+                        <cell>Laponie.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Glumacées,</cell>
+                        <cell>460</cell>
+                        <cell>365</cell>
+                        <cell>124</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Composées,</cell>
+                        <cell>490</cell>
+                        <cell>454</cell>
+                        <cell>38</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Légumineuses,</cell>
+                        <cell>230</cell>
+                        <cell>148</cell>
+                        <cell>14</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Crucifères,</cell>
+                        <cell>190</cell>
+                        <cell>46</cell>
+                        <cell>22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ombellifères,</cell>
+                        <cell>170</cell>
+                        <cell>50</cell>
+                        <cell>9</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Caryophyllées,</cell>
+                        <cell>165</cell>
+                        <cell>40</cell>
+                        <cell>29</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Labiées,</cell>
+                        <cell>149</cell>
+                        <cell>78</cell>
+                        <cell>7</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rhinanthées,</cell>
+                        <cell>147</cell>
+                        <cell>79</cell>
+                        <cell>17</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Amentacées,</cell>
+                        <cell>69</cell>
+                        <cell>113</cell>
+                        <cell>23</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Ces nombres absolus sont tirés des Flores de MM. de<lb break="yes"/>Candolle, Pursh et Wahlenberg. La masse des plantes<lb break="yes"/>phanérogames décrites en France est à celle de l&#x2019;Amé-<lb break="no"/>rique boréale dans le rapport de 1 <formula notation="TeX">\frac{1}{3}</formula>: 1; à celle de La-<lb break="no"/>ponie, dans le rapport de 7:1.</p>
+                <lb break="yes"/>
+                <p>3°. En examinant en détail tout ce que nous savons<lb break="yes"/>déjà sur le rapport des monocotylédonées aux dicotylé-<lb break="no"/>donées, on observe que le dénominateur devient pro-<lb break="no"/>gressivement plus petit (et avec la plus grande régula-<lb break="no"/>rité) en allant de l&#x2019;équateur vers le 62<hi rendition="#sup">e</hi> de latitude nord;<lb break="yes"/>il augmente peut-&#x00EA;tre de nouveau dans des régions plus<lb break="yes"/>boréales encore, sur la c&#x00F4;te du Groenland, où les grami-<lb break="no"/>nées paraissent très-rares (<hi rendition="#i">Congo,</hi> p. 4). Le rapport varie<lb break="yes"/>
+                    <pb n="285" facs="#f0019"/> de <formula notation="TeX">\frac{1}{5}</formula> à <formula notation="TeX">\frac{1}{6}</formula> dans les différentes parties des tropiques. Sur<lb break="yes"/>3880 phanérogames de l&#x2019;Amérique équinoxiale que nous<lb break="yes"/>avons trouvées, M. Bonpland et moi, en fleur et en<lb break="yes"/>fruit, il y a 654 monocotylédonées et 3226 dicotylédo-<lb break="no"/>nées: donc la grande division des monocotylédonées se-<lb break="no"/>rait <formula notation="TeX" >\frac{1}{6}</formula> des phanérogames. D&#x2019;après M. Brown, ce rapport<lb break="yes"/>est par-tout dans l&#x2019;ancien continent (dans l&#x2019;Inde, dans<lb break="yes"/>l&#x2019;Afrique équinoxiale et dans la Nouvelle-Hollande), <formula notation="TeX">\frac{1}{5}</formula>.</p>
+                <lb break="yes"/>
+                <p>Sous la zone tempérée, on trouve (d&#x2019;après mes <hi rendition="#i" >Proleg.,</hi>
+                    <lb break="yes"/>p. <hi rendition="#k">xii,</hi> et les données partielles publiées par M. de Candolle,<lb break="yes"/>
+                    <hi rendition="#i">Dict. des Sciences nat.,</hi> t. <hi rendition="#k" >xviii,</hi> p. 594&#x2014;597) que les<lb break="yes"/>monocotylédonées sont aux dicotylédonées:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>En Barbarie ................. = 1:4,8</item>
+                    <lb break="yes"/>
+                    <item>En Egypte *................. = 1:5,0</item>
+                    <lb break="yes"/>
+                    <item>Dans le Caucase et en Crimée * . = 1:6,0</item>
+                    <lb break="yes"/>
+                    <item>Dans le royaume de Naples..... = 1:4,7</item>
+                    <lb break="yes"/>
+                    <item>Dans l&#x2019;état de Venise. ......... = 1:4,0</item>
+                    <lb break="yes"/>
+                    <item>En France .................. = 1:4,7</item>
+                    <lb break="yes"/>
+                    <item>En Allemagne ............... = 1:4,0</item>
+                    <lb break="yes"/>
+                    <item>En Suisse................... = 1:4,3</item>
+                    <lb break="yes"/>
+                    <item>Dans les Iles britanniques *..... = 1:3,6</item>
+                    <lb break="yes"/>
+                    <item>Dans l&#x2019;Amérique septentrionale. = 1:4,6.</item>
+                </list>
+                <lb break="yes"/>
+                <p>Sous la zone glaciale, le rapport est:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>En Laponie ................. = 1:2,8</item>
+                    <lb break="yes"/>
+                    <item>En Islande .......... ....... = 1:2,8.</item>
+                </list>
+                <lb break="yes"/>
+                <p>On voit que des tropiques au pole l&#x2019;augmentation<lb break="yes"/>relative des monocotylédonées est très-régulière. Comme<lb break="yes"/>les monocotylédonées aiment l&#x2019;humidité, elles sont plus<lb break="yes" />nombreuses dans les Iles britanniques, et plus rares en<lb break="yes"/>Egypte et dans les montagnes arides du Caucase. J&#x2019;avais<lb break="yes"/>déjà observé que, dans les Alpes de la Suisse, au-dessus<lb break="yes"/>
+                    <pb n="286" facs="#f0020"/> de la r&#x00EA;gion des Rhododendrons, les monocotylédonées<lb break="yes"/>sont aux phanérogames = <choice><sic>1:71,</sic><corr type="editorial">1:7,1</corr></choice> quand dans les plaines,<lb break="yes"/>elles sont, au pied des Alpes, = 1:4,3. (<hi rendition="#i">
+                        <choice>
+                            <sic>Prologomena</sic>
+                            <corr type="editorial">Prolegomena</corr>
+                        </choice>,</hi>
+                    <lb break="yes"/>p. <hi rendition="#k">lii.</hi>)</p>
+                <lb break="yes"/>
+                <p>4°. Dans la partie la plus fertile de l&#x2019;Europe, au<lb break="yes"/>centre de la zone tempérée, une étendue de pays de<lb break="yes"/>30,000 lieues carrées nourrit près de 6000 espèces de<lb break="yes"/>plantes, dont 2200 acotylédonées ou cryptogames et<lb break="yes"/>3800 phanérogames. Parmi les dernières, il y a presque<lb break="yes"/>500 composées, 300 graminées (en excluant les cypé-<lb break="no"/>ro&#x00EF;dées et les joncacées), 250 légumineuses et 200 cru-<lb break="no"/>cifères; mais seulement 70 amentacées, 50 euphor-<lb break="no"/>biacées et 25 malvacées. Les grandes familles forment<lb break="yes"/>
+                    <formula notation="TeX">\frac{1}{7}</formula> à <formula notation="TeX" >\frac{1}{20}</formula>, les petites au-dessous de <formula notation="TeX" >\frac{1}{50}</formula> de la masse totale des<lb break="yes"/>phanérogames: c&#x2019;est là, pour ainsi dire, l&#x2019;état moyen<lb break="yes"/>de la végétation en Europe, dans des terrains fertiles,<lb break="yes"/>entre 42°&#x2014;50° de latitude boréale. Pour convaincre les<lb break="yes"/>plus incrédules de la réalité des <hi rendition="#i">proportions fixes</hi> ou de la<lb break="yes"/>régularité que l&#x2019;on observe en Europe dans la distribution<lb break="yes"/>des formes, sous une m&#x00EA;me zone, je vais offrir ici les rap-<lb break="no"/>ports qu&#x2019;offrent deux pays limitrophes, la France et<lb break="yes"/>l&#x2019;Allemagne. On peut regarder les chiffres indiqués dans<lb break="yes"/>le tableau suivant comme les <hi rendition="#i">coefficiens</hi> de chaque famille;<lb break="yes"/>car, en multipliant le nombre des phanérogames de la<lb break="yes"/>zone tempérée de l&#x2019;Europe par 0.076 ou 0.053, on<lb break="yes"/>trouve le nombre des espèces qui composent les familles<lb break="yes"/>des graminées ou des crucifères.</p>
+                <lb break="yes"/>
+                <list xml:id="l1-1" next="#l1-2">
+                    <item>Composées...... <list rendition="#leftBraced">
+                            <item>en France, 1/7,4 = 0.135</item>
+                            <lb break="yes"/>
+                            <item>En Allemagne, 1/8 = 0.125</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Glumacées ...... <list rendition="#leftBraced">
+                            <item>Fr. 1/7,9 = 0.127</item>
+                            <item>All. 1/7,1. = 0.141.</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                </list>
+                <lb break="yes"/>
+                <pb n="287" facs="#f0021"/>
+                <list xml:id="l1-2" prev="#l1-1">
+                    <item>Graminées seules.<list rendition="#leftBraced">
+                            <item>Fr. 1/13 = 0.077</item>
+                            <lb break="yes"/>
+                            <item>All. 1/13 = 0.077</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Légumineuses ...<list rendition="#leftBraced">
+                            <item>Fr. 1/16 = 0.063</item>
+                            <lb break="yes"/>
+                            <item>All. 1/18 = 0.056</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Crucifères.......<list rendition="#leftBraced">
+                            <item>Fr. 1/19 = 0.052</item>
+                            <lb break="yes"/>
+                            <item>All. 1/18 = 0.056</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Ombellifères ....<list rendition="#leftBraced">
+                            <item>Fr. 1/21 = 0.048</item>
+                            <lb break="yes"/>
+                            <item>All. 1/22 = 0.046</item>
+                        </list> &#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Labiées.........<list rendition="#leftBraced">
+                            <item>Fr. 1/24 = 0.042</item>
+                            <lb break="yes"/>
+                            <item>All. 1/26 = 0.038</item>
+                        </list> &#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Cypéracées* seules.<list rendition="#leftBraced">
+                            <item>Fr. 1/27 = 0.037</item>
+                            <lb break="yes"/>
+                            <item>All. 1/18 = 0.056</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Amentacées .....<list rendition="#leftBraced">
+                            <item>Fr. 1/50 = 0.020</item>
+                            <lb break="yes"/>
+                            <item>All. 1/40 = 0.025</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Orchidées * .....<list rendition="#leftBraced">
+                            <item>Fr. 1/67 = 0.015</item>
+                            <lb break="yes"/>
+                            <item>All. 1/43 = 0.023</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Boraginées ......<list rendition="#leftBraced">
+                            <item>Fr. 1/74 = 0.014</item>
+                            <lb break="yes"/>
+                            <item>All. 1/72 = 0.014</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Rubiacées .......<list rendition="#leftBraced">
+                            <item>Fr. 1/73 = 0.014</item>
+                            <lb break="yes"/>
+                            <item>All. 1/70 = 0.014</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Euphorbiacées* ..<list rendition="#leftBraced">
+                            <item>Fr. 1/70 = 0.014</item>
+                            <lb break="yes"/>
+                            <item>All. 1/100 = 0.010</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Joncacées .......<list rendition="#leftBraced">
+                            <item>Fr. 1/85 = 0.012</item>
+                            <lb break="yes"/>
+                            <item>All. 1/94 = 0.011</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Ericinées * ......<list rendition="#leftBraced">
+                            <item>Fr. 1/125 = 0.008</item>
+                            <lb break="yes"/>
+                            <item>All. 1/90 = 0.011</item>
+                        </list>&#x2197;</item>
+                    <lb break="yes"/>
+                    <item>Malvacées * .....<list rendition="#leftBraced">
+                            <item>Fr. 1/140 = 0.007</item>
+                            <lb break="yes"/>
+                            <item>All. 1/230 = 0.004</item>
+                        </list>&#x2199;</item>
+                    <lb break="yes"/>
+                    <item>Conifères.......<list rendition="#leftBraced">
+                            <item>Fr. 1/192 = 0.005</item>
+                            <lb break="yes"/>
+                            <item>All. 1/269 = 0.004</item>
+                        </list>&#x2197;</item>
+                </list>
+                <lb break="yes"/>
+                <pb n="288" facs="#f0022"/>
+                <p>Cette harmonie dans la majeure partie des résultats est<lb break="yes" />d&#x2019;autant plus frappante que les coefficiens ont été obtenus<lb break="yes"/>sur des masses de plantes très-inégales. En France, 3645;<lb break="yes"/>en Allemagne, seulement 1884 phanérogames ont été em-<lb break="no"/>ployées pour déterminer les rapports partiels des familles.<lb break="yes"/>Quoique les deux pays soient limitrophes, il s&#x2019;en faut de<lb break="yes"/>beaucoup que les espèces soient les m&#x00EA;mes. La concor-<lb break="no"/>dance des résultats entre des limites aussi étroites (le plus<lb break="yes"/><choice><sic>sonvent</sic><corr type="editorial">souvent</corr></choice> au-dessous de <formula notation="TeX" >\frac{1}{8}</formula> de différence) prouve deux faits<lb break="yes" />également remarquables: 1° que les 1700 à 1800 espèces de<lb break="yes" />phanérogames qu&#x2019;a de plus le catalogue de plantes fran-<lb break="no" />&#x00E7;aises que l&#x2019;excellent catalogue de M. Schrader employé<lb break="yes"/>pour l&#x2019;Allemagne, sont réparties entre les diverses familles<lb break="yes"/>à-peu-près dans les m&#x00EA;mes rapports que l&#x2019;on observe parmi<lb break="yes"/>les plantes communes aux deux pays; 2° que les espèces<lb break="yes"/>de légumineuses, de crucifères et d&#x2019;ombellifères, que l&#x2019;Al-<lb break="no"/>lemagne para&#x00EE;t avoir exclusivement, se trouvent rempla-<lb break="no"/>cées en France par un nombre à-peu-près égal d&#x2019;espèces<lb break="yes"/>appartenant aux m&#x00EA;mes familles. Par-tout où l&#x2019;on observe<lb break="yes"/>des écarts très-sensibles, on peut les attribuer à la cir-<lb break="no"/>constance que l&#x2019;Allemagne est plus boréale que la France.<lb break="yes"/>Nous savons que les cypéracées et les éricinées augmen-<lb break="no"/>tent si rapidement vers le nord, qu&#x2019;il y a sous la zone tem-<lb break="no"/>pérée <formula notation="TeX">\frac{1}{20}</formula> de cypéracées et <formula notation="TeX">\frac{1}{100}</formula> d&#x2019;éricinées, tandis que, sous<lb break="yes"/>la zone glaciale on compte <formula notation="TeX" >\frac{1}{9}</formula> de cypéracées et <formula notation="TeX" >\frac{1}{25}</formula> d&#x2019;éricinées.<lb break="yes"/>D&#x2019;un autre c&#x00F4;té, les rapports des orchidées, des malva-<lb break="no"/>cées et des euphorbiacées augmentent avec une égale<lb break="yes"/>rapidité vers le sud. En comparant le tableau précédent<lb break="yes"/>au tableau des trois zones (torride, tempérée et glaciale),<lb break="yes"/>on reconna&#x00EE;t les m&#x00EA;mes lois. J&#x2019;ai ajouté à ce tableau com-<lb break="no"/>paratif de la France et de l&#x2019;Allemagne les flèches qui, dans<lb break="yes"/>
+                    <pb n="289" facs="#f0023"/> le tableau général, indiquent les <hi rendition="#i" >directions de l&#x2019;ac-<lb break="no"/>croissement</hi> du pole à l&#x2019;équateur et de l&#x2019;équateur au pole.<lb break="yes"/>Ce qui est bien remarquable aussi, c&#x2019;est que les coeffi-<lb break="no"/>ciens des familles ne changent pas beaucoup, si, au<lb break="yes"/>lieu d&#x2019;examiner de vastes contrées, qui ont 2600 à<lb break="yes"/>3800 espèces de phanérogames, on restreint ses recher-<lb break="no"/>ches à une étendue de quelques lieues carrées; par exem-<lb break="no"/>ple, à la Flore de Berlin, qui, d&#x2019;après l&#x2019;ouvrage de<lb break="yes"/>M. Kunth, ne renferme que 900 espèces. Dans cette<lb break="yes"/>petite étendue de terrain, les légumineuses sont <formula notation="TeX">\frac{1}{19}</formula>; (dans<lb break="yes"/>toute la France, <formula notation="TeX">\frac{1}{16}</formula>; dans toute l&#x2019;Allemagne, <formula notation="TeX">\frac{1}{18}</formula>); les glu-<lb break="no"/>macées, <formula notation="TeX">\frac{1}{6}</formula>; (en France, <formula notation="TeX">\frac{1}{7\cdot9}</formula>; en Allemagne, <formula notation="TeX">\frac{1}{7}</formula>) de la<lb break="yes"/>masse totale des phanérogames.</p>
+                <lb break="yes"/>
+                <p>5°. De m&#x00EA;me que le <hi rendition="#i">système de climats</hi> du nouveau<lb break="yes"/>continent diffère essentiellement de celui de l&#x2019;ancien<lb break="yes"/>à cause de la répartition inégale de la chaleur entre les<lb break="yes"/>différentes parties de l&#x2019;année, de m&#x00EA;me aussi le <hi rendition="#i">système<lb break="yes" />d&#x2019;agroupement</hi> des plantes américaines offre des traits<lb break="yes"/>qui lui sont propres. C&#x2019;est aux nouvelles recherches de<lb break="yes"/>l&#x2019;<hi rendition="#i">Arithmétique botanique</hi> que l&#x2019;on doit la connaissance de<lb break="yes"/>ces contrastes entre les zones tempérées des deux Mondes.<lb break="yes"/>J&#x2019;ai réuni dans le tableau suivant les résultats de la Flore<lb break="yes"/>américaine de Pursh et de la Flore fran&#x00E7;aise de M. de<lb break="yes"/>Candolle. J&#x2019;ai ajouté quelques coefficiens de la région<lb break="yes"/>glaciale européenne, pour prouver combien l&#x2019;Amérique<lb break="yes"/>tempérée présente un <hi rendition="#i">caractère boréal</hi> dans les cinq fa-<lb break="no"/>milles des éricinées (et des rosages), des conifères, des<lb break="yes"/>amentacées, des ombellifères et des labiées.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Composées. <hi rendition="#sup">
+                                <choice>
+                                    <sic>Amériq</sic>
+                                    <corr type="editorial">Amériq.</corr>
+                                </choice> tempérée.</hi>
+                        </cell>
+                        <cell>1/6 <hi rendition="#sup">France.</hi>
+                        </cell>
+                        <cell>1/7</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Glumacées............</cell>
+                        <cell>1/8.......</cell>
+                        <cell>1/7,9</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="290" facs="#f0024"/>
+                <table>
+                    <row>
+                        <cell>Graminées seules ......</cell>
+                        <cell>1/10......</cell>
+                        <cell>1/13</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Joncacées seules........</cell>
+                        <cell>1/152.....</cell>
+                        <cell>1/85</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cyperacées seules.......</cell>
+                        <cell>1/40......</cell>
+                        <cell>1/27</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Crucifères .............</cell>
+                        <cell>1/62......</cell>
+                        <cell>1/19</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Légumineuses .........</cell>
+                        <cell>1/19 ......</cell>
+                        <cell>1/16</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Malvacées ............</cell>
+                        <cell>1/125 .....</cell>
+                        <cell>1/140</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Labiées ...............</cell>
+                        <cell>1/40 ......</cell>
+                        <cell>1/24 <hi rendition="#sup">Laponie.</hi>
+                        </cell>
+                        <cell>1/70</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ericinées et Rosages ....</cell>
+                        <cell>1/36......</cell>
+                        <cell>1/125......</cell>
+                        <cell>1/25</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ombellifères...........</cell>
+                        <cell>1/57......</cell>
+                        <cell>1/20.......</cell>
+                        <cell>1/55</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Amentacées ...........</cell>
+                        <cell>1/25......</cell>
+                        <cell>1/50.......</cell>
+                        <cell>1/21</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Conifères .............</cell>
+                        <cell>1/103.....</cell>
+                        <cell>1/200......</cell>
+                        <cell>1/160</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Les différences qui se manifestent dans ce tableau, entre<lb break="yes"/>les deux continens, portent non-seulement sur les cinq<lb break="yes"/>dernières familles que l&#x2019;on pourrait appeler <hi rendition="#i">des formes<lb break="yes"/>boréales,</hi> mais aussi sur les crucifères, les joncacées et<lb break="yes"/>les cypéracées, qui sont également rares sous la zone tor-<lb break="no"/>ride et sous la zone tempérée du nouveau continent.</p>
+                <lb break="yes"/>
+                <p>6°. On con&#x00E7;oit que les recherches sur les rapports nu-<lb break="no" />mériques des familles végétales offriront des résultats beau-<lb break="no" />coup plus intéressans lorsque les flores des différens pays<lb break="yes" />seront circonscrites entre des limites géographiques plus<lb break="yes" />précises, et que les botanistes se seront mieux entendus<lb break="yes"/>sur les principes d&#x2019;après lesquels on doit distinguer les<lb break="yes" />variétés et les espèces. Les catalogues que l&#x2019;on observe,<lb break="yes"/>sous le nom vague de <hi rendition="#i">Flore des Etats-Unis de l&#x2019;Amérique,</hi>
+                    <lb break="yes"/>comprennent des pays situés sous des climats très-différens,<lb break="yes"/>depuis 18° à 9° de température moyenne. C&#x2019;est la diffé-<lb break="no"/>rence des climats qu&#x2019;il y a, en Europe, entre la Calabre<lb break="yes"/>et l&#x2019;Autriche. Lorsqu&#x2019;on aura décrit un jour isolément, et<lb break="yes"/>avec la m&#x00EA;me exactitude, la végétation de la Caroline du<lb break="yes"/>Sud, de la Pensylvanie et de la Nouvelle-Angleterre, on<lb break="yes"/>distinguera un accroissement et un décroissement réguliers<lb break="yes"/>dans les rapports numériques des familles du sud au nord.<lb break="yes"/>Nous ne connaissons aujourd&#x2019;hui que la <hi rendition="#i">moyenne géné-<lb break="no"/>rale</hi> de ces rapports partiels. Beaucoup de contrées nous<lb break="yes"/>paraissent plus riches en plantes, parce que les botanistes<lb break="yes"/>y élèvent plus légèrement des variétés au rang des espèces.<lb break="yes"/>
+                    <pb n="291" facs="#f0025"/> D&#x2019;un autre c&#x00F4;té, les voyageurs négligent souvent les plantes<lb break="yes"/>qu&#x2019;ils croient les m&#x00EA;mes que celles de leur patrie. Mais<lb break="yes"/>lorsqu&#x2019;on s&#x2019;arr&#x00EA;te à de grandes divisions, et lorsque le<lb break="yes"/>nombre des espèces que l&#x2019;on compare est assez considé-<lb break="no"/>rable, d&#x2019;heureuses <choice>
+                        <sic>compensasions</sic>
+                        <corr type="editorial">compensations</corr>
+                    </choice> favorisent ces recher-<lb break="no"/>ches. C&#x2019;est ainsi que les nouvelles flores, beaucoup plus<lb break="yes"/>complètes, de l&#x2019;Amérique et de la Laponie, publiees par<lb break="yes"/>MM. Pursh et Wahlenberg, n&#x2019;ont pas sensiblement altéré<lb break="yes"/>les rapports numériques que l&#x2019;on trouve en s&#x2019;arrt&#x00EA;ant aux<lb break="yes"/>anciennes flores de Michaux et de Linné. (<hi rendition="#i">Berl. Jahrb.<lb break="yes"/>der Gew.,</hi> B. <hi rendition="#k">i</hi>, S. 24.) Quelles que soient les rectifica-<lb break="no"/>tions que l&#x2019;on pourra apporter à mon travail, je suis per-<lb break="no"/>suadé d&#x2019;avance que plus on réunira d&#x2019;observations exactes,<lb break="yes"/>et plus on verra que dans un m&#x00EA;me hémisphère, dans un<lb break="yes"/>m&#x00EA;me <hi rendition="#i" >système d&#x2019;agroupement</hi>, les variations partielles<lb break="yes" />des coefficiens ne se font point par sauts brusques, mais<lb break="yes" />selon des lois invariables. Il se peut que la <hi rendition="#i">proportion tro-<lb break="no"/>picale</hi> des malvacées soit <formula notation="TeX">\frac{1}{32}</formula> ou <formula notation="TeX" >\frac{1}{33}</formula>, au lieu de <formula notation="TeX" >\frac{1}{35}</formula>; mais il<lb break="yes"/>n&#x2019;en est pas moins certain que les légumineuses et les mal-<lb break="no"/>vacées augmentent vers l&#x2019;équateur, comme les joncacées<lb break="yes"/>et les éricinées augmentent vers le pole. On peut révoquer<lb break="yes"/>en doute les <hi rendition="#i">quantités</hi> des variations, la <hi rendition="#i" >rapidité</hi> de l&#x2019;ac-<lb break="no"/>croissement, mais non sa <hi rendition="#i">direction.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>7°. En comparant les coefficiens qui appartiennent<lb break="yes"/>aux m&#x00EA;mes familles sous différentes zones, on apprend<lb break="yes"/>à conna&#238;tre, dans la rapidité de l&#x2019;accroissement, des con-<lb break="no"/>trastes très-marquans. Dans l&#x2019;ancien continent, les rap-<lb break="no"/>ports des graminées, des légumineuses et des euphor-<lb break="no"/>biacées changent beaucoup moins de la zone tempérée à<lb break="yes"/>l&#x2019;équateur, que de la zone tempérée au pole.</p>
+                <lb break="yes"/>
+                <p>8°. Les savans qui aiment à considérer chaque phéno-<lb break="no"/>mène dans l&#x2019;isolement le plus absolu, qui regardent les<lb break="yes" />températures moyennes des lieux, les lois que l&#x2019;on ob-<lb break="no" />serve dans les variations du magnétisme terrestre, dans<lb break="yes"/>les rapports entre les naissances et les décès, comme des<lb break="yes"/>hypothèses hardies et comme de vagues spéculations théo-<lb break="no"/>riques, dédaigneront peut-&#x00EA;tre les discussions qui font<lb break="yes" />l&#x2019;objet principal de ce Mémoire: ceux, au contraire, qui<lb break="yes" />se plaisent à contempler l&#x2019;encha&#x00EE;nement mutuel des &#x00EA;tres<lb break="yes"/>
+                    <pb n="292" facs="#f0026"/> organisés, qui savent que les résultats numériques se rec-<lb break="no"/>tifient par l&#x2019;accumulation et l&#x2019;étude soignée des faits<lb break="yes"/>particuliers, accueilleront un genre de recherches qui<lb break="yes"/>jettent du jour sur l&#x2019;économie de la nature, sur la liai-<lb break="no"/>son qu&#x2019;on remarque entre les climats et la forme des &#x00EA;tres,<lb break="yes"/>sur la distribution des plantes et des animaux dans les di-<lb break="no"/>verses régions de notre planète. Ce n&#x2019;est que par l&#x2019;exa-<lb break="no"/>men numérique et la comparaison des espèces que l&#x2019;on<lb break="yes"/>peut se former une juste idée de l&#x2019;<hi rendition="#i">état de la végétation</hi>
+                    <lb break="yes"/>dans un pays donné; de l&#x2019;influence générale qu&#x2019;exerce<lb break="yes"/>la température sur la fréquence de certaines formes, près<lb break="yes"/>de l&#x2019;équateur, sous le parallèle moyen et vers le cercle<lb break="yes"/>polaire; des traits caractéristiques qui distinguent, sous<lb break="yes"/>des zones isothermes, les deux systèmes d&#x2019;agroupement<lb break="yes"/>de l&#x2019;ancien et du nouveau Monde <note place="foot" n="(1)">A l&#x2019;usage des personnes qui n&#x2019;ont pas fait une étude<lb break="yes"/>spéciale de la botanique descriptive, et qui desirent cependant<lb break="yes"/>conna&#x00EE;tre les travaux que l&#x2019;on a tentés dans les diverses bran-<lb break="no"/>ches des sciences naturelles, nous ajouterons ici les noms de<lb break="yes" />quelques plantes très-communes qui caractérisent, pour ainsi<lb break="yes"/>dire, les tribus ou familles dont il est souvent question dans<lb break="yes"/>ce Mémoire.<lb break="yes"/>
+                        <hi rendition="#i">Joncacées</hi> (joncs); &#x2014; <hi rendition="#i" >Cypéracées</hi> (souchet, laiche);<lb break="yes"/>&#x2014; <hi rendition="#i">Graminées</hi> (froment, avoine, ivraie); &#x2014; <hi rendition="#i">Composées</hi>
+                        <lb break="yes"/>(chardon, bluet, grand soleil); &#x2014; <hi rendition="#i" >Légumineuses</hi> ou <hi rendition="#i">Papil-<lb break="no" />lonacées</hi> (haricot, vesce, fève, acacia); &#x2014; <hi rendition="#i">Rubiacées</hi> (caille-<lb break="no"/>lait, garence); &#x2014; <hi rendition="#i">Euphorbiacées</hi> (titimale, ricin); &#x2014; <hi rendition="#i">La-<lb break="no"/>biées</hi> (sauge, menthe, ortie blanche); &#x2014; <hi rendition="#i">Malvacées</hi> (gui-<lb break="no" />mauve, coton); &#x2014; <hi rendition="#i">Ombellifères</hi> (fenouil, cerfeuil, ca-<lb break="no"/>rotte); &#x2014; <hi rendition="#i" >Crucifères</hi> (navet, moutarde, giroflée).<lb break="yes" />L&#x2019;ensemble des plantes qui couvrent le globe est divisé par<lb break="yes"/>les botanistes en <hi rendition="#i">phanérogames</hi> (plantes à fleurs visibles) et<lb break="yes"/>
+                        <hi rendition="#i">Cryptogames</hi> ou <hi rendition="#i">Agames</hi> (fougères, lichens, champi-<lb break="no"/>gnons).</note>.</p>
+                <lb break="yes"/>
+                <pb n="Tome XVI[]" facs="#f0027"/>
+                <p>
+                    <hi rendition="#et">
+                        <hi rendition="#i">Tome XVI, pages</hi> 293-296.</hi>
+                </p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell rows="2">
+                            <hi rendition="#g">GROUPES<lb break="yes"/>FONDÉS SUR L&#x2019;ANALOGIE DES FORMES.</hi>
+                        </cell>
+                        <cell cols="3" rendition="#bottomBraced">
+                            <hi rendition="#g">RAPPORTS A TOUTE LA MASSE DES PHANÉROGAMES.</hi>
+                        </cell>
+                        <cell rows="2">
+                            <hi rendition="#g">SIGNES</hi>
+                            <lb break="yes"/>indiquant la direction<lb break="yes"/>de l&#x2019;accroissement.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>ZONE ÉQUATORIALE;<lb break="yes"/>lat. 0° &#x2014; 10°.</cell>
+                        <cell>ZONE TEMPÉRÉE;<lb break="yes"/>lat. 45° &#x2014; 52°.</cell>
+                        <cell>ZONE GLACIALE;<lb break="yes"/>lat. 67° &#x2014; 70°.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Agames</hi> (Fougères, Lichens, Mousses, Champign.)</cell>
+                        <cell>Plaines.............. 1/15<lb break="yes"/>Montagnes........... 1/5 </cell>
+                        <cell rendition="#leftBraced">1/2</cell>
+                        <cell>1/1</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Fougères</hi> seules...........................</cell>
+                        <cell>Pays peu montueux ... 1/20<lb break="yes"/>Pays très-montueux. 1/3 à 1/8</cell>
+                        <cell rendition="#leftBraced">1/70</cell>
+                        <cell>1/25</cell>
+                        <cell>&#x2199;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Monocotylédonées</hi> ........................</cell>
+                        <cell>Ancien continent ...... 1/5<lb break="yes"/>Nouveau continent ..... 1/6</cell>
+                        <cell rendition="#leftBraced">1/4</cell>
+                        <cell>1/3</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Glumacées</hi> (Joncacées, Cypéracées, Graminées).</cell>
+                        <cell>1/11</cell>
+                        <cell>1/8</cell>
+                        <cell>1/4</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Joncacées</hi> seules...........................</cell>
+                        <cell>1/400</cell>
+                        <cell>1/90</cell>
+                        <cell>1/25</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Cypéracées</hi> seules..........................</cell>
+                        <cell>Ancien continent ..... 1/22<lb break="yes"/>Nouveau continent .... 1/50</cell>
+                        <cell rendition="#leftBraced">1/20</cell>
+                        <cell>1/9</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Graminées</hi> seules...........................</cell>
+                        <cell>1/14</cell>
+                        <cell>1/12</cell>
+                        <cell>1/10</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Composées</hi>................................</cell>
+                        <cell rendition="#rightBraced">Ancien continent ..... 1/18<lb break="yes" />Nouveau continent .... 1/12</cell>
+                        <cell>Ancien continent ... 1/8<lb break="yes"/>Nouveau continent.. 1/6</cell>
+                        <cell rendition="#leftBraced">1/13</cell>
+                        <cell>&#x2192; &#x2190;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Légumineuses</hi>.............................</cell>
+                        <cell>1/10</cell>
+                        <cell>1/18</cell>
+                        <cell>1/35</cell>
+                        <cell>&#x2199;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell rendition="#rightBraced">
+                            <hi rendition="#k">Rubiacées</hi> ................................</cell>
+                        <cell>Ancien continent ..... 1/14<lb break="yes"/>Nouveau continent .... 1/25</cell>
+                        <cell rendition="#leftBraced">1/60</cell>
+                        <cell>1/80</cell>
+                        <cell>&#x2199;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Euphorbiacées</hi> ............................</cell>
+                        <cell>1/52</cell>
+                        <cell>1/80</cell>
+                        <cell>1/500</cell>
+                        <cell>&#x2199;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Labiées</hi> ..................................</cell>
+                        <cell>1/40</cell>
+                        <cell>Amérique ........ 1/40<lb break="yes"/>Europe .......... 1/25</cell>
+                        <cell rendition="#leftBraced">1/70</cell>
+                        <cell>&#x2192; &#x2190;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Malvacées</hi> ...............................</cell>
+                        <cell>1/35</cell>
+                        <cell>1/200</cell>
+                        <cell>0</cell>
+                        <cell>&#x2199;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Éricinées</hi> et <hi rendition="#k">Rosages</hi> .......................</cell>
+                        <cell>1/130</cell>
+                        <cell>Europe .......... 1/100<lb break="yes"/>Amérique ....... 1/36</cell>
+                        <cell rendition="#leftBraced">1/25</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Amentacées</hi> ..............................</cell>
+                        <cell>1/800</cell>
+                        <cell>Europe .......... 1/45<lb break="yes"/>Amérique ........ 1/25</cell>
+                        <cell rendition="#leftBraced">1/20</cell>
+                        <cell>&#x2197;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Ombellifères</hi> .............................</cell>
+                        <cell>1/500</cell>
+                        <cell>1/40</cell>
+                        <cell>1/60</cell>
+                        <cell>&#x2192; &#x2190;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#k">Crucifères</hi> ...............................</cell>
+                        <cell>1/800</cell>
+                        <cell>Europe .......... 1/18<lb break="yes"/>Amérique ........ 1/60</cell>
+                        <cell rendition="#leftBraced">1/24</cell>
+                        <cell>&#x2192; &#x2190;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell cols="5">
+                            <hi rendition="#i">Explication des signes:</hi> &#x2197; le dénominateur de la fraction diminue de l&#x2019;équateur vers le pole nord; &#x2199; le dénominateur diminue du pole nord vers l&#x2019;équateur;<lb break="yes"/>&#x2192; &#x2190; le dénominateur diminue du pole nord et de l&#x2019;équateur vers la zone tempérée. (<hi rendition="#k" >Humboldt.</hi>)</cell>
+                    </row>
+                </table>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

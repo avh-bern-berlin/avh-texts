@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Notes de M. de Humboldt</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1014897157">
+                        <surname>Wernicke</surname>
+                        <forename>Norbert</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Strobl</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1826-Notes_de_M-1</bibl>
+                <bibl type="DM">1826-Notes_de_M-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Sur les lois que l’on observe dans la distribution des formes végétales ; par Alexandre de Humboldt.</title>
+                        <title level="m" type="main">Excursions dans les isles de Madère et de Porto-Santo, faites dans l’automne de 1823, pendant son troisième voyage en Afrique</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/124434657">
+                                <surname>Bowdich</surname>
+                                <forename>Thomas Edward</forename>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>F. G. Levrault</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">1826</date>
+                    </publicationStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.2.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="426" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>
+                    <hi rendition="#g">NOTES<lb break="yes"/>DE M. DE HUMBOLDT.</hi>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <hi rendition="#in">D</hi>ans</hi> la grande <hi rendition="#i">vallée longitudinale</hi> qui sépare les<lb break="yes"/>c&#x00F4;tes occidentales de l&#x2019;<placeName>Europe</placeName> et de l&#x2019;<placeName>Afrique</placeName> des c&#x00F4;tes<lb break="yes" />orientales du <placeName>Nouveau Continent</placeName>, et dont les angles<lb break="yes"/>rentrans et saillans se correspondent d&#x2019;une manière si<lb break="yes"/>frappante, s&#x2019;élèvent trois archipels et plusieurs &#x00EE;les<lb break="yes"/>sporadiques. Des éruptions par groupes, réunies autour<lb break="yes"/>d&#x2019;un volcan central, n&#x2019;ont eu lieu qu&#x2019;au nord de l&#x2019;é-<lb break="no"/>quateur: ce sont les trois <hi rendition="#i">systèmes volcaniques</hi> des <placeName>Isles<lb break="yes" />du Cap-Vert</placeName>, des <placeName>A&#x00E7;ores</placeName> et des <placeName>Canaries</placeName>, auxquelles<lb break="yes"/>appartiennent <placeName>Madère</placeName> et <placeName>Porto-Santo</placeName>. Au sud de l&#x2019;équa-<lb break="no"/>teur, et par conséquent au sud du plus grand rétrécisse-<lb break="no"/>ment de la vallée de l&#x2019;<placeName>Atlantique</placeName> (entre les <placeName>caps Saint-<lb break="maybe"/>Roch</placeName> et <placeName>Palmas</placeName>), se trouvent, comme perdues dans<lb break="yes"/>l&#x2019;immensité des mers, <placeName>Tristan d&#x2019;Acunha</placeName>, <placeName>Sainte-Hélène</placeName>
+                    <lb break="yes"/>et l&#x2019;<placeName>Ascension</placeName>. Les archipels volcaniques sont plus rap-<lb break="no"/>prochés des c&#x00F4;tes occidentales du bassin sur lequel<lb break="yes"/>nous jetons ici un coup d&#x2019;&#x0153;il général: aussi ces m&#x00EA;mes<lb break="yes"/>c&#x00F4;tes offrent en <placeName>Irlande</placeName>, en <placeName>Bretagne</placeName>
+                    <note place="foot" n="1">Courans du <placeName>port de Paimpol</placeName> et du passage de <placeName>Lezarderieux</placeName>, à<lb break="yes" />l&#x2019;est de <placeName>Treguier</placeName>, découverts par M. <persName ref="http://d-nb.info/gnd/">Reglé</persName>, et que j&#x2019;ai pu exa-<lb break="no"/>miner dans un voyage géognostique fait en 1825. Ces courans<lb break="yes"/>sortent immédiatement de roches granitiques (de transition?).</note>, en <placeName>Portugal</placeName>,<lb break="yes"/>
+                    <pb n="427" facs="#f0002"/> des terrains de basalte et d&#x2019;amygdalo&#x00EF;de poreuse; en<lb break="yes"/>
+                    <placeName>Afrique</placeName>, entre les cinquième et dixième degrés de lati-<lb break="no"/>tude boréale, des formations trachytiques <note place="foot" n="1">Le <placeName>Sugar Loaf</placeName> de <placeName>Sierra Leone</placeName> a, d&#x2019;après le capitaine Sa-<lb break="no" />bine, une hauteur de 2521 pieds anglais au-dessus du niveau de<lb break="yes"/>la mer. Est-il composé de granite? <bibl>
+                            <hi rendition="#i">Pendulum Experiments,</hi> 1825,<lb break="yes"/>
+                            <hi rendition="#i">p.</hi> 15</bibl>.</note>. Sur les<lb break="yes" />c&#x00F4;tes orientales de l&#x2019;<placeName>Atlantique</placeName>, au contraire, on n&#x2019;a<lb break="yes"/>découvert jusqu&#x2019;à présent aucune trace de trachyte dans<lb break="yes"/>les <placeName>Alleghanys</placeName>, aucune trace de trachyte et de basalte<lb break="yes"/>(à olivines) dans les montagnes du <placeName>Brésil</placeName> qui par leur<lb break="yes" />direction correspondent aux <placeName>Alleghanys</placeName>. C&#x2019;est autour<lb break="yes"/>du parallèle des <placeName>&#x00EE;les du Cap-Vert</placeName> (entre les onzième et<lb break="yes"/>vingt-deuxième degrés), que se trouve la région des<lb break="yes"/>grandes éruptions, soit dans la série des volcans des<lb break="yes"/>
+                    <placeName>Antilles orientales</placeName>, soit là où, dans le <placeName>Guatimala</placeName> et le<lb break="yes"/>
+                    <placeName>Mexique</placeName>, par l&#x2019;absence des basses terres de l&#x2019;est, la cha&#x00EE;ne<lb break="yes"/>occidentale de l&#x2019;<placeName>Amérique</placeName>, abondante à la fois en mé-<lb break="no"/>taux précieux, en roches pyrogènes très-anciennes et en<lb break="yes"/>communications permanentes entre l&#x2019;atmosphère et l&#x2019;in-<lb break="no"/>térieur de la terre, forme, sur une longueur de deux<lb break="yes"/>cent cinquante lieues marines, le bord occidental du<lb break="yes"/>bassin de l&#x2019;<placeName>Atlantique</placeName>. Il viendra un temps où le géo-<lb break="no"/>graphe, en prenant ce mot dans le sens qu&#x2019;on lui donne<lb break="yes"/>vulgairement, tirera de grands secours des progrès de<lb break="yes"/>la géognosie. L&#x2019;étendue et la forme des continens, leur<lb break="yes"/>
+                    <hi rendition="#i">hauteur moyenne</hi>, la direction des c&#x00F4;tes, celle des bassins<lb break="yes"/>et des <placeName>Cordillères</placeName>, sont des phénomènes intimement<lb break="yes"/>liés à la présence de certaines roches, à la distribution<lb break="yes"/>des <hi rendition="#i">formations</hi>, au mode d&#x2019;action exercée par les forces<lb break="yes"/>
+                    <pb n="428" facs="#f0003"/> élastiques qui, résidant à de grandes profondeurs, ont,<lb break="yes"/>depuis des siècles, soulevé, crevassé, ébranlé la cro&#x00FB;te<lb break="yes"/>oxidée de notre planète.</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">
+                        <placeName>Pic Ruivo</placeName>.</hi> &#x2014; Il n&#x2019;est pas sans intér&#x00EA;t pour le géo-<lb break="no"/>gnoste de conna&#x00EE;tre les rapports des points culminans<lb break="yes"/>dans les différens systèmes des &#x00EE;les volcaniques dissé-<lb break="no"/>minées dans le vaste bassin de l&#x2019;<placeName>Atlantique</placeName>. Ce que nous<lb break="yes" />savons jusqu&#x2019;ici sur cet objet, se réduit aux données<lb break="yes" />hypsométriques suivantes.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Archipel des Canaries</placeName>.</hi>
+                    <placeName>Pic de Ténériffe</placeName>, 1905<lb break="yes"/>toises. (<persName ref="http://d-nb.info/gnd/">Borda</persName>, mesure trigonométrique.)</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Archipel des A&#x00E7;ores</placeName>.</hi> La montagne centrale de l&#x2019;<placeName>&#x00EE;le<lb break="yes"/>Pico</placeName>, d&#x2019;après une mesure faite à la voile par le capi-<lb break="no"/>taine <persName ref="http://d-nb.info/gnd/">Cagigas</persName>, a plus de 1350 toises; d&#x2019;après <persName ref="http://d-nb.info/gnd/" >Tofin&#x0303;o</persName>,<lb break="yes"/>1260 toises; d&#x2019;après <persName ref="http://d-nb.info/gnd/">Ferrer</persName>, 1238 toises; d&#x2019;après<lb break="yes"/>
+                    <persName ref="http://d-nb.info/gnd/">Fleurieu</persName>, 1100 toises. Il y a plus de trente ans qu&#x2019;on<lb break="yes"/>se plaint inutilement de l&#x2019;incertitude de ces mesures,<lb break="yes"/>comme de celle du plus haut sommet des <placeName>&#x00EE;les Sandwich</placeName>!<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/">John Webster</persName>, dans son excellent ouvrage géognos-<lb break="no"/>tique, n&#x2019;a pu donner des mesures de hauteur.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Archipel du Cap-Vert</placeName>.</hi> Le volcan de <placeName>Fuego</placeName> a<lb break="yes"/>probablement plus de 1230 toises; car le <placeName>Pico de Sant-<lb break="maybe"/>Antonio</placeName>, sur l&#x2019;<placeName>&#x00EE;le Sant-Jago</placeName>, que l&#x2019;on regarde comme<lb break="yes"/>moins élevé, a, d&#x2019;après la mesure de M. Horsburgh,<lb break="yes"/>1157 toises.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Isle Saint-Thomas</placeName>.</hi> Pic basaltique, 1100 toises.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Isle d&#x2019;Ascension</placeName>.</hi> Le <placeName>Green-Mountain</placeName>, d&#x2019;après l&#x2019;é-<lb break="no"/>valuation approximative du capitaine Sabine (qui n&#x2019;a<lb break="yes"/>
+                    <pb n="429" facs="#f0004"/> pu monter que jusqu&#x2019;à la hauteur de 347 toises, ou à<lb break="yes"/>celle de Mountain-House), a 456 toises. Horsburgh<lb break="yes"/>trouve m&#x00EA;me 80 toises de moins.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Isle Sainte-Hélène</placeName>.</hi>
+                    <placeName>Diana Peak</placeName>, 420 toises, d&#x2019;après<lb break="yes" />Beatson.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#i">
+                        <placeName>Isle Tristan d&#x2019;Acunha</placeName>.</hi> Le point culminant a été<lb break="yes"/>évalué par différens navigateurs à 1200 ou 1500 toises<lb break="yes"/>de hauteur. Tel est la vogue qui règne encore sur la<lb break="yes"/>hauteur des montagnes volcaniques dans la partie des<lb break="yes"/>mers la plus fréquentée par des navigateurs instruits.</p>
+                <lb break="yes"/>
+                <p>Quant au petit groupe des <placeName>Madères</placeName> (<hi rendition="#i">
+                        <placeName>the Madeiras</placeName>
+                    </hi>),<lb break="yes"/>comme disent les géographes anglais, ce n&#x2019;est que dans<lb break="yes"/>ces derniers temps qu&#x2019;on s&#x2019;est occupé plus sérieuse-<lb break="no"/>ment de la mesure de leur <hi rendition="#i">point culminant</hi>, qui est<lb break="yes"/>le <placeName>Pic-Ruivo</placeName>. Ce sommet a été mesuré barométrique-<lb break="no"/>ment et trigonométriquement par M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> (p. 73&#x2014;<lb break="yes"/>76); à l&#x2019;aide seul du baromètre par le capitaine <persName ref="http://d-nb.info/gnd/">Sabine</persName>.<lb break="yes"/>Un des premiers géognostes parmi nos contemporains,<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/">Léopold de Buch</persName>, a fait un court séjour à <placeName>Madère</placeName>
+                    <lb break="yes"/>en se rendant aux <placeName>Canaries</placeName>. Il n&#x2019;a pu gravir à la cime<lb break="yes"/>m&#x00EA;me du <placeName>Ruivo</placeName>; mais il a porté les instrumens sur la<lb break="yes"/>
+                    <placeName>Cima de Torinhas</placeName>, et, comme ce sommet est bien cer-<lb break="no"/>tainement inférieur au <placeName>Pic-Ruivo</placeName>, la connaissance pré-<lb break="no"/>cise de son élévation peut jeter quelque lumière sur<lb break="yes"/>la discordance que l&#x2019;on observe entre les résultats pu-<lb break="no"/>bliés par MM. <persName ref="http://d-nb.info/gnd/" >Bowdich</persName> et <persName ref="http://d-nb.info/gnd/" >Sabine</persName>. La <bibl>
+                        <hi rendition="#i">Description<lb break="yes"/>physique des &#x00EE;les Canaries par M. <persName ref="http://d-nb.info/gnd/">de Buch</persName>
+                        </hi>
+                    </bibl>
+                    <note place="foot" n="1" xml:id="fn1-1" next="#fn1-2">
+                        <bibl>
+                            <hi rendition="#i">Physikalische Beschreibung der Canarischen Inseln</hi> (Berlin,<lb break="yes"/>1825)</bibl>; ouvrage de quatre cents pages in-4.°, qui renferme en six<lb break="yes"/>Mémoires la statistique de l&#x2019;<placeName>Archipel</placeName>, la discussion des phéno-</note> vient de<lb break="yes"/>
+                    <pb n="430" facs="#f0005"/> para&#x00EE;tre en allemand, et comme aucun extrait n&#x2019;en a<lb break="yes"/>encore été donné dans une traduction fran&#x00E7;aise, je<lb break="yes"/>vais insérer ici ce qui a rapport au <placeName>Pic-Ruivo</placeName> et à la<lb break="yes"/>
+                    <placeName>Cima de Torinhas</placeName>:</p>
+                <lb break="yes"/>
+                <p>&#x00AB;L&#x2019;<placeName>&#x00EE;le de Madère</placeName>, dit le baron <persName ref="http://d-nb.info/gnd/">de Buch</persName>, est encore<lb break="yes"/>&#x00AB;parée aujourd&#x2019;hui, malgré les effets du défrichement<lb break="yes"/>&#x00AB;et de la culture, de cette richesse et de cette beauté<lb break="yes"/>&#x00AB;de formes végétales que le Camo&#x00EB;ns a célébrées dans<lb break="yes"/>&#x00AB;le cinquième chant de la <hi rendition="#i">Lusiade</hi> avec tout le charme<lb break="yes" />&#x00AB;de l&#x2019;inspiration poétique. Nous quitt&#x00E2;mes le littoral,<lb break="yes"/>&#x00AB;M. <persName ref="http://d-nb.info/gnd/" >Smith</persName>
+                    <note place="foot" n="1">C&#x2019;est le botaniste norwégien qui, victime de son zèle, a péri<lb break="yes"/>dans la funeste expédition au <placeName>Rio-Congo</placeName>.</note> et moi, le 16 Avril 1815, pour exa-<lb break="no"/>&#x00AB;miner rapidement, autant que la saison le permet-<lb break="no"/>&#x00AB;tait, l&#x2019;influence de la hauteur sur la distribution des<lb break="yes"/>&#x00AB;plantes. Près de l&#x2019;église somptueuse de la <hi rendition="#i">Senhora<lb break="yes"/>&#x00AB;da Monte</hi>, d&#x2019;où l&#x2019;on jouit d&#x2019;une vue admirable,<lb break="yes"/>&#x00AB;le baromètre nous indiqua une hauteur de 296<lb break="yes"/>&#x00AB;toises au-dessus du niveau de la mer. Jusque là<lb break="yes"/>&#x00AB;s&#x2019;étendent les jardins; mais les formes africaines,<lb break="yes"/>&#x00AB;les palmiers, les euphorbes arborescentes, les agaves,<lb break="yes"/>
+                    <note place="foot" n="1" xml:id="fn1-2" prev="#fn1-1">mènes climatériques, le nivellement à l&#x2019;aide du baromètre, la<lb break="yes"/>flore et la géographie des plantes des <placeName>Canaries</placeName>, la description géo-<lb break="no"/>gnostique de <placeName>Ténériffe</placeName>, de <placeName>Gran-Canaria</placeName>, de <placeName>Palma</placeName>, <placeName>Lancerote</placeName> et<lb break="yes"/>
+                        <placeName>Fuertaventura</placeName>, des recherches sur les causes des phénomènes vol-<lb break="no"/>caniques dans les <placeName>&#x00EE;les Canaries</placeName>, et sur la distribution des volcans sur<lb break="yes"/>la surface du globe en général. L&#x2019;<hi rendition="#i">
+                            <bibl>Atlas</bibl>
+                        </hi> (in-folio) qui accompagne<lb break="yes"/>ce grand ouvrage, offre les cartes physiques de <placeName>Palma</placeName>, <placeName>Lancerote</placeName>,<lb break="yes"/>
+                        <placeName>Ténériffe</placeName> et <placeName>Gran-Canaria</placeName> (les deux dernières ne sont point en-<lb break="no"/>core terminées), les profils géognostiques et les vues pittoresques<lb break="yes"/>des <hi rendition="#i">cratères de soulèvement</hi> de <placeName>Palma</placeName>, de <placeName>Ténériffe</placeName>, de <placeName>Santorin</placeName>,<lb break="yes"/>de <placeName>Barren Island</placeName> (dans le <placeName>golfe de Bengale</placeName>), et des <placeName>Moluques</placeName>.</note>
+                    <lb break="yes"/>
+                    <pb n="431" facs="#f0006"/> &#x00AB;le <hi rendition="#i">Cacalia Kleinii</hi> et les <hi rendition="#i">opuntia</hi>, nous avaient déjà<lb break="yes" />&#x00AB;quitté à 168 toises de hauteur. Après avoir gravi<lb break="yes" />&#x00AB;sur une pente assez rapide pendant une heure, nous<lb break="yes" />&#x00AB;atteign&#x00EE;mes le rocher qui domine, pour ainsi dire,<lb break="yes"/>&#x00AB;la ville de <placeName>Funchal</placeName>, et dont nous trouv&#x00E2;mes l&#x2019;élé-<lb break="no"/>&#x00AB;vation absolue de 606 toises. Derrière ce rocher<lb break="yes"/>&#x00AB;nous entr&#x00E2;mes bient&#x00F4;t dans une belle for&#x00EA;t de <hi rendition="#i">Lau-<lb break="no"/>&#x00AB;rus indica</hi>, dont le bois égale presque en beauté<lb break="yes"/>&#x00AB;l&#x2019;acajou du <placeName>Nouveau Continent</placeName>. Au <hi rendition="#i">Laurus indica</hi> se<lb break="yes"/>&#x00AB;m&#x00EA;laient deux autres espèces, le <hi rendition="#i">Laurus nobilis</hi> et<lb break="yes"/>&#x00AB;le <hi rendition="#i">Laurus til</hi>, ou <hi rendition="#i">f&#x0153;tens</hi>. Le tronc de ce dernier ré-<lb break="no"/>&#x00AB;pand, lorsqu&#x2019;il est entamé par la hache, une odeur<lb break="yes"/>&#x00AB;si forte et si nauséabonde, que, pour abattre un<lb break="yes"/>&#x00AB;arbre de moyenne grandeur, il faut s&#x2019;éloigner à plu-<lb break="no"/>&#x00AB;sieurs reprises, et employer plus d&#x2019;un jour. De<lb break="yes"/>&#x00AB;hautes bruyères, l&#x2019;<hi rendition="#i">Erica scoparia</hi> et l&#x2019;<hi rendition="#i">Erica arborea</hi>,<lb break="yes"/>&#x00AB;commencèrent à se montrer non loin d&#x2019;une cascade,<lb break="yes"/>&#x00AB;où se sépare le chemin qui conduit à <placeName>Sainte-Anne</placeName>,<lb break="yes"/>&#x00AB;village situé sur la c&#x00F4;te septentrionale de l&#x2019;&#x00EE;le. A une<lb break="yes" />&#x00AB;heure nous atteign&#x00EE;mes la hauteur de 694 toises,<lb break="yes" />&#x00AB;et du point où nous ouvr&#x00EE;mes le baromètre, nous<lb break="yes" />&#x00AB;aper&#x00E7;umes, à travers un brouillard épais, un vallon<lb break="yes"/>&#x00AB;ombragé; c&#x2019;était le <placeName>Val Ganana</placeName>. Nous nous appro-<lb break="no"/>&#x00AB;ch&#x00E2;mes de ce lieu charmant, et nous reconn&#x00FB;mes avec<lb break="yes" />&#x00AB;surprise que ce qui nous paraissait de loin le <hi rendition="#i" >Vac-<lb break="no"/>&#x00AB;cinium myrtillus</hi> de l&#x2019;<placeName>Europe</placeName>, devenu arborescent,<lb break="yes" />&#x00AB;était le <hi rendition="#i">Vaccinium arctystaphyllos</hi> chargé de fleurs.<lb break="yes"/>&#x00AB;Plusieurs de ces arbrisseaux avaient 16 ou 20 pieds<lb break="yes"/>&#x00AB;de hauteur. A une élévation de 795 toises nous<lb break="yes"/>&#x00AB;trouv&#x00E2;mes le dernier tronc de <hi rendition="#i">Laurus nobilis</hi>, cou-<lb break="no"/>
+                    <pb n="432" facs="#f0007"/> &#x00AB;vert de mousse, et tellement rabougri, qu&#x2019;on pou-<lb break="no"/>&#x00AB;vait croire que cet arbre avait atteint la limite supé-<lb break="no"/>&#x00AB;rieure de sa végétation. Plus bas, dans une vallée,<lb break="yes"/>&#x00AB;se montraient des <hi rendition="#i">Erica arborea</hi> de 30 pieds de haut<lb break="yes"/>&#x00AB;et 6 pieds de circonférence. Après avoir cheminé en-<lb break="no"/>&#x00AB;core une demi-lieue, nous rencontr&#x00E2;mes une source<lb break="yes" />&#x00AB;très-abondante sortant d&#x2019;un rocher, et sa tempéra-<lb break="no"/>&#x00AB;ture était de 7°,2 du thermomètre centigrade. Les<lb break="yes"/>&#x00AB;monticules au-dessus de la source n&#x2019;étaient point cou-<lb break="no"/>&#x00AB;verts de neige; ils se trouvent à 808 toises de hauteur.<lb break="yes"/>&#x00AB;Le <hi rendition="#i">Vaccinium arctystaphyllos</hi>, devenu très-bas, ne<lb break="yes"/>&#x00AB;montait pas jusque dans cette région alpine. Nous<lb break="yes"/>&#x00AB;étions enveloppés d&#x2019;un brouillard tellement épais,<lb break="yes"/>&#x00AB;que nous ne p&#x00FB;mes voir à deux pas de nous. Nous sui-<lb break="no" />&#x00AB;v&#x00EE;mes une ar&#x00EA;te environnée de précipices très-pro-<lb break="no"/>&#x00AB;fonds, et aussi loin que se prolongeait cette ar&#x00EA;te, nous<lb break="yes"/>&#x00AB;étions s&#x00FB;rs de notre direction. Au bord de la première<lb break="yes"/>&#x00AB;neige, le baromètre indiquait une hauteur de 858<lb break="yes"/>&#x00AB;toises. L&#x2019;ar&#x00EA;te rocheuse, dirigée jusqu&#x2019;ici de l&#x2019;est à<lb break="yes"/>&#x00AB;l&#x2019;ouest, tourna brusquement vers le sud, en s&#x2019;élar-<lb break="no"/>&#x00AB;gissant dans une espèce de promontoire. Nous étions<lb break="yes"/>&#x00AB;environnés de neiges de toutes parts. Une pyramide<lb break="yes"/>&#x00AB;élevée par la main de l&#x2019;homme nous rappelait que<lb break="yes"/>&#x00AB;nous avions atteint le plus haut sommet, la <placeName>Cima<lb break="yes"/>&#x00AB;de Torinhas</placeName>. Il était quatre heures après midi. (Ba-<lb break="no"/>&#x00AB;romètre supérieur, 22 pouces 10,1 lignes; therm.<lb break="yes"/>&#x00AB;du baromètre, 10° cent.; therm. à l&#x2019;air, 10°; barom.<lb break="yes"/>&#x00AB;inférieur, 40 pieds au-dessus du niveau de la mer,<lb break="yes"/>&#x00AB;28 pouces 2,82 lignes; therm. du bar., 18°; therm.<lb break="yes"/>&#x00AB;à l&#x2019;air, 18.°) La hauteur du sommet était donc, d&#x2019;a-<lb break="no"/>
+                    <pb n="433" facs="#f0008"/> &#x00AB;près notre mesure barométrique, de 914 toises. Ce ré-<lb break="no"/>&#x00AB;sultat nous frappa beaucoup. Nous ne cr&#x00FB;mes pas &#x00EA;tre<lb break="yes"/>&#x00AB;montés si haut, nous avions révoqué m&#x00EA;me en doute<lb break="yes"/>&#x00AB;que l&#x2019;on p&#x00FB;t monter si haut dans l&#x2019;<placeName>&#x00EE;le de Madère</placeName>; car<lb break="yes"/>&#x00AB;l&#x2019;élévation que l&#x2019;on avait attribué jusqu&#x2019;ici au <placeName>Pic-Rui-<lb break="no" />&#x00AB;vo</placeName>, indubitablement supérieure à l&#x2019;élévation des <placeName>To-<lb break="no"/>&#x00AB;rinhas</placeName>, n&#x2019;atteignait pas 914 toises. <persName ref="http://d-nb.info/gnd/">Thomas Heberden</persName>
+                    <lb break="yes"/>&#x00AB;(frère du physicien <persName ref="http://d-nb.info/gnd/">William Heberden</persName>, qui a fait des<lb break="yes"/>&#x00AB;expériences curieuses sur les quantités de pluies re-<lb break="no"/>&#x00AB;cueillies à diverses hauteurs) ne donne au <placeName>Pic-Ruivo</placeName>,<lb break="yes"/>&#x00AB;d&#x2019;après la formule de <persName ref="http://d-nb.info/gnd/">Deluc</persName>, que 804 toises; mais<lb break="yes"/>&#x00AB;<persName ref="http://d-nb.info/gnd/" >Thomas Heberden</persName> ne dit pas quels étaient les voya-<lb break="no" />&#x00AB;geurs anglais qui portèrent le baromètre au sommet<lb break="yes" />&#x00AB;du <placeName>Ruivo</placeName>. Il publia le résultat de son calcul, et non<lb break="yes"/>&#x00AB;la hauteur de la colonne de mercure. (<bibl>
+                        <hi rendition="#i">Phil. Trans.,<lb break="yes"/>&#x00AB;t. LV,</hi> p. 126</bibl>.) Deux observateurs plus récens ont<lb break="yes" />&#x00AB;plut&#x00F4;t augmenté que diminué les doutes. Le savant<lb break="yes"/>&#x00AB;astronome, capitaine <persName ref="http://d-nb.info/gnd/">Sabine</persName>, vit le baromètre à la cime<lb break="yes"/>&#x00AB;du <placeName>Pic-Ruivo</placeName> à 23 pouces 4,54 lignes (th. 1°,8 R.),<lb break="yes"/>&#x00AB;tandis que cet instrument était à <placeName>Funchal</placeName> (à 7<formula notation="TeX" >\frac{1}{2}</formula> pieds<lb break="yes"/>&#x00AB;au-dessus du niveau de la mer) à 28 pouces 6,33<lb break="yes"/>&#x00AB;lignes (th. 13°,2 R.), d&#x2019;où résulte l&#x2019;élévation de 835<lb break="yes"/>&#x00AB;toises (<bibl>
+                        <hi rendition="#i">Journal of the Royal Institut, n.° XXIX,<lb break="yes" />&#x00AB;p.</hi> 69</bibl>). M. <persName ref="http://d-nb.info/gnd/" >Bowdich</persName> trouva le baromètre supérieur<lb break="yes"/>&#x00AB;22 pouces 10,7 lignes (th. 7°5 R.), et le baromètre<lb break="yes" />&#x00AB;inférieur (à 145 pieds de hauteur) 28 pouces 5,6<lb break="yes" />&#x00AB;lignes (th. 16° 4 R.), d&#x2019;où résulte que le <placeName>Pic-Ruivo</placeName>
+                    <lb break="yes"/>&#x00AB;est de 965 toises au-dessus du niveau de la mer, et<lb break="yes"/>&#x00AB;de 50 <formula notation="TeX">\frac{1}{2}</formula> toises plus élevé que la <placeName>Cima de Torinhas</placeName>,<lb break="yes" />&#x00AB;d&#x2019;après ma mesure. (<bibl>
+                        <hi rendition="#i">
+                            <persName ref="http://d-nb.info/gnd/">Brewster</persName>, Edinb. Journ., n.°</hi>
+                        <lb break="yes"/>
+                        <pb n="434" facs="#f0009"/> &#x00AB;<hi rendition="#i">XVIII, page</hi> 317.</bibl>) Je pense que le résultat de<lb break="yes"/>&#x00AB;M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> mérite la préférence, parce qu&#x2019;on ne<lb break="yes"/>&#x00AB;peut révoquer en doute que la <placeName>Cima de Torinhas</placeName> est<lb break="yes"/>&#x00AB;moins élevée que le <placeName>Pico-Ruivo</placeName>, et parce que, dans<lb break="yes"/>&#x00AB;la série continue de mes hauteurs barométriques,<lb break="yes"/>&#x00AB;rien ne fait soup&#x00E7;onner une erreur d&#x2019;observation.&#x00BB;</p>
+                <lb break="yes"/>
+                <p>Comme les résultats récemment publiés par le capi-<lb break="no"/>taine <persName ref="http://d-nb.info/gnd/">Sabine</persName> diffèrent un peu de la mesure rapportée<lb break="yes"/>dans l&#x2019;ouvrage de M. <persName ref="http://d-nb.info/gnd/">de Buch</persName>, je les consigne ici en<lb break="yes"/>pieds anglais: <placeName>jardin do Serra</placeName>, maison du consul an-<lb break="no"/>glais, M. <persName ref="http://d-nb.info/gnd/" >Veitch</persName>, 2782 pieds anglais; source du <placeName>Corral<lb break="yes"/>de Freiras</placeName>, 4454 pieds; <placeName>Pico-Ruivo</placeName>, 5438 pieds ou<lb break="yes"/>850 toises. Dans <persName ref="http://d-nb.info/gnd/">Smith</persName>, <bibl>
+                        <hi rendition="#i">Tour of the Continent, vol. I,<lb break="yes"/>p.</hi> 200</bibl>, et dans les <bibl>
+                        <hi rendition="#i">Irish Trans., vol. VIII, p.</hi> 123</bibl>,<lb break="yes"/>le <placeName>Pic-Ruivo</placeName> n&#x2019;était m&#x00EA;me indiqué qu&#x2019;à 5162 pieds an-<lb break="no"/>glais, ou 807 toises de hauteur. Il résulte de l&#x2019;ensemble<lb break="yes"/>de ces données, que, d&#x2019;après les mesures barométriques<lb break="yes"/>et trigonométriques de M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName>, telles que ce voya-<lb break="no"/>geur les a marquées dans son journal, le sommet du <placeName>Pic-<lb break="maybe"/>Ruivo</placeName> oscille entre 963 et 985 toises; que, d&#x2019;après le<lb break="yes"/>capitaine <persName ref="http://d-nb.info/gnd/">Sabine</persName>, il est de 835 ou 850 toises, et que,<lb break="yes"/>d&#x2019;après la mesure de la <placeName>Cima de Torinhas</placeName> par M. <persName ref="http://d-nb.info/gnd/">de Buch</persName>,<lb break="yes"/>il doit &#x00EA;tre pour le moins au-dessus de 914 toises. Les<lb break="yes"/>voyageurs qui donnent peu d&#x2019;élévation au <placeName>Pico-Ruivo</placeName>,<lb break="yes"/>auraient-ils cru, par un temps brumeux, avoir atteint le<lb break="yes"/>point culminant de <placeName>Madère</placeName>, lorsqu&#x2019;ils n&#x2019;avaient porté<lb break="yes"/>leurs baromètres que sur un rocher voisin et moins élevé?</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Calcaire de <placeName>Madère</placeName> et roches antérieures aux<lb break="yes"/>laves.</hi> &#x2014; La découverte d&#x2019;une masse calcaire de plus<lb break="yes"/>de 700 pieds d&#x2019;épaisseur, près de <placeName>Saint-Vincent</placeName>, dans<lb break="yes"/>
+                    <pb n="435" facs="#f0010"/> une &#x00EE;le toute volcanique, est un des faits les plus cu-<lb break="no"/>rieux que les géognostes doivent au zèle infatigable de<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/" >Bowdich</persName>. Ce calcaire blanch&#x00E2;tre et un peu grenu<lb break="yes"/>n&#x2019;offre, à ce qu&#x2019;il me para&#x00EE;t, pas des caractères bien<lb break="yes"/>décisifs d&#x2019;une formation de transition. Quoique dé-<lb break="no"/>pourvu de pétrifications (peut-&#x00EA;tre parce qu&#x2019;il est de-<lb break="no"/>venu grenu par une cause extérieure), il semble &#x00EA;tre<lb break="yes"/>du m&#x00EA;me &#x00E2;ge avec celui de <placeName>Porto-Santo</placeName>, mais plus<lb break="yes"/>ancien que les calcaires de <placeName>Lancerote</placeName> et de <placeName>Fuertaven-<lb break="no"/>tura</placeName>, observés par MM. <persName ref="http://d-nb.info/gnd/">de Buch</persName> et <persName ref="http://d-nb.info/gnd/">Escolar</persName>. Le premier<lb break="yes" />de ces voyageurs a trouvé, dans une petite formation<lb break="yes"/>calcaire de <placeName>Lancerote</placeName>, entre le c&#x00F4;ne de <placeName>Tayhe</placeName> et <placeName>Te-<lb break="no" />guize</placeName>, une véritable couche oolithique très-semblable<lb break="yes"/>aux oolithes du <placeName>Jura</placeName>, quoique la masse entière appar-<lb break="no"/>tienne bien évidemment aux terrains tertiaires. <placeName>Fuerta-<lb break="no"/>ventura</placeName> a un calcaire d&#x2019;un aspect terreux, sans pétrifi-<lb break="no"/>cations, près de <placeName>Majada Manca</placeName>. Des formations locales<lb break="yes" />de ce genre, m&#x00EA;lées de gypses lamelleux et d&#x2019;argile, se<lb break="yes"/>trouvent dans les tufs volcaniques de <placeName>Quito</placeName> et du <placeName>pla-<lb break="no"/>teau mexicain</placeName>.</p>
+                <lb break="yes"/>
+                <p>M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> fait mention de lambeaux de roches<lb break="yes"/>primitives découvertes, soit en place, soit en blocs,<lb break="yes"/>dans l&#x2019;<placeName>archipel des Canaries</placeName>. Nous donnerons ici, d&#x2019;a-<lb break="no"/>près l&#x2019;ouvrage le plus récent de M. <persName ref="http://d-nb.info/gnd/">de Buch</persName>, des<lb break="yes"/>renseignemens précis sur ce phénomène, le plus im-<lb break="no"/>portant de ceux que présentent des &#x00EE;les volcaniques.<lb break="yes"/>&#x00AB;A l&#x2019;extrémité sud-ouest de l&#x2019;<placeName>&#x00EE;le de Fuertaventura</placeName>,<lb break="yes" />&#x00AB;la ville de <placeName>Santa-Maria de Betancuria</placeName> est entou-<lb break="no"/>&#x00AB;rée de collines très-basses, composées en partie<lb break="yes"/>&#x00AB;d&#x2019;une roche grenue d&#x2019;amphibole et de feldspath<lb break="yes"/>
+                    <pb n="436" facs="#f0011"/> &#x00AB;blanc. On croirait cette roche amphibolique dépen-<lb break="no"/>&#x00AB;dante d&#x2019;une formation de micaschiste. D&#x2019;autres<lb break="yes"/>&#x00AB;parties de ces collines offrent des masses de mica et<lb break="yes"/>&#x00AB;de feldspath dépourvues de quarz, entièrement ana-<lb break="no"/>&#x00AB;logues aux roches appelées primitives. A l&#x2019;<placeName>&#x00EE;le de Pal-<lb break="no" />&#x00AB;ma</placeName>, l&#x2019;immense <hi rendition="#i">cratère de soulèvement,</hi>
+                    <placeName>la Caldera</placeName>,<lb break="yes"/>&#x00AB;offre des phénomènes tout semblables. Lorsqu&#x2019;on<lb break="yes"/>&#x00AB;descend d&#x2019;<placeName>Argual</placeName>, dont la hauteur absolue est de<lb break="yes"/>&#x00AB;150 toises, le long d&#x2019;une cr&#x00EA;te basaltique, on ren-<lb break="no"/>&#x00AB;contre des blocs dont l&#x2019;aspect frappe l&#x2019;imagination,<lb break="yes"/>&#x00AB;comme s&#x2019;ils appartenaient à un monde inconnu.<lb break="yes"/>&#x00AB;On se croit transporté au <placeName>Saint-Gothard</placeName>, au centre<lb break="yes"/>&#x00AB;des <placeName>Alpes de la Suisse</placeName>. Ces blocs, d&#x2019;une grandeur<lb break="yes"/>&#x00AB;énorme, sont composés tant&#x00F4;t d&#x2019;un mélange d&#x2019;am-<lb break="no"/>&#x00AB;phibole noire en longs cristaux, de feldspath blanc<lb break="yes"/>&#x00AB;non altéré, et de petits feuillets de mica avec traces<lb break="yes"/>&#x00AB;de pyrites; tant&#x00F4;t de vrai micachiste; tant&#x00F4;t d&#x2019;un<lb break="yes"/>&#x00AB;beau granite, renfermant du feldspath jaun&#x00E2;tre à gros<lb break="yes" />&#x00AB;grains, du mica noir et un peu de quarz. D&#x2019;autres<lb break="yes"/>&#x00AB;masses semblent appartenir à des formations syéni-<lb break="no"/>&#x00AB;tiques. Tous ces blocs sont sortis, à n&#x2019;en pas dou-<lb break="no"/>&#x00AB;ter, de la <placeName>Caldera</placeName> m&#x00EA;me.</p>
+                <lb break="yes"/>
+                <p>&#x00AB;Les contours du <placeName>Baranco</placeName> présentent une consti-<lb break="no"/>&#x00AB;tution géognostique commune à toutes les &#x00EE;les ba-<lb break="no"/>&#x00AB;saltiques. Les strates inférieurs, ceux qui s&#x2019;étendent<lb break="yes"/>&#x00AB;vers la c&#x00F4;te, sont du vrai basalte noir avec beau-<lb break="no"/>&#x00AB;coup d&#x2019;olivine, avec des cristaux de pyroxène et<lb break="yes"/>&#x00AB;de la mésotype. Au-dessus se montrent, à plu-<lb break="no"/>&#x00AB;sieurs centaines de pieds d&#x2019;épaisseur, des dép&#x00F4;ts de<lb break="yes"/>&#x00AB;masses désagrégées. Les fragmens de basalte qu&#x2019;on<lb break="yes"/>
+                    <pb n="437" facs="#f0012"/> &#x00AB;y trouve, renferment de l&#x2019;amphibole. Des blocs<lb break="yes"/>&#x00AB;de roches primitives ne se découvrent nulle part<lb break="yes"/>&#x00AB;parmi ces dép&#x00F4;ts de débris rocheux. Des filons sans<lb break="yes"/>&#x00AB;nombre traversent à la fois les couches de tuf brun,<lb break="yes"/>&#x00AB;les débris basaltiques et le basalte m&#x00EA;me, qui forme<lb break="yes"/>&#x00AB;la base de tout ce terrain désagrégé. Ces filons sont<lb break="yes"/>&#x00AB;composés de basalte pyroxénique transversalement<lb break="yes"/>&#x00AB;fendillé en prismes. Ils sont tellement rapprochés les<lb break="yes"/>&#x00AB;uns des autres, formant une sorte de réseau, qu&#x2019;à leur<lb break="yes"/>&#x00AB;aspect on con&#x00E7;oit comment les roches les plus an-<lb break="no"/>&#x00AB;ciennes, crevassées d&#x2019;une manière semblable, ont pu<lb break="yes"/>&#x00AB;offrir jadis les élémens qui constituent les conglomé-<lb break="no"/>&#x00AB;rats, les grés, et toutes ces roches fragmentaires dont<lb break="yes"/>&#x00AB;abondent les terrains secondaires et de transition.<lb break="yes"/>&#x00AB;On ne distingue plus, en avan&#x00E7;ant vers l&#x2019;<placeName>Agua buena</placeName>,<lb break="yes"/>&#x00AB;le basalte en nappes et les couches de débris. Il est<lb break="yes"/>&#x00AB;difficile de reconna&#x00EE;tre ce qui se trouve entre les<lb break="yes"/>&#x00AB;filons ou ce que ces filons ont laissé intact. Le plus<lb break="yes"/>&#x00AB;souvent on trouve une masse grenue de diorite,<lb break="yes"/>&#x00AB;composée d&#x2019;amphibole noire et de feldspath blanc,<lb break="yes"/>&#x00AB;à éclat nacré; on dirait d&#x2019;une couche, comme on<lb break="yes"/>&#x00AB;en rencontre souvent dans le gneiss des <placeName>Alpes</placeName>. De<lb break="yes"/>&#x00AB;petits cristaux de pyrites remplissent la roche de<lb break="yes"/>&#x00AB;diorite. Plus loin suit une énorme masse de trachyte<lb break="yes"/>&#x00AB;à petites <hi rendition="#i">druses</hi> de chabasie, de carbonate de chaux,<lb break="yes"/>&#x00AB;de grenat rouge <note place="foot" n="1">J&#x2019;ai également reconnu du grenat dans les trachytes noirs<lb break="yes"/>du <placeName>Yana-Urcu</placeName>, petit volcan, adossé au <placeName>Chimborazo</placeName> près de<lb break="yes"/>
+                        <placeName>Calpi</placeName>. Les grenats du terrain trachytique d&#x2019;<placeName>Hongrie</placeName> se trouvent<lb break="yes"/>dans des perlites litho&#x00EF;des.</note> et d&#x2019;épidote cristallisé. Cette der-<lb break="no"/>
+                    <pb n="438" facs="#f0013"/> &#x00AB;nière substance teint quelquefois en vert la roche<lb break="yes"/>&#x00AB;entière. On ne saurait douter que des filons ont<lb break="yes"/>&#x00AB;traversé, fendillé, bouleversé ici des formations pri-<lb break="no"/>&#x00AB;mitives; mais le véritable g&#x00EE;te de ces formations<lb break="yes"/>&#x00AB;reste caché dans la profondeur, peut-&#x00EA;tre à une dis-<lb break="no"/>&#x00AB;tance peu considérable. Pendant une lieue, on voit<lb break="yes"/>&#x00AB;dispara&#x00EE;tre les couches basaltiques; tout rappelle<lb break="yes"/>&#x00AB;au voyageur qu&#x2019;il marche sur un terrain d&#x2019;une autre<lb break="yes" />&#x00AB;nature. A <placeName>Gran-Canaria</placeName>, en descendant de la <placeName>Cal-<lb break="no"/>&#x00AB;dera de Tiraxana</placeName>, vers l&#x2019;ouest, à <placeName>Texeda</placeName>, on trouve<lb break="yes" />&#x00AB;les ravins bordés de roches compactes, à angles<lb break="yes" />&#x00AB;aigus, se séparant en blocs d&#x2019;un volume immense.<lb break="yes" />&#x00AB;Ce n&#x2019;est pas un vrai trachyte: c&#x2019;est un porphyre<lb break="yes"/>&#x00AB;feldspathique, une masse de feldspath à très-petits<lb break="yes"/>&#x00AB;grains, qui enveloppe de grands cristaux de la m&#x00EA;me<lb break="yes"/>&#x00AB;substance. Ces cristaux ont conservé leur éclat na-<lb break="no"/>&#x00AB;cré primitif.&#x00BB; (<bibl>
+                        <hi rendition="#i">
+                            <persName ref="http://d-nb.info/gnd/">Leopold von Buch</persName>, phys. Beschr.<lb break="yes"/>der Canar. Inseln, p.</hi> 277, 289, 291, 318.</bibl>)</p>
+                <lb break="yes"/>
+                <p>Cette réunion de granites quarzifères, de mica-<lb break="no"/>schistes, de syénites, de diorites et de porphyres à<lb break="yes"/>feldspath commun nacré, avec des trachytes granati-<lb break="no"/>fères, teint en vert par de l&#x2019;épidote et avec des roches<lb break="yes"/>pyroxéniques, explique jusqu&#x2019;à un certain point les<lb break="yes"/>phénomènes géognostiques des <placeName>Andes</placeName>, la liaison in-<lb break="no"/>time que j&#x2019;ai observée dans le <placeName>Nouveau Continent</placeName> entre<lb break="yes"/>le terrain de granite, de micaschiste et d&#x2019;euphotide<lb break="yes"/>de transition, le terrain argentifère de porphyre et<lb break="yes"/>de syénite, et le terrain de trachyte. <note place="foot" n="1">
+                        <bibl>Voyez mon Essai géognostique sur le gisement des roches,<lb break="yes"/>1823; p. 111, 127, 131-136, 142, 172, 182-187, 201, 329, 357</bibl>.</note> Dans les <placeName>Cor-<lb break="no"/>
+                        <pb n="439" facs="#f0014"/> dillères de la Nouvelle-Grenade</placeName>, les trachytes du<lb break="yes"/>volcan éteint de <placeName>Tolima</placeName> semblent sortir d&#x2019;un granite<lb break="yes"/>postérieur au gneiss primitif. Une formation indépen-<lb break="no"/>dante de micaschiste atteint l&#x2019;épaisseur de plus de 600<lb break="yes"/>toises dans la montagne de <placeName>Quindiu</placeName>. Lorsqu&#x2019;on avance<lb break="yes"/>de là vers le sud, on voit, à l&#x2019;<placeName>Alto del Roble</placeName>, le trachyte<lb break="yes"/>des Volcans encore br&#x00FB;lans de <placeName>Popayan</placeName> recouvrir ce<lb break="yes"/>m&#x00EA;me micaschiste. En montant au volcan de <placeName>Purace</placeName>
+                    <lb break="yes"/>jusqu&#x2019;à 2274 toises de hauteur, j&#x2019;ai trouvé, près de la<lb break="yes"/>ferme de <placeName>Santa-Barbara</placeName>, le trachyte semivitreux du<lb break="yes"/>volcan appuyé sur une syénite porphyrique, renfermant<lb break="yes"/>du feldspath commun à éclat nacré. Cette syénite est<lb break="yes"/>indubitablement superposée sur un granite de transi-<lb break="no"/>tion abondant en mica. Au pied du Volcan de <placeName>Tun-<lb break="no"/>guragua</placeName>, sur le <placeName>plateau de Quito</placeName>, j&#x2019;ai observé, près<lb break="yes"/>du pont de cordage de <placeName>Penipe</placeName>, au bord du <placeName>Rio Puela</placeName>,<lb break="yes"/>sous des trachytes noirs semivitreux et souvent colon-<lb break="no"/>naires, un micaschiste verd&#x00E2;tre, à surface striée et<lb break="yes"/>soyeuse, renfermant des grenats, et entièrement sem-<lb break="no"/>blables aux micaschistes grenatifères des terrains vul-<lb break="no"/>gairement appelés primitifs. Cette roche repose im-<lb break="no"/>médiatement sur un granite syénitique composé de<lb break="yes" />beaucoup de feldspath verd&#x00E2;tre, lamelleux, et à gros<lb break="yes" />grains, de peu de quarz blanc, de tables hexagones de<lb break="yes"/>mica noir, et de quelques cristaux effilés d&#x2019;amphibole.<lb break="yes"/>La cassure de ce granite offre un aspect stéatiteux, et<lb break="yes"/>prend au souffle une teinte vert d&#x2019;asperge. On ne sau-<lb break="no"/>rait révoquer en doute que les roches de <placeName>Penipe</placeName>, qui<lb break="yes"/>appartiennent peut-&#x00EA;tre au terrain de transition, sont<lb break="yes"/>en place; qu&#x2019;elles viennent au jour sous un véritable<lb break="yes"/>
+                    <pb n="440" facs="#f0015"/> trachyte grenu, et non sous une roche fragmentaire:<lb break="yes"/>cependant il est impossible de décider, sans avoir percé<lb break="yes"/>une galerie dans le flanc du volcan encore enflammé<lb break="yes"/>du <placeName>Tunguragua</placeName>, si le trachyte de ce volcan, que j&#x2019;ai<lb break="yes"/>suivi jusqu&#x2019;au point où il est recouvert par une coulée<lb break="yes"/>basaltique à la <placeName>Cuchilla de Guandisava</placeName>, est superposé<lb break="yes" />au micaschiste de <placeName>Penipe</placeName>, sur une grande étendue, à<lb break="yes"/>la manière dont deux roches primitives ou secondaires<lb break="yes"/>sont généralement superposées l&#x2019;une à l&#x2019;autre, ou si<lb break="yes"/>le trachyte de <placeName>Tunguragua</placeName>, en brisant les roches plus<lb break="yes"/>anciennes, et, en s&#x2019;élevant perpendiculairement, s&#x2019;est<lb break="yes"/>simplement incliné sur le micaschiste adjacent. Au mi-<lb break="no"/>lieu des laves litho&#x00EF;des vomies par le Volcan de <placeName>Jorullo</placeName>,<lb break="yes"/>au <placeName>Mexique</placeName>, j&#x2019;ai trouvé ench&#x00E2;ssés des fragmens angu-<lb break="no"/>leux, blancs ou blanc-verd&#x00E2;tres de syénites composées<lb break="yes"/>de peu d&#x2019;amphibole et de beaucoup de feldspath la-<lb break="no"/>melleux. Là où ces masses de syénites ont été crevas-<lb break="no"/>sées par la chaleur, le feldspath est devenu filandreux,<lb break="yes"/>de sorte que les bords de la fente sont réunis dans<lb break="yes"/>quelques endroits par les fibres alongés de la masse.<lb break="yes"/>D&#x2019;un autre c&#x00F4;té, un trachyte abondant en pyroxène<lb break="yes"/>renferme, entre <placeName>Almaguer</placeName> et <placeName>Popayan</placeName>, au pied du<lb break="yes"/>
+                    <placeName>Cerro Broncoso</placeName>, des fragmens de gneiss. Tous ces faits<lb break="yes"/>lient les phénomènes volcaniques à ceux des roches<lb break="yes"/>primitives. Ils recevront de nouveaux éclaircissemens<lb break="yes"/>à mesure que l&#x2019;on examinera, avec le soin le plus minu-<lb break="no"/>tieux, les environs de <placeName>Predazzo</placeName> (dans le <placeName>Tyrol méri-<lb break="no"/>dional</placeName>), où une roche granitique, passant à la dolérite,<lb break="yes"/>a rendu grenu et siliceux le calcaire compacte adjacent.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Sucre des <placeName>isles d&#x2019;Afrique</placeName>.</hi> &#x2014; Les renseignemens<lb break="yes"/>
+                    <pb n="441" facs="#f0016"/> donnés par M. <persName ref="http://d-nb.info/gnd/" >Bowdich</persName> sur le développement que la<lb break="yes"/>culture de la canne à sucre pourrait prendre sur les<lb break="yes"/>c&#x00F4;tes d&#x2019;<placeName>Afrique</placeName> et dans les &#x00EE;les adjacentes, sont d&#x2019;un<lb break="yes"/>grand intér&#x00EA;t. Pour faire sentir combien l&#x2019;exportation du<lb break="yes"/>sucre de 150,000 <hi rendition="#i" >arrobas</hi> (plus de 1,720,000 kilo-<lb break="no"/>grammes) dans la petite &#x00EE;le de <placeName>Saint-Thomas</placeName>, en 1550,<lb break="yes"/>doit &#x00EA;tre regardée comme considérable, je rappellerai<lb break="yes"/>ici que cette exportation surpassait le produit actuel de<lb break="yes"/>plusieurs des <placeName>Antilles anglaises</placeName>, par exemple, des <placeName>&#x00EE;les de<lb break="yes"/>la Dominique</placeName>, de <placeName>Montserrate</placeName> et de <placeName>Nevis</placeName>. D&#x2019;après mes<lb break="yes"/>dernières recherches sur la consommation des denrées<lb break="yes"/>coloniales, l&#x2019;<placeName>Europe</placeName> a besoin annuellement de 432<lb break="yes"/>millions de kilogrammes de sucre brut, dont la <placeName>Grande-<lb break="maybe"/>Bretagne</placeName> consomme 154 millions, la <placeName>France</placeName> 58 mil-<lb break="no"/>lions de kilogrammes. L&#x2019;<placeName>archipel des Antilles</placeName>, avec<lb break="yes"/>1,147,500 esclaves, verse aujourd&#x2019;hui dans le com-<lb break="no"/>merce de l&#x2019;<placeName>Europe</placeName> et des <placeName>États-Unis</placeName> 287 millions de<lb break="yes" />kilogrammes; le <placeName>Brésil</placeName>, avec 2,060,000 esclaves,<lb break="yes"/>123 millions de kilogrammes; les <placeName>Guyanes</placeName>, anglaise et<lb break="yes"/>hollandaise, avec 206,000 esclaves, 40 millions de<lb break="yes"/>kilogrammes. Dans les ouvrages relatifs à la traite des<lb break="yes"/>noirs, on a singulièrement exagéré la quantité de sucre<lb break="yes"/>que la <placeName>Grande-Bretagne</placeName> re&#x00E7;oit des Indes orientales.<lb break="yes"/>Ce sucre, cultivé par des mains libres, ne formait, en<lb break="yes"/>1823, pas encore <formula notation="TeX">\frac{1}{26}</formula> de la consommation intérieure<lb break="yes"/>de l&#x2019;<placeName>Angleterre</placeName> et de l&#x2019;<placeName>Écosse</placeName>.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Température moyenne de <placeName>Madère</placeName>.</hi> &#x2014; Les observa-<lb break="no"/>tions du docteur <persName ref="http://d-nb.info/gnd/">Heberden</persName> avaient donné 20°,4 du<lb break="yes"/>thermomètre centigrade; mais M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> prouve que<lb break="yes"/>ce résultat est de 1°,5 trop fort. Si la température des<lb break="yes"/>
+                    <pb n="442" facs="#f0017"/> lieux souterrains à <placeName>Madère</placeName> était telle que <persName ref="http://d-nb.info/gnd/">Heberden</persName>
+                    <lb break="yes"/>l&#x2019;avait évaluée (de 16°,2), elle serait encore presque<lb break="yes"/>de 3° inférieure à la température moyenne de l&#x2019;air;<lb break="yes"/>mais il est probable qu&#x2019;on ne conna&#x00EE;t point encore,<lb break="yes"/>avec précision, la température moyenne des caves ou<lb break="yes"/>de l&#x2019;intérieur de la terre à <placeName>Madère</placeName>. Pour l&#x2019;obtenir,<lb break="yes"/>il faudrait avoir observé l&#x2019;année entière, ce que ni<lb break="yes"/>M. <persName ref="http://d-nb.info/gnd/">Heberden</persName> ni M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> ont pu faire. D&#x2019;après<lb break="yes"/>ce dernier observateur, le thermomètre se soutenait<lb break="yes"/>dans les <placeName>Furnaces de Saint-John</placeName>, à 40 toises au-dessus<lb break="yes"/>du niveau de la mer; en Novembre à 19°,4; en Jan-<lb break="no"/>vier à 17°,5. Rien ne prouve par conséquent jusqu&#x2019;ici<lb break="yes"/>que, dans les &#x00EE;les de peu d&#x2019;étendue, le froid des basses<lb break="yes"/>couches de l&#x2019;<placeName>Océan</placeName> abaisse sensiblement la température<lb break="yes"/>moyenne de l&#x2019;intérieur de la terre, comme je l&#x2019;avais<lb break="yes"/>soup&#x00E7;onné d&#x2019;après des aper&#x00E7;us théoriques. Il est à dé-<lb break="no"/>sirer vivement qu&#x2019;on répète des observations de ce genre<lb break="yes"/>(en enfon&#x00E7;ant des thermomètres dans la terre à diffé-<lb break="no"/>rentes profondeurs), soit dans de petites &#x00EE;les non vol-<lb break="no"/>caniques, soit à l&#x2019;<placeName>isthme de Panama</placeName>, soit au milieu des<lb break="yes"/>continens sous la zone torride. Voici les résultats ob-<lb break="no"/>tenus par M. <persName ref="http://d-nb.info/gnd/">de Buch</persName> sur la chaleur des sources à <placeName>Ma-<lb break="no" />dère</placeName> au mois d&#x2019;Avril: source près de <placeName>Brazenhead</placeName>, à une<lb break="yes"/>petite distance de <placeName>Funchal</placeName>, dans la plaine, 18°,7 cent.<lb break="yes" />(air 20°,7); source sur le chemin de <placeName>Camachio</placeName>, 17°,7<lb break="yes"/>(air 19°,3; hauteur 150 toises au-dessus du niveau de<lb break="yes"/>la mer); source près de la <placeName>Senhora del Monte</placeName>, pen-<lb break="no"/>dant plusieurs jours constamment, 13°,9 (hauteur 295<lb break="yes"/>toises). M. <persName ref="http://d-nb.info/gnd/">Bowdich</persName> a trouvé cette m&#x00EA;me source neuf<lb break="yes"/>années plus tard, en Octobre, 14°,3 (<bibl>
+                        <hi rendition="#i">Edinb. Phil.</hi>
+                        <lb break="yes"/>
+                        <pb n="443" facs="#f0018"/>
+                        <hi rendition="#i">Journ.</hi>, <hi rendition="#i">n.°</hi> 18, <hi rendition="#i">p.</hi> 317</bibl>); source à 658 toises de<lb break="yes"/>hauteur, 10°,2 (air 14°,6); source abondante que l&#x2019;on<lb break="yes"/>rencontre avant de parvenir à la <placeName>Cima de Torinhas</placeName>, 7°<lb break="yes"/>(hauteur 793 toises).</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Géographie des plantes de l&#x2019;<placeName>isle de Madère</placeName>.</hi> &#x2014; Le<lb break="yes"/>grand botaniste, M. <persName ref="http://d-nb.info/gnd/">Robert Brown</persName>, a formé un cata-<lb break="no"/>logue de 509 plantes qui croissent spontanément à l&#x2019;<placeName>&#x00EE;le<lb break="yes"/>de Madère</placeName> (<bibl>
+                        <hi rendition="#i">
+                            <persName ref="http://d-nb.info/gnd/">Leopold von Buch</persName>, physik. Beschr., p.</hi>
+                        <lb break="yes"/>189</bibl>), savoir 411 phanérogames et 98 agames. L&#x2019;exa-<lb break="no"/>men des classes et des familles m&#x2019;ont donné les rapports<lb break="yes"/>suivans:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell rows="2">
+                            <hi rendition="#g">GROUPES.</hi>
+                        </cell>
+                        <cell rows="2">
+                            <hi rendition="#g">NOMBRE</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#k">des espèces<lb break="yes"/>a <placeName>madère</placeName>.</hi>
+                        </cell>
+                        <cell cols="2" rendition="#bottomBraced">
+                            <hi rendition="#g">RAPPORTS</hi>
+                            <lb break="yes"/>
+                            <hi rendition="#k">a toute la masse<lb break="yes"/>des phanérogames.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>A <placeName>Madère</placeName>.</cell>
+                        <cell>En <placeName>France</placeName>.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Fougères seules.</cell>
+                        <cell>39</cell>
+                        <cell>1/10</cell>
+                        <cell>1/73</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Monocotylédonées.</cell>
+                        <cell>84</cell>
+                        <cell>1/5</cell>
+                        <cell>1/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Glumacées.</cell>
+                        <cell>57</cell>
+                        <cell>1/70</cell>
+                        <cell>1/8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Composées.</cell>
+                        <cell>59</cell>
+                        <cell>1/7</cell>
+                        <cell>1/8</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Légumineuses.</cell>
+                        <cell>37</cell>
+                        <cell>1/11</cell>
+                        <cell>1/16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Euphorbiacées.</cell>
+                        <cell>11</cell>
+                        <cell>1/37</cell>
+                        <cell>1/70</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Labiées.</cell>
+                        <cell>30</cell>
+                        <cell>1/10</cell>
+                        <cell>1/24</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Malvacées.</cell>
+                        <cell>4</cell>
+                        <cell>1/100</cell>
+                        <cell>1/140</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Éricinées.</cell>
+                        <cell>4</cell>
+                        <cell>1/100</cell>
+                        <cell>1/125</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Amentacées.</cell>
+                        <cell>7</cell>
+                        <cell>1/56</cell>
+                        <cell>1/50</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Conifères.</cell>
+                        <cell>4</cell>
+                        <cell>1/100</cell>
+                        <cell>1/192</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ombellifères.</cell>
+                        <cell>10</cell>
+                        <cell>1/41</cell>
+                        <cell>1/22</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Crucifères.</cell>
+                        <cell>19</cell>
+                        <cell>1/21</cell>
+                        <cell>1/19</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="444" facs="#f0019"/>
+                <p>Ce tableau de la distribution des formes dans une &#x00EE;le<lb break="yes" />volcanique, rapprochée par sa position géographique<lb break="yes"/>de la zone équatoriale, offre plusieurs traits de con-<lb break="no"/>traste et de ressemblance avec l&#x2019;<placeName>Europe centrale</placeName>, qui<lb break="yes"/>sont dignes de l&#x2019;attention du botaniste et du physicien.<lb break="yes"/>On est frappé à <placeName>Madère</placeName> de l&#x2019;accroissement relatif du<lb break="yes"/>nombre des fougères (<formula notation="TeX">\frac{1}{10}</formula>), des <hi rendition="#i">labiées</hi> (<formula notation="TeX">\frac{1}{10}</formula>) et des<lb break="yes" />légumineuses (<formula notation="TeX">\frac{1}{11}</formula>). Ces dernières commencent à offrir<lb break="yes"/>un caractère intertropical; elles sont, comme je l&#x2019;ai ex-<lb break="no"/>posé ailleurs <note place="foot" n="1">
+                        <bibl>
+                            <hi rendition="#i">De distributione geographica plantarum secundum c&#x0153;li tem-<lb break="no"/>periem et altitudinem montium,</hi> 1815, <hi rendition="#i">p.</hi> 37</bibl>. &#x2014; <bibl>Nouvelles re-<lb break="no"/>cherches sur les lois que l&#x2019;on observe dans la distribution des<lb break="yes"/>formes végétales; 1821, p. 12</bibl>.</note>, dans l&#x2019;<placeName>Europe tempérée</placeName>
+                    <formula notation="TeX">\frac{1}{18}</formula>; sous la zone<lb break="yes" />torride, <formula notation="TeX">\frac{1}{10}</formula>; sous la zone glaciale, <formula notation="TeX">\frac{1}{35}</formula>. De m&#x00EA;me, malgré<lb break="yes"/>le petit nombre d&#x2019;espèces découvertes jusqu&#x2019;ici, les<lb break="yes"/>malvacées et les euphorbiacées augmentent par rapport<lb break="yes"/>aux autres phanérogames à <placeName>Madère</placeName>, comme sous les<lb break="yes"/>tropiques, où elles sont <formula notation="TeX">\frac{1}{32}</formula> et <formula notation="TeX">\frac{1}{35}</formula>. Les ombellifères,<lb break="yes" />très-rares dans la région équatoriale, se montrent aussi<lb break="yes"/>en petit nombre dans une &#x00EE;le située sous un parallèle<lb break="yes"/>de 32<formula notation="TeX">\frac{1}{2}</formula>°. L&#x2019;abandon des fougères est un phénomène<lb break="yes"/>presque général à toutes les &#x00EE;les des zones chaudes:<lb break="yes"/>Tous ces faits sont conformes aux lois que j&#x2019;avais<lb break="yes"/>reconnues jusqu&#x2019;ici. Les agames, en comprenant sous<lb break="yes"/>cette dénomination les champignons, les lichens, les<lb break="yes"/>mousses et les fougères, sont aux phanérogames, dans<lb break="yes"/>la zone tempérée, comme 1 : 2. Dans la zone gla-<lb break="no"/>ciale, les agames atteignent le m&#x00EA;me nombre que les<lb break="yes"/>phanérogames, tandis qu&#x2019;elles diminuent vers la région<lb break="yes"/>
+                    <pb n="445" facs="#f0020"/> équatoriale. Le journal de <persName ref="http://d-nb.info/gnd/">Masson</persName>, qui a servi de base<lb break="yes"/>au travail de M. <persName ref="http://d-nb.info/gnd/">Robert Brown</persName>, ne porte le nombre<lb break="yes"/>des agames, à <placeName>Madère</placeName>, qu&#x2019;à 98 (<formula notation="TeX" >\frac{1}{4}</formula> des phanérogames);<lb break="yes"/>mais, comme <persName ref="http://d-nb.info/gnd/">Masson</persName> n&#x2019;a recueilli qu&#x2019;un très-petit<lb break="yes"/>nombre de mousses, de lichens et de fucus, on n&#x2019;a pu<lb break="yes"/>obtenir le rapport précis des agames et des phanéro-<lb break="no"/>games. Le rapport des monocotylédonées ou phanéro-<lb break="no"/>games est en <placeName>France</placeName> comme 1 à 4<formula notation="TeX">\frac{2}{5}</formula>; en <placeName>Allemagne</placeName>,<lb break="yes"/>comme 1 à 4 <formula notation="TeX">\frac{1}{2}</formula>; à <placeName>Madère</placeName>, comme 1 à 5; dans l&#x2019;<placeName>Amé-<lb break="no"/>rique équatoriale</placeName>, comme 1 à 6. Il est intéressant de<lb break="yes" />suivre cette liaison intime qui existe entre les climats<lb break="yes"/>et la distribution des formes végétales.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <hi rendition="#g">FIN.</hi>
+                    </hi>
+                </p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

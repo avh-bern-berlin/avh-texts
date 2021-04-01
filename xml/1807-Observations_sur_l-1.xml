@@ -1,0 +1,989 @@
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Observations sur l’intensité et l’inclinaison des forces magnétiques, faites en France, en Suisse, en Italie et en Allemagne</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="JA">1807-Observations_sur_l-1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">Observations sur l’intensité et l’inclinaison des forces magnétiques, faites en France, en Suisse, en Italie et en Allemagne</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date type="publication">1807</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">Mémoires de physique et de chimie de la Société d’Arcueil</title>
+                        <biblScope unit="volume">1</biblScope>
+                        <biblScope unit="issue"/>
+                        <biblScope unit="pages">1–22</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>Antiqua</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p> Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fra">Französisch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="1" facs="#f0001"/>
+            <div n="1" xml:lang="fra">
+                <head>OBSERVATIONS<lb break="yes"/>
+                    <hi rendition="#i">sur l&#x2019;intensité et l&#x2019;inclinaison des forces<lb break="yes"/>magnétiques, faites en France, en<lb break="yes"/>Suisse, en Italie et en Allemagne:</hi>
+                    <lb break="yes"/>
+                    <hi rendition="#k">Par MM. A. de <persName key="humboldt_av">Humboldt</persName> et <persName key="gaylussac_jl">Gay-Lussac</persName>.</hi>
+                    <lb break="yes"/>Lu à l&#x2019;Institut <date when="1806-09-08">
+                        <hi rendition="#et">le 8 septembre 1806.</hi>
+                    </date>
+                </head>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#k">Les</hi> causes et les lois du magnétisme terrestre<lb break="yes"/>sont restées dans la plus grande obscurité, au<lb break="yes" />milieu des progrès rapides que la physique vient<lb break="yes"/>de faire.</p>
+                <lb break="yes"/>
+                <pb n="2" facs="#f0002"/>
+                <p>Les variations tant diurnes que séculaires de<lb break="yes"/>l&#x2019;aiguille aimantée, son inclinaison et sa dé-<lb break="no"/>clinaison sur les principaux points du globe;<lb break="yes"/>l&#x2019;intensité des forces magnétiques, le nombre<lb break="yes"/>et le cours des bandes sans déclinaison, ne<lb break="yes"/>sont encore que très-peu connus. Les obser-<lb break="no" />vations des voyageurs et des physiciens, qui<lb break="yes"/>d&#x2019;ailleurs ne portent presque uniquement que<lb break="yes"/>sur la déclinaison de l&#x2019;aiguille aimantée, ont<lb break="yes"/>été faites à des époques trop éloignées les unes<lb break="yes"/>des autres, et en employant des instrumens ou<lb break="yes"/>des méthodes trop peu exacts, pour qu&#x2019;il soit<lb break="yes"/>possible d&#x2019;asseoir sur elles les bases d&#x2019;une théo-<lb break="no"/>rie qui embrasseroit les divers phénomènes du<lb break="yes"/>magnétisme terrestre. Le desir de concourir à<lb break="yes" />fournir quelques matériaux pour l&#x2019;avancement<lb break="yes"/>de cette partie de nos connoissances, nous a<lb break="yes"/>engagés, M. <persName key="humboldt_av">Humboldt</persName> et moi, dans une suite<lb break="yes" />d&#x2019;observations sur l&#x2019;inclinaison et l&#x2019;intensité des<lb break="yes"/>forces magnétiques. Nous nous en sommes oc-<lb break="no" />cupés dans un voyage d&#x2019;une année, que nous<lb break="yes"/>avons fait en France, en Suisse, en Italie et<lb break="yes"/>en Allemagne, et dans lequel j&#x2019;ai pu profiter<lb break="yes"/>des vastes connoissances de mon ami. Ce sont<lb break="yes"/>ces observations que nous avons l&#x2019;honneur de<lb break="yes"/>présenter aujourd&#x2019;hui à l&#x2019;Institut. Le court<lb break="yes"/>espace de tems dans lequel elles ont été faites<lb break="yes"/>
+                    <pb n="3" facs="#f0003"/> et qui les rend presque simultanées; la grande<lb break="yes"/>étendue qu&#x2019;elles embrassent, et, nous osons<lb break="yes"/>le dire, leur exactitude, nous font espérer<lb break="yes" />qu&#x2019;il les accueillera avec intér&#x00EA;t <note place="foot" n="(1)" >Toutes nos observations ont été faites entre le<lb break="yes"/>15 mars 1805 et le 1<hi rendition="#sup">er</hi>. mai 1806.</note>.</p>
+                <lb break="yes"/>
+                <p>La boussole dont nous nous sommes servis<lb break="yes"/>pour déterminer les inclinaisons magnétiques<lb break="yes"/>est celle de <persName key="borda_jcd" >Borda</persName>. Elle avoit été exécutée par<lb break="yes"/>M. <persName key="lenoir_e">Lenoir</persName>, pour l&#x2019;expédition d&#x2019;<persName key="entrecasteau_jbd">Entrecasteaux</persName>,<lb break="yes"/>et nous avoit été confiée par S. E. le ministre<lb break="yes" />de la marine. Celle pour les oscillations ho-<lb break="no"/>risontales consistoit en une aiguille aimantée,<lb break="yes"/>parallélogrammique, suspendue à un fil de<lb break="yes"/>soie plate. Une bo&#x00EE;te, dont deux faces oppo-<lb break="no"/>sées étoient en verre, servoit à la garantir des<lb break="yes"/>agitations de l&#x2019;air. La simplicité de cet ins-<lb break="no"/>trument, la grande exactitude à laquelle on<lb break="yes"/>peut atteindre par son moyen, et la méthode<lb break="yes"/>due à <persName key="borda_jcd">Borda</persName> de conclure des oscillations de<lb break="yes"/>l&#x2019;aiguille la force qui les produit, sont aujour-<lb break="no"/>d&#x2019;hui connues de tout le monde. Il n&#x2019;en est<lb break="yes"/>peut-&#x00EA;tre pas de m&#x00EA;me de la meilleure manière<lb break="yes"/>de déterminer pour un lieu l&#x2019;inclinaison et<lb break="yes"/>l&#x2019;intensité des forces magnétiques: les opinions<lb break="yes"/>ne nous paroissent pas encore fixées à cet<lb break="yes"/>
+                    <pb n="4" facs="#f0004"/> égard, et c&#x2019;est pour cela que nous croyons<lb break="yes"/>pouvoir nous permettre les détails dans lesquels<lb break="yes" />nous allons entrer.</p>
+                <lb break="yes"/>
+                <p>Lorsqu&#x2019;une aiguille d&#x2019;inclinaison est dans son<lb break="yes" />méridien magnétique, une variation de po-<lb break="no"/>sition à droite ou à gauche de ce plan produit<lb break="yes"/>une augmentation dans l&#x2019;inclinaison. On peut<lb break="yes"/>donc, pour déterminer le méridien magné-<lb break="no"/>tique, chercher le plan pour lequel l&#x2019;inclinaison<lb break="yes"/>de l&#x2019;aiguille est un <hi rendition="#i">minimum;</hi> mais ce procédé<lb break="yes"/>n&#x2019;a point la simplicité qu&#x2019;il paro&#x00EE;t avoir au<lb break="yes"/>premier abord, et nous allons voir qu&#x2019;il en<lb break="yes"/>existe un autre plus exact et plus expéditif.</p>
+                <lb break="yes"/>
+                <p>Si on con&#x00E7;oit une aiguille d&#x2019;inclinaison dans<lb break="yes"/>un plan perpendiculaire à son méridien, la<lb break="yes"/>force horisontale qui est une des composantes<lb break="yes"/>de la force magnétique étant alors sans effet,<lb break="yes"/>l&#x2019;aiguille se tiendra verticale. La position de<lb break="yes"/>ce plan est extr&#x00EA;mement facile à déterminer;<lb break="yes"/>parce que, sans attendre que l&#x2019;aiguille soit<lb break="yes"/>arrivée au repos, on peut juger si ses oscil-<lb break="no" />lations de part et d&#x2019;autre de la verticale qui<lb break="yes"/>passe par son centre de suspension sont égales,<lb break="yes"/>et par conséquent la faire tourner si elles ne<lb break="yes"/>le sont pas. Il ne faut alors qu&#x2019;un très-petit<lb break="yes"/>mouvement; car la force horisontale croissant<lb break="yes"/>comme le sinus de l&#x2019;angle de déviation, il<lb break="yes"/>
+                    <pb n="5" facs="#f0005"/> en résulte une variation très-sensible dans la<lb break="yes"/>direction de l&#x2019;aiguille. Le plan perpendiculaire<lb break="yes"/>au méridien magnétique étant ainsi trouvé, il<lb break="yes" />est facile d&#x2019;en conclure ce dernier et d&#x2019;y dé-<lb break="no" />terminer ensuite l&#x2019;inclinaison; mais l&#x2019;aiguille<lb break="yes" />pouvant, à cause du frottement, rester un peu<lb break="yes"/>au-dessus ou au-dessous de sa vraie direction,<lb break="yes"/>il sera nécessaire de faire plusieurs observations<lb break="yes"/>pour en prendre la moyenne.</p>
+                <lb break="yes"/>
+                <p>Telles seroient les opérations à faire pour<lb break="yes"/>trouver l&#x2019;inclinaison si l&#x2019;aiguille étoit parfaite.<lb break="yes"/>Il s&#x2019;en faut de beaucoup qu&#x2019;elle le soit ordi-<lb break="no" />nairement, et de là naissent plusieurs causes<lb break="yes"/>d&#x2019;erreur qu&#x2019;il faut chercher à corriger. Voici<lb break="yes"/>en peu de mots comment on peut y parvenir.</p>
+                <lb break="yes"/>
+                <p>Le centre de gravité de l&#x2019;aiguille pouvant se<lb break="yes"/>trouver hors de son axe de suspension et de<lb break="yes"/>sa ligne de figure, le plan méridien n&#x2019;est plus<lb break="yes"/>celui qui seroit perpendiculaire au plan dans<lb break="yes"/>lequel elle se tient verticale. Il se détermine<lb break="yes"/>en faisant tourner la boussole jusqu&#x2019;à ce que<lb break="yes"/>l&#x2019;aiguille prenne de nouveau une direction<lb break="yes"/>verticale, et en divisant en deux parties égales<lb break="yes" />l&#x2019;angle décrit. L&#x2019;inclinaison a de m&#x00EA;me besoin<lb break="yes"/>d&#x2019;une correction. Si le centre de gravité de<lb break="yes"/>l&#x2019;aiguille est au-dessus du centre de suspension,<lb break="yes"/>l&#x2019;inclinaison est trop petite; s&#x2019;il est au-dessous<lb break="yes"/>
+                    <pb n="6" facs="#f0006"/> elle est trop grande. Mais en changeant les<lb break="yes"/>p&#x00F4;les de l&#x2019;aiguille, les effets des causes per-<lb break="no"/>turbatrices sont alors en sens contraire, et la<lb break="yes"/>moyenne de toutes les observations donne la<lb break="yes" />vraie inclinaison. Il n&#x2019;est cependant pas né-<lb break="no"/>cessaire de renverser les p&#x00F4;les chaque fois qu&#x2019;on<lb break="yes"/>veut la déterminer. Quand la correction est<lb break="yes"/>connue pour un lieu, on peut la regarder, sans<lb break="yes"/>erreur sensible, comme constante pour un<lb break="yes"/>autre qui seroit peu éloigné du premier, en<lb break="yes" />supposant d&#x2019;ailleurs que l&#x2019;aiguille n&#x2019;éprouve pas<lb break="yes"/>de changemens.</p>
+                <lb break="yes"/>
+                <p>M. <persName key="laplace_ps">Laplace</persName> a proposé une autre méthode<lb break="yes"/>également simple pour déterminer l&#x2019;inclinaison.<lb break="yes"/>En nommant <hi rendition="#i">M</hi> et <hi rendition="#i" >P</hi> les nombres d&#x2019;oscillations<lb break="yes"/>faites dans le m&#x00EA;me tems par l&#x2019;aiguille dans le<lb break="yes"/>méridien magnétique et dans le plan qui lui<lb break="yes"/>est perpendiculaire, l&#x2019;inclinaison <hi rendition="#i">I</hi> est donnée<lb break="yes"/>par la formule sin <formula notation="TeX">I=\frac{P^2}{M^2}</formula>
+                </p>
+                <lb break="yes"/>
+                <p>Comme cette méthode est fondée sur les os-<lb break="no"/>cillations dont on peut mesurer rigoureusement<lb break="yes"/>le tems, nous sommes convaincus qu&#x2019;elle peut<lb break="yes"/>donner une très-grande précision; mais nous<lb break="yes"/>avons à regretter que notre aiguille n&#x2019;ayant<lb break="yes"/>pas beaucoup de grandeur et une mobilité<lb break="yes" />parfaite, il ne nous ait pas été possible de<lb break="yes"/>
+                    <pb n="7" facs="#f0007"/> compter un assez grand nombre d&#x2019;oscillations<lb break="yes"/>pour l&#x2019;employer avec succès.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;intensité des forces magnétiques se déter-<lb break="no"/>mine en faisant osciller l&#x2019;aiguille d&#x2019;inclinaison<lb break="yes"/>dans son méridien, et en prenant pour sa mesure<lb break="yes"/>le carré du nombre d&#x2019;oscillations faites dans un<lb break="yes"/>tems donné. Il peut arriver cependant que l&#x2019;ai-<lb break="no"/>guille éprouve une altération, et dans ce cas<lb break="yes"/>toutes les observations seroient affectées d&#x2019;une<lb break="yes"/>erreur qui pourroit &#x00EA;tre considérable. On peut,<lb break="yes"/>il est vrai, changer les p&#x00F4;les de l&#x2019;aiguille et<lb break="yes"/>l&#x2019;aimanter à saturation; mais les différences<lb break="yes"/>qu&#x2019;on observe dans ses oscillations, quand elle<lb break="yes"/>a été ainsi aimantée deux fois en sens contraire,<lb break="yes"/>sont souvent assez grandes pour que, dans ces<lb break="yes" />expériences qui démandent de l&#x2019;exactitude, on<lb break="yes"/>ne puisse se permettre de faire ces changemens.</p>
+                <lb break="yes"/>
+                <p>La méthode que nous avons employée nous<lb break="yes"/>paro&#x00EE;t à l&#x2019;abri de tout inconvénient. Elle consiste<lb break="yes"/>à se servir des oscillations d&#x2019;une aiguille hori-<lb break="no"/>sontale suspendue à un fil, pour en conclure<lb break="yes"/>ensuite, lorsque l&#x2019;inclinaison est donnée, celles<lb break="yes"/>qu&#x2019;elle feroit dans sa vraie direction. Soit <hi rendition="#i">F</hi> la<lb break="yes"/>force magnétique totale pour un lieu déterminé,<lb break="yes"/>
+                    <hi rendition="#i">I</hi> l&#x2019;inclinaison et <hi rendition="#i">N</hi> le nombre d&#x2019;oscillations ho-<lb break="no"/>risontales faites pendant le tems <hi rendition="#i">T</hi>; <formula notation="TeX" >\frac{N}{T\sqrt{(\text{cos}\;<hi rendition="#i">I</hi>)}}</formula>
+                    <lb break="yes"/>
+                    <pb n="8" facs="#f0008"/> sera le nombre d&#x2019;oscillations faites par l&#x2019;aiguille<lb break="yes"/>dans sa vraie direction, pendant l&#x2019;unité de<lb break="yes"/>tems. Et si on veut comparer tout de suite<lb break="yes"/>l&#x2019;intensité de la force magnétique avec celle<lb break="yes"/>
+                    <hi rendition="#i">F&#x2032;</hi> d&#x2019;un autre endroit, on aura</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#c">
+                        <formula notation="TeX">\frac{F}{F'}=\frac{N^2}{T^2\cos I}\times\frac{T'^2\cos I'}{N'^2}</formula>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <p>Tels sont les moyens que nous avons em-<lb break="no"/>ployés pour déterminer l&#x2019;inclinaison et l&#x2019;intensité<lb break="yes"/>des forces magnétiques dans les divers lieux que<lb break="yes"/>nous avons parcourus. Tous nos résultats ont<lb break="yes"/>été réunis dans un tableau particulier, et voici<lb break="yes"/>dans quel ordre ils y ont été disposés. La pre-<lb break="no"/>mière colonne comprend les noms des lieux;<lb break="yes"/>leur latitude et leur longitude forment la se-<lb break="no"/>conde et la troisième. Pour comparer nos<lb break="yes"/>observations sur l&#x2019;inclinaison aux résultats de<lb break="yes"/>la théorie, d&#x2019;après les formules que M. <persName key="biot_jb">Biot</persName>
+                    <lb break="yes"/>a publiées <note place="foot" n="(1)">Journal de Physique, tom. 59.</note>, nous avons ramené les latitudes<lb break="yes"/>et longitudes terrestres à l&#x2019;équateur et au mé-<lb break="no"/>ridien magnétiques déterminés l&#x2019;un et l&#x2019;autre,<lb break="yes"/>d&#x2019;après les observations de MM. <persName key="laperouse_jfdgcd">Lapeyrouse</persName>
+                    <lb break="yes"/>et <persName key="humboldt_av">Humboldt</persName>, en <placeName key="amerika">Amérique</placeName>. Ce sont ces lati-<lb break="no"/>tudes et longitudes qui forment la quatrième<lb break="yes"/>
+                    <pb n="9" facs="#f0009"/> et la cinquième colonnes de notre tableau. La<lb break="yes"/>huitième renferme les inclinaisons observées;<lb break="yes" />la neuvième celles qui ont été calculées, et<lb break="yes"/>la dixième les différences des unes aux autres.<lb break="yes"/>Dans la sixième colonne on trouve, exprimé<lb break="yes"/>en secondes, le tems qu&#x2019;il a fallu dans chaque<lb break="yes"/>lieu à notre aiguille horisontale pour faire 60<lb break="yes"/>oscillations, et dans la septième les intensités<lb break="yes" />totales correspondantes. Pour comparer ces<lb break="yes"/>dernières entre elles, nous avons pris pour<lb break="yes"/>terme de comparaison l&#x2019;intensité des forces sous<lb break="yes"/>l&#x2019;équateur magnétique, et nous l&#x2019;avons sup-<lb break="no"/>posée égale à 10000. Nous nous sommes<lb break="yes"/>servis, pour cet objet, des observations de<lb break="yes"/>l&#x2019;un de nous, desquelles il résulte qu&#x2019;une ai-<lb break="no"/>guille d&#x2019;inclinaison qui feroit 245 oscillations<lb break="yes"/>à Paris, n&#x2019;en feroit plus que 211 sous l&#x2019;équa-<lb break="no"/>teur magnétique pendant le m&#x00EA;me espace de<lb break="yes" />tems. Connoissant l&#x2019;inclinaison à Paris et les<lb break="yes" />oscillations de notre aiguille horisontale, il<lb break="yes"/>nous a été facile, d&#x2019;après ce que nous avons<lb break="yes"/>dit, de calculer ses oscillations dans sa vraie<lb break="yes"/>direction, et par suite celles qu&#x2019;elle feroit sous<lb break="yes"/>l&#x2019;équateur magnétique; car en supposant égaux<lb break="yes"/>les rapports des intensités donnés par deux<lb break="yes"/>aiguilles dans deux lieux différens, on dé-<lb break="no" />montre que leurs nombres d&#x2019;oscillations dans ces<lb break="yes"/>
+                    <pb n="10" facs="#f0010"/> m&#x00EA;mes lieux, pendant le m&#x00EA;me tems, sont<lb break="yes"/>proportionnels entre eux.</p>
+                <lb break="yes"/>
+                <p>En faisant nos observations, nous avons eu<lb break="yes"/>soin en m&#x00EA;me tems de reconno&#x00EE;tre la nature<lb break="yes"/>du sol et son élévation au-dessus du niveau de<lb break="yes"/>la mer. Il y a des roches qui, par leur nature,<lb break="yes"/>ne peuvent avoir aucune influence sur l&#x2019;aiguille<lb break="yes"/>aimantée; mais il en est d&#x2019;autres, telles que<lb break="yes"/>les basaltes et les serpentines, qui renferment<lb break="yes"/>quelquefois beaucoup de fer, et qui peuvent<lb break="yes" />alors en avoir une très-forte. Il a été reconnu<lb break="yes"/>qu&#x2019;à des hauteurs bien plus considérables que<lb break="yes"/>celles auxquelles on peut s&#x2019;élever sur les mon-<lb break="no"/>tagnes, la force magnétique ne varie pas sen-<lb break="no"/>siblement, et d&#x2019;après cela, il seroit inutile de<lb break="yes"/>tenir compte de l&#x2019;élévation des lieux. Elle pour-<lb break="no"/>roit cependant donner une idée de l&#x2019;influence<lb break="yes"/>qu&#x2019;ils auroient sur l&#x2019;aiguille, s&#x2019;ils recéloient du<lb break="yes"/>fer. Mais outre cela, la constitution d&#x2019;un pays<lb break="yes"/>dépendant tout aussi bien de sa hauteur que<lb break="yes"/>de sa position géographique, il nous a paru<lb break="yes" />d&#x2019;autant plus utile de rapporter tout ce qui<lb break="yes"/>peut la faire conno&#x00EE;tre, que jusqu&#x2019;à présent<lb break="yes"/>cet objet a été trop négligé. Ainsi donc l&#x2019;éléva-<lb break="no"/>tion du sol au-dessus du niveau de la mer et<lb break="yes"/>sa nature, occuperont dans notre tableau deux<lb break="yes"/>colonnes séparées.</p>
+                <lb break="yes"/>
+                <pb n="11" facs="#f0011"/>
+                <p>Lorsque nous sommes partis de Paris, nos<lb break="yes"/>instrumens, que nous n&#x2019;avions pu avoir à notre<lb break="yes"/>disposition que la veille du jour de notre dé-<lb break="no"/>part, ne nous ont pas permis d&#x2019;y déterminer<lb break="yes"/>l&#x2019;inclinaison et l&#x2019;intensité des forces magné-<lb break="no"/>tiques. Nous n&#x2019;avons pu commencer nos ob-<lb break="no"/>servations qu&#x2019;à Villeneuve-sur-Yonne, mais de<lb break="yes"/>là nous les avons continuées sur tous les points<lb break="yes" />de notre passage qui pouvoient mériter quelque<lb break="yes"/>attention. J&#x2019;observerai cependant que les ré-<lb break="no"/>sultats que j&#x2019;ai obtenus à Paris, sur l&#x2019;intensité<lb break="yes"/>des forces magnétiques, un an après en &#x00EA;tre<lb break="yes"/>parti, doivent &#x00EA;tre, relativement à l&#x2019;aiguille,<lb break="yes"/>en parfaite harmonie avec les autres; car ayant<lb break="yes"/>passé deux fois à Milan, à six mois d&#x2019;inter-<lb break="no"/>valle, nous avons trouvé que notre aiguille y<lb break="yes"/>faisoit exactement le m&#x00EA;me nombre d&#x2019;oscilla-<lb break="no"/>tions la seconde fois que la première, soit dans<lb break="yes"/>l&#x2019;intérieur de la ville, soit hors ses murs.</p>
+                <lb break="yes"/>
+                <p>Nos observations sur l&#x2019;intensité des forces<lb break="yes"/>magnétiques à Turin, influencées sans doute par<lb break="yes"/>quelque cause très-particulière, nous ayant<lb break="yes"/>paru quelque tems après s&#x2019;écarter beaucoup en<lb break="yes"/>sens contraire de la loi que suivoient les autres,<lb break="yes"/>nous avons fait osciller une nouvelle aiguille<lb break="yes"/>à Milan, comparativement avec la n&#x00F4;tre, et<lb break="yes"/>nous l&#x2019;avons envoyée à M. <persName key="vassallieandi_ad">Vassali</persName>, qui a eu<lb break="yes"/>
+                    <pb n="12" facs="#f0012"/> la complaisance de compter ses oscillations en<lb break="yes"/>divers endroits dans l&#x2019;intérieur et à l&#x2019;extérieur<lb break="yes"/>de Turin. C&#x2019;est d&#x2019;après ses résultats et ceux que<lb break="yes"/>nous avions obtenus à Milan que nous avons<lb break="yes"/>calculé les oscillations que notre aiguille auroit<lb break="yes"/>faites dans la première de ces villes.</p>
+                <lb break="yes"/>
+                <p>Nous devons faire remarquer encore, avant<lb break="yes"/>d&#x2019;aller plus loin, quel est le degré de préci-<lb break="no"/>sion auquel on peut atteindre dans ce genre<lb break="yes"/>d&#x2019;expériences, afin qu&#x2019;on ne se méprenne pas<lb break="yes"/>sur de légères anomalies qui pourroient se<lb break="yes"/>trouver dans nos résultats. D&#x2019;abord, pour les<lb break="yes"/>inclinaisons, avec un instrument de 0<hi rendition="#sup" >m</hi>,07 de<lb break="yes"/>rayon, il seroit difficile, m&#x00EA;me dans le calme<lb break="yes"/>le plus parfait, de les déterminer à plus de<lb break="yes"/>six minutes près. Dans un voyage, dans lequel<lb break="yes" />on n&#x2019;a pas toujours ni le tems ni les commo-<lb break="no"/>dités qu&#x2019;on pourroit desirer, les limites des<lb break="yes"/>erreurs doivent &#x00EA;tre un peu plus éloignées<lb break="yes"/>entre elles. Nous croyons néanmoins que les<lb break="yes"/>plus grands écarts de nos observations, prin-<lb break="no"/>cipalement de celles que nous avons faites en<lb break="yes"/>allant de Rome à Berlin, ne s&#x2019;étendent pas au-<lb break="maybe"/>delà de 10 minutes. Relativement à l&#x2019;influence<lb break="yes"/>des localités particulières, on ne peut assurer<lb break="yes" />jusqu&#x2019;où elle peut s&#x2019;étendre, quoique, en gé-<lb break="no" />néral, elle doive &#x00EA;tre assez petite. Nous n&#x2019;avons<lb break="yes"/>
+                    <pb n="13" facs="#f0013"/> pu toujours observer en plein air, et quand<lb break="yes"/>nous avons été obligés de le faire à couvert,<lb break="yes" />nous avons choisi les appartemens les plus<lb break="yes"/>grands, en évitant ceux où nous découvrions<lb break="yes"/>quelque masse de fer un peu considérable.</p>
+                <lb break="yes"/>
+                <p>Pour les oscillations horisontales, nous pou-<lb break="no"/>vons répondre de leur parfaite exactitude. Nous<lb break="yes"/>en avons toujours mesuré le tems avec un chro-<lb break="no"/>nomètre de M. <persName key="berthoud_l" >Berthoud</persName>, et d&#x2019;ailleurs il n&#x2019;y<lb break="yes"/>a rien de plus facile que de les observer. Dans<lb break="yes"/>le m&#x00EA;me endroit, elles présentent toujours le<lb break="yes"/>plus grand accord. Si, comparées dans des<lb break="yes"/>lieux différens, elles paroissent quelquefois ne<lb break="yes"/>pas suivre une loi parfaitement régulière, c&#x2019;est<lb break="yes"/>dans les localités qu&#x2019;il faut en chercher la cause.</p>
+                <lb break="yes"/>
+                <p>Maintenant que nous avons exposé comment<lb break="yes"/>nous avons fait nos observations, ainsi que la<lb break="yes"/>manière de les réduire et de les comparer les<lb break="yes"/>unes aux autres, nous allons passer aux ré-<lb break="no"/>sultats qu&#x2019;elles nous ont présentés.</p>
+                <lb break="yes"/>
+                <p>Un des principaux buts que nous nous étions<lb break="yes"/>proposés dans notre voyage, étoit de nous<lb break="yes"/>assurer si la haute cha&#x00EE;ne des <placeName key="alpen">Alpes</placeName> pouvoit<lb break="yes"/>avoir de l&#x2019;influence sur l&#x2019;intensité et l&#x2019;inclinaison<lb break="yes" />des forces magnétiques. Nous l&#x2019;avons traversée<lb break="yes"/>deux fois en deux endroits différens, la pre-<lb break="no"/>mière au Mont-Cenis, entre Lyon et Turin;<lb break="yes"/>
+                    <pb n="14" facs="#f0014"/> la seconde au St.-Gothard, entre Come et Al-<lb break="no"/>torf. En fixant les yeux sur le tableau, on voit<lb break="yes" />que, lorsque l&#x2019;inclinaison est à Lyon 66° 14&#x2032;,<lb break="yes" />elle est à Chambéry, à St.-Michel et à Modane,<lb break="yes"/>presque à la m&#x00EA;me latitude, et dans la cha&#x00EE;ne<lb break="yes"/>m&#x00EA;me, 66° 12&#x2032;, 66° 12&#x2032; et 66° 6&#x2032;; qu&#x2019;à<lb break="yes" />Lanslebourg, qui est au pied du Mont-Cenis,<lb break="yes"/>elle est 66° 9&#x2032;, et qu&#x2019;enfin sur cette montagne,<lb break="yes"/>à l&#x2019;Hospice et à la hauteur de 2120<hi rendition="#sup">m</hi> on la<lb break="yes"/>trouve 66° 22&#x2032;. A Turin, de l&#x2019;autre c&#x00F4;té de<lb break="yes"/>la cha&#x00EE;ne des <placeName key="alpen" >Alpes</placeName>, nous l&#x2019;avons observée<lb break="yes"/>de 66° 3&#x2032;, c&#x2019;est-à-dire de 9&#x2032; plus petite qu&#x2019;à<lb break="yes"/>Lyon; mais aussi cette dernière ville est un<lb break="yes" />peu plus au nord que la première. Si, sur le<lb break="yes"/>Mont-Cenis, l&#x2019;inclinaison paro&#x00EE;t un peu plus<lb break="yes"/>forte qu&#x2019;elle ne devroit l&#x2019;&#x00EA;tre, en la comparant<lb break="yes" />à celles des lieux voisins, à Chambéry, à<lb break="yes"/>St.-Michel, à Modane et à Lanslebourg, qui<lb break="yes"/>sont également dans la cha&#x00EE;ne, elle paro&#x00EE;t &#x00EA;tre<lb break="yes"/>telle à-peu-près qu&#x2019;elle devroit &#x00EA;tre en raison<lb break="yes"/>de leur position géographique seulement. On<lb break="yes"/>ne peut donc tirer aucune conséquence de cette<lb break="yes"/>foible augmentation d&#x2019;inclinaison dans un seul<lb break="yes"/>endroit, d&#x2019;autant plus que sur le St.-Gothard,<lb break="yes"/>à une hauteur égale, nous avons trouvé, au<lb break="yes" />contraire, une inclinaison un peu plus foible<lb break="yes"/>qu&#x2019;à <placeName key="airolo">Airolo</placeName> et à Ursern, situés l&#x2019;un à la pente<lb break="yes"/>
+                    <pb n="15" facs="#f0015"/> méridionale de cette montagne, et l&#x2019;autre à sa<lb break="yes"/>pente septentrionale.</p>
+                <lb break="yes"/>
+                <p>En considérant à présent l&#x2019;influence des <placeName key="alpen" >Alpes</placeName>
+                    <lb break="yes"/>sur l&#x2019;intensité des forces magnétiques, nous<lb break="yes"/>la trouverons en général très-foible, si m&#x00EA;me<lb break="yes"/>elle existe. A Lyon, l&#x2019;intensité est à-peu-près la<lb break="yes"/>m&#x00EA;me qu&#x2019;à Turin. Sur le Mont-Cenis elle est<lb break="yes"/>un peu plus forte que dans ces deux villes;<lb break="yes" />mais à Lanslebourg, au contraire, elle est plus<lb break="yes"/>foible. A l&#x2019;hospice du St.-Gothard, nous l&#x2019;a-<lb break="no"/>vons trouvée de 0,005 environ plus grande<lb break="yes"/>qu&#x2019;à <placeName key="airolo" >Airolo</placeName> et à Ursern, et plus petite de 0,01<lb break="yes" />qu&#x2019;à <placeName key="altorf">Altorf</placeName>. Il faut bien d&#x2019;ailleurs accorder<lb break="yes"/>quelque chose pour les erreurs des observa-<lb break="no"/>tions, car une erreur de quelques minutes<lb break="yes"/>dans l&#x2019;inclinaison en produit une de plusieurs<lb break="yes"/>millièmes dans l&#x2019;intensité. Il est permis outre<lb break="yes"/>cela de croire, jusqu&#x2019;à ce qu&#x2019;on ait prouvé<lb break="yes"/>le contraire, que l&#x2019;inclinaison éprouve de<lb break="yes"/>m&#x00EA;me que la déclinaison, des variations aux<lb break="yes"/>différentes heures du jour et de la nuit. Mais,<lb break="yes" />en admettant m&#x00EA;me qu&#x2019;il y ait une différence<lb break="yes"/>due à l&#x2019;influence des <placeName key="alpen">Alpes</placeName>, elle ne va qu&#x2019;à<lb break="yes"/>un centième lorsqu&#x2019;on compare quelques en-<lb break="no"/>droits du milieu de la cha&#x00EE;ne à ceux qui<lb break="yes"/>en sont éloignés, et pour d&#x2019;autres elle est<lb break="yes"/>encore plus petite. Nous croyons donc pouvoir<lb break="yes"/>
+                    <pb n="16" facs="#f0016"/> conclure que la cha&#x00EE;ne des <placeName key="alpen">Alpes</placeName>, au moins<lb break="yes"/>dans les endroits où nous l&#x2019;avons traversée,<lb break="yes"/>a une influence peu sensible sur l&#x2019;inclinaison<lb break="yes"/>et l&#x2019;intensité des forces magnétiques.</p>
+                <lb break="yes"/>
+                <p>Pendant notre séjour sur le Mont-Cenis,<lb break="yes"/>où nous étions occupés d&#x2019;expériences particu-<lb break="no"/>lières, nous avons voulu voir si l&#x2019;intensité des<lb break="yes"/>forces magnétiques n&#x2019;éprouvoit pas de variations<lb break="yes"/>sensibles aux différentes heures du jour et de<lb break="yes"/>la nuit. Nous avons fait faire 250 oscillations<lb break="yes" />à notre aiguille, mais le tems de 1234&#x2033; qu&#x2019;elles<lb break="yes" />ont employé n&#x2019;a jamais varié de plus d&#x2019;une<lb break="yes" />seconde au-dessus ou au-dessous de ce nombre.<lb break="yes"/>A Rome, où nous avons encore fait un grand<lb break="yes"/>nombre d&#x2019;expériences de ce genre, nous avons<lb break="yes"/>obtenu des résultats semblables. D&#x2019;après cela,<lb break="yes"/>il nous paro&#x00EE;t évident que la force magnétique<lb break="yes"/>ne varie pas sensiblement en intensité pendant<lb break="yes"/>le jour ou pendant la nuit <note place="foot" n="(1)">En supposant tous les phénomènes magnétiques<lb break="yes"/>dépendans les uns des autres, on pourroit aussi en con-<lb break="no"/>clure que l&#x2019;inclinaison n&#x2019;éprouve pas de variations appré-<lb break="no" />ciables; celles de la déclinaison étant déja très-petites.</note>. Nous observerons<lb break="yes"/>pour ceux qui voudroient s&#x2019;occuper de cet<lb break="yes"/>objet, qu&#x2019;on peut s&#x2019;épargner l&#x2019;ennui de compter<lb break="yes"/>à chaque observation toutes les oscillations;<lb break="yes"/>
+                    <pb n="17" facs="#f0017"/> car en prenant une aiguille très-paresseuse et<lb break="yes"/>dont le tems, pour chaque oscillation, seroit<lb break="yes" />supposé plus long que les variations qu&#x2019;on<lb break="yes"/>cherche à évaluer, on peut employer le moyen<lb break="yes"/>dont se servent les astronomes pour observer<lb break="yes"/>les révolutions des taches du soleil.</p>
+                <lb break="yes"/>
+                <p>Pendant le court espace de tems que nous<lb break="yes"/>avons passé dans Naples, nous avons été té-<lb break="no"/>moins du violent tremblement de terre, du<lb break="yes"/>26 juillet 1805, et de l&#x2019;éruption du Vésuve,<lb break="yes"/>du 12 ao&#x00FB;t de la m&#x00EA;me année. Nous nous<lb break="yes"/>sommes empressés de voir quels pourroient<lb break="yes" />&#x00EA;tre les effets de ce volcan sur l&#x2019;intensité et<lb break="yes" />l&#x2019;inclinaison des forces magnétiques. On sait<lb break="yes"/>que dans les produits des éruptions volca-<lb break="no"/>niques, il y a quelquefois beaucoup de fer<lb break="yes"/>peu oxidé qui agit fortement sur l&#x2019;aiguille ai-<lb break="no"/>mantée. Il étoit naturel d&#x2019;après cela d&#x2019;attribuer<lb break="yes"/>aux volcans une très-grande influence, mais<lb break="yes"/>nous allons voir que pour le Vésuve elle est<lb break="yes"/>très-bornée.</p>
+                <lb break="yes"/>
+                <p>A Naples, qui est à environ deux lieues de<lb break="yes"/>ce volcan, nous avons trouvé l&#x2019;inclinaison égale<lb break="yes"/>à 61° 35&#x2032;. En suivant la marche des inclinai-<lb break="no"/>sons depuis des endroits situés beaucoup plus<lb break="yes"/>au nord, on les voit décro&#x00EE;tre jusqu&#x2019;à Naples,<lb break="yes"/>suivant une loi assez régulière. A Portici, qui<lb break="yes"/>
+                    <pb n="18" facs="#f0018"/> s&#x2019;est élevé sur les ruines d&#x2019;Herculanum, et qui<lb break="yes"/>est traversé par des courans de laves, nous<lb break="yes"/>avons observé l&#x2019;inclinaison de 60° 50&#x2032;. A l&#x2019;her-<lb break="no"/>mitage de S.-Salvador, à-peu-près à la moitié<lb break="yes"/>de la hauteur du Vésuve, et à c&#x00F4;té de courans<lb break="yes"/>récens de laves, nous l&#x2019;avons trouvée de 62° 15&#x2032;;<lb break="yes"/>et enfin dans le cratère m&#x00EA;me du Vésuve, sur<lb break="yes"/>des scories, de 62° 0&#x2032;. On voit donc que quoi<lb break="yes"/>qu&#x2019;il y ait une différence dans la plupart de<lb break="yes"/>ces inclinaisons, en les comparant les unes aux<lb break="yes" />autres, elle n&#x2019;est pas aussi grande que celle<lb break="yes"/>à laquelle on auroit pu s&#x2019;attendre; et que, si<lb break="yes"/>le Vésuve a une influence sur l&#x2019;inclinaison de<lb break="yes"/>l&#x2019;aiguille aimantée, elle est au moins très-petite<lb break="yes"/>et très-locale. Si, en effet, à l&#x2019;hermitage de<lb break="yes"/>S.-Salvador, l&#x2019;inclinaison est plus grande de<lb break="yes"/>40&#x2032; qu&#x2019;à Naples, à Portici elle est de 35&#x2032; plus<lb break="yes"/>petite.</p>
+                <lb break="yes"/>
+                <p>L&#x2019;intensité paro&#x00EE;t avoir varié d&#x2019;une manière<lb break="yes" />plus sensible et plus irrégulière. Quoique Naples<lb break="yes"/>soit plus au midi que Rome, l&#x2019;intensité y est<lb break="yes"/>plus grande d&#x2019;un centième. A Portici elle est<lb break="yes"/>encore d&#x2019;un quatre-vingt-onzième plus grande<lb break="yes"/>qu&#x2019;à Naples, et à l&#x2019;hermitage d&#x2019;un quarante-<lb break="maybe"/>cinquième. Mais dans le cratère du Vésuve,<lb break="yes"/>elle est au contraire d&#x2019;un quinzième plus petite.<lb break="yes"/>Tant d&#x2019;irrégularité et un décroissement si ra-<lb break="no"/>
+                    <pb n="19" facs="#f0019"/> pide dans l&#x2019;intensité, de la base du Vésuve à<lb break="yes"/>son sommet, prouvent que ce volcan ne peut<lb break="yes" />&#x00EA;tre considéré comme un centre magnétique<lb break="yes"/>dont l&#x2019;influence s&#x2019;étendroit au loin. Cette in-<lb break="no"/>fluence paro&#x00EE;t au contraire très-locale et doit<lb break="yes"/>dépendre entièrement de l&#x2019;action de quelques<lb break="yes"/>parties de laves un peu plus chargées de fer<lb break="yes"/>dans un endroit que dans un autre. Au milieu<lb break="yes"/>du cratère, comme nous étions immédiatement<lb break="yes"/>sur les scories, notre aiguille à oscillations ho-<lb break="no"/>risontales a pu se trouver près d&#x2019;une scorie<lb break="yes"/>magnétique, dont les p&#x00F4;les auroient été placés<lb break="yes"/>en sens contraire des siens. Dans ce cas, on<lb break="yes" />con&#x00E7;oit la diminution d&#x2019;intensité que nous avons<lb break="yes" />observée. Mais telle supposition qu&#x2019;on fasse d&#x2019;ail-<lb break="no"/>leurs, on ne peut l&#x2019;expliquer par l&#x2019;incandescence<lb break="yes"/>des matières que renferme le Vésuve. Car, s&#x2019;il<lb break="yes"/>est vrai que la chaleur détruise la force d&#x2019;un<lb break="yes"/>aimant, un volcan n&#x2019;est aussi qu&#x2019;un point sur<lb break="yes"/>le globe, et l&#x2019;influence du noyau magnétique<lb break="yes"/>pénétreroit dans son intérieur pour se pro-<lb break="no"/>pager au-delà, de la m&#x00EA;me manière qu&#x2019;elle<lb break="yes"/>pénètre et se propage dans l&#x2019;espace au-delà de<lb break="yes"/>la surface de la terre.</p>
+                <lb break="yes"/>
+                <p>Considérons actuellement nos observations<lb break="yes"/>d&#x2019;une manière générale, depuis Berlin jusqu&#x2019;à<lb break="yes"/>Naples. Nous verrons d&#x2019;abord à la colonne des<lb break="yes"/>
+                    <pb n="20" facs="#f0020"/> tems, pour 60 oscillations horisontales, que le<lb break="yes"/>tems diminue progressivement avec la latitude.<lb break="yes" />A Berlin, il faut pour 60 oscillations 316&#x2033;, 5;<lb break="yes"/>à Paris, il n&#x2019;en faut que 314; à Milan, 295,5;<lb break="yes"/>à Rome, 281,8, et à Naples, 279,0. Il est<lb break="yes"/>donc évident qu&#x2019;à partir de Berlin, la force<lb break="yes"/>horisontale va en augmentant à mesure qu&#x2019;on<lb break="yes"/>s&#x2019;approche de l&#x2019;équateur. Un accroissement sem-<lb break="no"/>blable auroit toujours lieu, quelle que f&#x00FB;t la<lb break="yes"/>loi de l&#x2019;intensité de la force en raison de la<lb break="yes"/>distance aux p&#x00F4;les; mais on peut concevoir<lb break="yes"/>une loi croissante de l&#x2019;équateur magnétique aux<lb break="yes"/>p&#x00F4;les, telle qu&#x2019;il y auroit un point intermé-<lb break="no"/>diaire où la force horisontale seroit à son<lb break="yes"/>
+                    <hi rendition="#i">maximum.</hi> Il est possible que d&#x2019;après la loi du<lb break="yes"/>magnétisme terrestre, que nous ne connoissons<lb break="yes" />pas encore, mais que nous savons croissante<lb break="yes"/>de l&#x2019;équateur aux p&#x00F4;les, il existe un point sem-<lb break="no" />blable dont la position, si elle étoit bien connue,<lb break="yes"/>seroit utile dans la détermination de cette loi.<lb break="yes"/>D&#x2019;après nos observations, ce point ne pour-<lb break="no"/>roit se trouver qu&#x2019;au-dessous de la latitude de<lb break="yes"/>Naples.</p>
+                <lb break="yes"/>
+                <p>Si on réduit les oscillations horisontales à<lb break="yes"/>celles qui auroient lieu dans la vraie direction<lb break="yes"/>des forces magnétiques, les intensités totales<lb break="yes"/>suivent alors une loi différente; elles vont<lb break="yes"/>
+                    <pb n="21" facs="#f0021"/> en diminuant avec la latitude. En supposant<lb break="yes"/>l&#x2019;intensité sous l&#x2019;équateur magnétique égale à<lb break="yes"/>10000, elle est à Berlin 13703, à Paris 13482,<lb break="yes" />à Lyon 13334, à Milan 13364, à Rome 12642,<lb break="yes"/>et enfin à Naples 12745. Ainsi la loi décou-<lb break="no"/>verte par M. <persName key="humboldt_av">Humboldt</persName>, dans son voyage aux<lb break="yes" />tropiques, de l&#x2019;intensité croissante des forces<lb break="yes" />magnétiques, en allant de l&#x2019;équateur aux p&#x00F4;les,<lb break="yes" />se trouve confirmée en Europe pour la France,<lb break="yes"/>l&#x2019;Italie et l&#x2019;Allemagne.</p>
+                <lb break="yes"/>
+                <p>Si nous considérons les inclinaisons, nous<lb break="yes"/>remarquerons qu&#x2019;elles diminuent avec la la-<lb break="no"/>titude d&#x2019;une manière assez régulière. A Berlin,<lb break="yes"/>nous avons trouvé l&#x2019;inclinaison de l&#x2019;aiguille<lb break="yes"/>69° 53&#x2032;; à Gottingen, 69° 29&#x2032;; et M. <persName key="mayer_jtv">Mayer</persName>,<lb break="yes"/>69° 26&#x2032;; à Paris, 69° 12&#x2032;; à Lyon, 66° 14&#x2032;;<lb break="yes"/>à Milan, 65° 40&#x2032;; à Rome, 61° 57&#x2032;, et à<lb break="yes"/>Naples, 61° 35&#x2032;. Les inclinaisons correspon-<lb break="no"/>dantes données par la théorie, d&#x2019;après M. <persName key="biot_jb">Biot</persName>,<lb break="yes"/>sont toutes beaucoup plus grandes, car les<lb break="yes"/>plus petites différences vont à près de 4°. En<lb break="yes"/>supposant la position de l&#x2019;équateur magnétique<lb break="yes"/>rigoureusement déterminée, il en résulteroit<lb break="yes" />qu&#x2019;en Europe il y a une inflexion considé-<lb break="no"/>rable des parallèles magnétiques vers l&#x2019;équa-<lb break="no"/>teur, occasionnée par l&#x2019;influence de quelque<lb break="yes"/>centre particulier. Mais pour tirer aucune<lb break="yes"/>
+                    <pb n="22" facs="#f0022"/> conclusion à cet égard, il est prudent d&#x2019;attendre<lb break="yes"/>que des observations exactes et plus nom-<lb break="no"/>breuses fournissent des bases solides, sur les-<lb break="no"/>quelles on puisse élever une théorie rigoureuse<lb break="yes" />qui les embrasse toutes.</p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <pb n="Tome I, page 22" facs="#f0023"/>
+                <table>
+                    <head>
+                        <hi rendition="#c">
+                            <hi rendition="#g">TABLEAU DES OBSERVATIONS.</hi>
+                        </hi>
+                        <hi rendition="#et">Tome I, page 22.</hi>
+                    </head>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">LIEUX<lb break="yes"/>DES<lb break="yes" />OBSERVATIONS.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#g">LATITUDES</hi>
+                            <lb break="yes"/>mesurées<lb break="yes"/>en degrés<lb break="yes" />anciens.</cell>
+                        <cell>LONGITUDES<lb break="yes"/>mesurées<lb break="yes"/>en degrés<lb break="yes"/>anciens.</cell>
+                        <cell>
+                            <hi rendition="#g">LATITUDES</hi>
+                            <lb break="yes"/>rapportées<lb break="yes"/>à l&#x2019;équateur<lb break="yes"/>magnétique.</cell>
+                        <cell>
+                            <hi rendition="#g">LONGITUDES</hi>
+                            <lb break="yes"/>orientales<lb break="yes"/>comptées<lb break="yes"/>du n&#x0153;ud<lb break="yes"/>de l&#x2019;équateur<lb break="yes" />magnétique,<lb break="yes"/>dans<lb break="yes"/>la mer du sud.</cell>
+                        <cell>
+                            <hi rendition="#g">TEMS</hi>
+                            <lb break="yes"/>pour<lb break="yes"/>60 oscillations<lb break="yes" />horisontales.</cell>
+                        <cell>
+                            <hi rendition="#g">FORCES</hi>
+                            <lb break="yes"/>magnétiques<lb break="yes"/>comparées<lb break="yes"/>à celle qui a lieu<lb break="yes"/>sous l&#x2019;équateur<lb break="yes" />magnétique,<lb break="yes"/>supposée<lb break="yes"/>égale à 10000.</cell>
+                        <cell>INCLINAISONS<lb break="yes"/>observées.</cell>
+                        <cell>INCLINAISONS<lb break="yes"/>calculées.</cell>
+                        <cell>DIFFÉRENCES.</cell>
+                        <cell>
+                            <hi rendition="#g">HAUTEURS</hi>
+                            <lb break="yes"/>en mètres<lb break="yes"/>des lieux<lb break="yes" />au-dessus<lb break="yes"/>du niveau<lb break="yes"/>de la mer.</cell>
+                        <cell>
+                            <hi rendition="#g">NATURE<lb break="yes"/>DU<lb break="yes"/>SOL.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032;</cell>
+                        <cell/>
+                        <cell>° &#x2032;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>° &#x2032; &#x2033;</cell>
+                        <cell>mètres.</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Berlin..................</cell>
+                        <cell>52.31.30</cell>
+                        <cell>11.00.30</cell>
+                        <cell>60.03.17</cell>
+                        <cell>143.09.40</cell>
+                        <cell>316.05</cell>
+                        <cell>13703</cell>
+                        <cell>69.53</cell>
+                        <cell>73.55.54</cell>
+                        <cell>4.02.54</cell>
+                        <cell rendition="#rightBraced">26</cell>
+                        <cell>Sables qui couvrent la<lb break="yes"/>pierre calcaire.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Magdebourg............</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>316.05</cell>
+                        <cell>..........</cell>
+                        <cell>69.35</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>76</cell>
+                        <cell>Grès.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Gottingen..............</cell>
+                        <cell>51.32.05</cell>
+                        <cell>07.33.00</cell>
+                        <cell>59.36.15</cell>
+                        <cell>138.34.40</cell>
+                        <cell>316.02</cell>
+                        <cell>13485</cell>
+                        <cell>69.29</cell>
+                        <cell>73.39.13</cell>
+                        <cell>4.10.13</cell>
+                        <cell>192</cell>
+                        <cell>Calcaire neuf.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Clèves.................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>70.08</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Heidelberg.............</cell>
+                        <cell>49.24.30</cell>
+                        <cell>06.21.23</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>68.39</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>132</cell>
+                        <cell>Granite.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Heilbronn..............</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>68.01</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>162</cell>
+                        <cell>Grès.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Paris..................</cell>
+                        <cell>48.50.14</cell>
+                        <cell>..........</cell>
+                        <cell>57.57.00</cell>
+                        <cell>128.22.47</cell>
+                        <cell>314.00</cell>
+                        <cell>13482</cell>
+                        <cell>69.12</cell>
+                        <cell>72.62 00</cell>
+                        <cell>3.50.00</cell>
+                        <cell rendition="#rightBraced">40</cell>
+                        <cell>Gipse; calcaire de nouvelle<lb break="yes"/>formation.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tübingen..............</cell>
+                        <cell>48.31.04</cell>
+                        <cell>06.43.15</cell>
+                        <cell>56.46.36</cell>
+                        <cell>136.20.20</cell>
+                        <cell>305.02</cell>
+                        <cell>13569</cell>
+                        <cell>68.04</cell>
+                        <cell>71.52.26</cell>
+                        <cell>3.48.26</cell>
+                        <cell>376</cell>
+                        <cell>Grès.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Wellendingen..........</cell>
+                        <cell>48.08.49</cell>
+                        <cell>06.22.15</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>67.57</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>440?</cell>
+                        <cell>Calcaire du Jura.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Villeneuve-sur-Yonne....</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>306.04</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>95</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lucie-le-bois............</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>68.10</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zurich.................</cell>
+                        <cell>47.22.00</cell>
+                        <cell>06.12.30</cell>
+                        <cell>55.43.11</cell>
+                        <cell>135.18.40</cell>
+                        <cell>304.01</cell>
+                        <cell>..........</cell>
+                        <cell>67.27</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>426</cell>
+                        <cell>Grès.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lucerne................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>301.04</cell>
+                        <cell>..........</cell>
+                        <cell>67.10</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>450</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="altorf">Altorf</placeName>..................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>301.05</cell>
+                        <cell>13228</cell>
+                        <cell>66.53</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>494</cell>
+                        <cell>Calcaire de transition.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ursern, pente septentrion<hi rendition="#sup">le</hi>.<lb break="yes" />du S.-Gothard........</cell>
+                        <cell rendition="#leftBraced">..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>302.02</cell>
+                        <cell>13069</cell>
+                        <cell>66.42</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>Schiste micacé.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Hospice du S.-Gothard...</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>299.04</cell>
+                        <cell>13138</cell>
+                        <cell>66.22</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell rendition="#leftBraced">Granite de nouvelle forma-<lb break="no" />tion.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <placeName key="airolo">Airolo</placeName>, pente méridionale<lb break="yes"/>du S.-Gothard........ </cell>
+                        <cell rendition="#leftBraced">..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>297.03</cell>
+                        <cell>13090</cell>
+                        <cell>65.55</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>Schiste micacé.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Como..................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>298.08</cell>
+                        <cell>13104</cell>
+                        <cell>66.12</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>36</cell>
+                        <cell>Pierre calcaire de transition.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lyon..................</cell>
+                        <cell>45.45.52</cell>
+                        <cell>02.29.09</cell>
+                        <cell>54.37.42</cell>
+                        <cell>130.22.52</cell>
+                        <cell>296.04</cell>
+                        <cell>13334</cell>
+                        <cell>66.14</cell>
+                        <cell>70.27.26</cell>
+                        <cell>4.13.26</cell>
+                        <cell>186</cell>
+                        <cell>Granite feuilleté.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Saint-Michel............</cell>
+                        <cell>45.23.17</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>294.05</cell>
+                        <cell>13488</cell>
+                        <cell>66.12</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell rendition="#rightBraced">..........</cell>
+                        <cell>Schiste argileux de transi-<lb break="no"/>tion.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Modane................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>66.06</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lans-le-Bourg, au pied du<lb break="yes"/>mont Cénis...........</cell>
+                        <cell rendition="#leftBraced">45.17.40</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>297.01</cell>
+                        <cell>13227</cell>
+                        <cell>66.09</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Hospice du mont Cénis...</cell>
+                        <cell>45.14.10</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>296.00</cell>
+                        <cell>13441</cell>
+                        <cell>66.22</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>2120</cell>
+                        <cell>Schiste micacé.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Turin.................</cell>
+                        <cell>45.04.14</cell>
+                        <cell>05.20.00</cell>
+                        <cell>53.35.00</cell>
+                        <cell>133.31.09</cell>
+                        <cell>295.00</cell>
+                        <cell>13364</cell>
+                        <cell>66.03</cell>
+                        <cell>69.45.09</cell>
+                        <cell>3.42.09</cell>
+                        <cell rendition="#rightBraced">..........</cell>
+                        <cell>Adossé à des montagnes de<lb break="yes"/>serpentine m&#x00EA;lée de dial-<lb break="no"/>lage métallo&#x00EF;de.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Milan.................</cell>
+                        <cell>45.28.05</cell>
+                        <cell>06.51.15</cell>
+                        <cell>53.46.14</cell>
+                        <cell>134.34.46</cell>
+                        <cell>295.05</cell>
+                        <cell>13121</cell>
+                        <cell>65.40</cell>
+                        <cell>69.52.49</cell>
+                        <cell>4.12.49</cell>
+                        <cell rendition="#rightBraced">..........</cell>
+                        <cell>Sable qui couvre des roches<lb break="yes"/>primitives.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pavie..................</cell>
+                        <cell>45.10.47</cell>
+                        <cell>06.49.33</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>291.05</cell>
+                        <cell>..........</cell>
+                        <cell>65.26</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>86</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Plaisance...............</cell>
+                        <cell>45.02.44</cell>
+                        <cell>07.22.17</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>65.00</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Parme........ ........</cell>
+                        <cell>44.48.01</cell>
+                        <cell>08.00.19</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>65.07</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Modène................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>64.55</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bologne...............</cell>
+                        <cell>44.29.36</cell>
+                        <cell>09.00.15</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>290.03</cell>
+                        <cell>..........</cell>
+                        <cell>64.48</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>124</cell>
+                        <cell>Grès nouveau.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>G&#x00EA;nes.................</cell>
+                        <cell>44.25.00</cell>
+                        <cell>06.38.00</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>295.00</cell>
+                        <cell>..........</cell>
+                        <cell>64.45</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell rendition="#rightBraced">16</cell>
+                        <cell>Calcaire de transition au<lb break="yes"/>sud de la Boguetta.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rimini ................</cell>
+                        <cell>44.03.43</cell>
+                        <cell>10.12.36</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>63.48</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>6</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Faenza.................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>63.54</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>20</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Pezaro.................</cell>
+                        <cell>43.55.01</cell>
+                        <cell>10.33.21</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>64.18</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>10</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Florence...............</cell>
+                        <cell>43.46.30</cell>
+                        <cell>08.55.00</cell>
+                        <cell>51.49.28</cell>
+                        <cell>137.15.45</cell>
+                        <cell>290.00</cell>
+                        <cell>12782</cell>
+                        <cell>63.57</cell>
+                        <cell>68.42.22</cell>
+                        <cell>4.45.22</cell>
+                        <cell>74</cell>
+                        <cell>Grès, grauwakke.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Spoleto................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>62.51</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>280</cell>
+                        <cell>Calcaire du Jura.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nocera................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>285.04</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Rome..................</cell>
+                        <cell>41.53.54</cell>
+                        <cell>10.07.30</cell>
+                        <cell>49.48.50</cell>
+                        <cell>138.03.49</cell>
+                        <cell>281.08</cell>
+                        <cell>12642</cell>
+                        <cell>61.57</cell>
+                        <cell>67.06.16</cell>
+                        <cell>5.09.16</cell>
+                        <cell>58</cell>
+                        <cell rendition="#leftBraced">Laves basaltiques, tuf, pé-<lb break="no" />périno m&#x00EA;lé de fermicacé.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tivoli.................</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>281.06</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>240</cell>
+                        <cell>Calcaire du Jura, tuf.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Naples .................</cell>
+                        <cell>40.50.15</cell>
+                        <cell>11.56.00</cell>
+                        <cell>48.30.53</cell>
+                        <cell>139.47.35</cell>
+                        <cell>279.00</cell>
+                        <cell>12745</cell>
+                        <cell>61.35</cell>
+                        <cell>66.08.54</cell>
+                        <cell>4.33.54</cell>
+                        <cell>16</cell>
+                        <cell>Tuf.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Portici, au pied du Vésuve.</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>274.02</cell>
+                        <cell>12883</cell>
+                        <cell>60.50</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>20</cell>
+                        <cell>Laves.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>L&#x2019;hermitage de S.-Salvador,<lb break="yes"/>sur le flanc du Vésuve...</cell>
+                        <cell rendition="#leftBraced">..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>279.00</cell>
+                        <cell>13026</cell>
+                        <cell>62.15</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Cratère du Vésuve.......</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>290.03</cell>
+                        <cell>11933</cell>
+                        <cell>62.00</cell>
+                        <cell>..........</cell>
+                        <cell>..........</cell>
+                        <cell>1000</cell>
+                        <cell>
+                            <hi rendition="#i">Idem.</hi>
+                        </cell>
+                    </row>
+                </table>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

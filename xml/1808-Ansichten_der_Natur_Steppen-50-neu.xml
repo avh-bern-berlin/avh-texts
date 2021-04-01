@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="62" facs="#f0001"/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <hi rendition="#b">Von den Steppen und Wü&#x017F;ten.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Einen großen und ern&#x017F;ten Anblick gewähren die Ebenen oder <hi rendition="#g">Wü&#x017F;ten</hi> im<lb break="yes"/>Innern von <placeName key="afrika">Afrika</placeName>. Sie &#x017F;ind Theile eines Sandmeers, welches gegen O&#x017F;ten<lb break="yes"/>fruchtbare Erd&#x017F;triche trennt oder in&#x017F;elartig begrenzt. Kein Thau, kein Regen be-<lb break="no"/>netzt die&#x017F;e öden Flächen und entwickelt im glühenden Schooß der Erde den Keim<lb break="yes"/>des Pflanzenlebens. Denn heiße Luft&#x017F;äulen &#x017F;teigen überall aufwärts, lö&#x017F;en die<lb break="yes"/>Dün&#x017F;te und ver&#x017F;cheuchen das vorübereilende Gewölk. Wo die Wü&#x017F;te &#x017F;ich dem<lb break="yes"/>
+                    <placeName key="atlantik">atlanti&#x017F;chen Ocean</placeName> nähert, da &#x017F;trömt die feuchte Meeresluft hin, die Leere zu<lb break="yes"/>füllen, welche durch jene &#x017F;enkrechten Winde erregt wird. Heerden von Gazellen<lb break="yes"/>und &#x017F;chnellfüßige Strauße durchirren den unermeßlichen Raum. Mit Ausnahme<lb break="yes"/>einiger quellenreicher Oa&#x017F;en, an deren grünen Ufern nomadi&#x017F;che Völker &#x017F;chwärmen,<lb break="yes" />i&#x017F;t die <placeName key="afrika">afrikani&#x017F;che Wü&#x017F;te</placeName> als dem Men&#x017F;chen unbewohnbar zu betrachten. Die&#x017F;e<lb break="yes"/>
+                    <placeName key="afrika">afrikani&#x017F;chen Ebenen</placeName> füllen einen Raum aus, welcher den des nahen Mittelmeeres<lb break="yes"/>fa&#x017F;t dreimal übertrifft. Sie liegen zum Theil unter den Wendekrei&#x017F;en &#x017F;elb&#x017F;t, zum<lb break="yes"/>Theil den&#x017F;elben nahe. Dagegen i&#x017F;t die große Steppe <placeName key="asien">A&#x017F;iens</placeName> mehr in der gemäßig-<lb break="no"/>ten Zone.</p>
+                <lb break="yes"/>
+                <p>Auf dem Hochland von Mittela&#x017F;ien nämlich breiten &#x017F;ich in einer Länge von<lb break="yes"/>mehrern tau&#x017F;end Meilen die größten <hi rendition="#g">Steppen</hi> der Welt aus. Der Pflanzen-<lb break="no"/>wuchs (die Vegetation) der a&#x017F;iati&#x017F;chen, bisweilen hügeligen und durch Fichtenwälder<lb break="yes"/>unterbrochenen Steppen hat gruppenwei&#x017F;e viel größere Mannigfaltigkeit als die<lb break="yes"/>Steppen im &#x017F;üdlichen Amerika. Der &#x017F;chönere Theil der Ebenen i&#x017F;t mit niedrigen<lb break="yes"/>Sträuchern üppig weißblühender Ro&#x017F;enarten, mit Kai&#x017F;erkronen, Tulpen und Cy-<lb break="no"/>pre&#x017F;&#x017F;en ge&#x017F;chmückt. Einige die&#x017F;er a&#x017F;iati&#x017F;chen Steppen &#x017F;ind Grasebenen; andere mit<lb break="yes"/>&#x017F;aftigen, immergrünen Salzpflanzen bedeckt; viele fernleuchtend von flechtenartig<lb break="yes" />auf&#x017F;prießendem Salze, das ungleich, wie fri&#x017F;ch gefallener Schnee, den lettigen<lb break="yes"/>Boden verhüllt. Die mit Gras und Kräutern bewach&#x017F;enen Theile der Steppe<lb break="yes"/>&#x017F;ind von rohen, herumziehenden Hirtenvölkern bewohnt. In früherer Zeit drangen<lb break="yes"/>
+                    <pb n="63" facs="#f0002"/> einzelne Stämme die&#x017F;er Nomadenvölker, wie z. B. die Hunnen, Geten, Alanen,<lb break="yes"/>von jener Hochebene nach We&#x017F;ten und brachten Schrecken und Verwü&#x017F;tung den<lb break="yes" />Völkern Europa&#x2019;s.</p>
+                <lb break="yes"/>
+                <p>Kehren wir nun von den Salz&#x017F;teppen <placeName key="asien" >A&#x017F;iens</placeName>, von den europäi&#x017F;chen Heide-<lb break="no" />ländern und von den pflanzenleeren <placeName key="afrika">Wü&#x017F;ten Afrika&#x2019;s</placeName> zu den Ebenen von Süd-<lb break="no"/>amerika hin.</p>
+                <lb break="yes"/>
+                <p>Gleich dem größten Theil der Wü&#x017F;te Zahara liegen die <hi rendition="#g" >Llanos</hi> oder die<lb break="yes"/>nördlich&#x017F;ten Ebenen von <placeName key="suedamerika">Südamerika</placeName>, in dem heißen Erdgürtel. Dennoch er&#x017F;cheinen<lb break="yes"/>&#x017F;ie in jeder Hälfte des Jahres unter einer ver&#x017F;chiedenen Ge&#x017F;talt: bald verödet, wie<lb break="yes"/>das liby&#x017F;che Sandmeer; bald als eine Grasflur, wie &#x017F;o viele Steppen im Mittel-<lb break="no"/>a&#x017F;ien. Wie ein Meer dehnt &#x017F;ich die&#x017F;e Steppe, 16,000 Quadratmeilen groß, vor<lb break="yes"/>den Blicken aus und erfüllt das Gemüth mit dem Gefühl der Unendlichkeit. Kein<lb break="yes"/>Hügel, keine Klippe erhebt &#x017F;ich in&#x017F;elförmig in dem unermeßlichen Raume. Nur<lb break="yes"/>hier und dort liegen gebrochene Sandbänke etwas höher als die angrenzenden<lb break="yes" />Theile. Baumlos i&#x017F;t die Ebene. Nur da und dort &#x017F;teht die Fächerpalme, Mau-<lb break="no"/>ritia, zer&#x017F;treut umher. Weit berühmt &#x017F;ind die Vorzüge die&#x017F;es wohlthätigen Lebens-<lb break="no"/>baums. Er allein ernährt am Ausflu&#x017F;&#x017F;e des Ormoko die unbezwungene Nation der<lb break="yes"/>
+                    <hi rendition="#g">Guaraunen.</hi> Als &#x017F;ie zahlreicher und zu&#x017F;ammengedrängt waren, erhoben &#x017F;ie nicht<lb break="yes"/>bloß ihre Hütten auf abgehauene Palmenpfo&#x017F;ten, die ein horizontales Tafelwerk<lb break="yes"/>als Fußboden trugen; &#x017F;ie &#x017F;pannten auch Hängematten, aus den Blatt&#x017F;tielen der<lb break="yes"/>Mauritia gewebt, kün&#x017F;tlich von Stamm zu Stamm, um in der Regenzeit, wenn<lb break="yes"/>das Delta über&#x017F;chwemmt i&#x017F;t, auf den Bäumen zu leben. Aber nicht nur eine &#x017F;ichere<lb break="yes"/>Wohnung, auch mannigfaltige Spei&#x017F;e: &#x017F;chmackhafte Früchte, ein mehlartiges Mark<lb break="yes"/>und &#x017F;üßen Palmwein gewährt ihnen die&#x017F;e Palme. So finden wir hier die Er-<lb break="no"/>haltung eines ganzen Völker&#x017F;tammes an fa&#x017F;t einen einzigen Baum gefe&#x017F;&#x017F;elt.</p>
+                <lb break="yes"/>
+                <p>Seit der Entdeckung des neuen Fe&#x017F;tlandes &#x017F;ind die Ebenen (Llanos) dem<lb break="yes"/>Men&#x017F;chen bewohnbar geworden. An einzelnen Steppenflü&#x017F;&#x017F;en &#x017F;ind kleine Städte<lb break="yes"/>oder Dörfer gebaut. Son&#x017F;t aber liegen Tagrei&#x017F;en von einander entfernt nur ein-<lb break="no"/>zelne, mit Rindsfellen gedeckte, aus Schilf und Riemen geflochtene <choice>
+                        <sic>Hütten</sic>
+                        <corr type="editorial">Hütten.</corr>
+                    </choice> Ueberall<lb break="yes"/>hat Viehzucht in dem unermeßlichen Raume begonnen. Zahllo&#x017F;e Schaaren ver-<lb break="no"/>wilderter Stiere, Pferde und Maule&#x017F;el &#x017F;chwärmen in der Steppe umher.</p>
+                <lb break="yes"/>
+                <p>Wenn unter dem &#x017F;enkrechten Strahl der nie bewölkten Sonne die verkohlte<lb break="yes"/>Grasdecke in Staub zerfallen i&#x017F;t, klafft der erhärtete Boden auf, als wäre er von<lb break="yes"/>mächtigen Erd&#x017F;tößen er&#x017F;chüttert. Berühren ihn dann entgegenge&#x017F;etzte Luft&#x017F;tröme;<lb break="yes"/>&#x017F;o gewährt die Ebene einen &#x017F;elt&#x017F;amen Anblick. Als trichterförmige Wolken, die<lb break="yes" />mit ihren Spitzen an der Erde hingleiten, &#x017F;teigt der Sand dampfartig durch die<lb break="yes"/>luftdünne, elektri&#x017F;ch geladene Mitte des Wirbels empor: gleich den rau&#x017F;chenden<lb break="yes" />Wa&#x017F;&#x017F;erho&#x017F;en, die der erfahrne Schiffer fürchtet. Ein trübes, fa&#x017F;t &#x017F;trohfarbiges<lb break="yes"/>Halblicht wirft die nun &#x017F;cheinbar niedrige Himmelsdecke auf die verödete Flur. Der<lb break="yes" />Horizont tritt plötzlich näher. Er verengt die Steppe, &#x017F;o auch das Gemüth des<lb break="yes"/>Wanderers. Die heiße &#x017F;taubige Erde, welche im nebelig ver&#x017F;chleierten Dun&#x017F;tkrei&#x017F;e<lb break="yes" />&#x017F;chwebt, vermehrt die er&#x017F;tickende Luftwärme. Statt Kühlung führt der O&#x017F;twind<lb break="yes"/>neue Gluth herbei, wenn er über langerhitzten Boden hinweht. Auch ver&#x017F;chwinden<lb break="yes"/>allmälig die Lachen, welche die gebleichte Fächerpalme vor der Verdun&#x017F;tung &#x017F;chützte.<lb break="yes"/>Wie im ei&#x017F;igen Norden die Thiere durch Kälte er&#x017F;tarren: &#x017F;o &#x017F;chlummert hier, un-<lb break="no"/>beweglich das Krokodil und die Boa-Schlange, tief vergraben im trockenen Letten.<lb break="yes"/>Ueberall verkündigt Dürre den Tod; und doch überall verfolgt den Dür&#x017F;tenden<lb break="yes"/>das Trugbild des wellen&#x017F;chlagenden Wa&#x017F;&#x017F;er&#x017F;piegels in der Luft. In fin&#x017F;tere Staub-<lb break="no"/>wolken gehüllt, von Hunger und brennendem Dur&#x017F;te geäng&#x017F;tigt, &#x017F;chweifen Pferde<lb break="yes"/>und Rinder umher: die&#x017F;e dumpf aufbrüllend; jene mit langge&#x017F;trecktem Hal&#x017F;e gegen<lb break="yes"/>den Wind auf&#x017F;chnaubend, um durch die Feuchtigkeit des Luft&#x017F;troms die Nähe einer<lb break="yes"/>nicht ganz verdampften Lache zu finden. Bedächtiger und ver&#x017F;chlagener &#x017F;ucht das<lb break="yes"/>
+                    <pb n="64" facs="#f0003"/> Maulthier &#x017F;einen Dur&#x017F;t an dem wa&#x017F;&#x017F;erreichen Marke der Melonen-Caktus zu &#x017F;tillen.<lb break="yes"/>Folgt auf die brennende Hitze des Tages die Kühlung der hier immer gleich langen<lb break="yes"/>Nacht; &#x017F;o können Rinder und Pferde &#x017F;elb&#x017F;t dann &#x017F;ich nicht der Ruhe erfreuen.<lb break="yes" />Ungeheure Fledermäu&#x017F;e und unzählige Schwärme &#x017F;techender In&#x017F;ekten kommen herbei<lb break="yes"/>und &#x017F;augen ihnen Blut aus. So führen die Thiere ein &#x017F;chmerzenvolles Leben,<lb break="yes"/>wenn vor der Gluth der Sonne das Wa&#x017F;&#x017F;er auf dem Erdboden ver&#x017F;chwindet.</p>
+                <lb break="yes"/>
+                <p>
+                    <choice>
+                        <sic>Triit</sic>
+                        <corr type="editorial">Tritt</corr>
+                    </choice> endlich nach langer Dürre die wohlthätige Regenzeit ein; &#x017F;o verändert<lb break="yes"/>&#x017F;ich plötzlich die Scene in der Steppe. Das tiefe Blau des bis dahin nie be-<lb break="no"/>wölkten Himmels wird leichter. Die &#x017F;on&#x017F;t hellleuchtenden Sterne &#x017F;cheinen mit zit-<lb break="no"/>terndem, minder &#x017F;trahlendem Lichte. Wie ein entlegenes Gebirge, er&#x017F;cheint ein-<lb break="no"/>zelnes Gewölk im Süden, &#x017F;enkrecht auf&#x017F;teigend am Horizonte. Nebelartig breiten<lb break="yes"/>allmälig die vermehrten Dün&#x017F;te &#x017F;ich über den Zenit aus. Den belebenden Regen<lb break="yes"/>verkündet der ferne Donner. Kaum i&#x017F;t die Oberfläche der Erde benetzt; &#x017F;o über-<lb break="no"/>zieht &#x017F;ich die duftende Steppe mit mannigfaltigen Kräutern und Grä&#x017F;ern. Vom<lb break="yes"/>Lichte gereizt, entfalten krautartige Mimo&#x017F;en ihre ge&#x017F;enkt &#x017F;chlummernden Blätter,<lb break="yes"/>und begrüßen die aufgehende Sonne, wie der Frühge&#x017F;ang der Vögel und die &#x017F;ich<lb break="yes"/>öffnenden Blüthen der Wa&#x017F;&#x017F;erpflanzen. Pferde und Rinder weiden nun im frohen<lb break="yes"/>Genu&#x017F;&#x017F;e des Lebens. Das hochauf&#x017F;chießende Gras birgt den &#x017F;chön gefleckten Ja-<lb break="no"/>guar, im &#x017F;ichern Ver&#x017F;teck auf &#x017F;eine Beute lauernd. Bisweilen &#x017F;ieht man, &#x017F;o er-<lb break="no"/>zählen die Eingebornen, an den Ufern der Sümpfe den befeuchteten Letten &#x017F;ich<lb break="yes"/>lang&#x017F;am und &#x017F;chollenwei&#x017F;e erheben. Mit heftigem Getö&#x017F;e, wie beim Ausbruch<lb break="yes"/>kleiner Schlammvulkane, wird die aufgewühlte Erde hoch in die Luft ge&#x017F;chleudert.<lb break="yes"/>Wer des Anblicks kundig i&#x017F;t, flieht die Er&#x017F;cheinung; denn eine rie&#x017F;enhafte Wa&#x017F;&#x017F;er-<lb break="no"/>&#x017F;chlange oder ein gepanzertes Krokodil, durch den er&#x017F;ten Regenguß aus dem Schein-<lb break="no"/>tode geweckt, &#x017F;teigen aus der Gruft hervor. &#x2014; Schwellen nun allmälig die Flü&#x017F;&#x017F;e,<lb break="yes"/>welche die Ebene &#x017F;üdlich begrenzen; &#x017F;o zwingt die Natur die&#x017F;elben Thiere, welche<lb break="yes"/>in der er&#x017F;ten Jahreshälfte auf dem wa&#x017F;&#x017F;erleeren, &#x017F;taubigen Boden vor Dur&#x017F;t fa&#x017F;t<lb break="yes"/>ver&#x017F;chmachteten, amphibienartig zu leben. Ein Theil der Steppe er&#x017F;cheint nun<lb break="yes"/>wie ein unermeßliches Binnenwa&#x017F;&#x017F;er. Die Mutterpferde ziehen mit den Füllen<lb break="yes"/>auf die höhern Bänke zurück, welche in&#x017F;elartig über dem See&#x017F;piegel hervorragen.<lb break="yes"/>Aus Mangel an Weide &#x017F;chwimmen die zu&#x017F;ammengedrängten Thiere &#x017F;tundenlang<lb break="yes"/>umher und nähren &#x017F;ich kärglich von der blühenden Grasrispe, die &#x017F;ich über das<lb break="yes"/>braungefärbte gährende Wa&#x017F;&#x017F;er erhebt. Viele Thiere ertrinken; viele werden von<lb break="yes"/>den Krokodilen erha&#x017F;cht, mit dem zackigen Schwanze zer&#x017F;chmettert, und ver-<lb break="no"/>&#x017F;chlungen.</p>
+                <lb break="yes"/>
+                <p>Das i&#x017F;t das Schau&#x017F;piel, welches die Steppen dem Beobachter dar&#x017F;tellen. Wild<lb break="yes"/>wie die&#x017F;e Länder&#x017F;triche &#x017F;ind auch die Völker&#x017F;chaften, welche dort leben. Die mei&#x017F;ten<lb break="yes"/>der&#x017F;elben &#x017F;tehen nicht nur in &#x017F;tetem Kampfe gegen die Natur, &#x017F;ondern auch gegen<lb break="yes" />einander &#x017F;elb&#x017F;t. So verfolgt den Wanderer über den weiten Erdkreis, über Meer<lb break="yes"/>und Land, wie den Ge&#x017F;chichtsfor&#x017F;cher durch alle Jahrhunderte, das einförmige,<lb break="yes"/>tro&#x017F;tlo&#x017F;e Bild des entzweiten Ge&#x017F;chlechts. Darum ver&#x017F;enkt, wer im unge&#x017F;chlich-<lb break="no"/>teten Zwi&#x017F;t der Völker nach gei&#x017F;tiger Ruhe &#x017F;trebt, gern den Blick in das &#x017F;tille<lb break="yes"/>Leben der Pflanzen und in der heiligen Naturkraft inneres Wirken; oder, hin-<lb break="no"/>gegeben dem ange&#x017F;tammten Triebe, der &#x017F;eit Jahrtau&#x017F;enden der Men&#x017F;chen Bru&#x017F;t<lb break="yes"/>durchglüht, blickt er ahnungsvoll aufwärts zu den hohen Ge&#x017F;tirnen, welche in un-<lb break="no" />ge&#x017F;törtem Einklang die ewige Bahn vollenden.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

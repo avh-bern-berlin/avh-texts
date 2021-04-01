@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="371" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>Berl. Nachr. Nr. 125.<lb break="yes"/>
+                    <hi rendition="#fr">Na&#x0364;here Erkla&#x0364;rung der Aracacha.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Da mein Name zufa&#x0364;llig bey Gelegenheit<lb break="yes"/>die&#x017F;er Pflanze genannt worden i&#x017F;t, &#x017F;o glaube<lb break="yes"/>ich, um das Mißver&#x017F;ta&#x0364;ndniß zu verhu&#x0364;ten,<lb break="yes"/>als zweifele ich an der Nu&#x0364;tzlichkeit oder gar<lb break="yes"/>an der Exi&#x017F;tenz die&#x017F;er Pflanze, folgende Er-<lb break="no"/>la&#x0364;uterung dem Publikum &#x017F;chuldig zu &#x017F;eyn.<lb break="yes"/>Wir erinnern uns mehrmals eine <choice>
+                        <sic>Pa&#x017F;tinak<lb break="yes"/>a&#x0364;hnliche</sic>
+                        <corr type="editorial">Pa&#x017F;tinak-<lb break="maybe" />a&#x0364;hnliche</corr>
+                    </choice> Wurzel gege&#x017F;&#x017F;en zu haben, welche<lb break="yes"/>man <hi rendition="#fr">Aracacha</hi> nannte. Da wir aber nie<lb break="yes" />Gelegenheit gehabt haben, die&#x017F;e Garten-<lb break="no"/>pflanze blu&#x0364;hend zu &#x017F;ehen oder botani&#x017F;ch zu<lb break="yes" />unter&#x017F;uchen: &#x017F;o wi&#x017F;&#x017F;en wir nicht zu welchem<lb break="yes"/>Ge&#x017F;chlecht &#x017F;ie geho&#x0364;rt. Ihre Kultur in Eu-<lb break="no"/>ropa mag allerdings nu&#x0364;tzlich &#x017F;eyn. Daß<lb break="yes"/>die&#x017F;elbe aber je &#x017F;o wichtig &#x017F;eyn ko&#x0364;nne, als<lb break="yes"/>die Kultur der Kartoffeln, der Bataten und<lb break="yes"/>Dioskoreen, i&#x017F;t mir &#x017F;ehr unwahr&#x017F;cheinlich.<lb break="yes"/>Der Pater <persName key="gilij_fs">
+                        <hi rendition="#fr">Gili</hi>
+                    </persName> erwa&#x0364;hnt der Aracacha als<lb break="yes"/>einer Gartenpflanze, und leitet den Namen<lb break="yes"/>aus der <hi rendition="#fr" >Inka-</hi> oder <hi rendition="#fr">Qquichua-</hi>Sprache her.<lb break="yes"/>
+                    <hi rendition="#aq">Saggio di Storia americana, T. 4. p.</hi> 156.</p>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#et">
+                        <hi rendition="#fr">A. v. <persName key="humboldt_av" >Humboldt</persName>.</hi>
+                    </hi>
+                </p>
+                <lb break="yes"/>
+                <milestone unit="section" rendition="#hr"/>
+                <lb break="yes"/>
+                <cb/>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI> 

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="135" facs="#f0001"/>
+            <div n="1" xml:lang="eng">
+                <head>
+                    <hi rendition="#k">Present State of the Kingdom of Mexico.</hi>
+                    <lb break="yes"/>[From Mr. <hi rendition="#k">Black&#x2019;s Translation</hi> of M. <hi rendition="#k">de <persName key="humboldt_av" >Humboldt</persName>&#x2019;s Political<lb break="yes"/>Essay.</hi>]</head>
+                <lb break="yes"/>
+                <cb/>
+                <p>&#x201C;<hi rendition="#in">A</hi>MONGST the inhabitants of<lb break="yes"/>pure origin, the whites would<lb break="yes"/>occupy the second place, consider-<lb break="no"/>ing them only in the relation of<lb break="yes"/>number. They are divided into<lb break="yes"/>whites born in Europe, and de-<lb break="no" />scendants of Europeans born in the<lb break="yes"/>
+                    <placeName key="spanischeskolonialreich">Spanish colonies of America</placeName>, or in<lb break="yes"/>the <placeName key="asien">Asiatic islands</placeName>. The former<lb break="yes"/>bear the name of <hi rendition="#i">Chapetones</hi> or <hi rendition="#i">Ga-<lb break="no" />chupines,</hi> and the second that of<lb break="yes"/>
+                    <hi rendition="#i">Criollos.</hi> The natives of the Ca-<lb break="no"/>nary islands, who go under the<lb break="yes"/>general denomination of <hi rendition="#i">Islen&#x0303;os</hi>
+                    <lb break="yes"/>(islanders), and who are the <hi rendition="#i">gerans</hi>
+                    <lb break="yes"/>of the plantations, are considered<lb break="yes"/>as Europeans. The Spanish laws<lb break="yes"/>allow the same rights to all whites;<lb break="yes"/>but those who have the execution<lb break="yes"/>of the laws endeavour to destroy an<lb break="yes"/>equality which shocks the European<lb break="yes"/>pride. The government, suspicious<lb break="yes" />of the Creoles, bestows the great<lb break="yes"/>places exclusively on the natives of<lb break="yes"/>
+                    <placeName key="altspanien">Old Spain</placeName>. For some years back<lb break="yes"/>
+                    <cb/> they have disposed at Madrid even<lb break="yes"/>of the most trifling employments in<lb break="yes"/>the administration of the customs<lb break="yes" />and the tobacco revenue. At an<lb break="yes"/>epoch when every thing tended to<lb break="yes"/>an uniform relaxation in the springs<lb break="yes"/>of the state, the system of venality<lb break="yes"/>made an alarming progress. For<lb break="yes"/>the most part it was by no means a<lb break="yes" />suspicious and distrustful policy, it<lb break="yes"/>was pecuniary interest alone, which<lb break="yes"/>bestowed all employments on Eu-<lb break="no" />ropeans. The result has been a jea-<lb break="no"/>lousy and perpetual hatred between<lb break="yes"/>the Chapetons and the Creoles. The<lb break="yes" />most miserable European, without<lb break="yes"/>education, and without intellectual<lb break="yes"/>cultivation, thinks himself superior<lb break="yes"/>to the whites born in the new con-<lb break="no"/>tinent. He knows that, protected<lb break="yes"/>by his countrymen, and favoured<lb break="yes"/>by chances common enough in a<lb break="yes"/>country where fortunes are as ra-<lb break="no"/>pidly acquired as they are lost, he<lb break="yes"/>may one day reach places, to which<lb break="yes"/>
+                    <fw type="catch" place="bottom">the</fw>
+                    <lb break="yes"/>
+                    <pb n="136" facs="#f0002"/>
+                    <cb/> the access is almost interdicted to<lb break="yes"/>the natives, even to those of them<lb break="yes"/>distinguished for their talents know-<lb break="no"/>ledge, and moral qualities. The<lb break="yes"/>natives prefer the denomination of<lb break="yes"/>
+                    <hi rendition="#i">Americans</hi> to that of Creoles. Since<lb break="yes"/>the peace of Versailles, and in par-<lb break="no"/>ticular, since the year 1789, we fre-<lb break="no"/>quently hear proudly declared, &#x201C;I<lb break="yes" />am not a <hi rendition="#i">Spaniard,</hi> I am an <hi rendition="#i">Ame-<lb break="no"/>rican!</hi>&#x201D; words which betray the<lb break="yes" />workings of a long resentment. In<lb break="yes"/>the eye of law, every white Cre-<lb break="no"/>ole is a Spaniard; but the abuse<lb break="yes"/>of the laws, the false measures of<lb break="yes"/>the colonial government, the exam-<lb break="no"/>ple of the <placeName key="vsa">United States of America</placeName>,<lb break="yes"/>and the influence of the opinions of<lb break="yes"/>the age, have relaxed the ties which<lb break="yes"/>formerly united more closely the<lb break="yes"/>Spanish Creoles to the European<lb break="yes"/>Spaniards. A wise administration<lb break="yes"/>
+                    <cb/> may re-establish harmony, calm<lb break="yes"/>their passions and resentments, and<lb break="yes"/>yet preserve for a long time the<lb break="yes" />union among the members of one<lb break="yes"/>and the same great family scattered<lb break="yes"/>over Europe and <placeName key="amerika" >America</placeName>, from the<lb break="yes"/>the Patagonian coast to the north of<lb break="yes"/>California.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The number of individuals of<lb break="yes"/>whom the white race is composed<lb break="yes"/>
+                    <hi rendition="#i">(Casta de los blancos o de los Espa-<lb break="no" />n&#x0303;oles)</hi> amounts probably, in all New<lb break="yes"/>Spain, to 1,200,000, of whom nearly<lb break="yes"/>the fourth part inhabited the <hi rendition="#i">pro-<lb break="no"/>vincias internas.</hi> In New Biscay,<lb break="yes"/>or in the intendancy of Durango,<lb break="yes"/>there is hardly an individual subject<lb break="yes"/>to the <hi rendition="#i" >tributo.</hi> Almost all the in-<lb break="no"/>habitants of these northern regions<lb break="yes"/>pretend to be of pure European ex-<lb break="no" />traction.</p>
+                <lb break="yes"/>
+                <p>&#x201C;In the year 1793 they reckoned</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>Souls.</cell>
+                        <cell>Spaniards.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>In the intendancy of Guanaxuato, on a total<lb break="yes"/>population of.....................</cell>
+                        <cell>398,000</cell>
+                        <cell>103,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Valladolid...........................</cell>
+                        <cell>290,000</cell>
+                        <cell>80,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Puebla..............................</cell>
+                        <cell>638,000</cell>
+                        <cell>63,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Oaxaca .............................</cell>
+                        <cell>411,000</cell>
+                        <cell>26,000</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <cb/>
+                <p>&#x201C;Consequently, in the four in-<lb break="no"/>tendancies adjoining the capital, we<lb break="yes"/>find 272,000 whites, either Europe-<lb break="no" />ans or descendants of Europeans, in<lb break="yes"/>a total population of 1,737,000 souls.<lb break="yes"/>For every hundred inhabitants, there<lb break="yes"/>were,</p>
+                <lb break="yes"/>
+                <p>In the intendancy of</p>
+                <lb break="yes"/>
+                <list>
+                    <item>Valladolid........ 27 whites.</item>
+                    <lb break="yes"/>
+                    <item>Guanaxuato...... 25</item>
+                    <lb break="yes"/>
+                    <item>Puebla .......... 9</item>
+                    <lb break="yes"/>
+                    <item>Oaxaca.......... 6</item>
+                </list>
+                <lb break="yes"/>
+                <p>&#x201C;These considerable differences<lb break="yes"/>show the degree of civilization to<lb break="yes"/>which the ancient Mexicans had at-<lb break="no" />tained south from the capital. These<lb break="yes"/>
+                    <cb/> southern regions were always the<lb break="yes"/>best inhabited. In the north, the<lb break="yes"/>Indian population was more thinly<lb break="yes" />sown. Agriculture has only begun<lb break="yes"/>to make any progress there since<lb break="yes"/>the period of the conquest.</p>
+                <lb break="yes"/>
+                <p>&#x201C;It is curious to compare toge-<lb break="no"/>ther the number of whites in the<lb break="yes"/>West Indies and in Mexico. The<lb break="yes"/>French part of St. Domingo con-<lb break="no"/>tained in its happiest &#x00E6;ra, 1788, on<lb break="yes"/>a surface of 1700 square leagues (25<lb break="yes"/>to the degree) a smaller population<lb break="yes"/>than that of the intendancy of la<lb break="yes"/>Puebla. Page<note place="foot" n="*" xml:id="fn1-1" next="#fn1-2">In 1802 there were in the whole island of St. Domingo only 375,000 inhabitants,<lb break="yes"/>whereof 290,000 were labourers, 47,000 domestics, artisans, and sailors, and 37,000<lb break="yes"/>
+                        <fw type="catch" place="bottom">soldiers.</fw>
+                    </note> estimates the po-<lb break="no"/>pulation of St. Domingo at 520,000<lb break="yes"/>inhabitants, among whom there were<lb break="yes"/>40,000 whites, 28,000 people of co-<lb break="no"/>
+                    <fw type="catch" place="bottom">lour,</fw>
+                    <lb break="yes"/>
+                    <pb n="137" facs="#f0003"/>
+                    <cb/> lour, and 452,000 slaves. Hence,<lb break="yes"/>in St. Domingo, in every 100 souls,<lb break="yes"/>eight were white, six free people of<lb break="yes" />colour, and eighty-six African slaves.<lb break="yes"/>Jamaica was computed in 1787 to<lb break="yes"/>have in every 100 inhabitants, ten<lb break="yes" />whites, four people of colour, and<lb break="yes"/>eighty-six slaves; and yet this Eng-<lb break="no"/>lish colony possesses a smaller popu-<lb break="no" />lation by one third than the intend-<lb break="no"/>ancy of Oaxaca. Hence, the dispro-<lb break="no"/>portion between the Europeans or<lb break="yes" />their descendants, and the casts of<lb break="yes"/>Indian or African blood, is still<lb break="yes"/>greater in the southern part of New<lb break="yes" />Spain, than in the French and Eng-<lb break="no"/>lish sugar islands. The island of<lb break="yes"/>Cuba, on the contrary, exhibits even<lb break="yes" />at this day, in the distribution of the<lb break="yes"/>races, a very great and a very con-<lb break="no"/>solatory difference. From the most<lb break="yes" />careful statistical researches which<lb break="yes"/>I was enabled to make, during my<lb break="yes"/>stay at the Havannah, in 1800 and<lb break="yes"/>
+                    <cb/> 1804, I found that at the last of<lb break="yes"/>these epochs, the total population<lb break="yes"/>of the island of Cuba amounted to<lb break="yes" />432,000 souls, among whom there<lb break="yes"/>were</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>A. Freemen..........</cell>
+                        <cell>324,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Whites...... 234,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>People of colour 90,000</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>B. Slaves ............</cell>
+                        <cell>
+                            <hi rendition="#u">108,000</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>432,000</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>or in every 100 inhabitants, fifty-<lb break="maybe"/>four Creole and European whites,<lb break="yes"/>twenty-one men of colour, and<lb break="yes" />twenty-five slaves. The proportion<lb break="yes"/>of freemen to slaves is there as three<lb break="yes"/>to one, while at Jamaica they are as<lb break="yes"/>one to six.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The following table exhibits<lb break="yes"/>the proportion of the other casts to<lb break="yes"/>the whites in the different parts of<lb break="yes"/>
+                    <placeName key="amerika">
+                        <placeName key="amerika">the new continent</placeName>
+                    </placeName>. Out of every<lb break="yes"/>100 inhabitants, we reckon</p>
+                <lb break="yes"/>
+                <list>
+                    <item>In the United States of <placeName key="nordamerika">North America</placeName> ............ 83 whites.</item>
+                    <lb break="yes"/>
+                    <item>Island of Cuba................................ 54</item>
+                    <lb break="yes"/>
+                    <item>Kingdom of New Spain (without including the <hi rendition="#i">pro-<lb break="no"/>vincias internas</hi>)........................... 16</item>
+                    <lb break="yes"/>
+                    <item>Kingdom of Peru............................. 12</item>
+                    <lb break="yes"/>
+                    <item>Island of Jamaica ............................. 10</item>
+                </list>
+                <lb break="yes"/>
+                <cb/>
+                <p>&#x201C;In the capital of Mexico, ac-<lb break="no"/>cording to the enumeration of the<lb break="yes"/>Count <persName key="revillagigedo_jvgpdphyad">de Revillagigedo</persName>, in every<lb break="yes"/>100 inhabitants, forty-nine are Spa-<lb break="no"/>nish Creoles, two Spaniards born<lb break="yes"/>in Europe, twenty-four Aztec and<lb break="yes"/>Otomite Indians, and twenty-five<lb break="yes"/>people of mixed blood. The exact<lb break="yes"/>knowledge of these proportions is<lb break="yes"/>of the utmost importance to those<lb break="yes"/>who have the superintendance of<lb break="yes"/>the colonies.</p>
+                <lb break="yes"/>
+                <p>&#x201C;It would be difficult to esti-<lb break="no"/>mate exactly how many Europeans<lb break="yes"/>there are among the 1,200,000<lb break="yes"/>
+                    <cb/> whites who inhabit New Spain. As<lb break="yes"/>in the capital of Mexico itself, where<lb break="yes"/>the government brings together the<lb break="yes" />greatest number of Spaniards, in a<lb break="yes"/>population of more than 135,000<lb break="yes"/>souls, not more than 2500 indivi-<lb break="no" />duals are born in Europe, it is more<lb break="yes"/>than probable that the whole king-<lb break="no"/>dom does not contain more than 70<lb break="yes"/>or 80,000. They constitute, there-<lb break="no"/>fore, only the 70th part of the whole<lb break="yes"/>population, and the proportion of<lb break="yes" />Europeans to white Creoles is as one<lb break="yes"/>to fourteen.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The Spanish laws prohibit all<lb break="yes"/>
+                    <note place="foot" n="*" xml:id="fn1-2" prev="#fn1-1">soldiers. To what a degree must the population have diminished within the last six<lb break="yes" />years! In the island of <placeName key="barbados">Barbadoes</placeName>, the number of whites is greater than in any of the other<lb break="yes" />islands; it amounts to 16,000 on a total population of 80,000.</note>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">entry</fw>
+                    <lb break="yes"/>
+                    <pb n="138" facs="#f0004"/>
+                    <cb/> entry into the American possessions<lb break="yes"/>to every European not born in the<lb break="yes"/>peninsula. The words European<lb break="yes"/>and Spaniard are become synoni-<lb break="no"/>mous in Mexico and Peru. The in-<lb break="no"/>habitants of the remote provinces<lb break="yes"/>have therefore a difficulty in-con-<lb break="no"/>ceiving that there can be Europeans<lb break="yes"/>who do not speak their language;<lb break="yes"/>and they consider this ignorance as<lb break="yes"/>a mark of low extraction, because,<lb break="yes"/>every where around them, all, ex-<lb break="no"/>cept the very lowest class of the<lb break="yes"/>people, speak Spanish. Better ac-<lb break="no"/>quainted with the history of the six-<lb break="no"/>teenth century than with that of our<lb break="yes"/>own times, they imagine that Spain<lb break="yes"/>continues to possess a decided pre-<lb break="no" />ponderance over the rest of Europe.<lb break="yes"/>To them the peninsula appears the<lb break="yes"/>very centre of European civilization.<lb break="yes" />It is otherwise with the Americans<lb break="yes"/>of the capital. Those of them who<lb break="yes"/>are acquainted with the French or<lb break="yes" />English literature fall easily into a<lb break="yes"/>contrary extreme; and have still a<lb break="yes"/>more unfavourable opinion of the<lb break="yes" />mother country than the French had<lb break="yes"/>at a time when communication was<lb break="yes"/>less frequent between Spain and<lb break="yes" />the rest of Europe. They prefer<lb break="yes"/>strangers from other countries to the<lb break="yes"/>Spaniards; and they flatter them-<lb break="no"/>selves with the idea that intellectual<lb break="yes"/>cultivation has made more rapid<lb break="yes"/>progress in the colonies than in the<lb break="yes" />peninsula.&#x201D;</p>
+                <lb break="yes"/>
+                <p>&#x201C;This progress is indeed very re-<lb break="no"/>markable at the Havanah, Lima,<lb break="yes"/>Santa Fe, Quito, Popayan, and<lb break="yes" />Caraccas. Of all these great cities<lb break="yes"/>the Havanah bears the greatest re-<lb break="no"/>semblance to those of Europe in<lb break="yes" />customs, refinements of luxury, and<lb break="yes"/>the tone of society. At Havanah<lb break="yes"/>the state of politics and their influ-<lb break="no" />ence on commerce is best under-<lb break="no"/>stood. However, notwithstanding<lb break="yes"/>the efforts of the <hi rendition="#i" >patriotic society of</hi>
+                    <lb break="yes"/>
+                    <cb/>
+                    <hi rendition="#i">the island of Cuba,</hi> which encou-<lb break="no"/>rages the sciences with the most<lb break="yes"/>generous zeal, they prosper very<lb break="yes"/>slowly in a country where cultiva-<lb break="no"/>tion and the price of colonial pro-<lb break="no"/>duce engross the whole attention of<lb break="yes"/>the inhabitants. The study of the<lb break="yes"/>mathematics, chemistry, mineral-<lb break="no"/>logy, and botany, is more general<lb break="yes"/>at Mexico, Santa Fe, and Lima.<lb break="yes"/>We every where observe a great<lb break="yes"/>intellectual activity, and among the<lb break="yes"/>youth a wonderful facility of seizing<lb break="yes"/>the principles of science. It is said<lb break="yes"/>that this facility is still more remark-<lb break="no"/>able among the inhabitants of Quito<lb break="yes" />and Lima than at Mexico and Santa<lb break="yes"/>Fe. The former appear to possess<lb break="yes"/>more versatility of mind and a more<lb break="yes" />lively imagination; while the Mex-<lb break="no"/>icans and the natives of Santa Fe<lb break="yes"/>have the reputation of greater per-<lb break="no" />severance in the studies to which<lb break="yes"/>they have once addicted them-<lb break="no"/>selves.&#x201D;</p>
+                <lb break="yes"/>
+                <p>&#x201C;No city of <placeName key="amerika">the <placeName key="amerika">new continent</placeName>
+                    </placeName>,<lb break="yes"/>without even excepting those of the<lb break="yes" />United States, can display such great<lb break="yes"/>and solid scientific establishments as<lb break="yes"/>the capital of Mexico. I shall con-<lb break="no"/>tent myself here with naming the<lb break="yes"/>School of Mines, directed by the<lb break="yes"/>learned <persName key="elhuyar_fd" >Elhuyar</persName>. This academy bears<lb break="yes"/>the title of <hi rendition="#i">Academia de los Nobles<lb break="yes"/>Artes de Mexico.</hi> It owes its exis-<lb break="no"/>tence to the patriotism of several<lb break="yes"/>Mexican individuals, and to the<lb break="yes"/>protection of the minister of Gal-<lb break="no"/>vez. The government assigned it<lb break="yes"/>a spacious building, in which there<lb break="yes"/>is a much finer and more complete<lb break="yes"/>collection of casts than is to be<lb break="yes"/>found in any part of Germany.<lb break="yes"/>We are astonished on seeing that<lb break="yes"/>the Apollo of Belvidere, the group<lb break="yes" />of Laocoon, and still more colossal<lb break="yes"/>statues, have been conveyed through<lb break="yes"/>mountainous roads at least as nar-<lb break="no"/>row as those of St. Gothard; and<lb break="yes"/>
+                    <fw type="catch" place="bottom">we</fw>
+                    <lb break="yes"/>
+                    <pb n="139" facs="#f0005"/>
+                    <cb/> we are surprised at finding these<lb break="yes"/>masterpieces of antiquity collected<lb break="yes"/>together under the torrid zone, in a<lb break="yes"/>table land higher than the convent<lb break="yes"/>of the great St. Bernard. The col-<lb break="no"/>lection of casts brought to Mexico<lb break="yes"/>cost the king 200,000 francs<note place="foot" n="*">8334<hi rendition="#i">l.</hi> sterling.</note>. The<lb break="yes"/>remains of the Mexican sculpture,<lb break="yes"/>those colossal statues of basaltes and<lb break="yes"/>porphyry, which are covered with<lb break="yes"/>Aztec hieroglyphics, and bear some<lb break="yes"/>relation to the Egyptian and Hin-<lb break="no"/>doo style, ought to be collected to-<lb break="no" />gether in the edifice of the academy,<lb break="yes"/>or rather in one of the courts which<lb break="yes"/>belong to it. It would be curious<lb break="yes" />to see these monuments of the first<lb break="yes"/>cultivation of our species, the works<lb break="yes"/>of a semibarbarous people inhabit-<lb break="no"/>ing the Mexican <placeName key="anden">Andes</placeName>, placed be-<lb break="no"/>side the beautiful forms produced<lb break="yes"/>under the sky of Greece and Italy.&#x201D;</p>
+                <lb break="yes"/>
+                <p>&#x201C;The revenues of the Academy<lb break="yes"/>of Fine Arts at Mexico amount to<lb break="yes"/>125,000 francs <note place="foot" n="&#x2020;">5208<hi rendition="#i">l</hi> sterling. <hi rendition="#i">Trans.</hi>
+                    </note>, of which the go-<lb break="no"/>vernment gives 60,000, the body of<lb break="yes"/>Mexican miners nearly 25,000, the<lb break="yes"/>
+                    <hi rendition="#i">consulado,</hi> or association of mer-<lb break="no"/>chants of the capital, more than<lb break="yes"/>1500. It is impossible not to per-<lb break="no"/>ceive the influence of this establish-<lb break="no"/>ment on the taste of the nation.<lb break="yes"/>This influence is particularly visible<lb break="yes"/>in the symmetry of the buildings,<lb break="yes"/>in the perfection with which the<lb break="yes"/>hewing of stone is conducted, and<lb break="yes"/>in the ornaments of the capitals and<lb break="yes" />stucco relievos. What a number of<lb break="yes"/>beautiful edifices are to be seen at<lb break="yes"/>Mexico! nay, even in provincial<lb break="yes"/>towns like Guanaxato and Quere-<lb break="no"/>taro! These monuments, which<lb break="yes"/>frequently cost a million and a mil-<lb break="no"/>lion and a half of francs <note place="foot" n="&#x2021;">41,670<hi rendition="#i">l.</hi> and 62,505<hi rendition="#i">l. Trans.</hi>
+                    </note>, would<lb break="yes"/>appear to advantage in the finest<lb break="yes"/>
+                    <cb/> streets of Paris, Berlin, and Peters-<lb break="no"/>burg. M. Tolsa, professor of sculp-<lb break="no"/>ture at Mexico, was even able to<lb break="yes"/>cast an equestrian statue of King<lb break="yes"/>
+                    <persName key="karliv">Charles the Fourth</persName>; a work which,<lb break="yes"/>with the exception of the Marcus<lb break="yes"/>Aurelius at Rome, surpasses in<lb break="yes"/>beauty and purity of stile every<lb break="yes"/>thing which remains in this way in<lb break="yes"/>Europe. Instruction is communi-<lb break="no"/>cated <hi rendition="#i">gratis</hi> at the Academy of Fine<lb break="yes"/>Arts. It is not confined alone to<lb break="yes"/>the drawing of landscapes and<lb break="yes"/>figures; they have had the good<lb break="yes"/>sense to employ other means for<lb break="yes" />exciting the national industry. The<lb break="yes"/>academy labours successfully to in-<lb break="no"/>troduce among the artisans a taste<lb break="yes"/>for elegance and beautiful forms.<lb break="yes"/>Large rooms, well lighted by Ar-<lb break="no"/>gand&#x2019;s lamps, contain every even-<lb break="no"/>ing some hundreds of young peo-<lb break="no"/>ple, of whom some draw from<lb break="yes"/>relievo or living models, while<lb break="yes"/>others copy drawings of furniture,<lb break="yes"/>chandeliers, or other ornaments in<lb break="yes"/>bronze. In this assemblage (and<lb break="yes"/>this is very remarkable in the midst<lb break="yes"/>of a country where the prejudices<lb break="yes"/>of the nobility against the casts are<lb break="yes"/>so inveterate) rank, colour, and<lb break="yes"/>race is confounded: we see the In-<lb break="no"/>dian and the Mestizo sitting beside<lb break="yes"/>the white, and the son of a poor ar-<lb break="no"/>tisan in emulation with the children<lb break="yes"/>of the great lords of the country. It<lb break="yes"/>is a consolation to observe, that un-<lb break="no"/>der every zone the cultivation of<lb break="yes"/>science and art establishes a certain<lb break="yes"/>equality among men, and obliterates<lb break="yes" />for a time, at least, all those petty<lb break="yes"/>passions of which the effects are so<lb break="yes"/>prejudicial to social happiness.</p>
+                <lb break="yes"/>
+                <p>&#x201C;Since the close of the reign of<lb break="yes"/>
+                    <persName key="karliii">Charles the Third</persName>, and under that<lb break="yes"/>
+                    <fw type="catch" place="bottom">of</fw>
+                    <lb break="yes"/>
+                    <pb n="140" facs="#f0006"/>
+                    <cb/> of <persName key="karliv">Charles the Fourth</persName>, the study of<lb break="yes"/>the physical sciences has made great<lb break="yes"/>progress, not only in Mexico, but in<lb break="yes"/>general in all the Spanish colonies.<lb break="yes"/>No European government has sacri-<lb break="no" />ficed greater sums to advance the<lb break="yes"/>knowledge of the vegetable kingdom<lb break="yes"/>than the Spanish government. Three<lb break="yes"/>
+                    <hi rendition="#i">botanical expeditions,</hi> in Peru, New<lb break="yes" />Grenada, and New Spain, under the<lb break="yes"/>direction of MM. <persName key="ruizlópez_hipolito">Ruiz</persName> and <persName key="pavon_j" >Pavon</persName>,<lb break="yes"/>Don <persName key="mutis_jc">Jose Celestino Mutis</persName>, and MM.<lb break="yes"/>
+                    <persName key="sesselacasta_md">Sesse</persName> and <persName key="mocino_jm" >Mocin&#x0303;o</persName>, have cost the state<lb break="yes"/>nearly two millions of francs <note place="foot" n="*">83,304l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>.<lb break="yes"/>Moreover, botanical gardens have<lb break="yes"/>been established at Manilla and the<lb break="yes"/>Canary islands. The commission<lb break="yes"/>destined to draw plans of the canal<lb break="yes"/>of <hi rendition="#i">los Guines</hi> was also appointed to<lb break="yes"/>examine the vegetable productions of<lb break="yes"/>the island of Cuba. All these re-<lb break="no"/>searches, conducted during twenty<lb break="yes"/>years in the most fertile regions of<lb break="yes"/>
+                    <placeName key="amerika">
+                        <placeName key="amerika">the new continent</placeName>
+                    </placeName>, have not only<lb break="yes"/>enriched science with more than<lb break="yes"/>four thousand new species of plants,<lb break="yes"/>but have also contributed much to<lb break="yes"/>diffuse a taste for natural history<lb break="yes"/>among the inhabitants of the coun-<lb break="no"/>try. The city of Mexico exhibits a<lb break="yes"/>very interesting botanical garden<lb break="yes"/>within the very precincts of the<lb break="yes" />viceroy&#x2019;s palace. Professor <persName key="cervantes_vicente">Cer-<lb break="no"/>vantes</persName> gives annual courses there,<lb break="yes" />which are very well attended. This<lb break="yes"/>
+                    <hi rendition="#i">savant</hi> possesses, besides his herbals,<lb break="yes"/>a rich collection of Mexican mine-<lb break="no"/>rals. M. <persName key="mocino_jm">Mocin&#x0303;o</persName>, whom we just<lb break="yes"/>now mentioned as one of the coad-<lb break="no"/>jutors of M. <persName key="sesselacasta_md">Sesse</persName>, and who has<lb break="yes"/>pushed his laborious excursions from<lb break="yes"/>
+                    <cb/> the kingdom of Guatimala to the<lb break="yes"/>north-west coast or island of Van-<lb break="no"/>couver and Quadra; and M. <persName key="echevaria_01" >Eche-<lb break="no"/>veria</persName>, a painter of plants and ani-<lb break="no"/>mals, whose works will bear a com-<lb break="no"/>parison with the most perfect pro-<lb break="no"/>ductions of the kind in Europe, are<lb break="yes"/>both of them natives of New Spain.<lb break="yes"/>They had both attained a distin-<lb break="no"/>guished rank among <hi rendition="#i" >savans</hi> and ar-<lb break="no"/>tists before quitting their country<note place="foot" n="&#x2020;">The public is only yet put in possession of the discoveries of the botanical expedition<lb break="yes"/>of Peru and Chili. The great herbals of M. <persName key="sesselacasta_md">Sesse</persName>, and the immense collection of draw-<lb break="no"/>ings of Mexican plants executed under his eye, arrived at Madrid in 1803. The publica-<lb break="no"/>tion of both the Flora of New Spain and the Flora of Santa Fe de Bogota is expected with<lb break="yes"/>impatience. The latter is the fruit of 40 years researches and observations by the cele-<lb break="no" />brated <persName key="mutis_jc">Mutis</persName>, one of the greatest botanists of the age.</note>.</p>
+                <lb break="yes"/>
+                <p>The principles of the new che-<lb break="no"/>mistry, which is known in the Spa-<lb break="no"/>nish colonies by the equivocal appel-<lb break="no" />lation of new philosophy <hi rendition="#i">(nueva<lb break="yes" />filosofia),</hi> are more diffused in Mex-<lb break="no"/>ico than in many parts of the penin-<lb break="no"/>sula. A European traveller cannot<lb break="yes"/>undoubtedly but be surprised to<lb break="yes"/>meet in the interior of the country,<lb break="yes"/>on the very borders of California,<lb break="yes"/>with young Mexicans who reason on<lb break="yes"/>the decomposition of water in the<lb break="yes"/>process of amalgamation with free<lb break="yes"/>air. The School of Mines possesses<lb break="yes"/>a chemical laboratory; a geological<lb break="yes"/>collection, arranged according to the<lb break="yes"/>system of <persName key="werner_ag">Werner</persName>; a physical cabi-<lb break="no"/>net, in which we not only find the<lb break="yes" />valuable instruments of <persName key="ramsden_j">Ramsden</persName>,<lb break="yes"/>Adams, <persName key="lenoir_e">Le Noir</persName>, and <persName key="berthoud_l">Louis Ber-<lb break="no"/>thoud</persName>, but also models executed in<lb break="yes"/>the capital even, with the greatest<lb break="yes"/>precision, and from the finest wood<lb break="yes"/>in the country. The best mineralo-<lb break="no"/>gical work in the Spanish language<lb break="yes"/>was printed at Mexico, I mean the<lb break="yes"/>Manual of Oryctognesy, composed<lb break="yes"/>by M. <persName key="rio_amd">del Rio</persName>, according to the<lb break="yes"/>principles of the school of Freyberg,<lb break="yes"/>in which the author was formed.<lb break="yes"/>
+                    <fw type="catch" place="bottom">The</fw>
+                    <lb break="yes"/>
+                    <pb n="141" facs="#f0007"/>
+                    <cb/> The first Spanish translation of La-<lb break="no"/>vater&#x2019;s Elements of Chemistry was<lb break="yes"/>also published at Mexico. I cite<lb break="yes"/>these insulated facts because they<lb break="yes"/>give us the measure of the ardour<lb break="yes"/>with which the exact sciences are<lb break="yes"/>begun to be studied in the capi-<lb break="no"/>tal of New Spain. This ardour is<lb break="yes"/>much greater than that with which<lb break="yes"/>they addict themselves to the stu-<lb break="no"/>dy of languages and ancient litera-<lb break="no"/>ture.<note place="foot" n="*">This is as much as to say that taste is rather at a low ebb among them, and that<lb break="yes"/>imagination is in a somewhat similar state; for wherever taste and imagination flourish,<lb break="yes"/>an admiration for the ancients is seen to prevail. The observation of <persName key="humboldt_av">Humboldt</persName> may<lb break="yes"/>perhaps receive a much more extensive application; and it may peculiarly be applied to<lb break="yes"/>the whole of <placeName key="amerika" >America</placeName>. I have seen it asserted that there are whole states in the union<lb break="yes"/>where a classical seminary of any kind is not to be found. It would be rash to say that<lb break="yes"/>the faculties of men transplanted to <placeName key="amerika" >America</placeName> gradually assimilate to those of the abori-<lb break="no"/>gines, who are stated by M. <persName key="humboldt_av" >Humboldt</persName> to be destitute of taste, but excellently adapted for<lb break="yes"/>science. Should we not rather say that every age has its favourite study, which it culti-<lb break="no"/>vates almost to the neglect of every other? At one time it is all commenting and com-<lb break="no"/>paring manuscripts:&#x2014;<lb break="yes"/>
+                        <hi rendition="#c">&#x201C;And A&#x2019;s deposed and B with pomp restored:&#x201D;</hi>
+                        <lb break="yes"/>at another, the philosophy of <persName key="plato" >Plato</persName> and <persName key="aristoteles">Aristotle</persName> divide the world between them; from<lb break="yes"/>that a transition is made to poetry, and no man can be great without producing an epic<lb break="yes"/>poem or a handsome volume of sonnets; and in the present age almost every thing but<lb break="yes"/>the refuse of talent carefully preserved in the cells of some fat old university, seems em-<lb break="no" />ployed, more or less, in physical science. <hi rendition="#i">Trans.</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201C;Instruction in mathematics is<lb break="yes"/>less carefully attended to in the<lb break="yes"/>university of Mexico than in the<lb break="yes"/>School of Mines. The pupils of<lb break="yes"/>this last establishment go farther<lb break="yes"/>into analysis; they are instructed in<lb break="yes"/>the antegral and differential calculi.<lb break="yes"/>On the return of peace and free in-<lb break="no"/>tercourse with Europe, when astro-<lb break="no" />nomical instruments (chronometers,<lb break="yes"/>sextants, and the repeating circles of<lb break="yes"/>
+                    <persName key="borda_jcd">Borda</persName>) shall become more common,<lb break="yes"/>young men will be found in the<lb break="yes"/>most remote parts of the kingdom<lb break="yes"/>capable of making observations, and<lb break="yes"/>calculating them after the most re-<lb break="no"/>cent methods. I have already indi-<lb break="no"/>cated in the analysis of my maps the<lb break="yes"/>advantage which might be drawn by<lb break="yes"/>the government from this extraor-<lb break="no"/>dinary aptitude in constructing a<lb break="yes"/>
+                    <cb/> map of the country. The taste<lb break="yes"/>for astronomy is very old in Mexico.<lb break="yes"/>Three distinguished men, <persName key="velazquezcardenasyleon_j">Velasquez</persName>,<lb break="yes"/>
+                    <persName key="leonygama_ad">Gama</persName>, and Alzate, did honour to<lb break="yes"/>their country towards the end of the<lb break="yes"/>last century. All the three made a<lb break="yes"/>great number of astronomical obser-<lb break="no"/>vations, especially of eclipses of the<lb break="yes" />satellites of Jupiter. Alzate, the<lb break="yes"/>worst informed of them, was the<lb break="yes"/>correspondent of the Academy of<lb break="yes"/>Sciences at Paris. Inaccurate as an<lb break="yes"/>observer, and of an activity fre-<lb break="no"/>quently impetuous, he gave himself<lb break="yes"/>up to too many objects at a time.<lb break="yes"/>He is entitled to the real merit, how-<lb break="no"/>ever, of having excited his country-<lb break="no"/>men to the study of the physical<lb break="yes"/>sciences. The <hi rendition="#i" >Gazetta</hi> de Littera-<lb break="no"/>tura, which he published for a long<lb break="yes"/>time at Mexico, contributed singu-<lb break="no"/>larly to give encouragement and<lb break="yes"/>impulsion to the Mexican youth.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The most remarkable geome-<lb break="no"/>trician produced by New Spain since<lb break="yes"/>the time of <persName key="siguenzaygongora_cd" >Siguenza</persName> was <persName key="velazquezcardenasyleon_j">Don Joac-<lb break="no"/>quin Velasquez Cardinas y Leon</persName>.<lb break="yes"/>All the astronomical and geodesical<lb break="yes"/>labours of this indefatigable <hi rendition="#i">savant</hi>
+                    <lb break="yes"/>bear the stamp of the greatest pre-<lb break="no"/>cision. He was born on the 21st<lb break="yes"/>July, 1732, in the interior of the<lb break="yes"/>country, at the farm of Santiago<lb break="yes"/>
+                    <fw type="catch" place="bottom">July,</fw>
+                    <lb break="yes"/>
+                    <pb n="142" facs="#f0008"/>
+                    <cb/> Acebedocla, near the Indian village<lb break="yes"/>of Tizicapan; and he had the merit,<lb break="yes"/>we may say, of forming himself. At<lb break="yes" />the age of four he communicated the<lb break="yes"/>small pox to his father, who died of<lb break="yes"/>them. An uncle, parish priest of<lb break="yes" />Xaltocan, took care of his educa-<lb break="no"/>tion, and placed him under the in-<lb break="no"/>struction of an Indian of the name<lb break="yes"/>of Manuel Asentzio; a man of<lb break="yes"/>great natural strength of mind, and<lb break="yes"/>well versed in the knowledge of the<lb break="yes"/>Mexican history and mythology.<lb break="yes"/>
+                    <persName key="velazquezcardenasyleon_j">Velasquez</persName> learned at Xaltocan seve-<lb break="no"/>ral Indian languages, and the use of<lb break="yes"/>the hieroglyphical writings of the<lb break="yes"/>Aztecs. It is to be regretted that he<lb break="yes"/>published nothing on this very in-<lb break="no"/>teresting branch of antiquity. Placed<lb break="yes"/>at Mexico in the Tridentine college,<lb break="yes"/>he found neither professor nor books<lb break="yes"/>nor instruments<note place="foot" n="*">From this we may discover that the professors of this university are not behind those<lb break="yes"/>of some others in the praise-worthy custom of considering their chairs as sinecures.<lb break="yes"/>
+                        <hi rendition="#i">Trans.</hi>
+                    </note>. With the small<lb break="yes"/>assistance which he could obtain, he<lb break="yes"/>fortified himself in the study of the<lb break="yes" />mathematics and the ancient lan-<lb break="no"/>guages. A lucky accident threw<lb break="yes"/>into his hands the works of Newton<lb break="yes"/>and Bacon. He drew from the one<lb break="yes"/>a taste for astronomy, and from the<lb break="yes"/>other an acquaintance with the true<lb break="yes" />methods of philosophising. While<lb break="yes"/>poor and unable to find any instru-<lb break="no"/>ment even in Mexico, he set him-<lb break="no"/>self, with his friend M. Guadalaxara<lb break="yes"/>(now professor of mathematics in<lb break="yes"/>the Academy of Painting), to con-<lb break="no"/>struct telescopes and quadrants. He<lb break="yes"/>followed at the same time the pro-<lb break="no"/>fession of advocate, an occupation<lb break="yes"/>
+                    <cb/> which at Mexico, as well as else-<lb break="no"/>where, is much more lucrative than<lb break="yes"/>that of looking at the stars. What<lb break="yes" />he gained by his professional labours<lb break="yes"/>was laid out in purchasing instru-<lb break="no"/>ments in England. After being<lb break="yes" />named professor in the university,<lb break="yes"/>he accompanied the <hi rendition="#i">visitador</hi> Don<lb break="yes"/>
+                    <persName key="galvez_jd">Jose de Galvez</persName>
+                    <note place="foot" n="&#x2020;">The Count <persName key="galvez_jd">de Galvez</persName>, before obtaining the ministry of the Indies, travelled through<lb break="yes"/>the northern part of New Spain with the <choice>
+                            <sic>tide</sic>
+                            <corr type="editorial">title</corr>
+                        </choice> of <hi rendition="#i">visitador.</hi> This name is given to persons<lb break="yes"/>employed by the court to procure information as to the state of the colonies. Their<lb break="yes"/>journey <hi rendition="#i">(visita)</hi> has generally no other effect than that of counterbalancing for some time<lb break="yes"/>the power of the viceroys and the <hi rendition="#i">audiencias,</hi> of receiving an infinity of memoirs, peti-<lb break="no"/>tions, and projects, and of signalizing their stay by the introduction of some new impost.<lb break="yes"/>The people expect the arrival of the <hi rendition="#i">visitadores</hi> with the same impatience which they af-<lb break="no"/>terwards display for their departure.</note> in his journey to<lb break="yes"/>Sonora. Sent on a commission to<lb break="yes"/>California, he profited by the sere-<lb break="no" />nity of the sky in that peninsula to<lb break="yes"/>make a great number of astronomi-<lb break="no"/>cal observations. He first observed<lb break="yes" />there that in all the maps, for cen-<lb break="no"/>turies, through an enormous error<lb break="yes"/>of longitude, this part of the <placeName key="amerika">new<lb break="yes"/>continent</placeName> had always been marked<lb break="yes"/>several degrees farther west than it<lb break="yes" />really was. When the Abbe<lb break="yes"/>
+                    <persName key="chappedauteroche_j">Chappe</persName>, more celebrated for his<lb break="yes"/>courage and his zeal for the sciences<lb break="yes"/>than for the accuracy of his labours,<lb break="yes"/>arrived in California, he found the<lb break="yes"/>Mexican astronomer already estab-<lb break="no"/>lished there. <persName key="velazquezcardenasyleon_j">Velasquez</persName> had con-<lb break="no"/>structed for himself in Mimosa<lb break="yes"/>planks an observatory at St. Anne.<lb break="yes"/>Having already determined the po-<lb break="no"/>sition of this Indian village, he in-<lb break="no"/>formed the Abbe <persName key="chappedauteroche_j">Chappe</persName> that the<lb break="yes"/>moon&#x2019;s eclipse on the 18th June,<lb break="yes"/>1769, would be visible in California.<lb break="yes"/>The French astronomer doubted the<lb break="yes"/>truth of this assertion, till the eclipse<lb break="yes" />actually took place. <persName key="velazquezcardenasyleon_j" >Velasquez</persName> by<lb break="yes"/>himself made a very good observa-<lb break="no"/>tion of the transit of Venus over<lb break="yes" />the disk of the sun on the 3d June,<lb break="yes"/>
+                    <fw type="catch" place="bottom">1769.</fw>
+                    <lb break="yes"/>
+                    <pb n="143" facs="#f0009"/>
+                    <cb/> 1769. He communicated the re-<lb break="no"/>sult, the very morning of the tran-<lb break="no"/>sit, to the Abbe <persName key="chappedauteroche_j" >Chappe</persName>, and to the<lb break="yes"/>Spanish astronomers Don Vicente<lb break="yes"/>Doz, and Don Salvador de Medina.<lb break="yes"/>The French traveller was surprised<lb break="yes"/>at the harmony between the obser-<lb break="no"/>vation of <persName key="velazquezcardenasyleon_j" >Velasquez</persName> and his own.<lb break="yes"/>He was no doubt astonished to<lb break="yes"/>meet in California with a Mexican,<lb break="yes" />who, without belonging to any aca-<lb break="no"/>demy, and without having ever left<lb break="yes"/>New Spain, was able to observe<lb break="yes"/>as well as the academicians. In<lb break="yes"/>1773 <persName key="velazquezcardenasyleon_j">Velasquez</persName> executed the great<lb break="yes"/>geodesical undertaking, and to<lb break="yes"/>which we shall again return in<lb break="yes"/>speaking of the drain of the lakes of<lb break="yes"/>the valley of Mexico. The most<lb break="yes"/>essential service which this indefati-<lb break="no"/>gable man rendered to his country<lb break="yes"/>was the establishment of the <hi rendition="#i">Tribu-<lb break="no"/>nal</hi> and the School of Mines, the<lb break="yes"/>plans for which he presented to the<lb break="yes"/>court. He finished his laborious<lb break="yes"/>career on the 6th March, 1786,<lb break="yes" />while first director-general of the<lb break="yes"/>
+                    <hi rendition="#i">Tribunal de Mineria,</hi> and enjoying<lb break="yes"/>the title of <hi rendition="#i">Alcalde del Corte hono-<lb break="no"/>rario.</hi>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201C;After mentioning the labours<lb break="yes"/>of Alzate and <persName key="velazquezcardenasyleon_j">Velasquez</persName>, it would<lb break="yes" />be unjust to pass over the name of<lb break="yes"/>
+                    <persName key="leonygama_ad">Gama</persName>, the friend and fellow la-<lb break="no"/>bourer of the latter. Without for-<lb break="no"/>tune, and compelled to support a<lb break="yes"/>numerous family by a troublesome<lb break="yes"/>and almost mechanical labour un-<lb break="no"/>known and neglected during his life<lb break="yes"/>by his fellow citizens<note place="foot" n="*">The celebrated navigator <persName key="malaspina_a" >Alexander Malaspina</persName>, during his stay at Mexico, observed<lb break="yes"/>along with <persName key="leonygama_ad">Gama</persName>. He recommended him with much warmth to the court, as is proved<lb break="yes" />by the official letters of <persName key="malaspina_a" >Malaspina</persName>, preserved in the archives of the viceroy.</note>, who loaded<lb break="yes"/>him with eulogies after his death,<lb break="yes"/>
+                    <persName key="leonygama_ad">Gama</persName> became by his own unassisted<lb break="yes"/>
+                    <cb/> efforts an able and well informed<lb break="yes"/>astronomer. He published several<lb break="yes"/>memoirs on eclipses of the moon; on<lb break="yes" />the satellites of Jupiter, on the al-<lb break="no"/>manac and chronology of the an-<lb break="no"/>cient Mexicans, and on the climate<lb break="yes"/>of New Spain; all of which an-<lb break="no"/>nounce a great precision of ideas<lb break="yes"/>and accuracy of observation. If I<lb break="yes"/>have allowed myself to enter into<lb break="yes"/>these details on the literary merit of<lb break="yes"/>three Mexican <hi rendition="#i">savans,</hi> it is merely<lb break="yes"/>for the sake of proving from their<lb break="yes"/>example, that the ignorance which<lb break="yes"/>European pride has thought proper<lb break="yes"/>to attach to the Creoles is neither<lb break="yes"/>the effect of the climate nor of a<lb break="yes"/>want of moral energy; but that this<lb break="yes"/>ignorance, where it is still observ-<lb break="no"/>able, is solely the effect of the insu-<lb break="no"/>lation, and the defects in the social<lb break="yes"/>institutions of the colonies.&#x201D;</p>
+                <lb break="yes"/>
+                <p>&#x201C;If, in the present state of things,<lb break="yes"/>the cast of whites is the only one in<lb break="yes"/>which we find almost exclusively<lb break="yes" />any thing like intellectual cultiva-<lb break="no"/>tion, it is also the only one which<lb break="yes"/>possesses great wealth. This wealth<lb break="yes"/>is unfortunately still more unequally<lb break="yes"/>distributed in Mexico than in the<lb break="yes"/>
+                    <hi rendition="#i">capitania general</hi> of Caraccas, the<lb break="yes" />Havanah, and especially Peru. At<lb break="yes"/>Caraccas, the heads of the richest<lb break="yes"/>families possess a revenue of 200,000<lb break="yes" />livres<note place="foot" n="&#x2020;">8334l. sterling. <hi rendition="#i" >Trans.</hi>
+                    </note>. In the island of Cuba we<lb break="yes"/>find revenues of more than 6 or<lb break="yes"/>700,000 francs <note place="foot" n="&#x2021;">25,002l. or 29,169l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>. In these two in-<lb break="no"/>dustrious colonies agriculture has<lb break="yes"/>founded more considerable fortunes<lb break="yes"/>than has been accumulated by the<lb break="yes"/>working of the mines in Peru. At<lb break="yes"/>Lima an annual revenue of 80,000<lb break="yes"/>
+                    <fw type="catch" place="bottom">francs</fw>
+                    <lb break="yes"/>
+                    <pb n="144" facs="#f0010"/>
+                    <cb/> francs is very uncommon.<note place="foot" n="a">3333l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> I know<lb break="yes"/>in reality of no Peruvian family in<lb break="yes"/>the possession of a fixed and sure re-<lb break="no"/>venue of 130,000 francs.<note place="foot" n="b">5417l. sterling. <hi rendition="#i" >Trans.</hi>
+                    </note> But in<lb break="yes"/>New Spain there are individuals<lb break="yes" />who possess no mines, whose reve-<lb break="no"/>nue amounts to a million of <note place="foot" n="c">41,670l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> francs.<lb break="yes"/>The family of the Count <hi rendition="#i">de la Va-<lb break="no"/>lenciana,</hi> for example, possesses<lb break="yes" />alone, on the ridge of the Cordillera,<lb break="yes"/>a property worth more than 25 mil-<lb break="no"/>lions of francs,<note place="foot" n="d">1,041,750l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> without including<lb break="yes"/>the mine of Valenciana near Guan-<lb break="no"/>axuato, which, <hi rendition="#i">communibus annis,</hi>
+                    <lb break="yes"/>yields a nett revenue of a million<lb break="yes"/>and a half of livres.<note place="foot" n="e">62,505l. sterling. <hi rendition="#i" >Trans.</hi>
+                    </note> This family,<lb break="yes"/>of which the present head, the<lb break="yes"/>young Count de Valenciana, is dis-<lb break="no"/>tinguished for a generous character<lb break="yes"/>and a noble desire of instruction,<lb break="yes"/>is only divided into three branches;<lb break="yes"/>and they possess altogether, even in<lb break="yes"/>years when the mine is not very lu-<lb break="no"/>crative, more than 2,200,000 francs<lb break="yes"/>of revenue.<note place="foot" n="f">91,674l. sterling. <hi rendition="#i" >Trans.</hi>
+                    </note> The Count de <hi rendition="#i">Regla,</hi>
+                    <lb break="yes"/>whose youngest son, the Marquis<lb break="yes"/>de San Christobal,<note place="foot" n="g">M. Terreros (this is the name by which this modest savant is known in France)<lb break="yes"/>preferred for a long time the instruction which his abode at Paris enabled him to pro-<lb break="no"/>cure, to the great fortune which he could only enjoy living in Mexico.</note> distinguished<lb break="yes"/>himself at Paris for his physical and<lb break="yes"/>physiological knowledge, construct-<lb break="no" />ed at the Havanah, at his own ex-<lb break="no"/>pence, in acajou and cedar (<hi rendition="#i">cedrella</hi>)<lb break="yes"/>wood, two vessels of the line of the<lb break="yes"/>largest size, which he made a pre-<lb break="no" />sent of to his sovereign. It was the<lb break="yes"/>seam of la Biscaina, near Pachuca,<lb break="yes"/>which laid the foundation of the<lb break="yes" />fortune of the house of Regla. The<lb break="yes"/>family of <hi rendition="#i">Fagoaga,</hi> well known for<lb break="yes"/>its beneficence, intelligence, and<lb break="yes"/>zeal for the public good, exhibits<lb break="yes"/>the example of the greatest wealth<lb break="yes"/>which was ever derived from a<lb break="yes"/>
+                    <cb/> mine. A single seam which the<lb break="yes"/>family of the Marquis of Fagoaga<lb break="yes"/>possesses in the district of Sombrerete<lb break="yes"/>left in five or six months, all charges<lb break="yes" />deducted, a nett profit of 20 mil-<lb break="no"/>lions of francs.<note place="foot" n="h">833,400l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201C;From these data one would<lb break="yes"/>suppose capitals in the Mexican fa-<lb break="no"/>milies infinitely greater than what<lb break="yes"/>are really observed. The deceased<lb break="yes"/>Count de la Valenciana, the first of<lb break="yes"/>the title, sometimes drew from his<lb break="yes"/>mine alone, in one year, a nett re-<lb break="no"/>venue of no less than six millions of<lb break="yes"/>livres.<note place="foot" n="i">250,020l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> This annual revenue, dur-<lb break="no"/>ing the last twenty-five years of his<lb break="yes"/>life, was never below from two to<lb break="yes"/>three millions of livres;<note place="foot" n="k">From 83,340l. to 125,010l. <hi rendition="#i">Trans.</hi>
+                    </note> and yet<lb break="yes"/>this extraordinary man, who came<lb break="yes" />without any fortune to <placeName key="amerika">America</placeName>,<lb break="yes"/>and who continued to live with<lb break="yes"/>great simplicity, left only behind<lb break="yes"/>him at his death, besides his mine,<lb break="yes"/>which is the richest in the world,<lb break="yes"/>ten millions in property and capi-<lb break="no"/>tal.<note place="foot" n="l" >416,700l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> This fact, which may be re-<lb break="no"/>lied on, will not surprise those who<lb break="yes"/>are acquainted with the interior<lb break="yes" />management of the great Mexican<lb break="yes"/>houses. Money rapidly gained is<lb break="yes"/>as rapidly spent. The working of<lb break="yes"/>mines becomes a game in which<lb break="yes"/>they embark with unbounded pas-<lb break="no"/>sion. The rich proprietors of mines<lb break="yes"/>lavish immense sums on quacks,<lb break="yes"/>who engage them in new under-<lb break="no"/>takings in the most remote pro-<lb break="no"/>vinces. In a country where the<lb break="yes"/>works are conducted on such an<lb break="yes" />extravagant scale, that the pit of a<lb break="yes"/>mine frequently requires two mil-<lb break="no"/>lions of francs to pierce, the bad<lb break="yes"/>
+                    <fw type="catch" place="bottom">success</fw>
+                    <lb break="yes"/>
+                    <pb n="145" facs="#f0011"/>
+                    <cb/> success of a rash project may absorb<lb break="yes"/>in a few years all that was gained<lb break="yes"/>in working the richest seams. We<lb break="yes" />must add, that from the internal<lb break="yes"/>disorder which prevails in the great-<lb break="no"/>est part of the great houses of both<lb break="yes" />Old and New spain, the head of a<lb break="yes"/>family is not unfrequently straitened<lb break="yes"/>with a revenue of half a million,<note place="foot" n="m">20,835l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>
+                    <lb break="yes"/>though he display no other luxury<lb break="yes"/>than that of numerous yokes of<lb break="yes"/>mules.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The mines have undoubtedly<lb break="yes"/>been the principal sources of the<lb break="yes"/>great fortunes of Mexico. Many<lb break="yes"/>miners have laid out their wealth in<lb break="yes"/>purchasing land, and have addicted<lb break="yes"/>themselves with great zeal to agri-<lb break="no" />culture. But there is also a con-<lb break="no"/>siderable number of very powerful<lb break="yes"/>families who have never had the<lb break="yes" />working of any very lucrative mines.<lb break="yes"/>Such are the rich descendants of<lb break="yes"/>
+                    <persName key="cortes_h">Cortez</persName>, or the <hi rendition="#i">Marquis del Valle.</hi>
+                    <lb break="yes"/>The Duke of Monteleon, a Neapo-<lb break="no"/>litan lord, who is now the head of<lb break="yes"/>the house of <persName key="cortes_h" >Cortez</persName>, possesses su-<lb break="no"/>perb estates in the province of Oax-<lb break="no"/>aca, near Toluca, and at Cuernavaca.<lb break="yes"/>The nett produce of his rents is ac-<lb break="no"/>tually no more than 550,000 frances,<note place="foot" n="n">22,98l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>
+                    <lb break="yes"/>the king having deprived the duke<lb break="yes"/>of the collection of the alcavalas<lb break="yes"/>and the duties on tobacco. The<lb break="yes"/>ordinary expenses of management<lb break="yes"/>amount to more than 125,000<lb break="yes"/>francs.<note place="foot" n="o">5208l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> However, several gover-<lb break="no"/>nors of the marquesado have be-<lb break="no"/>come singularly wealthy. If the<lb break="yes" />descendants of the great <hi rendition="#i">conquis-<lb break="no"/>tador</hi> would only live in Mexico,<lb break="yes"/>their revenue would immediately<lb break="yes"/>rise to more than a million and a<lb break="yes"/>half.<note place="foot" n="p">62,505l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <p>&#x201C;To complete the view of the<lb break="yes"/>immense wealth centered in the<lb break="yes"/>
+                    <cb/> hands of a few individuals in New<lb break="yes"/>Spain, which may compete with<lb break="yes"/>any thing in Great Britain, or the<lb break="yes" />European possessions in Hindostan,<lb break="yes"/>I shall add several exact statements<lb break="yes"/>both of the revenues of the Mexican<lb break="yes"/>clergy, and the pecuniary sacrifices<lb break="yes"/>annnually made by the body of mi-<lb break="no"/>ners (<hi rendition="#i">cuerpo de mineria)</hi> for the<lb break="yes"/>improvement of mining. This last<lb break="yes"/>body, formed by a union of the<lb break="yes"/>proprietors of mines, and represent-<lb break="no"/>ed by deputies who sit in the <hi rendition="#i">Tri-<lb break="no"/>bunal de Mineria,</hi> advanced in three<lb break="yes"/>years, between 1784 and 1787, a<lb break="yes"/>sum of four millions of francs<note place="foot" n="q">106,680l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> to<lb break="yes"/>individuals who were in want of<lb break="yes"/>the necessary funds to carry on<lb break="yes"/>great works. It is believed in the<lb break="yes"/>country that this money has not<lb break="yes"/>been very usefully employed <hi rendition="#i">(para<lb break="yes"/>habilitar);</hi> but its distribution<lb break="yes"/>proves the generosity and opulence<lb break="yes"/>of those who are able to make such<lb break="yes"/>considerable largesses. A European<lb break="yes"/>reader will be still more astonished<lb break="yes"/>when I inform him of the extraordi-<lb break="no"/>nary fact, that the respectable family<lb break="yes"/>of Fagoagas lent, a few years ago,<lb break="yes"/>without interest, a sum of more<lb break="yes"/>than three millions and a half of<lb break="yes"/>franks <note place="foot" n="r" >145,945l.</note> to a friend, whose fortune<lb break="yes"/>they were in the belief would be<lb break="yes"/>made by it in a solid manner; and<lb break="yes"/>this sum was irrevocably lost in an<lb break="yes" />unsuccessful new mining undertak-<lb break="no"/>ing. The architectural works which<lb break="yes"/>are carried on in the capital of<lb break="yes" />Mexico for the embellishment of the<lb break="yes"/>city are so expensive, that notwith-<lb break="no"/>standing the low rate of wages, the<lb break="yes" />suberb edifice constructed by order<lb break="yes"/>of the <hi rendition="#i" >Tribunal de Mineria</hi> for the<lb break="yes"/>School of Mines will cost at least<lb break="yes"/>three millions of francs,<note place="foot" n="s" >125,010l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> of which<lb break="yes"/>two millions were in readiness be-<lb break="no"/>
+                    <fw type="catch" place="bottom">fore</fw>
+                    <lb break="yes"/>
+                    <pb n="146" facs="#f0012"/>
+                    <cb/> fore the foundation was laid. To<lb break="yes"/>hasten the construction, and par-<lb break="no"/>ticularly to furnish the students im-<lb break="no" />mediately with a proper laboratory<lb break="yes"/>for metallic experiments on the<lb break="yes"/>amalgamation of great masses of<lb break="yes"/>minerals <hi rendition="#i">(beneficio de patio),</hi> the<lb break="yes"/>body of Mexican miners contributed<lb break="yes"/>monthly, in the year 1803 alone,<lb break="yes"/>the sum of 50,000 livres.<note place="foot" n="t">2083l. sterling.</note> Such is<lb break="yes"/>the facility with which vast projects<lb break="yes"/>are executed in a country where<lb break="yes" />wealth is divided among a small<lb break="yes"/>number of individuals.</p>
+                <lb break="yes"/>
+                <p>&#x201C;This inequality of fortune is<lb break="yes"/>still more conspicuous among the<lb break="yes"/>clergy, of whom a number suffer<lb break="yes" />extreme poverty, while others pos-<lb break="no"/>sess revenues which surpass those of<lb break="yes"/>many of the sovereign princes of<lb break="yes" />Germany. The Mexican clergy,<lb break="yes"/>less numerous than is believed in<lb break="yes"/>Europe, is only composed of ten<lb break="yes"/>thousand individuals, the half of<lb break="yes"/>
+                    <cb/> whom are regulars who wear the<lb break="yes"/>cowl. If we include lay brothers<lb break="yes"/>and sisters, or servants <hi rendition="#i">(legos, do-<lb break="no"/>nados y criados de los conventos),</hi>
+                    <lb break="yes"/>all those who are not in orders, we<lb break="yes"/>may estimate the clergy at 13 or<lb break="yes"/>14,000 individuals.<note place="foot" n="u" xml:id="fn2-1" next="#fn2-2">The number of monks of St. <persName key="franzvonassisi">Francis</persName> in Spain amounts to 15,600, more than all<lb break="yes"/>the ecclesiastics of the kingdom of Mexico. The clergy in the peninsula exceed 228,000<lb break="yes" />individuals. For every thousand inhabitants there are 20 ecclesiastics, while in New<lb break="yes"/>Spain there are not above two to the thousand. The following is a specification of the<lb break="yes"/>clergy in several of the intendancies, according to the enumeration in 1793:<lb break="yes"/>
+                        <hi rendition="#et">
+                            <table>
+                                <row>
+                                    <cell>In the intendancy of la<lb break="yes"/>Puebla, 667</cell>
+                                    <cell>@secular ecclesiastics or<lb break="yes"/>
+                                        <hi rendition="#i">clerigos,</hi> and@</cell>
+                                    <cell>881 regulars.</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>Valladolid 293</cell>
+                                    <cell>. . .</cell>
+                                    <cell>298</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>Guanaxuato 225</cell>
+                                    <cell>. . .</cell>
+                                    <cell>197</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>Oaxaca 306</cell>
+                                    <cell>. . .</cell>
+                                    <cell>342</cell>
+                                </row>
+                                <lb break="yes"/>
+                                <row>
+                                    <cell>In the city of Mexico 550</cell>
+                                    <cell>. . .</cell>
+                                    <cell>1646</cell>
+                                </row>
+                            </table>
+                        </hi>
+                        <lb break="yes"/>Including in the enumeration the <hi rendition="#i" >Donados,</hi> or lay brothers, the convents of the capital<lb break="yes"/>contain more than 2,500 individuals.&#x2014;<hi rendition="#i">Author.</hi>
+                        <lb break="yes"/>The clergy of the peninsula, according to M. <persName key="laborde_ad">de La Borde</persName>, from whom M. de Hum-<lb break="no"/>boldt elsewhere professes to take his information regarding Spain, amounts to 147,657<lb break="yes"/>individuals; and, according to M. Townsend, who cites the returns made to the Spa-<lb break="no"/>nish government, they amount to 118,625. M. <persName key="laborde_ad">de La Borde</persName> estimates the population<lb break="yes"/>of Spain at 11,000,000, and he states the proportion of the clergy to the population as<lb break="yes"/>
+                        <hi rendition="#c">1 : 69; though<formula notation="TeX" >\frac{11,000,000}{147,657}</formula>=74,497, say 74<formula notation="TeX">\frac{1}{2}</formula>, and not 69.</hi>
+                        <lb break="yes"/>But the estimate of 228,000 clergy, and a corresponding proportion of 20 in the thou-<lb break="no"/>sand, or 1 in 50 to the population, is in every way much beyond the troth. M. de<lb break="yes"/>
+                        <persName key="humboldt_av">Humboldt</persName> having found from M. <persName key="laborde_ad">de la Borde</persName> that the proportion between the clergy and<lb break="yes"/>population in Madrid was 20 : 1,000, has been led to extend the same proportion over<lb break="yes"/>
+                        <fw type="catch" place="bottom">all</fw>
+                    </note> Now the an-<lb break="no"/>nual revenue of the eight Mexican<lb break="yes"/>bishops in the following list amounts<lb break="yes"/>to a sum total of 2,695,000 francs:<note place="foot" n="x">112,300l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note>
+                </p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>Double<lb break="yes"/>Piastres.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Revenues of the Arch-<lb break="no"/>bishop of Mexico</cell>
+                        <cell>130,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Bishop of la Puebla</cell>
+                        <cell>110,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Valladolid</cell>
+                        <cell>100,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Guadalaxara</cell>
+                        <cell>90,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Durango</cell>
+                        <cell>35,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Monterey</cell>
+                        <cell>80,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Yucatan</cell>
+                        <cell>20,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Oaxaca</cell>
+                        <cell>18,000</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Sonora</cell>
+                        <cell>
+                            <hi rendition="#u">6,000</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>539,000<p>
+                                <note place="foot" n="y">This, at the rate of conversion which the author lays down in a note in the<lb break="yes"/>following page, namely five francs five sous per double piastre, does not amount to<lb break="yes"/>the sum of 2,695,000, but 2,829,750 francs = 117,915l.&#x2014;<hi rendition="#i">Trans.</hi>
+                                </note>
+                            </p>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <fw type="catch" place="bottom">&#x201C;The</fw>
+                <lb break="yes"/>
+                <pb n="147" facs="#f0013"/>
+                <p>&#x201C;The bishop of Sonora, the poor-<lb break="no"/>est of them all, does not draw tithes.<lb break="yes"/>He is paid, like the bishop of Pana-<lb break="no" />ma, immediately by the king <hi rendition="#i">(de<lb break="yes"/>Caxas reales).</hi> His income amounts<lb break="yes"/>only to the 20th part of that of the<lb break="yes"/>bishops of Valladolid and Mechoa-<lb break="no" />can; and, what is truly distressing<lb break="yes"/>in the diocese of an archbishop<lb break="yes"/>whose revenue amounts to the sum<lb break="yes" />of 650,000 francs,<note place="foot" n="z">27,085l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> there are cler-<lb break="no"/>gymen of Indian villages whose<lb break="yes"/>yearly income does not exceed five<lb break="yes"/>or six hundred francs.<note place="foot" n="a">From 20l. to 25l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> The bi-<lb break="no"/>shop and chapter of Valladolid sent,<lb break="yes"/>at different times, to the king as a<lb break="yes"/>voluntary contribution, particularly<lb break="yes"/>during the last war against France,<lb break="yes"/>the sum of 810,000 francs.<note place="foot" n="b" >33,752l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> The<lb break="yes"/>lands of the Mexican clergy <hi rendition="#i" >(bienes<lb break="yes"/>raices)</hi> do not exceed the value of<lb break="yes"/>12 or 15 millions of francs; <note place="foot" n="c">From 500,040l. to 625,050 sterling. <hi rendition="#i">Trans.</hi>
+                    </note> but<lb break="yes"/>the clergy possess immense capitals<lb break="yes" />hypothecated on the property of<lb break="yes"/>individuals. The whole of these<lb break="yes"/>capitals (<hi rendition="#i">capitales de Capellanias y<lb break="yes"/>obras pias, fondos lotales de Com-<lb break="no" />munidades religiosas),</hi> of which we<lb break="yes"/>shall give a detail in the sequel,<lb break="yes"/>amounts to the sum of 44 millions<lb break="yes"/>and a half of double piastres,<note place="foot" n="d" >13,485,453l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> or<lb break="yes"/>233,625,000 francs.<note place="foot" n="e">I have followed the data contained in the <hi rendition="#i">Representacion de los vecinos de Val-<lb break="no"/>ladolid al Excellentissimo Senor Virey</hi> (dated 24th October, 180@), a manuscript memoir<lb break="yes"/>of great value, I compute in the course of this work the double piastre at 5 livres<lb break="yes"/>5 sous. Its intrinsic value is 5 livres 8&#x2153; sous. We must not confound the <hi rendition="#i" >pezo,</hi>
+                        <lb break="yes"/>which is sometimes called <hi rendition="#i">pezo sencillo,</hi> or <hi rendition="#i">commercial piastre,</hi> which is a fictitious<lb break="yes"/>money, with the <hi rendition="#i">double piastre</hi> of <placeName key="amerika">America</placeName>, or <hi rendition="#i">te duro,</hi> or <hi rendition="#i">te pezo duro.</hi> The double<lb break="yes"/>piastre contains 20 reals of vellon, or 170 <hi rendition="#i">quartos,</hi> or 680 <hi rendition="#i">maravedis,</hi> while the <hi rendition="#i">pero<lb break="yes"/>sencillo,</hi> which is equal to 3 livres 15 sous, contains only 15 reals of vellon, or 510<lb break="yes"/>maravedis.</note>
+                    <persName key="cortes_h">Cortez</persName>, from<lb break="yes"/>the very commencement of the con-<lb break="no"/>
+                    <cb/> quest, dreaded the great opulence<lb break="yes"/>of the clergy in a country where<lb break="yes"/>ecclesiastical discipline is difficult<lb break="yes"/>to maintain. He says very frankly<lb break="yes"/>in a letter to <persName key="karliv">Charles the Fifth</persName>,<lb break="yes" />&#x201C;that he beseeches his majesty to<lb break="yes"/>&#x201C;send out to the Indies <hi rendition="#i">religieux</hi>
+                    <lb break="yes"/>&#x201C;and not <hi rendition="#i">canons,</hi> because the lat-<lb break="no"/>&#x201C;ter display an extravagant luxury,<lb break="yes"/>&#x201C;leave great wealth to their natu-<lb break="no" />&#x201C;ral children, and give great scan-<lb break="no"/>&#x201C;dal to the newly converted In-<lb break="no"/>&#x201C;dians.&#x201D; This advice, dictated by<lb break="yes"/>the frankness of an old soldier, was<lb break="yes"/>not followed at Madrid. We have<lb break="yes"/>transcribed this curious passage from<lb break="yes"/>a work published several years ago<lb break="yes"/>by a cardinal.<note place="foot" n="f">Archbishop Lorenzana.</note> It is not for us<lb break="yes"/>to accuse the conqueror of New<lb break="yes"/>Spain of predilection for the regular<lb break="yes"/>clergy, or antipathy towards the<lb break="yes"/>canons.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The rumour spread up and<lb break="yes"/>down Europe of the immensity of<lb break="yes"/>the Mexican wealth has given rise<lb break="yes"/>to very exaggerated ideas relative to<lb break="yes"/>the abundance of gold and silver<lb break="yes"/>employed in New Spain in plate,<lb break="yes" />furniture, kitchen utensils, and har-<lb break="no"/>ness. A traveller, whose imagina-<lb break="no"/>tion has been heated by stories of<lb break="yes" />keys, locks, and hinges of massy<lb break="yes"/>silver, will be very much surprised<lb break="yes"/>
+                    <note place="foot" n="u" xml:id="fn2-2" prev="#fn2-1">all Spain. Yet he afterwards, in the Statistical Analysis, states it as a peculiar merit<lb break="yes"/>in M. <persName key="laborde_ad">de La Borde</persName>, that he had first proved that the proportion of Spanish clergy to the<lb break="yes"/>population was less than that of the French clergy to the population before the revolution,<lb break="yes"/>which was 460,078 : 25,000,000=1 : 54,444, say 54<formula notation="TeX">\frac{4}{10}</formula> (and not 1 : 52, as <persName key="laborde_ad">La Borde</persName>
+                        <lb break="yes"/>calculates:) but a clergy of 228,000 in a population of 11 millions would be more<lb break="yes"/>numerous in proportion than that of France before the revolution.&#x2014;<hi rendition="#i">Trans.</hi>
+                    </note>
+                    <lb break="yes"/>
+                    <fw type="catch" place="bottom">on</fw>
+                    <lb break="yes"/>
+                    <pb n="148" facs="#f0014"/>
+                    <cb/> on his arrival at Mexico at seeing<lb break="yes"/>no more of the precious metals em-<lb break="no"/>ployed for domestic uses there than<lb break="yes"/>in Spain, Portugal, and the rest of<lb break="yes"/>the south of Europe; and he will<lb break="yes"/>be as much astonished at seeing in<lb break="yes" />Mexico, Peru, or at Santa Fe, peo-<lb break="no"/>ple of the lowest order barefooted<lb break="yes"/>with enormons silver spurs on, or at<lb break="yes"/>finding silver cups and plates a little<lb break="yes"/>more common there than in France<lb break="yes"/>and England. The surprise of the<lb break="yes"/>traveller will cease when he reflects<lb break="yes"/>that porcelain is very rare in these<lb break="yes"/>newly civilized regions, that the<lb break="yes"/>nature of the roads in the mountains<lb break="yes" />renders the carriage of it extremely<lb break="yes"/>difficult; and that in a country<lb break="yes"/>of little commercial activity, it is<lb break="yes" />equally indifferent whether a few<lb break="yes"/>hundred piastres be possessed in<lb break="yes"/>specie or in plate. Notwithstand-<lb break="no" />ing, however, the enormous diffe-<lb break="no"/>rence of wealth between Peru and<lb break="yes"/>Mexico, considering merely the<lb break="yes"/>fortunes of the great proprietors, I<lb break="yes"/>am inclined to believe that there is<lb break="yes"/>more true comfort at Lima than at<lb break="yes"/>Mexico. The inequality of fortunes<lb break="yes"/>is much less in the former; and if<lb break="yes"/>it is very rare, as we have already<lb break="yes"/>observed, to find individuals there<lb break="yes"/>who, possess a revenue of 50 or<lb break="yes"/>60,000 francs,<note place="foot" n="g">2,083l. or 2,500l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> we meet, however,<lb break="yes"/>with a great number of mulatto<lb break="yes"/>artisans and free negros, who, by<lb break="yes"/>their industry alone, procure much<lb break="yes"/>more than the necessaries of life.<lb break="yes"/>Capitals of 10 and 15000 <note place="foot" n="h">If single or commercial piastres = 1560l and 2340l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> piastres<lb break="yes"/>are very common among this class,<lb break="yes"/>while the streets of Mexico swarm<lb break="yes"/>with from twenty to thirty thou-<lb break="no"/>sand wretches <hi rendition="#i" >(Saragates, Guachi-<lb break="no"/>nangos),</hi> of whom the greatest<lb break="yes"/>number pass the night <hi rendition="#i">sub dio,</hi> and<lb break="yes"/>stretch themselves out to the sun<lb break="yes"/>during the day with nothing but a<lb break="yes"/>
+                    <cb/> flannel covering. These dregs of<lb break="yes"/>the people bear much analogy to the<lb break="yes"/>Lazaroni of Naples. Lazy, care-<lb break="no" />less, and sober like them, the<lb break="yes"/>Guachinangos have nothing, how-<lb break="no"/>ever, ferocious in their character, and<lb break="yes" />they never ask alms; for if they<lb break="yes"/>work one or two days in the week,<lb break="yes"/>they earn as much as will purchase<lb break="yes" />their pulque, or some of the ducks<lb break="yes"/>with which the Mexican lakes are<lb break="yes"/>covered, which are roasted in their<lb break="yes" />own fat. The fortune of the Sara-<lb break="no"/>gates seldom exceeds two or three<lb break="yes"/>reals, while the lower people of<lb break="yes"/>Lima, more addicted to luxury and<lb break="yes"/>pleasure, and perhaps also more in-<lb break="no"/>dustrious, frequently spend two or<lb break="yes"/>three piastres in one day. One<lb break="yes"/>would say that the mixture of the<lb break="yes"/>European and the negro every where<lb break="yes"/>produces a race of men more active<lb break="yes"/>and more assiduously industrious<lb break="yes"/>than the mixture of the whites with<lb break="yes"/>the Mexican Indian.</p>
+                <lb break="yes"/>
+                <p>&#x201C;The kingdom of New Spain is.<lb break="yes"/>of all the European colonies under<lb break="yes"/>the torrid zone, that in which there<lb break="yes" />are the fewest negros. We may al-<lb break="no"/>most say that there are no slaves.<lb break="yes"/>We may go through the whole city<lb break="yes"/>of Mexico without seeing a black<lb break="yes"/>countenance. The service of no<lb break="yes"/>house is carried on with slaves. In<lb break="yes"/>this point of view especially, Mexico<lb break="yes"/>presents a singular contrast to the<lb break="yes"/>Havanah, Lima, and Caraccas.<lb break="yes"/>From exact information procured<lb break="yes"/>by those employed in the enumera-<lb break="no"/>tion of 1793, it appears that in all<lb break="yes"/>New Spain there are not six thou-<lb break="no"/>sand negros, and not more than<lb break="yes"/>nine or ten thousand slaves, of<lb break="yes"/>whom the greatest number belong<lb break="yes"/>to the ports of <placeName key="acapulco" >Acapulco</placeName> and Vera<lb break="yes"/>Cruz, or the warm regions of the<lb break="yes"/>coasts <hi rendition="#i">(tierras calientes).</hi> The slaves<lb break="yes"/>
+                    <fw type="catch" place="bottom">are</fw>
+                    <lb break="yes"/>
+                    <pb n="149" facs="#f0015"/>
+                    <cb/> are four times more numerous in<lb break="yes"/>the <hi rendition="#i" >capitania general</hi> of Caraccas,<lb break="yes"/>which does not contain the sixth<lb break="yes"/>part of the population of Mexico.<lb break="yes"/>The negros of Jamaica are to those<lb break="yes"/>of New Spain in the proportion<lb break="yes"/>of 250 to 1! In the West India<lb break="yes"/>islands, Peru, and even Caraccas,<lb break="yes"/>the progress of agriculture and in-<lb break="no"/>dustry in general depends on the<lb break="yes"/>augmentation of negros. In the<lb break="yes"/>island of Cuba, for example, where<lb break="yes" />the annual exportation of sugar has<lb break="yes"/>risen in twelve years from 400,000<lb break="yes"/>to 1,000,000 quintals between 1792<lb break="yes" />and 1800 nearly 55,000<note place="foot" n="l">According to the custom-house reports of the Havanah, of which I possess a<lb break="yes"/>copy, the introduction of negros, from 1799 to 1803, was 34,500, of whom 7 per<lb break="yes"/>cent, die annually.</note> slaves<lb break="yes"/>have been introduced. But in<lb break="yes"/>Mexico the increase of colonial<lb break="yes"/>
+                    <cb/> prosperity is nowise occasioned by a<lb break="yes"/>more active slave trade. It is not<lb break="yes"/>above twenty years since Mexican<lb break="yes" />sugar was known in Europe; Vera<lb break="yes"/>Cruz, at present, exports more than<lb break="yes"/>120,000 quintals; and yet the pro-<lb break="no"/>gress of sugar cultivation which has<lb break="yes"/>taken place in New Spain since the<lb break="yes"/>revolution of St. Domingo has not<lb break="yes" />perceptibly increased the number of<lb break="yes"/>slaves. Of the 74,000 negros an-<lb break="no"/>nually furnished by<placeName key="afrika" >Africa</placeName>to the<lb break="yes"/>equinoxial regions of <placeName key="amerika">America</placeName> and<lb break="yes"/>
+                    <placeName key="asien">Asia</placeName>, and which are worth in the<lb break="yes"/>colonies the sum of 111,000,000<lb break="yes"/>francs,<note place="foot" n="k">4,625,370l. sterling. <hi rendition="#i">Trans.</hi>
+                    </note> not above 100 land on the<lb break="yes"/>coast of Mexico.&#x201D;</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

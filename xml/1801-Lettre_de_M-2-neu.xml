@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="479" facs="#f0001"/>
+            <cb/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                    <hi rendition="#g">Auszug eines Briefs von <persName key="humboldt_av">Alexander v. Humboldt</persName>
+                        <lb break="yes"/>an den B. <persName key="delambre_jbj">Delambre</persName>, Mitglied des National-<lb break="maybe"/>In&#x017F;tituts in Paris.</hi>
+                </head>
+                <lb break="yes"/>
+                <dateline>
+                    <placeName key="barcelona">
+                        <hi rendition="#et">Neu Barcellona, 24 Nov. 1800.</hi>
+                    </placeName>
+                </dateline>
+                <lb break="yes"/>
+                <p>Ich habe Ihnen und dem B. <persName key="lalande_jjlfd">Lalande</persName> wa&#x0364;hrend meines Auf-<lb break="no"/>enthalts im mitta&#x0364;glichen <placeName key="amerika">Amerika</placeName> mehreremale ge&#x017F;chrieben. Ich<lb break="yes"/>kenne den Antheil, den Sie an meinem Schik&#x017F;ale nehmen, und<lb break="yes"/>werde daher nicht mu&#x0364;de, Ihnen Nachricht von mir zu geben,<lb break="yes"/>wie &#x017F;chwach auch meine Hofnung i&#x017F;t, daß meine Briefe wirklich<lb break="yes"/>zu Ihnen gelangen. Ich bin eben im Begrif von hier nach der<lb break="yes"/>
+                    <pb n="480" facs="#f0002"/>
+                    <cb/> Havana und Mexiko abzugehen, nachdem ich eine Rei&#x017F;e von mehr<lb break="yes"/>als 1,300 SeeMeilen in das Innere die&#x017F;es Landes geendigt habe,<lb break="yes"/>in dem unbekannten Theile der <placeName key="amerika" >neuen Welt</placeName>, zwi&#x017F;chen dem <choice>
+                        <sic>Topayan</sic>
+                        <corr type="editorial">Popayan</corr>
+                    </choice>,<lb break="yes"/>Quito und Cayenne. Drei Monate hindurch &#x017F;chlief ich be&#x017F;ta&#x0364;ndig<lb break="yes"/>unter freiem Himmel in Wa&#x0364;ldern, wo mich Tiger und &#x017F;cheußli-<lb break="no"/>che Schlangen umgaben, oder in &#x017F;umpfigen Ebenen, die mit<lb break="yes" />Krokodillen bedekt &#x017F;ind. Bananen <hi rendition="#aq">(des bananes),</hi> Reis und<lb break="yes"/>Manioc waren un&#x017F;re einzige Nahrung; denn aller andrer Speis-<lb break="maybe"/>Vorrath verfault in die&#x017F;em zugleich na&#x017F;&#x017F;en und glu&#x0364;henden Him-<lb break="no"/>mels Strich. Wie gros und maje&#x017F;ta&#x0364;ti&#x017F;ch aber i&#x017F;t die Natur in<lb break="yes"/>die&#x017F;en Gebirgen! Denn von dem Baraguan <hi rendition="#aq">(le Baraguan)</hi> und<lb break="yes"/>Uruana, welche unbekannte Nationen mit Hieroglyphen bedekten,<lb break="yes"/>bis zum Vulkan von Duida, (welcher 60 Meilen vom kleinen See<lb break="yes"/>Dorado entfernt liegt, und den ich 2,176 <note place="foot" n="*">Etwas u&#x0364;ber 1,100 Toi&#x017F;en.</note> Metren hoch fand),<lb break="yes"/>la&#x0364;uft eine einzige GranitCordillere hin, welche von Quito her-<lb break="no" />ab&#x017F;teigt, und &#x017F;ich von We&#x017F;ten gegen O&#x017F;ten an die Gebirge des<lb break="yes"/>franzo&#x0364;&#x017F;i&#x017F;chen Guyanas an&#x017F;chließt. Welche Ver&#x017F;chiedenheit von<lb break="yes" />indiani&#x017F;chen Sta&#x0364;mmen, die alle frei, &#x017F;ich nach Willku&#x0364;hr &#x017F;elb&#x017F;t<lb break="yes"/>beherr&#x017F;chen und auffre&#x017F;&#x017F;en, von den Guaicas des Gehette <hi rendition="#aq" >(les<lb break="yes"/>Guaicas du Gehette)</hi> &#x2014; einer Pygma&#x0364;enNation, deren gro&#x0364;&#x017F;e&#x017F;te<lb break="yes" />Individuen indeß doch 4 Fuß 2 Zoll haben &#x2014; bis zu den wei&#x017F;&#x017F;en<lb break="yes"/>Guajariben, welche wirklich die Wei&#x017F;&#x017F;e der Europa&#x0364;er be&#x017F;izen; von<lb break="yes" />den Otomacos, die ta&#x0364;glich bis auf 1 1&#x222B;2 Pfund Erde e&#x017F;&#x017F;en, bis<lb break="yes"/>zu den Marivitanos und Maquiritores, die &#x017F;ich von Amei&#x017F;en und<lb break="yes"/>Harzen na&#x0364;hren. Ich habe u&#x0364;ber alle die&#x017F;e Gegen&#x017F;ta&#x0364;nde &#x017F;chon neu-<lb break="no"/>lich in dem Briefe ge&#x017F;prochen, welchen ich von der Mu&#x0364;ndung<lb break="yes"/>des Orinoco aus un&#x017F;erm Freunde P. &#x017F;chrieb. <note place="foot" n="**">Die&#x017F;er Brief i&#x017F;t nicht angekommen.</note> Ich &#x017F;chra&#x0364;nke mich<lb break="yes"/>daher heute nur auf einige a&#x017F;tronomi&#x017F;che Beobachtungen ein, die<lb break="yes"/>ich mit vieler Sorgfalt ange&#x017F;tellt zu haben glaube.</p>
+                <lb break="yes"/>
+                <p>Mein Zeithalter von <persName key="berthoud_l">L. Berthoud</persName> i&#x017F;t noch immer a&#x0364;u&#x017F;&#x017F;er&#x017F;t genau<lb break="yes"/>in &#x017F;einem Gange. Ich pru&#x0364;fe ihn alle 4 bis 6 Tage durch korre-<lb break="no"/>&#x017F;pondirende SonnenHo&#x0364;hen, die ich mit den In&#x017F;trumenten, die<lb break="yes"/>ich bei mir habe, bis auf 1 Sekunde Zeit und weniger nehmen<lb break="yes"/>kan. Sie wi&#x017F;&#x017F;en, daß die A&#x017F;tronomie nie meine HauptBe&#x017F;cha&#x0364;fti-<lb break="no"/>gung ausmachte; aber mit Eifer und ausdauerndem Fleiß, und<lb break="yes"/>bei dem ta&#x0364;glichen Gebrauch der nemlichen In&#x017F;trumente, kommt<lb break="yes"/>man endlich dahin, etwas Ordentliches zu Stande zu bringen.<lb break="yes"/>Sie wu&#x0364;rden gelacht haben, wenn Sie meinen Beobachtungen<lb break="yes"/>unter den Ydapaminari&#x017F;chen Indianern (in den Wa&#x0364;ldern des Ca-<lb break="no"/>&#x017F;iquiare) zuge&#x017F;ehen ha&#x0364;tten. Meine In&#x017F;trumente auf Ki&#x017F;ten und<lb break="yes" />Kuffern aufge&#x017F;tellt, Schildkro&#x0364;tenSchaalen, die uns zu Stu&#x0364;hlen<lb break="yes"/>dienten, 8 bis 9 Affen, die wir mit uns herumfu&#x0364;hrten, und die<lb break="yes"/>vor Begierde brannten, auch Ver&#x017F;uche mit meinen Hygrometern<lb break="yes"/>und Barometern anzu&#x017F;tellen &#x2014; um das alles herum 10 bis 12<lb break="yes" />Indianer auf ihren Matten ausge&#x017F;trekt, und endlich Feuer, uns<lb break="yes"/>gegen die Tiger &#x017F;icher zu &#x017F;tellen, die in die&#x017F;en Gegenden nicht<lb break="yes"/>weniger wild als in<placeName key="afrika">Afrika</placeName>&#x017F;ind. Der Mangel an Nahrung, die<lb break="yes"/>Mosquitos, die Amei&#x017F;en, ein kleiner Acarus, der &#x017F;ich in die<lb break="yes"/>Haut &#x017F;ezt, und &#x017F;ie ordentlich, wie einen Aker, durchpflu&#x0364;gt, die<lb break="yes"/>Lu&#x017F;t, &#x017F;ich durch Ba&#x0364;der zu ku&#x0364;hlen, und die Unmo&#x0364;glichkeit zu ba-<lb break="no"/>den wegen der Gefra&#x0364;&#x017F;&#x017F;igkeit der Kaimans, des Stichs der Rayas,<lb break="yes"/>und der Za&#x0364;hne einer kleinen Art Fi&#x017F;che &#x2014; es fordert Jugend und<lb break="yes" />gro&#x017F;e Standhaftigkeit, alles dis auf einmal zu erdulden. Aber<lb break="yes"/>die Be&#x017F;chwerden &#x017F;ind voru&#x0364;ber, und ich habe mehr ge&#x017F;ammelt, als<lb break="yes"/>ich hoffen durfte.</p>
+                <lb break="yes"/>
+                <cb/>
+                <p>Man glaubt gewo&#x0364;hnlich, daß die &#x017F;pani&#x017F;chen Be&#x017F;izungen in<lb break="yes"/>Guyana bis an den <placeName key="aequator" >Aequator</placeName> gehen, und die Karte des P. <persName key="caulin_a" >Cau-<lb break="no"/>lin</persName>, die be&#x017F;te unter den bisherigen, obgleich alle Namen darauf<lb break="yes"/>fal&#x017F;ch &#x017F;ind, giebt es &#x017F;o an. Aber ich habe durch &#x017F;ehr gu-<lb break="no"/>te Beobachtungen, die ich in den Fel&#x017F;en von Culimacari<lb break="yes"/>an dem Canopus &#xA75B;c. an&#x017F;tellte, gefunden, daß S. Carlos del<lb break="yes"/>Rio <choice>
+                        <sic>Regro</sic>
+                        <corr type="editorial">Negro</corr>
+                    </choice>, das mitta&#x0364;glich&#x017F;te ihrer Etabli&#x017F;&#x017F;ements noch um 1°<lb break="yes"/>53&#x2032; no&#x0364;rdlich vom <placeName key="aequator">Aequator</placeName> liegt, und daß die&#x017F;er in dem Gouver-<lb break="no"/>nement du Grand Para bei S. Gabriel de las Cachuellas durch-<lb break="no"/>geht. An die&#x017F;er Stelle befindet &#x017F;ich eine Cataracte, die aber we-<lb break="no"/>niger betra&#x0364;chtlich i&#x017F;t, als die beiden beru&#x0364;hmten von <placeName key="atures" >Atures</placeName> und<lb break="yes"/>Maypure.</p>
+                <lb break="yes"/>
+                <p>Ich bin nach einem Jahr von Beobachtungen dahin gekom-<lb break="no"/>men, 54 Oerter im mitta&#x0364;glichen <placeName key="amerika">Amerika</placeName> nach ihrer Breite und<lb break="yes"/>La&#x0364;nge zu be&#x017F;timmen, und bin izt be&#x017F;cha&#x0364;ftigt, nach die&#x017F;en ver-<lb break="no" />&#x017F;chiedenen Punkten eine Karte der La&#x0364;nder, die ich durchlaufen<lb break="yes"/>habe, zu entwerfen. Da meine Beobachtungen hier die Lu&#x0364;ke aus-<lb break="no"/>fu&#x0364;llen, welche &#x017F;ich auf un&#x017F;ern Karten zwi&#x017F;chen Quito und Ca-<lb break="no"/>yenne im Norden des <placeName key="amazonas">Amazonen Flu&#x017F;&#x017F;es</placeName> befindet, &#x017F;o &#x017F;chmeichle<lb break="yes"/>ich mir, den Geographen damit ein angenehmes Ge&#x017F;chenk zu<lb break="yes"/>machen.</p>
+                <lb break="yes"/>
+                <p>Mein Begleiter <persName key="bonpland_ajag">Bonpland</persName> i&#x017F;t wohl, und ich habe mehr als<lb break="yes"/>1,200 Pflanzen mit ihm be&#x017F;chrieben.</p>
+                <lb break="yes"/>
+                <p>(Den Uiberre&#x017F;t des Briefes fu&#x0364;llen einzelne a&#x017F;tronomi&#x017F;che Beob-<lb break="no"/>achtungen u&#x0364;ber Ein- und Austritte der JupitersTrabanten, Ab-<lb break="no"/>weichung der MagnetNadel u. &#x017F;. w. an, welche nur den A&#x017F;tro-<lb break="no"/>nomen intere&#x017F;&#x017F;iren ko&#x0364;nnen. Wer &#x017F;ie nachzu&#x017F;ehen wu&#x0364;n&#x017F;cht, kan<lb break="yes"/>&#x017F;ie im <hi rendition="#aq" >Moniteur</hi> finden, wo das NationalIn&#x017F;titut, welchem der<lb break="yes"/>B. <persName key="delambre_jbj">Delambre</persName> die&#x017F;en Brief mitgetheilt hat, den ganzen Brief<lb break="yes"/>wird abdruken la&#x017F;&#x017F;en.)</p>
+                <lb break="yes"/>
+                <p>Durch die&#x017F;elbe Gelegenheit, durch welche der B. <persName key="delambre_jbj">Delambre</persName>
+                    <lb break="yes"/>den vor&#x017F;tehenden Brief empfieng, erhielt der B. <persName key="fourcroy_afd">Fourcroy</persName>
+                    <lb break="yes"/>einen andern von dem B. <persName key="haspellachenaye_01" >Hapel la Chenage</persName>, einem Chemiker,<lb break="yes"/>der &#x017F;ich in Guadeloupe aufha&#x0364;lt. Er i&#x017F;t vom 15 Nivo&#x017F;e (5 Jan.)<lb break="yes"/>datirt, und entha&#x0364;lt noch einige Nachrichten u&#x0364;ber Herrn <persName key="humboldt_av">von<lb break="yes" />Humboldt</persName>.</p>
+                <lb break="yes"/>
+                <p>&#x201E;Der B. <persName key="bresseau_pa">Bre&#x017F;&#x017F;eau</persName> (Agent der franz. Regierung auf Guade-<lb break="no"/>loupe) hat auf &#x017F;einer Ru&#x0364;krei&#x017F;e von Curacao Herrn von Hum-<lb break="no" />boldt in Cumana angetroffen. Er hat von dem&#x017F;elben eine Ki&#x017F;te<lb break="yes"/>fu&#x0364;r das National In&#x017F;titut, und zwei Pakete, eins fu&#x0364;r Sie, das<lb break="yes"/>andre fu&#x0364;r den B. <persName key="delambre_jbj">Delambre</persName> empfangen. Ich denke, Sie werden<lb break="yes"/>das Ihrige mit dem&#x017F;elben AvisSchif erhalten, das Ihnen die-<lb break="no"/>&#x017F;en Brief bringen wird. Herr <persName key="humboldt_av">von Humboldt</persName> i&#x017F;t izt in der<lb break="yes"/>Havana. Ich ha&#x0364;tte &#x017F;ehr gewu&#x0364;n&#x017F;cht, er wa&#x0364;re der Einladung un-<lb break="no"/>&#x017F;ers Agenten gefolgt, der ihn &#x017F;ehr bat, mit ihm un&#x017F;re In&#x017F;el zu<lb break="yes" />be&#x017F;uchen. Aber es i&#x017F;t ihm nicht mo&#x0364;glich gewe&#x017F;en, ihn dazu zu<lb break="yes"/>vermo&#x0364;gen.&#x201D;</p>
+                <lb break="yes"/>
+                <p>Die Ki&#x017F;te fu&#x0364;r das NationalIn&#x017F;titut, und das Paket an den<lb break="yes"/>B. <persName key="fourcroy_afd">Fourcroy</persName> &#x017F;ind nicht angekommen, welches um &#x017F;o &#x017F;onderbarer<lb break="yes" />i&#x017F;t, als <persName key="delambre_jbj">Delambre</persName> das &#x017F;einige erhalten hat.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+    </text>
+</TEI> 

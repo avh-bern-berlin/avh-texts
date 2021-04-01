@@ -1,0 +1,2401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE author [<!ENTITY abbr100 "00">]> <?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>1807-Tablas_geografico_politicas-3-neu</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2018-05-13" who="#wernicke_nd">Format. Validation.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="469" facs="#f0001"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#g">
+                        <hi rendition="#k">superficie y poblacion.</hi>
+                    </hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">L</hi>a Nueva Espan&#x0303;a con las provincias internas tie-<lb break="no"/>ne 5.764,700 individuos en 81,144 leguas cuadradas<lb break="yes"/>de superficie, lo que corresponde á 71 3/8 de habi-<lb break="no"/>tantes por legua cuadrada.</p>
+                <lb break="yes"/>
+                <p>Siendo este reino cinco veces mayor que la pe-<lb break="no"/>nínsula de Espan&#x0303;a (la cual tiene 15,700 leguas cua-<lb break="no"/>dradas con 10 millones 62&abbr100; habitantes, que son 641<lb break="yes"/>por legua), se estiende desde 16° hasta 38°, teniendo<lb break="yes"/>en su mayor largura del S. S. E. al N. N. O. 490 le-<lb break="no"/>guas náuticas de 20 al grado; y en su mayor anchu-<lb break="no"/>ra del E. al O. en 30° de latitud desde el rio Colo-<lb break="no"/>rado en Texas hasta la isla del Tiburon 292 leguas.<lb break="yes"/>Su menor anchura en el isthmo de Tehuantepec (don-<lb break="no"/>de los rios Goazacoalco y Chimalapa convidan á dar<lb break="yes"/>comunicacion á los dos mares por medio de un ca-<lb break="no" />nal de 5 á 6 leguas) es de 36 leguas.</p>
+                <lb break="yes"/>
+                <p>La distancia de Vera Cruz á Acapulco es de 87<lb break="yes"/>leguas: la de Méjico á Vera Cruz de 59, y la de<lb break="yes"/>Méjico á Acapulco de 54.</p>
+                <lb break="yes"/>
+                <p>Mas de la mitad de toda la dicha superficie, esto<lb break="yes"/>es, cerca de 42&abbr100; leguas cuadradas, está dentro de la<lb break="yes"/>
+                    <pb n="470" facs="#f0002"/> zona torrida, y de esta las 3/5 gozan de un clima mas<lb break="yes"/>frio que templado, efecto de la grande elevacion del<lb break="yes"/>terreno, que de Méjico á Durango es desde 900 á<lb break="yes" />1,300 toesas sobre el nivel del mar, altura doble á la<lb break="yes"/>del Vesubio, y produce todas las plantas de Europa.</p>
+                <lb break="yes"/>
+                <p>La espresada superficie ha sido calculada por don<lb break="yes"/>Juan José Oteyza y pór mí, sirviéndonos para esto<lb break="yes"/>del mapa de este reino, que he construido sobre mis<lb break="yes"/>propias observaciones astronómicas, hechas entre los<lb break="yes"/>17 y 21° de latitud y sobre todos los materiales que<lb break="yes"/>existen en esta ciudad.</p>
+                <lb break="yes"/>
+                <p>Las mayores alturas de la cordillera de la Nueva<lb break="yes"/>Espan&#x0303;a (que por los volcanes de Goatemala y el isth-<lb break="no"/>mo de Panamá y Cupique comunica con los Andes<lb break="yes"/>de santa Fé y Quito) se hallan todas entre los para-<lb break="no"/>lelos de 19 y 19 1/4.</p>
+                <lb break="yes"/>
+                <p>El pico de Orizava está 470 toesas mas bajo que<lb break="yes"/>la cima del Chimborazo; pero tiene doble elevacion<lb break="yes"/>que el Canigou de los Pirineos.</p>
+                <lb break="yes"/>
+                <p>El volcan de la Puebla ó de Popocatepec tiene<lb break="yes"/>2,760 toesas de altura. La Sierra nevada ó Itzazigualt<lb break="yes"/>2,460: el monte nevado de Toluca 2,364.</p>
+                <lb break="yes"/>
+                <p>Estas son las únicas alturas del reino que llegan al<lb break="yes"/>límite inferior de la nieve permanente que en enero<lb break="yes"/>empieza á 1,930 toesas: en setiembre á 2,290, y cer-<lb break="no"/>ca del Ecuador á 2,470.</p>
+                <lb break="yes"/>
+                <p>El cofre de Perote y el volcan de Colima, que<lb break="yes"/>tambien se hallan en el mismo paralelo de las gran-<lb break="no"/>des alturas, están la mayor parte sin nieve.</p>
+                <lb break="yes"/>
+                <p>En este reino nieva en la latitud de 20 grados<lb break="yes"/>generalmente hasta la altura de 1,552 toesas; y algu-<lb break="no"/>nas veces hasta la de 1,163 en que se halla esta ciu-<lb break="no"/>dad, y aun mas abajo en 959, que es la elevacion de<lb break="yes"/>Valladolid.</p>
+                <lb break="yes"/>
+                <p>En Quito deja de nevar hasta 2&abbr100; toesas de altura.</p>
+                <lb break="yes"/>
+                <pb n="471" facs="#f0003"/>
+                <p>Estas son diferencias demasiado grandes para no<lb break="yes"/>atribuirlas mas bien á causas locales que á la diversi-<lb break="no"/>dad de latitud.</p>
+                <lb break="yes"/>
+                <p>La altura media de esta cordillera demasiado ba-<lb break="no"/>ja para llegar á la region de la nieve, perpétua y bas-<lb break="no"/>tante alta para causar una escesiva evaporacion; la<lb break="yes"/>falta de árboles aumentada desde la conquista; los<lb break="yes"/>desagües artificiales; el grande reverbero del sol so-<lb break="no"/>bre unos llanos estendidos, y la abundancia de sosa<lb break="yes"/>con la de otras sustancias salinas, parece que son las<lb break="yes"/>principales causas de la falta de agua que se esperi-<lb break="no"/>menta en el centro de este reino, y que en muchas<lb break="yes" />partes se opone á la agricultura. Sus costas gozan de<lb break="yes"/>mas humedad, esceptuando la de Yucatán; pero las<lb break="yes"/>miasmas que produce la putrefaccion de tantas partes<lb break="yes"/>orgánicas en un suelo tan calentado por los rayos del<lb break="yes"/>sol, y otras causas químicas poco investigadas, pro-<lb break="no"/>ducen enfermedades que en la costa oriental se au-<lb break="no"/>mentan por el concurso de los europeos y otras na-<lb break="no"/>ciones de la zona templada. En las provincias meri-<lb break="no"/>dionales los rios de Goazacoalco, de Alvarado, de<lb break="yes" />Moctezuma que desemboca en el de Panuco; los de<lb break="yes"/>Zacatula y Santiago, que nace del de Lerma y del de<lb break="yes"/>las Laxas, con el tiempo podrán ser útiles para la<lb break="yes"/>comunicacion interior.</p>
+                <lb break="yes"/>
+                <p>En las provincias Septentrionales la Sierra verde<lb break="yes"/>al E. de la de Timpanagos en 41° de latitud, dá<lb break="yes"/>nacimiento á dos caudalosos rios; el rio Bravo del<lb break="yes"/>Norte, y el rio Colorado, siendo el curso del 1.°<lb break="yes"/>de 410 leguas, y el del 2.° de 200.</p>
+                <lb break="yes"/>
+                <p>No se puede conocer exactamente la poblacion<lb break="yes"/>de este reino antes de su conquista, pues aunque<lb break="yes"/>ciertamente era muy grande, los historiadores la han<lb break="yes"/>exagerado, como suele acontecer en todo país recien<lb break="yes"/>descubierto. La isla de Otahiti en el mar del Sur, á la<lb break="yes"/>
+                    <pb n="472" facs="#f0004"/> cual Cook daba 100&abbr100; habitantes, y los misioneros in-<lb break="no"/>gleses 49&abbr100;: el capitan Wilson vió que no tenia mas<lb break="yes"/>de 16&abbr100;.</p>
+                <lb break="yes"/>
+                <p>La parte de Anahuac, que estaba sujeta á Mocte-<lb break="no"/>zuma 11°, no escedia de 10 á 12&abbr100; leguas cuadradas,<lb break="yes"/>esto es, cerca de la 8.<hi rendition="#sup">a</hi> parte de las que contiene este<lb break="yes" />reino de Nueva Espan&#x0303;a. Los reyes de Acolhuacan,<lb break="yes" />Hacopan, Mechoacan eran independientes.</p>
+                <lb break="yes"/>
+                <p>Los grandes llanos que presenta la parte elevada<lb break="yes"/>de este reino, de los cuales unos tienen 470 toesas, y<lb break="yes"/>otros como el valle de Toluca 1,340 sobre el nivel del<lb break="yes"/>mar, prueba una remota época en que todo estuvo cu-<lb break="no"/>bierto de inmensas lagunas. Restos de ellas son la de<lb break="yes"/>Chapála, de cerca de 160 leguas cuadradas; las del<lb break="yes"/>valle de Méjico, que ocupan 54 leguas cuadradas, es-<lb break="no"/>to es, mas de una 4.<hi rendition="#sup">a</hi> parte de su valle; la de Parqua-<lb break="no"/>ro; la de Mertitlan, y la de Xarras.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Poblacion de la N. E. conforme á<lb break="yes"/>la numeracion empezada de órden del<lb break="yes"/>sen&#x0303;or virey, conde de Revillagigedo,<lb break="yes"/>en 1793.................</cell>
+                        <cell>4.483,680.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Auméntanse 2/7, el uno por la par-<lb break="no"/>te que se ocultaria en la enumeracion<lb break="yes"/>compensada, la que corresponde por<lb break="yes"/>la duplicacion con que se hizo en algu-<lb break="no" />nos lugares, y el otro 1/7 por el au-<lb break="no"/>mento que se considera habrá tenido<lb break="yes"/>la poblacion en los an&#x0303;os corridos...</cell>
+                        <cell>
+                            <hi rendition="#u">1.281,051.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Total en 1803......</cell>
+                        <cell>
+                            <hi rendition="#u">5.764,731.</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Por la razon tomada del número de nacidos y<lb break="yes"/>muertos en pueblos de todos temperamentos del ar-<lb break="no"/>
+                    <pb n="473" facs="#f0005"/> zobispado de Méjico, parece á primera vista que á<lb break="yes"/>pesar de la gran miseria de la plebe (parte la mas<lb break="yes"/>numerosa de la nacion), y á pesar del crecido núme-<lb break="no"/>ro de nin&#x0303;os que anualmente mueren por la desaten-<lb break="no"/>cion de sus padres, la poblacion de este reino debe-<lb break="no"/>ria aumentarse en mas de 60&abbr100; individuos cada an&#x0303;o,<lb break="yes"/>ó en mas de 1 por 0/0. Y aunque el cálculo no de-<lb break="no"/>be formarse sobre lo que se vé en las grandes ciu-<lb break="no"/>dades, donde causas locales parece impiden el au-<lb break="no" />mento de la poblacion, pongo aquí la siguiente.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Nacidos.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Muertos.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Guanaxuato en 5 an&#x0303;os...</cell>
+                        <cell>12,666.</cell>
+                        <cell>6,294.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En santa Ana, su barrio....</cell>
+                        <cell>3,629.</cell>
+                        <cell>1,857.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Marfil, otro id.......</cell>
+                        <cell>
+                            <hi rendition="#u">3,702.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">1,904.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>An&#x0303;o comun...</cell>
+                        <cell>
+                            <hi rendition="#u">3,999.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">2,011.</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>La poblacion de estos parages es de 55 á 60&abbr100;<lb break="yes"/>personas; de modo que el aumento de 1,988 en 5<lb break="yes"/>an&#x0303;os, ó cerca de 400 por an&#x0303;o, no llega á 7/10<lb break="yes"/>por 0/0; pero las minas atraen mucha gente soltera<lb break="yes"/>á este real, por lo cual el número de nacidos debe<lb break="yes"/>ser menor.</p>
+                <lb break="yes"/>
+                <p>En Méjico el término medio de 8 an&#x0303;os dá 5,930<lb break="yes"/>nacidos por an&#x0303;o y 5,050 muertos. El aumento es de<lb break="yes"/>880 en una poblacion que no escede de 130&abbr100; habi-<lb break="no"/>tantes, esto es, de 6/10 por an&#x0303;os. En algunos an&#x0303;os<lb break="yes"/>ha sido mayor el esceso de los nacidos, pues llegó<lb break="yes"/>á 7/10 por an&#x0303;o de la poblacion, como en el de 1802<lb break="yes"/>que se contaron 6,155 nacidos, 5,166 muertos, y 989<lb break="yes"/>de esceso de aquellos. El número de muertos es tan<lb break="yes"/>grande en esta ciudad porque de fuera acuden mu-<lb break="no"/>chos enfermos á sus hospitales.</p>
+                <lb break="yes"/>
+                <pb n="474" facs="#f0006"/>
+                <p>En la jurisdiccion de Queretaro no ha sido mu-<lb break="no"/>cho mayor el esceso de nacidos. En 1793 nacieron<lb break="yes"/>5,064, y murieron 2,678, aumentándose 2,386 en<lb break="yes"/>la corta poblacion de 68 á 70&abbr100; individuos, lo que cor-<lb break="no"/>responde á 3 2/5 por 0/0.</p>
+                <lb break="yes"/>
+                <p>La razon de los muertos á los nacidos ha sido.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>En Guanaxuato............</cell>
+                        <cell>1: 1,9.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Queretaro............</cell>
+                        <cell>1: 1,9.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Colimaya, tierra fria.......</cell>
+                        <cell>1: 2,0.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Iguala, tierra caliente.......</cell>
+                        <cell>1: 1,4.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Panuco, caliente como Vera Cruz,<lb break="yes"/>pero sin vómito prieto..........</cell>
+                        <cell>1: 1,2.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Los tres últimos ejemplos son resulta-<lb break="no"/>do de los an&#x0303;os corridos desde el de 1793<lb break="yes"/>hasta el de 1803.</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>El término medio para todo este rei-<lb break="no"/>no parece ser de.............</cell>
+                        <cell>1: 1,65.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En Europa, segun la grande obra<lb break="yes"/>de Mr. Nicander sobre la aritmética po-<lb break="no"/>litica, y segun la mas reciente de Sir Fre-<lb break="no"/>deric Morton, corresponde á......</cell>
+                        <cell>1: 1,26.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>En Suecia de cada 30 personas nace 1, y muere<lb break="yes"/>1 de cada 39.</p>
+                <lb break="yes"/>
+                <p>En otras partes mas meridionales de Europa<lb break="yes"/>nace 1 de cada 28, y muere 1 de 33.</p>
+                <lb break="yes"/>
+                <p>En Nueva Espan&#x0303;a se puede regular un nacido por<lb break="yes"/>cada 21 personas, y un muerto por cada 34.</p>
+                <lb break="yes"/>
+                <p>Nacen probablemente en todo el reino en an&#x0303;os<lb break="yes"/>benignos 374&abbr100;, y mueren 169&abbr100;; de lo que resulta<lb break="yes"/>un aumento de 105&abbr100;, ó de cerca de 1 4/5 por 0/0.</p>
+                <lb break="yes"/>
+                <p>Es tanta la fecundidad de la especie humana en<lb break="yes"/>el nuevo continente, y con especialidad bajo de los<lb break="yes"/>trópicos, segun se vé en la provincia de Caracas, que<lb break="yes"/>en la Suecia que el an&#x0303;o de 1795 tenia la mitad de la<lb break="yes"/>
+                    <pb n="475" facs="#f0007"/> poblacion de N. E., ó 3 millones 15&abbr100; habitantes, de-<lb break="no"/>beria aumentarse á proporcion de esta en 55&abbr100; cada<lb break="yes"/>an&#x0303;o; siendo así que el aumento nunca ha pasado de<lb break="yes"/>39&abbr100;, y en 23 an&#x0303;os tomando un término medio se<lb break="yes"/>reduce á solos 22,700 por cada uno.</p>
+                <lb break="yes"/>
+                <p>A pesar de estos cálculos fundados á vista de los<lb break="yes"/>libros parroquiales, y á pesar de los progresos de<lb break="yes"/>la poblacion que indican los aumentos del diezmo y<lb break="yes"/>de varios ramos de la real Hacienda, parece que la<lb break="yes"/>prudencia obliga á limitar á 1 por 0/0, ó cerca de<lb break="yes"/>60&abbr100; el acrecentamiento anual de los nacidos. Los an&#x0303;os<lb break="yes"/>de viruelas que en el de 1779 quitaron la vida en so-<lb break="no"/>lo Méjico á mas de 9&abbr100; individuos; el Matlazahualt,<lb break="yes"/>ó peste de 1736; las carestías de maiz, como la de<lb break="yes"/>1785, y otras causas, atrasan periódicamente la po-<lb break="no"/>blacion de este reino, y en varias de sus provincias,<lb break="yes"/>no en todas disminuye indubitablemente el número<lb break="yes" />de casta productiva; esto es, la de los indios, sin que<lb break="yes"/>quede el consuelo filantrópico de creer que sea apa-<lb break="no"/>rente la minoracion por haberse confundido con otras<lb break="yes"/>razas.</p>
+                <lb break="yes"/>
+                <p>Estas mismas reflexiones muestran la increible<lb break="yes"/>rapidez con que se aumentará la poblacion de N. E.<lb break="yes"/>cuando se renuevan ó disminuyan las causas que la<lb break="yes"/>atrasan, y cuando las ínfimas clases de sus habitantes<lb break="yes"/>mejoren en bienes, en industria y comodidad.</p>
+                <lb break="yes"/>
+                <p>El esceso de los nacidos en tierra caliente al de<lb break="yes"/>los nacidos en tierra fria es de 1 4/10.</p>
+                <lb break="yes"/>
+                <p>En Iguala nacieron en 10 an&#x0303;os 3,373, y murie-<lb break="no"/>ron 2,395.</p>
+                <lb break="yes"/>
+                <p>En Panuco en igual tiempo fueron los nacidos<lb break="yes"/>1,224, y los muertos 988, cuando en tierra fria en<lb break="yes"/>la misma época en Calimaya nacieron 5,275, y mu-<lb break="no"/>rieron 2,602, y en Méjico 57&abbr100; de los primeros, y<lb break="yes"/>36,700 de los segundos.</p>
+                <lb break="yes"/>
+                <pb n="476" facs="#f0008"/>
+                <p>Esta mayor mortandad en los climas ardientes,<lb break="yes"/>contraria á la que se esperimenta en la Nueva An-<lb break="no"/>dalucía, en la costa de Oro y en los llanos de Cara-<lb break="no"/>cas, debe atribuirse, no tanto al influjo del aire, co-<lb break="no"/>mo al sumo abandono con que la plebe se porta con<lb break="yes"/>las tercianas.</p>
+                <lb break="yes"/>
+                <p>El trabajo inmediato de las minas no se opone<lb break="yes"/>en este reino á la poblacion, segun los cálculos he-<lb break="no"/>chos en Guanaxuato y Zacatecas, en donde la mor-<lb break="no"/>tandad es poca.</p>
+                <lb break="yes"/>
+                <p>En estos reales no se conoce la mita <note place="foot" n="(*)">Mita significa en el Perú el repartimiento de indios<lb break="yes"/>forzados que se dan por tanda ó remuda para labrar minas y<lb break="yes"/>otros servicios, y estos indios se llaman Mitarios.</note> del Pe-<lb break="no"/>rú, que traslada los indios de un clima á otro: mu-<lb break="no"/>tacion perjudicial á la poca flexibilidad de sus órga-<lb break="no"/>nos, y quizá en ningun género de trabajo goza la ple-<lb break="no"/>be con mas libertad del fruto de sus afanes que en las<lb break="yes"/>minas de Nueva Espan&#x0303;a. Los conocimientos técnicos<lb break="yes"/>que se esparcen, aunque con suma lentitud, harán el be-<lb break="no"/>neficio de metales y su estraccion de la tierra menos<lb break="yes"/>nocivos á la salud, disminuyendo el calor que en los<lb break="yes"/>planes de la mina llamada Valenciana á 615 varas de<lb break="yes"/>profundidad perpendicular sube á 93° en el termó-<lb break="no" />metro de Farenheit, y á 27° en el de Reamur, que<lb break="yes"/>con 11 mas que el calor medio de Vera Cruz, au-<lb break="no"/>mentando la pureza del aire que en los mismos pla-<lb break="no"/>nes no tiene mas de 24/100 de oxígeno abundando 4/100<lb break="yes"/>de gas ácido carbónico.</p>
+                <lb break="yes"/>
+                <p>El número de trabajadores de las minas en todo<lb break="yes"/>este reino entre barrenadores, faeneros, tenateros,<lb break="yes"/>barreteros, &#x0026;c., llega apenas á 30&abbr100;; que componen<lb break="yes"/>2/3 por 0/0 de toda la poblacion.</p>
+                <lb break="yes"/>
+                <p>Los tributarios no pasan en todo el reino de<lb break="yes"/>480&abbr100;, ó de 8/100.</p>
+                <lb break="yes"/>
+                <pb n="477" facs="#f0009"/>
+                <p>En la Intendencia de Durango, que tiene 121&abbr100; ha-<lb break="no"/>bitantes, no hay algun tributario.</p>
+                <lb break="yes"/>
+                <p>En la provincia de Sonora en 38&abbr100; individuos que<lb break="yes"/>la pueblan, hay solos 250 tributarios.</p>
+                <lb break="yes"/>
+                <p>En Sinaloa en 55&abbr100; hay como 1,850.</p>
+                <lb break="yes"/>
+                <p>En Guanaxuato en 398&abbr100; habitantes, se hallan<lb break="yes"/>51,207 tributarios.</p>
+                <lb break="yes"/>
+                <p>El número de indios en toda la Nueva Espan&#x0303;a<lb break="yes"/>no baja de 2 millones 300&abbr100;, que componen 2/5 de<lb break="yes"/>toda su poblacion. En las Intendencias de Guanaxua-<lb break="no"/>to, Puebla, Valladolid y Oaxaca son mas de 3/5.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Poblacion.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Indios.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Intendencia de Puebla en 1793.</cell>
+                        <cell>638&abbr100;.</cell>
+                        <cell>416&abbr100;.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Oaxaca...........</cell>
+                        <cell>411&abbr100;.</cell>
+                        <cell>363&abbr100;.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Guanaxuato.........</cell>
+                        <cell>398&abbr100;.</cell>
+                        <cell>175&abbr100;.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Valladolid..........</cell>
+                        <cell>
+                            <hi rendition="#u">290&abbr100;.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">119&abbr100;.</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En las 4 Intendencias...</cell>
+                        <cell>
+                            <hi rendition="#u">1.737&abbr100;.</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">1.073&abbr100;.</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Esto corresponde á 61 indios por cada 100 per-<lb break="no"/>sonas de poblacion, y en Oaxaca á 88/100.</p>
+                <lb break="yes"/>
+                <p>En las poblaciones septentrionales que están fue-<lb break="no"/>ra del trópico, á escepcion de la California y la So-<lb break="no"/>nora, apenas hay indios, y esta falta es la causa de<lb break="yes"/>la escasez de su poblacion, que no llega á 13 perso-<lb break="no"/>nas por legua cuadrada, cuando en la Intendencia de<lb break="yes"/>Puebla, donde los indios componen 65/100, hay 521<lb break="yes"/>habitantes por legua cuadrada.</p>
+                <lb break="yes"/>
+                <p>Las contínuas emigraciones de las naciones sep-<lb break="no"/>tentrionales hácia el Sur, aun quizá antes de los via-<lb break="no"/>ges de los Tultecas en el an&#x0303;o de 648, las de los Chi-<lb break="no"/>
+                    <pb n="478" facs="#f0010"/> chimecas, y Nahuatlacos en 1170; las de los Acul-<lb break="no"/>huas y Mejicanos ó Alztecos á fines del siglo <hi rendition="#k" >xii</hi>, y<lb break="yes"/>el estado de barbarie en que se hallaba toda la par-<lb break="no"/>te septentrional de Anahuac, no permitieron que los<lb break="yes"/>europeos encontrasen en dichas provincias mas de<lb break="yes" />unas tríbus esparcidas que se retiraron al Bolson de<lb break="yes"/>Mapimi, al rio Gila, y al Navajoa, con tanta mas<lb break="yes"/>brevedad, cuanto el trato que á pesar de las órdenes<lb break="yes"/>del soberano esperimentaron de los vencedores, los<lb break="yes"/>convidaba menos á vivir con ellos.</p>
+                <lb break="yes"/>
+                <p>Los espan&#x0303;oles, ó la casta blanca nacida aquí de<lb break="yes"/>padres europeos, llegan probablemente á un millon,<lb break="yes"/>ó menos de 1/5 de toda la poblacion.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Poblacion.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Espan&#x0303;oles.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En la Intendencia de Gua-<lb break="no"/>naxuato en 1793......</cell>
+                        <cell>398&abbr100;</cell>
+                        <cell>103&abbr100;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Valladolid.........</cell>
+                        <cell>290&abbr100;</cell>
+                        <cell>80&abbr100;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Puebla...........</cell>
+                        <cell>638&abbr100;</cell>
+                        <cell>63&abbr100;</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Oaxaca...........</cell>
+                        <cell>
+                            <hi rendition="#u">411&abbr100;</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">26&abbr100;</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En las 4 Intendencias...</cell>
+                        <cell>
+                            <hi rendition="#u">1.737&abbr100;</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">272&abbr100;</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Y siendo en las mismas Intendencias los indios<lb break="yes"/>puros 1 millon 73&abbr100;, resulta que en cada 100 habi-<lb break="no"/>tantes hay 15 espan&#x0303;oles y 61 indios.</p>
+                <lb break="yes"/>
+                <p>En las provincias internas, el número de los es-<lb break="no"/>pan&#x0303;oles compone la mayor parte de la poblacion; pe-<lb break="no"/>ro el influjo de estas provincias, cuya poblacion no<lb break="yes"/>pasa de 442&abbr100; individuos, sobre el todo de la N. E.<lb break="yes"/>es muy pequen&#x0303;o.</p>
+                <lb break="yes"/>
+                <p>En la ciudad de Méjico, en cada 100 perso-<lb break="no"/>nas hay:</p>
+                <lb break="yes"/>
+                <pb n="479" facs="#f0011"/>
+                <list>
+                    <item>6 mulatos.</item>
+                    <lb break="yes"/>
+                    <item>2 europeos.</item>
+                    <lb break="yes"/>
+                    <item>49 espan&#x0303;oles.</item>
+                    <lb break="yes"/>
+                    <item>24 indios.</item>
+                    <lb break="yes"/>
+                    <item>19 de otras castas.</item>
+                </list>
+                <lb break="yes"/>
+                <p>El número de los europeos en todo el reino no<lb break="yes"/>puede esceder de 70 á 80&abbr100;, inclusas 700 mugeres.</p>
+                <lb break="yes"/>
+                <p>Los negros no pasan de 6&abbr100;, y los esclavos de 9<lb break="yes"/>á 10&abbr100;: puede ser que entre los trópicos no haya otro<lb break="yes"/>país que logre la felicidad de tener tan pocos escla-<lb break="no"/>vos en una tan considerable poblacion.</p>
+                <lb break="yes"/>
+                <p>La poblacion de la Nueva Espan&#x0303;a se supone pro-<lb break="no"/>bablemente ser de:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>75&abbr100;</cell>
+                        <cell>europeos.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1.000&abbr100;</cell>
+                        <cell>espan&#x0303;oles ó blancos americanos.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2.300&abbr100;</cell>
+                        <cell>indios.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#u">2.385&abbr100;</hi>
+                        </cell>
+                        <cell>de otras castas.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#u">5.760&abbr100;</hi>
+                        </cell>
+                        <cell>por todo.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Lo que corresponde á 2/5 de indios puros, 1/5<lb break="yes"/>de blancos americanos y 2/5 de castas mistas de in-<lb break="no"/>dio, americano, europeo y asiático, africano, &#x0026;c.,<lb break="yes"/>resultando bien diverso de lo que hasta ahora se ha<lb break="yes"/>creido, y es que habia 3/100 de indios puros, 1/100<lb break="yes"/>de blancos americanos y 6/10 de castas mistas.</p>
+                <lb break="yes"/>
+                <p>En las Indias es una opinion muy comun la de<lb break="yes"/>que en la diferencia de los sexos, la naturaleza no<lb break="yes"/>sigue la misma ley del equilibrio que en la Europa,<lb break="yes"/>y que entre los trópicos escede aquí el número de<lb break="yes"/>las hembras; pero un prolijo trabajo ha hecho co-<lb break="no"/>nocer que tal opinion carece de fundamento, y que<lb break="yes"/>
+                    <pb n="480" facs="#f0012"/> en la N. E., así en las Intendencias de tierra fria<lb break="yes"/>como en las de tierra caliente, la poblacion en to-<lb break="no"/>das castas se inclina á un esceso de varones.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Varones.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Hembras.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Intendencia</hi> de<lb break="yes" />Guanaxuato...</cell>
+                        <cell>53,983</cell>
+                        <cell>49,316 espan&#x0303;oles.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Idem diversas cas-<lb break="no"/>tas........</cell>
+                        <cell>59,659</cell>
+                        <cell>59,604</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Idem....</cell>
+                        <cell>89,753</cell>
+                        <cell>85,429 indios.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Intendencia de Du-<lb break="no"/>rango......</cell>
+                        <cell>60,727</cell>
+                        <cell>59,586</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Valladolid es-<lb break="no"/>pan&#x0303;oles.....</cell>
+                        <cell>40,339</cell>
+                        <cell>39,381</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Idem de indios..</cell>
+                        <cell>61,352</cell>
+                        <cell>58,016</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Idem de diversas<lb break="yes"/>castas......</cell>
+                        <cell>44,704</cell>
+                        <cell>43,705</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Provincia de So-<lb break="no"/>nora.......</cell>
+                        <cell>20,473</cell>
+                        <cell>17,832</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Sinaloa....</cell>
+                        <cell>27,772</cell>
+                        <cell>27,290</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nuevo Méjico...</cell>
+                        <cell>15,915</cell>
+                        <cell>14,910</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>California.....</cell>
+                        <cell>6,770</cell>
+                        <cell>5,949</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#g">Intendencia</hi> de<lb break="yes" />Oaxaca.....</cell>
+                        <cell>
+                            <hi rendition="#u">206,980</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">204,355</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>
+                            <hi rendition="#u">688,488</hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#u">665,373</hi>
+                        </cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>En la Intendencia de Puebla por el contrario<lb break="yes"/>abundan mas las hembras entre los espan&#x0303;oles, y los<lb break="yes"/>varones entre los indios.</p>
+                <lb break="yes"/>
+                <p>En las ciudades supera en todas castas el núme-<lb break="no"/>ro de hembras.</p>
+                <lb break="yes"/>
+                <p>En Mejico las hembras con los varones están<lb break="yes"/>en la razon de 1, 3 : 1, ó casi de 5, 4.</p>
+                <lb break="yes"/>
+                <pb n="481" facs="#f0013"/>
+                <p>En esta ciudad se contaron en 1793, 2,118 euro-<lb break="no"/>peos y 217 europeas: 21,338 espan&#x0303;oles y 29,013 es-<lb break="no"/>pan&#x0303;olas: idem 11,232 indios y 14,371 indias: 2,958<lb break="yes"/>mulatos y 4,136 mulatas: varones de todas castas<lb break="yes"/>7,832 y 11,256 hembras.</p>
+                <lb break="yes"/>
+                <p>En Queretaro y en Valladolid hay igual abun-<lb break="no"/>dancia de mugeres, esceptuándose los indios en la<lb break="yes"/>última de estas ciudades.</p>
+                <lb break="yes"/>
+                <p>En Queretaro hay 4,040 espan&#x0303;oles y 5,748 es-<lb break="no" />pan&#x0303;olas: 5,394 indios y 6,190 indias; y de las de-<lb break="no"/>mas castas 4,639 varones y 5,450 hembras.</p>
+                <lb break="yes"/>
+                <p>En Valladolid son 2,207 los espan&#x0303;oles y 2,929<lb break="yes"/>las espan&#x0303;olas: 1,445 los mulatos y 1,924 las mula-<lb break="no"/>tas: 2,419 los indios y 2,276 las indias.</p>
+                <lb break="yes"/>
+                <p>Sin embargo de esta abundancia de hembras en<lb break="yes"/>las ciudades, en ellas nacen mas y mueren menos<lb break="yes"/>varones. En Méjico en la parroquia de Santa Cruz<lb break="yes"/>en un decenio nacieron 2,550 varones y 2,335 hem-<lb break="no"/>bras. En la parroquia del Sagrario en 5 an&#x0303;os na-<lb break="no"/>cieron 3,705 varones y 3,602 hembras: de cuyos<lb break="yes"/>individuos murieron 1,951 hombres y 2,393 mu-<lb break="no" />geres.</p>
+                <lb break="yes"/>
+                <p>El esceso de mugeres existentes en las ciudades,<lb break="yes"/>quizá se atribuirá á que en ellas concurren mas que<lb break="yes"/>los hombres, y á que estos salen en mayor núme-<lb break="no"/>ro para mantenerse en el campo.</p>
+                <lb break="yes"/>
+                <p>En el clima ardiente y propenso á calenturas<lb break="yes"/>de Panuco, nacieron desde 1793 hasta 1802, cerca<lb break="yes"/>de 124 varones mas que hembras, y murieron 30<lb break="yes"/>hembras mas que varones: de modo que segun esto<lb break="yes"/>hay una doble causa para el esceso de los hombres.<lb break="yes"/>Esta ley de la naturaleza ha sido en Panuco tan cons-<lb break="no"/>tante, que en 10 an&#x0303;os solamente una vez superó el<lb break="yes"/>número de hembras nacidas al número de varones<lb break="yes" />nacidos; y que en el mismo espacio de tiempo,<lb break="yes"/>
+                    <pb n="482" facs="#f0014"/> únicamente en 2 an&#x0303;os fallecieron mas varones que<lb break="yes"/>hembras.</p>
+                <lb break="yes"/>
+                <p>La longevidad relativa de las razas ó variedades<lb break="yes"/>de la especie humana, es otro fenómeno cuyas cau-<lb break="no"/>sas son tan desconocidas como las de las diferencias<lb break="yes"/>del sexo en los nacidos. En Méjico, la esperanza<lb break="yes"/>que el europeo tiene de pasar la edad de 50 an&#x0303;os á<lb break="yes"/>la que tiene el blanco americano es como 9 á 4.</p>
+                <lb break="yes"/>
+                <p>En 1793 se hallaron en esta ciudad de mas de<lb break="yes"/>50 an&#x0303;os</p>
+                <lb break="yes"/>
+                <list>
+                    <item>De 2,335 europeos...... 442</item>
+                    <lb break="yes"/>
+                    <item>De 50,371 espan&#x0303;oles...... 4,128</item>
+                    <lb break="yes"/>
+                    <item>De 7,094 mulatos....... 539</item>
+                    <lb break="yes"/>
+                    <item>De 25,603 indios........ 1,789</item>
+                    <lb break="yes"/>
+                    <item>De 19,357 de las demas castas. 1,278</item>
+                </list>
+                <lb break="yes"/>
+                <p>De modo que los que en estos números pasaban<lb break="yes"/>la edad de 50 an&#x0303;os fueron:</p>
+                <lb break="yes"/>
+                <list>
+                    <item>De cada 100 europeos............ 18</item>
+                    <lb break="yes"/>
+                    <item>De idem espan&#x0303;oles.............. 8</item>
+                    <lb break="yes"/>
+                    <item>De idem mulatos............... 7</item>
+                    <lb break="yes"/>
+                    <item>De idem indios................ 6 4/5</item>
+                    <lb break="yes"/>
+                    <item>De idem demas castas............ 6</item>
+                </list>
+                <lb break="yes"/>
+                <p>El ejemplo de los blancos americanos prueba<lb break="yes"/>que la causa de este fenómeno se debe buscar en<lb break="yes"/>la miseria de la plebe.</p>
+                <lb break="yes"/>
+                <p>Parece que la vida del hombre se abrevia tanto<lb break="yes"/>mas, cuanto mas temprano entra en la pubertad.</p>
+                <lb break="yes"/>
+                <p>El clero de Nueva Espana se compone de 9 á<lb break="yes"/>10&abbr100; individuos, sin contar los legos, donados y cria-<lb break="no"/>dos de los conventos, con los cuales ascenderá el<lb break="yes"/>número á 15&abbr100;; de los 9&abbr100; los 5&abbr100; son frailes y monjas.</p>
+                <lb break="yes"/>
+                <pb n="483" facs="#f0015"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Clérigos.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Frailes y Monjas.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La ciudad de Méjico<lb break="yes"/>que con donados y<lb break="yes" />criados cuenta 2,500<lb break="yes"/>individuos, tiene...</cell>
+                        <cell>550</cell>
+                        <cell>1,636</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La Intendencia de Pue-<lb break="no"/>bla..........</cell>
+                        <cell>667</cell>
+                        <cell>881</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Valladolid.....</cell>
+                        <cell>293</cell>
+                        <cell>292</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Oaxaca.......</cell>
+                        <cell>200</cell>
+                        <cell>343</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Guanaxuato.....</cell>
+                        <cell>225</cell>
+                        <cell>197</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Todo el clero de Nueva Espan&#x0303;a no iguala el nú-<lb break="no"/>mero de religiosos de San Francisco que hay en Es-<lb break="no"/>pan&#x0303;a, pues es de 15,600.</p>
+                <lb break="yes"/>
+                <p>En Espan&#x0303;a hay 228&abbr100; clérigos, que correspon-<lb break="no"/>den á 20 individuos del estado eclesiástico por cada<lb break="yes"/>1&abbr100; habitantes. En este reino apenas llegan á 1 3/5<lb break="yes"/>por millar.</p>
+                <lb break="yes"/>
+                <p>La superficie del actual reino del Perú (del cual<lb break="yes"/>están separados los gobiernos de Quito, Jaen, Chi-<lb break="no"/>le y Potosí) es la 1/4 que la de Nueva Espan&#x0303;a, y<lb break="yes"/>como apenas tiene 3&abbr100; leguas cuadradas, es todavía<lb break="yes"/>de menos estension que la Intendencia de san Luis<lb break="yes"/>Potosí. En 1803 tenia el Perú cerca de 1 millon<lb break="yes"/>200&abbr100; habitantes, ó 60 por legua cuadrada. Su po-<lb break="no"/>blacion con la de Nueva Espana está en la razon<lb break="yes" />de 6 á 7.</p>
+                <lb break="yes"/>
+                <p>El Perú tiene 700&abbr100; indios, ó 58 por cada 100<lb break="yes"/>habitantes. En N. E. son 4/100 de los habitantes.</p>
+                <lb break="yes"/>
+                <p>En el Perú hay 150&abbr100; espanoles ó 12/100 de toda la<lb break="yes" />poblacion, y en N. E. los espanoles componen 17/100.</p>
+                <lb break="yes"/>
+                <p>El clero del Perú es mucho mas numeroso que<lb break="yes"/>el de N. E.: pasa de 5&abbr100; personas, ó de 4 1/10 por<lb break="yes"/>
+                    <pb n="484" facs="#f0016"/> millar de la poblacion. En N. E. no escede de 13/5<lb break="yes"/>por millar.</p>
+                <lb break="yes"/>
+                <p>En el Perú hay 40&abbr100; esclavos ó 30 por millar.<lb break="yes"/>En N. E. no llegan á 1 7/10 por millar.</p>
+                <lb break="yes"/>
+                <p>La Europa que tiene 307,200 leguas cuadradas<lb break="yes"/>de superficie, es 4 veces mayor que la N. E. con las<lb break="yes"/>provincias internas.</p>
+                <lb break="yes"/>
+                <p>La Rusia europea que tiene 130&abbr100; leguas cuadra-<lb break="no"/>das, escede á la N. E. en un terreno tres veces ma-<lb break="no"/>yor que la península de Espan&#x0303;a.</p>
+                <lb break="yes"/>
+                <p>La Intendencia de san Luis Potosí tiene tanto<lb break="yes"/>terreno como la Francia.</p>
+                <lb break="yes"/>
+                <p>La Intendencia de Sonora iguala en la estension<lb break="yes"/>á la Noruega. La de Zacatecas á la de Suiza. La de<lb break="yes"/>Guadalajara es algo mayor que Inglaterra. La de Gua-<lb break="no"/>naxuato es como el ducado de Curlandia, y la de<lb break="yes"/>Vera Cruz un poco menos que Irlanda.</p>
+                <lb break="yes"/>
+                <p>Los Estados Unidos tenian en 1790 en la enorme<lb break="yes"/>superficie de 640 millones de acres, de los cuales 1/10<lb break="yes"/>está cubierto de agua, cerca de 4 millones de habi-<lb break="no"/>tantes, que es una poblacion menor que la de Nue-<lb break="no"/>va Espan&#x0303;a; pero el aumento de los 13 últimos an&#x0303;os<lb break="yes"/>ha sido mucho mayor en dichos Estados.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>En el citado an&#x0303;o habia en los Estados<lb break="yes" />Septentrionales.............</cell>
+                        <cell>1.009,492</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En los intermedios, inclusos 65,800 in-<lb break="no" />dividuos................</cell>
+                        <cell>1.090,546</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>En los australes, inclusos 665&abbr100; negros.</cell>
+                        <cell>
+                            <hi rendition="#u">1.943,649</hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#u">4.033,687</hi>
+                        </cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="485" facs="#f0017"/>
+                <table xml:id="t1-1" next="#t1-2">
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Areas en<lb break="yes"/>leguas cua-<lb break="no"/>dradas.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Poblacion.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Idem por le-<lb break="no"/>gua cuadra-<lb break="no"/>da.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Provincias in-<lb break="no"/>ternas.....</cell>
+                        <cell>43,999</cell>
+                        <cell>442,847</cell>
+                        <cell>10 1/10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Las dependien-<lb break="no"/>tes del virei-<lb break="no" />nato......</cell>
+                        <cell>5,454</cell>
+                        <cell>64,000</cell>
+                        <cell>11 7/10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nuevo reino de<lb break="yes"/>Leon.....</cell>
+                        <cell>1,623</cell>
+                        <cell>26,000</cell>
+                        <cell>16</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nuevo Santan-<lb break="no"/>der.......</cell>
+                        <cell>831</cell>
+                        <cell>38,000</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lo dependiente<lb break="yes"/>de la coman-<lb break="no"/>dancia gene-<lb break="no"/>ral.......</cell>
+                        <cell>38,545</cell>
+                        <cell>378,847</cell>
+                        <cell>10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nueva Vizcaya.</cell>
+                        <cell>10,781</cell>
+                        <cell>157,970</cell>
+                        <cell>14 7/10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Sonora......</cell>
+                        <cell>12,862</cell>
+                        <cell>120,080</cell>
+                        <cell>9 1/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Coahuila.....</cell>
+                        <cell>4,280</cell>
+                        <cell>40,000</cell>
+                        <cell>9 1/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tejas: poblacion<lb break="yes"/>dudosa.....</cell>
+                        <cell>7,006</cell>
+                        <cell>21,000</cell>
+                        <cell>3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Nuevo Méjico:<lb break="yes"/>idem......</cell>
+                        <cell>3,616</cell>
+                        <cell>39,797</cell>
+                        <cell>11 2/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Reinos de Mé-<lb break="no"/>jico, Mechoa-<lb break="no"/>can, ó la N. E.<lb break="yes"/>sin las provin-<lb break="no"/>cias internas.</cell>
+                        <cell>37,145</cell>
+                        <cell>5.321,887</cell>
+                        <cell>143 1/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Intendencia de<lb break="yes"/>Méjico....</cell>
+                        <cell>4,138</cell>
+                        <cell>1.495,140</cell>
+                        <cell>361 1/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Puebla....</cell>
+                        <cell>1,575</cell>
+                        <cell>821,277</cell>
+                        <cell>521 1/15</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Vera Cruz..</cell>
+                        <cell>2,458</cell>
+                        <cell>154,286</cell>
+                        <cell>62 1/2</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="486" facs="#f0018"/>
+                <table xml:id="t1-2" prev="#t1-1">
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Areas en<lb break="yes"/>leguas cua-<lb break="no"/>dradas.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Poblacion.</hi>
+                            </hi>
+                        </cell>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Idem por le-<lb break="no"/>gua cuadra-<lb break="no"/>da.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Oaxaca....</cell>
+                        <cell>3,420</cell>
+                        <cell>528,860</cell>
+                        <cell>154 2/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Mérida de<lb break="yes"/>Yucatan....</cell>
+                        <cell>3,823</cell>
+                        <cell>460,620</cell>
+                        <cell>120 1/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Valladolid..</cell>
+                        <cell>6,556</cell>
+                        <cell>371,975</cell>
+                        <cell>56 2/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Guadalajara.</cell>
+                        <cell>6,381</cell>
+                        <cell>623,572</cell>
+                        <cell>97 2/3</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Zacatecas...</cell>
+                        <cell>1,681</cell>
+                        <cell>151,749</cell>
+                        <cell>90 1/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>De Guanaxuato.</cell>
+                        <cell>468</cell>
+                        <cell>511,616</cell>
+                        <cell>1,093 9/6</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de san Luis<lb break="yes"/>Potosí.....</cell>
+                        <cell>17,356</cell>
+                        <cell>311,503</cell>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Sin el nue vo San-<lb break="no"/>tander.....</cell>
+                        <cell>4,280</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tejas, Coahui-<lb break="no"/>la y el nuevo<lb break="yes"/>reino de Leon.</cell>
+                        <cell>616</cell>
+                        <cell>186,503</cell>
+                        <cell>302 3/4</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>California anti-<lb break="no"/>gua......</cell>
+                        <cell>4,669</cell>
+                        <cell>9,000</cell>
+                        <cell>1 9/10</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La nueva....</cell>
+                        <cell>1,360</cell>
+                        <cell>15,560</cell>
+                        <cell>11</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Ambas Califor-<lb break="no"/>nias......</cell>
+                        <cell>6,029</cell>
+                        <cell>24,560</cell>
+                        <cell>4</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Las intendencias y las provincias, con atencion<lb break="yes"/>á su respectivo taman&#x0303;o, están en el órden siguiente.</p>
+                <lb break="yes"/>
+                <table xml:id="t2-1" next="#t2-2">
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Estension.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Intendencia de san Luis Potosí...</cell>
+                        <cell>17,356.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. La de Sonora............</cell>
+                        <cell>12,862.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. La de Durango...........</cell>
+                        <cell>10,781.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4. Provincia de Tejas, ya compren-</cell>
+                        <cell/>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="487" facs="#f0019"/>
+                <table xml:id="t2-2" prev="#t2-1">
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Estension.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>dida en la Intendencia de san Luis<lb break="yes" />Potosí...............</cell>
+                        <cell>7,006.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5. Intendencia de Valladolid......</cell>
+                        <cell>6,556.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>6. La de Guadalajara..........</cell>
+                        <cell>6,381.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>7. Provincia de la antigua California.</cell>
+                        <cell>4,669.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>8. La de Coahuila, ya comprendida<lb break="yes"/>en la Intendencia de san Luis..</cell>
+                        <cell>4,280.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>9. Intendencia de Méjico.......</cell>
+                        <cell>4,138.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10. La provincia del nuevo Santander,<lb break="yes"/>ya comprendida en la Intenden-<lb break="no"/>cia de san Luis..........</cell>
+                        <cell>4,280.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>11. Intendencia de Mérida.......</cell>
+                        <cell>3,823.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12. Provincia del nuevo Méjico.....</cell>
+                        <cell>3,616.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>13. Intendencia de Oaxaca.......</cell>
+                        <cell>3,420.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>14. La de Vera Cruz..........</cell>
+                        <cell>2,458.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15. La de Zacatecas...........</cell>
+                        <cell>1,681.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>16. Provincia del nuevo reino de Leon,<lb break="yes"/>ya comprendida en la Intenden-<lb break="no"/>cia de san Luis..........</cell>
+                        <cell>1,623.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>17. Intendencia de Puebla........</cell>
+                        <cell>1,575.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>18. Provincia de la nueva California..</cell>
+                        <cell>1,360.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>19. Intendencia de Guanaxuato.....</cell>
+                        <cell>468.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Las intendencias y provincias con proporcion al<lb break="yes"/>número de sus habitantes guardan el órden siguiente.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>1. Intendencia de Méjico.......</cell>
+                        <cell>1.495,140.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. De Puebla..............</cell>
+                        <cell>821,277.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. De Guadalajara...........</cell>
+                        <cell>623,572.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4. De Oaxaca..............</cell>
+                        <cell>528,860.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5. De Guanaxuato...........</cell>
+                        <cell>511,616.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>6. De Mérida..............</cell>
+                        <cell>460,620.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <pb n="488" facs="#f0020"/>
+                    <row>
+                        <cell>7. De Valladolid............</cell>
+                        <cell>371,975.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>8. De san Luis Potosí.........</cell>
+                        <cell>311,503.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>9. De Durango.............</cell>
+                        <cell>157,970.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10. De Vera Cruz............</cell>
+                        <cell>154,286.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>11. De Zacatecas.............</cell>
+                        <cell>151,749.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12. De Sonora...............</cell>
+                        <cell>120,080.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>13. Provincia del nuevo Méjico.....</cell>
+                        <cell>39,797.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>14. La de la nueva California.......</cell>
+                        <cell>15,560.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>15. California antigua..........</cell>
+                        <cell>9,000.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>Las intendencias y las provincias de la nueva<lb break="yes"/>Espan&#x0303;a, por su poblacion relativa á cada legua cua-<lb break="no"/>drada, están en el órden siguiente.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rendition="#i">
+                                <hi rendition="#u">Habitantes por<lb break="yes"/>legua cuadrada.</hi>
+                            </hi>
+                        </cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>1. Intendencia de Guanaxuato.....</cell>
+                        <cell>1,093.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>2. De Puebla...............</cell>
+                        <cell>521.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>3. De Méjico..............</cell>
+                        <cell>361.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>4. De Oaxaca...............</cell>
+                        <cell>154.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>5. De Mérida..............</cell>
+                        <cell>120.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>6. De Guadalajara...........</cell>
+                        <cell>97.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>7. De Zacatecas............</cell>
+                        <cell>90.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>8. De Vera Cruz............</cell>
+                        <cell>62.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>9. De Valladolid............</cell>
+                        <cell>56.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>10. De Durango.............</cell>
+                        <cell>14.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>11. Provincia del nuevo Méjico.....</cell>
+                        <cell>11.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>12. Intendencia de Sonora.......</cell>
+                        <cell>9.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>13. Provincias de las dos Californias.</cell>
+                        <cell>4.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <p>No siendo la poblacion relativa mas de la pobla-<lb break="no"/>cion absoiuta repartida entre la superficie de las pro-<lb break="no"/>vincias, estas deben seguirse en el órden que llevan<lb break="yes"/>
+                    <pb n="489" facs="#f0021"/> en esta tabla, que indica la integridad de la fuerza<lb break="yes"/>política de las partes respectivas.</p>
+                <lb break="yes"/>
+                <p>Las inmediaciones de Méjico y de la Puebla, el<lb break="yes"/>terreno que media entre Salamanca, valle de Santia-<lb break="no"/>go, Yurirapundaro y Valladolid, están igualmente,<lb break="yes"/>ó mas habitados que la Intendencia de Guanaxuato,<lb break="yes"/>pues las Intendencias de Méjico y Puebla compren-<lb break="no"/>den al Sur grandes espacios enteramente despobla-<lb break="no"/>dos, que disminuyen la poblacion relativa, de que<lb break="yes" />resulta que la Intendencia de Méjico baja á 361 indi-<lb break="no"/>viduos por legua cuadrada, cuando el valle de Méji-<lb break="no"/>co contiene 2,353, y probablemente mas en cada<lb break="yes"/>una de sus leguas cuadradas.</p>
+                <lb break="yes"/>
+                <p>En la República italiana (Milán y Mántua) hay<lb break="yes"/>3,912 personas por legua cuadrada.</p>
+                <lb break="yes"/>
+                <p>Todo este reino con las provincias internas con-<lb break="no"/>tiene de 70 á 80 villas y lugares.</p>
+                <lb break="yes"/>
+                <p>La Intendencia de Méjico en 4,138 leguas cua-<lb break="no"/>dradas de superficie, contiene 1.495,140 habitantes,<lb break="yes"/>que corresponden á 361 por cada legua.</p>
+                <lb break="yes"/>
+                <p>El valle de Méjico tiene 2,241 leguas cuadradas,<lb break="yes"/>de las que las lagunas ocupan 54. Su poblacion pro-<lb break="no"/>bablemente es de 400&abbr100; habitantes, ó de 2,253 por<lb break="yes"/>legua cuadrada, descontando el terreno que ocupan<lb break="yes"/>las lagunas: poblacion que escede en 200 indivi-<lb break="no"/>duos por legua cuadrada, á la que hay en los contor-<lb break="no"/>nos de Madrid.</p>
+                <lb break="yes"/>
+                <p>La ciudad de Méjico, sin embargo que despues<lb break="yes"/>de la conquista ha padecido cuatro grandes inunda-<lb break="no"/>ciones en 1553, 1580, 1604 y 1607: an&#x0303;o en que el<lb break="yes"/>rey Felipe III mandó que la ciudad se mudase á las<lb break="yes"/>alturas de Tacuba y Tacubaya, cuya órden no se eje-<lb break="no"/>cutó, porque entonces se valuaron los edificios que<lb break="yes"/>tenia en 20 1/2 millones despues. Se libertó de las<lb break="yes"/>aguas del Oeste, Norte y Nodeste, por el desagüe<lb break="yes"/>
+                    <pb n="490" facs="#f0022"/> que empezó Enrique Martinez en el vireinato del mar-<lb break="no"/>qués de Salinas á 28 de noviembre de 1607. por so-<lb break="no"/>cabon.</p>
+                <lb break="yes"/>
+                <p>La obra se suspendió en 1623 y volvió á empren-<lb break="no"/>derse por tajo ab erto en 1624.</p>
+                <lb break="yes"/>
+                <p>En 20 de junio de 1629, por las copiosas lluvias<lb break="yes"/>que hubo, y por otras causas que no se han aclara-<lb break="no"/>do bastante, se inundó la ciudad por 5.<hi rendition="#sup">a</hi> vez, y que-<lb break="no"/>dá 5 an&#x0303;os en este estado, sin haberse secado mas de<lb break="yes"/>la plaza mayor, la del Volador y Santiago Hatelulco.</p>
+                <lb break="yes"/>
+                <p>Despues de muchos proyectos impracticables, En-<lb break="no"/>rique Martinez, puesto en libertad, continuó el des-<lb break="no"/>agüe de Huchuetoca, que se adelantó poco hasta<lb break="yes"/>1634, cuando el Comisario general de san Francisco<lb break="yes"/>lo trató con empen&#x0303;o hasta 1637.</p>
+                <lb break="yes"/>
+                <p>Por fin, el Consulado de Méjico lo acabó á<lb break="yes"/>tajo abierto hasta 1790.</p>
+                <lb break="yes"/>
+                <p>Este antiguo desagüe era solamente desagüe ne-<lb break="no"/>gativo que impedia al rio de Quantitlan el desembo-<lb break="no"/>que en la laguna de Zumpango que está 10 varas, 1<lb break="yes"/>pie y 6 pulgadas mas alta que la plaza mayor de es-<lb break="no"/>ta ciudad.</p>
+                <lb break="yes"/>
+                <p>En 1796 y 1798 el desagüe negativo se con-<lb break="no"/>virtió en desagüe positivo, abriéndose felizmente los<lb break="yes"/>canales de Zumpango y san Cristóbal.</p>
+                <lb break="yes"/>
+                <p>Todavía se trata de hacer el desagüe de la laguna<lb break="yes"/>de Tezcuco, cuya superficie está 1 vara, 1 pie y 1<lb break="yes"/>pulgada mas baja que dicha plaza mayor, para dismi-<lb break="no"/>nuir las pequen&#x0303;as inundaciones que por los vertederos<lb break="yes"/>del Sur y Sueste suele padecer la ciudad, y para for-<lb break="no"/>mar una comunicacion de canales desde Chalco hasta<lb break="yes"/>Huchuetoca, y quizá tambien si el rio de Moctezu-<lb break="no"/>ma lo permitiese hasta Panuco y Tampico.</p>
+                <lb break="yes"/>
+                <p>Las obras del desagüe desde 1609 hasta 1792,<lb break="yes"/>ban costado 5.651&abbr100; pesos.</p>
+                <lb break="yes"/>
+                <pb n="491" facs="#f0023"/>
+                <p>La mayor altura que hay en esta Intendencia, es<lb break="yes"/>la del picacho del Fraile en el monte nevado de To-<lb break="no"/>luca, que tiene 2,364 toesas de elevacion. Despues<lb break="yes"/>sigue el cerro de Ajuzco alto 1,871 toesas.</p>
+                <lb break="yes"/>
+                <p>La superficie de esta Intendencia es cuatro veces<lb break="yes"/>mayor que la del principado de Cataluna: su pobla-<lb break="no"/>cion total escede en 150&abbr100; individuos á la del reino<lb break="yes"/>de Galicia, y su poblacion relativa es igual á la de<lb break="yes"/>la provincia de Estremadura.</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+            <pb n="[492]" facs="#f0024"/>
+            <div n="1">
+                <head>CIUDADES Y VILLAS PRINCIPALES.<lb break="yes"/>
+                    <milestone unit="section" rendition="#hr"/>
+                    <lb break="yes"/>
+                    <hi rendition="#k">méjico.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>
+                    <hi rendition="#in">F</hi>ue fundada por los Alztecas en 1325, conquistada<lb break="yes"/>en 13 de agosto de 1521: su poblacion no escede<lb break="yes" />probablemente de 130 á 140&abbr100; personas.</p>
+                <lb break="yes"/>
+                <p>Los diversos autores citados por Clavigero, di-<lb break="no"/>fieren entre sí desde 60&abbr100; hasta 1 millon 500&abbr100; habi-<lb break="no"/>tantes que dan á esta ciudad. La numeracion hecha<lb break="yes"/>en 1793, sin incluir la tropa, produjo 112,926 in-<lb break="no"/>dividuos, á que agregado 1/7 que puede haberse ocul-<lb break="no"/>tado, subirán á 129&abbr100;, poblacion algo menor que la<lb break="yes"/>de Madrid, que en 1787 tenia 157&abbr100; personas, y ca-<lb break="no"/>si cinco veces menor que la de París y Lóndres.</p>
+                <lb break="yes"/>
+                <p>Alzate ha querido probar por el número de muer-<lb break="no"/>tos y nacidos comparado á los de Madrid, que Mé-<lb break="no"/>jico en 1788 tenia 210&abbr100; habitantes, pero no hay ra-<lb break="no"/>zon para sospechar el error de la numeracion del<lb break="yes"/>conde de Revillagigedo, llegase al doble, ó á 97&abbr100;<lb break="yes"/>personas; y no se puede admitir el que las poblacio-<lb break="no"/>nes de dos lugares situados en diversos continentes,<lb break="yes"/>climas y alturas, sean proporcionales al número de los<lb break="yes"/>nacidos, cuando en la misma Europa hay lugares,<lb break="yes"/>donde como en Madrid de 34 nace 1, y otros co-<lb break="no" />mo Berlin y varias ciudades de Francia, en que nace<lb break="yes"/>1 de 27. Estas dos suposiciones prodúcirian sobre el<lb break="yes"/>número de nacidos en Méjico, una diferencia de mas<lb break="yes"/>de 41&abbr100;.</p>
+                <lb break="yes"/>
+                <pb n="493" facs="#f0025"/>
+                <list>
+                    <head>
+                        <hi rendition="#k">consumos de la ciudad en</hi> 1809.</head>
+                    <lb break="yes"/>
+                    <item>Toros................. 16,300.</item>
+                    <lb break="yes"/>
+                    <item>Carneros............... 278,300.</item>
+                    <lb break="yes"/>
+                    <item>Puercos............... 50,600.</item>
+                    <lb break="yes"/>
+                    <item>Cabritos y Conejos.......... 24,000.</item>
+                    <lb break="yes"/>
+                    <item>Gallinas y Pollos........... 1.255,000.</item>
+                    <lb break="yes"/>
+                    <item>Patos................. 125,000.</item>
+                    <lb break="yes"/>
+                    <item>Harina, cargas............ 130,000.</item>
+                    <lb break="yes"/>
+                    <item>Maiz, idem............... 117,200.</item>
+                    <lb break="yes"/>
+                    <item>Pulque, idem............. 294,700.</item>
+                    <lb break="yes"/>
+                    <item>Aguardiente, barriles.......... 12,000.</item>
+                    <lb break="yes"/>
+                    <item>Vino y Vinagre............ 4,507.</item>
+                    <lb break="yes"/>
+                    <item>Aceite de Espan&#x0303;a, arrobas....... 5,600.</item>
+                    <lb break="yes"/>
+                    <item>Cebada, cargas............. 40,000.</item>
+                </list>
+                <lb break="yes"/>
+                <p>El consumo de vino ha aumentado muchísimo<lb break="yes"/>desde la introduccion del sistema médico Brownia-<lb break="no"/>no, que es muy favorable al comercio de la Metró-<lb break="no"/>poli.</p>
+                <lb break="yes"/>
+                <p>En la suposicion de haber en Méjico 135&abbr100; habi-<lb break="no"/>tantes, nace 1 de cada 22 1/2. Los nacidos están<lb break="yes"/>con los muertos en la razon 1, 2 : 1. Antes se notó<lb break="yes"/>ya que es aparente la gran mortandad, que proviene<lb break="yes"/>de la concurrencia de multitud de enfermos foraste-<lb break="no"/>ros en los hospitales.</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>La altura del suelo de Méjico es de.</cell>
+                        <cell>1,163 toesas.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Toluca..........</cell>
+                        <cell>1,338.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Tasco............</cell>
+                        <cell>858.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Pachuca...........</cell>
+                        <cell>1,224.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Chilpancingo........</cell>
+                        <cell>663.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Cuernavaca..........</cell>
+                        <cell>803.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de Queretaro.........</cell>
+                        <cell>953.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>La de san Juan del Rio......</cell>
+                        <cell>970.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <pb n="494" facs="#f0026"/>
+                <p>Queretaro tiene 35&abbr100; habitantes, Acapulco 4&abbr100;,<lb break="yes"/>los que en tiempo de ferias aumentan hasta 9&abbr100;, y<lb break="yes"/>Tezcuco tiene 5&abbr100;.</p>
+                <lb break="yes"/>
+                <p>Los demas lugares de esta Intendencia son:</p>
+                <lb break="yes"/>
+                <table>
+                    <row>
+                        <cell>Cimapan.</cell>
+                        <cell>Cadereyta.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Lerma.</cell>
+                        <cell>Coyoacan.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Zacatula.</cell>
+                        <cell>Tacubaya.</cell>
+                    </row>
+                    <lb break="yes"/>
+                    <row>
+                        <cell>Tacuba.</cell>
+                        <cell>Toluca.</cell>
+                    </row>
+                </table>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de puebla.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En la superficie de 1,575 leguas cuadradas, tie-<lb break="no"/>ne 821,277 habitantes, los que corresponden á 521<lb break="yes"/>por legua.</p>
+                    <lb break="yes"/>
+                    <p>Es 189 leguas mayor que el reino de Aragon: su<lb break="yes"/>poblacion total escede en 7&abbr100; individuos á la de Ca-<lb break="no" />talun&#x0303;a, y su poblacion relativa es igual á la de la pro-<lb break="no"/>vincia de Zamora. Su mayor altura es la del volcan<lb break="yes"/>de Popocatepec, que está en 2,764 toesas.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">ciudades y villas.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Hueforingo.</item>
+                        <lb break="yes"/>
+                        <item>Cholula.</item>
+                        <lb break="yes"/>
+                        <item>Atlixco, célebre por lo fértil de su campan&#x0303;a en trigo.</item>
+                        <lb break="yes"/>
+                        <item>Tepeaca.</item>
+                        <lb break="yes"/>
+                        <item>Tehuacan de las Granadas.</item>
+                        <lb break="yes"/>
+                        <item>Tlascala, poblacion de 3,365 personas, inclusos mu-<lb break="no" />chos indios.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Esta es la única Intendencia que carece de mi-<lb break="no"/>nas, y en la cual por esta razon las manufacturas<lb break="yes"/>y la agricultura han hecho mayores progresos. Y tie-<lb break="no"/>ne 138 parroquias, 117 pueblos, y 418 haciendas.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="495" facs="#f0027"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de vera cruz.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 2,458 leguas cuadradas de superficie, tiene<lb break="yes"/>154,286 habitantes, que corresponden á 62 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Es dos veces mayor que la provincia de Estre-<lb break="no"/>madura. Su poblacion total es algo menor que la de<lb break="yes"/>la provincia de Segovia, y la poblacion relativa cua-<lb break="no"/>tro veces menor que la de la provincia mas despo-<lb break="no"/>blada de Espan&#x0303;a, que es la de Ciudad Real.</p>
+                    <lb break="yes"/>
+                    <p>Su mayor altura es la del Pico de Orizava de<lb break="yes"/>2,795 toesas.</p>
+                    <lb break="yes"/>
+                    <p>En 1802 murieron en Vera Cruz de vómito<lb break="yes"/>prieto 1,500 personas.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Córdoba.</cell>
+                            <cell>Xalapa.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Orizava.</cell>
+                            <cell>Perote.</cell>
+                        </row>
+                    </table>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de oaxaca.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 3,420 leguas cuadradas de superficie, tiene<lb break="yes"/>528,860 habitantes, que corresponden á 154 por legua.</p>
+                    <lb break="yes"/>
+                    <p>Es algo mas que tres veces mayor que la provin-<lb break="no"/>cia de Estremadura. Su poblacion total es de 112&abbr100;<lb break="yes"/>personas, escedente á la de la provincia dicha, y por<lb break="yes"/>consiguiente la mitad menor su poblacion relativa.</p>
+                    <lb break="yes"/>
+                    <p>En esta sola provincia se ha conservado el culti-<lb break="no"/>vo de la grana, antes bien abundante en las de Pue-<lb break="no"/>bla y Nueva Galicia.</p>
+                    <lb break="yes"/>
+                    <p>El estado del marquesado del Valle, descendien-<lb break="no"/>te de Hernan Cortés, contiene las 4 villas del mar-<lb break="no"/>quesado, 49 pueblos, y 17,700 habitantes.</p>
+                    <lb break="yes"/>
+                    <p>Todas las rentas remisibles del duque de Monte<lb break="yes"/>Leon, procedentes de Oaxaca, Cuernavaca y Tolu-<lb break="no"/>ca, no esceden de 115&abbr100; pesos.</p>
+                    <lb break="yes"/>
+                    <p>Oaxaca ó Antequera tiene 24,400 habitantes.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="496" facs="#f0028"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de valladolid.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 6,556 leguas cuadradas de superficie, contie-<lb break="no"/>ne 371,975 habitantes, que corresponden á 56 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Es siete veces mayor que el reino de Granada, y<lb break="yes"/>tiene una poblacion algo mas numerosa que la de<lb break="yes"/>Murcia. Su mayor altura está en el cerro de Tanci-<lb break="no"/>taro. Tiene 205 parroquias, y 263 pueblos.</p>
+                    <lb break="yes"/>
+                    <p>Valladolid, que está en la elevacion de 959 toe-<lb break="no"/>sas, tiene 21,800 habitantes.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Pazcuaro.</cell>
+                            <cell>Charo.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Citacuaro.</cell>
+                            <cell>Zamora.</cell>
+                        </row>
+                    </table>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de mérida.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 3,823 leguas cuadradas de superficie, tiene<lb break="yes"/>460,620 habitantes, qne corresponden á 120 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Es algo mayor y m&abbr100;nos poblada que Oaxaca, y<lb break="yes"/>es la parte mas sana de los paises calientes de N. E.</p>
+                    <lb break="yes"/>
+                    <p>Mérida de Yucatán tiene 36&abbr100; habitantes.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de guadalajara.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 6,381 leguas cuadradas de superficie, tiene<lb break="yes"/>623,572 habitantes, á 97 por legua.</p>
+                    <lb break="yes"/>
+                    <p>En estension escede á 2/5 de la península de Es-<lb break="no"/>pan&#x0303;a; pero su poblacion es igual á la del reino de<lb break="yes"/>Aragon.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Guadalajara.</item>
+                        <lb break="yes"/>
+                        <item>Colima.</item>
+                        <lb break="yes"/>
+                        <item>Aguas Calientes.</item>
+                        <lb break="yes"/>
+                        <item>Villa de la Purificacion.</item>
+                        <lb break="yes"/>
+                        <item>Compostela.</item>
+                        <lb break="yes"/>
+                        <item>Lagos.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <pb n="497" facs="#f0029"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de zacatecas.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 1,681 leguas cuadradas de superficie, con-<lb break="no"/>tiene 151,749 habitantes, que corresponden á 90 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Es 300 leguas mayor que el reino de Aragon, y<lb break="yes"/>su poblacion es menor que la de la provincia de<lb break="yes"/>Segovia.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>Zacatecas.</cell>
+                            <cell>Fresnillo.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Jeréz.</cell>
+                            <cell>Sombrerete.</cell>
+                        </row>
+                    </table>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de guanaxuato.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 468 leguas cuadradas de superficie, contiene<lb break="yes"/>511,616 habitantes, que corresponden á 1,093 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Es algo mayor que la mitad del reino de Murcia,<lb break="yes"/>con una poblacion mas de 1/3 superior á la de este<lb break="yes"/>(de 174&abbr100; personas).</p>
+                    <lb break="yes"/>
+                    <p>El número de habitantes escede á la del reino<lb break="yes"/>de Valencia en 63&abbr100; individuos por legua cuadrada.</p>
+                    <lb break="yes"/>
+                    <p>La poblacion de Guanaxuato es mayor que la de<lb break="yes"/>Lima, Quito, Santa Fé y Caracas. Despues de Mé-<lb break="no"/>jico y la Habana, es la ciudad de mas habitantes de<lb break="yes"/>la América Espan&#x0303;ola.</p>
+                    <lb break="yes"/>
+                    <p>Su altura es de 1,020 toesas.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Salamanca.</item>
+                        <lb break="yes"/>
+                        <item>Celaya.</item>
+                        <lb break="yes"/>
+                        <item>Salvatierra.</item>
+                        <lb break="yes"/>
+                        <item>San Miguel el Grande.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Tiene 33 parroquias, 37 pueblos y 448 haciendas.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="498" facs="#f0030"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de san luis potosí.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 17,356 leguas cuadradas de superficie, con-<lb break="no"/>tiene 311,503 habitantes, á 17 por legua cuadrada.</p>
+                    <lb break="yes"/>
+                    <p>Es solamente 3&abbr100; leguas cuadradas menor que to-<lb break="no"/>do el vireinato del Perú, y 2,600 leguas cuadradas<lb break="yes"/>mayor que la península de Espan&#x0303;a, teniendo una po-<lb break="no"/>blacion total menor que la del reino de Murcia.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell/>
+                            <cell>
+                                <hi rendition="#i">
+                                    <hi rendition="#u">Leguas<lb break="yes"/>cuadradas.</hi>
+                                </hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La provincia de san Luis Potosí.....</cell>
+                            <cell>616.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La del Nuevo Santander........</cell>
+                            <cell>3,831.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La del nuevo reino de Leon.......</cell>
+                            <cell>1,623.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La de Tejas..............</cell>
+                            <cell>7,006.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>La de Coahuila.............</cell>
+                            <cell>
+                                <hi rendition="#u">4,280.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell/>
+                            <cell>
+                                <hi rendition="#u">17,356.</hi>
+                            </cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>San Luis Potosí tiene 11&abbr100; habitantes.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Monterey.</item>
+                        <lb break="yes"/>
+                        <item>Linares.</item>
+                        <lb break="yes"/>
+                        <item>Monclova.</item>
+                        <lb break="yes"/>
+                        <item>San Fernando de Bejar.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de durango.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 10,781 leguas cuadradas de superficie, con-<lb break="no"/>tiene 157,970 habitantes, á 14 por legua.</p>
+                    <lb break="yes"/>
+                    <p>Su estension es como 2/3 de la península de Es-<lb break="no"/>
+                        <pb n="499" facs="#f0031"/> pan&#x0303;a con poblacion menor que la de la provincia de<lb break="yes"/>Soria.</p>
+                    <lb break="yes"/>
+                    <p>Tiene 199 pueblos, 75 parroquias, 152 hacien-<lb break="no"/>das, &#x1EF3; 37 misiones.</p>
+                    <lb break="yes"/>
+                    <p>La altura de Durango es de 1,027 toesas.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Habitantes.......... 14,200.</item>
+                        <lb break="yes"/>
+                        <item>Chihuahua.......... 15,000.</item>
+                        <lb break="yes"/>
+                        <item>San Juan del Rio....... 13,500.</item>
+                        <lb break="yes"/>
+                        <item>Nombre de Dios....... 8,700.</item>
+                        <lb break="yes"/>
+                        <item>Papasquiaro......... 7,200.</item>
+                        <lb break="yes"/>
+                        <item>Mapimi........... 3,000.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Saltillo: Parras: Cuencamé.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">intendencia de sonora.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 12,862 leguas cuadradas de superficie, con-<lb break="no"/>tiene 120,080 habitantes, á 9 por legua.</p>
+                    <lb break="yes"/>
+                    <p>Es de solas 2,800 leguas cuadradas menor que<lb break="yes"/>toda Espan&#x0303;a, teniendo una poblacion mas escasa que<lb break="yes"/>la de Madrid ó Méjico.</p>
+                    <lb break="yes"/>
+                    <p>La Sonora tiene 46 pueblos, 15 parroquias, 43<lb break="yes"/>misiones y 20 haciendas.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Arispe tiene habitantes.... 9,500.</item>
+                        <lb break="yes"/>
+                        <item>Sonora............. 8,200.</item>
+                        <lb break="yes"/>
+                        <item>Ostimuri........... 20,000.</item>
+                        <lb break="yes"/>
+                        <item>Culiacan........... 13,800.</item>
+                        <lb break="yes"/>
+                        <item>Sinaloa............ 12,000.</item>
+                        <lb break="yes"/>
+                        <item>Rosario........... 7,200.</item>
+                        <lb break="yes"/>
+                        <item>Villa del Fuerte....... 10,100.</item>
+                        <lb break="yes"/>
+                        <item>Alamos........... 9,000.</item>
+                        <lb break="yes"/>
+                        <item>Copala.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <pb n="500" facs="#f0032"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">nuevo méjico.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 3,616 leguas cuadradas de superficie, contie-<lb break="no"/>ne 39,797 habitantes, á 11 por legua.</p>
+                    <lb break="yes"/>
+                    <p>Es mas de 3 veces mayor que Catalun&#x0303;a, con una<lb break="yes" />poblacion menor que la de la mitad de Barcelona.</p>
+                    <lb break="yes"/>
+                    <p>Tiene 26 pueblos, 3 parroquias, y 19 misiones.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Santa Fé.</item>
+                        <lb break="yes"/>
+                        <item>Santa Cruz de la Can&#x0303;ada.</item>
+                        <lb break="yes"/>
+                        <item>Alburquerque.</item>
+                        <lb break="yes"/>
+                        <item>Atlixco.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">antigua california.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 4,669 leguas cuadradas de superficie, con-<lb break="no"/>tiene 9&abbr100; habitantes, que corresponden 1 9/10 por<lb break="yes"/>legua.</p>
+                    <lb break="yes"/>
+                    <p>Tiene 4&abbr100; indios bravos, 5&abbr100; reducidos, y 16 mi-<lb break="no" />siones que van en decadencia.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">nueva california.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>En 1,360 leguas cuadradas de superficie, contie-<lb break="no"/>ne 15,560 habitantes, á 11 por legua.</p>
+                    <lb break="yes"/>
+                    <p>La poblacion de estas misiones ha aumentado con<lb break="yes"/>tanta rapidez, que en 1793 la numeracion no daba<lb break="yes"/>en ambas Californias mas de 12,666 habitantes, y en<lb break="yes"/>1801 y 802 se bautizaron en las 18 misiones 4,728,<lb break="yes"/>y murieron 2,881. Desde 1769 se bautizaron 33,717,<lb break="yes"/>y murieron solamente 16,984.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Hay caballos....... 17,400.</item>
+                        <lb break="yes"/>
+                        <item>Ganado vacuno...... 67,780.</item>
+                        <lb break="yes"/>
+                        <item>Ovejas.......... 107,172.</item>
+                        <lb break="yes"/>
+                        <pb n="501" facs="#f0033"/>
+                        <item>Trigo sembrado...... 2,089 fanegas.</item>
+                        <lb break="yes"/>
+                        <item>Trigo cosechado..... 33,576.</item>
+                        <lb break="yes"/>
+                        <item>Maiz sembrado...... 66.</item>
+                        <lb break="yes"/>
+                        <item>Cosechado........ 4,661.</item>
+                        <lb break="yes"/>
+                        <item>En san Diego se hace vino y aceite.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">provincias sujetas al vireinato.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Las 10 Intendencias de Méjico, Puebla, Vera<lb break="yes"/>Cruz, Oaxaca, Mérida, Valladolid, Guadalajara,<lb break="yes"/>Zacatecas, Guanaxuato y san Luis Potosí, no com-<lb break="no"/>prendiéndose en esta Coahuila y Tejas en las dos Ca-<lb break="no"/>lifornias.</p>
+                    <lb break="yes"/>
+                    <p>Dichas 10 Intendencias contienen 5.385,887 ha-<lb break="no"/>bitantes en 40,593 leguas cuadradas de superficie,<lb break="yes"/>que corresponden 126 1/2 por legua.</p>
+                    <lb break="yes"/>
+                    <p>Las partes que comprende la comandancia ge-<lb break="no"/>neral de provincias internas, son las Intendencias de<lb break="yes"/>Durango y Sonora, Coahuila, Tejas y el Nuevo Mé-<lb break="no"/>jico, y contienen en-la superficie de 38,545 leguas<lb break="yes"/>cuadradas 378,847 habitantes, que corresponden á<lb break="yes"/>10 por legua.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">agricultura.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Los productos de la agricultura en Nueva Espa-<lb break="no"/>n&#x0303;a, son trigo y maiz: valen anualmente tanto co-<lb break="no"/>mo la plata y el oro de sus minas, ó de 22 á 24 mi-<lb break="no"/>llones de pesos. Antes del an&#x0303;o de 1779 llegaba ape-<lb break="no"/>nas su importe á 19 millones, cuyo aumento viene<lb break="yes"/>de los progresos de la agricultura, de la industria y<lb break="yes"/>de la poblacion.</p>
+                    <lb break="yes"/>
+                    <p>Los diezmos del clero, que son el barómetro de<lb break="yes"/>estos progresos, eran en los 6 obispados de Mejico,<lb break="yes"/>Puebla, Valladolid, Oaxaca, Guadalajara y Durango.</p>
+                    <lb break="yes"/>
+                    <p>Desde 1771 hasta 1779 de... 13.357,157 pesos.</p>
+                    <lb break="yes"/>
+                    <p>Desde 1779 hasta 1789 de... 18.353,821 pesos.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="502" facs="#f0034"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">diezmos.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Méjico de 71 á 80... 4.132&abbr100; De 81 á 90 7.082&abbr100;</item>
+                        <lb break="yes"/>
+                        <item>Puebla de 70 á 79... 2.965&abbr100; De 80 á 89 3.508&abbr100;</item>
+                        <lb break="yes"/>
+                        <item>Valladolid de 70 á 79. 2.710&abbr100; De 80 á 89 3.239&abbr100;</item>
+                        <lb break="yes"/>
+                        <item>Oaxaca de 71 á 80... 716&abbr100; De 81 á 90 863&abbr100;</item>
+                        <lb break="yes"/>
+                        <item>Guadalajara de 71 á 80. 1.889&abbr100; De 81 á 90 2.579&abbr100;</item>
+                        <lb break="yes"/>
+                        <item>Durango de 70 á 79.. 943&abbr100; De 80 á 89 1.080&abbr100;</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Cantidades que comparadas con la estension de<lb break="yes"/>los. obispados y su poblacion, producen unos resul-<lb break="no"/>tados interesantes.</p>
+                    <lb break="yes"/>
+                    <p>El producto de la agricultura de la Intendencia<lb break="yes"/>de Valladolid en 1803 fue de 2 millones 173&abbr100; pe-<lb break="no"/>sos: de modo que en este departamento un habi-<lb break="no"/>tante produce por labranza 6 pesos; pero de 372&abbr100;<lb break="yes"/>individuos que hay en Mechoacan, no hay 150&abbr100; que<lb break="yes"/>trabajen en el campo.</p>
+                    <lb break="yes"/>
+                    <p>Los paises donde los efectos no se trasportan<lb break="yes"/>en carros, gastan duplicado en las mulas, ocupándo-<lb break="no"/>se tambien demasiada gente en la arriería.</p>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">fábricas, comercio.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Las fábricas de lana y algodon mas considera-<lb break="no"/>bles son las de Puebla y Queretaro, que han arrui-<lb break="no"/>nado las de Tezcuco. En Queretaro en 20 obrages<lb break="yes"/>se consumen 46&abbr100; arrobas de lana cada an&#x0303;o, las que<lb break="yes"/>producen 6&abbr100; piezas de pan&#x0303;o ó 226&abbr100; varas: 280 pie-<lb break="no"/>zas de jerguetillá ó 39&abbr100; varas: 200 piezas de baye-<lb break="no"/>ta ó 15&abbr100; varas, y 161 piezas de jerga ó 18&abbr100; varas;<lb break="yes" />siendo el valor de todo esto 600&abbr100; pesos.</p>
+                    <lb break="yes"/>
+                    <p>De algodon se invierten en mantas y rebozos<lb break="yes"/>200&abbr100; libras.</p>
+                    <lb break="yes"/>
+                    <p>Estos obrages habrian adelantado mucho mas si<lb break="yes"/>
+                        <pb n="503" facs="#f0035"/> los operarios gorasen del fruto de su trabajo, y si no<lb break="yes"/>fuesen unas inmundas cárceles, tan contrarias á la<lb break="yes"/>salud, como á la perfeccion del tejido, y de las ca-<lb break="no"/>lores.</p>
+                    <lb break="yes"/>
+                    <p>Las fábricas de algodon podrian ser el objeto<lb break="yes"/>mas interesante de este reino, si en ellas se emplea-<lb break="no"/>sen máquinas sencillas para despepitar el algodon en<lb break="yes"/>las costas de ambos mares, donde nace.</p>
+                    <lb break="yes"/>
+                    <p>El valor de los tejidos de algodon de la Inten-<lb break="no"/>deneia de Puebla, donde á mas de la Cabecera se<lb break="yes"/>fabrican en Cholula, Tlascala y Hucjozingo, es de<lb break="yes"/>1 millon 500&abbr100; pesos en tiempo de paz.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <head>
+                            <hi rendition="#k">comercio del mar del norte por vera cruz.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Importacion.............</cell>
+                            <cell>19 millones.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Esportacion..............</cell>
+                            <cell>22 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Diferencia..............</cell>
+                            <cell>3 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Objeto ó importe total de este comercio.</cell>
+                            <cell>41 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Importacion de Lima........</cell>
+                            <cell>4 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Esportacion.............</cell>
+                            <cell>5 1/2 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Diferencia..............</cell>
+                            <cell>1 1/2 idem.</cell>
+                        </row>
+                        <lb break="yes"/>
+                    </table>
+                    <table>
+                        <head>
+                            <hi rendition="#k">esportacion de los estados unidos.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <row>
+                            <cell/>
+                            <cell>= Dolars. =</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>En 1790........... 19.</cell>
+                            <cell rows="3" rendition="#leftBraced">100 millones.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>En 1793........... 33.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>En 1794........... 48.</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>Los objetos de esportacion de Vera Cruz son<lb break="yes"/>plata y oro, y los productos de la agricultura de<lb break="yes"/>Nueva Espan&#x0303;a, como grana, an&#x0303;il, zarzaparrilla, pur-<lb break="no"/>ga de Jalapa, pimienta de Tabasco, harinas, cueros,<lb break="yes"/>azúcar, vainilla, &#x0026;c.</p>
+                    <lb break="yes"/>
+                    <pb n="504" facs="#f0036"/>
+                    <p>Entre las materias de importacion se cuentan el<lb break="yes"/>vino, aguardiente y otros licores; el papel, la ca-<lb break="no"/>nela, azafran, fierro, acero, cera, cacao y ropas<lb break="yes"/>de todas clases. Todo se escasea mucho en tiempo<lb break="yes"/>de guerra con los ingleses, y se encarece á propor-<lb break="no"/>cion, llegando algunas veces á tener unos precios<lb break="yes"/>exorbitantes.</p>
+                    <lb break="yes"/>
+                    <p>Del estado que publicó el Consulado de Vera<lb break="yes"/>Cruz (único papel estadístico que se ha dado á luz<lb break="yes"/>sobre la N. E., el cual está lleno de claridad y mi-<lb break="no"/>ras patrióticas), resulta que en el an&#x0303;o de 1802, an&#x0303;o<lb break="yes"/>en el cual por la terminacion de la guerra aumen-<lb break="no"/>taron todos los ramos la importacion desde Espa-<lb break="no"/>n&#x0303;a, fne:</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell>De efectos nacionales.. 11.539,219.</cell>
+                            <cell rows="2" rendition="#leftBraced">20.390,859.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>estrangeros.. 8.851,640.</cell>
+                            <cell/>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Esportacion para Espan&#x0303;a.......</cell>
+                            <cell>33.866,219.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Diferencia en favor de la esportacion.</cell>
+                            <cell>13.475,360.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Comercio de la Metrópoli......</cell>
+                            <cell>54.000,000.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Importacion de América.......</cell>
+                            <cell>1.607,792.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Esportacion para América......</cell>
+                            <cell>4.581,148.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Diferencia en favor de la esportacion.</cell>
+                            <cell>2.973,419.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Comeroio de la América.......</cell>
+                            <cell>6.000,000.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Importacion general.........</cell>
+                            <cell>29.198,588.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Esportacion general.........</cell>
+                            <cell>38.447,367.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Comercio total de Vera Cruz en el<lb break="yes"/>ano de 1802............</cell>
+                            <cell>60.500,000.</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <p>El cual fue hecho en los 588 buques siguientes.</p>
+                    <lb break="yes"/>
+                    <cb/>
+                    <table>
+                        <row>
+                            <cell>De Espan&#x0303;a......</cell>
+                            <cell>148.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>De América.....</cell>
+                            <cell>143.</cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <cb/>
+                    <table>
+                        <row>
+                            <cell>Para Espan&#x0303;a...</cell>
+                            <cell>112.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Para América...</cell>
+                            <cell>155.</cell>
+                        </row>
+                    </table>
+                </div>
+                <lb break="yes"/>
+                <pb n="505" facs="#f0037"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">comercio del mar del sur por acapulco.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Importacion de 1 1/2 millones de pesos.</p>
+                    <lb break="yes"/>
+                    <p>Las rentas de Nueva Espan&#x0303;a en cuanto á su<lb break="yes"/>producto guardan el órden siguiente.</p>
+                    <lb break="yes"/>
+                    <p>Ramo de plata y oro, esto es, quintos, azogues<lb break="yes"/>y monedage, tabaco, alcabala, pólvora, naipes,<lb break="yes"/>pulque, tributos y almoxarifazgo.</p>
+                    <lb break="yes"/>
+                    <p>Dividiéndose todos estos ramos en tres clases:<lb break="yes"/>1.<hi rendition="#sup">a</hi> la de masa comun, esto es, los ramos que tie-<lb break="no"/>nen los gastos y cargas comunes á que están suje-<lb break="no"/>tos en Indias, como alcabalas, tributos, derechos de<lb break="yes"/>oro y plata: 2.<hi rendition="#sup">a</hi> la que abraza los ramos de tabacos,<lb break="yes"/>naipes y azogues, cuyo líquido se separa de los otros<lb break="yes"/>para remitirse á Espan&#x0303;a; y 3.<hi rendition="#sup">a</hi> que tiene unos des-<lb break="no"/>tinos particulares para la América y la Metrópoli,<lb break="yes"/>como penas, bulas, diezmos, vacantes, media anna-<lb break="no"/>ta, y mesadas eclesiásticas. A estas tres clases se agre-<lb break="no"/>ga la del ramo de agenos, como el monte pio, bie-<lb break="no"/>nes de difuntos, bienes municipales, agenos que so-<lb break="no"/>lamente gozan la proteccion y direceion del Sobe-<lb break="no"/>rano. Siguiendo esta division el término medio des-<lb break="no"/>de 1784 hasta 1789, produce.</p>
+                    <lb break="yes"/>
+                    <table>
+                        <row>
+                            <cell/>
+                            <cell>
+                                <hi rendition="#i">
+                                    <hi rendition="#u">Productos.</hi>
+                                </hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#i">
+                                    <hi rendition="#u">Gastos.</hi>
+                                </hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#i">
+                                    <hi rendition="#u">Líquido.</hi>
+                                </hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>1.<hi rendition="#sup">a</hi> Clase pro-<lb break="no" />dujo...</cell>
+                            <cell>10.747,878.</cell>
+                            <cell>1.395,862.</cell>
+                            <cell>9.352,015.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>2.<hi rendition="#sup">a</hi> Clase....</cell>
+                            <cell>6.899,830.</cell>
+                            <cell>3.080,303.</cell>
+                            <cell>3.819,526.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>3.<hi rendition="#sup">a</hi> Clase....</cell>
+                            <cell>530,425.</cell>
+                            <cell>13,804.</cell>
+                            <cell>516,620.</cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Agenos...</cell>
+                            <cell>
+                                <hi rendition="#u">1.897,128.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#u">1.700,956.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#u">196,172.</hi>
+                            </cell>
+                        </row>
+                        <lb break="yes"/>
+                        <row>
+                            <cell>Total..</cell>
+                            <cell>
+                                <hi rendition="#u">20.075,266.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#u">6.190,927.</hi>
+                            </cell>
+                            <cell>
+                                <hi rendition="#u">13.884,334.</hi>
+                            </cell>
+                        </row>
+                    </table>
+                    <lb break="yes"/>
+                    <pb n="506" facs="#f0038"/>
+                    <p>De este estracto se sigue el resultado de que los<lb break="yes"/>gastos de administracion hacen la 3.<hi rendition="#sup">a</hi> parte del total<lb break="yes"/>producto de las rentas y casi la mitad del líquido.</p>
+                    <lb break="yes"/>
+                    <p>El rey de Espan&#x0303;a recibe anualmente de sus do-<lb break="no"/>minios de América cuando mas, 9 millones de pe-<lb break="no"/>sos, de los cuales este reino dá 2/3.</p>
+                    <lb break="yes"/>
+                    <p>La renta total de N. E. es casi igual á la del rey<lb break="yes"/>de Prusia, y escede tres veces á la del rey de Suecia.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Producto total del reino, en plata y oro. 22.000,000.</item>
+                        <lb break="yes"/>
+                        <item>De plata, marcos............ 2.660,000.</item>
+                        <lb break="yes"/>
+                        <item>Idem moneda, pesos......... 21.300,000.</item>
+                        <lb break="yes"/>
+                        <item>En ono monedado.......... 700,000.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Popayan y Santa Fé acun&#x0303;an.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>En oro, pesos.............. 190,000.</item>
+                        <lb break="yes"/>
+                        <item>El reino de Chile en idem........ 500,000.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>La plata al ore acun&#x0303;ado es como 100 : 3 1/3.</p>
+                    <lb break="yes"/>
+                    <p>El producto de la plata de Nueva Espan&#x0303;a á la del<lb break="yes"/>Perú = 4 : 1 &#x2014;</p>
+                    <lb break="yes"/>
+                    <p>El mismo producto de este reino al de las minas<lb break="yes"/>de Alemania = 20 : 8 &#x2014;</p>
+                    <lb break="yes"/>
+                    <p>En 1796 se acun&#x0303;aron en esta</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Casa de moneda........ 25.644,000 pesos.</item>
+                        <lb break="yes"/>
+                        <item>En 1797.......... 25.800,000 pesos.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>Doce an&#x0303;os antes fueron de 18 á 19 millones.</p>
+                    <lb break="yes"/>
+                    <p>Treinta an&#x0303;os apenas llegaban de 10 á 11 id.</p>
+                    <lb break="yes"/>
+                    <p>Al principio del siglo <hi rendition="#k">xviii</hi> eran de 5 á 6 id.</p>
+                    <lb break="yes"/>
+                    <p>Estos aumentos vienen del progreso de la pobla-<lb break="no"/>cion y de la industria; de las luces esparcidas; de la<lb break="yes"/>rebaja del precio del azogue en 1777; descubrimien-<lb break="no"/>to del mineral de los catorce en 1778; del fomento<lb break="yes"/>
+                        <pb n="507" facs="#f0039"/> de la mina de Valenciana en 1768; del estableci-<lb break="no"/>miento del tribunal de Minería, y mas que todo de<lb break="yes"/>la libertad del comercio desde el an&#x0303;o de 1778.</p>
+                    <lb break="yes"/>
+                    <p>Este reino ha producido en plata<lb break="yes"/>y oro desde 1690 hasta 1803.... 1.304.070,807.</p>
+                    <lb break="yes"/>
+                    <p>Y desde la conquista mas de... <hi rendition="#u">1.920.000,000.</hi>
+                    </p>
+                    <lb break="yes"/>
+                    <p>Esta suma de numerario ha causado enormes re-<lb break="no"/>voluciones en el estado moral y político de la Euro-<lb break="no"/>pa, que han destruido las fábricas y la industria de<lb break="yes"/>la Metrópoli, habiéndose desaparecido la mayor par-<lb break="no"/>te de este tesoro, dirigiéndose para el E.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <head>
+                            <hi rendition="#k">moneda acun&#x0303;ada antes del comercio libre.</hi>
+                        </head>
+                        <lb break="yes"/>
+                        <item>Desde 1766 hasta 778.... 203.882,000 pesos.</item>
+                        <lb break="yes"/>
+                        <item>Desde 1779 hasta 1797... 252.024,000 pesos.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <p>La plata beneficiada por amalgamacion es á la<lb break="yes"/>beneficiada por fundicion = 3 1/2: 1 &#x2014;</p>
+                    <lb break="yes"/>
+                    <p>La fundicion disminuye en tiempo de paz; dis-<lb break="no"/>minucion que favorece la conservacion de los bos-<lb break="no"/>ques y el aumento de la plata.</p>
+                    <lb break="yes"/>
+                    <p>Esta casa de moneda, la primera de todo el mun-<lb break="no"/>do, gira su capital con 59 por 0/0 de utilidad, y el<lb break="yes"/>Soberano gana 6 3/5 por 0/0 sobre toda la cantidad<lb break="yes"/>que se acun&#x0303;a.</p>
+                    <lb break="yes"/>
+                    <p>El costo de la amonedacion con las mermas es<lb break="yes"/>de medio real, y con los sueldos de los empleados<lb break="yes"/>de 4/5 por marco.</p>
+                    <lb break="yes"/>
+                    <p>Cuando se acun&#x0303;an 15 millones, el Rey gana 6<lb break="yes"/>por 0/0: cuando pasan de 18 utiliza casi 7 por 0/0.</p>
+                    <lb break="yes"/>
+                    <p>Los operarios de esta casa son 350 á 400 que<lb break="yes"/>
+                        <pb n="508" facs="#f0040"/> diariamente pueden trabajar con 10 molinos para<lb break="yes"/>estirar la plata; 21 bancos para hilerarla, 51 cortes<lb break="yes"/>y 20,000 lantes de 12 á 15&abbr100; marcos.</p>
+                    <lb break="yes"/>
+                    <p>En el mes de abríl de 1796 se acun&#x0303;aron 2.922,185<lb break="yes" />pesos, y en un an&#x0303;o, sin aumentar máquinas ni gen-<lb break="no" />te, pueden acun&#x0303;arse 30 millones de pesos.</p>
+                    <lb break="yes"/>
+                    <p>Este reino dividido en diputaciones de minas<lb break="yes"/>contiene 500 reales de minas, y mas de 3&abbr100; minas<lb break="yes"/>en actual laborío.</p>
+                    <lb break="yes"/>
+                    <p>Toda la América espan&#x0303;ola produce 37 millones<lb break="yes"/>de pesos en plata y oro, y consume anualmente<lb break="yes"/>mas de 30&abbr100; quintales de azogue, que importan pasa-<lb break="no"/>dos de 1 1/2 millones de pesos.</p>
+                    <lb break="yes"/>
+                    <p>Las minas de este reino gastan cada an&#x0303;o 700&abbr100;<lb break="yes" />pesos de pólvora.</p>
+                    <lb break="yes"/>
+                    <p>Las de cobre producen aquí para conducir á Es-<lb break="no"/>pan&#x0303;a una cosa de poca importancia.</p>
+                    <lb break="yes"/>
+                    <p>Las de plomo son mas escasas de lo que se ne-<lb break="no"/>cesita para fundir la plata.</p>
+                    <lb break="yes"/>
+                    <p>Las de fierro abundan en las Intendencias de<lb break="yes"/>Valladolid, Guadalajara, Zacatecas y provincias in-<lb break="no"/>ternas; pero no pueden trabajarse en tiempo de paz<lb break="yes"/>por lo barato del fierro y del acero que viene de Es-<lb break="no"/>pan&#x0303;a, y por la falta de combustible.</p>
+                    <lb break="yes"/>
+                    <p>La plata con oro paga al Rey y al tribunal de<lb break="yes"/>Minería 19 1/6 por 0/0.</p>
+                    <lb break="yes"/>
+                    <p>No se paga por el Rey el oro que contienen las<lb break="yes"/>barras de plata, cuando no es tanto que pase de 30<lb break="yes"/>granos por marco.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="509" facs="#f0041"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">diputacion de minería primera<lb break="yes"/>de guanaxuato.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>Produce de 5 á 6 millones de pesos cada an&#x0303;o<lb break="yes"/>en plata y oro, duplicado que el Potosí en su mayor<lb break="yes"/>prosperidad.</p>
+                    <lb break="yes"/>
+                    <p>La mina de Valenciana (que tiene 615 varas de<lb break="yes"/>profundidad perpendicular, 38 varas menos que la de<lb break="yes"/>Cuzchach de Sajonia) ha dado desde 1768, mas de<lb break="yes"/>28 millones de pesos en plata y oro. La utilidad lí-<lb break="no"/>quida para los duen&#x0303;os en este tiempo ha sido de 16<lb break="yes"/>á 18 millones. Por lo comun produce 250&abbr100; marcos<lb break="yes"/>cada an&#x0303;o de plata, ó 2 millones de pesos en an&#x0303;os<lb break="yes"/>abundantes, como el de 1797, dió mas de 3 millo-<lb break="no"/>nes de pesos ó 400&abbr100; marcos. Esta mina sola produ-<lb break="no"/>ce tanta plata como todo el cerro del Potosí en los<lb break="yes"/>an&#x0303;os mas felices, en los cuales (desde 1578 hasta<lb break="yes"/>1736) daban en cada uno 3 millones 200&abbr100; pesos.<lb break="yes"/>Al presente no producen mas de 300&abbr100; marcos.</p>
+                    <lb break="yes"/>
+                    <p>En Guanaxuato son 3 solamente las minas que se<lb break="yes"/>trabajan con algun empen&#x0303;o. No se halla poblada<lb break="yes"/>ni 1/10 de la veta madre; de modo que solo esta por<lb break="yes"/>ser tan rica podria dar tanta plata como todo el resto<lb break="yes"/>del reino, y aun mucho mas.</p>
+                    <lb break="yes"/>
+                    <p>En todo el Real de Guanaxuato se cuentan 183<lb break="yes"/>mines: 366 Zangarros, ó Haciendas de beneficio:<lb break="yes"/>116 molinos: 1,896 arrastres: 14,618 mulas; y 9&abbr100;<lb break="yes"/>operarios: se muelen diariamente 11,376 quintales<lb break="yes"/>de metal.</p>
+                </div>
+                <lb break="yes"/>
+                <pb n="510" facs="#f0042"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">secunda diputacion de los catorce.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <p>El Real de los Catorce y el cerro de Gualcayoe,<lb break="yes"/>junto á Chotá, en el Perú, son los descubrimientos<lb break="yes"/>mas brillantes que se han hecho en la América Espa-<lb break="no"/>n&#x0303;ola en el último siglo.</p>
+                    <lb break="yes"/>
+                    <p>Sebastian Coronado descubrió el Viejo Catorce<lb break="yes"/>en 1773, y don Bernardo Cepeda la Veta grande<lb break="yes"/>en 1778.</p>
+                    <lb break="yes"/>
+                    <p>La mina del P. Flores dió en el primer an&#x0303;o un mi-<lb break="no"/>llon de pesos. La de la Purísima floreció desde 1788,<lb break="yes"/>dando anualmente libres 200&abbr100; pesos. En 1796 pro-<lb break="no"/>dujo 1 millon 100&abbr100; pesos. Desde 1798 ha decaido<lb break="yes"/>este Real, aunque todavía produce de 3 á 4 millones<lb break="yes"/>de pesos cada an&#x0303;o.</p>
+                    <lb break="yes"/>
+                    <list>
+                        <item>3.<hi rendition="#sup">a</hi> Diputacion de san Luis Potosí.</item>
+                        <lb break="yes"/>
+                        <item>4.<hi rendition="#sup">a</hi> De Ojo caliente.</item>
+                        <lb break="yes"/>
+                        <item>5.<hi rendition="#sup">a</hi> De Charcas.</item>
+                        <lb break="yes"/>
+                        <item>6.<hi rendition="#sup">a</hi> San Nicolás de Croix.</item>
+                        <lb break="yes"/>
+                        <item>7.<hi rendition="#sup">a</hi> Zacatecas.</item>
+                        <lb break="yes"/>
+                        <item>8.<hi rendition="#sup">a</hi> Sombrerete. El ejemplo de la mayor<lb break="yes"/>riqueza que se ha conocido en este reino;<lb break="yes"/>es la mina de la Veta negra, que en 5 ó<lb break="yes" />6 meses produjo 6 millones de pesos<lb break="yes"/>á la caja de Fagoaga, dejando libres cer-<lb break="no"/>ca de 4 millones.</item>
+                        <lb break="yes"/>
+                        <item>9.<hi rendition="#sup">a</hi> Diputacion del Fresnillo.</item>
+                        <lb break="yes"/>
+                        <item>10. Sierra de Pinos.</item>
+                        <lb break="yes"/>
+                        <item>11. De Bolan&#x0303;os.</item>
+                        <lb break="yes"/>
+                        <item>12. Asientos de Ibarra.</item>
+                        <lb break="yes"/>
+                        <item>13. Hostotipaquillo.</item>
+                        <lb break="yes"/>
+                        <item>14. Pachuca.</item>
+                        <lb break="yes"/>
+                        <item>15. Cimapan.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <pb n="511" facs="#f0043"/>
+                    <list>
+                        <item>16. Del Doctor.</item>
+                        <lb break="yes"/>
+                        <item>17. Tasco. El cerro de la Campana que tra-<lb break="no"/>bajó Hernan Cortés, es probablemente<lb break="yes"/>la mina mas antigua de este reino.</item>
+                        <lb break="yes"/>
+                        <item>18. De Zacualpa.</item>
+                        <lb break="yes"/>
+                        <item>19. Temascaltepez.</item>
+                        <lb break="yes"/>
+                        <item>20. Sultepeque.</item>
+                        <lb break="yes"/>
+                        <item>21. Chihuahua.</item>
+                        <lb break="yes"/>
+                        <item>22. Parral.</item>
+                        <lb break="yes"/>
+                        <item>23. Guarizamey.</item>
+                        <lb break="yes"/>
+                        <item>24. Cosiguriachi.</item>
+                        <lb break="yes"/>
+                        <item>25. Batopilas.</item>
+                        <lb break="yes"/>
+                        <item>26. Oaxaca.</item>
+                        <lb break="yes"/>
+                        <item>27. Augangueo.</item>
+                        <lb break="yes"/>
+                        <item>28. Inguarán.</item>
+                        <lb break="yes"/>
+                        <item>29. Citaquaro.</item>
+                        <lb break="yes"/>
+                        <item>30. Tlalpuxagua.</item>
+                        <lb break="yes"/>
+                        <item>31. Real de los Alamos.</item>
+                        <lb break="yes"/>
+                        <item>32. Copála.</item>
+                        <lb break="yes"/>
+                        <item>33. San Antonio de las Huertas.</item>
+                        <lb break="yes"/>
+                        <item>34. Nuestra Sen&#x0303;ora de Guadalupe.</item>
+                        <lb break="yes"/>
+                        <item>35. Pen&#x0303;a blanca.</item>
+                        <lb break="yes"/>
+                        <item>36. Cosalá.</item>
+                        <lb break="yes"/>
+                        <item>37. Los Alifos.</item>
+                    </list>
+                </div>
+                <lb break="yes"/>
+                <div n="2">
+                    <head>
+                        <hi rendition="#k">fuerza militar.</hi>
+                    </head>
+                    <lb break="yes"/>
+                    <list>
+                        <item>Tropa veterana, plazas... 9,924.</item>
+                        <lb break="yes"/>
+                        <item>Del ejército de operacion.. 6,220.</item>
+                        <lb break="yes"/>
+                        <item>Presidial y volante..... 595.</item>
+                        <lb break="yes"/>
+                        <item>Id. de la Comandancia ge-<lb break="no"/>neral.......... 3,099.</item>
+                        <lb break="yes"/>
+                        <item>Milicias provinciales.... 21,951.</item>
+                        <lb break="yes"/>
+                        <item>Del vireinato en tiempo de<lb break="yes"/>paz........... 19,364.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <pb n="512" facs="#f0044"/>
+                    <list>
+                        <item>En tiempo de guerra.... 21,412.</item>
+                        <lb break="yes"/>
+                        <item>De la Comandanciageneral. 2,587.</item>
+                        <lb break="yes"/>
+                        <item>Milicias urbanas..... 1,059.</item>
+                        <lb break="yes"/>
+                        <item>Toda la fuerza militar en<lb break="yes"/>tiempo de paz...... 32,934.</item>
+                        <lb break="yes"/>
+                        <item>Los gastos que esta tropa<lb break="yes"/>causa, pasan de..... 1.800&abbr100;000 pesos.</item>
+                        <lb break="yes"/>
+                        <item>Y con las fortificaciones llegan á 4 millones.</item>
+                        <lb break="yes"/>
+                        <item>El fuerte de Perote gasta cada an&#x0303;o 200&abbr100; pesos.</item>
+                    </list>
+                    <lb break="yes"/>
+                    <dateline>
+                        <hi rendition="#i">Méjico</hi> 19 <hi rendition="#i">de octubre de</hi> 1809.</dateline>
+                </div>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

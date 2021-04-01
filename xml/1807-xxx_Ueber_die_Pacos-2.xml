@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. Rename.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe. Unbenennung gemäss neuer Nomenklatur.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="308" facs="#f0001"/>
+            <p xml:lang="deu">Die Silbererze, welche man <hi rendition="#i">Pacos</hi> nennt, scheinen<lb break="yes"/>ein Gemenge von silberhaltigen Eisenoxyden zu seyn.<lb break="yes"/>Man streitet noch jezt in Peru darüber, ob das Silber<lb break="yes"/>darin als Hornsilber, oder im metallischen Zustande exi-<lb break="no"/>stire. In geognostischer Hinsicht haben die <hi rendition="#i" >Pacos</hi>
+                <lb break="yes"/>manches ähnliche mit den Schichten von thonartigen<lb break="yes" />Eisensteinen, welche bei uns das Ausgehende der<lb break="yes"/>Gänge füllen, und eiserner Huth genannt werden.<lb break="yes"/>Auch in <hi rendition="#i" >Gualgayoc,</hi> auf der Peruanischen <placeName key="anden" >Andeskette</placeName>,<lb break="yes"/>füllen die <hi rendition="#i" >Pacos</hi> den oberen Theil der Gänge aus.<lb break="yes"/>Es scheint, als sey diese Erzformation besonders<lb break="yes"/>den sehr hohen Gebirgskuppen von 9&#x2014;10,000&#x2032; Höhe,<lb break="yes"/>eigen. Die größte Menge der Pacos in Peru findet sich in<lb break="yes"/>den Gruben von Pasco, oder im <hi rendition="#i" >Cerro de Yaurico-<lb break="no"/>cha,</hi> einer Bergstadt unfern den Quellen <placeName key="amazonas">des Amazo-<lb break="no"/>
+                    <pb n="309" facs="#f0002"/> nenflusses</placeName>. Diese Pacos machen ein untergeordnetes<lb break="yes"/>Erzflöz im Alpen-Kalkstein aus. Aus meteorologi-<lb break="no"/>schen Verhältnissen, und aus Vergleichungen mit<lb break="yes"/>
+                <hi rendition="#i">Gualgayoc</hi> zu schliessen, dessen Höhe genau gemes-<lb break="no"/>sen ist, liegen die Pacos wenigstens 1900 Toisen über<lb break="yes" />dem Meere. Sie sind meist mit der Keilhaue leicht<lb break="yes"/>zu gewinnen. Auf das Erzflöz ist, in mehreren<lb break="yes"/>Punkten, ein neues kuppenbildendes Conglomerat auf-<lb break="no"/>gesetzt. In der <hi rendition="#i">Mina de la Luna</hi> mußten Schächte durch<lb break="yes"/>das Conglomerat abgesunken werden, ehe man auf die<lb break="yes"/>Pacos kam. Eingebackene Kalksteinstücke zeigen über-<lb break="no"/>dies, daß das Conglomerat neuer Sandstein, aber von<lb break="yes"/>geringer Verbreitung ist, also nur eine Lokalforma-<lb break="no" />tion. Bei <hi rendition="#i">Giluacocha</hi> liegt dieselbe unmittelbar auf<lb break="yes"/>dem Alpenkalksteine. Lezterer wird vollends durch<lb break="yes" />das Vorkommen armer Kupferschiefer als Alpen-Kalk-<lb break="no"/>stein oder Zechstein charakterisirt. Das Erzflöz der<lb break="yes"/>silberhaltigen <choice>
+                    <sic>Lagersätte</sic>
+                    <corr type="editorial">Lagerstätte</corr>
+                </choice> ist 14400&#x2032; lang und 6600&#x2032;<lb break="yes"/>breit, unbedekt, zu Tage sichtbar. Sein Streichen<lb break="yes"/>ist Stunde 12&#x2014;1; sein Fallen 55° gegen Morgen.<lb break="yes"/>Im Flöz selbst erkennt man kleinere Schichten von<lb break="yes"/>8&#x2014;12&#x2033; Dicke, durch Flözklüfte von einander ge-<lb break="no"/>trennt. In den Pacos ist bisweilen Bleiglanz gemengt,<lb break="yes"/>genau wie im Braun-Eisenstein von <placeName key="arzberg" >Arzberg</placeName> im <placeName key="bayreuth">Bai-<lb break="no" />reuthischen</placeName>
+                <note place="foot" n="*)">
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> in <persName key="klaproth_mh">
+                        <hi rendition="#k">Klaproth</hi>s</persName> Beiträgen. IV. 4. f. f.</note>.</p>
+            <lb break="yes"/>
+            <p>Die Peruanische <placeName key="anden">Andeskette</placeName> besteht zwischen dem<lb break="yes"/>6ten und 7ten Grade südlicher Breite aus Alpen-Kalk-<lb break="no"/>
+                <pb n="310" facs="#f0003"/> stein, der aus dem dichten in den feinkörnigen über-<lb break="no"/>geht, graulichweiß, und von Kalkspathadern durch-<lb break="no" />trümmert ist. Zwischen <hi rendition="#i">Guambos</hi> und <hi rendition="#i" >Montan</hi> hat<lb break="yes"/>die Centralkette 13&#x2014;1400 Toisen Höhe, al&#x017F;o kaum<lb break="yes"/>die Höhe der Pyrenäen. Dieser Alpen-Kalkstein ent-<lb break="no"/>hält, genau wie der in Oberbaiern, Schichten von<lb break="yes"/>Schieferthon, und auf großen Höhen (besonders süd-<lb break="no" />licher bei <hi rendition="#i">Pasco</hi> und <hi rendition="#i">Huanuco,</hi> von 2200 T. Höhe),<lb break="yes"/>aufgehäufte, nicht zerstreute, pelagische Versteine-<lb break="no"/>rungen. In diesem Kalksteine sezen bei den zwei<lb break="yes"/>Bergstädtchen <hi rendition="#i">Gualgayoc</hi> und <hi rendition="#i">Micuipampa</hi> eine Menge<lb break="yes"/>zusammenschaarender Silbergänge auf. Die berühmte<lb break="yes"/>Grube <hi rendition="#i">el Purgatorio</hi> liegt in dem <hi rendition="#i">Cerro de Gualgayoc</hi>
+                <lb break="yes"/>welcher sich thurmähnlich in einer hohen Gebirgs-<lb break="no" />ebene erhebt. Der Berg von <hi rendition="#i">Gualgayoc,</hi> besteht aus<lb break="yes"/>sehr drusigem Hornsteine, voll Schwefelkiesen; man<lb break="yes" />nennt diese Gesteinart dort <hi rendition="#i">Panizo,</hi> und die deutschen<lb break="yes"/>Bergleute, welche nach Peru geschikt worden sind,<lb break="yes" />halten den Panizo theils für Granit, theils für ein un-<lb break="no"/>bekanntes, unter dem Alpenkalkstein hervorkommen-<lb break="no"/>des uranfängliches Gestein. Er scheint ein Hornstein<lb break="yes"/>zu seyn, der ein Flözlager im Kalkstein macht. Man<lb break="yes"/>hat große Kalkmassen <hi rendition="#i">in ihm,</hi> und (in den Gruben<lb break="yes"/>von <hi rendition="#i">Choropamba</hi>) sogar Kalkstein unter dem Panizo<lb break="yes"/>ersunken. Die Spize des Berges von <hi rendition="#i">Gualgayoc,</hi> der<lb break="yes"/>isolirt stehet, wie der Silberberg bei <hi rendition="#i">Potosi,</hi> ist 2065<lb break="yes"/>Toisen über der Fläche des stillen Meeres erhaben,<lb break="yes"/>also 200 T. höher, als der <hi rendition="#i">Pic</hi> von <hi rendition="#i">Teneriffa.</hi> Die<lb break="yes"/>
+                <pb n="311" facs="#f0004"/> Silbergänge (Nester, Stockwerke,) sind bis zu die-<lb break="no"/>ser Höhe edel befunden worden <note place="foot" n="*)">
+                    <hi rendition="#k">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> a. a. O. S. 74 f. f.</note>.</p>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 

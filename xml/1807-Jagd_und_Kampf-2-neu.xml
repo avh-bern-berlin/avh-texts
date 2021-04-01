@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName ref="http://d-nb.info/gnd/1023299100">
+                        <surname>Clark</surname>
+                        <forename>Rex</forename>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="stoeckli_mt">
+                    <persName>
+                        <surname>Stöckli</surname>
+                        <forename>Matthias Thomas</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="schnidrig_bf">
+                    <persName>
+                        <surname>Schnidrig</surname>
+                        <forename>Barbara Franziska</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Studentische Hilfskraft</note>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>DUMMYHEADER zur Validitätsprüfung</p>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.5.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.4.0" when="2018-09-28" who="wernicke_nd">Markup: added persName. <note type="remarkRevision">Personenmarkierung abgeschlossen.</note>
+                </change>
+                <change n="1.3.0" when="2018-09-27" who="stoeckli_mt">Markup: added persName. <note type="remarkRevision">Erster Durchgang Markierung der Personen.</note>
+                </change>
+                <change n="1.2.0" when="2018-09-27" who="schnidrig_bf">Markup: added placeName. <note type="remarkRevision">Erster Durchgang Markierung der Orte.</note>
+                </change>
+                <change n="1.1.0" when="2018-09-09" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="669" facs="#f0001"/>
+            <cb/>
+            <div n="1" xml:lang="deu">
+                <head>Unter die er&#x017F;t ku&#x0364;rzlich er&#x017F;chienenen Rei&#x017F;ewerke von<lb break="yes"/>Alex. v. <hi rendition="#g">
+                        <persName key="humboldt_av">Humboldt</persName>
+                    </hi> geho&#x0364;ren die zweyte und dritte Lie-<lb break="no"/>&#x017F;erung der<lb break="yes"/>
+                    <hi rendition="#aq">Beobachtungen aus der Zoologie und ver-<lb break="no" />gleichenden Anatomie, mit 8 Kupfern.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Die Gegen&#x017F;ta&#x0364;nde &#x017F;ind ganz wi&#x017F;&#x017F;en&#x017F;chaftlich, und geho&#x0364;ren<lb break="yes" />al&#x017F;o nicht fu&#x0364;r un&#x017F;er In&#x017F;titut. Folgendes Bruch&#x017F;tu&#x0364;ck u&#x0364;ber<lb break="yes"/>den elektri&#x017F;chen Gymnotus (Zitter-Aal) wird un&#x017F;ere Le&#x017F;er<lb break="yes"/>doch intere&#x017F;&#x017F;iren:</p>
+                <lb break="yes"/>
+                <p>&#x201E;Die&#x017F;e elektri&#x017F;chen Fi&#x017F;che finden &#x017F;ich am ha&#x0364;ufig&#x017F;ten in<lb break="yes"/>den kleinen Flu&#x0364;&#x017F;&#x017F;en und in den &#x017F;tehenden Gewa&#x0364;&#x017F;&#x017F;ern oder<lb break="yes"/>Su&#x0364;mpfen, welche hier und da in den ungeheuern mei&#x017F;t<lb break="yes"/>du&#x0364;rren Ebenen vorkommen, die &#x017F;ich zwi&#x017F;chen dem Orinoko<lb break="yes"/>und der Ku&#x0364;&#x017F;tenkette von Venezuela ausbreiten. Je &#x017F;eichter<lb break="yes"/>die&#x017F;e Su&#x0364;mpfe &#x017F;ind, de&#x017F;to leichter wird es, die Gymnoten<lb break="yes"/>zu fangen; denn die großen Stro&#x0364;me, der Meta, der <placeName key="apure">Apure</placeName>
+                    <lb break="yes"/>und der <placeName key="orinoco">Orinoko</placeName> &#x017F;ind zu tief, zu wa&#x017F;&#x017F;erreich und zu reißend,<lb break="yes" />als daß die Indianer &#x017F;ich die&#x017F;er Fi&#x017F;che bema&#x0364;chtigen ko&#x0364;nnten.<lb break="yes"/>In der Guyana kennen die Indianer &#x017F;ehr gut die Gefahr,<lb break="yes"/>der &#x017F;ie &#x017F;ich aus&#x017F;etzen, wenn &#x017F;ie in Gewa&#x0364;&#x017F;&#x017F;ern &#x017F;chwimmen,<lb break="yes"/>wo die Gymnoten zahlreich &#x017F;ind. Es i&#x017F;t dort leichter, ihre<lb break="yes"/>&#x017F;cha&#x0364;dliche Wirkung zu empfinden, als den Fi&#x017F;ch &#x017F;elb&#x017F;t zu<lb break="yes" />&#x017F;ehen.</p>
+                <lb break="yes"/>
+                <p>Indem wir durch die ungeheuern Ebenen <hi rendition="#aq">(Clanos)</hi> der<lb break="yes"/>Provinz Caraccas reisten, um zu <placeName key="sanfernandodeapure">San Fernando de Apure</placeName>
+                    <lb break="yes"/>un&#x017F;re Fahrt auf dem <placeName key="orinoco" >Orinoko</placeName> zu beginnen, verweilten wir<lb break="yes" />fu&#x0364;nf Tage lang in der kleinen Stadt Calabozo. Wir woll-<lb break="no" />ten uns hier mit den Gymnoten be&#x017F;cha&#x0364;ftigen, deren es eine<lb break="yes"/>
+                    <cb/> unza&#x0364;hlige Menge in die&#x017F;er ein&#x017F;amen Gegend gibt, im Rio<lb break="yes"/>Guarico, in den Cannos del Ra&#x017F;tro, de Berito, de la<lb break="yes"/>Paloma, und in etlichen funfzig kleinen &#x017F;tehenden Gewa&#x0364;&#x017F;&#x017F;ern,<lb break="yes"/>welche zwi&#x017F;chen der Stadt Calabozo, den beyden Mi&#x017F;&#x017F;ionen<lb break="yes"/>de Arriba und de Abaro, und den Meiereien von Ra&#x017F;tro,<lb break="yes"/>von Morichal und vom Caiman zer&#x017F;treut liegen. Ja, un-<lb break="no"/>weit Uritucu mußte, wie man uns erza&#x0364;hlte, eine ehemals<lb break="yes"/>&#x017F;ehr gangbare Straße, der elektri&#x017F;chen Fi&#x017F;che wegen, ver-<lb break="no"/>legt werden. Der Weg ging durch einen Bach, und auf<lb break="yes"/>der Fahrt durch den&#x017F;elben ertranken ja&#x0364;hrlich eine Menge<lb break="yes" />Maule&#x017F;el, die, von den Entladungs&#x017F;chla&#x0364;gen der Gymnoten<lb break="yes"/>beta&#x0364;ubt, &#x017F;innlos niederfielen.</p>
+                <lb break="yes"/>
+                <p>Um un&#x017F;ere Ver&#x017F;uche mit vollkommener Genauigkeit an-<lb break="no" />&#x017F;tellen zu ko&#x0364;nnen, wu&#x0364;n&#x017F;chten wir, lebendige Zitter-Aale in<lb break="yes"/>dem Hau&#x017F;e &#x017F;elb&#x017F;t zu be&#x017F;itzen, welches wir bewohnten. Un&#x017F;er<lb break="yes"/>Wirth gab &#x017F;ich alle er&#x017F;innliche Mu&#x0364;he, dies Verlangen zu<lb break="yes"/>erfu&#x0364;llen. Es wurden Indianer zu Pferde ausge&#x017F;chickt, um<lb break="yes"/>in den Su&#x0364;mpfen zu fi&#x017F;chen. Todte Gymnoten ha&#x0364;tten wir<lb break="yes"/>in Menge haben ko&#x0364;nnen, aber eine fa&#x017F;t kindi&#x017F;che Furcht<lb break="yes" />verhinderte die Eingebornen, &#x017F;ie lebendig fortzutragen.<lb break="yes" />Wir haben uns in der Folge &#x017F;elb&#x017F;t u&#x0364;berzeugt, daß man<lb break="yes"/>allerdings in Verlegenheit kommt, wenn man &#x017F;ich mit die&#x017F;en<lb break="yes"/>Fi&#x017F;chen zu thun macht, &#x017F;o lange &#x017F;ie noch bey voller Kraft<lb break="yes"/>&#x017F;ind; bey dem gemeinen Volke i&#x017F;t aber die&#x017F;e Furcht um &#x017F;o<lb break="yes" />&#x017F;onderbarer, da es die Meinung hat, man ko&#x0364;nne den Gym-<lb break="no"/>noten unbe&#x017F;traft beru&#x0364;hren, wenn man Taback rauche. Wir<lb break="yes"/>hatten zwey Pia&#x017F;ter fu&#x0364;r jeden elektri&#x017F;chen Gymnotus<lb break="yes"/>geboten, den man uns lebendig bringen wu&#x0364;rde, aber<lb break="yes"/>
+                    <pb n="670" facs="#f0002"/>
+                    <cb/> es fand &#x017F;ich Niemand, der den Preis verdienen wollte; auch<lb break="yes"/>i&#x017F;t das angebliche Sicherungs-Mittel der Indianer gegen<lb break="yes"/>die Schla&#x0364;ge des Gymnotus ohne alle Kraft. Die Liebe zum<lb break="yes"/>Wunderbaren i&#x017F;t bey den Eingebornen die&#x017F;er Gegenden &#x017F;o<lb break="yes"/>groß, daß &#x017F;ie ha&#x0364;ufig That&#x017F;achen erza&#x0364;hlen, an die zu glauben<lb break="yes"/>&#x017F;ie &#x017F;elb&#x017F;t weit entfernt &#x017F;ind. So meint der Men&#x017F;ch der<lb break="yes"/>Natur neue Wunder andichten zu mu&#x0364;&#x017F;&#x017F;en, eben als wa&#x0364;re<lb break="yes"/>die Natur nicht &#x017F;chon an &#x017F;ich &#x017F;elb&#x017F;t groß, geheimnißvoll und<lb break="yes"/>wunderbar genug.</p>
+                <lb break="yes"/>
+                <p>Drey Tage lang hatten wir in der Stadt Calabozo zu-<lb break="no"/>gebracht, und nur einen einzigen Zitter-Aal erhalten, der<lb break="yes"/>noch dazu ziemlich &#x017F;chwach war. Endlich faßten wir den<lb break="yes"/>Ent&#x017F;chluß, uns &#x017F;elb&#x017F;t an Ort und Stelle zu begeben, und<lb break="yes"/>dort Ver&#x017F;uche in freyer Luft und am Ufer der Su&#x0364;mpfe, in<lb break="yes" />welchen die Gymnoten leben, anzu&#x017F;tellen. Wir begaben<lb break="yes" />uns zuer&#x017F;t in das kleine Dorf Ra&#x017F;tro de Abaro, und von<lb break="yes"/>da fu&#x0364;hrten uns die Indianer nach dem Canno de Bera,<lb break="yes"/>einem Ba&#x017F;&#x017F;in voll &#x017F;tehenden Wa&#x017F;&#x017F;ers, das von einer herrli-<lb break="no"/>chen Vegetation, von der <hi rendition="#aq">Clusea rosea, Hymenea cour<lb break="yes"/>baril,</hi> dem großen indi&#x017F;chen Feigenbaum, und Mimo&#x017F;en mit<lb break="yes" />wohlriechenden Blu&#x0364;ten umgeben i&#x017F;t. Hier geriethen wir<lb break="yes"/>nicht wenig in Verwunderung, als wir ho&#x0364;rten, man wolle<lb break="yes"/>in der benachbarten Grasflur einige und dreißig halbwilde<lb break="yes"/>Pferde zu&#x017F;ammentreiben, um &#x017F;ich ihrer bey&#x2019;m Fi&#x017F;chen der<lb break="yes"/>Aale zu bedienen. Man nennt die&#x017F;e Art die Zitter-Aale zu<lb break="yes"/>fangen: <hi rendition="#aq">Embarascar con caballos,</hi> das heißt, durch Pferde<lb break="yes"/>trunken machen. Mit dem Namen Barbasco belegt man<lb break="yes"/>die Wurzeln der Jacquinia, der Piscidia, und jeder andern<lb break="yes"/>giftigen Pflanze, durch deren Beruhrung eine große Wa&#x017F;&#x017F;er-<lb break="no"/>ma&#x017F;&#x017F;e augenblicklich die Eigen&#x017F;chaft empfa&#x0364;ngt, die Fi&#x017F;che zu<lb break="yes" />to&#x0364;dten, oder wenig&#x017F;tens zu beta&#x0364;uben. Die durch die&#x017F;e<lb break="yes"/>Mittel vergifteten Fi&#x017F;che <hi rendition="#aq">(Embarascados)</hi> ziehen &#x017F;ich nach<lb break="yes" />der Oberfla&#x0364;che des Wa&#x017F;&#x017F;ers; und da die Pferde, welche man<lb break="yes"/>in dem Sumpfe hin- und hertreibt, eben da&#x017F;&#x017F;elbe bey den<lb break="yes"/>er&#x017F;chreckten Fi&#x017F;chen bewirken, &#x017F;o belegt man durch eine Ver-<lb break="no" />wech&#x017F;elung der Ur&#x017F;ache und Wirkung beyde Arten zu fi&#x017F;chen<lb break="yes"/>mit dem&#x017F;elben Namen.</p>
+                <lb break="yes"/>
+                <p>Wa&#x0364;hrend un&#x017F;er Wirth uns die &#x017F;onderbare Art erkla&#x0364;rte,<lb break="yes"/>wie man die Zitter-Aale fa&#x0364;ngt, kam der Trupp Pferde und<lb break="yes"/>die Maule&#x017F;el an. Die Indianer hatten eine Art von Trei-<lb break="no"/>ben ange&#x017F;tellt; die Thiere wurden von allen Seiten einge-<lb break="no"/>&#x017F;chlo&#x017F;&#x017F;en, und endlich in den Sumpf hineingezwungen. Das<lb break="yes"/>intere&#x017F;&#x017F;ante Schau&#x017F;piel, welches &#x017F;ich uns darbot, die&#x017F;er Kampf<lb break="yes"/>der Zitter-Aale mit den Pferden, la&#x0364;ßt &#x017F;ich mit Worten nur<lb break="yes"/>unvollkommen &#x017F;childern. Die Indianer, jeder mit langen<lb break="yes"/>Bambusro&#x0364;hren und Harpunen bewaffnet, &#x017F;tellten &#x017F;ich um den<lb break="yes"/>Sumpf. Einige kletterten auf die Bauma&#x0364;&#x017F;te, die &#x017F;ich tief<lb break="yes"/>u&#x0364;ber dem Wa&#x017F;&#x017F;er ausbreiteten. Durch ihr Ge&#x017F;chrey und<lb break="yes"/>ihre langen Bambusro&#x0364;hre trieben &#x017F;ie die Pferde, wo &#x017F;ie &#x017F;ich<lb break="yes"/>dem Ufer nahten, zuru&#x0364;ck. Die durch den La&#x0364;rmen er&#x017F;chreck-<lb break="no"/>ten Zitter-Aale vertheidigten &#x017F;ich mit wiederholten Entla-<lb break="no" />dungs&#x017F;chla&#x0364;gen ihrer elektri&#x017F;chen Batterien. Lange &#x017F;chien es,<lb break="yes"/>
+                    <cb/> als wu&#x0364;rden &#x017F;ie den Sieg u&#x0364;ber die Pferde und Maule&#x017F;el<lb break="yes"/>davon tragen. Mehrere von die&#x017F;en, durch die Menge und<lb break="yes"/>Sta&#x0364;rke der elektri&#x017F;chen Schla&#x0364;ge beta&#x0364;ubt, ver&#x017F;chwanden unter<lb break="yes"/>dem Wa&#x017F;&#x017F;er; einige derjenigen, die &#x017F;ich wieder aufrafften,<lb break="yes"/>erreichten, ungeachtet der Wach&#x017F;amkeit der Indianer, das<lb break="yes"/>Ufer, und &#x017F;treckten &#x017F;ich hier, von der An&#x017F;trengung er&#x017F;cho&#x0364;pft,<lb break="yes"/>und durch die &#x017F;tarken elektri&#x017F;chen Schla&#x0364;ge an allen Gliedern<lb break="yes"/>gela&#x0364;hmt, der La&#x0364;nge nach auf die Erde.</p>
+                <lb break="yes"/>
+                <p>Ein ge&#x017F;chickter Mahler ha&#x0364;tte den Augenblick auffa&#x017F;&#x017F;en<lb break="yes"/>&#x017F;ollen, da die Scene am belebte&#x017F;ten war. Die Gruppen<lb break="yes"/>der Indianer, welche den Sumpf umringen; die Pferde, wel-<lb break="no"/>che mit ge&#x017F;tra&#x0364;ubten Ma&#x0364;hnen, Schrecken und wildem Schmerz<lb break="yes"/>im Auge dem einbrechenden Ungewitter zu entfliehen<lb break="yes"/>&#x017F;uchen; die gelblichen und &#x017F;chlu&#x0364;pfrigen Aale, welche großen<lb break="yes"/>Wa&#x017F;&#x017F;er&#x017F;chlangen a&#x0364;hnlich auf der Oberfla&#x0364;che des Wa&#x017F;&#x017F;ers<lb break="yes"/>&#x017F;chwimmen, und ihre Feinde verfolgen: alle die&#x017F;e Zu&#x0364;ge<lb break="yes"/>bildeten ein ho&#x0364;ch&#x017F;t mahleri&#x017F;ches Ganzes. Unwillku&#x0364;hrlich er-<lb break="no"/>innerte ich mich dabey des beru&#x0364;hmten Gema&#x0364;hldes eines<lb break="yes" />Pferdes, das unvermuthet in einer Ho&#x0364;hle durch den Anblick<lb break="yes"/>eines Lo&#x0364;wen ge&#x017F;chreckt <choice>
+                        <sic>wirb.</sic>
+                        <corr type="editorial">wird.</corr>
+                    </choice> Der Ausdruck des Ent&#x017F;etzens<lb break="yes"/>i&#x017F;t hier nicht &#x017F;ta&#x0364;rker, als in jenem ungleichen Kampfe der<lb break="yes" />Fi&#x017F;che und Pferde.</p>
+                <lb break="yes"/>
+                <p>In weniger als fu&#x0364;nf Minuten waren bereits zwey Pferde<lb break="yes" />ertrunken. Die Aale, deren mehrere u&#x0364;ber fu&#x0364;nf Fuß lang<lb break="yes"/>&#x017F;ind, &#x017F;chlu&#x0364;pfen den Pferden und den Maule&#x017F;eln unter den<lb break="yes"/>Bauch, und geben dann Entladungen ihres ganzen elektri&#x017F;chen<lb break="yes"/>Organs. Die&#x017F;e Schla&#x0364;ge treffen zugleich das Herz, die<lb break="yes"/>Eingeweide, und be&#x017F;onders das Nervengeflecht des Magens.<lb break="yes"/>Es i&#x017F;t daher nicht zu verwundern, daß der Fi&#x017F;ch auf ein<lb break="yes"/>großes vierfu&#x0364;ßiges Thier eine viel ma&#x0364;chtigere Wirkung,<lb break="yes" />als auf einen Men&#x017F;chen hervor bringt, der ihn nur mit den<lb break="yes"/>Extremita&#x0364;ten beru&#x0364;hret, doch zweifle ich, daß der Gymno-<lb break="no"/>tus im eigentlichen Sinne des Worts die Pferde to&#x0364;dtet;<lb break="yes"/>er beta&#x0364;ubt &#x017F;ie nur durch die wiederholten Er&#x017F;chu&#x0364;tterungs-<lb break="maybe"/>Schla&#x0364;ge, die er ihnen gibt; &#x017F;ie fallen in eine tiefe Ohn-<lb break="no"/>macht, und ver&#x017F;chwinden be&#x017F;innungslos unter dem Wa&#x017F;&#x017F;er;<lb break="yes"/>die andern Pferde und Maule&#x017F;el treten ihnen auf den Leib,<lb break="yes"/>und in wenigen Minuten &#x017F;ind &#x017F;ie wirklich todt. Nach die-<lb break="no"/>&#x017F;em Anfange &#x017F;chien es, als wu&#x0364;rde die Jagd ein &#x017F;ehr tra-<lb break="no"/>gi&#x017F;ches Ende nehmen, und die Pferde eins nach dem andern<lb break="yes"/>ertrinken. Wenn &#x017F;ie nicht herrenlos &#x017F;ind, &#x017F;o bezahlt man<lb break="yes" />jedes, welches &#x017F;tirbt, mit anderhalb bis zwey Pia&#x017F;tern.<lb break="yes"/>Die Indianer ver&#x017F;icherten uns, die Jagd wu&#x0364;rde bald ge-<lb break="no"/>endigt &#x017F;eyn, und nur der er&#x017F;te Angriff der Zitter-Aale wa&#x0364;re<lb break="yes"/>furchtbar. In der That kommen die Gymnoten nach eini-<lb break="no"/>ger Zeit in den Zu&#x017F;tand entladener Batterien; &#x017F;ey es nun,<lb break="yes"/>daß die <persName key="galvani_la" >galvani&#x017F;che</persName> Elektricita&#x0364;t &#x017F;ich durch die Ruhe in ih-<lb break="no"/>nen ha&#x0364;ufe, oder daß ihr elektri&#x017F;ches Organ durch einen<lb break="yes"/>ha&#x0364;ufigen Gebrauch ermu&#x0364;det, und zu &#x017F;einen Verrichtungen<lb break="yes"/>unbrauchbar gemacht wird. Zwar i&#x017F;t ihre Muskelbewegung<lb break="yes"/>dann immer noch eben &#x017F;o lebhaft, als zu Anfange; &#x017F;ie ha-<lb break="no"/>ben aber nicht mehr das Vermo&#x0364;gen, kra&#x0364;ftige Schla&#x0364;ge zu er-<lb break="no"/>
+                    <pb n="671" facs="#f0003"/>
+                    <cb/> theilen. Als der Kampf eine Viertel&#x017F;tunde gedauert hatte,<lb break="yes"/>&#x017F;chienen die Pferde und <choice>
+                        <sic>Maule&#x017F;e!</sic>
+                        <corr type="editorial">Maule&#x017F;el</corr>
+                    </choice> minder ge&#x017F;chreckt. Sie<lb break="yes"/>&#x017F;tra&#x0364;ubten die Ma&#x0364;hnen nicht mehr. Ihr Auge dru&#x0364;ckte &#x017F;eltner<lb break="yes"/>Schmerz aus. Nirgends &#x017F;ah man &#x017F;ie fallen, und unter dem<lb break="yes"/>Wa&#x017F;&#x017F;er ver&#x017F;chwinden. Auch &#x017F;chwammen die Aale mit dem<lb break="yes"/>halben Leibe auf der Oberfla&#x0364;che des Sumpfes, <choice>
+                        <sic>flohenvor</sic>
+                        <corr type="editorial">flohen vor</corr>
+                    </choice> den<lb break="yes"/>Pferden, die &#x017F;ie vorher angegriffen hatten, und na&#x0364;herten<lb break="yes"/>&#x017F;ich dem Ufer. Die Indianer ver&#x017F;icherten uns, daß, wenn<lb break="yes"/>man die Pferde zwey Tage hintereinander in den Sumpf<lb break="yes"/>triebe, am zweyten kein Pferd mehr geto&#x0364;dtet wu&#x0364;rde. Die<lb break="yes"/>Fi&#x017F;che mu&#x0364;&#x017F;&#x017F;en Ruhe und hinla&#x0364;ngliche Nahrung haben, um<lb break="yes"/>eine große Menge <persName key="galvani_la" >galvani&#x017F;cher</persName> Elektricita&#x0364;t zu erzeugen oder<lb break="yes"/>anzuha&#x0364;ufen.</p>
+                <lb break="yes"/>
+                <p>Die Zitter-Aale, welche nach dem Ufer fliehen, werden<lb break="yes"/>&#x017F;ehr leicht mit kleinen, an einen Strick befe&#x017F;tigten Har-<lb break="no"/>punen gefangen, die man ihnen in den Leib wirft: die<lb break="yes"/>Harpune &#x017F;pießt manchmal ihrer zwey auf. I&#x017F;t der Strick<lb break="yes" />&#x017F;ehr trocken und ziemlich lang, &#x017F;o kann man &#x017F;ie damit an&#x2019;s<lb break="yes"/>Land ziehen, ohne Schla&#x0364;ge zu erhalten. In wenigen Mi-<lb break="no"/>nuten waren fu&#x0364;nf große Gymnoten auf dem Troknen. Wir<lb break="yes"/>ha&#x0364;tten u&#x0364;ber zwanzig haben ko&#x0364;nnen, ha&#x0364;tten wir ihrer &#x017F;o viele<lb break="yes"/>zu un&#x017F;ern Ver&#x017F;uchen bedurft. Einige waren nur leicht am<lb break="yes"/>Schwanze verwundet, andere &#x017F;chwer am Kopfe, und wir<lb break="yes"/>konnten deutlich beobachten, wie die Inten&#x017F;ita&#x0364;t der natu&#x0364;r-<lb break="no"/>lichen Elektricita&#x0364;t die&#x017F;es Fi&#x017F;ches durch die ver&#x017F;chiedene Sta&#x0364;rke<lb break="yes"/>der Lebenskraft modifizirt wird.</p>
+                <lb break="yes"/>
+                <p>Wenn man ge&#x017F;ehen hat, daß die Zitter-Aale ein Pferd<lb break="yes" />&#x017F;innlos zu Boden werfen, &#x017F;o i&#x017F;t die Furcht &#x017F;ehr natu&#x0364;rlich,<lb break="yes"/>&#x017F;ie in den er&#x017F;ten Augenblicken, nachdem &#x017F;ie an das Land ge-<lb break="no"/>zogen worden, nicht zu beru&#x0364;hren. Auch i&#x017F;t die&#x017F;e Furcht<lb break="yes" />bey den Eingebornen &#x017F;o groß, daß keiner &#x017F;ich dazu ver&#x017F;tehen<lb break="yes"/>wollte, die Gymnoten von den Stricken der Harpunen los-<lb break="no"/>zumachen, und &#x017F;ie in die kleinen mit fri&#x017F;chem Wa&#x017F;&#x017F;er ge-<lb break="no"/>fu&#x0364;llten Lo&#x0364;cher zu tragen, welche wir an dem Ufer des <hi rendition="#aq" >Canno<lb break="yes"/>de Bera</hi> ausgeho&#x0364;hlt hatten. Wir mußten uns &#x017F;elb&#x017F;t dazu<lb break="yes"/>ver&#x017F;tehen, und &#x017F;elb&#x017F;t die er&#x017F;ten Schla&#x0364;ge aushalten, die in<lb break="yes"/>der That nicht &#x017F;anft waren. Sie &#x017F;chienen mir &#x017F;chmerzhafter<lb break="yes"/>zu &#x017F;eyn, als die heftig&#x017F;ten elektri&#x017F;chen Schla&#x0364;ge, die ich mich<lb break="yes"/>je ent&#x017F;inne von einer großen vo&#x0364;llig geladenen Leidner Fla&#x017F;che<lb break="yes"/>erhalten zu haben. Wir begriffen nun &#x017F;ehr wohl die Wahr-<lb break="no"/>heit der Behauptung, daß ein Indianer unfehlbar ertrinkt,<lb break="yes"/>wenn ihm wa&#x0364;hrend des Schwimmens ein Zitter-Aal am Beine<lb break="yes"/>oder an dem Arme einen Schlag ver&#x017F;etzt. Eine &#x017F;o heftige<lb break="yes" />Er&#x017F;chu&#x0364;tterung kann dem Men&#x017F;chen allerdings &#x017F;ehr leicht den<lb break="yes"/>Gebrauch &#x017F;einer Glieder auf mehrere Minuten entziehen; ja<lb break="yes"/>es muß &#x017F;elb&#x017F;t augenblicklich der Tod erfolgen, wenn der<lb break="yes"/>Fi&#x017F;ch, indem er la&#x0364;ngs dem Bauch&#x2019; und der Bru&#x017F;t hin&#x017F;chlu&#x0364;pft,<lb break="yes" />eine kraftvolle Entladung gibt, weil dann die edel&#x017F;ten Theile,<lb break="yes"/>und alle Nerven, die davon abha&#x0364;ngen, zugleich ihrer Reiz-<lb break="no"/>barkeit beraubt werden.</p>
+            </div>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 
