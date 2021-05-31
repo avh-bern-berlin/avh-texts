@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -14,15 +14,15 @@
                     </persName>
                 </author>
                 <editor corresp="#avh_in_bern">
-                    <persName ref="http://d-nb.info/gnd/103788910X">
-                        <surname>Metz</surname>
-                        <forename>Bernhard</forename>
+                    <persName>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <editor corresp="#avh_in_bern">
                     <persName>
-                        <surname>Nehrlich</surname>
-                        <forename>Thomas</forename>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <respStmt xml:id="baertschi_s">
@@ -80,12 +80,47 @@
                 </idno>
             </publicationStmt>
             <sourceDesc>
-                <p>DUMMYHEADER zur Validitätsprüfung</p>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
             </sourceDesc>
             <revisionDesc>
-                <change n="1.2.0" when="2019-05-14" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                <change n="1.1.0" when="2019-05-14" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
                 </change>
-                <change n="1.1.0" when="2018-10-04" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -102,16 +137,20 @@
     <text>
         <front/>
         <body>
-            <pb n="239" facs="#f0001"/>
+            <pb n="71" facs="#f0001"/>
             <div n="1">
                 <head>
-                    <hi rendition="#i">Malachitmasse von unerhörter Größe.</hi>
+                    <hi rendition="#i">Sur une masse de malachite découverte dans les mines<lb break="yes"/>de l&#x2019;Oural; par M.</hi>
+                    <hi rendition="#k">Schwetzoff.</hi>
                 </head>
-                <p>Eine<lb break="yes"/>solche ist in den Gruben der HH. <hi rendition="#g" >Paul</hi> und <hi rendition="#g">Anatole<lb break="yes"/>Demidoff</hi> zu <hi rendition="#g">Nischne-Tagilsk,</hi> in der Strecke Na-<lb break="no" />deschdnoi, im Juni vorigen Jahres aufgefunden worden.<lb break="yes"/>So weit man sie entblößt hat, ist sie ohne Sprünge, und<lb break="yes"/>
-                    <pb n="240" facs="#f0002"/> mißt 7,5 Arschinen (16,2 Par. Fuß) in Länge, 3,5 Ar-<lb break="no"/>schinen (7,5 Par. F.) in Breite und 4 Arschinen (8,6<lb break="yes"/>Par. F.) in Höhe, und wiegt also beiläufig 300 bis 350<lb break="yes"/>Pud oder 12- bis 14000 russ. Pfund. Die größte bis-<lb break="no"/>her bekannte Malachitmasse war die aus den Gruben<lb break="yes" />von Furchaninoff. Sie befindet sich jetzt im Museum des<lb break="yes" />Bergcorps zu St. Petersburg, und wiegt 90 Pud. (<hi rendition="#g">Alex.<lb break="yes"/>v. Humboldt,</hi> a. a. O. p. 86.)</p>
+                <lb break="yes"/>
+                <p>Une grande masse de malachite vient d&#x2019;&#x00EA;tre trou-<lb break="no"/>vée dans les mines ouraliennes de M. <hi rendition="#i">Demidoff.</hi> Cette<lb break="yes"/>masse pèse près de cinq mille kilogrammes. La dé-<lb break="no" />couverte en est d&#x2019;autant plus importante que, depuis<lb break="yes"/>un grand nombre d&#x2019;années, la malachite, recher-<lb break="no"/>chée dans les arts à cause de sa belle couleur, est<lb break="yes"/>
+                    <pb n="72" facs="#f0002"/> devenue assez rare, les célèbres mines de Goumel-<lb break="no"/>chefskoy dans l&#x2019;Oural ayant cessé d&#x2019;en fournir. On<lb break="yes"/>en a déjà extrait, des mines de M. <hi rendition="#i" >Demidoff,</hi> 80 pouds,<lb break="yes"/>près de 3,200 livres (1,280 kil.), qui le cède très<lb break="yes"/>peu en beauté à celle qui provenait jadis des mines<lb break="yes"/>de Fourchaninoff.</p>
+                <lb break="yes"/>
+                <p>Dans le m&#x00EA;me endroit où a été découverte cette<lb break="yes"/>malachite, c&#x2019;est-à-dire à 36 toises de profondeur, et<lb break="yes"/>dans la galerie nommée <hi rendition="#i">Nadejdnoi,</hi> il se présentait une<lb break="yes"/>énorme masse de malachite, sans aucune crevasse.</p>
+                <lb break="yes"/>
+                <p>On a fait des travaux pour la déblayer, et jusqu&#x2019;à<lb break="yes"/>présent sa longueur est déjà de 7 archines et demi<lb break="yes"/>(5<hi rendition="#sup">m</hi>, 25); sa largeur de 3 arch. et demi (2<hi rendition="#sup">m</hi>, 45); sa<lb break="yes"/>hauteur de 4 arch. (2<hi rendition="#sup">m</hi>, 8); ce qui fait juger que son<lb break="yes"/>poids peut &#x00EA;tre de 300 à 350 pouds, 12,000 à 14,000<lb break="yes"/>livres russes. (4,800 à 5,600 kil.) Le morceau le plus<lb break="yes"/>gros connu jusqu&#x2019;ici est celui qui fut extrait des<lb break="yes"/>mines de Fourchaninoff, de la galerie de Goumel-<lb break="no"/>chefskoy; son poids n&#x2019;est que de 90 pouds. (1,440 kil.)<lb break="yes"/>Comme il faudrait percer un nouveau puits pour<lb break="yes"/>faire arriver le bloc de malachite en entier à la sur-<lb break="no"/>face du sol, on se propose, après l&#x2019;avoir isolé et nettoyé<lb break="yes"/>de toute la roche décomposée qui l&#x2019;environne, de<lb break="yes"/>construire une espèce de grotte pour que les curieux<lb break="yes"/>puissent l&#x2019;admirer sur place. (<hi rendition="#i">Acad. des Sciences</hi>,<lb break="yes"/>31 ao&#x00FB;t 1835.)</p>
             </div>
-            <lb break="yes"/>
-            <milestone unit="section" rendition="#hr"/>
             <lb break="yes"/>
         </body>
         <back/>

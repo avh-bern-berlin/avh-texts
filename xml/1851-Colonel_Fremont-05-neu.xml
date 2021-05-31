@@ -1,226 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<?oxygen RNGSchema="http://www.deutschestextarchiv.de/basisformat_ohne_header.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">DUMMYHEADER</title>
-                <author>
-                    <persName ref="https://d-nb.info/gnd/118554700">
-                        <surname>Humboldt</surname>
-                        <forename>Alexander</forename>
-                        <nameLink>von</nameLink>
-                    </persName>
-                </author>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname/>
-                        <forename/>
-                    </persName>
-                </editor>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname/>
-                        <forename/>
-                    </persName>
-                </editor>
-                <respStmt xml:id="baertschi_s">
-                    <persName>
-                        <surname>Bärtschi</surname>
-                        <forename>Sarah</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
-                    </resp>
-                </respStmt>
-                <respStmt xml:id="wernicke_nd">
-                    <persName>
-                        <surname>Wernicke</surname>
-                        <forename>Norbert D.</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">XML Bearbeiter</note>
-                        <ref target="http://d-nb.info/gnd/1014897157"/>
-                    </resp>
-                </respStmt>
-            </titleStmt>
-            <editionStmt>
-                <edition>Vollständige digitalisierte Ausgabe.</edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher xml:id="avh_in_bern">
-                    <orgName role="hostingInstitution">Universität Bern</orgName>
-                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
-                    <address>
-                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
-                        <country>Switzerland</country>
-                    </address>
-                </publisher>
-                <pubPlace>Bern</pubPlace>
-                <date type="publication">[Publikationsdatum]</date>
-                <availability>
-                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
-                        <p>Dieses Werk ist gemeinfrei.</p>
-                    </licence>
-                </availability>
-                <idno>
-                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
-                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
-                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
-                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
-                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
-                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
-                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
-                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
-                </idno>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>[Kurztitel]</bibl>
-                <biblFull>
-                    <titleStmt>
-                        <title level="a" type="main">[Titel des Originalartikels]</title>
-                        <author>
-                            <persName ref="http://d-nb.info/gnd/118554700">
-                                <surname>Humboldt</surname>
-                                <forename>Alexander</forename>
-                                <nameLink>von</nameLink>
-                            </persName>
-                        </author>
-                    </titleStmt>
-                    <editionStmt>
-                        <edition n="1"/>
-                    </editionStmt>
-                    <publicationStmt>
-                        <publisher>
-                            <name>[Verlag/Druckerei]</name>
-                        </publisher>
-                        <pubPlace>[Publikationsort]</pubPlace>
-                        <date type="publication">[Publikationsdatum]</date>
-                    </publicationStmt>
-                    <seriesStmt>
-                        <title level="j" type="main">[Zeitschriftenname]</title>
-                        <biblScope unit="volume">[Bandnummer]</biblScope>
-                        <biblScope unit="pages">[Seitenangabe]</biblScope>
-                    </seriesStmt>
-                </biblFull>
-                <msDesc>
-                    <msIdentifier/>
-                    <physDesc>
-                        <typeDesc>
-                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
-                        </typeDesc>
-                    </physDesc>
-                </msDesc>
-            </sourceDesc>
-            <revisionDesc>
-                <change n="1.1.0" when="2019-05-23" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
-                </change>
-                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
-                </change>
-            </revisionDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
-            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="deu">Deutsch</language>
-            </langUsage>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <front/>
-        <body>
-            <pb n="4" facs="#f0001"/>
-            <milestone unit="section" rendition="#hr"/>
-            <lb break="yes"/>
-            <div n="1">
-                <head>
-                    <hi rendition="#i">HUMBOLDT AND FREMONT.</hi>
-                    <lb break="yes"/>
-                    <milestone unit="section" rendition="#hr"/>
-                    <lb break="yes"/>
-                </head>
-                <p>Among the scientific honors paid to Col. Fremost,<lb break="yes"/>is a pioneer of American discovery, certainly not the<lb break="yes"/>@east notable was that conferred by the King of Prus-<lb break="no"/>@ia in &#x201C;the great Golden Medal of Progress in the<lb break="yes"/>Science@.&#x201D; The manner of its communication added a<lb break="yes"/>rare value to the gift. It was sent with a most com-<lb break="no"/>plimentary letter of Baron Humboldt, who took ocea-<lb break="no"/>sion to add the warmest expressions of his own per-<lb break="no"/>sonal reepect and admiration. As this letter has appa-<lb break="no"/>rently been overlooked in the notices recently made of<lb break="yes"/>Fremont by the press, we avail ourselves of the<lb break="yes" />advance sheets of the new biography in the course of<lb break="yes" />publication by Derby &#x0026; Co., of this city, to lay it<lb break="yes" />before our readers. One sentence of Humboldt&#x2019;s letter<lb break="yes" />we have marked in italics; it was a conscientious<lb break="yes"/>tribute paid to the Senator then; it is highly signifi-<lb break="no"/>cant of Fremont&#x2019;s &#x201C;friendship to liberty and to the<lb break="yes" />&#x0026;q;progress of intelligence&#x201D; <hi rendition="#i">now.</hi>
-                </p>
-                <lb break="yes"/>
-                <p>The following is the English translation of Baron<lb break="yes" />Humboldt&#x2019;s letter:</p>
-                <lb break="yes"/>
-                <floatingText>
-                    <body>
-                        <div n="2">
-                            <p>&#x201C;To Col. <hi rendition="#k">Fremont,</hi>
-                                <hi rendition="#i">Senator</hi>&#x2014;It is very agreeable<lb break="yes"/>to me, Sir, to address you these lines by my excellent<lb break="yes"/>friend, our Minister to the United States, N. de Gerelt.<lb break="yes"/>After having given you, in the new edition of my &#x2018;As-<lb break="no"/>pects of Nature,&#x2019; the public testimony of the admira-<lb break="no" />tion which is due to your gigantic labors between St.<lb break="yes"/>Louis, of Missouri, and the coasts of the South Sea, I<lb break="yes"/>feel happy to offer you, in this living token, <hi rendition="#i">(dans ce<lb break="yes"/>petit signe de vie,)</hi> the homage of my warm ackowl-<lb break="no"/>edgment. You have displayed a noble courage in<lb break="yes"/>distant expeditions, braved all the dangers of cold and<lb break="yes" />famine, enriched all the branches of the natural sci-<lb break="no"/>ences, illustrated a vast country which was almost en-<lb break="no"/>tirely unknown to us.</p>
-                            <lb break="yes"/>
-                            <p>&#x201C;A merit so rare has been acknowledged by a<lb break="yes" />sovereign warmly interested in the progress of physical<lb break="yes"/>geography; the King orders me to offer you the grand<lb break="yes"/>golden medal destined to those who have labored at<lb break="yes"/>scientific progress. I hope that this mark of the Royal<lb break="yes"/>good will, will be agreeable to you at a time when,<lb break="yes"/>upon the proposition of the illustrious geographer,<lb break="yes"/>Chas. Ritter, the Geographical Society at Berlin has<lb break="yes"/>named you an honorary member. For myself, I must<lb break="yes"/>thank you particularly also for the honor which you<lb break="yes"/>have done in attaching my name and that of my fellow-<lb break="no"/>laborer and intimate friend, Mr. Bonpland, to countries<lb break="yes" />neigh boring to those which have been the object of our<lb break="yes"/>labors. <hi rendition="#i">California, which has so nobly resistet the<lb break="yes"/>introductiou of Slavery, will be worthily represented<lb break="yes"/>by a friend of Liberty and of the progress of intelli-<lb break="no"/>gence.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>
-                                <hi rendition="#et">&#x201C;Accept, I pray you, Sir, the expression of my high<lb break="yes"/>and affectionate consideration.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>
-                                <hi rendition="#et">&#x201C;Your most humble and most obedient servant</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <closer>
-                                <salute>
-                                    <hi rendition="#et">&#x201C;A. v. HUMBOLDT.</hi>
-                                </salute>
-                                <lb break="yes"/>
-                                <dateline>&#x201C;<hi rendition="#k">Sans Souci,</hi> October 7, 1850.&#x201D;</dateline>
-                            </closer>
-                        </div>
-                    </body>
-                </floatingText>
-                <lb break="yes"/>
-                <p>On the envelope thus addressed:</p>
-                <lb break="yes"/>
-                <floatingText>
-                    <body>
-                        <div n="2" type="letter">
-                            <p>
-                                <hi rendition="#et">&#x201C;To Colonel Fremont, Senator.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>
-                                <hi rendition="#et">&#x201C;With the great Golden Medal@</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>
-                                <hi rendition="#et">&#x201C;For proarses in the scl@nces.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <closer>
-                                <salute>
-                                    <hi rendition="#et">&#x201C;<hi rendition="#k">Baron Humboldt.</hi>&#x201D;</hi>
-                                </salute>
-                            </closer>
-                        </div>
-                    </body>
-                </floatingText>
-                <lb break="yes"/>
-                <p>The following is the public testimony of the Baron&#x2019;s<lb break="yes" />admiration of the gigantic labors of Fremont, referred<lb break="yes"/>to in the letter, as contained in the new or third<lb break="yes"/>editions of his &#x201C;Aspects of Nature,&#x201D; and which, as a<lb break="yes"/>reference, becomes a natural appendant to the letter:</p>
-                <lb break="yes"/>
-                <p>&#x201C;Fremont&#x2019;s map and geographical investigations<lb break="yes" />comprehend the extensive region from the junction of<lb break="yes"/>the Kansas River with the Missouri to the Falls of the<lb break="yes"/>Columbia, and to the missions of Santa Barbara and<lb break="yes"/>Puebla de los Angeles, in New California; or a space<lb break="yes"/>of 28 degrees of longitude, and from the 34th to the<lb break="yes"/>45th parallel of latitude. Four hundred points have<lb break="yes"/>been deterinined hyposometrically by barometric ob-<lb break="no"/>servations, and for the most part, geographically by<lb break="yes"/>astronomical observations; so that a cistrict which,<lb break="yes"/>with the windings of the route, amou@ to 3,600<lb break="yes" />geographical miles, from the mouth of the Kansas to<lb break="yes"/>Fort Van Couver and the shores of the Pacific, (almost<lb break="yes"/>720 miles more than the distance from Madrid to<lb break="yes"/>Tobolsk,) has been represented in profile, chowing the<lb break="yes"/>relative hights above the level of the sea.</p>
-                <lb break="yes"/>
-                <p>&#x201C;As I was, I believe, the first pereon who under-<lb break="no"/>took to represent, in geognostic proflie, the form of<lb break="yes"/>entire countries&#x2014; such as the Iberian Peninsula, the<lb break="yes"/>high lands of Mexico, and the Cordilleras of South<lb break="yes"/>America, (the @mi-perspective projections of a Sibe-<lb break="no"/>rian traveler, the Abbe Chappe, were fou@ded on<lb break="yes"/>mere and generally all-judged estimations of the fall of<lb break="yes"/>rivers)&#x2014;it has given me peculiar pleasure to see the<lb break="yes"/>geographical method of representing the form of the<lb break="yes"/>earth in a vertical direction, or the elevations of the<lb break="yes"/>
-                    <pb n="5" facs="#f0002"/> solid portion of our planet above its watery covering,<lb break="yes"/>applied on so grand a scale as has been done in Fre-<lb break="no"/>mont&#x2019;s map.&#x201D;</p>
-                <lb break="yes"/>
-                <milestone unit="section" rendition="#hr"/>
-                <lb break="yes"/>
-                <note place="foot" n="*">The following is the description of the medal:</note>
-                <lb break="yes"/>
-                <note place="foot" n="@">Of fine gold, massive, more than double the size of the<lb break="yes"/>American double eagle, and of exquisite workmanship On the<lb break="yes"/>face is the medallion head of the King. Frederic-William the<lb break="yes"/>Fourth, surrounded by figures emblematical of Religion, Juris-<lb break="no"/>prudence. Medicine, and the Arta. On the reverse, Apollo, in<lb break="yes"/>the chariot of the Sun, drawn by four high-mettled, p@unging<lb break="yes"/>horses, traversing the godiac, and darting rays of light from his<lb break="yes"/>bead.&#x201D;</note>
-            </div>
-            <lb break="yes"/>
-        </body>
-        <back/>
-    </text>
-</TEI> 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>DUMMYHEADER</title>
+</titleStmt>
+<publicationStmt>
+<p></p>
+</publicationStmt>
+<sourceDesc>
+<p>DUMMYHEADER zur Validitätsprüfung</p>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text><front></front><body>
+    <pb n="2" facs="#f0001" />
+<div><head><hi rendition="#i">HUMBOLDT AND FREMONT.</hi></head><lb/><milestone unit="section" rendition="#hr"/><lb/>
+<p>To honor him as a Pioneer of American Discovery,<lb/>the King of Prussia presented to Colonel <hi
+                        rendition="#k">John C.<lb/>Fremont</hi>&#x201C;the Golden Medal of Progress
+                    in <lb/>the Sciences.&#x201D; The medal is of fine gold, massive,<lb/>more than
+                    double the size of the American double<lb/>eagle, and of exquisite workmanship.
+                    On the<lb/>face is the medallion head of the King, <hi rendition="#k"
+                        >Frederick<lb/>William</hi> the Fourth, surrounded by figures
+                    emblem-<lb/>atical of Religion, Jurisprudence, Medicine and the<lb/>Arts. On the
+                    reverse, Apollo, in the chariot of the<lb/>sun, drawn by four high-mettled,
+                    plunging horses,<lb/>traversing the zodiac, and darting rays of light
+                    from<lb/>his head.<choice>
+                        <sic>&#x201D;</sic>
+                        <corr type="editorial"> </corr>
+                    </choice>This beautiful tribute to the merit of Col.<lb/>
+                    <hi rendition="#k">Fremont</hi> came to him accompanied with a
+                    compli-<lb/>mentry letter from Baron <hi rendition="#k">Humboldt</hi>, of which
+                    the<lb/>following is a translation:</p>
+    <lb/><milestone unit="section" rendition="#hr"/><lb/>
+    <lb/><p>&#x201C;<hi rendition="#i">To Col. Fremont, Senator,</hi></p><lb/><p>&#x201C;It is very agreeable to me, sir, to address you<lb/>these lines by my excellent friend,
+                    our minister to the<lb/>United States, M. de Gerolt. After having given<lb/>you
+                    in the new edition of my &#x2018;<hi rendition="#i">Aspects of
+                    Nature,</hi>&#x2019;<lb/>the public testimony of the admiration which is
+                    due<lb/>to your gigantic labors between St. Louis, of Mis-<lb/>souri, and the
+                    coasts of the South Sea, I feel happy<lb/>to offer you, in this living token
+                        (<hi rendition="#i">dans ce petit signe<lb/>de vie)</hi> the homage of my
+                    warm acknowledgment.<lb/>You have displayed a noble courage in distant
+                    expe-<lb/>ditions, braved all the dangers of cold and famine,<lb/>enriched all
+                    the branches of the natural sciences, and il-<lb/>lustrated a vast country which
+                    was almost entirely<lb/>unknown to us.</p><lb/>
+    <p>&#x201C;A merit so rare has been acknowledged by a<lb/>sovereign warmly interested in the
+                    progress of physi-<lb/>cal geography; the King orders me to offer you
+                    the<lb/>grand golden medal destined to those who have la-<lb/>bored at
+                    scientific progress. I hope that this mark<lb/>of the Royal good will, will be
+                    agreeable to you at a<lb/>time when, upon the proposition of the
+                    illustrious<lb/>geographer, Chas. Ritter, the Geographical Society<lb/>at
+                    Berlin, has named you an honorary member. For<lb/>myself, I must thank you
+                    particularly also for the<lb/>honor which you have done in attaching my
+                    name<lb/>and that of my fellow-laborer and intimate friend, Mr.<lb/>Bonpland, to
+                    countries neighboring to those which<lb/>have been the object of our labors. <hi
+                        rendition="#i">California,<lb/>which has so nobly resisted the introduction
+                        of slave-<lb/>ry, will be worthily represented by a friend of lib-<lb/>erty,
+                        and of the progress of intelligence.</hi></p><lb/><closer><salute>&#x201C;Accept, I pray you, sir, the expression of my high<lb/>and affectionate
+                        consideration.<lb/><lb/>&#x201C;Your most humble and most
+                            obedient servant,<lb/><lb/><hi rendition="#et">&#x201C;A. V. <hi               rendition="#k">HUMBOLDT.</hi></hi>
+                        
+                        </salute></closer><lb/><dateline>&#x201C;<hi rendition="#k">Sans Souci</hi>, October 7, 1850.&#x201D;</dateline></div>
+                <lb/>
+    <lb/>
+    <div>
+    <p>On the envelope thus addressed:<lb/><lb/>
+        &#x201C;To Colonel Fremont, Senator,<lb/>
+        &#x201C;With the great Golden Medal,<lb/>
+        &#x201C;For progress in the sciences.<lb/>
+        &#x201C;<hi rendition="#k">Baron Humboldt</hi>.&#x201D;
+    </p>
+    <lb/><p>The following is the public testimony of the Ba-<lb/>ron&#x2019;s admiration of the gigantic
+                    labors of Fremont,<lb/>referred to in the letter, as contained in the new
+                    or<lb/>third edition of his &#x201C;<hi rendition="#i">Aspects
+                        of Nature,</hi>&#x201D; and which,<lb/>as a reference, becomes a natural
+                    appendant to the<lb/>letter:</p><lb/><p>&#x201C;Fremont&#x2019;s map and geographical investigations<lb/>comprehend the extensive region
+                    from the junction<lb/>of the Kansas river with the Missouri to the falls of
+                    the<lb/>Columbia, and to the missions of Santa Barbara<lb/>and Puebla de los
+                    Angelos, in New California; or a<lb/>space of 28 degrees of longitude, and from
+                    the 34th<lb/>to the 45th parallel of latitude. Four hundred points<lb/>have been
+                    determined hyposometrically by barome-<lb/>tric observation, and, for the most
+                    part, geographi-<lb/>cally by astronomical observations; so that a
+                    district<lb/>which, with the windings of the route, amounts to<lb/>3,600
+                    geographical miles, from the mouth of the<lb/>Kansas to Fort Van Couver and the
+                    shores of the<lb/>Pacific, (almost 720 miles more than the distance
+                    from<lb/>Madrid to Tobolsk,) has been represented in profile,<lb/>showing the
+                    relative heights above the level of the<lb/>sea.</p><lb/><p>&#x201C;As I was, I believe, the first person who under-<lb/>took to represent, in geognostic
+                    profile, the form of<lb/>entire countries&#x2014;such as the Iberian peninsula,
+                    the<lb/>high lands of Mexico, and the Cordilleras of South<lb/>America, (the
+                    semi-perspective projections of a Sibe-<lb/>rian traveller the Abbe Chappe, were
+                    founded on<lb/>mere and generally ill judged estimations of the fall<lb/>of
+                    rivers)&#x2014;it has given me peculiar pleasure to see<lb/>the geographical
+                    method of representing the form of<lb/>the earth in a vertical direction, or the
+                    elevations of<lb/>the solid portion of our planet above its watery
+                    cover-<lb/>ing, applied on so grand a scale as has been done
+                    in<lb/>Fremont&#x2019;s map.</p>
+
+</div><lb/></body><back></back>
+
+</text>
+</TEI>

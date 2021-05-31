@@ -1,167 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<?oxygen RNGSchema="http://www.deutschestextarchiv.de/basisformat_ohne_header.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">DUMMYHEADER</title>
-                <author>
-                    <persName ref="https://d-nb.info/gnd/118554700">
-                        <surname>Humboldt</surname>
-                        <forename>Alexander</forename>
-                        <nameLink>von</nameLink>
-                    </persName>
-                </author>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname/>
-                        <forename/>
-                    </persName>
-                </editor>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname/>
-                        <forename/>
-                    </persName>
-                </editor>
-                <respStmt xml:id="baertschi_s">
-                    <persName>
-                        <surname>Bärtschi</surname>
-                        <forename>Sarah</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
-                    </resp>
-                </respStmt>
-                <respStmt xml:id="wernicke_nd">
-                    <persName>
-                        <surname>Wernicke</surname>
-                        <forename>Norbert D.</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">XML Bearbeiter</note>
-                        <ref target="http://d-nb.info/gnd/1014897157"/>
-                    </resp>
-                </respStmt>
-            </titleStmt>
-            <editionStmt>
-                <edition>Vollständige digitalisierte Ausgabe.</edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher xml:id="avh_in_bern">
-                    <orgName role="hostingInstitution">Universität Bern</orgName>
-                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
-                    <address>
-                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
-                        <country>Switzerland</country>
-                    </address>
-                </publisher>
-                <pubPlace>Bern</pubPlace>
-                <date type="publication">[Publikationsdatum]</date>
-                <availability>
-                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
-                        <p>Dieses Werk ist gemeinfrei.</p>
-                    </licence>
-                </availability>
-                <idno>
-                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
-                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
-                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
-                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
-                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
-                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
-                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
-                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
-                </idno>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl>[Kurztitel]</bibl>
-                <biblFull>
-                    <titleStmt>
-                        <title level="a" type="main">[Titel des Originalartikels]</title>
-                        <author>
-                            <persName ref="http://d-nb.info/gnd/118554700">
-                                <surname>Humboldt</surname>
-                                <forename>Alexander</forename>
-                                <nameLink>von</nameLink>
-                            </persName>
-                        </author>
-                    </titleStmt>
-                    <editionStmt>
-                        <edition n="1"/>
-                    </editionStmt>
-                    <publicationStmt>
-                        <publisher>
-                            <name>[Verlag/Druckerei]</name>
-                        </publisher>
-                        <pubPlace>[Publikationsort]</pubPlace>
-                        <date type="publication">[Publikationsdatum]</date>
-                    </publicationStmt>
-                    <seriesStmt>
-                        <title level="j" type="main">[Zeitschriftenname]</title>
-                        <biblScope unit="volume">[Bandnummer]</biblScope>
-                        <biblScope unit="pages">[Seitenangabe]</biblScope>
-                    </seriesStmt>
-                </biblFull>
-                <msDesc>
-                    <msIdentifier/>
-                    <physDesc>
-                        <typeDesc>
-                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
-                        </typeDesc>
-                    </physDesc>
-                </msDesc>
-            </sourceDesc>
-            <revisionDesc>
-                <change n="1.1.0" when="2019-05-23" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
-                </change>
-                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
-                </change>
-            </revisionDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
-            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="deu">Deutsch</language>
-            </langUsage>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <front/>
-        <body>
-            <pb facs="#f0001"/>
-            <cb/>
-            <div n="1">
-                <head>
-                    <hi rendition="#g">Amerika.</hi>
-                </head>
-                <lb break="yes"/>
-                <p>
-                    <hi rendition="#g">New-York,</hi> 22. Juli. Die Jahreszeit i&#x017F;t nunmehr &#x017F;o weit<lb break="yes"/>vorgerückt, daß die aus fa&#x017F;t allen Theilen der Union uns vor-<lb break="no"/>liegenden zahlreichen Berichte eine ungefähre Schätzung der dies-<lb break="no"/>jährigen Weizen-Erndte zula&#x017F;&#x017F;en und mit ziemlicher Gewißheit<lb break="yes"/>i&#x017F;t anzunehmen, daß der Ertrag um 20 bis 25 pCt. &#x017F;tärker &#x017F;ein<lb break="yes"/>wird, als voriges Jahr, während man da, wo die Erndte be-<lb break="no"/>reits begonnen, die Qualität des neuen Weizens &#x017F;ehr lobt. Rech-<lb break="no"/>nen wir zu dem diesjährigen Ertrage noch die nicht unbedeuten-<lb break="no"/>den alten Vorräthe und ziehen einen verhältnißmäßig erhöhten<lb break="yes" />Con&#x017F;umptionsbedarf, &#x017F;owie das zur Aus&#x017F;aat erforderliche Quan-<lb break="no"/>tum ab, &#x017F;o würden, gering ange&#x017F;chlagen, zwi&#x017F;chen 75 und 80<lb break="yes"/>Millionen Bu&#x017F;hel zum Export übrig bleiben, zum niedrig&#x017F;ten<lb break="yes"/>Prei&#x017F;e einen Werth von circa 100 Millionen Dollars reprä&#x017F;en-<lb break="no"/>tirend. Die Mais-Ernte wird der vorjährigen nicht nach&#x017F;tehen,<lb break="yes"/>Roggen i&#x017F;t ebenfalls mehr als je zuvor gebaut und wenn die<lb break="yes" />Witterung während der näch&#x017F;ten 6 Wochen gün&#x017F;tig bleibt, &#x017F;o<lb break="yes"/>werden wir für alle Getreide-Arten eine ge&#x017F;egnetere Erndte haben,<lb break="yes"/>als in irgend einem früheren Jahre.</p>
-                <lb break="yes"/>
-                <p>
-                    <hi rendition="#g">Neu-York,</hi> 26. Juli. Im Senate i&#x017F;t eine Bill (Ge&#x017F;etzes-<lb break="no"/>entwurf) durchgegangen, welche be&#x017F;timmt, daß wenn hinfort<lb break="yes"/>
-                    <hi rendition="#g">Guanoin&#x017F;eln</hi> von amerikani&#x017F;chen Bürgern entdeckt werden<lb break="yes"/>&#x017F;ollten, die&#x017F;e als zu den Vereinigten Staaten gehörig zu betrachten<lb break="yes"/>&#x017F;ind. Den Entdeckern wird durch die&#x017F;e Bill das aus&#x017F;chließliche<lb break="yes"/>Eigenthumsrecht auf den vorgefundenen Guano ge&#x017F;ichert und der<lb break="yes"/>Preis be&#x017F;timmt, für welchen die&#x017F;er zu verkaufen i&#x017F;t.</p>
-                <lb break="yes"/>
-                <p>Der gegenwärtige Wahlkampf in den Vereinigten Staaten<lb break="yes"/>gibt der New-Yorker Abendzeitung Anlaß zu der folgenden in-<lb break="no" />tere&#x017F;&#x017F;anten Veröffentlichung. Das genannte Blatt bemerkt, daß<lb break="yes"/>die Gegner der Candidatur <hi rendition="#g">Fremonts</hi> &#x017F;ogar de&#x017F;&#x017F;en wi&#x017F;&#x017F;en&#x017F;chaft-<lb break="no"/>liche Verdien&#x017F;te zu be&#x017F;treiten wagen. In die&#x017F;er Beziehung &#x017F;ei<lb break="yes"/>jedoch ein Zeugniß vorhanden, das jedes weitere Wort überflü&#x017F;&#x017F;ig<lb break="yes"/>mache: Im Jahre 1850 ward dem Col. Fremont die große<lb break="yes"/>goldene Medaille für Förderung der Wi&#x017F;&#x017F;en&#x017F;chaften von der preu-<lb break="no" />ßi&#x017F;chen Regierung zuerkannt und ihm mit dem folgenden Begleit-<lb break="no"/>&#x017F;chreiben von Alexander v. <hi rendition="#g" >Humboldt</hi> über&#x017F;andt: &#x201E;An den<lb break="yes"/>Senator Col. Fremont. Es gereicht mir zum großen Vergnügen,<lb break="yes"/>Ihnen die&#x017F;e Zeilen durch meinen vortrefflichen Freund, Hrn. v.<lb break="yes" />Gerolt, zuzu&#x017F;tellen. Nachdem ich Ihnen in meiner neuen Ausgabe<lb break="yes"/>der &#x201E;An&#x017F;ichten der Natur&#x201C; öffentlich die Anerkennung meiner Be-<lb break="no"/>wunderung gezollt habe, welche Ihre giganti&#x017F;chen Arbeiten zwi&#x017F;chen<lb break="yes"/>St. Louis und der Süd&#x017F;ee verdienen, fühle ich mich glücklich,<lb break="yes"/>Ihnen in die&#x017F;em kleinen Lebenszeichen noch einmal die Huldigung<lb break="yes" />meiner warmen Anerkennung zu erkennen zu geben. Sie haben<lb break="yes"/>bei Ihren fernen Expeditionen einen edlen Muth bewie&#x017F;en, haben<lb break="yes" />allen Gefahren der Kälte und des Hungers getrotzt, alle Zweige<lb break="yes" />der Naturwi&#x017F;&#x017F;en&#x017F;chaften bereichert und ein großes Land, das uns<lb break="yes"/>vorher fa&#x017F;t gänzlich unbekannt war, durch Ihre For&#x017F;chungen er-<lb break="no"/>&#x017F;chlo&#x017F;&#x017F;en. Ein &#x017F;o &#x017F;eltenes Verdien&#x017F;t i&#x017F;t von einem Für&#x017F;ten, der<lb break="yes"/>an dem Fort&#x017F;chritt der phy&#x017F;ikali&#x017F;chen Geographie &#x017F;o warmen An-<lb break="no" />theil nimmt, anerkannt worden; der König beauftragt mich, Ihnen<lb break="yes" />die große goldene Medaille zuzufertigen, die denjenigen be&#x017F;timmt<lb break="yes"/>i&#x017F;t, welche &#x017F;ich hohe Verdien&#x017F;te um die Förderung der Wi&#x017F;&#x017F;en-<lb break="no"/>&#x017F;chaften erworben haben. Ich hoffe, daß die&#x017F;es Zeichen der An-<lb break="no"/>erkennung Ihnen doppelt willkommen &#x017F;ein wird, zu einer Zeit,<lb break="yes"/>wo auch noch die geographi&#x017F;che Ge&#x017F;ell&#x017F;chaft von Berlin auf den<lb break="yes"/>
-                    <pb facs="#f0002"/>
-                    <cb/> Antrag des berühmten Geographen Karl Ritter Sie zum Ehren-<lb break="no" />mitgliede ernannt hat. Was mich &#x017F;elb&#x017F;t betrifft, &#x017F;o muß ich Ihnen<lb break="yes"/>noch be&#x017F;onders für die Ehre danken, die Sie mir dadurch erwie-<lb break="no"/>&#x017F;en, daß Sie meinen Namen und den meines Mitarbeiters und<lb break="yes"/>Freundes Bonpland Ländern gaben, welche an diejenigen angren-<lb break="no"/>zen, die der Gegen&#x017F;tand un&#x017F;erer wi&#x017F;&#x017F;en&#x017F;chaftlichen Arbeiten waren.<lb break="yes" />Californien, das &#x017F;o hochherzig der Einführung der Sclaverei wi-<lb break="no"/>der&#x017F;tanden hat, wird durch einen Freund der Freiheit und des<lb break="yes"/>Fort&#x017F;chritts der Wi&#x017F;&#x017F;en&#x017F;chaft würdig vertreten &#x017F;ein. Genehmigen<lb break="yes"/>Sie die Ver&#x017F;icherung &#xA75B;c.</p>
-                <dateline>Sans&#x017F;ouci, den 7. Oct. 1850.</dateline>
-                <closer>
-                    <salute>Ale-<lb break="no"/>xander v. Humboldt.&#x201C;</salute>
-                </closer>
-                <lb break="yes"/>
-            </div>
-            <lb break="yes"/>
-        </body>
-        <back/>
-    </text>
-</TEI> 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>DUMMYHEADER</title>
+</titleStmt>
+<publicationStmt>
+<p></p>
+</publicationStmt>
+<sourceDesc>
+<p>DUMMYHEADER zur Validitätsprüfung</p>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text><front></front><body>
+<pb facs="#f0001" />
+<milestone unit="section" rendition="#hr"/><lb/>
+<div n="1"><head><hi rendition="#i"><hi rendition="#g">COLONEL FREMONT AND BARON HUMBOLDT</hi></hi></head><lb/><milestone unit="section" rendition="#hr"/><lb/>
+<p>The present electioneering contest in the United<lb/>States for a President has given a New York
+                    paper an op-<lb/>portunity of publishing a very intereating letter. In
+                    the<lb/>year 1850 the Prussian government awarded Colonel Fre-<lb/>mont the
+                    great gold medal for his efforts in the advance-<lb/>ment of science, and in
+                    tranemitting it, the grent German<lb/>naturalist enbanced its value by sending
+                    with it the fol-<lb/>lowing document:</p><lb/><p>&#x201C;To the Senator Colonel Fremont,&#x2014;It affords me great<lb/>pleasure to forward you
+                    these lines through my excellent<lb/>friend M. de Gerolt. Having, in my new
+                    edition of the &#x2018;Views<lb/>of Nature,&#x2019; publicly acknowledged my
+                    admiration for the<lb/>gigantic works so meritoriously eompleted by you
+                    between<lb/>St. Louis and the South Sea, I feel happy in being able
+                    once<lb/>more to give you the assurance of my warm recognition.<lb/>In your
+                    distant expeditions you displayed a noble fortitude,<lb/>braved every danger of
+                    cold and hunger, enriched every<lb/>branch of natural science, and opened for us
+                    a great region<lb/>that was previously almost wholly unknown to us.</p><lb/><p>Such rare merit has been recognised by a sovereign who<lb/>takes such a lively interest in the
+                    progress of physical geo-<lb/>graphy. The King commissions me to present you
+                    with the<lb/>great gold medal that is intended for those who have sig-<lb/>nally
+                    contributed to the advancement of science. I hope<lb/>this sign of recognition
+                    will be doubly welcome to you at a<lb/>time that the Geographical Society of
+                    Berlin, upon the mo-<lb/>tion of the celebrated geographer Charlen Ritter, has
+                    for-<lb/>ther named you an honourable member. In so far as con-<lb/>cerns
+                    myself, I must also especially thank you for the<lb/>honour you confer upon me
+                    by having bestowed the names<lb/>of myself, as well as of my fellow-explorer and
+                    friend Bon-<lb/>pland, on regions that border on those which formed
+                    the<lb/>object of our scientific labours. California, that has so
+                    mag-<lb/>nanimously withstood the introduction of slavery, will be<lb/>worthily
+                    represented by a friend to freedom and to the pro-<lb/>gress of science.</p><lb/><closer><salute>&#x201C;Accept the assurance, &amp;c., <hi rendition="#et">&#x201C;A. v. <hi rendition="#k">Humboldt.</hi></hi></salute></closer><lb/><dateline>&#x201C;Sans-Souci, Oct. 7, 1850.&#x201D;</dateline></div><lb/><milestone unit="section" rendition="#hr"/><lb/>
+</body><back></back>
+
+</text>
+</TEI>
