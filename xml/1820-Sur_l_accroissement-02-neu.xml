@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-09" who="#wernicke_nd">Format. Markup. Validation.<note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe. Korrektur der fehlerhaften Spaltenumbrüche.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="212" facs="#f0001"/>
+            <div n="1">
+               <p>Hr. <hi rendition="#g">Alexander von Humboldt</hi> liest eine Ab-<lb/>
+                   handlung über die Ver&#x017F;tärkung des Schalls zur Nachtzeit.<lb/>
+                   Es giebt Naturer&#x017F;cheinungen (&#x017F;agt der gei&#x017F;tvolle Naturfor-<lb/>
+                   &#x017F;cher), die be&#x017F;timmten Me&#x017F;&#x017F;ungen und direkten Ver&#x017F;uchen<lb/>
+                   unterworfen werden können, während andere, durch fremd-<lb/>
+                   artige Verhältni&#x017F;&#x017F;e gewi&#x017F;&#x017F;ermaßen verhüllt und gleichzeitig<lb/>
+                   durch mancherley &#x017F;törende Ur&#x017F;achen modificirt, mittel&#x017F;t Fol-<lb/>
+                   gerungen und Analogie nur erklärt werden mögen. Bey-<lb/>
+                   &#x017F;piele der er&#x017F;ten Kla&#x017F;&#x017F;e von Er&#x017F;cheinungen &#x017F;ind die vom<lb/>
+                   Pole nach den Aequator abnehmende Stärke der magneti-<lb/>
+                   &#x017F;chen Kräfte; die Biegung der leuchtenden Strahlen, wel-<lb/>
+                   che die Licht&#x017F;piegelung erzeugen; die Wech&#x017F;el der Lufttempe-<lb/>
+                   ratur; die Be&#x017F;chaffenheit ihrer Harz- oder Glas-Electricität<lb/>
+                   in den mehr und minder vom Boden entfernten Schichten.<lb/>
+                   Die zweyte Kla&#x017F;&#x017F;e von Er&#x017F;cheinungen begreift alles, was auf<lb/>
+                   die unge&#x017F;unden Eigen&#x017F;chaften der Atmo&#x017F;phäre Bezug hat;<lb/>
+                   was in den höch&#x017F;ten und unzulänglich&#x017F;ten Luftregionen vor-<lb/>
+                   geht; die Bildung der Wolken und des Hagels; die An-<lb/>
+                   dauer der Dun&#x017F;tbläschen bey einem Wärmegrad unter Null;<lb/>
+                   das Rollen des Donners; die Zunahme der Ela&#x017F;ticität, die<lb/>
+                   als eine Folge der Wärme-Entwicklung er&#x017F;cheint, welche die<lb/>
+                   Fortpflanzung des Schalls begleitet und eine Wirkung des<lb/>
+                   Luftdrucks i&#x017F;t. Ehe die Naturphilo&#x017F;ophie die &#x017F;trenge Me-<lb/>
+                   thode befolgte, welcher man die großen Entdeckungen des<lb/>
+                   abgeloffenen Jahrunderts verdankt, fiel alles, was nicht ge-<lb/>
+                   nauen und unmittelbaren Me&#x017F;&#x017F;ungen unterworfen werden<lb/>
+                   konnte, in&#x2019;s Gebiet der &#x017F;chwankend&#x017F;ten und gewagte&#x017F;ten<lb/>
+                   Hypothe&#x017F;en. Man dachte damals nicht daran, daß durch<lb/>
+                   eine &#x017F;orgfältige Würdigung der Ergebni&#x017F;&#x017F;e fremdartiger Um-<lb/>
+                   &#x017F;tände in den &#x017F;ich verwickelt dar&#x017F;tellenden Er&#x017F;cheinungen,<lb/>
+                   es auf dem Wege der Aus&#x017F;cheidung möglich wird, vom Be-<lb/>
+                   kannten zum Unbekannten vorzu&#x017F;chreiten, und die Natur-<lb/>
+                   ge&#x017F;etze darzu&#x017F;tellen, theils mittel&#x017F;t Erwägungen, welche die<lb/>
+                   mathemati&#x017F;che Analy&#x017F;e darbietet, theils nach Analgoie di-<lb/>
+                   rekter Ver&#x017F;uche und Me&#x017F;&#x017F;ungen.</p>
+                <p>Die Ver&#x017F;tärkung des Schalls zur Nachtzeit i&#x017F;t eine bis<lb/>
+                    dahin nicht gelöste Aufgabe der Naturlehre. Die merk-<lb/>
+                    würdige That&#x017F;ache &#x017F;elb&#x017F;t war in den älte&#x017F;ten Zeiten bereits<lb/>
+                    &#x017F;chon recht gut bekannt. Ari&#x017F;toteles &#x017F;pricht davon in &#x017F;einen<lb/>
+                    Problemen und Plutarch in &#x017F;einen Dialogen. Hier i&#x017F;t nur<lb/>
+                    von der Ver&#x017F;tärkung der Rede, die bey &#x017F;tiller Luft &#x017F;tatt<lb/>
+                    findet, und keineswegs von derjenigen, welche als Folge<lb/>
+                    einer Veränderung des Windes während der Nacht wahr-<lb/>
+                    genommen wird, und die durch das zwischen der Richtung<lb/>
+                    des Windes und jener des Schall&#x017F;trahls be&#x017F;tehende Ver-<lb/>
+                    hältniß modificirt wird. Es handelt &#x017F;ich hier eben &#x017F;o we-<lb/>
+                    nid um die Ver&#x017F;chiedenheit der ab&#x017F;oluten Stärke des Schalls<lb/>
+                    in ver&#x017F;chiedenen Höhen, &#x017F;ondern einzig nur um die Ver-<lb/>
+                    &#x017F;chiedenheit der Tages- und Nacht-Stärke auf gleichen<lb/>
+                    Höhen oder in gleich hohen Ebenen. Die Ver&#x017F;chiedenhei-<lb/>
+                    ten der ab&#x017F;oluten Stärke, welche in ungleichen Höhen der<lb/>
+                    Atmo&#x017F;phäre beobachtet werden, &#x017F;ind eine &#x017F;chon &#x017F;eit gerau-<lb/>
+                    mer Zeit, und am befriedigend&#x017F;ten durch Hr. Poi&#x017F;&#x017F;on, ver-<lb/>
+                    mittel&#x017F;t der mathemati&#x017F;chen Theorie des Schalles gelöste<lb/>
+                    Aufgabe. Aber man muß &#x017F;ich hüten, ihrer Natur nach<lb/>
+                ganz ver&#x017F;chiedene Probleme mit einander zu verwech&#x017F;eln.</p>
+                <lb/>
+                <p><hi rendition="#c">(Die Fort&#x017F;etzung folgt.)</hi></p>
+                
+             <pb n="219" facs="#f0002"/>
+                <p><hi rendition="#c"><hi rendition="#b">Ueber&#x017F;icht der Verhandlungen der Königl. Akademie<lb/>
+                    der Wi&#x017F;&#x017F;en&#x017F;chaften in Paris.</hi></hi></p>
+                <lb/>
+                <p><hi rendition="#c">März, 1820.</hi></p>
+                <lb/>
+                <p><hi rendition="#c">(Fortsetzung.)</hi></p>
+                <lb/>
+                <p>Wenn man das Getö&#x017F;e der großen Wa&#x017F;&#x017F;erfälle des Ore-<lb/>
+                    noko, auf mehr als eine Meile Entfernung, in der Ebene<lb/>
+                    hört, wo die Mi&#x017F;&#x017F;ion von Aturés gelegen i&#x017F;t, &#x017F;o glaubt man<lb/>
+                    &#x017F;ich in der Nähe einer mit Fel&#x017F;enriffen und Klippen be&#x017F;etzen<lb/>
+                    Kü&#x017F;te zu befinden. Zur Nachtzeit i&#x017F;t das Getö&#x017F;e dreymal<lb/>
+                    &#x017F;tärker als am Tage, und es ertheilt da&#x017F;&#x017F;elbe die&#x017F;en Einöden<lb/>
+                    einen unaus&#x017F;prechlichen Reiz. Was mag wohl die Ur&#x017F;ache<lb/>
+                    die&#x017F;er &#x017F;o bedeutenden Ver&#x017F;tärkungen in einer ein&#x017F;amen Ge-<lb/>
+                    gend seyn, wo die Stille der Natur durch nichts ge&#x017F;tört zu<lb/>
+                    werden &#x017F;cheint? Die Schnelligkeit der Fortpflanzung des<lb/>
+                    Schalls wächst keineswegs, &#x017F;ondern &#x017F;ie vermindert &#x017F;ich viel-<lb/>
+                    mehr im Verhältniß mit der &#x017F;inkenden Temperatur. Die<lb/>
+                    Stärke de&#x017F;&#x017F;elben vermindert &#x017F;ich in einer Luft, die durch ei-<lb/>
+                    nen Wind bewegt wird, welcher der Richtung des Schalls<lb/>
+                    entgegen weht; &#x017F;ie vermindert &#x017F;ich ebenfalls durch die Aus-<lb/>
+                    dehnung der Luft; &#x017F;ie er&#x017F;cheint &#x017F;chwächer in den hohen Re-<lb/>
+                    gionen der Atmo&#x017F;phäre, als in den niederen, wo die er-<lb/>
+                    &#x017F;chütterten Lufttheilchen mehr Dichtheit und Ela&#x017F;ticität im<lb/>
+                    nämlichen Strome haben. Die Stärke bleibt &#x017F;ich gleich in<lb/>
+                    trochner und in einer mit Dün&#x017F;ten erfüllten Luft; &#x017F;ie zeigt<lb/>
+                    &#x017F;ich hingegen &#x017F;chwächer in kohlen&#x017F;aurem Gad als in Mi&#x017F;chun-<lb/>
+                    gen von Stick&#x017F;toff und Sauer&#x017F;toff. Die&#x017F;en That&#x017F;achen ge-<lb/>
+                    mäß (den einzigen, die uns mit einiger Zuverlä&#x017F;&#x017F;igkeit be-<lb/>
+                    kannt &#x017F;ind) hält es &#x017F;chwer, eine Er&#x017F;cheinung zu erklären,<lb/>
+                    die man bey jedem Wa&#x017F;&#x017F;erfall in Europa beobachtet, und<lb/>
+                    die läng&#x017F;t vor meiner Ankunft im Dorfe von Aturés dem<lb/>
+                    Mi&#x017F;&#x017F;ionar &#x017F;owohl als den Indianern auffallend gewe&#x017F;en war.<lb/>
+                    Die Temperatur der Atmo&#x017F;phäre i&#x017F;t zur Nachtzeit um drey<lb/>
+                    Grade niedriger als bey Tage; gleichmäßig vermehrt &#x017F;ich<lb/>
+                    zur Nachtzeit die fühlbare Feuchtigkeit, und der über den<lb/>
+                    Wa&#x017F;&#x017F;erfällen &#x017F;chwebende Nebel wird dichter. Es i&#x017F;t &#x017F;o<lb/>
+                    eben bemerkt worden, daß die hygro&#x017F;copi&#x017F;che Be&#x017F;chaffenheit</p>
+                
+               <pb n="220" facs="#f0003"/>
+                <p>der Luft keinen Einfluß auf die Fortpflanzung des Schalles<lb/>
+                    hat, und daß ihre Erkaltung &#x017F;eine Schnelligkeit vermindert.</p>
+                <p>Man könnte denken, daß auch in Gegenden, wo keine<lb/>
+                    Men&#x017F;chen wohnen, das Ge&#x017F;umme der In&#x017F;ekten, der Ge-<lb/>
+                    &#x017F;ang der Vögel, das Rau&#x017F;chen der vom lei&#x017F;e&#x017F;ten Wind be-<lb/>
+                    wegten Blätter, den Tag über ein dumpfes Geräu&#x017F;ch ver-<lb/>
+                    ur&#x017F;achen, welches wir um &#x017F;o weniger wahrnehmen, als es<lb/>
+                    einförmig, und das Ohr daran gewöhnt i&#x017F;t. Die&#x017F;es Ge-<lb/>
+                    räu&#x017F;ch nun, wie unmerklich da&#x017F;&#x017F;elbe auch &#x017F;eyn mag, kann<lb/>
+                    die Inten&#x017F;ität eines &#x017F;tärkeren Getö&#x017F;es vermindern, und<lb/>
+                    die&#x017F;e Schwächung kann aufhören, wenn während der Stille<lb/>
+                    der Nacht der Ge&#x017F;ang der Vögel, das Ge&#x017F;umme der In-<lb/>
+                    &#x017F;ekten und der WInd, welcher die Blätter bewegt, unter-<lb/>
+                    brochen &#x017F;ind. Die&#x017F;e An&#x017F;icht jedoch, wenn es damit auch<lb/>
+                    &#x017F;eine Richtigkeit hat, mag keine Anwendung auf die Wälder<lb/>
+                    des Orenoko leiden, wo die Luft be&#x017F;tändig mit einer zahl-<lb/>
+                    lo&#x017F;en Menge Muskito&#x2019;s erfüllt, wo das Ge&#x017F;umme der In-<lb/>
+                    sekten des Nachts viel &#x017F;tärker i&#x017F;t, als am Tage, und wo der<lb/>
+                    Seewind (<hi rendition="#aq">brise</hi>), wenn er je &#x017F;ich einfindet, nach Sonnen-<lb/>
+                    untergang er&#x017F;t zu wehen anfängt.</p>
+                <p>Eher wohl dürfte es demnach der Fall &#x017F;eyn, daß die<lb/>
+                    Gegenwart der Sonne auf die Fortpflanzung und Stärke<lb/>
+                    des Schalles durch die Hinderni&#x017F;&#x017F;e wirkt, welche die Luft-<lb/>
+                    &#x017F;tröme von ungleicher Dichtheit und die durch die ungleiche<lb/>
+                    Erwärmung der ver&#x017F;chiedenen Theile des Bodens bewirk-<lb/>
+                    ten theilwei&#x017F;en Schwingungen der Atmo&#x017F;phäre ihnen ent-<lb/>
+                    gegen&#x017F;etzen. In einer ruhigen Luft, mag die&#x017F;elbe trocken<lb/>
+                    oder mit gleichmäßig vertheilten Dun&#x017F;tbläschen vermi&#x017F;cht<lb/>
+                    &#x017F;eyn, pflanzt &#x017F;ich der wellenförmige Schall un&#x017F;chwierig fort.<lb/>
+                    Wird hingegen die&#x017F;e Luft durch kleine Strömungen einer<lb/>
+                    wärmeren Luft all&#x017F;eitig durchzogen, &#x017F;o zertheilt &#x017F;ich, da wo<lb/>
+                    die Dichtheit des Mittels &#x017F;chnell wech&#x017F;elt, die &#x017F;challende<lb/>
+                    Welle in zwey Wellen; es bilden &#x017F;ich partielle Echo&#x2019;s, die<lb/>
+                    den Ton &#x017F;chwächen, weil eine der Wellen gegen &#x017F;ich &#x017F;elb&#x017F;t<lb/>
+                    zurückwirkt. Es i&#x017F;t demnach keineswegs die Bewegung des<lb/>
+                    Uebergangs der Lufttheilchen von unten nach oben in auf-<lb/>
+                    &#x017F;teigender Strömung, und eben &#x017F;o wenig &#x017F;ind es die klei-<lb/>
+                    nen &#x017F;chiefen Strömungen, die wir als durch einen <hi rendition="#g">Stoß</hi>,<lb/>
+                    der Fortpflanzung der Tonwelle wider&#x017F;trebend betrachten.<lb/>
+                    Ein auf die Oberfläche einer Flü&#x017F;&#x017F;igkeit angebrachter Stoß<lb/>
+                    wird um den Er&#x017F;chütterungspunkt her Krei&#x017F;e bilden, &#x017F;elb&#x017F;t<lb/>
+                    auch wenn die Flü&#x017F;&#x017F;igkeit ohnedieß bewegt i&#x017F;t. Ver&#x017F;chiedene<lb/>
+                    Arten von Wellen können &#x017F;ich einander im Wa&#x017F;&#x017F;er &#x017F;o gut<lb/>
+                    wie in der Luft kreuzen, ohne daß ihre Fortpflanzung da-<lb/>
+                    durch ge&#x017F;tört wird; geringe Bewegungen liegen über ein-<lb/>
+                    ander (<hi rendition="#aq">se superposent</hi>), und die wahre Ur&#x017F;ache der gerin-<lb/>
+                    geren Stärke des Schalls bey Tage &#x017F;cheint der Mangel der<lb/>
+                    Gleichartigkeit in dem ela&#x017F;sti&#x017F;chen Medium zu &#x017F;eyn. Es ent-<lb/>
+                    &#x017F;teht eine &#x017F;chnelle Unterbrechung der Dichtigkeit überall, wo<lb/>
+                    kleine Luft&#x017F;triche (<hi rendition="#aq">filets d&#x2019;air</hi>) von höherer Temperatur<lb/>
+                    &#x017F;ich von ver&#x017F;chiedenen Theilen des ungleich erwärmten Bo-<lb/>
+                    dens erheben. Die Tonwellen theilen &#x017F;ich, wie die Licht&#x017F;trah-<lb/>
+                    len &#x017F;ich brechen und die Luft&#x017F;piegelung allenthalben bilden,<lb/>
+                    wo Luft&#x017F;chichten von ungleicher Dichtheit einander berühren.<lb/>
+                    Man muß unter&#x017F;cheiden zwi&#x017F;chen der Stärke des Schalls<lb/>
+                    oder der Luft, und zwi&#x017F;chen den Richtungen der <hi rendition="#g">Ton-</hi> oder<lb/>
+                    <hi rendition="#g">Lichtwellen</hi>. Wofern die&#x017F;e Wellen &#x017F;ich durch ungleich<lb/>
+                    dichte Schichten fortpflanzen, &#x017F;o wird daraus gleichzeitig eine<lb/>
+                    gedoppelte Wirkung hervorgehen; die Richtung der Fort-<lb/>
+                    pflanzung wird eine Veränderung, und die Stärke von<lb/>
+                    Licht und Schall eine Verminderung erleiden. Die Re-<lb/>
+                    flexion, welche jede Strahlenbrechung begleitet, &#x017F;chwächt die<lb/>
+                    Stärke des Lichts; die Theilung der Tonwelle verur&#x017F;acht<lb/>
+                    partielle Echo&#x2019;s; un derjenige Theil der Welle, welcher in<lb/>
+                    &#x017F;ich &#x017F;elb&#x017F;t zurückkehrt, da wo die Dichtheit der Flü&#x017F;&#x017F;igkeit<cb/>
+                    einen &#x017F;chnellen Wech&#x017F;el erleidet, wird bey &#x017F;ehr &#x017F;chwachem<lb/>
+                    Geräu&#x017F;ch un&#x017F;erm Ohr unempfindlich.</p>
+                <p>Bey der Luft&#x017F;piegelung, die doppelte Bilder zeigt (<hi rendition="#aq">mi-<lb/>
+                    rage à doubles images</hi>), er&#x017F;cheint dasjenige, welches die<lb/>
+                    Strahlenbrechung in der Nähe des Bodens erlitten hat,<lb/>
+                    allezeit viel &#x017F;chwächer, als das in gerader Richtung ge&#x017F;ehene.<lb/>
+                    Es können Schichten von Flü&#x017F;&#x017F;igkeiten, die von einer &#x017F;ehr<lb/>
+                    ungleichen Dichtigkeit &#x017F;ind, al&#x017F;o mit einander abwech&#x017F;eln,<lb/>
+                    daß die ur&#x017F;prünglichen Richtungen des leuchtenden und des<lb/>
+                    &#x017F;challenden Strahls unverändert bleiben; es wird aber die<lb/>
+                    Stärke des Lichts und des Schalls darum dennoch ge&#x017F;chwächt<lb/>
+                    er&#x017F;cheinen. Die Nacht über erkaltet die Oberfläche des Bo-<lb/>
+                    dens; die mit Ra&#x017F;en oder Sand bedeckten Theile nehmen<lb/>
+                    nicht von den Fagengängen (<hi rendition="#aq">filets</hi>) warmer Luft durch&#x017F;tri-<lb/>
+                    chen, die &#x017F;ich in &#x017F;enkrechter oder &#x017F;chiefer Richtung nach allen<lb/>
+                    Seiten erheben. In einer gleichartig gewordenen Flü&#x017F;&#x017F;ig-<lb/>
+                    keit pflanzt &#x017F;ich die Tonwelle leichter fort, und der Schall<lb/>
+                    ver&#x017F;tärkt &#x017F;ich, weil die Theilungen der Wellen und die par-<lb/>
+                    tiellen Echo&#x2019;s &#x017F;eltener werden.</p>
+                <p>Um einen kleinen Begriff von den Ur&#x017F;achen der war-<lb/>
+                    men Luft&#x017F;trömungen zu geben, welche den Tag über von<lb/>
+                    einem ungleich erwärmten Boden auf&#x017F;teigen, will ich einiger<lb/>
+                    in den Tropenländern von mir ange&#x017F;tellten Ver&#x017F;uche erwäh-<lb/>
+                    nen. In den Llanos oder Steppen von Venezuela fand ich<lb/>
+                    die Wàrme des Sandes, um 2 Uhr, zu 52&#x00B0;,5 und auch wohl<lb/>
+                    zu 60&#x00B0; der hunderttheiligen Scale. Die Lufttemperatur<lb/>
+                    im Schatten eines Bombar war 36&#x00B0;,2; an der Sonne, 18<lb/>
+                    Zolle über dem Boden erhöhet, 42&#x00B0;,8. Zur Nachtzeit zeigte<lb/>
+                    der Sand nur noch 28&#x00B0;; er hatte al&#x017F;o über 24&#x00B0; eingebüßt.<lb/>
+                    In der Gegend der Cataracten des Orenoko erwärmte &#x017F;ich<lb/>
+                    die mit Ra&#x017F;en bedeckte Erde am Tage nur zu 30&#x00B0;, wäh-<lb/>
+                    rend die Luft 26&#x00B0; zeigte; aber die Granitfel&#x017F;en, welche<lb/>
+                    große Weiten bekleiden, erwärmten &#x017F;ich gleichzeitig bis zu<lb/>
+                    48&#x00B0;. Ich habe &#x017F;ehr viele ähnliche Beobachtungen in der<lb/>
+                    Ueber&#x017F;icht der Me&#x017F;&#x017F;ungen und Ver&#x017F;uche bekannt gemacht,<lb/>
+                    welche ich über die Luft&#x017F;pieglung zu Eumana, zur nämli-<lb/>
+                    chen Zeit wo Hr. Wolla&#x017F;ton &#x017F;ich mit die&#x017F;er Er&#x017F;cheinung in<lb/>
+                    Europa bemächtigt hat, an&#x017F;tellte.</p>
+                <p><hi rendition="#c">(Der Be&#x017F;chluß folgt.)</hi></p>
+                
+              <pb n="224" facs="#f0004"/>
+                <p><hi rendition="#c"><hi rendition="#b">Ueber&#x017F;icht der Verhandlungen der Königl. Akademie<lb/>
+                    der Wi&#x017F;&#x017F;en&#x017F;chaften in Paris.</hi></hi></p>
+                <lb/>
+                <p><hi rendition="#c">März, 1820.]</hi></p>
+                <lb/>
+                <p><hi rendition="#c">(Be&#x017F;chluß.)</hi></p>
+                <lb/>
+                <p>Wenn die Ur&#x017F;ache, aus der ich die nächtliche Zunahme<lb/>
+                    des Schalles herzuleiten ver&#x017F;ucht habe, richtig i&#x017F;t, &#x017F;o darf<lb/>
+                    man &#x017F;ich nicht wundern, daß die&#x017F;e Zunahme unter der hei&#x017F;-<lb/>
+                    &#x017F;en Zone, landeinwärts, &#x017F;ich größer zeigt als auf offener<lb/>
+                    See, in den Ebenen größer als auf dem Rücken der Cor-<lb/>
+                    dilleras. Die Wa&#x017F;&#x017F;erfläche der Aequatorial-Meere erwärmt<lb/>
+                    &#x017F;ich gleichförmig und nicht über 29&#x00B0;; während die Oberfläche<lb/>
+                    des Fe&#x017F;tlandes, die ungleich gefärbt i&#x017F;t und deren Be&#x017F;tand-<lb/>
+                    theile ver&#x017F;chiedenartig &#x017F;trahlen, in der Nähe des Aequators<lb/>
+                    Temperaturen annimmt, die von 30&#x00B0; bis auf 52&#x00B0; gehen.<lb/>
+                    In den Tropenländern bleibt die Erde gewöhnlich die Nacht<lb/>
+                    durch wärmer als die Luft: in der gemäßigten Zone wird<lb/>
+                    die Bodenfläche bey &#x017F;tillen und hellen Nächten um 4 bis 5<lb/>
+                    Grade kälter als die Luft. Statt im Verhältniß der Ent-<lb/>
+                    fernung vom Boden abzunehmen, zeigt die Lufttemperatur<lb/>
+                    in Europa zur Nachtzeit ein &#x017F;teigendes Wachsthum bis zur<lb/>
+                    Höhe von 50 oder 60 Fuß. Man darf &#x017F;ich al&#x017F;o nicht wun-<lb/>
+                    dern, wenn die Strahlenbrechungen auf der Erde, unter<lb/>
+                    dem gemäßigten Himmels&#x017F;triche, zuweilen des Nachts fa&#x017F;t<lb/>
+                    eben &#x017F;o beträchtlich &#x017F;ind wie bey Tage. Es werden &#x017F;ich alle-<lb/>
+                    zeit wagerecht über einander liegende Luft&#x017F;chichten von un-<lb/>
+                    gleicher Dichtheit finden; aber die warmen Luftzüge, welche<lb/>
+                    die Atmo&#x017F;phäre in &#x017F;chiefer Richtung durchziehen, werden<lb/>
+                    zur Nachtzeit &#x017F;eltener &#x017F;eyn als am Tag. Bey 3000 Metres<lb/>
+                    Erhöhung, in dem unter dem Aequator liegenden Theil der<lb/>
+                    Anden, beträgt die mittlere Lufttemperatur nur 14&#x00B0;, und<cb/>
+                    die Stärke der Strahlung gegen einen wolkenlo&#x017F;en Him-<lb/>
+                    mel, durch eine &#x017F;ehr trockne und &#x017F;ehr reine Luft, hindert<lb/>
+                    die bedeutende Erwärmung des Bodens bey Tage. Ich<lb/>
+                    verweile nicht länger bey die&#x017F;en örtlichen Verhältni&#x017F;&#x017F;en, und<lb/>
+                    es genügt mir, im Allgemeinen die nächtliche Zunahme des<lb/>
+                    Schalles aus der Theorie der Tonwellen und ihrer Thei-<lb/>
+                    lungen hergeleitet zu haben. Die ganze Er&#x017F;cheinung be-<lb/>
+                    ruht auf jenem Mangel der Gleichartigkeit in den &#x017F;enkrech-<lb/>
+                    ten Säulen der Atmo&#x017F;phäre, welche zugleich auch die wahre<lb/>
+                    Ur&#x017F;ache des mehr oder minder &#x017F;tarken Funkelns der Sterne<lb/>
+                    i&#x017F;t. Bekanntlich wird die Fortpflanzung des Schalls merk-<lb/>
+                    lich verändert, wenn in eine am einen Ende ge&#x017F;chlo&#x017F;&#x017F;ne<lb/>
+                    Röhre eine Schichte Wa&#x017F;&#x017F;er&#x017F;toffgas über eine Schichte atmo-<lb/>
+                    &#x017F;phari&#x017F;cher Luft gebracht wird.</p>
+                <p>Ich könnte mich, zu Uner&#x017F;tützung die&#x017F;er Ideen, auf<lb/>
+                    das An&#x017F;ehen eines Weltwei&#x017F;en berufen, den die Phy&#x017F;iker<lb/>
+                    immer noch gleichgültig zu behandeln fortfahren, während<lb/>
+                    die berühmte&#x017F;ten Zoologen &#x017F;eit langer Zeit den Scharf&#x017F;inn<lb/>
+                    &#x017F;einer Beobachtungen erkannt und dem&#x017F;elben gehuldigt ha-<lb/>
+                    ben. Warum, fragt Ari&#x017F;toteles in &#x017F;einem denkwürdigen<lb/>
+                    Buche der <hi rendition="#g">Probleme:</hi> &#x201E;warum hört man den Schall zur<lb/>
+                    Nachtzeit be&#x017F;&#x017F;er? Weil mehr Ruhe vorhanden i&#x017F;t, wegen<lb/>
+                    Abwe&#x017F;enheit des Wärme&#x017F;toffs (<hi rendition="#g">der höheren Tempera-<lb/>
+                    tur</hi>). Die&#x017F;e Abwe&#x017F;enheit macht alles ruhiger und gere-<lb/>
+                    gelter, denn die Sonne i&#x017F;t die Quelle aller Bewegung.&#x201F;<lb/>
+                    Ari&#x017F;toteles hatte, wie man &#x017F;ieht, eine unbe&#x017F;timmte Ahnung<lb/>
+                    von der Ur&#x017F;ache der Er&#x017F;cheinung; aber er bringt auf Rech-<lb/>
+                    nung der Bewegung der Atmo&#x017F;phäre und des Stoßes, was<lb/>
+                    nur Wirkung des plötzlichen Wech&#x017F;els der Dichtheit der ein-<lb/>
+                    ander berührenden Luft&#x017F;chichten i&#x017F;t. Weder Ari&#x017F;toteles in<lb/>
+                    dem Buche von der Tonkun&#x017F;t, nach Seneca in &#x017F;einen natur-<lb/>
+                    philo&#x017F;ophischen Betrachtungen (<hi rendition="#g"><hi rendition="#aq">qu&#x00E6;stiones naturales</hi></hi>),<lb/>
+                    noch Theophilactus Simocetta haben den nächtlichen Zu-<lb/>
+                    wachs des Schalles zu erklären ver&#x017F;ucht. Bedenkt man den<lb/>
+                    mangelhaften Zu&#x017F;tand der Phy&#x017F;ik der Alten und ihre Un-<lb/>
+                    kenntniß der Experimental-Methode, &#x017F;o erregt die Menge<lb/>
+                    richtiger und oft &#x017F;einer Beobachtungen, die in den Werken<lb/>
+                    des Weltwei&#x017F;en von Stagira über den Thau, über die Ur-<lb/>
+                    &#x017F;achen der Luft&#x017F;piegelung, über die wärmeleitende Kraft<lb/>
+                    der Metalle und A&#x017F;chen, über die Höhe der Wolken als<lb/>
+                    Wirkung der auf&#x017F;teigenden Strömungen u. &#x017F;. w. angetrof-<lb/>
+                    fen werden, ein billiges Er&#x017F;taunen.</p>
+                <p>
+                    Die Bewohner der Alpen halten, gleich denen der An-<lb/>
+                    den, eine ungewöhnliche Ver&#x017F;tärkung des Schalls in ruhigen<lb/>
+                    Nächten für ein &#x017F;icheres Zeichen bevor&#x017F;tehender Wetterän-<lb/>
+                    derung. &#x201E;Es gibt Regen, &#x017F;agen &#x017F;ie, weil man das Rau-<lb/>
+                    &#x017F;chen der Berg&#x017F;tröme &#x017F;o nahe hört.&#x201F; Hr. Deluc (<hi rendition="#g"><hi rendition="#aq">modi-<lb/>
+                    fications de l&#x2019;Atmosphère</hi></hi>) hat es ver&#x017F;ucht, die&#x017F;e<lb/>
+                    Er&#x017F;cheinung durch eine Aenderung des barometri&#x017F;chen Dru-<lb/>
+                    ckes, durch eine größere Menge Luftbla&#x017F;en, die auf der Ober-<lb/>
+                    fläche des Wa&#x017F;&#x017F;ers zerplatzen, zu erklären. Es i&#x017F;t dieß aber<lb/>
+                    eine gezwungene und unbefriedigende Erklärung: ich will<lb/>
+                    &#x017F;ie zwar durch keine andere Hypothe&#x017F;e zu verändern &#x017F;uchen,<lb/>
+                    jedoch aber an die Aehnlichkeit erinnern, die zwi&#x017F;chen der<lb/>
+                    Vorher&#x017F;agung aus dem ver&#x017F;tärkten Schall und einem ande-<lb/>
+                    ren Vorzeichen be&#x017F;teht, das aus der minderen Lichtabnahme<lb/>
+                    abgeleitet wird. Die Bewohner der Berge kündigen eine<lb/>
+                    Wetteränderung an, wenn plötzlich, bey &#x017F;tiller Luft, die mit<lb/>
+                    ewigem Schnee bedeckten Berge dem Auge des Beobachters<lb/>
+                    genähret er&#x017F;cheinen, und ihre Umri&#x017F;&#x017F;e &#x017F;ich &#x017F;ehr genau auf<lb/>
+                    dem azurfarbnen Himnmelsgewölbe dar&#x017F;tellen. Welche Ver-<lb/>
+                    hältni&#x017F;&#x017F;e der Atmo&#x017F;phäre auch die&#x017F;en Er&#x017F;cheinungen zum<lb/>
+                    Grunde liegen, &#x017F;o mag man darin immerhin eine neue<lb/>
+                    merkwürdige Analogie zwi&#x017F;chen den <hi rendition="#g">Wellen des Schalls</hi><lb/>
+                    und den <hi rendition="#g">leuchtenden Wellen</hi> erkennen.
+                    
+                </p>
+            </div>
+        </body>
+        <back/>
+    </text>
+</TEI> 

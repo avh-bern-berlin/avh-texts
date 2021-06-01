@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+            <revisionDesc>
+                <change n="1.1.0" when="2019-05-13" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+                </change>
+                <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="10" facs="#f0001" />
+            <head>           
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+               <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi>
+            </head><lb/>
+            
+            <p>
+                Quando l&#x2019;umano intelletto si prova signo-<lb/>reggiare la natura, cioè a dire il mondo dei<lb/>fenomeni fisici, quando, coll&#x2019;intensa consi-<lb/>derazione di tutto che esiste, sforzasi pe-<lb/>netrare la doviziosa pienezza della vita della<lb/>natura, e l&#x2019;azione delle libere e delle ob-<lb/>bligale potenze, allora egli sentesi a subli-<lb/>me altezza rapire, dalla quale guardando<lb/>ad un orizzonte che via via gli si allarga d&#x2019;in-<lb/>torno, i singoli oggetti, e variamente aggrup-<lb/>pati, gli sembrano come suffusi da una neb-<lb/>bia leggera. Questa immaginosa espressione<lb/>è scelta per mostrare il punto di vista, dal<lb/>quale noi tentiamo considerare l&#x2019;universo,<lb/>e chiaramente esporlo nelle due sue sfere, la<lb/>terrestre e la celeste. Quanto ardita impresa<lb/>sia questa, assai bene lo conosciamo. Fra tutte<lb/>le maniere di esposizione, alla quale sono de-<lb/>dicati questi fogli, il disegno di un quadro ge-<lb/>nerale della natura è in tanto più difficile, in<lb/>quanto che noi non imprendiamo la spiega-<lb/>zione d&#x2019;una varietà ricca di forme, anzi non<lb/>vogliamo descrivere altro che le grandi masse<lb/>ampiamente distinte, sia nella loro realtà, sia<lb/>nella subbiettiva umana concezione. Per mezzo<lb/>della divisione e dell&#x2019;ordinamento dei fenome-<lb/>ni, per mezzo di una divinatrice penetrazione<lb/>nell&#x2019;azione delle potenze che operano avvolte<lb/>nel mistero, per mezzo della vivacità di una<lb/>espressione in cui la sensuale contemplazione<lb/>si dipinga come in ispecchio, noi possiamo ado-<lb/>perarci a comprendere e descrivere il tutto<lb/>(@@@) con quell&#x2019;ampiezza che richiede la<lb/>dignità della splendida parola <hi rendition="#i">Cosmos</hi>, o<lb/>vuoi come universo, o vuoi come ordinamento<lb/>dell&#x2019;universo, o vuoi come abbellimento del-<lb/>l&#x2019;ordinato universo. Possa nel mio lavoro<lb/>quella indefinita e bellissima varietà d&#x2019;ele-<lb/>menti, i quali tutti si addensano in una im-<lb/>magine uuica della natura, riuscire affatto<lb/>in@cua a quella armonica impressione di tran-<lb/>quilla unità, la quale è lo scopo supremo di<lb/>qualsivoglia lavoro o di lettere o di arte.
+            </p>
+            <p>
+                Noi esordiremo dalla profondità dello spa-<lb/>zio e dalla regione delle più lontane nebule,   
+            </p>
+            <cb/>
+            <p>
+                discendendo per gradi, traverso gli strati side-<lb/>rali, a&#x2019;quali appartiene il nostro sistema solare,<lb/>fino alla sferoide terrestre circondata dall&#x2019;aria<lb/>e dal mare, alla sua configurazione, tempera-<lb/>tura e magnetica tensione, a quella pienezza<lb/>di vita, la quale eccitata dalla luce si vien svi-<lb/>luppando sovr&#x2019;esso la sua superficie. Cosi de-<lb/>lineato, un quadro mondiale esprime in pochi<lb/>tratti tanto gli spazii indefiniti del cielo, quanto<lb/>i microscopici organismi del regno vegetabile<lb/>ed animale, i quali albergano le acque sta-<lb/>gnanti o la scomponentesi crosta delle rupi.<lb/>Tutto il comprensibile che profondi studi sulla<lb/>natura, in qualvogliasi direzione, hanno fino<lb/>ad ora investigato, costituisce quel materiale<lb/>secondo cui disegneremo la nostra esposizio-<lb/>ne; però contiene in sè il testimonio di sua<lb/>veracità. In pittoresco quadro della natura,<lb/>quale noi presentiamo in quesli prolegomeni,<lb/>non deve ritrarre solamente i singoli oggetti,<lb/>nè a chiamarsi perfetto ha punto mestieri di<lb/>esprimere tutte le forme della vita, tutte le<lb/>qualità e i processi della natura. Il filosofo<lb/>coordinatore combattendo la tendenza ad un<lb/>indefinito sparpagliamento del conosciuto e<lb/>del raccolto, debbe sottrarsi al pericolo di una<lb/>troppo empirica ridondanza. Una considerabi-<lb/>le parte delle qualitative forze della materia,<lb/>o, per usare più filosofico linguaggio, delle<lb/>qualitative manifestazioni di esse forze, è tutto-<lb/>giorno un arcano. Il ritrovamento dell&#x2019; uno<lb/>nel tutto, rimane ancora incompiuto. Accanto<lb/>alle gioje dei conquistati veri, rampolla mista<lb/>quasi a dolore, in un animo energico e del<lb/>presente non pago, la brama angosciosa dei<lb/>non ancora dischiusi, non ancora conosciuti<lb/>regni del sapere. Questa brama annoda più<lb/>salde le anella di quella grande catena, la qua-<lb/>le, secondo le eterne leggi regolatrici del-<lb/>l&#x2019;intima essenza del pensiero, avvince il sen-<lb/>sibile all&#x2019;insensibile. Questa brama vivifica la<lb/>corrispondenza tra quel tanto dell&#x2019;universo<lb/>che lo spirito comprende, e quel tanto che lo<lb/>spirito emana dal suo profondo.
+            </p>
+            <p>
+                Il perchè se la natura &#x2014; il compendio<lb/>delle sue forze e delle sue manifestazioni &#x2014;<lb/>sì per ampiezza che per contento è infinita, la<lb/>è anche, rispetto all&#x2019;intellettivo organamen-<lb/>to dell&#x2019;umana mente, al tutto incornprensi-<lb/>bile, e, nella cognizione della universa ed<lb/>efficiente cooperazione di tutte le forze, ella<lb/>è un insolubile problema. La cognizione del-<lb/>la natura allora solo è possibile, quando l&#x2019;en-<lb/>te e la modificazione rimangon soggetti a una<lb/>indagine immediata, e quando non si ardisce
+            </p>
+            <lb/>
+            
+            <pb n="11" facs="#f0002" />
+            <p>
+                abbandonare il cammino dei fatti, e la seve-<lb/>rità del metodo induttivo: e quand&#x2019;anche l&#x2019;in-<lb/>cessante sforzo di abbracciare il tutto rimanga<lb/>iufruttuoso, pure la storia degli studii sull&#x2019;uni-<lb/>verso, che formerà altra parte di questi pro-<lb/>legomeni, ci apprende, come nel corso dei se-<lb/>coli gli uomini a poco a poco giungessero ad<lb/>una parziale penetrazione nella relativa di-<lb/>pendenza dei fenomeni. Egli è debito nostro<lb/>il fare una rivista generale del sapere contem-<lb/>poraneo secondo sua condizione e suoi limiti<lb/>d&#x2019;oggidi. In ogni mobile e variabile cosa che<lb/>esista nello spazio, sono i valori medii nume-<lb/>rici l&#x2019;ultimo scopo, anzi l&#x2019;espressione delle fisi-<lb/>che leggi. Essi ci mostrano l&#x2019;immutabile sotto<lb/>il rapido vicendarsi dei fenomeni: così, a ca-<lb/>gione d&#x2019;esempio, il progresso della nuova<lb/>misuratrice e pesatrice Fisica, è segnato spe-<lb/>cialmente dalla contezza e dalla rettificazione<lb/>dei valori medii numerici di certe grandezze:<lb/>così, quale già tempo nella scuola italiana,<lb/>benché in più largo senso, ricompajono come<lb/>mondiali potenze i numeri, i soli geroglifici<lb/>segni che rimanessero e si allargassero nel<lb/>nostro linguaggio scientifico.
+            </p>
+            <p>
+                Il severo indagatore della natura è ral-<lb/>legrato dalla semplicità dei rapporti numerici,<lb/>per mezzo dei quali vengono disegnate le di-<lb/>mensioni degli spazii, le grandezze dei corpi<lb/>cosmici, le loro periodiche perturbazioni, i<lb/>triformi elementi del magnetismo terrestre,<lb/>la media pressione dell&#x2019; oceano aeriforme,<lb/>e la quantità del calore che il sole versa cia-<lb/>scun anno e ciascuna stagione sopra ciascun<lb/>punto dell&#x2019;acquosa o salda superficie del no-<lb/>stro pianeta. Ma non è del pari contento il<lb/>poeta della natura, ma non è appagato il sen-<lb/>so delle moltitudini, bramose pur sempre del<lb/>nuovo. Sì al poeta che al volgo il giardino<lb/>della scienza sembra oggi deserto, dacchè ella<lb/>rigetta come problematiche o come insolubili<lb/>cotante dimande, delle quali sognava mi gior-<lb/>no la risposta. Nella sua severa forma, nel suo<lb/>succinto vestire ella è al tutto spogliata di<lb/>quella grazia seduttrice, per mezzo della quale
+            </p>
+            <cb/>
+            <p>
+                una dogmatica e simbolica Fisica sapeva illu-<lb/>dere la ragione ed occupare la fantasia. Assai<lb/>secoli avanti la scoperta del nuovo mondo,<lb/>molti credevano dalle Canarie e dalle Azorre<lb/>intravedere paesi novelli verso Occidente. Fal-<lb/>laci prestigi erano questi, non punto pro-<lb/>dotti da una insolita rifrazione di luce, ma<lb/>sì dal desiderio che sospinge l&#x2019;uomo al lon-<lb/>tano, all&#x2019;ignoto. Questo incanto di illudenti<lb/>aerce immagini offrivano a noi in gran copia<lb/>e la naturale filosofia dei Greci, e la Fisica<lb/>del Medio Evo, e quella delle età seguenti.<lb/>Fuori de&#x2019; limili del conquistato sapere, quasi<lb/>dal lido più alto di un&#x2019;isola, lo sguardo degli<lb/>uomini spazia giocondamente in lontani paesi.<lb/>La fede nell&#x2019;insolito e nel meraviglioso da<lb/>certe distinte fattezze a qualsivoglia prodotto<lb/>dell&#x2019;ideale creazione, ed i regni della fanta-<lb/>sia, &#x2014; meraviglioso paese di cosmologici, e<lb/>geonostici, e magnetici sogni &#x2014; sono peren-<lb/>nemente confusi coi regni della realtà.
+            </p>
+            <p>
+                La natura nella moltiplice significanza<lb/>della parola considerata ora come un tutto<lb/>di esistenze e di modificazioni, ora come<lb/>un&#x2019;intima forza mottrice, ed ora come arche-<lb/>tipo misterioso di tutti i fenomeni, la natura<lb/>si rivela al semplice senso ed all&#x2019;intimo pen-<lb/>siero dell&#x2019;uomo più volentieri come qualche<lb/>cosa di terrestre, qualche cosa di strettamen-<lb/>te a lui collegato. Dapprima nei vitali circoli<lb/>della creazione organica riconosciamo noi pro-<lb/>priamente la nostra patria. Dove il grembo<lb/>della terra di fiori e di frutta s&#x2019;ammanta e<lb/>nutrisce infiniti stirpi d&#x2019;animali, ivi l&#x2019;immagi-<lb/>ne della natura si affaccia più viva all&#x2019;anima<lb/>nostra. Questa immagine è dapprima compo-<lb/>sta di soli elementi terrestri. Lo splendido pa-<lb/>diglione degli astri e gli immensi spazii del<lb/>cielo appartengono ad un quadro mondiale,<lb/>nel quale le grandezze delle masse, il nume-<lb/>ro degli stipati soli e delle albeggianti nebu-<lb/>lose, ci eccitano stupore ed ammirazione, a<lb/>cui però noi ci sentiamo quasi stranieri per<lb/>un&#x2019; apparente solitudine, e per la totale man-<lb/>canza della immediata impressione di una or-
+            </p>
+            <cb/>
+            <p>
+                ganica vita: egli è per questo che secondo le<lb/>antichissime opinioni fisiche degli uomini, il<lb/>cielo e la terra apparirono sempre come due<lb/>cose, l&#x2019;una in alto e l&#x2019;altra al basso, e da un<lb/>immenso spazio divise.
+            </p>
+            <p>
+                Il perché se un quadro della natura do-<lb/>vesse rispondere solo ai bisogni di una sen-<lb/>suale contemplazione, certamente dovrebbe<lb/>cominciare colla descrizione del natale terre-<lb/>no. Dovrebbe innanzi tratto delineare la sfera<lb/>terrestre in sua grandezza ed in sua forma,<lb/>nei suoi solidi o liquidi strati, l&#x2019;uno all&#x2019;altro<lb/>sovrapposti, nella sua densità e nel suo calore<lb/>relativi alla profondità sua, descriverebbe il di-<lb/>stacco del mare e del continente, e la vita che<lb/>si sviluppò nell&#x2019;uno e nell&#x2019;altro, come tessuto<lb/>cellullare nelle piante e negli animali, l&#x2019;ondeg-<lb/>giante e fluttuante Oceano d&#x2019;aria dal cui ul-<lb/>timo strato si innalzano catene di monti rinco-<lb/>ronate di boscaglie, come scogli e bassi fondi.<lb/>Dopo questa descrizione delle relazioni mera-<lb/>mente telluriche dovrebbe alzare gli sguardi<lb/>agli spazi del cielo. La terra, a noi già ben<lb/>conosciuto campo del processo delle forme or-<lb/>ganiche, più non dovrebbe considerarsi se non<lb/>come pianeta. Essa entrerebbe nel numero dei<lb/>corpi mondiali che si aggirano intorno ad una<lb/>delle innumerabili stelle fulgide di luce pro-<lb/>pria. Il processo di queste idee mostra il cam-<lb/>mino della primitiva e affatto sensuale ma-<lb/>niera di contemplazione, e ci ricorda quasi<lb/>ancora quell&#x2019;antico disco terrestre ricinto dai<lb/>mari e sostenente il cielo; esso muove dal-<lb/>l&#x2019;immobil punto della esperienza, dal cono-<lb/>sciuto e vicino all&#x2019;ignoto e lontano, caso ri-<lb/>sponde a quel metodo delle nostre dottrine<lb/>astronomiche (metodo commendevole nei rap-<lb/>porti astronomici), il quale dai moti appa-<lb/>renti, dai corpi celesti, ascende alla cognizione<lb/>dei loro moti reali.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="13" facs="#f0003" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3)</hi>
+            </p>
+            <lb/>
+            <p>
+                Ma in una opera, la quale debba sola-<lb/>mente esporre il fin qui conosciuto, si quello<lb/>che nel moderno stato di nostra scienza si<lb/>può tenere per certo, come quello che si può<lb/>tenere più o meno probabile, e non debba of-<lb/>ferire le prove sulle quali si fondano gli espo-<lb/>sti risultati, egli è mestieri preferire un or-<lb/>dine di idee al tutto diverso. Qui non si deve<lb/>più movere da un punto di vista subbiettivo,<lb/>vo&#x2019; dire dell&#x2019;interesse degli uomini. Il sistema<lb/>tellurico non debbe apparire se non come una<lb/>parte del tutto, e al tutto subordinata. La<lb/>considerazione della natura vuol essere uni-<lb/>versale, grande, libera, e non punto circo-<lb/>scritta da motivi di vicinanza, da propensioni di<lb/>affetto, da relativi interessi. Una fisica descri-<lb/>zione ddl&#x2019;universo, un <hi rendition="#i">quadro</hi> mondiale non
+            </p>
+            <cb/>
+            <p>
+                deve dunque cominciare dalla terra, ma sib-<lb/>bene da ciò che adempie gli spazii del cielo.<lb/>Ma mentre si restringono <hi rendition="#i">le sfere</hi> di contem-<lb/>plazione, viensi per converso aumentando l&#x2019;in-<lb/>dividuale ricchezza del discernibile, la pienezza<lb/>dei fenomeni fisici, la cognizione delle quali-<lb/>tative eterogeneità della materia. Da quelle<lb/>regioni dunque, delle quali altro non ci è conto<lb/>che la legge della gravitazione, noi discende-<lb/>remo al nostro pianeta, alla intrecciata effi-<lb/>cacia delle vitali forze della terra. Questo me-<lb/>todo di descrivere la natura è al tutto con-<lb/>trario di quello, il quale porge le ragioni dei<lb/>suoi risultati. Il primo narra, il secondo prova.
+            </p>
+            <p>
+                L&#x2019;uomo riceve in sè il mondo esterno per<lb/>mezzo degli organi. I fenomeni della luce ci<lb/>annunziano l&#x2019;esistenza della materia nei più<lb/>remoti spazii del cielo. L&#x2019;occhio è dunque l&#x2019;or-<lb/>gano della contemplazione dell&#x2019;universo. L&#x2019;in-<lb/>venzione dei telescopii ha, da 250 anni in qua,<lb/>preparato alle più tarde generazioni uno stro-<lb/>mento, la cui forza penetrativa degli spazii non<lb/>è per anco arrivata al suo estremo. Primissima<lb/>ed universale considerazione nell&#x2019;universo si<lb/>è quella del <hi rendition="#i">contenuto degli spazii</hi>, la con-<lb/>siderazione dello scompartimento della ma-<lb/>teria, <hi rendition="#i">del creato</hi>, come usano chiamare l&#x2019;ente<lb/>e la modificazione. Appareci la materia parte<lb/>conglobata in corpi mondiali per spessore e<lb/>grandezza disugualissimi, e ciascuno roteante<lb/>sul proprio asse, e circolante ad altro corpo,<lb/>parte sparpagliata a guisa di nebbia gazeiforme<lb/>e per sè luminosa. Se noi esaminiamo prima-<lb/>mente le nebulose &#x2014; il mondiale vapore scom-<lb/>partito in determinate forme &#x2014; egli ne sembra<lb/>in attualità d&#x2019;incessante mutanza nel suo stato<lb/>di aggregazione. Egli emerge all&#x2019;apparenza in<lb/>piccole dimensioni, sembiante a rotondo od<lb/>ellittico disco, semplice od appajato, talora le-<lb/>gato per un filo di luce; se ha più grande
+            </p>
+            <p>
+                diametro egli è multiforme e proteso, o franto<lb/>a varii rami, a similitudine di ventaglio o di<lb/>oscuro anello con spiccato contorno. Queste<lb/>nebulose si reputano tanto più soggette al va-<lb/>rio e continuo processo di formazione, quanto<lb/>più in esse il mondiale vapore si viene per<lb/>legge d&#x2019;attrazione addensando intorno ad uno<lb/>o più nuclei. A quasi 2500 di queste <hi rendition="#i">inde-<lb/>componibili</hi> nebulose, nelle quali cannoc-<lb/>chiali per quantunque potentissimi non hanno<lb/>fino ad ora discernuto alcuna stella, fu già<lb/>segnato e numero e luogo.
+            </p>
+            <p>
+                L&#x2019;originario sviluppo, la perpetua po-<lb/>tenza effettrice, la quale manifestasi in questa<lb/>parte di spazii celesti, eccitò nel savio os-<lb/>servatore il pensiero della analogia coi feno-<lb/>meni organici. Siccome nelle nostre boscaglie<lb/>veggiamo ad un&#x2019;ora la medesima vegetazione<lb/>in tutti i gradi del crescimento, e da questa<lb/>coesistenza induciamo l&#x2019;impressione di un con-<lb/>tinuante sviluppo di vita, così anche nell&#x2019;im-<lb/>menso <hi rendition="#i">giardino del mondo</hi> avvisiamo i va-<lb/>rii stadii di una lenta e successiva formazione<lb/>astrale. Il processo di condensazione, quale<lb/>Anassimene e tutta la scuola Jonica insegna-<lb/>valo, sembra procedere anche sotto ai nostri<lb/>occhi. Questo coincidere della divinazione e del-<lb/>la esperienza ha un meraviglioso attrattivo per<lb/>la fantasia. Ciò che tanto ineffabilmente ci an-<lb/>noda agli spazii della vita, e a tutte le intime<lb/>forze motrici dell&#x2019;universo, non è tanto la<lb/>contezza del <hi rendition="#i">formato</hi>, quanto quella del <hi rendition="#i">for-<lb/>mantesi</hi>; quand&#x2019;anche questo formantesi al-<lb/>tro non fosse che una novella modificazione<lb/>della già esistente materia; (perciocché della<lb/>primigenia forza creatrice, come principio di<lb/>azione, dell&#x2019;essere per eccellenza, come prin-<lb/>cipio dell&#x2019; esistente e del non esistente, egli<lb/>ci fallisce e il concetto e l&#x2019;esperienza.)<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi> 
+            </p>
+            <lb/>
+            
+            <pb n="17" facs="#f0004" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3 e 4)</hi>
+            </p>
+            <lb/>
+            <p>
+                Avvisarono molti discoprire effettivi cam-<lb/>biamenti di forma prima in Andromeda, poi<lb/>nella nave d&#x2019;Argo e nella isolata filamentosa<lb/>parte della nebulosa d&#x2019;Orione; e ciò non tanto<lb/>per la comparazione dei diversi momenti di<lb/>sviluppo, nei quali queste nebulose si mostrano<lb/>più o meno costipate verso i loro centri, ma<lb/>anche per immediate e successive osservazio-<lb/>ni. Pure gli è d&#x2019;uopo confessare che, inegua-<lb/>glianza di luce negli adoperati strumenti, di-<lb/>vario di condizioni nella nostra atmosfera, ed<lb/>altre ottiche relazioni niegano senza forse ad<lb/>alcuna parte di quei risultati la vera certezza<lb/>storica.
+            </p>
+            <p>
+                Dalle multiformi <hi rendition="#i">macchie nebulose</hi> pro-<lb/>priamente dette, di cui le singole parti han-<lb/>no disuguale chiarità, e che con scemanti cir-
+            </p>
+            <cb/>
+            <p>
+                conferenze forse si riconcentrano finalmente<lb/>in istelle; ed anche dalle così delle <hi rendition="#i">nebule<lb/>planetarie</hi>, di cui i dischi rotondi e un po&#x2019;<lb/>ovali gittano da ogni parte una intensità di lu-<lb/>ce, a piena ed eguale mitezza, è mestieri di-<lb/>stinguere le <hi rendition="#i">stelle nebulose</hi>. Non è che esse<lb/>si projettino a caso sopra il lontano fondo<lb/>di una macchia nebulosa; chè anzi la va-<lb/>porosa materia, dico l&#x2019;aureola nebulosa, co-<lb/>stituisce solo una massa colla stella da lei<lb/>circondata. Considerando la notevole grandez-<lb/>za del loro apparente diametro, e l&#x2019;enorme<lb/>lontananza dove esse divampano, noi dobbia-<lb/>mo indurre che sì lo nebule planetarie che le<lb/>stelle nebulose abbiano dismisurate estensioni.<lb/>Recenti ed argute considerazioni intorno l&#x2019;in-<lb/>flusso assai vario che la lontananza ha sulla in-<lb/>tensità della luce di una sfera di misurabile<lb/>diametro o di qualvogliasi unico punto lucente<lb/>da sè, rendono assai probabile, che le nebule<lb/>planetarie altro non siano se non remotissime<lb/>stelle nebulose, nelle quali In diversità tra<lb/>l&#x2019;astro centrale e il vaporoso suo involucro,<lb/>scomparve finora all&#x2019;intuizione de&#x2019;nostri tele-<lb/>scopii.
+            </p>
+            <p>
+                Le pompose zone del cielo meridionale<lb/>fra il 80&#x00B0; e il 50&#x00B0; di latitudine, hanno parti-<lb/>colare dovizia di stelle nebulose e di costipate<lb/>ed indecomponibili macchie nebulose. Delle<lb/>due nubi magellaniche, le quali s&#x2019;aggirano in-<lb/>torno al polo australe, vedovo di stelle, la mag-<lb/>giore specialmente, secondo indagini recentis-<lb/>sime. ci appare come: &#x00AB; meraviglioso com-<lb/>plesso di <hi rendition="#i">gruppi siderali</hi> e di cumuli in parte<lb/>globiformi di stelle nebulose in grandezza di-<lb/>verse e di indecomponibili macchie nebulose,<lb/>le quali lampeggiando universale chiarezza nel<lb/>campo visuale del telescopio, ci presentano co-<lb/>me lo sfondo dell&#x2019;immagine &#x00BB;. La veduta di<lb/>queste nubi e della raggiante nave d&#x2019;Argo e di
+            </p>
+            <cb/>
+            <p>
+                quel tanto di Galassia che è tra lo Scorpione, il<lb/>Centauro e la Croce, e quella <hi rendition="#i">nativa</hi> grazia di<lb/>tutto il cielo meridionale, gettarono a me nel-<lb/>l&#x2019;anima un inobliabile sentimento. La luce zo-<lb/>diacale, sorgente a forma di piramide (e la è<lb/>appunto in sua mite chiarità l&#x2019;eterno adorna-<lb/>mento delle notti tropicali), od è un grande a-<lb/>nello nebuloso roteante fra le due orbite della<lb/>Terra e di Marte, od è, ma con minore verosimi-<lb/>glianza, lo strato più esterno dell&#x2019;atmosfera so-<lb/>lare. Fuori di queste luci nebulose e di queste<lb/>nebule di determinata forma, esattissime e<lb/>sempre consone osservazioni accennano l&#x2019;esi-<lb/>stenza e l&#x2019;universale diffusione di una materia<lb/>attenuata all&#x2019;estremo, e verosimilmente non lu-<lb/>minosa da sè, la quale si manifesta, <hi rendition="#i">porgendo<lb/>resistenza</hi>, e quindi abbreviando il tempo di<lb/>rivoluzione e l&#x2019;eccentricità dell&#x2019;orbita, nella<lb/>cometa di Encke e forse anche in quella di<lb/>Biela. Questa eterea, e cosmica, e resistente<lb/>materia può pensarsi come smossa, come gra-<lb/>vitante, a malgrado di sua originaria tenuità,<lb/>come stipantesi in vicinanza dei grandi corpi<lb/>solari, e come da miriadi d&#x2019;anni aumentata<lb/>dall&#x2019;effluente vapore caudale delle comete.
+            </p>
+            <p>
+                Se dalla vaporosa materia dell&#x2019;infinito<lb/>spazio de&#x2019; cieli (@@@ @@@), così come ella<lb/>talora è informe, sparpagliata e illimitata la quasi<lb/>cosmico etere, talora e addensata in nebulose,<lb/>noi divertiamo il pensiero alla <hi rendition="#i">conglobata</hi> e<lb/>solida parte dell&#x2019;universo, egli ci appare, una<lb/>classe di fenomeni, alla quale esclusivamente<lb/>si dà il nome di costellazioni o mondo siderale.<lb/>Qui pure evvi graduale divario nella solidità<lb/>o nello spessore della conglobata materia. Il<lb/>nostro sistema solare offreci tutti i gradi di <hi rendition="#i">in-<lb/>termedia densità</hi> (del rapporto fra il volume<lb/>e la massa). Chi paragoni i pianeti da Mercurio<lb/>a Marte col Sole e con Giove, e confronti poi<lb/>questi due astri col meno denso Saturno,        
+            </p>
+            <lb/>
+            
+            <pb n="18" facs="#f0005" />
+            <p>
+                scorgerebbe una scala calante, per togliere<lb/>esempi da materie terracque, quale evvi dallo<lb/>spessore del metallo antimonio allo spessore<lb/>del miele, dell&#x2019;acqua e dell&#x2019;abete. Nelle co-<lb/>mete, le quali costituiscono la più numerosa<lb/>classe delle individualizzate forme naturali del<lb/>nostro sistema solare, fin&#x2019; anche la più con-<lb/>centrata parte, che nomiamo nucleo o centro,<lb/>lascia passare irrefratta la luce delle stelle.<lb/>Non aggirasi forse cometa la cui massa ag-<lb/>giunga la cinque millesima parte della massa<lb/>terrestre. Con tanta dovizia di varietà ci si<lb/>presentano i processi di formazione nella pri-<lb/>migenia, e forse continuante conglobazione<lb/>della materia. Movendo dall&#x2019; universale egli<lb/>era peculiare necessità il qui disegnare que-<lb/>sta varietà non come un possibile, ma come<lb/>un reale negli spazj mondiali del creato.
+            </p>
+            <p>
+                I presentimenti che la ragione inspirava a<lb/>Wright, a Kant, a Lambert intorno l&#x2019;universa-<lb/>le ordinamento della macchina mondiale, ed<lb/>agli scompartimenti della materia nello spazio,<lb/>rispondono a punto ai maravigliosi trovati che<lb/>Guglielmo Herschel conquistò sovra il sicuro<lb/>cammino della osservazione e della misura.<lb/>Grande ed animoso intelletto, e non di meno<lb/>cautissimo investigatore! Egli ebbe la gloria di<lb/>gettare primamente lo scandaglio nei profondi<lb/>del cielo, per determinare i contini e la forma<lb/>di quel solitario strato siderale, ove albergano<lb/>gli umani, egli usò per il primo dichiarare i<lb/>rapporti di posizione e di distanza tra lonta-<lb/>nissime nebulose e il nostro strato siderale;<lb/>ned è punto menzognera la scritta sul suo<lb/>sepolcro in Upton: Guglielmo Herscel penetò)<lb/>primiero i claustri del cielo (<hi rendition="#i">Coetorum per-<lb/>rupit claustra</hi>); grande al pari dell&#x2019;italiano<lb/>Colombo veleggiò arditissimo un oceano di<lb/>mondi sconosciuto, coste e arcipelaghi disco-<lb/>prendo, la cui precisa corografia sarà retaggio<lb/>dei più tardi avvenire.
+            </p>
+            <p>
+                Pensamenti sopra la varia intensità lu-<lb/>minosa delle stelle, e sopra il relativo lor nu-<lb/>mero, come a dire sopra la numerica loro
+            </p>
+            <cb/>
+            <p>
+                rarezza o addensazione in telescopici campi<lb/>visuali della medesima ampiezza, fecero pro-<lb/>babile l&#x2019;ipotesi che negli strati dalle stelle<lb/>formati sia disuguaglianza e di reciproche<lb/>lontananze e di scompartimenti nello spazio.<lb/>Queste supposizioni, in quanto le ci conducano<lb/>ad una limitazione delle singole parti dell&#x2019;uni-<lb/>verso, non raggiungono generalmente quel<lb/>grado supremo di certezza matematica, il<lb/>quale è pur conquistato in ciò tutto, che ri-<lb/>guarda il nostro sistema solare, il rotearsi<lb/>delle stelle doppie a disuguale rattezza intorno<lb/>ad un comune punto di gravità, e le apparenti<lb/>ed effettive movenze di tutti gli astri. Da<lb/>queste considerazioni risulterebbe il concetto<lb/>che la fisica descrizione del mondo, quando<lb/>inizia dalle lontanissime macchie nebulose,<lb/>renda somiglianza alla mitica parte della<lb/>storia del mondo. Si l&#x2019;una che l&#x2019;altra scienza<lb/>esordisce nei crepuscoli o della remotissima<lb/>antichità, o dell&#x2019;inconquistabile spazio; e non<lb/>appena la realtà minaccia svanire, la fantasia<lb/>sentesi e nell&#x2019;un caso e nell&#x2019;altro eccitata a<lb/>creare alcun che dalla propria pienezza, ed a<lb/>porgere a forme incircoscritte e fuggevoli<lb/>lineamenti e durata.
+            </p>
+            <p>
+                Se si paragona lo spazio mondiale con<lb/>uno degli arcipelaghi del nostro sferoide, la<lb/>materia si può pensare <hi rendition="#i">a gruppi divisa</hi>:<lb/>parte in nebulosità indecomponibili e varie<lb/>d&#x2019; età, addensatesi intorno ad uno o più nu-<lb/>clei, parte già plasmata a mucchi di stelle<lb/>e ad isolate sporadi. Il nostro cumulo stel-<lb/>lare, l&#x2019;isola mondiale a cui noi appartenia-<lb/>mo è un solitario strato lentiforme, il cui<lb/>asse maggiore si calcola da 7 a 800 distanze<lb/>di Sirio, il minore a 130. Ponendo l&#x2019;ipotesi<lb/>che la paralasse di Sirio non ecceda la ben<lb/>conosciuta della più splendida stella nel Cen-<lb/>tuaro (0&#x2033; 9128), la luce pereorrerebbe una<lb/>distanza di Sirio in tre anni, mentre dall&#x2019;egre-<lb/>gio primitivo lavoro di Bessel intorno la pa-<lb/>ratasse della notabile 61.<hi rendition="#sup">2</hi> stella in Cigno<lb/>(&#x2033; 3482), il cui riguardevole movimento in-
+            </p>
+            <cb/>
+            <p>
+                durrebbe opinione di grande vicinanza, conse-<lb/>guita che da questa stella arriva la luce alla ter-<lb/>ra in anni 9.1@4. Il nostro strato astrale, un di-<lb/>sco di piccolo spessore, è per un terzo partito<lb/>in due rami: si tiene che noi siamo più vicini<lb/>a questa biforcazione, più alla regione di<lb/>Sirio che alla costellazione dell&#x2019;Aquila, quasi<lb/>a mezzo l&#x2019;estensione del materiale volume del-<lb/>lo strato, cioè in direzione del suo asse minore.
+            </p>
+            <p>
+                Sì questo luogo del nostro sistema solare,<lb/>che la forma dell&#x2019;intera lente sono argomen-<lb/>tati dagli stazati aggruppamenti siderei, cioè<lb/>a dire dagli annoveramenti di quelle stelle,<lb/>onde è parola più sopra, le quali si riferi-<lb/>scono a medesimezza di dimensioni nel cam-<lb/>po visuale del telescopio. La crescente o sce-<lb/>mante congerie di stelle misura la profon-<lb/>dità dello strato secondo le varie direzioni.<lb/>Così gli stazamenti suddetti ci danno la lun-<lb/>ghezza del raggio visuale, quasi la lunghez-<lb/>za a volta a volta del gittato scandaglio,<lb/>quando esso deve aggiungere la base dello<lb/>strato siderale, o per usare più filosofico con-<lb/>cetto, l&#x2019;esterna limitazione, perocché ivi non<lb/>è nè alto nè basso. Nella direzione dell&#x2019;asse<lb/>longitudinale, laddove più stelle l&#x2019;una all&#x2019;al-<lb/>tra soggiaciono, l&#x2019;occhio ie intravede fittamente<lb/>compatte, come dispiegantisi per un latteo<lb/>splendore, (vapore luminoso), e poste prospet-<lb/>tivamente sopra l&#x2019;apparente volta del cielo in<lb/>una fascia che interamente il circonda. Questa<lb/>stretta e biforcuta fascia, la quale gitta splen-<lb/>dida ma ineguale chiarità, da oscuri luoghi<lb/>interrotta, devia nella concava sfera dell&#x2019; uni-<lb/>verso solo di pochi gradi da un circolo mas-<lb/>simo, ed è perciò che noi ci troviamo pros-<lb/>simi al centro dell&#x2019;intiero cumulo, e quasi nel<lb/>piano stesso della via lattea: se il nostro si-<lb/>stema planetario si dilungasse fuori del cu-<lb/>mulo siderale, allora ad occhio armato di te-<lb/>lescopio Galassia renderebbe similitudine di<lb/>anello; che se il sistema vieppiù distasse,<lb/>ella apparirebbe una indecomponibile nebu-<lb/>losa a forma di disco.
+            </p>
+            <lb/>
+            
+            <pb n="19" facs="#f0006" />
+            <p>
+                Fra i molti soli mutabili di luogo e per<lb/>sè rifulgenti (che il volgare errore chiama<lb/>stelle fisse), i quali costituiscono la nostra<lb/>isola mondiale, il nostro è l&#x2019;unico che noi<lb/>per diretti cimenti abbiamo scoperto esse-<lb/>re corpo centrale in relazione con quella<lb/>conglobata materia (conglobata a varie forme,<lb/>o di pianeti, o di comete, o di asteroidi ae-<lb/>reolitiformi), la quale da lui immediatamente<lb/>dipende e intorno a lui si rivolge. Nelle stelle<lb/>molteplici (come a dire soli doppj o stelle,<lb/>doppie), per quanto le ci sien conte fin qui,<lb/>non domina la medesima dipendenza che re-<lb/>gola i fenomeni e di movimento e di luce, e<lb/>forma il carattere del nostro sistema pla-<lb/>netario. Due e più soli onde le lune e i pia-<lb/>neti (se pure sono) si velano alla potenza<lb/>visiva dei nostri telescopj, aggiransi certa-<lb/>mente anche qui intorno un comune centro<lb/>di gravità: ma questo centro cade in uno spa-<lb/>zio ripieno forse di non conglobata materia<lb/>(vapore mondiale), mentre nel nostro siste-<lb/>ma solare esso è sovente contenuto nel più<lb/>interno limite di un visibile corpo centra-<lb/>le. Chi consideri o il sole e la terra, o la<lb/>terra e la luna come stelle doppie, e il<lb/>nostro sistema solare come un molteplice<lb/>gruppo stellare, quella analogia, che è e-<lb/>vocata da tale denominazione, si estende sol-<lb/>tanto ai movimenti al tutto indipendenti dai<lb/>processi luminosi e dal modo di iradiazione,<lb/>movimenti che convengono ai varj ordini dei<lb/>diversi sistemi d&#x2019;attrazione.
+            </p>
+            <p>
+                Secondo questa generalitade di cosmiche<lb/>vedute, quale addicesi al disegno di un qua-<lb/>dro mondiale, il <hi rendition="#i">sistema solare</hi>, a cui la<lb/>terra appartiene, può considerarsi sotto due<lb/>aspetti: primamente riguardo le varie classi di<lb/>individualizzata e conglobata materia, le gran-<lb/>dezze, la forma, la densità, la reciproca di-<lb/>stanza dei mondiali corpi di questo sistema:<lb/>secondamente riguardo il nesso colle altre parti<lb/>del nostro strato siderale, e il mutare di luo-<lb/>go che fa il corpo centrale entro questo strato.
+            </p>
+            <cb/>
+            <p>
+                Il <hi rendition="#i">sistema solare</hi>, cioè la variamente<lb/>plasmata materia che intorno al sole s&#x2019;ag-<lb/>gira, consta, secondo l&#x2019;odierna contezza, di<lb/>undici <hi rendition="#i">pianeti</hi>, diciotto lune o <hi rendition="#i">satelliti</hi>, e<lb/>miriadi di <hi rendition="#i">comete</hi>, tre delle quali, le <hi rendition="#i">plane-<lb/>tarie</hi>, non oltrepassano la poca contenenza<lb/>dei pianeti. Secondo non lievi verosimiglian-<lb/>ze noi possiamo addire al sistema del nostro<lb/>sole, cioè alla immediata sfera d&#x2019;efficienza<lb/>della sua virtù attratrice: 1.&#x00B0; Un roteante<lb/>anello di materia vaporosa, forse locato tra<lb/>le orbite di Venere e Marte, senza forse in-<lb/>tersecante l&#x2019;orbita della terra, e parvente a<lb/>noi a foggia piramidale, come <hi rendition="#i">luce del zo-<lb/>diaco:</hi> 2.&#x00B0; Una moltitudine di piccolissimi<lb/>asteroidi, le cui orbite o intersecano od ap-<lb/>procciano assai l&#x2019;orbita della terra, e ci appa-<lb/>jono sotto forma di aeroliti, meteoroliti,o stelle<lb/>cadenti. La simultanea comprensione delle<lb/>complicate forme, le quali con molto diversa<lb/>orbita, e più o meno eccentrica si rivolgono in-<lb/>torno sole,quando non ci sforzi ad opinare<lb/>coll&#x2019;immortale autore della <hi rendition="#i">Mecanique Cele-<lb/>ste</hi>; che il più delle comete siano nebulose,<lb/>vaganti dall&#x2019;uno all&#x2019;altro dei sistemi centrali,<lb/>induce credenza che il sistema ordinariamente<lb/>detto <hi rendition="#i">planetario</hi>, cioè a dire il gruppo dei<lb/>corpi cosmici che insieme al loro corteggio<lb/>di lune descrivono orbite lievemente eccen-<lb/>triche intorno al sole, altro non sia che poca<lb/>parte del grande sistema, poca rispetto al nu-<lb/>mero degli individui, non alla massa.
+            </p>
+            <p>
+                I <hi rendition="#i">pianeti telescopici</hi> Vesta, Giunone,<lb/>Cerere e Pallade, aventi orbite fra loro in-<lb/>crociantisi, e forte inclinate e più eccentriche,<lb/>fu chi li considerasse come una interposta zona<lb/>di scompartimenti di spazio nel nostro pla-<lb/>netario sistema, come un <hi rendition="#i">gruppo mediano</hi>.<lb/>Secondo questa veduta, spiccano molti salienti<lb/>contrasti fra il gruppo planetario <hi rendition="#i">interno</hi><lb/>(Mercurio, Venere, Terra e Marte) e l&#x2019;esterno<lb/>(Giove, Saturno e Urano). Gli interni pianeti,<lb/>più al sole vicini, hanno moderata la gran-<lb/>dezza, molta la densità, lento e quasi uguale il
+            </p>
+            <cb/>
+            <p>
+                tempo di rotazione (24 ore o in quel torno)<lb/>meno sferoidale la forma, e van scemi di lune<lb/>tranne la Terra. Gli esterni più dalla lunga<lb/>del sole sono a dismisura più vasti, meno densi<lb/>del quintuplo, volgentisi intorno al proprio<lb/>asse con più che doppia rattezza, quindi assai<lb/>più sferoidali, e corteggiati da lune nel rap-<lb/>porto di diciassette a uno, se ad Urano con-<lb/>seguono veramente sei satelliti.<lb/><lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="22" facs="#f0007" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4 e 5)</hi>
+            </p>
+            <lb/>
+            <p>
+                Queste universali considerazioni intorno<lb/>certe caratteristiche proprietà dei gruppi, inte-<lb/>gralmente concetti, non possono con eguale<lb/>dirittura applicare ai singoli pianeti di ogni<lb/>gruppo, ned ai rapporti tra la <hi rendition="#i">distanza</hi> dal<lb/><hi rendition="#i">corpo centrale</hi> e la grandezza assoluta, la den-<lb/>sità, il tempo di rotazione, l&#x2019;eccentricità, l&#x2019;in-<lb/>clinazione di orbita e di asse in quei corpi rotean-<lb/>ti. Uomo non colse fin ora alcuna intima ne-<lb/>cessità, alcuna naturale legge meccanica,(come<lb/>a mo&#x2019; d&#x2019;esempio la bella legge per che i qua-<lb/>drati del tempo di rivoluzione sono vincolati<lb/>alla radice cubica dell&#x2019;asse maggiore), la quale<lb/>obbligasse dipendenza di sorta dei testè nomi-<lb/>nati sei elementi dei corpi planetarii e della<lb/>forma di loro orbite; o vuoi tra di loro, o<lb/>vuoi colle loro medie distanze. Marte è men<lb/>vasto di Terra e di Venere, pure gli è più<lb/>lontano dal Sole, e fra tutti i pianeti mag-<lb/>giori cogniti all&#x2019;antichità è nella grandezza<lb/>del diametro il più conforme a Mercurio, che<lb/>pure dilungasi meno dal Sole; Saturno cede<lb/>di grandezza a Giove ma soverchia di molto<lb/>Urano. La zona dei pianeti telescopici, così po-<lb/>chi nel volume, giace immediatamente prima<lb/>di Giove, il vastissimo dei pianeti, e giace in<lb/>distanze scalari, le quali iniziano dal Sole; tut-<lb/>tavolta le più di quelle piccole asteroidi, a di-<lb/>sco poco misurabili, hanno superficie vincente<lb/>di poco la metà di Francia, Madagascar o Bor-<lb/>neo. Per saliente che sia la smisuratamente<lb/>minima densità di tutti i colossali pianeti più<lb/>remoti dal Sole, nulladimeno per iscrutarli che<lb/>altri facesse non vi si sorprese per anco una
+            </p>
+            <cb/>
+            <p>
+                regolare gradazione. Urano sembra più denso<lb/>che Saturno, quand&#x2019;anche uomo addotti la mi-<lb/>nima deterimnazione di sua massa, che è quella<lb/>di Lamont l@24603; e come che la differenza<lb/>di densità nel gruppo planetario interno sia<lb/>anzi lieve che no, noi scopriamo al di qua ed<lb/>al di là della Terra, si Venere che Marte ce-<lb/>derle nella compatezza.
+            </p>
+            <p>
+                Il tempo di rotazione diminuisce in ge-<lb/>nerale col crescere la lontananza dal sole, pure<lb/>è più grande in Marte che in Terra, più in<lb/>Saturno che in Giove. La più forte eccentri-<lb/>cità fra tutti i pianeti, discernesi nelle elitti-<lb/>che orbite, di Giunone, Pallade e Mercurio,<lb/>la minima poi in quelle di Venere e Terra, due<lb/>pianeti di immediata vicinanza. Mercurio e<lb/>Venere presentano dunque quel medesimo<lb/>contrasto che le quattro asteroidi strettamente<lb/>intrecciate nelle loro orbite. La eccentricità di<lb/>Giunone e di Pallade, molto l&#x2019;una all&#x2019;altra sem-<lb/>biante, è il triplo dell&#x2019;eccentricità di Cerere e<lb/>di Vesta. Il medesimo avviene della inclina-<lb/>zione delle relative orbite al piano della eclit-<lb/>tica e della inclinazione degli assi alle rispet-<lb/>tive orbite; inclinazione a cui, più assai che<lb/>alla eccentricità, si debbono recare i rapporti<lb/>di clima, di stagione, e di durata diurna. Le<lb/>orbite a più allungata elissi, che è quanto dire<lb/>quelle di Giunone, Pallade e Mercurio, hanno<lb/>anche, benché in disuguale rapporto, la mag-<lb/>giore inclinazione dell&#x2019;orbita nell&#x2019;eclittica. L&#x2019;in-<lb/>clinazione dell&#x2019;orbita di Pallade partecipa di<lb/>quelle delle comete, ed è vensei volte maggio-<lb/>re della inclinazione dell&#x2019;orbita di Giove, men-<lb/>tre non ne è maggiore che del sestuplo quella<lb/>della piccola Vesta tanto procciana di Pallade.<lb/>Nè regolare degradazione fu potuta discernere<lb/>nell&#x2019; inclinazione degli assi dei pochi pianeti<lb/>(4 fino a 5) del cui piano di rotazione gli<lb/>astronomi hanno piena contezza. Chi facesse<lb/>induzione dalla postura dei satelliti di Urano,<lb/>due dei quali (il secondo e il quarto) vennero<lb/>riveduti con certezza a&#x2019; di nostri, l&#x2019;asse del più<lb/>esterno dei pianeti inclinerebbe verso l&#x2019;orbita<lb/>sua forse appena di 11, e Saturno trovasi in<lb/>questi rapporti mezzo tra Giove, il cui asse<lb/>di rotazione è quasi perpendicolare all&#x2019;orbita,<lb/>ed Urano nel quale evvi quasi coincidenza di<lb/>asse e di orbita.
+            </p>
+            <p>
+                Il mondo delle forme in questa esposi-<lb/>zione dei rapporti dello spazio e dipinto come   
+            </p>
+            <lb/>
+            
+            <pb n="23" facs="#f0008" />
+            <p>
+                alcunchè di reale, alcunchè di essente in na-<lb/>tura, e non punto come un moro obbietto di<lb/>intellettiva contemplazione dell&#x2019;intima concate-<lb/>nazione perscrutata in sua origine. Il sistema<lb/>planetario nei suoi rapporti di assoluta gran-<lb/>dezza e relativa inclinazione di asse, di com-<lb/>patezza, tempo di rotazione, varia differenza<lb/>nella eccentricità delle orbite non ha, secondo<lb/>l&#x2019;umano comprendere, causale necessità di<lb/>sussistenza più che non abbiano la quantita-<lb/>tiva compartizione di terra e mare sul nostro<lb/>sferoide, e il contorno dei continenti, e l&#x2019;al-<lb/>tezza delle montane catene. Legge universale<lb/>non iscopresi in questo rapporto nè negli spa-<lb/>zii del cielo, nè nelle ineguaglianze della ter-<lb/>racquea crosta. Effetti di natura son questi e-<lb/>mersi dal conflitto di molteplici forze, che una<lb/>volta operarono con condizioni all&#x2019;umano in-<lb/>telletto incomprese. E per ciò appunto appare<lb/>a noi mortali accidentale nella formazione dei<lb/>pianeti ciò tutto onde natura ne invidiò di<lb/>scoprire le origini. Se di singoli e gazeiformi<lb/>anelli intorno al sole aggirantisi si vennero<lb/>plasmando i pianeti, egli non è inverosimi-<lb/>glianza che la disforme grossezza, la disuguale<lb/>densità, la temperatura, la tensione elettroma-<lb/>gnetica di questi anelli abbiano cagionata co-<lb/>tanto maravigliosa varietà di forme nella con-<lb/>globata materia; e che il quanto della forza<lb/>tangenziale e il suo piccolo modificarsi rispetto<lb/>la direzione originassero svariatissime forme e<lb/>svariatissime inclinazioni alle elissi orbitali.<lb/>Attrazioni di massa e leggi di gravità operarono<lb/>senza fallo in questa formatrice elaborazione,<lb/>al pari ebe nei geognostici rapporti dell&#x2019;emer-<lb/>gere dei continenti; ma sarebbe troppo ardita<lb/>induzione il volere dalla attuale forma delle<lb/>cose argomentare l&#x2019;intiero di quella scala di<lb/>modificazioni, che quei corpi precorsero in-<lb/>dubbiamente innanzi al comporsi quali ora<lb/>gli ammiriamo. Anche la così detta legge delle<lb/>distanze planetarie del sole, quella catena, in<lb/>cui dallo scemo di un anello la maravigliosa<lb/>mente di Keplero divinava l&#x2019;esistenza di un<lb/>pianeta occupante lo spazio tra Marte e Giove,
+            </p>
+            <cb/>
+            <p>
+                la ci risulta aritmeticamente inesatta per la di-<lb/>stanza fra Mercurio, Venere e la Terra, e ri-<lb/>pugnante al concetto di un regolare progres-<lb/>so, a cagione della supposta prima potenza.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="28" facs="#f0009" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4, 5 e 6)</hi>
+            </p>
+            <lb/>
+            <p>
+                Gli undici pianeti fin qui disvelati e in-<lb/>torno al nostro sole volgentesi, hanno corteo<lb/>certo di 14, verosimilmente di 18 pianeti se-<lb/>condarii (lune o satelliti). Il perchè que&#x2019;pianeti<lb/>riescono alla lor volta corpi centrali di un si-<lb/>stema a loro subordinato. Noi riconosciamo<lb/>qui medesimezza di processo formativo collo<lb/>svilupparsi dell&#x2019;organica vita nei tanto varia-<lb/>mente composti gruppi d&#x2019;animali e di piante,<lb/>e nella tipica riproduzione delle rispettive su-<lb/>bordinate sfere. I pianeti secondarii si con-<lb/>tano più numerosi nella esterna regione del<lb/>sistema planetario, cioè al di là delle fra loro<lb/>intrecciate orbite degli asteroidi. Tulli i pia-<lb/>neti al di qua son manchi di lune, tranne<lb/>la terra onde il satellite è comparativamente<lb/>grandissimo, come quello che ha diametro,<lb/>equivalente al quarto di quel della terra, men-<lb/>tre per converso il grandissimo dei conti satel-<lb/>liti, vo&#x2019;dire il sesto di Saturno è forse a gran<lb/>pena, secondo suo diametro 1@17 di suo pia-<lb/>neta o corpo centrale, e il massimo tra quei<lb/>di Giove, dico il terzo, appena ne è 1@26. I<lb/>più lontani dei pianeti, che sono gli eccellenti
+            </p>
+            <cb/>
+            <p>
+                per grandezza, rarezza e schiacciamento di<lb/>forma, hanno pure maggioro corteggio di lu-<lb/>ne. Chi stesse alle recentissime misure di Mäd-<lb/>ler, Urano è il più sferoidale dei pianeti 1@992.<lb/>Nella terra e sua luna, onde la media distanza<lb/>importa 81,800 leghe geografiche il divario,<lb/>e di diametro e di mossa è assai più lieve,<lb/>che noi non usiamo scorgere tra gli altri<lb/>pianeti e loro satelliti, e tra i corpi di vario<lb/>ordine nel sistema solare; perciocché men-<lb/>tre la densità della luna è di 5@9 minore a<lb/>quella della terra, egli è certo avviso, chi<lb/>voglia aggiustar fede ai cimenti di grandezza<lb/>e di masse, che la seconda delle lune cor-<lb/>teggianti Giove sia il doppio più densa del<lb/>suo pianeta.
+            </p>
+            <p>
+                Delle 14 lune i cui rapporti vennero con<lb/>qualche certezza scrutati, il sistema dei 7 sa-<lb/>telliti di Saturno presenta l&#x2019;esempio de&#x2019; più<lb/>spiccati contrasti, sì nell&#x2019;assolute grandezze e<lb/>sì nelle distanze dal pianeta. Il sesto di Sa-<lb/>turno, non è secondo probabilità molto più<lb/>piccolo di Marte, mentre la nostra luna ha<lb/>diametro rispondente alla metà del diametro<lb/>di Marte. Rispetto poi al volume, il terzo, che<lb/>è il fulgidissimo dei satelliti di Giove, somi-<lb/>glia ai due più esterni di Saturno, cioè al se-<lb/>sto ed al settimo, viceversa i due più interni<lb/>di Saturno (veduti la prima fiata nel 1789 da<lb/>Guglielmo Herscel con un telescopio di 40<lb/>piedi, riveduti poi al capo di Buona Speranza<lb/>da Giovanni Herscel, a Roma da Vico, ed a<lb/>Monaco da Lamont) si vogliono annoverare,<lb/>oltre le lontanissime lune d&#x2019;Urano, tra i più<lb/>piccoli corpi mondiali del nostro sistema di-<lb/>stinguibili solo a propizie contingenze e a can-<lb/>nocchiali efficacissimi. Tutte le determinazioni<lb/>del vero diametro dei saltellili e la deriva-<lb/>zione di quelle dalla misura della apparente<lb/>grandezza di sì piccoli dischi, soggiacciono a<lb/>molte ottiche difficoltà; e la calcolatrice astro-<lb/>mia, la quale determina anticipatamente le<lb/>movenze dei corpi celesti, quali noi le coglie-<lb/>remo dal nostro punto di osservazione sulla<lb/>terra, la si occupa molto del moto e della mas-<lb/>sa, e poco del volume.
+            </p>
+            <p>
+                La distanza assoluta di una luna dal suo<lb/>pianeta è massima nel più esterno, cioè nel
+            </p>
+            <cb/>
+            <p>
+                settimo satellite di Saturno; ella soverchia<lb/>un mezzo milione di leghe geografiche, il<lb/>decuplo dello spazio intercedente fra la terra<lb/>e sua luna. A Giove dista il suo più esterno<lb/>satellite (il quarto) solo 260000 leghe, a<lb/>Urano invece il suo sesto satellite, se il sesto<lb/>satellite è, dista 340000 leghe. Comparando<lb/>poi in ciascuno di questi subordinati sistemi<lb/>il volume del pianeta colla lontananza del-<lb/>l&#x2019;orbita più esterna che una sua luna descriva,<lb/>risultano rapporti numerici al tutto disformi;<lb/>imperocché espresse in semidiametri del pia-<lb/>neta le distanze degli ultimi satelliti di Urano.<lb/>Saturno e Giove stanno come 91,64 e 27. Il<lb/>più esterno satellite di Saturno appare dilun-<lb/>gantesi dal suo corpo centrale un minimo, più<lb/>che non faccia la luna dalla lerra, cioè 1@13.<lb/>Il satellite più prossimano al suo pianeta è<lb/>senza fallo il primo, voglio dire il più interno<lb/>di quei di Saturno, il quale ci mostra pure<lb/>l&#x2019;unico esempio della durata di rivoluzione<lb/>minore di 24 ore. Secondo i cimenti di Mäd-<lb/>ler e di Beer la sua distanza dal centro del pia-<lb/>neta, espressa in semidiametri di Saturno è<lb/>di 247, in leghe è di 20022, la distanza della<lb/>superficie dal pianeta è quindi sol 11870, la<lb/>distanza della più esterna cerchia dell&#x2019;anello<lb/>può calcolarsi solo a 1229. Assai lievemente<lb/>concepe così piccoli spazii un viaggiatore, a&#x2019;cui<lb/>ricordi della frase di quell&#x2019;arditissimo naviga-<lb/>tore che fu il capitano Beechey, il quale rac-<lb/>conta come tre anni gli bastassero a percorrere<lb/>18200 leghie geografiche; chi poi a sua misura<lb/>non operasse le distanze assolute, ma i semidia-<lb/>metri del pianeta sì troverebbe che anche la<lb/>prima o la più prossima luna di Giove, la quale<lb/>va di lungi al centro del suo pianeta 6300<lb/>leghe, più che non vada la nostra luna dalla<lb/>terra, distà nulla meno dal suo centro solo il<lb/>sestuplo del mezzo diametro di Giove, mentre<lb/>la nostra luna è remota dalla terra ben 60<lb/>l@3 semidiametri di questa.
+            </p>
+            <lb/>
+            <p>
+                <hi rendition="#right"><hi rendition="#i">Sarà continuato.</hi></hi> 
+            </p>
+            <lb/>
+            
+            <pb n="32" facs="#f0010" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4, 5, 6 e 7)</hi> 
+            </p>
+            <lb/>
+            <p>
+                Nei subordinati sistemi dei satelliti, no-<lb/>mati anche pianeti secondarii, si riproducono<lb/>secondo i varii rapporti col pianeta principale<lb/>e fra loro tutte le leggi d&#x2019;attrazione, le quali<lb/>signoreggiano i pianeti rivolgentisi al sole. Le<lb/>12 lune di Saturno, Giove e Terra, si movono<lb/>tutte, siccome i loro pianeti, d&#x2019;occidente in<lb/>oriente, e sopra elissi quasi circolari: solamente<lb/>la nostra luna, e probabilmente il primo cioè<lb/>il più intimo dei satelliti di Saturno (0, 0 68)<lb/>hanno eccentricità più che Giove, e il sesto<lb/>satellite di Saturno tanto intentamente scru-<lb/>tato da Bessel (0, 0 29) più che la Terra. Ai<lb/>confini più esterni del sistema solare, confini<lb/>ove la virtù attrattiva del sole per 19 distanze<lb/>dalla terra e già notevolmente scemata il si-<lb/>stema dei satelliti di Urano, sistema non ab-<lb/>bastanza investigato, presenta spiccati contra-<lb/>sti. Perciocché mentre le altre lune non meno<lb/>che le orbite planetarie inclinano poco all&#x2019;ec-<lb/>clitica, e si volgono d&#x2019;occidente in oriente, nou<lb/>eccettuati gli anelli di Saturno (quasi costipati<lb/>o indivisi satelliti) le orbite delle lune di U-<lb/>rano ci appajono quasi perpendicolari sull&#x2019;e-<lb/>clitica e roteare, come per annuali indagini pro-<lb/>vava Giovanni Herscel, in senso retrogrado, cioè
+            </p>
+            <cb/>
+            <p>
+                da oriente in occidente. Se da roteanti anelli<lb/>vaporosi emersi da antiche atmosfere solari e<lb/>planetarie, si vennero per costipatrice virtù<lb/>plasmando i pianeti e loro satelliti, egli è me-<lb/>stieri concludere che negli anelli nebulosi cir-<lb/>colanti ad Urano, misteriose e singolari relazioni<lb/>di ritardo e di rimbalzo adoperarono sì da impri-<lb/>mere originariamente alla rotazione del 2.&#x00B0; e<lb/>4.&#x00B0; satellite di Urano una sì fatta tendenza op-<lb/>posta alla rotazione del corpo centrale.
+            </p>
+            <p>
+                In tutti i pianeti secondarii probabilissi-<lb/>ma cosa è che il periodo di rotazione sia e-<lb/>guale al periodo di rivoluzione, di modo che<lb/>rivolgano sempre lo stesso emisfero al corpo<lb/>centrale. Ondulazioni di 6 a 8 gradi (una ap-<lb/>parente librazione) sì in longitudine che in<lb/>latitudine cagionano disugualianze per con-<lb/>seguente di lievi alterazioni nella rivoluzione;<lb/>così a mo&#x2019; d&#x2019;esempio noi discerniamo ad ora<lb/>ad ora nella luna più che mezza la sua su-<lb/>perficie, alle fiate più de&#x2019; suoi strati nordici<lb/>ed orientali, talora più degli occidentali e me-<lb/>ridionali, per la librazione fannosi a noi più par-<lb/>venti il monte annullare Mallapert che adom-<lb/>bra spesso alla luna il polo meridionale, e<lb/>l&#x2019;artica regione intorno al cratere Giola e la<lb/>grande e cinerea pianura vicina ad Endimio-<lb/>ne, la quale per superficie quadrate soverchia<lb/>il Mare Vaporum. Pure 3@7 della superficie<lb/>lunare sono disperati a vedersi dagli uomini,<lb/>se già imprevedibili perturbatrici potenze non<lb/>condizionassero altrimenti quel satellite. Que-<lb/>sti cosmici rapporti provocano involontaria-<lb/>mente il senso di alcunchè d&#x2019;eguale nel mon-<lb/>do intellettivo, dico nei fenomeni del pensiero,<lb/>dove (nel dominio della profonda perscrutazio-<lb/>ne sopra le misteriose potenze effettrici della<lb/>natura e sopra la primigenia forza creatrice)<lb/>havvi solitarie regioni che inconquistabili sem-<lb/>brano, dalle quali già da miriadi d&#x2019;anni lam-<lb/>peggiò incertamente di tempo in tempo alla<lb/>stirpe degli umani una languida orma di talor<lb/>veri e talor falsi bagliori.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="37" facs="#f0011" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4, 5, 6, 7 e 8)</hi> 
+            </p>
+            <p>
+                I pianeti e loro satelliti e le arcuate for-<lb/>me dei concentrici anelli, i quali appartengono<lb/>per lo meno ad uno dei più esterni pianeti,<lb/>furono fino ad ora avvisati per noi siccome<lb/>prodotti di una centrifuga forza, e siccome<lb/>l&#x2019;uno all&#x2019;altro collegati per lo stretto vincolo<lb/>di reciproca attrazione. Or ne rimane a no-<lb/>mare l&#x2019;innumerabile esercito di comete tra<lb/>quei corpi mondiali che circolano al sole<lb/>e dal sole risplendono. Chi secondo il calcolo
+            </p>
+            <lb/>
+            
+            <pb n="38" facs="#f0012" />
+            <p>
+                dei probabili argomentasi di trovare equabile<lb/>divisione di loro orbite, confini di loro perie-<lb/>lii (vicinanza massima al sole) e possibilità del<lb/>loro involarsi alto sguardo degli uomini, vien<lb/>discoprendo un numero così smisurato di<lb/>miriadi che maraviglia la fantasia. Keplero<lb/>con una di quelle vivacissime frasi, che erano<lb/>tutta sua rosa, diceva: più comete ha negli<lb/>spazii del mondo, che pesci nell&#x2019;Oceano. Finora<lb/>le annoverate orbite, ammontano appena a<lb/>130, mentre a 6 o 700 si calcola il nume-<lb/>ro delle comete, la cui parvenza e il cui corso<lb/>traverso cogniti asterismi sonosi, per indi-<lb/>zio più o meno preciso, accertati. Mentre le<lb/>così delle classiche nazioni dell&#x2019; Occidente,<lb/>Greci e Romani, segnarono sovente il dove una<lb/>cometa facesse primamente parvenza nei cieli<lb/>e non avvertirono la sua orbita apparente,<lb/>quella doviziosa letteratura dei Chinesi, ci-<lb/>mentatori e annotatori di ogni fenomeno di<lb/>natura ingegnosissimi, ci porge circostanziate<lb/>notizie intorno al corso seguito da ciascuna<lb/>cometa tra le varie costellazioni. Tali notizie<lb/>aggiungono oltre a 5 secoli avanti Cristo, e<lb/>molte di quelle vengono usate tutto giorno da-<lb/>gli astronomi.
+            </p>
+            <p>
+                In tutti i corpi planetarii le comete anche<lb/>a massa minima (secondo i singoli cimenti<lb/>usati fin qui molto al disotto di <formula notation="TeX">\frac{1}{300}</formula> della<lb/>massa terracquea) con esso le loro code a<lb/>distesa di milioni di leghe, e meravigliosa-<lb/>mente dilatate adempiono spazii inconcepibi-<lb/>li; il cono vaporoso riflettente luce, emanato<lb/>dalle comete fu talora (1680, 1611) avvisato<lb/>sì lungo, quanto la terra si lontana dal sole,<lb/>una linea la quale intersechi due orbite pla-<lb/>netarie, cioè la di Venere, e la di Mercurio; egli<lb/>è fin anche verisimile che nel 1819 e nel<lb/>1823, alla nostra atmosfera siasi immischiato<lb/>il vapore caudale delle comete.
+            </p>
+            <p>
+                Anche le comete presentano così varie<lb/>le forme, spesso appartenenti più all&#x2019;indivi-<lb/>duo che alla specie, che la descrizione di una<lb/>di queste <hi rendition="#i">pellegrine nubi luminose</hi>, (così no-<lb/>maronle Zenofonte e Teone d&#x2019;Alessandria il<lb/>coevo di Pappo) solo con grandissima cautela<lb/>può applicarsi ad un&#x2019; altra: le più deboli co-<lb/>mete telescopiche sotto per lo più senza ef-
+            </p>
+            <cb/>
+            <p>
+                flusso caudale visibile, e somigliano alla <hi rendition="#i">ne-<lb/>bula stellare</hi> di Herscel. Elle costituiscono<lb/>una nebbia rotonda clanguidamente smagliante<lb/>con luce condensata verso il centro; questo<lb/>ne è il tipo più semplice, ma perciò appunto<lb/>egli non è tipo elementare delle comete, più<lb/>che lo sia di qual si voglia invecchiante corpo<lb/>mondiale esausto per evaporizzazione. Nelle<lb/>più grandi comete @ distingue la <hi rendition="#i">chioma</hi><lb/>o come dicono il <hi rendition="#i">nucleo</hi> della <hi rendition="#i">coda</hi> o sem-<lb/>plice o molteplice, che gli astronomi chinesi<lb/>chiamano con bella ipotiposi <hi rendition="#i">la scopa</hi> (<hi rendition="#i">sui</hi>). Il<lb/>nucleo è presso che sempre incircoscritto,<lb/>come che egli spiccasse per sua flammolenza<lb/>anche a pieno meriggio, qual stella di prima<lb/>e seconda grandezza nelle comete del 1402,<lb/>1532. 1577, 1744, 1843. Quest&#x2019;ultima cir-<lb/>costanza ne testimonia esistere nei singoli<lb/>individui una più soda massa possibile di in-<lb/>tensa riflessione di luce. E difatti nel grande<lb/>telescopio di Herscel apparvero due sole co-<lb/>mete simili ad un disco nettamente contor-<lb/>nato, quella svelata in Sicilia nel 1807, e quella<lb/>del 1811, l&#x2019;una sotto un angolo di 1, l&#x2019;altra<lb/>di 0 77, mentre l&#x2019;effettivo diametro risulte-<lb/>rebbe di 134 e 167 leghe. Le due comete a<lb/>meno salienti periferie la del 1798 e la del<lb/>1705 non avevano diametro maggiore di 6<lb/>in 7 miglia. In assai comete abbastanza scrii-<lb/>tate e più peculiarmente nella più sopra no-<lb/>mata, e sì a lungo contemplata del 1811 tra<lb/>il nucleo e la sua invoglia nebulosa interce-<lb/>deva nettissimo un più oscuro spazio di coda.<lb/>L&#x2019;intensità della luce nel nucleo delle come-<lb/>te non cresce con eguale graduazione fino al<lb/>centro; zone assai corrusche sono in vario<lb/>modo suddivise da concentrici velami nebulo-<lb/>si. Talora semplici e talora doppie parvero le<lb/>code, ma rado e (1807, 1843) a disugualis-<lb/>sime lunghezze dei due rami, una volta sesti-<lb/>forme, (1744) (con apertura di 60 gradi);<lb/>rettilinea o curvata, sia alle due bande, verso<lb/>il di fuori, (1811) o conversa alla parte (1618)<lb/>ove la cometa si indirizza, alle volte anche ser-<lb/>pegiante a guisa di fiamma. Esse poi sono<lb/>sempre così avverse dal sole, che il loro asse<lb/>prolungato ne toccherebbe il centro, avver-<lb/>tenza fatta fino dall&#x2019;anno 837 per gli stella-
+            </p>
+            <cb/>
+            <p>
+                tori Chinesi, come avvisa Eduardo Biot, e an-<lb/>nunziata poi nel 16.&#x00B0; secolo con più determi-<lb/>nata guisa da Fracastoro e da Pietro Appiano.<lb/>Egli è ragionevole considerare le emanazioni<lb/>come conoidiformi, invoglie a pareti più o<lb/>meno spesse, che è tale ipotesi, per cui molti<lb/>fenomeni dell&#x2019;ottica si spieghino lievemente.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>     
+            </p>
+            <lb/>
+            
+            
+            <pb n="42" facs="#f0013" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4, 5, 6, 7, 8 e 9)</hi> 
+            </p>
+            <lb/>
+            <p>
+                Ma le singole comete non sono così spic-<lb/>catamente distinte solo dalla forma (senza vi-<lb/>sibile coda o con coda di 124&#x00B0; in lunghezza,<lb/>come nella terza dell&#x2019;anno 1618) che anzi<lb/>noi veggiamo l&#x2019;identica cometa in apparizioni<lb/>a poco intervallo successive soggiacere a va-<lb/>riabili processi formativi; questo mutare di<lb/>forme venne amplissima ed egregiamente de-<lb/>scrìtto nella cometa del 1744 da Einsio in<lb/>Pietroburgo, e da Bessel in Conigsberga nel-<lb/>l&#x2019;ultimo apparimento che fece la cometa di<lb/>Halley nel 1833. Nella anteriore parte del<lb/>nucleo converso al sole appariva arcuantesi<lb/>emanazione simile, ora più ora meno, ad un<lb/>fiocco. I raggi della parte posteriore forma-<lb/>vano una parte della coda: il nucleo della co-<lb/>meta di Halley e le sue emanazioni rendevano<lb/>somiglianza di razzo projettato a cui vento<lb/>contrario pieghi in alcuna parte la coda. I<lb/>raggi effluenti dal nucleo Arago ed io li ve-<lb/>demmo dalla specula di Parigi nella succes-<lb/>sione di varie notti atteggiarsi diversamente.<lb/>Il grande astronomo di Conigsberga da molti-<lb/>formi misure e da teoretiche considerazioni<lb/>argomenta che &#x00AB;il cono luminoso devia sì a
+            </p>
+            <lb/>
+            
+            <pb n="43" facs="#f0014" />
+            <p>
+                stanca che a destra dalla direzione verso il<lb/>sole, ma imessa ritorna pur sempre per quin-<lb/>di oscillare dall&#x2019;altra parte, e che per conse-<lb/>guente si il cono e sì la cometa, che lo produce<lb/>ed espelle, patiscono movimento di vibrazione<lb/>o più presto di ondulazione nel piano dell&#x2019;or-<lb/>bita: &#x00BB; induce quindi &#x00BB; la solita virtù attrattiva<lb/>del sole, la quale si esercita sui corpi gravanti<lb/>verso lui, non bastare a spiegazione di queste<lb/>ondulazioni; anzi essergli avviso che le co-<lb/>mete posseggano una forza polare efficace a<lb/>voltarne al sole un emisfero e a distornarne<lb/>l&#x2019;altro: la magnetica polarità, onde è affetta la<lb/>terra, presentarci qualche cosa di analogo, e<lb/>qualora i contrapposti della tellurica polarità<lb/>si dovessero riferire al sole, uom ne vedrebbe<lb/>la relativa influenza nella precessione degli<lb/>equinozii &#x00BB;. Luogo non è questo da scrutare<lb/>più addentro i fondamenti sui quali basano sì<lb/>fatte spiegazioni consone ai fenomeni. Ma gran<lb/>fallo sarebbe stato ad ommettere in questo di-<lb/>segno di un universale quadro della natura<lb/>avvertenze tanto degne di profonda medita-<lb/>zione, e cotanto ingegnosa ipotesi sopra la<lb/>più meravigliosa classe dei corpi mondiali ap-<lb/>partenenti al nostro sistema solare.<lb/>
+            </p>
+            <p>
+                Malgrado la regola secondo la quale come<lb/>più le comete accostano il sole, più le loro code<lb/>si dilatano, e più lucono e più si disvolgono<lb/>da lui, la cometa del 1823 ci presentò feno-<lb/>meno ben degno, a cui pongasi mente; cioè<lb/>due code l&#x2019;una dal sole e l&#x2019;altra al sole rivol-<lb/>te, e formanti insieme un angolo di 160&#x00B0;. Sin-<lb/>golari modificazioni della polarità e discontem-<lb/>poranea divisione e trasmissione di quella può<lb/>fare che in questo raro caso originassero e<lb/>nell&#x2019;una e nell&#x2019;altra efflussi senza rattento con-<lb/>tinui della nebulosa materia.
+            </p>
+            <p>
+                Nella filosofia naturale d&#x2019;Aristotele, l&#x2019;ap-<lb/>parizione delle comete si collega di ben strano<lb/>nesso per mezzo di simili efflussi all&#x2019;esistenza<lb/>della via lattea. Quello sciame infinito di stelle<lb/>onde consta Galassia, offrono una materia ac-<lb/>cendentesi da sè (vibrante luce); il perchè la<lb/>fascia nebulosa, che parte la volta del cielo, è<lb/>da quel di Stagira pensata qual grande cometa<lb/>che perennemente si riproduca.
+            </p>
+            <cb/>
+            <p>
+                Le occultazioni delle stelle fisse dal così<lb/>detto nucleo cometario, o dalla sua più pros-<lb/>sima invoglia vaporosa, possono spargere una<lb/>bellissima luce sopra le fisiche proprietà di<lb/>questi meravigliosi corpi mondiali; ma noi<lb/>siamo poveri d&#x2019;osservazioni le quali inducano<lb/>certezza dell&#x2019;essere stata affatto centrale l&#x2019;oc-<lb/>cultazione; perciocché, come più su fu notato,<lb/>nelle parti dell&#x2019;involucro più prossime al nu-<lb/>cleo si vengono alternando concentrici strati<lb/>sferici di vaporosa materia densa e rarissima.<lb/>Per lo contrario egli non è punto dubitoso che<lb/>nel 29 settembre 1833, secondo le studiose<lb/>indagini di Bessel, da una stella di decima gran-<lb/>dezza passò la luce traverso densissima ne-<lb/>bulosità a sette o otto distanze dal centro del<lb/>nucleo della cometa di Halley, e durante quel<lb/>transito per tutti gli strati di lei non deviò<lb/>un minimo dalla rettilinea direzione. Questa<lb/>impotenza di rifrazione (quando la si deb-<lb/>ba attribuire al centro del nucleo) fa im-<lb/>probabile l&#x2019;ipotesi che la materia cometale<lb/>sia un effluvio gazoso. Forse egli è questa<lb/>la conseguenza unica di una quasi indefinita<lb/>rarefazione del fluido? Consiste la cometa di<lb/>separate particelle formanti una cosmica nube<lb/>che non affetta l&#x2019;oltrepassante raggio più che<lb/>facciano le nubi della nostra atmosfera, le<lb/>quali appunto non alterano le distanze zeni-<lb/>tali degli astri e dei lembi solari? Quando una<lb/>cometa passa davanti ad astro si ebbe talora a<lb/>notargli un maggiore o minore affievolimento<lb/>di luce, il che a buon diritto si ascrive al fondo<lb/>luminoso, dal quale sembrano spiccarsi gli astri<lb/>durante l&#x2019;occultazione.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="46" facs="#f0015" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Continuazione. V. l&#x2019;App. n. 3, 4, 5, 6, 7, 8, 9 e 10)</hi>
+            </p>
+            <lb/>
+            <p>
+                Delle più efficaci e vitali osservazioni,<lb/>che uomo facesse mai intorno la natura della<lb/>luce cometaria, noi ringraziamo ai cimenti di<lb/>Arago sulla polarizzazione. Il suo polariscopo<lb/>ci è spia della fisica costituzione del sole e
+            </p>
+            <lb/>
+            
+            <pb n="47" facs="#f0016" />
+            <p>
+                di quella delle comete, esso ne significa se<lb/>un raggio di luce vibratoci da una distanza<lb/>di milioni di leghe sia diretto o riflesso, e se<lb/>diretto, esso ne mostra se la sorgente lumi-<lb/>nosa sia corpo saldo, o fluido-liquido, o fluido<lb/>gazoso. Nella specula di Parigi fu con quel me-<lb/>desimo apparato scrutata la luce di Capella e<lb/>la luce della grande cometa del 1819. Questa<lb/>mostrava luce polarizzata, dunque riflessa,<lb/>mentre la stella, il che era ben prevedibile,<lb/>mostravasi come un sole rifulgente da sè. La<lb/>presenza della polarizzata luce cometaria non<lb/>rilevossi solo mediante l&#x2019;ineguaglianza delle<lb/>immagini; in occasione del riapparire che fece<lb/>la cometa di Halley nel 1833 fu con più cer-<lb/>tezza constatata dal maraviglioso contrasto dei<lb/>colori complementari, secondo la cromatica po-<lb/>larizzazione scoperta da Arago nel 1811. Ma se ol-<lb/>tre il risplendere dal sole le comete risplendano<lb/>anche da sè non è aperto da quei cimenti. Anche<lb/>nei pianeti propriamente detti, in Venere, a<lb/>mo&#x2019; d&#x2019;esempio, è assai probabile una tutto<lb/>propria e spontanea emissione di luce. La<lb/>mutabile intensità luminosa delle comete non<lb/>debbe sempre recarsi al posto che hanno in<lb/>loro orbita, ed al loro dilungarsi dal sole. In<lb/>alcuni individui ella accenna indubbiamente<lb/>interni processi di addensamenti, e cresciuta<lb/>o scemata potenza riflessiva della ricevuta<lb/>luce.
+            </p>
+            <p>
+                Nella cometa del 1618, come in quella<lb/>di periodo triennale Evelio e dopo lunga non-<lb/>curanza del notevole fenomeno l&#x2019;ingegnoso<lb/>Astronomo Balz in Nismes trovarono il nu-<lb/>cleo impicciolirsi nel perielio, aggrandirsi nel-<lb/>l&#x2019;afelio. La regolarità del cambiamento di vo-<lb/>lume secondo la varia elongazione dal sole<lb/>é maravigliosa. La fisica spiegazione del fe-<lb/>nomeno non debbe già cercarsi nella mag-<lb/>giore condensazione degli strati dell&#x2019;etere mon-<lb/>diale a maggiore vicinanza del sole, percioc-<lb/>ché egli è irragionevole attribuire alla invoglia<lb/>del nucleo cometale proprietà sì fatta che<lb/>lo rendano impervio all&#x2019;etere. La tanto varia<lb/>eccentricità delle elitiche orbite cometarie ha<lb/>negli ultimi tempi (1819) fatto sfolgorare l&#x2019;a-<lb/>stronomia di assai cognizioni intorno il sistema<lb/>solare. Hencke discoverse una cometa di così<lb/>breve periodo che rimane pur sempre entro<lb/>la contenenza delle nostre orbite planetarie e<lb/>il suo afelio ha luogo tra l&#x2019;orbita dei piccoli<lb/>pianeti e quella di Giove; la sua eccentri-<lb/>cità è di 0,843, mentre quella di Giunone<lb/>che è la massima di tutte le eccentricità plane-<lb/>tarie è di 0,233. La cometa di Hencke si fece<lb/>assai volte, benchè con difficoltà, parvente ad<lb/>occhio nudo (in Europa nel 1819 e seguendo<lb/>Renker nella nuova Olanda nel 1822) il suo<lb/>periodo è di 3 anni e 1@5 o in quel torno;
+            </p>
+            <cb/>
+            <p>
+                ma da attenta comparazione dei ritorni al pe-<lb/>rielio risulta il fatto degno di nota, che le ri-<lb/>voluzioni dal 1786 al 1838 si vennero rego-<lb/>larmente accorciando da una all&#x2019;altra, cioè<lb/>nello spazio di 32 anni, di un giorno e 8/10.<lb/>Fenomeno tanto singolare ne trae alla pro-<lb/>babile ipotesi di una vaporosa materia, che<lb/>nei mondiali spazii diffusa porga resistenza,<lb/>ipotesi necessaria onde mettere in assonan-<lb/>za l&#x2019;osservazione ed il calcolo, dopo intentis-<lb/>simo considerare tutte le planetarie pertur-<lb/>bazioni. La forza tangenziale si diminuisce, e<lb/>con essa anche l&#x2019;asse maggiore dell&#x2019;orbita delle<lb/>comete. Il valore della costante nell&#x2019;espressione<lb/>della resistenza, sembra oltrecciò alcun poco<lb/>variare innanzi e dopo il transito al perielio,<lb/>del che è forse cagione la mutanza di forma<lb/>che il piccolo corpo nebuloso assume in vici-<lb/>nanza del sole, e l&#x2019;influenza dei variamente<lb/>densi stratti dell&#x2019;etere cosmico. Fatti ed osser-<lb/>vazioni son queste che si annoverano tra i più<lb/>interessanti risultati della astronomia novissi-<lb/>ma. Se la cometa di Hencke aveaci da prima<lb/>porto occasione di assoggettare a più acute pre-<lb/>scrutazioni la massa di Giove, tanto interessante<lb/>per tutti i calcoli delle perturbazioni, egli fu<lb/>il corso di quella stessa cometa che ci procu-<lb/>rasse più tardi la prima, benchè solo apros-<lb/>simativa determinazione di una diminuzione<lb/>nella massa di Mercurio.
+            </p>
+            <p>
+                Alla prima cometa di breve periodo cioè<lb/>la cometa di Henche di 3 anni ed 1@3 si ag-<lb/>giunse ben presto nel 1826 una seconda<lb/>egualmente planetaria, il cui afelio è al di là<lb/>dell&#x2019;orbita di Giove, ma molto al di qua di<lb/>quella di Saturno, ed è quella di Biela che ha<lb/>rivoluzione di 6 anni 3@4, chiarisce meno di<lb/>quella di Enke; al pari di quella ha corso diret-<lb/>to, mentre la cometa di Halley si muove in<lb/>senso retrogrado, cioè contrario alla direzione<lb/>di tutti i pianeti propriamente detti. Ella ci pre-<lb/>sentò il primo non dubitoso esempio di cometa<lb/>ad orbita intersecante, quella della nostra ter-<lb/>ra. Il perché la cometa di Biela può portarne<lb/>pericolo, se pericoloso vuolsi chiamare qua-<lb/>lunque strano fenomeno di natura, non ancora<lb/>accaduto ne&#x2019; tempi storici e con conseguenze<lb/>disperate a presapersi con certezza. Masse an-<lb/>che piccole, possono, avvivate da straordinario<lb/>impeto, manifestare considerevole forza. Ma<lb/>quando la Place dimostrava che alla cometa<lb/>del 1770 dobbiamo attribuire a una massa mi-<lb/>nore 1@5000 della terrestre egli determina<lb/>in generale la media massa delle comete<lb/>con certa verosimiglianza molto al di sotto<lb/>1@180000 della massa terrestre (circa 1@200<lb/>della massa lunare). Fa mestieri distinguere be-<lb/>ne il transito della cometa di Biela per l&#x2019;orbita<lb/>della terra dall&#x2019;incontrare e dall&#x2019;accostare la
+            </p>
+            <cb/>
+            <p>
+                terra. Quando 29 ottobre 1832, fu quel tran-<lb/>sito la terra, dovea anche correre un mese<lb/>per aggiungere al punto di quella interseca-<lb/>zione. Le due comete di breve periodo si<lb/>intersecano anch&#x2019;elle nelle loro orbite, e<lb/>fu savia l&#x2019;osservazione che per molte per-<lb/>turbazioni inflitte dai pianeti a questi sì<lb/>piccoli corpi, egli è possibile che essi quando<lb/>l&#x2019;incontro abbia luogo alla metà d&#x2019;ottobre,<lb/>allora al non lontano abitatore della terra<lb/>presentino il meraviglioso spettacolo cosmico<lb/>di una catastrofe, cioè o di una reciproca com-<lb/>penetrazione, o di una aglutinazione o di<lb/>un disfacimento per emanazione esaurente.<lb/>Questi casi, conseguenze di deviamento cagio-<lb/>nato da masse perturbatrici, o da orbite pri-<lb/>migenialmente incrociantisi, possono essersi<lb/>innumerabilmente avverati da milioni d&#x2019;anni<lb/>per gli immensi dell&#x2019;etere. &#x2014; Isolate contin-<lb/>genze sono queste non operanti generalmente<lb/>nè metamorfeggianti l&#x2019;universo, non punto più<lb/>che faccia nella limitata sfera terrestre l&#x2019;er-<lb/>rompere o l&#x2019;abissarsi di qualche vulcano.<lb/><hi rendition="#right">(<hi rendition="#i">Sarà continuato</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="51" facs="#f0017" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(Contin. V. l&#x2019;App. n. 3, 4, 5, 6, 7, 8, 9, 10 e 11)</hi>
+            </p>
+            <lb/>
+            <p>
+                Una terza cometa interna di breve pe-<lb/>riodo è la scoperta da Haye nella specula di<lb/>Parigi il 22 Novembre 1843. La sua ellittica<lb/>orbita ritrae dal circolo assai più che quella<lb/>di qualsivoglia cometa fin qui conosciuta; ella<lb/>è chiusa tra le orbite di Marte e di Saturno.<lb/>La cometa di Faye la quale secondo Golmit<lb/>oltrepassa anche l&#x2019;orbita di Giove, appartiene
+            </p>
+            <cb/>
+            <p>
+                dunque a quelle poche il cui perielio fu tro-<lb/>vato al di là di Marte: il suo periodo è di<lb/>7 anni 29@100, e la forma della sua orbita<lb/>si debbe forse imputare alla sua grande ap-<lb/>prossimanza a Giove sullo scorcio del 1839.
+            </p>
+            <p>
+                Se noi esaminiamo le comete nelle loro<lb/>rientranti ellittiche orbite come membri del<lb/>nostro sistema solare, secondo la lunghezza<lb/>dell&#x2019;asse maggiore e il quanto di loro eccen-<lb/>tricità, e la durata di loro rivoluzione, allora<lb/>probabilmente alle tre comete planetarie di<lb/>Encke, di Biela e Faye tengono dietro, riguar-<lb/>do al periodo, <hi rendition="#i">primo</hi> la scoperta da Messier<lb/>nel 1768, che Clausen avvisa identica colla<lb/>terza cometa del 1819, <hi rendition="#i">secondo</hi> la quarta<lb/>dello stesso annu che fu scoperta da Blainpain,<lb/>ma da Clausen è riputata identica con quella del<lb/>1748, eche pati al pari di quella di Lexel, gran-<lb/>di alterazioni di orbita per la vicinanza e<lb/>l&#x2019;attrazione di Giove. Queste due comete sem-<lb/>brano avere un periodo di soli 3 in 6 anni e<lb/>i loro afelii nella regione dell&#x2019;orbita di Giove.<lb/>Hanno poi periodo di 70 in 76 anni, prima-<lb/>mente la cometa di Halley, tanto importante<lb/>per la teorica e la fisica astronomia, cometa<lb/>onde l&#x2019;ultima apparizione (1835) fu meno<lb/>brillante che uomo avrebbe dovuto aspettarsi<lb/>giusta le antecedenti; secondamente la cometa<lb/>scoperta da Olbers (6 marzo 1815) e terza-<lb/>mente la scoperta da Pons nel 1812, della<lb/>quale Encke disegnò l&#x2019;ellittica orbita. Le due<lb/>ultime rimasero invisibili ad occhio nudo. Del-<lb/>la grande cometa di Halley, noi conosciamo già<lb/>con certezza il nono ritorno, perciocché i cal-<lb/>coli di Laughier ci mostrarono testè che nelle<lb/>tavole d&#x2019;astronomia Chinesi esposteci da Eduar-<lb/>do Biot l&#x2019;orbita della cometa del 1378 si<lb/>identifica colla orbita di quella di Halley; il cui<lb/>periodo di rivoluzione dal 1378 al 1833, on-<lb/>deggiò fra 74, 91 anni e 77, 58: il medio fu<lb/>76,1. Coi corpi mondiali che su si rammen-<lb/>tano, contrasta una schiera di altre comete le<lb/>quali impiegano più migliaja d&#x2019;anni a correre<lb/>loro orbita di assai difficile determinazione.
+            </p>
+            <cb/>
+            <p>
+                Così la bella cometa del 1811 impiega secondo<lb/>Argelander 3063, e quella spaventosamente<lb/>grande del 1680 ne impiega secondo Enche<lb/>8800 anni: il perchè questi corpi si dilungano<lb/>dal sole l&#x2019;uno ventuna volte e l&#x2019;altro quaranta-<lb/>quattro volte più che Urano, il che torna ad un<lb/>dire l&#x2019;uno 8400 milioni di leghe, l&#x2019;altro 17600<lb/>leghe. Maravigliosa cosa è che a sì pauroso<lb/>intervallo agisca tuttavolta l&#x2019;attrazione solare;<lb/>egli è poi fuor di ogni forse che la cometa<lb/>del 1680 percorre nel suo perielio 33 leghe<lb/>(più che 12 centinaja di migliaja di piedi), cioè<lb/>13 volte più che la terra, e nell&#x2019;afelio mo-<lb/>vesi appena 10 piedi in un secondo. Questo<lb/>è solamente il triplo della velocità dell&#x2019;acqua<lb/>nelle più pigre riviere d&#x2019;Europa; ed è la metà<lb/>della rattezza che io trovai in un braccio del-<lb/>l&#x2019;Orenoco, il Cassiquiare. Fra l&#x2019;innumerabile<lb/>esercito di non calcolate o non trovate comete<lb/>avvene, secondo tutta verosomiglianza, mol-<lb/>tissime, in cui l&#x2019;asse maggiore dell&#x2019;orbita so-<lb/>verchia a dismisura quello della cometa del<lb/>1680. Onde in certo modo per mezzo dei nu-<lb/>meri formarsi un&#x2019;idea non dico della sfera di<lb/>efficenza d&#x2019;attrazione, ma bensì delle lonta-<lb/>nanze d&#x2019;una stella fissa, di un altro sole dal-<lb/>l&#x2019;afelio della cometa del 1680 (il corpo del<lb/>nostro sistema che più secondo le odierne<lb/>contezze si dilunghi) ben è che qui si ricordi<lb/>che secondo le recentissime determinazioni<lb/>della paralasse, la stella fissa a noi vicinissima,<lb/>è pure dalla lunga del nostro sole 230 volte<lb/>più che noi sia nel suo afelio quella cometa,<lb/>onde la distanza importa solo 44 distanze<lb/>di Urano: mentre 11000 ne importa la lon-<lb/>tananza della stella <hi rendition="#i">a</hi> del Centauro, e con più<lb/>certezza secondo Bessel 31000 importane la<lb/>lontananza della 61.@ del Cigno.
+            </p>
+            <lb/>
+            <p>
+                <hi rendition="#c">(<hi rendition="#i">La Fine nel prossimo Numero</hi>)</hi>
+            </p>
+            <lb/>
+            
+            <pb n="53" facs="#f0018" />
+            <p>
+                <hi rendition="#c"><hi rendition="#b">SAGGIO DEL KOSMOS</hi><lb/><hi rendition="#k">di</hi><lb/>ALESSANDRO HUMBOLDT.<lb/>(Traduzione dal tedesco di <hi rendition="#k">G. Rota</hi>)</hi><lb/>
+                <hi rendition="#c"><hi rendition="#b">I.<lb/>QUADRO DELLA NATURA.</hi><lb/><hi rendition="#i">Rivista generale dei Fenomeni.</hi></hi><lb/><hi rendition="#c">(<hi rendition="#i">Fine.</hi> V. l&#x2019;App. n. 3, 4, 5, 6, 7, 8, 9, 10, 11 e 12)</hi>
+            </p>
+            <lb/>
+            <p>
+                Appreso la considerazione dello incredi-<lb/>bile distare delle comete dal corpo centrale,<lb/>rimane a porgere gli esempi delle più gran-<lb/>di vicinanze, che siasi fino ad ora misurate.<lb/>La minima distanza di una cometa dalla terra<lb/>fu raggiunta dalla cometa di Lexel-Burkardt<lb/>del 1770, famosa delle perturbazioni che sof-<lb/>ferse da Giove. Il 28 Giugno ella non si lon-<lb/>tanava dalla terra più die il sestuplo della<lb/>distanza lunare. Ella traversò due volte, nel<lb/>1767 e nel 1769, il sistema delle quattro<lb/>lune di Giove senza infliggere alterazione<lb/>che si notasse nell&#x2019;orbite loro tanto esatta-<lb/>mante scrutate. Ma la grande cometa del<lb/>1680 si approcciò nel sito perielio alla su-<lb/>perficie del sole da otto in nove volte più<lb/>che non facesse <hi rendition="#i">la cometa di Lexel</hi> alla<lb/>terra. Il 17 dicembre ella ne distava solo l@6<lb/>del diametro solare che è quanto dire 7@10<lb/>di una distanza lunare. Comete aventi perie-<lb/>lio al di là dell&#x2019;orbita di Marte, fannosi rado
+            </p>
+            <cb/>
+            <p>
+                parventi agli abitatori della terra, e ciò per<lb/>luce affievolita dalle distante, per cui di tutte<lb/>le comete fin qui annoverate, quella del 1729<lb/>è l&#x2019;unica avente perielio fra l&#x2019;orbite di Pal-<lb/>lade e di Giove, e potuta osservarsi al di qua<lb/>dell&#x2019;ultima.
+            </p>
+            <p>
+                Posciacchè nozioni scentifiche, poche e<lb/>basate, dopo molte incerte e monche con-<lb/>tezze, penetrarono in più vasto circolo dell&#x2019;u-<lb/>mana convivenza, molti terrori di sciagure<lb/>per lo meno possibili, che il mondo delle<lb/>comete protende agli abitatori della terra, si<lb/>vennero facendo maggiori. L&#x2019;imagine di que-<lb/>sti terrori diventò più determinata. La cer-<lb/>tezza che nella contenenza delle orbite plane-<lb/>tarie esistano ritornanti comete, che a brevi<lb/>periodi visitano le nostre regioni, le notevoli<lb/>perturbazioni die Giove e Saturno inflig-<lb/>gono alle orbite, perturbazioni onde un corpo<lb/>mondiale all&#x2019;apparenza innocente può diven-<lb/>tare perigliosissimo, l&#x2019;orbita della cometa di<lb/>Biela intersecante l&#x2019;orbita della terra, l&#x2019;etere<lb/>cosmico, opponentesi e resistente fluido sfor-<lb/>zantesi tutto giorno accorciare le orbite tutte,<lb/>l&#x2019;individuale varietà dei corpi cometarj, la<lb/>quale lascia sospettare considerevoli grada-<lb/>zioni nel quantitativo nella massa del nucleo,<lb/>ragioni tutte son queste che possono con tanta<lb/>varietà di motivi cagionare più terrori, che<lb/>non ispirasse ai secoli anteriori la vaga paura<lb/>di queste <hi rendition="#i">divampanti spade</hi> o di un uni-<lb/>versale incendio mondiale prodotto da qual-<lb/>che cometa.
+            </p>
+            <p>
+                Poiché le <hi rendition="#i">ragioni tranquillanti</hi> de-<lb/>sunte dai calcoli di probabilità agiscono sopra<lb/>la considerazione pensatrice, sopra l&#x2019;intel-<lb/>letto e non punto sopra le intime voci del-<lb/>l&#x2019;animo, e sopra le immaginazioni, egli si è<lb/>fatto con qualche giustizia rimprovero alla<lb/>nuova astronomia che ella siasi adoperata di<lb/>dissipare spaventi, che ella stessa svegliò. Ella
+            </p>
+            <lb/>
+            
+            <pb n="54" facs="#f0019" />
+            <p>
+                è questa una proprietà della buja natura del-<lb/>l&#x2019;uomo, o il risultato d&#x2019;un severo senti-<lb/>mento delle cose, che l&#x2019;inaspettato e lo stra-<lb/>ordinario ecciti pur sempre terrore, non punto<lb/>gioja e non punto speranza. L&#x2019;ammirabile<lb/>forma di una grande cometa, il languido ba-<lb/>gliore della sua nebula, l&#x2019;improvvisa sua par-<lb/>venza nei cieli furono sempre su tutte lo<lb/>zone, e al senso di tutti i popoli, come una<lb/>nuova e orribile potenza, e nemica pur sempre<lb/>alla catena che gli enti creati collega. Poichè<lb/>il fenomeno è vincolato a breve durata, nè<lb/>sorge la credenza che debba riferirsi alle<lb/>vicende mondiali o dei coevi, o dei successori.<lb/>La concatenazione dei mondani avvenimenti<lb/>offre naturalmente sempre qualche cosa che<lb/>possa venire considerata come la minacciata<lb/>sciagura. Solo ai nostri tempi si è manifestato<lb/>in modo singolarissimo una ben diversa e<lb/>più felice tendenza del senso popolare. Egli è<lb/>nelle Tedesche campagne, nelle graziose valli<lb/>di Reno e di Mosa che si attribui ad uno di<lb/>quei mondiali corpi da lungo tempo maledetti<lb/>alcun che di salutare, un benefico influsso<lb/>sopra il fiorir nelle vigne. Esperienze contra-<lb/>rie, di che non è punto difetto in quest&#x2019;epoca<lb/>così frequente di comete, non hanno ancora<lb/>potuto dissipare la credenza in questo mito<lb/>meteorologico, in questa esistenza di astri er-<lb/>ranti e raggianti calore.
+            </p>
+            <lb/>
+        </body>
+        <back/>
+    </text>
+</TEI>
