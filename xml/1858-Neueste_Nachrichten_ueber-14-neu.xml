@@ -1,210 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<?oxygen RNGSchema="http://www.deutschestextarchiv.de/basisformat_ohne_header.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">DUMMYHEADER</title>
-                <author>
-                    <persName ref="https://d-nb.info/gnd/118554700">
-                        <surname>Humboldt</surname>
-                        <forename>Alexander</forename>
-                        <nameLink>von</nameLink>
-                    </persName>
-                </author>
-                <editor corresp="#avh_in_bern">
-                    <persName ref="http://d-nb.info/gnd/124004377">
-                        <surname>Eibach</surname>
-                        <forename>Joachim</forename>
-                    </persName>
-                </editor>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname>Nehrlich</surname>
-                        <forename>Thomas</forename>
-                    </persName>
-                </editor>
-                <respStmt xml:id="baertschi_s">
-                    <persName>
-                        <surname>Bärtschi</surname>
-                        <forename>Sarah</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
-                    </resp>
-                </respStmt>
-                <respStmt xml:id="wernicke_nd">
-                    <persName>
-                        <surname>Wernicke</surname>
-                        <forename>Norbert D.</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">XML Bearbeiter</note>
-                        <ref target="http://d-nb.info/gnd/1014897157"/>
-                    </resp>
-                </respStmt>
-            </titleStmt>
-            <editionStmt>
-                <edition>Vollständige digitalisierte Ausgabe.</edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher xml:id="avh_in_bern">
-                    <orgName role="hostingInstitution">Universität Bern</orgName>
-                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
-                    <address>
-                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
-                        <country>Switzerland</country>
-                    </address>
-                </publisher>
-                <pubPlace>Bern</pubPlace>
-                <date type="publication">[Publikationsdatum]</date>
-                <availability>
-                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
-                        <p>Dieses Werk ist gemeinfrei.</p>
-                    </licence>
-                </availability>
-                <idno>
-                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
-                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
-                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
-                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
-                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
-                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
-                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
-                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
-                </idno>
-            </publicationStmt>
-            <sourceDesc>
-                <p>DUMMYHEADER zur Validitätsprüfung</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
-            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="deu">Deutsch</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change n="1.2.0" when="2019-06-04" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
-            </change>
-            <change n="1.1.0" when="2018-11-30" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <text>
-        <front/>
-        <body>
-            <pb n="169" facs="#f0001"/>
-            <lb break="yes"/>
-            <div n="1">
-                <head>
-                    <hi rendition="#i">Extrait d&#x2019;une Lettre de</hi>
-                    <hi rendition="#k">M. <persName ref="http://d-nb.info/gnd/">de Humboldt</persName>
-                    </hi>
-                    <hi rendition="#i">à</hi> M. F. <persName ref="http://d-nb.info/gnd/" >Delessert</persName>.</head>
-                <lb break="yes"/>
-                <floatingText>
-                    <body>
-                        <div n="2" type="letter">
-                            <opener>
-                                <dateline>
-                                    <hi rendition="#et">&#x00AB;<placeName>Berlin</placeName>, 14 juillet 1858.</hi>
-                                </dateline>
-                                <lb break="yes"/>
-                                <salute>
-                                    <hi rendition="#et">&#x00BB;Mon respectable ami et confrère,</hi>
-                                </salute>
-                            </opener>
-                            <lb break="yes"/>
-                            <p>&#x00BB;La bienveillance affectueuse dont vous m&#x2019;avez honoré (j&#x2019;aime à dire<lb break="yes"/>héréditairement) depuis tant d&#x2019;années, à l&#x2019;époque de mon heureux séjour<lb break="yes"/>en <placeName>France</placeName>, s&#x2019;est étendue sur mon excellent ami et compagnon de voyage<lb break="yes" />M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>. Il vous doit, comme moi, une vive et immuable reconnais-<lb break="no" />sance. Votre amitié, les rapports que j&#x2019;ai pu entretenir avec tous les membres<lb break="yes"/>de votre famille, dotée moralement et intellectuellement d&#x2019;une manière si<lb break="yes"/>riche, offrent un point lumineux dans ma longue existence. Je vis dans une<lb break="yes"/>triste incertitude sur <persName ref="http://d-nb.info/gnd/">celui qui m&#x2019;est cher</persName>. J&#x2019;ai pensé que vous liriez avec<lb break="yes"/>intér&#x00EA;t <bibl>le dernier récit</bibl> que je dois aux soins du docteur <persName ref="http://d-nb.info/gnd/" >Lallemant</persName>, qui par<lb break="yes"/>amitié pour moi est allé voir M. <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> dans sa solitude de l&#x2019;<placeName>Uruguay</placeName>.<lb break="yes"/>Vous voudrez peut-&#x00EA;tre bien communiquer cet extrait aux personnes qui<lb break="yes"/>au Jardin des Plantes et au sein de l&#x2019;Institut ont conservé un souvenir affec-<lb break="no" />tueux de M. <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> et de moi, qui dois tant à son imperturbable activité,<lb break="yes"/>à la grande amabilité et sérénité de son caractère, à la courageuse fidélité<lb break="yes" />de son dévouement. Ce qui pourrait me donner encore un peu d&#x2019;espé-<lb break="no"/>rance, c&#x2019;est que déjà à <placeName>San-Borja</placeName> on disait mort M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, à si peu de<lb break="yes"/>
-                                <pb n="170" facs="#f0002"/>distance de Santa-Anna, lorsque M. <persName ref="http://d-nb.info/gnd/">Lallemant</persName> y passait; c&#x2019;est que notre<lb break="yes"/>consul général et ministre résident M. <persName ref="http://d-nb.info/gnd/">de Gülich</persName>, attaché personnellement à<lb break="yes"/>
-                                <persName ref="http://d-nb.info/gnd/">mon ami</persName>, ne m&#x2019;a donné jusqu&#x2019;ici aucune nouvelle. Je n&#x2019;ai pas besoin de<lb break="yes"/>vous supplier, mon cher confrère, de me communiquer ce que vous savez<lb break="yes"/>de plus particulier à ce sujet. Comme je tiens singulièrement à l&#x2019;idée de voir<lb break="yes"/>sauvées les collections botaniques et géologiques de M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, de m&#x00EA;me<lb break="yes"/>que les manuscrits; de les voir déposées au Jardin des Plantes, auquel, sous<lb break="yes" />l&#x2019;adresse de MM. les professeurs, j&#x2019;ai envoyé, à la mort de M. Kunth, les<lb break="yes"/>six volumes de descriptions des plantes (trois volumes in-folio et trois in-<lb break="no" />quarto), le nombre des descriptions faites sur les lieux est de 4528 espèces<lb break="yes"/>généralement de la main de M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, <formula notation="TeX">\frac{1}{8}</formula> est de ma main avec quelques<lb break="yes"/>dessins.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Notre excellent ami n&#x2019;ayant pas l&#x2019;esprit d&#x2019;ordre, à c&#x00F4;té de tant d&#x2019;autres<lb break="yes" />qualités très-louables, je crois qu&#x2019;il serait bien à désirer que MM. les pro-<lb break="no"/>fesseurs du Jardin des Plantes veuillent bien par des Lettres officielles exciter<lb break="yes"/>l&#x2019;activité de M. <persName ref="http://d-nb.info/gnd/">le consul de <placeName>France</placeName>
-                                </persName> à <placeName>Montevideo</placeName> ou à <placeName>Buenos-Ayres</placeName>, pour<lb break="yes" />h&#x00E2;ter les démarches nécessaires pour l&#x2019;envoi des collections à <placeName>Paris</placeName>. Je crains<lb break="yes" />un peu le musée qui s&#x2019;est formé sous les auspices de M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName> à<lb break="yes"/>
-                                <placeName>Corientès</placeName>, et auquel celui-ci avait promis tous ses doubles. Nous ignorons<lb break="yes"/>s&#x2019;il y a un testament: comme mon ami avait une singulière confiance en sa<lb break="yes"/>longévité, il est à craindre que ses papiers soient en grand désordre. Les<lb break="yes"/>pertes seraient d&#x2019;autant plus à déplorer, que M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, malgré mes<lb break="yes"/>pressantes prières, a pris, avec lui, l&#x2019;herbier de notre expédition, qui était<lb break="yes"/>sans doute sa propriété, mais que je voyais, avec douleur, exposé à de<lb break="yes"/>nouveaux dangers. M. <persName ref="http://d-nb.info/gnd/">Kunth</persName> s&#x2019;est rendu alors au <placeName>Havre</placeName> pour obtenir du<lb break="yes" />moins les six volumes de manuscrits botaniques de notre expédition, qui<lb break="yes"/>ont été si utiles pour la rédaction des six volumes in-folio des <hi rendition="#i">
-                                    <bibl>Nova genera<lb break="yes"/>et species plantarum <placeName>Americ&#x00E6; septentrionalis</placeName>
-                                    </bibl>.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;La dernière Lettre que j&#x2019;ai eue de M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName> est des <placeName>Corientès</placeName> du<lb break="yes"/>7 juin 1857.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Je joins ici l&#x2019;extrait de l&#x2019;<bibl>article</bibl> mentionné plus haut.</p>
-                            <lb break="yes"/>
-                            <p>
-                                <hi rendition="#c">
-                                    <hi rendition="#i">Dernières nouvelles de</hi>
-                                    <hi rendition="#k">M. <persName ref="http://d-nb.info/gnd/">Aimé Bonpland</persName>.</hi>
-                                </hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Connaissant le vif intér&#x00EA;t que tant de personnes ont pris à la profonde<lb break="yes"/>douleur que j&#x2019;ai ressentie à la nouvelle de la mort de mon précieux et noble<lb break="yes"/>ami, et compagnon de voyage, <persName ref="http://d-nb.info/gnd/" >Bonpland</persName>, je regarde comme un devoir de<lb break="yes"/>publier une Notice à ce sujet. Je la dois à l&#x2019;aimable et active obligeance de<lb break="yes"/>M. le D<hi rendition="#sup">r</hi>
-                                <persName ref="http://d-nb.info/gnd/">Lallemant</persName>, auteur d&#x2019;un <bibl>ouvrage important sur les maladies des<lb break="yes"/>Européens dans les pays tropicaux</bibl>.</p>
-                            <lb break="yes"/>
-                            <pb n="171" facs="#f0003"/>
-                            <p>&#x00BB;<persName ref="http://d-nb.info/gnd/">Cet homme</persName>, si richement doué, voulant me préparer une joie, a entre-<lb break="no"/>pris un voyage à <placeName>Rio-Grande</placeName>, après s&#x2019;&#x00EA;tre séparé, à <placeName>Rio-Janeiro</placeName>, en février<lb break="yes"/>dernier, de l&#x2019;expédition impériale autrichienne de la frégate <hi rendition="#i" >Novarra.</hi> De<lb break="yes"/>
-                                <placeName>Rio-Grande</placeName>, il s&#x2019;est dirigé, au delà de <placeName>Porto-Allegre</placeName>, à travers l&#x2019;ancienne<lb break="yes"/>Mission des Jésuites, vers <placeName>San-Borja</placeName>, où il pensait, par erreur, que <persName ref="http://d-nb.info/gnd/">Bonpland</persName>
-                                <lb break="yes"/>s&#x2019;était établi, comme il l&#x2019;avait fait autrefois (depuis 1831).</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Je possède deux Lettres du D<hi rendition="#sup">r</hi>
-                                <persName ref="http://d-nb.info/gnd/">Lallemant</persName>: l&#x2019;une datée de <placeName>San-Borja</placeName>,<lb break="yes"/>sur l&#x2019;<placeName>Uraguay</placeName> (du 10 avril); l&#x2019;autre, du 19 avril 1858, de la <placeName>Villa de Uru-<lb break="no"/>guaiana</placeName>, après qu&#x2019;il eut parlé à <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> à <placeName>Santa-Anna</placeName>. J&#x2019;ai envoyé un<lb break="yes"/>extrait détaillé de ces Lettres à la rédaction du journal <hi rendition="#i" >Bonplandia,</hi> à <placeName>Hano-<lb break="no" />vre</placeName>, journal botanique intéressant et fort répandu. Ici je me contenterai des<lb break="yes"/>courtes notes suivantes.</p>
-                            <lb break="yes"/>
-                            <p>&#x00AB;J&#x2019;habitais à <placeName>San-Borja</placeName> (écrit <persName ref="http://d-nb.info/gnd/">Lallemant</persName>), chez un ami intime de <persName ref="http://d-nb.info/gnd/">Bon-<lb break="no"/>&#x00BB;pland</persName>, le vicaire <persName ref="http://d-nb.info/gnd/">Gay</persName>. J&#x2019;ai visité avec lui le jardin du <persName ref="http://d-nb.info/gnd/" >botaniste</persName>, jardin<lb break="yes"/>&#x00BB;maintenant désert et dévasté, mais alors bien soigné. La dernière Lettre<lb break="yes"/>&#x00BB;que le vicaire <persName ref="http://d-nb.info/gnd/">Gay</persName> avait re&#x00E7;ue, était de la fin de l&#x2019;année 1857. Depuis lors,<lb break="yes" />&#x00BB;il apprit que <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> était tombé gravement malade. Plusieurs Lettres<lb break="yes"/>&#x00BB;écrites pour demander des nouvelles de sa santé, restèrent sans réponse,<lb break="yes" />&#x00BB;et, malgré la proximité des lieux, l&#x2019;on était m&#x00EA;me incertain, à <placeName>San-Borja</placeName>,<lb break="yes"/>&#x00BB;si je trouverais encore en vie votre compagnon de voyage.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;C&#x2019;était en 1853 que <persName ref="http://d-nb.info/gnd/">Bonpland</persName> avait quitté <placeName>San-Borja</placeName>: il avait préféré<lb break="yes"/>&#x00BB;séjourner dans une propriété plus grande qu&#x2019;il possède à <placeName>Santa-Anna</placeName>, où,<lb break="yes"/>&#x00BB;depuis longtemps, il s&#x2019;occupait de la culture d&#x2019;orangers qu&#x2019;il avait plan-<lb break="no" />&#x00BB;tés lui-m&#x00EA;me. L&#x2019;habitation du vieux savant (dans l&#x2019;estancia de <placeName>Santa-<lb break="maybe" />&#x00BB;Anna</placeName>) consiste en deux grandes huttes, dont les murs de terre argileuse<lb break="yes"/>&#x00BB;sont joints par des <hi rendition="#i">b&#x00E2;tons</hi> de bambou et par quelques <hi rendition="#i">poutres</hi> sous un toit<lb break="yes" />&#x00BB;de paille. Ces deux huttes ont des portes, mais pas de fen&#x00EA;tres, parce que<lb break="yes"/>&#x00BB;la lumière pénètre par des ouvertures pratiquées entre les b&#x00E2;tons de<lb break="yes"/>&#x00BB;bambou.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Je fus re&#x00E7;u cordialement et amicalement. Quoique l&#x2019;&#x00E2;ge et une vie agi-<lb break="no"/>&#x00BB;tée aient profondément sillonné son visage, il y avait de la vie et de la<lb break="yes"/>&#x00BB;sérénité dans ses regards. Les conversations animées qu&#x2019;il provoquait,<lb break="yes" />&#x00BB;semblaient le fatiguer extr&#x00EA;mement. Il souffrait beaucoup d&#x2019;un catarrhe<lb break="yes"/>&#x00BB;chronique de la vessie. Les privations surprenantes qu&#x2019;il s&#x2019;est imposées,<lb break="yes"/>&#x00BB;n&#x2019;ont nullement pour cause la nécessité de borner ses dépenses: elles<lb break="yes" />&#x00BB;sont l&#x2019;effet d&#x2019;une longue habitude, d&#x2019;un grand empire sur lui-m&#x00EA;me <choice>
-                                    <sic>e</sic>
-                                    <corr type="editorial">et</corr>
-                                </choice>
-                                <lb break="yes"/>&#x00BB;d&#x2019;une <hi rendition="#i" >individualité caractéristique.</hi>
-                            </p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Le Gouvernement de <placeName>Corrientes</placeName> lui a fait présent d&#x2019;une terre de la va-<lb break="no" />&#x00BB;leur de 10,000 piastres d&#x2019;<placeName>Espagne</placeName>: il jouit d&#x2019;une pension annuelle (fran-<lb break="no"/>
-                                <pb n="172" facs="#f0004"/>&#x00BB;&#x00E7;aise) de 3000 francs. Il a exercé la médecine de la manière la plus désin-<lb break="no" />&#x00BB;téressée. Il jouit de l&#x2019;estime générale: mais il aime la solitude, et évite<lb break="yes"/>&#x00BB;ceux qui voudraient lui offrir des conseils et des secours.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Son zèle pour la science ne s&#x2019;est pas encore rel&#x00E2;ché. Ses collections et<lb break="yes"/>&#x00BB;ses manuscrits sont à <placeName>Corrientes</placeName>, où il a fondé un Musée national.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Le lendemain, je l&#x2019;ai trouvé plus faible et beaucoup plus malade. La<lb break="yes"/>&#x00BB;nuit avait été mauvaise. Je l&#x2019;ai prié instamment de me dire si je ne pou-<lb break="no" />&#x00BB;vais pas lui &#x00EA;tre utile en quelque chose, de quelque manière que ce f&#x00FB;t;<lb break="yes"/>&#x00BB;mais il a agi avec moi, comme avec ses autres amis: il n&#x2019;avait besoin<lb break="yes"/>&#x00BB;d&#x2019;aucun service.</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Je pris congé de lui, le c&#x0153;ur ému. Combien j&#x2019;aurais aimé le persuader<lb break="yes"/>&#x00BB;de rentrer au milieu du monde civilisé. Il appartient à la première moitié<lb break="yes"/>&#x00BB;du <hi rendition="#k">xix</hi>
-                                <hi rendition="#sup">e</hi> siècle et non à la seconde. Votre ami me sembla &#x00EA;tre touché, lors-<lb break="no"/>&#x00BB;que je lui fis mes adieux en serrant dans mes mains ses deux mains dé-<lb break="no"/>&#x00BB;charnées. Les personnes qui l&#x2019;entourent, trouvent que depuis trois mois<lb break="yes" />&#x00BB;ses forces diminuent. Peut-&#x00EA;tre ce vieillard a-t-il eu, au moment de notre<lb break="yes"/>&#x00BB;séparation, la m&#x00EA;me pensée que moi: il s&#x2019;est dit peut-&#x00EA;tre que je pour-<lb break="no"/>&#x00BB;rais bien &#x00EA;tre un des derniers messagers de race européenne, arrivé de<lb break="yes" />&#x00BB;loin, dans ce désert, pour lui témoigner, au nom de la science qu&#x2019;il a<lb break="yes"/>&#x00BB;agrandie, respect, amour et reconnaissance. Je montai à cheval et je me<lb break="yes" />&#x00BB;dirigeai du c&#x00F4;té du nord dans les plaines toujours vertes. Sans chemin<lb break="yes"/>&#x00BB;tracé devant moi, sans guide à mes c&#x00F4;tés pour me distraire, j&#x2019;avais une<lb break="yes"/>&#x00BB;seule pensée, pensée mélancolique, douloureuse, celle de <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> dont<lb break="yes" />&#x00BB;l&#x2019;existence est comme terminée.&#x00BB;</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Comme <persName ref="http://d-nb.info/gnd/" >Bonpland</persName> jouissait encore de la plénitude de la vie, lorsqu&#x2019;il<lb break="yes"/>m&#x2019;écrivait de <placeName>Corrientes</placeName>, le 7 juin 1857: &#x00AB;J&#x2019;irai (disait-il) porter mes col-<lb break="no" />&#x00BB;lections et mes manuscrits moi-m&#x00EA;me à <placeName>Paris</placeName>, pour les déposer au Mu-<lb break="no"/>&#x00BB;séum. Mon voyage en <placeName>France</placeName> ne sera que très-court; je retournerai à mon<lb break="yes" />&#x00BB;<placeName>Santa-Anna</placeName>, où je passe une vie tranquille et heureuse. C&#x2019;est là que je<lb break="yes" />&#x00BB;veux mourir, et où mon tombeau se trouvera à l&#x2019;ombre des arbres nom-<lb break="no"/>&#x00BB;breux que j&#x2019;ai plantés. Que je serais heureux, cher <persName ref="http://d-nb.info/gnd/">Humboldt</persName>, de te revoir<lb break="yes"/>&#x00BB;encore une fois et de renouveler nos souvenirs communs. Le mois d&#x2019;ao&#x00FB;t<lb break="yes" />&#x00BB;prochain, le 28, je compléterai ma quatre-vingt-quatrième année, et j&#x2019;ai<lb break="yes"/>&#x00BB;trois ans de moins que toi. Il vient de mourir dans cette province un<lb break="yes" />&#x00BB;homme de cent sept ans. Quelle perspective pour deux voyageurs qui ont<lb break="yes"/>&#x00BB;passé leur quatre-vingtième année!&#x00BB;</p>
-                            <lb break="yes"/>
-                            <p>&#x00BB;Cette Lettre, si sereine, où <persName ref="http://d-nb.info/gnd/">Bonpland</persName> semblait avoir soif de vie, pour<lb break="yes"/>ainsi dire, contraste singulièrement avec la description triste et sombre de<lb break="yes"/>la visite du D<hi rendition="#sup">r</hi>
-                                <persName ref="http://d-nb.info/gnd/">Lallemant</persName>.</p>
-                            <lb break="yes"/>
-                            <pb n="173" facs="#f0005"/>
-                            <p>&#x00BB;Le 29 mai 1858, on croyait à <placeName>Montevideo</placeName> (d&#x2019;après M. <persName ref="http://d-nb.info/gnd/">de Tschudi</persName>) que<lb break="yes"/>
-                                <persName ref="http://d-nb.info/gnd/">Bonpland</persName> était mort à <placeName>San-Borja</placeName>, sans désigner le jour de son décès. Le<lb break="yes"/>18 avril, <persName ref="http://d-nb.info/gnd/">Lallemant</persName> s&#x2019;entretenait avec lui à <placeName>Santa-Anna</placeName>. Le 19 mai, sa mort<lb break="yes"/>était démentie à <placeName>Porto-Alegre</placeName>. Il y a encore espoir que <persName ref="http://d-nb.info/gnd/">le plus jeune</persName> des<lb break="yes"/>deux ne soit pas appelé le premier. Malheureusement, à de telles distances,<lb break="yes" />l&#x2019;incertitude est souvent de longue durée. Ainsi en est-il pour <persName ref="http://d-nb.info/gnd/">Edouard<lb break="yes" />Vogel</persName> dans l&#x2019;intérieur de l&#x2019;<placeName>Afrique</placeName>, et pour <persName ref="http://d-nb.info/gnd/">Adolphe Schlagintweit</persName> dans l&#x2019;in-<lb break="no"/>térieur de l&#x2019;<placeName>Asie</placeName>.</p>
-                            <lb break="yes"/>
-                            <closer>
-                                <dateline>
-                                    <hi rendition="#et">&#x00BB;A <placeName>Berlin</placeName>, le 12 juin 1858.</hi>
-                                </dateline>
-                                <lb break="yes"/>
-                                <signed>
-                                    <hi rendition="#et">&#x00BB;<hi rendition="#k">
-                                            <persName ref="http://d-nb.info/gnd/">Alexandre de Humboldt</persName>.</hi>&#x00BB;</hi>
-                                </signed>
-                            </closer>
-                            <lb break="yes"/>
-                        </div>
-                    </body>
-                </floatingText>
-                <p>Comme l&#x2019;on peut ajouter à cette communication les quelques lignes<lb break="yes"/>que l&#x2019;on trouve dans un journal du 24 juillet 1858: &#x00AB;M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>, le<lb break="yes"/>&#x00BB;grand voyageur naturaliste, s&#x2019;est chargé lui-m&#x00EA;me de rassurer les siens<lb break="yes"/>&#x00BB;(ses amis) sur l&#x2019;état de sa santé. L&#x2019;illustre vieillard, plus qu&#x2019;octogénaire,<lb break="yes"/>&#x00BB;herborise encore; et il s&#x2019;est heureusement conservé pour la science qu&#x2019;il<lb break="yes" />&#x00BB;honore et qu&#x2019;il ne cesse d&#x2019;agrandir par ses travaux&#x00BB;: on doit conserver<lb break="yes"/>encore quelques doutes sur l&#x2019;exactitude des nouvelles données sur la perte<lb break="yes"/>de M. <persName ref="http://d-nb.info/gnd/">Bonpland</persName>.</p>
-            </div>
-            <lb break="yes"/>
-        </body>
-        <back/>
-    </text>
-</TEI> 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>DUMMYHEADER</title>
+</titleStmt>
+<publicationStmt>
+<p></p>
+</publicationStmt>
+<sourceDesc>
+<p>DUMMYHEADER zur Validitätsprüfung</p>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text><front></front><body>
+<pb n="717" facs="#f0001" />
+<cb/>
+<div n="1"><head><hi rendition="#b">AMIE BONPLAND&#x2014;THE NATURALIST.</hi></head><lb/><p><hi rendition="#k">The</hi> death of this person has been recently<lb/>announced. Some of our older inhabitants<lb/>well remember the interest that was felt in<lb/>his travels and captivity in Paraguay, about<lb/>forty years ago. The following account of<lb/>him, which is taken from a letter from Berlin,<lb/>Prussia, published in the <hi rendition="#i">Boston Journal</hi>,<lb/>will, with Humboldt&#x2019;s letter accompanying it,<lb/>be read with interest: &#x2014;</p><lb/><dateline><hi rendition="#et">&#x201C;<hi rendition="#k">Berlin,</hi> July 16, 1858.</hi></dateline><lb/>
+    </div>
+    <div><p>&#x201C;Within a few days, letters have been re-<lb/>ceived in Berlin from Montevideo, bringing<lb/>painful rumor that Amie Bonpland, the<lb/>celebrated botanist, the beloved friend and<lb/>fellow-traveller of Alexander Von Humboldt,<lb/>is no more. Should this rumor be con-<lb/>firmed, and there is little occasion to ques-<lb/>tion its truth, Bonpland will have passed<lb/>away, after an eventful life of unremitted toil<lb/>and research in the realm of natural science,<lb/>at the ripe age of eighty-five; he was still<lb/>engaged, up to a short period previous to<lb/>the time of his reported death, in arduous<lb/>agricultural and botanical pursuits. The sor-<lb/>row which this rumor has diffused throughout<lb/>Europe, is but the natural regret which all<lb/>men feel when a noble spirit departs from<lb/>among them, and bears no resemblance to<lb/>the grief awakened when a man of promise<lb/>is cut down in the fullness of strength and<lb/>expectation, to disappoint the hopes of the<lb/>world. He had done work enough for one<lb/>lifetime, and leaving mankind a noble legacy<lb/>of scientific results, has passed away to higher<lb/>spheres of labor. &#x201C;Well done!&#x201D; is the<lb/>signet stamp upon the record of his days.</p><lb/><p>&#x201C;I have obtained from a gentleman of this<lb/>city, who has access to private sources of in-<lb/>formation, and especially to the correspond-<lb/>ence between Humboldt and Bonpland, an<lb/>interesting sketch of the life of the great<lb/>botanist. To insert the whole of it here<lb/>would swell my letter far beyond the pre-<lb/>scribed limits, and I must content myself<lb/>with such brief references to certain portions<lb/>of his eventful history as will serve to illus-<lb/>trate the touching letter which Humboldt<lb/>dedicates to the memory of his lifelong<lb/>friend.</p><lb/><p>&#x201C;The intimacy of these two illustrious men<lb/>began during Humboldt&#x2019;s visit to
+                    Paris in<lb/>May, 1798, shortly after Napoleon had sailed<lb/>from Toulon upon
+                    his disastrous expedition<lb/>to Egypt. Bonpland was about four years<lb/>his
+                    junior, finely cultivated in his profession,<lb/>ardent in temperament, and in
+                    him the<lb/>maturer German found a man after his own<lb/>heart. The grand result
+                    of this fortunate<lb/>acquaintance, was the journey they performed<lb/>together,
+                    during the years 1799&#x2014;1804,<lb/>through the American tropics, a
+                    journey<lb/><cb/> which has furnished material, besides the<lb/>more immediate
+                    scientific results, for some of<lb/>the most magnificent descriptive passages
+                    of<lb/>the Cosmos. Humboldt&#x2019;s letters bear fre-<lb/>quent witness to the
+                    disinterested affection<lb/>and devotion of his fellow traveller, who
+                    in<lb/>more than one dangerous adventure displayed<lb/>that greatest of all
+                    love, which is willing to<lb/>sacrifice life itself for its friend. In health
+                    and<lb/>sickness, in every privation, in every pleasure<lb/>incident to their
+                    long wanderings, the two<lb/>friends were inseparable, and the lonely
+                    forests<lb/>of the Amazon and the Orinoco, the intimacy<lb/>which began in the
+                    gay capital of France<lb/>ripened into friendship, which after half
+                    a<lb/>century receives its first interruption by the<lb/>death of Bonpland.</p><lb/><p>&#x201C;On his return to Europe, Bonpland was<lb/>introduced to Josephine, and by her favor ob-<lb/>tained the office of Superintendent of the<lb/>royal gardens at Malmaison and Navarre.<lb/>Here, in the sunshine of imperial favor, he<lb/>passed the happiest and palmiest days of his<lb/>life. But it was in darker days, when the<lb/>divorced Empress could no longer distribute<lb/>royal patronage, that the true nobleness of<lb/>his character appeared. He remained the<lb/>faithful friend of his fallen benefactress, and<lb/>to him she confided her most secret sorrows.</p><lb/><p>&#x201C;After Josephine&#x2019;s death, Bonpland, find-<lb/>ing no place of repose in Europe, emigrated<lb/>in 1816 to Buenos Ayres, taking with him a<lb/>large number of fruit trees and a variety of<lb/>other natural productions. He was there<lb/>received with due honor, and soon afterward<lb/>received the appointment of Professor of<lb/>Natural History. His restless temperament<lb/>soon incited him to undertake a journey<lb/>through the interior of the continent, a jour-<lb/>ney fraught with unhappy consequences to<lb/>himself and to science. For in passing<lb/>through a portion of territory claimed by the<lb/>Argentine Confederacy, he unfortunately in-<lb/>curred the jealousy of the Dictator, Dr.<lb/>Francia, by whom he was seized in the most<lb/>dastardly manner and thrown in confinement.<lb/>True greatness always rises above misfortune,<lb/>and Bonpland, denied a hearing by his perse-<lb/>cutor, confined to a small plantation, dressed<lb/>in the clothing of a slave, and compelled to<lb/>perform menial labor for his daily bread, nobly<lb/>resigned himself to his destiny, and endeav-<lb/>ored to make the best of it. He was always<lb/>ready to give assistence to the sick, and by<lb/>his gentle benevolence won the hearts of all<lb/>who knew him. Nor was his scientific ardor<lb/>suffered meanwhile to lie dormant. He made<lb/>large additions to his collection of plants,<lb/>and occupied himself a portion of the time in<lb/>the distillation of brandy from honey. Not-<lb/>withstanding the intercession of Alexander<lb/>V. Humboldt and the remonstrances of<lb/>France and England, he remained a captive<lb/><pb n="718" facs="#f0002" />
+<cb/>
+for nearly ten years. In 1831 he was released<lb/>without the formality of a trial, and sent away<lb/>from the country which had so long been his<lb/>prison.</p><lb/><p>&#x201C;Refusing the most pressing invitations to<lb/>return to Europe, Bonpland lived until<lb/>recently upon his estate in the village of San<lb/>Borgia. Conforming in almost every thing,<lb/>except his ardor in the scientific pursuits, to<lb/>the habits of the natives, he married an In-<lb/>dian woman, and in the midst of the most<lb/>enchanting region in the new world built him-<lb/>self a quiet and happy home. Here, sur-<lb/>rounded by an affectionate family, revered by<lb/>every one, and at perfect liberty, he conceived<lb/>and carried into execution many schemes for<lb/>the advancement of agriculture, besides add-<lb/>ing continually to his immense collection of<lb/>plants.</p><lb/><p>&#x201C;But neither the charms of a simple life,<lb/>nor the engrossing nature of his pursuits,<lb/>could wholly wean his heart from the old as-<lb/>sociations. Though firmly resolved to live<lb/>and die upon his own estate in the new world,<lb/>he long cherished the hope of a flying visit<lb/>to the old. He desired, with all the ardor of<lb/>a life-long friendship, to see Humboldt once<lb/>more, that he might talk over &#x2018;old times&#x2019;<lb/>with him. How deeply this feeling was<lb/>shared by his illustrious friend, I need not<lb/>say. For many years they have maintained<lb/>a constant correspondence, and though separ-<lb/>ated thousands of miles, each has felt a cer-<lb/>tain society in the life of the other. The<lb/>senior by about four years, Humboldt fondly<lb/>hoped that he might not survive the last, the<lb/>most faithful, the noblest and best beloved of<lb/>all the friends of his long life. Yet so it<lb/>must be. It is the destiny of this venerable<lb/>man to follow all his friends to the grave, and<lb/>to remain himself the sole representative of<lb/>the times of his youth. One after another,<lb/>within a few years, the great men who started<lb/>with him and kept pace with him, have gone<lb/>to their rest and their final fame, and now<lb/>Bonpland has left him. How deeply he feels<lb/>this fresh bereavement, the following letter<lb/>affords touching evidence. It was written for<lb/>publication in the German papers, but I have<lb/>learned, from a private source, that the vener-<lb/>able man desires its circulation in the journals<lb/>of the United States, as a mark of respect<lb/>and esteem both for Bonpland and his<lb/>American friends&#x2019;:&#x2014;</p><lb/><div n="2"><head><hi rendition="#k">humboldt&#x2019;s letter.</hi></head><lb/><p>&#x201C;Conscious of the deep sympathy of numer-<lb/>ous friends in the sorrow occasioned by the<lb/>wide-spread report of the death of my dear,<lb/>noble friend and fellow-traveller, Bonpland, I<lb/>consider it my duty to give at least a brief<lb/>notice of this event, for the particulars of<lb/>which I am indebted to the kind services of<lb/><cb/>
+    Dr. Lallemant, author of an important paper<lb/>on the diseases of Europeans in the tropics.<lb/>This talented gentleman, after leaving the<lb/>Austrian royal expedition in the frigate<lb/>Novara, in February of this year, for the pur-<lb/>pose of doing a kindness to myself, made the<lb/>journey from Rio Janeiro to Rio Grande, and<lb/>thence by way of Porto Alegro through the<lb/>former Jesuit Mission to San Borgia, under<lb/>the erroneous impression that Bonpland, who<lb/>had gone there in 1831, was still resident at<lb/>that place. I have received two letters from<lb/>Dr. Lallemant, one dated at San Borgia on<lb/>the 10th of April, the other written from the<lb/>village of Umguaiana, after he had visited<lb/>Bonpland at Santa Anna. An extended ab-<lb/>stract of these letters having been sent to the<lb/>editor of the widely-read and interesting<lb/>botanical journal, the Bonplandia, in Han-<lb/>over, the following briefer extracts may here<lb/>suffice:</p><lb/><p>&#x201C;&#x2018;In San Borgia,&#x2019; writes Dr. Lallemant,<lb/>&#x2018;I lived with an intimate friend of Bonpland,<lb/>the Vicar Gray, with whom I visited the<lb/>garden of the botanist, so long cultivated with<lb/>care, but now lying waste and desolate. It<lb/>was near the close of the year 1857 that the<lb/>Vicar last received letters from Bonpland,<lb/>since when intelligence had come of his<lb/>severe illness. Letters of inquiry still re-<lb/>mained unanswered, and notwithstanding the<lb/>short distance between the places, the people<lb/>of San Borgia were uncertain whether I<lb/>should find your fellow-traveller yet in the<lb/>land of the living. In 1853 Bonpland had<lb/>left San Borgia and taken up his residence<lb/>upon his larger plantation of Santa Anna,<lb/>where he had long occupied himself in the<lb/>cultivation of orange trees. The residence of<lb/>the aged scholar in the Estancia of Santa<lb/>Anna, consists of two large buildings, merely<lb/>clay walls bound together by bamboo sticks,<lb/>and a few beams, and thatched with straw.<lb/>These buildings have doors, but no windows,<lb/>the light being admitted through the chinks<lb/>between the bamboo sticks. Despite the deep<lb/>furrows which an eventful life had engraven<lb/>in the beloved countenance, his eye had not<lb/>grown dim nor lost any of its full-thoughted<lb/>vivacity. But lively conversation, though<lb/>started by himself, appeared to weary him<lb/>much, and he suffered severely from a chronic<lb/>affection of the bladder. The privations he<lb/>had so strangely imposed upon himself are<lb/>by no means in consequence of poverty, or of<lb/>any necessity for abstinence, but of long cus-<lb/>tom, great self-control, and characteristic in-<lb/>dividuality. The government of Corrientes<lb/>has presented to him an estate valued at 10,-<lb break="no"/>000 Spanish piastres, and he enjoys a French<lb/>pension of 3000 francs a year. He has never<lb/>made the practice of medicine a source of<lb/>pecuniary profit to himself. Though univer-<lb/><pb n="719" facs="#f0003" />
+<cb/>
+sally revered, he loves the solitude, and espe-<lb/>cially avoids all persons who might offer him<lb/>assistance or advice. His scientific ardor has<lb/>not yet abated, and his collections and manu-<lb/>scripts are deposited in Corrientes, where he<lb/>has founded a national Museum.</p><lb/><p>&#x201C;&#x2018;On the following morning I found him<lb/>visibly worse, and sinking away. The night<lb/>had been a painful one. I pressed him to<lb/>tell me whether I might not, in some way, be<lb/>of service to him. But I fared no better than<lb/>his other friends&#x2014;he would accept of no<lb/>assistance. How gladly would I have per-<lb/>suaded him to return once more to civilized<lb/>society! But I, too, felt with him that his<lb/>time was passed. He belongs to the first<lb/>half of the nineteenth century, not to the<lb/>second. I think that your friend himself was<lb/>moved when I took his wasted hands in mine<lb/>with the pressure of farewell. For three<lb/>months now his attendants have remarked<lb/>his failing strength, and perhaps the old man<lb/>had the same foreboding as myself, at parting,<lb/>that I might be the last ambassador of Eu-<lb/>ropean lineage who should penetrate the<lb/>depths of the wilderness to offer him regard,<lb/>love and thanks, in the name of that science<lb/>which owes so much to his labors. I mounted<lb/>my horse, and rode northward through the<lb/>evergreen plains. No path showed my way,<lb/>no guide disturbed me; I was alone with my<lb/>sorrowful thoughts over the departing Bonp-<lb/>land.&#x2019;</p><lb/><p>&#x201C;Yet how cheerful the last letter I received<lb/>from Bonpland, bearing date the 7th of
+                        June,<lb/>1857! &#x2018;I myself,&#x2019; he writes, &#x2018;shall bring
+                        all<lb/><cb/> my collections and manuscripts to Paris, and<lb/>deposit them
+                        in the Museum. My journey to<lb/>France will be exceedingly short. I shall
+                        re-<lb/>turn to my Santa Anna, where I lead a quiet<lb/>and happy life. Here
+                        shall I die, and my<lb/>sepulchre and my grave shall be underneath<lb/>the
+                        shadow of the many trees I have planted.<lb/>Oh how happy were I, my dear
+                        Humboldt,<lb/>could we meet once more, and recall our<lb/>common
+                        experiences! On the 28th of August<lb/>next I shall be eighty-four years
+                        old, and am<lb/>yet four years younger than you. A man<lb/>lately died in
+                        this vicinity who had attained<lb/>the age of one hundred and seven. What
+                        a<lb/>prospect for two travellers who have already<lb/>stepped beyond the
+                        eightieth year!&#x2019;</p><lb/><p>&#x201C;The cheerful, almost life-desiring tone of<lb/>this letter, contrasts strangely with the melan-<lb/>choly representations of Dr. Lallemant. Ac-<lb/>cording to Herr v. Tschudi the report was<lb/>credited in Montevideo on the 29th of May,<lb/>that Bonpland had died at San Borgia, the<lb/>date of his death uncertain. Yet Dr. Lalle-<lb/>mant had spoken with him on the 18th of<lb/>April in Santa Anna, and on May 19 the<lb/>report of his death was discredited at Porto<lb/>Allegro. Thus there yet remains ground for<lb/>hope that the younger is not to be first called<lb/>away. Such remoteness often stretches un-<lb/>certainty to a painful duration; such the<lb/>solicitude felt for Edward Vogel in Central<lb/>Africa, and for Adolphus Schlagintweit in<lb/>Central Asia&#x2014;the sorrowfully missed!</p><lb/><closer><salute><hi rendition="#et">&#x201C;<hi rendition="#k">Alexander V. Humboldt.</hi></hi></salute></closer><lb/><dateline>&#x201C;Berlin, July 12, 1858.&#x201D;</dateline></div></div><lb/></body><back></back>
+
+</text>
+</TEI>
