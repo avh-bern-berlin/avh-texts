@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -14,15 +14,15 @@
                     </persName>
                 </author>
                 <editor corresp="#avh_in_bern">
-                    <persName ref="http://d-nb.info/gnd/1014897157">
-                        <surname>Wernicke</surname>
-                        <forename>Norbert</forename>
+                    <persName>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <editor corresp="#avh_in_bern">
                     <persName>
-                        <surname>Strobl</surname>
-                        <forename>Michael</forename>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <respStmt xml:id="baertschi_s">
@@ -80,7 +80,42 @@
                 </idno>
             </publicationStmt>
             <sourceDesc>
-                <p>DUMMYHEADER zur Validitätsprüfung</p>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -93,150 +128,218 @@
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change n="1.2.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+            <change n="1.1.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
             </change>
-            <change n="1.1.0" when="2018-09-10" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+            <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
             </change>
         </revisionDesc>
     </teiHeader>
     <text>
         <front/>
         <body>
-            <pb facs="#f0001"/>
-            <milestone unit="section" rendition="#hr"/>
-            <lb break="yes"/>
-            <cb n="97"/>
-            <lb break="yes"/>
-            <div n="1" xml:lang="deu">
-                <head>Beitra&#x0364;ge zur Naturge&#x017F;chichte der Mosquitos.</head>
+            <pb n="231" facs="#f0001"/>
+            <div n="1">
+                <head>MUSQUITOS.</head>
                 <lb break="yes"/>
-                <p>
-                    <hi rendition="#g">Humboldt</hi> theilt in &#x017F;einem ku&#x0364;rzlich er&#x017F;chienenen Werke:<lb break="yes"/>
-                    <hi rendition="#aq">
-                        <bibl>Voyage aux Régions équinoxiales du nouveau Continent</bibl>,</hi>
-                    <lb break="yes"/>eine &#x017F;ehr unterhaltende Zu&#x017F;ammen&#x017F;tellung der Erfahrungen<lb break="yes"/>mit, die er, wa&#x0364;hrend &#x017F;eines langen Aufenthalts in dem tropi-<lb break="no"/>&#x017F;chen Amerika, u&#x0364;ber die Mosquitos ge&#x017F;ammelt hat, die u&#x0364;ber<lb break="yes" />die Naturge&#x017F;chichte, die geographi&#x017F;che Verbreitung und die<lb break="yes"/>Eigenthu&#x0364;mlichkeiten die&#x017F;er grau&#x017F;amen Feinde des Men&#x017F;chen<lb break="yes"/>viel Licht verbreitet; und dieß um &#x017F;o mehr, da wir die&#x017F;elben<lb break="yes"/>bisher nur aus vagen und ungru&#x0364;ndlichen Notizen anderer<lb break="yes"/>Rei&#x017F;enden kannten.</p>
+                <p>Persons who have not navigated the great rivers of<lb break="yes"/>equinoctial
+                    America, for instance, the Oroonoko and<lb break="yes"/>the Rio Magdalena, can
+                    scarcely conceive, how with-<lb break="no"/>out interruption, at every instant
+                    of life, you may be<lb break="yes"/>tormented by insects flying in the air, and
+                    how the<lb break="yes"/>multitude of these little animals may render vast re-<lb
+                        break="no"/>gions wholly uninhabitable. However accustomed<lb break="yes"
+                    />you may be to endure pain without complaint, how-<lb break="no"/>ever lively
+                    an interest you may take in the objects of<lb break="yes"/>your researches, it
+                    is impossible not to be constantly<lb break="yes"/>disturbed by the moschettoes,
+                        <hi rendition="#i">zancudoes, jejens,</hi> and<lb break="yes"/><hi
+                        rendition="#i">tempraneroes,</hi> that cover the face and hands, pierce
+                        the<lb break="yes"/>clothes with their long sucker in the form of a
+                        needle,<lb break="yes"/>and, getting into the mouth and nostrils, set you<lb
+                        break="yes"/>coughing and sneezing whenever you attempt to speak<lb
+                        break="yes"/>in the open air. In the missions of the Oroonoko, in<lb
+                        break="yes"/>the villages placed on the banks of the river, sur-<lb
+                        break="no"/>rounded by immense forests, the <hi rendition="#i">plaga de les
+                        moscas,</hi>
+                    <lb break="yes"/>&#x201C;the plague of the flies,&#x201D; affords an
+                    inexhaustible subject<lb break="yes"/>of conversation. When two persons meet in
+                    the morn-<lb break="no"/>ing, the first questions they address to each other
+                        are,<lb break="yes"/>&#x201C;How did you find the zancudoes during the
+                        night?<lb break="yes"/>How are we to-day for the moschettoes?&#x201D;
+                        These<lb break="yes"/>questions remind us of a Chinese form of
+                        politeness,<lb break="yes"/>which indicates the ancient state of the country
+                        where<lb break="yes"/>it took birth. Salutations were made heretofore in
+                        the<lb break="yes"/><hi rendition="#i">celestial empire,</hi> in the
+                    following words, <hi rendition="#i">vou-tou-hou,</hi>
+                    <lb break="yes"/>&#x201C;Have you been incommoded in the night by the ser-<lb
+                        break="no"/>pents?&#x201D; We shall soon see, that on the banks of the<lb
+                        break="yes"/>Tuamini, in the river Magdalena, and still more at<lb
+                        break="yes"/>Choco, the country of gold and platina, the Chinese<lb
+                        break="yes"/>compliment on the serpents might be added to that of<lb
+                        break="yes"/>the moschettoes.</p>
                 <lb break="yes"/>
-                <p>Wer (&#x017F;agt Humboldt) nie auf den großen Su&#x0364;damerikani-<lb break="no" />&#x017F;chen Flu&#x0364;&#x017F;&#x017F;en, als dem Orinoko oder dem Rio de la Magda-<lb break="no"/>lena ge&#x017F;chifft hat, der kann &#x017F;ich keinen Begriff davon machen,<lb break="yes"/>wie man jeden Augenblick des Lebens durch die&#x017F;e geflu&#x0364;gelten<lb break="yes"/>In&#x017F;ekten gequa&#x0364;lt werden und wie ganze Land&#x017F;triche durch &#x017F;ie<lb break="yes" />fa&#x017F;t unbewohnbar gemacht werden ko&#x0364;nnen. Mag man immer<lb break="yes"/>die gro&#x0364;ßten Schmerzen ohne Murren ertragen ko&#x0364;nnen; mag<lb break="yes"/>man auch das lebhafte&#x017F;te Intere&#x017F;&#x017F;e an den Gegen&#x017F;ta&#x0364;nden haben,<lb break="yes" />die man unter&#x017F;uchen will, dennoch wird man unaufho&#x0364;rlich durch<lb break="yes"/>die Mosquitos, Zancudos, Jen&#x017F;en und Tempraneros davon<lb break="yes"/>abgezogen, die &#x017F;ich in Schaaren auf Ge&#x017F;icht und Ha&#x0364;nde nie-<lb break="no"/>derla&#x017F;&#x017F;en, die Kleider mit ihren nadelfo&#x0364;rmigen Ru&#x0364;&#x017F;&#x017F;eln durch-<lb break="no"/>bohren, die in Na&#x017F;e und Mund fliegen, und &#x017F;o ein unaufho&#x0364;r-<lb break="no"/>liches Hu&#x017F;ten und Nießen erzeugen, &#x017F;obald man in freier Luft<lb break="yes"/>&#x017F;prechen will. Auch giebt die <hi rendition="#aq">plaga de las moscas</hi>, &#x201E;die<lb break="yes"/>Qual der Fliegen&#x201C; in den Mi&#x017F;&#x017F;ionen, die hart am Orinoko,<lb break="yes"/>von ungeheuern Waldungen umgeben, liegen, einen uner&#x017F;cho&#x0364;pf-<lb break="no"/>lichen Stoff zur Unterhaltung. Begegnen &#x017F;ich am Morgen<lb break="yes"/>zwei Per&#x017F;onen, &#x017F;o &#x017F;ind die er&#x017F;ten Fragen, welche &#x017F;ie an einander<lb break="yes"/>richten, folgende: Wie haben Sie die&#x017F;e Nacht die Zancudos<lb break="yes"/>gefunden? Wie werden es heute die Mosquitos treiben?</p>
-                <lb break="yes"/>
-                <p>Die geographi&#x017F;che Vertheilung die&#x017F;er mu&#x0364;ckenartigen In-<lb break="no"/>&#x017F;ekten bietet &#x017F;ehr merkwu&#x0364;rdige Er&#x017F;cheinungen dar. Sie &#x017F;cheint<lb break="yes"/>&#x017F;ich nicht einzig nach der Wa&#x0364;rme des Klima&#x2019;s, nach der großen<lb break="yes" />Feuchtigkeit und Undurchdringlichkeit der Wa&#x0364;lder, &#x017F;ondern au-<lb break="no"/>ßerdem nach lokalen, &#x017F;ehr &#x017F;chwer zu charakteri&#x017F;irenden Um&#x017F;ta&#x0364;n-<lb break="no"/>den zu richten. Gleich zu Anfang will ich erwa&#x0364;hnen, daß die&#x017F;e<lb break="yes" />Landplage in der heißen Zone nicht &#x017F;o allgemein verbreitet i&#x017F;t,<lb break="yes"/>als man wohl denken du&#x0364;rfte<choice>
-                        <sic/>
-                        <corr type="editorial">.</corr>
-                    </choice> Auf den Hochebenen, die u&#x0364;ber<lb break="yes"/>400 Toi&#x017F;en u&#x0364;ber der See liegen, z. B. zu <placeName>Cumana</placeName>, <placeName>Calabozo</placeName>
-                    <lb break="yes"/>u. &#x017F;. w. &#x017F;ieht man nicht mehr Schnaken, als in den bewohn-<lb break="no"/>te&#x017F;ten Gegenden Europa&#x2019;s<choice>
-                        <sic/>
-                        <corr type="editorial">.</corr>
-                    </choice> Dagegen vermehren &#x017F;ie &#x017F;ich zu<lb break="yes"/>
-                    <placeName>Nueva Barcelona</placeName> und mehr we&#x017F;tlich an der Ku&#x0364;&#x017F;te, die &#x017F;ich<lb break="yes"/>nach dem <placeName>Kap Codera</placeName> er&#x017F;treckt, ungeheuer. Zwi&#x017F;chen dem<lb break="yes"/>kleinen Hafen <placeName>Higuerote</placeName> und an der Mu&#x0364;ndung des <placeName>Rio Unare</placeName>,<lb break="yes" />&#x017F;charren &#x017F;ich die unglu&#x0364;cklichen Einwohner des Nachts 3 bis 4<lb break="yes"/>
-                    <cb n="98"/>
-                    <lb break="yes"/>Zoll tief in Sand, und la&#x017F;&#x017F;en nur den Kopf frei, den &#x017F;ie mit<lb break="yes"/>einem Tuche bedecken. Segelt man zwi&#x017F;chen dem 7. und 8.<lb break="yes"/>Breitegrad von <placeName>Cabruta</placeName> nach <placeName>Ango&#x017F;tura</placeName> &#x017F;tromaufwa&#x0364;rts und von<lb break="yes"/>
-                    <placeName>Cabruta</placeName> nach <placeName>Urunna</placeName> &#x017F;tromabwa&#x0364;rts, &#x017F;o i&#x017F;t die Plage der In-<lb break="no"/>&#x017F;ekten ziemlich ertra&#x0364;glich. Aber jen&#x017F;eits der Mu&#x0364;ndung des<lb break="yes"/>
-                    <placeName>Rio Arauca</placeName>, wenn man die enge Stelle von Bareguan im<lb break="yes"/>Ru&#x0364;cken hat, i&#x017F;t es mit der Ruhe des Rei&#x017F;enden vorbei. Dort<lb break="yes"/>&#x017F;cheinen die untern Luft&#x017F;chichten, vom Boden bis zu 15 bis 20<lb break="yes"/>Fuß Ho&#x0364;he, durch die Unzahl die&#x017F;er giftigen In&#x017F;ekten wie mit<lb break="yes"/>einem dichten Dampfe angefu&#x0364;llt. Stellt man &#x017F;ich an einen<lb break="yes"/>dunkeln Ort, z. B. in die Grotten bei den Katarakten, die<lb break="yes"/>durch einen u&#x0364;berha&#x0364;ngenden Granitblock gebildet werden, und<lb break="yes"/>blickt dann nach der von der Sonne be&#x017F;chienenen Oeffnung hin,<lb break="yes"/>&#x017F;o &#x017F;ieht man Wolken von Mosquitos, die mehr oder weniger<lb break="yes"/>dicht &#x017F;ind, je nachdem die&#x017F;e Thiere &#x017F;ich vermo&#x0364;ge ihrer lang&#x017F;a-<lb break="no"/>men und taktma&#x0364;ßigen Bewegungen, vereinigen oder zer&#x017F;treuen.<lb break="yes"/>In der Mi&#x017F;&#x017F;ion <placeName>San Borga</placeName> &#x017F;ind die Mosquitos &#x017F;chon uner-<lb break="no"/>tra&#x0364;glicher als zu <placeName>Cariehara</placeName>; allein in den <hi rendition="#g">
-                        <placeName>Raudales</placeName>
-                    </hi> zu <placeName>Atu-<lb break="no"/>rès</placeName> und haupt&#x017F;a&#x0364;chlich zu <placeName>Maypurès</placeName> erreicht die&#x017F;e Qual, &#x017F;o zu<lb break="yes" />&#x017F;agen, ihr <hi rendition="#aq">Maximum.</hi> Ich zweifle daran, daß es ein Land<lb break="yes"/>giebt, wo der Men&#x017F;ch, wa&#x0364;hrend der Regenzeit, gro&#x0364;ßern Leiden<lb break="yes"/>unterworfen i&#x017F;t. Ueber den 5ten Breitegrad hinaus wird man<lb break="yes"/>etwas weniger ge&#x017F;tochen; aber auf dem obern Orinoko &#x017F;ind die<lb break="yes" />Stiche weit &#x017F;chmerzhafter, weil die Hitze und ga&#x0364;nzliche Wind-<lb break="no"/>&#x017F;tille die Haut reizbarer machen.</p>
-                <lb break="yes"/>
-                <p>Gelangt man weiter nach Su&#x0364;den, wo die Flu&#x0364;&#x017F;&#x017F;e mit<lb break="yes"/>braungelbem Wa&#x017F;&#x017F;er ihren Anfang nehmen, die man gewo&#x0364;hn-<lb break="no"/>lich <hi rendition="#g">&#x017F;chwarze Wa&#x017F;&#x017F;er</hi>
-                    <hi rendition="#aq">(aquas negras)</hi> nennt, z. B. an die<lb break="yes"/>Ufer des <placeName>Atabapo</placeName>, <placeName>Temi</placeName>, <placeName>Tuamini</placeName> und <placeName>Rio Negro</placeName>, &#x017F;o genießt<lb break="yes"/>man einer Ruhe, ich mo&#x0364;chte fa&#x017F;t &#x017F;agen, eines unerwarteten<lb break="yes"/>Glu&#x0364;cks. Die&#x017F;e Flu&#x0364;&#x017F;&#x017F;e laufen gleichfalls durch dichte Waldun-<lb break="no"/>gen, allein die &#x017F;chnakenartigen In&#x017F;ekten fliehen, gleich den<lb break="yes"/>Krokodilen, die &#x017F;chwarzen Gewa&#x0364;&#x017F;&#x017F;er, die ein wenig ka&#x0364;lter als<lb break="yes" />die farblo&#x017F;en Wa&#x017F;&#x017F;er und in chemi&#x017F;cher Hin&#x017F;icht von die&#x017F;en<lb break="yes"/>ver&#x017F;chieden &#x017F;ind. Vielleicht ko&#x0364;nnen die Larven die&#x017F;er Thiere,<lb break="yes"/>die man als wahre Wa&#x017F;&#x017F;erthiere an&#x017F;ehen kann, nicht gedeihen.<lb break="yes"/>Nur einige kleine Flu&#x0364;&#x017F;&#x017F;e, der <placeName>Toparo</placeName>, <placeName>Malaveni</placeName> und <placeName>Zama</placeName>,<lb break="yes"/>deren Farbe entweder tiefblau oder braungelb i&#x017F;t, wimmeln<lb break="yes"/>dennoch von Mosquitos. Als wir den <placeName>Rio Negro</placeName> hinabfuh-<lb break="no"/>ren, konnten wir in den, an der Bra&#x017F;iliani&#x017F;chen Grenze lie-<lb break="no"/>genden Do&#x0364;rfern, <placeName>Maroa</placeName>, <placeName>Davipe</placeName> und <placeName>San Carlos</placeName> frei ath-<lb break="no"/>men; allein die Verbe&#x017F;&#x017F;erung un&#x017F;erer Lage war nur von kurzer<lb break="yes" />Dauer. &#x2014; Zu L&#x2019;<placeName>Esmeralda</placeName>, am o&#x0364;&#x017F;tlichen Ende des obern<lb break="yes"/>Orinoko, jen&#x017F;eits welcher das Land den Spaniern nicht mehr<lb break="yes"/>bekannt i&#x017F;t, &#x017F;ind die Mosquitowolken fa&#x017F;t eben &#x017F;o dicht, als<lb break="yes"/>bei den großen Wa&#x017F;&#x017F;erfa&#x0364;llen. &#x2014; Zu <placeName>Mandavaca</placeName> trafen wir<lb break="yes"/>einen alten Mi&#x017F;&#x017F;iona&#x0364;r, der uns &#x017F;agte: er habe &#x017F;eine 20 Mos-<lb break="no"/>quitosjahre in Amerika verlebt. Er machte uns auf den Zu-<lb break="no"/>
-                    <pb facs="#f0002"/>
-                    <cb n="99"/>
-                    <lb break="yes"/>&#x017F;tand &#x017F;einer Beine aufmerk&#x017F;am, damit wir ein&#x017F;t zu Hau&#x017F;e er-<lb break="no"/>za&#x0364;hlen ko&#x0364;nnten, was die armen Mo&#x0364;nche in den Wa&#x0364;ldern des<lb break="yes" />Ca&#x017F;&#x017F;iquiare von den Mosquitos zu leiden ha&#x0364;tten. Da jeder<lb break="yes"/>Stich einen kleinen &#x017F;chwarzbraunen Punkt hinterla&#x0364;ßt, &#x017F;o waren<lb break="yes"/>&#x017F;eine Beine &#x017F;o getiegert, daß man nur mit Mu&#x0364;he die weiße<lb break="yes"/>Farbe &#x017F;einer Haut durch die Flecken hindurch erkennen konnte. &#x2014;<lb break="yes"/>So erkla&#x0364;rt es &#x017F;ich, wie der Pater Guardian einen Laienbru-<lb break="no"/>der, an dem er &#x017F;ich ra&#x0364;chen will, gewo&#x0364;hnlich nach Esmeralda<lb break="yes"/>&#x017F;chickt, oder: &#x201E;zu den Mosquitos verurtheilt.&#x201C; In den farb-<lb break="no" />lo&#x017F;en Gewa&#x0364;&#x017F;&#x017F;ern &#x017F;cheinen &#x017F;ich mei&#x017F;t Species aus dem <hi rendition="#aq">Genus<lb break="yes" />Simulium</hi> aufzuhalten, wa&#x0364;hrend am <placeName>AtLandslubapo</placeName> und <placeName>Rio Negro</placeName>
-                    <lb break="yes"/>mei&#x017F;t nur &#x017F;olche vom <hi rendition="#aq">Genus Culex</hi> hau&#x017F;en.</p>
-                <lb break="yes"/>
-                <p>So weit von der geographi&#x017F;chen Verbreitung die&#x017F;er Thiere.<lb break="yes"/>Es wa&#x0364;re zu wu&#x0364;n&#x017F;chen, daß ein ge&#x017F;chickter Entomolog die<lb break="yes"/>ver&#x017F;chiedenen Species die&#x017F;er &#x017F;cha&#x0364;dlichen In&#x017F;ekten an Ort und<lb break="yes"/>Stelle &#x017F;tudiren ko&#x0364;nnte, die trotz ihrer Winzigkeit in dem<lb break="yes"/>Haushalte der Natur eine wichtige Rolle &#x017F;pielen. Wichtig<lb break="yes"/>und bewie&#x017F;en i&#x017F;t, daß die ver&#x017F;chiedenen Arten nicht zu&#x017F;ammen,<lb break="yes"/>&#x017F;ondern jede zu einer gewi&#x017F;&#x017F;en Tageszeit &#x017F;chwa&#x0364;rmen, oder wie<lb break="yes"/>&#x017F;ich die Mi&#x017F;&#x017F;iona&#x0364;rs recht naiv ausdru&#x0364;cken, &#x201E;die Wache beziehn.&#x201C;<lb break="yes" />Zwi&#x017F;chen jedem Wech&#x017F;el hat man einige Minuten und oft eine<lb break="yes"/>Viertel&#x017F;tunde Ruhe. Von halb 7 Uhr Morgens bis 5 Uhr<lb break="yes"/>Abends, wimmelt die Luft von Mosquitos, die nicht, wie ei-<lb break="no"/>nige Rei&#x017F;ende behaupten, die Ge&#x017F;talt un&#x017F;rer Mu&#x0364;cken, &#x017F;ondern<lb break="yes"/>die der Fliegen haben. Dieß &#x017F;ind die Simulien von der Fa-<lb break="no"/>milie der Nemocères des Latreille. Ihr Stich i&#x017F;t &#x017F;o &#x017F;chmerz-<lb break="no"/>haft, wie derjenige der Stomoxes <hi rendition="#aq">(Conops calcitrans).</hi> Da,<lb break="yes"/>wo der Saugeru&#x0364;&#x017F;&#x017F;el die Haut durchbohrt hat, bleibt ein klei-<lb break="no"/>ner braunrother Fleck zuru&#x0364;ck, der von extrava&#x017F;irtem Blut her-<lb break="no"/>ru&#x0364;hrt. Eine Stunde vor Sonnenuntergang werden die Mo&#x017F;-<lb break="no"/>quitos von einer kleinen Art Mu&#x0364;cken, den Tempraneros, ab-<lb break="no"/>gelo&#x0364;&#x017F;t, die deshalb &#x017F;o heißen, weil &#x017F;ie auch bei Sonnenaufgang<lb break="yes" />er&#x017F;cheinen, und die kaum 1&#x00BD; Stunde bleiben. Nachdem &#x017F;ie<lb break="yes"/>zwi&#x017F;chen 6 und 7 Uhr ver&#x017F;chwunden &#x017F;ind, und man nur we-<lb break="no"/>nige Minuten Ruhe gehabt hat, wird man von den Zancudos,<lb break="yes"/>einer andern Mu&#x0364;ckenart mit &#x017F;ehr langen Fu&#x0364;ßen, angefallen.<lb break="yes"/>Der Stich die&#x017F;es Thiers i&#x017F;t a&#x0364;ußer&#x017F;t &#x017F;chmerzhaft, und die dar-<lb break="no"/>nach folgende Ge&#x017F;chwul&#x017F;t dauert mehrere Wochen. Es &#x017F;ummt<lb break="yes"/>wie un&#x017F;re Mu&#x0364;cken, nur &#x017F;ta&#x0364;rker und gedehnter, und i&#x017F;t ein<lb break="yes"/>wahres Nachtin&#x017F;ekt, wa&#x0364;hrend der Tempranero die Da&#x0364;mmerung<lb break="yes"/>liebt.</p>
-                <lb break="yes"/>
-                <p>Auf der Rei&#x017F;e von <placeName>Carthagena</placeName> nach <placeName>Sta. Fe de Bogota</placeName>
-                    <lb break="yes"/>bemerkten wir im Thale des <placeName>Rio grande de la Magdalena</placeName>
-                    <lb break="yes"/>zwi&#x017F;chen <placeName>Mompox</placeName> und <placeName>Honda</placeName>, daß die Zancudos die Luft von<lb break="yes" />8 Uhr Abends bis Mitternacht verdunkeln, gegen Mitternacht<lb break="yes" />aber abnehmen und 4 Stunden lang ver&#x017F;chwinden, dann aber<lb break="yes" />in Ma&#x017F;&#x017F;e und blutdu&#x0364;r&#x017F;tig wiederkehren<choice>
-                        <sic/>
-                        <corr type="editorial">.</corr>
-                    </choice> Auf dem <placeName>Orinoko</placeName>
-                    <lb break="yes"/>&#x017F;ieht man &#x017F;elten wirkliche Tagmu&#x0364;cken, und die Zancudos auf<lb break="yes"/>beiden Stro&#x0364;men geho&#x0364;ren gewiß ver&#x017F;chiedenen Arten an<choice>
-                        <sic/>
-                        <corr type="editorial">.</corr>
-                    </choice>
+                <p>At Mandavaca we found an old missionary, who<lb break="yes"/>told us with an air
+                    of sadness, that he had spent <hi rendition="#i">his</hi>
+                    <lb break="yes"/>
+                    <pb n="232" facs="#f0002"/><hi rendition="#i">twenty years of moschettoes</hi>
+                    in America. He desired us<lb break="yes"/>to look well at his legs, that we
+                    might be able to tell<lb break="yes"/>one day, &#x201C;poor alla (beyond the
+                    sea,) what the poor<lb break="yes"/>monks suffer in the forests of
+                    Cassiquiare.&#x201D; Every<lb break="yes"/>sting leaving a small darkish brown
+                    point, his legs<lb break="yes"/>were so speckled, that it was difficult to
+                    recognize the<lb break="yes"/>whiteness of his skin through the spots of
+                        coagulated<lb break="yes"/>blood. If the insects of the simulium genus
+                        abound<lb break="yes"/>in the Cassiquiare, which has <hi rendition="#i"
+                        >white waters,</hi> the culices,<lb break="yes"/>or <hi rendition="#i"
+                        >zancudoes,</hi> are so much the more rare; you scarcely<lb break="yes"
+                    />find any there, while on the rivers of <hi rendition="#i">black waters</hi>
+                        in<lb break="yes"/>the Atabapo and the Rio Negro, there are generally<lb
+                        break="yes"/>some <hi rendition="#i">zancudoes</hi> and no <hi
+                        rendition="#i">moschettoes.</hi>
                 </p>
                 <lb break="yes"/>
-                <p>Wir haben &#x017F;o eben ge&#x017F;ehn, wie die&#x017F;e Tropenin&#x017F;ekten bei<lb break="yes"/>ihrem Er&#x017F;cheinen und Ver&#x017F;chwinden nach gewi&#x017F;&#x017F;en Regeln ver-<lb break="no"/>fahren. Zu be&#x017F;timmten und unvera&#x0364;nderlichen Stunden bevo&#x0364;l-<lb break="no"/>kert &#x017F;ich in der&#x017F;elben Jahreszeit und Breite die Luft mit den-<lb break="no"/>&#x017F;elben Bewohnern; und unter einer Zone, wo der Barometer<lb break="yes"/>zur Uhr dienen kann, wo alles &#x017F;o wunderbar regelma&#x0364;ßig auf<lb break="yes"/>einander folgt, ko&#x0364;nnte man beinahe mit ge&#x017F;chlo&#x017F;&#x017F;enen Augen<lb break="yes"/>bei Tag und Nacht die Stunde be&#x017F;timmen; da man die&#x017F;e an<lb break="yes"/>den ver&#x017F;chiedenen Ge&#x017F;um&#x017F;e und Stechen der In&#x017F;ekten erken-<lb break="no"/>nen ko&#x0364;nnte.</p>
+                <p>I have just shown, from my own observations, how<lb break="yes"/>much the
+                    geographical distribution of venomous in-<lb break="no"/>sects varies in this
+                    labyrinth of rivers, with white and<lb break="yes"/>black waters. It were to be
+                    wished, that a learned<lb break="yes"/>entomologist could study on the spot the
+                    specific dif-<lb break="no"/>ferences of these noxious insects, which in the
+                        torrid<lb break="yes"/>zone, in spite of their littleness, act an important
+                        part<lb break="yes"/>in the economy of nature. What appeared to us very<lb
+                        break="yes"/>remarkable, and is a fact, known to all the missionaries,<lb
+                        break="yes"/>is, that the different species do not associate together,<lb
+                        break="yes"/>and that at different hours of the day you are stung<lb
+                        break="yes"/>by a distinct species. Every time that the scene<lb break="yes"
+                    />changes, and to use the simple expression of the mis-<lb break="no"
+                    />sionaries, other insects &#x201C;mount guard,&#x201D; you have a<lb
+                        break="yes"/>few minutes, often a quarter of an hour, of repose.<lb
+                        break="yes"/>The insects that disappear have not their places in-<lb
+                        break="no"/>stantly supplied in equal numbers by their successors.<lb
+                        break="yes"/>From half after six in the morning till five in the after-<lb
+                        break="no"/>noon, the air is filled with moschettoes; which have<lb
+                        break="yes"/>not, as we find related in some travels, the form of our<lb
+                        break="yes"/>gnats, but that of a small fly. They are simuliums of<lb
+                        break="yes"/>the family nemocer&#x00E6; of the system of Latreille. Their<lb
+                        break="yes"/>sting is as painful as that of <hi rendition="#i"
+                        >stomoxes.</hi> It leaves a little<lb break="yes"/>reddish brown spot, which
+                    is extravasated and coagu-<lb break="no"/>
+                    <pb n="233" facs="#f0003"/>lated blood, where their proboscis has pierced the
+                        skin.<lb break="yes"/>An hour before sun-set a species of small gnats,
+                        called<lb break="yes"/><hi rendition="#i">tempraneros,</hi> because they
+                    appear also at sun-rise, take<lb break="yes"/>the place of the moschettoes.
+                    Their presence scarcely<lb break="yes"/>lasts an hour and a half; they disappear
+                    between six<lb break="yes"/>and seven in the evening, or, as they say here,
+                        after<lb break="yes"/>the <hi rendition="#i">Angelus (a la oracion).</hi>
+                    After a few minutes&#x2019; re-<lb break="no"/>pose, you feel yourself stung by
+                        <hi rendition="#i">zancudoes</hi> another<lb break="yes"/>species of gnat
+                    (culex) with very long legs. The zan-<lb break="no"/>cudo, the proboscis of
+                    which contains a sharp pointed<lb break="yes"/>sucker, causes the most acute
+                    pain, and a swelling that<lb break="yes"/>remains several weeks. Its hum
+                    resembles that of our<lb break="yes"/>gnats in Europe, but is louder and more
+                        prolonged.<lb break="yes"/>The Indians pretend to distinguish &#x201C;by
+                    their song&#x201D;<lb break="yes"/>the <hi rendition="#i">zancudoes</hi> and the
+                        <hi rendition="#i">tempraneroes;</hi> the latter of which<lb break="yes"
+                    />are real <hi rendition="#i">twilight insects,</hi> while the <hi
+                        rendition="#i">zancudoes</hi> are most<lb break="yes"/>frequently <hi
+                        rendition="#i">nocturnal insects,</hi> and disappear towards<lb break="yes"
+                    />sun-rise.</p>
                 <lb break="yes"/>
-                <p>Auf den Flu&#x0364;&#x017F;&#x017F;en <placeName>Magdalena</placeName> und <placeName>Guayaquil</placeName> allein unter-<lb break="no"/>&#x017F;chied ich 5 &#x017F;ehr deutlich ver&#x017F;chiedene Arten von Zancudos. <note place="foot" n="*)" xml:id="fn1-1" next="#fn1-2">1) <hi rendition="#aq">
-                            <hi rendition="#i">
-                                <hi rendition="#g">Culex cyanopennis</hi> abdomine fusco, piloso, an-<lb break="no"/>nulis sex albis; alis caeruleis, tarsis albo annulatis.</hi>
-                            <lb break="yes"/>Thorax fusco-ater, pilosus. Abdomen supra fusco-<lb break="no"/>caerulescens, hirtum, annulis sex albis. Alae caeru-<lb break="no"/>leae, splendore semi-metallico, viridenti-venosae,<lb break="yes"/>saepe pulverulentae, margine externo ciliato. Pedes</hi>
-                    </note>
-                    <lb break="yes"/>
-                    <cb n="100"/>
-                    <lb break="yes"/>Die Culex Su&#x0364;damerika&#x2019;s &#x017F;ind gewo&#x0364;hnlich an Flu&#x0364;geln, Bru&#x017F;t-<lb break="no" />&#x017F;tu&#x0364;ck und Fu&#x0364;ßen azurfarben geringelt, und &#x017F;chillern durch ihre<lb break="yes"/>ver&#x017F;chiedene Punktirungen metallartig. Hier, wie in Europa<lb break="yes"/>&#x017F;ind die Ma&#x0364;nnchen, welche &#x017F;ich durch ihre flaumigen Fu&#x0364;hlho&#x0364;r-<lb break="no"/>ner auszeichnen, &#x017F;ehr &#x017F;elten, und man wird nur von den<lb break="yes"/>Weibchen ge&#x017F;tochen. Da jedes der Letztern mehrere hundert<lb break="yes"/>Eier legt, &#x017F;o erkla&#x0364;rt &#x017F;ich hieraus, wie &#x017F;ich dieß Ungeziefer &#x017F;o<lb break="yes"/>&#x017F;chnell vermehrt. Schifft man die großen Stro&#x0364;me Su&#x0364;dameri-<lb break="no"/>ka&#x2019;s hinauf, &#x017F;o bemerkt man, daß die Er&#x017F;cheinung einer neuen<lb break="yes" />Species von Culex jedesmal einen Nebenfluß anku&#x0364;ndigt.</p>
+                <p>The <hi rendition="#i">culices</hi> of South America, have generally the<lb
+                        break="yes"/>wings, corselet, and legs of an azure colour, annulated,<lb
+                        break="yes"/>and variable from a mixture of spots of a metallic<lb
+                        break="yes"/>lustre. Here, as in Europe, the males, which are dis-<lb
+                        break="no"/>tinguished by their feathered antenn&#x00E6;, are extremely<lb
+                        break="yes"/>rare; you are seldom stung except by females. The<lb
+                        break="yes"/>preponderance of this sex explains the immense in-<lb
+                        break="no"/>crease of the species, each female laying several hun-<lb
+                        break="no"/>dred eggs. In going up one of the great rivers of<lb break="yes"
+                    />America, it is observed, that the appearance of a new<lb break="yes"/>species
+                    of <hi rendition="#i">culex</hi> denotes the approximity of a new stream<lb
+                        break="yes"/>flowing in.</p>
                 <lb break="yes"/>
-                <p>Bringen wir al&#x017F;o die bisher angefu&#x0364;hrten Beobachtungen<lb break="yes"/>in eine kurze Ueber&#x017F;icht, &#x017F;o ergiebt &#x017F;ich Folgendes. Die Mu-<lb break="no"/>&#x017F;tikos und Maringouins erheben &#x017F;ich nicht auf die Bergho&#x0364;hen<lb break="yes"/>der Cordilleren bis in die gema&#x0364;ßigte Region, wo die mittlere<lb break="yes"/>Temperatur unter 19 bis 20 Centigrade i&#x017F;t. &#x2014; Sie fliehen,<lb break="yes"/>bis auf wenige Ausnahmen die &#x017F;chwarzen Gewa&#x0364;&#x017F;&#x017F;er, und trockne,<lb break="yes"/>unbewaldete Stellen, und halten &#x017F;ich daher nur an &#x017F;olchen<lb break="yes"/>auf, wo der Saum des Waldes nicht durch du&#x0364;rre Ebenen von<lb break="yes"/>den Flu&#x0364;&#x017F;&#x017F;en getrennt i&#x017F;t. Man kann al&#x017F;o von dem allma&#x0364;hligen<lb break="yes"/>Auslichten der Wa&#x0364;lder eine Verminderung die&#x017F;er &#x017F;cha&#x0364;dlichen<lb break="yes"/>In&#x017F;ekten erwarten.</p>
+                <p>The whites born in the torrid zone walk barefoot with<lb break="yes"/>impunity in
+                    the same apartment, where a European,<lb break="yes"/>recently landed, is
+                    exposed to the attack of the <hi rendition="#i">niguas</hi>
+                    <lb break="yes"/>or <hi rendition="#i">chegoes (pulex penetrans).</hi> These
+                    animals almost<lb break="yes"/>invisible to the eye, get under the nails of the
+                        feet,<lb break="yes"/>and there acquire the size of a small pea by the
+                        quick<lb break="yes"/>increase of its eggs, which are placed in a bag
+                        under<lb break="yes"/><pb n="234" facs="#f0004"/>the belly of the insect.
+                    The <hi rendition="#i">nigua,</hi> therefore, distin-<lb break="no"/>guishes,
+                    what the most delicate chemical analysis<lb break="yes"/>could not distinguish,
+                    the cellular membrane and<lb break="yes"/>blood of a European from those of a
+                    Creole white. It<lb break="yes"/>is not so with the moschettoes.</p>
                 <lb break="yes"/>
-                <p>Die Eingebornen, &#x017F;ie mo&#x0364;gen Weiße, Mulatten, Neger<lb break="yes" />oder Indianer &#x017F;eyn, haben alle, &#x017F;o gut wie die Europa&#x0364;er, von<lb break="yes"/>dem Stiche der In&#x017F;ekten zu leiden. Nur die Wirkungen die<lb break="yes"/>der&#x017F;elbe hervorbringt &#x017F;ind bei den ver&#x017F;chiedenen Men&#x017F;chenkla&#x017F;-<lb break="no"/>&#x017F;en ver&#x017F;chieden. Wird die&#x017F;elbe giftige Flu&#x0364;&#x017F;&#x017F;igkeit in die Haut<lb break="yes"/>eines kupferfarbenen Indianers und in die eines neulich an-<lb break="no"/>gekommenen Europa&#x0364;ers deponirt, &#x017F;o verur&#x017F;acht &#x017F;ie bei dem<lb break="yes"/>Er&#x017F;ten keine Ge&#x017F;chwul&#x017F;t, wa&#x0364;hrend &#x017F;ie bei dem Letztern harte,<lb break="yes"/>von heftiger Entzu&#x0364;ndung begleitete Blattern zur Folge hat,<lb break="yes"/>die mehrere Tage lang &#x017F;chmerzen.</p>
+                <p>In the day, even when labouring at the oar, the<lb break="yes"/>natives, in order
+                    to chase the insects, are continually<lb break="yes"/>giving one another smart
+                    slaps with the palm of the<lb break="yes"/>hand. Rude in all their movements,
+                    they strike<lb break="yes"/>themselves and their comrades mechanically during<lb
+                        break="yes"/>their sleep. The violence of their blows reminds us of<lb
+                        break="yes"/>the Persian tale of the bear, that tried to kill with his<lb
+                        break="yes"/>paw the insects on the forehead of his sleeping master.<lb
+                        break="yes"/>Near Maypures we saw some young Indians seated in<lb
+                        break="yes"/>a circle and rubbing cruelly each others&#x2019; backs with<lb
+                        break="yes"/>the bark of trees dried at the fire. Indian women<lb
+                        break="yes"/>were occupied with a degree of patience, of which the<lb
+                        break="yes"/>copper-coloured race alone are capable, in extirpating<lb
+                        break="yes"/>by means of a sharp bone the little mass of coagulated<lb
+                        break="yes"/>blood, that forms the centre of every sting, and gives<lb
+                        break="yes"/>the skin a speckled appearance. One of the most bar-<lb
+                        break="no"/>barous nations of the Oroonoko, that of the Ottomacs,<lb
+                        break="yes"/>is acquainted with the use of moschetto curtains <hi
+                        rendition="#i">(mos-<lb break="no"/>quiteros)</hi> formed of a tissue of
+                    fibres of the palm tree,<lb break="yes"/>
+                    <hi rendition="#i">murichi.</hi> We had lately seen, that at Higuerote, on
+                        the<lb break="yes"/>coast of Caraccas, the people of a copper-colour
+                        sleep<lb break="yes"/>buried in the sand. In the villages of the Rio
+                        Magda-<lb break="no"/>lena the Indians often invited us to stretch
+                        ourselves<lb break="yes"/>with them on ox-skins, near the church, in the
+                    middle of<lb break="yes"/>the <hi rendition="#i">plaza grande,</hi> where they
+                    had assembled all the<lb break="yes"/>cows in the neighbourhood. The proximity
+                    of cattle<lb break="yes"/>gives some repose to man. The Indians of the Upper<lb
+                        break="yes"/>Oroonoko and the Cassiquiare, seeing that Mr. Bonp-<lb
+                        break="no"/>land could not prepare his herbal, on account of the<lb
+                        break="yes"/>continual torment of the moschettoes, invited him to<lb
+                        break="yes"/>enter their ovens, <hi rendition="#i">(hornitos).</hi> Thus
+                    they call little<lb break="yes"/>chambers, without doors or windows, into which
+                        they<lb break="yes"/><pb n="235" facs="#f0005"/>creep horizontally through a
+                    very small opening.<lb break="yes"/>When they have driven away the insects by
+                    means of<lb break="yes"/>a fire of wet brush-wood, which emits a great deal
+                        of<lb break="yes"/>smoke, they close the opening of the oven. The ab-<lb
+                        break="no"/>sence of moschettoes is purchased dearly enough by<lb
+                        break="yes"/>the excessive heat of stagnant air, and the smoke of a<lb
+                        break="yes"/>torch of <hi rendition="#i">copal,</hi> which lights the oven
+                    during your stay<lb break="yes"/>in it. Mr. Bonpland, with courage, and patience
+                        well<lb break="yes"/>worthy of praise, dried hundreds of plants, shut up
+                        in<lb break="yes"/>these <hi rendition="#i">hornitos</hi> of the
+                    Indians.</p>
                 <lb break="yes"/>
-                <p>So ver&#x017F;chieden i&#x017F;t die Tha&#x0364;tigkeit des Haut&#x017F;y&#x017F;tems nach<lb break="yes"/>den ver&#x017F;chiedenen Graden der Irritabilita&#x0364;t der Organe bei je-<lb break="no"/>der Men&#x017F;chenra&#x00E7;e, ja, jedem Individuum. &#x2014; Doch daß die<lb break="yes"/>Indianer eben &#x017F;owohl durch die Stiche leiden, geht daraus<lb break="yes"/>
-                    <note place="foot" n="*)" xml:id="fn1-2" prev="#fn1-1">
-                        <hi rendition="#aq">fusci, tibiis hirtis, tarsis nigrioribus, annulis <choice>
-                                <sic>quatnor</sic>
-                                <corr type="editorial">quatuor</corr>
-                            </choice>
-                            <lb break="yes"/>niveis. Antennae maris pectinatae.<lb break="yes" />Habitat locis paludosis ad ripam Magdalenae flumi-<lb break="no"/>nis, prope Teneriffe; Mompox, Chillea, Tamalameque<lb break="yes"/>caet. (Regno Novogranadensi.)<lb break="yes"/>2) <hi rendition="#i">
-                                <hi rendition="#g">Culex lineatus,</hi> violacco-fuscescens; thorace fusco,<lb break="yes"/>utrinque linea longitudinali, maculisque inferis argen-<lb break="no"/>teis; alis virescentibus; abdomine annulis sex argenteis;<lb break="yes"/>pedibus atro-fuscis; posticorum tibiis apicibusque albis.</hi>
-                            <lb break="yes"/>Habitat ad confluentem Tamalamequen in ripa Mag-<lb break="no"/>dalenae fluminis. (Regno Novogranadensi.)<lb break="yes" />3) <hi rendition="#i">
-                                <hi rendition="#g">Culex ferox</hi> supra caeruleo aureoque varius, annu-<lb break="no"/>lis quinque albis inferis, alis virescentibus; pedibus ni-<lb break="no"/>gricanti-caeruleis, metallico splendentibus; posticis lon-<lb break="no"/>gissimis, basi apiceque niveis.</hi>
-                            <lb break="yes"/>Omnium maximus differt 1 a C. <hi rendition="#g" >haemorrhodali</hi>
-                            <lb break="yes"/>Fab. cui pedes quoque caerulei, thorace superne cae-<lb break="no"/>ruleo et auro maculato; 2 a C. <hi rendition="#g" >cyanopenni</hi> corpore<lb break="yes"/>superne caeruleo, pedibus haud annulatis, haud fuscis.<lb break="yes"/>An. Nhatin Maregr p. 257?<lb break="yes"/>Habitat ad ripam inundatam fluminis Guayaquilen-<lb break="no"/>sis, prope San Borondon. (Regno Quitensi.)<lb break="yes"/>4) <hi rendition="#i">
-                                <hi rendition="#g">Culex chloropterus,</hi> viridis, annulis quinque al-<lb break="no"/>bis; alis virescentibus, pedibus fuscis ad basim subtus<lb break="yes"/>albis.</hi>
-                            <lb break="yes"/>Habitat cum praecedente.<lb break="yes"/>5) <hi rendition="#i">
-                                <hi rendition="#g">Culex maculatus</hi> viridi-fuscescens, annulis octo<lb break="yes"/>albis, alis virescentibus, maculis tribus auticis, atrocae-<lb break="no"/>ruleis, auro immixtis; pedibus fuscis, basi alba.</hi>
-                            <lb break="yes"/>Habitat cum C. <hi rendition="#g">feroce</hi> et C. <hi rendition="#g">chloroptero</hi> in<lb break="yes"/>ripa fluminis Rio de Guayaquil propter <hi rendition="#g">las Bode-<lb break="no"/>gas de Bahaoyo.</hi>
-                        </hi>
-                    </note>
-                    <lb break="yes"/>
-                    <pb facs="#f0003"/>
-                    <cb n="101"/>
-                    <lb break="yes"/>hervor, daß &#x017F;ie &#x017F;ich beim Rudern unaufho&#x0364;rlich mit der flachen<lb break="yes"/>Hand &#x017F;chlagen um die In&#x017F;ekten zu vertreiben. Die Otomaquer,<lb break="yes"/>eines der barbari&#x017F;ch&#x017F;ten Vo&#x0364;lker, kennen den Gebrauch der<lb break="yes"/>Mu&#x0364;ckenflore, die &#x017F;ie aus Palmfa&#x017F;ern weben. Zu Higuerote<lb break="yes"/>&#x017F;chlafen die farbigen Leute, wie ge&#x017F;agt, ha&#x0364;ufig im Sande ver-<lb break="no"/>&#x017F;charrt. In den Do&#x0364;rfern des Rio Magdalena luden uns die<lb break="yes"/>Indianer ha&#x0364;ufig ein, auf dem Hauptplatz neben der Kirche, wo<lb break="yes" />&#x017F;ich alles Hornvieh der Umgegend ver&#x017F;ammelt, auszuruhn, in-<lb break="no"/>dem die Na&#x0364;he des Viehes den Men&#x017F;chen einige Ruhe ver-<lb break="no"/>&#x017F;chafft. Die Indianer am obern Orinoko und am Ca&#x017F;&#x017F;iquiare<lb break="yes"/>haben kleine Zimmer ohne Fen&#x017F;ter (&#x017F;. g. <hi rendition="#aq">hornitos</hi>), in welche<lb break="yes"/>man durch eine &#x017F;ehr niedrige Oeffnung auf dem Bauche krie-<lb break="no"/>chen muß. Sobald man nun die In&#x017F;ekten durch Ra&#x0364;uchern<lb break="yes"/>daraus vertrieben hat, &#x017F;o ver&#x017F;topft man die Oeffnung. Allein<lb break="yes"/>die Abwe&#x017F;enheit der Mosquitos muß man durch die heiße und<lb break="yes"/>&#x017F;tockende Luft theuer erkaufen.</p>
+                <p>It is difficult not to smile at hearing the missionaries<lb break="yes"/>dispute on the size and voracity of the moschettoes at<lb break="yes"/>different parts of the same river. In the centre of a<lb break="yes"/>country ignorant of what is passing in the rest of the<lb break="yes"/>world, this is the favourite subject of conversation.<lb break="yes"/>&#x201C;How I pity your situation!&#x201D; said the missionary of<lb break="yes"/>the Raudales to the missionary of Cassiquiare, at our<lb break="yes"/>departure; &#x201C;you are alone, like me, in this country of<lb break="yes"/>tigers and monkeys; with you fish is still more rare,<lb break="yes"/>and the heat more violent; but as for my flies, <hi rendition="#i">(mia<lb break="yes"/>moscas)</hi> I can boast, that with one of mine I would<lb break="yes"/>beat three of yours.&#x201D;</p>
                 <lb break="yes"/>
-                <p>Die in Su&#x0364;damerika gebornen, oder lange wohnhaften<lb break="yes" />Europa&#x0364;er leiden weit mehr als die Indianer, aber unendlich<lb break="yes"/>weniger als ihre er&#x017F;t neuerdings ausge&#x017F;chifften <choice><sic>Landsleure</sic><corr type="editorial">Landsleute</corr></choice>.<lb break="yes"/>Al&#x017F;o liegt nicht in der Dicke der Haut, wie einige Rei&#x017F;ende<lb break="yes"/>behaupten die Ur&#x017F;ache, daß die Stiche in dem Augenblicke, wo<lb break="yes"/>man &#x017F;ie empfa&#x0364;ngt, weniger &#x017F;chmerzhaft &#x017F;ind. Auch i&#x017F;t nicht in<lb break="yes" />der be&#x017F;ondern Organi&#x017F;ation der Integumente der Indianer der<lb break="yes"/>Grund zu &#x017F;uchen, daß dem Stiche weniger Ge&#x017F;chwul&#x017F;t und<lb break="yes"/>entzu&#x0364;ndliche Symptome folgen; &#x017F;ondern dieß liegt an der ver-<lb break="no"/>&#x017F;chiedenen nervo&#x0364;&#x017F;en Reizbarkeit des Haut&#x017F;y&#x017F;tems. Die&#x017F;e Reiz-<lb break="no"/>barkeit wird vermehrt, durch &#x017F;ehr warme Kleider, durch den<lb break="yes"/>Genuß gei&#x017F;tiger Getra&#x0364;nke, durch die Gewohnheit an den Wun-<lb break="no"/>den zu jucken und, wie auch &#x017F;elb&#x017F;t die Erfahrung gelehrt hat,<lb break="yes"/>durch zu &#x017F;chnell hintereinander wiederholte Ba&#x0364;der. Die&#x017F;e letz-<lb break="no"/>ten machen zwar die alten Stiche &#x017F;chmerzlo&#x017F;er, aber gegen die<lb break="yes"/>fri&#x017F;chen empfindlicher.</p>
-                <lb break="yes"/>
-                <p>Da die Mu&#x017F;tikos und die Maringouins zwei Drittel ihres<lb break="yes" />Lebens im Wa&#x017F;&#x017F;er zubringen, &#x017F;o darf man &#x017F;ich nicht wundern,<lb break="yes"/>daß die&#x017F;e &#x017F;cha&#x0364;dlichen <choice>
-                        <sic>Imekten</sic>
-                        <corr type="editorial">In&#x017F;ekten</corr>
-                    </choice> in den Wa&#x0364;ldern de&#x017F;to &#x017F;eltener<lb break="yes" />werden, je mehr man &#x017F;ich von den großen Stro&#x0364;men entfernt,<lb break="yes"/>welche die&#x017F;e durch&#x017F;chneiden. Sie &#x017F;cheinen die Orte zu lieben,<lb break="yes"/>wo ihre Verwandlung &#x017F;tatt gehabt hat, und wohin &#x017F;ie wieder<lb break="yes"/>ihre Eier legen wollen. Daher gewo&#x0364;hnen &#x017F;ich die Indianer &#x017F;o<lb break="yes" />&#x017F;chwer an das Leben in den Mi&#x017F;&#x017F;ionen, weil &#x017F;ie da&#x017F;elb&#x017F;t unter<lb break="yes"/>einer Qual &#x017F;eufzen, die &#x017F;ie in ihren ur&#x017F;pru&#x0364;nglichen Wohn&#x017F;itzen<lb break="yes"/>kaum kennen, und fliehen bald wieder den Wa&#x0364;ldern zu. Die<lb break="yes"/>Mi&#x017F;&#x017F;ionen &#x017F;ind in die&#x017F;er Hin&#x017F;icht &#x017F;ehr fehlerhaft angelegt.</p>
-                <lb break="yes"/>
-                <p>Die kleinen In&#x017F;ekten aus der Familie der Nemocères &#x017F;ol-<lb break="no"/>len von Zeit zu Zeit Wanderungen machen. Zuweilen &#x017F;ieht<lb break="yes"/>man an gewi&#x017F;&#x017F;en Orten zu Anfang der Regenzeit Arten er-<lb break="no"/>&#x017F;cheinen, deren Stiche man fru&#x0364;her noch nicht gefu&#x0364;hlt hat.<lb break="yes"/>So &#x017F;agte man uns zu Simiti am Magdalenenfluß, man habe<lb break="yes"/>vor Zeiten hier von Culex-Arten nur den Jejen (Xexen) ge-<lb break="no"/>kannt, und daher die Nacht u&#x0364;ber Ruhe gehabt. Seit dem<lb break="yes"/>Jahr 1801 aber, habe &#x017F;ich die große Mu&#x0364;cke mit blauen Flu&#x0364;geln<lb break="yes"/>
-                    <hi rendition="#aq">(Culex cyanopterus)</hi> &#x017F;o ha&#x0364;ufig einge&#x017F;tellt, daß die armen Ein-<lb break="no"/>wohner zu Simiti nicht mehr ruhig &#x017F;chlafen ko&#x0364;nnten. In den<lb break="yes" />mora&#x017F;tigen Cana&#x0364;len der In&#x017F;el Barù ha&#x0364;lt &#x017F;ich die kleine Fliege<lb break="yes"/>Cafa&#x017F;i auf, die dem unbewaffneten Auge kaum erkennbar i&#x017F;t,<lb break="yes"/>und &#x017F;ehr &#x017F;chmerzhafte Ge&#x017F;chwu&#x0364;l&#x017F;te hervorbringt. Man muß die<lb break="yes"/>baumwollenen Gewebe, die als Mu&#x0364;ckennetze dienen, naß ma-<lb break="no"/>chen, wenn der Cafa&#x017F;i nicht durch die Zwi&#x017F;chenra&#x0364;ume dringen<lb break="yes"/>&#x017F;oll. Dieß In&#x017F;ekt, welches glu&#x0364;cklicherwei&#x017F;e &#x017F;on&#x017F;t ziemlich &#x017F;elten<lb break="yes"/>i&#x017F;t, zieht im Januar durch den Canal von Mahates bis Mo-<lb break="no"/>rales hinauf.</p>
-                <lb break="yes"/>
-                <p>Geringe Modifikationen in der Nahrung und im Klima,<lb break="yes" />&#x017F;cheinen bei den na&#x0364;mlichen Arten der Mu&#x017F;tikos und Marin-<lb break="no"/>gouins in der Wirk&#x017F;amkeit des Gifts, welches die&#x017F;e Thiere<lb break="yes"/>aus ihrem &#x017F;charfen und am untern Ende geza&#x0364;hnten Saugeru&#x0364;&#x017F;-<lb break="no"/>&#x017F;el entladen, Vera&#x0364;nderungen hervorzubringen. Auf dem Ori-<lb break="no"/>noko finden &#x017F;ich die blutgierig&#x017F;ten <note place="foot" n="*)" xml:id="fn2-1" next="#fn2-2">Man muß &#x017F;ich wundern, bei In&#x017F;ekten, die &#x017F;ich doch von Pflanzen-</note> In&#x017F;ekten bei den großen<lb break="yes"/>
-                    <cb n="102"/>
-                    <lb break="yes"/>Catarakten, zu L&#x2019;Esmeralda und Mendavaca. Auf dem Mag-<lb break="no"/>dalena wird der <hi rendition="#aq">Culex cyanopterus</hi> vor Allem zu Mompox,<lb break="yes"/>Chilloa und Tamalamequa gefu&#x0364;rchtet. Dort i&#x017F;t er gro&#x0364;ßer und<lb break="yes"/>&#x017F;ta&#x0364;rker und hat &#x017F;chwa&#x0364;rzere Beine. Man kann &#x017F;ich des Lachens nicht<lb break="yes"/>erwehren, wenn man die Mi&#x017F;&#x017F;iona&#x0364;re u&#x0364;ber die Gro&#x0364;ße, Gefra&#x0364;ßig-<lb break="no"/>keit und Blutgier der Mosquitos in ver&#x017F;chiedenen Gegenden<lb break="yes"/>des Flu&#x017F;&#x017F;es &#x017F;treiten <choice>
-                        <sic>ho&#x0364;rt</sic>
-                        <corr type="editorial">ho&#x0364;rt.</corr>
-                    </choice> Die&#x017F;e Er&#x017F;cheinungen &#x017F;ind zwar recht<lb break="yes"/>&#x017F;ehr merkwu&#x0364;rdig; allein a&#x0364;hnliche auch bei gro&#x0364;ßern Thiergattun-<lb break="no"/>gen <choice>
-                        <sic>bemerkbar</sic>
-                        <corr type="editorial">bemerkbar.</corr>
-                    </choice> So verfolgt das Krokodil zu Ango&#x017F;tura den<lb break="yes" />Men&#x017F;chen, wa&#x0364;hrend man &#x017F;ich zu Neu-Barcelona im Rio Ne-<lb break="no"/>veri mitten unter die&#x017F;en Carnivoren furchtlos badet. Die Ja-<lb break="no"/>guars von Maturin, Cumanacoa und von der Landenge von<lb break="yes"/>Panama &#x017F;ind, im Vergleich mit denen am obern Orinoko, feig.<lb break="yes"/>Die Indianer wi&#x017F;&#x017F;en &#x017F;ehr gut, daß die Affen aus dem oder<lb break="yes"/>jenem Thale leicht zu za&#x0364;hmen &#x017F;ind, wa&#x0364;hrend andere von der-<lb break="no" />&#x017F;elben Species, die anderswo gefangen werden, lieber Hungers<lb break="yes"/>&#x017F;terben, ehe &#x017F;ie &#x017F;ich der Dien&#x017F;tbarkeit unterziehen. Noch na&#x0364;her<lb break="yes"/>liegt das Bei&#x017F;piel vom Scorpion zu Cumana, der von dem-<lb break="no"/>jenigen auf der Trinitatisin&#x017F;el, Jamaika, zu Carthagena und<lb break="yes"/>Guayaquil &#x017F;ehr &#x017F;chwer zu unter&#x017F;cheiden, aber nicht fu&#x0364;rchterli-<lb break="no"/>cher, als der <hi rendition="#aq">Scorpio europaeus</hi> des &#x017F;u&#x0364;dlichen Frankreichs i&#x017F;t:<lb break="yes"/>wa&#x0364;hrend der andere weit beunruhigendere Zufa&#x0364;lle veranlaßt,<lb break="yes"/>als &#x017F;elb&#x017F;t der <hi rendition="#aq" >Scorpio occitanus</hi> von Spanien und der Ber-<lb break="no"/>berei.</p>
-                <lb break="yes"/>
-                <p>Die Leute in Amerika haben &#x017F;ich, gerade wie die Gelehr-<lb break="no"/>ten in Europa, u&#x0364;ber die Heil&#x017F;amkeit der Klimate und die pa-<lb break="no"/>thologi&#x017F;chen Er&#x017F;cheinungen, Sy&#x017F;teme gebildet, die &#x017F;ich ha&#x0364;ufig<lb break="yes"/>in den ver&#x017F;chiedenen Provinzen &#x017F;chnurgerade entgegenlaufen.<lb break="yes"/>So ha&#x0364;lt man am Magdalenenfluß die Mosquitos zwar fu&#x0364;r<lb break="yes"/>la&#x0364;&#x017F;tig, aber fu&#x0364;r &#x017F;ehr zutra&#x0364;glich. &#x201E;Die&#x017F;e Thiere, &#x017F;agen die Ein-<lb break="no"/>wohner, verur&#x017F;achen kleine Aderla&#x0364;&#x017F;&#x017F;e, die uns in die&#x017F;em hei-<lb break="no" />ßen Klima, vor dem Tabardillo, Scharlachfieber und andern<lb break="yes" />entzu&#x0364;ndlichen Krankheiten bewa&#x0364;hren.&#x201C; Dagegen &#x017F;chiebt man<lb break="yes"/>an den a&#x0364;ußer&#x017F;t unge&#x017F;unden Ufern des Orinoko die Schuld der<lb break="yes"/>Krankheiten auf die Mosquitos. &#x201E;Die&#x017F;e In&#x017F;ekten, &#x017F;agt man,<lb break="yes"/>ent&#x017F;tehen aus verfaulten Stoffen und vermehren die Verderb-<lb break="no"/>niß: &#x017F;ie entzu&#x0364;nden das Blut.&#x201C; Daß die er&#x017F;tere An&#x017F;icht nicht<lb break="yes"/>die richtigere i&#x017F;t, bedarf keiner Erinnerung.</p>
-                <lb break="yes"/>
-                <p>Die Ha&#x0364;ufigkeit der Mu&#x017F;tikos und Maringouins charakteri-<lb break="no"/>&#x017F;irt indeß die unge&#x017F;unden Klimate nur in &#x017F;o fern, als die Ent-<lb break="no"/>wickelung und Vermehrung die&#x017F;er In&#x017F;ekten von den&#x017F;elben Ur-<lb break="no"/>&#x017F;achen abha&#x0364;ngt, welche die Miasmen erzeugen. Die&#x017F;e &#x017F;cha&#x0364;dli-<lb break="no"/>chen Thierchen lieben einen fruchtbaren mit Vegetation be-<lb break="no"/>deckten Boden; &#x017F;tockende Gewa&#x0364;&#x017F;&#x017F;er, eine feuchte Luft, die nie<lb break="yes"/>durch den Wind bewegt wird. Sie be&#x017F;uchen vorzugswei&#x017F;e<lb break="yes" />&#x017F;olche Orte, wo jener mittlere Grad von Licht, Wa&#x0364;rme und<lb break="yes"/>Feuchtigkeit herr&#x017F;cht, der chemi&#x017F;chen Proce&#x017F;&#x017F;en &#x017F;o gu&#x0364;n&#x017F;tig i&#x017F;t,<lb break="yes"/>und al&#x017F;o die Fa&#x0364;ulniß organi&#x017F;cher Sub&#x017F;tanzen befo&#x0364;rdert. Ob<lb break="yes"/>die Mosquitos &#x017F;elb&#x017F;t zu der Unge&#x017F;undheit der Atmo&#x017F;pha&#x0364;re bei-<lb break="no"/>tragen? Bedenkt man, daß bis zu 4 Toi&#x017F;en Ho&#x0364;he auf jedem<lb break="yes"/>Kubikfuß Luft oft eine Million geflu&#x0364;gelter In&#x017F;ekten kommen,<lb break="yes"/>die ein kau&#x017F;ti&#x017F;ches und giftiges Fluidum bei &#x017F;ich fu&#x0364;hren; erin-<lb break="no"/>nert man &#x017F;ich, daß &#x017F;ich in die&#x017F;en Schwa&#x0364;rmen eine Menge tod-<lb break="no"/>ter In&#x017F;ekten befinden die der Luftzug von unten oder von der<lb break="yes"/>Seite herbeifu&#x0364;hrt, &#x017F;o dringt &#x017F;ich die Frage auf, ob nicht durch die<lb break="yes"/>Gegenwart &#x017F;o vieler animali&#x017F;cher Sub&#x017F;tanzen eigenthu&#x0364;mliche<lb break="yes"/>Miasmen ent&#x017F;tehen du&#x0364;rften? Ich glaube allerdings, daß die&#x017F;e<lb break="yes"/>Sub&#x017F;tanzen anders auf die Atmo&#x017F;pha&#x0364;re einwirken, als Sand<lb break="yes"/>und Staub. Doch es wu&#x0364;rde vorlaut &#x017F;eyn, jetzt etwas Be-<lb break="no"/>&#x017F;timmtes daru&#x0364;ber auszu&#x017F;prechen.</p>
-                <lb break="yes"/>
-                <p>Weniger ungewiß und, &#x017F;o zu &#x017F;agen, durch ta&#x0364;gliche Erfah-<lb break="no"/>rungen be&#x017F;ta&#x0364;tigt, i&#x017F;t, daß an dem Orinoko, Ca&#x017F;&#x017F;iquiare, Rio<lb break="yes"/>Caura und u&#x0364;berhaupt da, wo eine &#x017F;ehr unge&#x017F;unde Luft herr&#x017F;cht,<lb break="yes"/>
-                    <note place="foot" n="*)" xml:id="fn2-2" prev="#fn2-1">&#x017F;a&#x0364;ften na&#x0364;hren, die&#x017F;en Blutdur&#x017F;t anzutreffen. &#x201E;Wovon &#x017F;ollten die&#x017F;e<lb break="yes"/>Thiere leben, wenn wir nicht hier durchrei&#x017F;ten?&#x201C; pflegen die Creolen<lb break="yes"/>zu &#x017F;agen; da es in jenen Gegenden nur bepanzerte Krokodile und<lb break="yes"/>langhaarige Affen giebt.</note>
-                    <lb break="yes"/>
-                    <pb facs="#f0004"/>
-                    <cb n="103"/>
-                    <lb break="yes"/>der Stich der Mosquitos die Organe zur Ein&#x017F;augung der<lb break="yes"/>Miasmen geneigter macht. I&#x017F;t man Monate lang bei Tag<lb break="yes"/>und Nacht der Qual die&#x017F;er In&#x017F;ekten ausge&#x017F;etzt, &#x017F;o verur&#x017F;acht<lb break="yes"/>die be&#x017F;ta&#x0364;ndige Reizung der Haut fieberhafte Bewegungen, und<lb break="yes"/>unterdru&#x0364;ckt, vermo&#x0364;ge der &#x017F;chon vor Alters erkannten Wech&#x017F;el-<lb break="no"/>wirkung des Haut- und ga&#x017F;tri&#x017F;chen Sy&#x017F;tems die Funktionen<lb break="yes"/>des Magens. Man fa&#x0364;ngt an, an Unverdaulichkeit zu leiden,<lb break="yes"/>die Entzu&#x0364;ndung der Haut erzeugt ha&#x0364;ufigen Schweiß; man kann<lb break="yes"/>&#x017F;einen Dur&#x017F;t nicht lo&#x0364;&#x017F;chen; und auf die immer wach&#x017F;ende Un-<lb break="no"/>geduld folgt bei Per&#x017F;onen von &#x017F;chwacher Kon&#x017F;titution eine<lb break="yes" />Niederge&#x017F;chlagenheit des Gei&#x017F;tes, welche das Einwirken aller<lb break="yes"/>krankheiterzeugenden Einwirkungen &#x017F;ehr befo&#x0364;rdert. Heut zu<lb break="yes"/>Tage &#x017F;ind es nicht die Gefahren der Schifffahrt, die wilden<lb break="yes"/>Indianer, Schlangen, Jaguars und Krokodile, die man auf<lb break="yes"/>den Rei&#x017F;en durch jene Flußkana&#x0364;le fu&#x0364;rchtet, &#x017F;ondern <hi rendition="#aq" >&#x201E;el sudar<lb break="yes"/>y las moscas&#x201C;</hi>
-                    <choice>
-                        <sic>der</sic>
-                        <corr type="editorial">(der</corr>
-                    </choice> Schweiß und die Fliegen).</p>
-                <lb break="yes"/>
-                <p>Wer lange Zeit in den, von Mosquitos befeindeten La&#x0364;n-<lb break="no"/>dern gelebt hat, der wird, wie wir, die Erfahrung gemacht ha-<lb break="no"/>ben, daß es gegen die&#x017F;e qua&#x0364;lenden In&#x017F;ekten kein gru&#x0364;ndliches<lb break="yes"/>Mittel gebe. Die Indianer &#x017F;alben &#x017F;ich mit Onoto, Siegelerde<lb break="yes"/>oder Schildkro&#x0364;tenfett ein, und &#x017F;uchen dennoch die In&#x017F;ekten un-<lb break="no" />aufho&#x0364;rlich durch Schla&#x0364;ge mit der flachen Hand zu verjagen.<lb break="yes"/>Alle Mu&#x0364;ckenflo&#x0364;re, Toldos &#xA75B;c. &#x017F;ind wegen der großen Hitze die<lb break="yes"/>&#x017F;ie hervorbringen und der vollkommenen Untha&#x0364;tigkeit, die &#x017F;ie<lb break="yes" />erhei&#x017F;chen, unertra&#x0364;glich. Ein &#x017F;chwacher Wind, Ra&#x0364;ucherungen<lb break="yes"/>und &#x017F;tarke Geru&#x0364;che &#x017F;chaffen in Gegenden, wo die Mosquitos<lb break="yes"/>&#x017F;ehr zahlreich und hungrig &#x017F;ind nur unerheblich <choice>
-                        <sic>Erleichterung</sic>
-                        <corr type="editorial">Erleichterung.</corr>
-                    </choice>
-                    <lb break="yes"/>Mit Unrecht behauptet man, daß die&#x017F;e kleinen Thiere, den ei-<lb break="no"/>genthu&#x0364;mlichen Geruch des Krokodils fliehen. Bei Bataillez,<lb break="yes"/>zwi&#x017F;chen Carthagena und Honda, wurden wir fu&#x0364;rchterlich von<lb break="yes"/>den Mosquitos gepeinigt, wa&#x0364;hrend wir ein 11 Fuß langes<lb break="yes"/>Krokodil &#x017F;ecirten, welches die ganze Umgegend mit &#x017F;einem<lb break="yes"/>Duft erfu&#x0364;llte. Die Indianer empfehlen den Geruch von ver-<lb break="no" />branntem Kuhmi&#x017F;t als &#x017F;ehr wirk&#x017F;am. Weht ein &#x017F;tarker von<lb break="yes"/>Regen begleiteter Wind, &#x017F;o ver&#x017F;chwinden die Mosquitos auf<lb break="yes"/>einige Zeit. Am grau&#x017F;am&#x017F;ten &#x017F;techen &#x017F;ie, wenn ein Gewitter<lb break="yes"/>im Anzuge i&#x017F;t, &#x017F;onderlich wenn keine Regengu&#x0364;&#x017F;&#x017F;e auf die Ent-<lb break="no"/>ladung der Elektricita&#x0364;t folgen. &#x2014; Stete Bewegung i&#x017F;t noch<lb break="yes"/>das be&#x017F;te Mittel gegen den Stich der In&#x017F;ekten. Der Zancudo<lb break="yes"/>&#x017F;ummt lange umher, bevor er &#x017F;ich niederla&#x0364;ßt. Hat er &#x017F;ich aber<lb break="yes"/>einmal fe&#x017F;t ge&#x017F;augt, &#x017F;o kann man ihm an die Flu&#x0364;gel greifen,<lb break="yes"/>ohne daß er Furcht zeigt. Wa&#x0364;hrend er &#x017F;augt, ha&#x0364;lt er die bei-<lb break="no"/>den hinter&#x017F;ten Fu&#x0364;ße in der Luft &#x017F;chwebend, und la&#x0364;ßt man ihn<lb break="yes"/>nach Gefallen, ohne ihn zu &#x017F;to&#x0364;ren, &#x017F;augen, &#x017F;o wird die Stelle<lb break="yes"/>nicht &#x017F;chwellen und vollkommen &#x017F;chmerzlos &#x017F;eyn. Entladet nun<lb break="yes"/>das In&#x017F;ekt die a&#x0364;tzende Feuchtigkeit er&#x017F;t im Augenblick wo es<lb break="yes" />verjagt wird? oder &#x017F;augt es die&#x017F;elbe wieder ein, wenn man<lb break="yes"/>es nach Gefallen &#x017F;einen Dur&#x017F;t &#x017F;tillen <choice>
-                        <sic>la&#x0364;ßt.</sic>
-                        <corr type="editorial">la&#x0364;ßt?</corr>
-                    </choice> Ich wu&#x0364;rde mich<lb break="yes"/>fu&#x0364;r die letztre Meinung ent&#x017F;cheiden. Denn wenn ich dem<lb break="yes"/>
-                    <hi rendition="#aq">Culex cyanopterus</hi> ruhig die Ru&#x0364;ck&#x017F;eite meiner Hand hinhielt,<lb break="yes"/>&#x017F;o war anfangs der Schmerz &#x017F;ehr heftig und verringerte &#x017F;ich<lb break="yes"/>in dem Maaße, als das In&#x017F;ekt fortfuhr zu &#x017F;augen. Auch &#x017F;tellte<lb break="yes" />ich den Ver&#x017F;uch an, daß ich mich mit einer Nadel in die Hand<lb break="yes"/>&#x017F;tach, und die Wunde mit zerquet&#x017F;chten Mu&#x017F;tikos einrieb, den-<lb break="no"/>noch blieb ich von aller Ge&#x017F;chwul&#x017F;t befreit. Die reizende Feuch-<lb break="no"/>tigkeit der Diptères, Nemocères, in welcher die Chemiker in-<lb break="no"/>deß noch keine a&#x0364;tzenden Eigen&#x017F;chaften haben erkennen ko&#x0364;nnen,<lb break="yes"/>befindet &#x017F;ich, wie bei den Amei&#x017F;en und andern Hymènoptères<lb break="yes"/>in be&#x017F;ondern Dru&#x0364;schen: und wird wahr&#x017F;cheinlich zu &#x017F;ehr ver-<lb break="no"/>theilt und folglich ge&#x017F;chwa&#x0364;cht, wenn man &#x017F;ich die Haut mit<lb break="yes"/>dem ganzen zerquet&#x017F;chten Thier einreibt.</p>
+                <p>This voracity of insects in certain spots, the rage<lb break="yes"/>with which
+                    they attack man, the activity of the venom<lb break="yes"/>varying in the same
+                    species, are very remarkable<lb break="yes"/>facts; which find their analogy,
+                    however, in the classes<lb break="yes"/>of large animals. The crocodile of
+                    Angostura pursues<lb break="yes"/>men, while at Nueva, Barcelona, in the Rio
+                        Neveri,<lb break="yes"/>you may bathe tranquilly in the midst of these
+                        carni-<lb break="no"/>vorous reptiles. The jaguars of Maturin, Cumanacoa,<lb
+                        break="yes"/>and the isthmus of Panama, are cowardly in compari-<lb
+                        break="no"/>son to those of the Upper Oroonoko. The Indians<lb break="yes"
+                    />well know, that the monkeys of some valleys can<lb break="yes"/>easily be
+                    tamed, while others of the same species,<lb break="yes"/>caught elsewhere, will
+                    rather die of hunger, than sub-<lb break="no"/>mit to slavery. I might have
+                    added the example of<lb break="yes"/>the scorpion of Camana, which it is very
+                    difficult to<lb break="yes"/><pb n="236" facs="#f0006"/>distinguish from that of
+                    the island of Trinidad, Ja-<lb break="no"/>maica, Carthagena, and Guayaquil; yet
+                    the former is<lb break="yes"/>not more to be feared than the <hi rendition="#i"
+                        >scorpio europ&#x0153;us</hi> (of the<lb break="yes"/>south of France,)
+                    while the latter produces conse-<lb break="no"/>quences far more alarming than
+                    the <hi rendition="#i">scorpio occitanus,</hi>
+                    <lb break="yes"/>(of Spain and Barbary.) At Carthagena and Guaya-<lb break="no"
+                    />quil, the sting of the scorpion <hi rendition="#i">(alaoran)</hi> instantly<lb
+                        break="yes"/>causes the loss of speech. Sometimes a singular torpor<lb
+                        break="yes"/>of the tongue is observed for fifteen or sixteen hours.<lb
+                        break="yes"/>The patient, when stung in the legs, stammers as if<lb
+                        break="yes"/>he had been struck with apoplexy.&#x2014;<hi rendition="#i"
+                        >Ibid.</hi>
+                </p>
             </div>
             <lb break="yes"/>
         </body>
