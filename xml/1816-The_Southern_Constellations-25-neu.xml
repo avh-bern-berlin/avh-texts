@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -14,15 +14,15 @@
                     </persName>
                 </author>
                 <editor corresp="#avh_in_bern">
-                    <persName ref="http://d-nb.info/gnd/132876787">
-                        <surname>Welge</surname>
-                        <forename>Jobst</forename>
+                    <persName>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <editor corresp="#avh_in_bern">
                     <persName>
-                        <surname>Strobl</surname>
-                        <forename>Michael</forename>
+                        <surname/>
+                        <forename/>
                     </persName>
                 </editor>
                 <respStmt xml:id="baertschi_s">
@@ -80,7 +80,42 @@
                 </idno>
             </publicationStmt>
             <sourceDesc>
-                <p>DUMMYHEADER zur Validitätsprüfung</p>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -93,24 +128,25 @@
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change n="1.2.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+            <change n="1.1.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
             </change>
-            <change n="1.1.0" when="2018-08-14" who="#wernicke_nd">Validation. <note type="remarkRevision">Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
+            <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
             </change>
         </revisionDesc>
     </teiHeader>
     <text>
         <front/>
         <body>
-            <pb n="6" facs="#f0001"/>
+            <pb facs="#f0001"/>
             <div n="1">
                 <head>
-                    <hi rendition="#k">The Constellation of the Southern Cross.</hi>&#x2014;</head>
+                    <hi rendition="#k">The Constellation of the Southern Cross.</hi>
+                </head>
                 <lb break="yes"/>
-                <p>The pleasure felt on discovering the Southern Cross<lb break="yes"/>was warmly shared by such of the crew as had lived<lb break="yes"/>in the colonies. In the solitude of the seas, we hail a<lb break="yes"/>star as a friend from whom we have long been<lb break="yes"/>separated. Among the Portuguese and the Spaniards,<lb break="yes"/>peculiar motives seem to increase this feeling; a re-<lb break="no"/>ligious sentiment attaches them to a constellation, the<lb break="yes"/>form of which recalls the signs of the faith planted by<lb break="yes"/>their ancestors in the deserts of the New World. The<lb break="yes"/>two great stars which mark the summit and the foot<lb break="yes"/>of the cross, having nearly the same right ascension,<lb break="yes"/>it follows that the constellation is almost vertical<lb break="yes"/>when it passes the meridian. This circumstance is<lb break="yes"/>known to every nation that lives beyond the tropics,<lb break="yes"/>or in the southern hemisphere. It is known at what<lb break="yes"/>hour of the night, in different seasons, the Southern<lb break="yes"/>Cross is erect or inclined. It is a time-piece that ad-<lb break="no"/>vances very regularly near four minutes a day; and<lb break="yes"/>no other group of stars exhibits, to the naked eye, an<lb break="yes"/>observation of time so easily made. How often have<lb break="yes"/>we heard our guides exclaim in the savannas of<lb break="yes" />Venezuela, or in the desert extending from Lima to<lb break="yes"/>Truxillo, &#x201C;Midnight is past; the cross begins to bend.&#x201D;</p>
-                <lb break="yes"/>
+                <p>The lower regions of the air were loaded with vapour<lb break="yes"/>for some days. We saw distinctly, for the first time,<lb break="yes"/>the cross of the south, only in the night of the 4th and<lb break="yes"/>5th July, in the 16th degree of latitude. It was<lb break="yes"/>strongly inclined, and appeared from time to time be-<lb break="no"/>tween the clouds, the centre of which, furrowed by<lb break="yes"/>uncondensed lightnings, reflected a silver light. The<lb break="yes"/>pleasure felt on discovering the southern cross was<lb break="yes"/>warmly shared by such of the crew as had lived in the<lb break="yes"/>colonies. In the solitude of the seas we hail a star as<lb break="yes"/>a friend from whom we have been long separated.<lb break="yes" />Among the Portuguese and the Spaniards <choice><sic>pecliar</sic><corr type="editorial">peculiar</corr></choice> mo-<lb break="no"/>tives seem to increase this feeling; a religious senti-<lb break="no"/>ment attaches them to a constellation the form of which<lb break="yes"/>recalls the sign of the faith planted by their ancestors in<lb break="yes"/>the deserts of the New World. The two great stars<lb break="yes"/>which mark the summit and the foot of the cross having<lb break="yes"/>nearly the same right ascension, it follows that the<lb break="yes"/>constellation is almost vertical at the moment when<lb break="yes"/>it passes the meridian. This circumstance is known<lb break="yes"/>to every nation that lives beyond the tropics, or in the<lb break="yes"/>southern hemisphere. It is known at what hour of<lb break="yes" />the night in different seasons the southern cross is<lb break="yes"/>erect or inclined. It is a timepiece that advances very<lb break="yes"/>regularly nearly four minutes a day, and no other<lb break="yes"/>group of stars exhibits to the naked eye an observa-<lb break="no"/>tion of time so easily made. How often have we<lb break="yes"/>heard our guides exclaim, in the savannahs of Vene-<lb break="no"/>zuela, or in the desert extending from Lima to<lb break="yes" />Truxillo, &#x201C;Midnight is passed, the cross begins to<lb break="yes" />bend!&#x201D; How often these words reminded us of that<lb break="yes" />affecting scene where Paul and Virginia, seated near<lb break="yes"/>the sources of the river of Lataniers, conversed<lb break="yes"/>together for the last time; and when the old man, at<lb break="yes"/>the sight of the southern cross, warns them that it is<lb break="yes"/>time to separate! &#x2014;</p>
                 <closer>
-                    <salute>&#x2014;<hi rendition="#i">Humboldt.</hi>
+                    <salute>
+                        <hi rendition="#i">Humboldt.</hi>
                     </salute>
                 </closer>
             </div>

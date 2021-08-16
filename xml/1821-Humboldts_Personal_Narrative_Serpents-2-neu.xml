@@ -1,70 +1,158 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<?oxygen RNGSchema="http://www.deutschestextarchiv.de/basisformat_ohne_header.rng" type="xml"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schema/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title>DUMMYHEADER</title>
-</titleStmt>
-<publicationStmt>
-<p></p>
-</publicationStmt>
-<sourceDesc>
-<p>DUMMYHEADER zur Validitätsprüfung</p>
-</sourceDesc>
-</fileDesc>
-</teiHeader>
-<text><front></front><body>
-<pb facs="#f0001" />
-<div n="1"><head><hi rendition="#i">SERPENTS IN SOUTH AMERICA.</hi></head><lb/><p>M. Humboldt relates some remarkable particulars con-<lb/>cerning the serpents in South America,
-                    and the following<lb/>will show to what perils, from them, the traveller is
-                    expos-<lb/>ed. On taking up a night&#x2019;s lodging, we are
-                    told&#x2014;&#x201C;Before<lb/>we took possession of the deserted hut, the
-                    Indians killed<lb/>two great mapanarc serpents. These grow to four or
-                    five<lb/>feet long. They appeared to me to be the same species as<lb/>those I
-                    described in the Rio Magdalena. It is a beautiful<lb/>animal, but extremely
-                    venomous, white below the belly,<lb/>and spotted with brown and red on the back.
-                    As the inside<lb/>of the hut was filled with grass, and as we lay upon
-                    the<lb/>ground, there being no means of suspending our hammocks,<lb/>we were not
-                    without inquietude during the night. In the<lb/>morning a large viper was found
-                    on lifting up from the<lb/>ground the jaguar skin, upon which one of our
-                    domestics<lb/>had slept. The Indians say that these reptiles, slow in
-                    their<lb/>movements when they are not pursued, creep near a man<lb/>because they
-                    are fond of heat. In fact, on the banks of the<lb/>Magdalena, entered the bed of
-                    one of our fellow<lb/>travellers, where he remained a part of the night
-                    without<lb/>doing him any harm. Without wishing here to take up<lb/>the defence
-                    of vipers and rattlesnakes, I believe it may be<lb/>affirmed, that, if these
-                    venomous animals had such a dispo-<lb/>sition for offence, as is supposed, the
-                    human species would<lb/>certainly not have resisted their numbers in some parts
-                    of<lb/>America; for instance, on the banks of the Oroonoko, and<lb/>the humid
-                    mountains of Choco.&#x201D;</p><lb/><p>&#x201C;In the interior part of the New Continent we almost ac-<lb/>customed ourselves to regard
-                    men as not being essential to<lb/>the order of nature. The earth is loaded with
-                    plants, and<lb/>nothing impedes their free developement. An immense<lb/>layer of
-                    mould manifests the uninterrupted action of orga-<lb/>nic powers. The crocodiles
-                    and the boas are masters of<lb/>the river; the jaguar, the pecari, the dante,
-                    and the<lb/>monkeys, traverse the forest without fear, and without<lb/>danger;
-                        there they dwell as in an ancient inheritance. <choice><sic>Thi</sic><corr type="editorial">This</corr></choice><lb/>aspect of animated
-                    nature, in which man is nothing, has<lb/>something in it strange and sad. To
-                        this we reconcile <choice><sic>ours<lb break="no"/>selves</sic><corr type="editorial">our-<lb break="no"/>selves</corr></choice> with difficulty on the ocean, and amid the
-                        sands <choice><sic>o-</sic><corr type="editorial">of</corr></choice><lb/>Africa; though in these scenes, where nothing recalls <choice><sic>tf</sic><corr type="editorial">to</corr></choice><lb/>mind
-                        our fields, our woods, and our streams, we are <choice><sic>leso</sic><corr type="editorial">less</corr></choice><lb/>astonished at the vast
-                    solitude through which we pass.<lb/>Here, in a fertile country adorned with
-                    eternal verdure, we<lb/>seek in vain the traces of the power of man; we seem to
-                    be<lb/>transported into a world different from that which gave us<lb/>birth.
-                    These impressions are so much the more powerful<lb/>in proportion as they are of
-                    longer duration. A soldier, who<lb/>had spent his whole life in the missions of
-                    the Upper Oroo-<lb/>noko, slept with us on the bank of the river. He was
-                    an<lb/>intelligent man, who, during a calm and serene night, press-<lb/>ed me
-                    with questions on the magnitude of the stars, on the<lb/>inhabitants of the
-                    moon, on a thousand subjects of which<lb/>I was as ignorant as himself. Being
-                    unable, by my answers,<lb/>to satisfy his curiosity, he said to me in a firm
-                    tone: &#x2018;With<lb/>respect to men, I believe there are no more above than
-                    you<lb/>would have found if you had gone by land from Javita to<lb/>Cassiquaire.
-                    I think I see the stars, as here, a plain cover-<lb/>ed with grass, and a forest
-                    (mucho monte) traversed by a<lb/>river.&#x2019; In citing these words, I paint
-                    the impression pro-<lb/>duced by the monotonous aspect of those solitary
-                    regions.&#x201D;</p></div>
-</body><back></back>
-
-</text>
-</TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">DUMMYHEADER</title>
+                <author>
+                    <persName ref="https://d-nb.info/gnd/118554700">
+                        <surname>Humboldt</surname>
+                        <forename>Alexander</forename>
+                        <nameLink>von</nameLink>
+                    </persName>
+                </author>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <editor corresp="#avh_in_bern">
+                    <persName>
+                        <surname/>
+                        <forename/>
+                    </persName>
+                </editor>
+                <respStmt xml:id="baertschi_s">
+                    <persName>
+                        <surname>Bärtschi</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
+                    </resp>
+                </respStmt>
+                <respStmt xml:id="wernicke_nd">
+                    <persName>
+                        <surname>Wernicke</surname>
+                        <forename>Norbert D.</forename>
+                    </persName>
+                    <orgName ref="http://www.humboldt.unibe.ch"/>
+                    <resp>
+                        <note type="remarkResponsibility">XML Bearbeiter</note>
+                        <ref target="http://d-nb.info/gnd/1014897157"/>
+                    </resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:id="avh_in_bern">
+                    <orgName role="hostingInstitution">Universität Bern</orgName>
+                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
+                    <address>
+                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
+                        <country>Switzerland</country>
+                    </address>
+                </publisher>
+                <pubPlace>Bern</pubPlace>
+                <date type="publication">[Publikationsdatum]</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>Dieses Werk ist gemeinfrei.</p>
+                    </licence>
+                </availability>
+                <idno>
+                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
+                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
+                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
+                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
+                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
+                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
+                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
+                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
+                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
+                </idno>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>[Kurztitel]</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title level="a" type="main">[Titel des Originalartikels]</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118554700">
+                                <surname>Humboldt</surname>
+                                <forename>Alexander</forename>
+                                <nameLink>von</nameLink>
+                            </persName>
+                        </author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <publicationStmt>
+                        <publisher>
+                            <name>[Verlag/Druckerei]</name>
+                        </publisher>
+                        <pubPlace>[Publikationsort]</pubPlace>
+                        <date type="publication">[Publikationsdatum]</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="j" type="main">[Zeitschriftenname]</title>
+                        <biblScope unit="volume">[Bandnummer]</biblScope>
+                        <biblScope unit="pages">[Seitenangabe]</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc>
+                    <msIdentifier/>
+                    <physDesc>
+                        <typeDesc>
+                            <p>[Fraktur/Antiqua und weitere typographische Angaben]</p>
+                        </typeDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
+            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change n="1.1.0" when="2019-05-09" who="#wernicke_nd">Format. <note type="remarkRevision">Umformatierung als Vorbereitung zur Onlineausgabe.</note>
+            </change>
+            <change n="1.0.0" when="0001-01-01" who="#avh_in_bern">Text constitution. <note type="remarkRevision">Bereitstellung der ersten vollständigen Textfassung anhand der Transkriptionen.</note>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <pb n="821" facs="#f0001"/>
+            <div n="1">
+                <head>
+                    <hi rendition="#g">En Rei&#x017F;e&#x017F;cene af Alex. v. Humboldt.</hi>
+                </head>
+                <lb break="yes"/>
+                <p>Forend vi begave os ind i en forladt Hytte,<lb break="yes"/>dr&#x0153;bte India@erne to &#x017F;tore Mapavarok Slanger,<lb break="yes"/>&#x017F;om ere 4 @il 5 Fod lange. Det er e@ &#x017F;mukt, men<lb break="yes"/>overmaade giftigt Dyr, paa Bugen h@dt, paa<lb break="yes"/>Ryggen med brune @ rode Pletter. Da det<lb break="yes"/>
+                    <pb n="822" facs="#f0002"/> Indre af Hytten var opfyldt med Gr&#x0153;s, @ da<lb break="yes"/>vi laa@ paa Gulvet, &#x017F;aa&#x017F;om der ei var nogen Lei-<lb break="no"/>lighed til at oph&#x0153;nge vore Koier, vare vi om<lb break="yes"/>Natten ei uden Frrgt. Om Morgenen &#x017F;ages<lb break="yes" />en lang Viper lefte pan det Tiger&#x017F;kind, hvor-<lb break="no"/>paa En af vore Tjenere havde &#x017F;ovet. India-<lb break="no"/>nerne &#x017F;ige, at dis&#x017F;e krybende Dyr, der, na@r<lb break="yes"/>de ikke forfolges, ere lang&#x017F;omme i deres Beu&#x0153;-<lb break="no"/>gel&#x017F;er, li&#x017F;te &#x017F;ig nar til et Menne&#x017F;ke, fordi d@<lb break="yes"/>holde af Varmen. Virkelig krob paa Magda-<lb break="no"/>lenaflodens Bredder en Slange ind i en af<lb break="yes"/>vore Medrei&#x017F;endes Seng, hvor den forblev en<lb break="yes"/>Deel af Natten, uden at giere ham nogen For@<lb break="yes" />tr&#x0153;d. Uden her at ville paatage mig Vipernes<lb break="yes"/>og Klappet&#x017F;langernes For&#x017F;var, troer jeg at kunne<lb break="yes" />paa&#x017F;taae, at, h@is dis&#x017F;e giftige Dyr havde en<lb break="yes" />&#x017F;aadan Tilboielighed til at &#x017F;kade, &#x017F;om man<lb break="yes" />troer, Menne&#x017F;ke&#x017F;l&#x0153;g@en i nogie Dele af America,<lb break="yes"/>f. Ex. ved Oronokoflodens Bredder, eller paa<lb break="yes" />Thocos fugtige Bjerge, &#x017F;ikkerlig ikke vilde have<lb break="yes" />mod&#x017F;taa@t deres M&#x0153;ngde.</p>
+                <lb break="yes"/>
+                <p>Efter Alt det, vi havde taalt, vil det maa@<lb break="yes"/>&#x017F;kee v&#x0153;re @illadt, at tale om den Tilfreds&#x017F;tillel&#x017F;e,<lb break="yes"/>vi folte ved at have naaet de Elve, &#x017F;om forene<lb break="yes"/>&#x017F;ig med Amazoner @ Flodne, efter at v&#x0153;re gaaede<lb break="yes"/>over den Jordtunge, der ad&#x017F;killer @vende &#x017F;tore<lb break="yes"/>Flod-Sy&#x017F;temer, og at v&#x0153;re blevne forvis&#x017F;ede<lb break="yes"/>om, at have naaet det &#x017F;tore Maal for vor<lb break="yes"/>Reife, nemlig a&#x017F;tronomi&#x017F;k at be&#x017F;temme Lobet af<lb break="yes"/>hiin Oronoko&#x017F;lodens Arm, &#x017F;om falder in@ i<lb break="yes"/>Rio Negro, og hvis Tilv&#x0153;rel&#x017F;e i et halvt Aar@<lb break="yes"/>hundrede &#x017F;nart er bleven bevii&#x017F;t, &#x017F;nart benegtet.<lb break="yes"/>Jo mere vi n&#x0153;rm@de os det Maal, &#x017F;om vi &#x017F;aa-<lb break="no" />l&#x0153;nge havde havt i Sigte, des mere &#x017F;yntes In-<lb break="no" />teres&#x017F;en for Samme at tiltage. Cas&#x017F;iquiare-<lb break="no" />Flodens ubedoede Bredder, @ra Arilds Tid af<lb break="yes"/>bed&#x0153;kkede med Skove, be&#x017F;k&#x0153;ftigede da min Ind-<lb break="no"/>bildningskraft ligedan &#x017F;om nu Bredderne af<lb break="yes"/>Euphrates eller Oxus, &#x017F;om ere &#x017F;aa ber@mte i<lb break="yes"/>den civiliferede Verdens Aarbeger. J denne<lb break="yes"/>indre Deel af det nye Fa&#x017F;tland v&#x0153;nnede @ os<lb break="yes"/>n&#x0153;&#x017F;ten til at an&#x017F;ee Menne&#x017F;kene for at v&#x0153;re ei<lb break="yes"/>v&#x0153;&#x017F;entlige til Naturens Orden. Jorden er<lb break="yes"/>overl&#x0153;s&#x017F;et med Planter, og Inter forhindrer<lb break="yes"/>deres frie Udvikling. Et umaaleligt Leie af<lb break="yes"/>Damjord tilkjendegiver de organi&#x017F;ke Kr&#x0153;fters<lb break="yes"/>nafbrudte Virk&#x017F;omhed. Crokodillerne og Boas-<lb break="no"/>flangerne ere Herrer of Floden; Jaguaren, Pe-<lb break="no"/>
+                    <pb n="823" facs="#f0003"/> carien, Zanteen og Aberne giennem&#x017F;treife Sko-<lb break="no"/>ven @den Frygt o@ uden Fare; her opholde de<lb break="yes"/>&#x017F;ig lige&#x017F;om i deres gamte Odel. Dette Syn<lb break="yes"/>af en livfuld Natur, i hoilken Menne&#x017F;ket er<lb break="yes"/>Intet, har noget S&#x0153;t&#x017F;omt og Sorgeligt. Der-<lb break="no"/>med for&#x017F;one vi os med Moie paa Oceanet og<lb break="yes" />midt i Africas Sandorkener; men under dis&#x017F;e<lb break="yes"/>Scener, hvor Inter tilbagekalder i vert Gemyt<lb break="yes"/>vore Marker, vore Skove og vore Elve, ere vi<lb break="yes"/>mindre forbau&#x017F;ede over den vide Een&#x017F;omhed,<lb break="yes"/>&#x017F;om vi gaae ig@ennem. Her, i et frugtbart<lb break="yes"/>Land, &#x017F;mykket med evigt Gront, &#x017F;oge vi for-<lb break="no"/>@i&#x0153;des Spor tit Menne&#x017F;tets Magt; vi &#x017F;ynes<lb break="yes"/>at v&#x0153;re @ til en Verden, for&#x017F;kjellig fra<lb break="yes"/>den, &#x017F;om vi ere fodte i. Dis&#x017F;e Indtrpk ere<lb break="yes"/>be&#x017F;to &#x017F;t&#x0153;rkere, jo l&#x0153;ngere de @ed@are. En Sol-<lb break="no"/>bat. der havde tilbragt &#x017F;it hele Liv i Mis&#x017F;io-<lb break="no"/>nerne ved den ovre Oronoko, &#x017F;ov hos os p@a<lb break="yes"/>Flodens Bred. Oet var en for&#x017F;tandig Mand,<lb break="yes"/>der i en rolig og klar Nat be&#x017F;tormede mig med<lb break="yes"/>Sporgsmaale om Stjernernes Storrelfe, om<lb break="yes" />Maanens Indvaanere, om tu&#x017F;inde andre Ting,<lb break="yes"/>i hvilke jeg var lige&#x017F;aa u@idende &#x017F;om han &#x017F;ely.<lb break="yes"/>Da jeg ved mine Svar ei var i&#x017F;tand til at til-<lb break="no"/>freds&#x017F;tille hans Nysgjerrighed, &#x017F;aa &#x017F;agde han til<lb break="yes"/>mig i en fa&#x017F;t Tone: &#x201D;Angaaende Menne&#x017F;ker,<lb break="yes"/>faa troer jeg, der gives ikk flere der oppe, end<lb break="yes"/>De vilde have fundet ved at gaae tillands fra<lb break="yes"/>Jayita til Cas&#x017F;iquiare. Jeg troer at fee i S@er-<lb break="no"/>nerne lige&#x017F;om her en Slett@, bed&#x0153;kket med Gr&#x0153;s,<lb break="yes"/>og en Skov, igiennem hvilken der &#x017F;lynger &#x017F;ig<lb break="yes"/>en Elv.&#x201D; @ed at anfor@ dis&#x017F;e O@d &#x017F;kildrer &#x017F;eg<lb break="yes"/>det Indtryk, &#x017F;om der eensformige Syn af dis&#x017F;e<lb break="yes"/>ubefolkede Egne frembringer. &#x2014;</p>
+            </div>
+            <lb break="yes"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb break="yes"/>
+        </body>
+        <back/>
+    </text>
+</TEI> 
