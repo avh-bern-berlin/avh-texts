@@ -2,104 +2,201 @@
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">DUMMYHEADER</title>
-                <author>
-                    <persName ref="https://d-nb.info/gnd/118554700">
-                        <surname>Humboldt</surname>
-                        <forename>Alexander</forename>
-                        <nameLink>von</nameLink>
-                    </persName>
-                </author>
-                <editor corresp="#avh_in_bern">
-                    <persName ref="http://d-nb.info/gnd/124004377">
-                        <surname>Eibach</surname>
-                        <forename>Joachim</forename>
-                    </persName>
-                </editor>
-                <editor corresp="#avh_in_bern">
-                    <persName>
-                        <surname>Nehrlich</surname>
-                        <forename>Thomas</forename>
-                    </persName>
-                </editor>
-                <respStmt xml:id="baertschi_s">
-                    <persName>
-                        <surname>Bärtschi</surname>
-                        <forename>Sarah</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">Verantwortliche Textkonstitution</note>
-                    </resp>
-                </respStmt>
-                <respStmt xml:id="wernicke_nd">
-                    <persName>
-                        <surname>Wernicke</surname>
-                        <forename>Norbert D.</forename>
-                    </persName>
-                    <orgName ref="http://www.humboldt.unibe.ch"/>
-                    <resp>
-                        <note type="remarkResponsibility">XML Bearbeiter</note>
-                        <ref target="http://d-nb.info/gnd/1014897157"/>
-                    </resp>
-                </respStmt>
-            </titleStmt>
-            <editionStmt>
-                <edition>Vollständige digitalisierte Ausgabe.</edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher xml:id="avh_in_bern">
-                    <orgName role="hostingInstitution">Universität Bern</orgName>
-                    <orgName role="project">Alexander von Humboldt in Bern</orgName>
-                    <address>
-                        <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3000 Bern 9</addrLine>
-                        <country>Switzerland</country>
-                    </address>
-                </publisher>
-                <pubPlace>Bern</pubPlace>
-                <date type="publication">[Publikationsdatum]</date>
-                <availability>
-                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
-                        <p>Dieses Werk ist gemeinfrei.</p>
-                    </licence>
-                </availability>
-                <idno>
-                    <idno type="DTAID">[ID innerhalb des DTA-Korpus]</idno>
-                    <idno type="DTADirName">[Verzeichnisname innerhalb des DTA-Korpus]</idno>
-                    <idno type="URN">[URN der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLWeb">[URL der DTA-Onlinepublikation des Werkes]</idno>
-                    <idno type="URLXML">[URL zum XML/TEI-Download der DTA-Publikation]</idno>
-                    <idno type="URLHTML">[URL zum HTML-Download der DTA-Publikation]</idno>
-                    <idno type="URLText">[URL zum Text-Download der DTA-Publikation]</idno>
-                    <idno type="URLCAB">[URL zum Download der CAB-Fassung der DTA-Publikation]</idno>
-                    <idno type="URLTCF">[URL zum TCF-Download der DTA-Publikation]</idno>
-                    <idno type="PIDCMDI">[Handle-PID zum CMDI-Metadatensatz der DTA-Publikation]</idno>
-                </idno>
-            </publicationStmt>
-            <sourceDesc>
-                <p>DUMMYHEADER zur Validitätsprüfung</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>Verfahren der Texterfassung: manuell (doppelt erfasst).</p>
-            <p>Bogensignaturen: gekennzeichnet; Druckfehler: dokumentiert; fremdsprachliches Material: keine Angabe; Geminations-/Abkürzungsstriche: keine Angabe; Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): wie Vorlage; i/j in Fraktur: wie Vorlage; I/J in Fraktur: wie Vorlage; Kolumnentitel: gekennzeichnet; Kustoden: gekennzeichnet; langes s (ſ): wie Vorlage; Normalisierungen: keine; rundes r (&amp;#xa75b;): keine Angabe; Seitenumbrüche markiert: ja; Silbentrennung: wie Vorlage; u/v bzw. U/V: wie Vorlage; Vokale mit übergest. e: wie Vorlage; Vollständigkeit: vollständig erfasst; Zeichensetzung: wie Vorlage; Zeilenumbrüche markiert: ja; </p>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="deu">Deutsch</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change n="1.2.1" when="2019-05-23" who="#wernicke_nd">Format. <note type="remarkRevision" >Umformatierung als Vorbereitung zur Onlineausgabe.</note>
-            </change>
-            <change n="1.1.1" when="2018-12-12" who="#wernicke_nd">Mark-up. <note type="remarkRevision" >Auszeichnungsfehler bereinigt.</note>
-            </change>
-            <change n="1.1.0" when="2018-11-30" who="#wernicke_nd">Validation. <note type="remarkRevision" >Vorbereitung der Druckvorlage durch wernicke_nd abgeschlossen.</note>
-            </change>
-        </revisionDesc>
-    </teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title type="main">Humboldt and Fremont</title>
+      <author>
+        <persName ref="https://d-nb.info/gnd/118554700">
+          <surname>Humboldt</surname>
+          <forename>Alexander</forename>
+          <nameLink>von</nameLink>
+        </persName>
+      </author>
+      <editor>
+        <persName>Oliver Lubrich</persName>
+        <persName>Thomas Nehrlich</persName>
+        <note>Gesamtherausgeber</note>
+      </editor>
+    </titleStmt>
+    <editionStmt>
+      <edition>Vollständige digitalisierte Ausgabe.</edition>
+      <funder>Schweizerischer Nationalfonds</funder>
+      <respStmt>
+        <persName>Yvonne Wübben</persName>
+        <persName>Sarah Bärtschi</persName>
+        <resp>Herausgeber Band 1, Texte 1789–1799</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Rex Clark</persName>
+        <persName>Sarah Bärtschi</persName>
+        <resp>Herausgeber Band 2, Texte 1800–1809</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Jobst Welge</persName>
+        <persName>Michael Strobl</persName>
+        <resp>Herausgeber Band 3, Texte 1810–1819</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Norbert D. Wernicke</persName>
+        <persName>Michael Strobl</persName>
+        <resp>Herausgeber Band 4, Texte 1820–1829</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Bernhard Metz</persName>
+        <persName>Thomas Nehrlich</persName>
+        <resp>Herausgeber Band 5, Texte 1830–1839</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Jutta Müller-Tamm</persName>
+        <persName>Michael Strobl</persName>
+        <resp>Herausgeber Band 6, Texte 1840–1849</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Joachim Eibach</persName>
+        <persName>Thomas Nehrlich</persName>
+        <resp>Herausgeber Band 7, Texte 1850–1859</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Norbert D. Wernicke</persName>
+        <resp>Redakteur Apparatband</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Johannes Görbert</persName>
+        <resp>Redakteur Forschungsband</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Corinna Fiedler</persName>
+        <resp>Redakteurin Übersetzungsband</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Michael Hagner</persName>
+        <persName>Eberhard Knobloch</persName>
+        <persName>Alexander Košenina</persName>
+        <persName>Hinrich C. Seeba</persName>
+        <resp>Beirat</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Thomas Nehrlich</persName>
+        <persName>Luca Querciagrossa</persName>
+        <persName>Norbert D. Wernicke</persName>
+        <persName>Frank Wiegand</persName>
+        <resp>XML-Kodierung</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Frank Wiegand</persName>
+        <resp>Programmierung</resp>
+      </respStmt>
+    </editionStmt>
+    <publicationStmt>
+      <publisher xml:id="avh_in_bern">
+        <orgName role="hostingInstitution">Universität Bern</orgName>
+        <orgName role="project">Alexander von Humboldt in Bern</orgName>
+        <orgName role="edition">Alexander von Humboldt: Sämtliche Schriften (Aufsätze, Artikel, Essays). Berner Ausgabe digital</orgName>
+        <address>
+          <addrLine>Institut für Germanistik, Universität Bern, Länggassstrasse 49, 3012 Bern</addrLine>
+          <country>Switzerland</country>
+        </address>
+      </publisher>
+      <pubPlace>Bern</pubPlace>
+      <date type="publication">2021-08-25T18:09:15</date>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/deed.de">
+          <p>Distributed under the Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0).</p>
+        </licence>
+      </availability>
+      <idno>
+        <idno type="print">VII.14</idno>
+        <idno type="basename">1851-Colonel_Fremont-13-neu</idno>
+        <idno type="type">secondary</idno>
+      </idno>
+    </publicationStmt>
+    <notesStmt>
+      <relatedItem target="1851-Colonel_Fremont-01-neu.xml" type="primary"/>
+      <relatedItem target="1851-Colonel_Fremont-02-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-03-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-04-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-05-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-06-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-07-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-08-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-09-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-10-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-11-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-12-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-13-neu.xml" type="self"/>
+      <relatedItem target="1851-Colonel_Fremont-14-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-15-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-16-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-17-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-18-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-19-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-20-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-21-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-22-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-23-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-24-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-25-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-26-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-27-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-28-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-29-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-30-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-31-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-32-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-33-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-34-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-35-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-36-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-37-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-38-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-39-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-40-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-41-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-42-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-43-neu.xml" type="secondary"/>
+      <relatedItem target="1851-Colonel_Fremont-44-neu.xml" type="secondary"/>
+    </notesStmt>
+    <sourceDesc>
+      <biblFull>
+        <titleStmt>
+          <title type="main">Humboldt and Fremont</title>
+          <author>
+            <persName ref="https://d-nb.info/gnd/118554700">
+              <surname>Humboldt</surname>
+              <forename>Alexander</forename>
+              <nameLink>von</nameLink>
+            </persName>
+          </author>
+        </titleStmt>
+        <publicationStmt>
+          <publisher/>
+          <date type="publication">1856</date>
+          <pubPlace>Janesville, Wisconsin</pubPlace>
+        </publicationStmt>
+        <seriesStmt>
+          <title type="full">in: &lt;i&gt;The Janesville Gazette&lt;/i&gt; 11:48 (2. August 1856), [o. S.].</title>
+        </seriesStmt>
+      </biblFull>
+      <msDesc>
+        <msIdentifier>
+          <repository>unknown</repository>
+        </msIdentifier>
+        <physDesc>
+          <typeDesc>
+            <p>Antiqua</p>
+          </typeDesc>
+        </physDesc>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="eng">Englisch</language>
+    </langUsage>
+  </profileDesc>
+</teiHeader>
+
+
     <text>
         <front/>
         <body>
