@@ -38,7 +38,7 @@ Beispiel:
 
 ## Publikationsjahr
 
-`.../fileDesc/sourceDesc/biblFull/publicationStmt/date[@type="publication"]`
+XPath: `.../fileDesc/sourceDesc/biblFull/publicationStmt/date[@type="publication"]`
 
 Hinweis: Bitte nur die vierstellige Jahreszahl angeben.
 
@@ -50,7 +50,7 @@ Hinweis: Bitte nur die vierstellige Jahreszahl angeben.
 
 ## Publikationsort(e)
 
-`.../fileDesc/sourceDesc/biblFull/publicationStmt/pubPlace`
+XPath: `.../fileDesc/sourceDesc/biblFull/publicationStmt/pubPlace`
 
 Mehrere Angaben von `<pubPlace>` sind möglich.
 
@@ -63,7 +63,7 @@ Mehrere Angaben von `<pubPlace>` sind möglich.
 
 ## Bibliografischer Nachweis
 
-`.../fileDesc/sourceDesc/biblFull/seriesStmt/title[@type="full"]`
+XPath: `.../fileDesc/sourceDesc/biblFull/seriesStmt/title[@type="full"]`
 
 Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Markup maskiert werden muss: `&lt;i&gt;...&lt;/i&gt;`.
 
@@ -75,13 +75,13 @@ Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Marku
 
 ## Bibliografischer Nachweis en détail    
 
-`.../fileDesc/sourceDesc/biblFull/seriesStmt`
+XPath: `.../fileDesc/sourceDesc/biblFull/seriesStmt`
 
 Dieser Abschnitt muss noch geschrieben werden.
 
 ## Schriftart
 
-`.../fileDesc/sourceDesc/msDesc/physDesc/typeDesc/p`
+XPath: `.../fileDesc/sourceDesc/msDesc/physDesc/typeDesc/p`
 
 ### Beispiel:
 
@@ -95,7 +95,7 @@ Dieser Abschnitt muss noch geschrieben werden.
 
 ## Dokumentsprache(n)
 
-`.../profileDesc/langUsage/language`
+XPath: `.../profileDesc/langUsage/language`
 
 Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden und enthält, neben dem deutschen Namen der Sprache als Textinhalt das Attribut `@ident` mit dem dreibuchstabigen Sprachkürzel nach [ISO 639-3](https://de.wikipedia.org/wiki/Listen_der_ISO-639-3-Codes), z. B. so:
 
@@ -135,17 +135,17 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
 
 Verweis auf die Druckausgabe.
 
-`.../fileDesc/publicationStmt/idno/idno[@type="print"]`
+XPath: `.../fileDesc/publicationStmt/idno/idno[@type="print"]`
 
 ### Dateiname (Nomenklatur)
 
 Dateiname ohne die Endung `.xml`.
 
-`.../fileDesc/publicationStmt/idno/idno[@type="basename"]`
+XPath: `.../fileDesc/publicationStmt/idno/idno[@type="basename"]`
 
 ### Publikationstyp
 
-`.../fileDesc/publicationStmt/idno/idno[@type="type"]`
+XPath: `.../fileDesc/publicationStmt/idno/idno[@type="type"]`
 
 Mit folgenden Werten:
 
@@ -166,7 +166,7 @@ Mit folgenden Werten:
 
 Jedes Dokument innerhalb einer Dokumentenfamilie -- der Primärdruck, andere Sekundärdrucke und das Dokument selbst -- werden angegeben als
 
-`.../fileDesc/notesStmt/relatedItem`
+XPath: `.../fileDesc/notesStmt/relatedItem`
 
 Das Element `<relatedItem>` enthält keinen Text und folgende Attribute:
 
@@ -198,7 +198,7 @@ Gehört das Dokument zu keiner Familie, kann die Angabe weggelassen werden. Für
 
 ## Textverwandtschaft mit selbständig erschienenem Werk
 
-`.../fileDesc/notesStmt/relatedItem[@type="related"]/bibl`
+XPath: `.../fileDesc/notesStmt/relatedItem[@type="related"]/bibl`
 
 Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibliografische Angabe. Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Markup maskiert werden muss: `&lt;i&gt;...&lt;/i&gt;`.
 
@@ -218,7 +218,7 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 
 ## Posthumer Nachdruck
 
-`.../fileDesc/sourceDesc/biblFull/notesStmt/relatedItem[@type="reprint"]bibl`
+XPath: `.../fileDesc/sourceDesc/biblFull/notesStmt/relatedItem[@type="reprint"]/bibl`
 
 Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibliografische Angabe. Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Markup maskiert werden muss: `&lt;i&gt;...&lt;/i&gt;`.
 
@@ -232,6 +232,6 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 
 ## Verweise auf Bilddigitalisate
 
-`.../fileDesc/sourceDesc/msDesc/msIdentifier/repository/ref`
+XPath: `.../fileDesc/sourceDesc/msDesc/msIdentifier/repository/ref`
 
 Das Element `<ref>` enthält ein Attribut `@target` mit dem entsprechenden URL. Als Textinhalt kann eine Beschreibung der Quelle angeben werden.
