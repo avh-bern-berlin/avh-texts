@@ -26,7 +26,7 @@ Mit `<persName ref="...">` ist ein Verweis auf ein Normdatenverzeichnis möglich
 
 Beispiel:
 
-```xml=
+```xml
 <author>
   <persName ref="https://d-nb.info/gnd/118554700">
     <surname>Humboldt</surname>
@@ -44,7 +44,7 @@ Hinweis: Bitte nur die vierstellige Jahreszahl angeben.
 
 ### Beispiel
 
-```xml=
+```xml
 <date type="publication">1832</date>
 ```
 
@@ -56,7 +56,7 @@ Mehrere Angaben von `<pubPlace>` sind möglich.
 
 ### Beispiel aus `1858-xxx_Brief_an_Vogel-07-neu.xml`
 
-```xml=
+```xml
 <pubPlace>Haarlem</pubPlace>
 <pubPlace>Den Haag</pubPlace>
 ```
@@ -69,7 +69,7 @@ Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Marku
 
 ### Beispiel aus `1859-xxx_Ruf_um_Huelfe-104.xml`
 
-```xml=
+```xml
 <title type="full">in: &lt;i&gt;Bonplandia. Zeitschrift für die gesammte Botanik&lt;/i&gt; 7:7 (15. April 1859), S. [85]. </title>
 ```
 
@@ -85,7 +85,7 @@ Dieser Abschnitt muss noch geschrieben werden.
 
 ### Beispiel:
 
-```xml=
+```xml
 <physDesc>
   <typeDesc>
     <p>Antiqua</p>
@@ -119,7 +119,7 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
 
 ### Beispiel aus `1840-Schrift_und_Freiheit-1.xml`
 
-```xml=
+```xml
 <profileDesc>
   <langUsage>
     <language ident="deu">Deutsch</language>
@@ -154,7 +154,7 @@ Mit folgenden Werten:
 
 ### Beispiel aus `1840-Schrift_und_Freiheit-1.xml`
 
-```xml=
+```xml
 <idno>
   <idno type="print">VI.8</idno>
   <idno type="basename">1840-Schrift_und_Freiheit-1</idno>
@@ -180,7 +180,7 @@ Gehört das Dokument zu keiner Familie, kann die Angabe weggelassen werden. Für
 
 ### Beispiel für `1820-Sur_la_Limite-1.xml`
 
-```xml=
+```xml
 <relatedItem target="1820-Sur_la_Limite-1.xml" type="self"/>
 <relatedItem target="1820-Sur_la_Limite-2.xml" type="secondary"/>
 <relatedItem target="1820-Sur_la_Limite-3.xml" type="secondary"/>
@@ -189,7 +189,7 @@ Gehört das Dokument zu keiner Familie, kann die Angabe weggelassen werden. Für
 
 ### Beispiel für `1820-Sur_la_Limite-3.xml`
 
-```xml=
+```xml
 <relatedItem target="1820-Sur_la_Limite-1.xml" type="primary"/>
 <relatedItem target="1820-Sur_la_Limite-2.xml" type="secondary"/>
 <relatedItem target="1820-Sur_la_Limite-3.xml" type="self"/>
@@ -204,7 +204,7 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 
 ### Beispiel für `1846-A_Lofty_Conception-1-neu`
 
-```xml=
+```xml
 <relatedItem type="related">
   <bibl>Alexander von Humboldt, &lt;i&gt;Kosmos: A General Survey of the physical phenomena of the universe&lt;/i&gt;, Bd. 1, London: Hippolyte Baillière 1845, S. 158. (Abweichende Übersetzung.)</bibl>
 </relatedItem>
@@ -224,7 +224,7 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 
 ### Beispiel für `1817-Des_lignes_isothermes-01`
 
-```xml=
+```xml
 <relatedItem type="reprint">
   <bibl>übersetzt, in: Alexander von Humboldt, &lt;i&gt;Schriften zur Physikalischen Geographie&lt;/i&gt;, herausgegeben von Hanno Beck, Darmstadt 1989, S. 18–97. (Studienausgabe Band VI)</bibl>
 </relatedItem>
