@@ -105,7 +105,7 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
 - Französisch: `fra`
 - Hebräisch: `heb`
 - Italienisch: `ita`
-- Lateinisch¹: `lat`
+- Latein: `lat`
 - Niederländisch: `nld`
 - Norwegisch: `nor`
 - Portugiesisch: `por`
@@ -115,8 +115,6 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
 - Schwedisch: `swe`
 - Ungarisch: `hun`
 
-<small>¹ hier wäre zu überlegen, anstelle von *Lateinisch* die geläufigere Form *Latein* anzusetzen</small>
-
 ### Beispiel aus `1840-Schrift_und_Freiheit-1.xml`
 
 ```xml
@@ -124,7 +122,7 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
   <langUsage>
     <language ident="deu">Deutsch</language>
     <language ident="spa">Spanisch</language>
-    <language ident="lat">Lateinisch</language>
+    <language ident="lat">Latein</language>
   </langUsage>
 </profileDesc>
 ```
