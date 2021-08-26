@@ -233,3 +233,13 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 XPath: `.../fileDesc/sourceDesc/msDesc/msIdentifier/repository/ref`
 
 Das Element `<ref>` enthält ein Attribut `@target` mit dem entsprechenden URL. Als Textinhalt kann eine Beschreibung der Quelle angeben werden.
+
+### Beispiel für `1799-Alexander_von_Humboldt-1.xml`
+
+```xml
+<msIdentifier>
+  <repository>
+    <ref target="https://www.deutschestextarchiv.de/humboldt_moll_1799">Deutsches Textarchiv</ref>
+  </repository>
+</msIdentifier>
+```
