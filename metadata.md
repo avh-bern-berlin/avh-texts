@@ -176,7 +176,7 @@ Das Element `<relatedItem>` enthält keinen Text und folgende Attribute:
 
 Gehört das Dokument zu keiner Familie, kann die Angabe weggelassen werden. Für das Dokument selbst (auch wenn es Primärdruck ist), wird stets `@type="self"` angegeben. Die Reihenfolge ist signifikant!
 
-### Beispiel für `1820-Sur_la_Limite-1.xml`
+### Beispiel aus `1820-Sur_la_Limite-1.xml`
 
 ```xml
 <relatedItem target="1820-Sur_la_Limite-1.xml" type="self"/>
@@ -185,7 +185,7 @@ Gehört das Dokument zu keiner Familie, kann die Angabe weggelassen werden. Für
 <relatedItem target="1820-Sur_la_Limite-4-neu.xml" type="secondary"/>
 ```
 
-### Beispiel für `1820-Sur_la_Limite-3.xml`
+### Beispiel aus `1820-Sur_la_Limite-3.xml`
 
 ```xml
 <relatedItem target="1820-Sur_la_Limite-1.xml" type="primary"/>
@@ -200,7 +200,7 @@ XPath: `.../fileDesc/notesStmt/relatedItem[@type="related"]/bibl`
 
 Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibliografische Angabe. Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Markup maskiert werden muss: `&lt;i&gt;...&lt;/i&gt;`.
 
-### Beispiel für `1846-A_Lofty_Conception-1-neu`
+### Beispiel aus `1846-A_Lofty_Conception-1-neu.xml`
 
 ```xml
 <relatedItem type="related">
@@ -220,7 +220,7 @@ XPath: `.../fileDesc/sourceDesc/biblFull/notesStmt/relatedItem[@type="reprint"]/
 
 Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibliografische Angabe. Binnenmarkierungen mittels `<i>...</i>` sind möglich, wobei dieses (HTML-)Markup maskiert werden muss: `&lt;i&gt;...&lt;/i&gt;`.
 
-### Beispiel für `1817-Des_lignes_isothermes-01`
+### Beispiel aus `1817-Des_lignes_isothermes-01.xml`
 
 ```xml
 <relatedItem type="reprint">
@@ -234,7 +234,7 @@ XPath: `.../fileDesc/sourceDesc/msDesc/msIdentifier/repository/ref`
 
 Das Element `<ref>` enthält ein Attribut `@target` mit dem entsprechenden URL. Als Textinhalt kann eine Beschreibung der Quelle angeben werden.
 
-### Beispiel für `1799-Alexander_von_Humboldt-1.xml`
+### Beispiel aus `1799-Alexander_von_Humboldt-1.xml`
 
 ```xml
 <msIdentifier>
