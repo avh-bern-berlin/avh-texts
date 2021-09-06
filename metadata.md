@@ -129,7 +129,7 @@ Das Element `<language ident="...">...</language>` kann mehrfach vergeben werden
 
 ## Identifikatoren
 
-### Sigle Print
+### Textnummer Print
 
 Verweis auf die Druckausgabe.
 
@@ -214,7 +214,7 @@ Inhalt dieses Elements (das mehrfach vergeben werden kann) ist jeweils die bibli
 </relatedItem>
 ```
 
-## Posthumer Nachdruck
+## Postumer Nachdruck
 
 XPath: `.../fileDesc/sourceDesc/biblFull/notesStmt/relatedItem[@type="reprint"]/bibl`
 
