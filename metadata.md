@@ -148,7 +148,7 @@ XPath: `.../fileDesc/publicationStmt/idno/idno[@type="type"]`
 Mit folgenden Werten:
 
 - Primärpublikation: `primary`
-- Sekunderpublikation: `secondary`
+- Sekundärpublikation: `secondary`
 
 ### Beispiel aus `1840-Schrift_und_Freiheit-1.xml`
 
